@@ -1,0 +1,15 @@
+generated-by: 37c3292:scripts/gen-dnf-proxy.py
+
+almalinux-10.0-AppStream-aarch64: revision: 1763114614, updated-utc: Fri Nov 14 10:03:34 2025
+almalinux-10.0-AppStream-src: revision: 1763114593, updated-utc: Fri Nov 14 10:03:12 2025
+almalinux-10.0-AppStream-x86_64_v2: revision: 1763114583, updated-utc: Fri Nov 14 10:03:03 2025
+almalinux-10.0-BaseOS-aarch64: revision: 1763114671, updated-utc: Fri Nov 14 10:04:30 2025
+almalinux-10.0-BaseOS-src: revision: 1763114655, updated-utc: Fri Nov 14 10:04:15 2025
+almalinux-10.0-BaseOS-x86_64_v2: revision: 1763114643, updated-utc: Fri Nov 14 10:04:03 2025
+almalinux-10.0-CRB-aarch64: revision: 1763114715, updated-utc: Fri Nov 14 10:05:15 2025
+almalinux-10.0-CRB-src: revision: 1763114717, updated-utc: Fri Nov 14 10:05:16 2025
+almalinux-10.0-CRB-x86_64_v2: revision: 1763114715, updated-utc: Fri Nov 14 10:05:15 2025
+epel-10.0-aarch64: revision: 1762891955, updated-utc: Tue Nov 11 20:12:45 2025
+epel-10.0-altarch-src-x86_64_v2: revision: 1763974791, updated-utc: Mon Nov 24 08:59:51 2025
+epel-10.0-src: revision: 1762891936, updated-utc: Tue Nov 11 20:12:45 2025
+epel-10.0-x86_64_v2: revision: 1763974781, updated-utc: Mon Nov 24 08:59:41 2025
