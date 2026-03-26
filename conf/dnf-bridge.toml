@@ -1,0 +1,74 @@
+archs = [
+    "x86_64_v2",
+    "aarch64",
+]
+
+[[repo]]
+name = "almalinux-10.0"
+
+# Main mirrors are on repo.almalinux.org for current releases and
+# vault.almalinux.org for EOL'd.  Since that depends on the release
+# we're mirroring (as well as on time) we use a single variable for
+# those coupled parameters.
+basesrcurl = "https://vault.almalinux.org/10.0"
+baseurl = "https://vault.almalinux.org/10.0"
+
+# not included "devel" as it overlaps with everything else and all we
+# need from it appear to be in EPEL already
+sections = ["BaseOS", "AppStream", "CRB"]
+srcurl = "{basesrcurl}/{section}/Source/"
+binurl = "{baseurl}/{section}/{arch}/os/"
+
+recipes = "recipes-almalinux"
+basesrcurl_bbvar = "ALMALINUXSRC_MIRROR"
+baseurl_bbvar = "ALMALINUX_MIRROR"
+default_bbvar_conf = "almalinux-defaults.conf"
+
+exclude_packages = [
+    # meta-xcpng ships an older ocaml, and something with all the PROVIDES
+    # in ocaml_5.2.0-4.el10 does not play well with PREFERRED_VERSION_ocaml
+    "ocaml",
+    "ocaml-findlib",
+    # packages depending on the above, removed to avoid noise
+    "ocaml-augeas",
+    "ocaml-calendar",
+    "ocaml-cppo",
+    "ocaml-curses",
+    "ocaml-dune",
+    "ocaml-fileutils",
+    "ocaml-gettext",
+    "ocaml-labltk",
+    "ocaml-libvirt",
+    "ocaml-ocamlbuild",
+    "ocaml-srpm-macros",
+]
+
+[[repo]]
+name = "epel-10.0"
+
+# Main mirrors are on repo.almalinux.org for current releases and
+# vault.almalinux.org for EOL'd.  Since that depends on the release
+# we're mirroring (as well as on time) we use a single variable for
+# those coupled parameters.
+basesrcurl = "https://archives.fedoraproject.org/pub/archive/epel/10.0/Everything/source/tree"
+baseurl = "https://archives.fedoraproject.org/pub/archive/epel/10.0/Everything"
+
+altarch.x86_64_v2.suffix = ".alma_altarch"
+altarch.x86_64_v2.baseurl = "https://epel.repo.almalinux.org/10.0"
+altarch.x86_64_v2.baseurl_bbvar = "EPEL_ALTARCH_MIRROR"
+altarch.x86_64_v2.basesrcurl = "https://epel.vault.almalinux.org/10.0/Source"
+
+srcurl = "{basesrcurl}/"
+binurl = "{baseurl}/{arch}/"
+
+recipes = "recipes-epel"
+basesrcurl_bbvar = "EPELSRC_MIRROR"
+baseurl_bbvar = "EPEL_MIRROR"
+default_bbvar_conf = "epel-defaults.conf"
+
+exclude_packages = [
+    # "_remove" flagged by Bitbake as old syntax for ":remove"
+    "dnf-plugin-flunk_dependent_remove",
+    # no ".alma_altarch" suffix, clashes with EPEL nevr
+    "root",
+]
