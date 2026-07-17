@@ -7,14 +7,14 @@ archs = [
 # allowed_mismatched_checksums = ['epel-release-almalinux-altarch']
 
 [[repo]]
-name = "almalinux-10.2"
+name = "almalinux-10-kitten"
 
 # Main mirrors are on repo.almalinux.org for current releases and
 # vault.almalinux.org for EOL'd.  Since that depends on the release
 # we're mirroring (as well as on time) we use a single variable for
 # those coupled parameters.
-basesrcurl = "https://vault.almalinux.org/10.2"
-baseurl = "https://repo.almalinux.org/almalinux/10.2"
+basesrcurl = "https://vault.almalinux.org/10-kitten"
+baseurl = "https://kitten.repo.almalinux.org/10-kitten"
 
 # not included "devel" as it overlaps with everything else and all we
 # need from it appear to be in EPEL already
@@ -47,19 +47,19 @@ exclude_packages = [
 ]
 
 [[repo]]
-name = "epel-10.2"
+name = "epel-10-kitten"
 
 # Main mirrors are on repo.almalinux.org for current releases and
 # vault.almalinux.org for EOL'd.  Since that depends on the release
 # we're mirroring (as well as on time) we use a single variable for
 # those coupled parameters.
-basesrcurl = "https://dl.fedoraproject.org/pub/epel/10.2/Everything/source/tree"
-baseurl = "https://dl.fedoraproject.org/pub/epel/10.2/Everything"
+basesrcurl = "https://dl.fedoraproject.org/pub/epel/10/Everything/source/tree"
+baseurl = "https://dl.fedoraproject.org/pub/epel/10/Everything"
 
 altarch.x86_64_v2.suffix = ".alma_altarch"
-altarch.x86_64_v2.baseurl = "https://epel.repo.almalinux.org/10.2"
+altarch.x86_64_v2.baseurl = "https://epel.repo.almalinux.org/10"
 altarch.x86_64_v2.baseurl_bbvar = "EPEL_ALTARCH_MIRROR"
-altarch.x86_64_v2.basesrcurl = "https://epel.vault.almalinux.org/10.2/Source"
+altarch.x86_64_v2.basesrcurl = "https://epel.vault.almalinux.org/10/Source"
 
 srcurl = "{basesrcurl}/"
 binurl = "{baseurl}/{arch}/"
