@@ -377,7 +377,7 @@ RDEPENDS:rust-clang-sys+libcpp-devel = " \
 RDEPENDS:rust-clang-sys+libloading-devel = " \
  cargo \
  rust-clang-sys-devel \
- rust-libloading+default-devel \
+ rust-libloading0.8+default-devel \
  "
 RDEPENDS:rust-clang-sys+runtime-devel = " \
  cargo \

@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-IO-Socket-SSL \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Socket-SSL-2.085-3.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-IO-Socket-SSL-2.085-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "db081e7d9137e0a4b640eb55c2882223ee68b0acfc90cc853122de5d5f093c38"
 
-URI_x86_64_v2_perl-IO-Socket-SSL = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Socket-SSL-2.085-3.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-SSL;unpack=0"
+URI_x86_64_v2_perl-IO-Socket-SSL = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-IO-Socket-SSL-2.085-3.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-SSL;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-IO-Socket-SSL}"
 SRC_URI[x86_64_v2_perl-IO-Socket-SSL.sha256sum] = "7f673ad99f77da322add6a1a696d8d359b935db3da78ff503b224907f7d5ec06"
 
-URI_aarch64_perl-IO-Socket-SSL = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Socket-SSL-2.085-3.el10.noarch.rpm;name=aarch64_perl-IO-Socket-SSL;unpack=0"
+URI_aarch64_perl-IO-Socket-SSL = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-IO-Socket-SSL-2.085-3.el10.noarch.rpm;name=aarch64_perl-IO-Socket-SSL;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-IO-Socket-SSL}"
 SRC_URI[aarch64_perl-IO-Socket-SSL.sha256sum] = "7f673ad99f77da322add6a1a696d8d359b935db3da78ff503b224907f7d5ec06"
 

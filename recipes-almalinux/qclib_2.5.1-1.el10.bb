@@ -10,5 +10,5 @@ PACKAGES = " \
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qclib-2.5.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "2fcdd8c16dab6941e7c55aed509a895810e2cbc0b24929007af3d5c56c8a03c4"
+SRC_URI[src.sha256sum] = "c546d16a1dd23d5e45f2346bd7482bd9b1e06270d95f0c9879dd7c2e7f04579c"
 

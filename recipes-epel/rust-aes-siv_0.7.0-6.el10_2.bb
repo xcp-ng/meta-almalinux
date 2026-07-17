@@ -125,12 +125,12 @@ RDEPENDS:rust-aes-siv-devel = " \
  cargo \
  rust \
  rust-aead+default-devel \
- rust-aes+default-devel \
+ rust-aes0.8+default-devel \
  rust-cipher0.4+default-devel \
  rust-cmac+default-devel \
  rust-ctr+default-devel \
  rust-dbl+default-devel \
- rust-digest+default-devel \
- rust-digest+mac-devel \
+ rust-digest0.10+default-devel \
+ rust-digest0.10+mac-devel \
  rust-zeroize-devel \
  "

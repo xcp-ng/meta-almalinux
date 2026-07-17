@@ -5,20 +5,10 @@ inherit dnf-bridge
 PN = "virtio-win"
 PV = "1.9.45"
 PR = "1.el10"
-PACKAGES:x86_64_v2 = " \
- virtio-win \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+PACKAGES = " \
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/virtio-win-1.9.45-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "60cb2e11811ae1b8326eb611d086c714bb8c422b16462fe314d12e8765a1e820"
 
-URI_x86_64_v2_virtio-win = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virtio-win-1.9.45-1.el10.noarch.rpm;name=x86_64_v2_virtio-win;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virtio-win}"
-SRC_URI[x86_64_v2_virtio-win.sha256sum] = "aeadcb370972762927fdc098fa0a3f938b9fd91806481c2aaa45d08858bb64d2"
-
-RDEPENDS:virtio-win = " \
- "

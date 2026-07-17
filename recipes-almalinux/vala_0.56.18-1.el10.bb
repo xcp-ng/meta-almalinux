@@ -18,6 +18,12 @@ URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/vala-0.56.18-1.el10.src.rp
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "11a487dbc31ed2239f8072793384c7710cdc3aca17793872c6fdb3a1d70d5913"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - valadoc-devel: pkgconfig(libgvc)
+# - valadoc: libcdt.so.5()(64bit)
+# - valadoc: libcgraph.so.6()(64bit)
+# - valadoc: libgvc.so.6()(64bit)
+
 URI_x86_64_v2_libvala = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libvala-0.56.18-1.el10.x86_64_v2.rpm;name=x86_64_v2_libvala;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libvala}"
 SRC_URI[x86_64_v2_libvala.sha256sum] = "5a974aeef1412b0e3c96f72d5a2f58f22a45e11b2494ab64fe84a9fbebdb7f1a"
@@ -87,17 +93,29 @@ RDEPENDS:vala = " \
 RDEPENDS:vala-doc = " \
  vala \
  "
-RDEPENDS:valadoc = " \
+RDEPENDS:valadoc:x86_64_v2 = " \
  glib2 \
  glibc \
  graphviz \
  libvala \
  vala \
- "
-RDEPENDS:valadoc-devel = " \
+"
+RDEPENDS:valadoc:aarch64 = " \
+ glib2 \
+ glibc \
+ libvala \
+ vala \
+"
+RDEPENDS:valadoc-devel:x86_64_v2 = " \
  glib2-devel \
  graphviz-devel \
  libvala-devel \
  pkgconf-pkg-config \
  valadoc \
- "
+"
+RDEPENDS:valadoc-devel:aarch64 = " \
+ glib2-devel \
+ libvala-devel \
+ pkgconf-pkg-config \
+ valadoc \
+"

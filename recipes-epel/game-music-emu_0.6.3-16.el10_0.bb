@@ -54,5 +54,5 @@ RDEPENDS:game-music-emu-player = " \
  glibc \
  libgcc \
  libstdc++ \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "

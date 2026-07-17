@@ -98,7 +98,7 @@ RDEPENDS:rust-toml_edit0.22+display-devel = " \
 RDEPENDS:rust-toml_edit0.22+parse-devel = " \
  cargo \
  rust-toml_edit0.22-devel \
- rust-winnow+default-devel \
+ rust-winnow0.7+default-devel \
  "
 RDEPENDS:rust-toml_edit0.22+perf-devel = " \
  cargo \
@@ -121,8 +121,8 @@ RDEPENDS:rust-toml_edit0.22+unbounded-devel = " \
 RDEPENDS:rust-toml_edit0.22+unstable-debug-devel = " \
  cargo \
  rust-toml_edit0.22-devel \
- rust-winnow+debug-devel \
- rust-winnow+default-devel \
+ rust-winnow0.7+debug-devel \
+ rust-winnow0.7+default-devel \
  "
 RDEPENDS:rust-toml_edit0.22-devel = " \
  cargo \

@@ -36,7 +36,7 @@ RDEPENDS:rust-rfc2047-decoder+default-devel = " \
  "
 RDEPENDS:rust-rfc2047-decoder-devel = " \
  cargo \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-charset+default-devel \
  rust-chumsky+default-devel \
  rust-memchr+default-devel \

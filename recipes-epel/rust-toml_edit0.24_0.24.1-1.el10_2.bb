@@ -19,6 +19,11 @@ URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-toml_edit0.24-0.24.1-1.el10_2.src.r
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "872a54ced7687b5944737538248b71567504a5d9c9fcdb2101e5d39c17e772ea"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - rust-toml_edit0.24+debug-devel: (crate(toml_parser/debug) >= 1.0.7 with crate(toml_parser/debug) < 2.0.0~)
+# - rust-toml_edit0.24+debug-devel: (crate(toml_parser/default) >= 1.0.7 with crate(toml_parser/default) < 2.0.0~)
+# - rust-toml_edit0.24+parse-devel: (crate(toml_parser/default) >= 1.0.7 with crate(toml_parser/default) < 2.0.0~)
+
 URI_x86_64_v2_rust-toml_edit0.24+debug-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml_edit0.24+debug-devel-0.24.1-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml_edit0.24+debug-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml_edit0.24+debug-devel}"
 SRC_URI[x86_64_v2_rust-toml_edit0.24+debug-devel.sha256sum] = "183c31e6c0b0af5c503218f0513e5647e4e17a83ba8a84c1c8f10eb355295c37"
@@ -85,7 +90,14 @@ SRC_URI:append = " ${URI_aarch64_rust-toml_edit0.24-devel}"
 SRC_URI[aarch64_rust-toml_edit0.24-devel.sha256sum] = "04f83ca0e8379c9662abbbf533a5c7f93bdb0931067e479b035ccd5015af17d7"
 RPROVIDES:rust-toml_edit0.24-devel:aarch64 = "virtual/crate_toml_edit__ge_0.23.2_with_crate_toml_edit__lt_0.25.0~"
 
-RDEPENDS:rust-toml_edit0.24+debug-devel = " \
+RDEPENDS:rust-toml_edit0.24+debug-devel:x86_64_v2 = " \
+ cargo \
+ rust-anstream0.6+default-devel \
+ rust-anstyle+default-devel \
+ rust-toml_edit0.24+display-devel \
+ rust-toml_edit0.24-devel \
+"
+RDEPENDS:rust-toml_edit0.24+debug-devel:aarch64 = " \
  cargo \
  rust-anstream0.6+default-devel \
  rust-anstyle+default-devel \
@@ -93,7 +105,7 @@ RDEPENDS:rust-toml_edit0.24+debug-devel = " \
  rust-toml_edit0.24-devel \
  rust-toml_parser+debug-devel \
  rust-toml_parser+default-devel \
- "
+"
 RDEPENDS:rust-toml_edit0.24+default-devel = " \
  cargo \
  rust-toml_edit0.24+display-devel \
@@ -105,12 +117,17 @@ RDEPENDS:rust-toml_edit0.24+display-devel = " \
  rust-toml_edit0.24-devel \
  rust-toml_writer+default-devel \
  "
-RDEPENDS:rust-toml_edit0.24+parse-devel = " \
+RDEPENDS:rust-toml_edit0.24+parse-devel:x86_64_v2 = " \
+ cargo \
+ rust-toml_edit0.24-devel \
+ rust-winnow0.7+default-devel \
+"
+RDEPENDS:rust-toml_edit0.24+parse-devel:aarch64 = " \
  cargo \
  rust-toml_edit0.24-devel \
  rust-toml_parser+default-devel \
- rust-winnow+default-devel \
- "
+ rust-winnow0.7+default-devel \
+"
 RDEPENDS:rust-toml_edit0.24+serde-devel = " \
  cargo \
  rust-serde_core+default-devel \

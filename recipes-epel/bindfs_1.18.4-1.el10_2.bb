@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "991ac832f349273b07ccc74a83afbcb963e61d266d62a80cba0158
 
 URI_x86_64_v2_bindfs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bindfs-1.18.4-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_bindfs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_bindfs}"
-SRC_URI[x86_64_v2_bindfs.sha256sum] = "40376b89784bef25b453e13fb828ba775538d07a24f1ea10ea15e7bf9e43ded3"
+SRC_URI[x86_64_v2_bindfs.sha256sum] = "d48d4bedca48d393040681344d805286cfaea7efabccc8c7b30b206c11626d17"
 
 URI_aarch64_bindfs = "${EPEL_MIRROR}/aarch64/Packages/b/bindfs-1.18.4-1.el10_2.aarch64.rpm;name=aarch64_bindfs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_bindfs}"

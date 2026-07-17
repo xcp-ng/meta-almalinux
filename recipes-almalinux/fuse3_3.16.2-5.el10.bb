@@ -20,7 +20,7 @@ URI_x86_64_v2_fuse-common = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fu
 SRC_URI:append = " ${URI_x86_64_v2_fuse-common}"
 SRC_URI[x86_64_v2_fuse-common.sha256sum] = "d9d36f172173226c7bc0b890bbb4e82985d5d16161d28160fe7bccb116f61399"
 
-URI_x86_64_v2_fuse3 = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fuse3-3.16.2-5.el10.x86_64_v2.rpm;name=x86_64_v2_fuse3;unpack=0"
+URI_x86_64_v2_fuse3 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/fuse3-3.16.2-5.el10.x86_64_v2.rpm;name=x86_64_v2_fuse3;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_fuse3}"
 SRC_URI[x86_64_v2_fuse3.sha256sum] = "5e372d80b6dea8665ba8f1a7f7e7b6495331413d47f16da01a04bf9c775f2fa3"
 
@@ -36,7 +36,7 @@ URI_aarch64_fuse-common = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse-c
 SRC_URI:append = " ${URI_aarch64_fuse-common}"
 SRC_URI[aarch64_fuse-common.sha256sum] = "a4da63d2e903ba8c58ee6269b3440a787f4cd676d1e78db4f0d12f950ee770c9"
 
-URI_aarch64_fuse3 = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse3-3.16.2-5.el10.aarch64.rpm;name=aarch64_fuse3;unpack=0"
+URI_aarch64_fuse3 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/fuse3-3.16.2-5.el10.aarch64.rpm;name=aarch64_fuse3;unpack=0"
 SRC_URI:append = " ${URI_aarch64_fuse3}"
 SRC_URI[aarch64_fuse3.sha256sum] = "d42afbfc340bf3091dec51d678fe3a4e8bd7372b2e11e857c5e601e464c6c6ba"
 

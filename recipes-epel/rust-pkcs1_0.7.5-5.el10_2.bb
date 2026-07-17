@@ -77,7 +77,7 @@ SRC_URI[aarch64_rust-pkcs1-devel.sha256sum] = "f975cef5d8c1d49baac5f254f2f282601
 
 RDEPENDS:rust-pkcs1+alloc-devel = " \
  cargo \
- rust-der+alloc-devel \
+ rust-der0.7+alloc-devel \
  rust-pkcs1+zeroize-devel \
  rust-pkcs1-devel \
  rust-pkcs8+alloc-devel \
@@ -89,7 +89,7 @@ RDEPENDS:rust-pkcs1+default-devel = " \
  "
 RDEPENDS:rust-pkcs1+pem-devel = " \
  cargo \
- rust-der+pem-devel \
+ rust-der0.7+pem-devel \
  rust-pkcs1+alloc-devel \
  rust-pkcs1-devel \
  rust-pkcs8+pem-devel \
@@ -102,19 +102,19 @@ RDEPENDS:rust-pkcs1+pkcs8-devel = " \
  "
 RDEPENDS:rust-pkcs1+std-devel = " \
  cargo \
- rust-der+std-devel \
+ rust-der0.7+std-devel \
  rust-pkcs1+alloc-devel \
  rust-pkcs1-devel \
  "
 RDEPENDS:rust-pkcs1+zeroize-devel = " \
  cargo \
- rust-der+zeroize-devel \
+ rust-der0.7+zeroize-devel \
  rust-pkcs1-devel \
  "
 RDEPENDS:rust-pkcs1-devel = " \
  cargo \
  rust \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-spki+default-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-spki0.7+default-devel \
  "

@@ -15,6 +15,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-graphviz-0.20.1-11.el10_0.src.rpm
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "fe582d662470d0396a2c5ef48c249d6b6e1c81ee9021d2bf923ff1a522b6be67"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - python3-graphviz: graphviz
+
 URI_x86_64_v2_python-graphviz-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-graphviz-doc-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-graphviz-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-graphviz-doc}"
 SRC_URI[x86_64_v2_python-graphviz-doc.sha256sum] = "ee3594e89ab94ffe096b602ecbe29604865f4706d14ba43fc495108e16be2245"
@@ -33,7 +36,10 @@ SRC_URI[aarch64_python3-graphviz.sha256sum] = "3d3ca112d31123389aabef75f4d1da1ab
 
 RDEPENDS:python-graphviz-doc = " \
  "
-RDEPENDS:python3-graphviz = " \
+RDEPENDS:python3-graphviz:x86_64_v2 = " \
  graphviz \
  python3 \
- "
+"
+RDEPENDS:python3-graphviz:aarch64 = " \
+ python3 \
+"

@@ -39,5 +39,5 @@ RDEPENDS:rust-darling_macro-devel = " \
  rust \
  rust-darling_core+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
+ rust-syn2+default-devel \
  "

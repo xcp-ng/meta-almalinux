@@ -37,7 +37,7 @@ RDEPENDS:rust-git2-curl+default-devel = " \
 RDEPENDS:rust-git2-curl-devel = " \
  cargo \
  rust-curl+default-devel \
- rust-git2-devel \
+ rust-git2_0.20-devel \
  rust-log+default-devel \
  rust-url+default-devel \
  "

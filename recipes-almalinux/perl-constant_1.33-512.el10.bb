@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-constant \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-constant-1.33-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-constant-1.33-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "956c0b458248c3fa53eaa2b0ddcc699601d80193afaefaf7fd72b6d158040d84"
 
-URI_x86_64_v2_perl-constant = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-constant-1.33-512.el10.noarch.rpm;name=x86_64_v2_perl-constant;unpack=0"
+URI_x86_64_v2_perl-constant = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-constant-1.33-512.el10.noarch.rpm;name=x86_64_v2_perl-constant;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-constant}"
 SRC_URI[x86_64_v2_perl-constant.sha256sum] = "00221c59085f4a9ec4ebc5d547bcf5e3d9ec2ab3a057a0b351b4f0d029ecff74"
 
-URI_aarch64_perl-constant = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-constant-1.33-512.el10.noarch.rpm;name=aarch64_perl-constant;unpack=0"
+URI_aarch64_perl-constant = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-constant-1.33-512.el10.noarch.rpm;name=aarch64_perl-constant;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-constant}"
 SRC_URI[aarch64_perl-constant.sha256sum] = "00221c59085f4a9ec4ebc5d547bcf5e3d9ec2ab3a057a0b351b4f0d029ecff74"
 

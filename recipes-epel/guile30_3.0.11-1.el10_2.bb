@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "bb042e5fdf3be5d13cc82734f24b05691cc9c5da43272ccc67533e
 
 URI_x86_64_v2_guile30 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/guile30-3.0.11-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_guile30;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_guile30}"
-SRC_URI[x86_64_v2_guile30.sha256sum] = "c19b0a64974057f43d7e58b0a067d4308a43e8f91ea9e9309e7bdce546335584"
+SRC_URI[x86_64_v2_guile30.sha256sum] = "2f224c86d84c6c17c8610d2f0628e0df35a1d1586bfe0e6ebb0c0e671c194e5e"
 
 URI_x86_64_v2_guile30-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/guile30-devel-3.0.11-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_guile30-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_guile30-devel}"
-SRC_URI[x86_64_v2_guile30-devel.sha256sum] = "c0aaf23ced89ff3cadce41e321c5d21dfa139715c9ab6a70e088ce610fcf5de2"
+SRC_URI[x86_64_v2_guile30-devel.sha256sum] = "b8e58f50d8d428412e7698ad571fa33f29abf4b17500fea89194846252439782"
 
 URI_aarch64_guile30 = "${EPEL_MIRROR}/aarch64/Packages/g/guile30-3.0.11-1.el10_2.aarch64.rpm;name=aarch64_guile30;unpack=0"
 SRC_URI:append = " ${URI_aarch64_guile30}"

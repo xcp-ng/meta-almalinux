@@ -100,8 +100,8 @@ RDEPENDS:audacious-plugins = " \
  qt6-qtbase \
  qt6-qtbase-gui \
  qt6-qtmultimedia \
- sdl2-compat \
  soxr \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  virtual/libcurl.so.4___64bit_ \
  wavpack \
  "

@@ -114,7 +114,7 @@ RDEPENDS:rust-cursive-devel = " \
  rust-lazy_static+default-devel \
  rust-libc+default-devel \
  rust-log+default-devel \
- rust-signal-hook+default-devel \
+ rust-signal-hook0.3+default-devel \
  rust-unicode-segmentation+default-devel \
  rust-unicode-width0.1+default-devel \
  "

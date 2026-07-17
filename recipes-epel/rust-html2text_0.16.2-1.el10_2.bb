@@ -94,8 +94,8 @@ RDEPENDS:rust-html2text+html_trace_bt-devel = " \
 RDEPENDS:rust-html2text-devel = " \
  cargo \
  rust \
- rust-html5ever+default-devel \
- rust-tendril+default-devel \
+ rust-html5ever0.35+default-devel \
+ rust-tendril0.4+default-devel \
  rust-thiserror+default-devel \
  rust-unicode-width+default-devel \
  "

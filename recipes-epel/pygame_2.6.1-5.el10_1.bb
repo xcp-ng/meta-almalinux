@@ -46,5 +46,5 @@ RDEPENDS:python3-pygame = " \
  libpng \
  portmidi \
  python3 \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "

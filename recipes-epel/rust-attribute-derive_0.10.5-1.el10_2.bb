@@ -46,7 +46,7 @@ RDEPENDS:rust-attribute-derive+default-devel = " \
 RDEPENDS:rust-attribute-derive+syn-full-devel = " \
  cargo \
  rust-attribute-derive-devel \
- rust-syn+full-devel \
+ rust-syn2+full-devel \
  "
 RDEPENDS:rust-attribute-derive-devel = " \
  cargo \
@@ -55,5 +55,5 @@ RDEPENDS:rust-attribute-derive-devel = " \
  rust-manyhow+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
+ rust-syn2+default-devel \
  "

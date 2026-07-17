@@ -96,6 +96,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/u/uwsgi-2.0.30-1.el10_1.src.rpm;name=src;u
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "639984ddbdb49af9ecd4fe802028a45c647de6cc2f25fdc303fe0c187516c996"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - uwsgi: libcap.so.2()(64bit)
+
 URI_x86_64_v2_python3-uwsgidecorators = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-uwsgidecorators-2.0.30-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-uwsgidecorators;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-uwsgidecorators}"
 SRC_URI[x86_64_v2_python3-uwsgidecorators.sha256sum] = "d0b2a2eb9322213f149b7bca659d924c46b2a4dbb90b85db3c5f6fc76a78b035"
@@ -778,7 +781,7 @@ RDEPENDS:python3.12-uwsgidecorators = " \
  uwsgi \
  uwsgi-plugin-python312 \
  "
-RDEPENDS:uwsgi = " \
+RDEPENDS:uwsgi:x86_64_v2 = " \
  bash \
  glibc \
  jansson \
@@ -790,7 +793,19 @@ RDEPENDS:uwsgi = " \
  pcre2 \
  systemd \
  zlib-ng-compat \
- "
+"
+RDEPENDS:uwsgi:aarch64 = " \
+ bash \
+ glibc \
+ jansson \
+ libuuid \
+ libxml2 \
+ libyaml \
+ openssl-libs \
+ pcre2 \
+ systemd \
+ zlib-ng-compat \
+"
 RDEPENDS:uwsgi-alarm-curl = " \
  glibc \
  uwsgi-plugin-common \

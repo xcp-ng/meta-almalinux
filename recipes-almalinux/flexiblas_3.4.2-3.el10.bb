@@ -23,7 +23,7 @@ URI_x86_64_v2_flexiblas = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/f
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas}"
 SRC_URI[x86_64_v2_flexiblas.sha256sum] = "21e0c9d1222b7852772f41e00d85756cee61526b5ba3ada862297d7ab20764f6"
 
-URI_x86_64_v2_flexiblas-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flexiblas-devel-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-devel;unpack=0"
+URI_x86_64_v2_flexiblas-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/flexiblas-devel-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas-devel}"
 SRC_URI[x86_64_v2_flexiblas-devel.sha256sum] = "f83d306698512bdd81c4e0f0b34773604de71be1f236f25672d2eafa4444dbb3"
 
@@ -31,7 +31,7 @@ URI_x86_64_v2_flexiblas-netlib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Pac
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas-netlib}"
 SRC_URI[x86_64_v2_flexiblas-netlib.sha256sum] = "5502f758e4276f6b21b2f48f31cfda9d1037cb9fd12bf4c4301ac3fd4b6533cb"
 
-URI_x86_64_v2_flexiblas-netlib64 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flexiblas-netlib64-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-netlib64;unpack=0"
+URI_x86_64_v2_flexiblas-netlib64 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/flexiblas-netlib64-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-netlib64;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas-netlib64}"
 SRC_URI[x86_64_v2_flexiblas-netlib64.sha256sum] = "655827b453123949dc44d61075369dabeb3d7d893dbd32bbc1f90c4e23e6bc21"
 
@@ -39,7 +39,7 @@ URI_x86_64_v2_flexiblas-openblas-openmp = "${ALMALINUX_MIRROR}/AppStream/x86_64_
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas-openblas-openmp}"
 SRC_URI[x86_64_v2_flexiblas-openblas-openmp.sha256sum] = "3ddf8e916417b0843253a095ee145681ce1c7a174b7ba463668f9f58de419b6a"
 
-URI_x86_64_v2_flexiblas-openblas-openmp64 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flexiblas-openblas-openmp64-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-openblas-openmp64;unpack=0"
+URI_x86_64_v2_flexiblas-openblas-openmp64 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/flexiblas-openblas-openmp64-3.4.2-3.el10.x86_64_v2.rpm;name=x86_64_v2_flexiblas-openblas-openmp64;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_flexiblas-openblas-openmp64}"
 SRC_URI[x86_64_v2_flexiblas-openblas-openmp64.sha256sum] = "053e63a19830f9986d2ca627d2c2e73a4751e499b3acd45810e572ff97457823"
 
@@ -51,7 +51,7 @@ URI_aarch64_flexiblas = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flexi
 SRC_URI:append = " ${URI_aarch64_flexiblas}"
 SRC_URI[aarch64_flexiblas.sha256sum] = "baebe0bc532a467308dad6d206d27dda87fb48ec1b9711c37815330aa0f80192"
 
-URI_aarch64_flexiblas-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flexiblas-devel-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-devel;unpack=0"
+URI_aarch64_flexiblas-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/flexiblas-devel-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_flexiblas-devel}"
 SRC_URI[aarch64_flexiblas-devel.sha256sum] = "1ffc3aecae4213ea4a31fe12c0f556a372bff96dc90160f100874b9a1510b1de"
 
@@ -59,7 +59,7 @@ URI_aarch64_flexiblas-netlib = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Package
 SRC_URI:append = " ${URI_aarch64_flexiblas-netlib}"
 SRC_URI[aarch64_flexiblas-netlib.sha256sum] = "3d3db7cdf5eb24b8b748797d2e13c4b0e285d31d0916799e8868141ae5d6c27d"
 
-URI_aarch64_flexiblas-netlib64 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flexiblas-netlib64-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-netlib64;unpack=0"
+URI_aarch64_flexiblas-netlib64 = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/flexiblas-netlib64-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-netlib64;unpack=0"
 SRC_URI:append = " ${URI_aarch64_flexiblas-netlib64}"
 SRC_URI[aarch64_flexiblas-netlib64.sha256sum] = "12f1ae9c56cf1800cd4be85b9497dd420747dd7c49c450b6af8cb48028d9243c"
 
@@ -67,7 +67,7 @@ URI_aarch64_flexiblas-openblas-openmp = "${ALMALINUX_MIRROR}/AppStream/aarch64/o
 SRC_URI:append = " ${URI_aarch64_flexiblas-openblas-openmp}"
 SRC_URI[aarch64_flexiblas-openblas-openmp.sha256sum] = "9f56dc9a4921550f55cb36227fad1340a9dc638d6f173da717432cfde2c9aeff"
 
-URI_aarch64_flexiblas-openblas-openmp64 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flexiblas-openblas-openmp64-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-openblas-openmp64;unpack=0"
+URI_aarch64_flexiblas-openblas-openmp64 = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/flexiblas-openblas-openmp64-3.4.2-3.el10.aarch64.rpm;name=aarch64_flexiblas-openblas-openmp64;unpack=0"
 SRC_URI:append = " ${URI_aarch64_flexiblas-openblas-openmp64}"
 SRC_URI[aarch64_flexiblas-openblas-openmp64.sha256sum] = "806030873544ba12490e05cda99dd65477049bbd3d6338eaaf12fa706265a81c"
 

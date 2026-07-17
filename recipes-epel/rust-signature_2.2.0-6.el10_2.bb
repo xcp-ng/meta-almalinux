@@ -90,7 +90,7 @@ RDEPENDS:rust-signature+derive-devel = " \
  "
 RDEPENDS:rust-signature+digest-devel = " \
  cargo \
- rust-digest-devel \
+ rust-digest0.10-devel \
  rust-signature-devel \
  "
 RDEPENDS:rust-signature+rand_core-devel = " \

@@ -230,7 +230,7 @@ RDEPENDS:rust-brotli+seccomp-devel = " \
 RDEPENDS:rust-brotli+sha2-devel = " \
  cargo \
  rust-brotli-devel \
- rust-sha2+default-devel \
+ rust-sha2_0.10+default-devel \
  "
 RDEPENDS:rust-brotli+simd-devel = " \
  cargo \

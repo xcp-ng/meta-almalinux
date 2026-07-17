@@ -40,7 +40,7 @@ RDEPENDS:rust-strum_macros0.26-devel = " \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  rust-rustversion+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+parsing-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+parsing-devel \
  "

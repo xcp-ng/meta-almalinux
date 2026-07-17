@@ -18,7 +18,7 @@ URI_x86_64_v2_opus = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/opus-1
 SRC_URI:append = " ${URI_x86_64_v2_opus}"
 SRC_URI[x86_64_v2_opus.sha256sum] = "778c518dfd8ff4cd80274dadca551fcbe21372b99161da8566f799c7114e17ac"
 
-URI_x86_64_v2_opus-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/opus-devel-1.4-6.el10.x86_64_v2.rpm;name=x86_64_v2_opus-devel;unpack=0"
+URI_x86_64_v2_opus-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/opus-devel-1.4-6.el10.x86_64_v2.rpm;name=x86_64_v2_opus-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_opus-devel}"
 SRC_URI[x86_64_v2_opus-devel.sha256sum] = "bc1db8ca200797c614b2ff4ee6357b147aec6e0fc87b900a93c8f470c56ae445"
 
@@ -26,7 +26,7 @@ URI_aarch64_opus = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opus-1.4-6
 SRC_URI:append = " ${URI_aarch64_opus}"
 SRC_URI[aarch64_opus.sha256sum] = "a743b13c808778e2d4734c5cd6fef396d3b7bf2a67b039ea51b93f42cf3f3e6c"
 
-URI_aarch64_opus-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opus-devel-1.4-6.el10.aarch64.rpm;name=aarch64_opus-devel;unpack=0"
+URI_aarch64_opus-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/opus-devel-1.4-6.el10.aarch64.rpm;name=aarch64_opus-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_opus-devel}"
 SRC_URI[aarch64_opus-devel.sha256sum] = "762d7ee1990b6c427df0d4708a79ec13e056a27f4f19413acfe854f0502372a9"
 

@@ -114,9 +114,9 @@ RDEPENDS:rust-crossterm0.28+events-devel = " \
  rust-crossterm0.28-devel \
  rust-mio+default-devel \
  rust-mio+os-poll-devel \
- rust-signal-hook+default-devel \
  rust-signal-hook-mio+default-devel \
  rust-signal-hook-mio+support-v1_0-devel \
+ rust-signal-hook0.3+default-devel \
  "
 RDEPENDS:rust-crossterm0.28+filedescriptor-devel = " \
  cargo \

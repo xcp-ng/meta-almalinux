@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-HTTP-Tiny \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-HTTP-Tiny-0.088-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-HTTP-Tiny-0.088-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "3c426772e0a7e5df93a002fcfb7db6bb67bb5acb0a0c2d628d98f67c85ea9aca"
 
-URI_x86_64_v2_perl-HTTP-Tiny = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm;name=x86_64_v2_perl-HTTP-Tiny;unpack=0"
+URI_x86_64_v2_perl-HTTP-Tiny = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm;name=x86_64_v2_perl-HTTP-Tiny;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Tiny}"
 SRC_URI[x86_64_v2_perl-HTTP-Tiny.sha256sum] = "2a09877a0cb847971f262574e289db1ab6011a6dae3b95252ad0abcf797146d3"
 
-URI_aarch64_perl-HTTP-Tiny = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm;name=aarch64_perl-HTTP-Tiny;unpack=0"
+URI_aarch64_perl-HTTP-Tiny = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm;name=aarch64_perl-HTTP-Tiny;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-HTTP-Tiny}"
 SRC_URI[aarch64_perl-HTTP-Tiny.sha256sum] = "2a09877a0cb847971f262574e289db1ab6011a6dae3b95252ad0abcf797146d3"
 

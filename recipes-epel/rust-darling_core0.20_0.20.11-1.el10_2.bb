@@ -82,7 +82,7 @@ RDEPENDS:rust-darling_core0.20-devel = " \
  rust-ident_case+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
  "

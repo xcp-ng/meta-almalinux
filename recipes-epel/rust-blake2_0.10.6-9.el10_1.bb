@@ -114,10 +114,10 @@ RDEPENDS:rust-blake2+size_opt-devel = " \
 RDEPENDS:rust-blake2+std-devel = " \
  cargo \
  rust-blake2-devel \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  "
 RDEPENDS:rust-blake2-devel = " \
  cargo \
- rust-digest+default-devel \
- rust-digest+mac-devel \
+ rust-digest0.10+default-devel \
+ rust-digest0.10+mac-devel \
  "

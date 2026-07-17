@@ -39,9 +39,9 @@ RDEPENDS:rust-quote-use-macros-devel = " \
  rust-proc-macro-utils+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+clone-impls-devel \
- rust-syn+extra-traits-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn-devel \
+ rust-syn2+clone-impls-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2-devel \
  "

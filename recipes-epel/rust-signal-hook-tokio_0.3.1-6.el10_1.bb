@@ -65,7 +65,7 @@ RDEPENDS:rust-signal-hook-tokio+futures-v0_3-devel = " \
 RDEPENDS:rust-signal-hook-tokio-devel = " \
  cargo \
  rust-libc+default-devel \
- rust-signal-hook+default-devel \
+ rust-signal-hook0.3+default-devel \
  rust-tokio+default-devel \
  rust-tokio+net-devel \
  "

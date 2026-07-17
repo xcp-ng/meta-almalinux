@@ -502,7 +502,7 @@ RDEPENDS:rust-rav1e+serialize-devel = " \
 RDEPENDS:rust-rav1e+signal-hook-devel = " \
  cargo \
  rust-rav1e-devel \
- rust-signal-hook+default-devel \
+ rust-signal-hook0.3+default-devel \
  "
 RDEPENDS:rust-rav1e+signal_support-devel = " \
  cargo \
@@ -534,11 +534,11 @@ RDEPENDS:rust-rav1e-devel = " \
  rust-aligned-vec+default-devel \
  rust-arg_enum_proc_macro+default-devel \
  rust-arrayvec+default-devel \
- rust-av-scenechange-devel \
+ rust-av-scenechange0.14-devel \
  rust-av1-grain+default-devel \
  rust-bitstream-io+default-devel \
  rust-cfg-if+default-devel \
- rust-itertools+default-devel \
+ rust-itertools0.14+default-devel \
  rust-libc+default-devel \
  rust-log+default-devel \
  rust-maybe-rayon-devel \

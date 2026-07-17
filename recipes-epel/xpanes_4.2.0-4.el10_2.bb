@@ -13,6 +13,12 @@ URI_src = "${EPELSRC_MIRROR}/Packages/x/xpanes-4.2.0-4.el10_2.src.rpm;name=src;u
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "cf307c45b16d86bba5c319617f98257ab5024b0328eb6f565371c8cf68cb27fa"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - xpanes: tmux
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - xpanes: tmux
+
 URI_x86_64_v2_xpanes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xpanes-4.2.0-4.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_xpanes;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_xpanes}"
 SRC_URI[x86_64_v2_xpanes.sha256sum] = "5703de0f967fced08eb2c7f3e4b494e57e28ee75e7b5faf6e9a16e7a7f093991"
@@ -23,5 +29,4 @@ SRC_URI[aarch64_xpanes.sha256sum] = "a59ccea645bbd0b5e47221d278c7b9cffdf2bab113d
 
 RDEPENDS:xpanes = " \
  bash \
- tmux \
  "

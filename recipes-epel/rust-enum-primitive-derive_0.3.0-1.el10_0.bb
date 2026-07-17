@@ -39,5 +39,5 @@ RDEPENDS:rust-enum-primitive-derive-devel = " \
  rust \
  rust-num-traits-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
+ rust-syn2+default-devel \
  "

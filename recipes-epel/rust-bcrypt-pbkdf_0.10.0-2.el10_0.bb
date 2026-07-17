@@ -79,8 +79,8 @@ RDEPENDS:rust-bcrypt-pbkdf+zeroize-devel = " \
 RDEPENDS:rust-bcrypt-pbkdf-devel = " \
  cargo \
  rust \
- rust-blowfish+bcrypt-devel \
- rust-blowfish+default-devel \
- rust-pbkdf2-devel \
- rust-sha2-devel \
+ rust-blowfish0.9+bcrypt-devel \
+ rust-blowfish0.9+default-devel \
+ rust-pbkdf2_0.12-devel \
+ rust-sha2_0.10-devel \
  "

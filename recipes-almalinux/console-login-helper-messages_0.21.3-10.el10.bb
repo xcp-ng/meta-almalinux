@@ -54,7 +54,7 @@ RDEPENDS:console-login-helper-messages = " \
  "
 RDEPENDS:console-login-helper-messages-issuegen = " \
  NetworkManager \
- almalinux-release \
+ almalinux-kitten-release \
  bash \
  console-login-helper-messages \
  setup \

@@ -40,6 +40,6 @@ RDEPENDS:rust-schemars_derive0.8-devel = " \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  rust-serde_derive_internals+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
  "

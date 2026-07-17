@@ -53,6 +53,7 @@ SRC_URI[x86_64_v2_rust-syn1+full-devel.sha256sum] = "8f6cd243ab858db51378cbbf17e
 URI_x86_64_v2_rust-syn1+parsing-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-syn1+parsing-devel-1.0.109-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-syn1+parsing-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-syn1+parsing-devel}"
 SRC_URI[x86_64_v2_rust-syn1+parsing-devel.sha256sum] = "6b85b2cb086737ff6d194d22c98e1d037474ca37bccbefb420d414452602dd99"
+RPROVIDES:rust-syn1+parsing-devel:x86_64_v2 = "virtual/crate_syn/parsing__ge_1.0.0_with_crate_syn/parsing__lt_3.0.0~"
 
 URI_x86_64_v2_rust-syn1+printing-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-syn1+printing-devel-1.0.109-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-syn1+printing-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-syn1+printing-devel}"
@@ -61,6 +62,7 @@ SRC_URI[x86_64_v2_rust-syn1+printing-devel.sha256sum] = "5d18faa9d70f47b5c095f6c
 URI_x86_64_v2_rust-syn1+proc-macro-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-syn1+proc-macro-devel-1.0.109-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-syn1+proc-macro-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-syn1+proc-macro-devel}"
 SRC_URI[x86_64_v2_rust-syn1+proc-macro-devel.sha256sum] = "ce71dd675311e792e775393eb34ebdfbaf40c0a15e963a9a39331c0cc1cf5035"
+RPROVIDES:rust-syn1+proc-macro-devel:x86_64_v2 = "virtual/crate_syn/proc-macro__ge_1.0.0_with_crate_syn/proc-macro__lt_3.0.0~"
 
 URI_x86_64_v2_rust-syn1+quote-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-syn1+quote-devel-1.0.109-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-syn1+quote-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-syn1+quote-devel}"
@@ -81,6 +83,7 @@ SRC_URI[x86_64_v2_rust-syn1+visit-mut-devel.sha256sum] = "2ba108b688f86b6e3461ac
 URI_x86_64_v2_rust-syn1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-syn1-devel-1.0.109-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-syn1-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-syn1-devel}"
 SRC_URI[x86_64_v2_rust-syn1-devel.sha256sum] = "cfb30452058831c36e8ffb7e88c053878ac497225b0f6c2b985781ccee824fb2"
+RPROVIDES:rust-syn1-devel:x86_64_v2 = "virtual/crate_syn__ge_1.0.0_with_crate_syn__lt_3.0.0~"
 
 URI_aarch64_rust-syn1+clone-impls-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1+clone-impls-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1+clone-impls-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1+clone-impls-devel}"
@@ -109,6 +112,7 @@ SRC_URI[aarch64_rust-syn1+full-devel.sha256sum] = "9d341142493bb6fa0d2a797735e97
 URI_aarch64_rust-syn1+parsing-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1+parsing-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1+parsing-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1+parsing-devel}"
 SRC_URI[aarch64_rust-syn1+parsing-devel.sha256sum] = "5147577103430e8b74c7726d01999df0768b93dffd749634e4d7772d0e93e11d"
+RPROVIDES:rust-syn1+parsing-devel:aarch64 = "virtual/crate_syn/parsing__ge_1.0.0_with_crate_syn/parsing__lt_3.0.0~"
 
 URI_aarch64_rust-syn1+printing-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1+printing-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1+printing-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1+printing-devel}"
@@ -117,6 +121,7 @@ SRC_URI[aarch64_rust-syn1+printing-devel.sha256sum] = "f1849b762c8a1a10d992e3075
 URI_aarch64_rust-syn1+proc-macro-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1+proc-macro-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1+proc-macro-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1+proc-macro-devel}"
 SRC_URI[aarch64_rust-syn1+proc-macro-devel.sha256sum] = "c36a902d3e2bfd15734d3a617a14e18ee77ac7d482a1deb1f34cf98d3b9a8a81"
+RPROVIDES:rust-syn1+proc-macro-devel:aarch64 = "virtual/crate_syn/proc-macro__ge_1.0.0_with_crate_syn/proc-macro__lt_3.0.0~"
 
 URI_aarch64_rust-syn1+quote-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1+quote-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1+quote-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1+quote-devel}"
@@ -137,6 +142,7 @@ SRC_URI[aarch64_rust-syn1+visit-mut-devel.sha256sum] = "262b3b3ab35972d5a43ad03b
 URI_aarch64_rust-syn1-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-syn1-devel-1.0.109-4.el10_0.noarch.rpm;name=aarch64_rust-syn1-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-syn1-devel}"
 SRC_URI[aarch64_rust-syn1-devel.sha256sum] = "fe8b2d389f9684111e3b0a92b703a3dcbf6004b1832d6b2c88d659b2015ef86b"
+RPROVIDES:rust-syn1-devel:aarch64 = "virtual/crate_syn__ge_1.0.0_with_crate_syn__lt_3.0.0~"
 
 RDEPENDS:rust-syn1+clone-impls-devel = " \
  cargo \
@@ -206,3 +212,7 @@ RDEPENDS:rust-syn1-devel = " \
  rust-proc-macro2-devel \
  rust-unicode-ident+default-devel \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_syn/parsing__ge_1.0.0_with_crate_syn/parsing__lt_3.0.0~ rpm/virtual/crate_syn/proc-macro__ge_1.0.0_with_crate_syn/proc-macro__lt_3.0.0~ rpm/virtual/crate_syn__ge_1.0.0_with_crate_syn__lt_3.0.0~"
+
+PROVIDES:append:aarch64 = " rpm/virtual/crate_syn/parsing__ge_1.0.0_with_crate_syn/parsing__lt_3.0.0~ rpm/virtual/crate_syn/proc-macro__ge_1.0.0_with_crate_syn/proc-macro__lt_3.0.0~ rpm/virtual/crate_syn__ge_1.0.0_with_crate_syn__lt_3.0.0~"

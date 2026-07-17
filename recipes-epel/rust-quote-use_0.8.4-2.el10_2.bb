@@ -46,9 +46,9 @@ RDEPENDS:rust-quote-use+default-devel = " \
 RDEPENDS:rust-quote-use+syn-devel = " \
  cargo \
  rust-quote-use-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2-devel \
  "
 RDEPENDS:rust-quote-use-devel = " \
  cargo \

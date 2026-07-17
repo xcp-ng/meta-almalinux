@@ -91,13 +91,13 @@ RDEPENDS:rust-secret-service+crypto-openssl-devel = " \
  "
 RDEPENDS:rust-secret-service+crypto-rust-devel = " \
  cargo \
- rust-aes+default-devel \
- rust-cbc+alloc-devel \
- rust-cbc+block-padding-devel \
- rust-cbc+default-devel \
- rust-hkdf+default-devel \
+ rust-aes0.8+default-devel \
+ rust-cbc0.1+alloc-devel \
+ rust-cbc0.1+block-padding-devel \
+ rust-cbc0.1+default-devel \
+ rust-hkdf0.12+default-devel \
  rust-secret-service-devel \
- rust-sha2+default-devel \
+ rust-sha2_0.10+default-devel \
  "
 RDEPENDS:rust-secret-service+default-devel = " \
  cargo \

@@ -9,15 +9,15 @@ PACKAGES = " \
  python3-jsonschema \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/python-jsonschema-4.19.1-7.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-jsonschema-4.19.1-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "485ee99ba09e39cc5da6107b97659be7e4f4f34a45a1386fbbaaddabaa2767dc"
 
-URI_x86_64_v2_python3-jsonschema = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm;name=x86_64_v2_python3-jsonschema;unpack=0"
+URI_x86_64_v2_python3-jsonschema = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm;name=x86_64_v2_python3-jsonschema;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-jsonschema}"
 SRC_URI[x86_64_v2_python3-jsonschema.sha256sum] = "9f2aad5b31e2d8fb8eb541d41777c745ade73a766a75a89beab6ad791da0597b"
 
-URI_aarch64_python3-jsonschema = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm;name=aarch64_python3-jsonschema;unpack=0"
+URI_aarch64_python3-jsonschema = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm;name=aarch64_python3-jsonschema;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-jsonschema}"
 SRC_URI[aarch64_python3-jsonschema.sha256sum] = "9f2aad5b31e2d8fb8eb541d41777c745ade73a766a75a89beab6ad791da0597b"
 

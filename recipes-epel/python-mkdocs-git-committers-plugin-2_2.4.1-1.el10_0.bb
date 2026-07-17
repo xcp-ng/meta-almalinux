@@ -13,9 +13,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-git-committers-plugin-2-2.
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "55a32bb09c447b4de36f949334932752009f0a7f961f0a42ef17a4841236fa91"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - python3-mkdocs-git-committers-plugin-2: python3.12dist(gitpython)
-
 URI_x86_64_v2_python3-mkdocs-git-committers-plugin-2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-git-committers-plugin-2-2.4.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-git-committers-plugin-2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-git-committers-plugin-2}"
 SRC_URI[x86_64_v2_python3-mkdocs-git-committers-plugin-2.sha256sum] = "07e3ffc88e928a1cb15b9ef915703b15da6e6ebfdd783fcbd427eafa0f8b7a75"
@@ -24,14 +21,9 @@ URI_aarch64_python3-mkdocs-git-committers-plugin-2 = "${EPEL_MIRROR}/aarch64/Pac
 SRC_URI:append = " ${URI_aarch64_python3-mkdocs-git-committers-plugin-2}"
 SRC_URI[aarch64_python3-mkdocs-git-committers-plugin-2.sha256sum] = "7005ef49f50496dd36d18b95d4a5e84a2050c2d75971eb6a9f13ef710fe3f96a"
 
-RDEPENDS:python3-mkdocs-git-committers-plugin-2:x86_64_v2 = " \
- mkdocs \
- python3 \
- python3-requests \
-"
-RDEPENDS:python3-mkdocs-git-committers-plugin-2:aarch64 = " \
+RDEPENDS:python3-mkdocs-git-committers-plugin-2 = " \
  mkdocs \
  python3 \
  python3-GitPython \
  python3-requests \
-"
+ "

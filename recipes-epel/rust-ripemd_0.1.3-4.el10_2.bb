@@ -55,15 +55,15 @@ RDEPENDS:rust-ripemd+default-devel = " \
  "
 RDEPENDS:rust-ripemd+oid-devel = " \
  cargo \
- rust-digest+oid-devel \
+ rust-digest0.10+oid-devel \
  rust-ripemd-devel \
  "
 RDEPENDS:rust-ripemd+std-devel = " \
  cargo \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  rust-ripemd-devel \
  "
 RDEPENDS:rust-ripemd-devel = " \
  cargo \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  "

@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "efd612cbce27c912905b15bd21f917655d546de51ce1b0f2a21274
 
 URI_x86_64_v2_dnsjit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dnsjit-1.5.1-2.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dnsjit;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dnsjit}"
-SRC_URI[x86_64_v2_dnsjit.sha256sum] = "77928e7388628c5c433229c89e66983a581f19d64b4e4503f4e6dad874275b0e"
+SRC_URI[x86_64_v2_dnsjit.sha256sum] = "32131113eb09f2107c76cc2ea8fa26dd3bb84c5f1c50d023d34783f6c130d509"
 
 URI_x86_64_v2_dnsjit-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dnsjit-devel-1.5.1-2.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dnsjit-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dnsjit-devel}"
-SRC_URI[x86_64_v2_dnsjit-devel.sha256sum] = "e3f6b60166364f20ac1c4a4c542342f67d62ab3d0160647dd0076b0720afbe63"
+SRC_URI[x86_64_v2_dnsjit-devel.sha256sum] = "0ce59316c349e6a444e2921ae8b410353ec3bf9fbff984a6eebc64a919f05638"
 
 URI_x86_64_v2_dnsjit-examples = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dnsjit-examples-1.5.1-2.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_dnsjit-examples;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dnsjit-examples}"
-SRC_URI[x86_64_v2_dnsjit-examples.sha256sum] = "ef7973f9001fea814aabe4e2940de9581378aaab4c365dc03b35c8dde348af51"
+SRC_URI[x86_64_v2_dnsjit-examples.sha256sum] = "89fa807f675e5158979547b49d4b91e958ae9bea6c8eaa2b0c68f97ad5b89809"
 
 URI_aarch64_dnsjit = "${EPEL_MIRROR}/aarch64/Packages/d/dnsjit-1.5.1-2.el10_2.aarch64.rpm;name=aarch64_dnsjit;unpack=0"
 SRC_URI:append = " ${URI_aarch64_dnsjit}"

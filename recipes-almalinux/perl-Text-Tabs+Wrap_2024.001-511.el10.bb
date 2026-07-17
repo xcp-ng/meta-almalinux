@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-Text-Tabs+Wrap \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "ff44386dc429d84dffd7606972b960cb100808357e9b5e18df2ff14d2e3dacfd"
 
-URI_x86_64_v2_perl-Text-Tabs+Wrap = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.noarch.rpm;name=x86_64_v2_perl-Text-Tabs+Wrap;unpack=0"
+URI_x86_64_v2_perl-Text-Tabs+Wrap = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.noarch.rpm;name=x86_64_v2_perl-Text-Tabs+Wrap;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Tabs+Wrap}"
 SRC_URI[x86_64_v2_perl-Text-Tabs+Wrap.sha256sum] = "f65456625bbdb4d7e02f8795ff00f2026f716382178d6a768f76dec7e6e638ca"
 
-URI_aarch64_perl-Text-Tabs+Wrap = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.noarch.rpm;name=aarch64_perl-Text-Tabs+Wrap;unpack=0"
+URI_aarch64_perl-Text-Tabs+Wrap = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.noarch.rpm;name=aarch64_perl-Text-Tabs+Wrap;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Text-Tabs+Wrap}"
 SRC_URI[aarch64_perl-Text-Tabs+Wrap.sha256sum] = "f65456625bbdb4d7e02f8795ff00f2026f716382178d6a768f76dec7e6e638ca"
 

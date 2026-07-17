@@ -54,8 +54,8 @@ RDEPENDS:rust-html5ever0.29-devel = " \
  rust-markup5ever0.14+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+fold-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+fold-devel \
+ rust-syn2+full-devel \
  "

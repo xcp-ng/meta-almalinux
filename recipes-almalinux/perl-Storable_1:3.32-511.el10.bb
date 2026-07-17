@@ -10,15 +10,15 @@ PACKAGES = " \
  perl-Storable \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Storable-3.32-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Storable-3.32-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "19896f2c9bbf58e1d221b8f03924229caca42bc5d086af9f3ef8c8294429d92c"
 
-URI_x86_64_v2_perl-Storable = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Storable-3.32-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Storable;unpack=0"
+URI_x86_64_v2_perl-Storable = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Storable-3.32-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Storable;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Storable}"
 SRC_URI[x86_64_v2_perl-Storable.sha256sum] = "5e98baa52f61c2f579008cb5ef0a767a8fee30d1f45d3a9f55d6c4c7d817c4b5"
 
-URI_aarch64_perl-Storable = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Storable-3.32-511.el10.aarch64.rpm;name=aarch64_perl-Storable;unpack=0"
+URI_aarch64_perl-Storable = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Storable-3.32-511.el10.aarch64.rpm;name=aarch64_perl-Storable;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Storable}"
 SRC_URI[aarch64_perl-Storable.sha256sum] = "d048b53c1d52a33af2142e1a57c78ba05d8c799324fbe29b33723663613b975b"
 

@@ -65,7 +65,7 @@ RDEPENDS:rust-derive_builder_macro+lib_has_std-devel = " \
 RDEPENDS:rust-derive_builder_macro-devel = " \
  cargo \
  rust-derive_builder_core+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
  "

@@ -25,5 +25,5 @@ RDEPENDS:sblim-cmpi-base = " \
  bash \
  glibc \
  sblim-indication_helper \
- sblim-sfcb \
+ virtual/cim-server \
  "

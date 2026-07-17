@@ -113,9 +113,9 @@ SRC_URI[aarch64_rust-sec1-devel.sha256sum] = "d11feed3734fcf7c87f692a22c54f0b7e1
 
 RDEPENDS:rust-sec1+alloc-devel = " \
  cargo \
- rust-der+alloc-devel \
- rust-der+default-devel \
- rust-der+oid-devel \
+ rust-der0.7+alloc-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
  rust-pkcs8+alloc-devel \
  rust-pkcs8-devel \
  rust-sec1-devel \
@@ -130,16 +130,16 @@ RDEPENDS:rust-sec1+default-devel = " \
  "
 RDEPENDS:rust-sec1+der-devel = " \
  cargo \
- rust-der+default-devel \
- rust-der+oid-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
  rust-sec1+zeroize-devel \
  rust-sec1-devel \
  "
 RDEPENDS:rust-sec1+pem-devel = " \
  cargo \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-der+pem-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-der0.7+pem-devel \
  rust-pkcs8+pem-devel \
  rust-pkcs8-devel \
  rust-sec1+alloc-devel \
@@ -152,21 +152,21 @@ RDEPENDS:rust-sec1+pkcs8-devel = " \
  "
 RDEPENDS:rust-sec1+point-devel = " \
  cargo \
- rust-base16ct-devel \
+ rust-base16ct0.2-devel \
  rust-generic-array-devel \
  rust-sec1-devel \
  "
 RDEPENDS:rust-sec1+serde-devel = " \
  cargo \
  rust-sec1-devel \
- rust-serdect+alloc-devel \
- rust-serdect-devel \
+ rust-serdect0.2+alloc-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-sec1+std-devel = " \
  cargo \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-der+std-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-der0.7+std-devel \
  rust-sec1+alloc-devel \
  rust-sec1-devel \
  "
@@ -177,9 +177,9 @@ RDEPENDS:rust-sec1+subtle-devel = " \
  "
 RDEPENDS:rust-sec1+zeroize-devel = " \
  cargo \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-der+zeroize-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-der0.7+zeroize-devel \
  rust-sec1-devel \
  rust-zeroize-devel \
  "

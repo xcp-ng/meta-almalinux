@@ -55,5 +55,5 @@ RDEPENDS:rust-tree-sitter-generate-devel = " \
  rust-smallbitvec+default-devel \
  rust-thiserror+default-devel \
  rust-topological-sort+default-devel \
- rust-tree-sitter+default-devel \
+ rust-tree-sitter0.25+default-devel \
  "

@@ -68,7 +68,7 @@ SRC_URI[aarch64_rust-bcrypt-devel.sha256sum] = "89165cf64768118065302a64011bb90a
 
 RDEPENDS:rust-bcrypt+alloc-devel = " \
  cargo \
- rust-base64+alloc-devel \
+ rust-base64_0.22+alloc-devel \
  rust-bcrypt+getrandom-devel \
  rust-bcrypt-devel \
  "
@@ -85,7 +85,7 @@ RDEPENDS:rust-bcrypt+getrandom-devel = " \
  "
 RDEPENDS:rust-bcrypt+std-devel = " \
  cargo \
- rust-base64+std-devel \
+ rust-base64_0.22+std-devel \
  rust-bcrypt-devel \
  rust-getrandom0.3+std-devel \
  rust-getrandom0.3-devel \
@@ -97,8 +97,8 @@ RDEPENDS:rust-bcrypt+zeroize-devel = " \
  "
 RDEPENDS:rust-bcrypt-devel = " \
  cargo \
- rust-base64-devel \
- rust-blowfish+bcrypt-devel \
- rust-blowfish+default-devel \
+ rust-base64_0.22-devel \
+ rust-blowfish0.9+bcrypt-devel \
+ rust-blowfish0.9+default-devel \
  rust-subtle-devel \
  "

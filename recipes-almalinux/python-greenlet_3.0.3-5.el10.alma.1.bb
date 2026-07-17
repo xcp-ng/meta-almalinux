@@ -12,23 +12,23 @@ PACKAGES = " \
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-greenlet-3.0.3-5.el10.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "9544c1f69a604c77acb718aec4932ecc301ed3deb64de0e5502a7b39bf469651"
+SRC_URI[src.sha256sum] = "44bf16d8a703e9bfb3d08b63922b3ea43ba7e490e6dddb9bc89c9980d9623993"
 
 URI_x86_64_v2_python3-greenlet = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-greenlet-3.0.3-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_python3-greenlet;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-greenlet}"
-SRC_URI[x86_64_v2_python3-greenlet.sha256sum] = "7ac222e0871d433138b9277665f19bea387545a2be8e5dbd63e20b198446ffd9"
+SRC_URI[x86_64_v2_python3-greenlet.sha256sum] = "952fadfe958b793dc2feece1409a248a0d359b33de5cdf17cddb95438edf0232"
 
 URI_x86_64_v2_python3-greenlet-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-greenlet-devel-3.0.3-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_python3-greenlet-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-greenlet-devel}"
-SRC_URI[x86_64_v2_python3-greenlet-devel.sha256sum] = "d56ca613b0ecc4e35d224e075233f02a418541eda3ac185aeb694f62dd47e999"
+SRC_URI[x86_64_v2_python3-greenlet-devel.sha256sum] = "c5fd9004e3ad84c540771f91427e47817781ab384c74eb41dfa093275347d096"
 
 URI_aarch64_python3-greenlet = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-greenlet-3.0.3-5.el10.alma.1.aarch64.rpm;name=aarch64_python3-greenlet;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-greenlet}"
-SRC_URI[aarch64_python3-greenlet.sha256sum] = "20c71648d4a18b8cfc9d90336be1083bce2819b4b22569d9ff6bd401cfada351"
+SRC_URI[aarch64_python3-greenlet.sha256sum] = "7ece88f7c4e90577275cdf8d442a108e801bcf061f91dbf514d923a76534cfa4"
 
 URI_aarch64_python3-greenlet-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-greenlet-devel-3.0.3-5.el10.alma.1.aarch64.rpm;name=aarch64_python3-greenlet-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-greenlet-devel}"
-SRC_URI[aarch64_python3-greenlet-devel.sha256sum] = "445f5616702d93cc910d4813c1e8cca14287e351a37f231bd3de2e8a2dd985e6"
+SRC_URI[aarch64_python3-greenlet-devel.sha256sum] = "b83f4701abce3fc79fcdaa3a777a0fa28a3fc9c48422538fb2e2d03fc539f9d4"
 
 RDEPENDS:python3-greenlet = " \
  glibc \

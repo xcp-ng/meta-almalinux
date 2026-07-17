@@ -22,6 +22,7 @@ SRC_URI[src.sha256sum] = "8f26fb1489e27a91e3843c9479cbc67bad282a0ac6d0c64853c691
 URI_x86_64_v2_rust-toml0.8+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.8+default-devel-0.8.23-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.8+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml0.8+default-devel}"
 SRC_URI[x86_64_v2_rust-toml0.8+default-devel.sha256sum] = "d1a6319743af88848a46f91173b444b760053d34b0898fef2b4972547de25735"
+RPROVIDES:rust-toml0.8+default-devel:x86_64_v2 = "virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 URI_x86_64_v2_rust-toml0.8+display-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.8+display-devel-0.8.23-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.8+display-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml0.8+display-devel}"
@@ -50,6 +51,7 @@ SRC_URI[x86_64_v2_rust-toml0.8-devel.sha256sum] = "6f3a940629603a27c7105fdee0c2a
 URI_aarch64_rust-toml0.8+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.8+default-devel-0.8.23-1.el10_1.noarch.rpm;name=aarch64_rust-toml0.8+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-toml0.8+default-devel}"
 SRC_URI[aarch64_rust-toml0.8+default-devel.sha256sum] = "813a925e669239a11a1d794fa07df8eafd6ee8d1b7a88479e6d557139d99f843"
+RPROVIDES:rust-toml0.8+default-devel:aarch64 = "virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 URI_aarch64_rust-toml0.8+display-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.8+display-devel-0.8.23-1.el10_1.noarch.rpm;name=aarch64_rust-toml0.8+display-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-toml0.8+display-devel}"
@@ -121,3 +123,7 @@ RDEPENDS:rust-toml0.8-devel = " \
  rust-toml_datetime0.6+default-devel \
  rust-toml_datetime0.6+serde-devel \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
+
+PROVIDES:append:aarch64 = " rpm/virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"

@@ -14,6 +14,9 @@ URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gstreamer1-1.26.7-5.
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "b37fcc6506c3e3479f9dece292df7ebd4e18fcf5cdf0e7e0518939396f10654a"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - gstreamer1: libcap.so.2()(64bit)
+
 URI_x86_64_v2_gstreamer1 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gstreamer1-1.26.7-5.el10.x86_64_v2.rpm;name=x86_64_v2_gstreamer1;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gstreamer1}"
 SRC_URI[x86_64_v2_gstreamer1.sha256sum] = "552782cf91b5c815e0c05e897638927f825299f0da8ed874735bc804b4daaedd"
@@ -30,14 +33,21 @@ URI_aarch64_gstreamer1-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Package
 SRC_URI:append = " ${URI_aarch64_gstreamer1-devel}"
 SRC_URI[aarch64_gstreamer1-devel.sha256sum] = "775af7d30e7f76a6cd7e3b845a7ea3f83f2f5df1e483a633d829791de3f78d10"
 
-RDEPENDS:gstreamer1 = " \
+RDEPENDS:gstreamer1:x86_64_v2 = " \
  bash \
  glib2 \
  glibc \
  libcap \
  libgcc \
  python3 \
- "
+"
+RDEPENDS:gstreamer1:aarch64 = " \
+ bash \
+ glib2 \
+ glibc \
+ libgcc \
+ python3 \
+"
 RDEPENDS:gstreamer1-devel = " \
  check-devel \
  glib2-devel \

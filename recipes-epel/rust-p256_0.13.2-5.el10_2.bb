@@ -306,12 +306,12 @@ RDEPENDS:rust-p256+serde-devel = " \
 RDEPENDS:rust-p256+serdect-devel = " \
  cargo \
  rust-p256-devel \
- rust-serdect-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-p256+sha2-devel = " \
  cargo \
  rust-p256-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-p256+sha256-devel = " \
  cargo \

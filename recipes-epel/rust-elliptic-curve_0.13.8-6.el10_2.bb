@@ -185,12 +185,12 @@ SRC_URI[aarch64_rust-elliptic-curve-devel.sha256sum] = "fd171ed3eeb0200efe0cee1b
 
 RDEPENDS:rust-elliptic-curve+alloc-devel = " \
  cargo \
- rust-base16ct+alloc-devel \
+ rust-base16ct0.2+alloc-devel \
  rust-elliptic-curve-devel \
- rust-ff+alloc-devel \
- rust-ff-devel \
- rust-group+alloc-devel \
- rust-group-devel \
+ rust-ff0.13+alloc-devel \
+ rust-ff0.13-devel \
+ rust-group0.13+alloc-devel \
+ rust-group0.13-devel \
  rust-pkcs8+alloc-devel \
  rust-pkcs8-devel \
  rust-sec1+alloc-devel \
@@ -208,8 +208,8 @@ RDEPENDS:rust-elliptic-curve+bits-devel = " \
  cargo \
  rust-elliptic-curve+arithmetic-devel \
  rust-elliptic-curve-devel \
- rust-ff+bits-devel \
- rust-ff-devel \
+ rust-ff0.13+bits-devel \
+ rust-ff0.13-devel \
  rust-tap-devel \
  "
 RDEPENDS:rust-elliptic-curve+default-devel = " \
@@ -227,7 +227,7 @@ RDEPENDS:rust-elliptic-curve+dev-devel = " \
  "
 RDEPENDS:rust-elliptic-curve+digest-devel = " \
  cargo \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  rust-elliptic-curve-devel \
  "
 RDEPENDS:rust-elliptic-curve+ecdh-devel = " \
@@ -235,18 +235,18 @@ RDEPENDS:rust-elliptic-curve+ecdh-devel = " \
  rust-elliptic-curve+arithmetic-devel \
  rust-elliptic-curve+digest-devel \
  rust-elliptic-curve-devel \
- rust-hkdf-devel \
+ rust-hkdf0.12-devel \
  "
 RDEPENDS:rust-elliptic-curve+ff-devel = " \
  cargo \
  rust-elliptic-curve-devel \
- rust-ff-devel \
+ rust-ff0.13-devel \
  "
 RDEPENDS:rust-elliptic-curve+group-devel = " \
  cargo \
  rust-elliptic-curve+ff-devel \
  rust-elliptic-curve-devel \
- rust-group-devel \
+ rust-group0.13-devel \
  "
 RDEPENDS:rust-elliptic-curve+hash2curve-devel = " \
  cargo \
@@ -275,8 +275,8 @@ RDEPENDS:rust-elliptic-curve+pem-devel = " \
  rust-elliptic-curve+arithmetic-devel \
  rust-elliptic-curve+pkcs8-devel \
  rust-elliptic-curve-devel \
- rust-pem-rfc7468+alloc-devel \
- rust-pem-rfc7468+default-devel \
+ rust-pem-rfc7468_0.7+alloc-devel \
+ rust-pem-rfc7468_0.7+default-devel \
  rust-sec1+default-devel \
  rust-sec1+pem-devel \
  rust-sec1+subtle-devel \
@@ -304,8 +304,8 @@ RDEPENDS:rust-elliptic-curve+serde-devel = " \
  rust-sec1+serde-devel \
  rust-sec1+subtle-devel \
  rust-sec1+zeroize-devel \
- rust-serdect+alloc-devel \
- rust-serdect-devel \
+ rust-serdect0.2+alloc-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-elliptic-curve+std-devel = " \
  cargo \
@@ -327,11 +327,11 @@ RDEPENDS:rust-elliptic-curve+voprf-devel = " \
 RDEPENDS:rust-elliptic-curve-devel = " \
  cargo \
  rust \
- rust-base16ct+default-devel \
- rust-crypto-bigint+generic-array-devel \
- rust-crypto-bigint+rand_core-devel \
- rust-crypto-bigint+zeroize-devel \
- rust-crypto-bigint-devel \
+ rust-base16ct0.2+default-devel \
+ rust-crypto-bigint0.5+generic-array-devel \
+ rust-crypto-bigint0.5+rand_core-devel \
+ rust-crypto-bigint0.5+zeroize-devel \
+ rust-crypto-bigint0.5-devel \
  rust-generic-array+zeroize-devel \
  rust-generic-array-devel \
  rust-rand_core0.6-devel \

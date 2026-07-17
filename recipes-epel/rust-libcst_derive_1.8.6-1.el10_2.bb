@@ -37,5 +37,5 @@ RDEPENDS:rust-libcst_derive+default-devel = " \
 RDEPENDS:rust-libcst_derive-devel = " \
  cargo \
  rust-quote+default-devel \
- rust-syn+default-devel \
+ rust-syn2+default-devel \
  "

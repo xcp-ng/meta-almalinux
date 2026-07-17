@@ -11,15 +11,15 @@ PACKAGES = " \
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libvirt-dbus-1.4.1-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "f3f484ba86e432775b2feb52a4e6268ed24ef464c08ef507bc46f08c373aa195"
+SRC_URI[src.sha256sum] = "449818697610bc6762e87b8f0cc673bd6d73480bb59e3c1597c0022357c0025b"
 
 URI_x86_64_v2_libvirt-dbus = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libvirt-dbus-1.4.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_libvirt-dbus;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libvirt-dbus}"
-SRC_URI[x86_64_v2_libvirt-dbus.sha256sum] = "e6f6821e8f4c7a016c8d5fcaf54e7a4205af7af71983c3e3e62c8cd4500088a6"
+SRC_URI[x86_64_v2_libvirt-dbus.sha256sum] = "e6faea0ddcf975c30acf059ddbe6a83ad0d07e6e8f7688551ea7b3e4275b3125"
 
 URI_aarch64_libvirt-dbus = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libvirt-dbus-1.4.1-6.el10.aarch64.rpm;name=aarch64_libvirt-dbus;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libvirt-dbus}"
-SRC_URI[aarch64_libvirt-dbus.sha256sum] = "61d3d4fcb5fb2c787850effd65eb51ba1d7d789d27abcf314fa2878bd6253e08"
+SRC_URI[aarch64_libvirt-dbus.sha256sum] = "accf5d4987a64ec268d9abd9e7e683fd0b49d2d437bb0442e69171b4dc447c28"
 
 RDEPENDS:libvirt-dbus = " \
  bash \

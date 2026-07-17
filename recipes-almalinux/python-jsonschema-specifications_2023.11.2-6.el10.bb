@@ -9,15 +9,15 @@ PACKAGES = " \
  python3-jsonschema-specifications \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/python-jsonschema-specifications-2023.11.2-6.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-jsonschema-specifications-2023.11.2-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "9bbb02bcbf86fc4bcd502823014f52d070a894ca4b322f29f8ae8448f5378e2e"
 
-URI_x86_64_v2_python3-jsonschema-specifications = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/python3-jsonschema-specifications-2023.11.2-6.el10.noarch.rpm;name=x86_64_v2_python3-jsonschema-specifications;unpack=0"
+URI_x86_64_v2_python3-jsonschema-specifications = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-jsonschema-specifications-2023.11.2-6.el10.noarch.rpm;name=x86_64_v2_python3-jsonschema-specifications;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-jsonschema-specifications}"
 SRC_URI[x86_64_v2_python3-jsonschema-specifications.sha256sum] = "07d8bb385366ccf2260ae62f95d0e97e9f58cf8afc423ebaf08142685ba15d0e"
 
-URI_aarch64_python3-jsonschema-specifications = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/python3-jsonschema-specifications-2023.11.2-6.el10.noarch.rpm;name=aarch64_python3-jsonschema-specifications;unpack=0"
+URI_aarch64_python3-jsonschema-specifications = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-jsonschema-specifications-2023.11.2-6.el10.noarch.rpm;name=aarch64_python3-jsonschema-specifications;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-jsonschema-specifications}"
 SRC_URI[aarch64_python3-jsonschema-specifications.sha256sum] = "07d8bb385366ccf2260ae62f95d0e97e9f58cf8afc423ebaf08142685ba15d0e"
 

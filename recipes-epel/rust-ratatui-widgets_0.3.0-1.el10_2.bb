@@ -139,15 +139,15 @@ RDEPENDS:rust-ratatui-widgets-devel = " \
  cargo \
  rust \
  rust-bitflags+default-devel \
- rust-hashbrown+default-devel \
+ rust-hashbrown0.16+default-devel \
  rust-indoc+default-devel \
  rust-instability+default-devel \
- rust-itertools+use_alloc-devel \
- rust-itertools-devel \
+ rust-itertools0.14+use_alloc-devel \
+ rust-itertools0.14-devel \
  rust-line-clipping+default-devel \
  rust-ratatui-core+default-devel \
- rust-strum+derive-devel \
- rust-strum-devel \
+ rust-strum0.27+derive-devel \
+ rust-strum0.27-devel \
  rust-unicode-segmentation+default-devel \
  rust-unicode-width+default-devel \
  "

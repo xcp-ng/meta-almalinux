@@ -395,8 +395,8 @@ RDEPENDS:rust-reqwest0.12+h2-devel = " \
  "
 RDEPENDS:rust-reqwest0.12+hickory-dns-devel = " \
  cargo \
- rust-hickory-resolver+default-devel \
- rust-hickory-resolver+tokio-devel \
+ rust-hickory-resolver0.25+default-devel \
+ rust-hickory-resolver0.25+tokio-devel \
  rust-once_cell+default-devel \
  rust-reqwest0.12-devel \
  "
@@ -518,7 +518,7 @@ RDEPENDS:rust-reqwest0.12+zstd-devel = " \
 RDEPENDS:rust-reqwest0.12-devel = " \
  cargo \
  rust \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-bytes+default-devel \
  rust-futures-core-devel \
  rust-http+default-devel \

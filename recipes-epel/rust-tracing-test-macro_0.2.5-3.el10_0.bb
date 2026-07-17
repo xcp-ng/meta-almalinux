@@ -50,6 +50,6 @@ RDEPENDS:rust-tracing-test-macro+no-env-filter-devel = " \
 RDEPENDS:rust-tracing-test-macro-devel = " \
  cargo \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+full-devel \
  "

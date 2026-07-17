@@ -28,6 +28,6 @@ RDEPENDS:lagrange = " \
  libgcc \
  libwebp \
  mpg123-libs \
- sdl2-compat \
  the_foundation \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "

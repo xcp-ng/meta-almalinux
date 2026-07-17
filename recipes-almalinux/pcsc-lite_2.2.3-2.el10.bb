@@ -19,7 +19,7 @@ URI_x86_64_v2_pcsc-lite = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/pcsc
 SRC_URI:append = " ${URI_x86_64_v2_pcsc-lite}"
 SRC_URI[x86_64_v2_pcsc-lite.sha256sum] = "8d77fee332b223fe7fc43093104fd14023697083a2741e237c95ead7e2b8ced2"
 
-URI_x86_64_v2_pcsc-lite-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pcsc-lite-devel-2.2.3-2.el10.x86_64_v2.rpm;name=x86_64_v2_pcsc-lite-devel;unpack=0"
+URI_x86_64_v2_pcsc-lite-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/pcsc-lite-devel-2.2.3-2.el10.x86_64_v2.rpm;name=x86_64_v2_pcsc-lite-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pcsc-lite-devel}"
 SRC_URI[x86_64_v2_pcsc-lite-devel.sha256sum] = "ca997f50f4c5008af0939b2911485e1ee02d83e617b7329695fd02f2284f6f1f"
 
@@ -31,7 +31,7 @@ URI_aarch64_pcsc-lite = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/pcsc-lit
 SRC_URI:append = " ${URI_aarch64_pcsc-lite}"
 SRC_URI[aarch64_pcsc-lite.sha256sum] = "44200858dbde954d7be1126b107ecb9f28c1122e2c4e54b041ba49c0077384df"
 
-URI_aarch64_pcsc-lite-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pcsc-lite-devel-2.2.3-2.el10.aarch64.rpm;name=aarch64_pcsc-lite-devel;unpack=0"
+URI_aarch64_pcsc-lite-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/pcsc-lite-devel-2.2.3-2.el10.aarch64.rpm;name=aarch64_pcsc-lite-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pcsc-lite-devel}"
 SRC_URI[aarch64_pcsc-lite-devel.sha256sum] = "f0cb8920f6c3eef409059ec55ba0d3488a4311cd4f1b3c1ddd762b68afa802cc"
 

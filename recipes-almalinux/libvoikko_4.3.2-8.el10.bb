@@ -5,15 +5,11 @@ inherit dnf-bridge
 PN = "libvoikko"
 PV = "4.3.2"
 PR = "8.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  libvoikko \
  libvoikko-devel \
  python3-libvoikko \
-"
-PACKAGES:aarch64 = " \
- libvoikko \
- libvoikko-devel \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libvoikko-4.3.2-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -38,6 +34,10 @@ SRC_URI[aarch64_libvoikko.sha256sum] = "8f0b0856cd9f9850e852006080b733fbba4b02b1
 URI_aarch64_libvoikko-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libvoikko-devel-4.3.2-8.el10.aarch64.rpm;name=aarch64_libvoikko-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libvoikko-devel}"
 SRC_URI[aarch64_libvoikko-devel.sha256sum] = "517b779939d71c4401b3f52ec513c83b682241ea0f9876e87e1fa6704f7da524"
+
+URI_aarch64_python3-libvoikko = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-libvoikko-4.3.2-8.el10.noarch.rpm;name=aarch64_python3-libvoikko;unpack=0"
+SRC_URI:append = " ${URI_aarch64_python3-libvoikko}"
+SRC_URI[aarch64_python3-libvoikko.sha256sum] = "dba701b6ad5c757f664c2edef868772ea939bcb1e55b97a3b06e75c77825277c"
 
 RDEPENDS:libvoikko = " \
  glibc \

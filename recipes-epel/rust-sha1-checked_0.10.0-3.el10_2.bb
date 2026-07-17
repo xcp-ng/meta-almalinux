@@ -65,15 +65,15 @@ RDEPENDS:rust-sha1-checked+default-devel = " \
  "
 RDEPENDS:rust-sha1-checked+oid-devel = " \
  cargo \
- rust-digest+oid-devel \
- rust-sha1+oid-devel \
+ rust-digest0.10+oid-devel \
  rust-sha1-checked-devel \
+ rust-sha1_0.10+oid-devel \
  "
 RDEPENDS:rust-sha1-checked+std-devel = " \
  cargo \
- rust-digest+std-devel \
- rust-sha1+std-devel \
+ rust-digest0.10+std-devel \
  rust-sha1-checked-devel \
+ rust-sha1_0.10+std-devel \
  "
 RDEPENDS:rust-sha1-checked+zeroize-devel = " \
  cargo \
@@ -83,7 +83,7 @@ RDEPENDS:rust-sha1-checked+zeroize-devel = " \
 RDEPENDS:rust-sha1-checked-devel = " \
  cargo \
  rust \
- rust-digest+default-devel \
- rust-sha1+compress-devel \
- rust-sha1-devel \
+ rust-digest0.10+default-devel \
+ rust-sha1_0.10+compress-devel \
+ rust-sha1_0.10-devel \
  "

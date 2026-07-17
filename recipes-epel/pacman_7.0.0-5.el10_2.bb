@@ -56,11 +56,11 @@ RDEPENDS:libalpm = " \
  virtual/libcurl.so.4___64bit_ \
  "
 RDEPENDS:libalpm-devel = " \
- gpgme-devel \
  libalpm \
  libarchive-devel \
  libcurl-devel \
  openssl-devel \
+ virtual/pkgconfig_gpgme__ge_1.12.0 \
  "
 RDEPENDS:pacman = " \
  bash \

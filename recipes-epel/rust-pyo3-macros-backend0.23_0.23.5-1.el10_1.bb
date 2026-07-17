@@ -55,11 +55,11 @@ RDEPENDS:rust-pyo3-macros-backend0.23-devel = " \
  rust-pyo3-build-config0.23+default-devel \
  rust-pyo3-build-config0.23+resolve-config-devel \
  rust-quote-devel \
- rust-syn+clone-impls-devel \
- rust-syn+derive-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn-devel \
+ rust-syn2+clone-impls-devel \
+ rust-syn2+derive-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2-devel \
  "

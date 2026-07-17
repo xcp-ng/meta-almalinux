@@ -14,6 +14,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-readme-renderer-43.0-1.el10_1.src
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "75218d09bc9ddc32a1bd5099857a656bf648a70b8599e0de788f6a520fa06cd7"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - python3-readme-renderer: python3.12dist(nh3) >= 0.2.14
+
 URI_x86_64_v2_python3-readme-renderer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-readme-renderer-43.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-readme-renderer;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-readme-renderer}"
 SRC_URI[x86_64_v2_python3-readme-renderer.sha256sum] = "35b65bff1dc9dc96152bb5376c4f3694d736807b667f78b5d91aaf1575d99548"
@@ -30,12 +33,17 @@ URI_aarch64_python3-readme-renderer+md = "${EPEL_MIRROR}/aarch64/Packages/p/pyth
 SRC_URI:append = " ${URI_aarch64_python3-readme-renderer+md}"
 SRC_URI[aarch64_python3-readme-renderer+md.sha256sum] = "f99bd65cfe0550950c0273d5c706fda1b949f8121edd5b554b484852bd221d69"
 
-RDEPENDS:python3-readme-renderer = " \
+RDEPENDS:python3-readme-renderer:x86_64_v2 = " \
+ python3 \
+ python3-docutils \
+ python3-pygments \
+"
+RDEPENDS:python3-readme-renderer:aarch64 = " \
  python3 \
  python3-docutils \
  python3-nh3 \
  python3-pygments \
- "
+"
 RDEPENDS:python3-readme-renderer+md = " \
  python3 \
  python3-cmarkgfm \

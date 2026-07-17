@@ -113,8 +113,8 @@ SRC_URI[aarch64_rust-aes-gcm-devel.sha256sum] = "48a824330e0487e1fd3f4e521ef1cce
 
 RDEPENDS:rust-aes-gcm+aes-devel = " \
  cargo \
- rust-aes+default-devel \
  rust-aes-gcm-devel \
+ rust-aes0.8+default-devel \
  "
 RDEPENDS:rust-aes-gcm+alloc-devel = " \
  cargo \

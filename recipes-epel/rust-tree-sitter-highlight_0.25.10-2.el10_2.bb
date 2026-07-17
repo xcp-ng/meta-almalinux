@@ -40,5 +40,5 @@ RDEPENDS:rust-tree-sitter-highlight-devel = " \
  rust-regex+default-devel \
  rust-streaming-iterator+default-devel \
  rust-thiserror+default-devel \
- rust-tree-sitter+default-devel \
+ rust-tree-sitter0.25+default-devel \
  "

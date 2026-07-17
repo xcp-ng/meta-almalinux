@@ -13,6 +13,9 @@ URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/iputils-20240905-5.el10
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "129895e757e00681c94a9bf3d5e418eeaeca852126e2078fa9639cbefc44aa00"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - iputils: libcap.so.2()(64bit)
+
 URI_x86_64_v2_iputils = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/iputils-20240905-5.el10.x86_64_v2.rpm;name=x86_64_v2_iputils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_iputils}"
 SRC_URI[x86_64_v2_iputils.sha256sum] = "923b62ef51f2759c5fa94300585a03ec4ceeb2c8515a1c5c4bb08b95f9210787"
@@ -21,8 +24,12 @@ URI_aarch64_iputils = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/iputils-20
 SRC_URI:append = " ${URI_aarch64_iputils}"
 SRC_URI[aarch64_iputils.sha256sum] = "67b6582c8de3756f243337e5be79542eabef71e016259a7d9f64f40abec6732b"
 
-RDEPENDS:iputils = " \
+RDEPENDS:iputils:x86_64_v2 = " \
  glibc \
  libcap \
  libidn2 \
- "
+"
+RDEPENDS:iputils:aarch64 = " \
+ glibc \
+ libidn2 \
+"

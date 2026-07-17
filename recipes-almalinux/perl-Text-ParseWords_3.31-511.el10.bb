@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-Text-ParseWords \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Text-ParseWords-3.31-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Text-ParseWords-3.31-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "1127f89f1cbfdb107eaeed6cb8f78ed996271609087eee95e9df52fa018fda1e"
 
-URI_x86_64_v2_perl-Text-ParseWords = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Text-ParseWords-3.31-511.el10.noarch.rpm;name=x86_64_v2_perl-Text-ParseWords;unpack=0"
+URI_x86_64_v2_perl-Text-ParseWords = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Text-ParseWords-3.31-511.el10.noarch.rpm;name=x86_64_v2_perl-Text-ParseWords;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Text-ParseWords}"
 SRC_URI[x86_64_v2_perl-Text-ParseWords.sha256sum] = "371701469ff48ff7c2fd9fa1903bdf1d449513352f8e8e26fec7c7f9f8f2585c"
 
-URI_aarch64_perl-Text-ParseWords = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Text-ParseWords-3.31-511.el10.noarch.rpm;name=aarch64_perl-Text-ParseWords;unpack=0"
+URI_aarch64_perl-Text-ParseWords = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Text-ParseWords-3.31-511.el10.noarch.rpm;name=aarch64_perl-Text-ParseWords;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Text-ParseWords}"
 SRC_URI[aarch64_perl-Text-ParseWords.sha256sum] = "371701469ff48ff7c2fd9fa1903bdf1d449513352f8e8e26fec7c7f9f8f2585c"
 

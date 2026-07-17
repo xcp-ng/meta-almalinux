@@ -10,15 +10,15 @@ PACKAGES = " \
  perl-Pod-Usage \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Pod-Usage-2.03-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Pod-Usage-2.03-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "8093f4fbf44cfd70cf20ac57d743ffb6cf6cc5d0517a9ba4e5d12384d8441111"
 
-URI_x86_64_v2_perl-Pod-Usage = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Usage;unpack=0"
+URI_x86_64_v2_perl-Pod-Usage = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Usage;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Usage}"
 SRC_URI[x86_64_v2_perl-Pod-Usage.sha256sum] = "b3aee0f405b0ac80a0967256eb3111cef6aa5c42023099692daa3d5eba819261"
 
-URI_aarch64_perl-Pod-Usage = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm;name=aarch64_perl-Pod-Usage;unpack=0"
+URI_aarch64_perl-Pod-Usage = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm;name=aarch64_perl-Pod-Usage;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Usage}"
 SRC_URI[aarch64_perl-Pod-Usage.sha256sum] = "b3aee0f405b0ac80a0967256eb3111cef6aa5c42023099692daa3d5eba819261"
 

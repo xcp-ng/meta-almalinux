@@ -138,10 +138,10 @@ RDEPENDS:rust-pkcs8+3des-devel = " \
  "
 RDEPENDS:rust-pkcs8+alloc-devel = " \
  cargo \
- rust-der+alloc-devel \
- rust-der+zeroize-devel \
+ rust-der0.7+alloc-devel \
+ rust-der0.7+zeroize-devel \
  rust-pkcs8-devel \
- rust-spki+alloc-devel \
+ rust-spki0.7+alloc-devel \
  "
 RDEPENDS:rust-pkcs8+default-devel = " \
  cargo \
@@ -171,10 +171,10 @@ RDEPENDS:rust-pkcs8+getrandom-devel = " \
  "
 RDEPENDS:rust-pkcs8+pem-devel = " \
  cargo \
- rust-der+pem-devel \
+ rust-der0.7+pem-devel \
  rust-pkcs8+alloc-devel \
  rust-pkcs8-devel \
- rust-spki+pem-devel \
+ rust-spki0.7+pem-devel \
  "
 RDEPENDS:rust-pkcs8+pkcs5-devel = " \
  cargo \
@@ -195,10 +195,10 @@ RDEPENDS:rust-pkcs8+sha1-insecure-devel = " \
  "
 RDEPENDS:rust-pkcs8+std-devel = " \
  cargo \
- rust-der+std-devel \
+ rust-der0.7+std-devel \
  rust-pkcs8+alloc-devel \
  rust-pkcs8-devel \
- rust-spki+std-devel \
+ rust-spki0.7+std-devel \
  "
 RDEPENDS:rust-pkcs8+subtle-devel = " \
  cargo \
@@ -208,7 +208,7 @@ RDEPENDS:rust-pkcs8+subtle-devel = " \
 RDEPENDS:rust-pkcs8-devel = " \
  cargo \
  rust \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-spki+default-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-spki0.7+default-devel \
  "

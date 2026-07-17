@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-Mozilla-CA \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Mozilla-CA-20231213-5.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Mozilla-CA-20231213-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "07ef942c15d237fe92c449c54b58e1094becb0d4e896c99f15989dd788881da9"
 
-URI_x86_64_v2_perl-Mozilla-CA = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Mozilla-CA-20231213-5.el10.noarch.rpm;name=x86_64_v2_perl-Mozilla-CA;unpack=0"
+URI_x86_64_v2_perl-Mozilla-CA = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Mozilla-CA-20231213-5.el10.noarch.rpm;name=x86_64_v2_perl-Mozilla-CA;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Mozilla-CA}"
 SRC_URI[x86_64_v2_perl-Mozilla-CA.sha256sum] = "4eaa9fd20bb34e0f137061322ff6b023abe7db9276da1dd9a6687eefe0d98e57"
 
-URI_aarch64_perl-Mozilla-CA = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Mozilla-CA-20231213-5.el10.noarch.rpm;name=aarch64_perl-Mozilla-CA;unpack=0"
+URI_aarch64_perl-Mozilla-CA = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Mozilla-CA-20231213-5.el10.noarch.rpm;name=aarch64_perl-Mozilla-CA;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Mozilla-CA}"
 SRC_URI[aarch64_perl-Mozilla-CA.sha256sum] = "4eaa9fd20bb34e0f137061322ff6b023abe7db9276da1dd9a6687eefe0d98e57"
 

@@ -18,7 +18,7 @@ URI_x86_64_v2_gobject-introspection = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/P
 SRC_URI:append = " ${URI_x86_64_v2_gobject-introspection}"
 SRC_URI[x86_64_v2_gobject-introspection.sha256sum] = "f6a8164fbf3966e3762293b1f69b95c4ca7691ca2bdc31f48ef9bdb706530e75"
 
-URI_x86_64_v2_gobject-introspection-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gobject-introspection-devel-1.79.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_gobject-introspection-devel;unpack=0"
+URI_x86_64_v2_gobject-introspection-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gobject-introspection-devel-1.79.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_gobject-introspection-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gobject-introspection-devel}"
 SRC_URI[x86_64_v2_gobject-introspection-devel.sha256sum] = "6463ecc65569c1d426fa557632753fe27e9cbfb4a870808da8e282cc830a14c8"
 
@@ -26,7 +26,7 @@ URI_aarch64_gobject-introspection = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packa
 SRC_URI:append = " ${URI_aarch64_gobject-introspection}"
 SRC_URI[aarch64_gobject-introspection.sha256sum] = "efaaeef2b82e6a133e178e91bae9e50c71f7dd6f778c04f57a6d33491dc89e1a"
 
-URI_aarch64_gobject-introspection-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gobject-introspection-devel-1.79.1-6.el10.aarch64.rpm;name=aarch64_gobject-introspection-devel;unpack=0"
+URI_aarch64_gobject-introspection-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gobject-introspection-devel-1.79.1-6.el10.aarch64.rpm;name=aarch64_gobject-introspection-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_gobject-introspection-devel}"
 SRC_URI[aarch64_gobject-introspection-devel.sha256sum] = "ef914ff053cf884dd7768b52ec5ef2271df364278b12f71d991b5667f4e1b009"
 

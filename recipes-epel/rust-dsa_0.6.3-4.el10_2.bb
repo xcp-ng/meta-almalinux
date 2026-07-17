@@ -50,16 +50,16 @@ RDEPENDS:rust-dsa+std-devel = " \
 RDEPENDS:rust-dsa-devel = " \
  cargo \
  rust \
- rust-digest+default-devel \
- rust-num-bigint-dig+prime-devel \
- rust-num-bigint-dig+rand-devel \
- rust-num-bigint-dig+zeroize-devel \
- rust-num-bigint-dig-devel \
+ rust-digest0.10+default-devel \
+ rust-num-bigint-dig0.8+prime-devel \
+ rust-num-bigint-dig0.8+rand-devel \
+ rust-num-bigint-dig0.8+zeroize-devel \
+ rust-num-bigint-dig0.8-devel \
  rust-num-traits-devel \
  rust-pkcs8+alloc-devel \
  rust-pkcs8-devel \
  rust-rfc6979+default-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  rust-signature+alloc-devel \
  rust-signature+digest-devel \
  rust-signature+rand_core-devel \

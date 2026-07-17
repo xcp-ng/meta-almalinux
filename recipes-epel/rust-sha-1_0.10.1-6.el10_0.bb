@@ -104,7 +104,7 @@ RDEPENDS:rust-sha-1+force-soft-devel = " \
  "
 RDEPENDS:rust-sha-1+oid-devel = " \
  cargo \
- rust-digest+oid-devel \
+ rust-digest0.10+oid-devel \
  rust-sha-1-devel \
  "
 RDEPENDS:rust-sha-1+sha1-asm-devel = " \
@@ -114,12 +114,12 @@ RDEPENDS:rust-sha-1+sha1-asm-devel = " \
  "
 RDEPENDS:rust-sha-1+std-devel = " \
  cargo \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  rust-sha-1-devel \
  "
 RDEPENDS:rust-sha-1-devel = " \
  cargo \
  rust-cfg-if+default-devel \
  rust-cpufeatures0.2+default-devel \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  "

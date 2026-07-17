@@ -462,7 +462,7 @@ RDEPENDS:rust-tower-http+auth-devel = " \
  "
 RDEPENDS:rust-tower-http+base64-devel = " \
  cargo \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-tower-http-devel \
  "
 RDEPENDS:rust-tower-http+catch-panic-devel = " \

@@ -11,11 +11,11 @@ PACKAGES = " \
  python3-babeltrace \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/babeltrace-1.5.11-9.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/babeltrace-1.5.11-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "d29bd14395a33b0bd082c4779a70de564947ea7c88babbe52270e72c0c5d79f0"
 
-URI_x86_64_v2_libbabeltrace = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libbabeltrace-1.5.11-9.el10.x86_64_v2.rpm;name=x86_64_v2_libbabeltrace;unpack=0"
+URI_x86_64_v2_libbabeltrace = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libbabeltrace-1.5.11-9.el10.x86_64_v2.rpm;name=x86_64_v2_libbabeltrace;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libbabeltrace}"
 SRC_URI[x86_64_v2_libbabeltrace.sha256sum] = "9aa05d297ac2140ccd73c3fe4cd54546472a79616fe0c6b4c60a0ce0bcba2f5f"
 
@@ -27,7 +27,7 @@ URI_x86_64_v2_python3-babeltrace = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Package
 SRC_URI:append = " ${URI_x86_64_v2_python3-babeltrace}"
 SRC_URI[x86_64_v2_python3-babeltrace.sha256sum] = "b758c5f2fea9f42b4569be18e5b3a2734960132b005c0caa2fdfc371766db579"
 
-URI_aarch64_libbabeltrace = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libbabeltrace-1.5.11-9.el10.aarch64.rpm;name=aarch64_libbabeltrace;unpack=0"
+URI_aarch64_libbabeltrace = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libbabeltrace-1.5.11-9.el10.aarch64.rpm;name=aarch64_libbabeltrace;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libbabeltrace}"
 SRC_URI[aarch64_libbabeltrace.sha256sum] = "33f181198ec498c8126aa23caa58e5326a85da983463314e2f7b81bd827f0499"
 

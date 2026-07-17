@@ -78,7 +78,7 @@ RDEPENDS:rust-sha3+default-devel = " \
  "
 RDEPENDS:rust-sha3+oid-devel = " \
  cargo \
- rust-digest+oid-devel \
+ rust-digest0.10+oid-devel \
  rust-sha3-devel \
  "
 RDEPENDS:rust-sha3+reset-devel = " \
@@ -87,11 +87,11 @@ RDEPENDS:rust-sha3+reset-devel = " \
  "
 RDEPENDS:rust-sha3+std-devel = " \
  cargo \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  rust-sha3-devel \
  "
 RDEPENDS:rust-sha3-devel = " \
  cargo \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  rust-keccak+default-devel \
  "

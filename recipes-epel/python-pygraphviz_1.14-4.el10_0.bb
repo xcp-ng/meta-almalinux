@@ -13,6 +13,10 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pygraphviz-1.14-4.el10_0.src.rpm;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "b2dcd88e053bc53e1efe08e20a5e97f12d9dea97b70d7b555a5ea3441f40a500"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - python3-pygraphviz: libcgraph.so.6()(64bit)
+# - python3-pygraphviz: libgvc.so.6()(64bit)
+
 URI_x86_64_v2_python3-pygraphviz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygraphviz-1.14-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pygraphviz;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pygraphviz}"
 SRC_URI[x86_64_v2_python3-pygraphviz.sha256sum] = "25918070faf1b6d673b3ccbaea73a355a555b00d93e5427240c627dade0e8127"
@@ -21,8 +25,12 @@ URI_aarch64_python3-pygraphviz = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pygr
 SRC_URI:append = " ${URI_aarch64_python3-pygraphviz}"
 SRC_URI[aarch64_python3-pygraphviz.sha256sum] = "cf841322b9213bd1e70736ed5723a77fba6e348aec0e000835d9cb409215252c"
 
-RDEPENDS:python3-pygraphviz = " \
+RDEPENDS:python3-pygraphviz:x86_64_v2 = " \
  glibc \
  graphviz \
  python3 \
- "
+"
+RDEPENDS:python3-pygraphviz:aarch64 = " \
+ glibc \
+ python3 \
+"

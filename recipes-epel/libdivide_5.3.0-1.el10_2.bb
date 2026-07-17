@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6abe4bea3c9b284d6d4f695ef701ea2649d2903f37273820aff958
 
 URI_x86_64_v2_libdivide-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libdivide-devel-5.3.0-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libdivide-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libdivide-devel}"
-SRC_URI[x86_64_v2_libdivide-devel.sha256sum] = "fa94226916b58a6a899306a20c43121d21209aedb9f0220ad51fd034ccca6c88"
+SRC_URI[x86_64_v2_libdivide-devel.sha256sum] = "953a179d9be61c9072b02428ac3b9d17c5771ac1ab7f7579cba4327f469665b7"
 
 URI_aarch64_libdivide-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libdivide-devel-5.3.0-1.el10_2.aarch64.rpm;name=aarch64_libdivide-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libdivide-devel}"

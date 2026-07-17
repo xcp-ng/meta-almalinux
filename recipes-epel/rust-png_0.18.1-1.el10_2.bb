@@ -55,6 +55,6 @@ RDEPENDS:rust-png-devel = " \
  rust-crc32fast+default-devel \
  rust-fdeflate+default-devel \
  rust-flate2+default-devel \
- rust-miniz_oxide+default-devel \
- rust-miniz_oxide+simd-devel \
+ rust-miniz_oxide0.8+default-devel \
+ rust-miniz_oxide0.8+simd-devel \
  "

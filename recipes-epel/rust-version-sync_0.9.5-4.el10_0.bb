@@ -173,10 +173,10 @@ RDEPENDS:rust-version-sync+semver-devel = " \
  "
 RDEPENDS:rust-version-sync+syn-devel = " \
  cargo \
- rust-syn+full-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn-devel \
+ rust-syn2+full-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2-devel \
  rust-version-sync-devel \
  "
 RDEPENDS:rust-version-sync+toml-devel = " \

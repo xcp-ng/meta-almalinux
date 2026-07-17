@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "720bdd1e50a2955bccd052c05497f5c72e1f92f64c05a1ff955218
 
 URI_x86_64_v2_dnsperf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dnsperf-2.15.0-2.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dnsperf;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dnsperf}"
-SRC_URI[x86_64_v2_dnsperf.sha256sum] = "a053971e0df1b77ffdcec30695cc4dbdf9693817474d78ef74984503b56e178f"
+SRC_URI[x86_64_v2_dnsperf.sha256sum] = "d08715a5efe787828dc28e85b0bf7d3fc0276c546da72c92256233570267691c"
 
 URI_aarch64_dnsperf = "${EPEL_MIRROR}/aarch64/Packages/d/dnsperf-2.15.0-2.el10_2.aarch64.rpm;name=aarch64_dnsperf;unpack=0"
 SRC_URI:append = " ${URI_aarch64_dnsperf}"

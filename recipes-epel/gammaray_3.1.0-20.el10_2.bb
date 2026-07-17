@@ -21,33 +21,33 @@ SRC_URI[src.sha256sum] = "798854a95497958a6ff0d970e710782dbd5049af0950bece0d660b
 
 URI_x86_64_v2_gammaray = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray}"
-SRC_URI[x86_64_v2_gammaray.sha256sum] = "9c5525b4fb86d8cfa002dceb7db6c6ad07e9f9dbeda0b50e4e62ca4b95f863ac"
+SRC_URI[x86_64_v2_gammaray.sha256sum] = "980f37ffe63d401b6497bc1d6a3bc5afc6c8f915ca5a1338d04c173ff8a9f662"
 
 URI_x86_64_v2_gammaray-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-devel-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-devel}"
-SRC_URI[x86_64_v2_gammaray-devel.sha256sum] = "e322dd38e55cb748b1c6d3b947f2b35bd1e48c17ede22b6325d99e7b7551319e"
+SRC_URI[x86_64_v2_gammaray-devel.sha256sum] = "a675899b8a2fe2e563fce0aa9c103b314dea784d81354553271b0f6a7f3eeedd"
 
 URI_x86_64_v2_gammaray-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-doc-3.1.0-20.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_gammaray-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-doc}"
-SRC_URI[x86_64_v2_gammaray-doc.sha256sum] = "39ec53d8cf485d8f8bf06c8dfc153715d2fc7fcd004154b90ffc4d6dfd796306"
+SRC_URI[x86_64_v2_gammaray-doc.sha256sum] = "1efca762c810a493f3a2d093612fc16c3b32ba46fbffbd03d346fcfb28ddbaa8"
 
 URI_x86_64_v2_gammaray-probe-qt5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-probe-qt5-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray-probe-qt5;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-probe-qt5}"
-SRC_URI[x86_64_v2_gammaray-probe-qt5.sha256sum] = "3261b0b3e929bab40516afce8b50ffdef225754602f2cdaff78dcd9c9a14b4f3"
+SRC_URI[x86_64_v2_gammaray-probe-qt5.sha256sum] = "b79c1135b7652bc224a31aad8a7b2ce241cb9dc83c3f1731c27649a830abae90"
 RPROVIDES:gammaray-probe-qt5:x86_64_v2 = "virtual/gammaray-probe_eq_3.1.0-20.el10_2.alma_altarch"
 
 URI_x86_64_v2_gammaray-probe-qt5-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-probe-qt5-devel-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray-probe-qt5-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-probe-qt5-devel}"
-SRC_URI[x86_64_v2_gammaray-probe-qt5-devel.sha256sum] = "c6a94e20d1b878a269ea773aecf50d54699a65b9048ef720af8c551bc8e353fd"
+SRC_URI[x86_64_v2_gammaray-probe-qt5-devel.sha256sum] = "a150f169d3887ee8eccedbc8d7e8390546fc06a4e3aed278f86c18fc9d8faf1b"
 
 URI_x86_64_v2_gammaray-probe-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-probe-qt6-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray-probe-qt6;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-probe-qt6}"
-SRC_URI[x86_64_v2_gammaray-probe-qt6.sha256sum] = "d24863172d1b21b33bf0037ecf9fbd6867831f6208601614a5c440136cc91381"
+SRC_URI[x86_64_v2_gammaray-probe-qt6.sha256sum] = "16afb0833a10b621032c5e5e5ecf721930c73a21452f65e1f3d618ed93d48938"
 RPROVIDES:gammaray-probe-qt6:x86_64_v2 = "virtual/gammaray-probe_eq_3.1.0-20.el10_2.alma_altarch"
 
 URI_x86_64_v2_gammaray-probe-qt6-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gammaray-probe-qt6-devel-3.1.0-20.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gammaray-probe-qt6-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gammaray-probe-qt6-devel}"
-SRC_URI[x86_64_v2_gammaray-probe-qt6-devel.sha256sum] = "4b3220c1d871434973d00b0c3a8c6230031d1edc2292582a10c2e478aa794d51"
+SRC_URI[x86_64_v2_gammaray-probe-qt6-devel.sha256sum] = "69245c4712fae8b5bd67b2a23cc53437fe18fa85d8446b57f905aa3582ddb3aa"
 
 URI_aarch64_gammaray = "${EPEL_MIRROR}/aarch64/Packages/g/gammaray-3.1.0-20.el10_2.aarch64.rpm;name=aarch64_gammaray;unpack=0"
 SRC_URI:append = " ${URI_aarch64_gammaray}"

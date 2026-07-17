@@ -23,15 +23,15 @@ SRC_URI[src.sha256sum] = "d340dd34506b488d9191dc636cf1a01fe238c312b276277bd142dd
 
 URI_x86_64_v2_ghc-simple-cabal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-cabal-0.2.1-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-cabal;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-cabal}"
-SRC_URI[x86_64_v2_ghc-simple-cabal.sha256sum] = "3edf8a6d3304f619ecefab533c97d0c0147370213db067b055912ee8ec9f9e8d"
+SRC_URI[x86_64_v2_ghc-simple-cabal.sha256sum] = "b07410e18a4552adc3bef7b27befc6c384309968e6f1f348436f3e2d31c30fe0"
 
 URI_x86_64_v2_ghc-simple-cabal-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-cabal-devel-0.2.1-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-cabal-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-cabal-devel}"
-SRC_URI[x86_64_v2_ghc-simple-cabal-devel.sha256sum] = "50308240896d23a2da9254c222d2542d96245df40f71962a11ebd25a99685adf"
+SRC_URI[x86_64_v2_ghc-simple-cabal-devel.sha256sum] = "80146bacffec4771f017fa33760106f479f65158b5df16017ff719206b3ea8bf"
 
 URI_x86_64_v2_ghc-simple-cabal-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-cabal-doc-0.2.1-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-simple-cabal-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-cabal-doc}"
-SRC_URI[x86_64_v2_ghc-simple-cabal-doc.sha256sum] = "7931f12e4b205241ca89574c3f8a1e2bcd8fc3976b579a1cb469c682a01ef8d6"
+SRC_URI[x86_64_v2_ghc-simple-cabal-doc.sha256sum] = "fea61b49fdf006dc259ddfc754be93947bac5d2e57bf85c389a4b5fc23fe46db"
 
 URI_aarch64_ghc-simple-cabal = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-cabal-0.2.1-1.el10_2.aarch64.rpm;name=aarch64_ghc-simple-cabal;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc-simple-cabal}"

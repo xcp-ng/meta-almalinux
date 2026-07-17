@@ -36,8 +36,8 @@ RDEPENDS:rust-totp-lite+default-devel = " \
  "
 RDEPENDS:rust-totp-lite-devel = " \
  cargo \
- rust-digest+default-devel \
- rust-hmac+default-devel \
- rust-sha1+default-devel \
- rust-sha2+default-devel \
+ rust-digest0.10+default-devel \
+ rust-hmac0.12+default-devel \
+ rust-sha1_0.10+default-devel \
+ rust-sha2_0.10+default-devel \
  "

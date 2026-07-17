@@ -77,7 +77,7 @@ SRC_URI[aarch64_rust-pkcs5-devel.sha256sum] = "3eb2408d9ad172af7f163f8d628ac3a0f
 
 RDEPENDS:rust-pkcs5+3des-devel = " \
  cargo \
- rust-des-devel \
+ rust-des0.8-devel \
  rust-pkcs5+pbes2-devel \
  rust-pkcs5-devel \
  "
@@ -91,30 +91,30 @@ RDEPENDS:rust-pkcs5+default-devel = " \
  "
 RDEPENDS:rust-pkcs5+des-insecure-devel = " \
  cargo \
- rust-des-devel \
+ rust-des0.8-devel \
  rust-pkcs5+pbes2-devel \
  rust-pkcs5-devel \
  "
 RDEPENDS:rust-pkcs5+pbes2-devel = " \
  cargo \
- rust-aes-devel \
- rust-cbc+default-devel \
- rust-pbkdf2-devel \
+ rust-aes0.8-devel \
+ rust-cbc0.1+default-devel \
+ rust-pbkdf2_0.12-devel \
  rust-pkcs5-devel \
- rust-scrypt-devel \
- rust-sha2-devel \
+ rust-scrypt0.11-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-pkcs5+sha1-insecure-devel = " \
  cargo \
  rust-pkcs5+pbes2-devel \
  rust-pkcs5-devel \
- rust-sha1-devel \
+ rust-sha1_0.10-devel \
  "
 RDEPENDS:rust-pkcs5-devel = " \
  bash \
  cargo \
  rust \
- rust-der+default-devel \
- rust-der+oid-devel \
- rust-spki+default-devel \
+ rust-der0.7+default-devel \
+ rust-der0.7+oid-devel \
+ rust-spki0.7+default-devel \
  "

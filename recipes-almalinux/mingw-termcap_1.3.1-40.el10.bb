@@ -5,13 +5,10 @@ inherit dnf-bridge
 PN = "mingw-termcap"
 PV = "1.3.1"
 PR = "40.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-termcap \
  mingw64-termcap \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-termcap-1.3.1-40.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -24,6 +21,14 @@ SRC_URI[x86_64_v2_mingw32-termcap.sha256sum] = "4f240f3e7bf53e166440aaa38794c6fa
 URI_x86_64_v2_mingw64-termcap = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-termcap-1.3.1-40.el10.noarch.rpm;name=x86_64_v2_mingw64-termcap;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw64-termcap}"
 SRC_URI[x86_64_v2_mingw64-termcap.sha256sum] = "85bb79222a6cbb37df41c950cba49353fe324a21689142070218725b0b0afeb3"
+
+URI_aarch64_mingw32-termcap = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-termcap-1.3.1-40.el10.noarch.rpm;name=aarch64_mingw32-termcap;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-termcap}"
+SRC_URI[aarch64_mingw32-termcap.sha256sum] = "4f240f3e7bf53e166440aaa38794c6fae359533892ecd9c29a2f00e00ff78db5"
+
+URI_aarch64_mingw64-termcap = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-termcap-1.3.1-40.el10.noarch.rpm;name=aarch64_mingw64-termcap;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-termcap}"
+SRC_URI[aarch64_mingw64-termcap.sha256sum] = "85bb79222a6cbb37df41c950cba49353fe324a21689142070218725b0b0afeb3"
 
 RDEPENDS:mingw32-termcap = " \
  mingw32-crt \

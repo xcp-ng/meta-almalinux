@@ -97,5 +97,5 @@ RDEPENDS:rust-signal-hook-mio+support-v1_0-devel = " \
 RDEPENDS:rust-signal-hook-mio-devel = " \
  cargo \
  rust-libc+default-devel \
- rust-signal-hook+default-devel \
+ rust-signal-hook0.3+default-devel \
  "

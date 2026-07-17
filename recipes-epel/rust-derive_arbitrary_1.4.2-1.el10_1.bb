@@ -39,8 +39,8 @@ RDEPENDS:rust-derive_arbitrary-devel = " \
  rust \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+derive-devel \
- rust-syn+extra-traits-devel \
- rust-syn+parsing-devel \
+ rust-syn2+default-devel \
+ rust-syn2+derive-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+parsing-devel \
  "

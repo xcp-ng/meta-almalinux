@@ -535,7 +535,7 @@ RDEPENDS:rust-x11rb+libc-devel = " \
  "
 RDEPENDS:rust-x11rb+libloading-devel = " \
  cargo \
- rust-libloading+default-devel \
+ rust-libloading0.8+default-devel \
  rust-x11rb-devel \
  "
 RDEPENDS:rust-x11rb+once_cell-devel = " \

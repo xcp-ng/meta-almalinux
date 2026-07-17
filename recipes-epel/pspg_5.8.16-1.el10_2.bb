@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "341e05f0bab6dd36c1cdd7e35484d90b46e169d26d4fbb46ba351b
 
 URI_x86_64_v2_pspg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pspg-5.8.16-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pspg;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pspg}"
-SRC_URI[x86_64_v2_pspg.sha256sum] = "92db4ab3140dcc6a67bc175bd572425b6f9d3c7d55b4c88e09b163cf7867db37"
+SRC_URI[x86_64_v2_pspg.sha256sum] = "c7c6a6ccc325e3b505f791b23dd7f8f0dc34bf581da3b249773c88613a3a9fa6"
 
 URI_aarch64_pspg = "${EPEL_MIRROR}/aarch64/Packages/p/pspg-5.8.16-1.el10_2.aarch64.rpm;name=aarch64_pspg;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pspg}"

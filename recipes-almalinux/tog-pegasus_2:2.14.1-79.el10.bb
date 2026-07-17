@@ -7,9 +7,70 @@ PE = "2"
 PV = "2.14.1"
 PR = "79.el10"
 PACKAGES = " \
+ tog-pegasus \
+ tog-pegasus-devel \
+ tog-pegasus-libs \
  "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/tog-pegasus-2.14.1-79.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "db343dd4fca19f04513a0193b53064cdecb51aac7c5e676e8cb7f505908ba149"
+SRC_URI[src.sha256sum] = "3e3f38b6891d3d28418231f8efe53bc4c76890ebb89116fcdb93b0550aacd9c3"
 
+URI_x86_64_v2_tog-pegasus = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tog-pegasus-2.14.1-79.el10.x86_64_v2.rpm;name=x86_64_v2_tog-pegasus;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_tog-pegasus}"
+SRC_URI[x86_64_v2_tog-pegasus.sha256sum] = "b46182e6045f2bbdd32164d30463d828751801c1041159dc31f513f31840c5c1"
+RPROVIDES:tog-pegasus:x86_64_v2 = "virtual/cim-server"
+
+URI_x86_64_v2_tog-pegasus-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/tog-pegasus-devel-2.14.1-79.el10.x86_64_v2.rpm;name=x86_64_v2_tog-pegasus-devel;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_tog-pegasus-devel}"
+SRC_URI[x86_64_v2_tog-pegasus-devel.sha256sum] = "c4bb942e44f19c45a01c6d11bb170c90ab27d1334774e8c7eb079f2234d7ab1d"
+
+URI_x86_64_v2_tog-pegasus-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tog-pegasus-libs-2.14.1-79.el10.x86_64_v2.rpm;name=x86_64_v2_tog-pegasus-libs;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_tog-pegasus-libs}"
+SRC_URI[x86_64_v2_tog-pegasus-libs.sha256sum] = "e502c06fcb8eea1d0f98b039f0c7d6a66da226304fb31aed03123e91e6e97540"
+
+URI_aarch64_tog-pegasus = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tog-pegasus-2.14.1-79.el10.aarch64.rpm;name=aarch64_tog-pegasus;unpack=0"
+SRC_URI:append = " ${URI_aarch64_tog-pegasus}"
+SRC_URI[aarch64_tog-pegasus.sha256sum] = "57726cce59f0611adf3defe22aaf5019ddaaf0d9f48d41862a8ba4ef341684e6"
+RPROVIDES:tog-pegasus:aarch64 = "virtual/cim-server"
+
+URI_aarch64_tog-pegasus-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/tog-pegasus-devel-2.14.1-79.el10.aarch64.rpm;name=aarch64_tog-pegasus-devel;unpack=0"
+SRC_URI:append = " ${URI_aarch64_tog-pegasus-devel}"
+SRC_URI[aarch64_tog-pegasus-devel.sha256sum] = "073b55be3e673287ad732efb9fc71905d5eb4144bbbf7d6b6ec3b3deec00d2a6"
+
+URI_aarch64_tog-pegasus-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tog-pegasus-libs-2.14.1-79.el10.aarch64.rpm;name=aarch64_tog-pegasus-libs;unpack=0"
+SRC_URI:append = " ${URI_aarch64_tog-pegasus-libs}"
+SRC_URI[aarch64_tog-pegasus-libs.sha256sum] = "daf69b9af65eabb3be02a4d1794f0f44a2e122dd0512c4cef855bf45d90680f6"
+
+RDEPENDS:tog-pegasus = " \
+ bash \
+ ca-certificates \
+ glibc \
+ libgcc \
+ libstdc++ \
+ libxcrypt \
+ net-snmp-libs \
+ openssl \
+ policycoreutils \
+ tog-pegasus-libs \
+ "
+RDEPENDS:tog-pegasus-devel = " \
+ bash \
+ tog-pegasus \
+ "
+RDEPENDS:tog-pegasus-libs = " \
+ bash \
+ glibc \
+ libgcc \
+ libstdc++ \
+ libxcrypt \
+ net-snmp-libs \
+ openslp \
+ openssl-libs \
+ pam-libs \
+ shadow-utils \
+ "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/cim-server"
+
+PROVIDES:append:aarch64 = " rpm/virtual/cim-server"

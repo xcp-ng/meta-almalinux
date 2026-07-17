@@ -24,6 +24,7 @@ RPROVIDES:rust-itertools0.10+default-devel:x86_64_v2 = "virtual/crate_itertools/
 URI_x86_64_v2_rust-itertools0.10+use_alloc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-itertools0.10+use_alloc-devel-0.10.5-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-itertools0.10+use_alloc-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-itertools0.10+use_alloc-devel}"
 SRC_URI[x86_64_v2_rust-itertools0.10+use_alloc-devel.sha256sum] = "32bb53fc6ef55b0cf5aee42e53c9e4d7931e611ee345e49ace3552052dd234be"
+RPROVIDES:rust-itertools0.10+use_alloc-devel:x86_64_v2 = "virtual/crate_itertools/use_alloc__ge_0.10.0_with_crate_itertools/use_alloc__lt_0.15.0~"
 
 URI_x86_64_v2_rust-itertools0.10+use_std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-itertools0.10+use_std-devel-0.10.5-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-itertools0.10+use_std-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-itertools0.10+use_std-devel}"
@@ -32,7 +33,7 @@ SRC_URI[x86_64_v2_rust-itertools0.10+use_std-devel.sha256sum] = "78a28d9e3cfe84b
 URI_x86_64_v2_rust-itertools0.10-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-itertools0.10-devel-0.10.5-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-itertools0.10-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-itertools0.10-devel}"
 SRC_URI[x86_64_v2_rust-itertools0.10-devel.sha256sum] = "51757c0660d2ed5aee6c6ba857b477df7aece27ade4f2efd9747d032c44c635e"
-RPROVIDES:rust-itertools0.10-devel:x86_64_v2 = "virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.13.0~ virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~"
+RPROVIDES:rust-itertools0.10-devel:x86_64_v2 = "virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~ virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.15.0~"
 
 URI_aarch64_rust-itertools0.10+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-itertools0.10+default-devel-0.10.5-4.el10_0.noarch.rpm;name=aarch64_rust-itertools0.10+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-itertools0.10+default-devel}"
@@ -42,6 +43,7 @@ RPROVIDES:rust-itertools0.10+default-devel:aarch64 = "virtual/crate_itertools/de
 URI_aarch64_rust-itertools0.10+use_alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-itertools0.10+use_alloc-devel-0.10.5-4.el10_0.noarch.rpm;name=aarch64_rust-itertools0.10+use_alloc-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-itertools0.10+use_alloc-devel}"
 SRC_URI[aarch64_rust-itertools0.10+use_alloc-devel.sha256sum] = "e1388e61fb709669a25d34dda543761e34d6ba0a8462f72a1b6ac03f960486e3"
+RPROVIDES:rust-itertools0.10+use_alloc-devel:aarch64 = "virtual/crate_itertools/use_alloc__ge_0.10.0_with_crate_itertools/use_alloc__lt_0.15.0~"
 
 URI_aarch64_rust-itertools0.10+use_std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-itertools0.10+use_std-devel-0.10.5-4.el10_0.noarch.rpm;name=aarch64_rust-itertools0.10+use_std-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-itertools0.10+use_std-devel}"
@@ -50,7 +52,7 @@ SRC_URI[aarch64_rust-itertools0.10+use_std-devel.sha256sum] = "4f6cbf06dfeeda30b
 URI_aarch64_rust-itertools0.10-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-itertools0.10-devel-0.10.5-4.el10_0.noarch.rpm;name=aarch64_rust-itertools0.10-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-itertools0.10-devel}"
 SRC_URI[aarch64_rust-itertools0.10-devel.sha256sum] = "1ea6ff12cce6836fbdad50cf345d547f807a5de275b7a4cb788adf5a5c5912f7"
-RPROVIDES:rust-itertools0.10-devel:aarch64 = "virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.13.0~ virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~"
+RPROVIDES:rust-itertools0.10-devel:aarch64 = "virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~ virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.15.0~"
 
 RDEPENDS:rust-itertools0.10+default-devel = " \
  cargo \
@@ -72,6 +74,6 @@ RDEPENDS:rust-itertools0.10-devel = " \
  rust-either-devel \
  "
 
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_itertools/default__ge_0.10.1_with_crate_itertools/default__lt_0.15.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.13.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~"
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_itertools/default__ge_0.10.1_with_crate_itertools/default__lt_0.15.0~ rpm/virtual/crate_itertools/use_alloc__ge_0.10.0_with_crate_itertools/use_alloc__lt_0.15.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.15.0~"
 
-PROVIDES:append:aarch64 = " rpm/virtual/crate_itertools/default__ge_0.10.1_with_crate_itertools/default__lt_0.15.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.13.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~"
+PROVIDES:append:aarch64 = " rpm/virtual/crate_itertools/default__ge_0.10.1_with_crate_itertools/default__lt_0.15.0~ rpm/virtual/crate_itertools/use_alloc__ge_0.10.0_with_crate_itertools/use_alloc__lt_0.15.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~ rpm/virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.15.0~"

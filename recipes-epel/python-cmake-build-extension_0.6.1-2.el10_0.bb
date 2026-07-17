@@ -14,9 +14,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cmake-build-extension-0.6.1-2.el1
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "75fa99df4625525db57614e12177a2d7845e733d7cd26d207846edc02748d5bd"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - python3-cmake-build-extension: python3.12dist(gitpython)
-
 URI_x86_64_v2_python3-cmake-build-extension = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmake-build-extension-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmake-build-extension;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cmake-build-extension}"
 SRC_URI[x86_64_v2_python3-cmake-build-extension.sha256sum] = "857dd68197165a1fbb5d1da0f76d357ebc214ca16af1aa8e6a2a45a8ce5fbed4"
@@ -33,19 +30,13 @@ URI_aarch64_python3-cmake-build-extension-doc = "${EPEL_MIRROR}/aarch64/Packages
 SRC_URI:append = " ${URI_aarch64_python3-cmake-build-extension-doc}"
 SRC_URI[aarch64_python3-cmake-build-extension-doc.sha256sum] = "5931556081c77e4751f4686570537826f97479c08b956af3eb8a96f06530a63b"
 
-RDEPENDS:python3-cmake-build-extension:x86_64_v2 = " \
- cmake \
- ninja-build \
- python3 \
- python3-setuptools_scm \
-"
-RDEPENDS:python3-cmake-build-extension:aarch64 = " \
+RDEPENDS:python3-cmake-build-extension = " \
  cmake \
  ninja-build \
  python3 \
  python3-GitPython \
  python3-setuptools_scm \
-"
+ "
 RDEPENDS:python3-cmake-build-extension-doc = " \
  python3-cmake-build-extension \
  "

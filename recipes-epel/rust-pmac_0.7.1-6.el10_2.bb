@@ -54,7 +54,7 @@ RDEPENDS:rust-pmac+default-devel = " \
  "
 RDEPENDS:rust-pmac+std-devel = " \
  cargo \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  rust-pmac-devel \
  "
 RDEPENDS:rust-pmac+zeroize-devel = " \
@@ -67,6 +67,6 @@ RDEPENDS:rust-pmac-devel = " \
  rust \
  rust-cipher0.4+default-devel \
  rust-dbl+default-devel \
- rust-digest+default-devel \
- rust-digest+mac-devel \
+ rust-digest0.10+default-devel \
+ rust-digest0.10+mac-devel \
  "

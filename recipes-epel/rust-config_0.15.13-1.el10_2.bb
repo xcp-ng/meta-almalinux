@@ -290,5 +290,5 @@ RDEPENDS:rust-config-devel = " \
  rust \
  rust-pathdiff+default-devel \
  rust-serde+default-devel \
- rust-winnow+default-devel \
+ rust-winnow0.7+default-devel \
  "

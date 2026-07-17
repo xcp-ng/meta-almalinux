@@ -51,14 +51,10 @@ RDEPENDS:php-pecl-apcu = " \
  glibc \
  php-common \
  "
-RDEPENDS:php-pecl-apcu-devel:x86_64_v2 = " \
+RDEPENDS:php-pecl-apcu-devel = " \
+ php-devel \
  php-pecl-apcu \
- virtual/php-devel_x86-64_ \
-"
-RDEPENDS:php-pecl-apcu-devel:aarch64 = " \
- php-pecl-apcu \
- virtual/php-devel_aarch-64_ \
-"
+ "
 
 PROVIDES:append:x86_64_v2 = " rpm/virtual/php-pecl-apcu"
 

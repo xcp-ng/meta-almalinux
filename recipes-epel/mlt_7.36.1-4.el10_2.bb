@@ -99,9 +99,9 @@ RDEPENDS:mlt = " \
  pipewire-jack-audio-connection-kit-libs \
  pulseaudio-libs \
  rubberband \
- sdl2-compat \
  sox \
  vid.stab \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "
 RDEPENDS:mlt-devel = " \
  cmake-filesystem \

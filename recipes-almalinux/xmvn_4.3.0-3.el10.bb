@@ -19,6 +19,12 @@ URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/xmvn-4.3.0-3.el10.src.rpm;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "cc81391a882f858f5c29acb5a170748958bbda62ec18edb1187d0c339097baa8"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - xmvn-minimal: maven-jdk-binding
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - xmvn-minimal: maven-jdk-binding
+
 URI_x86_64_v2_xmvn = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xmvn-4.3.0-3.el10.noarch.rpm;name=x86_64_v2_xmvn;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_xmvn}"
 SRC_URI[x86_64_v2_xmvn.sha256sum] = "320710b00cc1cd2d99868443da656473cd780b0c047f77eb61a0473f39420afd"
@@ -105,7 +111,6 @@ RDEPENDS:xmvn-minimal = " \
  plexus-utils \
  sisu \
  slf4j \
- virtual/maven-jdk-binding \
  xmvn-core \
  xmvn-tools \
  "

@@ -294,13 +294,13 @@ RDEPENDS:rust-p521+serde-devel = " \
 RDEPENDS:rust-p521+serdect-devel = " \
  cargo \
  rust-p521-devel \
- rust-serdect-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-p521+sha512-devel = " \
  cargo \
  rust-p521+digest-devel \
  rust-p521-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-p521+std-devel = " \
  cargo \
@@ -320,12 +320,12 @@ RDEPENDS:rust-p521+voprf-devel = " \
  cargo \
  rust-elliptic-curve+voprf-devel \
  rust-p521-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-p521-devel = " \
  cargo \
  rust \
- rust-base16ct+default-devel \
+ rust-base16ct0.2+default-devel \
  rust-elliptic-curve+hazmat-devel \
  rust-elliptic-curve+sec1-devel \
  rust-elliptic-curve-devel \

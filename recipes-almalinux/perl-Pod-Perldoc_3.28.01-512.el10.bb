@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-Pod-Perldoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Pod-Perldoc-3.28.01-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Pod-Perldoc-3.28.01-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "a5f70e69a412cd3510a82c1478c9460270b67b7f8a197d5e0a98ed62b54f4da1"
 
-URI_x86_64_v2_perl-Pod-Perldoc = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Pod-Perldoc-3.28.01-512.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Perldoc;unpack=0"
+URI_x86_64_v2_perl-Pod-Perldoc = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Pod-Perldoc-3.28.01-512.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Perldoc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Perldoc}"
 SRC_URI[x86_64_v2_perl-Pod-Perldoc.sha256sum] = "260f92316899b869ad998cb9df861b26d2fb69da37ca4fdaceb77416b74cfb5e"
 
-URI_aarch64_perl-Pod-Perldoc = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Pod-Perldoc-3.28.01-512.el10.noarch.rpm;name=aarch64_perl-Pod-Perldoc;unpack=0"
+URI_aarch64_perl-Pod-Perldoc = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Pod-Perldoc-3.28.01-512.el10.noarch.rpm;name=aarch64_perl-Pod-Perldoc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Perldoc}"
 SRC_URI[aarch64_perl-Pod-Perldoc.sha256sum] = "260f92316899b869ad998cb9df861b26d2fb69da37ca4fdaceb77416b74cfb5e"
 

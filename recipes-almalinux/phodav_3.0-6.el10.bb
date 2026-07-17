@@ -7,8 +7,6 @@ PV = "3.0"
 PR = "6.el10"
 PACKAGES = " \
  libphodav \
- libphodav-devel \
- spice-webdavd \
  "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/phodav-3.0-6.el10.src.rpm;name=src;unpack=0"
@@ -19,44 +17,13 @@ URI_x86_64_v2_libphodav = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/l
 SRC_URI:append = " ${URI_x86_64_v2_libphodav}"
 SRC_URI[x86_64_v2_libphodav.sha256sum] = "d89d159fa8a5631b872ad8b0ef144fd321c498869a157bda71f82e8ded45764b"
 
-URI_x86_64_v2_libphodav-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libphodav-devel-3.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_libphodav-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libphodav-devel}"
-SRC_URI[x86_64_v2_libphodav-devel.sha256sum] = "3f160d7ac522d2ca6469ed9622b400cdac6362c8b3d08d1e554e30e7698064ad"
-
-URI_x86_64_v2_spice-webdavd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/spice-webdavd-3.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_spice-webdavd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_spice-webdavd}"
-SRC_URI[x86_64_v2_spice-webdavd.sha256sum] = "a558ffa00895ebae58df8c68953ca58aca7d622293082d72dff02255ce454002"
-
 URI_aarch64_libphodav = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libphodav-3.0-6.el10.aarch64.rpm;name=aarch64_libphodav;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libphodav}"
 SRC_URI[aarch64_libphodav.sha256sum] = "64826e477b500c465dd1469407b85f2487696bfeaa2a8828d76fb0be6414c434"
-
-URI_aarch64_libphodav-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libphodav-devel-3.0-6.el10.aarch64.rpm;name=aarch64_libphodav-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libphodav-devel}"
-SRC_URI[aarch64_libphodav-devel.sha256sum] = "65dd7cdf2248097c0bcb1d02b8660447f784bfd62cf9e405c6e887bc5417b046"
-
-URI_aarch64_spice-webdavd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/spice-webdavd-3.0-6.el10.aarch64.rpm;name=aarch64_spice-webdavd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_spice-webdavd}"
-SRC_URI[aarch64_spice-webdavd.sha256sum] = "afae0607ae84ed47a4d3155c0109f5671a1f123fc789b8cd12239f8461a80739"
 
 RDEPENDS:libphodav = " \
  glib2 \
  glibc \
  libsoup3 \
  libxml2 \
- "
-RDEPENDS:libphodav-devel = " \
- glib2-devel \
- libphodav \
- libsoup3-devel \
- libxml2-devel \
- pkgconf-pkg-config \
- "
-RDEPENDS:spice-webdavd = " \
- avahi \
- avahi-gobject \
- bash \
- glib2 \
- glibc \
- systemd \
  "

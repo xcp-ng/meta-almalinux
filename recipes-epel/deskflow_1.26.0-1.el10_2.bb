@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c23d8d78ae5a45cffffee7aa0b77c04f83c6ee90fcd3b96916501e
 
 URI_x86_64_v2_deskflow = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/deskflow-1.26.0-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_deskflow;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_deskflow}"
-SRC_URI[x86_64_v2_deskflow.sha256sum] = "f64345e8ce95a4100d7b24a078544d88f145717b45a8241ca5b110810653eb38"
+SRC_URI[x86_64_v2_deskflow.sha256sum] = "e61d8e3ff49c918a0113efa563632df7db4593548eb75f57d53a9325238c0d39"
 
 URI_aarch64_deskflow = "${EPEL_MIRROR}/aarch64/Packages/d/deskflow-1.26.0-1.el10_2.aarch64.rpm;name=aarch64_deskflow;unpack=0"
 SRC_URI:append = " ${URI_aarch64_deskflow}"

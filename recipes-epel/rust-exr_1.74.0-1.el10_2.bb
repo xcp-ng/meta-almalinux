@@ -55,7 +55,7 @@ RDEPENDS:rust-exr-devel = " \
  rust-bit_field+default-devel \
  rust-half+default-devel \
  rust-lebe+default-devel \
- rust-miniz_oxide+default-devel \
+ rust-miniz_oxide0.8+default-devel \
  rust-smallvec+default-devel \
  rust-zune-inflate+zlib-devel \
  rust-zune-inflate-devel \

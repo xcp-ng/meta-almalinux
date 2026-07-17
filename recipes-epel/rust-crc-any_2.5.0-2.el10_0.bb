@@ -98,7 +98,7 @@ RDEPENDS:rust-crc-any+development-devel = " \
 RDEPENDS:rust-crc-any+heapless-devel = " \
  cargo \
  rust-crc-any-devel \
- rust-heapless+default-devel \
+ rust-heapless0.8+default-devel \
  "
 RDEPENDS:rust-crc-any+std-devel = " \
  cargo \

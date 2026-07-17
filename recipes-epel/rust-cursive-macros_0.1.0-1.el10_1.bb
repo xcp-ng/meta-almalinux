@@ -90,9 +90,9 @@ RDEPENDS:rust-cursive-macros+quote-devel = " \
 RDEPENDS:rust-cursive-macros+syn-devel = " \
  cargo \
  rust-cursive-macros-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
  "
 RDEPENDS:rust-cursive-macros-devel = " \
  cargo \

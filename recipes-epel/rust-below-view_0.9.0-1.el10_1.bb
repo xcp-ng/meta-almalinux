@@ -53,7 +53,7 @@ RDEPENDS:rust-below-view-devel = " \
  rust-enum-iterator+default-devel \
  rust-fb_procfs+default-devel \
  rust-humantime+default-devel \
- rust-itertools+default-devel \
+ rust-itertools0.14+default-devel \
  rust-libc+default-devel \
  rust-once_cell+default-devel \
  rust-serde+default-devel \

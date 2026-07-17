@@ -78,9 +78,9 @@ RDEPENDS:rust-test-log-macros-devel = " \
  rust \
  rust-proc-macro2-devel \
  rust-quote-devel \
- rust-syn+full-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn+proc-macro-devel \
- rust-syn-devel \
+ rust-syn2+full-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2+proc-macro-devel \
+ rust-syn2-devel \
  "

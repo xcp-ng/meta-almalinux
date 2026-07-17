@@ -46,12 +46,12 @@ RDEPENDS:rust-prettyplease+default-devel = " \
 RDEPENDS:rust-prettyplease+verbatim-devel = " \
  cargo \
  rust-prettyplease-devel \
- rust-syn+parsing-devel \
+ rust-syn2+parsing-devel \
  "
 RDEPENDS:rust-prettyplease-devel = " \
  cargo \
  rust \
  rust-proc-macro2-devel \
- rust-syn+full-devel \
- rust-syn-devel \
+ rust-syn2+full-devel \
+ rust-syn2-devel \
  "

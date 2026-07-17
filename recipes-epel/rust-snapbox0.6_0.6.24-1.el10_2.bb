@@ -193,8 +193,8 @@ RDEPENDS:rust-snapbox0.6+detect-encoding-devel = " \
  "
 RDEPENDS:rust-snapbox0.6+diff-devel = " \
  cargo \
- rust-similar+default-devel \
- rust-similar+inline-devel \
+ rust-similar2+default-devel \
+ rust-similar2+inline-devel \
  rust-snapbox0.6-devel \
  "
 RDEPENDS:rust-snapbox0.6+dir-devel = " \

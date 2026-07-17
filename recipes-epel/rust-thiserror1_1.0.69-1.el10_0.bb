@@ -22,6 +22,7 @@ RPROVIDES:rust-thiserror1+default-devel:x86_64_v2 = "virtual/crate_thiserror/def
 URI_x86_64_v2_rust-thiserror1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-thiserror1-devel-1.0.69-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-thiserror1-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-thiserror1-devel}"
 SRC_URI[x86_64_v2_rust-thiserror1-devel.sha256sum] = "9d20e07a4ad4fd94b2d266db4953e002c3b85b2c9a8d94db3b66fc646ad17c32"
+RPROVIDES:rust-thiserror1-devel:x86_64_v2 = "virtual/crate_thiserror__ge_1.0.0_with_crate_thiserror__lt_3.0.0~"
 
 URI_aarch64_rust-thiserror1+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-thiserror1+default-devel-1.0.69-1.el10_0.noarch.rpm;name=aarch64_rust-thiserror1+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-thiserror1+default-devel}"
@@ -31,6 +32,7 @@ RPROVIDES:rust-thiserror1+default-devel:aarch64 = "virtual/crate_thiserror/defau
 URI_aarch64_rust-thiserror1-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-thiserror1-devel-1.0.69-1.el10_0.noarch.rpm;name=aarch64_rust-thiserror1-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-thiserror1-devel}"
 SRC_URI[aarch64_rust-thiserror1-devel.sha256sum] = "b5104b0dd6cea9b80c1de69a4a3c25121b8ec59942934d0b4da225aa46e8d6e7"
+RPROVIDES:rust-thiserror1-devel:aarch64 = "virtual/crate_thiserror__ge_1.0.0_with_crate_thiserror__lt_3.0.0~"
 
 RDEPENDS:rust-thiserror1+default-devel = " \
  cargo \
@@ -42,6 +44,6 @@ RDEPENDS:rust-thiserror1-devel = " \
  rust-thiserror-impl1+default-devel \
  "
 
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~"
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~ rpm/virtual/crate_thiserror__ge_1.0.0_with_crate_thiserror__lt_3.0.0~"
 
-PROVIDES:append:aarch64 = " rpm/virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~"
+PROVIDES:append:aarch64 = " rpm/virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~ rpm/virtual/crate_thiserror__ge_1.0.0_with_crate_thiserror__lt_3.0.0~"

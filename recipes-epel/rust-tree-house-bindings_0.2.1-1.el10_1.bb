@@ -52,7 +52,7 @@ RDEPENDS:rust-tree-house-bindings-devel = " \
  cargo \
  rust \
  rust-cc+default-devel \
- rust-libloading+default-devel \
+ rust-libloading0.8+default-devel \
  rust-regex-cursor+default-devel \
  rust-thiserror+default-devel \
  "

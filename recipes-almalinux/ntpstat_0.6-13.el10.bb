@@ -23,5 +23,5 @@ SRC_URI[aarch64_ntpstat.sha256sum] = "cecac2840352d8be1349db7e2f77ba0a9466ba4f1c
 
 RDEPENDS:ntpstat = " \
  bash \
- chrony \
+ virtual/ntpsec_or_chrony \
  "

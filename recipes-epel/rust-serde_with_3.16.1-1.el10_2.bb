@@ -167,8 +167,8 @@ SRC_URI[aarch64_rust-serde_with-devel.sha256sum] = "e9bcf5d1ddb6d9cd585d6d7d5f73
 
 RDEPENDS:rust-serde_with+alloc-devel = " \
  cargo \
- rust-base64+alloc-devel \
- rust-base64-devel \
+ rust-base64_0.22+alloc-devel \
+ rust-base64_0.22-devel \
  rust-chrono+alloc-devel \
  rust-chrono+serde-devel \
  rust-chrono-devel \
@@ -183,7 +183,7 @@ RDEPENDS:rust-serde_with+alloc-devel = " \
  "
 RDEPENDS:rust-serde_with+base64-devel = " \
  cargo \
- rust-base64-devel \
+ rust-base64_0.22-devel \
  rust-serde_with+alloc-devel \
  rust-serde_with-devel \
  "

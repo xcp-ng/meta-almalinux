@@ -5,13 +5,10 @@ inherit dnf-bridge
 PN = "mingw-pixman"
 PV = "0.43.0"
 PR = "6.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-pixman \
  mingw64-pixman \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-pixman-0.43.0-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -24,6 +21,14 @@ SRC_URI[x86_64_v2_mingw32-pixman.sha256sum] = "df64156812c13fbdb981bf92c9131f8d7
 URI_x86_64_v2_mingw64-pixman = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-pixman-0.43.0-6.el10.noarch.rpm;name=x86_64_v2_mingw64-pixman;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw64-pixman}"
 SRC_URI[x86_64_v2_mingw64-pixman.sha256sum] = "95e6a65b28f505ec8c521e4d53f34a56c8bcda892d5fa542c483aae9dac90954"
+
+URI_aarch64_mingw32-pixman = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-pixman-0.43.0-6.el10.noarch.rpm;name=aarch64_mingw32-pixman;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-pixman}"
+SRC_URI[aarch64_mingw32-pixman.sha256sum] = "df64156812c13fbdb981bf92c9131f8d7ff9199238fb21ad02b4df4af29ad55e"
+
+URI_aarch64_mingw64-pixman = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-pixman-0.43.0-6.el10.noarch.rpm;name=aarch64_mingw64-pixman;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-pixman}"
+SRC_URI[aarch64_mingw64-pixman.sha256sum] = "95e6a65b28f505ec8c521e4d53f34a56c8bcda892d5fa542c483aae9dac90954"
 
 RDEPENDS:mingw32-pixman = " \
  mingw32-crt \

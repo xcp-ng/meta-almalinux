@@ -72,7 +72,7 @@ RDEPENDS:rust-tree-sitter-loader-devel = " \
  rust-etcetera+default-devel \
  rust-fs4+default-devel \
  rust-indoc+default-devel \
- rust-libloading+default-devel \
+ rust-libloading0.8+default-devel \
  rust-once_cell+default-devel \
  rust-path-slash+default-devel \
  rust-regex+default-devel \
@@ -83,7 +83,7 @@ RDEPENDS:rust-tree-sitter-loader-devel = " \
  rust-serde_json+default-devel \
  rust-serde_json+preserve_order-devel \
  rust-tempfile+default-devel \
- rust-tree-sitter+default-devel \
+ rust-tree-sitter0.25+default-devel \
  rust-url+default-devel \
  rust-url+serde-devel \
  "

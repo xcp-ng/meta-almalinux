@@ -38,6 +38,6 @@ RDEPENDS:rust-curve25519-dalek-derive-devel = " \
  cargo \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+full-devel \
  "

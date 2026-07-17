@@ -97,7 +97,7 @@ RDEPENDS:rust-primeorder+serde-devel = " \
 RDEPENDS:rust-primeorder+serdect-devel = " \
  cargo \
  rust-primeorder-devel \
- rust-serdect-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-primeorder+std-devel = " \
  cargo \

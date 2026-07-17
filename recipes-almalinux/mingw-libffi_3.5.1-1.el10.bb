@@ -5,13 +5,10 @@ inherit dnf-bridge
 PN = "mingw-libffi"
 PV = "3.5.1"
 PR = "1.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-libffi \
  mingw64-libffi \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-libffi-3.5.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -24,6 +21,14 @@ SRC_URI[x86_64_v2_mingw32-libffi.sha256sum] = "058e902ef4c26629b561f98c1f4470299
 URI_x86_64_v2_mingw64-libffi = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-libffi-3.5.1-1.el10.noarch.rpm;name=x86_64_v2_mingw64-libffi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw64-libffi}"
 SRC_URI[x86_64_v2_mingw64-libffi.sha256sum] = "03482eb44b91a943137a8358e3132767a930e715810515bf3cd2ad84fd07cbc4"
+
+URI_aarch64_mingw32-libffi = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-libffi-3.5.1-1.el10.noarch.rpm;name=aarch64_mingw32-libffi;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-libffi}"
+SRC_URI[aarch64_mingw32-libffi.sha256sum] = "058e902ef4c26629b561f98c1f44702990b4a146011d896caf95763875552611"
+
+URI_aarch64_mingw64-libffi = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-libffi-3.5.1-1.el10.noarch.rpm;name=aarch64_mingw64-libffi;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-libffi}"
+SRC_URI[aarch64_mingw64-libffi.sha256sum] = "03482eb44b91a943137a8358e3132767a930e715810515bf3cd2ad84fd07cbc4"
 
 RDEPENDS:mingw32-libffi = " \
  mingw32-crt \

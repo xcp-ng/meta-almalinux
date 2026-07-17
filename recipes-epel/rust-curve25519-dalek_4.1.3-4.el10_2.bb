@@ -136,25 +136,25 @@ RDEPENDS:rust-curve25519-dalek+default-devel = " \
 RDEPENDS:rust-curve25519-dalek+digest-devel = " \
  cargo \
  rust-curve25519-dalek-devel \
- rust-digest-devel \
+ rust-digest0.10-devel \
  "
 RDEPENDS:rust-curve25519-dalek+ff-devel = " \
  cargo \
  rust-curve25519-dalek-devel \
- rust-ff-devel \
+ rust-ff0.13-devel \
  "
 RDEPENDS:rust-curve25519-dalek+group-bits-devel = " \
  cargo \
  rust-curve25519-dalek+group-devel \
  rust-curve25519-dalek-devel \
- rust-ff+bits-devel \
- rust-ff-devel \
+ rust-ff0.13+bits-devel \
+ rust-ff0.13-devel \
  "
 RDEPENDS:rust-curve25519-dalek+group-devel = " \
  cargo \
  rust-curve25519-dalek+rand_core-devel \
  rust-curve25519-dalek-devel \
- rust-group-devel \
+ rust-group0.13-devel \
  "
 RDEPENDS:rust-curve25519-dalek+legacy_compatibility-devel = " \
  cargo \

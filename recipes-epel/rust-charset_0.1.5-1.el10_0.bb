@@ -51,6 +51,6 @@ RDEPENDS:rust-charset+serde-devel = " \
 RDEPENDS:rust-charset-devel = " \
  cargo \
  rust \
- rust-base64-devel \
+ rust-base64_0.22-devel \
  rust-encoding_rs+default-devel \
  "

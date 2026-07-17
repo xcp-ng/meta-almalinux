@@ -39,5 +39,5 @@ RDEPENDS:rust-serde_repr-devel = " \
  rust \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
+ rust-syn2+default-devel \
  "

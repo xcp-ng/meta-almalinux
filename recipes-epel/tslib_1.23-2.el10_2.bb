@@ -32,7 +32,7 @@ SRC_URI[aarch64_tslib-devel.sha256sum] = "fff34328d88f812725186d579436ff81a11d23
 
 RDEPENDS:tslib = " \
  glibc \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "
 RDEPENDS:tslib-devel = " \
  pkgconf-pkg-config \

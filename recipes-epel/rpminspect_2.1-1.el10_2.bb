@@ -16,6 +16,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/r/rpminspect-2.1-1.el10_2.src.rpm;name=src
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "50d9bae107c2145e5625ff9489d30768beb3917b93ddca21ae3988227443e1b6"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - librpminspect: libcap.so.2()(64bit)
+
 URI_x86_64_v2_librpminspect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/librpminspect-2.1-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_librpminspect;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_librpminspect}"
 SRC_URI[x86_64_v2_librpminspect.sha256sum] = "3edb4a1fc568ce5d7966c67872a0fdcd07bf8e75e2495cafe943065874a85eb8"
@@ -48,7 +51,7 @@ URI_aarch64_rpminspect-data-generic = "${EPEL_MIRROR}/aarch64/Packages/r/rpminsp
 SRC_URI:append = " ${URI_aarch64_rpminspect-data-generic}"
 SRC_URI[aarch64_rpminspect-data-generic.sha256sum] = "d86d0bb1cb5918b721df272e56a43e9143ea5d0abb17b9c180f8d614f5e67db2"
 
-RDEPENDS:librpminspect = " \
+RDEPENDS:librpminspect:x86_64_v2 = " \
  clamav-lib \
  desktop-file-utils \
  elfutils-libelf \
@@ -70,7 +73,29 @@ RDEPENDS:librpminspect = " \
  xmlrpc-c \
  xmlrpc-c-client \
  zlib-ng-compat \
- "
+"
+RDEPENDS:librpminspect:aarch64 = " \
+ clamav-lib \
+ desktop-file-utils \
+ elfutils-libelf \
+ file-libs \
+ gettext \
+ glibc \
+ json-c \
+ kmod-libs \
+ libarchive \
+ libcdson \
+ libicu \
+ libxml2 \
+ libyaml \
+ openssl-libs \
+ rpm-build-libs \
+ rpm-libs \
+ virtual/libcurl.so.4___64bit_ \
+ xmlrpc-c \
+ xmlrpc-c-client \
+ zlib-ng-compat \
+"
 RDEPENDS:librpminspect-devel = " \
  librpminspect \
  "

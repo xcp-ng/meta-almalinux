@@ -15,6 +15,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-GraphViz-2.26-5.el10_0.src.rpm;name
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "024b733e997540e251ed1c90d88544b3e908f9d073594d573a06b1873c1f149e"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - perl-GraphViz: graphviz
+
 URI_x86_64_v2_perl-GraphViz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GraphViz-2.26-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GraphViz;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-GraphViz}"
 SRC_URI[x86_64_v2_perl-GraphViz.sha256sum] = "b5fd56e7c9cc105cceefde7dbfd73154ccb3753d3494103c3496288b9ef942fe"
@@ -39,7 +42,7 @@ URI_aarch64_perl-GraphViz-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-GraphV
 SRC_URI:append = " ${URI_aarch64_perl-GraphViz-tests}"
 SRC_URI[aarch64_perl-GraphViz-tests.sha256sum] = "d8f934d42b6141ac8d3deb37f88d22ad0fe3e6a8cfeaff2342a36349461dd1f9"
 
-RDEPENDS:perl-GraphViz = " \
+RDEPENDS:perl-GraphViz:x86_64_v2 = " \
  graphviz \
  perl-Carp \
  perl-GraphViz \
@@ -49,7 +52,17 @@ RDEPENDS:perl-GraphViz = " \
  perl-lib \
  perl-libs \
  perl-vars \
- "
+"
+RDEPENDS:perl-GraphViz:aarch64 = " \
+ perl-Carp \
+ perl-GraphViz \
+ perl-IPC-Run \
+ perl-Parse-RecDescent \
+ perl-Time-HiRes \
+ perl-lib \
+ perl-libs \
+ perl-vars \
+"
 RDEPENDS:perl-GraphViz-XML = " \
  perl-Carp \
  perl-GraphViz \

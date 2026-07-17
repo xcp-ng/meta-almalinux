@@ -45,8 +45,8 @@ RDEPENDS:qt5-qtgamepad = " \
  qt5-qtbase \
  qt5-qtbase-gui \
  qt5-qtdeclarative \
- sdl2-compat \
  systemd-libs \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "
 RDEPENDS:qt5-qtgamepad-devel = " \
  cmake-filesystem \

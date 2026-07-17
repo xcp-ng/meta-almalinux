@@ -80,7 +80,7 @@ RDEPENDS:rust-cursive_core-devel = " \
  cargo \
  rust \
  rust-ahash+default-devel \
- rust-compact_str+default-devel \
+ rust-compact_str0.9+default-devel \
  rust-crossbeam-channel+default-devel \
  rust-cursive-macros+default-devel \
  rust-enum-map+default-devel \

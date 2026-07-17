@@ -13,6 +13,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/h/htop-3.3.0-5.el10_0.src.rpm;name=src;unp
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "3ecaedf1ed189c86a2954da4158f9188e508e02e92e93d547ad9a05c92bb64db"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - htop: libcap.so.2()(64bit)
+
 URI_x86_64_v2_htop = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/htop-3.3.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_htop;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_htop}"
 SRC_URI[x86_64_v2_htop.sha256sum] = "55454b75b5a4b717636deac953c465485781596cc3d468123001de927207c543"
@@ -21,10 +24,16 @@ URI_aarch64_htop = "${EPEL_MIRROR}/aarch64/Packages/h/htop-3.3.0-5.el10_0.aarch6
 SRC_URI:append = " ${URI_aarch64_htop}"
 SRC_URI[aarch64_htop.sha256sum] = "c8f064b082a78deff0ccfb7b08cc463f671ec2886a7ee9f9f453c169875ca0b0"
 
-RDEPENDS:htop = " \
+RDEPENDS:htop:x86_64_v2 = " \
  glibc \
  hwloc-libs \
  libcap \
  libnl3 \
  ncurses-libs \
- "
+"
+RDEPENDS:htop:aarch64 = " \
+ glibc \
+ hwloc-libs \
+ libnl3 \
+ ncurses-libs \
+"

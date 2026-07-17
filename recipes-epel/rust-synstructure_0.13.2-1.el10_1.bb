@@ -48,18 +48,18 @@ RDEPENDS:rust-synstructure+proc-macro-devel = " \
  cargo \
  rust-proc-macro2+proc-macro-devel \
  rust-quote+proc-macro-devel \
- rust-syn+proc-macro-devel \
+ rust-syn2+proc-macro-devel \
  rust-synstructure-devel \
  "
 RDEPENDS:rust-synstructure-devel = " \
  cargo \
  rust-proc-macro2-devel \
  rust-quote-devel \
- rust-syn+clone-impls-devel \
- rust-syn+derive-devel \
- rust-syn+extra-traits-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn+visit-devel \
- rust-syn-devel \
+ rust-syn2+clone-impls-devel \
+ rust-syn2+derive-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2+visit-devel \
+ rust-syn2-devel \
  "

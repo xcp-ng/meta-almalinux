@@ -12,23 +12,23 @@ PACKAGES = " \
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-PyMySQL-1.1.1-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "a93424a8f136c4e6909b2207cd5172e337426177e8e83fb5c8af75a2957f3a43"
+SRC_URI[src.sha256sum] = "06cd9b6c1bd810dc9759e89cad7ecfbc804fd1c427a78b13d2d26e6bb97912cf"
 
 URI_x86_64_v2_python3-PyMySQL = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-PyMySQL-1.1.1-3.el10.noarch.rpm;name=x86_64_v2_python3-PyMySQL;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-PyMySQL}"
-SRC_URI[x86_64_v2_python3-PyMySQL.sha256sum] = "fdc5d9bc099b40e787a8491371573db3b2e5315a0bcaea60a7fd216eb57591dc"
+SRC_URI[x86_64_v2_python3-PyMySQL.sha256sum] = "3cc1685a202db825ac4cfba251ec126c337fd4d523a41edf1dba0a696fe0f8c5"
 
 URI_x86_64_v2_python3-PyMySQL+rsa = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-PyMySQL+rsa-1.1.1-3.el10.noarch.rpm;name=x86_64_v2_python3-PyMySQL+rsa;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-PyMySQL+rsa}"
-SRC_URI[x86_64_v2_python3-PyMySQL+rsa.sha256sum] = "0c7d986f4d6be0c1d64f815a6a7796268a12f768d34a25c24ad98f6d977f563b"
+SRC_URI[x86_64_v2_python3-PyMySQL+rsa.sha256sum] = "7966238b823c4b677d40e2729a791ebfb5854f0692885de4bd28a77d32a352aa"
 
 URI_aarch64_python3-PyMySQL = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-PyMySQL-1.1.1-3.el10.noarch.rpm;name=aarch64_python3-PyMySQL;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-PyMySQL}"
-SRC_URI[aarch64_python3-PyMySQL.sha256sum] = "fdc5d9bc099b40e787a8491371573db3b2e5315a0bcaea60a7fd216eb57591dc"
+SRC_URI[aarch64_python3-PyMySQL.sha256sum] = "3cc1685a202db825ac4cfba251ec126c337fd4d523a41edf1dba0a696fe0f8c5"
 
 URI_aarch64_python3-PyMySQL+rsa = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-PyMySQL+rsa-1.1.1-3.el10.noarch.rpm;name=aarch64_python3-PyMySQL+rsa;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-PyMySQL+rsa}"
-SRC_URI[aarch64_python3-PyMySQL+rsa.sha256sum] = "0c7d986f4d6be0c1d64f815a6a7796268a12f768d34a25c24ad98f6d977f563b"
+SRC_URI[aarch64_python3-PyMySQL+rsa.sha256sum] = "7966238b823c4b677d40e2729a791ebfb5854f0692885de4bd28a77d32a352aa"
 
 RDEPENDS:python3-PyMySQL = " \
  python3 \

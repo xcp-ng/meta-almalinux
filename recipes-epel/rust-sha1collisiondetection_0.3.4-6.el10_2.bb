@@ -118,7 +118,7 @@ RDEPENDS:rust-sha1collisiondetection+clap_mangen-devel = " \
  "
 RDEPENDS:rust-sha1collisiondetection+const-oid-devel = " \
  cargo \
- rust-const-oid-devel \
+ rust-const-oid0.9-devel \
  rust-sha1collisiondetection-devel \
  "
 RDEPENDS:rust-sha1collisiondetection+default-devel = " \
@@ -129,7 +129,7 @@ RDEPENDS:rust-sha1collisiondetection+default-devel = " \
  "
 RDEPENDS:rust-sha1collisiondetection+digest-devel = " \
  cargo \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  rust-sha1collisiondetection-devel \
  "
 RDEPENDS:rust-sha1collisiondetection+digest-trait-devel = " \
@@ -144,8 +144,8 @@ RDEPENDS:rust-sha1collisiondetection+oid-devel = " \
  "
 RDEPENDS:rust-sha1collisiondetection+std-devel = " \
  cargo \
- rust-digest+default-devel \
- rust-digest+std-devel \
+ rust-digest0.10+default-devel \
+ rust-digest0.10+std-devel \
  rust-sha1collisiondetection-devel \
  "
 RDEPENDS:rust-sha1collisiondetection-devel = " \

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "e19141c0d9384592aa7bfdbeafadeeae3debfea43e9ba4f1525f3b
 
 URI_x86_64_v2_rust-astral-tl+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-astral-tl+default-devel-0.7.11-3.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-astral-tl+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-astral-tl+default-devel}"
-SRC_URI[x86_64_v2_rust-astral-tl+default-devel.sha256sum] = "0e184dea00a1548f3ec99cefb24a1d7bce84e11e5d159ce5b1b6c86aafed82ee"
+SRC_URI[x86_64_v2_rust-astral-tl+default-devel.sha256sum] = "fa476577ba9c1ce36914f7ff1b03c8cb3d2cd53de49f3a2329274eea7681f239"
 
 URI_x86_64_v2_rust-astral-tl-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-astral-tl-devel-0.7.11-3.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-astral-tl-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-astral-tl-devel}"
-SRC_URI[x86_64_v2_rust-astral-tl-devel.sha256sum] = "00e01ce9e09bc8e5b482ebe3f0ae0acbc92bc1f4312dec86334b3e8d3a8760bd"
+SRC_URI[x86_64_v2_rust-astral-tl-devel.sha256sum] = "04d022909b0a0c12e6001375275295ec5aeb9c1e867f11f288ef02cc0cd1e29d"
 
 URI_aarch64_rust-astral-tl+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-astral-tl+default-devel-0.7.11-3.el10_2.noarch.rpm;name=aarch64_rust-astral-tl+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-astral-tl+default-devel}"

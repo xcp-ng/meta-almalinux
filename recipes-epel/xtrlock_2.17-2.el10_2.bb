@@ -13,6 +13,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/x/xtrlock-2.17-2.el10_2.src.rpm;name=src;u
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "6811f150a80b45c4368c97c0c203da68c4a96bdb3c9dd7e086fb598350b89a58"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - xtrlock: libcap.so.2()(64bit)
+
 URI_x86_64_v2_xtrlock = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xtrlock-2.17-2.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xtrlock;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_xtrlock}"
 SRC_URI[x86_64_v2_xtrlock.sha256sum] = "e9e3c807dd16a3f91f202036188415b85d7a5ae17cc90b212aaa84a654c04261"
@@ -21,9 +24,14 @@ URI_aarch64_xtrlock = "${EPEL_MIRROR}/aarch64/Packages/x/xtrlock-2.17-2.el10_2.a
 SRC_URI:append = " ${URI_aarch64_xtrlock}"
 SRC_URI[aarch64_xtrlock.sha256sum] = "96bd981ebdb6e5a890c331a4b36e928dacb522a378cacc9b63a1a7702fff479d"
 
-RDEPENDS:xtrlock = " \
+RDEPENDS:xtrlock:x86_64_v2 = " \
  glibc \
  libX11 \
  libcap \
  libxcrypt \
- "
+"
+RDEPENDS:xtrlock:aarch64 = " \
+ glibc \
+ libX11 \
+ libxcrypt \
+"

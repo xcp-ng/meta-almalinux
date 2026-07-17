@@ -9,15 +9,15 @@ PACKAGES = " \
  python3-referencing \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/python-referencing-0.31.1-6.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-referencing-0.31.1-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "cfb20b4a68b385c40709ffacec07fa668957728ebc7cde336b65e223487be358"
 
-URI_x86_64_v2_python3-referencing = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/python3-referencing-0.31.1-6.el10.noarch.rpm;name=x86_64_v2_python3-referencing;unpack=0"
+URI_x86_64_v2_python3-referencing = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-referencing-0.31.1-6.el10.noarch.rpm;name=x86_64_v2_python3-referencing;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-referencing}"
 SRC_URI[x86_64_v2_python3-referencing.sha256sum] = "cc0682bf02b5d92a2caa806af0bc7c16ce22ea1c1ba6402cc92abfb383bebd47"
 
-URI_aarch64_python3-referencing = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/python3-referencing-0.31.1-6.el10.noarch.rpm;name=aarch64_python3-referencing;unpack=0"
+URI_aarch64_python3-referencing = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-referencing-0.31.1-6.el10.noarch.rpm;name=aarch64_python3-referencing;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-referencing}"
 SRC_URI[aarch64_python3-referencing.sha256sum] = "cc0682bf02b5d92a2caa806af0bc7c16ce22ea1c1ba6402cc92abfb383bebd47"
 

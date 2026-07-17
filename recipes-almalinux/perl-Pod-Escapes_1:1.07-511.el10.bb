@@ -10,15 +10,15 @@ PACKAGES = " \
  perl-Pod-Escapes \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Pod-Escapes-1.07-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Pod-Escapes-1.07-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "6a0be8835ebf800d8a1b5f78858a9b1b681d2995a32b71eb2c935d383e1eee4d"
 
-URI_x86_64_v2_perl-Pod-Escapes = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Pod-Escapes-1.07-511.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Escapes;unpack=0"
+URI_x86_64_v2_perl-Pod-Escapes = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Pod-Escapes-1.07-511.el10.noarch.rpm;name=x86_64_v2_perl-Pod-Escapes;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Escapes}"
 SRC_URI[x86_64_v2_perl-Pod-Escapes.sha256sum] = "a52f78ce58e47008e138a7ab77516abf7376cc800f399d57b22e6e600d4e90be"
 
-URI_aarch64_perl-Pod-Escapes = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Pod-Escapes-1.07-511.el10.noarch.rpm;name=aarch64_perl-Pod-Escapes;unpack=0"
+URI_aarch64_perl-Pod-Escapes = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Pod-Escapes-1.07-511.el10.noarch.rpm;name=aarch64_perl-Pod-Escapes;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Escapes}"
 SRC_URI[aarch64_perl-Pod-Escapes.sha256sum] = "a52f78ce58e47008e138a7ab77516abf7376cc800f399d57b22e6e600d4e90be"
 

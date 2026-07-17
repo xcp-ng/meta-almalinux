@@ -15,6 +15,10 @@ URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/iproute-6.17.0-2.el10.s
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "7852d31251238dc9dfb337598f6ab0b562777b8252dea571d550cc674c3611e9"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - iproute-tc: libcap.so.2()(64bit)
+# - iproute: libcap.so.2()(64bit)
+
 URI_x86_64_v2_iproute = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/iproute-6.17.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_iproute;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_iproute}"
 SRC_URI[x86_64_v2_iproute.sha256sum] = "9baa9a6609d6c8c6459337e53dd0f049f8788e8cf7951bad0964ef484c924b43"
@@ -39,7 +43,7 @@ URI_aarch64_iproute-tc = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/iproute
 SRC_URI:append = " ${URI_aarch64_iproute-tc}"
 SRC_URI[aarch64_iproute-tc.sha256sum] = "9aef1b321d22d32c1262ada87f8101a18c3b5d8bd8f02957b89d80a79ebdbd12"
 
-RDEPENDS:iproute = " \
+RDEPENDS:iproute:x86_64_v2 = " \
  bash \
  elfutils-libelf \
  glibc \
@@ -48,11 +52,20 @@ RDEPENDS:iproute = " \
  libmnl \
  libselinux \
  psmisc \
- "
+"
+RDEPENDS:iproute:aarch64 = " \
+ bash \
+ elfutils-libelf \
+ glibc \
+ libbpf \
+ libmnl \
+ libselinux \
+ psmisc \
+"
 RDEPENDS:iproute-devel = " \
  iproute \
  "
-RDEPENDS:iproute-tc = " \
+RDEPENDS:iproute-tc:x86_64_v2 = " \
  elfutils-libelf \
  glibc \
  iproute \
@@ -60,4 +73,12 @@ RDEPENDS:iproute-tc = " \
  libbpf \
  libcap \
  libmnl \
- "
+"
+RDEPENDS:iproute-tc:aarch64 = " \
+ elfutils-libelf \
+ glibc \
+ iproute \
+ iptables-libs \
+ libbpf \
+ libmnl \
+"

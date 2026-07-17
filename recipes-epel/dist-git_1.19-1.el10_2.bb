@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "3b5289cd04cd80f21e75dd28952add36c3282b4e663d718750eeb9
 
 URI_x86_64_v2_dist-git = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dist-git-1.19-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_dist-git;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dist-git}"
-SRC_URI[x86_64_v2_dist-git.sha256sum] = "9c1030314c62105b0a0830f93f04477012a7a25a189521d37e408b93ca0f97de"
+SRC_URI[x86_64_v2_dist-git.sha256sum] = "dc662aa4f5ec8cb079106280dddb0a4f4c1e135c6f5f7520166a22f001da60e0"
 
 URI_x86_64_v2_dist-git-selinux = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dist-git-selinux-1.19-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_dist-git-selinux;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_dist-git-selinux}"
-SRC_URI[x86_64_v2_dist-git-selinux.sha256sum] = "c57581683f09b04ba962c4094ac91e0957fb2a1ddee6030b16abea902d4348a3"
+SRC_URI[x86_64_v2_dist-git-selinux.sha256sum] = "318857bece9e14fc6214d19e8d3824be9d4003ad1b4bfcae840db6d392ae51bb"
 
 URI_aarch64_dist-git = "${EPEL_MIRROR}/aarch64/Packages/d/dist-git-1.19-1.el10_2.noarch.rpm;name=aarch64_dist-git;unpack=0"
 SRC_URI:append = " ${URI_aarch64_dist-git}"

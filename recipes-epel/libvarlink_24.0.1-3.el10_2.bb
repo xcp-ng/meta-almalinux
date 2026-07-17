@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "24b5d34f0ea117e36c5ac43e92543897409226116d04cb825d4dc4
 
 URI_x86_64_v2_libvarlink = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libvarlink-24.0.1-3.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libvarlink;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libvarlink}"
-SRC_URI[x86_64_v2_libvarlink.sha256sum] = "b3eb397107ca1e23e630b352b533890c53c3e0dd1066737dc80c43a30fb14726"
+SRC_URI[x86_64_v2_libvarlink.sha256sum] = "3b44c91392379be8ae0fcd512be79d14cf4b2713595abc6f7630a385e63a7c78"
 
 URI_x86_64_v2_libvarlink-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libvarlink-devel-24.0.1-3.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libvarlink-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libvarlink-devel}"
-SRC_URI[x86_64_v2_libvarlink-devel.sha256sum] = "ce0291421ab7399c67340ec617db30b090bef4db1dc3b62177872712b529baef"
+SRC_URI[x86_64_v2_libvarlink-devel.sha256sum] = "807d74598251621c2252645b14a4afd8725ac6712d81fbd8a9b3cccd911cf25d"
 
 URI_x86_64_v2_libvarlink-util = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libvarlink-util-24.0.1-3.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libvarlink-util;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libvarlink-util}"
-SRC_URI[x86_64_v2_libvarlink-util.sha256sum] = "c2b99e60b4d64ff1a397f747bdee14029ce4925f51c641be50071180eb0c0301"
+SRC_URI[x86_64_v2_libvarlink-util.sha256sum] = "645cb43bf6a918cb589fe4fa808e568818fd373ff7226adfe547ec2851d7a8c7"
 
 URI_aarch64_libvarlink = "${EPEL_MIRROR}/aarch64/Packages/l/libvarlink-24.0.1-3.el10_2.aarch64.rpm;name=aarch64_libvarlink;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libvarlink}"

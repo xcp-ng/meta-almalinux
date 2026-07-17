@@ -22,6 +22,16 @@ URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-toml0.9-0.9.12-1.el10_2.src.rpm;nam
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "13b2aa3d1eeec0cb744bf9aa975cba34ac0fd52cedc1c213a98090aaef2aad77"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - rust-toml0.9+debug-devel: (crate(toml_parser) >= 1.0.7 with crate(toml_parser) < 2.0.0~)
+# - rust-toml0.9+debug-devel: (crate(toml_parser/alloc) >= 1.0.7 with crate(toml_parser/alloc) < 2.0.0~)
+# - rust-toml0.9+debug-devel: (crate(toml_parser/debug) >= 1.0.7 with crate(toml_parser/debug) < 2.0.0~)
+# - rust-toml0.9+parse-devel: (crate(toml_parser) >= 1.0.7 with crate(toml_parser) < 2.0.0~)
+# - rust-toml0.9+parse-devel: (crate(toml_parser/alloc) >= 1.0.7 with crate(toml_parser/alloc) < 2.0.0~)
+# - rust-toml0.9+std-devel: (crate(toml_parser) >= 1.0.7 with crate(toml_parser) < 2.0.0~)
+# - rust-toml0.9+std-devel: (crate(toml_parser/alloc) >= 1.0.7 with crate(toml_parser/alloc) < 2.0.0~)
+# - rust-toml0.9+std-devel: (crate(toml_parser/std) >= 1.0.7 with crate(toml_parser/std) < 2.0.0~)
+
 URI_x86_64_v2_rust-toml0.9+debug-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.9+debug-devel-0.9.12-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.9+debug-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml0.9+debug-devel}"
 SRC_URI[x86_64_v2_rust-toml0.9+debug-devel.sha256sum] = "6bbfaf21878bf338afc9fb2da540bf60fce308745157bafbcc9a800784ffa5a5"
@@ -29,6 +39,7 @@ SRC_URI[x86_64_v2_rust-toml0.9+debug-devel.sha256sum] = "6bbfaf21878bf338afc9fb2
 URI_x86_64_v2_rust-toml0.9+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.9+default-devel-0.9.12-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.9+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml0.9+default-devel}"
 SRC_URI[x86_64_v2_rust-toml0.9+default-devel.sha256sum] = "cc167607cc01568144ef6a5f550a31c9e517a704698cb55cfe52efab39fa1abb"
+RPROVIDES:rust-toml0.9+default-devel:x86_64_v2 = "virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 URI_x86_64_v2_rust-toml0.9+display-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.9+display-devel-0.9.12-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.9+display-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-toml0.9+display-devel}"
@@ -69,6 +80,7 @@ SRC_URI[aarch64_rust-toml0.9+debug-devel.sha256sum] = "059b6a19390f798124d427fe0
 URI_aarch64_rust-toml0.9+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.9+default-devel-0.9.12-1.el10_2.noarch.rpm;name=aarch64_rust-toml0.9+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-toml0.9+default-devel}"
 SRC_URI[aarch64_rust-toml0.9+default-devel.sha256sum] = "37805f74663cdecdc10b02fa17c779fbfbed8b422e46d317892746748766a27d"
+RPROVIDES:rust-toml0.9+default-devel:aarch64 = "virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 URI_aarch64_rust-toml0.9+display-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.9+display-devel-0.9.12-1.el10_2.noarch.rpm;name=aarch64_rust-toml0.9+display-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-toml0.9+display-devel}"
@@ -102,7 +114,14 @@ URI_aarch64_rust-toml0.9-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.9
 SRC_URI:append = " ${URI_aarch64_rust-toml0.9-devel}"
 SRC_URI[aarch64_rust-toml0.9-devel.sha256sum] = "521617bd4b0d2d636e20cc22ed7f907ba2670260b799973c953fdf020a80ee23"
 
-RDEPENDS:rust-toml0.9+debug-devel = " \
+RDEPENDS:rust-toml0.9+debug-devel:x86_64_v2 = " \
+ cargo \
+ rust-anstream0.6+default-devel \
+ rust-anstyle+default-devel \
+ rust-toml0.9+std-devel \
+ rust-toml0.9-devel \
+"
+RDEPENDS:rust-toml0.9+debug-devel:aarch64 = " \
  cargo \
  rust-anstream0.6+default-devel \
  rust-anstyle+default-devel \
@@ -111,7 +130,7 @@ RDEPENDS:rust-toml0.9+debug-devel = " \
  rust-toml_parser+alloc-devel \
  rust-toml_parser+debug-devel \
  rust-toml_parser-devel \
- "
+"
 RDEPENDS:rust-toml0.9+default-devel = " \
  cargo \
  rust-toml0.9+display-devel \
@@ -132,13 +151,18 @@ RDEPENDS:rust-toml0.9+fast_hash-devel = " \
  rust-toml0.9+preserve_order-devel \
  rust-toml0.9-devel \
  "
-RDEPENDS:rust-toml0.9+parse-devel = " \
+RDEPENDS:rust-toml0.9+parse-devel:x86_64_v2 = " \
+ cargo \
+ rust-toml0.9-devel \
+ rust-winnow0.7-devel \
+"
+RDEPENDS:rust-toml0.9+parse-devel:aarch64 = " \
  cargo \
  rust-toml0.9-devel \
  rust-toml_parser+alloc-devel \
  rust-toml_parser-devel \
- rust-winnow-devel \
- "
+ rust-winnow0.7-devel \
+"
 RDEPENDS:rust-toml0.9+preserve_order-devel = " \
  cargo \
  rust-indexmap-devel \
@@ -153,7 +177,21 @@ RDEPENDS:rust-toml0.9+serde-devel = " \
  rust-toml0.9-devel \
  rust-toml_datetime0.7+serde-devel \
  "
-RDEPENDS:rust-toml0.9+std-devel = " \
+RDEPENDS:rust-toml0.9+std-devel:x86_64_v2 = " \
+ cargo \
+ rust-indexmap+std-devel \
+ rust-indexmap-devel \
+ rust-serde_core+alloc-devel \
+ rust-serde_core+std-devel \
+ rust-serde_core-devel \
+ rust-serde_spanned+std-devel \
+ rust-toml0.9-devel \
+ rust-toml_datetime0.7+std-devel \
+ rust-toml_writer+alloc-devel \
+ rust-toml_writer+std-devel \
+ rust-toml_writer-devel \
+"
+RDEPENDS:rust-toml0.9+std-devel:aarch64 = " \
  cargo \
  rust-indexmap+std-devel \
  rust-indexmap-devel \
@@ -169,7 +207,7 @@ RDEPENDS:rust-toml0.9+std-devel = " \
  rust-toml_writer+alloc-devel \
  rust-toml_writer+std-devel \
  rust-toml_writer-devel \
- "
+"
 RDEPENDS:rust-toml0.9+unbounded-devel = " \
  cargo \
  rust-toml0.9-devel \
@@ -182,3 +220,7 @@ RDEPENDS:rust-toml0.9-devel = " \
  rust-toml_datetime0.7+alloc-devel \
  rust-toml_datetime0.7-devel \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
+
+PROVIDES:append:aarch64 = " rpm/virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"

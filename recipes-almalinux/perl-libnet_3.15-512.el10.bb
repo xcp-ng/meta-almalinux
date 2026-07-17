@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-libnet \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-libnet-3.15-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-libnet-3.15-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "4aa48d583b12668e662dc64557d0566a493523fc41efa0115aa062ae2ffe8358"
 
-URI_x86_64_v2_perl-libnet = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm;name=x86_64_v2_perl-libnet;unpack=0"
+URI_x86_64_v2_perl-libnet = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm;name=x86_64_v2_perl-libnet;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-libnet}"
 SRC_URI[x86_64_v2_perl-libnet.sha256sum] = "1c7a64f05cf253c039ec909729408925c259d751fa764b47af823a4b5fac0ca1"
 
-URI_aarch64_perl-libnet = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm;name=aarch64_perl-libnet;unpack=0"
+URI_aarch64_perl-libnet = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm;name=aarch64_perl-libnet;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-libnet}"
 SRC_URI[aarch64_perl-libnet.sha256sum] = "1c7a64f05cf253c039ec909729408925c259d751fa764b47af823a4b5fac0ca1"
 

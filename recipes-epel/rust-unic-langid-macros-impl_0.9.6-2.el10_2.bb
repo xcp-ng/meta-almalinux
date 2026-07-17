@@ -38,8 +38,8 @@ RDEPENDS:rust-unic-langid-macros-impl-devel = " \
  cargo \
  rust-proc-macro-hack+default-devel \
  rust-quote+default-devel \
- rust-syn+parsing-devel \
- rust-syn+proc-macro-devel \
- rust-syn-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+proc-macro-devel \
+ rust-syn2-devel \
  rust-unic-langid-impl+default-devel \
  "

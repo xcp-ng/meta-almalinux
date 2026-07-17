@@ -34,11 +34,7 @@ RDEPENDS:php-pecl-raphf = " \
  glibc \
  php-common \
  "
-RDEPENDS:php-pecl-raphf-devel:x86_64_v2 = " \
+RDEPENDS:php-pecl-raphf-devel = " \
+ php-devel \
  php-pecl-raphf \
- virtual/php-devel_x86-64_ \
-"
-RDEPENDS:php-pecl-raphf-devel:aarch64 = " \
- php-pecl-raphf \
- virtual/php-devel_aarch-64_ \
-"
+ "

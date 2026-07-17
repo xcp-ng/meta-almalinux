@@ -40,7 +40,7 @@ RDEPENDS:rust-markup5ever0.14-devel = " \
  rust-log+default-devel \
  rust-phf0.11+default-devel \
  rust-phf_codegen0.11+default-devel \
- rust-string_cache+default-devel \
- rust-string_cache_codegen+default-devel \
- rust-tendril+default-devel \
+ rust-string_cache0.8+default-devel \
+ rust-string_cache_codegen0.5+default-devel \
+ rust-tendril0.4+default-devel \
  "

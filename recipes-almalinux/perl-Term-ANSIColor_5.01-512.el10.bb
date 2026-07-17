@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-Term-ANSIColor \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Term-ANSIColor-5.01-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Term-ANSIColor-5.01-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "b5e485374b7d4bddd30dee63c353e70b117680b28c8339a3392c3d50f8ada9ff"
 
-URI_x86_64_v2_perl-Term-ANSIColor = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Term-ANSIColor-5.01-512.el10.noarch.rpm;name=x86_64_v2_perl-Term-ANSIColor;unpack=0"
+URI_x86_64_v2_perl-Term-ANSIColor = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Term-ANSIColor-5.01-512.el10.noarch.rpm;name=x86_64_v2_perl-Term-ANSIColor;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ANSIColor}"
 SRC_URI[x86_64_v2_perl-Term-ANSIColor.sha256sum] = "c757e16b96fdca79291ff666856b382e77f79e771346bdca9d1506c3fae8453b"
 
-URI_aarch64_perl-Term-ANSIColor = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Term-ANSIColor-5.01-512.el10.noarch.rpm;name=aarch64_perl-Term-ANSIColor;unpack=0"
+URI_aarch64_perl-Term-ANSIColor = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Term-ANSIColor-5.01-512.el10.noarch.rpm;name=aarch64_perl-Term-ANSIColor;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Term-ANSIColor}"
 SRC_URI[aarch64_perl-Term-ANSIColor.sha256sum] = "c757e16b96fdca79291ff666856b382e77f79e771346bdca9d1506c3fae8453b"
 

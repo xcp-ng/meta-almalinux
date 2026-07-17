@@ -219,8 +219,8 @@ RDEPENDS:rust-crc-fast+default-devel = " \
 RDEPENDS:rust-crc-fast+digest-devel = " \
  cargo \
  rust-crc-fast-devel \
- rust-digest+alloc-devel \
- rust-digest-devel \
+ rust-digest0.10+alloc-devel \
+ rust-digest0.10-devel \
  "
 RDEPENDS:rust-crc-fast+ffi-devel = " \
  cargo \
@@ -229,7 +229,7 @@ RDEPENDS:rust-crc-fast+ffi-devel = " \
 RDEPENDS:rust-crc-fast+hashbrown-devel = " \
  cargo \
  rust-crc-fast-devel \
- rust-hashbrown+default-devel \
+ rust-hashbrown0.16+default-devel \
  "
 RDEPENDS:rust-crc-fast+optimize_crc32_auto-devel = " \
  cargo \
@@ -270,11 +270,11 @@ RDEPENDS:rust-crc-fast+panic-handler-devel = " \
 RDEPENDS:rust-crc-fast+spin-devel = " \
  cargo \
  rust-crc-fast-devel \
- rust-spin+mutex-devel \
- rust-spin+once-devel \
- rust-spin+rwlock-devel \
- rust-spin+spin_mutex-devel \
- rust-spin-devel \
+ rust-spin0.10+mutex-devel \
+ rust-spin0.10+once-devel \
+ rust-spin0.10+rwlock-devel \
+ rust-spin0.10+spin_mutex-devel \
+ rust-spin0.10-devel \
  "
 RDEPENDS:rust-crc-fast+std-devel = " \
  cargo \
@@ -288,9 +288,9 @@ RDEPENDS:rust-crc-fast+vpclmulqdq-devel = " \
 RDEPENDS:rust-crc-fast-devel = " \
  cargo \
  rust \
- rust-spin+mutex-devel \
- rust-spin+once-devel \
- rust-spin+rwlock-devel \
- rust-spin+spin_mutex-devel \
- rust-spin-devel \
+ rust-spin0.10+mutex-devel \
+ rust-spin0.10+once-devel \
+ rust-spin0.10+rwlock-devel \
+ rust-spin0.10+spin_mutex-devel \
+ rust-spin0.10-devel \
  "

@@ -13,11 +13,11 @@ URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-docutils-0.20.1-5.e
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "57c28e97717c2cc88d9a2ef1df5b70b3f7f9d3107c581e0053fd1e0c3d243935"
 
-URI_x86_64_v2_python3-docutils = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-docutils-0.20.1-5.el10.noarch.rpm;name=x86_64_v2_python3-docutils;unpack=0"
+URI_x86_64_v2_python3-docutils = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-docutils-0.20.1-5.el10.noarch.rpm;name=x86_64_v2_python3-docutils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-docutils}"
 SRC_URI[x86_64_v2_python3-docutils.sha256sum] = "77af976d27cae030efdc54079934e96ad97a5ee0c0dbf5588afa266e3ef4e5af"
 
-URI_aarch64_python3-docutils = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-docutils-0.20.1-5.el10.noarch.rpm;name=aarch64_python3-docutils;unpack=0"
+URI_aarch64_python3-docutils = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-docutils-0.20.1-5.el10.noarch.rpm;name=aarch64_python3-docutils;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-docutils}"
 SRC_URI[aarch64_python3-docutils.sha256sum] = "77af976d27cae030efdc54079934e96ad97a5ee0c0dbf5588afa266e3ef4e5af"
 

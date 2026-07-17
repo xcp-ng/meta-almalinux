@@ -11,7 +11,8 @@ PACKAGES:x86_64_v2 = " \
  seavgabios-bin \
 "
 PACKAGES:aarch64 = " \
-  \
+ seabios-bin \
+ seavgabios-bin \
 "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/seabios-1.17.0-1.el10.alma.1.src.rpm;name=src;unpack=0"
@@ -29,6 +30,14 @@ SRC_URI[x86_64_v2_seabios-bin.sha256sum] = "27df43c68fd0cbc5f17783be0eac80844228
 URI_x86_64_v2_seavgabios-bin = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/seavgabios-bin-1.17.0-1.el10.alma.1.noarch.rpm;name=x86_64_v2_seavgabios-bin;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_seavgabios-bin}"
 SRC_URI[x86_64_v2_seavgabios-bin.sha256sum] = "ce8085491b94ec3b0861cded2afcf3c66fc628081b56a817510f210d8fb23ac7"
+
+URI_aarch64_seabios-bin = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/seabios-bin-1.17.0-1.el10.alma.1.noarch.rpm;name=aarch64_seabios-bin;unpack=0"
+SRC_URI:append = " ${URI_aarch64_seabios-bin}"
+SRC_URI[aarch64_seabios-bin.sha256sum] = "27df43c68fd0cbc5f17783be0eac80844228e24e516e413d714ab06aa63dffed"
+
+URI_aarch64_seavgabios-bin = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/seavgabios-bin-1.17.0-1.el10.alma.1.noarch.rpm;name=aarch64_seavgabios-bin;unpack=0"
+SRC_URI:append = " ${URI_aarch64_seavgabios-bin}"
+SRC_URI[aarch64_seavgabios-bin.sha256sum] = "ce8085491b94ec3b0861cded2afcf3c66fc628081b56a817510f210d8fb23ac7"
 
 RDEPENDS:seabios = " \
  seabios-bin \

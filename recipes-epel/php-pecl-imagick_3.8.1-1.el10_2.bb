@@ -42,11 +42,7 @@ RDEPENDS:php-pecl-imagick:aarch64 = " \
  libgomp \
  php-common \
 "
-RDEPENDS:php-pecl-imagick-devel:x86_64_v2 = " \
+RDEPENDS:php-pecl-imagick-devel = " \
+ php-devel \
  php-pecl-imagick \
- virtual/php-devel_x86-64_ \
-"
-RDEPENDS:php-pecl-imagick-devel:aarch64 = " \
- php-pecl-imagick \
- virtual/php-devel_aarch-64_ \
-"
+ "

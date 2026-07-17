@@ -122,7 +122,7 @@ RDEPENDS:libcamera-tools = " \
  libstdc++ \
  libtiff \
  libyaml \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "
 RDEPENDS:libcamera-v4l2 = " \
  bash \

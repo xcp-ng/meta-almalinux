@@ -162,7 +162,7 @@ RDEPENDS:rust-adblock+unsync-regex-caching-devel = " \
  "
 RDEPENDS:rust-adblock-devel = " \
  cargo \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-bitflags1+default-devel \
  rust-idna+default-devel \
  rust-itertools0.13+default-devel \

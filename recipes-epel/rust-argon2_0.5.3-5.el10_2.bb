@@ -87,8 +87,8 @@ SRC_URI[aarch64_rust-argon2-devel.sha256sum] = "a807dcc337e27ebe3f68f65d1caef3da
 RDEPENDS:rust-argon2+alloc-devel = " \
  cargo \
  rust-argon2-devel \
- rust-password-hash+alloc-devel \
- rust-password-hash+default-devel \
+ rust-password-hash0.5+alloc-devel \
+ rust-password-hash0.5+default-devel \
  "
 RDEPENDS:rust-argon2+default-devel = " \
  cargo \
@@ -100,13 +100,13 @@ RDEPENDS:rust-argon2+default-devel = " \
 RDEPENDS:rust-argon2+password-hash-devel = " \
  cargo \
  rust-argon2-devel \
- rust-password-hash+default-devel \
+ rust-password-hash0.5+default-devel \
  "
 RDEPENDS:rust-argon2+rand-devel = " \
  cargo \
  rust-argon2-devel \
- rust-password-hash+default-devel \
- rust-password-hash+rand_core-devel \
+ rust-password-hash0.5+default-devel \
+ rust-password-hash0.5+rand_core-devel \
  "
 RDEPENDS:rust-argon2+simple-devel = " \
  cargo \
@@ -117,8 +117,8 @@ RDEPENDS:rust-argon2+std-devel = " \
  cargo \
  rust-argon2+alloc-devel \
  rust-argon2-devel \
- rust-password-hash+default-devel \
- rust-password-hash+std-devel \
+ rust-password-hash0.5+default-devel \
+ rust-password-hash0.5+std-devel \
  "
 RDEPENDS:rust-argon2+zeroize-devel = " \
  cargo \

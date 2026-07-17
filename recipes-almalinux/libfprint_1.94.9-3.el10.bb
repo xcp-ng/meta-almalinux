@@ -10,7 +10,7 @@ PACKAGES = " \
  libfprint-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/libfprint-1.94.9-3.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libfprint-1.94.9-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "580067933480201ccdc54ae1502c59a12484f5c8416cd40dcf6ea2d494f44917"
 

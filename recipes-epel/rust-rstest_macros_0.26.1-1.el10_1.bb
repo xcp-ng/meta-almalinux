@@ -73,11 +73,11 @@ RDEPENDS:rust-rstest_macros-devel = " \
  rust-regex+default-devel \
  rust-relative-path+default-devel \
  rust-rustc_version+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
- rust-syn+parsing-devel \
- rust-syn+visit-devel \
- rust-syn+visit-mut-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+visit-devel \
+ rust-syn2+visit-mut-devel \
  rust-unicode-ident+default-devel \
  "

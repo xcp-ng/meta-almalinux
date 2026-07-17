@@ -140,7 +140,7 @@ RDEPENDS:rust-rsa+pkcs5-devel = " \
  "
 RDEPENDS:rust-rsa+serde-devel = " \
  cargo \
- rust-num-bigint-dig+serde-devel \
+ rust-num-bigint-dig0.8+serde-devel \
  rust-rsa-devel \
  rust-serde+derive-devel \
  rust-serde-devel \
@@ -148,18 +148,18 @@ RDEPENDS:rust-rsa+serde-devel = " \
 RDEPENDS:rust-rsa+sha1-devel = " \
  cargo \
  rust-rsa-devel \
- rust-sha1+oid-devel \
- rust-sha1-devel \
+ rust-sha1_0.10+oid-devel \
+ rust-sha1_0.10-devel \
  "
 RDEPENDS:rust-rsa+sha2-devel = " \
  cargo \
  rust-rsa-devel \
- rust-sha2+oid-devel \
- rust-sha2-devel \
+ rust-sha2_0.10+oid-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-rsa+std-devel = " \
  cargo \
- rust-digest+std-devel \
+ rust-digest0.10+std-devel \
  rust-pkcs1+std-devel \
  rust-pkcs8+std-devel \
  rust-rand_core0.6+std-devel \
@@ -168,20 +168,20 @@ RDEPENDS:rust-rsa+std-devel = " \
  "
 RDEPENDS:rust-rsa+u64_digit-devel = " \
  cargo \
- rust-num-bigint-dig+u64_digit-devel \
+ rust-num-bigint-dig0.8+u64_digit-devel \
  rust-rsa-devel \
  "
 RDEPENDS:rust-rsa-devel = " \
  cargo \
  rust \
- rust-const-oid-devel \
- rust-digest+alloc-devel \
- rust-digest+oid-devel \
- rust-digest-devel \
- rust-num-bigint-dig+i128-devel \
- rust-num-bigint-dig+prime-devel \
- rust-num-bigint-dig+zeroize-devel \
- rust-num-bigint-dig-devel \
+ rust-const-oid0.9-devel \
+ rust-digest0.10+alloc-devel \
+ rust-digest0.10+oid-devel \
+ rust-digest0.10-devel \
+ rust-num-bigint-dig0.8+i128-devel \
+ rust-num-bigint-dig0.8+prime-devel \
+ rust-num-bigint-dig0.8+zeroize-devel \
+ rust-num-bigint-dig0.8-devel \
  rust-num-integer-devel \
  rust-num-traits+libm-devel \
  rust-num-traits-devel \
@@ -195,8 +195,8 @@ RDEPENDS:rust-rsa-devel = " \
  rust-signature+digest-devel \
  rust-signature+rand_core-devel \
  rust-signature-devel \
- rust-spki+alloc-devel \
- rust-spki-devel \
+ rust-spki0.7+alloc-devel \
+ rust-spki0.7-devel \
  rust-subtle-devel \
  rust-zeroize+alloc-devel \
  rust-zeroize+default-devel \

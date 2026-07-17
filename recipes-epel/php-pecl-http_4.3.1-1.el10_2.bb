@@ -56,11 +56,7 @@ RDEPENDS:php-pecl-http:aarch64 = " \
  virtual/php-spl_aarch-64_ \
  zlib-ng-compat \
 "
-RDEPENDS:php-pecl-http-devel:x86_64_v2 = " \
+RDEPENDS:php-pecl-http-devel = " \
+ php-devel \
  php-pecl-http \
- virtual/php-devel_x86-64__ge_5.3.0 \
-"
-RDEPENDS:php-pecl-http-devel:aarch64 = " \
- php-pecl-http \
- virtual/php-devel_aarch-64__ge_5.3.0 \
-"
+ "

@@ -193,7 +193,7 @@ RDEPENDS:rust-ratatui0.29+scrolling-regions-devel = " \
 RDEPENDS:rust-ratatui0.29+serde-devel = " \
  cargo \
  rust-bitflags+serde-devel \
- rust-compact_str+serde-devel \
+ rust-compact_str0.9+serde-devel \
  rust-ratatui0.29-devel \
  rust-serde+default-devel \
  rust-serde+derive-devel \
@@ -238,7 +238,7 @@ RDEPENDS:rust-ratatui0.29-devel = " \
  rust \
  rust-bitflags+default-devel \
  rust-cassowary+default-devel \
- rust-compact_str+default-devel \
+ rust-compact_str0.9+default-devel \
  rust-indoc+default-devel \
  rust-instability+default-devel \
  rust-itertools0.13+default-devel \

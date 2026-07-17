@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6af6cc61729859f956b8b657cecbd9e10a6c831efc4a15a2db9697
 
 URI_x86_64_v2_micro = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/micro-2.0.15-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_micro;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_micro}"
-SRC_URI[x86_64_v2_micro.sha256sum] = "85a38fc3a268b22c7cdf3e31fb764b657b1e7a4d2e83f4f0141bf3ed358dd52d"
+SRC_URI[x86_64_v2_micro.sha256sum] = "50a72d4a25b07a780499075f564cc2e5933a9b45148ebfc9f2a3a4974dac4245"
 
 URI_aarch64_micro = "${EPEL_MIRROR}/aarch64/Packages/m/micro-2.0.15-1.el10_2.aarch64.rpm;name=aarch64_micro;unpack=0"
 SRC_URI:append = " ${URI_aarch64_micro}"

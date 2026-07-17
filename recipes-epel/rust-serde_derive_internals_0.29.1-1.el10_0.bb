@@ -39,9 +39,9 @@ RDEPENDS:rust-serde_derive_internals-devel = " \
  rust \
  rust-proc-macro2-devel \
  rust-quote-devel \
- rust-syn+clone-impls-devel \
- rust-syn+derive-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn-devel \
+ rust-syn2+clone-impls-devel \
+ rust-syn2+derive-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2-devel \
  "

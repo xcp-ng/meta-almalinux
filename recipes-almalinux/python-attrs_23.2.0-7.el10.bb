@@ -9,15 +9,15 @@ PACKAGES = " \
  python3-attrs \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/python-attrs-23.2.0-7.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-attrs-23.2.0-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "eec75b57f0e7163bfa4e45492594af3b316a0fe7595694af466cc0a36446c64c"
 
-URI_x86_64_v2_python3-attrs = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/python3-attrs-23.2.0-7.el10.noarch.rpm;name=x86_64_v2_python3-attrs;unpack=0"
+URI_x86_64_v2_python3-attrs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-attrs-23.2.0-7.el10.noarch.rpm;name=x86_64_v2_python3-attrs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-attrs}"
 SRC_URI[x86_64_v2_python3-attrs.sha256sum] = "933038f53d7726dbc49700c9a4b76fb59d14a723d115d0fadb9acb69212c46e5"
 
-URI_aarch64_python3-attrs = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/python3-attrs-23.2.0-7.el10.noarch.rpm;name=aarch64_python3-attrs;unpack=0"
+URI_aarch64_python3-attrs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-attrs-23.2.0-7.el10.noarch.rpm;name=aarch64_python3-attrs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-attrs}"
 SRC_URI[aarch64_python3-attrs.sha256sum] = "933038f53d7726dbc49700c9a4b76fb59d14a723d115d0fadb9acb69212c46e5"
 

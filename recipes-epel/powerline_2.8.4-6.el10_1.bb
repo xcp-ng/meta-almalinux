@@ -17,6 +17,12 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/powerline-2.8.4-6.el10_1.src.rpm;name=sr
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "a98b9a6383e9d0c2255c988b2b77e16750ed623db3c6a20d1421142d2824f475"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - tmux-powerline: tmux
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - tmux-powerline: tmux
+
 URI_x86_64_v2_powerline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/powerline-2.8.4-6.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_powerline;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_powerline}"
 SRC_URI[x86_64_v2_powerline.sha256sum] = "009f7ebfce1f4a4bfe622a83738222dbbe19f19c2021dbf25806987a9e3aa0ee"
@@ -71,7 +77,6 @@ RDEPENDS:powerline-fonts = " \
  "
 RDEPENDS:tmux-powerline = " \
  powerline \
- tmux \
  "
 RDEPENDS:vim-powerline = " \
  powerline \

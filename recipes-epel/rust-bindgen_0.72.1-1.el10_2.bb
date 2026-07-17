@@ -177,9 +177,9 @@ RDEPENDS:rust-bindgen-devel = " \
  rust-regex-devel \
  rust-rustc-hash+default-devel \
  rust-shlex+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
- rust-syn+visit-mut-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
+ rust-syn2+visit-mut-devel \
  virtual/crate_itertools__ge_0.10.0_with_crate_itertools__lt_0.14.0~ \
  "

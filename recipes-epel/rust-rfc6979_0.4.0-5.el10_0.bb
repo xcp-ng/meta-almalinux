@@ -37,7 +37,7 @@ RDEPENDS:rust-rfc6979+default-devel = " \
 RDEPENDS:rust-rfc6979-devel = " \
  cargo \
  rust \
- rust-hmac+reset-devel \
- rust-hmac-devel \
+ rust-hmac0.12+reset-devel \
+ rust-hmac0.12-devel \
  rust-subtle-devel \
  "

@@ -319,12 +319,12 @@ RDEPENDS:rust-p384+serde-devel = " \
 RDEPENDS:rust-p384+serdect-devel = " \
  cargo \
  rust-p384-devel \
- rust-serdect-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-p384+sha2-devel = " \
  cargo \
  rust-p384-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-p384+sha384-devel = " \
  cargo \

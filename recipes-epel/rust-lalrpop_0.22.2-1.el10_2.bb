@@ -73,15 +73,15 @@ RDEPENDS:rust-lalrpop-devel = " \
  rust-ascii-canvas-devel \
  rust-bit-set-devel \
  rust-ena-devel \
- rust-itertools+use_std-devel \
- rust-itertools-devel \
+ rust-itertools0.14+use_std-devel \
+ rust-itertools0.14-devel \
  rust-lalrpop-util-devel \
  rust-petgraph0.7-devel \
  rust-regex+std-devel \
  rust-regex-devel \
  rust-regex-syntax-devel \
  rust-sha3-devel \
- rust-string_cache-devel \
+ rust-string_cache0.8-devel \
  rust-term-devel \
  rust-unicode-xid-devel \
  rust-walkdir+default-devel \

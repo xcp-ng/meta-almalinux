@@ -125,7 +125,7 @@ RDEPENDS:rust-backtrace-devel = " \
  rust-addr2line-devel \
  rust-cfg-if+default-devel \
  rust-libc-devel \
- rust-miniz_oxide-devel \
+ rust-miniz_oxide0.8-devel \
  rust-object0.37+archive-devel \
  rust-object0.37+elf-devel \
  rust-object0.37+macho-devel \

@@ -212,7 +212,7 @@ RDEPENDS:rust-rustyline+rustyline-derive-devel = " \
 RDEPENDS:rust-rustyline+signal-hook-devel = " \
  cargo \
  rust-rustyline-devel \
- rust-signal-hook-devel \
+ rust-signal-hook0.3-devel \
  "
 RDEPENDS:rust-rustyline+termios-devel = " \
  cargo \

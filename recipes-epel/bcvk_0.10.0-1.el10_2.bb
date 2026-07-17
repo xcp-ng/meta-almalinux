@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "df7cc6b6687522a7b55a477d44304db4d3294d274112147cf698ae
 
 URI_x86_64_v2_bcvk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bcvk-0.10.0-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_bcvk;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_bcvk}"
-SRC_URI[x86_64_v2_bcvk.sha256sum] = "31d9e5234e2f1653e2c92e219c9d717ead9b7022b65f0861b2b44bc3708190b2"
+SRC_URI[x86_64_v2_bcvk.sha256sum] = "adba14678c107e4083a06b33cfa51c2c210851c9566659d63be574a343b2c49f"
 
 URI_aarch64_bcvk = "${EPEL_MIRROR}/aarch64/Packages/b/bcvk-0.10.0-1.el10_2.aarch64.rpm;name=aarch64_bcvk;unpack=0"
 SRC_URI:append = " ${URI_aarch64_bcvk}"

@@ -91,7 +91,7 @@ RDEPENDS:rust-twox-hash1+default-devel = " \
  "
 RDEPENDS:rust-twox-hash1+digest_0_10-devel = " \
  cargo \
- rust-digest-devel \
+ rust-digest0.10-devel \
  rust-twox-hash1-devel \
  "
 RDEPENDS:rust-twox-hash1+digest_0_9-devel = " \

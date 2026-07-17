@@ -13,6 +13,9 @@ URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/vsftpd-3.0.5-12.el10
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "8f9d0b240b3839c5923f1c97e5cccd0c0f4d5220a99587d743497c0cf3fad5b0"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - vsftpd: libcap.so.2()(64bit)
+
 URI_x86_64_v2_vsftpd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/vsftpd-3.0.5-12.el10.x86_64_v2.rpm;name=x86_64_v2_vsftpd;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_vsftpd}"
 SRC_URI[x86_64_v2_vsftpd.sha256sum] = "13dcb4048e5243548fc247e402494bd50de5354185eddbcd8cc23b6b89084f1b"
@@ -21,11 +24,18 @@ URI_aarch64_vsftpd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/vsftpd-3
 SRC_URI:append = " ${URI_aarch64_vsftpd}"
 SRC_URI[aarch64_vsftpd.sha256sum] = "fc0a81504b2b2a15f9ca10eaaf3f34377c67161c0c85d3284eadd593b029572d"
 
-RDEPENDS:vsftpd = " \
+RDEPENDS:vsftpd:x86_64_v2 = " \
  bash \
  glibc \
  libcap \
  logrotate \
  openssl-libs \
  pam-libs \
- "
+"
+RDEPENDS:vsftpd:aarch64 = " \
+ bash \
+ glibc \
+ logrotate \
+ openssl-libs \
+ pam-libs \
+"

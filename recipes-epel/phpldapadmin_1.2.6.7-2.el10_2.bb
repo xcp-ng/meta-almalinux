@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1aa2d7ac3bd1321901f76088889fa467fd8a735017210a833c29bb
 
 URI_x86_64_v2_phpldapadmin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phpldapadmin-1.2.6.7-2.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_phpldapadmin;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phpldapadmin}"
-SRC_URI[x86_64_v2_phpldapadmin.sha256sum] = "da2deea9d7512f2cc3201b5f7304dfb8ec4ed04622283e5f135edf859fe6486b"
+SRC_URI[x86_64_v2_phpldapadmin.sha256sum] = "239e600c3fec31b3b2c6ce4fe2d584b0abdef06fc379db0952a6fb5a1ad00a7e"
 
 URI_aarch64_phpldapadmin = "${EPEL_MIRROR}/aarch64/Packages/p/phpldapadmin-1.2.6.7-2.el10_2.noarch.rpm;name=aarch64_phpldapadmin;unpack=0"
 SRC_URI:append = " ${URI_aarch64_phpldapadmin}"

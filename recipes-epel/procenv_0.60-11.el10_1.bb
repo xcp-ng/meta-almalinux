@@ -13,6 +13,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/procenv-0.60-11.el10_1.src.rpm;name=src;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "dcb71cc150e16a956100486cae5b998aae4d3618f565792ecc6691cae1d63a27"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - procenv: libcap.so.2()(64bit)
+
 URI_x86_64_v2_procenv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/procenv-0.60-11.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_procenv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_procenv}"
 SRC_URI[x86_64_v2_procenv.sha256sum] = "908aea0b8703d355b495fb8fac35a3c695a60ada87e9206f0829fd69ca4a08ec"
@@ -21,9 +24,14 @@ URI_aarch64_procenv = "${EPEL_MIRROR}/aarch64/Packages/p/procenv-0.60-11.el10_1.
 SRC_URI:append = " ${URI_aarch64_procenv}"
 SRC_URI[aarch64_procenv.sha256sum] = "59d0c95c52efd39229acf26c14e8d572bcdc28297d60ca59727b3bf1a0bc04d8"
 
-RDEPENDS:procenv = " \
+RDEPENDS:procenv:x86_64_v2 = " \
  glibc \
  libcap \
  libselinux \
  numactl-libs \
- "
+"
+RDEPENDS:procenv:aarch64 = " \
+ glibc \
+ libselinux \
+ numactl-libs \
+"

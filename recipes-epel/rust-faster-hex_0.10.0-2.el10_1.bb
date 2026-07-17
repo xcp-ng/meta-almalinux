@@ -82,5 +82,5 @@ RDEPENDS:rust-faster-hex+std-devel = " \
  "
 RDEPENDS:rust-faster-hex-devel = " \
  cargo \
- rust-heapless+default-devel \
+ rust-heapless0.8+default-devel \
  "

@@ -60,14 +60,14 @@ RDEPENDS:rust-similar-asserts+serde-devel = " \
  "
 RDEPENDS:rust-similar-asserts+unicode-devel = " \
  cargo \
- rust-similar+unicode-devel \
  rust-similar-asserts-devel \
+ rust-similar2+unicode-devel \
  "
 RDEPENDS:rust-similar-asserts-devel = " \
  cargo \
  rust \
  rust-console+std-devel \
  rust-console-devel \
- rust-similar+default-devel \
- rust-similar+inline-devel \
+ rust-similar2+default-devel \
+ rust-similar2+inline-devel \
  "

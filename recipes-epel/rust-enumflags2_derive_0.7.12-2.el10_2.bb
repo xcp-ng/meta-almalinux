@@ -39,9 +39,9 @@ RDEPENDS:rust-enumflags2_derive-devel = " \
  rust \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+derive-devel \
- rust-syn+parsing-devel \
- rust-syn+printing-devel \
- rust-syn+proc-macro-devel \
- rust-syn-devel \
+ rust-syn2+derive-devel \
+ rust-syn2+parsing-devel \
+ rust-syn2+printing-devel \
+ rust-syn2+proc-macro-devel \
+ rust-syn2-devel \
  "

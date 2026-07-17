@@ -15,12 +15,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/m/mpv-0.40.0-1.el10_2.src.rpm;name=src;unp
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "e7725dafb87c249d3c06453e6d5f7a9c6d62874af9f07cdaaa770d4dbee83b4d"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - mpv-devel: pkgconfig(sdl2)
-
-## Requires (aarch64) that were seen as not satisfiable in original repo:
-# - mpv-devel: pkgconfig(sdl2)
-
 URI_x86_64_v2_mpv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mpv-0.40.0-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_mpv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mpv}"
 SRC_URI[x86_64_v2_mpv.sha256sum] = "8b3aff9d8231d5b5abfa74f4b0744f545ea336a051088045c6496704cef91f21"
@@ -83,14 +77,15 @@ RDEPENDS:mpv = " \
  pipewire-libs \
  pulseaudio-libs \
  rubberband \
- sdl2-compat \
  uchardet \
  vapoursynth-libs \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  vulkan-loader \
  zimg \
  zlib-ng-compat \
  "
 RDEPENDS:mpv-devel = " \
+ SDL2-devel \
  alsa-lib-devel \
  compat-lua-devel \
  lcms2-devel \
@@ -170,9 +165,9 @@ RDEPENDS:mpv-libs = " \
  pipewire-libs \
  pulseaudio-libs \
  rubberband \
- sdl2-compat \
  uchardet \
  vapoursynth-libs \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  vulkan-loader \
  zimg \
  zlib-ng-compat \

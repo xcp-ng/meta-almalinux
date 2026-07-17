@@ -51,6 +51,6 @@ RDEPENDS:rust-ansi-parser+std-devel = " \
  "
 RDEPENDS:rust-ansi-parser-devel = " \
  cargo \
- rust-heapless+default-devel \
+ rust-heapless0.8+default-devel \
  rust-nom7-devel \
  "

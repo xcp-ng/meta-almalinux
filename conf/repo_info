@@ -1,15 +1,15 @@
 generated-by: 557c91c:scripts/gen-dnf-proxy.py
 
-almalinux-10.2-AppStream-aarch64: revision: 1787571164, updated-utc: Mon Aug 24 11:32:44 2026
-almalinux-10.2-AppStream-src: revision: 1787571146, updated-utc: Mon Aug 24 11:32:26 2026
-almalinux-10.2-AppStream-x86_64_v2: revision: 1787571139, updated-utc: Mon Aug 24 11:32:19 2026
-almalinux-10.2-BaseOS-aarch64: revision: 1787571203, updated-utc: Mon Aug 24 11:33:23 2026
-almalinux-10.2-BaseOS-src: revision: 1787571189, updated-utc: Mon Aug 24 11:33:09 2026
-almalinux-10.2-BaseOS-x86_64_v2: revision: 1787571187, updated-utc: Mon Aug 24 11:33:07 2026
-almalinux-10.2-CRB-aarch64: revision: 1787571218, updated-utc: Mon Aug 24 11:33:37 2026
-almalinux-10.2-CRB-src: revision: 1787571219, updated-utc: Mon Aug 24 11:33:39 2026
-almalinux-10.2-CRB-x86_64_v2: revision: 1787571217, updated-utc: Mon Aug 24 11:33:37 2026
-epel-10.2-aarch64: revision: 1787532106, updated-utc: Mon Aug 24 00:42:22 2026
-epel-10.2-altarch-src-x86_64_v2: revision: 1787306086, updated-utc: Fri Aug 21 09:54:46 2026
-epel-10.2-src: revision: 1787532090, updated-utc: Mon Aug 24 00:42:22 2026
-epel-10.2-x86_64_v2: revision: 1787306049, updated-utc: Fri Aug 21 09:54:09 2026
+almalinux-10-kitten-AppStream-aarch64: revision: 1784889126, updated-utc: Fri Jul 24 10:32:06 2026
+almalinux-10-kitten-AppStream-src: revision: 1784889133, updated-utc: Fri Jul 24 10:32:13 2026
+almalinux-10-kitten-AppStream-x86_64_v2: revision: 1784889112, updated-utc: Fri Jul 24 10:31:52 2026
+almalinux-10-kitten-BaseOS-aarch64: revision: 1784889228, updated-utc: Fri Jul 24 10:33:46 2026
+almalinux-10-kitten-BaseOS-src: revision: 1784889230, updated-utc: Fri Jul 24 10:33:50 2026
+almalinux-10-kitten-BaseOS-x86_64_v2: revision: 1784889203, updated-utc: Fri Jul 24 10:33:23 2026
+almalinux-10-kitten-CRB-aarch64: revision: 1784889282, updated-utc: Fri Jul 24 10:34:42 2026
+almalinux-10-kitten-CRB-src: revision: 1784889285, updated-utc: Fri Jul 24 10:34:44 2026
+almalinux-10-kitten-CRB-x86_64_v2: revision: 1784889282, updated-utc: Fri Jul 24 10:34:41 2026
+epel-10-kitten-aarch64: revision: 1787530925, updated-utc: Mon Aug 24 00:22:20 2026
+epel-10-kitten-altarch-src-x86_64_v2: revision: 1787305180, updated-utc: Fri Aug 21 09:39:40 2026
+epel-10-kitten-src: revision: 1787530895, updated-utc: Mon Aug 24 00:22:19 2026
+epel-10-kitten-x86_64_v2: revision: 1787305147, updated-utc: Fri Aug 21 09:39:07 2026

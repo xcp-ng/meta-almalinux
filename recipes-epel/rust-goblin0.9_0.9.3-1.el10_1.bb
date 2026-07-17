@@ -37,6 +37,7 @@ SRC_URI[x86_64_v2_rust-goblin0.9+archive-devel.sha256sum] = "c9097dff763a0b5d3d9
 URI_x86_64_v2_rust-goblin0.9+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-goblin0.9+default-devel-0.9.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-goblin0.9+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-goblin0.9+default-devel}"
 SRC_URI[x86_64_v2_rust-goblin0.9+default-devel.sha256sum] = "773468b88f2c6c42d86542a9aed022539a1903452ef59a329cfbf92ad200d07a"
+RPROVIDES:rust-goblin0.9+default-devel:x86_64_v2 = "virtual/crate_goblin/default__ge_0.9.0_with_crate_goblin/default__lt_0.11.0~"
 
 URI_x86_64_v2_rust-goblin0.9+elf32-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-goblin0.9+elf32-devel-0.9.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-goblin0.9+elf32-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-goblin0.9+elf32-devel}"
@@ -93,6 +94,7 @@ SRC_URI[aarch64_rust-goblin0.9+archive-devel.sha256sum] = "7b42d52e7c087825c3d79
 URI_aarch64_rust-goblin0.9+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-goblin0.9+default-devel-0.9.3-1.el10_1.noarch.rpm;name=aarch64_rust-goblin0.9+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-goblin0.9+default-devel}"
 SRC_URI[aarch64_rust-goblin0.9+default-devel.sha256sum] = "0f63c0a9f201b22618e1683c98284825ba4b5eda39da647c6404b35ba13fea89"
+RPROVIDES:rust-goblin0.9+default-devel:aarch64 = "virtual/crate_goblin/default__ge_0.9.0_with_crate_goblin/default__lt_0.11.0~"
 
 URI_aarch64_rust-goblin0.9+elf32-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-goblin0.9+elf32-devel-0.9.3-1.el10_1.noarch.rpm;name=aarch64_rust-goblin0.9+elf32-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-goblin0.9+elf32-devel}"
@@ -225,3 +227,7 @@ RDEPENDS:rust-goblin0.9-devel = " \
  rust-plain+default-devel \
  rust-scroll0.12-devel \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_goblin/default__ge_0.9.0_with_crate_goblin/default__lt_0.11.0~"
+
+PROVIDES:append:aarch64 = " rpm/virtual/crate_goblin/default__ge_0.9.0_with_crate_goblin/default__lt_0.11.0~"

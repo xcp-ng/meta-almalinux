@@ -148,7 +148,7 @@ RDEPENDS:rust-ratatui-core+scrolling-regions-devel = " \
 RDEPENDS:rust-ratatui-core+serde-devel = " \
  cargo \
  rust-bitflags+serde-devel \
- rust-compact_str+serde-devel \
+ rust-compact_str0.9+serde-devel \
  rust-ratatui-core+std-devel \
  rust-ratatui-core-devel \
  rust-serde+default-devel \
@@ -156,11 +156,11 @@ RDEPENDS:rust-ratatui-core+serde-devel = " \
  "
 RDEPENDS:rust-ratatui-core+std-devel = " \
  cargo \
- rust-compact_str+std-devel \
- rust-itertools+use_std-devel \
+ rust-compact_str0.9+std-devel \
+ rust-itertools0.14+use_std-devel \
  rust-kasuari+std-devel \
  rust-ratatui-core-devel \
- rust-strum+std-devel \
+ rust-strum0.27+std-devel \
  rust-thiserror+std-devel \
  rust-unicode-truncate+std-devel \
  "
@@ -172,15 +172,15 @@ RDEPENDS:rust-ratatui-core-devel = " \
  cargo \
  rust \
  rust-bitflags+default-devel \
- rust-compact_str-devel \
- rust-hashbrown+default-devel \
+ rust-compact_str0.9-devel \
+ rust-hashbrown0.16+default-devel \
  rust-indoc+default-devel \
- rust-itertools+use_alloc-devel \
- rust-itertools-devel \
+ rust-itertools0.14+use_alloc-devel \
+ rust-itertools0.14-devel \
  rust-kasuari-devel \
  rust-lru+default-devel \
- rust-strum+derive-devel \
- rust-strum-devel \
+ rust-strum0.27+derive-devel \
+ rust-strum0.27-devel \
  rust-thiserror-devel \
  rust-unicode-segmentation+default-devel \
  rust-unicode-truncate-devel \

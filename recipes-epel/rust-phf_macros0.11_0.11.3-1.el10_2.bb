@@ -70,6 +70,6 @@ RDEPENDS:rust-phf_macros0.11-devel = " \
  rust-phf_shared0.11-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+full-devel \
  "

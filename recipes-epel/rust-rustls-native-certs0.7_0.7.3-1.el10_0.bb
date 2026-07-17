@@ -37,7 +37,7 @@ RDEPENDS:rust-rustls-native-certs0.7+default-devel = " \
 RDEPENDS:rust-rustls-native-certs0.7-devel = " \
  cargo \
  rust \
- rust-openssl-probe+default-devel \
+ rust-openssl-probe0.1+default-devel \
  rust-rustls-pemfile+default-devel \
  rust-rustls-pki-types+default-devel \
  "

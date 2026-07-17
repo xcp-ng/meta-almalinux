@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "fd8043e0923be013b3fdbc3651d887ce1cb47afba8a6aaa4337ada
 
 URI_x86_64_v2_python3-chardet = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-chardet-5.2.0-19.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_python3-chardet;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-chardet}"
-SRC_URI[x86_64_v2_python3-chardet.sha256sum] = "9344222028f1e83d875be7dbc7fe010d69c1e20bdbe880ea3d9df7f78aa7777d"
+SRC_URI[x86_64_v2_python3-chardet.sha256sum] = "37db7eec0cc8b6b38b6b333245a0a80a171f6eaee58eb73b74e47202829e5818"
 
 URI_aarch64_python3-chardet = "${EPEL_MIRROR}/aarch64/Packages/p/python3-chardet-5.2.0-19.el10_2.noarch.rpm;name=aarch64_python3-chardet;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-chardet}"

@@ -39,7 +39,7 @@ RDEPENDS:rust-gix-macros-devel = " \
  rust \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+fold-devel \
- rust-syn+full-devel \
+ rust-syn2+default-devel \
+ rust-syn2+fold-devel \
+ rust-syn2+full-devel \
  "

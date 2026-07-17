@@ -53,5 +53,5 @@ RDEPENDS:openal-soft-examples = " \
  glibc \
  libsndfile \
  openal-soft \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  "

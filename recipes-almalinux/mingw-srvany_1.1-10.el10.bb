@@ -5,12 +5,9 @@ inherit dnf-bridge
 PN = "mingw-srvany"
 PV = "1.1"
 PR = "10.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw-srvany-redistributable \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mingw-srvany-1.1-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -19,6 +16,10 @@ SRC_URI[src.sha256sum] = "7b0ebdd9bb8359743c81362227e56252164a75bbf31929b9669cc3
 URI_x86_64_v2_mingw-srvany-redistributable = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mingw-srvany-redistributable-1.1-10.el10.noarch.rpm;name=x86_64_v2_mingw-srvany-redistributable;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw-srvany-redistributable}"
 SRC_URI[x86_64_v2_mingw-srvany-redistributable.sha256sum] = "6f05bab478528a2a47142ed1ff34e8589ab51895b1841646b1e652f3ed6563a5"
+
+URI_aarch64_mingw-srvany-redistributable = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mingw-srvany-redistributable-1.1-10.el10.noarch.rpm;name=aarch64_mingw-srvany-redistributable;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw-srvany-redistributable}"
+SRC_URI[aarch64_mingw-srvany-redistributable.sha256sum] = "6f05bab478528a2a47142ed1ff34e8589ab51895b1841646b1e652f3ed6563a5"
 
 RDEPENDS:mingw-srvany-redistributable = " \
  "

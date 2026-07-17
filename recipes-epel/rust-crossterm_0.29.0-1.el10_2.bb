@@ -139,9 +139,9 @@ RDEPENDS:rust-crossterm+events-devel = " \
  rust-crossterm-devel \
  rust-mio+default-devel \
  rust-mio+os-poll-devel \
- rust-signal-hook+default-devel \
  rust-signal-hook-mio+default-devel \
  rust-signal-hook-mio+support-v1_0-devel \
+ rust-signal-hook0.3+default-devel \
  "
 RDEPENDS:rust-crossterm+filedescriptor-devel = " \
  cargo \
@@ -155,7 +155,7 @@ RDEPENDS:rust-crossterm+libc-devel = " \
  "
 RDEPENDS:rust-crossterm+osc52-devel = " \
  cargo \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-crossterm-devel \
  "
 RDEPENDS:rust-crossterm+serde-devel = " \

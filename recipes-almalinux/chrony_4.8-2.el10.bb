@@ -13,15 +13,20 @@ URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/chrony-4.8-2.el10.src.r
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "9433890e4e00c70f8d597df9772b299cfe14f1dab2c688ad1b62373e7bde65e9"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - chrony: libcap.so.2()(64bit)
+
 URI_x86_64_v2_chrony = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/chrony-4.8-2.el10.x86_64_v2.rpm;name=x86_64_v2_chrony;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_chrony}"
 SRC_URI[x86_64_v2_chrony.sha256sum] = "cb1dcc8596440c214d8b1ed9040f212d09a681c3c9fe06304dfc81e3602cdae9"
+RPROVIDES:chrony:x86_64_v2 = "virtual/ntpsec_or_chrony"
 
 URI_aarch64_chrony = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/chrony-4.8-2.el10.aarch64.rpm;name=aarch64_chrony;unpack=0"
 SRC_URI:append = " ${URI_aarch64_chrony}"
 SRC_URI[aarch64_chrony.sha256sum] = "4a07938e9497a2d032efe33b7bed2f8517addf1e530943f32d9d8b658e181bfe"
+RPROVIDES:chrony:aarch64 = "virtual/ntpsec_or_chrony"
 
-RDEPENDS:chrony = " \
+RDEPENDS:chrony:x86_64_v2 = " \
  bash \
  glibc \
  gnutls \
@@ -31,4 +36,18 @@ RDEPENDS:chrony = " \
  shadow-utils \
  systemd \
  tzdata \
- "
+"
+RDEPENDS:chrony:aarch64 = " \
+ bash \
+ glibc \
+ gnutls \
+ libedit \
+ libseccomp \
+ shadow-utils \
+ systemd \
+ tzdata \
+"
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/ntpsec_or_chrony"
+
+PROVIDES:append:aarch64 = " rpm/virtual/ntpsec_or_chrony"

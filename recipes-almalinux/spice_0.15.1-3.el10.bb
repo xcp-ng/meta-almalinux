@@ -7,7 +7,6 @@ PV = "0.15.1"
 PR = "3.el10"
 PACKAGES = " \
  spice-server \
- spice-server-devel \
  "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/spice-0.15.1-3.el10.src.rpm;name=src;unpack=0"
@@ -18,17 +17,9 @@ URI_x86_64_v2_spice-server = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Package
 SRC_URI:append = " ${URI_x86_64_v2_spice-server}"
 SRC_URI[x86_64_v2_spice-server.sha256sum] = "d77fe8134215da8a2be115c93bc0f49a83b964b88ce913de2385dcb23924f655"
 
-URI_x86_64_v2_spice-server-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/spice-server-devel-0.15.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_spice-server-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_spice-server-devel}"
-SRC_URI[x86_64_v2_spice-server-devel.sha256sum] = "863ab584ce257c58f2f7e2c792681d523533dfd72b9b4e55f93a10c10304e06f"
-
 URI_aarch64_spice-server = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/spice-server-0.15.1-3.el10.aarch64.rpm;name=aarch64_spice-server;unpack=0"
 SRC_URI:append = " ${URI_aarch64_spice-server}"
 SRC_URI[aarch64_spice-server.sha256sum] = "6a9126b32557a10c9924280723df51dda0693781b4641175b26b86a2eafde9db"
-
-URI_aarch64_spice-server-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/spice-server-devel-0.15.1-3.el10.aarch64.rpm;name=aarch64_spice-server-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_spice-server-devel}"
-SRC_URI[aarch64_spice-server-devel.sha256sum] = "0f43275979d41302502392af3c28c1963214308c1100849aef3a5c64438b1224"
 
 RDEPENDS:spice-server = " \
  cyrus-sasl-lib \
@@ -45,13 +36,4 @@ RDEPENDS:spice-server = " \
  orc \
  pixman \
  zlib-ng-compat \
- "
-RDEPENDS:spice-server-devel = " \
- glib2-devel \
- libcacard-devel \
- openssl-devel \
- pixman-devel \
- pkgconf-pkg-config \
- spice-protocol \
- spice-server \
  "

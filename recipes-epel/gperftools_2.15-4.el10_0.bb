@@ -16,6 +16,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/g/gperftools-2.15-4.el10_0.src.rpm;name=sr
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "7a8bdca8b7638baca964a26582b7c036dbfdc8da3cba12736d11b5a5f5dbc6ae"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - pprof: graphviz
+
 URI_x86_64_v2_gperftools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gperftools-2.15-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gperftools;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gperftools}"
 SRC_URI[x86_64_v2_gperftools.sha256sum] = "83c7291364de4fc9726fc0a8a7fddb040356ef40c73d635634a739f1c8750ab6"
@@ -62,7 +65,7 @@ RDEPENDS:gperftools-libs = " \
  libstdc++ \
  libunwind \
  "
-RDEPENDS:pprof = " \
+RDEPENDS:pprof:x86_64_v2 = " \
  graphviz \
  gv \
  perl-Getopt-Long \
@@ -70,4 +73,12 @@ RDEPENDS:pprof = " \
  perl-PathTools \
  perl-interpreter \
  perl-libs \
- "
+"
+RDEPENDS:pprof:aarch64 = " \
+ gv \
+ perl-Getopt-Long \
+ perl-POSIX \
+ perl-PathTools \
+ perl-interpreter \
+ perl-libs \
+"

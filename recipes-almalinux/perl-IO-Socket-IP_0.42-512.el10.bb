@@ -9,15 +9,15 @@ PACKAGES = " \
  perl-IO-Socket-IP \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Socket-IP-0.42-512.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-IO-Socket-IP-0.42-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "bd1ec12de4568119c59de08e7d00c65ea7380594feec3549c8b32f40b4f1c01f"
 
-URI_x86_64_v2_perl-IO-Socket-IP = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Socket-IP-0.42-512.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-IP;unpack=0"
+URI_x86_64_v2_perl-IO-Socket-IP = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-IO-Socket-IP-0.42-512.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-IP;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-IO-Socket-IP}"
 SRC_URI[x86_64_v2_perl-IO-Socket-IP.sha256sum] = "e17497fb60842857e947028e41da4b669ca261b7c187442e39d3ebd7473534f7"
 
-URI_aarch64_perl-IO-Socket-IP = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Socket-IP-0.42-512.el10.noarch.rpm;name=aarch64_perl-IO-Socket-IP;unpack=0"
+URI_aarch64_perl-IO-Socket-IP = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-IO-Socket-IP-0.42-512.el10.noarch.rpm;name=aarch64_perl-IO-Socket-IP;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-IO-Socket-IP}"
 SRC_URI[aarch64_perl-IO-Socket-IP.sha256sum] = "e17497fb60842857e947028e41da4b669ca261b7c187442e39d3ebd7473534f7"
 

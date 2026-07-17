@@ -191,9 +191,9 @@ RDEPENDS:rust-flate2+miniz_oxide-devel = " \
  rust-crc32fast+default-devel \
  rust-flate2+any_impl-devel \
  rust-flate2-devel \
- rust-miniz_oxide+simd-devel \
- rust-miniz_oxide+with-alloc-devel \
- rust-miniz_oxide-devel \
+ rust-miniz_oxide0.8+simd-devel \
+ rust-miniz_oxide0.8+with-alloc-devel \
+ rust-miniz_oxide0.8-devel \
  "
 RDEPENDS:rust-flate2+rust_backend-devel = " \
  cargo \

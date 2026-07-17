@@ -10,15 +10,15 @@ PACKAGES = " \
  perl-Socket \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Socket-2.038-511.el10.src.rpm;name=src;unpack=0"
+URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Socket-2.038-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "5a42d50e289d2f880629382c70f4d53f1f2e59a4e77fcac3912907348610066f"
 
-URI_x86_64_v2_perl-Socket = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Socket-2.038-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Socket;unpack=0"
+URI_x86_64_v2_perl-Socket = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Socket-2.038-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Socket;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Socket}"
 SRC_URI[x86_64_v2_perl-Socket.sha256sum] = "f270ad7067c1825220b57124754e51babba72f0c5860176ad646bdbd62c48b5a"
 
-URI_aarch64_perl-Socket = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Socket-2.038-511.el10.aarch64.rpm;name=aarch64_perl-Socket;unpack=0"
+URI_aarch64_perl-Socket = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Socket-2.038-511.el10.aarch64.rpm;name=aarch64_perl-Socket;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Socket}"
 SRC_URI[aarch64_perl-Socket.sha256sum] = "763bcccaf2b4e95a1a75a4c1e0eed77620319994576b53a75246e60ab7f4645b"
 

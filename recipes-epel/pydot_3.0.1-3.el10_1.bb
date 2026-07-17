@@ -13,6 +13,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/pydot-3.0.1-3.el10_1.src.rpm;name=src;un
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "ec5b58f0af74e49d5e076ed45f7ffc0860b8dd35f6bdd9343ac8e75b8dcd107d"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - python3-pydot: graphviz
+
 URI_x86_64_v2_python3-pydot = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pydot-3.0.1-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pydot;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pydot}"
 SRC_URI[x86_64_v2_python3-pydot.sha256sum] = "c784a2bca4ab87a19287c1dfb983daa9cd780fce7da7376a9480e6d00ef1297c"
@@ -21,8 +24,12 @@ URI_aarch64_python3-pydot = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pydot-3.0
 SRC_URI:append = " ${URI_aarch64_python3-pydot}"
 SRC_URI[aarch64_python3-pydot.sha256sum] = "8aa654f6b3838d96f433ee8436e82244357b6524ed2b781d0f5c04fb9aabd37b"
 
-RDEPENDS:python3-pydot = " \
+RDEPENDS:python3-pydot:x86_64_v2 = " \
  graphviz \
  python3 \
  python3-pyparsing \
- "
+"
+RDEPENDS:python3-pydot:aarch64 = " \
+ python3 \
+ python3-pyparsing \
+"

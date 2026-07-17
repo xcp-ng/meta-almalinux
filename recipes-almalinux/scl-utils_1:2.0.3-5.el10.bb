@@ -13,23 +13,23 @@ PACKAGES = " \
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/scl-utils-2.0.3-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
-SRC_URI[src.sha256sum] = "9269080b4ed62c815f2c1d7eeda0ba57b93da492de3932f4a24c8457448f3119"
+SRC_URI[src.sha256sum] = "92bd9d978b0e831771221592d8be4f4b6825910f8519a6e5854b6f036eaa1fff"
 
 URI_x86_64_v2_scl-utils = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/scl-utils-2.0.3-5.el10.x86_64_v2.rpm;name=x86_64_v2_scl-utils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_scl-utils}"
-SRC_URI[x86_64_v2_scl-utils.sha256sum] = "1dc4e70be124c7e7087b86fcc622b3ed0c7e302c95d8f4676cb060c53103c62a"
+SRC_URI[x86_64_v2_scl-utils.sha256sum] = "af0b03cc600db3ef637f036427546080b500dd75797b57d38cd1fca79b84eef2"
 
 URI_x86_64_v2_scl-utils-build = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/scl-utils-build-2.0.3-5.el10.x86_64_v2.rpm;name=x86_64_v2_scl-utils-build;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_scl-utils-build}"
-SRC_URI[x86_64_v2_scl-utils-build.sha256sum] = "36759722bcafb16d0037c2fccd4a3e38859b8485c982f8bfb6e02dac8b1f3bdc"
+SRC_URI[x86_64_v2_scl-utils-build.sha256sum] = "075362f5fb167dd4d4f95fd0e986c30f4a831c89c0c33bbea3ef8635f1829e70"
 
 URI_aarch64_scl-utils = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/scl-utils-2.0.3-5.el10.aarch64.rpm;name=aarch64_scl-utils;unpack=0"
 SRC_URI:append = " ${URI_aarch64_scl-utils}"
-SRC_URI[aarch64_scl-utils.sha256sum] = "1a766d9752ba04c1c12c81e689cd2f431c3a9cf41146fdcbad90d9d2c614bdc4"
+SRC_URI[aarch64_scl-utils.sha256sum] = "090f255c0f006e9f4600c8b1fa485944380617b09634ff7993e405e204c330e5"
 
 URI_aarch64_scl-utils-build = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/scl-utils-build-2.0.3-5.el10.aarch64.rpm;name=aarch64_scl-utils-build;unpack=0"
 SRC_URI:append = " ${URI_aarch64_scl-utils-build}"
-SRC_URI[aarch64_scl-utils-build.sha256sum] = "cfa02b32cc2d9ef0dd7d1479b3cf36c66be054906f4ba0901d8da43848eeedec"
+SRC_URI[aarch64_scl-utils-build.sha256sum] = "13476c1051f3c5d3df52e5f88ab9ffa8701ce182cea6038b1a42e7cdee51dd31"
 
 RDEPENDS:scl-utils = " \
  bash \

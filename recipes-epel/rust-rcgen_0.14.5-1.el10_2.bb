@@ -19,6 +19,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-rcgen-0.14.5-1.el10_2.src.rpm;name=
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "323e4aaf4c80a799adaf09ddb79d08811f1b216d94a57124a6fb8c048b63576a"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - rust-rcgen+pem-devel: (crate(pem/default) >= 3.0.2 with crate(pem/default) < 4.0.0~)
+
 URI_x86_64_v2_rust-rcgen+crypto-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rcgen+crypto-devel-0.14.5-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rcgen+crypto-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-rcgen+crypto-devel}"
 SRC_URI[x86_64_v2_rust-rcgen+crypto-devel.sha256sum] = "1ce24c4742b4afafe1081a7268faf23f416aa43760c6927df10d82f7a114588a"
@@ -86,11 +89,15 @@ RDEPENDS:rust-rcgen+default-devel = " \
  rust-rcgen+ring-devel \
  rust-rcgen-devel \
  "
-RDEPENDS:rust-rcgen+pem-devel = " \
+RDEPENDS:rust-rcgen+pem-devel:x86_64_v2 = " \
  cargo \
- rust-pem+default-devel \
  rust-rcgen-devel \
- "
+"
+RDEPENDS:rust-rcgen+pem-devel:aarch64 = " \
+ cargo \
+ rust-pem3+default-devel \
+ rust-rcgen-devel \
+"
 RDEPENDS:rust-rcgen+ring-devel = " \
  cargo \
  rust-rcgen+crypto-devel \

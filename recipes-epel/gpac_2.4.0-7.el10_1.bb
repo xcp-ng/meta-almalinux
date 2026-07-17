@@ -94,7 +94,7 @@ RDEPENDS:gpac-libs = " \
  openssl-libs \
  pipewire-jack-audio-connection-kit-libs \
  pulseaudio-libs \
- sdl2-compat \
+ virtual/libSDL2-2.0.so.0___64bit_ \
  xvidcore \
  xz-libs \
  zlib-ng-compat \

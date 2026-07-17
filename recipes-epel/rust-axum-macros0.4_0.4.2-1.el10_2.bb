@@ -42,7 +42,7 @@ SRC_URI[aarch64_rust-axum-macros0.4-devel.sha256sum] = "cea2391c6d211e5756cb75c0
 RDEPENDS:rust-axum-macros0.4+__private-devel = " \
  cargo \
  rust-axum-macros0.4-devel \
- rust-syn+visit-mut-devel \
+ rust-syn2+visit-mut-devel \
  "
 RDEPENDS:rust-axum-macros0.4+default-devel = " \
  cargo \
@@ -53,8 +53,8 @@ RDEPENDS:rust-axum-macros0.4-devel = " \
  rust \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
- rust-syn+default-devel \
- rust-syn+extra-traits-devel \
- rust-syn+full-devel \
- rust-syn+parsing-devel \
+ rust-syn2+default-devel \
+ rust-syn2+extra-traits-devel \
+ rust-syn2+full-devel \
+ rust-syn2+parsing-devel \
  "

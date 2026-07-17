@@ -17,6 +17,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-jsonwebtoken-9.3.1-4.el10_2.src.rpm
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "cc2d1b67251e7f99942378b99e181654a267b22517e21096f8bfa15d3ef0e0ab"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - rust-jsonwebtoken+pem-devel: (crate(pem/default) >= 3.0.0 with crate(pem/default) < 4.0.0~)
+
 URI_x86_64_v2_rust-jsonwebtoken+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-jsonwebtoken+default-devel-9.3.1-4.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-jsonwebtoken+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-jsonwebtoken+default-devel}"
 SRC_URI[x86_64_v2_rust-jsonwebtoken+default-devel.sha256sum] = "72b6a49b63cc844bb6f28c5b2614c616ce947367a4fc83f6b64ee93b81d9c1a1"
@@ -62,11 +65,15 @@ RDEPENDS:rust-jsonwebtoken+default-devel = " \
  rust-jsonwebtoken+use_pem-devel \
  rust-jsonwebtoken-devel \
  "
-RDEPENDS:rust-jsonwebtoken+pem-devel = " \
+RDEPENDS:rust-jsonwebtoken+pem-devel:x86_64_v2 = " \
  cargo \
  rust-jsonwebtoken-devel \
- rust-pem+default-devel \
- "
+"
+RDEPENDS:rust-jsonwebtoken+pem-devel:aarch64 = " \
+ cargo \
+ rust-jsonwebtoken-devel \
+ rust-pem3+default-devel \
+"
 RDEPENDS:rust-jsonwebtoken+simple_asn1-devel = " \
  cargo \
  rust-jsonwebtoken-devel \
@@ -81,7 +88,7 @@ RDEPENDS:rust-jsonwebtoken+use_pem-devel = " \
 RDEPENDS:rust-jsonwebtoken-devel = " \
  cargo \
  rust \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-ring+default-devel \
  rust-ring+std-devel \
  rust-serde+default-devel \

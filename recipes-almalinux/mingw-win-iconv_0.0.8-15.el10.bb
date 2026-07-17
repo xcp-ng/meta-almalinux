@@ -5,15 +5,12 @@ inherit dnf-bridge
 PN = "mingw-win-iconv"
 PV = "0.0.8"
 PR = "15.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-win-iconv \
  mingw32-win-iconv-static \
  mingw64-win-iconv \
  mingw64-win-iconv-static \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-win-iconv-0.0.8-15.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -34,6 +31,22 @@ SRC_URI[x86_64_v2_mingw64-win-iconv.sha256sum] = "c4ee8122bfab7310adbd3109506e16
 URI_x86_64_v2_mingw64-win-iconv-static = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-win-iconv-static-0.0.8-15.el10.noarch.rpm;name=x86_64_v2_mingw64-win-iconv-static;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw64-win-iconv-static}"
 SRC_URI[x86_64_v2_mingw64-win-iconv-static.sha256sum] = "55117739a3a9f9cee6e9cb4493def05d5a3e859e7fc126b517a88a55a1b04102"
+
+URI_aarch64_mingw32-win-iconv = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-win-iconv-0.0.8-15.el10.noarch.rpm;name=aarch64_mingw32-win-iconv;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-win-iconv}"
+SRC_URI[aarch64_mingw32-win-iconv.sha256sum] = "da9a306c7183b3b79d2e954e144b5d4108804e2d32be423ac7bd812fb353ba85"
+
+URI_aarch64_mingw32-win-iconv-static = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-win-iconv-static-0.0.8-15.el10.noarch.rpm;name=aarch64_mingw32-win-iconv-static;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-win-iconv-static}"
+SRC_URI[aarch64_mingw32-win-iconv-static.sha256sum] = "e39b159fbe7b6b65afcdd3f2c0447c2c3cb085b23132ae15cdbdb2a051092d9a"
+
+URI_aarch64_mingw64-win-iconv = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-win-iconv-0.0.8-15.el10.noarch.rpm;name=aarch64_mingw64-win-iconv;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-win-iconv}"
+SRC_URI[aarch64_mingw64-win-iconv.sha256sum] = "c4ee8122bfab7310adbd3109506e16e95189c5810244ceb39dde284ced91735d"
+
+URI_aarch64_mingw64-win-iconv-static = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-win-iconv-static-0.0.8-15.el10.noarch.rpm;name=aarch64_mingw64-win-iconv-static;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-win-iconv-static}"
+SRC_URI[aarch64_mingw64-win-iconv-static.sha256sum] = "55117739a3a9f9cee6e9cb4493def05d5a3e859e7fc126b517a88a55a1b04102"
 
 RDEPENDS:mingw32-win-iconv = " \
  mingw32-crt \

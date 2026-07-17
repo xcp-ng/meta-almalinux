@@ -287,9 +287,9 @@ RDEPENDS:rust-axum0.7+ws-devel = " \
  cargo \
  rust-axum0.7+tokio-devel \
  rust-axum0.7-devel \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-hyper+default-devel \
- rust-sha1+default-devel \
+ rust-sha1_0.10+default-devel \
  rust-tokio-tungstenite0.23+default-devel \
  "
 RDEPENDS:rust-axum0.7-devel = " \

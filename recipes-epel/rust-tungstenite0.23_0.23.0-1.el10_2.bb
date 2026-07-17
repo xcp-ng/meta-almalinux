@@ -239,7 +239,7 @@ RDEPENDS:rust-tungstenite0.23+rustls-tls-webpki-roots-devel = " \
  "
 RDEPENDS:rust-tungstenite0.23+sha1-devel = " \
  cargo \
- rust-sha1+default-devel \
+ rust-sha1_0.10+default-devel \
  rust-tungstenite0.23-devel \
  "
 RDEPENDS:rust-tungstenite0.23+url-devel = " \

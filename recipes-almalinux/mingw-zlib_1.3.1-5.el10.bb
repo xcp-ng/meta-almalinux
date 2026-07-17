@@ -5,15 +5,12 @@ inherit dnf-bridge
 PN = "mingw-zlib"
 PV = "1.3.1"
 PR = "5.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-zlib \
  mingw32-zlib-static \
  mingw64-zlib \
  mingw64-zlib-static \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-zlib-1.3.1-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI = "${URI_src}"
@@ -34,6 +31,22 @@ SRC_URI[x86_64_v2_mingw64-zlib.sha256sum] = "0f994d5aafb7d321e1adf6e56b5205a1623
 URI_x86_64_v2_mingw64-zlib-static = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-zlib-static-1.3.1-5.el10.noarch.rpm;name=x86_64_v2_mingw64-zlib-static;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_mingw64-zlib-static}"
 SRC_URI[x86_64_v2_mingw64-zlib-static.sha256sum] = "73f6aae6ad8d1093fdc6cd3fd71e9c5f4b9885b72d149a5997c154724877cf32"
+
+URI_aarch64_mingw32-zlib = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-zlib-1.3.1-5.el10.noarch.rpm;name=aarch64_mingw32-zlib;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-zlib}"
+SRC_URI[aarch64_mingw32-zlib.sha256sum] = "7104f07608b9312e311cb5fdb971dbd55e23252529706d8022fb986360a31e75"
+
+URI_aarch64_mingw32-zlib-static = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-zlib-static-1.3.1-5.el10.noarch.rpm;name=aarch64_mingw32-zlib-static;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw32-zlib-static}"
+SRC_URI[aarch64_mingw32-zlib-static.sha256sum] = "04d3ec64b1f2114921ba3a8b54fbcde9ded021bb8a879aca6d80d7d7e0d0f3cb"
+
+URI_aarch64_mingw64-zlib = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-zlib-1.3.1-5.el10.noarch.rpm;name=aarch64_mingw64-zlib;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-zlib}"
+SRC_URI[aarch64_mingw64-zlib.sha256sum] = "0f994d5aafb7d321e1adf6e56b5205a162383dbb6b7b30d3eb8c520198a2fdbb"
+
+URI_aarch64_mingw64-zlib-static = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-zlib-static-1.3.1-5.el10.noarch.rpm;name=aarch64_mingw64-zlib-static;unpack=0"
+SRC_URI:append = " ${URI_aarch64_mingw64-zlib-static}"
+SRC_URI[aarch64_mingw64-zlib-static.sha256sum] = "73f6aae6ad8d1093fdc6cd3fd71e9c5f4b9885b72d149a5997c154724877cf32"
 
 RDEPENDS:mingw32-zlib = " \
  mingw32-crt \

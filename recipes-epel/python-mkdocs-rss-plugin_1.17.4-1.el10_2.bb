@@ -13,9 +13,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-rss-plugin-1.17.4-1.el10_2
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "ae2637a3063323789f034379c8a31f6834ac892b0eb8530b9e2e7395c3d8a155"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - python3-mkdocs-rss-plugin: (python3.12dist(gitpython) < 3.2~~ with python3.12dist(gitpython) >= 3.1.43)
-
 URI_x86_64_v2_python3-mkdocs-rss-plugin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-rss-plugin-1.17.4-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-rss-plugin;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-rss-plugin}"
 SRC_URI[x86_64_v2_python3-mkdocs-rss-plugin.sha256sum] = "481381186e325a8f3f47d65874000e45c40aafb97389f31cbb9ce24c0bed1cab"
@@ -24,18 +21,11 @@ URI_aarch64_python3-mkdocs-rss-plugin = "${EPEL_MIRROR}/aarch64/Packages/p/pytho
 SRC_URI:append = " ${URI_aarch64_python3-mkdocs-rss-plugin}"
 SRC_URI[aarch64_python3-mkdocs-rss-plugin.sha256sum] = "d75b05e2ec44d0ac08b56d34097cbba5fc7d6e47de2a68362161e8197d5412bc"
 
-RDEPENDS:python3-mkdocs-rss-plugin:x86_64_v2 = " \
- mkdocs \
- python3 \
- python3-CacheControl \
- python3-CacheControl+filecache \
- python3-requests \
-"
-RDEPENDS:python3-mkdocs-rss-plugin:aarch64 = " \
+RDEPENDS:python3-mkdocs-rss-plugin = " \
  mkdocs \
  python3 \
  python3-CacheControl \
  python3-CacheControl+filecache \
  python3-GitPython \
  python3-requests \
-"
+ "
