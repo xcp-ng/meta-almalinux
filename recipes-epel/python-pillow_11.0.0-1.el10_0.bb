@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "f4f35e5b48ff69e7c290260c745786742d9256c654b81ecba431ae
 
 URI_x86_64_v2_python3-pillow = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pillow}"
-SRC_URI[x86_64_v2_python3-pillow.sha256sum] = "8e6fddee1d951456a6dda4c751f51e08f07b2d1312a086ac47f0ac8b62edc805"
+SRC_URI[x86_64_v2_python3-pillow.sha256sum] = "06f0fca080cd44d18b63ea765b1e079c9976f73fe76e6c1b98b700291447d12b"
 
 URI_x86_64_v2_python3-pillow-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-devel-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pillow-devel}"
-SRC_URI[x86_64_v2_python3-pillow-devel.sha256sum] = "f92e834333a23b65108f673737a5d1c4c7c79143ca0eb18047d7569a3182cefb"
+SRC_URI[x86_64_v2_python3-pillow-devel.sha256sum] = "894bf3bb3d17bf33a266f8b4563a7c65fa000c9202bd92ed784ea94153174dd3"
 
 URI_x86_64_v2_python3-pillow-tk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-tk-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-tk;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pillow-tk}"
-SRC_URI[x86_64_v2_python3-pillow-tk.sha256sum] = "2cda0d476d98c0364aea0901901ee82595dd9ad9808c1295bf9d6a48d754a03e"
+SRC_URI[x86_64_v2_python3-pillow-tk.sha256sum] = "45343f45c03eab9f968d88e2b957ab9da7fa4cfa1bfd465b289c4ae3efc2560d"
 
 URI_aarch64_python3-pillow = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pillow}"

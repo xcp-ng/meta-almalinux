@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "b22b84277f4f035fdd63b15fcded6dab8fd3765fd90759e96290e7
 
 URI_x86_64_v2_python3-pytest-xdist = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist}"
-SRC_URI[x86_64_v2_python3-pytest-xdist.sha256sum] = "e64809872ca39e6e710b484ed6012b254cde51a0f27634ef8d5be66a6bb1da8d"
+SRC_URI[x86_64_v2_python3-pytest-xdist.sha256sum] = "188be93173eae02a49e580d6334f168b2f869e3a420046836a899903479624f2"
 
 URI_x86_64_v2_python3-pytest-xdist+psutil = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+psutil-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+psutil;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist+psutil}"
-SRC_URI[x86_64_v2_python3-pytest-xdist+psutil.sha256sum] = "72a091db3a04bbe2e974032a9d617606044a360de1f1a868954f94feb530ab78"
+SRC_URI[x86_64_v2_python3-pytest-xdist+psutil.sha256sum] = "26e7991305e51d5b952dd5ad97e383e72e512ccf148c8431ddbe17b143f1d1ef"
 
 URI_x86_64_v2_python3-pytest-xdist+setproctitle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+setproctitle-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+setproctitle;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist+setproctitle}"
-SRC_URI[x86_64_v2_python3-pytest-xdist+setproctitle.sha256sum] = "e80fffc4db4961da864d815b9650a7b8028b99de6cde9c3012231499e675e85e"
+SRC_URI[x86_64_v2_python3-pytest-xdist+setproctitle.sha256sum] = "2574902f64655761b86183c094bd27bfd6b57933cdc6dced9d2bbf403ef87407"
 
 URI_aarch64_python3-pytest-xdist = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-xdist}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "996aa8c2f39f12ea658423e635e31c06d773803ff161b3c4353053
 
 URI_x86_64_v2_python3-multi_key_dict = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-multi_key_dict-2.0.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-multi_key_dict;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-multi_key_dict}"
-SRC_URI[x86_64_v2_python3-multi_key_dict.sha256sum] = "e502a315b37bbcbfa8679d86278ba732e0632d1d0b65d96e750173c383e26add"
+SRC_URI[x86_64_v2_python3-multi_key_dict.sha256sum] = "d5637f24932dfd77430d0adb96c80c41f541de11cb36d4b90852d8b8fa09f54f"
 
 URI_aarch64_python3-multi_key_dict = "${EPEL_MIRROR}/aarch64/Packages/p/python3-multi_key_dict-2.0.3-27.el10_0.noarch.rpm;name=aarch64_python3-multi_key_dict;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-multi_key_dict}"

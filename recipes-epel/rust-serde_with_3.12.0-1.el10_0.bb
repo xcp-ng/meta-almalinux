@@ -257,7 +257,7 @@ RDEPENDS:rust-serde_with+macros-devel = " \
  "
 RDEPENDS:rust-serde_with+schemars_0_8-devel = " \
  cargo \
- rust-schemars-devel \
+ rust-schemars0.8-devel \
  rust-serde_with+std-devel \
  rust-serde_with-devel \
  rust-serde_with_macros+default-devel \

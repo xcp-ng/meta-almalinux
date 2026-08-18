@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c408cfc2f5d4dcb6db016dbb251b346a329c43f5ef47909b36f963
 
 URI_x86_64_v2_perl-Spreadsheet-XLSX = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spreadsheet-XLSX-0.18-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spreadsheet-XLSX;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spreadsheet-XLSX}"
-SRC_URI[x86_64_v2_perl-Spreadsheet-XLSX.sha256sum] = "603de4e0347a1e2cc0c0883b2dab28503d989c5c7e3b4fe7c4b151de7d5cdfae"
+SRC_URI[x86_64_v2_perl-Spreadsheet-XLSX.sha256sum] = "aa5e5d7d989fb20e12b810e343a618d17a0a22fe56167f46820212c5f001e363"
 
 URI_aarch64_perl-Spreadsheet-XLSX = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spreadsheet-XLSX-0.18-2.el10_0.noarch.rpm;name=aarch64_perl-Spreadsheet-XLSX;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Spreadsheet-XLSX}"

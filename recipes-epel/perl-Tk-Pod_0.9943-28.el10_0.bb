@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "7311fe90b41fa33d0484d078cd88ab2ba281d72c15ac65cf32ff8b
 
 URI_x86_64_v2_perl-Tk-Pod = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Pod}"
-SRC_URI[x86_64_v2_perl-Tk-Pod.sha256sum] = "fe325c45a18f30f2770c82309efd64d9616701017940f79c65d515be886b8613"
+SRC_URI[x86_64_v2_perl-Tk-Pod.sha256sum] = "8d1f0c79dae31e27c761e7cb192c42e609dd35f843902530aba208a8b0c0f542"
 
 URI_x86_64_v2_perl-Tk-Pod-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-tests-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Pod-tests}"
-SRC_URI[x86_64_v2_perl-Tk-Pod-tests.sha256sum] = "c51fad233e39a1d1183f60231f9564a86e0891873e0648fe7507802af79069eb"
+SRC_URI[x86_64_v2_perl-Tk-Pod-tests.sha256sum] = "4aba5ed91f7a1543289ce95c7233d66123a7723a9e00df81baa62ca3a1e7f932"
 
 URI_aarch64_perl-Tk-Pod = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Pod-0.9943-28.el10_0.noarch.rpm;name=aarch64_perl-Tk-Pod;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Tk-Pod}"

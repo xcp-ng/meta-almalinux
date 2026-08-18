@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "49a2b0cc43a02e7184c935c09399906178e02f94058a090a79af3d
 
 URI_x86_64_v2_python3-genshi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-genshi-0.7.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-genshi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-genshi}"
-SRC_URI[x86_64_v2_python3-genshi.sha256sum] = "f5664d2744feb84685d2b91adf3a301faf485b878f8a1260ca34d29ad6c1195b"
+SRC_URI[x86_64_v2_python3-genshi.sha256sum] = "274fb81e448ece1719a5f670b08ea2f0eb94312a28ad94554ea2dcec5a0d4cae"
 
 URI_aarch64_python3-genshi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-genshi-0.7.9-1.el10_0.aarch64.rpm;name=aarch64_python3-genshi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-genshi}"

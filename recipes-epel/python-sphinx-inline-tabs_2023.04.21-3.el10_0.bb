@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "993320e960d173d2add2c4402e959c3ff544a601067f3d7699a523
 
 URI_x86_64_v2_python3-sphinx-inline-tabs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-inline-tabs-2023.04.21-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-inline-tabs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-inline-tabs}"
-SRC_URI[x86_64_v2_python3-sphinx-inline-tabs.sha256sum] = "01605dae02a321aa7de7c4f0949cefcfc0c8a4c26908155a2632f4659a26e4fb"
+SRC_URI[x86_64_v2_python3-sphinx-inline-tabs.sha256sum] = "265466f74a121e5c852bfa809cd2c95704751b35a1a5b97b822a053eea3cde62"
 
 URI_aarch64_python3-sphinx-inline-tabs = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-inline-tabs-2023.04.21-3.el10_0.noarch.rpm;name=aarch64_python3-sphinx-inline-tabs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinx-inline-tabs}"

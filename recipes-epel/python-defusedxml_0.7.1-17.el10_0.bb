@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "25916401a11be2a289721842b8588686c173f7816b561c77ddf9ca
 
 URI_x86_64_v2_python3-defusedxml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-defusedxml-0.7.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-defusedxml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-defusedxml}"
-SRC_URI[x86_64_v2_python3-defusedxml.sha256sum] = "11e764c71e398ae0bd02b827f3b806d81be8291f0c98fb912d2df85d2ed12b3f"
+SRC_URI[x86_64_v2_python3-defusedxml.sha256sum] = "ad2325889c3039479f6f7b603aa5df5cb3ef984f9ae09cfb0d2f66f2d47cb2d3"
 
 URI_aarch64_python3-defusedxml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-defusedxml-0.7.1-17.el10_0.noarch.rpm;name=aarch64_python3-defusedxml;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-defusedxml}"

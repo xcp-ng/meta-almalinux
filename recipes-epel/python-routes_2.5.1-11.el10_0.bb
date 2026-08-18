@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "07dc8233511956453424428bc40f2c18b963c74fd913f35bf379b2
 
 URI_x86_64_v2_python3-routes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-routes-2.5.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-routes;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-routes}"
-SRC_URI[x86_64_v2_python3-routes.sha256sum] = "602caa1109691f2fe1cad2bdb223ab8558634d6ea52f4072cc170048608c8aa7"
+SRC_URI[x86_64_v2_python3-routes.sha256sum] = "0310f74e991525cebf0b8d8b0042017555ac135ee5c9f720575464e80ff0e5b6"
 
 URI_aarch64_python3-routes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-routes-2.5.1-11.el10_0.noarch.rpm;name=aarch64_python3-routes;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-routes}"

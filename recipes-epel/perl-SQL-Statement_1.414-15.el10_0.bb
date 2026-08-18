@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "02cad558e5d567dc66cc395215b87b77970826cf29d16dd8fb1671
 
 URI_x86_64_v2_perl-SQL-Statement = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SQL-Statement-1.414-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SQL-Statement;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-SQL-Statement}"
-SRC_URI[x86_64_v2_perl-SQL-Statement.sha256sum] = "3bd1ce5f452538950e4958f8736840b4d8ea824a1ab735e3ee96488da93206c0"
+SRC_URI[x86_64_v2_perl-SQL-Statement.sha256sum] = "6cd66e583a953e501456a822b5c1f14b32690b78ace6e2c7427857c64ce73004"
 
 URI_aarch64_perl-SQL-Statement = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SQL-Statement-1.414-15.el10_0.noarch.rpm;name=aarch64_perl-SQL-Statement;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-SQL-Statement}"

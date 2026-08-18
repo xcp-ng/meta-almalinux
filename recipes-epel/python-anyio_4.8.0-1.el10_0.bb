@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "b0237d11c3725eeed9c718697b286d414277a62ec0dcfab82dac23
 
 URI_x86_64_v2_python3-anyio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-anyio}"
-SRC_URI[x86_64_v2_python3-anyio.sha256sum] = "0165ad0b8003632c00d74e24b9476ec86a15b18e0c83e71c700b0f52e746b120"
+SRC_URI[x86_64_v2_python3-anyio.sha256sum] = "eae0d22e3cbb9140559b26882543de95b53bc281e5d26dc614ec4b3429cc0bde"
 
 URI_x86_64_v2_python3-anyio+trio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio+trio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio+trio;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-anyio+trio}"
-SRC_URI[x86_64_v2_python3-anyio+trio.sha256sum] = "c2f3eba4d27faf97ff42dfd83bb8e6f0d3568b9975e3043a66ed42f498f342c9"
+SRC_URI[x86_64_v2_python3-anyio+trio.sha256sum] = "2f8fe55035feb3ab3030f987ab356d7583699c9049d9400db367eb8f70b4eb8a"
 
 URI_aarch64_python3-anyio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-anyio-4.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-anyio;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-anyio}"

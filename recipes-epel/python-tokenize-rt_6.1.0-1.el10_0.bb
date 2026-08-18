@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "355830dcc60d85925163864a38eb373e043324a7d9cba954c2c7bf
 
 URI_x86_64_v2_python3-tokenize-rt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tokenize-rt-6.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tokenize-rt;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tokenize-rt}"
-SRC_URI[x86_64_v2_python3-tokenize-rt.sha256sum] = "545162096c56a85a7c2bbb3eeff88511767d918082f2f7c77d7a4820b046c8e9"
+SRC_URI[x86_64_v2_python3-tokenize-rt.sha256sum] = "5c9df037ebff3eec91009899ecc8ae6eec7ebfa943ecda44c5d2cd0ad9bdb4b2"
 
 URI_aarch64_python3-tokenize-rt = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tokenize-rt-6.1.0-1.el10_0.noarch.rpm;name=aarch64_python3-tokenize-rt;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tokenize-rt}"

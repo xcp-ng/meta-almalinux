@@ -36,4 +36,5 @@ RDEPENDS:js-uglify = " \
 RDEPENDS:uglify-js = " \
  js-uglify \
  nodejs \
+ virtual/nodejs_engine__ge_0.8.0 \
  "

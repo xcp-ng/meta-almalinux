@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "90b04eda43912108253e6e43fddd1b94c3416798fc686d2ad1728b
 
 URI_x86_64_v2_python3-click-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-click-plugins-1.1.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-click-plugins;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-click-plugins}"
-SRC_URI[x86_64_v2_python3-click-plugins.sha256sum] = "a01b0b8a8be12762d971e9ca2d72c2237dfc3e34da03da47be17d304ec020d4a"
+SRC_URI[x86_64_v2_python3-click-plugins.sha256sum] = "bb25b2ac63389c34730f365684cb1febde93515bcaabaa0356716b4c34371060"
 
 URI_aarch64_python3-click-plugins = "${EPEL_MIRROR}/aarch64/Packages/p/python3-click-plugins-1.1.1-22.el10_0.noarch.rpm;name=aarch64_python3-click-plugins;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-click-plugins}"

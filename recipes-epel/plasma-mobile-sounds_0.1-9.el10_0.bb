@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e0d7c37934445902228ae8cd023fe717b774231bb37dc1a3a1476e
 
 URI_x86_64_v2_plasma-mobile-sounds = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-mobile-sounds-0.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-mobile-sounds;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_plasma-mobile-sounds}"
-SRC_URI[x86_64_v2_plasma-mobile-sounds.sha256sum] = "cdc183a15a67f32571b2ef7d2352886c1bfad239b9521bdfc8ece984b20c911c"
+SRC_URI[x86_64_v2_plasma-mobile-sounds.sha256sum] = "faae7720b3ca9dab2aa1b5afaeb59aa0cb336e33b9b91ea82a3522ef5986ae25"
 
 URI_aarch64_plasma-mobile-sounds = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-mobile-sounds-0.1-9.el10_0.noarch.rpm;name=aarch64_plasma-mobile-sounds;unpack=0"
 SRC_URI:append = " ${URI_aarch64_plasma-mobile-sounds}"

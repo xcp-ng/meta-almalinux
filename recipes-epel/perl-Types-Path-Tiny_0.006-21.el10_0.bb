@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "209c323043a17e7a0c219d7661d2f18146350ce3658905ad2a98ba
 
 URI_x86_64_v2_perl-Types-Path-Tiny = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-Path-Tiny-0.006-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-Path-Tiny;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Types-Path-Tiny}"
-SRC_URI[x86_64_v2_perl-Types-Path-Tiny.sha256sum] = "794a7ff44c46135641ea0b6e356afffa4f47a76bec2187eefd2acb2ad162d6ad"
+SRC_URI[x86_64_v2_perl-Types-Path-Tiny.sha256sum] = "29e3731935fe22c10e2a305365ac450245ddf831f03b7217750457b7e6fb9536"
 
 URI_aarch64_perl-Types-Path-Tiny = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-Path-Tiny-0.006-21.el10_0.noarch.rpm;name=aarch64_perl-Types-Path-Tiny;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Types-Path-Tiny}"

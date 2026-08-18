@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3b9bf409cd5813a2272e99b3fabb0a3dda9b1e5f39191f300a3783
 
 URI_x86_64_v2_php-pecl-amqp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-amqp-2.1.2-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-amqp;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-amqp}"
-SRC_URI[x86_64_v2_php-pecl-amqp.sha256sum] = "726c32039c8f08a611f301a90b5f4f959fa890a9d0bc440621cc636765d89bc9"
+SRC_URI[x86_64_v2_php-pecl-amqp.sha256sum] = "7386440e3719f1065dca2a4f3a16b978e07502221fad9947b5e9c4439db3b5a8"
 
 URI_aarch64_php-pecl-amqp = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-amqp-2.1.2-6.el10_0.aarch64.rpm;name=aarch64_php-pecl-amqp;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-amqp}"

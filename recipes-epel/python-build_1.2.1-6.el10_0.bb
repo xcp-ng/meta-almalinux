@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "638fb7c57a26e96f36e14a37037dc2847c9cfd49a281c860e34bae
 
 URI_x86_64_v2_python3-build = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-build}"
-SRC_URI[x86_64_v2_python3-build.sha256sum] = "40d1a2a4528f60c206779341fd43b15a893a074280f27d609ea6d3b13a0c4993"
+SRC_URI[x86_64_v2_python3-build.sha256sum] = "14549ff5e08e4bf97cceb4ac27fb70148724ffc8263d074fdd474e7f8b55b70a"
 
 URI_x86_64_v2_python3-build+virtualenv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build+virtualenv-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build+virtualenv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-build+virtualenv}"
-SRC_URI[x86_64_v2_python3-build+virtualenv.sha256sum] = "b516f0d69afc94f075f76a82d4b9359c7b595e4be5bb3c92f100c14c09401ffd"
+SRC_URI[x86_64_v2_python3-build+virtualenv.sha256sum] = "69ed3999d5eda165ad9abd7aaf0b6a80f998a9f210de8245bd34c322b29a92aa"
 
 URI_aarch64_python3-build = "${EPEL_MIRROR}/aarch64/Packages/p/python3-build-1.2.1-6.el10_0.noarch.rpm;name=aarch64_python3-build;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-build}"

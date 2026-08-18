@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "2d08a4183e5a00269df5213a14e2a521af047d97b36d468b54b2cd
 
 URI_x86_64_v2_python3-openidc-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openidc-client;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-openidc-client}"
-SRC_URI[x86_64_v2_python3-openidc-client.sha256sum] = "57b5008e17222a47ba0b59535e1c6217ab474751f486b3eacc23341bcb42877a"
+SRC_URI[x86_64_v2_python3-openidc-client.sha256sum] = "00bd7c3b24c0bd89f46a40e68d6b6c4c7bd6c736df805db67beb525d7b357383"
 
 URI_aarch64_python3-openidc-client = "${EPEL_MIRROR}/aarch64/Packages/p/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.noarch.rpm;name=aarch64_python3-openidc-client;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-openidc-client}"

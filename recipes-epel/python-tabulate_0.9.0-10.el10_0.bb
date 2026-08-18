@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "d0316e50b42af9c15ae0a6550e2172424d7945fd35d9dff3e6b78d
 
 URI_x86_64_v2_python3-tabulate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tabulate-0.9.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tabulate;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tabulate}"
-SRC_URI[x86_64_v2_python3-tabulate.sha256sum] = "d08ca7e80d6c7067de43bc8efd7f57e01f54f0d13e8c809b80d1e3b48174a53d"
+SRC_URI[x86_64_v2_python3-tabulate.sha256sum] = "6fae3848b463b6eeaf6fb8d623d76c15a2863fb092f08c1e5ddc5b7837c18b86"
 
 URI_x86_64_v2_python3-tabulate+widechars = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tabulate+widechars-0.9.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tabulate+widechars;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tabulate+widechars}"
-SRC_URI[x86_64_v2_python3-tabulate+widechars.sha256sum] = "8a8a48a7ae1838a031664e31a2dc9bda9fd7ce79a22c8c64e4a5c4d96eb66120"
+SRC_URI[x86_64_v2_python3-tabulate+widechars.sha256sum] = "55df30282ee859706fc3dff8b9aa6985fd45f2aa1290117d6c326bd6cddd7b94"
 
 URI_aarch64_python3-tabulate = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tabulate-0.9.0-10.el10_0.noarch.rpm;name=aarch64_python3-tabulate;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tabulate}"

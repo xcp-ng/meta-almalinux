@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a84105ebae33ee951b8d6c97fe82bb6755e06ccdd4c13e9d2968b5
 
 URI_x86_64_v2_python3-webob = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-webob-1.8.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-webob;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-webob}"
-SRC_URI[x86_64_v2_python3-webob.sha256sum] = "f6e4720f2afeb9f88078216eef18f85bf033e134c7bdcbadfcc8a477555fe8df"
+SRC_URI[x86_64_v2_python3-webob.sha256sum] = "bef746ac7c76c624fd6db6af6ba30c0123b1edaf9c685702430590974645ac49"
 
 URI_aarch64_python3-webob = "${EPEL_MIRROR}/aarch64/Packages/p/python3-webob-1.8.9-1.el10_0.noarch.rpm;name=aarch64_python3-webob;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-webob}"

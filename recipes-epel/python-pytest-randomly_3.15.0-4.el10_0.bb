@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8dc225783687f69dcda87e8cf1860b67273d91e56a9727b2d20f7d
 
 URI_x86_64_v2_python3-pytest-randomly = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-randomly-3.15.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-randomly;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-randomly}"
-SRC_URI[x86_64_v2_python3-pytest-randomly.sha256sum] = "f8e69479a638ecb79d904669e1f4f29409bca01daa61d0d55cb3fff30614c9f4"
+SRC_URI[x86_64_v2_python3-pytest-randomly.sha256sum] = "d193a80e8e42d863a5220f992e863ca3f6f179bfd8267fac120ce5d140a35351"
 
 URI_aarch64_python3-pytest-randomly = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-randomly-3.15.0-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-randomly;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-randomly}"

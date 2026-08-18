@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "5244ce060d93b64488c1985299adc13746539ae8a3040e7a3f545c
 
 URI_x86_64_v2_php-pecl-igbinary = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-igbinary}"
-SRC_URI[x86_64_v2_php-pecl-igbinary.sha256sum] = "7425d4269b8d214bdbf09487a248bf45f6143994fd0da1867286f73601f37c19"
+SRC_URI[x86_64_v2_php-pecl-igbinary.sha256sum] = "4077292b13975f63dc7429f2a62724b93bd9c5c3d9fd02b8a2f699ec906d2966"
 
 URI_x86_64_v2_php-pecl-igbinary-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-devel-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-igbinary-devel}"
-SRC_URI[x86_64_v2_php-pecl-igbinary-devel.sha256sum] = "380a4b40a468326f3c31bea4ae060ac9d0f31da79652bf088b1faf68a9d5166d"
+SRC_URI[x86_64_v2_php-pecl-igbinary-devel.sha256sum] = "43e357ef94c75135bcb057cb1acf3693f569959d05abaec348e0e78f590178f1"
 
 URI_aarch64_php-pecl-igbinary = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-igbinary-3.2.16-3.el10_0.aarch64.rpm;name=aarch64_php-pecl-igbinary;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-igbinary}"

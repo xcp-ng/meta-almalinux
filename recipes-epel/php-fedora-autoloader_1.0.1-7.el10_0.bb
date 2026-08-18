@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "af88a4ccaa77875e82fa0f89c085f4105269c2c56b60580172643f
 
 URI_x86_64_v2_php-fedora-autoloader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-fedora-autoloader}"
-SRC_URI[x86_64_v2_php-fedora-autoloader.sha256sum] = "e362d5c60f7ca82519f4da3a06b24d17f2b63ed9b4c87360f79af6bb341ad8c3"
+SRC_URI[x86_64_v2_php-fedora-autoloader.sha256sum] = "021848e77c1f6c975695da892a226334da883544f795d7ed483852d582b9b3cb"
 
 URI_x86_64_v2_php-fedora-autoloader-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-devel-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-fedora-autoloader-devel}"
-SRC_URI[x86_64_v2_php-fedora-autoloader-devel.sha256sum] = "48e6992262979a2fc1ba4a84dc6c7075f28e4077da9840d3a284c5ec6042e08a"
+SRC_URI[x86_64_v2_php-fedora-autoloader-devel.sha256sum] = "b2509fe1b2fc997b51c9429f27a22a1b196c10e615b3440756af32c2ed28be42"
 
 URI_aarch64_php-fedora-autoloader = "${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-1.0.1-7.el10_0.noarch.rpm;name=aarch64_php-fedora-autoloader;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-fedora-autoloader}"

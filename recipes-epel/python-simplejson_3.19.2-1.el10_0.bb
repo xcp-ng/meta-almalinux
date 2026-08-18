@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "91b31022cc485b4e916d4c220e321dfd80ae07f806fe19f7f1e886
 
 URI_x86_64_v2_python-simplejson-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-simplejson-doc-3.19.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-simplejson-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-simplejson-doc}"
-SRC_URI[x86_64_v2_python-simplejson-doc.sha256sum] = "bd128ca933dc1518223a554fdccbc5060d6955a1d4195ac7b58144ab86581940"
+SRC_URI[x86_64_v2_python-simplejson-doc.sha256sum] = "5646f18265ed498b6a1672e16154640630609d5bd71fbae7f15761e7a95eba20"
 
 URI_x86_64_v2_python3-simplejson = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-simplejson-3.19.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-simplejson;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-simplejson}"
-SRC_URI[x86_64_v2_python3-simplejson.sha256sum] = "088c257af121e2a261544d2d5b3828d247b8c9b5a65b8335b3fbeed7a997d03a"
+SRC_URI[x86_64_v2_python3-simplejson.sha256sum] = "f7e3226047670be75c3a3f131ec996d87f33ef4aa79673d92be2af5dba56723d"
 
 URI_aarch64_python-simplejson-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-simplejson-doc-3.19.2-1.el10_0.aarch64.rpm;name=aarch64_python-simplejson-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-simplejson-doc}"

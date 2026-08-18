@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "800c0bb63d86c88e60c3fc3a31b2b660e05c22f5cb108cff816671
 
 URI_x86_64_v2_python3-pandas-datareader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pandas-datareader-0.10.0-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pandas-datareader;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pandas-datareader}"
-SRC_URI[x86_64_v2_python3-pandas-datareader.sha256sum] = "acdbda297dca28df14b62d5d776fea93f14209ddd38bda7a88b156e136d5ae56"
+SRC_URI[x86_64_v2_python3-pandas-datareader.sha256sum] = "a620cb9f9b1526298576b4bb305bb97450fe31012baa060158ea463790d4ad06"
 
 URI_aarch64_python3-pandas-datareader = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pandas-datareader-0.10.0-14.el10_0.noarch.rpm;name=aarch64_python3-pandas-datareader;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pandas-datareader}"

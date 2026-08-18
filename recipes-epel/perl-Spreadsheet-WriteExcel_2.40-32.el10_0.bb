@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "01faf5a127840dbaa9cb5f053dc861be03567d7cbd4f574e85f861
 
 URI_x86_64_v2_perl-Spreadsheet-WriteExcel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spreadsheet-WriteExcel-2.40-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spreadsheet-WriteExcel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spreadsheet-WriteExcel}"
-SRC_URI[x86_64_v2_perl-Spreadsheet-WriteExcel.sha256sum] = "5833b701984f4811a637a049e874cd3e392b65a6f7ff99f49474ee408ea390cd"
+SRC_URI[x86_64_v2_perl-Spreadsheet-WriteExcel.sha256sum] = "af03d17a6681880416e74cac7fddabc2c4819bf979207c3ea0ecafc9bd396fd3"
 
 URI_aarch64_perl-Spreadsheet-WriteExcel = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spreadsheet-WriteExcel-2.40-32.el10_0.noarch.rpm;name=aarch64_perl-Spreadsheet-WriteExcel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Spreadsheet-WriteExcel}"

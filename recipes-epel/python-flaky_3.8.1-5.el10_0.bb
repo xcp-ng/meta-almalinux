@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "23a547b35f6c5a27b068b7e22c71b7e7890f0ac1439141d06a7e78
 
 URI_x86_64_v2_python3-flaky = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flaky-3.8.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flaky;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-flaky}"
-SRC_URI[x86_64_v2_python3-flaky.sha256sum] = "9899468fdf18e571126c371a244beace01680311c47f9ffaf49e5bbed25804ec"
+SRC_URI[x86_64_v2_python3-flaky.sha256sum] = "598602c4c6cf04c1b6dafe08b792878f4cf9875c92de185f4f3d9c8348824ae1"
 
 URI_aarch64_python3-flaky = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flaky-3.8.1-5.el10_0.noarch.rpm;name=aarch64_python3-flaky;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-flaky}"

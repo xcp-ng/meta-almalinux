@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9e834ec5f8c5c7eed0969d53ea512cfe38520d9bcdde6a96c9dc2b
 
 URI_x86_64_v2_python3-paste-deploy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paste-deploy-3.1.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paste-deploy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-paste-deploy}"
-SRC_URI[x86_64_v2_python3-paste-deploy.sha256sum] = "1e266178c066aabc26ae2f76c2ce0b2a34b0de4b9d86d60541669ac72db40607"
+SRC_URI[x86_64_v2_python3-paste-deploy.sha256sum] = "88da8eb60002d57f5cee847690fc285f8aa16e2d7f59925b24180effc5dad8db"
 
 URI_aarch64_python3-paste-deploy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-paste-deploy-3.1.0-6.el10_0.noarch.rpm;name=aarch64_python3-paste-deploy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-paste-deploy}"

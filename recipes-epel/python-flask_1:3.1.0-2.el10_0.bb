@@ -17,11 +17,11 @@ SRC_URI[src.sha256sum] = "9d1a20539edb6a337c4e7ed4b0f3e258566a2acd3acf206a5ccffe
 
 URI_x86_64_v2_python3-flask = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-flask}"
-SRC_URI[x86_64_v2_python3-flask.sha256sum] = "66cf2d432f928d1c1910d3748ea47142c8d33a3539b96a9cb20cdd8e4cc7c5c3"
+SRC_URI[x86_64_v2_python3-flask.sha256sum] = "423ae811d2e9cbd5ca83680734910c2a5ed1bfe24410fa91238fe7957ff2824f"
 
 URI_x86_64_v2_python3-flask+async = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask+async-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask+async;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-flask+async}"
-SRC_URI[x86_64_v2_python3-flask+async.sha256sum] = "202f1c1d9aad5ccc928b2b2628d70c339e3bf98765e99a9a141a0fe40bc28e57"
+SRC_URI[x86_64_v2_python3-flask+async.sha256sum] = "33152a323ecd79ab0a13d7483fd1b431e43cd9c2f7cfa29c3821c7e5852572aa"
 
 URI_aarch64_python3-flask = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flask-3.1.0-2.el10_0.noarch.rpm;name=aarch64_python3-flask;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-flask}"

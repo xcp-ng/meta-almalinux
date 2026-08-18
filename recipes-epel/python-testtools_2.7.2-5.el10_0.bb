@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "31fabb4a6479766ad952b3d4d83c46b09940d999832df170ec0d74
 
 URI_x86_64_v2_python-testtools-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-testtools-doc-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-testtools-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-testtools-doc}"
-SRC_URI[x86_64_v2_python-testtools-doc.sha256sum] = "baf828d7d6acd98e66db35951a2596140b6ab8ff2137952e74e2bbf7aa95bba0"
+SRC_URI[x86_64_v2_python-testtools-doc.sha256sum] = "87e676fe604a51c799765dead26de613227783022f9f572e6b28f1282a72ca42"
 
 URI_x86_64_v2_python3-testtools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testtools-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testtools;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-testtools}"
-SRC_URI[x86_64_v2_python3-testtools.sha256sum] = "bc64731c25ad7afa07c0c5e76a73fd13a73c508a8c712a5a4ac6cf43af62f214"
+SRC_URI[x86_64_v2_python3-testtools.sha256sum] = "e3efcbef0c5cf3363d86b355ea9844fc3f8a563a41ba7007c0eec563c23e489e"
 
 URI_aarch64_python-testtools-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-testtools-doc-2.7.2-5.el10_0.noarch.rpm;name=aarch64_python-testtools-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-testtools-doc}"

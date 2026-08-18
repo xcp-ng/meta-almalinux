@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3deaca79863926ea2be4c127a3b5dc3cab38ec4f5efd4386780411
 
 URI_x86_64_v2_perl-XML-DOM = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-DOM-1.46-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-DOM;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-DOM}"
-SRC_URI[x86_64_v2_perl-XML-DOM.sha256sum] = "3d99865f5858d4503c01f2da9b36132ae93c59958a7be2c180632182b4a2bfb6"
+SRC_URI[x86_64_v2_perl-XML-DOM.sha256sum] = "92909c2500daa1ab973c206e9cd5c5f76e483261ef8dcb93e56a532a85caeaee"
 
 URI_aarch64_perl-XML-DOM = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-DOM-1.46-25.el10_0.noarch.rpm;name=aarch64_perl-XML-DOM;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-DOM}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "47af8c48a4020f8b5d341fd3b42e386fe254a8a0c3dbbb0c60cf14
 
 URI_x86_64_v2_perl-Sort-Versions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Versions-1.62-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sort-Versions;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sort-Versions}"
-SRC_URI[x86_64_v2_perl-Sort-Versions.sha256sum] = "a7b72b7801261a9f34e7222785009dcaf9c91d9baaeea366e04d98b712645386"
+SRC_URI[x86_64_v2_perl-Sort-Versions.sha256sum] = "c7a424d47b9a03dcec1fa85ebde1f2d540a48b5e5e74637b3eb479a4a75db881"
 
 URI_aarch64_perl-Sort-Versions = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Versions-1.62-29.el10_0.noarch.rpm;name=aarch64_perl-Sort-Versions;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sort-Versions}"

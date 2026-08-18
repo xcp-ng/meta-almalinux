@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "55b6648b1832ca7538581ee216031e9eff692a6e4142f67a11da1b
 
 URI_x86_64_v2_python3-colcon-recursive-crawl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-recursive-crawl-0.2.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-recursive-crawl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-recursive-crawl}"
-SRC_URI[x86_64_v2_python3-colcon-recursive-crawl.sha256sum] = "958774d74f2cef9dc0013b805e4303af380cb686c981e40479220dad70047f2e"
+SRC_URI[x86_64_v2_python3-colcon-recursive-crawl.sha256sum] = "2dc71a8d83ae07506fd0ceb73ed8c60783715676fda1b9d5be467077eb12512c"
 
 URI_aarch64_python3-colcon-recursive-crawl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-recursive-crawl-0.2.3-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-recursive-crawl;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-colcon-recursive-crawl}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "78fb5c5014c9286a0e9fbc61fce6a8189ab83439ef37b31381b5a0
 
 URI_x86_64_v2_python3-pyquery = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyquery-1.4.3-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyquery;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pyquery}"
-SRC_URI[x86_64_v2_python3-pyquery.sha256sum] = "7e7853a1da60263e698f8acc639853498046f21df0eb47be5b9f143103a98316"
+SRC_URI[x86_64_v2_python3-pyquery.sha256sum] = "2834818bec44537dd51d054d24f2f6f1ac316202f539842c580ae332a9bab382"
 
 URI_aarch64_python3-pyquery = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyquery-1.4.3-21.el10_0.noarch.rpm;name=aarch64_python3-pyquery;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pyquery}"

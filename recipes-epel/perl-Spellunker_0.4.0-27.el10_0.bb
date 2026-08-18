@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "412974b4bc50a22edce85a6c8159a7861a8bb8820a59fb89113590
 
 URI_x86_64_v2_perl-Spellunker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spellunker-0.4.0-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spellunker;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spellunker}"
-SRC_URI[x86_64_v2_perl-Spellunker.sha256sum] = "a7cfdcd802a29d54ef181e04ab5c3b845b27eaf6beea9e0b632d9580d3181c9b"
+SRC_URI[x86_64_v2_perl-Spellunker.sha256sum] = "6486fbcc2da32a867d32cbb549d727132314c12ac1b07b26f8438cdc12638e11"
 
 URI_aarch64_perl-Spellunker = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spellunker-0.4.0-27.el10_0.noarch.rpm;name=aarch64_perl-Spellunker;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Spellunker}"

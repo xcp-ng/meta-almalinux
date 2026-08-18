@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a242bfb2897c58aaec882d715d689870a138344109b92b75b84880
 
 URI_x86_64_v2_perl-Types-DateTime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-DateTime-0.002-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-DateTime;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Types-DateTime}"
-SRC_URI[x86_64_v2_perl-Types-DateTime.sha256sum] = "5e27e9be2350f6055364e91ef6671ddda9faeacace51381b3dc1276dfbd3c0e7"
+SRC_URI[x86_64_v2_perl-Types-DateTime.sha256sum] = "678834786b52a02728b42449687249e8e8cc32cabc18684cd37bab69d7e8081d"
 
 URI_aarch64_perl-Types-DateTime = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-DateTime-0.002-19.el10_0.noarch.rpm;name=aarch64_perl-Types-DateTime;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Types-DateTime}"

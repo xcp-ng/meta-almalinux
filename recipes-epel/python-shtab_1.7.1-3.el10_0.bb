@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b56919b1128e6d1efd74373cfd65e6c4dcbbc338f35fddafdf9b38
 
 URI_x86_64_v2_python3-shtab = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-shtab-1.7.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-shtab;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-shtab}"
-SRC_URI[x86_64_v2_python3-shtab.sha256sum] = "2827350b7a64d7fce4b1a56693e6d85fea7599e2b00f63f7e40a3007afc4ed4b"
+SRC_URI[x86_64_v2_python3-shtab.sha256sum] = "5962a216adf143ecabb9116e641bee2ca9f0be24bfd820a922790f38fa37a714"
 
 URI_aarch64_python3-shtab = "${EPEL_MIRROR}/aarch64/Packages/p/python3-shtab-1.7.1-3.el10_0.noarch.rpm;name=aarch64_python3-shtab;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-shtab}"

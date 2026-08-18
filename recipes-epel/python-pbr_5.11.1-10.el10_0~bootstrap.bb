@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "521190556e0a188530f93164e34214c2ee8a17873aa2e6c80564a3
 
 URI_x86_64_v2_python3-pbr = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pbr-5.11.1-10.el10_0~bootstrap.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pbr;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pbr}"
-SRC_URI[x86_64_v2_python3-pbr.sha256sum] = "8bd1102d39b4420d6d3f8ab9b0d88c6d80ee13f4b30335ef0f8aa65e1991906f"
+SRC_URI[x86_64_v2_python3-pbr.sha256sum] = "83824bee0d27d61a85647abf342b84030d2ed0d26259dd974c78203b61a3db93"
 
 URI_aarch64_python3-pbr = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pbr-5.11.1-10.el10_0~bootstrap.noarch.rpm;name=aarch64_python3-pbr;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pbr}"

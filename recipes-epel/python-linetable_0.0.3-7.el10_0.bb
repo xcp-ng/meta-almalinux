@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e66186e63d35908cc8d5cde0e732caf4e647666115bcd10342c0a9
 
 URI_x86_64_v2_python3-linetable = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-linetable-0.0.3-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-linetable;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-linetable}"
-SRC_URI[x86_64_v2_python3-linetable.sha256sum] = "2bf6288ffcc59183436f308c9a7e860e948f532dfcbc442bbae38bb4aa8f137d"
+SRC_URI[x86_64_v2_python3-linetable.sha256sum] = "61f0ed20fe006f860a26cd18ea38d81454f66f018ddae0eab88104729098480c"
 
 URI_aarch64_python3-linetable = "${EPEL_MIRROR}/aarch64/Packages/p/python3-linetable-0.0.3-7.el10_0.noarch.rpm;name=aarch64_python3-linetable;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-linetable}"

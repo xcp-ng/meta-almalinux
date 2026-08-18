@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "c541f355e992a1d9111099c6cea6b173e948995af3bde736f61638
 
 URI_x86_64_v2_phonon-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-common-4.12.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_phonon-common;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phonon-common}"
-SRC_URI[x86_64_v2_phonon-common.sha256sum] = "8c5bfad60049c2196522139bc5bd780ad0937ce4fdcc509237ca800682ad3edb"
+SRC_URI[x86_64_v2_phonon-common.sha256sum] = "c49941ea2cdb4c5ff6d0139ab3d61ed2a5dc3803f1dcb34d55f7a1c02d13325e"
 
 URI_x86_64_v2_phonon-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phonon-qt6}"
-SRC_URI[x86_64_v2_phonon-qt6.sha256sum] = "be5f7965f12e7f27885a5836459fc051cddf8fc280dffb267702b34965159414"
+SRC_URI[x86_64_v2_phonon-qt6.sha256sum] = "ac6a63739d6689ce6ef249164f78f02a255ca7396a86cc42affc89be204d9e91"
 
 URI_x86_64_v2_phonon-qt6-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-devel-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phonon-qt6-devel}"
-SRC_URI[x86_64_v2_phonon-qt6-devel.sha256sum] = "ce71a3395c72f0f803601554e46d494069bacebd6b62e8e1491a600687145920"
+SRC_URI[x86_64_v2_phonon-qt6-devel.sha256sum] = "5142da3f5dadb17753b846049a55beb8e7de83859599367c9af0f9ab973a648d"
 
 URI_aarch64_phonon-common = "${EPEL_MIRROR}/aarch64/Packages/p/phonon-common-4.12.0-5.el10_0.noarch.rpm;name=aarch64_phonon-common;unpack=0"
 SRC_URI:append = " ${URI_aarch64_phonon-common}"

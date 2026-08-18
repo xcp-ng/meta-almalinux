@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7b45d84d46feeb329c90a8a669e76cf562ce2211bec530fb0a530a
 
 URI_x86_64_v2_python3-mkdocs-get-deps = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-get-deps-0.2.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-get-deps;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-get-deps}"
-SRC_URI[x86_64_v2_python3-mkdocs-get-deps.sha256sum] = "92fb3e7ec81b99278c5ebb6ffccf53547d48e21b1e6cdb4e804be7193fd5ae8a"
+SRC_URI[x86_64_v2_python3-mkdocs-get-deps.sha256sum] = "5e27c2bf14a541b83de995bf939a2e7b25bd6a44e8fda957411210393d806e40"
 
 URI_aarch64_python3-mkdocs-get-deps = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-get-deps-0.2.0-3.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-get-deps;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-mkdocs-get-deps}"

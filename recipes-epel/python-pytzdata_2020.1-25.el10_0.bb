@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "bca5c6d8a29fb999b1dfc26ed58186022f1e48abba0f8e19287f92
 
 URI_x86_64_v2_python3-pytzdata = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytzdata-2020.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytzdata;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytzdata}"
-SRC_URI[x86_64_v2_python3-pytzdata.sha256sum] = "3815ad12d9afe580563585c073cb093954525f5f86a1fa349026707a0a9fcdf8"
+SRC_URI[x86_64_v2_python3-pytzdata.sha256sum] = "fbb6e3b9e54e475730e5e9584ed473ed2d8376e3dcf0e6630d32c9025c167104"
 
 URI_aarch64_python3-pytzdata = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytzdata-2020.1-25.el10_0.noarch.rpm;name=aarch64_python3-pytzdata;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytzdata}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "acfe2de101ff7defdd8aedad233eac320001bd75ea78c5e4e97acb
 
 URI_x86_64_v2_perl-Test-Assertions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Assertions-1.054-45.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Assertions;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Assertions}"
-SRC_URI[x86_64_v2_perl-Test-Assertions.sha256sum] = "7dea9b2fc8b27d4e3b154f30dea343ed09e50f35ca748da4e7fd3cb72b3c7847"
+SRC_URI[x86_64_v2_perl-Test-Assertions.sha256sum] = "e2f602640d9ed8db2c5af1d1052099b334e71c3217d8c1e6d6b21b9fb05fc45e"
 
 URI_aarch64_perl-Test-Assertions = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Assertions-1.054-45.el10_0.noarch.rpm;name=aarch64_perl-Test-Assertions;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Assertions}"

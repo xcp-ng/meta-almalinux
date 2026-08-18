@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "fc2175644f673aff86566eb454b2c0dfc23b780f79ffba00f29a2c
 
 URI_x86_64_v2_php-patchwork-jsqueeze = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-patchwork-jsqueeze-2.0.5-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-patchwork-jsqueeze;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-patchwork-jsqueeze}"
-SRC_URI[x86_64_v2_php-patchwork-jsqueeze.sha256sum] = "7921e293262d73a35636df6cc9a35761ab7eb9e6629a1fd0a7fefa004bcea511"
+SRC_URI[x86_64_v2_php-patchwork-jsqueeze.sha256sum] = "59d8846388157b60e9319e52a41cae1392d8fa97e76243168d6eea9f76f925a8"
 
 URI_aarch64_php-patchwork-jsqueeze = "${EPEL_MIRROR}/aarch64/Packages/p/php-patchwork-jsqueeze-2.0.5-20.el10_0.noarch.rpm;name=aarch64_php-patchwork-jsqueeze;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-patchwork-jsqueeze}"

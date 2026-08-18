@@ -49,7 +49,7 @@ RDEPENDS:rust-color-print-proc-macro+terminfo-devel = " \
  "
 RDEPENDS:rust-color-print-proc-macro-devel = " \
  cargo \
- rust-nom+default-devel \
+ rust-nom7+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  rust-syn+default-devel \

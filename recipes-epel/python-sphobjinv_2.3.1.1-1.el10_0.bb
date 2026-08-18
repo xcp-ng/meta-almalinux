@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "845acdb2ab44f97eecd9de9103d008fc60d35e0ff7b3b87ec04805
 
 URI_x86_64_v2_python3-sphobjinv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphobjinv-2.3.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphobjinv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphobjinv}"
-SRC_URI[x86_64_v2_python3-sphobjinv.sha256sum] = "67d6c7937d4aa508e04b0273c348a0a84cfe35d1fbb6df6dd7836f422416b982"
+SRC_URI[x86_64_v2_python3-sphobjinv.sha256sum] = "076164a6bda807ced667d5cf98714e8b682da3fc55c558f08582eb5820f5e0f0"
 
 URI_aarch64_python3-sphobjinv = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphobjinv-2.3.1.1-1.el10_0.noarch.rpm;name=aarch64_python3-sphobjinv;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphobjinv}"

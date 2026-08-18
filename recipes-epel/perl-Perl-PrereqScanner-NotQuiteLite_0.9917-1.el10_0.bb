@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "82960bb0d86d795d017bdceb995c8fbd3301fed5c5c05735cc05a3
 
 URI_x86_64_v2_perl-Perl-PrereqScanner-NotQuiteLite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-PrereqScanner-NotQuiteLite-0.9917-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-PrereqScanner-NotQuiteLite;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-PrereqScanner-NotQuiteLite}"
-SRC_URI[x86_64_v2_perl-Perl-PrereqScanner-NotQuiteLite.sha256sum] = "d4439103758838f31124ee3d6f4dbbd86cc3f8ee81582b1d6ed71c84a97461ec"
+SRC_URI[x86_64_v2_perl-Perl-PrereqScanner-NotQuiteLite.sha256sum] = "8a5905d4caa0472a58a9674e2709e698d039a3bf807011824feb667c516bc4c8"
 
 URI_aarch64_perl-Perl-PrereqScanner-NotQuiteLite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-PrereqScanner-NotQuiteLite-0.9917-1.el10_0.noarch.rpm;name=aarch64_perl-Perl-PrereqScanner-NotQuiteLite;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Perl-PrereqScanner-NotQuiteLite}"

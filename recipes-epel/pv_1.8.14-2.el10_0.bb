@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6de6f2af6652550a099f4fac6273e5821457e529abeef7b6853ff5
 
 URI_x86_64_v2_pv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pv-1.8.14-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pv}"
-SRC_URI[x86_64_v2_pv.sha256sum] = "d4ade4f0c95642c650b2904226f29567760a26bd16517098cf2e2336f5011f36"
+SRC_URI[x86_64_v2_pv.sha256sum] = "f73fa33e8c7fec3848db562e8e0ef6baa27cdbf4b1842144a2e0dd96bb168c80"
 
 URI_aarch64_pv = "${EPEL_MIRROR}/aarch64/Packages/p/pv-1.8.14-2.el10_0.aarch64.rpm;name=aarch64_pv;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pv}"

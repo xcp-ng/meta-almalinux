@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8773c5e8ab7e7b2b866cee165cf889c38211f5cb5be9ba11859094
 
 URI_x86_64_v2_python3-cachy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachy-0.3.0-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cachy}"
-SRC_URI[x86_64_v2_python3-cachy.sha256sum] = "6fdf2d224df6ed617ea1e777cc198b37b81f31d8a7ddfaca1480d2cf65ad9851"
+SRC_URI[x86_64_v2_python3-cachy.sha256sum] = "b1ec21104280bd2ba340330139d2f633cbc7466c2c1c266a2332ef44ca0e9775"
 
 URI_aarch64_python3-cachy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cachy-0.3.0-19.el10_0.noarch.rpm;name=aarch64_python3-cachy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cachy}"

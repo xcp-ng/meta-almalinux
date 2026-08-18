@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "68c03cfdc3614dfd802653ea2049dc4db7effd9fe23a15e4113abf
 
 URI_x86_64_v2_python3-conda-inject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-conda-inject-1.3.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-conda-inject;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-conda-inject}"
-SRC_URI[x86_64_v2_python3-conda-inject.sha256sum] = "b88b0f874d1ed41a6eaf83d04e9b27e39a7a8c4a4231f1f67d54ea39fac4b8fb"
+SRC_URI[x86_64_v2_python3-conda-inject.sha256sum] = "cba372389e9c7e438aa817a338d2ab460fb6970b59460f66c9d92514a31e090f"
 
 URI_aarch64_python3-conda-inject = "${EPEL_MIRROR}/aarch64/Packages/p/python3-conda-inject-1.3.2-3.el10_0.noarch.rpm;name=aarch64_python3-conda-inject;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-conda-inject}"

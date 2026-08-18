@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c967452c6c2b43c474cd3e8cdfa39b950a8e5673ae1ecfc8fcc507
 
 URI_x86_64_v2_perl-Perl-MinimumVersion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-MinimumVersion-1.40-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-MinimumVersion;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-MinimumVersion}"
-SRC_URI[x86_64_v2_perl-Perl-MinimumVersion.sha256sum] = "b5c4c01bd722880b86a901d13ed43b54d8de809a309d01556e99e583d1c954de"
+SRC_URI[x86_64_v2_perl-Perl-MinimumVersion.sha256sum] = "bd52259919a9115e95d79e633b9d0a7f07fc61b49707c57a4d7963fdd40c1c75"
 
 URI_aarch64_perl-Perl-MinimumVersion = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-MinimumVersion-1.40-2.el10_0.noarch.rpm;name=aarch64_perl-Perl-MinimumVersion;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Perl-MinimumVersion}"

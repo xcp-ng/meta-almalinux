@@ -14,6 +14,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/l/libspatialite-5.1.0-8.el10_0.src.rpm;nam
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "6c85fee5f6ba57b8e828109d5fd45a31195b3bba54ee76a60bee9152dcf099de"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - libspatialite: libgeos_c.so.1()(64bit)
+
 URI_x86_64_v2_libspatialite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libspatialite-5.1.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libspatialite;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_libspatialite}"
 SRC_URI[x86_64_v2_libspatialite.sha256sum] = "8ac10670c424212353d119fca531b6186ff8f8aab1bbc20e0fe550e62ffb6c47"
@@ -30,7 +33,17 @@ URI_aarch64_libspatialite-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libspatiali
 SRC_URI:append = " ${URI_aarch64_libspatialite-devel}"
 SRC_URI[aarch64_libspatialite-devel.sha256sum] = "05982af1ac1ff8873c23d1b7f5c5ad1854442b9eb1925bcfbaa30aa8adc15d4a"
 
-RDEPENDS:libspatialite = " \
+RDEPENDS:libspatialite:x86_64_v2 = " \
+ freexl \
+ glibc \
+ librttopo \
+ libxml2 \
+ minizip-ng-compat \
+ proj \
+ sqlite-libs \
+ zlib-ng-compat \
+"
+RDEPENDS:libspatialite:aarch64 = " \
  freexl \
  geos \
  glibc \
@@ -40,7 +53,7 @@ RDEPENDS:libspatialite = " \
  proj \
  sqlite-libs \
  zlib-ng-compat \
- "
+"
 RDEPENDS:libspatialite-devel = " \
  libspatialite \
  pkgconf-pkg-config \

@@ -105,8 +105,8 @@ RDEPENDS:rust-libsqlite3-sys+unlock_notify-devel = " \
  "
 RDEPENDS:rust-libsqlite3-sys-devel = " \
  cargo \
- rust-bindgen+runtime-devel \
- rust-bindgen-devel \
+ rust-bindgen0.69+runtime-devel \
+ rust-bindgen0.69-devel \
  rust-pkg-config+default-devel \
  sqlite-devel \
  "

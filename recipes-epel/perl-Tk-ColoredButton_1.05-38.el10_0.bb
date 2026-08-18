@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "2de2e9f6263729d4e2970b61046aff4ad0657b7595e556c9849b8b
 
 URI_x86_64_v2_perl-Tk-ColoredButton = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-ColoredButton-1.05-38.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-ColoredButton;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-ColoredButton}"
-SRC_URI[x86_64_v2_perl-Tk-ColoredButton.sha256sum] = "22b8d0e2e55b5066301c7b93d517153bb53d4b389b8d15f17602e1f7cd36d58c"
+SRC_URI[x86_64_v2_perl-Tk-ColoredButton.sha256sum] = "804050e4536ff668d539d43f6b61123fdedfc4aee34dfa835fb6e93f9224852c"
 
 URI_x86_64_v2_perl-Tk-ColoredButton-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-ColoredButton-tests-1.05-38.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-ColoredButton-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-ColoredButton-tests}"
-SRC_URI[x86_64_v2_perl-Tk-ColoredButton-tests.sha256sum] = "d3ffdea8b001ff993bf4f4eeb4051624b944d55c471fc14380b814b1d250fa26"
+SRC_URI[x86_64_v2_perl-Tk-ColoredButton-tests.sha256sum] = "dbe460dcb602267aad6f9598765f1d15f5070d1cc682028ed0eb65333c5401cb"
 
 URI_aarch64_perl-Tk-ColoredButton = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-ColoredButton-1.05-38.el10_0.noarch.rpm;name=aarch64_perl-Tk-ColoredButton;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Tk-ColoredButton}"

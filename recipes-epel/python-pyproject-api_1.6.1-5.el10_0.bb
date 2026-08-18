@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6afd736cceb4cfd3277a1781ea046899d18e3d68f10537d934af5d
 
 URI_x86_64_v2_python3-pyproject-api = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyproject-api-1.6.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyproject-api;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pyproject-api}"
-SRC_URI[x86_64_v2_python3-pyproject-api.sha256sum] = "c2a2ed3957e5548fd495de622eced42dbfb501b19d1c58df9ffcfd68d9b53fff"
+SRC_URI[x86_64_v2_python3-pyproject-api.sha256sum] = "64e5fe36b2dd1c58da9387255b2326dd00b5e9c5e14544596d90838dd4dbc90f"
 
 URI_aarch64_python3-pyproject-api = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyproject-api-1.6.1-5.el10_0.noarch.rpm;name=aarch64_python3-pyproject-api;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pyproject-api}"

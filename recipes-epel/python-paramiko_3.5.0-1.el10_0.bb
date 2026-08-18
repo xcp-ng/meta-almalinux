@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "1b5c28ee9b53f7cf2683cf1c0bff4a29c2cf8accfff43e0729f54c
 
 URI_x86_64_v2_python-paramiko-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-paramiko-doc-3.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-paramiko-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-paramiko-doc}"
-SRC_URI[x86_64_v2_python-paramiko-doc.sha256sum] = "6b47beb5c264d1386c683b584b9804e9420aa5254d2407dad03b6dcf9928df6f"
+SRC_URI[x86_64_v2_python-paramiko-doc.sha256sum] = "fc22ffb191c0831c9afef342dc6080cc2e59c0be685c16fdb85618f59567c14e"
 
 URI_x86_64_v2_python3-paramiko = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paramiko-3.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paramiko;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-paramiko}"
-SRC_URI[x86_64_v2_python3-paramiko.sha256sum] = "0a252f36118e377d15946411e2b2e8ddd78766be1b3fbe067528d1b6cd1b7d99"
+SRC_URI[x86_64_v2_python3-paramiko.sha256sum] = "924bfac692cb66e65b15b1632a1f18fed1c2f1e694ce7b7c3c3f96ca2a35e8de"
 
 URI_aarch64_python-paramiko-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-paramiko-doc-3.5.0-1.el10_0.noarch.rpm;name=aarch64_python-paramiko-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-paramiko-doc}"

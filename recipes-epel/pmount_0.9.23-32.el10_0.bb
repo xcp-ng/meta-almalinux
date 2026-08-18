@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f04e160ee1ce7f7d9895b17268d2137168b24f2b179ea030219535
 
 URI_x86_64_v2_pmount = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pmount-0.9.23-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pmount;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pmount}"
-SRC_URI[x86_64_v2_pmount.sha256sum] = "44ff010f8c7a25af968b7f36d6ce88451039e5a914f59e4aac6374d5961da149"
+SRC_URI[x86_64_v2_pmount.sha256sum] = "5ce607b111ae2627046fe044975f393b228ad288b291d6db6e98ded5717511bb"
 
 URI_aarch64_pmount = "${EPEL_MIRROR}/aarch64/Packages/p/pmount-0.9.23-32.el10_0.aarch64.rpm;name=aarch64_pmount;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pmount}"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "73da0e6a09fcd6c5c7c507056235102b04de7065ff0fb08d135e57
 
 URI_x86_64_v2_php-pecl-msgpack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-msgpack-3.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-msgpack;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-msgpack}"
-SRC_URI[x86_64_v2_php-pecl-msgpack.sha256sum] = "e96aae6ab00ae311bacd51cb50fc473471e2e2070358510a16522ea1e9b3e7ab"
+SRC_URI[x86_64_v2_php-pecl-msgpack.sha256sum] = "40bd4ca0b54cfe0e57283d6223821f5cea6cb1e3648c92cff7f4fbd7dd245b3d"
 
 URI_x86_64_v2_php-pecl-msgpack-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-msgpack-devel-3.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-msgpack-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-msgpack-devel}"
-SRC_URI[x86_64_v2_php-pecl-msgpack-devel.sha256sum] = "4e915d003ab972ed94517ea79df5698191e75138d8b9859bfba070a5b677c110"
+SRC_URI[x86_64_v2_php-pecl-msgpack-devel.sha256sum] = "a663be51ce7e598b8109fc19ecfdf0a332a64bca6a003e4d41f52a51eb71d37b"
 
 URI_aarch64_php-pecl-msgpack = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-msgpack-3.0.0-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-msgpack;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-msgpack}"

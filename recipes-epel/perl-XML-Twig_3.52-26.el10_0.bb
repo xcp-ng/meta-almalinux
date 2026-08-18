@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4b109e32f4096c6146e79ab5b5dd3d2094c0a9318ba872af80c101
 
 URI_x86_64_v2_perl-XML-Twig = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Twig-3.52-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Twig;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Twig}"
-SRC_URI[x86_64_v2_perl-XML-Twig.sha256sum] = "f4ba6ea7c7d53799adbffdd0ef0ef790248595b4d3a0f969526182e6df306916"
+SRC_URI[x86_64_v2_perl-XML-Twig.sha256sum] = "0c80eab6b04be942dd0a420dd677b781c4e757099633e4d9d54cbe743e9a5419"
 
 URI_aarch64_perl-XML-Twig = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Twig-3.52-26.el10_0.noarch.rpm;name=aarch64_perl-XML-Twig;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-Twig}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "dca48c55ee69e366deda8f04fc4edf59208e0266071c51cdcd5e82
 
 URI_x86_64_v2_python3-confluent-kafka = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-confluent-kafka-1.6.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-confluent-kafka;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-confluent-kafka}"
-SRC_URI[x86_64_v2_python3-confluent-kafka.sha256sum] = "e74e5b129ad00dd491887ecc901690e9a9a77186532a896c6d1974db674d671c"
+SRC_URI[x86_64_v2_python3-confluent-kafka.sha256sum] = "6c3cd96778d04f8d9ff25bff4d7602a3abe14c6cb0abec48927980adb7f1fb88"
 
 URI_aarch64_python3-confluent-kafka = "${EPEL_MIRROR}/aarch64/Packages/p/python3-confluent-kafka-1.6.1-9.el10_0.aarch64.rpm;name=aarch64_python3-confluent-kafka;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-confluent-kafka}"

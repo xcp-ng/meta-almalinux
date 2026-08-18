@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "89b1c03f4b7b03827779f5d54251edb2ed9467f53b027ec168c0d7
 
 URI_x86_64_v2_python3-asttokens = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asttokens-2.4.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-asttokens;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-asttokens}"
-SRC_URI[x86_64_v2_python3-asttokens.sha256sum] = "1967afc2f94317b0ef17349310226e0f39e2a017a1b58c4f26b014c5944d8b33"
+SRC_URI[x86_64_v2_python3-asttokens.sha256sum] = "b0bd6ae85a099945eb11091a1e3aff1f5810e6e2c62d3d88f67a4682bd40f130"
 
 URI_aarch64_python3-asttokens = "${EPEL_MIRROR}/aarch64/Packages/p/python3-asttokens-2.4.1-9.el10_0.noarch.rpm;name=aarch64_python3-asttokens;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-asttokens}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "2b4beea21f2f9edc326effc96db50caf48bb2ff97d5c29e6e126ff
 
 URI_x86_64_v2_python3-polib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-polib-1.2.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-polib;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-polib}"
-SRC_URI[x86_64_v2_python3-polib.sha256sum] = "d0a842c9af3807dd6860d1704019e398ec92eb350b2bdc471a6e448fb7a212a4"
+SRC_URI[x86_64_v2_python3-polib.sha256sum] = "fae7fc4092306a53934bcd2a963d8b8f5957b29578b0881592b77cc251009a07"
 
 URI_aarch64_python3-polib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-polib-1.2.0-8.el10_0.noarch.rpm;name=aarch64_python3-polib;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-polib}"

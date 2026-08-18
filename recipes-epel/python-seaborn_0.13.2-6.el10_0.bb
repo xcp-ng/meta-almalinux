@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3f9b7489e64c34353c1da33ca19f8914b8aad067133d54ac70524a
 
 URI_x86_64_v2_python3-seaborn = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-seaborn-0.13.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-seaborn;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-seaborn}"
-SRC_URI[x86_64_v2_python3-seaborn.sha256sum] = "e640a8f15b9899bda6aba4adfedf00ffd5bc7bb358ce0bf9b55b7b013f06b929"
+SRC_URI[x86_64_v2_python3-seaborn.sha256sum] = "c2ad0cf85bd9f183aa0bcc973146b84f95b0ded399f6801ea79a325d171ebc48"
 
 URI_aarch64_python3-seaborn = "${EPEL_MIRROR}/aarch64/Packages/p/python3-seaborn-0.13.2-6.el10_0.noarch.rpm;name=aarch64_python3-seaborn;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-seaborn}"

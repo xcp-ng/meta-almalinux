@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0165753db2b7ea803f670abe6ce007f156cd09592dcc4cb39f2250
 
 URI_x86_64_v2_python3-pytest-freezer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-freezer-0.4.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-freezer;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-freezer}"
-SRC_URI[x86_64_v2_python3-pytest-freezer.sha256sum] = "9822e04d7976da55d8adcabdee28da06608be63112b351eca8f1ac04d96a2cb0"
+SRC_URI[x86_64_v2_python3-pytest-freezer.sha256sum] = "9dcc0bb99cd90474d7176202fbe2dbe1c74f2c4084c2e7a4150c7c05b1a0a508"
 
 URI_aarch64_python3-pytest-freezer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-freezer-0.4.9-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-freezer;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-freezer}"

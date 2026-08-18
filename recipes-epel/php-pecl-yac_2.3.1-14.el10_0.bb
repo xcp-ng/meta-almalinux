@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7b2b35ea3717fba24c079ec1c58658f31d2cf31c37f6901b9e6478
 
 URI_x86_64_v2_php-pecl-yac = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-yac-2.3.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-yac;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-yac}"
-SRC_URI[x86_64_v2_php-pecl-yac.sha256sum] = "371b018b79aa780e89880a5933e28591a33e5c0c0c5fd4644fb77966fe81e39f"
+SRC_URI[x86_64_v2_php-pecl-yac.sha256sum] = "03bb902638d228e7b38f7f98332558edba07afa1d2a98b49d54638857fc83a95"
 
 URI_aarch64_php-pecl-yac = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-yac-2.3.1-14.el10_0.aarch64.rpm;name=aarch64_php-pecl-yac;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-yac}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "04d16fbd22a1a4bd9d638593734645475d7653f47906b18b54a216
 
 URI_x86_64_v2_perl-Sub-Name = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Name-0.27-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sub-Name;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Name}"
-SRC_URI[x86_64_v2_perl-Sub-Name.sha256sum] = "6e0354934a14b2fedaabafabc64a4923694d274bdd478a75e327700c73ab63e1"
+SRC_URI[x86_64_v2_perl-Sub-Name.sha256sum] = "b9615a0b1f4fb3b01733fda31cf162514c574282ee507a59fd62f5322e8e0767"
 
 URI_aarch64_perl-Sub-Name = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Name-0.27-1.el10_0.aarch64.rpm;name=aarch64_perl-Sub-Name;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sub-Name}"

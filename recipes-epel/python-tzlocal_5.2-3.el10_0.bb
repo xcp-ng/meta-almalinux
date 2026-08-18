@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "97263fc268da1d9f5bcb117a90b08e0fa337bccf5c93b45763c504
 
 URI_x86_64_v2_python3-tzlocal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tzlocal-5.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tzlocal;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tzlocal}"
-SRC_URI[x86_64_v2_python3-tzlocal.sha256sum] = "0ce7089ab7ed7d079a252bde69c40f2bd03c6c3109d022b63f20d854f3f42cc5"
+SRC_URI[x86_64_v2_python3-tzlocal.sha256sum] = "48918029fe338a961f427bc45dad8f05adaa8782a4095a87031d55ac146e1c14"
 
 URI_aarch64_python3-tzlocal = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tzlocal-5.2-3.el10_0.noarch.rpm;name=aarch64_python3-tzlocal;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tzlocal}"

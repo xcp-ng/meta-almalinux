@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6768a1091fdc68261c2d8c1cf535b5421a2fc1d3ee201b33232f9b
 
 URI_x86_64_v2_python3-sieve = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sieve-0.1.9-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sieve;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sieve}"
-SRC_URI[x86_64_v2_python3-sieve.sha256sum] = "f16e5b295a9b1e20428657d42bb04bd8004a9aa10e00e3d26adc20f4cafdea5e"
+SRC_URI[x86_64_v2_python3-sieve.sha256sum] = "9c72752e828c37d1a10d3755301a0f1bc60341e319e3ee9cad50d2b26e83abe0"
 
 URI_aarch64_python3-sieve = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sieve-0.1.9-34.el10_0.noarch.rpm;name=aarch64_python3-sieve;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sieve}"

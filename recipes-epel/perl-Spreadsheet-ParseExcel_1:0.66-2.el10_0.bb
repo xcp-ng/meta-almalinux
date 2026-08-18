@@ -17,11 +17,11 @@ SRC_URI[src.sha256sum] = "9fc9a8f623d46dd414faa7bd2d51949461fc717372b8790fa37dde
 
 URI_x86_64_v2_perl-Spreadsheet-ParseExcel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spreadsheet-ParseExcel-0.66-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Spreadsheet-ParseExcel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spreadsheet-ParseExcel}"
-SRC_URI[x86_64_v2_perl-Spreadsheet-ParseExcel.sha256sum] = "3f75b95cfc23912af885bcf376f27745ed2d21790076dc0afe5e4985046188c3"
+SRC_URI[x86_64_v2_perl-Spreadsheet-ParseExcel.sha256sum] = "1a6c0f1e5f7cae20a5b9be123ce2366972829cfa3d2f4fa002732e83be518bd7"
 
 URI_x86_64_v2_perl-Spreadsheet-ParseExcel-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spreadsheet-ParseExcel-tests-0.66-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spreadsheet-ParseExcel-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spreadsheet-ParseExcel-tests}"
-SRC_URI[x86_64_v2_perl-Spreadsheet-ParseExcel-tests.sha256sum] = "bad6aa563a2def887b7b3eb2e9fe49b52326dff56a4f9423e93244715bd6e804"
+SRC_URI[x86_64_v2_perl-Spreadsheet-ParseExcel-tests.sha256sum] = "873f5290893babbde47b5669770eaec97002bed68f8ec41a0130a71935ad0912"
 
 URI_aarch64_perl-Spreadsheet-ParseExcel = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spreadsheet-ParseExcel-0.66-2.el10_0.aarch64.rpm;name=aarch64_perl-Spreadsheet-ParseExcel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Spreadsheet-ParseExcel}"

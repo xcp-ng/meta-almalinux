@@ -181,7 +181,7 @@ RDEPENDS:rust-version-sync+syn-devel = " \
  "
 RDEPENDS:rust-version-sync+toml-devel = " \
  cargo \
- rust-toml+default-devel \
+ rust-toml0.8+default-devel \
  rust-version-sync-devel \
  "
 RDEPENDS:rust-version-sync+url-devel = " \

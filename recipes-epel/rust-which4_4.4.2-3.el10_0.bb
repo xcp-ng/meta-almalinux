@@ -53,7 +53,7 @@ RDEPENDS:rust-which4-devel = " \
  rust \
  rust-either+default-devel \
  rust-home+default-devel \
- rust-rustix+fs-devel \
- rust-rustix+std-devel \
- rust-rustix-devel \
+ rust-rustix0.38+fs-devel \
+ rust-rustix0.38+std-devel \
+ rust-rustix0.38-devel \
  "

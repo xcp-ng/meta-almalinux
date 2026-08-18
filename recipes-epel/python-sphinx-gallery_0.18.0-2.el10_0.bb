@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "0d2c34066177e547ff116d005e1d0affe0e1d3abbb473bd56975b1
 
 URI_x86_64_v2_python3-sphinx-gallery = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery}"
-SRC_URI[x86_64_v2_python3-sphinx-gallery.sha256sum] = "4991389774dd15a22e8051bd33b3e5adff045653e65415b713a90475b288641c"
+SRC_URI[x86_64_v2_python3-sphinx-gallery.sha256sum] = "18cb8b7343b2ba4f32f41ee537a09ef9b25fdf3565c22dbfa2223be449f262fd"
 
 URI_x86_64_v2_python3-sphinx-gallery+recommender = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+recommender-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+recommender;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery+recommender}"
-SRC_URI[x86_64_v2_python3-sphinx-gallery+recommender.sha256sum] = "a3b36dee58b08e2f28803503818fc5b1a3cd5a1600e08909195939ba0c9f3b67"
+SRC_URI[x86_64_v2_python3-sphinx-gallery+recommender.sha256sum] = "003fe5f32e24143e52beb2b14ebf97e84296b797f4940c01a1e14af8c3a8b1b1"
 
 URI_x86_64_v2_python3-sphinx-gallery+show_api_usage = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+show_api_usage-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+show_api_usage;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery+show_api_usage}"
-SRC_URI[x86_64_v2_python3-sphinx-gallery+show_api_usage.sha256sum] = "61a2fc429651306f923486ab78447d32214c79dd7117665d0f2d47215c2157f3"
+SRC_URI[x86_64_v2_python3-sphinx-gallery+show_api_usage.sha256sum] = "51c7deda76a28f672a176ee44bc1af5ad2b1f60e5b81cc5fdae1e111f250d81f"
 
 URI_aarch64_python3-sphinx-gallery = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinx-gallery}"

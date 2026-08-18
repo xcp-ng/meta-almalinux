@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "bbfa4781dce254a5fa51156d07e45eec4243571d1518d39d8462be
 
 URI_x86_64_v2_pybind11-json-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pybind11-json-devel-0.2.15-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_pybind11-json-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pybind11-json-devel}"
-SRC_URI[x86_64_v2_pybind11-json-devel.sha256sum] = "82b0e33670f6923f93f8b13d430c49ce384b51ce3ec2f562e8afb970a010049c"
+SRC_URI[x86_64_v2_pybind11-json-devel.sha256sum] = "2e7c5616d00b9e28d6010b2f8149095035084258d0aa41b060a68f01407bdc0d"
 
 URI_aarch64_pybind11-json-devel = "${EPEL_MIRROR}/aarch64/Packages/p/pybind11-json-devel-0.2.15-1.el10_0.noarch.rpm;name=aarch64_pybind11-json-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pybind11-json-devel}"

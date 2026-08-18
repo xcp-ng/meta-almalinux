@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9053dd0f45fc0adecc252a3978ca4f2928401e57f92237d1dec3cb
 
 URI_x86_64_v2_python3-incremental = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-incremental-24.7.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-incremental;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-incremental}"
-SRC_URI[x86_64_v2_python3-incremental.sha256sum] = "fdad9a2ff37c85f6ab50147031c1a9488a361440349311aaae88a647bbc96cd1"
+SRC_URI[x86_64_v2_python3-incremental.sha256sum] = "b8f276eac8d98e4aeda8024989ca5cfa650ecb6f43c990d146f8b989d9e77408"
 
 URI_aarch64_python3-incremental = "${EPEL_MIRROR}/aarch64/Packages/p/python3-incremental-24.7.2-1.el10_0.noarch.rpm;name=aarch64_python3-incremental;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-incremental}"

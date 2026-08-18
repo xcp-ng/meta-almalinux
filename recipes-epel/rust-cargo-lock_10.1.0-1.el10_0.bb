@@ -69,6 +69,6 @@ RDEPENDS:rust-cargo-lock-devel = " \
  rust-semver+serde-devel \
  rust-serde+default-devel \
  rust-serde+serde_derive-devel \
- rust-toml+default-devel \
+ rust-toml0.8+default-devel \
  rust-url+default-devel \
  "

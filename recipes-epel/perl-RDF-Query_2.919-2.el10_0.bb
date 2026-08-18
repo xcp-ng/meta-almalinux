@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "56ff9388a8f0a53b63fb68094f96760dd46072fac9682ff2611cab
 
 URI_x86_64_v2_perl-RDF-Query = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Query}"
-SRC_URI[x86_64_v2_perl-RDF-Query.sha256sum] = "c1a1bca7874e7a7b17522d79108edba22124bd2f3ee8a1a43e287aa367fc27a6"
+SRC_URI[x86_64_v2_perl-RDF-Query.sha256sum] = "d31d07c994e362ee5643ee66cec2d6e3a557725448d28a34a5d6e79c342793f3"
 
 URI_x86_64_v2_perl-RDF-Query-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-tests-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Query-tests}"
-SRC_URI[x86_64_v2_perl-RDF-Query-tests.sha256sum] = "46e851fea01b902ef1017827203f57979caf2cf2cea02d9bd559b9b81133fd3d"
+SRC_URI[x86_64_v2_perl-RDF-Query-tests.sha256sum] = "76608ade0233e193f544d84cf1b8c9352712030025588d4f9b8f3a10a41b97a8"
 
 URI_aarch64_perl-RDF-Query = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Query-2.919-2.el10_0.noarch.rpm;name=aarch64_perl-RDF-Query;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-RDF-Query}"

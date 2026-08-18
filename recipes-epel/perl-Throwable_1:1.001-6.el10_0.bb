@@ -17,11 +17,11 @@ SRC_URI[src.sha256sum] = "f4147b9270a94adbc9062dc56313d8959371d24de8e96fd13b12bc
 
 URI_x86_64_v2_perl-Throwable = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Throwable}"
-SRC_URI[x86_64_v2_perl-Throwable.sha256sum] = "b754028247ca0d99205b4183776b69f3167ee9e90ff1fd66bc5114ef0624e0d4"
+SRC_URI[x86_64_v2_perl-Throwable.sha256sum] = "b1ba5eaa5524b6a8f238a7b92970f7032725eb287beede4b72179921d93ab02d"
 
 URI_x86_64_v2_perl-Throwable-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-tests-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Throwable-tests}"
-SRC_URI[x86_64_v2_perl-Throwable-tests.sha256sum] = "b07b508118e32c16b652df892369988fdcf7e088beeee22318c09cbcdb92c845"
+SRC_URI[x86_64_v2_perl-Throwable-tests.sha256sum] = "f386fbf86ca8d20a5d4a5555671b33fe352abde565481fe9b79933713778b148"
 
 URI_aarch64_perl-Throwable = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Throwable-1.001-6.el10_0.noarch.rpm;name=aarch64_perl-Throwable;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Throwable}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4fa4dd6a41201fb7d20f4d3cf61d9bcc7279bb3070a383b9300c61
 
 URI_x86_64_v2_python3-redis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-redis-5.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-redis;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-redis}"
-SRC_URI[x86_64_v2_python3-redis.sha256sum] = "806ebbaca02308874cd5dd3a9f9ec5a3031d4e5f72f465421b7202c171999be2"
+SRC_URI[x86_64_v2_python3-redis.sha256sum] = "11add13ba38bbc9b3d61cda08d5d8297a5cf96533d47d7d0e1394cce3194f1ee"
 
 URI_aarch64_python3-redis = "${EPEL_MIRROR}/aarch64/Packages/p/python3-redis-5.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-redis;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-redis}"

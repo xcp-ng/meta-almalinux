@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "63b98e08e968cf3b8fee58038880063584cc6eb66a2847c9ccc542
 
 URI_x86_64_v2_python3-versioneer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-versioneer}"
-SRC_URI[x86_64_v2_python3-versioneer.sha256sum] = "8e652f890fe39f74cd55986505e424539f1955324964ddf987d28dbb9c85dd1d"
+SRC_URI[x86_64_v2_python3-versioneer.sha256sum] = "12151f106f252df46224f3a40277e63739b2ddbff6c3eb5e6a0e5da1384f3763"
 
 URI_x86_64_v2_python3-versioneer+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer+toml-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer+toml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-versioneer+toml}"
-SRC_URI[x86_64_v2_python3-versioneer+toml.sha256sum] = "e8b7cff64918ce54d0a84072c319fa1d30afe573f992b326f27f2ec4b54628cd"
+SRC_URI[x86_64_v2_python3-versioneer+toml.sha256sum] = "c26a649c5a1ce20b45bab416742b71d77acf751bc89fbff497bd0c610ff5568e"
 
 URI_aarch64_python3-versioneer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-versioneer-0.29-1.el10_0.noarch.rpm;name=aarch64_python3-versioneer;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-versioneer}"

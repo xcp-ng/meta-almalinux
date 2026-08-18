@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4d520592b9798da24b8b992c716963737fd43e7f10824ebf827afb
 
 URI_x86_64_v2_python3-fastjsonschema = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fastjsonschema-2.19.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fastjsonschema;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-fastjsonschema}"
-SRC_URI[x86_64_v2_python3-fastjsonschema.sha256sum] = "5e29ea4a969a98211391caa46f0832ef71a7c115cec74b285cdf7d3f5855937e"
+SRC_URI[x86_64_v2_python3-fastjsonschema.sha256sum] = "dcd580c8bc5b5cbad6f6a1cac7ce80d8484431a6e2e214497db146aee003dfae"
 
 URI_aarch64_python3-fastjsonschema = "${EPEL_MIRROR}/aarch64/Packages/p/python3-fastjsonschema-2.19.1-4.el10_0.noarch.rpm;name=aarch64_python3-fastjsonschema;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-fastjsonschema}"

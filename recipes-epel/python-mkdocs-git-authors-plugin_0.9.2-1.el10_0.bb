@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a39ba5fc03c74e11b7e0d12cbf8b7e3677ec719327339b6912949b
 
 URI_x86_64_v2_python3-mkdocs-git-authors-plugin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-git-authors-plugin-0.9.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-git-authors-plugin;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-git-authors-plugin}"
-SRC_URI[x86_64_v2_python3-mkdocs-git-authors-plugin.sha256sum] = "718f8f5b381d99f7c3ea564fbcee1652c76581eadbe5a521a74792d9d887c614"
+SRC_URI[x86_64_v2_python3-mkdocs-git-authors-plugin.sha256sum] = "10fd3f169b97a9e9360d8cdf401e4eb7093b0ed757f110d4bf0af4c69fa6b0c0"
 
 URI_aarch64_python3-mkdocs-git-authors-plugin = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-git-authors-plugin-0.9.2-1.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-git-authors-plugin;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-mkdocs-git-authors-plugin}"

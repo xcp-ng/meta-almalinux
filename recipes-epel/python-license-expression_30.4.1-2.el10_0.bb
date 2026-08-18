@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "d2afc310c98e848b369a2132e61c8c156237e704e7666835319bcd
 
 URI_x86_64_v2_python-license-expression-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-license-expression-doc-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-license-expression-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-license-expression-doc}"
-SRC_URI[x86_64_v2_python-license-expression-doc.sha256sum] = "405bfd7ccdbee388d0d930500e2f2085216fc35af5e655737c33750f48171a19"
+SRC_URI[x86_64_v2_python-license-expression-doc.sha256sum] = "306f0b389dd5c137c3155996d19f3320d6148b1a4187e09fe16fbaa69c74803c"
 
 URI_x86_64_v2_python3-license-expression = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-license-expression-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-license-expression;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-license-expression}"
-SRC_URI[x86_64_v2_python3-license-expression.sha256sum] = "84dd4b54c0faae311f2fc8cab1391407ebaddbd1ab2b7eed6c5d836241db8a58"
+SRC_URI[x86_64_v2_python3-license-expression.sha256sum] = "6185b68996824a7b7782733557939677f525649e86b271f16022baa6c96489d0"
 
 URI_aarch64_python-license-expression-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-license-expression-doc-30.4.1-2.el10_0.noarch.rpm;name=aarch64_python-license-expression-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-license-expression-doc}"

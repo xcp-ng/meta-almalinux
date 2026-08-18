@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f034b0cd3d08831ab6dbb87070e518b1c6438cfc17b630c6bb5bf6
 
 URI_x86_64_v2_perl-Test-SharedFork = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-SharedFork-0.35-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-SharedFork;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-SharedFork}"
-SRC_URI[x86_64_v2_perl-Test-SharedFork.sha256sum] = "a5cfba8b9de638c9598d48a247d570c967ec6637c8832a68c11c8c0f855b1eb8"
+SRC_URI[x86_64_v2_perl-Test-SharedFork.sha256sum] = "fc79dddaf276e418d090acc6a266bab4ea0246e44c6716956550b189c413274b"
 
 URI_aarch64_perl-Test-SharedFork = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-SharedFork-0.35-28.el10_0.noarch.rpm;name=aarch64_perl-Test-SharedFork;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-SharedFork}"

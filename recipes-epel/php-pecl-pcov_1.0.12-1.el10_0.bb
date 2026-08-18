@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5bca977bc62a473a86b077ac66c565502a8a8e1a316b5801587132
 
 URI_x86_64_v2_php-pecl-pcov = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-pcov-1.0.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-pcov;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-pcov}"
-SRC_URI[x86_64_v2_php-pecl-pcov.sha256sum] = "3153c519f786ac1a1f88e66300438a5d303c7439d0579d2f9ced2e4dff43dbaf"
+SRC_URI[x86_64_v2_php-pecl-pcov.sha256sum] = "1ade26d20070eeb107c1d9cde9f3abe447a3755bb465aeec3f13f60097d9e32b"
 
 URI_aarch64_php-pecl-pcov = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-pcov-1.0.12-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-pcov;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-pcov}"

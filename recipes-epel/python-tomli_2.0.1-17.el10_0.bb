@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1e7053ff047ecf4d94a55df6a0a9294bae2a88ad741d563c781d68
 
 URI_x86_64_v2_python3-tomli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tomli-2.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tomli;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tomli}"
-SRC_URI[x86_64_v2_python3-tomli.sha256sum] = "dc190c3d85e51ad85d3d07c636c2f5fc208947893f609774dad8c45ec98e1249"
+SRC_URI[x86_64_v2_python3-tomli.sha256sum] = "229eae01605540b4c79bc756a081e83126f8dfcdb0666494f29e8c506477286f"
 
 URI_aarch64_python3-tomli = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tomli-2.0.1-17.el10_0.noarch.rpm;name=aarch64_python3-tomli;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tomli}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "2e2fbeff730034a70be73a6589a8c79f28542b31139cbadbb46c42
 
 URI_x86_64_v2_python3-irodsclient = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-irodsclient-2.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-irodsclient;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-irodsclient}"
-SRC_URI[x86_64_v2_python3-irodsclient.sha256sum] = "93eaae15287b1c4a735e400c6c589ef16d88a7a0501bf6c01f3e5ffefe5db301"
+SRC_URI[x86_64_v2_python3-irodsclient.sha256sum] = "f7f6cf3206157ccb89cfdd3c4b91afbaec793095df7162e16e7ebed5ffdca0e9"
 
 URI_aarch64_python3-irodsclient = "${EPEL_MIRROR}/aarch64/Packages/p/python3-irodsclient-2.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-irodsclient;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-irodsclient}"

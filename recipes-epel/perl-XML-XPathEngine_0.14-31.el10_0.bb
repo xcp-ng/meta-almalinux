@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3b349afd9e03c9cde411d668cff9992cfc92e3dfc13ee43a47c3ec
 
 URI_x86_64_v2_perl-XML-XPathEngine = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-XPathEngine-0.14-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-XPathEngine;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-XPathEngine}"
-SRC_URI[x86_64_v2_perl-XML-XPathEngine.sha256sum] = "c695436fd09de4839201b5812aa72e95c037ad0eea01646fd7fd34d418439b3f"
+SRC_URI[x86_64_v2_perl-XML-XPathEngine.sha256sum] = "36b91bce7269a8266892db8b14199a356e72553b3ec41492a5336e0f8bd2ebab"
 
 URI_aarch64_perl-XML-XPathEngine = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-XPathEngine-0.14-31.el10_0.noarch.rpm;name=aarch64_perl-XML-XPathEngine;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-XPathEngine}"

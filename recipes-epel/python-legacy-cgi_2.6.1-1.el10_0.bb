@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a9d1f6c0f65da07a48ef13b5d37502566978d2a9964f4a2af675c0
 
 URI_x86_64_v2_python3-legacy-cgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-legacy-cgi-2.6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-legacy-cgi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-legacy-cgi}"
-SRC_URI[x86_64_v2_python3-legacy-cgi.sha256sum] = "fa9e4c7f44ee199af6d8c8ab651a95b1b5588dc63381f760f2d248fd1523cf68"
+SRC_URI[x86_64_v2_python3-legacy-cgi.sha256sum] = "2cecbaeb2514baaeaaaa1559660ad3ea1e3392a04f65abd042e3673fbbaf242a"
 
 URI_aarch64_python3-legacy-cgi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-legacy-cgi-2.6.1-1.el10_0.noarch.rpm;name=aarch64_python3-legacy-cgi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-legacy-cgi}"

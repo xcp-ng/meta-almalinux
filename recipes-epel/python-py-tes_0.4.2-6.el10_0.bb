@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "60534aea1decceef868bb59686dd3ca9684abc31320dcfe5c6536d
 
 URI_x86_64_v2_python3-py-tes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-py-tes-0.4.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-py-tes;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-py-tes}"
-SRC_URI[x86_64_v2_python3-py-tes.sha256sum] = "6639cb47e6f8d8cfabc996e8fae4b49015bac29c3592046808497cc8c342e80b"
+SRC_URI[x86_64_v2_python3-py-tes.sha256sum] = "229a825ba6e592adaa35675d25cc48789c7f3893d2c02bcf0dfad626b4f8dab6"
 
 URI_aarch64_python3-py-tes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-py-tes-0.4.2-6.el10_0.noarch.rpm;name=aarch64_python3-py-tes;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-py-tes}"

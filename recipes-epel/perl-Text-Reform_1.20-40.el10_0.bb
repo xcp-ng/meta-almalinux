@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6e534a69125ec5f0634f759e2b5401f2bb100b7eba23091b554bec
 
 URI_x86_64_v2_perl-Text-Reform = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Reform-1.20-40.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Reform;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Reform}"
-SRC_URI[x86_64_v2_perl-Text-Reform.sha256sum] = "214c95c9374da401c9a3a68d4ad2080f1d7c69a14e0d018fb658b2dc4a3b38ba"
+SRC_URI[x86_64_v2_perl-Text-Reform.sha256sum] = "df24386fe504b2c02dd26e24012cfcce53a3e714a4127dee3c934aa815fe9d15"
 
 URI_aarch64_perl-Text-Reform = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Reform-1.20-40.el10_0.noarch.rpm;name=aarch64_perl-Text-Reform;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Text-Reform}"

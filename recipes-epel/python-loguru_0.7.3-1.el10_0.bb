@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6a8c99a6960d07536cfed0230e43e050934bb63c75013870c7635c
 
 URI_x86_64_v2_python3-loguru = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-loguru-0.7.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-loguru;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-loguru}"
-SRC_URI[x86_64_v2_python3-loguru.sha256sum] = "fb3af940f2c84ea38f833b9eea06205f41b9ededfe5c02696d2b09e9ad947771"
+SRC_URI[x86_64_v2_python3-loguru.sha256sum] = "e408f3b6384a013f3ac737541379d2e6a41e8e939ef14d157a66fd2ec14b80c5"
 
 URI_aarch64_python3-loguru = "${EPEL_MIRROR}/aarch64/Packages/p/python3-loguru-0.7.3-1.el10_0.noarch.rpm;name=aarch64_python3-loguru;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-loguru}"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "4d30829416845120a96baa82083d04d02e700263a7d9a8a6352c93
 
 URI_x86_64_v2_perl-libxml-perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-libxml-perl}"
-SRC_URI[x86_64_v2_perl-libxml-perl.sha256sum] = "64db9c8d86b74580b86cfada03cb2a067f33a2de0443dde6864f58602189fe93"
+SRC_URI[x86_64_v2_perl-libxml-perl.sha256sum] = "9a9bf76e52ff344eb6f82a07d3ad171e6690db0ce8c00d27c6d71df2797d9e7a"
 
 URI_x86_64_v2_perl-libxml-perl-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-tests-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-libxml-perl-tests}"
-SRC_URI[x86_64_v2_perl-libxml-perl-tests.sha256sum] = "c9e3678c5c9f84273f88c781a7c1b4f38710f37f9d60e481aa96d8ea4d508cb6"
+SRC_URI[x86_64_v2_perl-libxml-perl-tests.sha256sum] = "105191cc2905b7761752092f7f045d4e4a4ab0925b3ff66ceabc0a6ae411b5d8"
 
 URI_aarch64_perl-libxml-perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-libxml-perl-0.08-53.el10_0.noarch.rpm;name=aarch64_perl-libxml-perl;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-libxml-perl}"

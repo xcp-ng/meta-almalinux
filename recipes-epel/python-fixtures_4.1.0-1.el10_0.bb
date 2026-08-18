@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "942c8e38bc3969936d46e78be8cbc15e195c9c3c809e080060c8ff
 
 URI_x86_64_v2_python3-fixtures = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fixtures-4.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fixtures;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-fixtures}"
-SRC_URI[x86_64_v2_python3-fixtures.sha256sum] = "11ca02effef3c9b3591834643cc1bc2af98e1677c1994384995cadfc672442c8"
+SRC_URI[x86_64_v2_python3-fixtures.sha256sum] = "915f7c10c3811a4884148b2badde115d987e1562ae1c17f4e3f445f3f3865d33"
 
 URI_x86_64_v2_python3-fixtures+streams = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fixtures+streams-4.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fixtures+streams;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-fixtures+streams}"
-SRC_URI[x86_64_v2_python3-fixtures+streams.sha256sum] = "40c34d2a6d862561dd3f958fbd81270b40a4edbc57b87d271bc003ae9e0a8741"
+SRC_URI[x86_64_v2_python3-fixtures+streams.sha256sum] = "05053c4c516a319be2104338ae02308bba49924d87875c6735fb3b72e6701faf"
 
 URI_aarch64_python3-fixtures = "${EPEL_MIRROR}/aarch64/Packages/p/python3-fixtures-4.1.0-1.el10_0.noarch.rpm;name=aarch64_python3-fixtures;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-fixtures}"

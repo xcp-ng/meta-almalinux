@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "af1d76875dde0e9eb3c755ba38f539c46062a7783db9cc39f67fcb
 
 URI_x86_64_v2_python3-pytest-benchmark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-benchmark-4.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-benchmark;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-benchmark}"
-SRC_URI[x86_64_v2_python3-pytest-benchmark.sha256sum] = "a86359b54d292dcf12d36a017fe89b04743e79a05172c0ac0851a10f74d64b3c"
+SRC_URI[x86_64_v2_python3-pytest-benchmark.sha256sum] = "d3a209ddd7f2922932395cb648373634b45d8fcec802c195341f02b03ea433c9"
 
 URI_aarch64_python3-pytest-benchmark = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-benchmark-4.0.0-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-benchmark;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-benchmark}"

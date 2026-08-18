@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d2a7772063abe9f1e4d88b201152ad16ad049c9790950dd94c42a4
 
 URI_x86_64_v2_python3-pywizlight = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pywizlight-0.5.14-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pywizlight;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pywizlight}"
-SRC_URI[x86_64_v2_python3-pywizlight.sha256sum] = "a47264b8a5a594e5ff0cc5992720d321961ea5340f49c1423322e2fd954b7ed0"
+SRC_URI[x86_64_v2_python3-pywizlight.sha256sum] = "1377a10e1818d12c92ce0de4134ce0e6a202ba60c703cf7dd6575be9dcccb801"
 
 URI_aarch64_python3-pywizlight = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pywizlight-0.5.14-9.el10_0.noarch.rpm;name=aarch64_python3-pywizlight;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pywizlight}"

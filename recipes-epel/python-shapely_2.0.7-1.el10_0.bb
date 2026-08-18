@@ -13,17 +13,25 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-shapely-2.0.7-1.el10_0.src.rpm;na
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "43cae6a4c8f2dc2b8178b506b1fbe9fa6326f94941bc227361e21434b55fcf50"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - python3-shapely: libgeos_c.so.1()(64bit)
+
 URI_x86_64_v2_python3-shapely = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-shapely-2.0.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-shapely;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-shapely}"
-SRC_URI[x86_64_v2_python3-shapely.sha256sum] = "9d94334fda6c7a9998f3d5fca276f8bf348ee60aeb2bdb9e923f11405bd08591"
+SRC_URI[x86_64_v2_python3-shapely.sha256sum] = "a1e3d2f0516c2ff0c1a0d7aab0a8700628eb955333f6d0f599cd64fcf1c35515"
 
 URI_aarch64_python3-shapely = "${EPEL_MIRROR}/aarch64/Packages/p/python3-shapely-2.0.7-1.el10_0.aarch64.rpm;name=aarch64_python3-shapely;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-shapely}"
 SRC_URI[aarch64_python3-shapely.sha256sum] = "8bdc4be65d7083b0c3cd90dc55e8e745ffc3fbca52412e9a4117c74903488aa0"
 
-RDEPENDS:python3-shapely = " \
+RDEPENDS:python3-shapely:x86_64_v2 = " \
+ glibc \
+ python3 \
+ python3-numpy \
+"
+RDEPENDS:python3-shapely:aarch64 = " \
  geos \
  glibc \
  python3 \
  python3-numpy \
- "
+"

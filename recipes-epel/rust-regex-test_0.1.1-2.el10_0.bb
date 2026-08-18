@@ -42,6 +42,6 @@ RDEPENDS:rust-regex-test-devel = " \
  rust-bstr-devel \
  rust-serde+default-devel \
  rust-serde+derive-devel \
- rust-toml+parse-devel \
- rust-toml-devel \
+ rust-toml0.8+parse-devel \
+ rust-toml0.8-devel \
  "

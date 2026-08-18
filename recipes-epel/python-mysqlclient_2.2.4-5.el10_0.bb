@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "c3affcf86636f89bc7f7d11ce3a1488329693f00e9bad1e1b5100a
 
 URI_x86_64_v2_python-mysqlclient-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-mysqlclient-doc-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-mysqlclient-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-mysqlclient-doc}"
-SRC_URI[x86_64_v2_python-mysqlclient-doc.sha256sum] = "25a9346596c383b15ddd8d74f2f609723ea94a9c015a619322b193bcb2cae3d0"
+SRC_URI[x86_64_v2_python-mysqlclient-doc.sha256sum] = "adbd202dbcb993d92b98caa17bc5748f8611322786598a7e5e517661749d8789"
 
 URI_x86_64_v2_python3-mysqlclient = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mysqlclient-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-mysqlclient;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mysqlclient}"
-SRC_URI[x86_64_v2_python3-mysqlclient.sha256sum] = "0352a4bc3c6711dcb056d4a20d87aa6a2a21d7332001b36e2bee63aaba642f61"
+SRC_URI[x86_64_v2_python3-mysqlclient.sha256sum] = "ec879ffc8d31941c11cd1f56479abed630beadbfdf055bffe52146fab4f19cfa"
 
 URI_aarch64_python-mysqlclient-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-mysqlclient-doc-2.2.4-5.el10_0.aarch64.rpm;name=aarch64_python-mysqlclient-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-mysqlclient-doc}"

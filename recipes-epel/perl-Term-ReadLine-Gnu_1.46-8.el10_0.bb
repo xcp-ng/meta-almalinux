@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ec0c18d8f14b18d1eacccfc20d0a48566aa479f0fbd10e4f54b344
 
 URI_x86_64_v2_perl-Term-ReadLine-Gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ReadLine-Gnu-1.46-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Term-ReadLine-Gnu;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ReadLine-Gnu}"
-SRC_URI[x86_64_v2_perl-Term-ReadLine-Gnu.sha256sum] = "d16edd50a90a54e1e24c62ae1c37e1e067a8e7fbac570a0210e87f6257d7537f"
+SRC_URI[x86_64_v2_perl-Term-ReadLine-Gnu.sha256sum] = "a7c296320c6abc533076f5ba908f0e050a8530d2456fc3f9c8d67542e0d9fac4"
 
 URI_aarch64_perl-Term-ReadLine-Gnu = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ReadLine-Gnu-1.46-8.el10_0.aarch64.rpm;name=aarch64_perl-Term-ReadLine-Gnu;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Term-ReadLine-Gnu}"

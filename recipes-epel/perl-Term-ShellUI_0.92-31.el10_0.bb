@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d8f16f59daea4b2e069b10324d53aac26eaf8b429c978d039af801
 
 URI_x86_64_v2_perl-Term-ShellUI = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ShellUI-0.92-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ShellUI;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ShellUI}"
-SRC_URI[x86_64_v2_perl-Term-ShellUI.sha256sum] = "7d55cc878e12e396ff323865ae4145ddacd0b379225c342cde03518648f9de1f"
+SRC_URI[x86_64_v2_perl-Term-ShellUI.sha256sum] = "6eaa1b38b552fcececc18fa397c496ab544818e634a44d9aff2364c012ec6ac7"
 
 URI_aarch64_perl-Term-ShellUI = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ShellUI-0.92-31.el10_0.noarch.rpm;name=aarch64_perl-Term-ShellUI;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Term-ShellUI}"

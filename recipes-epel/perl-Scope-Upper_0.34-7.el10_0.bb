@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "207f3ea57024a3d84ab1e3dd2a714687cbceb0bc3b922629eaeae4
 
 URI_x86_64_v2_perl-Scope-Upper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Scope-Upper-0.34-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Scope-Upper;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Scope-Upper}"
-SRC_URI[x86_64_v2_perl-Scope-Upper.sha256sum] = "44951fc9c619ec1c90b9dc884b37f8da091428d9e24c15c612f8806f7a2d0573"
+SRC_URI[x86_64_v2_perl-Scope-Upper.sha256sum] = "fd58b750b08a4cf9c808bf2a89eb66a6e9a8de470180759431862af9d1947084"
 
 URI_x86_64_v2_perl-Scope-Upper-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Scope-Upper-tests-0.34-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Scope-Upper-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Scope-Upper-tests}"
-SRC_URI[x86_64_v2_perl-Scope-Upper-tests.sha256sum] = "ebffe591008e088ce052bfaa2dfc5e6134669952b8e0599d943c6a3aceac20db"
+SRC_URI[x86_64_v2_perl-Scope-Upper-tests.sha256sum] = "0d4a505bfb22be55038a9349bc49a76f80bd1a20d6c4460b7b0b180caef74097"
 
 URI_aarch64_perl-Scope-Upper = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Scope-Upper-0.34-7.el10_0.aarch64.rpm;name=aarch64_perl-Scope-Upper;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Scope-Upper}"

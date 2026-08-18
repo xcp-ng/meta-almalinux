@@ -91,8 +91,8 @@ RDEPENDS:rust-onig_sys+print-debug-devel = " \
 RDEPENDS:rust-onig_sys-devel = " \
  cargo \
  oniguruma-devel \
- rust-bindgen+default-devel \
- rust-bindgen+runtime-devel \
+ rust-bindgen0.69+default-devel \
+ rust-bindgen0.69+runtime-devel \
  rust-cc+default-devel \
  rust-pkg-config+default-devel \
  "

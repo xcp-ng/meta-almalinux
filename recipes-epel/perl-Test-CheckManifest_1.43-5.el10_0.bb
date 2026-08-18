@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5bd2840b4d53c65d2952de7064a521db708446113cd9fdbd9f2521
 
 URI_x86_64_v2_perl-Test-CheckManifest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CheckManifest-1.43-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CheckManifest;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-CheckManifest}"
-SRC_URI[x86_64_v2_perl-Test-CheckManifest.sha256sum] = "e3fdce0a1a2cbc922c1624b8ad1a1fcd8e57d473bb9de21f89d51754ca2f205f"
+SRC_URI[x86_64_v2_perl-Test-CheckManifest.sha256sum] = "a23e5fd1bfd6f37ade7a7325cc13fa6a2b6711aa5df3f86fe7141d8699f6bcd3"
 
 URI_aarch64_perl-Test-CheckManifest = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CheckManifest-1.43-5.el10_0.noarch.rpm;name=aarch64_perl-Test-CheckManifest;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-CheckManifest}"

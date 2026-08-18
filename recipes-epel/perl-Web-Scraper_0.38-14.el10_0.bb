@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ba326b40d0d853dbf9a8bd2606d13bee2f1bcd796c6de884eeb874
 
 URI_x86_64_v2_perl-Web-Scraper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Web-Scraper-0.38-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Web-Scraper;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Web-Scraper}"
-SRC_URI[x86_64_v2_perl-Web-Scraper.sha256sum] = "279491a4090aa200713fb7125b7a863691d6383048ccda02c57562571ed3e318"
+SRC_URI[x86_64_v2_perl-Web-Scraper.sha256sum] = "37f77d2e2937fb56c5a58264d57f6e4b725a35b60c34d1f1d503dd547dfe71fd"
 
 URI_aarch64_perl-Web-Scraper = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Web-Scraper-0.38-14.el10_0.noarch.rpm;name=aarch64_perl-Web-Scraper;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Web-Scraper}"

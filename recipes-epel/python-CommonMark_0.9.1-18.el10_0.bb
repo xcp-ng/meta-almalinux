@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "0b54cff41d6c002b3f77ce212a54b0886902e9cf7f0b2df7d4dbfa
 
 URI_x86_64_v2_python-CommonMark-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-doc-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-CommonMark-doc}"
-SRC_URI[x86_64_v2_python-CommonMark-doc.sha256sum] = "efd0a80ee84d33acb124ed6b73c6bdb0a8be41b30d9d4995b647f8fb2d18c95b"
+SRC_URI[x86_64_v2_python-CommonMark-doc.sha256sum] = "94dd74d868fb5834bb1bacb9e30b94650dc2f9f4ff2ce155261e751171f434ee"
 
 URI_x86_64_v2_python-CommonMark-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-utils-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-utils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-CommonMark-utils}"
-SRC_URI[x86_64_v2_python-CommonMark-utils.sha256sum] = "b6a9913280a2ce865fff710ef85ea3f636cee40950a53e64d6c18d8423df9215"
+SRC_URI[x86_64_v2_python-CommonMark-utils.sha256sum] = "28d3bcf85fcaeb4e0c0718f473649f613de89727d0d366853841571551e4793b"
 
 URI_x86_64_v2_python3-CommonMark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-CommonMark-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-CommonMark;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-CommonMark}"
-SRC_URI[x86_64_v2_python3-CommonMark.sha256sum] = "4f5d86d7e3b662b0e8f335a0b2e06661d980a0434efdc34d05281b45aab17230"
+SRC_URI[x86_64_v2_python3-CommonMark.sha256sum] = "f49fb0125361398e2b5a8b997bbc54faa07ee68fefbc7a385ad2afeaf12bac34"
 
 URI_aarch64_python-CommonMark-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-CommonMark-doc-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python-CommonMark-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-CommonMark-doc}"

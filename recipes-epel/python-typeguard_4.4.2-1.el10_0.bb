@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0c143590e1a270e9559a4ddba9dcf0ec7ade7af0d64ef88fc22a4e
 
 URI_x86_64_v2_python3-typeguard = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-typeguard-4.4.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-typeguard;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-typeguard}"
-SRC_URI[x86_64_v2_python3-typeguard.sha256sum] = "3b3565b810b2ad16fc71bfe0b75d6ff315f760b42f28e14f6b17ea877fd5e7d7"
+SRC_URI[x86_64_v2_python3-typeguard.sha256sum] = "941ff327ddaed7b8fa7013e02766346b9975c468c7e018b62ae33f6153999de9"
 
 URI_aarch64_python3-typeguard = "${EPEL_MIRROR}/aarch64/Packages/p/python3-typeguard-4.4.2-1.el10_0.noarch.rpm;name=aarch64_python3-typeguard;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-typeguard}"

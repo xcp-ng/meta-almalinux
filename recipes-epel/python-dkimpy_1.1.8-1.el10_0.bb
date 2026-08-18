@@ -18,19 +18,19 @@ SRC_URI[src.sha256sum] = "02c61b0fce32d98dc01be6582c0f85bc4d0c0f40c4d7309900e127
 
 URI_x86_64_v2_python3-dkimpy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dkimpy-1.1.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dkimpy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dkimpy}"
-SRC_URI[x86_64_v2_python3-dkimpy.sha256sum] = "c1c2c930347eb83b53b67c80bdf3f11b3e6e3e98d42290bc2ef3ad73e990c025"
+SRC_URI[x86_64_v2_python3-dkimpy.sha256sum] = "28b7507228f472e452e557969a34eef4d3f5c23e04d787a3df6424b58bb8dec8"
 
 URI_x86_64_v2_python3-dkimpy+ARC = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dkimpy+ARC-1.1.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dkimpy+ARC;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dkimpy+ARC}"
-SRC_URI[x86_64_v2_python3-dkimpy+ARC.sha256sum] = "567ad9ea736fff27536f78c78c73922b1f149a9db74ee6d5e51667f30d457ffa"
+SRC_URI[x86_64_v2_python3-dkimpy+ARC.sha256sum] = "f8d7ce9e7ea6b53719e04fd43edfbfcfd6973c430d272aaeee65f82aa9981e68"
 
 URI_x86_64_v2_python3-dkimpy+asyncio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dkimpy+asyncio-1.1.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dkimpy+asyncio;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dkimpy+asyncio}"
-SRC_URI[x86_64_v2_python3-dkimpy+asyncio.sha256sum] = "9bfa7ee44da8d3838582d1c5a7ac6d5b89107e84e6b9ae3ead074411fb483f98"
+SRC_URI[x86_64_v2_python3-dkimpy+asyncio.sha256sum] = "477d9a8ce258c877534ea3bbeae22cbc09dc010593a2ae03e6e3bee9edb512bd"
 
 URI_x86_64_v2_python3-dkimpy+ed25519 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dkimpy+ed25519-1.1.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dkimpy+ed25519;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dkimpy+ed25519}"
-SRC_URI[x86_64_v2_python3-dkimpy+ed25519.sha256sum] = "c7d22c2bc43880d335d334976ad96848a1d1925c668b2c7703040a839d9ec19a"
+SRC_URI[x86_64_v2_python3-dkimpy+ed25519.sha256sum] = "b3f16c32247a66ab5ac50b4be7b9ddbc79c652dfa5f5abfa29900cf71d4bb408"
 
 URI_aarch64_python3-dkimpy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dkimpy-1.1.8-1.el10_0.noarch.rpm;name=aarch64_python3-dkimpy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-dkimpy}"

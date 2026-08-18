@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4f3941d8a1b3343dc63ce8b43c07d8ba4376989c629ceba954ee49
 
 URI_x86_64_v2_python3-websocket-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websocket-client-1.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websocket-client;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-websocket-client}"
-SRC_URI[x86_64_v2_python3-websocket-client.sha256sum] = "539d42281585888e784342bbbc93d7a73da6e4d130fe5d74d22cba7085a6b16b"
+SRC_URI[x86_64_v2_python3-websocket-client.sha256sum] = "691b85f6098946106becc04f6bba52686eed7d0764c1e2b4048933fe0d712bb7"
 
 URI_aarch64_python3-websocket-client = "${EPEL_MIRROR}/aarch64/Packages/p/python3-websocket-client-1.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-websocket-client;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-websocket-client}"

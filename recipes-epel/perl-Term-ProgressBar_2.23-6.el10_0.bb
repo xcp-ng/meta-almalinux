@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "8106bb6bae924da14dd56c3b7b6da8781d333909505be31f927950
 
 URI_x86_64_v2_perl-Term-ProgressBar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ProgressBar}"
-SRC_URI[x86_64_v2_perl-Term-ProgressBar.sha256sum] = "bf27d3178e1324c0faea3d8376e1980bcc02ecb79b80570d4bf1cf501befd09b"
+SRC_URI[x86_64_v2_perl-Term-ProgressBar.sha256sum] = "b294cd668a8684e73704155da3eee1c51f102598bf1ae553a0803f653c2eccdf"
 
 URI_x86_64_v2_perl-Term-ProgressBar-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-tests-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ProgressBar-tests}"
-SRC_URI[x86_64_v2_perl-Term-ProgressBar-tests.sha256sum] = "bb8b37bfe0becfe450139d24591f0d6187cbc36c8d338137bd02f33da0dd3895"
+SRC_URI[x86_64_v2_perl-Term-ProgressBar-tests.sha256sum] = "168044a098a28fcc2ec6910743441f132ad9cf40dbff5d7ba6e0a42fbbaaec0c"
 
 URI_aarch64_perl-Term-ProgressBar = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ProgressBar-2.23-6.el10_0.noarch.rpm;name=aarch64_perl-Term-ProgressBar;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Term-ProgressBar}"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "cd6dbd85f99188029eccb5243e88a824e122b3d4a8a4d0b5488791
 
 URI_x86_64_v2_phonon-backend-vlc-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-backend-vlc-common-0.12.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_phonon-backend-vlc-common;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phonon-backend-vlc-common}"
-SRC_URI[x86_64_v2_phonon-backend-vlc-common.sha256sum] = "a568d73b5ba7b8fa22480bfcb3c964d10ac310a561268c57a72a9f6f01c4e8a8"
+SRC_URI[x86_64_v2_phonon-backend-vlc-common.sha256sum] = "089b194415f50ef8e5a2ff2374dc94301033f45763bcba921f84153a545de9c5"
 
 URI_x86_64_v2_phonon-qt6-backend-vlc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-backend-vlc-0.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6-backend-vlc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_phonon-qt6-backend-vlc}"
-SRC_URI[x86_64_v2_phonon-qt6-backend-vlc.sha256sum] = "947c2c6d82f764f5849b43fa3e29fc2a2bb82ae48c77f98f463e9527c4f116b9"
+SRC_URI[x86_64_v2_phonon-qt6-backend-vlc.sha256sum] = "4b9d34437aceb7c93144f67a653e1bbf293b1b3664f7317bae14be4a3fa00aa8"
 
 URI_aarch64_phonon-backend-vlc-common = "${EPEL_MIRROR}/aarch64/Packages/p/phonon-backend-vlc-common-0.12.0-5.el10_0.noarch.rpm;name=aarch64_phonon-backend-vlc-common;unpack=0"
 SRC_URI:append = " ${URI_aarch64_phonon-backend-vlc-common}"

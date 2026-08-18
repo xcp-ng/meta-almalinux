@@ -23,7 +23,7 @@ SRC_URI[x86_64_v2_rust-unicode-width0.1+cjk-devel.sha256sum] = "9135a3136b882ec1
 URI_x86_64_v2_rust-unicode-width0.1+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-width0.1+default-devel-0.1.14-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-width0.1+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-unicode-width0.1+default-devel}"
 SRC_URI[x86_64_v2_rust-unicode-width0.1+default-devel.sha256sum] = "fc27e528f5e5bbd5bd59de9e76edcb8e099fc3de5aede260bbdd6e40c1efafb0"
-RPROVIDES:rust-unicode-width0.1+default-devel:x86_64_v2 = "virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+RPROVIDES:rust-unicode-width0.1+default-devel:x86_64_v2 = "virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"
 
 URI_x86_64_v2_rust-unicode-width0.1+no_std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-width0.1+no_std-devel-0.1.14-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-width0.1+no_std-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-unicode-width0.1+no_std-devel}"
@@ -40,7 +40,7 @@ SRC_URI[aarch64_rust-unicode-width0.1+cjk-devel.sha256sum] = "e0237387c4fd5e3734
 URI_aarch64_rust-unicode-width0.1+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-width0.1+default-devel-0.1.14-1.el10_0.noarch.rpm;name=aarch64_rust-unicode-width0.1+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-unicode-width0.1+default-devel}"
 SRC_URI[aarch64_rust-unicode-width0.1+default-devel.sha256sum] = "19ad7430a10798bc2e3ee9c668532e1612dc5ccc5e8c4113e8c73fe696433887"
-RPROVIDES:rust-unicode-width0.1+default-devel:aarch64 = "virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+RPROVIDES:rust-unicode-width0.1+default-devel:aarch64 = "virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"
 
 URI_aarch64_rust-unicode-width0.1+no_std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-width0.1+no_std-devel-0.1.14-1.el10_0.noarch.rpm;name=aarch64_rust-unicode-width0.1+no_std-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-unicode-width0.1+no_std-devel}"
@@ -67,6 +67,6 @@ RDEPENDS:rust-unicode-width0.1-devel = " \
  cargo \
  "
 
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ rpm/virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"
 
-PROVIDES:append:aarch64 = " rpm/virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+PROVIDES:append:aarch64 = " rpm/virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ rpm/virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"

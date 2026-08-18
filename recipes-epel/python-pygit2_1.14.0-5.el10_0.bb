@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "6282e5c11ed96ce81fc11ba684bd3a433fedb714eb111b8150f858
 
 URI_x86_64_v2_python-pygit2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pygit2-doc-1.14.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pygit2-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-pygit2-doc}"
-SRC_URI[x86_64_v2_python-pygit2-doc.sha256sum] = "250d3d77a4ac19c7a1797e8436a582280154ab848707ad494faa374fd8a5f585"
+SRC_URI[x86_64_v2_python-pygit2-doc.sha256sum] = "1e56a01bd14e616c39193823930c3819d3297329f04570fc8a2aeedbabdde30b"
 
 URI_x86_64_v2_python3-pygit2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygit2-1.14.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pygit2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pygit2}"
-SRC_URI[x86_64_v2_python3-pygit2.sha256sum] = "daf8ab6122182c6be11770481382f4d01f6c0396c3854bb83e43ab8b82b30eb3"
+SRC_URI[x86_64_v2_python3-pygit2.sha256sum] = "af61cb472489cb75917a031bfe44e8c444285221608fc45026bf6859c150f9c8"
 
 URI_aarch64_python-pygit2-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pygit2-doc-1.14.0-5.el10_0.noarch.rpm;name=aarch64_python-pygit2-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-pygit2-doc}"

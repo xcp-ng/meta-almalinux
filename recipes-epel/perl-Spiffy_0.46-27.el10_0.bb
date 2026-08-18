@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d0a0426a5a4783d9e22b8ca9bd0b1b47b0e7dcc61af689be2d4757
 
 URI_x86_64_v2_perl-Spiffy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spiffy-0.46-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spiffy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Spiffy}"
-SRC_URI[x86_64_v2_perl-Spiffy.sha256sum] = "fa2d5c567db5a62fee880bce7afd2db33fc20a3b309f9451c871407cc2c524b0"
+SRC_URI[x86_64_v2_perl-Spiffy.sha256sum] = "343b9408ccf08552c58d49a0390a1f7f2b8d9c5a06f640edf5c57a0d2bec7abc"
 
 URI_aarch64_perl-Spiffy = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spiffy-0.46-27.el10_0.noarch.rpm;name=aarch64_perl-Spiffy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Spiffy}"

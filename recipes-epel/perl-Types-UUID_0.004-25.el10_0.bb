@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "07786b2a8f59d47272541f7716b49d5478b489b204c01562a366a1
 
 URI_x86_64_v2_perl-Types-UUID = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Types-UUID}"
-SRC_URI[x86_64_v2_perl-Types-UUID.sha256sum] = "f72e0d0eb3eaa11c47f0e0805126c66edd6bed03d43508b28b4b0f6abfd05c25"
+SRC_URI[x86_64_v2_perl-Types-UUID.sha256sum] = "c28814e122dc22d78a0a3e5ecd40c90124c455b4abf094325d7a121d240896ca"
 
 URI_x86_64_v2_perl-Types-UUID-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-tests-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Types-UUID-tests}"
-SRC_URI[x86_64_v2_perl-Types-UUID-tests.sha256sum] = "405ac3281303e58ea1b0178bb4b78123a48663cac2a9dfc7186109a816b5a4e5"
+SRC_URI[x86_64_v2_perl-Types-UUID-tests.sha256sum] = "04bd7c9c0a4ac0c239f706c6c9765f6ff03db72cd49c482663aea648035a493b"
 
 URI_aarch64_perl-Types-UUID = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-UUID-0.004-25.el10_0.noarch.rpm;name=aarch64_perl-Types-UUID;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Types-UUID}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "320466d9f2d6a63de0ec813a6990c6756331dc3c00884c2ba9896a
 
 URI_x86_64_v2_perl-Test-Portability-Files = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Portability-Files-0.10-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Portability-Files;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Portability-Files}"
-SRC_URI[x86_64_v2_perl-Test-Portability-Files.sha256sum] = "334decf68a3ce3a70807b1c0e90bd77fc6ff93ae39175ee419f276c04332edd4"
+SRC_URI[x86_64_v2_perl-Test-Portability-Files.sha256sum] = "f8ff4e4440eeb059e096e136a0c2b3b12051252abcdaf928c2331a7b670844e8"
 
 URI_aarch64_perl-Test-Portability-Files = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Portability-Files-0.10-19.el10_0.noarch.rpm;name=aarch64_perl-Test-Portability-Files;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Portability-Files}"

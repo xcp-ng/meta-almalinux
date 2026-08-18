@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0beea7ecaa12bede02a76a4df71e852d5857711e458588a72c257b
 
 URI_x86_64_v2_perl-Razor-Agent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Razor-Agent-2.86-12.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Razor-Agent;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Razor-Agent}"
-SRC_URI[x86_64_v2_perl-Razor-Agent.sha256sum] = "621f2481f717beb61966da890c6697504b1fa1c60b932b90bc41b3bb7a089e91"
+SRC_URI[x86_64_v2_perl-Razor-Agent.sha256sum] = "8fcb02bdc06efa9bb2c975af15fb7bd62b7cdf421468cc480e69b7cc998420da"
 
 URI_aarch64_perl-Razor-Agent = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Razor-Agent-2.86-12.el10_0.aarch64.rpm;name=aarch64_perl-Razor-Agent;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Razor-Agent}"

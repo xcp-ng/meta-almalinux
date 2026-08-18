@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9f62f8ba4437715ff517512288b90ce7a86b9699b90f80b3e12344
 
 URI_x86_64_v2_perl-Template-Plugin-CGI = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Template-Plugin-CGI-3.101-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Template-Plugin-CGI;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Template-Plugin-CGI}"
-SRC_URI[x86_64_v2_perl-Template-Plugin-CGI.sha256sum] = "2080cfc743bac2d0c83e7676b9b6b96a668316ccd373ab92b72a03c17ad5ce1f"
+SRC_URI[x86_64_v2_perl-Template-Plugin-CGI.sha256sum] = "47b3d3c2bd903dd9ccecb73697d8f0daf5f11ae10ac17e24f5468478767c597a"
 
 URI_aarch64_perl-Template-Plugin-CGI = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Template-Plugin-CGI-3.101-8.el10_0.noarch.rpm;name=aarch64_perl-Template-Plugin-CGI;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Template-Plugin-CGI}"

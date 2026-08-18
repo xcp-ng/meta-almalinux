@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f8b2983ee05bf6b860f5149a482492942ea81c832febc5e4cfd724
 
 URI_x86_64_v2_prwd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/prwd-1.9.1-13.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_prwd;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_prwd}"
-SRC_URI[x86_64_v2_prwd.sha256sum] = "2a29a9e8b303c80ea263b4dab025f10384ccb19f56e4db1abab8e7317a7f373a"
+SRC_URI[x86_64_v2_prwd.sha256sum] = "c843e2714ec4a50a2e8dc4b24a4791c44dd20cf84ec7597515a3aa1747febc25"
 
 URI_aarch64_prwd = "${EPEL_MIRROR}/aarch64/Packages/p/prwd-1.9.1-13.el10_0.aarch64.rpm;name=aarch64_prwd;unpack=0"
 SRC_URI:append = " ${URI_aarch64_prwd}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b8e25923bc439a0f3019cbe7b004362e3ce9753474c13b5378f72c
 
 URI_x86_64_v2_python3-zlib-ng = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zlib-ng-0.5.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-zlib-ng;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zlib-ng}"
-SRC_URI[x86_64_v2_python3-zlib-ng.sha256sum] = "67514a9adaeacbaefe1fe4a8f51aab40b8609339e78ffdb27f6fd3a6593a54cc"
+SRC_URI[x86_64_v2_python3-zlib-ng.sha256sum] = "6d0bf46c18b0f4dea9bb793dca440a40e8343d3d455d11e9e50086488e42ec58"
 
 URI_aarch64_python3-zlib-ng = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zlib-ng-0.5.1-2.el10_0.aarch64.rpm;name=aarch64_python3-zlib-ng;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-zlib-ng}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "023a88beed7b90bd375ff28d5b66d76f79526b958529267bb3fa9e
 
 URI_x86_64_v2_python3-munch = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-munch-4.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-munch;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-munch}"
-SRC_URI[x86_64_v2_python3-munch.sha256sum] = "4a67cd3d65cd4f62c05776f0c983a0f937332c273897d65e99a63e75569b8122"
+SRC_URI[x86_64_v2_python3-munch.sha256sum] = "55a4023dc1e61537b3e81204ec19a755dbbb17011d14ad8282070c66a229ce38"
 
 URI_aarch64_python3-munch = "${EPEL_MIRROR}/aarch64/Packages/p/python3-munch-4.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-munch;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-munch}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "40b9704164324085a0e8860985975f225fb6bb530ddeb0e181660e
 
 URI_x86_64_v2_perl-Test2-Plugin-NoWarnings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test2-Plugin-NoWarnings;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test2-Plugin-NoWarnings}"
-SRC_URI[x86_64_v2_perl-Test2-Plugin-NoWarnings.sha256sum] = "17ead527d6fc44f666504ac7dba260e1e37fbbbbdd32d8a0c2654b4313d887a0"
+SRC_URI[x86_64_v2_perl-Test2-Plugin-NoWarnings.sha256sum] = "0a99c77a17d4d43e30918eaf1f6aa5e2d4314b38e39979c33e7b5bedbdca472b"
 
 URI_aarch64_perl-Test2-Plugin-NoWarnings = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.noarch.rpm;name=aarch64_perl-Test2-Plugin-NoWarnings;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test2-Plugin-NoWarnings}"

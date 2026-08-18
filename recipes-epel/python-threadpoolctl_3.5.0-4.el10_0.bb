@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9fa5aca5ea585f1dd8f5cc280de66b872946342231e3ed12ea9ad9
 
 URI_x86_64_v2_python3-threadpoolctl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-threadpoolctl-3.5.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-threadpoolctl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-threadpoolctl}"
-SRC_URI[x86_64_v2_python3-threadpoolctl.sha256sum] = "2a5327278fa8d7b801b439a39b9046114a3db32681d0ba1ac2cfca9cf9cdb198"
+SRC_URI[x86_64_v2_python3-threadpoolctl.sha256sum] = "b6e351b2726876f49c2c342c133de91d8e010106647123eeb5411bfcf05a34b8"
 
 URI_aarch64_python3-threadpoolctl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-threadpoolctl-3.5.0-4.el10_0.noarch.rpm;name=aarch64_python3-threadpoolctl;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-threadpoolctl}"

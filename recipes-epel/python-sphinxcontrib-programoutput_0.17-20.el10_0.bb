@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "160a950a3974dc46c3e8456bdf6fd4928d2afd831e3cde71a1e0e5
 
 URI_x86_64_v2_python3-sphinxcontrib-programoutput = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxcontrib-programoutput-0.17-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxcontrib-programoutput;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinxcontrib-programoutput}"
-SRC_URI[x86_64_v2_python3-sphinxcontrib-programoutput.sha256sum] = "218de7e7cd9d84dfbf9311041470f204be1a48d1c665efc47b7fe384207b5190"
+SRC_URI[x86_64_v2_python3-sphinxcontrib-programoutput.sha256sum] = "b28906d3cb9f51288258a5f6f3a038518479062a4a90e682588cec5b56552cd7"
 
 URI_aarch64_python3-sphinxcontrib-programoutput = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxcontrib-programoutput-0.17-20.el10_0.noarch.rpm;name=aarch64_python3-sphinxcontrib-programoutput;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinxcontrib-programoutput}"

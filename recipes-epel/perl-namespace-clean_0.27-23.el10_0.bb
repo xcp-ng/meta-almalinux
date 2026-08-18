@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1fb724565f829c82368801e897525e45b253f2e3e9ab7853ea7803
 
 URI_x86_64_v2_perl-namespace-clean = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-namespace-clean-0.27-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-namespace-clean;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-namespace-clean}"
-SRC_URI[x86_64_v2_perl-namespace-clean.sha256sum] = "30aa6e74af66c222afe980f32975264d7cab243a1c84d7aae1bfcf1fef9d3bd1"
+SRC_URI[x86_64_v2_perl-namespace-clean.sha256sum] = "28335e1341ae134cbc8545283eb711098b9fa6f5439697b6ea5ece30b47a50b2"
 
 URI_aarch64_perl-namespace-clean = "${EPEL_MIRROR}/aarch64/Packages/p/perl-namespace-clean-0.27-23.el10_0.noarch.rpm;name=aarch64_perl-namespace-clean;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-namespace-clean}"

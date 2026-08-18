@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ca5e87bf0f02c63fee907e7675d2f2d829ab32068fffc0feae39a1
 
 URI_x86_64_v2_python3-time-machine = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-time-machine-2.16.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-time-machine;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-time-machine}"
-SRC_URI[x86_64_v2_python3-time-machine.sha256sum] = "eafd3774e29584839924c6f166f221707a756a0e6b095f45ee41452059d987b2"
+SRC_URI[x86_64_v2_python3-time-machine.sha256sum] = "211c509d5d3027f862a27277e2a77b034f89f0ea2601136503c2457f24cfd1eb"
 
 URI_aarch64_python3-time-machine = "${EPEL_MIRROR}/aarch64/Packages/p/python3-time-machine-2.16.0-1.el10_0.aarch64.rpm;name=aarch64_python3-time-machine;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-time-machine}"

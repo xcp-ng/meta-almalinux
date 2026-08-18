@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c2fd87fc5716a43a4f655d0918be9771451a8f718fed3dc8b15f31
 
 URI_x86_64_v2_perl-Sub-Infix = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Infix-0.004-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Infix;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Infix}"
-SRC_URI[x86_64_v2_perl-Sub-Infix.sha256sum] = "415826efd9814cb044e01aa929bf5aa3338bea0e54f261e9ba333581f278bf33"
+SRC_URI[x86_64_v2_perl-Sub-Infix.sha256sum] = "b3cd943c805901ae31daa0c11bc7c4fa11485e9333e0574f47e3df91861733dc"
 
 URI_aarch64_perl-Sub-Infix = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Infix-0.004-24.el10_0.noarch.rpm;name=aarch64_perl-Sub-Infix;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sub-Infix}"

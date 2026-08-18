@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9f06e225d8b69e3080544ffffc2d0cc6476941daf2cd717ce40c54
 
 URI_x86_64_v2_python3-atomicwrites = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-atomicwrites-1.4.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-atomicwrites;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-atomicwrites}"
-SRC_URI[x86_64_v2_python3-atomicwrites.sha256sum] = "472d93b81e7c63711ada6d956af96506586fa940dcb749a3b4584006b1d6879e"
+SRC_URI[x86_64_v2_python3-atomicwrites.sha256sum] = "f5fe25b48f8782865544a0dee42a871bbcd80b38ba237f887a968c4e1d3ac80a"
 
 URI_aarch64_python3-atomicwrites = "${EPEL_MIRROR}/aarch64/Packages/p/python3-atomicwrites-1.4.1-10.el10_0.noarch.rpm;name=aarch64_python3-atomicwrites;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-atomicwrites}"

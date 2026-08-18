@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e637d15fa35b0674905f51972fb50706f9fe28aa9234bac52adc2e
 
 URI_x86_64_v2_perl-Test-LeakTrace = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LeakTrace-0.17-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Test-LeakTrace;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-LeakTrace}"
-SRC_URI[x86_64_v2_perl-Test-LeakTrace.sha256sum] = "5c964a526ec5096f869cae98e132511fbfc7a4cd7bed850307211a1af305f3f3"
+SRC_URI[x86_64_v2_perl-Test-LeakTrace.sha256sum] = "4cd7c0e0517cdfe74f3fd26edf078abc32469716a3d6fa89587533a44fd91a64"
 
 URI_aarch64_perl-Test-LeakTrace = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LeakTrace-0.17-11.el10_0.aarch64.rpm;name=aarch64_perl-Test-LeakTrace;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-LeakTrace}"

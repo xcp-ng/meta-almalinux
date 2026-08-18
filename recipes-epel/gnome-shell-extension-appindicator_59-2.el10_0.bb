@@ -13,12 +13,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/g/gnome-shell-extension-appindicator-59-2.
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "a460e4dc8e812ab269f9f459c15b057b57d2d53106634cbb1d48f33939764da3"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-appindicator: gnome-shell >= 3.14.0
-
-## Requires (aarch64) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-appindicator: gnome-shell >= 3.14.0
-
 URI_x86_64_v2_gnome-shell-extension-appindicator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gnome-shell-extension-appindicator-59-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_gnome-shell-extension-appindicator;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gnome-shell-extension-appindicator}"
 SRC_URI[x86_64_v2_gnome-shell-extension-appindicator.sha256sum] = "41be471605b178f2fc6ebe6e57521f5314c2297536617278a90fd8d54062c4a4"
@@ -28,5 +22,6 @@ SRC_URI:append = " ${URI_aarch64_gnome-shell-extension-appindicator}"
 SRC_URI[aarch64_gnome-shell-extension-appindicator.sha256sum] = "853a4660b4ba23f12b81b742354defb3f9b22df4f0ed7b91c053fbc9d118b90a"
 
 RDEPENDS:gnome-shell-extension-appindicator = " \
+ gnome-shell \
  libappindicator-gtk3 \
  "

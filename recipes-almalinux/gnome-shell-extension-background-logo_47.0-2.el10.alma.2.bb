@@ -13,12 +13,6 @@ URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-shell-extensio
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "74cf34ee585a1cdf914ebc126af835250a8d6ba20730ecf10ade0f620c73221c"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-background-logo: gnome-shell >= 47
-
-## Requires (aarch64) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-background-logo: gnome-shell >= 47
-
 URI_x86_64_v2_gnome-shell-extension-background-logo = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-background-logo-47.0-2.el10.alma.2.noarch.rpm;name=x86_64_v2_gnome-shell-extension-background-logo;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gnome-shell-extension-background-logo}"
 SRC_URI[x86_64_v2_gnome-shell-extension-background-logo.sha256sum] = "4e37dc80f5794359704ac730c7a802f400157ff6e4a6a4357d65420d2cec0da7"
@@ -29,4 +23,5 @@ SRC_URI[aarch64_gnome-shell-extension-background-logo.sha256sum] = "4e37dc80f579
 
 RDEPENDS:gnome-shell-extension-background-logo = " \
  almalinux-logos \
+ gnome-shell \
  "

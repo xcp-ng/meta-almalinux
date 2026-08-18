@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "704d8189677272368f3de9fff5165fc73294ad6fcac60f2219a522
 
 URI_x86_64_v2_python3-repoze-who-plugins-sa = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-who-plugins-sa-1.0.1-45.20160106gite1a36c5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-who-plugins-sa;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-repoze-who-plugins-sa}"
-SRC_URI[x86_64_v2_python3-repoze-who-plugins-sa.sha256sum] = "c6ad7ed18ca1cbbb806fbcc5bb0127e045f8d003466089194a6457dee7545086"
+SRC_URI[x86_64_v2_python3-repoze-who-plugins-sa.sha256sum] = "a9efdd4bc95906caaa3ff9a12bc71f3b567d1a2cc716702d84c21ac7e0d36eae"
 
 URI_aarch64_python3-repoze-who-plugins-sa = "${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-who-plugins-sa-1.0.1-45.20160106gite1a36c5.el10_0.noarch.rpm;name=aarch64_python3-repoze-who-plugins-sa;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-repoze-who-plugins-sa}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8d4dec0ea479a4a53921b0dbc10335fc38c7a4db85779ab7e77d1c
 
 URI_x86_64_v2_perl-Test-TCP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-TCP-2.22-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-TCP;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-TCP}"
-SRC_URI[x86_64_v2_perl-Test-TCP.sha256sum] = "5308d08473d8cbb5c1652fa689f6a9ff6805321a22b0389bfe39a0906023d20e"
+SRC_URI[x86_64_v2_perl-Test-TCP.sha256sum] = "e44b6a7203d74f4d6b05775714b009d181175166c96d97ac4bb5327440143318"
 
 URI_aarch64_perl-Test-TCP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-TCP-2.22-16.el10_0.noarch.rpm;name=aarch64_perl-Test-TCP;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-TCP}"

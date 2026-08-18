@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e568932b760c7ee0fdfd7c8dff9d73800a71d2061f54004385d61f
 
 URI_x86_64_v2_python3-WSGIProxy2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-WSGIProxy2-0.4.6-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-WSGIProxy2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-WSGIProxy2}"
-SRC_URI[x86_64_v2_python3-WSGIProxy2.sha256sum] = "fa1e7bf39ab26ddad67693b0624b118a877abbf709447d5d98d5b00459ddd556"
+SRC_URI[x86_64_v2_python3-WSGIProxy2.sha256sum] = "dfd3657a47fc661ec71df08440d7e2098a58e71fa84a83f9d02ad1a6a80b0b84"
 
 URI_aarch64_python3-WSGIProxy2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-WSGIProxy2-0.4.6-18.el10_0.noarch.rpm;name=aarch64_python3-WSGIProxy2;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-WSGIProxy2}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "89435d945b774863f97d444834653af3c2ce5bd1433466c4468787
 
 URI_x86_64_v2_python3-hatch-fancy-pypi-readme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hatch-fancy-pypi-readme-24.1.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hatch-fancy-pypi-readme;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-hatch-fancy-pypi-readme}"
-SRC_URI[x86_64_v2_python3-hatch-fancy-pypi-readme.sha256sum] = "a01ba22f68607b66c161b034f4a9488b35c6c17982367fdfaa687477d2181336"
+SRC_URI[x86_64_v2_python3-hatch-fancy-pypi-readme.sha256sum] = "9ee04de64457e7f14e98086f399322fc68f062641d1dc83682dda4d619589207"
 
 URI_aarch64_python3-hatch-fancy-pypi-readme = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hatch-fancy-pypi-readme-24.1.0-3.el10_0.noarch.rpm;name=aarch64_python3-hatch-fancy-pypi-readme;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-hatch-fancy-pypi-readme}"

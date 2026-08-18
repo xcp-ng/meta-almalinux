@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b8d6c3f18dbbb1b2356812c4dd2b81811147dc8747a529872e6f94
 
 URI_x86_64_v2_python3-pytest-rerunfailures = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-rerunfailures-15.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-rerunfailures;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-rerunfailures}"
-SRC_URI[x86_64_v2_python3-pytest-rerunfailures.sha256sum] = "1e600db008945d8576054737e71f21cf5acb9cebd227aaa7cbed42d38fcc71d3"
+SRC_URI[x86_64_v2_python3-pytest-rerunfailures.sha256sum] = "5809b3a2f955a276cbed98de67b15f18a93d248a914879055106b1dbb19443dd"
 
 URI_aarch64_python3-pytest-rerunfailures = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-rerunfailures-15.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-rerunfailures;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-rerunfailures}"

@@ -23,39 +23,39 @@ SRC_URI[src.sha256sum] = "998af7d2989c2cf4fdda6bf78aa80d222310ff9b66ba114ad5472f
 
 URI_x86_64_v2_python3-matplotlib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib}"
-SRC_URI[x86_64_v2_python3-matplotlib.sha256sum] = "a1d056dd4a2af45cf8613821ff1ebe1c95f361a16dfb06dc0da4ba3befbf7fdc"
+SRC_URI[x86_64_v2_python3-matplotlib.sha256sum] = "6675a56f3427c114f3c8f11a5d77b8d21ac743a172475e8199c9e5766be79809"
 
 URI_x86_64_v2_python3-matplotlib-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-data}"
-SRC_URI[x86_64_v2_python3-matplotlib-data.sha256sum] = "db456b1c7414abe344bf2a320b45e694381d6589d0f85579bbec92daa7239bc6"
+SRC_URI[x86_64_v2_python3-matplotlib-data.sha256sum] = "1f7dcf4e997531297992de5553d4365e63fa0d6e876ebb9beed29ce25784488e"
 
 URI_x86_64_v2_python3-matplotlib-data-fonts = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-fonts-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-data-fonts}"
-SRC_URI[x86_64_v2_python3-matplotlib-data-fonts.sha256sum] = "a1e849699a69eb92c0b336fce0878733711b0a6400d1e76c6724b27bb121c529"
+SRC_URI[x86_64_v2_python3-matplotlib-data-fonts.sha256sum] = "5611a648a405c263bf876dd2ed9f298e3980fefe97b8f96d19b9ee19e257387f"
 
 URI_x86_64_v2_python3-matplotlib-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-doc-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-doc}"
-SRC_URI[x86_64_v2_python3-matplotlib-doc.sha256sum] = "fde9d92dbc7a5dfd8134784335e053f73cf182e61cea1883263d7b020fb76330"
+SRC_URI[x86_64_v2_python3-matplotlib-doc.sha256sum] = "1b42903e1e41c2f8f2bb9203f23f71a1740c4c5fd13808c0f1906a470e978e49"
 
 URI_x86_64_v2_python3-matplotlib-gtk3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk3-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk3;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-gtk3}"
-SRC_URI[x86_64_v2_python3-matplotlib-gtk3.sha256sum] = "176d7dc4c670e7f83f5fe5022cd0110dc5333e44e1b8e05cb49b51f8c9f42132"
+SRC_URI[x86_64_v2_python3-matplotlib-gtk3.sha256sum] = "870203d1c528216ba6908acd412d6f491777a31f7edd1b74f2268349926003ac"
 
 URI_x86_64_v2_python3-matplotlib-gtk4 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk4-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk4;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-gtk4}"
-SRC_URI[x86_64_v2_python3-matplotlib-gtk4.sha256sum] = "210494e2a120227844068358ea45a5a125ef2364e4e540cca21911c02635809c"
+SRC_URI[x86_64_v2_python3-matplotlib-gtk4.sha256sum] = "2db1cccca9271694a0849725895958d73e21e6f077dbb4ea52d6ed23c1997038"
 
 URI_x86_64_v2_python3-matplotlib-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-qt6-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-qt6;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-qt6}"
-SRC_URI[x86_64_v2_python3-matplotlib-qt6.sha256sum] = "550967969add20c462e4bd9e7e0c6fa57dc2df4bd060d6a7a2fdce364b113b07"
+SRC_URI[x86_64_v2_python3-matplotlib-qt6.sha256sum] = "459cfb489b6b7dca24f36ff9023126b628ed86db4a31cccc07cd5308ed11d471"
 
 URI_x86_64_v2_python3-matplotlib-test-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-test-data-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-test-data;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-test-data}"
-SRC_URI[x86_64_v2_python3-matplotlib-test-data.sha256sum] = "a6989435a298debd8c6d51229d14e9b8922683a9230bca6c14e618e3f64323b4"
+SRC_URI[x86_64_v2_python3-matplotlib-test-data.sha256sum] = "34fb9384d5da8586198a56e439fd902815734606474ee73982c76ba9336fbbbf"
 
 URI_x86_64_v2_python3-matplotlib-tk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-tk-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-tk;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-tk}"
-SRC_URI[x86_64_v2_python3-matplotlib-tk.sha256sum] = "9a89197f3d73d8d8d9d32db400b917c02370704d9df9886fca34ff7616065449"
+SRC_URI[x86_64_v2_python3-matplotlib-tk.sha256sum] = "c097bff77bbbc10595ad46b18b96bd0d00f6b5c79bd21d0fad448b391f99c483"
 
 URI_aarch64_python3-matplotlib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-matplotlib}"

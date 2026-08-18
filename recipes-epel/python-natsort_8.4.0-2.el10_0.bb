@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f5c4d29093f4727425eca3f879a65ed999241713f2c15b60763005
 
 URI_x86_64_v2_python3-natsort = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-natsort-8.4.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-natsort;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-natsort}"
-SRC_URI[x86_64_v2_python3-natsort.sha256sum] = "1376db97215e9e2900c828ed5b8d8b41dcc525d64a45830cffeaae84c9da790f"
+SRC_URI[x86_64_v2_python3-natsort.sha256sum] = "6697c941d8a6f44392d26ddfcc7841840ef4ac9bde8c2c10c3582b2c6eb52ed3"
 
 URI_aarch64_python3-natsort = "${EPEL_MIRROR}/aarch64/Packages/p/python3-natsort-8.4.0-2.el10_0.noarch.rpm;name=aarch64_python3-natsort;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-natsort}"

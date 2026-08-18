@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9cdddd3f0c71c02130d41255748fa9149753a81f27e6a0d45d2005
 
 URI_x86_64_v2_python3-k5test = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-k5test-0.10.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-k5test;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-k5test}"
-SRC_URI[x86_64_v2_python3-k5test.sha256sum] = "cf6e792068905f8320c58646d0d2bf5b414f62a673e6556293b97a812f0a8ffa"
+SRC_URI[x86_64_v2_python3-k5test.sha256sum] = "ac2807d9db3296d3d2251b611c47c9ae5fe73330a62a263bba3057a73993d8f7"
 
 URI_aarch64_python3-k5test = "${EPEL_MIRROR}/aarch64/Packages/p/python3-k5test-0.10.4-1.el10_0.noarch.rpm;name=aarch64_python3-k5test;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-k5test}"

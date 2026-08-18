@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6185892dff59253d883a2b98e6e5e19ac9f3d4cba8094e9d7f4c12
 
 URI_x86_64_v2_python3-cftime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cftime-1.6.4-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cftime;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cftime}"
-SRC_URI[x86_64_v2_python3-cftime.sha256sum] = "7b9f60c5354741ede884a9f56fbeb0fcc586a2e8fc5fa7297853fb5d9fb53a84"
+SRC_URI[x86_64_v2_python3-cftime.sha256sum] = "3e5199a78f488dbe29231615ea5497ccbafed2ab220b6be93f33f5f201f81446"
 
 URI_aarch64_python3-cftime = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cftime-1.6.4-1.el10_0.aarch64.rpm;name=aarch64_python3-cftime;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cftime}"

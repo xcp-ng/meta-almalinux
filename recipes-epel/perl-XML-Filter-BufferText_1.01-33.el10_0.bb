@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4cd51a37f9e846283e8a16af9439bd191f8d3d4cee2e4b65fcbf3b
 
 URI_x86_64_v2_perl-XML-Filter-BufferText = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Filter-BufferText-1.01-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Filter-BufferText;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Filter-BufferText}"
-SRC_URI[x86_64_v2_perl-XML-Filter-BufferText.sha256sum] = "73cf36573ba8cdba7c35702ea32df358a071f1636c275f9f0b0cb6397b182536"
+SRC_URI[x86_64_v2_perl-XML-Filter-BufferText.sha256sum] = "01d07e0b702b4854083ea78832251329524f2905cf199fceecd7c296c80c672e"
 
 URI_aarch64_perl-XML-Filter-BufferText = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Filter-BufferText-1.01-33.el10_0.noarch.rpm;name=aarch64_perl-XML-Filter-BufferText;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-Filter-BufferText}"

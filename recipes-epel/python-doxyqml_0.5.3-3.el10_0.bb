@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4693a2ec1b7f21692fcc88d7d81a3607f1a7da8de0372748eadf19
 
 URI_x86_64_v2_python3-doxyqml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-doxyqml-0.5.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-doxyqml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-doxyqml}"
-SRC_URI[x86_64_v2_python3-doxyqml.sha256sum] = "ba3e47d4f2ca06dea5639e2bc63b52a31e0ccf8765c9dab11befd8c0da4d61cd"
+SRC_URI[x86_64_v2_python3-doxyqml.sha256sum] = "2803789b8541d42def9b91c47f95d77de8fbce35e7e6f2b918e70d96d6ee8b98"
 
 URI_aarch64_python3-doxyqml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-doxyqml-0.5.3-3.el10_0.noarch.rpm;name=aarch64_python3-doxyqml;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-doxyqml}"

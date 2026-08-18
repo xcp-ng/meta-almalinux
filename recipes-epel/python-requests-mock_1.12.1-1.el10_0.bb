@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5c272f2ce81496abd2fb2b83950a5948633870a5e9ad9c412eab17
 
 URI_x86_64_v2_python3-requests-mock = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-mock-1.12.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-mock;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-requests-mock}"
-SRC_URI[x86_64_v2_python3-requests-mock.sha256sum] = "bf6ee9d2e85a4604a5ad49167afd704b48074aed3d2a63f9ffd0693382b9fe39"
+SRC_URI[x86_64_v2_python3-requests-mock.sha256sum] = "d98181e03b496f7e7c3957b3a8027152b4537ba1d2f351858d5f57df23bd7052"
 
 URI_aarch64_python3-requests-mock = "${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-mock-1.12.1-1.el10_0.noarch.rpm;name=aarch64_python3-requests-mock;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-requests-mock}"

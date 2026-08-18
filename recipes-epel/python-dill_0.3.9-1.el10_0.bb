@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "b164360667bc81d8e963cc0b2ea7549bcc5066a0ab84b21a2f4637
 
 URI_x86_64_v2_python3-dill = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dill}"
-SRC_URI[x86_64_v2_python3-dill.sha256sum] = "1de8f938edb3dfd9fdc2fc65e6f186d9abcc11d8df686b3f376560eba3f15a98"
+SRC_URI[x86_64_v2_python3-dill.sha256sum] = "0eda644323ea679a5574d55d27a3a2c6b4585de74ef8c087c557d72e0338c0dd"
 
 URI_x86_64_v2_python3-dill+readline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill+readline-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill+readline;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dill+readline}"
-SRC_URI[x86_64_v2_python3-dill+readline.sha256sum] = "df366c4baf5e020bc0dc016adcc88318d668863875d9b2c7c31cfb1034ed1b6c"
+SRC_URI[x86_64_v2_python3-dill+readline.sha256sum] = "60740b01be84b09a628ba3afa85efde0160d56cc88e173f3904c06bdaec06a2a"
 
 URI_aarch64_python3-dill = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dill-0.3.9-1.el10_0.noarch.rpm;name=aarch64_python3-dill;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-dill}"

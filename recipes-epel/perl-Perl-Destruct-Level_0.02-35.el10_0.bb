@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7c8f56b2905d1d4c88d780329b2ac2239e6efa922ccf6893f90dff
 
 URI_x86_64_v2_perl-Perl-Destruct-Level = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Destruct-Level-0.02-35.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Perl-Destruct-Level;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Destruct-Level}"
-SRC_URI[x86_64_v2_perl-Perl-Destruct-Level.sha256sum] = "8aaad4d3254182681a92ac8192b266c4a11ef6cd9219d973df8237a40ceb1622"
+SRC_URI[x86_64_v2_perl-Perl-Destruct-Level.sha256sum] = "e2f4bfb6bf96ea2862d4e7c71235e7e606a2e980ec5cc6b7fafc32b34f88b7e9"
 
 URI_aarch64_perl-Perl-Destruct-Level = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Destruct-Level-0.02-35.el10_0.aarch64.rpm;name=aarch64_perl-Perl-Destruct-Level;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Perl-Destruct-Level}"

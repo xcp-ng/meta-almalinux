@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b97843a830791dfe2d2fe7e22a3d2ae17b0795c50b50258c2d0a11
 
 URI_x86_64_v2_python3-junitxml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-junitxml-0.7-38.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-junitxml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-junitxml}"
-SRC_URI[x86_64_v2_python3-junitxml.sha256sum] = "2ee9c47b92f336d076c644636a369a79a6c3ae0077d480339706031161771815"
+SRC_URI[x86_64_v2_python3-junitxml.sha256sum] = "bee7574068a6d7705651d19de098e3310e0dc1dbb1c4c49fc18a16dbb860a5b5"
 
 URI_aarch64_python3-junitxml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-junitxml-0.7-38.el10_0.noarch.rpm;name=aarch64_python3-junitxml;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-junitxml}"

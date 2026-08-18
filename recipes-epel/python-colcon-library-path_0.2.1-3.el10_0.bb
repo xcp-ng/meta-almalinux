@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9d2b33d82964eaa491f92695274baafdcdc8dc85bc7aa9ac168687
 
 URI_x86_64_v2_python3-colcon-library-path = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-library-path-0.2.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-library-path;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-library-path}"
-SRC_URI[x86_64_v2_python3-colcon-library-path.sha256sum] = "4f0be7e6783efed6f4b5af04d38a2de8bfc88ab4eed15c8958469eed6a2f1217"
+SRC_URI[x86_64_v2_python3-colcon-library-path.sha256sum] = "d04924bf0844213b2445f01cb560ad0b32925cd203ec13aa0b5a2b00fb817ed3"
 
 URI_aarch64_python3-colcon-library-path = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-library-path-0.2.1-3.el10_0.noarch.rpm;name=aarch64_python3-colcon-library-path;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-colcon-library-path}"

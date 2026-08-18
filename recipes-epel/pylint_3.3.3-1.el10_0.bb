@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "56b61b09c2628bb71060d6dadc1fe85dde5417e9a77b85e52b94a6
 
 URI_x86_64_v2_pylint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_pylint;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pylint}"
-SRC_URI[x86_64_v2_pylint.sha256sum] = "2ea4a3b16b56200eeeacb5dfd184b59ff1acff4d1bb7329d2a3c3e1a120ac8a0"
+SRC_URI[x86_64_v2_pylint.sha256sum] = "a3f55383abdd15681d735dd89fa693341204a23df62ee2db2d6b6438237bceae"
 
 URI_x86_64_v2_python3-pylint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylint;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pylint}"
-SRC_URI[x86_64_v2_python3-pylint.sha256sum] = "91022601b9cb66596793aba7623e7872ac2028279168534a7c3b7e8a8d46976c"
+SRC_URI[x86_64_v2_python3-pylint.sha256sum] = "4945e1cd54a42aa53eb894d960c44343db3f8bb4d1d24058e0763d25f15d764e"
 
 URI_aarch64_pylint = "${EPEL_MIRROR}/aarch64/Packages/p/pylint-3.3.3-1.el10_0.noarch.rpm;name=aarch64_pylint;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pylint}"

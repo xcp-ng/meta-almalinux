@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "5b3ae2e30be486bb8b1878d3d0582189f5f91aff722a889379840e
 
 URI_x86_64_v2_python-asn1-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-asn1-doc-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-asn1-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-asn1-doc}"
-SRC_URI[x86_64_v2_python-asn1-doc.sha256sum] = "12e9b3efe165ca6986939308bc2951d5b6f61ab04847939a948dcb3c176b998f"
+SRC_URI[x86_64_v2_python-asn1-doc.sha256sum] = "ca6ad631dc94ebed752f33ef90a05e5354b125db30eafa12078ae7d121aac303"
 
 URI_x86_64_v2_python3-asn1 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asn1-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-asn1;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-asn1}"
-SRC_URI[x86_64_v2_python3-asn1.sha256sum] = "46edc47690a9eb872f0ad67b74e5d2cc2cf985d4bd1f8e62e8e410f4227be0de"
+SRC_URI[x86_64_v2_python3-asn1.sha256sum] = "b7e1b136a10fd9cc9217e2a63f2ed34ee9ab351a8f244cca04e297d17a57cf83"
 
 URI_aarch64_python-asn1-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-asn1-doc-2.7.0-3.el10_0.noarch.rpm;name=aarch64_python-asn1-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-asn1-doc}"

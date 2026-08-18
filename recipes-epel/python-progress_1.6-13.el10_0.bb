@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "bfbec84faa720a107fbfa5693a11b21f71a451f2e44d02e36edf2e
 
 URI_x86_64_v2_python3-progress = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-progress-1.6-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-progress;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-progress}"
-SRC_URI[x86_64_v2_python3-progress.sha256sum] = "24ffa97966261547584fb2da4a187d4f2123e76d347baf240b2216ab723c0154"
+SRC_URI[x86_64_v2_python3-progress.sha256sum] = "05bbc02b80cfc2e1f259d2c8a9d9e35fe7b25b91cc6d6385876d0eb005e79a0f"
 
 URI_aarch64_python3-progress = "${EPEL_MIRROR}/aarch64/Packages/p/python3-progress-1.6-13.el10_0.noarch.rpm;name=aarch64_python3-progress;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-progress}"

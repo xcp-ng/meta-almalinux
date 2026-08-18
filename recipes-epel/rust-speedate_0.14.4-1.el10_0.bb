@@ -36,7 +36,7 @@ RDEPENDS:rust-speedate+default-devel = " \
  "
 RDEPENDS:rust-speedate-devel = " \
  cargo \
- rust-strum+default-devel \
- rust-strum+derive-devel \
- rust-strum_macros+default-devel \
+ rust-strum0.26+default-devel \
+ rust-strum0.26+derive-devel \
+ rust-strum_macros0.26+default-devel \
  "

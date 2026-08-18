@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "aa1fbecb90b2e496378e60439024024a2f5fd2eeb744c7842ee5ef
 
 URI_x86_64_v2_perl-XML-Namespace = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Namespace-0.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Namespace;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Namespace}"
-SRC_URI[x86_64_v2_perl-XML-Namespace.sha256sum] = "ef14f73cfefd5211952ba5e61938f1383f2af15be79e61e99623deb44be8a32e"
+SRC_URI[x86_64_v2_perl-XML-Namespace.sha256sum] = "0731d265c4c8de64b961047d0fcdb9abb1ae3712ae82ab19058f60a91961d7ab"
 
 URI_x86_64_v2_perl-XML-Namespace-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Namespace-tests-0.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Namespace-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Namespace-tests}"
-SRC_URI[x86_64_v2_perl-XML-Namespace-tests.sha256sum] = "1f331d0cd27fb0f2a6c6d92272efb1c0f6771873efef62ce04e7d462bc21a7b6"
+SRC_URI[x86_64_v2_perl-XML-Namespace-tests.sha256sum] = "c421d0ecfb98fae93811d4864e9af4fd486d61666ccee3e17aef96d6125e8c7c"
 
 URI_aarch64_perl-XML-Namespace = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Namespace-0.02-29.el10_0.noarch.rpm;name=aarch64_perl-XML-Namespace;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-Namespace}"

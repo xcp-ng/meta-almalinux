@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5878b44b69e77a7534dc4c8c8b2eb656a2e946a1dd9eef3ec1d7fc
 
 URI_x86_64_v2_python3-logutils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-logutils-0.3.5-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-logutils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-logutils}"
-SRC_URI[x86_64_v2_python3-logutils.sha256sum] = "5a6dc882aea13bb332f36080a3ed3f57415ebbb4b5c47395b7564f8e3cf408d7"
+SRC_URI[x86_64_v2_python3-logutils.sha256sum] = "68d3be4cdaaa8d0e55fff39923880293e506413a548b126e0d966aadad6c7af0"
 
 URI_aarch64_python3-logutils = "${EPEL_MIRROR}/aarch64/Packages/p/python3-logutils-0.3.5-29.el10_0.noarch.rpm;name=aarch64_python3-logutils;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-logutils}"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "1d33343a6e86523b0cf0b8a2ecec89aa61d262ae347cda74ce8430
 
 URI_x86_64_v2_perl-Tk-Getopt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Getopt}"
-SRC_URI[x86_64_v2_perl-Tk-Getopt.sha256sum] = "9662db882b163655fc5150e32d1dc7acbe4631c76968fa29fbd79f3538d367b5"
+SRC_URI[x86_64_v2_perl-Tk-Getopt.sha256sum] = "b9683253eae48fd509e204b2f677acff7961749aa632a03f76d7203aeff11d60"
 
 URI_x86_64_v2_perl-Tk-Getopt-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-tests-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Getopt-tests}"
-SRC_URI[x86_64_v2_perl-Tk-Getopt-tests.sha256sum] = "d87a09855928bc69f342a1ab8cf57475d77db8ac1289c77825196b67d479ef62"
+SRC_URI[x86_64_v2_perl-Tk-Getopt-tests.sha256sum] = "44fe0e910d400eecceb785901a3ccf841f45b44d0ef24abd9acea5603259619b"
 
 URI_aarch64_perl-Tk-Getopt = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Getopt-0.52-1.el10_0.noarch.rpm;name=aarch64_perl-Tk-Getopt;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Tk-Getopt}"

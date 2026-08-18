@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "b0a5a47c59ecabd594b46f2742ac93b1ed78a3e78838babfc46f1e
 
 URI_x86_64_v2_perl-Perl-Critic-Pulp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Pulp}"
-SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp.sha256sum] = "e26283c24aca3ab3b5cf37927a5909cf2e8047e3f35f8463af6341f047ae3898"
+SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp.sha256sum] = "aa36561d37016f031552643127fe8510a27f5372d90892f5d17b12baf459dc8d"
 
 URI_x86_64_v2_perl-Perl-Critic-Pulp-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-tests-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Pulp-tests}"
-SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp-tests.sha256sum] = "6bd800cd88660485a4bd8255aea15971bb580acf95b96287989f2401d430c654"
+SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp-tests.sha256sum] = "6c0fc566d8e760b22ffb766b5877590a21df64ef0b375eb1658cd4490a8c9100"
 
 URI_aarch64_perl-Perl-Critic-Pulp = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Pulp-99-7.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Pulp;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Perl-Critic-Pulp}"

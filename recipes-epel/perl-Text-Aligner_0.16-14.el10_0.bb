@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "88e28d957ffbdb244afb931b8bc7628212a294cbad45de02a0c7c8
 
 URI_x86_64_v2_perl-Text-Aligner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Aligner-0.16-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Aligner;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Aligner}"
-SRC_URI[x86_64_v2_perl-Text-Aligner.sha256sum] = "1191590486317017666e1c840818551df88faa98f9eb5cbb6ea95d75d3f88aca"
+SRC_URI[x86_64_v2_perl-Text-Aligner.sha256sum] = "384213c1c80171735f4b68dbd8935b35c87d005d1466240ca35bb3b9728223b8"
 
 URI_aarch64_perl-Text-Aligner = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Aligner-0.16-14.el10_0.noarch.rpm;name=aarch64_perl-Text-Aligner;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Text-Aligner}"

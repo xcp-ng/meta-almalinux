@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "0f609e998fc917fdd18721908f32b92088611163d18a36772bb92a
 
 URI_x86_64_v2_perl-XML-CommonNS = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-CommonNS-0.06-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-CommonNS;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-CommonNS}"
-SRC_URI[x86_64_v2_perl-XML-CommonNS.sha256sum] = "52045e6fc2723d8e6308dbabd00c3dc6d74dd6f1f3750ed533cf09959684c9da"
+SRC_URI[x86_64_v2_perl-XML-CommonNS.sha256sum] = "34ff5d7f53c78b286562cf0a20341decbf2d5ea0f06a815562477627196576d8"
 
 URI_x86_64_v2_perl-XML-CommonNS-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-CommonNS-tests-0.06-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-CommonNS-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-CommonNS-tests}"
-SRC_URI[x86_64_v2_perl-XML-CommonNS-tests.sha256sum] = "ae64396ed783e08c3796ad4084ba8624da24e5f2d7a881b894617695fcea8e2a"
+SRC_URI[x86_64_v2_perl-XML-CommonNS-tests.sha256sum] = "a2b19de05e206585de6f0002a7c1e127242f110c1f46a247715eeee97eb0990a"
 
 URI_aarch64_perl-XML-CommonNS = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-CommonNS-0.06-29.el10_0.noarch.rpm;name=aarch64_perl-XML-CommonNS;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-CommonNS}"

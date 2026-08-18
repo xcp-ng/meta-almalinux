@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "db2410006d35186f536a666013d5911061d243b57c0374ef654dbf
 
 URI_x86_64_v2_python3-cachetools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachetools-5.4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachetools;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cachetools}"
-SRC_URI[x86_64_v2_python3-cachetools.sha256sum] = "b117fe5e8dec90ac6901d68a3768eabffd63ff0010e6a5b40661b6a9a15d65ed"
+SRC_URI[x86_64_v2_python3-cachetools.sha256sum] = "9df95d984e8067971b0451d509e65bac99f53fc0e4b7f1d3fbedadbd3a7db990"
 
 URI_aarch64_python3-cachetools = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cachetools-5.4.0-6.el10_0.noarch.rpm;name=aarch64_python3-cachetools;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cachetools}"

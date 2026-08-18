@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "63da70f26e64d520d1a9647a93062cde692c0d782c39f86ba6d57a
 
 URI_x86_64_v2_python-osrf-pycommon-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-osrf-pycommon-doc-2.1.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-osrf-pycommon-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-osrf-pycommon-doc}"
-SRC_URI[x86_64_v2_python-osrf-pycommon-doc.sha256sum] = "87ba97d10c16e747af0c4f06191170e9e880d19602668a8ebfcb9d41524032ed"
+SRC_URI[x86_64_v2_python-osrf-pycommon-doc.sha256sum] = "061c19747b5167238a00903cadf2d714bad050c8949b021f99933acd5f11c75a"
 
 URI_x86_64_v2_python3-osrf-pycommon = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-osrf-pycommon-2.1.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-osrf-pycommon;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-osrf-pycommon}"
-SRC_URI[x86_64_v2_python3-osrf-pycommon.sha256sum] = "ce7bfc41ad9204e1542c94a91801f19ce967ca9fc00049b1ba3e0832886c495a"
+SRC_URI[x86_64_v2_python3-osrf-pycommon.sha256sum] = "a498262dd3329aa2e44679e92f9c8459633bfd1686664d662c0aaab294c83bcd"
 
 URI_aarch64_python-osrf-pycommon-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-osrf-pycommon-doc-2.1.5-1.el10_0.noarch.rpm;name=aarch64_python-osrf-pycommon-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-osrf-pycommon-doc}"

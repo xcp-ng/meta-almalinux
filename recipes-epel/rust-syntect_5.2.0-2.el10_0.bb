@@ -221,7 +221,7 @@ SRC_URI[aarch64_rust-syntect-devel.sha256sum] = "1047e5b39c6bf4cb560bff9ccd0650a
 
 RDEPENDS:rust-syntect+bincode-devel = " \
  cargo \
- rust-bincode+default-devel \
+ rust-bincode1+default-devel \
  rust-syntect-devel \
  "
 RDEPENDS:rust-syntect+default-devel = " \

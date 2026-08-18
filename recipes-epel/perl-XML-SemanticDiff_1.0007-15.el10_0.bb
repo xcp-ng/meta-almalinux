@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "899a0eca195d4d8e12cadbe27e85eb218065c2aba94b6c71f0379a
 
 URI_x86_64_v2_perl-XML-SemanticDiff = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-SemanticDiff-1.0007-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-SemanticDiff;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-SemanticDiff}"
-SRC_URI[x86_64_v2_perl-XML-SemanticDiff.sha256sum] = "f9fd298d95f0417f16c023d5f4786b6407aae93be670740b1d6829fee332d3c3"
+SRC_URI[x86_64_v2_perl-XML-SemanticDiff.sha256sum] = "d9590f44ead8d7088976c6a07324f8e72bb5e49aa837986b84c999abec3d579b"
 
 URI_aarch64_perl-XML-SemanticDiff = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-SemanticDiff-1.0007-15.el10_0.noarch.rpm;name=aarch64_perl-XML-SemanticDiff;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-SemanticDiff}"

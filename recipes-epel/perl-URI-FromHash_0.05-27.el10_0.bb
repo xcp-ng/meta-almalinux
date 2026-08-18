@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ea4a8b76dd47c3c392a2df0b6494794b24c9d6aab69c22e2cf11b5
 
 URI_x86_64_v2_perl-URI-FromHash = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-URI-FromHash-0.05-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-URI-FromHash;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-URI-FromHash}"
-SRC_URI[x86_64_v2_perl-URI-FromHash.sha256sum] = "9ceb03ff31d1345571ec80a6b72547fc955a1000241bc8be4e39dfa84b1e9cc8"
+SRC_URI[x86_64_v2_perl-URI-FromHash.sha256sum] = "60a05284767addc9fedea5fc3500c4572a0650f5f5d49ab7444c70eaa527fdf7"
 
 URI_aarch64_perl-URI-FromHash = "${EPEL_MIRROR}/aarch64/Packages/p/perl-URI-FromHash-0.05-27.el10_0.noarch.rpm;name=aarch64_perl-URI-FromHash;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-URI-FromHash}"

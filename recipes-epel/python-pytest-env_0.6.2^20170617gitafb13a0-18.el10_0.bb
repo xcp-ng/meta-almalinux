@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "eb56264ec925d402a54c9d1ae2ff173b022968a323f29184eb9b83
 
 URI_x86_64_v2_python3-pytest-env = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-env-0.6.2^20170617gitafb13a0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-env;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-env}"
-SRC_URI[x86_64_v2_python3-pytest-env.sha256sum] = "050bb6b3287fb916555fb92aa2c10bd2d34da3d0488b321e46f776133ac91ef0"
+SRC_URI[x86_64_v2_python3-pytest-env.sha256sum] = "f06e0b05858146ad7aa933640878e9c36bad8b8527e85da29945d4462e8b8f3b"
 
 URI_aarch64_python3-pytest-env = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-env-0.6.2^20170617gitafb13a0-18.el10_0.noarch.rpm;name=aarch64_python3-pytest-env;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-env}"
