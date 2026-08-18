@@ -17,6 +17,37 @@ URI_src = "${EPELSRC_MIRROR}/Packages/n/nut-2.8.2.1-0.el10_1.1.git20240703pr2505
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "e7d30d7c33ac5383461bd5a6a7f590b1ccdfe5deeed9505953727566c227197d"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - nut-cgi: libupsclient.so.6()(64bit)
+# - nut-cgi: nut-client = 2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505
+# - nut-devel: libnutclient.so.2()(64bit)
+# - nut-devel: libnutclientstub.so.1()(64bit)
+# - nut-devel: libnutscan.so.1()(64bit)
+# - nut-devel: libupsclient.so.6()(64bit)
+# - nut-devel: nut-client = 2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505
+# - nut-xml: nut-client = 2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505
+# - nut: libupsclient.so.6()(64bit)
+
+URI_x86_64_v2_nut = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nut-2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505.x86_64_v2.rpm;name=x86_64_v2_nut;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_nut}"
+SRC_URI[x86_64_v2_nut.sha256sum] = "fec3e3b18199059c3ae7f62314cec5bfe5954f59a568f76f80a5e90366071afc"
+
+URI_x86_64_v2_nut-cgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nut-cgi-2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505.x86_64_v2.rpm;name=x86_64_v2_nut-cgi;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_nut-cgi}"
+SRC_URI[x86_64_v2_nut-cgi.sha256sum] = "6c4ced0d3b3aa48eb1bb346af941e32672d4e70a635548b913fe7e4888ef0d6f"
+
+URI_x86_64_v2_nut-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nut-client-2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505.x86_64_v2.rpm;name=x86_64_v2_nut-client;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_nut-client}"
+SRC_URI[x86_64_v2_nut-client.sha256sum] = "53ad3b3fe721c47d687c5a743d67f68e82141ef37b28f0948ebbff524519f3d2"
+
+URI_x86_64_v2_nut-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nut-devel-2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505.x86_64_v2.rpm;name=x86_64_v2_nut-devel;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_nut-devel}"
+SRC_URI[x86_64_v2_nut-devel.sha256sum] = "e65c80d37b925ce96876271159052c612d2013935511bbbc59674e69a21bde68"
+
+URI_x86_64_v2_nut-xml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nut-xml-2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505.x86_64_v2.rpm;name=x86_64_v2_nut-xml;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_nut-xml}"
+SRC_URI[x86_64_v2_nut-xml.sha256sum] = "3a20b3149d634aefff1e6f1172b765cbd9c0e08b810a69a64b35e74b9d6b78fe"
+
 URI_aarch64_nut = "${EPEL_MIRROR}/aarch64/Packages/n/nut-2.8.2.1-0.el10_1.1.git20240703pr2505.aarch64.rpm;name=aarch64_nut;unpack=0"
 SRC_URI:append = " ${URI_aarch64_nut}"
 SRC_URI[aarch64_nut.sha256sum] = "4bb2142627836f4003fa9ec98e02c8ac4a79e4635becff1aac326f975abebf31"
@@ -37,7 +68,24 @@ URI_aarch64_nut-xml = "${EPEL_MIRROR}/aarch64/Packages/n/nut-xml-2.8.2.1-0.el10_
 SRC_URI:append = " ${URI_aarch64_nut-xml}"
 SRC_URI[aarch64_nut-xml.sha256sum] = "5e480602fe7bdbf10c3bdc26a8ae746bfb1168aec378bbd030b0660db1f281b2"
 
-RDEPENDS:nut = " \
+RDEPENDS:nut:x86_64_v2 = " \
+ bash \
+ freeipmi \
+ glibc \
+ libgcc \
+ libi2c \
+ libstdc++ \
+ libtool-ltdl \
+ libusb1 \
+ net-snmp-libs \
+ openssl-libs \
+ systemd \
+ systemd-libs \
+ virtual/coreutils \
+ virtual/group_dialout_ \
+ virtual/group_tty_ \
+"
+RDEPENDS:nut:aarch64 = " \
  bash \
  freeipmi \
  glibc \
@@ -49,18 +97,23 @@ RDEPENDS:nut = " \
  net-snmp-libs \
  nut-client \
  openssl-libs \
- setup \
  systemd \
  systemd-libs \
  virtual/coreutils \
  virtual/group_dialout_ \
- "
-RDEPENDS:nut-cgi = " \
+ virtual/group_tty_ \
+"
+RDEPENDS:nut-cgi:x86_64_v2 = " \
+ gd \
+ glibc \
+ virtual/webserver \
+"
+RDEPENDS:nut-cgi:aarch64 = " \
  gd \
  glibc \
  nut-client \
  virtual/webserver \
- "
+"
 RDEPENDS:nut-client = " \
  bash \
  glibc \
@@ -68,21 +121,31 @@ RDEPENDS:nut-client = " \
  libstdc++ \
  openssl-libs \
  python3 \
- setup \
  systemd \
  systemd-libs \
  virtual/group_dialout_ \
+ virtual/group_tty_ \
  "
-RDEPENDS:nut-devel = " \
+RDEPENDS:nut-devel:x86_64_v2 = " \
+ openssl-devel \
+ pkgconf-pkg-config \
+ virtual/webserver \
+"
+RDEPENDS:nut-devel:aarch64 = " \
  nut \
  nut-client \
  openssl-devel \
  pkgconf-pkg-config \
  virtual/webserver \
- "
-RDEPENDS:nut-xml = " \
+"
+RDEPENDS:nut-xml:x86_64_v2 = " \
+ glibc \
+ neon \
+ systemd-libs \
+"
+RDEPENDS:nut-xml:aarch64 = " \
  glibc \
  neon \
  nut-client \
  systemd-libs \
- "
+"

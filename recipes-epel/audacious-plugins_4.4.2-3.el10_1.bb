@@ -17,14 +17,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/a/audacious-plugins-4.4.2-3.el10_1.src.rpm
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "ed1c6111e5e53c011efffb2eac310a2f51bde138550c853f03bd50576a5847e2"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - audacious-plugins-ffaudio: libavcodec.so.61()(64bit)
-# - audacious-plugins-ffaudio: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - audacious-plugins-ffaudio: libavformat.so.61()(64bit)
-# - audacious-plugins-ffaudio: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - audacious-plugins-ffaudio: libavutil.so.59()(64bit)
-# - audacious-plugins-ffaudio: libavutil.so.59(LIBAVUTIL_59)(64bit)
-
 URI_x86_64_v2_audacious-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins}"
 SRC_URI[x86_64_v2_audacious-plugins.sha256sum] = "e3893ac2feffb77cdbcc6a009ff6b7f9503d8752b480847f311d06a5de874fa7"
@@ -108,8 +100,8 @@ RDEPENDS:audacious-plugins = " \
  qt6-qtbase \
  qt6-qtbase-gui \
  qt6-qtmultimedia \
+ sdl2-compat \
  soxr \
- virtual/libSDL2-2.0.so.0___64bit_ \
  virtual/libcurl.so.4___64bit_ \
  wavpack \
  "
@@ -138,14 +130,7 @@ RDEPENDS:audacious-plugins-exotic = " \
  libstdc++ \
  zlib-ng-compat \
  "
-RDEPENDS:audacious-plugins-ffaudio:x86_64_v2 = " \
- audacious-libs \
- audacious-plugins \
- glibc \
- libgcc \
- libstdc++ \
-"
-RDEPENDS:audacious-plugins-ffaudio:aarch64 = " \
+RDEPENDS:audacious-plugins-ffaudio = " \
  audacious-libs \
  audacious-plugins \
  glibc \
@@ -154,7 +139,7 @@ RDEPENDS:audacious-plugins-ffaudio:aarch64 = " \
  libavutil-free \
  libgcc \
  libstdc++ \
-"
+ "
 RDEPENDS:audacious-plugins-jack = " \
  audacious-libs \
  audacious-plugins \

@@ -16,18 +16,12 @@ SRC_URI[src.sha256sum] = "4abef5ca5551965b03d944bab6046eb580206454234e794147336b
 URI_x86_64_v2_sdl2-compat = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sdl2-compat-2.32.50-1.el10.x86_64_v2.rpm;name=x86_64_v2_sdl2-compat;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_sdl2-compat}"
 SRC_URI[x86_64_v2_sdl2-compat.sha256sum] = "7083aafe6940e6ec249b64b15910115f2bcccc525376f20c4fda2ce5878910ae"
-RPROVIDES:sdl2-compat:x86_64_v2 = "virtual/SDL2_x86-64__ge_2.0.18 virtual/libSDL2-2.0.so.0___64bit_"
 
 URI_aarch64_sdl2-compat = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sdl2-compat-2.32.50-1.el10.aarch64.rpm;name=aarch64_sdl2-compat;unpack=0"
 SRC_URI:append = " ${URI_aarch64_sdl2-compat}"
 SRC_URI[aarch64_sdl2-compat.sha256sum] = "bb64bf6cae3d6cd79ed044a6854f4655a56946db87f312bdf45177739ba738a2"
-RPROVIDES:sdl2-compat:aarch64 = "virtual/SDL2_aarch-64__ge_2.0.18 virtual/libSDL2-2.0.so.0___64bit_"
 
 RDEPENDS:sdl2-compat = " \
  SDL3 \
  glibc \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/SDL2_x86-64__ge_2.0.18 rpm/virtual/libSDL2-2.0.so.0___64bit_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/SDL2_aarch-64__ge_2.0.18 rpm/virtual/libSDL2-2.0.so.0___64bit_"

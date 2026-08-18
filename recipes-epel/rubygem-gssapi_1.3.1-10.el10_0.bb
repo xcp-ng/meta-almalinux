@@ -32,9 +32,9 @@ SRC_URI[aarch64_rubygem-gssapi-doc.sha256sum] = "8272c463948c1c4dc12ad62939d1599
 
 RDEPENDS:rubygem-gssapi = " \
  krb5-libs \
- ruby-libs \
  rubygem-ffi \
  rubygems \
+ virtual/ruby_release_ \
  "
 RDEPENDS:rubygem-gssapi-doc = " \
  rubygem-gssapi \

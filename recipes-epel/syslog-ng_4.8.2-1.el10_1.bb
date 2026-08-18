@@ -30,6 +30,10 @@ URI_src = "${EPELSRC_MIRROR}/Packages/s/syslog-ng-4.8.2-1.el10_1.src.rpm;name=sr
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "20ee75fe38eb5d92f8477e9cc183b601b7e8885cc507d3a2dac88fbe489a1200"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - syslog-ng-mongodb: libbson-1.0.so.0()(64bit)
+# - syslog-ng-mongodb: libmongoc-1.0.so.0()(64bit)
+
 URI_x86_64_v2_syslog-ng = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/syslog-ng-4.8.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_syslog-ng;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_syslog-ng}"
 SRC_URI[x86_64_v2_syslog-ng.sha256sum] = "208376f3d2db4e7cf969501b602b5c70b4624abc2a9230240f87944c46ba2435"
@@ -281,12 +285,16 @@ RDEPENDS:syslog-ng-loki = " \
  systemd-libs \
  zlib-ng-compat \
  "
-RDEPENDS:syslog-ng-mongodb = " \
+RDEPENDS:syslog-ng-mongodb:x86_64_v2 = " \
+ glibc \
+ syslog-ng \
+"
+RDEPENDS:syslog-ng-mongodb:aarch64 = " \
  glibc \
  libbson \
  mongo-c-driver-libs \
  syslog-ng \
- "
+"
 RDEPENDS:syslog-ng-opentelemetry = " \
  abseil-cpp \
  c-ares \

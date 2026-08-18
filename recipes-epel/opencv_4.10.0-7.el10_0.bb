@@ -73,6 +73,250 @@ URI_src = "${EPELSRC_MIRROR}/Packages/o/opencv-4.10.0-7.el10_0.src.rpm;name=src;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "c52231ee31ff7673e4acd0633d41fc3ce5c9c3b13b69212612ffa7c891e0b685"
 
+URI_x86_64_v2_opencv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv}"
+SRC_URI[x86_64_v2_opencv.sha256sum] = "9e20637917bb790260f0d4d74b99f817c911734e8d4af09abd024b5aa2ef7b75"
+
+URI_x86_64_v2_opencv-alphamat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-alphamat-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-alphamat;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-alphamat}"
+SRC_URI[x86_64_v2_opencv-alphamat.sha256sum] = "f5b06d0807fed082fceebb6e5fa74c6546ca9780ef8fc8bd5c31ff1a35bc56e8"
+
+URI_x86_64_v2_opencv-aruco = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-aruco-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-aruco;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-aruco}"
+SRC_URI[x86_64_v2_opencv-aruco.sha256sum] = "744f88e86c43c5b3f29d756e07e5b58bec952a9d657c9c569abc6427a9b23a6c"
+
+URI_x86_64_v2_opencv-bgsegm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-bgsegm-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-bgsegm;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-bgsegm}"
+SRC_URI[x86_64_v2_opencv-bgsegm.sha256sum] = "f0f10d7f9571c0af2d81a2b503c0339293f844d7fd0f282387837fa2bf1c592c"
+
+URI_x86_64_v2_opencv-bioinspired = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-bioinspired-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-bioinspired;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-bioinspired}"
+SRC_URI[x86_64_v2_opencv-bioinspired.sha256sum] = "95cc78886b8e8dd48e1a725962db41c7e3244225077597c66688f2c61f10e501"
+
+URI_x86_64_v2_opencv-calib3d = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-calib3d-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-calib3d;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-calib3d}"
+SRC_URI[x86_64_v2_opencv-calib3d.sha256sum] = "a6d7ba4d6da837898514cb77b3ac7208b8cf116e8d0c27c8447c16512bfc43d5"
+
+URI_x86_64_v2_opencv-ccalib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-ccalib-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-ccalib;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-ccalib}"
+SRC_URI[x86_64_v2_opencv-ccalib.sha256sum] = "aa6bdbfc55044430bb45c7ffc1ddb50bc66d446b8885d2b86d34bbf72422ec98"
+
+URI_x86_64_v2_opencv-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-core-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-core;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-core}"
+SRC_URI[x86_64_v2_opencv-core.sha256sum] = "84f1195401cbedfdc2be00a7959f84ce44478e2412f6591958a80087a4a1250d"
+
+URI_x86_64_v2_opencv-cvv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-cvv-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-cvv;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-cvv}"
+SRC_URI[x86_64_v2_opencv-cvv.sha256sum] = "88b72e6f61971b9659716b7fddfc06513f2ada41a866e838011ef33ff229e931"
+
+URI_x86_64_v2_opencv-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-data-4.10.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_opencv-data;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-data}"
+SRC_URI[x86_64_v2_opencv-data.sha256sum] = "dc7b3cd201684df95c13e8e9fbe39f8ca77e38999a14029f9d07767a25de8444"
+
+URI_x86_64_v2_opencv-datasets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-datasets-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-datasets;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-datasets}"
+SRC_URI[x86_64_v2_opencv-datasets.sha256sum] = "d171301804d250a47647715f1d03483f7b415eb3a05683c083f5f219138d4b0d"
+
+URI_x86_64_v2_opencv-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-devel-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-devel;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-devel}"
+SRC_URI[x86_64_v2_opencv-devel.sha256sum] = "b85a4f20463b9b42295e3dabca4e9ea2ca28b0bd0dcc595636bb0024079b55fb"
+
+URI_x86_64_v2_opencv-dnn = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-dnn-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-dnn;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-dnn}"
+SRC_URI[x86_64_v2_opencv-dnn.sha256sum] = "7626b0dcb046cd8cb50b2b4443ede1155094246992176bfa2b14baed7ae5eb47"
+
+URI_x86_64_v2_opencv-dnn_objdetect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-dnn_objdetect-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-dnn_objdetect;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-dnn_objdetect}"
+SRC_URI[x86_64_v2_opencv-dnn_objdetect.sha256sum] = "c229c95e6c8e492b3c0eaa6866be9da6f0ea2cb715c5c237c9f668f5df9560c0"
+
+URI_x86_64_v2_opencv-dnn_superres = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-dnn_superres-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-dnn_superres;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-dnn_superres}"
+SRC_URI[x86_64_v2_opencv-dnn_superres.sha256sum] = "b2a162c6973fd31aae9db3f5099f4e10b082c5ee03623e93b4159df1dfffea0d"
+
+URI_x86_64_v2_opencv-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-doc-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-doc;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-doc}"
+SRC_URI[x86_64_v2_opencv-doc.sha256sum] = "f35a4b88dc3f79471f2848306d76b0d633b4d732d81b1c19a15fece3cf2d9940"
+
+URI_x86_64_v2_opencv-dpm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-dpm-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-dpm;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-dpm}"
+SRC_URI[x86_64_v2_opencv-dpm.sha256sum] = "24f7af5280626d83f16c01a2c8c3c571b2bdca860e39f355673dfe5726898885"
+
+URI_x86_64_v2_opencv-face = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-face-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-face;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-face}"
+SRC_URI[x86_64_v2_opencv-face.sha256sum] = "92ed78d09958ead39eaa4f4499523eedb8a6e1d20b9ed8ea1badf0e328e6abc2"
+
+URI_x86_64_v2_opencv-features2d = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-features2d-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-features2d;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-features2d}"
+SRC_URI[x86_64_v2_opencv-features2d.sha256sum] = "25b8cba8977db38c72c31d762a6065a1c99039c4e6eede227777eb5b14c99921"
+
+URI_x86_64_v2_opencv-flann = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-flann-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-flann;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-flann}"
+SRC_URI[x86_64_v2_opencv-flann.sha256sum] = "9a68c98bbd0b1237a78fda824a4f6343563fc549d9ea0883e6e8011d2fbe0165"
+
+URI_x86_64_v2_opencv-freetype = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-freetype-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-freetype;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-freetype}"
+SRC_URI[x86_64_v2_opencv-freetype.sha256sum] = "42f64a380eae0f892502533b86b981be6aab21d3da0eda20310d7d174bd8d02a"
+
+URI_x86_64_v2_opencv-fuzzy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-fuzzy-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-fuzzy;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-fuzzy}"
+SRC_URI[x86_64_v2_opencv-fuzzy.sha256sum] = "264c960de26c782a279d0938eb3449356ac91e7621f03deb6219519d7efeb16f"
+
+URI_x86_64_v2_opencv-gapi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-gapi-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-gapi;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-gapi}"
+SRC_URI[x86_64_v2_opencv-gapi.sha256sum] = "c209b9748a54b20d77260af334158c006e6f3fe5ec40920035a785bb824a686b"
+
+URI_x86_64_v2_opencv-hdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-hdf-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-hdf;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-hdf}"
+SRC_URI[x86_64_v2_opencv-hdf.sha256sum] = "03acbcb976da45df6c0d1c989db5481c859cb1c747bf723bf1d4de6e3c1fe85d"
+
+URI_x86_64_v2_opencv-hfs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-hfs-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-hfs;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-hfs}"
+SRC_URI[x86_64_v2_opencv-hfs.sha256sum] = "d3f05e8f3375191a4478e7eeac0ad4408368a3616e6f1e25faa37b681746dd6d"
+
+URI_x86_64_v2_opencv-highgui = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-highgui-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-highgui;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-highgui}"
+SRC_URI[x86_64_v2_opencv-highgui.sha256sum] = "16efe52410e9ee61daa1cff48db656b8f5f2950ffb1766c4e275cd5871f3b1fc"
+
+URI_x86_64_v2_opencv-img_hash = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-img_hash-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-img_hash;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-img_hash}"
+SRC_URI[x86_64_v2_opencv-img_hash.sha256sum] = "da517e3f88b6aed019c80fc34869fa384bb3f3412c7d27532d2332e7bee3993b"
+
+URI_x86_64_v2_opencv-imgcodecs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-imgcodecs-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-imgcodecs;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-imgcodecs}"
+SRC_URI[x86_64_v2_opencv-imgcodecs.sha256sum] = "c558623ef0da634f17c0aef2ebc1585d43fd41e2810388b01995434cfad65603"
+
+URI_x86_64_v2_opencv-imgproc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-imgproc-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-imgproc;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-imgproc}"
+SRC_URI[x86_64_v2_opencv-imgproc.sha256sum] = "fff1d1eb701ef278d528be880c436d687eba8b52b137682fee334778972d7285"
+
+URI_x86_64_v2_opencv-intensity_transform = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-intensity_transform-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-intensity_transform;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-intensity_transform}"
+SRC_URI[x86_64_v2_opencv-intensity_transform.sha256sum] = "bc8e764a6837a83bb6c0dc58fe5b0b4607b00ba72648f3da7801e044bd2d1e76"
+
+URI_x86_64_v2_opencv-java = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-java-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-java;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-java}"
+SRC_URI[x86_64_v2_opencv-java.sha256sum] = "290b6ddf25f15b056c72ebb04ea9089812ac29d30aed51b0e4015ecba43380fe"
+
+URI_x86_64_v2_opencv-line_descriptor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-line_descriptor-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-line_descriptor;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-line_descriptor}"
+SRC_URI[x86_64_v2_opencv-line_descriptor.sha256sum] = "5e521abeb1a89185366afc32a4f71e4cadc96a4744abd5c36d91fbf7c830fe85"
+
+URI_x86_64_v2_opencv-mcc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-mcc-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-mcc;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-mcc}"
+SRC_URI[x86_64_v2_opencv-mcc.sha256sum] = "40ed0b815fb1f0396121f76e6a0e1d521972880694400826f9f4784fa95ac1cc"
+
+URI_x86_64_v2_opencv-ml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-ml-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-ml;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-ml}"
+SRC_URI[x86_64_v2_opencv-ml.sha256sum] = "b74960a46fb552663cfee2ab4b273c1f809b85a64d3ecdb63139e22551cabdb1"
+
+URI_x86_64_v2_opencv-objdetect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-objdetect-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-objdetect;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-objdetect}"
+SRC_URI[x86_64_v2_opencv-objdetect.sha256sum] = "5ee08259eec5e0060547e41dad2d20fa4e40a5896c6899a87e26a160711191e0"
+
+URI_x86_64_v2_opencv-optflow = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-optflow-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-optflow;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-optflow}"
+SRC_URI[x86_64_v2_opencv-optflow.sha256sum] = "c811ecffffaf04b3a21ad76fa122efd37c66ccb0efeeabe54f021597443164b3"
+
+URI_x86_64_v2_opencv-phase_unwrapping = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-phase_unwrapping-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-phase_unwrapping;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-phase_unwrapping}"
+SRC_URI[x86_64_v2_opencv-phase_unwrapping.sha256sum] = "5bbb0434f285dd928247d7a11818291cd7ae25c1c64124da23feb89b23d69aab"
+
+URI_x86_64_v2_opencv-photo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-photo-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-photo;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-photo}"
+SRC_URI[x86_64_v2_opencv-photo.sha256sum] = "542973f801d82118bad6564cb7699b98b9e170c7ce06f2b38a2bd73476be10be"
+
+URI_x86_64_v2_opencv-plot = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-plot-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-plot;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-plot}"
+SRC_URI[x86_64_v2_opencv-plot.sha256sum] = "980806f4ffd108db634048f9f5431e2e495190c6a03e47f4bca9a1c903a1813c"
+
+URI_x86_64_v2_opencv-quality = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-quality-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-quality;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-quality}"
+SRC_URI[x86_64_v2_opencv-quality.sha256sum] = "41e7c719bf25716871aa62ce5edb33c53235ff7e5c8f9054a616013eec5674f0"
+
+URI_x86_64_v2_opencv-rapid = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-rapid-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-rapid;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-rapid}"
+SRC_URI[x86_64_v2_opencv-rapid.sha256sum] = "7e85d1cb498339cd91aae3768c054e3e015d080638f68fa4df1a3598ba2e2731"
+
+URI_x86_64_v2_opencv-reg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-reg-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-reg;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-reg}"
+SRC_URI[x86_64_v2_opencv-reg.sha256sum] = "1e0874f82c1d424e16c9e8d98fda93f9e05351bb9684c683ed6e0892c149bfad"
+
+URI_x86_64_v2_opencv-rgbd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-rgbd-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-rgbd;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-rgbd}"
+SRC_URI[x86_64_v2_opencv-rgbd.sha256sum] = "036b4d7e5aaa080201f7f6a79e4a57f2a9e79013eecf53b33759564fb7b77e2e"
+
+URI_x86_64_v2_opencv-saliency = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-saliency-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-saliency;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-saliency}"
+SRC_URI[x86_64_v2_opencv-saliency.sha256sum] = "7f5b346f90e4696780d6eb15dd237fc41ed6bda7ba2ba8d16c2cd16928a42620"
+
+URI_x86_64_v2_opencv-shape = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-shape-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-shape;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-shape}"
+SRC_URI[x86_64_v2_opencv-shape.sha256sum] = "9f1f20365864c9ba5c16773cb07d23736852453f531b408e7946c23c8f9122af"
+
+URI_x86_64_v2_opencv-signal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-signal-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-signal;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-signal}"
+SRC_URI[x86_64_v2_opencv-signal.sha256sum] = "db8623a2c9a839992dc6937fe195010a735dadd76738b65d4220362e6a621df1"
+
+URI_x86_64_v2_opencv-stereo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-stereo-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-stereo;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-stereo}"
+SRC_URI[x86_64_v2_opencv-stereo.sha256sum] = "c302ceea9ac21535d294970619c7aaa223aef17a8f545ab60212d4c81130b101"
+
+URI_x86_64_v2_opencv-stitching = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-stitching-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-stitching;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-stitching}"
+SRC_URI[x86_64_v2_opencv-stitching.sha256sum] = "0871d492d8da76c1f51dc087fb69ab177fd152fb8d88201b52439b8cb8037570"
+
+URI_x86_64_v2_opencv-structured_light = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-structured_light-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-structured_light;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-structured_light}"
+SRC_URI[x86_64_v2_opencv-structured_light.sha256sum] = "80325b6d4a8f22adedd2864dcfbfbc2afcb91014fbcdf0e9b5ca092e64363e67"
+
+URI_x86_64_v2_opencv-superres = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-superres-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-superres;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-superres}"
+SRC_URI[x86_64_v2_opencv-superres.sha256sum] = "1ab987fe0190a8e6ceaa689a6874bb6110a82f05b356c52f8e7a7cd505ecae32"
+
+URI_x86_64_v2_opencv-surface_matching = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-surface_matching-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-surface_matching;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-surface_matching}"
+SRC_URI[x86_64_v2_opencv-surface_matching.sha256sum] = "c6056b658ff68108b97bffbf10e474e25337cd9b80375e775d82a56fbff98fa2"
+
+URI_x86_64_v2_opencv-text = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-text-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-text;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-text}"
+SRC_URI[x86_64_v2_opencv-text.sha256sum] = "9162ccdae90660d50c36de8e29da95538433dbab9cc6c34121e82ee09f9b7afc"
+
+URI_x86_64_v2_opencv-tracking = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-tracking-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-tracking;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-tracking}"
+SRC_URI[x86_64_v2_opencv-tracking.sha256sum] = "18e1296db5c789390b063f91102312559bdc9ec01c2ed14bb52cdb4c307ef270"
+
+URI_x86_64_v2_opencv-video = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-video-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-video;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-video}"
+SRC_URI[x86_64_v2_opencv-video.sha256sum] = "1d68577054420cc5a9bc61d8f4259964bcbdf5fd7f695bf395e0a631c76f3b84"
+
+URI_x86_64_v2_opencv-videoio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-videoio-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-videoio;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-videoio}"
+SRC_URI[x86_64_v2_opencv-videoio.sha256sum] = "9da74b8a288e62c6285d324531884b84dc906fe7e6e7c93bbeb399b2286adc42"
+
+URI_x86_64_v2_opencv-videostab = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-videostab-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-videostab;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-videostab}"
+SRC_URI[x86_64_v2_opencv-videostab.sha256sum] = "fe76876e1bc9f1ab35658f6ca8fa6c56ffe4827fa77ea5d7e692cc83bb8c32f0"
+
+URI_x86_64_v2_opencv-wechat_qrcode = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-wechat_qrcode-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-wechat_qrcode;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-wechat_qrcode}"
+SRC_URI[x86_64_v2_opencv-wechat_qrcode.sha256sum] = "f09a239053446f0188f871bd32e63455e159a3031d7b026259410a634f958332"
+
+URI_x86_64_v2_opencv-ximgproc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-ximgproc-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-ximgproc;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-ximgproc}"
+SRC_URI[x86_64_v2_opencv-ximgproc.sha256sum] = "a273a8b97cacb7b35d6773d5dbe796dde703c8264c753fcf35b4dacceb38003d"
+
+URI_x86_64_v2_opencv-xobjdetect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-xobjdetect-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-xobjdetect;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-xobjdetect}"
+SRC_URI[x86_64_v2_opencv-xobjdetect.sha256sum] = "c3d27d0d7f928398ef9fff6560bd028bce5770787f29d9e49a0c7a9e67da6e78"
+
+URI_x86_64_v2_opencv-xphoto = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opencv-xphoto-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opencv-xphoto;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_opencv-xphoto}"
+SRC_URI[x86_64_v2_opencv-xphoto.sha256sum] = "39cadefde9ea36e411b1de3a6ef3f976145cc9fb37bda16333d2c1844e670aba"
+
+URI_x86_64_v2_python3-opencv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-opencv-4.10.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-opencv;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_python3-opencv}"
+SRC_URI[x86_64_v2_python3-opencv.sha256sum] = "1a7e9b35d7fff7c1a601eeb554deb2f2102c0ad471c7b0e79a26f02c7e940d65"
+
 URI_aarch64_opencv = "${EPEL_MIRROR}/aarch64/Packages/o/opencv-4.10.0-7.el10_0.aarch64.rpm;name=aarch64_opencv;unpack=0"
 SRC_URI:append = " ${URI_aarch64_opencv}"
 SRC_URI[aarch64_opencv.sha256sum] = "be6b8cb6675225b92d2c4e97070a57826c36694368bbac9bc4fbca2ab2c97ac1"
@@ -544,7 +788,22 @@ RDEPENDS:opencv-fuzzy = " \
  libstdc++ \
  opencv-core \
  "
-RDEPENDS:opencv-gapi = " \
+RDEPENDS:opencv-gapi:x86_64_v2 = " \
+ glib2 \
+ glibc \
+ gstreamer1 \
+ gstreamer1-plugins-base \
+ libgcc \
+ libstdc++ \
+ libva \
+ libvpl \
+ opencv-calib3d \
+ opencv-core \
+ opencv-imgproc \
+ opencv-video \
+ tbb \
+"
+RDEPENDS:opencv-gapi:aarch64 = " \
  glib2 \
  glibc \
  gstreamer1 \
@@ -556,7 +815,7 @@ RDEPENDS:opencv-gapi = " \
  opencv-imgproc \
  opencv-video \
  tbb \
- "
+"
 RDEPENDS:opencv-hdf = " \
  glibc \
  hdf5 \
@@ -839,7 +1098,24 @@ RDEPENDS:opencv-video = " \
  opencv-dnn \
  opencv-imgproc \
  "
-RDEPENDS:opencv-videoio = " \
+RDEPENDS:opencv-videoio:x86_64_v2 = " \
+ glib2 \
+ glibc \
+ gstreamer1 \
+ gstreamer1-plugins-base \
+ libavcodec-free \
+ libavformat-free \
+ libavutil-free \
+ libgcc \
+ libstdc++ \
+ libswscale-free \
+ libva \
+ libvpl \
+ opencv-core \
+ opencv-imgcodecs \
+ opencv-imgproc \
+"
+RDEPENDS:opencv-videoio:aarch64 = " \
  glib2 \
  glibc \
  gstreamer1 \
@@ -853,7 +1129,7 @@ RDEPENDS:opencv-videoio = " \
  opencv-core \
  opencv-imgcodecs \
  opencv-imgproc \
- "
+"
 RDEPENDS:opencv-videostab = " \
  glibc \
  libgcc \

@@ -37,8 +37,8 @@ RDEPENDS:rust-markup5ever0.11+default-devel = " \
 RDEPENDS:rust-markup5ever0.11-devel = " \
  cargo \
  rust-log+default-devel \
- rust-phf+default-devel \
- rust-phf_codegen+default-devel \
+ rust-phf0.11+default-devel \
+ rust-phf_codegen0.11+default-devel \
  rust-string_cache+default-devel \
  rust-string_cache_codegen+default-devel \
  rust-tendril+default-devel \

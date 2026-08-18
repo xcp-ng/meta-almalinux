@@ -14,6 +14,14 @@ URI_src = "${EPELSRC_MIRROR}/Packages/s/SDL2_ttf-2.24.0-1.el10_1.src.rpm;name=sr
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "4f39e71affabfa9ab3aea3bc2727f7883a8c9982bcaec6630b6119c9b4d83f3c"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - SDL2_ttf-devel: SDL2-devel(x86-64)
+# - SDL2_ttf-devel: pkgconfig(sdl2) >= 2.0.10
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - SDL2_ttf-devel: SDL2-devel(aarch-64)
+# - SDL2_ttf-devel: pkgconfig(sdl2) >= 2.0.10
+
 URI_x86_64_v2_SDL2_ttf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/SDL2_ttf-2.24.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_SDL2_ttf;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_SDL2_ttf}"
 SRC_URI[x86_64_v2_SDL2_ttf.sha256sum] = "67c090d4a5f20229dc350e31eeb3cfd00752bbdd8618f9fb53f71535d14c6af8"
@@ -34,10 +42,9 @@ RDEPENDS:SDL2_ttf = " \
  freetype \
  glibc \
  harfbuzz \
- virtual/libSDL2-2.0.so.0___64bit_ \
+ sdl2-compat \
  "
 RDEPENDS:SDL2_ttf-devel = " \
- SDL2-devel \
  SDL2_ttf \
  cmake-filesystem \
  freetype-devel \

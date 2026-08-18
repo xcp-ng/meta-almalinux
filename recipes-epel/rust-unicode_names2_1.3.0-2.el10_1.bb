@@ -76,6 +76,6 @@ RDEPENDS:rust-unicode_names2+unstable-devel = " \
 RDEPENDS:rust-unicode_names2-devel = " \
  cargo \
  rust \
- rust-phf-devel \
+ rust-phf0.11-devel \
  rust-unicode_names2_generator+default-devel \
  "

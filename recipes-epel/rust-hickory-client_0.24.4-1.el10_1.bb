@@ -114,7 +114,7 @@ SRC_URI[aarch64_rust-hickory-client-devel.sha256sum] = "fed6b6ff95de5a789e58ff27
 RDEPENDS:rust-hickory-client+backtrace-devel = " \
  cargo \
  rust-hickory-client-devel \
- rust-hickory-proto+backtrace-devel \
+ rust-hickory-proto0.24+backtrace-devel \
  "
 RDEPENDS:rust-hickory-client+default-devel = " \
  cargo \
@@ -124,7 +124,7 @@ RDEPENDS:rust-hickory-client+dns-over-native-tls-devel = " \
  cargo \
  rust-hickory-client+dns-over-tls-devel \
  rust-hickory-client-devel \
- rust-hickory-proto+dns-over-native-tls-devel \
+ rust-hickory-proto0.24+dns-over-native-tls-devel \
  "
 RDEPENDS:rust-hickory-client+dns-over-openssl-devel = " \
  cargo \
@@ -139,24 +139,24 @@ RDEPENDS:rust-hickory-client+dns-over-tls-devel = " \
 RDEPENDS:rust-hickory-client+dnssec-devel = " \
  cargo \
  rust-hickory-client-devel \
- rust-hickory-proto+dnssec-devel \
+ rust-hickory-proto0.24+dnssec-devel \
  "
 RDEPENDS:rust-hickory-client+dnssec-openssl-devel = " \
  cargo \
  rust-hickory-client+dnssec-devel \
  rust-hickory-client-devel \
- rust-hickory-proto+dnssec-openssl-devel \
+ rust-hickory-proto0.24+dnssec-openssl-devel \
  "
 RDEPENDS:rust-hickory-client+mdns-devel = " \
  cargo \
  rust-hickory-client-devel \
- rust-hickory-proto+mdns-devel \
+ rust-hickory-proto0.24+mdns-devel \
  "
 RDEPENDS:rust-hickory-client+serde-config-devel = " \
  cargo \
  rust-hickory-client+serde-devel \
  rust-hickory-client-devel \
- rust-hickory-proto+serde-config-devel \
+ rust-hickory-proto0.24+serde-config-devel \
  "
 RDEPENDS:rust-hickory-client+serde-devel = " \
  cargo \
@@ -173,9 +173,9 @@ RDEPENDS:rust-hickory-client-devel = " \
  rust-futures-channel-devel \
  rust-futures-util+std-devel \
  rust-futures-util-devel \
- rust-hickory-proto+text-parsing-devel \
- rust-hickory-proto+tokio-runtime-devel \
- rust-hickory-proto-devel \
+ rust-hickory-proto0.24+text-parsing-devel \
+ rust-hickory-proto0.24+tokio-runtime-devel \
+ rust-hickory-proto0.24-devel \
  rust-once_cell+default-devel \
  rust-radix_trie+default-devel \
  rust-rand0.8+default-devel \

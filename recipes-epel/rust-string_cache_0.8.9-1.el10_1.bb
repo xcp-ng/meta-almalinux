@@ -68,6 +68,6 @@ RDEPENDS:rust-string_cache-devel = " \
  rust \
  rust-new_debug_unreachable+default-devel \
  rust-parking_lot+default-devel \
- rust-phf_shared+default-devel \
+ rust-phf_shared0.11+default-devel \
  rust-precomputed-hash+default-devel \
  "

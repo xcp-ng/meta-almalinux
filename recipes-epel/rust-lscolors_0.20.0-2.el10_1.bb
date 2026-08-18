@@ -95,7 +95,7 @@ RDEPENDS:rust-lscolors+ansi_term-devel = " \
  "
 RDEPENDS:rust-lscolors+crossterm-devel = " \
  cargo \
- rust-crossterm+default-devel \
+ rust-crossterm0.28+default-devel \
  rust-lscolors-devel \
  "
 RDEPENDS:rust-lscolors+default-devel = " \

@@ -51,8 +51,8 @@ RDEPENDS:rust-imara-diff+unified_diff-devel = " \
 RDEPENDS:rust-imara-diff-devel = " \
  cargo \
  rust \
- rust-hashbrown+default-hasher-devel \
- rust-hashbrown+inline-more-devel \
- rust-hashbrown-devel \
+ rust-hashbrown0.15+default-hasher-devel \
+ rust-hashbrown0.15+inline-more-devel \
+ rust-hashbrown0.15-devel \
  rust-memchr+default-devel \
  "

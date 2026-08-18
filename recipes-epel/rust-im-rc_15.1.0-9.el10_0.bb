@@ -122,7 +122,7 @@ RDEPENDS:rust-im-rc-devel = " \
  rust \
  rust-bitmaps+default-devel \
  rust-rand_core0.6+default-devel \
- rust-rand_xoshiro+default-devel \
+ rust-rand_xoshiro0.6+default-devel \
  rust-sized-chunks+default-devel \
  rust-typenum+default-devel \
  rust-version_check+default-devel \

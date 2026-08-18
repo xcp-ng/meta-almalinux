@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4b0f21c34c21b7423b0970880571a04e9a0030c74b7b82f310028b
 
 URI_x86_64_v2_wide-dhcpv6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/wide-dhcpv6-20080615-23.3.el10_1.7.alma_altarch.7.x86_64_v2.rpm;name=x86_64_v2_wide-dhcpv6;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_wide-dhcpv6}"
-SRC_URI[x86_64_v2_wide-dhcpv6.sha256sum] = "c69c5b0236dc57217258eadaf5d2bf5d3424e7b0cf5a372163c008b5c3b761c5"
+SRC_URI[x86_64_v2_wide-dhcpv6.sha256sum] = "1c228bbefc0d2b2b544038a39f8491beab5c76babc4bd0a64a05e2d1c5fe3c51"
 
 URI_aarch64_wide-dhcpv6 = "${EPEL_MIRROR}/aarch64/Packages/w/wide-dhcpv6-20080615-23.3.el10_1.7.aarch64.rpm;name=aarch64_wide-dhcpv6;unpack=0"
 SRC_URI:append = " ${URI_aarch64_wide-dhcpv6}"

@@ -34,7 +34,11 @@ RDEPENDS:php-pecl-igbinary = " \
  glibc \
  php-common \
  "
-RDEPENDS:php-pecl-igbinary-devel = " \
- php-devel \
+RDEPENDS:php-pecl-igbinary-devel:x86_64_v2 = " \
  php-pecl-igbinary \
- "
+ virtual/php-devel_x86-64_ \
+"
+RDEPENDS:php-pecl-igbinary-devel:aarch64 = " \
+ php-pecl-igbinary \
+ virtual/php-devel_aarch-64_ \
+"

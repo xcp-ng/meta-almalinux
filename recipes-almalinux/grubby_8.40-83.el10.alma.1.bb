@@ -16,10 +16,12 @@ SRC_URI[src.sha256sum] = "d5cdb66663dc2eb9959614756883c2d5616fca7f490777d7b3fdce
 URI_x86_64_v2_grubby = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/grubby-8.40-83.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_grubby;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_grubby}"
 SRC_URI[x86_64_v2_grubby.sha256sum] = "93b3b09095b6ff97a58201296c2ba50704c62a0bffcf8f00167b0706157f44b4"
+RPROVIDES:grubby:x86_64_v2 = "virtual/grubby_or_sdubby"
 
 URI_aarch64_grubby = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/grubby-8.40-83.el10.alma.1.aarch64.rpm;name=aarch64_grubby;unpack=0"
 SRC_URI:append = " ${URI_aarch64_grubby}"
 SRC_URI[aarch64_grubby.sha256sum] = "d91653c52ca6b0c9fca7935789d3034a1a48670c8f73e9208edbfeaf0f759b8e"
+RPROVIDES:grubby:aarch64 = "virtual/grubby_or_sdubby"
 
 RDEPENDS:grubby = " \
  bash \
@@ -28,3 +30,7 @@ RDEPENDS:grubby = " \
  grub2-tools-minimal \
  util-linux \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/grubby_or_sdubby"
+
+PROVIDES:append:aarch64 = " rpm/virtual/grubby_or_sdubby"

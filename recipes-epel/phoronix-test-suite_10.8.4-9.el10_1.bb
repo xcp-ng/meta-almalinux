@@ -24,11 +24,13 @@ SRC_URI[aarch64_phoronix-test-suite.sha256sum] = "dda2a665a40fe361a18f901f4b408c
 RDEPENDS:phoronix-test-suite = " \
  bash \
  hicolor-icon-theme \
- php-cli \
- php-common \
- php-gd \
- php-pdo \
- php-process \
- php-xml \
  systemd \
+ virtual/php-cli \
+ virtual/php-curl \
+ virtual/php-gd \
+ virtual/php-json \
+ virtual/php-openssl \
+ virtual/php-posix \
+ virtual/php-sqlite3 \
+ virtual/php-xml \
  "

@@ -122,7 +122,7 @@ RDEPENDS:rust-heapless0.7-devel = " \
  cargo \
  rust-hash32_0.2+default-devel \
  rust-rustc_version+default-devel \
- rust-spin+default-devel \
+ rust-spin0.9+default-devel \
  rust-stable_deref_trait-devel \
  "
 

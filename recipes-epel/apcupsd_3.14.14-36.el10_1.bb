@@ -15,6 +15,18 @@ URI_src = "${EPELSRC_MIRROR}/Packages/a/apcupsd-3.14.14-36.el10_1.src.rpm;name=s
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "2bb4eee43ff737aad79898920ce92662a363ef62735338e9ac58cf453501a8c4"
 
+URI_x86_64_v2_apcupsd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/apcupsd-3.14.14-36.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_apcupsd;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_apcupsd}"
+SRC_URI[x86_64_v2_apcupsd.sha256sum] = "b23e37c80e21807e720c4d0df1f8f649bbaf57c928f24fe6c9692f5915c51096"
+
+URI_x86_64_v2_apcupsd-cgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/apcupsd-cgi-3.14.14-36.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_apcupsd-cgi;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_apcupsd-cgi}"
+SRC_URI[x86_64_v2_apcupsd-cgi.sha256sum] = "8a111a0a65741cc99b5723cd8bcf7ae41595415fea9763b1e91262f3745eda46"
+
+URI_x86_64_v2_apcupsd-gui = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/apcupsd-gui-3.14.14-36.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_apcupsd-gui;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_apcupsd-gui}"
+SRC_URI[x86_64_v2_apcupsd-gui.sha256sum] = "c7689f60aa8ee32d29f133e540980ad0c337983370bd27f1f129ab237684b068"
+
 URI_aarch64_apcupsd = "${EPEL_MIRROR}/aarch64/Packages/a/apcupsd-3.14.14-36.el10_1.aarch64.rpm;name=aarch64_apcupsd;unpack=0"
 SRC_URI:append = " ${URI_aarch64_apcupsd}"
 SRC_URI[aarch64_apcupsd.sha256sum] = "486a9efcb75d77f141aec22f55610d4cecc4e25632084b170190036509529ff9"

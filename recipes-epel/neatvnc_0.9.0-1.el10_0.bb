@@ -14,17 +14,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/n/neatvnc-0.9.0-1.el10_0.src.rpm;name=src;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "734b6f3ef0455cd7ca19f2a2f332bee0473c153ceb633e84f755282d7850bd21"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - neatvnc-devel: pkgconfig(libavcodec)
-# - neatvnc-devel: pkgconfig(libavfilter)
-# - neatvnc-devel: pkgconfig(libavutil)
-# - neatvnc: libavcodec.so.61()(64bit)
-# - neatvnc: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - neatvnc: libavfilter.so.10()(64bit)
-# - neatvnc: libavfilter.so.10(LIBAVFILTER_10)(64bit)
-# - neatvnc: libavutil.so.59()(64bit)
-# - neatvnc: libavutil.so.59(LIBAVUTIL_59)(64bit)
-
 URI_x86_64_v2_neatvnc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neatvnc-0.9.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neatvnc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_neatvnc}"
 SRC_URI[x86_64_v2_neatvnc.sha256sum] = "f7f5eceaf83b0fc66c0d44679a25a7c3f6168f97959fc816ae9553b6bab5ed53"
@@ -41,19 +30,7 @@ URI_aarch64_neatvnc-devel = "${EPEL_MIRROR}/aarch64/Packages/n/neatvnc-devel-0.9
 SRC_URI:append = " ${URI_aarch64_neatvnc-devel}"
 SRC_URI[aarch64_neatvnc-devel.sha256sum] = "51724947a81e26cb195f93ecfe8f459f1606c2061da5930ceb778c541a2449b9"
 
-RDEPENDS:neatvnc:x86_64_v2 = " \
- aml \
- glibc \
- gmp \
- gnutls \
- libdrm \
- mesa-libgbm \
- nettle \
- pixman \
- turbojpeg \
- zlib-ng-compat \
-"
-RDEPENDS:neatvnc:aarch64 = " \
+RDEPENDS:neatvnc = " \
  aml \
  glibc \
  gmp \
@@ -67,21 +44,8 @@ RDEPENDS:neatvnc:aarch64 = " \
  pixman \
  turbojpeg \
  zlib-ng-compat \
-"
-RDEPENDS:neatvnc-devel:x86_64_v2 = " \
- aml-devel \
- gmp-devel \
- gnutls-devel \
- libdrm-devel \
- mesa-libgbm-devel \
- neatvnc \
- nettle-devel \
- pixman-devel \
- pkgconf-pkg-config \
- turbojpeg-devel \
- zlib-ng-compat-devel \
-"
-RDEPENDS:neatvnc-devel:aarch64 = " \
+ "
+RDEPENDS:neatvnc-devel = " \
  aml-devel \
  gmp-devel \
  gnutls-devel \
@@ -96,4 +60,4 @@ RDEPENDS:neatvnc-devel:aarch64 = " \
  pkgconf-pkg-config \
  turbojpeg-devel \
  zlib-ng-compat-devel \
-"
+ "

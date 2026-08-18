@@ -45,8 +45,8 @@ RDEPENDS:rust-below-view-devel = " \
  rust-chrono+serde-devel \
  rust-chrono+std-devel \
  rust-chrono-devel \
- rust-crossterm+default-devel \
- rust-crossterm+event-stream-devel \
+ rust-crossterm0.28+default-devel \
+ rust-crossterm0.28+event-stream-devel \
  rust-cursive0.20+crossterm-backend-devel \
  rust-cursive0.20-devel \
  rust-cursive_buffered_backend+default-devel \

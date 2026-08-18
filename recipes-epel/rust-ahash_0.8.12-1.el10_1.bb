@@ -136,7 +136,7 @@ RDEPENDS:rust-ahash+default-devel = " \
 RDEPENDS:rust-ahash+getrandom-devel = " \
  cargo \
  rust-ahash-devel \
- rust-getrandom+default-devel \
+ rust-getrandom0.3+default-devel \
  "
 RDEPENDS:rust-ahash+nightly-arm-aes-devel = " \
  cargo \

@@ -22,7 +22,9 @@ SRC_URI:append = " ${URI_aarch64_php-zetacomponents-base}"
 SRC_URI[aarch64_php-zetacomponents-base.sha256sum] = "c09255df95ac52077a5b8f7595d1d624f0a7950f772e6b7b56f57b24bdda411d"
 
 RDEPENDS:php-zetacomponents-base = " \
- php-common \
- php-process \
- php-xml \
+ virtual/php-pcre \
+ virtual/php-posix \
+ virtual/php-simplexml \
+ virtual/php-spl \
+ virtual/php_language__gt_5.3 \
  "

@@ -55,8 +55,8 @@ RDEPENDS:rust-lazy_static+default-devel = " \
 RDEPENDS:rust-lazy_static+spin-devel = " \
  cargo \
  rust-lazy_static-devel \
- rust-spin+once-devel \
- rust-spin-devel \
+ rust-spin0.9+once-devel \
+ rust-spin0.9-devel \
  "
 RDEPENDS:rust-lazy_static+spin_no_std-devel = " \
  cargo \

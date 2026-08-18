@@ -50,9 +50,9 @@ RDEPENDS:PDAL-devel = " \
  PDAL-libs \
  bash \
  cmake-filesystem \
- gdal-devel \
  libxml2-devel \
  pkgconf-pkg-config \
+ virtual/pkgconfig_gdal_ \
  "
 RDEPENDS:PDAL-libs = " \
  gdal-libs \

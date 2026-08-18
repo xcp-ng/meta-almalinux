@@ -62,7 +62,7 @@ RDEPENDS:rust-derive_builder_core+lib_has_std-devel = " \
  "
 RDEPENDS:rust-derive_builder_core-devel = " \
  cargo \
- rust-darling+default-devel \
+ rust-darling0.20+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  rust-syn+default-devel \

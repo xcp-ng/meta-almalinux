@@ -120,6 +120,6 @@ RDEPENDS:rust-sha-1+std-devel = " \
 RDEPENDS:rust-sha-1-devel = " \
  cargo \
  rust-cfg-if+default-devel \
- rust-cpufeatures+default-devel \
+ rust-cpufeatures0.2+default-devel \
  rust-digest+default-devel \
  "

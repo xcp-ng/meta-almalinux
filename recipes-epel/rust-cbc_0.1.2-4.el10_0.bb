@@ -69,12 +69,12 @@ SRC_URI[aarch64_rust-cbc-devel.sha256sum] = "d7f365c2adfe27ce0ea0f33f177ba3d1d4b
 RDEPENDS:rust-cbc+alloc-devel = " \
  cargo \
  rust-cbc-devel \
- rust-cipher+alloc-devel \
+ rust-cipher0.4+alloc-devel \
  "
 RDEPENDS:rust-cbc+block-padding-devel = " \
  cargo \
  rust-cbc-devel \
- rust-cipher+block-padding-devel \
+ rust-cipher0.4+block-padding-devel \
  "
 RDEPENDS:rust-cbc+default-devel = " \
  cargo \
@@ -85,15 +85,15 @@ RDEPENDS:rust-cbc+std-devel = " \
  cargo \
  rust-cbc+alloc-devel \
  rust-cbc-devel \
- rust-cipher+std-devel \
+ rust-cipher0.4+std-devel \
  "
 RDEPENDS:rust-cbc+zeroize-devel = " \
  cargo \
  rust-cbc-devel \
- rust-cipher+zeroize-devel \
+ rust-cipher0.4+zeroize-devel \
  "
 RDEPENDS:rust-cbc-devel = " \
  cargo \
  rust \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  "

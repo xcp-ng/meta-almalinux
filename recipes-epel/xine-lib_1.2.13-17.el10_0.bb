@@ -15,16 +15,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/x/xine-lib-1.2.13-17.el10_0.src.rpm;name=s
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "9240f1e31f02a8540b2dc792e513261c894b9647fa420b547223f78196173b6f"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - xine-lib: libavcodec.so.61()(64bit)
-# - xine-lib: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - xine-lib: libavformat.so.61()(64bit)
-# - xine-lib: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - xine-lib: libavutil.so.59()(64bit)
-# - xine-lib: libavutil.so.59(LIBAVUTIL_59)(64bit)
-# - xine-lib: libpostproc.so.58()(64bit)
-# - xine-lib: libpostproc.so.58(LIBPOSTPROC_58)(64bit)
-
 URI_x86_64_v2_xine-lib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_xine-lib}"
 SRC_URI[x86_64_v2_xine-lib.sha256sum] = "7d75e3d0a1a855d3c843f20add5c85570c4bd74166f1f0bc36c63f2806512e3d"
@@ -64,6 +54,9 @@ RDEPENDS:xine-lib:x86_64_v2 = " \
  libXv \
  liba52 \
  libaom \
+ libavcodec-free \
+ libavformat-free \
+ libavutil-free \
  libbluray \
  libcdio \
  libdav1d \
@@ -82,6 +75,7 @@ RDEPENDS:xine-lib:x86_64_v2 = " \
  libnfs \
  libogg \
  libpng \
+ libpostproc-free \
  libssh2 \
  libtheora \
  libv4l \

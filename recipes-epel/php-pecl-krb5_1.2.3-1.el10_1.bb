@@ -37,7 +37,11 @@ RDEPENDS:php-pecl-krb5 = " \
  libkadm5 \
  php-common \
  "
-RDEPENDS:php-pecl-krb5-devel = " \
- php-devel \
+RDEPENDS:php-pecl-krb5-devel:x86_64_v2 = " \
  php-pecl-krb5 \
- "
+ virtual/php-devel_x86-64_ \
+"
+RDEPENDS:php-pecl-krb5-devel:aarch64 = " \
+ php-pecl-krb5 \
+ virtual/php-devel_aarch-64_ \
+"

@@ -45,11 +45,11 @@ RDEPENDS:rust-des+default-devel = " \
  "
 RDEPENDS:rust-des+zeroize-devel = " \
  cargo \
- rust-cipher+zeroize-devel \
+ rust-cipher0.4+zeroize-devel \
  rust-des-devel \
  "
 RDEPENDS:rust-des-devel = " \
  cargo \
  rust \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  "

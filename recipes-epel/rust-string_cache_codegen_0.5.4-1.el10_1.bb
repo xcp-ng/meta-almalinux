@@ -36,8 +36,8 @@ RDEPENDS:rust-string_cache_codegen+default-devel = " \
  "
 RDEPENDS:rust-string_cache_codegen-devel = " \
  cargo \
- rust-phf_generator+default-devel \
- rust-phf_shared+default-devel \
+ rust-phf_generator0.11+default-devel \
+ rust-phf_shared0.11+default-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  "

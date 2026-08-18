@@ -16,13 +16,19 @@ SRC_URI[src.sha256sum] = "cbe30bcd744c1642a1f900476511d3ba15f93f849b732cceef7102
 URI_x86_64_v2_php-pecl-zip = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/php-pecl-zip-1.22.3-5.el10.x86_64_v2.rpm;name=x86_64_v2_php-pecl-zip;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-zip}"
 SRC_URI[x86_64_v2_php-pecl-zip.sha256sum] = "5871d03d8da8757475de01d586ccc91b36c129717d9c0253ffc9c813c07962d1"
+RPROVIDES:php-pecl-zip:x86_64_v2 = "virtual/php-zip"
 
 URI_aarch64_php-pecl-zip = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/php-pecl-zip-1.22.3-5.el10.aarch64.rpm;name=aarch64_php-pecl-zip;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-zip}"
 SRC_URI[aarch64_php-pecl-zip.sha256sum] = "ceabfe0580695bee73a9141a5f95f061768907efb0f35b7adb939259797fdfe1"
+RPROVIDES:php-pecl-zip:aarch64 = "virtual/php-zip"
 
 RDEPENDS:php-pecl-zip = " \
  glibc \
  libzip \
  php-common \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/php-zip"
+
+PROVIDES:append:aarch64 = " rpm/virtual/php-zip"

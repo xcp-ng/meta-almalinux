@@ -29,6 +29,7 @@ SRC_URI[aarch64_libgit2.sha256sum] = "0e1a8e015556088ec03139c4a9b4e2cbfc67719ae0
 URI_aarch64_libgit2-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libgit2-devel-1.7.2-4.el10_0.aarch64.rpm;name=aarch64_libgit2-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libgit2-devel}"
 SRC_URI[aarch64_libgit2-devel.sha256sum] = "09aa896516e9468354cd81f42abb431b7234484e39bd10bd0c3f8e7bde9d3747"
+RPROVIDES:libgit2-devel:aarch64 = "virtual/pkgconfig_libgit2_"
 
 RDEPENDS:libgit2 = " \
  glibc \
@@ -45,3 +46,5 @@ RDEPENDS:libgit2-devel = " \
  pkgconf-pkg-config \
  zlib-ng-compat-devel \
  "
+
+PROVIDES:append:aarch64 = " rpm/virtual/pkgconfig_libgit2_"

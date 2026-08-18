@@ -22,5 +22,6 @@ SRC_URI:append = " ${URI_aarch64_composer-generators}"
 SRC_URI[aarch64_composer-generators.sha256sum] = "5ed6b54061adda5a02c85fcf2175502b7f551d6e0165ae9d2ae263942dbab1e7"
 
 RDEPENDS:composer-generators = " \
- php-cli \
+ virtual//usr/bin/php \
+ virtual/php-cli \
  "

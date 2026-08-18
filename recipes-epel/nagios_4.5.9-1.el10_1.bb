@@ -73,8 +73,8 @@ RDEPENDS:nagios = " \
  nagios-plugins-users \
  nagios-selinux \
  openssl-libs \
- php \
  s-nail \
+ virtual/php \
  "
 RDEPENDS:nagios-common = " \
  shadow-utils \

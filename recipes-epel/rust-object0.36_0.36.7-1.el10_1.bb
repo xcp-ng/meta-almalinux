@@ -46,6 +46,7 @@ SRC_URI[x86_64_v2_rust-object0.36+archive-devel.sha256sum] = "6063362bdc430679ac
 URI_x86_64_v2_rust-object0.36+build-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-object0.36+build-devel-0.36.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-object0.36+build-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-object0.36+build-devel}"
 SRC_URI[x86_64_v2_rust-object0.36+build-devel.sha256sum] = "ab01c66ca5284c0781d694e5d59bdf9b537dceb355fc3eadd55750c3352403dd"
+RPROVIDES:rust-object0.36+build-devel:x86_64_v2 = "virtual/crate_object/build__ge_0.35.0_with_crate_object/build__lt_0.39.0~"
 
 URI_x86_64_v2_rust-object0.36+build_core-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-object0.36+build_core-devel-0.36.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-object0.36+build_core-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-object0.36+build_core-devel}"
@@ -74,6 +75,7 @@ SRC_URI[x86_64_v2_rust-object0.36+doc-devel.sha256sum] = "3a7b453e6bdb0ddd8bfc09
 URI_x86_64_v2_rust-object0.36+elf-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-object0.36+elf-devel-0.36.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-object0.36+elf-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-object0.36+elf-devel}"
 SRC_URI[x86_64_v2_rust-object0.36+elf-devel.sha256sum] = "35f3cc5c32a97341a2ec2173a00a69f2ff3e832924b57808c91d595c8a6cce96"
+RPROVIDES:rust-object0.36+elf-devel:x86_64_v2 = "virtual/crate_object/elf__ge_0.35.0_with_crate_object/elf__lt_0.39.0~"
 
 URI_x86_64_v2_rust-object0.36+macho-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-object0.36+macho-devel-0.36.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-object0.36+macho-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-object0.36+macho-devel}"
@@ -126,6 +128,7 @@ SRC_URI[x86_64_v2_rust-object0.36+xcoff-devel.sha256sum] = "0982323f722b37b4f805
 URI_x86_64_v2_rust-object0.36-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-object0.36-devel-0.36.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-object0.36-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-object0.36-devel}"
 SRC_URI[x86_64_v2_rust-object0.36-devel.sha256sum] = "83e359e9c1de7b9f4572a1bb752a663510df7d2739926d2ad5584af8a9967b7a"
+RPROVIDES:rust-object0.36-devel:x86_64_v2 = "virtual/crate_object__ge_0.35.0_with_crate_object__lt_0.39.0~"
 
 URI_aarch64_rust-object0.36+all-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36+all-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36+all-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36+all-devel}"
@@ -138,6 +141,7 @@ SRC_URI[aarch64_rust-object0.36+archive-devel.sha256sum] = "699cbaeb8f152d00159d
 URI_aarch64_rust-object0.36+build-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36+build-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36+build-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36+build-devel}"
 SRC_URI[aarch64_rust-object0.36+build-devel.sha256sum] = "0c4c794f81c191a400612091da19a4c5537623100f1ea98e266be054a1f5ced5"
+RPROVIDES:rust-object0.36+build-devel:aarch64 = "virtual/crate_object/build__ge_0.35.0_with_crate_object/build__lt_0.39.0~"
 
 URI_aarch64_rust-object0.36+build_core-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36+build_core-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36+build_core-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36+build_core-devel}"
@@ -166,6 +170,7 @@ SRC_URI[aarch64_rust-object0.36+doc-devel.sha256sum] = "34d6fb33e53fd883885304d5
 URI_aarch64_rust-object0.36+elf-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36+elf-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36+elf-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36+elf-devel}"
 SRC_URI[aarch64_rust-object0.36+elf-devel.sha256sum] = "3c068b8472c7e6bf1b91e642480ebbd0aaafa354433416228c4e6b7a89156c8f"
+RPROVIDES:rust-object0.36+elf-devel:aarch64 = "virtual/crate_object/elf__ge_0.35.0_with_crate_object/elf__lt_0.39.0~"
 
 URI_aarch64_rust-object0.36+macho-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36+macho-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36+macho-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36+macho-devel}"
@@ -218,6 +223,7 @@ SRC_URI[aarch64_rust-object0.36+xcoff-devel.sha256sum] = "31643d70d31b452b1d7e4e
 URI_aarch64_rust-object0.36-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-object0.36-devel-0.36.7-1.el10_1.noarch.rpm;name=aarch64_rust-object0.36-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-object0.36-devel}"
 SRC_URI[aarch64_rust-object0.36-devel.sha256sum] = "8ac181f2388c80de19b10550dab1e06bed40175af744a8063f2c848fcb4ddbde"
+RPROVIDES:rust-object0.36-devel:aarch64 = "virtual/crate_object__ge_0.35.0_with_crate_object__lt_0.39.0~"
 
 RDEPENDS:rust-object0.36+all-devel = " \
  cargo \
@@ -342,8 +348,8 @@ RDEPENDS:rust-object0.36+write-devel = " \
 RDEPENDS:rust-object0.36+write_core-devel = " \
  cargo \
  rust-crc32fast-devel \
- rust-hashbrown+default-hasher-devel \
- rust-hashbrown-devel \
+ rust-hashbrown0.15+default-hasher-devel \
+ rust-hashbrown0.15-devel \
  rust-indexmap-devel \
  rust-object0.36-devel \
  "
@@ -366,3 +372,7 @@ RDEPENDS:rust-object0.36-devel = " \
  rust \
  rust-memchr-devel \
  "
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_object/build__ge_0.35.0_with_crate_object/build__lt_0.39.0~ rpm/virtual/crate_object/elf__ge_0.35.0_with_crate_object/elf__lt_0.39.0~ rpm/virtual/crate_object__ge_0.35.0_with_crate_object__lt_0.39.0~"
+
+PROVIDES:append:aarch64 = " rpm/virtual/crate_object/build__ge_0.35.0_with_crate_object/build__lt_0.39.0~ rpm/virtual/crate_object/elf__ge_0.35.0_with_crate_object/elf__lt_0.39.0~ rpm/virtual/crate_object__ge_0.35.0_with_crate_object__lt_0.39.0~"

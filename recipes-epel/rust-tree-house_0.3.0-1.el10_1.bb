@@ -54,7 +54,7 @@ RDEPENDS:rust-tree-house-devel = " \
  cargo \
  rust \
  rust-arc-swap+default-devel \
- rust-hashbrown+default-devel \
+ rust-hashbrown0.15+default-devel \
  rust-kstring+default-devel \
  rust-once_cell+alloc-devel \
  rust-once_cell+std-devel \

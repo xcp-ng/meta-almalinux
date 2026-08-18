@@ -84,7 +84,7 @@ RDEPENDS:rust-chrono-tz+arbitrary-devel = " \
 RDEPENDS:rust-chrono-tz+case-insensitive-devel = " \
  cargo \
  rust-chrono-tz-devel \
- rust-phf+uncased-devel \
+ rust-phf0.11+uncased-devel \
  rust-uncased-devel \
  "
 RDEPENDS:rust-chrono-tz+default-devel = " \
@@ -110,5 +110,5 @@ RDEPENDS:rust-chrono-tz-devel = " \
  rust \
  rust-chrono-devel \
  rust-chrono-tz-build+default-devel \
- rust-phf-devel \
+ rust-phf0.11-devel \
  "

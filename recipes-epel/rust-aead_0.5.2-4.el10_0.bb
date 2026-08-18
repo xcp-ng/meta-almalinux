@@ -132,7 +132,7 @@ RDEPENDS:rust-aead+arrayvec-devel = " \
 RDEPENDS:rust-aead+blobby-devel = " \
  cargo \
  rust-aead-devel \
- rust-blobby+default-devel \
+ rust-blobby0.3+default-devel \
  "
 RDEPENDS:rust-aead+bytes-devel = " \
  cargo \
@@ -153,7 +153,7 @@ RDEPENDS:rust-aead+getrandom-devel = " \
  cargo \
  rust-aead+rand_core-devel \
  rust-aead-devel \
- rust-crypto-common+getrandom-devel \
+ rust-crypto-common0.1+getrandom-devel \
  "
 RDEPENDS:rust-aead+heapless-devel = " \
  cargo \
@@ -163,13 +163,13 @@ RDEPENDS:rust-aead+heapless-devel = " \
 RDEPENDS:rust-aead+rand_core-devel = " \
  cargo \
  rust-aead-devel \
- rust-crypto-common+rand_core-devel \
+ rust-crypto-common0.1+rand_core-devel \
  "
 RDEPENDS:rust-aead+std-devel = " \
  cargo \
  rust-aead+alloc-devel \
  rust-aead-devel \
- rust-crypto-common+std-devel \
+ rust-crypto-common0.1+std-devel \
  "
 RDEPENDS:rust-aead+stream-devel = " \
  cargo \
@@ -178,6 +178,6 @@ RDEPENDS:rust-aead+stream-devel = " \
 RDEPENDS:rust-aead-devel = " \
  cargo \
  rust \
- rust-crypto-common+default-devel \
+ rust-crypto-common0.1+default-devel \
  rust-generic-array-devel \
  "

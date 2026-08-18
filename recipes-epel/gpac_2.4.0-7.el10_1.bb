@@ -17,20 +17,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/g/gpac-2.4.0-7.el10_1.src.rpm;name=src;unp
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "d6f562b8ef27c0ec1da6c149ad131acc0782040ad8ac31d832e3002443af26f3"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - gpac-libs: libavcodec.so.61()(64bit)
-# - gpac-libs: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - gpac-libs: libavdevice.so.61()(64bit)
-# - gpac-libs: libavdevice.so.61(LIBAVDEVICE_61)(64bit)
-# - gpac-libs: libavfilter.so.10()(64bit)
-# - gpac-libs: libavfilter.so.10(LIBAVFILTER_10)(64bit)
-# - gpac-libs: libavformat.so.61()(64bit)
-# - gpac-libs: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - gpac-libs: libavutil.so.59()(64bit)
-# - gpac-libs: libavutil.so.59(LIBAVUTIL_59)(64bit)
-# - gpac-libs: libswscale.so.8()(64bit)
-# - gpac-libs: libswscale.so.8(LIBSWSCALE_8)(64bit)
-
 URI_x86_64_v2_gpac = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gpac-2.4.0-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gpac;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_gpac}"
 SRC_URI[x86_64_v2_gpac.sha256sum] = "e88d3f8a8478918e6751cae905e543e74d2ca4316d314693609963183b25ee2d"
@@ -81,33 +67,7 @@ RDEPENDS:gpac-devel = " \
  "
 RDEPENDS:gpac-doc = " \
  "
-RDEPENDS:gpac-libs:x86_64_v2 = " \
- freetype \
- glibc \
- libX11 \
- libXext \
- libXv \
- liba52 \
- libgcc \
- libglvnd-glx \
- libjpeg-turbo \
- libmad \
- libnghttp2 \
- libogg \
- libpng \
- libtheora \
- libvorbis \
- mesa-libGLU \
- openjpeg2 \
- openssl-libs \
- pipewire-jack-audio-connection-kit-libs \
- pulseaudio-libs \
- virtual/libSDL2-2.0.so.0___64bit_ \
- xvidcore \
- xz-libs \
- zlib-ng-compat \
-"
-RDEPENDS:gpac-libs:aarch64 = " \
+RDEPENDS:gpac-libs = " \
  freetype \
  glibc \
  libX11 \
@@ -134,11 +94,11 @@ RDEPENDS:gpac-libs:aarch64 = " \
  openssl-libs \
  pipewire-jack-audio-connection-kit-libs \
  pulseaudio-libs \
- virtual/libSDL2-2.0.so.0___64bit_ \
+ sdl2-compat \
  xvidcore \
  xz-libs \
  zlib-ng-compat \
-"
+ "
 RDEPENDS:gpac-static = " \
  gpac-devel \
  "

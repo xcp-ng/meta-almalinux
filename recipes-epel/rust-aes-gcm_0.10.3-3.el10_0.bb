@@ -169,7 +169,7 @@ RDEPENDS:rust-aes-gcm-devel = " \
  cargo \
  rust \
  rust-aead-devel \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  rust-ctr+default-devel \
  rust-ghash-devel \
  rust-subtle-devel \

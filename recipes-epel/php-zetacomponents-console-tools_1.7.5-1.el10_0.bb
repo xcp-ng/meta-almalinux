@@ -31,8 +31,11 @@ SRC_URI:append = " ${URI_aarch64_php-zetacomponents-console-tools-doc}"
 SRC_URI[aarch64_php-zetacomponents-console-tools-doc.sha256sum] = "3acac00f5252dcc723f46aecabb88499e6a05c1750b57338a50bc075fe7dfa9e"
 
 RDEPENDS:php-zetacomponents-console-tools = " \
- php-common \
  php-zetacomponents-base \
+ virtual/php-iconv \
+ virtual/php-pcre \
+ virtual/php-spl \
+ virtual/php_language__gt_5.3 \
  "
 RDEPENDS:php-zetacomponents-console-tools-doc = " \
  php-zetacomponents-console-tools \

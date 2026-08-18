@@ -45,12 +45,12 @@ RDEPENDS:rust-universal-hash+default-devel = " \
  "
 RDEPENDS:rust-universal-hash+std-devel = " \
  cargo \
- rust-crypto-common+std-devel \
+ rust-crypto-common0.1+std-devel \
  rust-universal-hash-devel \
  "
 RDEPENDS:rust-universal-hash-devel = " \
  cargo \
  rust \
- rust-crypto-common+default-devel \
+ rust-crypto-common0.1+default-devel \
  rust-subtle-devel \
  "

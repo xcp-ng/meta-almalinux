@@ -65,6 +65,6 @@ RDEPENDS:rust-aes-devel = " \
  cargo \
  rust \
  rust-cfg-if+default-devel \
- rust-cipher+default-devel \
- rust-cpufeatures+default-devel \
+ rust-cipher0.4+default-devel \
+ rust-cpufeatures0.2+default-devel \
  "

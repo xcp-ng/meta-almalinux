@@ -22,6 +22,7 @@ SRC_URI[x86_64_v2_apcu-panel.sha256sum] = "dc011fa8715dac1a5cc4dfaba16e0f95af4f6
 URI_x86_64_v2_php-pecl-apcu = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/php-pecl-apcu-5.1.23-5.el10.x86_64_v2.rpm;name=x86_64_v2_php-pecl-apcu;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-apcu}"
 SRC_URI[x86_64_v2_php-pecl-apcu.sha256sum] = "7e39ff5637a593b8f6c9a2bb615b2a16e5c474e4db56b293006ba2b4f747d1e0"
+RPROVIDES:php-pecl-apcu:x86_64_v2 = "virtual/php-pecl-apcu"
 
 URI_x86_64_v2_php-pecl-apcu-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/php-pecl-apcu-devel-5.1.23-5.el10.x86_64_v2.rpm;name=x86_64_v2_php-pecl-apcu-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-apcu-devel}"
@@ -34,6 +35,7 @@ SRC_URI[aarch64_apcu-panel.sha256sum] = "dc011fa8715dac1a5cc4dfaba16e0f95af4f672
 URI_aarch64_php-pecl-apcu = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/php-pecl-apcu-5.1.23-5.el10.aarch64.rpm;name=aarch64_php-pecl-apcu;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-apcu}"
 SRC_URI[aarch64_php-pecl-apcu.sha256sum] = "c77ead3fac957f1e14191addd681e55f71b0507a5d43fb349133d05dd08c923b"
+RPROVIDES:php-pecl-apcu:aarch64 = "virtual/php-pecl-apcu"
 
 URI_aarch64_php-pecl-apcu-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/php-pecl-apcu-devel-5.1.23-5.el10.aarch64.rpm;name=aarch64_php-pecl-apcu-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-apcu-devel}"
@@ -41,15 +43,23 @@ SRC_URI[aarch64_php-pecl-apcu-devel.sha256sum] = "29fef407be5ea055707de6ca5d9ac0
 
 RDEPENDS:apcu-panel = " \
  httpd \
- php-fpm \
- php-gd \
  php-pecl-apcu \
+ virtual/php-gd \
+ virtual/php_httpd_ \
  "
 RDEPENDS:php-pecl-apcu = " \
  glibc \
  php-common \
  "
-RDEPENDS:php-pecl-apcu-devel = " \
- php-devel \
+RDEPENDS:php-pecl-apcu-devel:x86_64_v2 = " \
  php-pecl-apcu \
- "
+ virtual/php-devel_x86-64_ \
+"
+RDEPENDS:php-pecl-apcu-devel:aarch64 = " \
+ php-pecl-apcu \
+ virtual/php-devel_aarch-64_ \
+"
+
+PROVIDES:append:x86_64_v2 = " rpm/virtual/php-pecl-apcu"
+
+PROVIDES:append:aarch64 = " rpm/virtual/php-pecl-apcu"

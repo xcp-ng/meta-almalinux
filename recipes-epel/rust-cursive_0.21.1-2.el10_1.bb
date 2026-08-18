@@ -82,7 +82,7 @@ RDEPENDS:rust-cursive+builder-devel = " \
  "
 RDEPENDS:rust-cursive+crossterm-backend-devel = " \
  cargo \
- rust-crossterm+default-devel \
+ rust-crossterm0.28+default-devel \
  rust-cursive-devel \
  "
 RDEPENDS:rust-cursive+default-devel = " \

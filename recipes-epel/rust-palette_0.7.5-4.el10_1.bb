@@ -200,8 +200,8 @@ RDEPENDS:rust-palette+named_from_str-devel = " \
 RDEPENDS:rust-palette+phf-devel = " \
  cargo \
  rust-palette-devel \
- rust-phf+macros-devel \
- rust-phf-devel \
+ rust-phf0.11+macros-devel \
+ rust-phf0.11-devel \
  "
 RDEPENDS:rust-palette+rand-devel = " \
  cargo \

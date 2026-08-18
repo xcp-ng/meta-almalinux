@@ -158,7 +158,7 @@ RDEPENDS:rust-multer-devel = " \
  rust-httparse+default-devel \
  rust-memchr+default-devel \
  rust-mime+default-devel \
- rust-spin+spin_mutex-devel \
- rust-spin-devel \
+ rust-spin0.9+spin_mutex-devel \
+ rust-spin0.9-devel \
  rust-version_check+default-devel \
  "

@@ -68,12 +68,12 @@ SRC_URI[aarch64_rust-ctr-devel.sha256sum] = "a8cb0ea7ce6e198d807caca4163c70e5ee5
 
 RDEPENDS:rust-ctr+alloc-devel = " \
  cargo \
- rust-cipher+alloc-devel \
+ rust-cipher0.4+alloc-devel \
  rust-ctr-devel \
  "
 RDEPENDS:rust-ctr+block-padding-devel = " \
  cargo \
- rust-cipher+block-padding-devel \
+ rust-cipher0.4+block-padding-devel \
  rust-ctr-devel \
  "
 RDEPENDS:rust-ctr+default-devel = " \
@@ -82,17 +82,17 @@ RDEPENDS:rust-ctr+default-devel = " \
  "
 RDEPENDS:rust-ctr+std-devel = " \
  cargo \
- rust-cipher+std-devel \
+ rust-cipher0.4+std-devel \
  rust-ctr+alloc-devel \
  rust-ctr-devel \
  "
 RDEPENDS:rust-ctr+zeroize-devel = " \
  cargo \
- rust-cipher+zeroize-devel \
+ rust-cipher0.4+zeroize-devel \
  rust-ctr-devel \
  "
 RDEPENDS:rust-ctr-devel = " \
  cargo \
  rust \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  "

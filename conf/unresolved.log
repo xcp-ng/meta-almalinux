@@ -1,24 +1,27 @@
 Requires that were seen as not satisfiable in original repo:
 
 For arch x86_64_v2:
+(crate(float16/default) >= 0.1.0 with crate(float16/default) < 0.2.0~)
+(crate(xcursor/default) >= 0.3.1 with crate(xcursor/default) < 0.4.0~)
+(crate(xcursor/default) >= 0.3.7 with crate(xcursor/default) < 0.4.0~)
+(crate(xml-rs/default) >= 0.8.16 with crate(xml-rs/default) < 0.9.0~)
+(crate(yaml-rust2/default) >= 0.10.0 with crate(yaml-rust2/default) < 0.11.0~)
 (fedora-release-common >= 38-0.23 if fedora-release-common)
-(kernel-64k-debug-modules-extra if kernel-64k-debug-modules-core)
 (kernel-64k-devel-matched if kernel-64k-core)
-(kernel-64k-modules-extra if kernel-64k-modules-core)
-(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-modules-core)
-(kernel-rt-64k-modules-extra if kernel-rt-64k-modules-core)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
-(kernel-rt-debug-modules-extra if kernel-rt-debug-modules-core)
 (kernel-rt-devel if kernel-rt-core)
-(kernel-rt-modules-extra if kernel-rt-modules-core)
+(pkgconfig(libgit2) >= 1.9.6 with pkgconfig(libgit2) < 1.10.0~)
+(python3.12dist(gitpython) < 3.2~~ with python3.12dist(gitpython) >= 3.1.43)
 (python3.12dist(semantic-version) < 3~~ with python3.12dist(semantic-version) >= 2.8.2)
 (python3.12dist(semantic-version) >= 2.10 with python3.12dist(semantic-version) < 2.11)
-(python3.12dist(uv) < 1~~ with python3.12dist(uv) >= 0.5.31)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
-(sdubby > 1.0-3 if sdubby)
+(python3.14-wheel-wheel if python3.14-setuptools-wheel < 71)
 (sway >= 1.6 if sway)
-/usr/bin/ffmpeg
-crate(tokei) = 13.0.0
+SDL2-devel(x86-64)
+augeas
+augeas-libs
+augeas-libs >= 1.12.1-0
+augeas-libs(x86-64) >= 1.7.0
 geos
 golang(github.com/alecthomas/units)
 golang(github.com/d2g/dhcp4)
@@ -33,30 +36,31 @@ golang(google.golang.org/genproto/googleapis/api/annotations)
 golang(gopkg.in/stack.v0)
 golang(gopkg.in/tomb.v1)
 golang(gopkg.in/tomb.v2)
-libCore.so.6.36()(64bit)
-libQMobipocket6.so.2()(64bit)
-libRIO.so.6.36()(64bit)
-libTree.so.6.36()(64bit)
-libavcodec.so.61()(64bit)
-libavcodec.so.61(LIBAVCODEC_61)(64bit)
-libavdevice.so.61()(64bit)
-libavdevice.so.61(LIBAVDEVICE_61)(64bit)
-libavfilter.so.10()(64bit)
-libavfilter.so.10(LIBAVFILTER_10)(64bit)
-libavformat.so.61()(64bit)
-libavformat.so.61(LIBAVFORMAT_61)(64bit)
-libavutil.so.59()(64bit)
-libavutil.so.59(LIBAVUTIL_59)(64bit)
+golang(rsc.io/qr)
+kde-settings-plasma
+kde-settings-sddm
+libLLVM.so.20.0git()(64bit)
+libLLVM.so.20.0git(LLVM_20.0)(64bit)
+libXrdCl.so.6()(64bit)
+libXrdPosix.so.6()(64bit)
+libXrdServer.so.6()(64bit)
+libXrdUtils.so.6()(64bit)
+libbson-1.0.so.0()(64bit)
+libclang-cpp.so.20.0git()(64bit)
+libclang-cpp.so.20.0git(LLVM_20.0)(64bit)
+libff.so.0.0.0()(64bit)
 libgeos.so.3.13.1()(64bit)
 libgeos_c.so.1()(64bit)
-libgps.so.30()(64bit)
-libpostproc.so.58()(64bit)
-libpostproc.so.58(LIBPOSTPROC_58)(64bit)
-libswresample.so.5()(64bit)
-libswresample.so.5(LIBSWRESAMPLE_5)(64bit)
-libswscale.so.8()(64bit)
-libswscale.so.8(LIBSWSCALE_8)(64bit)
+libgit2.so.1.9()(64bit)
+libgps.so.31()(64bit)
+libmongoc-1.0.so.0()(64bit)
+libnutclient.so.2()(64bit)
+libnutclientstub.so.1()(64bit)
+libnutscan.so.1()(64bit)
+libpystring.so.1()(64bit)
+libubloxcfg.so.0.0.0()(64bit)
 libupsclient.so.6()(64bit)
+nut-client = 2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
 ocaml(CamlinternalOO) = bf3206c1e533a97ee4e00a76bfe1dae6
 ocaml(Stdlib) = e8d9af458547c45080a71b9a6eaed658
@@ -80,33 +84,34 @@ ocamlx(Stdlib__Array) = b3215f99afe054938b4b66df456093cb
 ocamlx(Stdlib__Bigarray) = 2fb6f37865dd77a707635669254911e1
 ocamlx(Stdlib__Callback) = bafc96ea60f2aa399fe753ac0e40f764
 ocamlx(Stdlib__Gc) = 197914694cd716338b4da966236687f4
-pkgconfig(libavcodec)
-pkgconfig(libavcodec) >= 60.31.102
-pkgconfig(libavdevice) >= 60.3.100
-pkgconfig(libavfilter)
-pkgconfig(libavfilter) >= 9.12.100
-pkgconfig(libavformat) >= 60.16.100
-pkgconfig(libavutil)
-pkgconfig(libavutil) >= 58.29.100
-pkgconfig(libswresample) >= 4.12.100
-pkgconfig(libswscale) >= 7.5.100
-python3.12dist(uv) >= 0.4
-python3.12dist(uv) >= 0.5.23
+pipewire-libs(x86-64) = 1.4.9-1.el10
+pkgconfig(libbson-1.0)
+pkgconfig(libgit2) >= 1.9
+pkgconfig(sdl2)
+pkgconfig(sdl2) >= 2.0.10
+pkgconfig(sdl2) >= 2.0.9
+python3-GitPython
+python3.12dist(gitpython)
+python3.12dist(gitpython) >= 3.1.44
+python3dist(gitpython)
 sshpass
+ubloxcfg >= 1.16-1.20260223git499048b
+xrootd-server
 
 
 For arch aarch64:
 (fedora-release-common >= 38-0.23 if fedora-release-common)
-(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-modules-core)
-(kernel-rt-64k-modules-extra if kernel-rt-64k-modules-core)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
-(kernel-rt-debug-modules-extra if kernel-rt-debug-modules-core)
 (kernel-rt-devel if kernel-rt-core)
-(kernel-rt-modules-extra if kernel-rt-modules-core)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
-(sdubby > 1.0-3 if sdubby)
+(python3.14-wheel-wheel if python3.14-setuptools-wheel < 71)
 (sway >= 1.6 if sway)
 (syslinux if (filesystem.x86_64 or filesystem.i686))
+SDL2-devel(aarch-64)
+augeas
+augeas-libs
+augeas-libs >= 1.12.1-0
+augeas-libs(aarch-64) >= 1.7.0
 mingw32(libstdc++-6.dll)
 mingw64(libstdc++-6.dll)
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
@@ -132,5 +137,10 @@ ocamlx(Stdlib__Array) = b3215f99afe054938b4b66df456093cb
 ocamlx(Stdlib__Bigarray) = 2fb6f37865dd77a707635669254911e1
 ocamlx(Stdlib__Callback) = bafc96ea60f2aa399fe753ac0e40f764
 ocamlx(Stdlib__Gc) = 197914694cd716338b4da966236687f4
-virt-v2v = 1:2.8.1-22.el10_1
+pipewire-libs(aarch-64) = 1.4.9-1.el10
+pkgconfig(sdl2)
+pkgconfig(sdl2) >= 2.0.10
+pkgconfig(sdl2) >= 2.0.9
+python3.12dist(archspec) >= 0.2.3
+virt-v2v = 1:2.10.0-20.el10_2
 

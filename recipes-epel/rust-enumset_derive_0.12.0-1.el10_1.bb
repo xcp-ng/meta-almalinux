@@ -76,7 +76,7 @@ RDEPENDS:rust-enumset_derive+std_deprecation_warning-devel = " \
  "
 RDEPENDS:rust-enumset_derive-devel = " \
  cargo \
- rust-darling-devel \
+ rust-darling0.20-devel \
  rust-proc-macro2+default-devel \
  rust-quote+default-devel \
  rust-syn+default-devel \

@@ -46,7 +46,7 @@ RDEPENDS:rust-lru0.13+default-devel = " \
  "
 RDEPENDS:rust-lru0.13+hashbrown-devel = " \
  cargo \
- rust-hashbrown+default-devel \
+ rust-hashbrown0.15+default-devel \
  rust-lru0.13-devel \
  "
 RDEPENDS:rust-lru0.13-devel = " \

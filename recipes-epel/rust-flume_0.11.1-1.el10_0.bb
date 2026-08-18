@@ -138,6 +138,6 @@ RDEPENDS:rust-flume+spin-devel = " \
  "
 RDEPENDS:rust-flume-devel = " \
  cargo \
- rust-spin+default-devel \
- rust-spin+mutex-devel \
+ rust-spin0.9+default-devel \
+ rust-spin0.9+mutex-devel \
  "

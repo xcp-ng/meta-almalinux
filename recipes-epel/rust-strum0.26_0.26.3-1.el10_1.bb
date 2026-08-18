@@ -78,8 +78,8 @@ RDEPENDS:rust-strum0.26+derive-devel = " \
  "
 RDEPENDS:rust-strum0.26+phf-devel = " \
  cargo \
- rust-phf+default-devel \
- rust-phf+macros-devel \
+ rust-phf0.11+default-devel \
+ rust-phf0.11+macros-devel \
  rust-strum0.26-devel \
  "
 RDEPENDS:rust-strum0.26+std-devel = " \

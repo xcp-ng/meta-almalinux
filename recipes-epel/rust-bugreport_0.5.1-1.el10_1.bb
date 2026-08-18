@@ -78,7 +78,7 @@ SRC_URI[aarch64_rust-bugreport-devel.sha256sum] = "21644ea338e9b0f46c25f0b6e239d
 RDEPENDS:rust-bugreport+collector_operating_system-devel = " \
  cargo \
  rust-bugreport-devel \
- rust-sysinfo+default-devel \
+ rust-sysinfo0.33+default-devel \
  "
 RDEPENDS:rust-bugreport+default-devel = " \
  cargo \

@@ -80,6 +80,6 @@ RDEPENDS:rust-unicode_names2_generator-devel = " \
  rust \
  rust-getopts+default-devel \
  rust-log+default-devel \
- rust-phf_codegen+default-devel \
+ rust-phf_codegen0.11+default-devel \
  rust-rand0.8+default-devel \
  "

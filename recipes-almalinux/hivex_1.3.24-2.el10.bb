@@ -158,4 +158,5 @@ RDEPENDS:ruby-hivex = " \
  hivex-libs \
  ruby \
  ruby-libs \
+ virtual/ruby_release_ \
  "

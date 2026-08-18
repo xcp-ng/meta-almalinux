@@ -54,16 +54,16 @@ RDEPENDS:rust-salsa20+default-devel = " \
  "
 RDEPENDS:rust-salsa20+std-devel = " \
  cargo \
- rust-cipher+std-devel \
+ rust-cipher0.4+std-devel \
  rust-salsa20-devel \
  "
 RDEPENDS:rust-salsa20+zeroize-devel = " \
  cargo \
- rust-cipher+zeroize-devel \
+ rust-cipher0.4+zeroize-devel \
  rust-salsa20-devel \
  "
 RDEPENDS:rust-salsa20-devel = " \
  cargo \
  rust \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  "

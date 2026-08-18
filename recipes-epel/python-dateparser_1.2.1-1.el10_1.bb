@@ -16,6 +16,9 @@ URI_src = "${EPELSRC_MIRROR}/Packages/p/python-dateparser-1.2.1-1.el10_1.src.rpm
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "717e74b52bac6568e7a4d38bb9a299a6650c556158f8d56a9a6f27df4ac0c8bb"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - python3-dateparser-scripts: python3dist(gitpython)
+
 URI_x86_64_v2_python-dateparser-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-dateparser-doc-1.2.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python-dateparser-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-dateparser-doc}"
 SRC_URI[x86_64_v2_python-dateparser-doc.sha256sum] = "a2e38901dc6319312e11ea060fb544426bca2e134a3e18facb2166806cdc6988"
@@ -62,11 +65,18 @@ RDEPENDS:python3-dateparser+langdetect = " \
  python3-dateparser \
  python3-langdetect \
  "
-RDEPENDS:python3-dateparser-scripts = " \
+RDEPENDS:python3-dateparser-scripts:x86_64_v2 = " \
+ python3 \
+ python3-dateparser \
+ python3-parsel \
+ python3-requests \
+ python3-ruamel-yaml \
+"
+RDEPENDS:python3-dateparser-scripts:aarch64 = " \
  python3 \
  python3-GitPython \
  python3-dateparser \
  python3-parsel \
  python3-requests \
  python3-ruamel-yaml \
- "
+"

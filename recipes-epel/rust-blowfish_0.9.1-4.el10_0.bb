@@ -59,11 +59,11 @@ RDEPENDS:rust-blowfish+default-devel = " \
 RDEPENDS:rust-blowfish+zeroize-devel = " \
  cargo \
  rust-blowfish-devel \
- rust-cipher+zeroize-devel \
+ rust-cipher0.4+zeroize-devel \
  "
 RDEPENDS:rust-blowfish-devel = " \
  cargo \
  rust \
  rust-byteorder-devel \
- rust-cipher+default-devel \
+ rust-cipher0.4+default-devel \
  "

@@ -32,9 +32,9 @@ SRC_URI[aarch64_rubygem-kramdown-doc.sha256sum] = "0a0247331f45eea7837874157798f
 
 RDEPENDS:rubygem-kramdown = " \
  ruby \
- ruby-libs \
  rubygem-rexml \
  rubygems \
+ virtual/ruby_release_ \
  "
 RDEPENDS:rubygem-kramdown-doc = " \
  rubygem-kramdown \

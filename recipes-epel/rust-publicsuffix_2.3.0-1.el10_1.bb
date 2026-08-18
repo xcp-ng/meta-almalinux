@@ -96,8 +96,8 @@ RDEPENDS:rust-publicsuffix+default-devel = " \
  "
 RDEPENDS:rust-publicsuffix+hashbrown-devel = " \
  cargo \
- rust-hashbrown+default-devel \
- rust-hashbrown+inline-more-devel \
+ rust-hashbrown0.15+default-devel \
+ rust-hashbrown0.15+inline-more-devel \
  rust-publicsuffix-devel \
  "
 RDEPENDS:rust-publicsuffix+idna-devel = " \

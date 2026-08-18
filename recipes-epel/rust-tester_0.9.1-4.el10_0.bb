@@ -66,5 +66,5 @@ RDEPENDS:rust-tester-devel = " \
  rust-getopts+default-devel \
  rust-libc-devel \
  rust-num_cpus+default-devel \
- rust-term+default-devel \
+ rust-term0.7+default-devel \
  "

@@ -7,6 +7,7 @@ PV = "3.2.4"
 PR = "1.el10"
 PACKAGES = " \
  SDL3 \
+ SDL3-devel \
  "
 
 URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/SDL3-3.2.4-1.el10.src.rpm;name=src;unpack=0"
@@ -17,11 +18,28 @@ URI_x86_64_v2_SDL3 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/SDL3-3
 SRC_URI:append = " ${URI_x86_64_v2_SDL3}"
 SRC_URI[x86_64_v2_SDL3.sha256sum] = "3553c4b8bf6d7627c0885cfcb4efa668c54544d41695866e24579f2f4b7994ff"
 
+URI_x86_64_v2_SDL3-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/SDL3-devel-3.2.4-1.el10.x86_64_v2.rpm;name=x86_64_v2_SDL3-devel;unpack=0"
+SRC_URI:append = " ${URI_x86_64_v2_SDL3-devel}"
+SRC_URI[x86_64_v2_SDL3-devel.sha256sum] = "ff20d297d179d830036721928077464ea821cae2dabc59587b8ce884acd975a7"
+
 URI_aarch64_SDL3 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/SDL3-3.2.4-1.el10.aarch64.rpm;name=aarch64_SDL3;unpack=0"
 SRC_URI:append = " ${URI_aarch64_SDL3}"
 SRC_URI[aarch64_SDL3.sha256sum] = "5943232f1ab6930ce55483d85b02bc406d72a3fe6f8e5e41e8b9acecf3b24001"
 
+URI_aarch64_SDL3-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/SDL3-devel-3.2.4-1.el10.aarch64.rpm;name=aarch64_SDL3-devel;unpack=0"
+SRC_URI:append = " ${URI_aarch64_SDL3-devel}"
+SRC_URI[aarch64_SDL3-devel.sha256sum] = "c89330b86fdcb994b0c1bd2bbd5832859bca2cf09d4e0da44c8b01a2ee4ff4c6"
+
 RDEPENDS:SDL3 = " \
  glibc \
  libdecor \
+ "
+RDEPENDS:SDL3-devel = " \
+ SDL3 \
+ cmake-filesystem \
+ libX11-devel \
+ libglvnd-devel \
+ mesa-libGLU-devel \
+ pkgconf-pkg-config \
+ xorg-x11-proto-devel \
  "

@@ -16,18 +16,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/n/notcurses-3.0.14-2.el10_1.src.rpm;name=s
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "e546dd3fef0a1f6739b7323d8e3bc22722e3d11c9fa100d7d0439f3f95088acb"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - notcurses: libavcodec.so.61()(64bit)
-# - notcurses: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - notcurses: libavdevice.so.61()(64bit)
-# - notcurses: libavdevice.so.61(LIBAVDEVICE_61)(64bit)
-# - notcurses: libavformat.so.61()(64bit)
-# - notcurses: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - notcurses: libavutil.so.59()(64bit)
-# - notcurses: libavutil.so.59(LIBAVUTIL_59)(64bit)
-# - notcurses: libswscale.so.8()(64bit)
-# - notcurses: libswscale.so.8(LIBSWSCALE_8)(64bit)
-
 URI_x86_64_v2_notcurses = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/notcurses-3.0.14-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_notcurses;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_notcurses}"
 SRC_URI[x86_64_v2_notcurses.sha256sum] = "87b8bf32340634c3ae6dd4e31001b2f7df106c3a014dd96d50c3ae980f101501"
@@ -60,15 +48,7 @@ URI_aarch64_notcurses-utils = "${EPEL_MIRROR}/aarch64/Packages/n/notcurses-utils
 SRC_URI:append = " ${URI_aarch64_notcurses-utils}"
 SRC_URI[aarch64_notcurses-utils.sha256sum] = "db2f121b3aed8691804d099ecb95eed596a07bf823c39b68676dc2c4235aafa6"
 
-RDEPENDS:notcurses:x86_64_v2 = " \
- glibc \
- libdeflate \
- libgcc \
- libstdc++ \
- libunistring \
- ncurses-libs \
-"
-RDEPENDS:notcurses:aarch64 = " \
+RDEPENDS:notcurses = " \
  glibc \
  libavcodec-free \
  libavdevice-free \
@@ -80,7 +60,7 @@ RDEPENDS:notcurses:aarch64 = " \
  libswscale-free \
  libunistring \
  ncurses-libs \
-"
+ "
 RDEPENDS:notcurses-devel = " \
  cmake-filesystem \
  ncurses-devel \

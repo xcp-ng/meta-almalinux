@@ -23,5 +23,7 @@ SRC_URI[aarch64_php-theseer-directoryscanner.sha256sum] = "925c4bed48d40929bb22d
 
 RDEPENDS:php-theseer-directoryscanner = " \
  bash \
- php-common \
+ virtual/php-fileinfo \
+ virtual/php-spl \
+ virtual/php_language__ge_5.3.1 \
  "

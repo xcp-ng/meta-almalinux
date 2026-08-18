@@ -25,8 +25,13 @@ SRC_URI[aarch64_php-pear.sha256sum] = "761cca1aea570919fed2b9b0aa6b292e68dbad671
 RDEPENDS:php-pear = " \
  bash \
  httpd-filesystem \
- php-cli \
- php-common \
- php-process \
- php-xml \
+ virtual/php-bz2 \
+ virtual/php-cli \
+ virtual/php-ftp \
+ virtual/php-pcre \
+ virtual/php-posix \
+ virtual/php-tokenizer \
+ virtual/php-xml \
+ virtual/php-zlib \
+ virtual/php_language__gt_5.4 \
  "

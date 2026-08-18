@@ -41,9 +41,9 @@ RDEPENDS:rust-async_http_range_reader-devel = " \
  rust-http-content-range+default-devel \
  rust-itertools0.13+default-devel \
  rust-memmap2+default-devel \
- rust-reqwest+stream-devel \
- rust-reqwest-devel \
- rust-reqwest-middleware+default-devel \
+ rust-reqwest-middleware0.4+default-devel \
+ rust-reqwest0.12+stream-devel \
+ rust-reqwest0.12-devel \
  rust-thiserror1+default-devel \
  rust-tokio-devel \
  rust-tokio-stream+default-devel \

@@ -14,6 +14,12 @@ URI_src = "${EPELSRC_MIRROR}/Packages/s/SDL2_mixer-2.8.0-2.el10_0.src.rpm;name=s
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "c6b19583ecb0b2d1fd581d45027ca7c32e15f0b0fccecd3883244b52a5eaebea"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - SDL2_mixer-devel: pkgconfig(sdl2) >= 2.0.9
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - SDL2_mixer-devel: pkgconfig(sdl2) >= 2.0.9
+
 URI_x86_64_v2_SDL2_mixer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/SDL2_mixer-2.8.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_SDL2_mixer;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_SDL2_mixer}"
 SRC_URI[x86_64_v2_SDL2_mixer.sha256sum] = "ed32e486d8d9b7bb6c1e99c2d61b8d2c8d2a23f8d40eaf21b5b11bbffbbb46ba"
@@ -32,10 +38,9 @@ SRC_URI[aarch64_SDL2_mixer-devel.sha256sum] = "004e0b2c0d7e2567cca932dc16e88bb8b
 
 RDEPENDS:SDL2_mixer = " \
  glibc \
- virtual/libSDL2-2.0.so.0___64bit_ \
+ sdl2-compat \
  "
 RDEPENDS:SDL2_mixer-devel = " \
- SDL2-devel \
  SDL2_mixer \
  pkgconf-pkg-config \
  "

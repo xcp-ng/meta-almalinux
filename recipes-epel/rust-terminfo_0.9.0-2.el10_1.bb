@@ -39,6 +39,6 @@ RDEPENDS:rust-terminfo-devel = " \
  rust-fnv+default-devel \
  rust-nom7+std-devel \
  rust-nom7-devel \
- rust-phf+default-devel \
- rust-phf_codegen+default-devel \
+ rust-phf0.11+default-devel \
+ rust-phf_codegen0.11+default-devel \
  "

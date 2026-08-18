@@ -23,6 +23,6 @@ SRC_URI[aarch64_snmpcheck.sha256sum] = "4e57b638fb226fb5f26e741ba8786fd55505b906
 
 RDEPENDS:snmpcheck = " \
  ruby \
- ruby-libs \
  rubygem-snmp \
+ virtual/ruby_release_ \
  "

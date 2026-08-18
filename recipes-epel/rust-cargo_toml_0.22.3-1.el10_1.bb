@@ -52,5 +52,5 @@ RDEPENDS:rust-cargo_toml-devel = " \
  rust \
  rust-serde+default-devel \
  rust-serde+derive-devel \
- rust-toml+default-devel \
+ rust-toml0.9+default-devel \
  "

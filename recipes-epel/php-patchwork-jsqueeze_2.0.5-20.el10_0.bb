@@ -22,5 +22,6 @@ SRC_URI:append = " ${URI_aarch64_php-patchwork-jsqueeze}"
 SRC_URI[aarch64_php-patchwork-jsqueeze.sha256sum] = "61f5d38e5e90fba0679d636d53df205cd8c07bcd6bf6cd1269d5f70bf79304a3"
 
 RDEPENDS:php-patchwork-jsqueeze = " \
- php-common \
+ virtual/php-pcre \
+ virtual/php_language__ge_5.3.0 \
  "

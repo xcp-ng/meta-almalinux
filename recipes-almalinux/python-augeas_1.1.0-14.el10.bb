@@ -13,6 +13,12 @@ URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-augeas-1.1.0-
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "c6b19d214c9016a0afb86ef9a9a599d71cedc9e69f056ce2fafed3eeee07bf1d"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - python3-augeas: augeas-libs
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - python3-augeas: augeas-libs
+
 URI_x86_64_v2_python3-augeas = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-augeas-1.1.0-14.el10.noarch.rpm;name=x86_64_v2_python3-augeas;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-augeas}"
 SRC_URI[x86_64_v2_python3-augeas.sha256sum] = "835df9445dcc8dfef16e01ae0a3445b9bd0e63fb1216e2c49b0009674d6e25d5"
@@ -22,7 +28,6 @@ SRC_URI:append = " ${URI_aarch64_python3-augeas}"
 SRC_URI[aarch64_python3-augeas.sha256sum] = "835df9445dcc8dfef16e01ae0a3445b9bd0e63fb1216e2c49b0009674d6e25d5"
 
 RDEPENDS:python3-augeas = " \
- augeas-libs \
  python3 \
  python3-cffi \
  "

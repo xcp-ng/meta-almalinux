@@ -135,12 +135,12 @@ RDEPENDS:rust-digest+alloc-devel = " \
  "
 RDEPENDS:rust-digest+blobby-devel = " \
  cargo \
- rust-blobby+default-devel \
+ rust-blobby0.3+default-devel \
  rust-digest-devel \
  "
 RDEPENDS:rust-digest+block-buffer-devel = " \
  cargo \
- rust-block-buffer+default-devel \
+ rust-block-buffer0.10+default-devel \
  rust-digest-devel \
  "
 RDEPENDS:rust-digest+const-oid-devel = " \
@@ -175,12 +175,12 @@ RDEPENDS:rust-digest+oid-devel = " \
  "
 RDEPENDS:rust-digest+rand_core-devel = " \
  cargo \
- rust-crypto-common+rand_core-devel \
+ rust-crypto-common0.1+rand_core-devel \
  rust-digest-devel \
  "
 RDEPENDS:rust-digest+std-devel = " \
  cargo \
- rust-crypto-common+std-devel \
+ rust-crypto-common0.1+std-devel \
  rust-digest+alloc-devel \
  rust-digest-devel \
  "
@@ -191,5 +191,5 @@ RDEPENDS:rust-digest+subtle-devel = " \
  "
 RDEPENDS:rust-digest-devel = " \
  cargo \
- rust-crypto-common+default-devel \
+ rust-crypto-common0.1+default-devel \
  "

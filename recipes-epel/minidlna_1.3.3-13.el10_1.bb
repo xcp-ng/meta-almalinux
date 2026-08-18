@@ -13,12 +13,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/m/minidlna-1.3.3-13.el10_1.src.rpm;name=sr
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "de4271e66ca597147a560eca226de1915293ba1c28adae6aa9ec76ac07c9fe5a"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - minidlna: libavformat.so.61()(64bit)
-# - minidlna: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - minidlna: libavutil.so.59()(64bit)
-# - minidlna: libavutil.so.59(LIBAVUTIL_59)(64bit)
-
 URI_x86_64_v2_minidlna = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/minidlna-1.3.3-13.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_minidlna;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_minidlna}"
 SRC_URI[x86_64_v2_minidlna.sha256sum] = "fc216da9933e46ebd52586681d09727418988a385a1fb84298801b5ff59cc8df"
@@ -27,20 +21,7 @@ URI_aarch64_minidlna = "${EPEL_MIRROR}/aarch64/Packages/m/minidlna-1.3.3-13.el10
 SRC_URI:append = " ${URI_aarch64_minidlna}"
 SRC_URI[aarch64_minidlna.sha256sum] = "518926483efffaafe111ed71d8a49eb59e963390f1727da0758e8df051801cc0"
 
-RDEPENDS:minidlna:x86_64_v2 = " \
- avahi-libs \
- bash \
- flac-libs \
- glibc \
- libexif \
- libid3tag \
- libjpeg-turbo \
- libogg \
- libvorbis \
- sqlite-libs \
- systemd \
-"
-RDEPENDS:minidlna:aarch64 = " \
+RDEPENDS:minidlna = " \
  avahi-libs \
  bash \
  flac-libs \
@@ -54,4 +35,4 @@ RDEPENDS:minidlna:aarch64 = " \
  libvorbis \
  sqlite-libs \
  systemd \
-"
+ "

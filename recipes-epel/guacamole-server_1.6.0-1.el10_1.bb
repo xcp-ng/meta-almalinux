@@ -20,16 +20,6 @@ URI_src = "${EPELSRC_MIRROR}/Packages/g/guacamole-server-1.6.0-1.el10_1.src.rpm;
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "7453338edc8e6d06ba4cbe968f38717f0909db70e49cf85e00d5961fd892c746"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - guacd: libavcodec.so.61()(64bit)
-# - guacd: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - guacd: libavformat.so.61()(64bit)
-# - guacd: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - guacd: libavutil.so.59()(64bit)
-# - guacd: libavutil.so.59(LIBAVUTIL_59)(64bit)
-# - guacd: libswscale.so.8()(64bit)
-# - guacd: libswscale.so.8(LIBSWSCALE_8)(64bit)
-
 URI_x86_64_v2_guacd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/guacd-1.6.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_guacd;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_guacd}"
 SRC_URI[x86_64_v2_guacd.sha256sum] = "a12be1048ea40aa095a33672898c540231be3d21c365cf09cec3fb3287c3c616"
@@ -94,18 +84,7 @@ URI_aarch64_libguac-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libguac-devel-1.6
 SRC_URI:append = " ${URI_aarch64_libguac-devel}"
 SRC_URI[aarch64_libguac-devel.sha256sum] = "e5ebf9037371877b320bde3d8a568b0df9c7bc230ce7ccee5b04875d07684b37"
 
-RDEPENDS:guacd:x86_64_v2 = " \
- bash \
- cairo \
- glibc \
- libguac \
- libjpeg-turbo \
- libwebp \
- openssl-libs \
- shadow-utils \
- systemd \
-"
-RDEPENDS:guacd:aarch64 = " \
+RDEPENDS:guacd = " \
  bash \
  cairo \
  glibc \
@@ -119,7 +98,7 @@ RDEPENDS:guacd:aarch64 = " \
  openssl-libs \
  shadow-utils \
  systemd \
-"
+ "
 RDEPENDS:libguac = " \
  cairo \
  glib2 \
