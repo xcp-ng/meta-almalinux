@@ -18,9 +18,17 @@ SRC_URI[x86_64_v2_php-pecl-pq.sha256sum] = "8589adea941d07390a7c35993fc5ecdbbc4f
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-pq-2.2.3-5.el10_0.aarch64.rpm;name=aarch64_php-pecl-pq;unpack=0"
 SRC_URI[aarch64_php-pecl-pq.sha256sum] = "cc15a71944717e067488f88aab280bea414d7124747eaa2bd1e74f0191d85743"
 
-RDEPENDS:php-pecl-pq = " \
+RDEPENDS:php-pecl-pq:x86_64_v2 = " \
  glibc \
  libpq \
  php-common \
  php-pecl-raphf \
- "
+ virtual/php-json_x86-64_ \
+"
+RDEPENDS:php-pecl-pq:aarch64 = " \
+ glibc \
+ libpq \
+ php-common \
+ php-pecl-raphf \
+ virtual/php-json_aarch-64_ \
+"

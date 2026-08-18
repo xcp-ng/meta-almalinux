@@ -14,6 +14,7 @@ SRC_URI[src.sha256sum] = "ac2cb513c3bf69ae8a6497d844dec7712c8f99c1207b2f1d2b86d5
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/picocom-2024.07-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_picocom;unpack=0"
 SRC_URI[x86_64_v2_picocom.sha256sum] = "5d1d30aedd7c53488f16425754b65da8db5e3354182a1e0a35f3b6b3d1dc95bc"
+RPROVIDES:picocom:append:x86_64_v2 = " virtual/group_dialout_"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/picocom-2024.07-3.el10_1.aarch64.rpm;name=aarch64_picocom;unpack=0"
 SRC_URI[aarch64_picocom.sha256sum] = "fe18b7720f4316437d2a05ad72872b724634134d0553999ebae0c97fb39c1ebb"

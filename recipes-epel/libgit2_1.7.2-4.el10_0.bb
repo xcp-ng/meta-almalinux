@@ -18,12 +18,14 @@ SRC_URI[x86_64_v2_libgit2.sha256sum] = "1e34beeb8ec10438372c334672f8ac62e423ff42
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libgit2-devel-1.7.2-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libgit2-devel;unpack=0"
 SRC_URI[x86_64_v2_libgit2-devel.sha256sum] = "b9b01ba82c00167c252c307b55a9ecfe7f18c2d0bf87cea4502eb5dd4e22930a"
+RPROVIDES:libgit2-devel:append:x86_64_v2 = " virtual/pkgconfig_libgit2_"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libgit2-1.7.2-4.el10_0.aarch64.rpm;name=aarch64_libgit2;unpack=0"
 SRC_URI[aarch64_libgit2.sha256sum] = "0e1a8e015556088ec03139c4a9b4e2cbfc67719ae0397e47ae1b2ee5469721bf"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libgit2-devel-1.7.2-4.el10_0.aarch64.rpm;name=aarch64_libgit2-devel;unpack=0"
 SRC_URI[aarch64_libgit2-devel.sha256sum] = "09aa896516e9468354cd81f42abb431b7234484e39bd10bd0c3f8e7bde9d3747"
+RPROVIDES:libgit2-devel:append:aarch64 = " virtual/pkgconfig_libgit2_"
 
 RDEPENDS:libgit2 = " \
  glibc \

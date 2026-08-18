@@ -39,6 +39,8 @@ RDEPENDS:dislocker = " \
  glibc \
  ruby \
  ruby-libs \
+ virtual/ruby_release_ \
+ virtual/ruby_runtime_executable_ \
  "
 RDEPENDS:dislocker-libs = " \
  glibc \

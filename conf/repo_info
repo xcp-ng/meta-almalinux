@@ -1,15 +1,15 @@
 generated-by: b37b994:scripts/gen-dnf-proxy.py
 
-almalinux-10.1-AppStream-aarch64: revision: 1779228762, updated-utc: Tue May 19 22:12:42 2026
-almalinux-10.1-AppStream-src: revision: 1779228735, updated-utc: Tue May 19 22:12:15 2026
-almalinux-10.1-AppStream-x86_64_v2: revision: 1779228726, updated-utc: Tue May 19 22:12:05 2026
-almalinux-10.1-BaseOS-aarch64: revision: 1779228829, updated-utc: Tue May 19 22:13:49 2026
-almalinux-10.1-BaseOS-src: revision: 1779228813, updated-utc: Tue May 19 22:13:33 2026
-almalinux-10.1-BaseOS-x86_64_v2: revision: 1779228792, updated-utc: Tue May 19 22:13:12 2026
-almalinux-10.1-CRB-aarch64: revision: 1779228851, updated-utc: Tue May 19 22:14:11 2026
-almalinux-10.1-CRB-src: revision: 1779228853, updated-utc: Tue May 19 22:14:13 2026
-almalinux-10.1-CRB-x86_64_v2: revision: 1779228851, updated-utc: Tue May 19 22:14:11 2026
-epel-10.1-aarch64: revision: 1779202355, updated-utc: Tue May 19 14:52:47 2026
-epel-10.1-altarch-src-x86_64_v2: revision: 1779704556, updated-utc: Mon May 25 10:22:36 2026
-epel-10.1-src: revision: 1779202333, updated-utc: Tue May 19 14:52:46 2026
-epel-10.1-x86_64_v2: revision: 1779704533, updated-utc: Mon May 25 10:22:13 2026
+almalinux-10.2-AppStream-aarch64: revision: 1791369080, updated-utc: Wed Oct  7 10:31:20 2026
+almalinux-10.2-AppStream-src: revision: 1791368973, updated-utc: Wed Oct  7 10:29:33 2026
+almalinux-10.2-AppStream-x86_64_v2: revision: 1791369151, updated-utc: Wed Oct  7 10:32:31 2026
+almalinux-10.2-BaseOS-aarch64: revision: 1791369107, updated-utc: Wed Oct  7 10:31:46 2026
+almalinux-10.2-BaseOS-src: revision: 1791369075, updated-utc: Wed Oct  7 10:31:15 2026
+almalinux-10.2-BaseOS-x86_64_v2: revision: 1791369152, updated-utc: Wed Oct  7 10:32:32 2026
+almalinux-10.2-CRB-aarch64: revision: 1791369019, updated-utc: Wed Oct  7 10:30:19 2026
+almalinux-10.2-CRB-src: revision: 1791369020, updated-utc: Wed Oct  7 10:30:20 2026
+almalinux-10.2-CRB-x86_64_v2: revision: 1791369134, updated-utc: Wed Oct  7 10:32:14 2026
+epel-10.2-aarch64: revision: 1791334322, updated-utc: Wed Oct  7 00:53:23 2026
+epel-10.2-altarch-src-x86_64_v2: revision: 1791360554, updated-utc: Wed Oct  7 08:09:14 2026
+epel-10.2-src: revision: 1791334296, updated-utc: Wed Oct  7 00:53:22 2026
+epel-10.2-x86_64_v2: revision: 1791360550, updated-utc: Wed Oct  7 08:09:10 2026

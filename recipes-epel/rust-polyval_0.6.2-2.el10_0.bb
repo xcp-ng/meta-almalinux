@@ -57,7 +57,7 @@ RDEPENDS:rust-polyval-devel = " \
  cargo \
  rust \
  rust-cfg-if+default-devel \
- rust-cpufeatures+default-devel \
+ rust-cpufeatures0.2+default-devel \
  rust-opaque-debug+default-devel \
  rust-universal-hash-devel \
  "

@@ -14,10 +14,11 @@ SRC_URI[src.sha256sum] = "01dc0e3dd1d75417d23cc4cca6d3ee5adff9446cc985d724d704b4
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/setup-2.14.5-7.el10.noarch.rpm;name=x86_64_v2_setup;unpack=0"
 SRC_URI[x86_64_v2_setup.sha256sum] = "4065c6f500ac20468530177b1a6012145c490c018a5d2812c951b0b7e919bc5b"
+RPROVIDES:setup:append:x86_64_v2 = " virtual/group_dialout_ virtual/group_tty_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/setup-2.14.5-7.el10.noarch.rpm;name=aarch64_setup;unpack=0"
 SRC_URI[aarch64_setup.sha256sum] = "4065c6f500ac20468530177b1a6012145c490c018a5d2812c951b0b7e919bc5b"
-RPROVIDES:setup:append:aarch64 = " virtual/group_dialout_"
+RPROVIDES:setup:append:aarch64 = " virtual/group_dialout_ virtual/group_tty_"
 
 RDEPENDS:setup = " \
  almalinux-release \

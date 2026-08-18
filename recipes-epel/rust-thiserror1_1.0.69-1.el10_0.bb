@@ -15,12 +15,14 @@ SRC_URI[src.sha256sum] = "fbab7f1fa64894860e3465695d2e732f5a84870d0c3386185d0bd9
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-thiserror1+default-devel-1.0.69-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-thiserror1+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-thiserror1+default-devel.sha256sum] = "8881d5b01f8acedf2e750fe60db7f9dffdfa9ac57dd3005f240cc99ecbc76136"
+RPROVIDES:rust-thiserror1+default-devel:append:x86_64_v2 = " virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-thiserror1-devel-1.0.69-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-thiserror1-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-thiserror1-devel.sha256sum] = "9d20e07a4ad4fd94b2d266db4953e002c3b85b2c9a8d94db3b66fc646ad17c32"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-thiserror1+default-devel-1.0.69-1.el10_0.noarch.rpm;name=aarch64_rust-thiserror1+default-devel;unpack=0"
 SRC_URI[aarch64_rust-thiserror1+default-devel.sha256sum] = "8659e5951caf3b5051e7f9d5ac50a8fac5bbe55a7fdd042a9b94345d9af872b5"
+RPROVIDES:rust-thiserror1+default-devel:append:aarch64 = " virtual/crate_thiserror/default__ge_1.0.0_with_crate_thiserror/default__lt_3.0.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-thiserror1-devel-1.0.69-1.el10_0.noarch.rpm;name=aarch64_rust-thiserror1-devel;unpack=0"
 SRC_URI[aarch64_rust-thiserror1-devel.sha256sum] = "b5104b0dd6cea9b80c1de69a4a3c25121b8ec59942934d0b4da225aa46e8d6e7"

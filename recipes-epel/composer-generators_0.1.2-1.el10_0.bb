@@ -19,5 +19,6 @@ SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/composer-generators-0.1.2-1
 SRC_URI[aarch64_composer-generators.sha256sum] = "5ed6b54061adda5a02c85fcf2175502b7f551d6e0165ae9d2ae263942dbab1e7"
 
 RDEPENDS:composer-generators = " \
- php-cli \
+ virtual//usr/bin/php \
+ virtual/php-cli \
  "

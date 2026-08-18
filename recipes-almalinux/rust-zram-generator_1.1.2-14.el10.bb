@@ -7,6 +7,7 @@ PV = "1.1.2"
 PR = "14.el10"
 PACKAGES = " \
  zram-generator \
+ zram-generator-defaults \
  "
 
 SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/rust-zram-generator-1.1.2-14.el10.src.rpm;name=src;unpack=0"
@@ -15,10 +16,19 @@ SRC_URI[src.sha256sum] = "0e55a92d23fc0e5e89d71486fdb1cc896ae55adf79f2df7c7bd398
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/zram-generator-1.1.2-14.el10.x86_64_v2.rpm;name=x86_64_v2_zram-generator;unpack=0"
 SRC_URI[x86_64_v2_zram-generator.sha256sum] = "c5b42f90cb44461939a298438e12f59c30d25251bec7c9693566cec4598c1c01"
 
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/zram-generator-defaults-1.1.2-14.el10.noarch.rpm;name=x86_64_v2_zram-generator-defaults;unpack=0"
+SRC_URI[x86_64_v2_zram-generator-defaults.sha256sum] = "3c809f484f1767265d781b37a9f8a346ceb0aaed10905bf623b887f26b51c427"
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/zram-generator-1.1.2-14.el10.aarch64.rpm;name=aarch64_zram-generator;unpack=0"
 SRC_URI[aarch64_zram-generator.sha256sum] = "7b47d4ed39639d87bbeb58ed9c58078bfed4c5dec64bb33143708abd4e5d1230"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/zram-generator-defaults-1.1.2-14.el10.noarch.rpm;name=aarch64_zram-generator-defaults;unpack=0"
+SRC_URI[aarch64_zram-generator-defaults.sha256sum] = "3c809f484f1767265d781b37a9f8a346ceb0aaed10905bf623b887f26b51c427"
 
 RDEPENDS:zram-generator = " \
  glibc \
  libgcc \
+ "
+RDEPENDS:zram-generator-defaults = " \
+ zram-generator \
  "

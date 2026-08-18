@@ -22,6 +22,7 @@ SRC_URI[x86_64_v2_gdal.sha256sum] = "c568217af46eac71f8bdbcaa4f1a0551b2f703aa6db
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gdal-devel-3.10.3-3.el10.x86_64_v2.rpm;name=x86_64_v2_gdal-devel;unpack=0"
 SRC_URI[x86_64_v2_gdal-devel.sha256sum] = "3ad8fa9773c416e47b4831f97c005163f4656d2ab565fb7a3ae7b45155c52369"
+RPROVIDES:gdal-devel:append:x86_64_v2 = " virtual/pkgconfig_gdal_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gdal-libs-3.10.3-3.el10.x86_64_v2.rpm;name=x86_64_v2_gdal-libs;unpack=0"
 SRC_URI[x86_64_v2_gdal-libs.sha256sum] = "a524b223fe403e9e050904a104c63fce5ba8ee7d1c9385050c4b7438da2edc7e"
@@ -31,6 +32,7 @@ SRC_URI[aarch64_gdal.sha256sum] = "5b4e459c8c9bd0e072526d69058bc8a3cf4ee5f5836c8
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gdal-devel-3.10.3-3.el10.aarch64.rpm;name=aarch64_gdal-devel;unpack=0"
 SRC_URI[aarch64_gdal-devel.sha256sum] = "d7896b9d98076fd1ab520d288f888624d68c3f678ffecf8f0fca9dc376153632"
+RPROVIDES:gdal-devel:append:aarch64 = " virtual/pkgconfig_gdal_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gdal-libs-3.10.3-3.el10.aarch64.rpm;name=aarch64_gdal-libs;unpack=0"
 SRC_URI[aarch64_gdal-libs.sha256sum] = "843664dd713e506b28eebf6efe7bf2caece18e5baa692860ea7cf8cb90b79caf"

@@ -12,6 +12,9 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d1088fc9bab2a8939653246428eab91ae8ead9dca4b7987eeb2873ff72ed87bc"
 
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plymouth-theme-hot-dog-0.5-28.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_plymouth-theme-hot-dog;unpack=0"
+SRC_URI[x86_64_v2_plymouth-theme-hot-dog.sha256sum] = "79080891e531b25c09153a2630963cfee3a28ab8b87c0d377bb32b84b41b4d1c"
+
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.noarch.rpm;name=aarch64_plymouth-theme-hot-dog;unpack=0"
 SRC_URI[aarch64_plymouth-theme-hot-dog.sha256sum] = "d12be368e3ee3796ade23146029c6e9c4423479d7a5695b2b7cbc4cf0e32dbc9"
 

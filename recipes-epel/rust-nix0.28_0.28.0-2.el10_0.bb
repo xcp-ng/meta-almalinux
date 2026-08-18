@@ -71,7 +71,6 @@ SRC_URI[x86_64_v2_rust-nix0.28+fanotify-devel.sha256sum] = "385dfb353fec5c1a144c
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-nix0.28+feature-devel-0.28.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-nix0.28+feature-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-nix0.28+feature-devel.sha256sum] = "9817f8dcf7cd107195b08793c5ca404a9ac01c185656e2f68b9f83a5b96eb756"
-RPROVIDES:rust-nix0.28+feature-devel:append:x86_64_v2 = " virtual/crate_nix/feature__ge_0.24.2_with_crate_nix/feature__lt_0.30.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-nix0.28+fs-devel-0.28.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-nix0.28+fs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-nix0.28+fs-devel.sha256sum] = "464ffccc803f126373e94d48b76ee0c058f9977a27be5542bfa36cd0b6df84cf"
@@ -159,7 +158,6 @@ SRC_URI[x86_64_v2_rust-nix0.28+zerocopy-devel.sha256sum] = "ffc1b78ec353aca3b09a
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-nix0.28-devel-0.28.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-nix0.28-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-nix0.28-devel.sha256sum] = "6c620cbb044ddb1c56f8e0f0680a300e84304c48077e06a4cf77ff8c80632268"
-RPROVIDES:rust-nix0.28-devel:append:x86_64_v2 = " virtual/crate_nix__ge_0.24.2_with_crate_nix__lt_0.30.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-nix0.28+acct-devel-0.28.0-2.el10_0.noarch.rpm;name=aarch64_rust-nix0.28+acct-devel;unpack=0"
 SRC_URI[aarch64_rust-nix0.28+acct-devel.sha256sum] = "e1d6bda77e6335c34cad09f03b8711e9274718e1746e695503c687e0aa33ccf6"
@@ -184,7 +182,6 @@ SRC_URI[aarch64_rust-nix0.28+fanotify-devel.sha256sum] = "4c3d3919f239052ea04f6c
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-nix0.28+feature-devel-0.28.0-2.el10_0.noarch.rpm;name=aarch64_rust-nix0.28+feature-devel;unpack=0"
 SRC_URI[aarch64_rust-nix0.28+feature-devel.sha256sum] = "6e422a21bb77278dbabc457c382bc2706a9e2f033f59c789cb9dc08f1c678494"
-RPROVIDES:rust-nix0.28+feature-devel:append:aarch64 = " virtual/crate_nix/feature__ge_0.24.2_with_crate_nix/feature__lt_0.30.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-nix0.28+fs-devel-0.28.0-2.el10_0.noarch.rpm;name=aarch64_rust-nix0.28+fs-devel;unpack=0"
 SRC_URI[aarch64_rust-nix0.28+fs-devel.sha256sum] = "4c6ae2793acf010662a6eaeff3cad19d5d80c4a6cfbc2d6a1c6b1b44f6a7545f"
@@ -272,7 +269,6 @@ SRC_URI[aarch64_rust-nix0.28+zerocopy-devel.sha256sum] = "480f236e3ef454543a8117
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-nix0.28-devel-0.28.0-2.el10_0.noarch.rpm;name=aarch64_rust-nix0.28-devel;unpack=0"
 SRC_URI[aarch64_rust-nix0.28-devel.sha256sum] = "067a862be84a737dda48f0308a6a528022e648200ec7ff2fa07f118fdc069f05"
-RPROVIDES:rust-nix0.28-devel:append:aarch64 = " virtual/crate_nix__ge_0.24.2_with_crate_nix__lt_0.30.0~"
 
 RDEPENDS:rust-nix0.28+acct-devel = " \
  cargo \

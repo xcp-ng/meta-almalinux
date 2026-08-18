@@ -13,14 +13,6 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/u/unpaper-7.0.0-13.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ce0f773ebd0077ed22fe47bdcd19df9053c99dd01ec5e12c6d3e828d72469f8f"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - unpaper: libavcodec.so.61()(64bit)
-# - unpaper: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - unpaper: libavformat.so.61()(64bit)
-# - unpaper: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - unpaper: libavutil.so.59()(64bit)
-# - unpaper: libavutil.so.59(LIBAVUTIL_59)(64bit)
-
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/unpaper-7.0.0-13.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_unpaper;unpack=0"
 SRC_URI[x86_64_v2_unpaper.sha256sum] = "695801a12a0736ec2f2ef3ce9df797d6c4ce0f7c7ccc0f1839e76ce6a0190df1"
 
@@ -33,15 +25,12 @@ SRC_URI[aarch64_unpaper.sha256sum] = "727db278469d9a8f51021fa6c794af73440c7e3f08
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/u/unpaper-tests-7.0.0-13.el10_1.noarch.rpm;name=aarch64_unpaper-tests;unpack=0"
 SRC_URI[aarch64_unpaper-tests.sha256sum] = "62433295d6c5ccccf2db169e48ba5a3a4a177da31ba6b985fd327ea18668bbe1"
 
-RDEPENDS:unpaper:x86_64_v2 = " \
- glibc \
-"
-RDEPENDS:unpaper:aarch64 = " \
+RDEPENDS:unpaper = " \
  glibc \
  libavcodec-free \
  libavformat-free \
  libavutil-free \
-"
+ "
 RDEPENDS:unpaper-tests = " \
  bash \
  python3-pillow \

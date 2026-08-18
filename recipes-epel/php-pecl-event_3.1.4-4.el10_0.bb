@@ -18,9 +18,17 @@ SRC_URI[x86_64_v2_php-pecl-event.sha256sum] = "b1afc77f17b0492d476e61ba6917dd931
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-event-3.1.4-4.el10_0.aarch64.rpm;name=aarch64_php-pecl-event;unpack=0"
 SRC_URI[aarch64_php-pecl-event.sha256sum] = "2464a7dbaa37edc734f4549826510175d6fa56414d78ab27246af9dada58e5a0"
 
-RDEPENDS:php-pecl-event = " \
+RDEPENDS:php-pecl-event:x86_64_v2 = " \
  glibc \
  libevent \
  openssl-libs \
  php-common \
- "
+ virtual/php-sockets_x86-64_ \
+"
+RDEPENDS:php-pecl-event:aarch64 = " \
+ glibc \
+ libevent \
+ openssl-libs \
+ php-common \
+ virtual/php-sockets_aarch-64_ \
+"

@@ -14,20 +14,6 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/c/chromaprint-1.5.1-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b97d64e8d220ebc523cb9ba6c0de74da026e181db4923641f75fb8694d327908"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - chromaprint-tools: libavcodec.so.61()(64bit)
-# - chromaprint-tools: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - chromaprint-tools: libavformat.so.61()(64bit)
-# - chromaprint-tools: libavformat.so.61(LIBAVFORMAT_61)(64bit)
-# - chromaprint-tools: libavutil.so.59()(64bit)
-# - chromaprint-tools: libavutil.so.59(LIBAVUTIL_59)(64bit)
-# - chromaprint-tools: libswresample.so.5()(64bit)
-# - chromaprint-tools: libswresample.so.5(LIBSWRESAMPLE_5)(64bit)
-# - libchromaprint: libavcodec.so.61()(64bit)
-# - libchromaprint: libavcodec.so.61(LIBAVCODEC_61)(64bit)
-# - libchromaprint: libavutil.so.59()(64bit)
-# - libchromaprint: libavutil.so.59(LIBAVUTIL_59)(64bit)
-
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/chromaprint-tools-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_chromaprint-tools;unpack=0"
 SRC_URI[x86_64_v2_chromaprint-tools.sha256sum] = "046a6fff732e90b40fb518d0134aabbce3bd5f83d0e69a4cc3f945fb9efffe8e"
 
@@ -46,13 +32,7 @@ SRC_URI[aarch64_libchromaprint.sha256sum] = "ded086601b91c26f36c10c4318e01d2cf44
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libchromaprint-devel-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_libchromaprint-devel;unpack=0"
 SRC_URI[aarch64_libchromaprint-devel.sha256sum] = "90ecff575c1a9f1905fd990dcd3be555ced3dbae8ec83e95d59826b25cb5a354"
 
-RDEPENDS:chromaprint-tools:x86_64_v2 = " \
- glibc \
- libchromaprint \
- libgcc \
- libstdc++ \
-"
-RDEPENDS:chromaprint-tools:aarch64 = " \
+RDEPENDS:chromaprint-tools = " \
  glibc \
  libavcodec-free \
  libavformat-free \
@@ -61,19 +41,14 @@ RDEPENDS:chromaprint-tools:aarch64 = " \
  libgcc \
  libstdc++ \
  libswresample-free \
-"
-RDEPENDS:libchromaprint:x86_64_v2 = " \
- glibc \
- libgcc \
- libstdc++ \
-"
-RDEPENDS:libchromaprint:aarch64 = " \
+ "
+RDEPENDS:libchromaprint = " \
  glibc \
  libavcodec-free \
  libavutil-free \
  libgcc \
  libstdc++ \
-"
+ "
 RDEPENDS:libchromaprint-devel = " \
  libchromaprint \
  pkgconf-pkg-config \

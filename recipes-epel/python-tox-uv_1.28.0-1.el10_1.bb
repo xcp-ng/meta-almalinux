@@ -12,23 +12,15 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tox-uv-1.28.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cf7975d218fa0673be79e23cff77cb6d95f984f8c222e55a7dda25324fdc08ec"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - python3-tox-uv: (python3.12dist(uv) < 1~~ with python3.12dist(uv) >= 0.5.31)
-
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tox-uv-1.28.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tox-uv;unpack=0"
 SRC_URI[x86_64_v2_python3-tox-uv.sha256sum] = "9d0c1712d9501be5c06f873df89de580aa337d9f2fa994f3424ad294f58535eb"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tox-uv-1.28.0-1.el10_1.noarch.rpm;name=aarch64_python3-tox-uv;unpack=0"
 SRC_URI[aarch64_python3-tox-uv.sha256sum] = "c167351a32405595ec09f43e51c70ebd453676382be8c573ec681388c3bf59f8"
 
-RDEPENDS:python3-tox-uv:x86_64_v2 = " \
- python3 \
- python3-packaging \
- tox \
-"
-RDEPENDS:python3-tox-uv:aarch64 = " \
+RDEPENDS:python3-tox-uv = " \
  python3 \
  python3-packaging \
  python3-uv \
  tox \
-"
+ "

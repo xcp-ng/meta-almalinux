@@ -113,7 +113,7 @@ RDEPENDS:wxGTK = " \
  libtiff \
  libxkbcommon \
  pango \
- virtual/libSDL2-2.0.so.0___64bit_ \
+ sdl2-compat \
  wxBase \
  wxGTK-i18n \
  "

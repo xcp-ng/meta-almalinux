@@ -64,8 +64,8 @@ RDEPENDS:rust-chrono-tz-build+case-insensitive-devel = " \
  cargo \
  rust-chrono-tz-build+uncased-devel \
  rust-chrono-tz-build-devel \
- rust-phf_shared+uncased-devel \
- rust-phf_shared-devel \
+ rust-phf_shared0.11+uncased-devel \
+ rust-phf_shared0.11-devel \
  "
 RDEPENDS:rust-chrono-tz-build+default-devel = " \
  cargo \
@@ -79,7 +79,7 @@ RDEPENDS:rust-chrono-tz-build+filter-by-regex-devel = " \
 RDEPENDS:rust-chrono-tz-build+phf_shared-devel = " \
  cargo \
  rust-chrono-tz-build-devel \
- rust-phf_shared-devel \
+ rust-phf_shared0.11-devel \
  "
 RDEPENDS:rust-chrono-tz-build+regex-devel = " \
  cargo \
@@ -95,5 +95,5 @@ RDEPENDS:rust-chrono-tz-build-devel = " \
  cargo \
  rust \
  rust-parse-zoneinfo+default-devel \
- rust-phf_codegen-devel \
+ rust-phf_codegen0.11-devel \
  "

@@ -8,6 +8,38 @@ PR = "2.el10"
 PACKAGES = " \
  proj \
  proj-data \
+ proj-data-ar \
+ proj-data-at \
+ proj-data-au \
+ proj-data-be \
+ proj-data-br \
+ proj-data-ca \
+ proj-data-ch \
+ proj-data-cz \
+ proj-data-de \
+ proj-data-dk \
+ proj-data-es \
+ proj-data-eur \
+ proj-data-fi \
+ proj-data-fo \
+ proj-data-fr \
+ proj-data-hu \
+ proj-data-is \
+ proj-data-jp \
+ proj-data-lv \
+ proj-data-mx \
+ proj-data-nc \
+ proj-data-nl \
+ proj-data-no \
+ proj-data-nz \
+ proj-data-pl \
+ proj-data-pt \
+ proj-data-se \
+ proj-data-si \
+ proj-data-sk \
+ proj-data-uk \
+ proj-data-us \
+ proj-data-za \
  proj-devel \
  "
 
@@ -20,6 +52,102 @@ SRC_URI[x86_64_v2_proj.sha256sum] = "5dd01dfcef13ef826d6ae341cfe57e2cbf251eca9c4
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data;unpack=0"
 SRC_URI[x86_64_v2_proj-data.sha256sum] = "d29d9daa2d31d936196091ba05a9ae47f0275b789f5aa0741de0b07f3015ebad"
 
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-ar-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-ar;unpack=0"
+SRC_URI[x86_64_v2_proj-data-ar.sha256sum] = "f4f539d676175aa4ab1f46d5b1b3f2d167bc832377df75015dd3d16827118ae6"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-at-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-at;unpack=0"
+SRC_URI[x86_64_v2_proj-data-at.sha256sum] = "ecdae92fbca635fcdb03ba48ebed3167628b56e9f65aca6d173c97917072b349"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-au-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-au;unpack=0"
+SRC_URI[x86_64_v2_proj-data-au.sha256sum] = "dc32ab4fbade0294dceb75c3eb42c75f91cb43aaca76e4f514b183b603d24363"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-be-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-be;unpack=0"
+SRC_URI[x86_64_v2_proj-data-be.sha256sum] = "7414f4aa426f836c8921786630cf7d1d03c1f1afb849d028d47f930b008b1a36"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-br-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-br;unpack=0"
+SRC_URI[x86_64_v2_proj-data-br.sha256sum] = "10450955d63a839284e5c2b9db11abb5646efb5d5c644a9f347e39c60bffd870"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-ca-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-ca;unpack=0"
+SRC_URI[x86_64_v2_proj-data-ca.sha256sum] = "420c9a8a63aae907089f8485fcd5ac46129ef0e3d35ef2229ed1e0b1ac23286b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-ch-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-ch;unpack=0"
+SRC_URI[x86_64_v2_proj-data-ch.sha256sum] = "62502570c46e609e59459b78e10e55c91c9a9eb970f70c39f56462cf7c7380bb"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-cz-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-cz;unpack=0"
+SRC_URI[x86_64_v2_proj-data-cz.sha256sum] = "fea737c8f1dce6b4fc93b2e2710e068405e496d96da9dc76b1addf471829d392"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-de-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-de;unpack=0"
+SRC_URI[x86_64_v2_proj-data-de.sha256sum] = "cfba776c7983a7fd0f7ff07735b6eba18e5e4c1a3295663b5e1035ed6747d794"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-dk-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-dk;unpack=0"
+SRC_URI[x86_64_v2_proj-data-dk.sha256sum] = "a22d2fc9340c40d3a582b4ede56d336a407d53d4c350117fa99afa0ffe423187"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-es-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-es;unpack=0"
+SRC_URI[x86_64_v2_proj-data-es.sha256sum] = "044ca8ad60741d697df721daeeb04a2d2b9170c632876ceeb580f51660c00ecd"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-eur-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-eur;unpack=0"
+SRC_URI[x86_64_v2_proj-data-eur.sha256sum] = "45e75bc245fa6c6d04a33c3f92cb49d37a3e97f2d25bab874d9275078596d3d8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-fi-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-fi;unpack=0"
+SRC_URI[x86_64_v2_proj-data-fi.sha256sum] = "e0bd7bcfba6df3fa2134cfd647fe81542ac8fed610dd344a890993ca2ef473c8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-fo-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-fo;unpack=0"
+SRC_URI[x86_64_v2_proj-data-fo.sha256sum] = "db8b93d819d315504e1b17be4900b122e2988ee1c257ac1296cfe562aeb75b81"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-fr-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-fr;unpack=0"
+SRC_URI[x86_64_v2_proj-data-fr.sha256sum] = "d6fe3940652615ecbec1780af0a2a199198a724fc2281963eba11f1f8774b7a6"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-hu-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-hu;unpack=0"
+SRC_URI[x86_64_v2_proj-data-hu.sha256sum] = "d1e56fa5176a94c202627ebc65e4bc5c2a9906124d1bba8fafe63786985e9f87"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-is-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-is;unpack=0"
+SRC_URI[x86_64_v2_proj-data-is.sha256sum] = "cdc510515f7c6933a3ef5e9003b155dcc8676606e6c879d5d67ad8cec1ac96df"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-jp-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-jp;unpack=0"
+SRC_URI[x86_64_v2_proj-data-jp.sha256sum] = "5499eaf1af9e3c1adcee2a4ab5146ffbbc7ffcc0439c01e95d395edf887d789f"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-lv-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-lv;unpack=0"
+SRC_URI[x86_64_v2_proj-data-lv.sha256sum] = "cd2e05f5f1867649cb3769c4b5c5fe160db54e860160efa78fc3cd28d886072b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-mx-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-mx;unpack=0"
+SRC_URI[x86_64_v2_proj-data-mx.sha256sum] = "952ae938437a849c429165f4293d80120be8a5362d0ed38c41ba144f1d7c9343"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-nc-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-nc;unpack=0"
+SRC_URI[x86_64_v2_proj-data-nc.sha256sum] = "e39c8678c18c352845c9dad6bbb7c5e23f5b9a1befd754e4bbadb3091d84ec02"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-nl-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-nl;unpack=0"
+SRC_URI[x86_64_v2_proj-data-nl.sha256sum] = "0ce381d1c16b24a9c561ef28bf9922a2d856e7c59974d166bd387bdd4722123c"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-no-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-no;unpack=0"
+SRC_URI[x86_64_v2_proj-data-no.sha256sum] = "b55489b4eb5ee7ba1aae9ab05698a98d4e78b11465e38b57b36e4a7979be3be7"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-nz-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-nz;unpack=0"
+SRC_URI[x86_64_v2_proj-data-nz.sha256sum] = "49f5c86edda69f0b2c33cc4b98626a71abbde4587f688587e858ba9530892ec1"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-pl-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-pl;unpack=0"
+SRC_URI[x86_64_v2_proj-data-pl.sha256sum] = "79b105c69439fd5a3b0923d8e25089018280a18efff415c3fd91e6df27cd18f0"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-pt-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-pt;unpack=0"
+SRC_URI[x86_64_v2_proj-data-pt.sha256sum] = "040ee9fa7788e72056ab8ff28b4aec2b6ff6b8bca88f554b3af8db23a436ff50"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-se-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-se;unpack=0"
+SRC_URI[x86_64_v2_proj-data-se.sha256sum] = "f9c28bd0e1646fb163c141dbf57c231f5172865041d0bed2587dbf4fc53e19b0"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-si-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-si;unpack=0"
+SRC_URI[x86_64_v2_proj-data-si.sha256sum] = "5e52907bd588ca60bda0c58ddc819d54af180bcd900bf83f911235d88dbb4804"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-sk-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-sk;unpack=0"
+SRC_URI[x86_64_v2_proj-data-sk.sha256sum] = "67317e05eaccd72f2c5e1ff77895359359b9bcb2548259f71e6e1ada3741c11b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-uk-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-uk;unpack=0"
+SRC_URI[x86_64_v2_proj-data-uk.sha256sum] = "b4d0e97bd091caa9d42264831f14a8524958b04e78511a32486a7054ea8e4b89"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-us-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-us;unpack=0"
+SRC_URI[x86_64_v2_proj-data-us.sha256sum] = "c6d1ba848de0a07d982918c22d27fe6758fa0080cc1f241501bfc57dc3530dc8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/proj-data-za-9.6.0-2.el10.noarch.rpm;name=x86_64_v2_proj-data-za;unpack=0"
+SRC_URI[x86_64_v2_proj-data-za.sha256sum] = "9df227c5e497f727c061758b81c499d408d2ffada4c4aa1d94647c2131db78e1"
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/proj-devel-9.6.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_proj-devel;unpack=0"
 SRC_URI[x86_64_v2_proj-devel.sha256sum] = "e2c281e20588a1d45699ce357657a36efac0e1c064741121d1a3ddd5b1372550"
 
@@ -28,6 +156,102 @@ SRC_URI[aarch64_proj.sha256sum] = "2bd7c7360f9aceb13b215c90a62912bce8095285ab392
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data;unpack=0"
 SRC_URI[aarch64_proj-data.sha256sum] = "d29d9daa2d31d936196091ba05a9ae47f0275b789f5aa0741de0b07f3015ebad"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-ar-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-ar;unpack=0"
+SRC_URI[aarch64_proj-data-ar.sha256sum] = "f4f539d676175aa4ab1f46d5b1b3f2d167bc832377df75015dd3d16827118ae6"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-at-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-at;unpack=0"
+SRC_URI[aarch64_proj-data-at.sha256sum] = "ecdae92fbca635fcdb03ba48ebed3167628b56e9f65aca6d173c97917072b349"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-au-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-au;unpack=0"
+SRC_URI[aarch64_proj-data-au.sha256sum] = "dc32ab4fbade0294dceb75c3eb42c75f91cb43aaca76e4f514b183b603d24363"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-be-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-be;unpack=0"
+SRC_URI[aarch64_proj-data-be.sha256sum] = "7414f4aa426f836c8921786630cf7d1d03c1f1afb849d028d47f930b008b1a36"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-br-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-br;unpack=0"
+SRC_URI[aarch64_proj-data-br.sha256sum] = "10450955d63a839284e5c2b9db11abb5646efb5d5c644a9f347e39c60bffd870"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-ca-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-ca;unpack=0"
+SRC_URI[aarch64_proj-data-ca.sha256sum] = "420c9a8a63aae907089f8485fcd5ac46129ef0e3d35ef2229ed1e0b1ac23286b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-ch-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-ch;unpack=0"
+SRC_URI[aarch64_proj-data-ch.sha256sum] = "62502570c46e609e59459b78e10e55c91c9a9eb970f70c39f56462cf7c7380bb"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-cz-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-cz;unpack=0"
+SRC_URI[aarch64_proj-data-cz.sha256sum] = "fea737c8f1dce6b4fc93b2e2710e068405e496d96da9dc76b1addf471829d392"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-de-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-de;unpack=0"
+SRC_URI[aarch64_proj-data-de.sha256sum] = "cfba776c7983a7fd0f7ff07735b6eba18e5e4c1a3295663b5e1035ed6747d794"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-dk-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-dk;unpack=0"
+SRC_URI[aarch64_proj-data-dk.sha256sum] = "a22d2fc9340c40d3a582b4ede56d336a407d53d4c350117fa99afa0ffe423187"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-es-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-es;unpack=0"
+SRC_URI[aarch64_proj-data-es.sha256sum] = "044ca8ad60741d697df721daeeb04a2d2b9170c632876ceeb580f51660c00ecd"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-eur-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-eur;unpack=0"
+SRC_URI[aarch64_proj-data-eur.sha256sum] = "45e75bc245fa6c6d04a33c3f92cb49d37a3e97f2d25bab874d9275078596d3d8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-fi-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-fi;unpack=0"
+SRC_URI[aarch64_proj-data-fi.sha256sum] = "e0bd7bcfba6df3fa2134cfd647fe81542ac8fed610dd344a890993ca2ef473c8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-fo-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-fo;unpack=0"
+SRC_URI[aarch64_proj-data-fo.sha256sum] = "db8b93d819d315504e1b17be4900b122e2988ee1c257ac1296cfe562aeb75b81"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-fr-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-fr;unpack=0"
+SRC_URI[aarch64_proj-data-fr.sha256sum] = "d6fe3940652615ecbec1780af0a2a199198a724fc2281963eba11f1f8774b7a6"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-hu-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-hu;unpack=0"
+SRC_URI[aarch64_proj-data-hu.sha256sum] = "d1e56fa5176a94c202627ebc65e4bc5c2a9906124d1bba8fafe63786985e9f87"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-is-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-is;unpack=0"
+SRC_URI[aarch64_proj-data-is.sha256sum] = "cdc510515f7c6933a3ef5e9003b155dcc8676606e6c879d5d67ad8cec1ac96df"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-jp-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-jp;unpack=0"
+SRC_URI[aarch64_proj-data-jp.sha256sum] = "5499eaf1af9e3c1adcee2a4ab5146ffbbc7ffcc0439c01e95d395edf887d789f"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-lv-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-lv;unpack=0"
+SRC_URI[aarch64_proj-data-lv.sha256sum] = "cd2e05f5f1867649cb3769c4b5c5fe160db54e860160efa78fc3cd28d886072b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-mx-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-mx;unpack=0"
+SRC_URI[aarch64_proj-data-mx.sha256sum] = "952ae938437a849c429165f4293d80120be8a5362d0ed38c41ba144f1d7c9343"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-nc-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-nc;unpack=0"
+SRC_URI[aarch64_proj-data-nc.sha256sum] = "e39c8678c18c352845c9dad6bbb7c5e23f5b9a1befd754e4bbadb3091d84ec02"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-nl-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-nl;unpack=0"
+SRC_URI[aarch64_proj-data-nl.sha256sum] = "0ce381d1c16b24a9c561ef28bf9922a2d856e7c59974d166bd387bdd4722123c"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-no-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-no;unpack=0"
+SRC_URI[aarch64_proj-data-no.sha256sum] = "b55489b4eb5ee7ba1aae9ab05698a98d4e78b11465e38b57b36e4a7979be3be7"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-nz-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-nz;unpack=0"
+SRC_URI[aarch64_proj-data-nz.sha256sum] = "49f5c86edda69f0b2c33cc4b98626a71abbde4587f688587e858ba9530892ec1"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-pl-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-pl;unpack=0"
+SRC_URI[aarch64_proj-data-pl.sha256sum] = "79b105c69439fd5a3b0923d8e25089018280a18efff415c3fd91e6df27cd18f0"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-pt-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-pt;unpack=0"
+SRC_URI[aarch64_proj-data-pt.sha256sum] = "040ee9fa7788e72056ab8ff28b4aec2b6ff6b8bca88f554b3af8db23a436ff50"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-se-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-se;unpack=0"
+SRC_URI[aarch64_proj-data-se.sha256sum] = "f9c28bd0e1646fb163c141dbf57c231f5172865041d0bed2587dbf4fc53e19b0"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-si-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-si;unpack=0"
+SRC_URI[aarch64_proj-data-si.sha256sum] = "5e52907bd588ca60bda0c58ddc819d54af180bcd900bf83f911235d88dbb4804"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-sk-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-sk;unpack=0"
+SRC_URI[aarch64_proj-data-sk.sha256sum] = "67317e05eaccd72f2c5e1ff77895359359b9bcb2548259f71e6e1ada3741c11b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-uk-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-uk;unpack=0"
+SRC_URI[aarch64_proj-data-uk.sha256sum] = "b4d0e97bd091caa9d42264831f14a8524958b04e78511a32486a7054ea8e4b89"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-us-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-us;unpack=0"
+SRC_URI[aarch64_proj-data-us.sha256sum] = "c6d1ba848de0a07d982918c22d27fe6758fa0080cc1f241501bfc57dc3530dc8"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/proj-data-za-9.6.0-2.el10.noarch.rpm;name=aarch64_proj-data-za;unpack=0"
+SRC_URI[aarch64_proj-data-za.sha256sum] = "9df227c5e497f727c061758b81c499d408d2ffada4c4aa1d94647c2131db78e1"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/proj-devel-9.6.0-2.el10.aarch64.rpm;name=aarch64_proj-devel;unpack=0"
 SRC_URI[aarch64_proj-devel.sha256sum] = "69ffc404524f246d5dcab700a967e055a52d8e04c8d436e43e787a9bcd614a92"
@@ -42,6 +266,102 @@ RDEPENDS:proj = " \
  virtual/libcurl.so.4___64bit_ \
  "
 RDEPENDS:proj-data = " \
+ "
+RDEPENDS:proj-data-ar = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-at = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-au = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-be = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-br = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-ca = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-ch = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-cz = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-de = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-dk = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-es = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-eur = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-fi = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-fo = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-fr = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-hu = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-is = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-jp = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-lv = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-mx = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-nc = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-nl = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-no = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-nz = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-pl = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-pt = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-se = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-si = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-sk = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-uk = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-us = " \
+ proj-data \
+ "
+RDEPENDS:proj-data-za = " \
+ proj-data \
  "
 RDEPENDS:proj-devel = " \
  cmake-filesystem \

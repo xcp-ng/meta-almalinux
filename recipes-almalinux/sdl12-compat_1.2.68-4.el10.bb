@@ -25,14 +25,10 @@ SRC_URI[aarch64_sdl12-compat.sha256sum] = "c7abf1573ecad074c31376b5fdfc505238a8a
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/sdl12-compat-devel-1.2.68-4.el10.aarch64.rpm;name=aarch64_sdl12-compat-devel;unpack=0"
 SRC_URI[aarch64_sdl12-compat-devel.sha256sum] = "fd5c7a806e30fe39171d64133a40e98d13eb5ace30be4fa496a764a9ed1098ca"
 
-RDEPENDS:sdl12-compat:x86_64_v2 = " \
+RDEPENDS:sdl12-compat = " \
  glibc \
- virtual/SDL2_x86-64__ge_2.0.18 \
-"
-RDEPENDS:sdl12-compat:aarch64 = " \
- glibc \
- virtual/SDL2_aarch-64__ge_2.0.18 \
-"
+ sdl2-compat \
+ "
 RDEPENDS:sdl12-compat-devel = " \
  bash \
  libX11-devel \

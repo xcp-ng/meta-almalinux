@@ -26,7 +26,9 @@ SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-devel
 SRC_URI[aarch64_php-fedora-autoloader-devel.sha256sum] = "d1ba8c0413c1c95564bc3a1ed69989dd5f2fe226fc81268355442f7420a27510"
 
 RDEPENDS:php-fedora-autoloader = " \
- php-common \
+ virtual/php-ctype \
+ virtual/php-spl \
+ virtual/php_language__ge_5.3.3 \
  "
 RDEPENDS:php-fedora-autoloader-devel = " \
  php-fedora-autoloader \

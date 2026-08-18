@@ -18,7 +18,13 @@ SRC_URI[x86_64_v2_php-pecl-json-post.sha256sum] = "095a11ea1a6db166034618f897114
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-json-post-1.1.0-15.el10_0.aarch64.rpm;name=aarch64_php-pecl-json-post;unpack=0"
 SRC_URI[aarch64_php-pecl-json-post.sha256sum] = "d94e86e5bb41a95bf2581d07fc7613ebbe9ff7b9871412b35dae1a173e3a8016"
 
-RDEPENDS:php-pecl-json-post = " \
+RDEPENDS:php-pecl-json-post:x86_64_v2 = " \
  glibc \
  php-common \
- "
+ virtual/php-json_x86-64_ \
+"
+RDEPENDS:php-pecl-json-post:aarch64 = " \
+ glibc \
+ php-common \
+ virtual/php-json_aarch-64_ \
+"
