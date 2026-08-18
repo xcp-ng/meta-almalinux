@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "75fa99df4625525db57614e12177a2d7845e733d7cd26d207846ed
 
 URI_x86_64_v2_python3-cmake-build-extension = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmake-build-extension-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmake-build-extension;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cmake-build-extension}"
-SRC_URI[x86_64_v2_python3-cmake-build-extension.sha256sum] = "065f7cd777d8ac7d271ec6baf3e51292379c0538d337146f18dea68b72e37dc4"
+SRC_URI[x86_64_v2_python3-cmake-build-extension.sha256sum] = "857dd68197165a1fbb5d1da0f76d357ebc214ca16af1aa8e6a2a45a8ce5fbed4"
 
 URI_x86_64_v2_python3-cmake-build-extension-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmake-build-extension-doc-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmake-build-extension-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cmake-build-extension-doc}"
-SRC_URI[x86_64_v2_python3-cmake-build-extension-doc.sha256sum] = "702c77d102e9a56d735aeaf10fcd2d9e6a0e11521affe94952be7f46ccf32a96"
+SRC_URI[x86_64_v2_python3-cmake-build-extension-doc.sha256sum] = "927ebd6f613176c0451296f15eb59faac1152ccaa1e4e61433c52890ac6ab686"
 
 URI_aarch64_python3-cmake-build-extension = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cmake-build-extension-0.6.1-2.el10_0.noarch.rpm;name=aarch64_python3-cmake-build-extension;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cmake-build-extension}"

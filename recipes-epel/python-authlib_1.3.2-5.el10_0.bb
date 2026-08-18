@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7bf8cb27ed57af99dde67a77d9f35c7689441e714688ca9e01bcf2
 
 URI_x86_64_v2_python3-authlib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-authlib-1.3.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-authlib;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-authlib}"
-SRC_URI[x86_64_v2_python3-authlib.sha256sum] = "959c442ba47127d82c9fd5a120e4dcbf8667a17f8ff215e0e7d5f482bc4da5d3"
+SRC_URI[x86_64_v2_python3-authlib.sha256sum] = "49dc595be11bf41bea9e1a101ac8214b7958887cac26a422ad89b990f80b96c0"
 
 URI_aarch64_python3-authlib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-authlib-1.3.2-5.el10_0.noarch.rpm;name=aarch64_python3-authlib;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-authlib}"

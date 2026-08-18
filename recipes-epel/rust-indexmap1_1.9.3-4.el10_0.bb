@@ -29,7 +29,7 @@ SRC_URI[x86_64_v2_rust-indexmap1+arbitrary-devel.sha256sum] = "6e83883de4ead8879
 URI_x86_64_v2_rust-indexmap1+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-indexmap1+default-devel-1.9.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-indexmap1+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-indexmap1+default-devel}"
 SRC_URI[x86_64_v2_rust-indexmap1+default-devel.sha256sum] = "2bf33bebf8d4b21f9c48214971cc81c16b1a7f0001df6326581e533571c108d5"
-RPROVIDES:rust-indexmap1+default-devel:x86_64_v2 = "virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"
+RPROVIDES:rust-indexmap1+default-devel:append:x86_64_v2 = " virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"
 
 URI_x86_64_v2_rust-indexmap1+quickcheck-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-indexmap1+quickcheck-devel-1.9.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-indexmap1+quickcheck-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-indexmap1+quickcheck-devel}"
@@ -70,7 +70,7 @@ SRC_URI[aarch64_rust-indexmap1+arbitrary-devel.sha256sum] = "7984254bb9c6f11c93a
 URI_aarch64_rust-indexmap1+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-indexmap1+default-devel-1.9.3-4.el10_0.noarch.rpm;name=aarch64_rust-indexmap1+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-indexmap1+default-devel}"
 SRC_URI[aarch64_rust-indexmap1+default-devel.sha256sum] = "1655bcf78c1954c474997e9134ab3a66706505f80b7afd350290ea7344b0d735"
-RPROVIDES:rust-indexmap1+default-devel:aarch64 = "virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"
+RPROVIDES:rust-indexmap1+default-devel:append:aarch64 = " virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"
 
 URI_aarch64_rust-indexmap1+quickcheck-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-indexmap1+quickcheck-devel-1.9.3-4.el10_0.noarch.rpm;name=aarch64_rust-indexmap1+quickcheck-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-indexmap1+quickcheck-devel}"
@@ -152,7 +152,3 @@ RDEPENDS:rust-indexmap1-devel = " \
  rust-hashbrown0.12+raw-devel \
  rust-hashbrown0.12-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_indexmap/default__ge_1.6.0_with_crate_indexmap/default__lt_3.0.0~"

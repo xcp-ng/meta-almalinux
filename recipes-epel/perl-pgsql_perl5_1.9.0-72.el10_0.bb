@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "cc9e5bdb28c07ec7af4e25d52d62fd23e95915580807d5205f3e03
 
 URI_x86_64_v2_perl-pgsql_perl5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-pgsql_perl5-1.9.0-72.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-pgsql_perl5;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-pgsql_perl5}"
-SRC_URI[x86_64_v2_perl-pgsql_perl5.sha256sum] = "7c9ad6859db9174689c189426d6035c8f8e5c1de9bc581cddfea9276ee6730bf"
+SRC_URI[x86_64_v2_perl-pgsql_perl5.sha256sum] = "2781975d985de2c452a32c1c8a9011e0de103d015c6d2f968640b97dadab257f"
 
 URI_aarch64_perl-pgsql_perl5 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-pgsql_perl5-1.9.0-72.el10_0.aarch64.rpm;name=aarch64_perl-pgsql_perl5;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-pgsql_perl5}"

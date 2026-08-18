@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "9daba2371dca2c4226d361111a1e2385cf2191d1c1e273ce0b2815
 
 URI_x86_64_v2_glad2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_glad2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_glad2}"
-SRC_URI[x86_64_v2_glad2.sha256sum] = "ed28ace9a7f127ca82beaee2850818bdd11c0b4914757d63d8686a6e0a35439a"
+SRC_URI[x86_64_v2_glad2.sha256sum] = "67f67d3c0ec2cd86d2072d371c8a354cde8f5539d3b28bf9bdeee2016b2ec1da"
 
 URI_x86_64_v2_python3-glad2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-glad2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-glad2}"
-SRC_URI[x86_64_v2_python3-glad2.sha256sum] = "356636e3f863f2bc0d0124c22da094996cf8ad829c4f007e64b6f133d30d94c4"
+SRC_URI[x86_64_v2_python3-glad2.sha256sum] = "d6aba184f827fb0a9de780cd7af519b9c45bc400384d39416514c0c81b436228"
 
 URI_aarch64_glad2 = "${EPEL_MIRROR}/aarch64/Packages/g/glad2-2.0.8-2.el10_0.noarch.rpm;name=aarch64_glad2;unpack=0"
 SRC_URI:append = " ${URI_aarch64_glad2}"

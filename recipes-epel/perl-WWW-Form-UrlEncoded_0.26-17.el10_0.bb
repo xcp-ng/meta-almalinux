@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7f081b0de485b35ce81808e00c9e3d7e7d315a068f83e5f8bf0ee1
 
 URI_x86_64_v2_perl-WWW-Form-UrlEncoded = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Form-UrlEncoded;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-WWW-Form-UrlEncoded}"
-SRC_URI[x86_64_v2_perl-WWW-Form-UrlEncoded.sha256sum] = "c7aeee08c90e55305c205046d8251fdc46b07bbf5d36a94ee6a2464b152e03bf"
+SRC_URI[x86_64_v2_perl-WWW-Form-UrlEncoded.sha256sum] = "e87c1639771b28ba74cb1dd127d7b4d265b39355f200e77a92edd16035011e83"
 
 URI_aarch64_perl-WWW-Form-UrlEncoded = "${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.noarch.rpm;name=aarch64_perl-WWW-Form-UrlEncoded;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-WWW-Form-UrlEncoded}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b05764fbe7c5e40fab04c7b043f0075938612551a0ff4741e14727
 
 URI_x86_64_v2_python3-pytest-mock = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-mock-3.14.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-mock;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-mock}"
-SRC_URI[x86_64_v2_python3-pytest-mock.sha256sum] = "01b43e99a0573e81828433ed657f51eca68484084668341d5ebadff918706e59"
+SRC_URI[x86_64_v2_python3-pytest-mock.sha256sum] = "ff947b5cacf0e589b89fb41f55eef8c70f7280ea9364fc602459131fd9af31e9"
 
 URI_aarch64_python3-pytest-mock = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-mock-3.14.0-2.el10_0.noarch.rpm;name=aarch64_python3-pytest-mock;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-mock}"

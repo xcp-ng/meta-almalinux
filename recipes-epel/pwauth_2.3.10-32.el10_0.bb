@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "aaebd18a040edd120b3cc012d449c622a63cbb45b3b02209906649
 
 URI_x86_64_v2_pwauth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pwauth-2.3.10-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pwauth;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pwauth}"
-SRC_URI[x86_64_v2_pwauth.sha256sum] = "198f38db7327ecbbfb9d154a996d7a31b11aaa17d5dc487f87ff22c46269c4a5"
+SRC_URI[x86_64_v2_pwauth.sha256sum] = "14702835aa39e279c172093b08c447b881d43573aec35150f76e0c409f00535e"
 
 URI_aarch64_pwauth = "${EPEL_MIRROR}/aarch64/Packages/p/pwauth-2.3.10-32.el10_0.aarch64.rpm;name=aarch64_pwauth;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pwauth}"

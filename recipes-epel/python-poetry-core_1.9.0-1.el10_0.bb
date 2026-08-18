@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1314d960487426bec08c88077bcd0550ecba3ca20a1de3dff66628
 
 URI_x86_64_v2_python3-poetry-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-poetry-core-1.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-poetry-core;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-poetry-core}"
-SRC_URI[x86_64_v2_python3-poetry-core.sha256sum] = "d57b9a65f8244b92c2dbef2af61374424e5d176e91a37a1877833914458cc78b"
+SRC_URI[x86_64_v2_python3-poetry-core.sha256sum] = "245fc01d8480deaefea216b78ffc72fefb8631c4afd57c272d0fe55711d14fbf"
 
 URI_aarch64_python3-poetry-core = "${EPEL_MIRROR}/aarch64/Packages/p/python3-poetry-core-1.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-poetry-core;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-poetry-core}"

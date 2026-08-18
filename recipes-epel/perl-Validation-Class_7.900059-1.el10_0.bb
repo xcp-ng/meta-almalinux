@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4161a5487f17a83d54ba34fed2ee109bead5b3ed4fa2849c333e44
 
 URI_x86_64_v2_perl-Validation-Class = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Validation-Class-7.900059-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Validation-Class;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Validation-Class}"
-SRC_URI[x86_64_v2_perl-Validation-Class.sha256sum] = "bfb6e3e6f273851686ff4471eca7fad04e641bc8b4d06eeccc5fdd2fc347df1b"
+SRC_URI[x86_64_v2_perl-Validation-Class.sha256sum] = "e66acf064ff3877d9b50390ff3d68f08b40e9f49e7a0ccc577cec77c0efb3de8"
 
 URI_aarch64_perl-Validation-Class = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Validation-Class-7.900059-1.el10_0.noarch.rpm;name=aarch64_perl-Validation-Class;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Validation-Class}"

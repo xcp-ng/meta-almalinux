@@ -16,12 +16,12 @@ SRC_URI[src.sha256sum] = "65fdf81a206fa2e37677fd2504b04745ed7de6cd962fb0e7ec560b
 URI_x86_64_v2_environment-modules = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/environment-modules-5.3.1-8.el10.x86_64_v2.rpm;name=x86_64_v2_environment-modules;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_environment-modules}"
 SRC_URI[x86_64_v2_environment-modules.sha256sum] = "6b9865c6a8f4d94b7d9624ef16c0147619514bf50d1bb57ffad7e588410a98ca"
-RPROVIDES:environment-modules:x86_64_v2 = "virtual/environment_modules_"
+RPROVIDES:environment-modules:append:x86_64_v2 = " virtual/environment_modules_"
 
 URI_aarch64_environment-modules = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/environment-modules-5.3.1-8.el10.aarch64.rpm;name=aarch64_environment-modules;unpack=0"
 SRC_URI:append = " ${URI_aarch64_environment-modules}"
 SRC_URI[aarch64_environment-modules.sha256sum] = "43f988802ca62f874029e5b273cb340f228c360b37848ace2f5b931c0b3966c5"
-RPROVIDES:environment-modules:aarch64 = "virtual/environment_modules_"
+RPROVIDES:environment-modules:append:aarch64 = " virtual/environment_modules_"
 
 RDEPENDS:environment-modules = " \
  alternatives \
@@ -35,7 +35,3 @@ RDEPENDS:environment-modules = " \
  vim-filesystem \
  virtual/coreutils \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/environment_modules_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/environment_modules_"

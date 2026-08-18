@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "018ba07feceb4aabd8a6c87ab594a38753685d462b011650161a2b
 
 URI_x86_64_v2_perl-Term-Size = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-Size-0.211-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Term-Size;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Term-Size}"
-SRC_URI[x86_64_v2_perl-Term-Size.sha256sum] = "68febf29018cb9f4525c90dcf850e746dd620323231828b569201cd5358f045d"
+SRC_URI[x86_64_v2_perl-Term-Size.sha256sum] = "f67b23c1551d16d32ce9105b0935e806880e8ec0eb7ac532715093debb5f621c"
 
 URI_aarch64_perl-Term-Size = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-Size-0.211-14.el10_0.aarch64.rpm;name=aarch64_perl-Term-Size;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Term-Size}"

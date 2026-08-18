@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "bcac4b1a24e6f4451abd0a17352c380ab3131a93bcbeca98b8b7ac
 
 URI_x86_64_v2_python3-cairocffi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cairocffi}"
-SRC_URI[x86_64_v2_python3-cairocffi.sha256sum] = "175f147f284618969cd49b8c7d2d7341610d7ba6b1be856d6e4aed95d7f8ee2c"
+SRC_URI[x86_64_v2_python3-cairocffi.sha256sum] = "5d9e54ab257d2d1cab74b7a0f8010ba0d55e619d96630e0151485d2fad545367"
 
 URI_x86_64_v2_python3-cairocffi+xcb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi+xcb-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi+xcb;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cairocffi+xcb}"
-SRC_URI[x86_64_v2_python3-cairocffi+xcb.sha256sum] = "396714f96e5ba53ac3ad42318dee63370fd13ed3380e7af6efdaa168751c9b45"
+SRC_URI[x86_64_v2_python3-cairocffi+xcb.sha256sum] = "71bb033efc2cf3b83b5040ce3743f8fc15d9a01a9fd1ca0eaddf99df6eb7adb0"
 
 URI_aarch64_python3-cairocffi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cairocffi-1.7.0-8.el10_0.noarch.rpm;name=aarch64_python3-cairocffi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cairocffi}"

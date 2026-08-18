@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7875baa5744e24d035a1af4b3069e40cdef15860d269458e2e6bcd
 
 URI_x86_64_v2_perl-String-CRC32 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-CRC32-2.100-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-String-CRC32;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-String-CRC32}"
-SRC_URI[x86_64_v2_perl-String-CRC32.sha256sum] = "fd79a3c26cfd23ed5abbde7bf9368c2a83a003d4e8b0caeee72f806e04bd9613"
+SRC_URI[x86_64_v2_perl-String-CRC32.sha256sum] = "c060990014ad55cc69fd583f30bf9c623bf6307a2cf7d4c26b1cd7e0a5cc58dd"
 
 URI_aarch64_perl-String-CRC32 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-String-CRC32-2.100-7.el10_0.aarch64.rpm;name=aarch64_perl-String-CRC32;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-String-CRC32}"

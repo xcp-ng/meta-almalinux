@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5aad55f786bb3c9d69b01ea4b5d92b07d374928378f5e532099f66
 
 URI_x86_64_v2_cargo2rpm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cargo2rpm-0.1.18-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_cargo2rpm;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_cargo2rpm}"
-SRC_URI[x86_64_v2_cargo2rpm.sha256sum] = "3726644ea0fc4b750bf898ac205a633d768a8e2144a22a82216e66b0bd83500a"
+SRC_URI[x86_64_v2_cargo2rpm.sha256sum] = "deb444cac3400ff3ef75697193e37125a719d48007cc0a4aae9809ed8eb685ff"
 
 URI_aarch64_cargo2rpm = "${EPEL_MIRROR}/aarch64/Packages/c/cargo2rpm-0.1.18-1.el10_0.noarch.rpm;name=aarch64_cargo2rpm;unpack=0"
 SRC_URI:append = " ${URI_aarch64_cargo2rpm}"

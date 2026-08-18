@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "7181c7c2ba62165ee5e81fdacea09e3ae35558a09ba5222bde8aa6
 
 URI_x86_64_v2_python-pyrsistent-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyrsistent-doc-0.20.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyrsistent-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-pyrsistent-doc}"
-SRC_URI[x86_64_v2_python-pyrsistent-doc.sha256sum] = "c295e566e9ab3fe4f65d754f39724b5d20a15a33eb3320e714a2528b765a07ff"
+SRC_URI[x86_64_v2_python-pyrsistent-doc.sha256sum] = "9e6bf05ea84bf41e1b4d108b99c8ededda2d3d44697ba2f03625b4b4fadca599"
 
 URI_x86_64_v2_python3-pyrsistent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyrsistent-0.20.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pyrsistent;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pyrsistent}"
-SRC_URI[x86_64_v2_python3-pyrsistent.sha256sum] = "72e1758e77ccb7be418c972d774162e592128d1d468d7b2ba4f20912e7286338"
+SRC_URI[x86_64_v2_python3-pyrsistent.sha256sum] = "48d3fe6c1831b289d37726f9e2377cd10cd588638ec9077b92501ecf36742206"
 
 URI_aarch64_python-pyrsistent-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pyrsistent-doc-0.20.0-8.el10_0.noarch.rpm;name=aarch64_python-pyrsistent-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-pyrsistent-doc}"

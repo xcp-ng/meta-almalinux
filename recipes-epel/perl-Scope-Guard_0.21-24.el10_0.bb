@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b313e64e128de35f33312db6507891a9dd7108b9b6d6a3fd1b028e
 
 URI_x86_64_v2_perl-Scope-Guard = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Scope-Guard-0.21-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Scope-Guard;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Scope-Guard}"
-SRC_URI[x86_64_v2_perl-Scope-Guard.sha256sum] = "3ccca9f398154550c9ee5b4bf78d5b9212e6c6a344a608c4cdde05149c41e04e"
+SRC_URI[x86_64_v2_perl-Scope-Guard.sha256sum] = "ac87d4e9fd06e8c3dbc032d5497ba371e6e0d77e1a2aa6b5887fb837d514968b"
 
 URI_aarch64_perl-Scope-Guard = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Scope-Guard-0.21-24.el10_0.noarch.rpm;name=aarch64_perl-Scope-Guard;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Scope-Guard}"

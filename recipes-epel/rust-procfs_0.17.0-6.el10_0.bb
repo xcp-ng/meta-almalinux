@@ -117,10 +117,10 @@ RDEPENDS:rust-procfs-devel = " \
  rust-bitflags-devel \
  rust-hex+default-devel \
  rust-procfs-core-devel \
- rust-rustix+default-devel \
- rust-rustix+fs-devel \
- rust-rustix+param-devel \
- rust-rustix+process-devel \
- rust-rustix+system-devel \
- rust-rustix+thread-devel \
+ rust-rustix0.38+default-devel \
+ rust-rustix0.38+fs-devel \
+ rust-rustix0.38+param-devel \
+ rust-rustix0.38+process-devel \
+ rust-rustix0.38+system-devel \
+ rust-rustix0.38+thread-devel \
  "

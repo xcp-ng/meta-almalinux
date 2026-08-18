@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "fb3eb7cfc674052cb56bd9f2eea1e2ebf683f934207f1b194446fe
 
 URI_x86_64_v2_pugixml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pugixml-1.13-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pugixml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pugixml}"
-SRC_URI[x86_64_v2_pugixml.sha256sum] = "96a6850ac1a515f6aa5bdbaa59a1b866161e2b4b1ba248f11a3590f5fc79dc7a"
+SRC_URI[x86_64_v2_pugixml.sha256sum] = "35f42c176f0cf9ee7315e6ab4cbaedd173c3237358ca52e3e6393bec33af8c1d"
 
 URI_x86_64_v2_pugixml-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pugixml-devel-1.13-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pugixml-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pugixml-devel}"
-SRC_URI[x86_64_v2_pugixml-devel.sha256sum] = "b6abca68943697f0f47416cc8df8885a86e9f41ba0e8ee13874541cea8fc5630"
+SRC_URI[x86_64_v2_pugixml-devel.sha256sum] = "0c1fae82eb0862e07efed9001c6f7eb466e8dc56e9bcd705b16d189237edd2e1"
 
 URI_x86_64_v2_pugixml-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pugixml-doc-1.13-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pugixml-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pugixml-doc}"
-SRC_URI[x86_64_v2_pugixml-doc.sha256sum] = "22dfce6cc8e94c58e191060f3bf7623906c4e828f8189e3a7535e3abb4ae67ed"
+SRC_URI[x86_64_v2_pugixml-doc.sha256sum] = "ed8b88ca791b2a3e24db3507d6c7bbcd7c97ce946596566f4a9241097839e025"
 
 URI_aarch64_pugixml = "${EPEL_MIRROR}/aarch64/Packages/p/pugixml-1.13-6.el10_0.aarch64.rpm;name=aarch64_pugixml;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pugixml}"

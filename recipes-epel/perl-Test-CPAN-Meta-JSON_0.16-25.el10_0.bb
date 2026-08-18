@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6421422f4e543e5b87d5d6eaaeaf64b87a85857aea41f90c73c02d
 
 URI_x86_64_v2_perl-Test-CPAN-Meta-JSON = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CPAN-Meta-JSON-0.16-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CPAN-Meta-JSON;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-CPAN-Meta-JSON}"
-SRC_URI[x86_64_v2_perl-Test-CPAN-Meta-JSON.sha256sum] = "1d60367af452f3e084369634f28159c2c527d9830d6da17577ad34081b6c3bd6"
+SRC_URI[x86_64_v2_perl-Test-CPAN-Meta-JSON.sha256sum] = "7dff4253c60ddf8b89b98ab90e449e684bbcf6873653c3ae3b0024cb492fd1b3"
 
 URI_aarch64_perl-Test-CPAN-Meta-JSON = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CPAN-Meta-JSON-0.16-25.el10_0.noarch.rpm;name=aarch64_perl-Test-CPAN-Meta-JSON;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-CPAN-Meta-JSON}"

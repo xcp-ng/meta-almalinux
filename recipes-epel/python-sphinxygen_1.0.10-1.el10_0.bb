@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "cb77f608dcb3d3171d191288e0c04fbfd39708c329eb43f25b0359
 
 URI_x86_64_v2_python3-sphinxygen = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxygen-1.0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxygen;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinxygen}"
-SRC_URI[x86_64_v2_python3-sphinxygen.sha256sum] = "5b07199698cdc410520ebf17020a044b6f40098ca2cef6044d54d19a5c6dcca8"
+SRC_URI[x86_64_v2_python3-sphinxygen.sha256sum] = "8da31f40d649a14b606632f5f7a6823fa9193db6aac45a4e98ba0ee80298d827"
 
 URI_aarch64_python3-sphinxygen = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxygen-1.0.10-1.el10_0.noarch.rpm;name=aarch64_python3-sphinxygen;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinxygen}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "86e14c883c26e22bd89046cfdd2cac5ada13b7f5be20a06c45523a
 
 URI_x86_64_v2_php-pecl-rpminfo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-rpminfo-1.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-rpminfo;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-rpminfo}"
-SRC_URI[x86_64_v2_php-pecl-rpminfo.sha256sum] = "ccb3bd2d89b8bb2b3d783a56b663c707d7197d2184eec5d83f97be2af7d3e389"
+SRC_URI[x86_64_v2_php-pecl-rpminfo.sha256sum] = "70ddf51d780260e82607df48a3c11f3843ae5f12ba4c21341645a78e64fd0881"
 
 URI_aarch64_php-pecl-rpminfo = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-rpminfo-1.2.0-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-rpminfo;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-rpminfo}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "878b90a158b6c65440b69598e85d976d67d56a00b2892cb39aad6a
 
 URI_x86_64_v2_perl-Sort-Key = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Key-1.33-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sort-Key;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sort-Key}"
-SRC_URI[x86_64_v2_perl-Sort-Key.sha256sum] = "09d314d7a04e44d15a64949b576285c4cd23b7f94c994a6308e17d4d274fd984"
+SRC_URI[x86_64_v2_perl-Sort-Key.sha256sum] = "aeb3bc96b1c4a1fc75ac97921a08d9aec93fc6479c7a2a97eb7384a3b4aff515"
 
 URI_aarch64_perl-Sort-Key = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Key-1.33-32.el10_0.aarch64.rpm;name=aarch64_perl-Sort-Key;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sort-Key}"

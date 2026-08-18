@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b2dcd88e053bc53e1efe08e20a5e97f12d9dea97b70d7b555a5ea3
 
 URI_x86_64_v2_python3-pygraphviz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygraphviz-1.14-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pygraphviz;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pygraphviz}"
-SRC_URI[x86_64_v2_python3-pygraphviz.sha256sum] = "167e3787fefff8a5552a4101b8a4b1d1cc7950ae4708599c3929f4f8ac723947"
+SRC_URI[x86_64_v2_python3-pygraphviz.sha256sum] = "25918070faf1b6d673b3ccbaea73a355a555b00d93e5427240c627dade0e8127"
 
 URI_aarch64_python3-pygraphviz = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pygraphviz-1.14-4.el10_0.aarch64.rpm;name=aarch64_python3-pygraphviz;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pygraphviz}"

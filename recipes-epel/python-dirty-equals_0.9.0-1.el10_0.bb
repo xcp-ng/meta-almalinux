@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "c4180ab4bf15e4274b73d847c57447c54ac14ab5f57dee582e2825
 
 URI_x86_64_v2_python3-dirty-equals = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dirty-equals-0.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dirty-equals;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dirty-equals}"
-SRC_URI[x86_64_v2_python3-dirty-equals.sha256sum] = "dbe382b17945043d43d358e3b7a80cd7199d9e82238c743f7635938f5f62e951"
+SRC_URI[x86_64_v2_python3-dirty-equals.sha256sum] = "87d4f02d1c7ab1b043d601828f60dd9913299811a87e5eaa32613c19826f894b"
 
 URI_x86_64_v2_python3-dirty-equals+pydantic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dirty-equals+pydantic-0.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dirty-equals+pydantic;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dirty-equals+pydantic}"
-SRC_URI[x86_64_v2_python3-dirty-equals+pydantic.sha256sum] = "3935358fdddb160e0da55047ea96e83b60eccd3867a7404edc94d5f993879c8e"
+SRC_URI[x86_64_v2_python3-dirty-equals+pydantic.sha256sum] = "ee6cd990883e3f8f5e7727fd05cb430e211d5214ffd3f587cc495ffaeb0dde52"
 
 URI_aarch64_python3-dirty-equals = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dirty-equals-0.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-dirty-equals;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-dirty-equals}"

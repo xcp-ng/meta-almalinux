@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "b6e40e417a09bb921213f8706ff1699a326164a584f43845fa66a4
 
 URI_x86_64_v2_perl-Schedule-Cron = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Schedule-Cron-1.05-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Schedule-Cron;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Schedule-Cron}"
-SRC_URI[x86_64_v2_perl-Schedule-Cron.sha256sum] = "547ee0a27e63ac96a37b6335101769de2be449e6d652ad7fe062fa8ae763e992"
+SRC_URI[x86_64_v2_perl-Schedule-Cron.sha256sum] = "0199754d11178600a2bb61ee353bab42d31d04aa3cf249760026c571c0346d96"
 
 URI_aarch64_perl-Schedule-Cron = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Schedule-Cron-1.05-6.el10_0.noarch.rpm;name=aarch64_perl-Schedule-Cron;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Schedule-Cron}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "55a32bb09c447b4de36f949334932752009f0a7f961f0a42ef17a4
 
 URI_x86_64_v2_python3-mkdocs-git-committers-plugin-2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-git-committers-plugin-2-2.4.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-git-committers-plugin-2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-git-committers-plugin-2}"
-SRC_URI[x86_64_v2_python3-mkdocs-git-committers-plugin-2.sha256sum] = "db584626f10c4ef73e0c1b569cdb933114a34f41e311567c7600c984eaee1ecb"
+SRC_URI[x86_64_v2_python3-mkdocs-git-committers-plugin-2.sha256sum] = "07e3ffc88e928a1cb15b9ef915703b15da6e6ebfdd783fcbd427eafa0f8b7a75"
 
 URI_aarch64_python3-mkdocs-git-committers-plugin-2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-git-committers-plugin-2-2.4.1-1.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-git-committers-plugin-2;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-mkdocs-git-committers-plugin-2}"

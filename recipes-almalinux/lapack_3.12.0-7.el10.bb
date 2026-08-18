@@ -24,7 +24,7 @@ SRC_URI[src.sha256sum] = "c1640b966916737dc1937f021aa23acc808168488e77ec7a3a8a0e
 URI_x86_64_v2_blas = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/blas-3.12.0-7.el10.x86_64_v2.rpm;name=x86_64_v2_blas;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_blas}"
 SRC_URI[x86_64_v2_blas.sha256sum] = "e76dd7b0d4f0348b65c3dc35caab40e69de147e65b6d9958329216dabbd0a0af"
-RPROVIDES:blas:x86_64_v2 = "virtual/libblas.so.3___64bit_"
+RPROVIDES:blas:append:x86_64_v2 = " virtual/libblas.so.3___64bit_"
 
 URI_x86_64_v2_blas-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/blas-devel-3.12.0-7.el10.x86_64_v2.rpm;name=x86_64_v2_blas-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_blas-devel}"
@@ -33,7 +33,7 @@ SRC_URI[x86_64_v2_blas-devel.sha256sum] = "f2e147491ebfdae3a6b1254b9fb355373c805
 URI_x86_64_v2_blas64 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/blas64-3.12.0-7.el10.x86_64_v2.rpm;name=x86_64_v2_blas64;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_blas64}"
 SRC_URI[x86_64_v2_blas64.sha256sum] = "a25bb523a0c6c1131b31bfa488126996f679cce2eb050c11ea9ac589c172c9a3"
-RPROVIDES:blas64:x86_64_v2 = "virtual/libblas64.so.3___64bit_"
+RPROVIDES:blas64:append:x86_64_v2 = " virtual/libblas64.so.3___64bit_"
 
 URI_x86_64_v2_blas64_ = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/blas64_-3.12.0-7.el10.x86_64_v2.rpm;name=x86_64_v2_blas64_;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_blas64_}"
@@ -62,7 +62,7 @@ SRC_URI[x86_64_v2_lapack64_.sha256sum] = "8fa35a09be989879e478fa80a6b8669a60a89a
 URI_aarch64_blas = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/blas-3.12.0-7.el10.aarch64.rpm;name=aarch64_blas;unpack=0"
 SRC_URI:append = " ${URI_aarch64_blas}"
 SRC_URI[aarch64_blas.sha256sum] = "70d848365779845c2c92ad7635372f2e68e872b5f69b017aaf53280168e3dd36"
-RPROVIDES:blas:aarch64 = "virtual/libblas.so.3___64bit_"
+RPROVIDES:blas:append:aarch64 = " virtual/libblas.so.3___64bit_"
 
 URI_aarch64_blas-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/blas-devel-3.12.0-7.el10.aarch64.rpm;name=aarch64_blas-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_blas-devel}"
@@ -71,7 +71,7 @@ SRC_URI[aarch64_blas-devel.sha256sum] = "a774022e2885b982c07d36fcd65295968f176e5
 URI_aarch64_blas64 = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/blas64-3.12.0-7.el10.aarch64.rpm;name=aarch64_blas64;unpack=0"
 SRC_URI:append = " ${URI_aarch64_blas64}"
 SRC_URI[aarch64_blas64.sha256sum] = "1a8217b26a66f77583d64226b11197f050e1fa10ad93849f9c28d847008b5025"
-RPROVIDES:blas64:aarch64 = "virtual/libblas64.so.3___64bit_"
+RPROVIDES:blas64:append:aarch64 = " virtual/libblas64.so.3___64bit_"
 
 URI_aarch64_blas64_ = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/blas64_-3.12.0-7.el10.aarch64.rpm;name=aarch64_blas64_;unpack=0"
 SRC_URI:append = " ${URI_aarch64_blas64_}"
@@ -155,7 +155,3 @@ RDEPENDS:lapack64_ = " \
  libgcc \
  libgfortran \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/libblas.so.3___64bit_ rpm/virtual/libblas64.so.3___64bit_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/libblas.so.3___64bit_ rpm/virtual/libblas64.so.3___64bit_"

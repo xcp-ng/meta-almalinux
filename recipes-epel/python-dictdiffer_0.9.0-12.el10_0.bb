@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7eff9553ca6edca08860a095cff44fbc37260babb5dfa407cf6199
 
 URI_x86_64_v2_python3-dictdiffer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dictdiffer-0.9.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dictdiffer;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-dictdiffer}"
-SRC_URI[x86_64_v2_python3-dictdiffer.sha256sum] = "33397e15cf5582c35ece1853cd5c1b81e2ee59b49663d8f212a345ea4ef9bbd3"
+SRC_URI[x86_64_v2_python3-dictdiffer.sha256sum] = "70e55deb333a0e4ef9cc972bcfab5e864702e7bdf4a8c3f408e527efeb1ef82d"
 
 URI_aarch64_python3-dictdiffer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dictdiffer-0.9.0-12.el10_0.noarch.rpm;name=aarch64_python3-dictdiffer;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-dictdiffer}"

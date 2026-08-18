@@ -36,6 +36,6 @@ RDEPENDS:rust-cexpr+default-devel = " \
  "
 RDEPENDS:rust-cexpr-devel = " \
  cargo \
- rust-nom+std-devel \
- rust-nom-devel \
+ rust-nom7+std-devel \
+ rust-nom7-devel \
  "

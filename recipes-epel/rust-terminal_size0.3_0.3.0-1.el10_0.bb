@@ -36,6 +36,6 @@ RDEPENDS:rust-terminal_size0.3+default-devel = " \
  "
 RDEPENDS:rust-terminal_size0.3-devel = " \
  cargo \
- rust-rustix+default-devel \
- rust-rustix+termios-devel \
+ rust-rustix0.38+default-devel \
+ rust-rustix0.38+termios-devel \
  "

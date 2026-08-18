@@ -122,9 +122,9 @@ RDEPENDS:rust-addr2line+loader-devel = " \
  rust-addr2line+std-devel \
  rust-addr2line-devel \
  rust-memmap2+default-devel \
- rust-object+compression-devel \
- rust-object+read-devel \
- rust-object-devel \
+ rust-object0.36+compression-devel \
+ rust-object0.36+read-devel \
+ rust-object0.36-devel \
  rust-typed-arena+default-devel \
  "
 RDEPENDS:rust-addr2line+rustc-demangle-devel = " \

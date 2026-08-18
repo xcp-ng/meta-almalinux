@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "04ed3c5c68a01771c5457888c6a1f85335f6718b597a50aea615cf
 
 URI_x86_64_v2_python-sortedcontainers-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-sortedcontainers-doc-2.4.0-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-sortedcontainers-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-sortedcontainers-doc}"
-SRC_URI[x86_64_v2_python-sortedcontainers-doc.sha256sum] = "0d559b9da99c62e427aa2d7622cacd87bbb4b37b819464144d69224646466b6c"
+SRC_URI[x86_64_v2_python-sortedcontainers-doc.sha256sum] = "c0e32677ffa8d9099766c9d55265d4412dcc42088c225edbcfdbd6776111e29c"
 
 URI_x86_64_v2_python3-sortedcontainers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sortedcontainers-2.4.0-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sortedcontainers;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sortedcontainers}"
-SRC_URI[x86_64_v2_python3-sortedcontainers.sha256sum] = "110eb75ba60e8b7c22f28b2fea5040c4659ea53fb0015ebc67a9bee32a25b697"
+SRC_URI[x86_64_v2_python3-sortedcontainers.sha256sum] = "769d607c3a7ec6e931c0e83ef2c4d0d5f716b4dca3c3691d021c8db3a3ba4698"
 
 URI_aarch64_python-sortedcontainers-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-sortedcontainers-doc-2.4.0-19.el10_0.noarch.rpm;name=aarch64_python-sortedcontainers-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-sortedcontainers-doc}"

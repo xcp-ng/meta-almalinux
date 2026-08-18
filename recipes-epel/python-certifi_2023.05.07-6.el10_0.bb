@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "abdf9e546a54a1cf4e086d34f231c238ebdf90482294ee926547fe
 
 URI_x86_64_v2_python3-certifi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-certifi-2023.05.07-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-certifi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-certifi}"
-SRC_URI[x86_64_v2_python3-certifi.sha256sum] = "83cc75214ba6a5c73c39e1f12f327ef063bac59811198ecfbf46756af4eab112"
+SRC_URI[x86_64_v2_python3-certifi.sha256sum] = "ba12373daa7b03aea1eb8f4adb3119832952cb0521106e3809d6cc7b9a8bfad2"
 
 URI_aarch64_python3-certifi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-certifi-2023.05.07-6.el10_0.noarch.rpm;name=aarch64_python3-certifi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-certifi}"

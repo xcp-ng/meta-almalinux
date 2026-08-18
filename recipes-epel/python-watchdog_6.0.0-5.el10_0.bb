@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f8159d77da90d766372cfe40f16018aebeaf94472bc79fb0b1cdb0
 
 URI_x86_64_v2_python3-watchdog = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-watchdog-6.0.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-watchdog;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-watchdog}"
-SRC_URI[x86_64_v2_python3-watchdog.sha256sum] = "09df23c2ffc01d181549d4050d502144cf67a52f2dbd8a3665f5595f3d549833"
+SRC_URI[x86_64_v2_python3-watchdog.sha256sum] = "3f908308360990b19735fb53c91b7690a8e4a13012082605d5bca17ea7c5d138"
 
 URI_aarch64_python3-watchdog = "${EPEL_MIRROR}/aarch64/Packages/p/python3-watchdog-6.0.0-5.el10_0.noarch.rpm;name=aarch64_python3-watchdog;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-watchdog}"

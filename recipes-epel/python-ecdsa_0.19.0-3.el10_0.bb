@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "cb61d7cbd90e6a864744e2a473b90e950c113cc763244aab51450e
 
 URI_x86_64_v2_python3-ecdsa = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ecdsa-0.19.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ecdsa;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-ecdsa}"
-SRC_URI[x86_64_v2_python3-ecdsa.sha256sum] = "d3e312926f40e69d16d9b5263f6ed47b2420177ca3d65eb69ec86fb58c06f265"
+SRC_URI[x86_64_v2_python3-ecdsa.sha256sum] = "f2b73a784308a967ee47c2874e4a8e38b6b79efe79620416fa2481eefab75ab3"
 
 URI_aarch64_python3-ecdsa = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ecdsa-0.19.0-3.el10_0.noarch.rpm;name=aarch64_python3-ecdsa;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-ecdsa}"

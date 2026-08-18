@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "bdb25543d1ff2578e13df3e6aab10f2b50833421ed9be40e8ed539
 
 URI_x86_64_v2_python3-coverage = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-coverage}"
-SRC_URI[x86_64_v2_python3-coverage.sha256sum] = "46a82c491d7a0d1403fc0d3d7dea175cd45256e401b3fe4a636cac05e57f410a"
+SRC_URI[x86_64_v2_python3-coverage.sha256sum] = "141b0dbd12f9ea1f570566922859cd1c3cdbbbecb005b0ba46ecfa518ec75870"
 
 URI_x86_64_v2_python3-coverage+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage+toml-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage+toml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-coverage+toml}"
-SRC_URI[x86_64_v2_python3-coverage+toml.sha256sum] = "dc395db078d24050b3200e13b66b80cbc03ee92149318d977599ae0d699135ad"
+SRC_URI[x86_64_v2_python3-coverage+toml.sha256sum] = "15d3e875e630ddfd17d91c70a011800f277b3f98e38117f0bfce9b3741833ecd"
 
 URI_aarch64_python3-coverage = "${EPEL_MIRROR}/aarch64/Packages/p/python3-coverage-7.3.2-5.el10_0.aarch64.rpm;name=aarch64_python3-coverage;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-coverage}"

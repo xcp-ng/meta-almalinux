@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "bedd248d290551d377067d52513d929aa1f918039b2fb38c896cb0
 
 URI_x86_64_v2_perl-Test-Mojibake = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Mojibake-1.3-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Mojibake;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Mojibake}"
-SRC_URI[x86_64_v2_perl-Test-Mojibake.sha256sum] = "3de208b3340f42d6ebd302418a62ebe266740d4a00339d3e26580fb68eecd398"
+SRC_URI[x86_64_v2_perl-Test-Mojibake.sha256sum] = "723bde7c3fdc1ca33cbaaf9f249770ee6de38a99a5cfdc2403f422167f252e2e"
 
 URI_aarch64_perl-Test-Mojibake = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Mojibake-1.3-31.el10_0.noarch.rpm;name=aarch64_perl-Test-Mojibake;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Mojibake}"

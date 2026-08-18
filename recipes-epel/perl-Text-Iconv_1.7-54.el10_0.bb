@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7224fc31aef987bc2284021ef3cc87a4e57b27052355b71a7b8fd1
 
 URI_x86_64_v2_perl-Text-Iconv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Iconv-1.7-54.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Text-Iconv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Iconv}"
-SRC_URI[x86_64_v2_perl-Text-Iconv.sha256sum] = "45beb2a786e08986885092caf5453beba842a3fb7462feacd7eeab7ad30003ad"
+SRC_URI[x86_64_v2_perl-Text-Iconv.sha256sum] = "3d365d1996b07b69a4ebe41a528edcfdc2663ea42130d8a04a87d4e99da6d0cf"
 
 URI_aarch64_perl-Text-Iconv = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Iconv-1.7-54.el10_0.aarch64.rpm;name=aarch64_perl-Text-Iconv;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Text-Iconv}"

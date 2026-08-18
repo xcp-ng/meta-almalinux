@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c4147e3d1e0b86328901b3f46b0dee856226c489d7464f592da113
 
 URI_x86_64_v2_poi-tracker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poi-tracker-0.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_poi-tracker;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_poi-tracker}"
-SRC_URI[x86_64_v2_poi-tracker.sha256sum] = "aaeb0ab31dc3b18e17b09b27db1f51e867eb3e1ebb48eda70c71c7ac7069b7f6"
+SRC_URI[x86_64_v2_poi-tracker.sha256sum] = "7037a716d55b8f825c6661d25d51d79419f21cd0bdb7f0a5b20deb9df8bb8f4d"
 
 URI_aarch64_poi-tracker = "${EPEL_MIRROR}/aarch64/Packages/p/poi-tracker-0.0.1-1.el10_0.noarch.rpm;name=aarch64_poi-tracker;unpack=0"
 SRC_URI:append = " ${URI_aarch64_poi-tracker}"

@@ -20,7 +20,7 @@ SRC_URI[src.sha256sum] = "2548863ef73029243addb139f2efffb4cb4fe8183b51b5fb9a3790
 URI_x86_64_v2_sendmail = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sendmail-8.18.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sendmail;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_sendmail}"
 SRC_URI[x86_64_v2_sendmail.sha256sum] = "efbb35d175f489c48cc48c23ffaf4965b8f8482d4bc9979a2a7a2750fde9f6c8"
-RPROVIDES:sendmail:x86_64_v2 = "virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
+RPROVIDES:sendmail:append:x86_64_v2 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 
 URI_x86_64_v2_sendmail-cf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sendmail-cf-8.18.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_sendmail-cf;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_sendmail-cf}"
@@ -41,7 +41,7 @@ SRC_URI[x86_64_v2_sendmail-milter-devel.sha256sum] = "e460571b7e1468bef64f500e7f
 URI_aarch64_sendmail = "${EPEL_MIRROR}/aarch64/Packages/s/sendmail-8.18.1-4.el10_0.aarch64.rpm;name=aarch64_sendmail;unpack=0"
 SRC_URI:append = " ${URI_aarch64_sendmail}"
 SRC_URI[aarch64_sendmail.sha256sum] = "bedfb44a1bd78903fa4b4378a981ec950c8f1e974dd822938079dea42e9ed68c"
-RPROVIDES:sendmail:aarch64 = "virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
+RPROVIDES:sendmail:append:aarch64 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 
 URI_aarch64_sendmail-cf = "${EPEL_MIRROR}/aarch64/Packages/s/sendmail-cf-8.18.1-4.el10_0.noarch.rpm;name=aarch64_sendmail-cf;unpack=0"
 SRC_URI:append = " ${URI_aarch64_sendmail-cf}"
@@ -89,7 +89,3 @@ RDEPENDS:sendmail-milter = " \
 RDEPENDS:sendmail-milter-devel = " \
  sendmail-milter \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual//usr/bin/mailq rpm/virtual//usr/sbin/sendmail rpm/virtual/smtpdaemon"
-
-PROVIDES:append:aarch64 = " rpm/virtual//usr/bin/mailq rpm/virtual//usr/sbin/sendmail rpm/virtual/smtpdaemon"

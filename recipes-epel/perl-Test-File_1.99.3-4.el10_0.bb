@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4a018496338ce0d3cc701fbab61b2001ee5e60629643291ee9080f
 
 URI_x86_64_v2_perl-Test-File = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-File-1.99.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-File;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-File}"
-SRC_URI[x86_64_v2_perl-Test-File.sha256sum] = "d1d62ad86e5d94e54136211d595422d142241c18fb055e0df23e92899ee061b0"
+SRC_URI[x86_64_v2_perl-Test-File.sha256sum] = "36f5149413780d54f34ff90a973cac069ee90b0d4be2c6a24aac6d672a7b29f9"
 
 URI_aarch64_perl-Test-File = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-File-1.99.3-4.el10_0.noarch.rpm;name=aarch64_perl-Test-File;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-File}"

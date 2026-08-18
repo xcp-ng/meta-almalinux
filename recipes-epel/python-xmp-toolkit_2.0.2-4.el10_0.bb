@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "3daaf7a0ac059f6484845f0685eb98cc6f051bba8f3012990239bd
 
 URI_x86_64_v2_python-xmp-toolkit-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-xmp-toolkit-doc-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-xmp-toolkit-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-xmp-toolkit-doc}"
-SRC_URI[x86_64_v2_python-xmp-toolkit-doc.sha256sum] = "72f1f9a7a5f2ea4ad180041d81641de0fd529ca88db7c04ce5f52548daa64eae"
+SRC_URI[x86_64_v2_python-xmp-toolkit-doc.sha256sum] = "231ef56af1a9427d2f1fb38d7b2cb3d7af7960163406352a7d0391b196f702ef"
 
 URI_x86_64_v2_python3-xmp-toolkit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xmp-toolkit-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xmp-toolkit;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-xmp-toolkit}"
-SRC_URI[x86_64_v2_python3-xmp-toolkit.sha256sum] = "c7a32edebd3f9c457685ed06724f75daa12f238f7e456685ee565d9028f86cec"
+SRC_URI[x86_64_v2_python3-xmp-toolkit.sha256sum] = "34b98b24c67b2aeb3024b3011d7cb07bebe1361c456c01811725f554db5e655a"
 
 URI_aarch64_python-xmp-toolkit-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-xmp-toolkit-doc-2.0.2-4.el10_0.noarch.rpm;name=aarch64_python-xmp-toolkit-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-xmp-toolkit-doc}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6acf6da9f181c4605b3aa1abf8b1e1c6e1b45038b839990e25dafb
 
 URI_x86_64_v2_python3-pycurl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pycurl-7.45.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pycurl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pycurl}"
-SRC_URI[x86_64_v2_python3-pycurl.sha256sum] = "379013c374a94c7ccca5eea50be11f6adb3f2f7629196c5d1b1285e9836c21f5"
+SRC_URI[x86_64_v2_python3-pycurl.sha256sum] = "8f319559fac02c2236492cf5052a13cf92109449fc0123a31152fb7e98ad5bc2"
 
 URI_aarch64_python3-pycurl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pycurl-7.45.3-4.el10_0.aarch64.rpm;name=aarch64_python3-pycurl;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pycurl}"

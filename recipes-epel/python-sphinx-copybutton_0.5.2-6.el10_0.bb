@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "793a05092051566f1f17c5da99721a6ab46d634149229640c323e4
 
 URI_x86_64_v2_python3-sphinx-copybutton = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-copybutton-0.5.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-copybutton;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-copybutton}"
-SRC_URI[x86_64_v2_python3-sphinx-copybutton.sha256sum] = "faadd78c6cb67e0f58503121fc8bb3ed52c1215fdaf8e4e02c1c87b14fcd0595"
+SRC_URI[x86_64_v2_python3-sphinx-copybutton.sha256sum] = "46fa585f41b6e3b25a88649b682285e5dba8c623ee06b692d4bfd36e553df9e3"
 
 URI_aarch64_python3-sphinx-copybutton = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-copybutton-0.5.2-6.el10_0.noarch.rpm;name=aarch64_python3-sphinx-copybutton;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinx-copybutton}"

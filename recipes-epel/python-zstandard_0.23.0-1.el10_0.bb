@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "2fc3b69c5c0b1875624c337ef7a8877fd9cde53efa1905d7508dda
 
 URI_x86_64_v2_python3-zstandard = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zstandard-0.23.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-zstandard;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zstandard}"
-SRC_URI[x86_64_v2_python3-zstandard.sha256sum] = "cca3aa73e593659381be7180e1eeeb43dc6a7b2031938c5fc1dcb816a9b05b1b"
+SRC_URI[x86_64_v2_python3-zstandard.sha256sum] = "e58f68a95160649e2902dc234903b87a9c68ffdb01a6e8435aeb89a8e2d70288"
 
 URI_x86_64_v2_python3-zstandard+cffi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zstandard+cffi-0.23.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-zstandard+cffi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zstandard+cffi}"
-SRC_URI[x86_64_v2_python3-zstandard+cffi.sha256sum] = "dae87ab843d8558b0678b53360b23cff237b5337b759ef7f3b881bb71bb227c0"
+SRC_URI[x86_64_v2_python3-zstandard+cffi.sha256sum] = "f7ba6ff2f99ca3344a7545ddf54a360c23587bbc1acc1614f9bf992871f19ccc"
 
 URI_aarch64_python3-zstandard = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zstandard-0.23.0-1.el10_0.aarch64.rpm;name=aarch64_python3-zstandard;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-zstandard}"

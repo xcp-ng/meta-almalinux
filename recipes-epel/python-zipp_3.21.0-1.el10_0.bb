@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ecdcbf8e9d8fd006bc7de7df909c399c1ac1875e788a79b84f9ada
 
 URI_x86_64_v2_python3-zipp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zipp-3.21.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zipp;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zipp}"
-SRC_URI[x86_64_v2_python3-zipp.sha256sum] = "b102a5b1dc1202fad8174040e1e2122e18946ff0a54766956f4062bbfa9f1c11"
+SRC_URI[x86_64_v2_python3-zipp.sha256sum] = "49815288a85a4c243d092fe367a1b7a0a3a5379e7457d856312e2988fde61016"
 
 URI_aarch64_python3-zipp = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zipp-3.21.0-1.el10_0.noarch.rpm;name=aarch64_python3-zipp;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-zipp}"

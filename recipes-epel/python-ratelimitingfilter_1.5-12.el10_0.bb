@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "37b016f0d092c9b8f53ea623741d3d92057677d32534cf965a4282
 
 URI_x86_64_v2_python3-ratelimitingfilter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ratelimitingfilter-1.5-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ratelimitingfilter;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-ratelimitingfilter}"
-SRC_URI[x86_64_v2_python3-ratelimitingfilter.sha256sum] = "5097fb23d4645166d96e88736bedb816cdb96e75438120ad924d634a41bce60f"
+SRC_URI[x86_64_v2_python3-ratelimitingfilter.sha256sum] = "7ca2394ae64c92971ad89d44523355b8baed8a12bc1f003ba3086674fc3ddd87"
 
 URI_aarch64_python3-ratelimitingfilter = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ratelimitingfilter-1.5-12.el10_0.noarch.rpm;name=aarch64_python3-ratelimitingfilter;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-ratelimitingfilter}"

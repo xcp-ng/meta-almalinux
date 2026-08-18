@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4f7eed214c9042c31e772f0fcff664045e89f075ad64d36eab50c1
 
 URI_x86_64_v2_perl-Sereal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sereal-5.004-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sereal;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sereal}"
-SRC_URI[x86_64_v2_perl-Sereal.sha256sum] = "928baddacb486953b35fbfbdd5a34cb3fa16f8726c48a59044d963b71d60b2c8"
+SRC_URI[x86_64_v2_perl-Sereal.sha256sum] = "91cc174ade261cf424cc0bf688db2eee03bff70ff34a640db9e64a950e7b786a"
 
 URI_aarch64_perl-Sereal = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sereal-5.004-1.el10_0.noarch.rpm;name=aarch64_perl-Sereal;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sereal}"

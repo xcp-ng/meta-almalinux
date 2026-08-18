@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "336fe6f32f648b957ff0bfbacd44dd625b4c165f8b1b624b15d716
 
 URI_x86_64_v2_perl-YAML-Syck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-Syck-1.34-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-YAML-Syck;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-Syck}"
-SRC_URI[x86_64_v2_perl-YAML-Syck.sha256sum] = "97c2466f03d6e5bedebd355f00e76d769240b26264dc4c56c2c5f12d0a3984f0"
+SRC_URI[x86_64_v2_perl-YAML-Syck.sha256sum] = "bbee2c06d4a45c74a7df4f3bda7f621b22a11a8e1c7685fbaaad700271ba2460"
 
 URI_aarch64_perl-YAML-Syck = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-Syck-1.34-8.el10_0.aarch64.rpm;name=aarch64_perl-YAML-Syck;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-YAML-Syck}"

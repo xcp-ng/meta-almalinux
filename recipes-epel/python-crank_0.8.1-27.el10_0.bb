@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "079082dbaf65f7c250b7435187c136232b87197213f84ff237b2d6
 
 URI_x86_64_v2_python3-crank = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-crank-0.8.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-crank;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-crank}"
-SRC_URI[x86_64_v2_python3-crank.sha256sum] = "8a2fe58472db752482ff18666a106218c93ba5d465c80c44c8f26b389d26d1e4"
+SRC_URI[x86_64_v2_python3-crank.sha256sum] = "d10706091307fa74d609c967bb9fac912a8d76f953cb0d2a6a5aa9aef842446e"
 
 URI_aarch64_python3-crank = "${EPEL_MIRROR}/aarch64/Packages/p/python3-crank-0.8.1-27.el10_0.noarch.rpm;name=aarch64_python3-crank;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-crank}"

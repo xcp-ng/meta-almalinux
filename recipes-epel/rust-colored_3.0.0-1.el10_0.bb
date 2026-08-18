@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "1ab2eec7ffae3f0e5dc0cc896f8fe9aaa0190633103c3a4e462537
 URI_x86_64_v2_rust-colored+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-colored+default-devel-3.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-colored+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-colored+default-devel}"
 SRC_URI[x86_64_v2_rust-colored+default-devel.sha256sum] = "3c351c80861212fecd7292dc8ab9322ce779584ab55a016f8915eb182dd220cf"
-RPROVIDES:rust-colored+default-devel:x86_64_v2 = "virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
+RPROVIDES:rust-colored+default-devel:append:x86_64_v2 = " virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
 
 URI_x86_64_v2_rust-colored+no-color-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-colored+no-color-devel-3.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-colored+no-color-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-colored+no-color-devel}"
@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_rust-colored-devel.sha256sum] = "a78c206acc606cc91caf47c146141
 URI_aarch64_rust-colored+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-colored+default-devel-3.0.0-1.el10_0.noarch.rpm;name=aarch64_rust-colored+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-colored+default-devel}"
 SRC_URI[aarch64_rust-colored+default-devel.sha256sum] = "f4e36f795d2ef869124ccc1a506bde756bfa30f9d4abfb20facc586fba2082ec"
-RPROVIDES:rust-colored+default-devel:aarch64 = "virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
+RPROVIDES:rust-colored+default-devel:append:aarch64 = " virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
 
 URI_aarch64_rust-colored+no-color-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-colored+no-color-devel-3.0.0-1.el10_0.noarch.rpm;name=aarch64_rust-colored+no-color-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-colored+no-color-devel}"
@@ -53,7 +53,3 @@ RDEPENDS:rust-colored-devel = " \
  cargo \
  rust \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"

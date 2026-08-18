@@ -18,19 +18,19 @@ SRC_URI[src.sha256sum] = "2caa6ce960f7edf48292689ccfe5e74992504fad00d6f573f884cf
 
 URI_x86_64_v2_rust-error-chain+backtrace-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+backtrace-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+backtrace-devel}"
-SRC_URI[x86_64_v2_rust-error-chain+backtrace-devel.sha256sum] = "72844bea2cc714e2188a4489186d7d8b9e3e2c4fb6dd547b6a4f39d06fa5194c"
+SRC_URI[x86_64_v2_rust-error-chain+backtrace-devel.sha256sum] = "ff7c3033c969446393f3ce90491647af9673662e878da50f2971f812a269e598"
 
 URI_x86_64_v2_rust-error-chain+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+default-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+default-devel}"
-SRC_URI[x86_64_v2_rust-error-chain+default-devel.sha256sum] = "c3802a58b354335404fb0891a81d137d1e2583bbb7afa6be520a494a6aac8ae1"
+SRC_URI[x86_64_v2_rust-error-chain+default-devel.sha256sum] = "c7e57c3fbff03d55ec44dcab0c85235b94340e3127845ad9687f74ee3f97926b"
 
 URI_x86_64_v2_rust-error-chain+example_generated-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+example_generated-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+example_generated-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+example_generated-devel}"
-SRC_URI[x86_64_v2_rust-error-chain+example_generated-devel.sha256sum] = "ae4d968a03655d8871bf429e48830524a6d9cc8da7c848e7b75c7f96096dca96"
+SRC_URI[x86_64_v2_rust-error-chain+example_generated-devel.sha256sum] = "870ee48c6cc9eedbde2b3c899a6f445d895aec6f1842d648018070f1943acebd"
 
 URI_x86_64_v2_rust-error-chain-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain-devel}"
-SRC_URI[x86_64_v2_rust-error-chain-devel.sha256sum] = "f4767c36a6adf74b2ea089b8109847773c6967e72e276074e136897e4ee8fd62"
+SRC_URI[x86_64_v2_rust-error-chain-devel.sha256sum] = "11534256711bdbbc5471fa481f3150ab09c1b75ac549904850d1e32e6af1f517"
 
 URI_aarch64_rust-error-chain+backtrace-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+backtrace-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-error-chain+backtrace-devel}"

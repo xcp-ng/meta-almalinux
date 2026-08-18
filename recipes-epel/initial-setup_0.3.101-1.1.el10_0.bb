@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_initial-setup-gui.sha256sum] = "f6423b4d9d2d008adc0d9ca61d7292
 URI_x86_64_v2_initial-setup-gui-wayland-generic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/initial-setup-gui-wayland-generic-0.3.101-1.1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_initial-setup-gui-wayland-generic;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_initial-setup-gui-wayland-generic}"
 SRC_URI[x86_64_v2_initial-setup-gui-wayland-generic.sha256sum] = "c46c8ed1965fe1726c3af0ccef49f9efb1d1a885bf0eb3fac14eb0126d5bce62"
-RPROVIDES:initial-setup-gui-wayland-generic:x86_64_v2 = "virtual/firstboot_gui-backend_"
+RPROVIDES:initial-setup-gui-wayland-generic:append:x86_64_v2 = " virtual/firstboot_gui-backend_"
 
 URI_aarch64_initial-setup = "${EPEL_MIRROR}/aarch64/Packages/i/initial-setup-0.3.101-1.1.el10_0.aarch64.rpm;name=aarch64_initial-setup;unpack=0"
 SRC_URI:append = " ${URI_aarch64_initial-setup}"
@@ -39,7 +39,7 @@ SRC_URI[aarch64_initial-setup-gui.sha256sum] = "343096810139b20bc218d21589f59993
 URI_aarch64_initial-setup-gui-wayland-generic = "${EPEL_MIRROR}/aarch64/Packages/i/initial-setup-gui-wayland-generic-0.3.101-1.1.el10_0.aarch64.rpm;name=aarch64_initial-setup-gui-wayland-generic;unpack=0"
 SRC_URI:append = " ${URI_aarch64_initial-setup-gui-wayland-generic}"
 SRC_URI[aarch64_initial-setup-gui-wayland-generic.sha256sum] = "7f224c7cc10b5303f58f73dcb41d5e6533c2907db4fc630b1a72d84242445362"
-RPROVIDES:initial-setup-gui-wayland-generic:aarch64 = "virtual/firstboot_gui-backend_"
+RPROVIDES:initial-setup-gui-wayland-generic:append:aarch64 = " virtual/firstboot_gui-backend_"
 
 RDEPENDS:initial-setup = " \
  anaconda-tui \
@@ -63,7 +63,3 @@ RDEPENDS:initial-setup-gui-wayland-generic = " \
  weston \
  xorg-x11-server-Xwayland \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/firstboot_gui-backend_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/firstboot_gui-backend_"

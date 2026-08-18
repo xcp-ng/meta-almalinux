@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "74119fe5e8ed8029b8d80decbe722cd10545e405ff8f24334d57ad
 
 URI_x86_64_v2_python3-xmltodict = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xmltodict-0.13.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xmltodict;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-xmltodict}"
-SRC_URI[x86_64_v2_python3-xmltodict.sha256sum] = "6626c342deaf640a38dec139bb6c5822e112aad920e8d794758832afcd32889e"
+SRC_URI[x86_64_v2_python3-xmltodict.sha256sum] = "a3a8b72da0613918792d08d301ca01186b6e76010fd76b04aa62b0e006ddbd75"
 
 URI_aarch64_python3-xmltodict = "${EPEL_MIRROR}/aarch64/Packages/p/python3-xmltodict-0.13.0-5.el10_0.noarch.rpm;name=aarch64_python3-xmltodict;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-xmltodict}"

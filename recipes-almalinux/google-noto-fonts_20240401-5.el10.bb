@@ -421,7 +421,7 @@ SRC_URI[x86_64_v2_google-noto-sans-avestan-fonts.sha256sum] = "8c1417118df1d43a2
 URI_x86_64_v2_google-noto-sans-balinese-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-balinese-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-balinese-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-balinese-fonts}"
 SRC_URI[x86_64_v2_google-noto-sans-balinese-fonts.sha256sum] = "aa5569f1299e6e533c1fb098b4123ceb5b091ddce2e35f0b63068b979e3ffba9"
-RPROVIDES:google-noto-sans-balinese-fonts:x86_64_v2 = "virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
+RPROVIDES:google-noto-sans-balinese-fonts:append:x86_64_v2 = " virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
 
 URI_x86_64_v2_google-noto-sans-balinese-vf-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-balinese-vf-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-balinese-vf-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-balinese-vf-fonts}"
@@ -574,7 +574,7 @@ SRC_URI[x86_64_v2_google-noto-sans-ethiopic-vf-fonts.sha256sum] = "3d51d0324db59
 URI_x86_64_v2_google-noto-sans-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-fonts}"
 SRC_URI[x86_64_v2_google-noto-sans-fonts.sha256sum] = "43b4c91189710c4c756f653dd1e02b0b449e361974276c18b7bd2470f3d2f883"
-RPROVIDES:google-noto-sans-fonts:x86_64_v2 = "virtual/font_notosans_"
+RPROVIDES:google-noto-sans-fonts:append:x86_64_v2 = " virtual/font_notosans_"
 
 URI_x86_64_v2_google-noto-sans-georgian-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-georgian-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-georgian-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-georgian-fonts}"
@@ -1275,7 +1275,7 @@ SRC_URI[x86_64_v2_google-noto-sans-vai-fonts.sha256sum] = "2b9a4cce1a151651a73bc
 URI_x86_64_v2_google-noto-sans-vf-fonts = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/google-noto-sans-vf-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-vf-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-vf-fonts}"
 SRC_URI[x86_64_v2_google-noto-sans-vf-fonts.sha256sum] = "c4f9de30e26e8f8f8db1289600e951306724dbf5e4dc6d6229229fb2c95e3b42"
-RPROVIDES:google-noto-sans-vf-fonts:x86_64_v2 = "virtual/font_notosans_"
+RPROVIDES:google-noto-sans-vf-fonts:append:x86_64_v2 = " virtual/font_notosans_"
 
 URI_x86_64_v2_google-noto-sans-vithkuqi-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-vithkuqi-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-vithkuqi-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-vithkuqi-fonts}"
@@ -1316,7 +1316,7 @@ SRC_URI[x86_64_v2_google-noto-serif-armenian-vf-fonts.sha256sum] = "78bdf3ccf288
 URI_x86_64_v2_google-noto-serif-balinese-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-serif-balinese-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-serif-balinese-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-serif-balinese-fonts}"
 SRC_URI[x86_64_v2_google-noto-serif-balinese-fonts.sha256sum] = "db1427a7ea1f0607c9704619070daf0e37adadf6cac4bca1a74bd410c0345260"
-RPROVIDES:google-noto-serif-balinese-fonts:x86_64_v2 = "virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
+RPROVIDES:google-noto-serif-balinese-fonts:append:x86_64_v2 = " virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
 
 URI_x86_64_v2_google-noto-serif-bengali-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-serif-bengali-fonts-20240401-5.el10.noarch.rpm;name=x86_64_v2_google-noto-serif-bengali-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_google-noto-serif-bengali-fonts}"
@@ -1649,7 +1649,7 @@ SRC_URI[aarch64_google-noto-sans-avestan-fonts.sha256sum] = "8c1417118df1d43a28b
 URI_aarch64_google-noto-sans-balinese-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-balinese-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-balinese-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-balinese-fonts}"
 SRC_URI[aarch64_google-noto-sans-balinese-fonts.sha256sum] = "aa5569f1299e6e533c1fb098b4123ceb5b091ddce2e35f0b63068b979e3ffba9"
-RPROVIDES:google-noto-sans-balinese-fonts:aarch64 = "virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
+RPROVIDES:google-noto-sans-balinese-fonts:append:aarch64 = " virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
 
 URI_aarch64_google-noto-sans-balinese-vf-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-balinese-vf-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-balinese-vf-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-balinese-vf-fonts}"
@@ -1802,7 +1802,7 @@ SRC_URI[aarch64_google-noto-sans-ethiopic-vf-fonts.sha256sum] = "3d51d0324db5928
 URI_aarch64_google-noto-sans-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-fonts}"
 SRC_URI[aarch64_google-noto-sans-fonts.sha256sum] = "43b4c91189710c4c756f653dd1e02b0b449e361974276c18b7bd2470f3d2f883"
-RPROVIDES:google-noto-sans-fonts:aarch64 = "virtual/font_notosans_"
+RPROVIDES:google-noto-sans-fonts:append:aarch64 = " virtual/font_notosans_"
 
 URI_aarch64_google-noto-sans-georgian-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-georgian-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-georgian-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-georgian-fonts}"
@@ -2503,7 +2503,7 @@ SRC_URI[aarch64_google-noto-sans-vai-fonts.sha256sum] = "2b9a4cce1a151651a73bc5a
 URI_aarch64_google-noto-sans-vf-fonts = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/google-noto-sans-vf-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-vf-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-vf-fonts}"
 SRC_URI[aarch64_google-noto-sans-vf-fonts.sha256sum] = "c4f9de30e26e8f8f8db1289600e951306724dbf5e4dc6d6229229fb2c95e3b42"
-RPROVIDES:google-noto-sans-vf-fonts:aarch64 = "virtual/font_notosans_"
+RPROVIDES:google-noto-sans-vf-fonts:append:aarch64 = " virtual/font_notosans_"
 
 URI_aarch64_google-noto-sans-vithkuqi-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-vithkuqi-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-sans-vithkuqi-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-sans-vithkuqi-fonts}"
@@ -2544,7 +2544,7 @@ SRC_URI[aarch64_google-noto-serif-armenian-vf-fonts.sha256sum] = "78bdf3ccf288e1
 URI_aarch64_google-noto-serif-balinese-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-serif-balinese-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-serif-balinese-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-serif-balinese-fonts}"
 SRC_URI[aarch64_google-noto-serif-balinese-fonts.sha256sum] = "db1427a7ea1f0607c9704619070daf0e37adadf6cac4bca1a74bd410c0345260"
-RPROVIDES:google-noto-serif-balinese-fonts:aarch64 = "virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
+RPROVIDES:google-noto-serif-balinese-fonts:append:aarch64 = " virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
 
 URI_aarch64_google-noto-serif-bengali-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-serif-bengali-fonts-20240401-5.el10.noarch.rpm;name=aarch64_google-noto-serif-bengali-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_google-noto-serif-bengali-fonts}"
@@ -4298,7 +4298,3 @@ RDEPENDS:google-noto-traditional-nushu-vf-fonts = " \
  fonts-filesystem \
  google-noto-fonts-common \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/font_notosans_ rpm/virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"
-
-PROVIDES:append:aarch64 = " rpm/virtual/font_notosans_ rpm/virtual/google-noto-sans-balinese-fonts_eq_20240401-5.el10"

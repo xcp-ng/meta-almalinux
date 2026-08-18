@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9cf4081557834eaa279d703a96d9433f8aa7adcfbe93da17e410f4
 
 URI_x86_64_v2_perl-Variable-Magic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Variable-Magic-0.64-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Variable-Magic;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Variable-Magic}"
-SRC_URI[x86_64_v2_perl-Variable-Magic.sha256sum] = "386bdd85aaccd41e15b96998b1f35ff9fbf02d5b705ed3999cf3b4cdb4f3a4e2"
+SRC_URI[x86_64_v2_perl-Variable-Magic.sha256sum] = "8e1d49a8a653c10928e7ac06059701a9a93daf98c033d9fd328b67be6dfa34cd"
 
 URI_aarch64_perl-Variable-Magic = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Variable-Magic-0.64-1.el10_0.aarch64.rpm;name=aarch64_perl-Variable-Magic;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Variable-Magic}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "97654db5d3944a64a065f6ac8f61cb570e615672cf2427e4a002d1
 
 URI_x86_64_v2_perl-Test-YAML-Valid = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-YAML-Valid-0.04-39.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-YAML-Valid;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-YAML-Valid}"
-SRC_URI[x86_64_v2_perl-Test-YAML-Valid.sha256sum] = "e1be10cf50c84b17952b3e3f121d0caf4daae23f17f8c049ddd0ec5f0d3e47f5"
+SRC_URI[x86_64_v2_perl-Test-YAML-Valid.sha256sum] = "b244e63588e602ca4927492771f23b38b14021858683dc4d5ee54672ab746517"
 
 URI_aarch64_perl-Test-YAML-Valid = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-YAML-Valid-0.04-39.el10_0.noarch.rpm;name=aarch64_perl-Test-YAML-Valid;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-YAML-Valid}"

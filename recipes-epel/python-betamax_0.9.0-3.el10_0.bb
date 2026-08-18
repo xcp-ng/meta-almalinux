@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "32f5b3c927e358cd7ed1f565d2e6501174bb91a787191f3dac7842
 
 URI_x86_64_v2_python3-betamax = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-betamax-0.9.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-betamax;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-betamax}"
-SRC_URI[x86_64_v2_python3-betamax.sha256sum] = "578f739848ca104a5f934bf152291acd6b7a4e8a625b4fc37b1f20b702ad8594"
+SRC_URI[x86_64_v2_python3-betamax.sha256sum] = "f19c4bc6bfaecaf8d7f940a95cd49de4199feca341d1a4cf1b692ab86a3fc51e"
 
 URI_aarch64_python3-betamax = "${EPEL_MIRROR}/aarch64/Packages/p/python3-betamax-0.9.0-3.el10_0.noarch.rpm;name=aarch64_python3-betamax;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-betamax}"

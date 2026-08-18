@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9a210d5d243248ce3f915f3d100e15c02d01ca5477fb3a475c85b2
 
 URI_x86_64_v2_python3-process-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-process-tests-3.0.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-process-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-process-tests}"
-SRC_URI[x86_64_v2_python3-process-tests.sha256sum] = "a201cbef6a97641f3ed329c2c8bb7f7e55c038e3c97b8fcae20afc626a6c666b"
+SRC_URI[x86_64_v2_python3-process-tests.sha256sum] = "f7078a24c11cfa4c6ffbc35bd38da393e3189a25c3eb79c0f4ffd73eb3932c4b"
 
 URI_aarch64_python3-process-tests = "${EPEL_MIRROR}/aarch64/Packages/p/python3-process-tests-3.0.0-3.el10_0.noarch.rpm;name=aarch64_python3-process-tests;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-process-tests}"

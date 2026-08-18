@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "7772fa99a57cfa8c78be0c98da0a24cb67f41ed5f74fd0329a8b16
 
 URI_x86_64_v2_perl-Sub-Quote = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Quote}"
-SRC_URI[x86_64_v2_perl-Sub-Quote.sha256sum] = "c75c68b115797bab1b86ab794c65e84567cfb5f849646dc1b1063617b919548d"
+SRC_URI[x86_64_v2_perl-Sub-Quote.sha256sum] = "6d98632b1d8a4356ff516d44f5fa4bb27a65ccd188eef3ae3cae3c34488c8867"
 
 URI_x86_64_v2_perl-Sub-Quote-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-tests-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Quote-tests}"
-SRC_URI[x86_64_v2_perl-Sub-Quote-tests.sha256sum] = "2ef6f128b0cb37c3211141f997867757a2c017f98dc71d66d7af4819c301998e"
+SRC_URI[x86_64_v2_perl-Sub-Quote-tests.sha256sum] = "72f0b91e9049044cd15a7721ca139e1deb318ba9d198c32d22c84bef343fa4db"
 
 URI_aarch64_perl-Sub-Quote = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Quote-2.006008-6.el10_0.noarch.rpm;name=aarch64_perl-Sub-Quote;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sub-Quote}"

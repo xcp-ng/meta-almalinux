@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7a53461b9fe3cfc5ec594c8c993a54b0b219e7820ecdedb5ead764
 
 URI_x86_64_v2_python3-qtsass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qtsass-0.4.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-qtsass;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-qtsass}"
-SRC_URI[x86_64_v2_python3-qtsass.sha256sum] = "a7028cf7937577c9db62c016928ab289bb025c59e65ae965d7803472221d55d3"
+SRC_URI[x86_64_v2_python3-qtsass.sha256sum] = "d2620130d8ea8b293dc22ad9106287460294af98bd50b8b8f22c488e91a4342e"
 
 URI_aarch64_python3-qtsass = "${EPEL_MIRROR}/aarch64/Packages/p/python3-qtsass-0.4.0-9.el10_0.noarch.rpm;name=aarch64_python3-qtsass;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-qtsass}"

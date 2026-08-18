@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3bbbed5ed4a145dcb9e38347962cb9c15b05a17f9a111087b5da58
 
 URI_x86_64_v2_php-theseer-directoryscanner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-theseer-directoryscanner-1.3.3-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-theseer-directoryscanner;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-theseer-directoryscanner}"
-SRC_URI[x86_64_v2_php-theseer-directoryscanner.sha256sum] = "e1f59a92a4c63fb46fae7b4f2b7de05dff7de60574c0c6dfc1d339f96aae7309"
+SRC_URI[x86_64_v2_php-theseer-directoryscanner.sha256sum] = "391d474b3dd9430b3ebfba11533d3009e54ac0ff093a72e920a06ef76eda5cc3"
 
 URI_aarch64_php-theseer-directoryscanner = "${EPEL_MIRROR}/aarch64/Packages/p/php-theseer-directoryscanner-1.3.3-8.el10_0.noarch.rpm;name=aarch64_php-theseer-directoryscanner;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-theseer-directoryscanner}"

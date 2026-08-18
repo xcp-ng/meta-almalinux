@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a8f9609d5722b19088d189fd775b7fcf9cb8422429a8078853b60d
 
 URI_x86_64_v2_python3-contourpy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-contourpy-1.2.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-contourpy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-contourpy}"
-SRC_URI[x86_64_v2_python3-contourpy.sha256sum] = "b051c73ad12700753d04ddb93908be20eabbfe8313362dadc9b8d3fee3d27a5d"
+SRC_URI[x86_64_v2_python3-contourpy.sha256sum] = "617aecd8a54ebeb7629a44c389c7369670c5e55bb8f520b0d322dd325f239117"
 
 URI_aarch64_python3-contourpy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-contourpy-1.2.0-5.el10_0.aarch64.rpm;name=aarch64_python3-contourpy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-contourpy}"

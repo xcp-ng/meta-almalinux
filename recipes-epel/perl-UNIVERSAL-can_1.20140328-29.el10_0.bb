@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0d75a869e03527b28d8b2d70925758b4f242e73f0ea1e0b028d647
 
 URI_x86_64_v2_perl-UNIVERSAL-can = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UNIVERSAL-can-1.20140328-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UNIVERSAL-can;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-UNIVERSAL-can}"
-SRC_URI[x86_64_v2_perl-UNIVERSAL-can.sha256sum] = "e71727fed9d4762c3eb745b01f08323621be3dc8b76bd67396fe7f4bf4bbdeff"
+SRC_URI[x86_64_v2_perl-UNIVERSAL-can.sha256sum] = "7a2a29586c4a0a0af9508b130b7aa704d0b31217f972f77ab64169009829a3f9"
 
 URI_aarch64_perl-UNIVERSAL-can = "${EPEL_MIRROR}/aarch64/Packages/p/perl-UNIVERSAL-can-1.20140328-29.el10_0.noarch.rpm;name=aarch64_perl-UNIVERSAL-can;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-UNIVERSAL-can}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c105e0270fb5da377dd976aecd80834d23172b7a05ee953e5bef1c
 
 URI_x86_64_v2_python3-tempita = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tempita-0.5.2-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tempita;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tempita}"
-SRC_URI[x86_64_v2_python3-tempita.sha256sum] = "3b0b6efd5291c0d4887938f8e1ea089499a50fe122e90d397eb6205c2dc79413"
+SRC_URI[x86_64_v2_python3-tempita.sha256sum] = "5dc3b77a4431f9667ee1b5cd96f4a06517775e3b4c2ade851087cfe105b3c903"
 
 URI_aarch64_python3-tempita = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tempita-0.5.2-14.el10_0.noarch.rpm;name=aarch64_python3-tempita;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tempita}"

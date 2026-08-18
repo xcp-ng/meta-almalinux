@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "338281e945b9ba392c4cbdceeff5ed87ac148229e44b1d4159a366
 
 URI_x86_64_v2_python3-pikepdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pikepdf-8.8.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pikepdf;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pikepdf}"
-SRC_URI[x86_64_v2_python3-pikepdf.sha256sum] = "5369d2aac851477a51b650f66213f63a149fc75e077238ddd444af1d44770bc6"
+SRC_URI[x86_64_v2_python3-pikepdf.sha256sum] = "0ded9838bf3adffa3299eb1337aa19c5909d5d2877bcdc4e40dc203dd468e8ff"
 
 URI_aarch64_python3-pikepdf = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pikepdf-8.8.0-4.el10_0.aarch64.rpm;name=aarch64_python3-pikepdf;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pikepdf}"

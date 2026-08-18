@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "db36536276ddcbaf3c2628b26fb112e70eaccfc51953c028c24efa
 
 URI_x86_64_v2_python-faker-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-faker-doc-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-faker-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-faker-doc}"
-SRC_URI[x86_64_v2_python-faker-doc.sha256sum] = "cdd753a80630baeeedffde9a129016998e18005c7b95115f98a79ec3d608c383"
+SRC_URI[x86_64_v2_python-faker-doc.sha256sum] = "6068ac7885ea11ecabc5317cade39ace288bf3de3a3b2944b0adf74af1dd2f45"
 
 URI_x86_64_v2_python3-faker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-faker-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-faker;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-faker}"
-SRC_URI[x86_64_v2_python3-faker.sha256sum] = "63bfc2a871213fec67656a2f9d26bc323f387ab13aa75f42395b366f16f7f727"
+SRC_URI[x86_64_v2_python3-faker.sha256sum] = "d0e946fb3aa01045b83fd99d6acdc23c9bb085d7e2cac679d611f105548883d9"
 
 URI_aarch64_python-faker-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-faker-doc-30.6.0-1.el10_0.noarch.rpm;name=aarch64_python-faker-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-faker-doc}"

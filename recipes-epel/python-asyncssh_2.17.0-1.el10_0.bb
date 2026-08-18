@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0a66e583d918efaef38951c7db9f58f56888d4e10e6299ac1ee0fc
 
 URI_x86_64_v2_python3-asyncssh = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asyncssh-2.17.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-asyncssh;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-asyncssh}"
-SRC_URI[x86_64_v2_python3-asyncssh.sha256sum] = "c4b6c917eb915df33175a3a351d5cd57d73dff1abbb4e8cceb3422331e32eb47"
+SRC_URI[x86_64_v2_python3-asyncssh.sha256sum] = "207a4aaf94cd441bb5136dece75f23a427e20f0b3d82dcb4e77a464685577679"
 
 URI_aarch64_python3-asyncssh = "${EPEL_MIRROR}/aarch64/Packages/p/python3-asyncssh-2.17.0-1.el10_0.noarch.rpm;name=aarch64_python3-asyncssh;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-asyncssh}"

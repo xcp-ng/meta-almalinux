@@ -20,7 +20,7 @@ SRC_URI[src.sha256sum] = "3eb5d822f3702eda92786faed32349ccbd80de2bd7ad45a7e867d4
 URI_x86_64_v2_weston = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/weston-14.0.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_weston;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_weston}"
 SRC_URI[x86_64_v2_weston.sha256sum] = "5969280def5ee7067702c6fe0167cf74ad0cf0ab58b2c3b2234dfabd77213537"
-RPROVIDES:weston:x86_64_v2 = "virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
+RPROVIDES:weston:append:x86_64_v2 = " virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
 
 URI_x86_64_v2_weston-demo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/weston-demo-14.0.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_weston-demo;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_weston-demo}"
@@ -41,7 +41,7 @@ SRC_URI[x86_64_v2_weston-session.sha256sum] = "911d6037f8a6201317a3d78a9bb10c9a8
 URI_aarch64_weston = "${EPEL_MIRROR}/aarch64/Packages/w/weston-14.0.1-3.el10_0.aarch64.rpm;name=aarch64_weston;unpack=0"
 SRC_URI:append = " ${URI_aarch64_weston}"
 SRC_URI[aarch64_weston.sha256sum] = "a301312176e9f2e9f77718be08b1f8a7b8b223a00a589a621e0f7feae82acefd"
-RPROVIDES:weston:aarch64 = "virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
+RPROVIDES:weston:append:aarch64 = " virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
 
 URI_aarch64_weston-demo = "${EPEL_MIRROR}/aarch64/Packages/w/weston-demo-14.0.1-3.el10_0.aarch64.rpm;name=aarch64_weston-demo;unpack=0"
 SRC_URI:append = " ${URI_aarch64_weston-demo}"
@@ -149,7 +149,3 @@ RDEPENDS:weston-libs = " \
 RDEPENDS:weston-session = " \
  weston \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
-
-PROVIDES:append:aarch64 = " rpm/virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"

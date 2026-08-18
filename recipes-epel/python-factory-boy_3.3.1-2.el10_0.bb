@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "7b76265b13e53d8040b69aa809460b5ec8f549e4e4322a718c2c46
 
 URI_x86_64_v2_python-factory-boy-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-factory-boy-doc-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-factory-boy-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-factory-boy-doc}"
-SRC_URI[x86_64_v2_python-factory-boy-doc.sha256sum] = "5c3a117d376032291db63459aa61e2ddfffa71c3c0a610dde015b97957e2d895"
+SRC_URI[x86_64_v2_python-factory-boy-doc.sha256sum] = "e33d1be2f8f8ae3fb40313dfacf03d06be24f8e2794576b21f5ba8683b8f1d21"
 
 URI_x86_64_v2_python3-factory-boy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-factory-boy-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-factory-boy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-factory-boy}"
-SRC_URI[x86_64_v2_python3-factory-boy.sha256sum] = "b685711b02a5f85b9fa7210efe7852fb1255558a3becca3408a21f7ee0ff515d"
+SRC_URI[x86_64_v2_python3-factory-boy.sha256sum] = "08f58a898a51df001c79d68c211ccece5a10189b1392dd3ac323444516c50e23"
 
 URI_aarch64_python-factory-boy-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-factory-boy-doc-3.3.1-2.el10_0.noarch.rpm;name=aarch64_python-factory-boy-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-factory-boy-doc}"

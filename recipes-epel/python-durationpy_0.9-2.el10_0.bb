@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "4aa036d9d7ee888f8b789e0d6fdb0a85d27ad4479a49574c06766b
 
 URI_x86_64_v2_python3-durationpy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-durationpy-0.9-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-durationpy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-durationpy}"
-SRC_URI[x86_64_v2_python3-durationpy.sha256sum] = "bd0cf49a4f5933039741d457501fac6943e4fdf039302428711cffd2336f34ed"
+SRC_URI[x86_64_v2_python3-durationpy.sha256sum] = "309b735d4a6c450830267576ed40932c89e8b0204ff68fad8c2c0b655ce12422"
 
 URI_aarch64_python3-durationpy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-durationpy-0.9-2.el10_0.noarch.rpm;name=aarch64_python3-durationpy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-durationpy}"

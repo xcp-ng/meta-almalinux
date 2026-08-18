@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "0b6cac8c605fccfc2d1db731503b68920e83d76e0f4b0219e56bfa
 
 URI_x86_64_v2_perl-Pod-MinimumVersion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-MinimumVersion}"
-SRC_URI[x86_64_v2_perl-Pod-MinimumVersion.sha256sum] = "c2daf5e9c013de9f9dec718a2ed01b7b1cf935185bd606eda2685fb5f73bd1d7"
+SRC_URI[x86_64_v2_perl-Pod-MinimumVersion.sha256sum] = "1ac871a0753246adbeccb8ac7daa308fc283b1e6d68cee14e851baa3b35cbb4d"
 
 URI_x86_64_v2_perl-Pod-MinimumVersion-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-tests-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-MinimumVersion-tests}"
-SRC_URI[x86_64_v2_perl-Pod-MinimumVersion-tests.sha256sum] = "0c699e69487707942308bedbbb16638e959a947675c0a7cf0dd04f87065467ae"
+SRC_URI[x86_64_v2_perl-Pod-MinimumVersion-tests.sha256sum] = "466e0b1732a4dc6cc33a41b4179b51387712f753e66d9080f637d2a81aeda0c6"
 
 URI_aarch64_perl-Pod-MinimumVersion = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-MinimumVersion-50-41.el10_0.noarch.rpm;name=aarch64_perl-Pod-MinimumVersion;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-MinimumVersion}"

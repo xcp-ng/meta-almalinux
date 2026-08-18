@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e275627338225e8053011924342a1e364f14214aef8fc9c296a0f6
 
 URI_x86_64_v2_python3-urwid-readline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-urwid-readline-0.13-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-urwid-readline;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-urwid-readline}"
-SRC_URI[x86_64_v2_python3-urwid-readline.sha256sum] = "3536b1e067c85df8267bd7973ae995384f3eb74d08f4d50b01db7a3d4a9f695a"
+SRC_URI[x86_64_v2_python3-urwid-readline.sha256sum] = "a61c71b5488ecbbb4604b2822427682c21f48c7a7e72ebbc8fd20d0c3a693817"
 
 URI_aarch64_python3-urwid-readline = "${EPEL_MIRROR}/aarch64/Packages/p/python3-urwid-readline-0.13-10.el10_0.noarch.rpm;name=aarch64_python3-urwid-readline;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-urwid-readline}"

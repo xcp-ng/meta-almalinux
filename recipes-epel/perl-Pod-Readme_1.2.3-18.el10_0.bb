@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3ae8c0c05c5b227cd4d1859de4dd1b57093b219ba7f3f03a612c7a
 
 URI_x86_64_v2_perl-Pod-Readme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Readme-1.2.3-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Readme;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Readme}"
-SRC_URI[x86_64_v2_perl-Pod-Readme.sha256sum] = "02fccdc75fabff55759e1a3e7aa156ecfb717ee301443395e5c803af12f6f0e5"
+SRC_URI[x86_64_v2_perl-Pod-Readme.sha256sum] = "44490f4e522da60a5fb8313804b9abbd1e345cc315b91a28d8c8c71b12f74691"
 
 URI_aarch64_perl-Pod-Readme = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Readme-1.2.3-18.el10_0.noarch.rpm;name=aarch64_perl-Pod-Readme;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Readme}"

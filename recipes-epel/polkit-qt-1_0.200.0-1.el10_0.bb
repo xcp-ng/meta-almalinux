@@ -18,19 +18,19 @@ SRC_URI[src.sha256sum] = "bc4b198cdaf83ffa4fc20f281ed0cbc267b687c5a523df3b47d54f
 
 URI_x86_64_v2_polkit-qt5-1 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-qt5-1-0.200.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-qt5-1;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polkit-qt5-1}"
-SRC_URI[x86_64_v2_polkit-qt5-1.sha256sum] = "75d28faf081a97d27db1105a0bf3ed2675a79e45409a6b8e0f3b83afd1008d41"
+SRC_URI[x86_64_v2_polkit-qt5-1.sha256sum] = "52c44cb44163262bcc6e531d200fa900a138d05e70dc5bbcdcb358040accbf5b"
 
 URI_x86_64_v2_polkit-qt5-1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-qt5-1-devel-0.200.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-qt5-1-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polkit-qt5-1-devel}"
-SRC_URI[x86_64_v2_polkit-qt5-1-devel.sha256sum] = "567150f82bef0c270c9e810771457bc379a2694be8f2d1beaf14842a549df26c"
+SRC_URI[x86_64_v2_polkit-qt5-1-devel.sha256sum] = "636f07664c55852809f82cd79d57156466357925749b990cf2138bbd1093ee51"
 
 URI_x86_64_v2_polkit-qt6-1 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-qt6-1-0.200.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-qt6-1;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polkit-qt6-1}"
-SRC_URI[x86_64_v2_polkit-qt6-1.sha256sum] = "59cbc67304b9e1a324e8e930b6f36f16f9bf38bf83110d0b75d6faed9aedec2f"
+SRC_URI[x86_64_v2_polkit-qt6-1.sha256sum] = "e21de68e758bf3230ce4bee73b4e74ee5a15c7f32319d0effa4add762e57f189"
 
 URI_x86_64_v2_polkit-qt6-1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-qt6-1-devel-0.200.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-qt6-1-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polkit-qt6-1-devel}"
-SRC_URI[x86_64_v2_polkit-qt6-1-devel.sha256sum] = "66b52ae5f76c94e89b0b3faa64008da6e8da38aaf3e16b169622dd311d0a756c"
+SRC_URI[x86_64_v2_polkit-qt6-1-devel.sha256sum] = "4fce2bf62776de9dd0ad667b1405a28f80f93c7dc2928cd2d7ebb507dc735a5c"
 
 URI_aarch64_polkit-qt5-1 = "${EPEL_MIRROR}/aarch64/Packages/p/polkit-qt5-1-0.200.0-1.el10_0.aarch64.rpm;name=aarch64_polkit-qt5-1;unpack=0"
 SRC_URI:append = " ${URI_aarch64_polkit-qt5-1}"

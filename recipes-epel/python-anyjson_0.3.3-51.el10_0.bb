@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7ddf32abde461daff55d75d8ad475e3917504e0f00d85d71068ed3
 
 URI_x86_64_v2_python3-anyjson = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyjson-0.3.3-51.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyjson;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-anyjson}"
-SRC_URI[x86_64_v2_python3-anyjson.sha256sum] = "46e39dce76ec83da54903e62ab8ed73a88ae93e62eb51823a5d4e702b2c2dd5d"
+SRC_URI[x86_64_v2_python3-anyjson.sha256sum] = "df46efd8731999e5c66de3d6ae915dad878ef34bd02e5643bc42909b9d09c09d"
 
 URI_aarch64_python3-anyjson = "${EPEL_MIRROR}/aarch64/Packages/p/python3-anyjson-0.3.3-51.el10_0.noarch.rpm;name=aarch64_python3-anyjson;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-anyjson}"

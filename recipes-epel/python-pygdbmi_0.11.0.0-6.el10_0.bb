@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d7f0e4f96f7e006029eb5d0edf1af8f9b06031b2f1ce64ac5bbd8d
 
 URI_x86_64_v2_python3-pygdbmi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygdbmi-0.11.0.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pygdbmi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pygdbmi}"
-SRC_URI[x86_64_v2_python3-pygdbmi.sha256sum] = "ab3d39b51dc43052113a7c672b0a62573e26764bfa098c360a0ec35a6d2b2d2c"
+SRC_URI[x86_64_v2_python3-pygdbmi.sha256sum] = "8837ba30a1fb053b833d8039e9ee1fd28361b66d79380a0357e736b3b186a5f8"
 
 URI_aarch64_python3-pygdbmi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pygdbmi-0.11.0.0-6.el10_0.noarch.rpm;name=aarch64_python3-pygdbmi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pygdbmi}"

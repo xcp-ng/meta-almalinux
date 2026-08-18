@@ -16,12 +16,12 @@ SRC_URI[src.sha256sum] = "280e47599884351a832ce434ccdbbb426c558ebc7c52c8a7a0f919
 URI_x86_64_v2_wget = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/wget-1.24.5-5.el10.x86_64_v2.rpm;name=x86_64_v2_wget;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_wget}"
 SRC_URI[x86_64_v2_wget.sha256sum] = "eea675266553c4117e2f354f04fc323b059bd30f6785dd7b9fa35b2306cdb2f7"
-RPROVIDES:wget:x86_64_v2 = "virtual/wget_or_curl"
+RPROVIDES:wget:append:x86_64_v2 = " virtual/wget_or_curl"
 
 URI_aarch64_wget = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/wget-1.24.5-5.el10.aarch64.rpm;name=aarch64_wget;unpack=0"
 SRC_URI:append = " ${URI_aarch64_wget}"
 SRC_URI[aarch64_wget.sha256sum] = "9334e5dfae0b4536885ad36adee7303f34d0f7a8212a6a0a392b66595621ed96"
-RPROVIDES:wget:aarch64 = "virtual/wget_or_curl"
+RPROVIDES:wget:append:aarch64 = " virtual/wget_or_curl"
 
 RDEPENDS:wget = " \
  glibc \
@@ -32,7 +32,3 @@ RDEPENDS:wget = " \
  pcre2 \
  zlib-ng-compat \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/wget_or_curl"
-
-PROVIDES:append:aarch64 = " rpm/virtual/wget_or_curl"

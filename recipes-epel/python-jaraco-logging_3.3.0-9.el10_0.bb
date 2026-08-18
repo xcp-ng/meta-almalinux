@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ebd56deba0f5f3c1c6d64bc6b56156fa35a72e2bd05f4ae3af4c7a
 
 URI_x86_64_v2_python3-jaraco-logging = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-logging-3.3.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-logging;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-jaraco-logging}"
-SRC_URI[x86_64_v2_python3-jaraco-logging.sha256sum] = "82c1d6f08a0393f63e26392fbbdc3a81224a06e8fbae074dedb44f77e2fed7e4"
+SRC_URI[x86_64_v2_python3-jaraco-logging.sha256sum] = "461335448dc6f642b69fc81217f34d9daa5f3745e6d4fef92f3bd98a98278acf"
 
 URI_aarch64_python3-jaraco-logging = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-logging-3.3.0-9.el10_0.noarch.rpm;name=aarch64_python3-jaraco-logging;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-jaraco-logging}"

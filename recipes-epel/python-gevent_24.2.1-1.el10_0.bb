@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ee0d37a3d0434768ca36975523607677f3017d3a3b6eefb2afc082
 
 URI_x86_64_v2_python3-gevent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gevent-24.2.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-gevent;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-gevent}"
-SRC_URI[x86_64_v2_python3-gevent.sha256sum] = "7b0ca963941c5798ed9286ddb256b2b62d002cd93d0e3256134f90490d2ba85c"
+SRC_URI[x86_64_v2_python3-gevent.sha256sum] = "3175fabd6dc7ae7777c526ff8774dfe5a2ecba0f46005e69497c2f29f2e7fde7"
 
 URI_aarch64_python3-gevent = "${EPEL_MIRROR}/aarch64/Packages/p/python3-gevent-24.2.1-1.el10_0.aarch64.rpm;name=aarch64_python3-gevent;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-gevent}"

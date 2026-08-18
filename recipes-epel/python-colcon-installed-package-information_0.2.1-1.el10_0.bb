@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a331775fa758675b42561c1da38de934e82afa470f782b4974924a
 
 URI_x86_64_v2_python3-colcon-installed-package-information = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-installed-package-information-0.2.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-installed-package-information;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-installed-package-information}"
-SRC_URI[x86_64_v2_python3-colcon-installed-package-information.sha256sum] = "e504aa4d10dea456a9ea64fabbc9a569332239406523ca13b15220d4aa312752"
+SRC_URI[x86_64_v2_python3-colcon-installed-package-information.sha256sum] = "618664e8af787c8b8185a638c84dcae046846124a8ccbf7ba80c2d7f218f0678"
 
 URI_aarch64_python3-colcon-installed-package-information = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-installed-package-information-0.2.1-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-installed-package-information;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-colcon-installed-package-information}"

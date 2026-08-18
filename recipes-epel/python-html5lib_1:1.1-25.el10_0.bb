@@ -20,23 +20,23 @@ SRC_URI[src.sha256sum] = "5453a088f01e8a9c20ef78606608bb82b749fd4516b3c12689e24d
 
 URI_x86_64_v2_python3-html5lib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-html5lib-1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-html5lib;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-html5lib}"
-SRC_URI[x86_64_v2_python3-html5lib.sha256sum] = "b40b45cf8bb7a3b206d4a3449035a64ed9c777abb65d4ccdf8a38c92d0e861f2"
+SRC_URI[x86_64_v2_python3-html5lib.sha256sum] = "1883ef06d4a19637c4abdb03c197fee52fbe2795a9795cde5a8504e51ca79969"
 
 URI_x86_64_v2_python3-html5lib+all = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-html5lib+all-1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-html5lib+all;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-html5lib+all}"
-SRC_URI[x86_64_v2_python3-html5lib+all.sha256sum] = "869608096e60f1d25eeba491da9d724a05731a408163cd7eef08a5628261eabd"
+SRC_URI[x86_64_v2_python3-html5lib+all.sha256sum] = "34659e86dbcdd2de5826e356c787b3add35de67b488a1c11b78f4540af4d56aa"
 
 URI_x86_64_v2_python3-html5lib+chardet = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-html5lib+chardet-1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-html5lib+chardet;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-html5lib+chardet}"
-SRC_URI[x86_64_v2_python3-html5lib+chardet.sha256sum] = "4e09b203e69a1651678df9c71a0d6084143195689cc68dc9bb26682f24cb6897"
+SRC_URI[x86_64_v2_python3-html5lib+chardet.sha256sum] = "46ef516e84a2020e8d470d27eda81c9b65fa1ebe2115214c088776ff7f421b3c"
 
 URI_x86_64_v2_python3-html5lib+genshi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-html5lib+genshi-1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-html5lib+genshi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-html5lib+genshi}"
-SRC_URI[x86_64_v2_python3-html5lib+genshi.sha256sum] = "50f36ab8bb531b0cedf7f409bfe613b6e765185597b9c14425c69cab3643be6c"
+SRC_URI[x86_64_v2_python3-html5lib+genshi.sha256sum] = "095159927009a1f045cbf67686488bbb77e5c7aa042da79ae46c6b05b739f264"
 
 URI_x86_64_v2_python3-html5lib+lxml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-html5lib+lxml-1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-html5lib+lxml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-html5lib+lxml}"
-SRC_URI[x86_64_v2_python3-html5lib+lxml.sha256sum] = "70b7c26a6efc9ba707b63fdf8ccc875017b990a0d2710afa8f202558358b4b2e"
+SRC_URI[x86_64_v2_python3-html5lib+lxml.sha256sum] = "4c41e667f24c0731fca2de3fb849bbd6796a24feba5f56cdb956c52ce7bb2b14"
 
 URI_aarch64_python3-html5lib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-html5lib-1.1-25.el10_0.noarch.rpm;name=aarch64_python3-html5lib;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-html5lib}"

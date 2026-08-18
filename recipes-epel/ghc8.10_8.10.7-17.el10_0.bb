@@ -152,12 +152,12 @@ SRC_URI[x86_64_v2_ghc8.10.sha256sum] = "2ab5dcb42123237706901f5f13c3ac2750bfd95c
 URI_x86_64_v2_ghc8.10-Cabal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-Cabal-3.2.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-Cabal;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-Cabal}"
 SRC_URI[x86_64_v2_ghc8.10-Cabal.sha256sum] = "0400af2a565d89764652675829b81f06e6cab5cc0d47939f446a646e65d285b1"
-RPROVIDES:ghc8.10-Cabal:x86_64_v2 = "virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-Cabal:append:x86_64_v2 = " virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-Cabal-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-Cabal-devel-3.2.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-Cabal-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-Cabal-devel}"
 SRC_URI[x86_64_v2_ghc8.10-Cabal-devel.sha256sum] = "34c58a1c64828c82deb137d680881204bb6f531cac38d01cc0961604004d419f"
-RPROVIDES:ghc8.10-Cabal-devel:x86_64_v2 = "virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-Cabal-devel:append:x86_64_v2 = " virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-Cabal-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-Cabal-doc-3.2.1.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-Cabal-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-Cabal-doc}"
@@ -170,12 +170,12 @@ SRC_URI[x86_64_v2_ghc8.10-Cabal-prof.sha256sum] = "60e41c39fbe64f7e1a631477ea46c
 URI_x86_64_v2_ghc8.10-array = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-array-0.5.4.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-array;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-array}"
 SRC_URI[x86_64_v2_ghc8.10-array.sha256sum] = "537f2a38fc0cdb4cc6660f339d74347d3341b5e337e6df7215a214159fc52261"
-RPROVIDES:ghc8.10-array:x86_64_v2 = "virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-array:append:x86_64_v2 = " virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-array-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-array-devel-0.5.4.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-array-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-array-devel}"
 SRC_URI[x86_64_v2_ghc8.10-array-devel.sha256sum] = "e2ddabb200385e0dbd1a179cd6f9ae5fae074a663342c9c1de92aca3de85afe8"
-RPROVIDES:ghc8.10-array-devel:x86_64_v2 = "virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-array-devel:append:x86_64_v2 = " virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-array-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-array-doc-0.5.4.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-array-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-array-doc}"
@@ -188,12 +188,12 @@ SRC_URI[x86_64_v2_ghc8.10-array-prof.sha256sum] = "1ecb97d1fa8eec78f7f36831de683
 URI_x86_64_v2_ghc8.10-base = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-base-4.14.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-base;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-base}"
 SRC_URI[x86_64_v2_ghc8.10-base.sha256sum] = "17f9036db662ef24449cd61efe9100c6d72e13552e43ccab906636f02f496eb8"
-RPROVIDES:ghc8.10-base:x86_64_v2 = "virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-base:append:x86_64_v2 = " virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-base-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-base-devel-4.14.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-base-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-base-devel}"
 SRC_URI[x86_64_v2_ghc8.10-base-devel.sha256sum] = "525805569fa8a6812f96b5b9c344292f78ec8117cc9d51501ef71aa14330bcca"
-RPROVIDES:ghc8.10-base-devel:x86_64_v2 = "virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-base-devel:append:x86_64_v2 = " virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-base-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-base-doc-4.14.3.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-base-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-base-doc}"
@@ -206,12 +206,12 @@ SRC_URI[x86_64_v2_ghc8.10-base-prof.sha256sum] = "b4aad1429acd63a9d92a1bfa14a188
 URI_x86_64_v2_ghc8.10-binary = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-binary-0.8.8.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-binary;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-binary}"
 SRC_URI[x86_64_v2_ghc8.10-binary.sha256sum] = "926dbd38812b234f6904f4f23d646f25d65d33448ef05a77825ef57744beda6a"
-RPROVIDES:ghc8.10-binary:x86_64_v2 = "virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-binary:append:x86_64_v2 = " virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-binary-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-binary-devel-0.8.8.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-binary-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-binary-devel}"
 SRC_URI[x86_64_v2_ghc8.10-binary-devel.sha256sum] = "13b465ebe31a9026ff4e8baa306da12e2ec7d2e35fc1baf1bb7124ffca9dee65"
-RPROVIDES:ghc8.10-binary-devel:x86_64_v2 = "virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-binary-devel:append:x86_64_v2 = " virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-binary-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-binary-doc-0.8.8.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-binary-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-binary-doc}"
@@ -224,12 +224,12 @@ SRC_URI[x86_64_v2_ghc8.10-binary-prof.sha256sum] = "54312bcb9cd404e145e7657555a6
 URI_x86_64_v2_ghc8.10-bytestring = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-bytestring-0.10.12.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-bytestring;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-bytestring}"
 SRC_URI[x86_64_v2_ghc8.10-bytestring.sha256sum] = "f204050a08a900f639b57d6a5f28931d28bc1de4b7d376c9de92a0e89149ad73"
-RPROVIDES:ghc8.10-bytestring:x86_64_v2 = "virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-bytestring:append:x86_64_v2 = " virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-bytestring-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-bytestring-devel-0.10.12.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-bytestring-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-bytestring-devel}"
 SRC_URI[x86_64_v2_ghc8.10-bytestring-devel.sha256sum] = "ae430150bbade9a8d6a9b60287244f0224273e8f8e9b49fa7e1a5787e762dc64"
-RPROVIDES:ghc8.10-bytestring-devel:x86_64_v2 = "virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-bytestring-devel:append:x86_64_v2 = " virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-bytestring-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-bytestring-doc-0.10.12.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-bytestring-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-bytestring-doc}"
@@ -250,12 +250,12 @@ SRC_URI[x86_64_v2_ghc8.10-compiler-default.sha256sum] = "67c4c2813a74e6252cfbbea
 URI_x86_64_v2_ghc8.10-containers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-containers-0.6.5.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-containers;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-containers}"
 SRC_URI[x86_64_v2_ghc8.10-containers.sha256sum] = "237dccb7a7cbbe42490dad72bb11446b2580c30a044b2ba32492d33342d72f8b"
-RPROVIDES:ghc8.10-containers:x86_64_v2 = "virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-containers:append:x86_64_v2 = " virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-containers-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-containers-devel-0.6.5.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-containers-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-containers-devel}"
 SRC_URI[x86_64_v2_ghc8.10-containers-devel.sha256sum] = "76e0dfb76237883a65b4d265e572f1234c00eea6aa6a6fe3f3f62ad52f5e79c4"
-RPROVIDES:ghc8.10-containers-devel:x86_64_v2 = "virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-containers-devel:append:x86_64_v2 = " virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-containers-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-containers-doc-0.6.5.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-containers-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-containers-doc}"
@@ -268,12 +268,12 @@ SRC_URI[x86_64_v2_ghc8.10-containers-prof.sha256sum] = "db7afaf78845982dbf10c797
 URI_x86_64_v2_ghc8.10-deepseq = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-deepseq-1.4.4.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-deepseq;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-deepseq}"
 SRC_URI[x86_64_v2_ghc8.10-deepseq.sha256sum] = "ed123c334978b4643bc1480a653eed4eec7d100fb3d701dc50a74df646663b46"
-RPROVIDES:ghc8.10-deepseq:x86_64_v2 = "virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-deepseq:append:x86_64_v2 = " virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-deepseq-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-deepseq-devel-1.4.4.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-deepseq-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-deepseq-devel}"
 SRC_URI[x86_64_v2_ghc8.10-deepseq-devel.sha256sum] = "d96d0990ac1df52bc44342e6d9a661bb70a546c89a67cbccc73a914a0de6268a"
-RPROVIDES:ghc8.10-deepseq-devel:x86_64_v2 = "virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-deepseq-devel:append:x86_64_v2 = " virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-deepseq-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-deepseq-doc-1.4.4.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-deepseq-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-deepseq-doc}"
@@ -290,12 +290,12 @@ SRC_URI[x86_64_v2_ghc8.10-devel.sha256sum] = "5e5ae7a728ccd25921b0f7e41cbb08f9e0
 URI_x86_64_v2_ghc8.10-directory = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-directory-1.3.6.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-directory;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-directory}"
 SRC_URI[x86_64_v2_ghc8.10-directory.sha256sum] = "c1fb82053fcca4f47e9fe13f962411ee8e5a98b8392723b0af8be8c8ea105a8d"
-RPROVIDES:ghc8.10-directory:x86_64_v2 = "virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-directory:append:x86_64_v2 = " virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-directory-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-directory-devel-1.3.6.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-directory-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-directory-devel}"
 SRC_URI[x86_64_v2_ghc8.10-directory-devel.sha256sum] = "8d78fd844437d7e5b0969d3729886e65fd23922bcaea033dc44e04d13289f1e7"
-RPROVIDES:ghc8.10-directory-devel:x86_64_v2 = "virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-directory-devel:append:x86_64_v2 = " virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-directory-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-directory-doc-1.3.6.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-directory-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-directory-doc}"
@@ -316,12 +316,12 @@ SRC_URI[x86_64_v2_ghc8.10-doc-index.sha256sum] = "33a32d3aa929828e602fc5f5b2e760
 URI_x86_64_v2_ghc8.10-exceptions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-exceptions-0.10.4-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-exceptions;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-exceptions}"
 SRC_URI[x86_64_v2_ghc8.10-exceptions.sha256sum] = "e682eb2aa85386c17ee5a0a435fe5ea880c93381ee808be7b947f5c4578524e9"
-RPROVIDES:ghc8.10-exceptions:x86_64_v2 = "virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-exceptions:append:x86_64_v2 = " virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-exceptions-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-exceptions-devel-0.10.4-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-exceptions-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-exceptions-devel}"
 SRC_URI[x86_64_v2_ghc8.10-exceptions-devel.sha256sum] = "9d867dd5b8723fc013a04ac2eb9cf67411c341f6800abe61cd74b1942c9ba5b1"
-RPROVIDES:ghc8.10-exceptions-devel:x86_64_v2 = "virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-exceptions-devel:append:x86_64_v2 = " virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-exceptions-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-exceptions-doc-0.10.4-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-exceptions-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-exceptions-doc}"
@@ -334,12 +334,12 @@ SRC_URI[x86_64_v2_ghc8.10-exceptions-prof.sha256sum] = "4a7eb7b028e99278353d5a02
 URI_x86_64_v2_ghc8.10-filepath = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-filepath-1.4.2.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-filepath;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-filepath}"
 SRC_URI[x86_64_v2_ghc8.10-filepath.sha256sum] = "11db62c64c28301c174547469605bc44df6aa7fdc45e786ce98066a19e33a8db"
-RPROVIDES:ghc8.10-filepath:x86_64_v2 = "virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-filepath:append:x86_64_v2 = " virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-filepath-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-filepath-devel-1.4.2.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-filepath-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-filepath-devel}"
 SRC_URI[x86_64_v2_ghc8.10-filepath-devel.sha256sum] = "53d83f31e5d6ea1c0c3b597ad89c270436d68c9fc0773705f1283b47be65c901"
-RPROVIDES:ghc8.10-filepath-devel:x86_64_v2 = "virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-filepath-devel:append:x86_64_v2 = " virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-filepath-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-filepath-doc-1.4.2.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-filepath-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-filepath-doc}"
@@ -356,17 +356,17 @@ SRC_URI[x86_64_v2_ghc8.10-filesystem.sha256sum] = "93421684fd735e08d2d59c06b6d54
 URI_x86_64_v2_ghc8.10-ghc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc}"
 SRC_URI[x86_64_v2_ghc8.10-ghc.sha256sum] = "06b76120c7d2b25959ee1d4b0dfb954183b91008f24db25ef637ba78cb87b81c"
-RPROVIDES:ghc8.10-ghc:x86_64_v2 = "virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc:append:x86_64_v2 = " virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-boot = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-boot;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-boot.sha256sum] = "01fa1cd35d45022393a9f688b7e0b8f4c41c83cdcf4b8d258ca4e7872e777e06"
-RPROVIDES:ghc8.10-ghc-boot:x86_64_v2 = "virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot:append:x86_64_v2 = " virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-boot-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-boot-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot-devel}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-boot-devel.sha256sum] = "022767990b8995a9beca8a06d5f75d1f11d265a7adf63c21961221d88f0423cd"
-RPROVIDES:ghc8.10-ghc-boot-devel:x86_64_v2 = "virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-devel:append:x86_64_v2 = " virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-boot-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-ghc-boot-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot-doc}"
@@ -379,12 +379,12 @@ SRC_URI[x86_64_v2_ghc8.10-ghc-boot-prof.sha256sum] = "c79543c82a29c7671adeef1b98
 URI_x86_64_v2_ghc8.10-ghc-boot-th = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-th-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-boot-th;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot-th}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-boot-th.sha256sum] = "bd50d0579a407dee62017571f1171c1246e158f3635651fbe669c843f41bedc3"
-RPROVIDES:ghc8.10-ghc-boot-th:x86_64_v2 = "virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-th:append:x86_64_v2 = " virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-boot-th-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-th-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-boot-th-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot-th-devel}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-boot-th-devel.sha256sum] = "c8ced9f930f58d40682ded5fa13f5afa7f1d5579e200b1207163b77cbf384cba"
-RPROVIDES:ghc8.10-ghc-boot-th-devel:x86_64_v2 = "virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-th-devel:append:x86_64_v2 = " virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-boot-th-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-boot-th-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-ghc-boot-th-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-boot-th-doc}"
@@ -413,7 +413,7 @@ SRC_URI[x86_64_v2_ghc8.10-ghc-compact-prof.sha256sum] = "54e89d8570cdaf1d59d876a
 URI_x86_64_v2_ghc8.10-ghc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-devel}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-devel.sha256sum] = "8ddcdc002bd336b837022a33d7cdf8450cc6940e64ee2a91295809fce59f00e4"
-RPROVIDES:ghc8.10-ghc-devel:x86_64_v2 = "virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-devel:append:x86_64_v2 = " virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-ghc-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-doc}"
@@ -422,12 +422,12 @@ SRC_URI[x86_64_v2_ghc8.10-ghc-doc.sha256sum] = "d8e17d4ff7ee363709638ed69d5e32ff
 URI_x86_64_v2_ghc8.10-ghc-heap = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-heap-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-heap;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-heap}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-heap.sha256sum] = "0c2c05aedcd49701f44fbaa6040016d6f87fd4c92be4bbd9c36580470adbe35b"
-RPROVIDES:ghc8.10-ghc-heap:x86_64_v2 = "virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-heap:append:x86_64_v2 = " virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-heap-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-heap-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghc-heap-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-heap-devel}"
 SRC_URI[x86_64_v2_ghc8.10-ghc-heap-devel.sha256sum] = "7ebf80cf4dbfc20e660aef4ac8674f65eded67aaab389e2239c9722440929535"
-RPROVIDES:ghc8.10-ghc-heap-devel:x86_64_v2 = "virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-heap-devel:append:x86_64_v2 = " virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghc-heap-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghc-heap-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-ghc-heap-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghc-heap-doc}"
@@ -444,12 +444,12 @@ SRC_URI[x86_64_v2_ghc8.10-ghc-prof.sha256sum] = "f6c6f2f2bbb946d4ffbe9af208ee960
 URI_x86_64_v2_ghc8.10-ghci = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghci-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghci;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghci}"
 SRC_URI[x86_64_v2_ghc8.10-ghci.sha256sum] = "3bb04ecf00410ae0275ad980ca32f96ef6049f709943ab046452698f399f0670"
-RPROVIDES:ghc8.10-ghci:x86_64_v2 = "virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghci:append:x86_64_v2 = " virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghci-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghci-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-ghci-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghci-devel}"
 SRC_URI[x86_64_v2_ghc8.10-ghci-devel.sha256sum] = "2c3fc611ae59d59c546a75bbbc95d1260b9f5b53b750cd8cbae513cbb4b959cc"
-RPROVIDES:ghc8.10-ghci-devel:x86_64_v2 = "virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghci-devel:append:x86_64_v2 = " virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-ghci-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-ghci-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-ghci-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-ghci-doc}"
@@ -462,12 +462,12 @@ SRC_URI[x86_64_v2_ghc8.10-ghci-prof.sha256sum] = "fd3c63551a5d545eab86cd52f60c14
 URI_x86_64_v2_ghc8.10-haskeline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-haskeline-0.8.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-haskeline;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-haskeline}"
 SRC_URI[x86_64_v2_ghc8.10-haskeline.sha256sum] = "3eb950caebac9169d72ec0fa280c5063f02e0458c6c86a964673fb55c3babc59"
-RPROVIDES:ghc8.10-haskeline:x86_64_v2 = "virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-haskeline:append:x86_64_v2 = " virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-haskeline-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-haskeline-devel-0.8.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-haskeline-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-haskeline-devel}"
 SRC_URI[x86_64_v2_ghc8.10-haskeline-devel.sha256sum] = "e58b3255c49326364026ba6b551e8b50bd2090a9505797828d2fbae6338ff4d3"
-RPROVIDES:ghc8.10-haskeline-devel:x86_64_v2 = "virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-haskeline-devel:append:x86_64_v2 = " virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-haskeline-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-haskeline-doc-0.8.2-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-haskeline-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-haskeline-doc}"
@@ -480,12 +480,12 @@ SRC_URI[x86_64_v2_ghc8.10-haskeline-prof.sha256sum] = "ea1a4bc0d7de96b5e5348673d
 URI_x86_64_v2_ghc8.10-hpc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-hpc-0.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-hpc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-hpc}"
 SRC_URI[x86_64_v2_ghc8.10-hpc.sha256sum] = "4069442577f4dffbbf8193aff31a8c52e1d19cbcae39cda629f7a701602fe966"
-RPROVIDES:ghc8.10-hpc:x86_64_v2 = "virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-hpc:append:x86_64_v2 = " virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-hpc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-hpc-devel-0.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-hpc-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-hpc-devel}"
 SRC_URI[x86_64_v2_ghc8.10-hpc-devel.sha256sum] = "b2aa03839a74dfb980b8340563897cd4ccd4f14e94165de7b3f00fc64ecae1a9"
-RPROVIDES:ghc8.10-hpc-devel:x86_64_v2 = "virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-hpc-devel:append:x86_64_v2 = " virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-hpc-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-hpc-doc-0.6.1.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-hpc-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-hpc-doc}"
@@ -498,12 +498,12 @@ SRC_URI[x86_64_v2_ghc8.10-hpc-prof.sha256sum] = "3897e2d4b8c1d39e18a9693ac43a9ed
 URI_x86_64_v2_ghc8.10-libiserv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-libiserv-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-libiserv;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-libiserv}"
 SRC_URI[x86_64_v2_ghc8.10-libiserv.sha256sum] = "b9b42b9f7e87a7efb08850d46d5eccfb0121974f5f414b46feff948f04e2cd75"
-RPROVIDES:ghc8.10-libiserv:x86_64_v2 = "virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-libiserv:append:x86_64_v2 = " virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-libiserv-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-libiserv-devel-8.10.7-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-libiserv-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-libiserv-devel}"
 SRC_URI[x86_64_v2_ghc8.10-libiserv-devel.sha256sum] = "09373117bba17466df71f5de055637fea6d519a3374c41457d9229c0280df5c5"
-RPROVIDES:ghc8.10-libiserv-devel:x86_64_v2 = "virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-libiserv-devel:append:x86_64_v2 = " virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-libiserv-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-libiserv-doc-8.10.7-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-libiserv-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-libiserv-doc}"
@@ -520,12 +520,12 @@ SRC_URI[x86_64_v2_ghc8.10-manual.sha256sum] = "dfad9ed1de6a7dd3cff9ac371c3b4c346
 URI_x86_64_v2_ghc8.10-mtl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-mtl-2.2.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-mtl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-mtl}"
 SRC_URI[x86_64_v2_ghc8.10-mtl.sha256sum] = "8ee78f477827dca60b985a6cba36950f9a7540af4908eea06d43cd9b6e56017e"
-RPROVIDES:ghc8.10-mtl:x86_64_v2 = "virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-mtl:append:x86_64_v2 = " virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-mtl-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-mtl-devel-2.2.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-mtl-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-mtl-devel}"
 SRC_URI[x86_64_v2_ghc8.10-mtl-devel.sha256sum] = "1848a05ce4ecfcea7dd59e428c2083028d26bd01691b98e72976d43b7f31dc0c"
-RPROVIDES:ghc8.10-mtl-devel:x86_64_v2 = "virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-mtl-devel:append:x86_64_v2 = " virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-mtl-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-mtl-doc-2.2.2-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-mtl-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-mtl-doc}"
@@ -538,12 +538,12 @@ SRC_URI[x86_64_v2_ghc8.10-mtl-prof.sha256sum] = "f27f8478534ad86171e8d1c1cfa29eb
 URI_x86_64_v2_ghc8.10-parsec = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-parsec-3.1.14.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-parsec;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-parsec}"
 SRC_URI[x86_64_v2_ghc8.10-parsec.sha256sum] = "45febcea16155dcba238ddb35d7031096ab1f14eec7a4de0f2a8a3573f986e85"
-RPROVIDES:ghc8.10-parsec:x86_64_v2 = "virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-parsec:append:x86_64_v2 = " virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-parsec-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-parsec-devel-3.1.14.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-parsec-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-parsec-devel}"
 SRC_URI[x86_64_v2_ghc8.10-parsec-devel.sha256sum] = "9eafe48138733fb7b1c7c38d25ba6e09ed3ae25a6c0a069a2bc82b29f20326f7"
-RPROVIDES:ghc8.10-parsec-devel:x86_64_v2 = "virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-parsec-devel:append:x86_64_v2 = " virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-parsec-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-parsec-doc-3.1.14.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-parsec-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-parsec-doc}"
@@ -556,12 +556,12 @@ SRC_URI[x86_64_v2_ghc8.10-parsec-prof.sha256sum] = "48c7707e06674b7a7336972d35bf
 URI_x86_64_v2_ghc8.10-pretty = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-pretty-1.1.3.6-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-pretty;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-pretty}"
 SRC_URI[x86_64_v2_ghc8.10-pretty.sha256sum] = "525500d16516061d2ce8f455d4993a26b313b67a1e4fe073807887adb1115040"
-RPROVIDES:ghc8.10-pretty:x86_64_v2 = "virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-pretty:append:x86_64_v2 = " virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-pretty-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-pretty-devel-1.1.3.6-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-pretty-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-pretty-devel}"
 SRC_URI[x86_64_v2_ghc8.10-pretty-devel.sha256sum] = "432ff5755fe0c69923d482461f9a07c132ea1521ccc46b06b6e8b13f9770a42d"
-RPROVIDES:ghc8.10-pretty-devel:x86_64_v2 = "virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-pretty-devel:append:x86_64_v2 = " virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-pretty-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-pretty-doc-1.1.3.6-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-pretty-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-pretty-doc}"
@@ -574,12 +574,12 @@ SRC_URI[x86_64_v2_ghc8.10-pretty-prof.sha256sum] = "33fb4736e37536c5c7a0910a30a6
 URI_x86_64_v2_ghc8.10-process = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-process-1.6.13.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-process;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-process}"
 SRC_URI[x86_64_v2_ghc8.10-process.sha256sum] = "0592baea0c1cd401a5312ef6291d63099794ec5fa619f80cee028380c064a79e"
-RPROVIDES:ghc8.10-process:x86_64_v2 = "virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-process:append:x86_64_v2 = " virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-process-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-process-devel-1.6.13.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-process-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-process-devel}"
 SRC_URI[x86_64_v2_ghc8.10-process-devel.sha256sum] = "5635c544bc21551806aee59aa8146d8f613e6b9ec66cfebab24a0776079250fb"
-RPROVIDES:ghc8.10-process-devel:x86_64_v2 = "virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-process-devel:append:x86_64_v2 = " virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-process-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-process-doc-1.6.13.2-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-process-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-process-doc}"
@@ -596,12 +596,12 @@ SRC_URI[x86_64_v2_ghc8.10-prof.sha256sum] = "8a8d774870163edc67f9661327b503edb4d
 URI_x86_64_v2_ghc8.10-stm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-stm-2.5.0.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-stm;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-stm}"
 SRC_URI[x86_64_v2_ghc8.10-stm.sha256sum] = "f6b3e7f138157029867bb72762d779d981318c44bf431e6ac91bacefa13655c7"
-RPROVIDES:ghc8.10-stm:x86_64_v2 = "virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-stm:append:x86_64_v2 = " virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-stm-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-stm-devel-2.5.0.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-stm-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-stm-devel}"
 SRC_URI[x86_64_v2_ghc8.10-stm-devel.sha256sum] = "5c6ee5bee168f6629d23f5533edfc08a2dec3f03d30d76744457808a748f9ab5"
-RPROVIDES:ghc8.10-stm-devel:x86_64_v2 = "virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-stm-devel:append:x86_64_v2 = " virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-stm-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-stm-doc-2.5.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-stm-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-stm-doc}"
@@ -614,12 +614,12 @@ SRC_URI[x86_64_v2_ghc8.10-stm-prof.sha256sum] = "93490b4cef3ad1e3f211c23d77be484
 URI_x86_64_v2_ghc8.10-template-haskell = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-template-haskell-2.16.0.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-template-haskell;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-template-haskell}"
 SRC_URI[x86_64_v2_ghc8.10-template-haskell.sha256sum] = "e9f279fefe8a2578b04a10b87967810b51736409e6629f8c86e1c7762c73c3b6"
-RPROVIDES:ghc8.10-template-haskell:x86_64_v2 = "virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-template-haskell:append:x86_64_v2 = " virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-template-haskell-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-template-haskell-devel-2.16.0.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-template-haskell-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-template-haskell-devel}"
 SRC_URI[x86_64_v2_ghc8.10-template-haskell-devel.sha256sum] = "23032fae1c5bad2834178855210b35321fb97d8a7b442335810de083293d40aa"
-RPROVIDES:ghc8.10-template-haskell-devel:x86_64_v2 = "virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-template-haskell-devel:append:x86_64_v2 = " virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-template-haskell-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-template-haskell-doc-2.16.0.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-template-haskell-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-template-haskell-doc}"
@@ -632,12 +632,12 @@ SRC_URI[x86_64_v2_ghc8.10-template-haskell-prof.sha256sum] = "478ed6d463983f5e83
 URI_x86_64_v2_ghc8.10-terminfo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-terminfo-0.4.1.4-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-terminfo;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-terminfo}"
 SRC_URI[x86_64_v2_ghc8.10-terminfo.sha256sum] = "79af30e04b55964c05f814b08243defcbe9916825e47b9fc986af65494d0e66c"
-RPROVIDES:ghc8.10-terminfo:x86_64_v2 = "virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-terminfo:append:x86_64_v2 = " virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-terminfo-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-terminfo-devel-0.4.1.4-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-terminfo-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-terminfo-devel}"
 SRC_URI[x86_64_v2_ghc8.10-terminfo-devel.sha256sum] = "e3eafcebf1a65248bae6daaa4b8386c843489c74685e34df8b4caa0789de3d04"
-RPROVIDES:ghc8.10-terminfo-devel:x86_64_v2 = "virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-terminfo-devel:append:x86_64_v2 = " virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-terminfo-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-terminfo-doc-0.4.1.4-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-terminfo-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-terminfo-doc}"
@@ -650,12 +650,12 @@ SRC_URI[x86_64_v2_ghc8.10-terminfo-prof.sha256sum] = "b1f4a98a8165f57309ad990034
 URI_x86_64_v2_ghc8.10-text = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-text-1.2.4.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-text;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-text}"
 SRC_URI[x86_64_v2_ghc8.10-text.sha256sum] = "e26b608b84aaf801ea7564498a17106c5b2d925f568a991c7419c00b21d04182"
-RPROVIDES:ghc8.10-text:x86_64_v2 = "virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-text:append:x86_64_v2 = " virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-text-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-text-devel-1.2.4.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-text-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-text-devel}"
 SRC_URI[x86_64_v2_ghc8.10-text-devel.sha256sum] = "0e83bb4233c38fd53a4982c089d2e801dc733fab4035b5da5daeb21a2dd0846b"
-RPROVIDES:ghc8.10-text-devel:x86_64_v2 = "virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-text-devel:append:x86_64_v2 = " virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-text-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-text-doc-1.2.4.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-text-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-text-doc}"
@@ -668,12 +668,12 @@ SRC_URI[x86_64_v2_ghc8.10-text-prof.sha256sum] = "a84dc12006db6d3736a4be4ccc4376
 URI_x86_64_v2_ghc8.10-time = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-time-1.9.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-time;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-time}"
 SRC_URI[x86_64_v2_ghc8.10-time.sha256sum] = "b43a207f0226dca09e30539b3ff5a38059d87af579bfc637f2b0c9b149058744"
-RPROVIDES:ghc8.10-time:x86_64_v2 = "virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-time:append:x86_64_v2 = " virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-time-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-time-devel-1.9.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-time-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-time-devel}"
 SRC_URI[x86_64_v2_ghc8.10-time-devel.sha256sum] = "b3646a7f4fa5bb1712f76930031d1ba8e78fd05fcf3468bdc3f9d141011ef955"
-RPROVIDES:ghc8.10-time-devel:x86_64_v2 = "virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-time-devel:append:x86_64_v2 = " virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-time-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-time-doc-1.9.3-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-time-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-time-doc}"
@@ -686,12 +686,12 @@ SRC_URI[x86_64_v2_ghc8.10-time-prof.sha256sum] = "73e172fc3b529d4cffe5392b12f882
 URI_x86_64_v2_ghc8.10-transformers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-transformers-0.5.6.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-transformers;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-transformers}"
 SRC_URI[x86_64_v2_ghc8.10-transformers.sha256sum] = "01d920f00dc13a08802a3eda5a4bf04e5e800f4cab6f41570ce89642277605f0"
-RPROVIDES:ghc8.10-transformers:x86_64_v2 = "virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-transformers:append:x86_64_v2 = " virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-transformers-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-transformers-devel-0.5.6.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-transformers-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-transformers-devel}"
 SRC_URI[x86_64_v2_ghc8.10-transformers-devel.sha256sum] = "4051b1a6eb9d10147abd2efa9235e18106ed26be55e5586bbcc44885dd2d536c"
-RPROVIDES:ghc8.10-transformers-devel:x86_64_v2 = "virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-transformers-devel:append:x86_64_v2 = " virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-transformers-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-transformers-doc-0.5.6.2-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-transformers-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-transformers-doc}"
@@ -704,12 +704,12 @@ SRC_URI[x86_64_v2_ghc8.10-transformers-prof.sha256sum] = "f12111ad7c00a3b44092d5
 URI_x86_64_v2_ghc8.10-unix = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-unix-2.7.2.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-unix;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-unix}"
 SRC_URI[x86_64_v2_ghc8.10-unix.sha256sum] = "09c33290be61786297d784cd9320cdc00d494f3d20a099b0973c64b5d411d0ee"
-RPROVIDES:ghc8.10-unix:x86_64_v2 = "virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-unix:append:x86_64_v2 = " virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-unix-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-unix-devel-2.7.2.2-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-unix-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-unix-devel}"
 SRC_URI[x86_64_v2_ghc8.10-unix-devel.sha256sum] = "88e8f9b5cff3e018a2df92f1ab9f98a8865594ed6a7d4a17a2a3dc62223a1eab"
-RPROVIDES:ghc8.10-unix-devel:x86_64_v2 = "virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-unix-devel:append:x86_64_v2 = " virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-unix-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-unix-doc-2.7.2.2-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-unix-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-unix-doc}"
@@ -722,12 +722,12 @@ SRC_URI[x86_64_v2_ghc8.10-unix-prof.sha256sum] = "3a1cf153cc6588bf52bcf395c0c853
 URI_x86_64_v2_ghc8.10-xhtml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-xhtml-3000.2.2.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-xhtml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-xhtml}"
 SRC_URI[x86_64_v2_ghc8.10-xhtml.sha256sum] = "c8d28884834c8bf9ddc9ce753e444b7a75f222a90dffdeea13a744f1e90f434c"
-RPROVIDES:ghc8.10-xhtml:x86_64_v2 = "virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-xhtml:append:x86_64_v2 = " virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-xhtml-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-xhtml-devel-3000.2.2.1-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc8.10-xhtml-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-xhtml-devel}"
 SRC_URI[x86_64_v2_ghc8.10-xhtml-devel.sha256sum] = "528bfc4450a54925ca951f0836cd082ef8d7b6153616fb2719854aaa163c06c9"
-RPROVIDES:ghc8.10-xhtml-devel:x86_64_v2 = "virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-xhtml-devel:append:x86_64_v2 = " virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
 
 URI_x86_64_v2_ghc8.10-xhtml-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc8.10-xhtml-doc-3000.2.2.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc8.10-xhtml-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ghc8.10-xhtml-doc}"
@@ -744,12 +744,12 @@ SRC_URI[aarch64_ghc8.10.sha256sum] = "201d056149076edf638f4fec67b218a882c80107f0
 URI_aarch64_ghc8.10-Cabal = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-Cabal-3.2.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-Cabal;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-Cabal}"
 SRC_URI[aarch64_ghc8.10-Cabal.sha256sum] = "33d8920ffe75ff6e75b9299443633cccb92b2d94035a2fdd3eacf4f1fb476d1e"
-RPROVIDES:ghc8.10-Cabal:aarch64 = "virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-Cabal:append:aarch64 = " virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-Cabal-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-Cabal-devel-3.2.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-Cabal-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-Cabal-devel}"
 SRC_URI[aarch64_ghc8.10-Cabal-devel.sha256sum] = "3fc84b2fea8d9a043f211ce96d4735482769c3fe9e3f1d332d8313882ade217b"
-RPROVIDES:ghc8.10-Cabal-devel:aarch64 = "virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-Cabal-devel:append:aarch64 = " virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-Cabal-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-Cabal-doc-3.2.1.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-Cabal-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-Cabal-doc}"
@@ -762,12 +762,12 @@ SRC_URI[aarch64_ghc8.10-Cabal-prof.sha256sum] = "c2cfd6d01867d68020ce7e85ae29eed
 URI_aarch64_ghc8.10-array = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-array-0.5.4.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-array;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-array}"
 SRC_URI[aarch64_ghc8.10-array.sha256sum] = "094907fd89f776e89c9b94adfe7ccef5139101e003d1dfd1d8230d300a0f39b2"
-RPROVIDES:ghc8.10-array:aarch64 = "virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-array:append:aarch64 = " virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-array-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-array-devel-0.5.4.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-array-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-array-devel}"
 SRC_URI[aarch64_ghc8.10-array-devel.sha256sum] = "4d019c7a4d3eb7a4faa3f88cd596e0e7265d8e825a6862c647b97b065b5bcd9f"
-RPROVIDES:ghc8.10-array-devel:aarch64 = "virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-array-devel:append:aarch64 = " virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-array-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-array-doc-0.5.4.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-array-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-array-doc}"
@@ -780,12 +780,12 @@ SRC_URI[aarch64_ghc8.10-array-prof.sha256sum] = "0fcc61c8cd956a2fbca6fefe379eb41
 URI_aarch64_ghc8.10-base = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-base-4.14.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-base;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-base}"
 SRC_URI[aarch64_ghc8.10-base.sha256sum] = "122c71e82589f598183a02d03c3eef015d408d8be5194b892f9e705e7f429041"
-RPROVIDES:ghc8.10-base:aarch64 = "virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-base:append:aarch64 = " virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-base-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-base-devel-4.14.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-base-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-base-devel}"
 SRC_URI[aarch64_ghc8.10-base-devel.sha256sum] = "7d0b2dc5936d4e08ab99c2f65c7642457a62d38e8df75331a7199c6e628e6965"
-RPROVIDES:ghc8.10-base-devel:aarch64 = "virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-base-devel:append:aarch64 = " virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-base-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-base-doc-4.14.3.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-base-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-base-doc}"
@@ -798,12 +798,12 @@ SRC_URI[aarch64_ghc8.10-base-prof.sha256sum] = "b0930a7398d16446354aefd41c5a9912
 URI_aarch64_ghc8.10-binary = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-binary-0.8.8.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-binary;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-binary}"
 SRC_URI[aarch64_ghc8.10-binary.sha256sum] = "a21fae2f5866c125dfdae38171de5c678d86aefe80b368c9d91d11e55e01a46f"
-RPROVIDES:ghc8.10-binary:aarch64 = "virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-binary:append:aarch64 = " virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-binary-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-binary-devel-0.8.8.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-binary-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-binary-devel}"
 SRC_URI[aarch64_ghc8.10-binary-devel.sha256sum] = "d7b964789111c91a0b3fd4d78c5ce8ab180898b0f3730d90c7bb30ef282139ee"
-RPROVIDES:ghc8.10-binary-devel:aarch64 = "virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-binary-devel:append:aarch64 = " virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-binary-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-binary-doc-0.8.8.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-binary-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-binary-doc}"
@@ -816,12 +816,12 @@ SRC_URI[aarch64_ghc8.10-binary-prof.sha256sum] = "8810351d398dfe4d7ff55d160d24f6
 URI_aarch64_ghc8.10-bytestring = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-bytestring-0.10.12.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-bytestring;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-bytestring}"
 SRC_URI[aarch64_ghc8.10-bytestring.sha256sum] = "a780b4e99e3eeff793bf1568371a200236ea747e8341ae58dfa6cdd85989f7b4"
-RPROVIDES:ghc8.10-bytestring:aarch64 = "virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-bytestring:append:aarch64 = " virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-bytestring-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-bytestring-devel-0.10.12.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-bytestring-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-bytestring-devel}"
 SRC_URI[aarch64_ghc8.10-bytestring-devel.sha256sum] = "ec4602b802cbac32c610af6df41660979cdb2d6484eb373a1a201cf4b1650608"
-RPROVIDES:ghc8.10-bytestring-devel:aarch64 = "virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-bytestring-devel:append:aarch64 = " virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-bytestring-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-bytestring-doc-0.10.12.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-bytestring-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-bytestring-doc}"
@@ -842,12 +842,12 @@ SRC_URI[aarch64_ghc8.10-compiler-default.sha256sum] = "ab0b53a559e20cfddc2f3c786
 URI_aarch64_ghc8.10-containers = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-containers-0.6.5.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-containers;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-containers}"
 SRC_URI[aarch64_ghc8.10-containers.sha256sum] = "f830ef9d57ac2a79e9acc871c141b221542a2a82813d5ef10453572f07c1116d"
-RPROVIDES:ghc8.10-containers:aarch64 = "virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-containers:append:aarch64 = " virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-containers-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-containers-devel-0.6.5.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-containers-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-containers-devel}"
 SRC_URI[aarch64_ghc8.10-containers-devel.sha256sum] = "edc2f7f6f89f257d1ac7c60a48526451c80b90f422c3e95995ddce37a1633703"
-RPROVIDES:ghc8.10-containers-devel:aarch64 = "virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-containers-devel:append:aarch64 = " virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-containers-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-containers-doc-0.6.5.1-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-containers-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-containers-doc}"
@@ -860,12 +860,12 @@ SRC_URI[aarch64_ghc8.10-containers-prof.sha256sum] = "aca744ee6ae46a366142d2a3fd
 URI_aarch64_ghc8.10-deepseq = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-deepseq-1.4.4.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-deepseq;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-deepseq}"
 SRC_URI[aarch64_ghc8.10-deepseq.sha256sum] = "aaaf7846a33f1f72c83f107e86ce15cc561468960b76ef908949c0d83ab0ab2a"
-RPROVIDES:ghc8.10-deepseq:aarch64 = "virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-deepseq:append:aarch64 = " virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-deepseq-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-deepseq-devel-1.4.4.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-deepseq-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-deepseq-devel}"
 SRC_URI[aarch64_ghc8.10-deepseq-devel.sha256sum] = "af68737fbb824e87c761077179a392f9708d49337dc9c76cc765b972e9ffd92a"
-RPROVIDES:ghc8.10-deepseq-devel:aarch64 = "virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-deepseq-devel:append:aarch64 = " virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-deepseq-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-deepseq-doc-1.4.4.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-deepseq-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-deepseq-doc}"
@@ -882,12 +882,12 @@ SRC_URI[aarch64_ghc8.10-devel.sha256sum] = "b4121e789c2bda4b4406009f5d99be963aaa
 URI_aarch64_ghc8.10-directory = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-directory-1.3.6.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-directory;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-directory}"
 SRC_URI[aarch64_ghc8.10-directory.sha256sum] = "cf2f224d67f1604558df55f1dfee0aa752ec3f297cd12c1cafb371d3237cbc39"
-RPROVIDES:ghc8.10-directory:aarch64 = "virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-directory:append:aarch64 = " virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-directory-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-directory-devel-1.3.6.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-directory-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-directory-devel}"
 SRC_URI[aarch64_ghc8.10-directory-devel.sha256sum] = "85cb1af778ac068c4904b246bdbf519d6c211b1c573386dd49fc553eebd2a678"
-RPROVIDES:ghc8.10-directory-devel:aarch64 = "virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-directory-devel:append:aarch64 = " virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-directory-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-directory-doc-1.3.6.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-directory-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-directory-doc}"
@@ -908,12 +908,12 @@ SRC_URI[aarch64_ghc8.10-doc-index.sha256sum] = "ea9d7fe2a7705200ece493462b18f978
 URI_aarch64_ghc8.10-exceptions = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-exceptions-0.10.4-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-exceptions;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-exceptions}"
 SRC_URI[aarch64_ghc8.10-exceptions.sha256sum] = "c91e5a456d93f787423ab369074f676a5b53d8b67cc3c2d400f991ab2daa43a5"
-RPROVIDES:ghc8.10-exceptions:aarch64 = "virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-exceptions:append:aarch64 = " virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-exceptions-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-exceptions-devel-0.10.4-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-exceptions-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-exceptions-devel}"
 SRC_URI[aarch64_ghc8.10-exceptions-devel.sha256sum] = "2dcf8dce6ed9ee4ae7b2a34fe71e87a8b73771cd4e2fc7c2868a2a1c36f7820c"
-RPROVIDES:ghc8.10-exceptions-devel:aarch64 = "virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-exceptions-devel:append:aarch64 = " virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-exceptions-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-exceptions-doc-0.10.4-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-exceptions-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-exceptions-doc}"
@@ -926,12 +926,12 @@ SRC_URI[aarch64_ghc8.10-exceptions-prof.sha256sum] = "68392b33e3e8c58670e14fb185
 URI_aarch64_ghc8.10-filepath = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-filepath-1.4.2.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-filepath;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-filepath}"
 SRC_URI[aarch64_ghc8.10-filepath.sha256sum] = "612fb86eae769e95c6868057abf23018f8c8c2fae2b280dbd5e5bebe8fb01f8e"
-RPROVIDES:ghc8.10-filepath:aarch64 = "virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-filepath:append:aarch64 = " virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-filepath-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-filepath-devel-1.4.2.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-filepath-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-filepath-devel}"
 SRC_URI[aarch64_ghc8.10-filepath-devel.sha256sum] = "4ab001793ccbfc07632d42756c96e589a47d884128558fe80589c0139ec0670a"
-RPROVIDES:ghc8.10-filepath-devel:aarch64 = "virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-filepath-devel:append:aarch64 = " virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-filepath-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-filepath-doc-1.4.2.1-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-filepath-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-filepath-doc}"
@@ -948,17 +948,17 @@ SRC_URI[aarch64_ghc8.10-filesystem.sha256sum] = "ffe8dcbec0bd6bcdee048fb23ac5f5e
 URI_aarch64_ghc8.10-ghc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc}"
 SRC_URI[aarch64_ghc8.10-ghc.sha256sum] = "d5a3cba9ac26efd336e32f6a6e9108f62ac0dac6fb4150c769bdd3b667e22b9a"
-RPROVIDES:ghc8.10-ghc:aarch64 = "virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc:append:aarch64 = " virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-boot = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-boot;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot}"
 SRC_URI[aarch64_ghc8.10-ghc-boot.sha256sum] = "c36bacc6ad6f5b29e1a5c1d808a7dbb9187729ab1e7271ca3dd8df74ee38aa56"
-RPROVIDES:ghc8.10-ghc-boot:aarch64 = "virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot:append:aarch64 = " virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-boot-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-boot-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot-devel}"
 SRC_URI[aarch64_ghc8.10-ghc-boot-devel.sha256sum] = "e115f2197d759a88856ef996311c7707310d1d1b7a83437b4d3bd94cab501e71"
-RPROVIDES:ghc8.10-ghc-boot-devel:aarch64 = "virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-devel:append:aarch64 = " virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-boot-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-ghc-boot-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot-doc}"
@@ -971,12 +971,12 @@ SRC_URI[aarch64_ghc8.10-ghc-boot-prof.sha256sum] = "efa15fe5dbdcfba05e3598361589
 URI_aarch64_ghc8.10-ghc-boot-th = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-th-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-boot-th;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot-th}"
 SRC_URI[aarch64_ghc8.10-ghc-boot-th.sha256sum] = "02e25fe3256c9633e96cfc19537c05d9f0d129e717b5fe8d6190e9f527228ed2"
-RPROVIDES:ghc8.10-ghc-boot-th:aarch64 = "virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-th:append:aarch64 = " virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-boot-th-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-th-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-boot-th-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot-th-devel}"
 SRC_URI[aarch64_ghc8.10-ghc-boot-th-devel.sha256sum] = "a7206f04bf478910f3589915321a01f37189aef50ef11813fba2dbf3bb6f4fbb"
-RPROVIDES:ghc8.10-ghc-boot-th-devel:aarch64 = "virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-boot-th-devel:append:aarch64 = " virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-boot-th-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-boot-th-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-ghc-boot-th-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-boot-th-doc}"
@@ -1005,7 +1005,7 @@ SRC_URI[aarch64_ghc8.10-ghc-compact-prof.sha256sum] = "fb2721609cfceaca7384d9364
 URI_aarch64_ghc8.10-ghc-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-devel}"
 SRC_URI[aarch64_ghc8.10-ghc-devel.sha256sum] = "85f0b438dfd5cf002a7d23a83cdef249eaf00090567e9d485f915997fb33ee5c"
-RPROVIDES:ghc8.10-ghc-devel:aarch64 = "virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-devel:append:aarch64 = " virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-ghc-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-doc}"
@@ -1014,12 +1014,12 @@ SRC_URI[aarch64_ghc8.10-ghc-doc.sha256sum] = "3f6056a451357fa71b5d044ba363bfdecb
 URI_aarch64_ghc8.10-ghc-heap = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-heap-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-heap;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-heap}"
 SRC_URI[aarch64_ghc8.10-ghc-heap.sha256sum] = "5007cb244affb0bec147c6e44b4fb57e64fea6d40642464202fc2e7f9fdc9e32"
-RPROVIDES:ghc8.10-ghc-heap:aarch64 = "virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-heap:append:aarch64 = " virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-heap-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-heap-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghc-heap-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-heap-devel}"
 SRC_URI[aarch64_ghc8.10-ghc-heap-devel.sha256sum] = "49510e489a820389106f878306363a60b211c1e2ad6bf431d13f5677801a3d67"
-RPROVIDES:ghc8.10-ghc-heap-devel:aarch64 = "virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghc-heap-devel:append:aarch64 = " virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghc-heap-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghc-heap-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-ghc-heap-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghc-heap-doc}"
@@ -1036,12 +1036,12 @@ SRC_URI[aarch64_ghc8.10-ghc-prof.sha256sum] = "56783330a7eec322a2057b6d89be60da2
 URI_aarch64_ghc8.10-ghci = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghci-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghci;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghci}"
 SRC_URI[aarch64_ghc8.10-ghci.sha256sum] = "9c4220a5d486188ff05812cd197a92b267084466663ca7eaf62ade5e9dac9f7a"
-RPROVIDES:ghc8.10-ghci:aarch64 = "virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghci:append:aarch64 = " virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghci-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghci-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-ghci-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghci-devel}"
 SRC_URI[aarch64_ghc8.10-ghci-devel.sha256sum] = "6b3a459d47bb3f6bc672a11ade7f3f0da668bb19ab22faeb055e11e6359d5678"
-RPROVIDES:ghc8.10-ghci-devel:aarch64 = "virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-ghci-devel:append:aarch64 = " virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-ghci-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-ghci-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-ghci-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-ghci-doc}"
@@ -1054,12 +1054,12 @@ SRC_URI[aarch64_ghc8.10-ghci-prof.sha256sum] = "65676481576e1e5845c48c8768f9c0a0
 URI_aarch64_ghc8.10-haskeline = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-haskeline-0.8.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-haskeline;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-haskeline}"
 SRC_URI[aarch64_ghc8.10-haskeline.sha256sum] = "4d71ed251fccc2180d60adcbe36e4a2b58eb6d612659cb62ec6078e2ef796749"
-RPROVIDES:ghc8.10-haskeline:aarch64 = "virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-haskeline:append:aarch64 = " virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-haskeline-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-haskeline-devel-0.8.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-haskeline-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-haskeline-devel}"
 SRC_URI[aarch64_ghc8.10-haskeline-devel.sha256sum] = "fa0f00f46c0e889b28fecbf7c398cfe277f8537e665645bf3a2e2c07d19354e3"
-RPROVIDES:ghc8.10-haskeline-devel:aarch64 = "virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-haskeline-devel:append:aarch64 = " virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-haskeline-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-haskeline-doc-0.8.2-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-haskeline-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-haskeline-doc}"
@@ -1072,12 +1072,12 @@ SRC_URI[aarch64_ghc8.10-haskeline-prof.sha256sum] = "264a8dfc88e7e3594f82a55be7b
 URI_aarch64_ghc8.10-hpc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-hpc-0.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-hpc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-hpc}"
 SRC_URI[aarch64_ghc8.10-hpc.sha256sum] = "190f85fcd25d7add2855188386bd7a68e465208b67272b568a6128c4b7fb61fc"
-RPROVIDES:ghc8.10-hpc:aarch64 = "virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-hpc:append:aarch64 = " virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-hpc-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-hpc-devel-0.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-hpc-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-hpc-devel}"
 SRC_URI[aarch64_ghc8.10-hpc-devel.sha256sum] = "2f64e5fcf4abd12285029519783cb981ab4f2db44cf164bfe26bc511a960dad4"
-RPROVIDES:ghc8.10-hpc-devel:aarch64 = "virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-hpc-devel:append:aarch64 = " virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-hpc-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-hpc-doc-0.6.1.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-hpc-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-hpc-doc}"
@@ -1090,12 +1090,12 @@ SRC_URI[aarch64_ghc8.10-hpc-prof.sha256sum] = "ab19981ccee4c7739fc8613c3ce0e4ae3
 URI_aarch64_ghc8.10-libiserv = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-libiserv-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-libiserv;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-libiserv}"
 SRC_URI[aarch64_ghc8.10-libiserv.sha256sum] = "2a265959a4a534e3af423312ba3b5925fb366dcd965f8dd62aacecced1318c3e"
-RPROVIDES:ghc8.10-libiserv:aarch64 = "virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-libiserv:append:aarch64 = " virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-libiserv-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-libiserv-devel-8.10.7-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-libiserv-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-libiserv-devel}"
 SRC_URI[aarch64_ghc8.10-libiserv-devel.sha256sum] = "3f4cf3eb47fc960eb07b7b0faf0f3929eadee0dd270f72c3c7802344383c5579"
-RPROVIDES:ghc8.10-libiserv-devel:aarch64 = "virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-libiserv-devel:append:aarch64 = " virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-libiserv-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-libiserv-doc-8.10.7-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-libiserv-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-libiserv-doc}"
@@ -1112,12 +1112,12 @@ SRC_URI[aarch64_ghc8.10-manual.sha256sum] = "fbf3ab7b9a100c1c7e1d998067532072b5b
 URI_aarch64_ghc8.10-mtl = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-mtl-2.2.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-mtl;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-mtl}"
 SRC_URI[aarch64_ghc8.10-mtl.sha256sum] = "d258ad03bbbdecbaceb17d5ac43124ce092aeec77824132a04ea5eae9a730c51"
-RPROVIDES:ghc8.10-mtl:aarch64 = "virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-mtl:append:aarch64 = " virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-mtl-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-mtl-devel-2.2.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-mtl-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-mtl-devel}"
 SRC_URI[aarch64_ghc8.10-mtl-devel.sha256sum] = "118c1ee768af913ca308c8577553b925fadaa00966203679df8e1a1ef188358d"
-RPROVIDES:ghc8.10-mtl-devel:aarch64 = "virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-mtl-devel:append:aarch64 = " virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-mtl-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-mtl-doc-2.2.2-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-mtl-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-mtl-doc}"
@@ -1130,12 +1130,12 @@ SRC_URI[aarch64_ghc8.10-mtl-prof.sha256sum] = "d05144a9c747cf8de27b7255f8e01ddbb
 URI_aarch64_ghc8.10-parsec = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-parsec-3.1.14.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-parsec;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-parsec}"
 SRC_URI[aarch64_ghc8.10-parsec.sha256sum] = "4d2d8acd82448be56308768a414f115e674a7e1b1b8583bbdab89788f8b9adb5"
-RPROVIDES:ghc8.10-parsec:aarch64 = "virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-parsec:append:aarch64 = " virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-parsec-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-parsec-devel-3.1.14.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-parsec-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-parsec-devel}"
 SRC_URI[aarch64_ghc8.10-parsec-devel.sha256sum] = "7decfaa0cbee3485857705901852c977b2ecef11b93d4ede66f7a3acfcb5746f"
-RPROVIDES:ghc8.10-parsec-devel:aarch64 = "virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-parsec-devel:append:aarch64 = " virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-parsec-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-parsec-doc-3.1.14.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-parsec-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-parsec-doc}"
@@ -1148,12 +1148,12 @@ SRC_URI[aarch64_ghc8.10-parsec-prof.sha256sum] = "7b48b71542e0fc57db1139cf391604
 URI_aarch64_ghc8.10-pretty = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-pretty-1.1.3.6-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-pretty;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-pretty}"
 SRC_URI[aarch64_ghc8.10-pretty.sha256sum] = "b0e505bf4ae3dee89ea9dcfdc1785138e120c16c3f6e1ec0931b6db671f9f17d"
-RPROVIDES:ghc8.10-pretty:aarch64 = "virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-pretty:append:aarch64 = " virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-pretty-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-pretty-devel-1.1.3.6-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-pretty-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-pretty-devel}"
 SRC_URI[aarch64_ghc8.10-pretty-devel.sha256sum] = "578b4a28780c048240cc80fb7626f0a25a52955ab89eb30521f19252c52c316d"
-RPROVIDES:ghc8.10-pretty-devel:aarch64 = "virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-pretty-devel:append:aarch64 = " virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-pretty-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-pretty-doc-1.1.3.6-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-pretty-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-pretty-doc}"
@@ -1166,12 +1166,12 @@ SRC_URI[aarch64_ghc8.10-pretty-prof.sha256sum] = "2cecdfb738f80cea2aef54263cd3ae
 URI_aarch64_ghc8.10-process = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-process-1.6.13.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-process;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-process}"
 SRC_URI[aarch64_ghc8.10-process.sha256sum] = "085eed72d53e838323e29836a9aa0cacac70cb81b7b9a2bf01422e8a27289ff4"
-RPROVIDES:ghc8.10-process:aarch64 = "virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-process:append:aarch64 = " virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-process-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-process-devel-1.6.13.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-process-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-process-devel}"
 SRC_URI[aarch64_ghc8.10-process-devel.sha256sum] = "9b2b0e9bd23b7a4c8e2d338bf288e236891c787c164be13643499b8677ae9712"
-RPROVIDES:ghc8.10-process-devel:aarch64 = "virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-process-devel:append:aarch64 = " virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-process-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-process-doc-1.6.13.2-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-process-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-process-doc}"
@@ -1188,12 +1188,12 @@ SRC_URI[aarch64_ghc8.10-prof.sha256sum] = "c195300f59b13db51ce16c0fff780228cfa70
 URI_aarch64_ghc8.10-stm = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-stm-2.5.0.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-stm;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-stm}"
 SRC_URI[aarch64_ghc8.10-stm.sha256sum] = "6e9f3edfc744c9348163cb08008c34c767b032d57d354e4a20ac0d63881fa311"
-RPROVIDES:ghc8.10-stm:aarch64 = "virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-stm:append:aarch64 = " virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-stm-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-stm-devel-2.5.0.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-stm-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-stm-devel}"
 SRC_URI[aarch64_ghc8.10-stm-devel.sha256sum] = "346bcc351562554ec412c3bb208bfe17ad44b36e7c67184134ed8699d4c10525"
-RPROVIDES:ghc8.10-stm-devel:aarch64 = "virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-stm-devel:append:aarch64 = " virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-stm-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-stm-doc-2.5.0.1-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-stm-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-stm-doc}"
@@ -1206,12 +1206,12 @@ SRC_URI[aarch64_ghc8.10-stm-prof.sha256sum] = "c0d021f0b0aefdc0496b830146e24f590
 URI_aarch64_ghc8.10-template-haskell = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-template-haskell-2.16.0.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-template-haskell;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-template-haskell}"
 SRC_URI[aarch64_ghc8.10-template-haskell.sha256sum] = "b7b9754be1c2b7c881b8a6e1a4b2b2e0f74248125f589bfb0d6f31ee9157a613"
-RPROVIDES:ghc8.10-template-haskell:aarch64 = "virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-template-haskell:append:aarch64 = " virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-template-haskell-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-template-haskell-devel-2.16.0.0-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-template-haskell-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-template-haskell-devel}"
 SRC_URI[aarch64_ghc8.10-template-haskell-devel.sha256sum] = "9ad937fe129cf415c3d3958413aa0bf7573e5f7edccfe4d15114079c9ee347ef"
-RPROVIDES:ghc8.10-template-haskell-devel:aarch64 = "virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-template-haskell-devel:append:aarch64 = " virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-template-haskell-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-template-haskell-doc-2.16.0.0-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-template-haskell-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-template-haskell-doc}"
@@ -1224,12 +1224,12 @@ SRC_URI[aarch64_ghc8.10-template-haskell-prof.sha256sum] = "4410db82ee5e8695686e
 URI_aarch64_ghc8.10-terminfo = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-terminfo-0.4.1.4-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-terminfo;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-terminfo}"
 SRC_URI[aarch64_ghc8.10-terminfo.sha256sum] = "f2f67858e8d8f7c587571a55d072f95128e2b2a631f081a37e42d1e32b9d7138"
-RPROVIDES:ghc8.10-terminfo:aarch64 = "virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-terminfo:append:aarch64 = " virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-terminfo-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-terminfo-devel-0.4.1.4-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-terminfo-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-terminfo-devel}"
 SRC_URI[aarch64_ghc8.10-terminfo-devel.sha256sum] = "ed1bde1528f3c4b8237427204f1a54e2a6e9e556dd5540b10b4b0940383cfde3"
-RPROVIDES:ghc8.10-terminfo-devel:aarch64 = "virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-terminfo-devel:append:aarch64 = " virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-terminfo-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-terminfo-doc-0.4.1.4-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-terminfo-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-terminfo-doc}"
@@ -1242,12 +1242,12 @@ SRC_URI[aarch64_ghc8.10-terminfo-prof.sha256sum] = "e0b8212535b6bec0c05d1aa617a0
 URI_aarch64_ghc8.10-text = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-text-1.2.4.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-text;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-text}"
 SRC_URI[aarch64_ghc8.10-text.sha256sum] = "6aaa9529988ff53e2b551a18504887fd7ff2130a7e15c74f098e66df429f98c4"
-RPROVIDES:ghc8.10-text:aarch64 = "virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-text:append:aarch64 = " virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-text-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-text-devel-1.2.4.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-text-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-text-devel}"
 SRC_URI[aarch64_ghc8.10-text-devel.sha256sum] = "ba6811b2c09aa960446a002ff0673f7888e03ec8498d76d137600981c1b4c0fe"
-RPROVIDES:ghc8.10-text-devel:aarch64 = "virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-text-devel:append:aarch64 = " virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-text-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-text-doc-1.2.4.1-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-text-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-text-doc}"
@@ -1260,12 +1260,12 @@ SRC_URI[aarch64_ghc8.10-text-prof.sha256sum] = "60afaf26a4642775b72313e7210f17c0
 URI_aarch64_ghc8.10-time = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-time-1.9.3-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-time;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-time}"
 SRC_URI[aarch64_ghc8.10-time.sha256sum] = "743562347a65792e1c394513dbf626dc8948d4a61531ffd4a8f900afbe431de1"
-RPROVIDES:ghc8.10-time:aarch64 = "virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-time:append:aarch64 = " virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-time-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-time-devel-1.9.3-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-time-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-time-devel}"
 SRC_URI[aarch64_ghc8.10-time-devel.sha256sum] = "3a9d9f81a41165dcacd52dd9c750c1505f61d13940e3f155e09be3029bd83cb9"
-RPROVIDES:ghc8.10-time-devel:aarch64 = "virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-time-devel:append:aarch64 = " virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-time-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-time-doc-1.9.3-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-time-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-time-doc}"
@@ -1278,12 +1278,12 @@ SRC_URI[aarch64_ghc8.10-time-prof.sha256sum] = "f68fa12c76d31742788fc32b58d1173e
 URI_aarch64_ghc8.10-transformers = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-transformers-0.5.6.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-transformers;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-transformers}"
 SRC_URI[aarch64_ghc8.10-transformers.sha256sum] = "fc9685b744a685d80c67fc96e65256a43701cbea445772e78124e94621bc2d76"
-RPROVIDES:ghc8.10-transformers:aarch64 = "virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-transformers:append:aarch64 = " virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-transformers-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-transformers-devel-0.5.6.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-transformers-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-transformers-devel}"
 SRC_URI[aarch64_ghc8.10-transformers-devel.sha256sum] = "50ef30acfceeb89ec1e3bc4e14e260524c06ee19969c8de5e1cab70fd5209457"
-RPROVIDES:ghc8.10-transformers-devel:aarch64 = "virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-transformers-devel:append:aarch64 = " virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-transformers-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-transformers-doc-0.5.6.2-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-transformers-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-transformers-doc}"
@@ -1296,12 +1296,12 @@ SRC_URI[aarch64_ghc8.10-transformers-prof.sha256sum] = "83c54475944dc3a3b9fdebf6
 URI_aarch64_ghc8.10-unix = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-unix-2.7.2.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-unix;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-unix}"
 SRC_URI[aarch64_ghc8.10-unix.sha256sum] = "9b23efcbdfbfba0abb9c82f165251becb0a609646e96149f4f4eeca48c358deb"
-RPROVIDES:ghc8.10-unix:aarch64 = "virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-unix:append:aarch64 = " virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-unix-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-unix-devel-2.7.2.2-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-unix-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-unix-devel}"
 SRC_URI[aarch64_ghc8.10-unix-devel.sha256sum] = "b24b529f4ce961b78d2e858d6888638035f8dbbb92b00802fb6984b249b1f7d3"
-RPROVIDES:ghc8.10-unix-devel:aarch64 = "virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-unix-devel:append:aarch64 = " virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-unix-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-unix-doc-2.7.2.2-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-unix-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-unix-doc}"
@@ -1314,12 +1314,12 @@ SRC_URI[aarch64_ghc8.10-unix-prof.sha256sum] = "9e801fb65a43eafc097326725bbcbf21
 URI_aarch64_ghc8.10-xhtml = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-xhtml-3000.2.2.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-xhtml;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-xhtml}"
 SRC_URI[aarch64_ghc8.10-xhtml.sha256sum] = "a478ab12ad70695ac24cbdaca615956d2399a57940489cb936a5651267242c51"
-RPROVIDES:ghc8.10-xhtml:aarch64 = "virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-xhtml:append:aarch64 = " virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-xhtml-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-xhtml-devel-3000.2.2.1-17.el10_0.aarch64.rpm;name=aarch64_ghc8.10-xhtml-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-xhtml-devel}"
 SRC_URI[aarch64_ghc8.10-xhtml-devel.sha256sum] = "3334dcba7223bb94d8950ce0f82d6e0a58004cfcb90b5bbb2b22282ab37e53bd"
-RPROVIDES:ghc8.10-xhtml-devel:aarch64 = "virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
+RPROVIDES:ghc8.10-xhtml-devel:append:aarch64 = " virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
 
 URI_aarch64_ghc8.10-xhtml-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc8.10-xhtml-doc-3000.2.2.1-17.el10_0.noarch.rpm;name=aarch64_ghc8.10-xhtml-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ghc8.10-xhtml-doc}"
@@ -2763,7 +2763,3 @@ RDEPENDS:ghc8.10-xhtml-prof = " \
  ghc8.10-base-prof \
  ghc8.10-xhtml-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_ rpm/virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_ rpm/virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_ rpm/virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_ rpm/virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_ rpm/virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_ rpm/virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_ rpm/virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_ rpm/virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/libHSCabal-3.2.1.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSarray-0.5.4.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbase-4.14.3.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbinary-0.8.8.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSbytestring-0.10.12.0-ghc8.10.7.so___64bit_ rpm/virtual/libHScontainers-0.6.5.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSdeepseq-1.4.4.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSdirectory-1.3.6.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSexceptions-0.10.4-ghc8.10.7.so___64bit_ rpm/virtual/libHSfilepath-1.4.2.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-boot-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-boot-th-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-heap-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSghc-prim-0.6.1-ghc8.10.7.so___64bit_ rpm/virtual/libHSghci-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHShaskeline-0.8.2-ghc8.10.7.so___64bit_ rpm/virtual/libHShpc-0.6.1.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSinteger-gmp-1.0.3.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSlibiserv-8.10.7-ghc8.10.7.so___64bit_ rpm/virtual/libHSmtl-2.2.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSparsec-3.1.14.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSpretty-1.1.3.6-ghc8.10.7.so___64bit_ rpm/virtual/libHSprocess-1.6.13.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSstm-2.5.0.1-ghc8.10.7.so___64bit_ rpm/virtual/libHStemplate-haskell-2.16.0.0-ghc8.10.7.so___64bit_ rpm/virtual/libHSterminfo-0.4.1.4-ghc8.10.7.so___64bit_ rpm/virtual/libHStext-1.2.4.1-ghc8.10.7.so___64bit_ rpm/virtual/libHStime-1.9.3-ghc8.10.7.so___64bit_ rpm/virtual/libHStransformers-0.5.6.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSunix-2.7.2.2-ghc8.10.7.so___64bit_ rpm/virtual/libHSxhtml-3000.2.2.1-ghc8.10.7.so___64bit_"

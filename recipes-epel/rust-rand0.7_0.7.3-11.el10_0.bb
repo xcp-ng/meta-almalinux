@@ -30,7 +30,7 @@ SRC_URI[x86_64_v2_rust-rand0.7+alloc-devel.sha256sum] = "474977acd8fad99ea7f482f
 URI_x86_64_v2_rust-rand0.7+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rand0.7+default-devel-0.7.3-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rand0.7+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-rand0.7+default-devel}"
 SRC_URI[x86_64_v2_rust-rand0.7+default-devel.sha256sum] = "018bf27001d85e1bbb3092a5ddc33fd388a055af584d88c27133dee36428d967"
-RPROVIDES:rust-rand0.7+default-devel:x86_64_v2 = "virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"
+RPROVIDES:rust-rand0.7+default-devel:append:x86_64_v2 = " virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"
 
 URI_x86_64_v2_rust-rand0.7+getrandom-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rand0.7+getrandom-devel-0.7.3-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rand0.7+getrandom-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-rand0.7+getrandom-devel}"
@@ -75,7 +75,7 @@ SRC_URI[aarch64_rust-rand0.7+alloc-devel.sha256sum] = "396cd1947814b86660c9606c0
 URI_aarch64_rust-rand0.7+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rand0.7+default-devel-0.7.3-11.el10_0.noarch.rpm;name=aarch64_rust-rand0.7+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-rand0.7+default-devel}"
 SRC_URI[aarch64_rust-rand0.7+default-devel.sha256sum] = "1ad045ee2b05a557bf1050a48048d1e8a19506f3b8740e41b9b777f6e5606e28"
-RPROVIDES:rust-rand0.7+default-devel:aarch64 = "virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"
+RPROVIDES:rust-rand0.7+default-devel:append:aarch64 = " virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"
 
 URI_aarch64_rust-rand0.7+getrandom-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rand0.7+getrandom-devel-0.7.3-11.el10_0.noarch.rpm;name=aarch64_rust-rand0.7+getrandom-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-rand0.7+getrandom-devel}"
@@ -172,7 +172,3 @@ RDEPENDS:rust-rand0.7-devel = " \
  rust-rand_chacha0.2-devel \
  rust-rand_core0.5+default-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_rand/default__ge_0.3.10_with_crate_rand/default__lt_0.9.0~"

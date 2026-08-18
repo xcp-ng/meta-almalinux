@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "37843bcde47a7a3f5295aaf26b03823beb1cb260d8accb0fb8781b
 URI_x86_64_v2_squashfuse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/squashfuse-0.5.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_squashfuse;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_squashfuse}"
 SRC_URI[x86_64_v2_squashfuse.sha256sum] = "8c1f7482203d0d1f71e5f1ee6a95848edec7c73471ca6afa3ca15f692815e0b4"
-RPROVIDES:squashfuse:x86_64_v2 = "virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
+RPROVIDES:squashfuse:append:x86_64_v2 = " virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
 
 URI_x86_64_v2_squashfuse-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/squashfuse-devel-0.5.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_squashfuse-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_squashfuse-devel}"
@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_squashfuse-libs.sha256sum] = "75e970512cd791f1d42c55fdbb217879
 URI_aarch64_squashfuse = "${EPEL_MIRROR}/aarch64/Packages/s/squashfuse-0.5.2-2.el10_0.aarch64.rpm;name=aarch64_squashfuse;unpack=0"
 SRC_URI:append = " ${URI_aarch64_squashfuse}"
 SRC_URI[aarch64_squashfuse.sha256sum] = "fe5eeddfa2fe76139757aadb9cce8d040b95a77f874fe81255187bc6382ac55d"
-RPROVIDES:squashfuse:aarch64 = "virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
+RPROVIDES:squashfuse:append:aarch64 = " virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
 
 URI_aarch64_squashfuse-devel = "${EPEL_MIRROR}/aarch64/Packages/s/squashfuse-devel-0.5.2-2.el10_0.aarch64.rpm;name=aarch64_squashfuse-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_squashfuse-devel}"
@@ -62,7 +62,3 @@ RDEPENDS:squashfuse-libs = " \
  xz-libs \
  zlib-ng-compat \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"

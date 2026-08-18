@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "9ba5363412b5b1afe357a54c1ea2c1a4fc839dc453b52c9ac3bca8
 
 URI_x86_64_v2_polyclipping = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polyclipping}"
-SRC_URI[x86_64_v2_polyclipping.sha256sum] = "a2ad29cca4936ffd68bf3948979cefa03b88101043e65dc9ad59bec4c73c2344"
+SRC_URI[x86_64_v2_polyclipping.sha256sum] = "7412d85bf15c8ed3bf16d52a89bb0520146a0f1453097481ea00056521d72593"
 
 URI_x86_64_v2_polyclipping-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-devel-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_polyclipping-devel}"
-SRC_URI[x86_64_v2_polyclipping-devel.sha256sum] = "b502acea8174b318e3f2854fe1667ac7a9204b6f776e63cfdbe0288f9e87fa7f"
+SRC_URI[x86_64_v2_polyclipping-devel.sha256sum] = "1854eaeb3eadca84d8e24ddebe87e96fd2222968bd3d4eccb1b7e88a97a3c435"
 
 URI_aarch64_polyclipping = "${EPEL_MIRROR}/aarch64/Packages/p/polyclipping-6.4.2-34.el10_0.aarch64.rpm;name=aarch64_polyclipping;unpack=0"
 SRC_URI:append = " ${URI_aarch64_polyclipping}"

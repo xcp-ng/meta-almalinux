@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "6dc88e9d8c8163fa4bdc707679c667a4c27d07e40368a7ebb19a18
 
 URI_x86_64_v2_perl-Test-DistManifest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-DistManifest-1.014-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-DistManifest;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-DistManifest}"
-SRC_URI[x86_64_v2_perl-Test-DistManifest.sha256sum] = "be8e97253c18484829792a4a7bbfa9ec66f45f00407fdfeccbacc86b600d0c5d"
+SRC_URI[x86_64_v2_perl-Test-DistManifest.sha256sum] = "c27848e33f6a3fdfc972de5d9811cd684745321c34e59469a9cb8a83f72ebb33"
 
 URI_x86_64_v2_perl-Test-DistManifest-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-DistManifest-tests-1.014-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-DistManifest-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-DistManifest-tests}"
-SRC_URI[x86_64_v2_perl-Test-DistManifest-tests.sha256sum] = "3249186dc2a4fd30fbb8c58bf56ca8c5726d6ff1d22516d6555dc9494a4d7060"
+SRC_URI[x86_64_v2_perl-Test-DistManifest-tests.sha256sum] = "25b28247e988ab19aac8dcebd0bee3ffa4d6067bb85acde7d58fa9ccd25bc9d9"
 
 URI_aarch64_perl-Test-DistManifest = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-DistManifest-1.014-26.el10_0.noarch.rpm;name=aarch64_perl-Test-DistManifest;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-DistManifest}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6cd885aba4522ac9ff2d8b5e2e1921708097ab0460a3ebd2871529
 
 URI_x86_64_v2_perl-Redis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Redis-2.000-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Redis;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Redis}"
-SRC_URI[x86_64_v2_perl-Redis.sha256sum] = "c8c776e5e3e2cb491d3407eca938fddb3cffa7093c1956651b7dacd1fe505c47"
+SRC_URI[x86_64_v2_perl-Redis.sha256sum] = "76095286b2a5004a5da129cdd1615b7097b236626245ebe51b571a6a1131f7a1"
 
 URI_aarch64_perl-Redis = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Redis-2.000-7.el10_0.noarch.rpm;name=aarch64_perl-Redis;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Redis}"

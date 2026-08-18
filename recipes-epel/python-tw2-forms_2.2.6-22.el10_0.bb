@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "73bd6a33b2b9442194620ff8a9c037938487e76f14220779682bdb
 
 URI_x86_64_v2_python3-tw2-forms = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tw2-forms-2.2.6-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tw2-forms;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-tw2-forms}"
-SRC_URI[x86_64_v2_python3-tw2-forms.sha256sum] = "ac2647d328c0f3b0fe93cdd28a6c7660f2420143e1f65a24baca32dfd609011b"
+SRC_URI[x86_64_v2_python3-tw2-forms.sha256sum] = "308e5b6d7f907cc4cceb27372e55842948939ac4df457aa42e4987387ad4ac9c"
 
 URI_aarch64_python3-tw2-forms = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tw2-forms-2.2.6-22.el10_0.noarch.rpm;name=aarch64_python3-tw2-forms;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-tw2-forms}"

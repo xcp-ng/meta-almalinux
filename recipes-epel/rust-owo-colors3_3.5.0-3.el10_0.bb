@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_rust-owo-colors3+default-devel.sha256sum] = "a5485bd36d9679f38
 URI_x86_64_v2_rust-owo-colors3-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-owo-colors3-devel-3.5.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-owo-colors3-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-owo-colors3-devel}"
 SRC_URI[x86_64_v2_rust-owo-colors3-devel.sha256sum] = "8db861570943dd3bc30b6d90ec197d1d534684667e3822be409a2ef141213356"
-RPROVIDES:rust-owo-colors3-devel:x86_64_v2 = "virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"
+RPROVIDES:rust-owo-colors3-devel:append:x86_64_v2 = " virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"
 
 URI_aarch64_rust-owo-colors3+alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-owo-colors3+alloc-devel-3.5.0-3.el10_0.noarch.rpm;name=aarch64_rust-owo-colors3+alloc-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-owo-colors3+alloc-devel}"
@@ -39,7 +39,7 @@ SRC_URI[aarch64_rust-owo-colors3+default-devel.sha256sum] = "fa0b44bf19645b45cba
 URI_aarch64_rust-owo-colors3-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-owo-colors3-devel-3.5.0-3.el10_0.noarch.rpm;name=aarch64_rust-owo-colors3-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-owo-colors3-devel}"
 SRC_URI[aarch64_rust-owo-colors3-devel.sha256sum] = "7c05ad2a98f8169c8ec3498f4b81e897a5f2669d421dfff5461748ac116314c7"
-RPROVIDES:rust-owo-colors3-devel:aarch64 = "virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"
+RPROVIDES:rust-owo-colors3-devel:append:aarch64 = " virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"
 
 RDEPENDS:rust-owo-colors3+alloc-devel = " \
  cargo \
@@ -53,7 +53,3 @@ RDEPENDS:rust-owo-colors3-devel = " \
  cargo \
  rust \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_owo-colors__ge_3.5.0_with_crate_owo-colors__lt_5.0.0~"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "b1259d88556210f11fb81b182a5ae7a64cf6535f2781dfa423bebd
 
 URI_x86_64_v2_python-editorconfig-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-editorconfig-doc-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-editorconfig-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-editorconfig-doc}"
-SRC_URI[x86_64_v2_python-editorconfig-doc.sha256sum] = "252d59e5ecd7b68a404c361e6e884d335f34d4ee26d26b2f6de6ba9d11ca3033"
+SRC_URI[x86_64_v2_python-editorconfig-doc.sha256sum] = "b7578968a641db0ce44734c8afe58ee7c2b2156e738833fb12ba12ef3524f75f"
 
 URI_x86_64_v2_python3-editorconfig = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-editorconfig-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-editorconfig;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-editorconfig}"
-SRC_URI[x86_64_v2_python3-editorconfig.sha256sum] = "c0c7b8ca469df3333e43b7914126636d616909c6855187c9597ca9d4ae82b270"
+SRC_URI[x86_64_v2_python3-editorconfig.sha256sum] = "c7e6587d73b32a46770bcd82c5579f0850abd80b5fc67af1903abc30ba1f0f45"
 
 URI_aarch64_python-editorconfig-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-editorconfig-doc-0.12.4-6.el10_0.noarch.rpm;name=aarch64_python-editorconfig-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-editorconfig-doc}"

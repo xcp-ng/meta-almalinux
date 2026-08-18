@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8233829f373e8c153355be047d1a38a736512d4b38a45601d7240b
 
 URI_x86_64_v2_python3-jinja2_pluralize = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jinja2_pluralize-0.3.0-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jinja2_pluralize;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-jinja2_pluralize}"
-SRC_URI[x86_64_v2_python3-jinja2_pluralize.sha256sum] = "621c098643aacda5182ff6a6999646527b124d359a70dfe30fa7c1d3acdedc75"
+SRC_URI[x86_64_v2_python3-jinja2_pluralize.sha256sum] = "b381c21f75fb730ecea5316d5ba2950dd5e2e45f55455a3abc574ff7605b4377"
 
 URI_aarch64_python3-jinja2_pluralize = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jinja2_pluralize-0.3.0-34.el10_0.noarch.rpm;name=aarch64_python3-jinja2_pluralize;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-jinja2_pluralize}"

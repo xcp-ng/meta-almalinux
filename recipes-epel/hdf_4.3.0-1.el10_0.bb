@@ -21,7 +21,7 @@ SRC_URI[src.sha256sum] = "9dd260fc3fb0df020bbcb280f8a8174b2624ab8d1e8bc35113a078
 URI_x86_64_v2_hdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hdf-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hdf;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_hdf}"
 SRC_URI[x86_64_v2_hdf.sha256sum] = "ebbb2513706ebebf2a21a4d052577ed580f5179055ef96428c39a9180d6f493c"
-RPROVIDES:hdf:x86_64_v2 = "virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
+RPROVIDES:hdf:append:x86_64_v2 = " virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
 
 URI_x86_64_v2_hdf-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hdf-devel-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hdf-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_hdf-devel}"
@@ -34,7 +34,7 @@ SRC_URI[x86_64_v2_hdf-examples.sha256sum] = "f241519e771b43b0ebb431dbb25b317f97c
 URI_x86_64_v2_hdf-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hdf-libs-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hdf-libs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_hdf-libs}"
 SRC_URI[x86_64_v2_hdf-libs.sha256sum] = "d49068e12a1a404e8653e8add12bfdd4de7a6e3ca55fc2e678c9f1bbc5bfc53a"
-RPROVIDES:hdf-libs:x86_64_v2 = "virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
+RPROVIDES:hdf-libs:append:x86_64_v2 = " virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
 
 URI_x86_64_v2_hdf-static = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hdf-static-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hdf-static;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_hdf-static}"
@@ -47,7 +47,7 @@ SRC_URI[x86_64_v2_java-hdf.sha256sum] = "ffb830587b39e82439597018ce4176da1531859
 URI_aarch64_hdf = "${EPEL_MIRROR}/aarch64/Packages/h/hdf-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_hdf;unpack=0"
 SRC_URI:append = " ${URI_aarch64_hdf}"
 SRC_URI[aarch64_hdf.sha256sum] = "3f07fed2593a71326aa887c57bb07ede5006d37319f5d4e9aebd2649285072ea"
-RPROVIDES:hdf:aarch64 = "virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
+RPROVIDES:hdf:append:aarch64 = " virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
 
 URI_aarch64_hdf-devel = "${EPEL_MIRROR}/aarch64/Packages/h/hdf-devel-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_hdf-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_hdf-devel}"
@@ -60,7 +60,7 @@ SRC_URI[aarch64_hdf-examples.sha256sum] = "e2af78db666d1a59f23b7edacaff79641cbc9
 URI_aarch64_hdf-libs = "${EPEL_MIRROR}/aarch64/Packages/h/hdf-libs-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_hdf-libs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_hdf-libs}"
 SRC_URI[aarch64_hdf-libs.sha256sum] = "67880717603211056d6f269ddde2dbd3f9113b6f10a8fd88192044e6a92f33cc"
-RPROVIDES:hdf-libs:aarch64 = "virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
+RPROVIDES:hdf-libs:append:aarch64 = " virtual/libdf.so.0___64bit_ virtual/libmfhdf.so.0___64bit_"
 
 URI_aarch64_hdf-static = "${EPEL_MIRROR}/aarch64/Packages/h/hdf-static-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_hdf-static;unpack=0"
 SRC_URI:append = " ${URI_aarch64_hdf-static}"
@@ -110,7 +110,3 @@ RDEPENDS:java-hdf = " \
  virtual/libmfhdf.so.0___64bit_ \
  zlib-ng-compat \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/libdf.so.0___64bit_ rpm/virtual/libmfhdf.so.0___64bit_"
-
-PROVIDES:append:aarch64 = " rpm/virtual/libdf.so.0___64bit_ rpm/virtual/libmfhdf.so.0___64bit_"

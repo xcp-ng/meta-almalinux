@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "e99d8bd593404941954cbee63c2bfb79eb8d9e959272b66f60961e
 
 URI_x86_64_v2_perl-SOAP-Lite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-Lite-1.27-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-Lite;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-Lite}"
-SRC_URI[x86_64_v2_perl-SOAP-Lite.sha256sum] = "5acb24bed692b313a3cc0ba1f52774acdb74749d1c8f59a40c31d1b90359c088"
+SRC_URI[x86_64_v2_perl-SOAP-Lite.sha256sum] = "aeefc7871a5e371fe7db96fe5a6a8e0908591f4366bc7074078e4ccd7c778010"
 
 URI_aarch64_perl-SOAP-Lite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-Lite-1.27-25.el10_0.noarch.rpm;name=aarch64_perl-SOAP-Lite;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-SOAP-Lite}"

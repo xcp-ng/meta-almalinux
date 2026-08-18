@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "06803fc10ef26299b4c8b5848363fb89d3bf0a712e6dced263afba
 
 URI_x86_64_v2_python3-breathe = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-breathe-4.35.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-breathe;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-breathe}"
-SRC_URI[x86_64_v2_python3-breathe.sha256sum] = "7f5b0808d8f5a9d5c6a141dfa47ef170eca54b0840b726d1e752be9b263f880b"
+SRC_URI[x86_64_v2_python3-breathe.sha256sum] = "b59c3445daad2a88492ab62052bd4df8b1e06fa3c36affef70b8ca370f774c2e"
 
 URI_aarch64_python3-breathe = "${EPEL_MIRROR}/aarch64/Packages/p/python3-breathe-4.35.0-12.el10_0.noarch.rpm;name=aarch64_python3-breathe;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-breathe}"

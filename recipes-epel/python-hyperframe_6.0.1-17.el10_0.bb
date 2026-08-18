@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "672818b4b4a11c2bee4cf2916d2cdf77f59a8c5e05112de3a45238
 
 URI_x86_64_v2_python-hyperframe-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperframe-doc-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperframe-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-hyperframe-doc}"
-SRC_URI[x86_64_v2_python-hyperframe-doc.sha256sum] = "ec42bb8f6f5a4cc36e9f572844f215c205c292ab2561de66648f9265d8616bcb"
+SRC_URI[x86_64_v2_python-hyperframe-doc.sha256sum] = "a66212c5002d8b57ed6d26e33e086ed21be322da3fe666bd20904bfc59dff2cc"
 
 URI_x86_64_v2_python3-hyperframe = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperframe-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperframe;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-hyperframe}"
-SRC_URI[x86_64_v2_python3-hyperframe.sha256sum] = "e9fbf16bb35c129e5d5e3e2f841d597c95b52af78eef4bd816d8983d1f548de2"
+SRC_URI[x86_64_v2_python3-hyperframe.sha256sum] = "19449c961bea63ef9715e63f24cc5d406f0455df4cff85368bda7cd32b09905c"
 
 URI_aarch64_python-hyperframe-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hyperframe-doc-6.0.1-17.el10_0.noarch.rpm;name=aarch64_python-hyperframe-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-hyperframe-doc}"

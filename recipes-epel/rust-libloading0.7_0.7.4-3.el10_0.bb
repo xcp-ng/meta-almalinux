@@ -17,7 +17,7 @@ SRC_URI[src.sha256sum] = "e2071a3d044982f061fef3c3270bc389b1166f19617c79f25a0899
 URI_x86_64_v2_rust-libloading0.7+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libloading0.7+default-devel-0.7.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libloading0.7+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-libloading0.7+default-devel}"
 SRC_URI[x86_64_v2_rust-libloading0.7+default-devel.sha256sum] = "fdd84a87b1499e73c5099d14ceb9356a874d3e2719a49664d221891f4d64c7cd"
-RPROVIDES:rust-libloading0.7+default-devel:x86_64_v2 = "virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"
+RPROVIDES:rust-libloading0.7+default-devel:append:x86_64_v2 = " virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"
 
 URI_x86_64_v2_rust-libloading0.7-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libloading0.7-devel-0.7.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libloading0.7-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-libloading0.7-devel}"
@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_rust-libloading0.7-devel.sha256sum] = "f0453265789a02cb53acdef
 URI_aarch64_rust-libloading0.7+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-libloading0.7+default-devel-0.7.4-3.el10_0.noarch.rpm;name=aarch64_rust-libloading0.7+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-libloading0.7+default-devel}"
 SRC_URI[aarch64_rust-libloading0.7+default-devel.sha256sum] = "856b087329ee9727cf96ab12dbc748e1d0144898dc7691d45a5a1ab8ad2a4e26"
-RPROVIDES:rust-libloading0.7+default-devel:aarch64 = "virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"
+RPROVIDES:rust-libloading0.7+default-devel:append:aarch64 = " virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"
 
 URI_aarch64_rust-libloading0.7-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-libloading0.7-devel-0.7.4-3.el10_0.noarch.rpm;name=aarch64_rust-libloading0.7-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-libloading0.7-devel}"
@@ -41,7 +41,3 @@ RDEPENDS:rust-libloading0.7-devel = " \
  rust \
  rust-cfg-if+default-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_libloading/default__ge_0.7.0_with_crate_libloading/default__lt_0.9.0~"

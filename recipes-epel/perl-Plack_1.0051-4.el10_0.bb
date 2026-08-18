@@ -19,23 +19,23 @@ SRC_URI[src.sha256sum] = "200f23cf55264773513ed18e7768b02d8f94f0abda7e4bc97f48d0
 
 URI_x86_64_v2_perl-Plack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Plack-1.0051-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Plack;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Plack}"
-SRC_URI[x86_64_v2_perl-Plack.sha256sum] = "8e2cfa57839a8ed6d0318333c62c6d566a75dc5564e1604fa0c04969ef9ceb69"
+SRC_URI[x86_64_v2_perl-Plack.sha256sum] = "969d9d4f74ccc6f8857ccae501a02f1555ad527092909aa1c3c02d56c9571424"
 
 URI_x86_64_v2_perl-Plack-Handler-Apache2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Plack-Handler-Apache2-1.0051-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Plack-Handler-Apache2;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Plack-Handler-Apache2}"
-SRC_URI[x86_64_v2_perl-Plack-Handler-Apache2.sha256sum] = "96e07dbe360862040aa699ccd012178e9b2b5e473e6527554c5a2497ab4b6eea"
+SRC_URI[x86_64_v2_perl-Plack-Handler-Apache2.sha256sum] = "687bc88a532aa23d3ee8a9f7c3e27fb325c9c04644a752b7b7aa7df33031947c"
 
 URI_x86_64_v2_perl-Plack-Handler-FCGI = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Plack-Handler-FCGI-1.0051-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Plack-Handler-FCGI;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Plack-Handler-FCGI}"
-SRC_URI[x86_64_v2_perl-Plack-Handler-FCGI.sha256sum] = "006730a57fdad255f75a8caaa29b66556702b78f816282af10be0c229100f09d"
+SRC_URI[x86_64_v2_perl-Plack-Handler-FCGI.sha256sum] = "8f3ef0cd892d06a39b31bd52570b09e8ca72671d8a94add1b718fbd8a4d74073"
 
 URI_x86_64_v2_perl-Plack-Middleware-Log4perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Plack-Middleware-Log4perl-1.0051-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Plack-Middleware-Log4perl;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Plack-Middleware-Log4perl}"
-SRC_URI[x86_64_v2_perl-Plack-Middleware-Log4perl.sha256sum] = "f73f9c5da036fbddac78011e9792175f2b7894798ebc76288cdb97005cd7fbba"
+SRC_URI[x86_64_v2_perl-Plack-Middleware-Log4perl.sha256sum] = "b01d5484a771c96735b2e043d3746d89739c9b60073b591ef9a4ff8d3beb3037"
 
 URI_x86_64_v2_perl-Plack-Test = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Plack-Test-1.0051-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Plack-Test;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Plack-Test}"
-SRC_URI[x86_64_v2_perl-Plack-Test.sha256sum] = "0a087e46db8372bc8a1c44e48ca1c2ab7922ee2c4deff84b672feb70a9cd1037"
+SRC_URI[x86_64_v2_perl-Plack-Test.sha256sum] = "9051a60982095f60dfb43edd8e5c5c6d4cf6f02bc94e92a0104258331f85ebf4"
 
 URI_aarch64_perl-Plack = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Plack-1.0051-4.el10_0.noarch.rpm;name=aarch64_perl-Plack;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Plack}"

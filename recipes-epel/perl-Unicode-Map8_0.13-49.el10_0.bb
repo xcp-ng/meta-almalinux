@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c3c6228126934a4081eb37a82ffd70796665376fe7667467e9e4de
 
 URI_x86_64_v2_perl-Unicode-Map8 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-Map8-0.13-49.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-Map8;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Unicode-Map8}"
-SRC_URI[x86_64_v2_perl-Unicode-Map8.sha256sum] = "4edc5cf7369b1d81579bb2d15c52b5cb14d1fbc50891d0f8258930585f0f3fa5"
+SRC_URI[x86_64_v2_perl-Unicode-Map8.sha256sum] = "392aac9846d391ceffd1c55b5c4d602e0903e94c0bbbf0673b970c357a46ecaf"
 
 URI_aarch64_perl-Unicode-Map8 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-Map8-0.13-49.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-Map8;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Unicode-Map8}"

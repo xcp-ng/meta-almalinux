@@ -33,7 +33,7 @@ SRC_URI[src.sha256sum] = "4e49ce8e02cd8bb4df6d498bb42b71e82b904999d706beac3ad36c
 URI_x86_64_v2_lighttpd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/lighttpd-1.4.76-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_lighttpd;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_lighttpd}"
 SRC_URI[x86_64_v2_lighttpd.sha256sum] = "25d143982b8c5e0c0910c8966cce48b4926a264a33bfef4e361838b3e89342fb"
-RPROVIDES:lighttpd:x86_64_v2 = "virtual/webserver"
+RPROVIDES:lighttpd:append:x86_64_v2 = " virtual/webserver"
 
 URI_x86_64_v2_lighttpd-fastcgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/lighttpd-fastcgi-1.4.76-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_lighttpd-fastcgi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_lighttpd-fastcgi}"
@@ -106,7 +106,7 @@ SRC_URI[x86_64_v2_lighttpd-mod_webdav.sha256sum] = "e12bec6a46784b29a6adb0b2263d
 URI_aarch64_lighttpd = "${EPEL_MIRROR}/aarch64/Packages/l/lighttpd-1.4.76-4.el10_0.aarch64.rpm;name=aarch64_lighttpd;unpack=0"
 SRC_URI:append = " ${URI_aarch64_lighttpd}"
 SRC_URI[aarch64_lighttpd.sha256sum] = "5e7cc0215992c3c7eca0187da46c3592b12691d7020d0830c4ba5f733e51fde6"
-RPROVIDES:lighttpd:aarch64 = "virtual/webserver"
+RPROVIDES:lighttpd:append:aarch64 = " virtual/webserver"
 
 URI_aarch64_lighttpd-fastcgi = "${EPEL_MIRROR}/aarch64/Packages/l/lighttpd-fastcgi-1.4.76-4.el10_0.aarch64.rpm;name=aarch64_lighttpd-fastcgi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_lighttpd-fastcgi}"
@@ -280,7 +280,3 @@ RDEPENDS:lighttpd-mod_webdav = " \
  lighttpd \
  sqlite-libs \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/webserver"
-
-PROVIDES:append:aarch64 = " rpm/virtual/webserver"

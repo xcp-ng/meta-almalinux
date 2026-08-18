@@ -22,7 +22,7 @@ SRC_URI[src.sha256sum] = "f6ff0b731dc171f572b0d62bcbc6e0f20a4aee2cab0d7f242ab264
 URI_x86_64_v2_rust-heapless+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-heapless+default-devel-0.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-heapless+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-heapless+default-devel}"
 SRC_URI[x86_64_v2_rust-heapless+default-devel.sha256sum] = "b06826fba64cc24ff30cce7d26daf9b4ac5b69a3c2d5af3e0e56f0a48af6d37d"
-RPROVIDES:rust-heapless+default-devel:x86_64_v2 = "virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"
+RPROVIDES:rust-heapless+default-devel:append:x86_64_v2 = " virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"
 
 URI_x86_64_v2_rust-heapless+mpmc_large-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-heapless+mpmc_large-devel-0.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-heapless+mpmc_large-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-heapless+mpmc_large-devel}"
@@ -51,7 +51,7 @@ SRC_URI[x86_64_v2_rust-heapless-devel.sha256sum] = "1733bf5fbd5f03039ab3e188033f
 URI_aarch64_rust-heapless+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-heapless+default-devel-0.8.0-2.el10_0.noarch.rpm;name=aarch64_rust-heapless+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-heapless+default-devel}"
 SRC_URI[aarch64_rust-heapless+default-devel.sha256sum] = "0b6eb10e6f2cdde21cfcd7f9482decc534c7872cc4cddc7c73f4f0ef9e2b0e1d"
-RPROVIDES:rust-heapless+default-devel:aarch64 = "virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"
+RPROVIDES:rust-heapless+default-devel:append:aarch64 = " virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"
 
 URI_aarch64_rust-heapless+mpmc_large-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-heapless+mpmc_large-devel-0.8.0-2.el10_0.noarch.rpm;name=aarch64_rust-heapless+mpmc_large-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-heapless+mpmc_large-devel}"
@@ -114,7 +114,3 @@ RDEPENDS:rust-heapless-devel = " \
  rust-hash32+default-devel \
  rust-stable_deref_trait-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_heapless/default__ge_0.0.0_with_crate_heapless/default__lt_1.0.0~"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "be1081cf41223c2f603bac537467a596df92638b45986d7003dca7
 
 URI_x86_64_v2_pssh = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pssh-2.3.5-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_pssh;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_pssh}"
-SRC_URI[x86_64_v2_pssh.sha256sum] = "ac990fe656c022b73d01081217715457fcea136326daf3fe39c410b099abd892"
+SRC_URI[x86_64_v2_pssh.sha256sum] = "f61f370514bb85aa5c628349d0607355b74d55339055df2a9c28d83e99dc37cb"
 
 URI_aarch64_pssh = "${EPEL_MIRROR}/aarch64/Packages/p/pssh-2.3.5-8.el10_0.noarch.rpm;name=aarch64_pssh;unpack=0"
 SRC_URI:append = " ${URI_aarch64_pssh}"

@@ -80,7 +80,7 @@ RDEPENDS:rust-cargo_metadata0.18-devel = " \
  rust \
  rust-camino+default-devel \
  rust-camino+serde1-devel \
- rust-cargo-platform+default-devel \
+ rust-cargo-platform0.1+default-devel \
  rust-semver+default-devel \
  rust-semver+serde-devel \
  rust-serde+default-devel \

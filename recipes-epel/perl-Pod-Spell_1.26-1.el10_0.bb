@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "4c7e70b128b21ee51d1aff4601d945c70520d5cb4144caec01beea
 
 URI_x86_64_v2_perl-Pod-Spell = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Spell}"
-SRC_URI[x86_64_v2_perl-Pod-Spell.sha256sum] = "a88431afbc1298a50c341044ec11fcb9890dc13009a136d634cc019a8d4c26de"
+SRC_URI[x86_64_v2_perl-Pod-Spell.sha256sum] = "edb089302658ae164388074f3301748d0622b6f0ebb1bf61eea092863ef40e3f"
 
 URI_x86_64_v2_perl-Pod-Spell-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-tests-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Spell-tests}"
-SRC_URI[x86_64_v2_perl-Pod-Spell-tests.sha256sum] = "7ef70e318d0708d6e9d7c26e6317c93681daae00f64241b383cde09cb7f7903f"
+SRC_URI[x86_64_v2_perl-Pod-Spell-tests.sha256sum] = "393ab68a75ed745d5ca7d96293f401f18350245c4a7e1b81095c30aed6f9af46"
 
 URI_aarch64_perl-Pod-Spell = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Spell-1.26-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Spell;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Spell}"

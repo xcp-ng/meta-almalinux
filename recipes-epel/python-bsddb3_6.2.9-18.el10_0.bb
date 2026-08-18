@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "12c57a92015d484418e700546cf037a9abe651402f484e6acebe82
 
 URI_x86_64_v2_python3-bsddb3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bsddb3-6.2.9-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-bsddb3;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-bsddb3}"
-SRC_URI[x86_64_v2_python3-bsddb3.sha256sum] = "87429b351c729179bf8ff10f8c8f8b3ecfe46f33afe2b72848547c30fb6e94f8"
+SRC_URI[x86_64_v2_python3-bsddb3.sha256sum] = "2244d225de20becedabf3623ab35c0db83c64bca433778fbea57dac0ea6a8fa8"
 
 URI_aarch64_python3-bsddb3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-bsddb3-6.2.9-18.el10_0.aarch64.rpm;name=aarch64_python3-bsddb3;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-bsddb3}"

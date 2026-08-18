@@ -36,7 +36,7 @@ SRC_URI[x86_64_v2_rust-hashbrown0.12+bumpalo-devel.sha256sum] = "b625fbbada4def0
 URI_x86_64_v2_rust-hashbrown0.12+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-hashbrown0.12+default-devel-0.12.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-hashbrown0.12+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-hashbrown0.12+default-devel}"
 SRC_URI[x86_64_v2_rust-hashbrown0.12+default-devel.sha256sum] = "95a010dde1bb931dd9f20c3af283ac5e611a72e912ba96523939c82788b02348"
-RPROVIDES:rust-hashbrown0.12+default-devel:x86_64_v2 = "virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"
+RPROVIDES:rust-hashbrown0.12+default-devel:append:x86_64_v2 = " virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"
 
 URI_x86_64_v2_rust-hashbrown0.12+inline-more-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-hashbrown0.12+inline-more-devel-0.12.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-hashbrown0.12+inline-more-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-hashbrown0.12+inline-more-devel}"
@@ -73,7 +73,7 @@ SRC_URI[aarch64_rust-hashbrown0.12+bumpalo-devel.sha256sum] = "44f46590e3e846fe3
 URI_aarch64_rust-hashbrown0.12+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-hashbrown0.12+default-devel-0.12.3-4.el10_0.noarch.rpm;name=aarch64_rust-hashbrown0.12+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-hashbrown0.12+default-devel}"
 SRC_URI[aarch64_rust-hashbrown0.12+default-devel.sha256sum] = "7146376faf5037c87edb5a219d5ffb0e02355fa2e4bb3ac626fc02ac532c25ee"
-RPROVIDES:rust-hashbrown0.12+default-devel:aarch64 = "virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"
+RPROVIDES:rust-hashbrown0.12+default-devel:append:aarch64 = " virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"
 
 URI_aarch64_rust-hashbrown0.12+inline-more-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-hashbrown0.12+inline-more-devel-0.12.3-4.el10_0.noarch.rpm;name=aarch64_rust-hashbrown0.12+inline-more-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-hashbrown0.12+inline-more-devel}"
@@ -139,7 +139,3 @@ RDEPENDS:rust-hashbrown0.12-devel = " \
  cargo \
  rust \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_hashbrown/default__ge_0.9.0_with_crate_hashbrown/default__lt_0.15.0~"

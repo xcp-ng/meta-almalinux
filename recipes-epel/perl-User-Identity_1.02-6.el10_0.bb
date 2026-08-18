@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "c2395362546ee20f62cd1c2a508578fdba8a8c26612b900202a617
 
 URI_x86_64_v2_perl-User-Identity = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-User-Identity-1.02-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-User-Identity;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-User-Identity}"
-SRC_URI[x86_64_v2_perl-User-Identity.sha256sum] = "11067bac455c823379f81402d7d1ab1385976ea7c0353d9c4924dcffd9b1e154"
+SRC_URI[x86_64_v2_perl-User-Identity.sha256sum] = "5716455ab14010e2e9d45c460026276d1c8c62474f4b34053a91ce3b8f26912b"
 
 URI_aarch64_perl-User-Identity = "${EPEL_MIRROR}/aarch64/Packages/p/perl-User-Identity-1.02-6.el10_0.noarch.rpm;name=aarch64_perl-User-Identity;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-User-Identity}"

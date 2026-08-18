@@ -18,19 +18,19 @@ SRC_URI[src.sha256sum] = "35a69c62bde81574a9a43f917759d7c544e2bce6475d6427c1da9b
 
 URI_x86_64_v2_portmidi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_portmidi}"
-SRC_URI[x86_64_v2_portmidi.sha256sum] = "82f6d37164fee874c6387751421fd62f8228dc4e06df9ef1bf5ec5412f5b871f"
+SRC_URI[x86_64_v2_portmidi.sha256sum] = "14d048a067501188594da974085e0153150a702b6e42e1d0024d036d4aaa8a1d"
 
 URI_x86_64_v2_portmidi-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-devel-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_portmidi-devel}"
-SRC_URI[x86_64_v2_portmidi-devel.sha256sum] = "e673f2c4f2ab2f8b032fcc40185e48c0d4ba48acafe7bbfb1a9b09907ea89010"
+SRC_URI[x86_64_v2_portmidi-devel.sha256sum] = "d8354c22382b4373829b4e5c1ecbbf9d7dfc19b902b720265afcf41e86d7e1ce"
 
 URI_x86_64_v2_portmidi-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-tools-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-tools;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_portmidi-tools}"
-SRC_URI[x86_64_v2_portmidi-tools.sha256sum] = "89744a5403984f2de9e330b0f7d29271a14019338c77ddab96f4267cd1f1d959"
+SRC_URI[x86_64_v2_portmidi-tools.sha256sum] = "e68f26ddfa02ba1d178a9dda63026c0dbdae11b5c52d9e054ff5a7df9ff7d6cf"
 
 URI_x86_64_v2_python3-portmidi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-portmidi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-portmidi}"
-SRC_URI[x86_64_v2_python3-portmidi.sha256sum] = "c1f26dd2476b49e3ece298625dffc4dd37a481d1de8ae59b00f6008a2f7e9bef"
+SRC_URI[x86_64_v2_python3-portmidi.sha256sum] = "4d536f3e2f4a66c414ad3f1e56881d8514a2585b5ff7704cad908ec32568e2a3"
 
 URI_aarch64_portmidi = "${EPEL_MIRROR}/aarch64/Packages/p/portmidi-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_portmidi}"

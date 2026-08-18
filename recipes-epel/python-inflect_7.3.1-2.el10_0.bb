@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "673b25edc114672323c6c72f8a713a2341083503660863d5918ed5
 
 URI_x86_64_v2_python3-inflect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-inflect-7.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-inflect;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-inflect}"
-SRC_URI[x86_64_v2_python3-inflect.sha256sum] = "bbeec879b636c615e4af23a9a7358e914ac505413a0a4761acd87f1d5d3f087a"
+SRC_URI[x86_64_v2_python3-inflect.sha256sum] = "3fcddc07218de13e4e55f5c55a1fc87c90add934400aeccb73825ffad6c42df8"
 
 URI_aarch64_python3-inflect = "${EPEL_MIRROR}/aarch64/Packages/p/python3-inflect-7.3.1-2.el10_0.noarch.rpm;name=aarch64_python3-inflect;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-inflect}"

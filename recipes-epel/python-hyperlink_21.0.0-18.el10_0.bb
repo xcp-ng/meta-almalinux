@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "6155badc7b7f3e4c7cbef82ac727c9fd6e7eaee6d9bc1ff46da080
 
 URI_x86_64_v2_python-hyperlink-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperlink-doc-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperlink-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-hyperlink-doc}"
-SRC_URI[x86_64_v2_python-hyperlink-doc.sha256sum] = "43df9f848a6cab13065f2a3fb75917ba71f659982c5c4f657db8e4684b00c675"
+SRC_URI[x86_64_v2_python-hyperlink-doc.sha256sum] = "533ff440a49ba45686ae8ad9034d4e44c1cd393b4cce119562ac87020cbb415d"
 
 URI_x86_64_v2_python3-hyperlink = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperlink-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperlink;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-hyperlink}"
-SRC_URI[x86_64_v2_python3-hyperlink.sha256sum] = "f8646bb8c0e4ef7a9b9c741aa151ffe00048a5fd75a84b18d09eb7dda07e0a71"
+SRC_URI[x86_64_v2_python3-hyperlink.sha256sum] = "8f40584e96eb80f86fb24dea683da49f998a8826c6e0e9ad17d6a3c69ce8263e"
 
 URI_aarch64_python-hyperlink-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hyperlink-doc-21.0.0-18.el10_0.noarch.rpm;name=aarch64_python-hyperlink-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-hyperlink-doc}"

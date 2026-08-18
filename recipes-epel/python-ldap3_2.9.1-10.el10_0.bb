@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1c0cd0930a9e38857eb09ae5ec6b41034123c25e4ca97cc592184e
 
 URI_x86_64_v2_python3-ldap3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ldap3-2.9.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ldap3;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-ldap3}"
-SRC_URI[x86_64_v2_python3-ldap3.sha256sum] = "0e49517d2ef166585e772ff3c9a6be9634e00c3d7ac5c366c47332ed8d53c0c1"
+SRC_URI[x86_64_v2_python3-ldap3.sha256sum] = "dd43fc8a2a02a6fb36bf347ab8fb6d4ad9df2ca0bbe07052c82093a1509dc185"
 
 URI_aarch64_python3-ldap3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ldap3-2.9.1-10.el10_0.noarch.rpm;name=aarch64_python3-ldap3;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-ldap3}"

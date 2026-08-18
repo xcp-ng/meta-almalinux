@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "6fc8c5b447e9a1e9917b00c15ad746dc0339053f22b62c0c5acf53
 
 URI_x86_64_v2_python3-importlib-resources = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-importlib-resources-6.4.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-importlib-resources;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-importlib-resources}"
-SRC_URI[x86_64_v2_python3-importlib-resources.sha256sum] = "4b5675832faf8035f29076ca1cc59a56e27f0dbc2c90d034e60be6c26c051fd3"
+SRC_URI[x86_64_v2_python3-importlib-resources.sha256sum] = "041568d139b4799b706d7a7b7fa14a0e466721adbecbfd92cf4b7faede1c7c66"
 
 URI_aarch64_python3-importlib-resources = "${EPEL_MIRROR}/aarch64/Packages/p/python3-importlib-resources-6.4.4-3.el10_0.noarch.rpm;name=aarch64_python3-importlib-resources;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-importlib-resources}"

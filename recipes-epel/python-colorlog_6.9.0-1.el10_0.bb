@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "abae8f2d719a0480104f6954495327bd166c3f05176e3b2cbe4907
 
 URI_x86_64_v2_python3-colorlog = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colorlog-6.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colorlog;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-colorlog}"
-SRC_URI[x86_64_v2_python3-colorlog.sha256sum] = "fe4fd1da5cdeaaa2225aba84216f499d784536225f8b0ff28214017a2d14a9e3"
+SRC_URI[x86_64_v2_python3-colorlog.sha256sum] = "d61041f60317d85e36492c04ba5a7db0e692576eb531a4dbde95e2e0058ff235"
 
 URI_aarch64_python3-colorlog = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colorlog-6.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-colorlog;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-colorlog}"

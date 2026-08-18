@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "cb633fe485044dec029ffa9095e004e9608edbf065f6d58001dbff
 
 URI_x86_64_v2_perl-WWW-Twilio-TwiML = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Twilio-TwiML-1.05-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Twilio-TwiML;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-WWW-Twilio-TwiML}"
-SRC_URI[x86_64_v2_perl-WWW-Twilio-TwiML.sha256sum] = "aa42520c7a7db38f5e5cfa93e82c7f9a805c373478dab482fcde79d2972cb171"
+SRC_URI[x86_64_v2_perl-WWW-Twilio-TwiML.sha256sum] = "045772e1c742d53a576f6ebb57861100b50dbf39efa298fc7a930c6acd7cf92a"
 
 URI_aarch64_perl-WWW-Twilio-TwiML = "${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Twilio-TwiML-1.05-27.el10_0.noarch.rpm;name=aarch64_perl-WWW-Twilio-TwiML;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-WWW-Twilio-TwiML}"

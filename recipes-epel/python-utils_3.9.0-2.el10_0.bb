@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "719efd22273812bc73587fcb852b9ccfcce35178e4b667b104988a
 
 URI_x86_64_v2_python-utils-docs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-utils-docs-3.9.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-utils-docs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-utils-docs}"
-SRC_URI[x86_64_v2_python-utils-docs.sha256sum] = "67580d68d1d5e0dcbc2eb3067347bbb6646cedb6327142938562353fa020cc20"
+SRC_URI[x86_64_v2_python-utils-docs.sha256sum] = "b647a047ae169b2bcfe205504aa97261357da180ed9cafb63e21b2340a3badae"
 
 URI_x86_64_v2_python3-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-utils-3.9.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-utils;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-utils}"
-SRC_URI[x86_64_v2_python3-utils.sha256sum] = "502ef550425a9ab993784f175a1bc126341ecfd7d676164962b5099e894c397a"
+SRC_URI[x86_64_v2_python3-utils.sha256sum] = "396f70fbea52f75f64dfe483d4ba4367af9592b85d50e59202375a72decc8f8b"
 
 URI_aarch64_python-utils-docs = "${EPEL_MIRROR}/aarch64/Packages/p/python-utils-docs-3.9.0-2.el10_0.noarch.rpm;name=aarch64_python-utils-docs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-utils-docs}"

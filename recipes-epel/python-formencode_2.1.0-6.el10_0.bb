@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "eb600ca73c23f7d611a69163d5e347fccd1f8fb72568f7ee379cdd
 
 URI_x86_64_v2_python-formencode-langpacks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-formencode-langpacks-2.1.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-formencode-langpacks;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-formencode-langpacks}"
-SRC_URI[x86_64_v2_python-formencode-langpacks.sha256sum] = "4e267e4acd70e862e1e4624f13bf1c3a3ada2bfe8caebf6a1468dfd9ab41c9ad"
+SRC_URI[x86_64_v2_python-formencode-langpacks.sha256sum] = "22c8219af3d909b953785b6de0413223e161f50579917d2175e9859bcca1918c"
 
 URI_x86_64_v2_python3-formencode = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-formencode-2.1.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-formencode;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-formencode}"
-SRC_URI[x86_64_v2_python3-formencode.sha256sum] = "4b2c24b7bdfcf3a142ab7a63104c6d27ff9f212f8312522d87b702a0f7e4ad1f"
+SRC_URI[x86_64_v2_python3-formencode.sha256sum] = "d244eda03facfe343720ea35c4ea2ae02a24edca3ba084b029b5e0a3de9fcc86"
 
 URI_aarch64_python-formencode-langpacks = "${EPEL_MIRROR}/aarch64/Packages/p/python-formencode-langpacks-2.1.0-6.el10_0.noarch.rpm;name=aarch64_python-formencode-langpacks;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-formencode-langpacks}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "11cc4ef6ccce537f16e6289c640685cc67c501b784cf2e4ed3d39d
 
 URI_x86_64_v2_perl-Return-Type = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Return-Type-0.007-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Return-Type;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Return-Type}"
-SRC_URI[x86_64_v2_perl-Return-Type.sha256sum] = "31ffbab4724fe5538c82fd70a31058f45e0db3435e8ec638cbaabf05f0ce598d"
+SRC_URI[x86_64_v2_perl-Return-Type.sha256sum] = "4f614937ab66a32e033ac976177f984e3a860f6ab3c5901d19abf16cef3cfef1"
 
 URI_aarch64_perl-Return-Type = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Return-Type-0.007-2.el10_0.noarch.rpm;name=aarch64_perl-Return-Type;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Return-Type}"

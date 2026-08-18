@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "e90ca74a6170fdbbd34f3ad3d16e5d599c53ae4e9efe62ac6c5337
 
 URI_x86_64_v2_python-zope-testrunner-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-zope-testrunner-doc-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-zope-testrunner-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-zope-testrunner-doc}"
-SRC_URI[x86_64_v2_python-zope-testrunner-doc.sha256sum] = "6f17837251315e229174fb82c4281c9ea3297a03091ceea0a7e0606d9a76fb42"
+SRC_URI[x86_64_v2_python-zope-testrunner-doc.sha256sum] = "d609fc50877c1661fdb888ba424af717a2b9d2cd0e07b07f16fcb3276250ad1e"
 
 URI_x86_64_v2_python3-zope-testrunner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zope-testrunner}"
-SRC_URI[x86_64_v2_python3-zope-testrunner.sha256sum] = "11a498a98a345c0f8bd4b15ddd511f1ef78d0f0bff1526c162ed84ffcf656d31"
+SRC_URI[x86_64_v2_python3-zope-testrunner.sha256sum] = "b6ae5590d818ab36d3d56ecf34d0188fda818790b7fb3e3664cbe73f5630e128"
 
 URI_x86_64_v2_python3-zope-testrunner+subunit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner+subunit-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner+subunit;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-zope-testrunner+subunit}"
-SRC_URI[x86_64_v2_python3-zope-testrunner+subunit.sha256sum] = "cd37a3f6af0d46d7dbc2bf666e286572f86a4182549351c9bcab4a443a42adab"
+SRC_URI[x86_64_v2_python3-zope-testrunner+subunit.sha256sum] = "faab491efc0fc844f00e2e02b5731c9b0b51e98742c71a38d598fbb9248b91ab"
 
 URI_aarch64_python-zope-testrunner-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-zope-testrunner-doc-6.6-2.el10_0.noarch.rpm;name=aarch64_python-zope-testrunner-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-zope-testrunner-doc}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "14ce5563c064a2c37417272d0f5cf51e0888042e9ac96757afdcbc
 
 URI_x86_64_v2_python3-flexparser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flexparser-0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flexparser;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-flexparser}"
-SRC_URI[x86_64_v2_python3-flexparser.sha256sum] = "a741d67a739ee431e8c69734a2e12eb738c94ffdeba3d3db1e67373370f9ceaf"
+SRC_URI[x86_64_v2_python3-flexparser.sha256sum] = "18150ea542199cc7b93608b74e7a30d0bfc74674ee3ae103885a7540c83ceb2d"
 
 URI_aarch64_python3-flexparser = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flexparser-0.4-1.el10_0.noarch.rpm;name=aarch64_python3-flexparser;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-flexparser}"

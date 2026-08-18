@@ -13,6 +13,9 @@ URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-setuptools-rust-1.1
 SRC_URI = "${URI_src}"
 SRC_URI[src.sha256sum] = "7384655958e253b7c90a96768a4d6f1140b18daf1f5d1d29a2d6d6ea80cf0e16"
 
+## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
+# - python3-setuptools-rust: (python3.12dist(semantic-version) < 3~~ with python3.12dist(semantic-version) >= 2.8.2)
+
 URI_x86_64_v2_python3-setuptools-rust = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-setuptools-rust-1.10.2-1.el10.noarch.rpm;name=x86_64_v2_python3-setuptools-rust;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-setuptools-rust}"
 SRC_URI[x86_64_v2_python3-setuptools-rust.sha256sum] = "78920b24416e19836113737d04fca51b2efd6c201d3594fbc6f8a7b2d4cd556f"
@@ -21,9 +24,14 @@ URI_aarch64_python3-setuptools-rust = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packag
 SRC_URI:append = " ${URI_aarch64_python3-setuptools-rust}"
 SRC_URI[aarch64_python3-setuptools-rust.sha256sum] = "78920b24416e19836113737d04fca51b2efd6c201d3594fbc6f8a7b2d4cd556f"
 
-RDEPENDS:python3-setuptools-rust = " \
+RDEPENDS:python3-setuptools-rust:x86_64_v2 = " \
+ cargo \
+ python3 \
+ python3-setuptools \
+"
+RDEPENDS:python3-setuptools-rust:aarch64 = " \
  cargo \
  python3 \
  python3-semantic_version \
  python3-setuptools \
- "
+"

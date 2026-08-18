@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "78de97cb33c202a5f94f446e393190e772abad4b64242bd83160ce
 
 URI_x86_64_v2_python3-lexicon = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lexicon-2.0.1-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-lexicon;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-lexicon}"
-SRC_URI[x86_64_v2_python3-lexicon.sha256sum] = "b096d1fe82ee1a59f60ac84355191650b386a25282969ca36d777ac130aadb59"
+SRC_URI[x86_64_v2_python3-lexicon.sha256sum] = "9adedc8b30a8617df73ac5bdc799fd724f15099fef4aee99d8afd0cc6eead7fb"
 
 URI_aarch64_python3-lexicon = "${EPEL_MIRROR}/aarch64/Packages/p/python3-lexicon-2.0.1-12.el10_0.noarch.rpm;name=aarch64_python3-lexicon;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-lexicon}"

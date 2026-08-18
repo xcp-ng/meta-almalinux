@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8701e3e165d5b0c81ae8dc3e67d86b030729a8e4ef846422c845d5
 
 URI_x86_64_v2_php-pecl-ip2location = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-ip2location-8.2.0-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-ip2location;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-ip2location}"
-SRC_URI[x86_64_v2_php-pecl-ip2location.sha256sum] = "009333418f638b265fefeced8a828fce6beb2c372c867c73afc248f6dfacd9aa"
+SRC_URI[x86_64_v2_php-pecl-ip2location.sha256sum] = "fd196fc94801f68586271bee775e605c4206d77e6de0aa7008af8892192e2327"
 
 URI_aarch64_php-pecl-ip2location = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-ip2location-8.2.0-9.el10_0.aarch64.rpm;name=aarch64_php-pecl-ip2location;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-ip2location}"

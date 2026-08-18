@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_munin.sha256sum] = "a7549f37babcc66e81ce70c0efc969207315aac458
 URI_x86_64_v2_munin-apache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/munin-apache-2.0.76-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_munin-apache;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_munin-apache}"
 SRC_URI[x86_64_v2_munin-apache.sha256sum] = "ecc20c34afbecfaf506454efd499b3d06099413c5f23a327ee172a6596201778"
-RPROVIDES:munin-apache:x86_64_v2 = "virtual/munin-web-support"
+RPROVIDES:munin-apache:append:x86_64_v2 = " virtual/munin-web-support"
 
 URI_x86_64_v2_munin-cgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/munin-cgi-2.0.76-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_munin-cgi;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_munin-cgi}"
@@ -39,7 +39,7 @@ SRC_URI[x86_64_v2_munin-common.sha256sum] = "64a08862edee4932b51cb470e0d1f75a1b6
 URI_x86_64_v2_munin-nginx = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/munin-nginx-2.0.76-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_munin-nginx;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_munin-nginx}"
 SRC_URI[x86_64_v2_munin-nginx.sha256sum] = "0aaf4c6696210d6d4101452bfe471051df32d49f5ee727943fd043b3ed8554da"
-RPROVIDES:munin-nginx:x86_64_v2 = "virtual/munin-web-support"
+RPROVIDES:munin-nginx:append:x86_64_v2 = " virtual/munin-web-support"
 
 URI_x86_64_v2_munin-node = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/munin-node-2.0.76-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_munin-node;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_munin-node}"
@@ -56,7 +56,7 @@ SRC_URI[aarch64_munin.sha256sum] = "1f43844be9b7d78e197071beb4c82df73f7248830f9c
 URI_aarch64_munin-apache = "${EPEL_MIRROR}/aarch64/Packages/m/munin-apache-2.0.76-3.el10_0.noarch.rpm;name=aarch64_munin-apache;unpack=0"
 SRC_URI:append = " ${URI_aarch64_munin-apache}"
 SRC_URI[aarch64_munin-apache.sha256sum] = "44a436f1f9fe56e5e96d20ea569daf4907a0f9df3e6b805d66e75a9d2a0415e1"
-RPROVIDES:munin-apache:aarch64 = "virtual/munin-web-support"
+RPROVIDES:munin-apache:append:aarch64 = " virtual/munin-web-support"
 
 URI_aarch64_munin-cgi = "${EPEL_MIRROR}/aarch64/Packages/m/munin-cgi-2.0.76-3.el10_0.noarch.rpm;name=aarch64_munin-cgi;unpack=0"
 SRC_URI:append = " ${URI_aarch64_munin-cgi}"
@@ -69,7 +69,7 @@ SRC_URI[aarch64_munin-common.sha256sum] = "9841523995e57184b9f9930971265618f9f62
 URI_aarch64_munin-nginx = "${EPEL_MIRROR}/aarch64/Packages/m/munin-nginx-2.0.76-3.el10_0.noarch.rpm;name=aarch64_munin-nginx;unpack=0"
 SRC_URI:append = " ${URI_aarch64_munin-nginx}"
 SRC_URI[aarch64_munin-nginx.sha256sum] = "9228078fdfc3e0a3e10fbecf1bf9cf78fe0e4c7c292c5cf8ba1d52cf9e84aa5d"
-RPROVIDES:munin-nginx:aarch64 = "virtual/munin-web-support"
+RPROVIDES:munin-nginx:append:aarch64 = " virtual/munin-web-support"
 
 URI_aarch64_munin-node = "${EPEL_MIRROR}/aarch64/Packages/m/munin-node-2.0.76-3.el10_0.noarch.rpm;name=aarch64_munin-node;unpack=0"
 SRC_URI:append = " ${URI_aarch64_munin-node}"
@@ -226,7 +226,3 @@ RDEPENDS:munin-plugins-ruby = " \
  munin-node \
  ruby \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/munin-web-support"
-
-PROVIDES:append:aarch64 = " rpm/virtual/munin-web-support"

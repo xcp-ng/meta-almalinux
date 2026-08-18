@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0b23a25e0044007e81df398e3d808cef8a53b047464a14480f2714
 
 URI_x86_64_v2_python3-repoze-sphinx-autointerface = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-sphinx-autointerface-1.0.0-0.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-sphinx-autointerface;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-repoze-sphinx-autointerface}"
-SRC_URI[x86_64_v2_python3-repoze-sphinx-autointerface.sha256sum] = "63eb81e04d30176b0de355d541d7bff9507a0696b85a515ba86c46ae68a770fe"
+SRC_URI[x86_64_v2_python3-repoze-sphinx-autointerface.sha256sum] = "f20f590631d8e0602d69906cf205019e2fb3ce8cd497392e3549df91d454b38b"
 
 URI_aarch64_python3-repoze-sphinx-autointerface = "${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-sphinx-autointerface-1.0.0-0.el10_0.noarch.rpm;name=aarch64_python3-repoze-sphinx-autointerface;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-repoze-sphinx-autointerface}"

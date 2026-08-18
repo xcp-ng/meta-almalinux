@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "987893308ebb434b895106b7ee943e9e7b78f71631adac65c7c936
 
 URI_x86_64_v2_perl-SOAP-WSDL = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL}"
-SRC_URI[x86_64_v2_perl-SOAP-WSDL.sha256sum] = "ebcff824790e8da4403198503f1da8ac0762b80511095e8baa02da66145a98e0"
+SRC_URI[x86_64_v2_perl-SOAP-WSDL.sha256sum] = "0f009e0d6a0f57b744a5ec05c3dbae6e0f1881f7b2791c9493e8a2773d9afdb6"
 
 URI_x86_64_v2_perl-SOAP-WSDL-Apache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-Apache-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-Apache;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL-Apache}"
-SRC_URI[x86_64_v2_perl-SOAP-WSDL-Apache.sha256sum] = "21c981cacd0727d5be8c6a79789c5e8651fd8c30816ac11184d9dfc923a66098"
+SRC_URI[x86_64_v2_perl-SOAP-WSDL-Apache.sha256sum] = "9ee12dedfe392e83344c802e47bdb849780ab2cef1fa04bb9bfa0215c1248276"
 
 URI_x86_64_v2_perl-SOAP-WSDL-examples = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-examples-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-examples;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL-examples}"
-SRC_URI[x86_64_v2_perl-SOAP-WSDL-examples.sha256sum] = "15f43a4d73f66017609fcf53396d43b2e7bc2aa686acbb9ed16bce1cca3a2b6a"
+SRC_URI[x86_64_v2_perl-SOAP-WSDL-examples.sha256sum] = "7f5a44a768cf671f951f57bb2169f2594972ef8c3b613514afc88a5250f0b020"
 
 URI_aarch64_perl-SOAP-WSDL = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-SOAP-WSDL}"

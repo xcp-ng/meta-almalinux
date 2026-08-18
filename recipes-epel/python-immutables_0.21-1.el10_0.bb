@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "09a2686118e01963d21a04162e88ba9d848f8b79028a33689f2758
 
 URI_x86_64_v2_python3-immutables = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-immutables-0.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-immutables;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-immutables}"
-SRC_URI[x86_64_v2_python3-immutables.sha256sum] = "d2b64917517c5e9baea553681f898041e97f6bcead5209f278781d323b661f15"
+SRC_URI[x86_64_v2_python3-immutables.sha256sum] = "fbd9ed587fa065068081f6a81e525fa2f4d00dce5874847afdd4ea6d6b27c54f"
 
 URI_aarch64_python3-immutables = "${EPEL_MIRROR}/aarch64/Packages/p/python3-immutables-0.21-1.el10_0.aarch64.rpm;name=aarch64_python3-immutables;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-immutables}"

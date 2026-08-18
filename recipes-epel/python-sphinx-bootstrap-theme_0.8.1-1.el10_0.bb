@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "47612c3c284ffc42d12cd89528efee90acfe521a5fe804bf701301
 
 URI_x86_64_v2_python3-sphinx-bootstrap-theme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-bootstrap-theme-0.8.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-bootstrap-theme;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-bootstrap-theme}"
-SRC_URI[x86_64_v2_python3-sphinx-bootstrap-theme.sha256sum] = "a6a3b75dc659ecda2f381cf352536f3534e8e9628340c97802576547ec506f85"
+SRC_URI[x86_64_v2_python3-sphinx-bootstrap-theme.sha256sum] = "ec807471acfc490776240a54e11aaffe2f34609d49679bdbcd7b659563191b13"
 
 URI_aarch64_python3-sphinx-bootstrap-theme = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-bootstrap-theme-0.8.1-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-bootstrap-theme;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinx-bootstrap-theme}"

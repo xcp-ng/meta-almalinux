@@ -83,7 +83,7 @@ RDEPENDS:rust-group+rand-devel = " \
 RDEPENDS:rust-group+rand_xorshift-devel = " \
  cargo \
  rust-group-devel \
- rust-rand_xorshift+default-devel \
+ rust-rand_xorshift0.3+default-devel \
  "
 RDEPENDS:rust-group+tests-devel = " \
  cargo \

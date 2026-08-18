@@ -17,7 +17,7 @@ SRC_URI[src.sha256sum] = "802db52bd71c57527d742e6636dab06c52bc81b8f40de9a0623c5e
 URI_x86_64_v2_rust-supports-color+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-supports-color+default-devel-3.0.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-supports-color+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-supports-color+default-devel}"
 SRC_URI[x86_64_v2_rust-supports-color+default-devel.sha256sum] = "72b10b1984a037fe2108cf46de62c0b431ebb9203466ae1f8a7b7c55bc015194"
-RPROVIDES:rust-supports-color+default-devel:x86_64_v2 = "virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"
+RPROVIDES:rust-supports-color+default-devel:append:x86_64_v2 = " virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"
 
 URI_x86_64_v2_rust-supports-color-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-supports-color-devel-3.0.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-supports-color-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-supports-color-devel}"
@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_rust-supports-color-devel.sha256sum] = "72e3df154bcd5223d0528a
 URI_aarch64_rust-supports-color+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-supports-color+default-devel-3.0.2-1.el10_0.noarch.rpm;name=aarch64_rust-supports-color+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-supports-color+default-devel}"
 SRC_URI[aarch64_rust-supports-color+default-devel.sha256sum] = "72bd82c983a2785e3a0f4f5a776d572ca12603ce61715ba26cd4046912603010"
-RPROVIDES:rust-supports-color+default-devel:aarch64 = "virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"
+RPROVIDES:rust-supports-color+default-devel:append:aarch64 = " virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"
 
 URI_aarch64_rust-supports-color-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-supports-color-devel-3.0.2-1.el10_0.noarch.rpm;name=aarch64_rust-supports-color-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-supports-color-devel}"
@@ -41,7 +41,3 @@ RDEPENDS:rust-supports-color-devel = " \
  rust \
  rust-is_ci+default-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_supports-color/default__ge_2.0.0_with_crate_supports-color/default__lt_4.0.0~"

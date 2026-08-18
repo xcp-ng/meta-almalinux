@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "27fd2c25633ec3b7f21fceefad1b5a80b547f11f50e39d661e40f1
 
 URI_x86_64_v2_python3-markdown-it-py = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-markdown-it-py-3.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-markdown-it-py;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-markdown-it-py}"
-SRC_URI[x86_64_v2_python3-markdown-it-py.sha256sum] = "9e39aa74b7cfca6a8dae4e23dfbbf4c3693327b6491448cf15bf4d5ca25dc7e4"
+SRC_URI[x86_64_v2_python3-markdown-it-py.sha256sum] = "8072b79ee5312e2feb6259096c162d3a1cda184f50f6dc5803f6f2fd1b2358fa"
 
 URI_x86_64_v2_python3-markdown-it-py+linkify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-markdown-it-py+linkify-3.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-markdown-it-py+linkify;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-markdown-it-py+linkify}"
-SRC_URI[x86_64_v2_python3-markdown-it-py+linkify.sha256sum] = "c5228e5d3ffcdababe969a73bf6d995127ab3b05bc24a682661c3a5af2a02fd8"
+SRC_URI[x86_64_v2_python3-markdown-it-py+linkify.sha256sum] = "8b8c917938072ae6911c87a4ac2dd69014ee99c5508a0acd91786c5b8eae4b92"
 
 URI_x86_64_v2_python3-markdown-it-py+plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-markdown-it-py+plugins-3.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-markdown-it-py+plugins;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-markdown-it-py+plugins}"
-SRC_URI[x86_64_v2_python3-markdown-it-py+plugins.sha256sum] = "abd583842817b7d928363abb6b8e0d425603ff448f83fc0fd66a3dab1ee4c2e3"
+SRC_URI[x86_64_v2_python3-markdown-it-py+plugins.sha256sum] = "3e192b3437fa0b1329d54a6701b5f7b066c61e9daee7c14b92274d1039b8f04a"
 
 URI_aarch64_python3-markdown-it-py = "${EPEL_MIRROR}/aarch64/Packages/p/python3-markdown-it-py-3.0.0-7.el10_0.noarch.rpm;name=aarch64_python3-markdown-it-py;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-markdown-it-py}"

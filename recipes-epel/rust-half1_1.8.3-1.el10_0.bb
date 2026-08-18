@@ -56,6 +56,7 @@ SRC_URI[x86_64_v2_rust-half1+use-intrinsics-devel.sha256sum] = "75c4765d9d2be5d5
 URI_x86_64_v2_rust-half1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-half1-devel-1.8.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-half1-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-half1-devel}"
 SRC_URI[x86_64_v2_rust-half1-devel.sha256sum] = "525aa4002e9ccc1ea14cf496903de27d782edb8e21aabc0de47a0d9e4a80f89e"
+RPROVIDES:rust-half1-devel:append:x86_64_v2 = " virtual/crate_half__ge_1.8.0_with_crate_half__lt_3.0.0~"
 
 URI_aarch64_rust-half1+alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-half1+alloc-devel-1.8.3-1.el10_0.noarch.rpm;name=aarch64_rust-half1+alloc-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-half1+alloc-devel}"
@@ -92,6 +93,7 @@ SRC_URI[aarch64_rust-half1+use-intrinsics-devel.sha256sum] = "185359138579f63be4
 URI_aarch64_rust-half1-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-half1-devel-1.8.3-1.el10_0.noarch.rpm;name=aarch64_rust-half1-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-half1-devel}"
 SRC_URI[aarch64_rust-half1-devel.sha256sum] = "4fff69158b20f88609e14e56c7b142e6aa41a13c2d461fbbde40df5d67b4609e"
+RPROVIDES:rust-half1-devel:append:aarch64 = " virtual/crate_half__ge_1.8.0_with_crate_half__lt_3.0.0~"
 
 RDEPENDS:rust-half1+alloc-devel = " \
  cargo \

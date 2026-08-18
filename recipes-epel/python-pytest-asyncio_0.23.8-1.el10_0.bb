@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ea44152e238510ad6e0a98967ff4341c6ee46f85afe0e805c20ce8
 
 URI_x86_64_v2_python3-pytest-asyncio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-asyncio-0.23.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-asyncio;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-asyncio}"
-SRC_URI[x86_64_v2_python3-pytest-asyncio.sha256sum] = "89b4934f289275169167feb7c5136f749ccc850fd3e28d860126ab5034cc06ea"
+SRC_URI[x86_64_v2_python3-pytest-asyncio.sha256sum] = "b5bae99fd6340fa024fa8b5a23485ed4e36e8d4f20ffcd496cac9d5dafd5b6b6"
 
 URI_aarch64_python3-pytest-asyncio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-asyncio-0.23.8-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-asyncio;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-pytest-asyncio}"

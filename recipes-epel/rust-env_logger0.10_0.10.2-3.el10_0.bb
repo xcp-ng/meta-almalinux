@@ -41,7 +41,7 @@ SRC_URI[x86_64_v2_rust-env_logger0.10+regex-devel.sha256sum] = "20de2458be3f01ac
 URI_x86_64_v2_rust-env_logger0.10-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-env_logger0.10-devel-0.10.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-env_logger0.10-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-env_logger0.10-devel}"
 SRC_URI[x86_64_v2_rust-env_logger0.10-devel.sha256sum] = "c4fe360649414803c2d3a04be5e7c758aa397bb8d2e80fe17a093ee75d697f66"
-RPROVIDES:rust-env_logger0.10-devel:x86_64_v2 = "virtual/crate_env_logger__ge_0.6.1"
+RPROVIDES:rust-env_logger0.10-devel:append:x86_64_v2 = " virtual/crate_env_logger__ge_0.6.1"
 
 URI_aarch64_rust-env_logger0.10+auto-color-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-env_logger0.10+auto-color-devel-0.10.2-3.el10_0.noarch.rpm;name=aarch64_rust-env_logger0.10+auto-color-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-env_logger0.10+auto-color-devel}"
@@ -66,7 +66,7 @@ SRC_URI[aarch64_rust-env_logger0.10+regex-devel.sha256sum] = "bd971e68a54eed8dfc
 URI_aarch64_rust-env_logger0.10-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-env_logger0.10-devel-0.10.2-3.el10_0.noarch.rpm;name=aarch64_rust-env_logger0.10-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-env_logger0.10-devel}"
 SRC_URI[aarch64_rust-env_logger0.10-devel.sha256sum] = "df410f5d81ac39c367affc978bef9befbeebd5e9f46f2f056dbc1fac6b57197d"
-RPROVIDES:rust-env_logger0.10-devel:aarch64 = "virtual/crate_env_logger__ge_0.6.1"
+RPROVIDES:rust-env_logger0.10-devel:append:aarch64 = " virtual/crate_env_logger__ge_0.6.1"
 
 RDEPENDS:rust-env_logger0.10+auto-color-devel = " \
  cargo \
@@ -104,7 +104,3 @@ RDEPENDS:rust-env_logger0.10-devel = " \
  rust-log+default-devel \
  rust-log+std-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_env_logger__ge_0.6.1"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_env_logger__ge_0.6.1"

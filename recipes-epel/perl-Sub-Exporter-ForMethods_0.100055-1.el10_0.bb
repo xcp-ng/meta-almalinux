@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a07591dac5afc3a247e08a32313d24f44ec5bbe2dee082c2e68319
 
 URI_x86_64_v2_perl-Sub-Exporter-ForMethods = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Exporter-ForMethods;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Exporter-ForMethods}"
-SRC_URI[x86_64_v2_perl-Sub-Exporter-ForMethods.sha256sum] = "f03b3dc86c7e1af57c7aabc5eb5ac87c771f58f95c1605706b5abff4a496839f"
+SRC_URI[x86_64_v2_perl-Sub-Exporter-ForMethods.sha256sum] = "1f6e8436da3a609d842ff51e70a61108345f33765f2ebd1a85dd4299165e952e"
 
 URI_aarch64_perl-Sub-Exporter-ForMethods = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.noarch.rpm;name=aarch64_perl-Sub-Exporter-ForMethods;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sub-Exporter-ForMethods}"

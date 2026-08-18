@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1124d0ff003c60e8106c1b33b939227cb43fe27d7eeedc5fb22eda
 
 URI_x86_64_v2_php-pecl-xpass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-xpass-1.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-xpass;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_php-pecl-xpass}"
-SRC_URI[x86_64_v2_php-pecl-xpass.sha256sum] = "6f9a6ea2c63b395357aa8fe2027b97d2103dc7d1d6c7e40b5e20777d940e8333"
+SRC_URI[x86_64_v2_php-pecl-xpass.sha256sum] = "10828e3ab3d4ca32e2f0da80b3cbabba15e2c856ee1b8693386ffb6ebb84ca95"
 
 URI_aarch64_php-pecl-xpass = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-xpass-1.1.0-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-xpass;unpack=0"
 SRC_URI:append = " ${URI_aarch64_php-pecl-xpass}"

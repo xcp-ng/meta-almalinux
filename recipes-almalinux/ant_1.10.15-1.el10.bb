@@ -120,7 +120,7 @@ SRC_URI[x86_64_v2_ant-manual.sha256sum] = "51d4bfa98f52726d315ecc57d9aaca528af20
 URI_x86_64_v2_ant-openjdk21 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ant-openjdk21-1.10.15-1.el10.noarch.rpm;name=x86_64_v2_ant-openjdk21;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ant-openjdk21}"
 SRC_URI[x86_64_v2_ant-openjdk21.sha256sum] = "00551f332862d854c7773f56cda47ec453d8fa615ae4ecd71ce9895533caa750"
-RPROVIDES:ant-openjdk21:x86_64_v2 = "virtual/ant-jdk-binding"
+RPROVIDES:ant-openjdk21:append:x86_64_v2 = " virtual/ant-jdk-binding"
 
 URI_x86_64_v2_ant-swing = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ant-swing-1.10.15-1.el10.noarch.rpm;name=x86_64_v2_ant-swing;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ant-swing}"
@@ -133,7 +133,7 @@ SRC_URI[x86_64_v2_ant-testutil.sha256sum] = "ad15ff6bb4e9bc83b82d41f862c2785c300
 URI_x86_64_v2_ant-unbound = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ant-unbound-1.10.15-1.el10.noarch.rpm;name=x86_64_v2_ant-unbound;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ant-unbound}"
 SRC_URI[x86_64_v2_ant-unbound.sha256sum] = "b0432d7c68e4d65606a5bb4377a31889d748051f9560e369aae1240971ccf9a9"
-RPROVIDES:ant-unbound:x86_64_v2 = "virtual/ant-jdk-binding"
+RPROVIDES:ant-unbound:append:x86_64_v2 = " virtual/ant-jdk-binding"
 
 URI_x86_64_v2_ant-xz = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ant-xz-1.10.15-1.el10.noarch.rpm;name=x86_64_v2_ant-xz;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_ant-xz}"
@@ -222,7 +222,7 @@ SRC_URI[aarch64_ant-manual.sha256sum] = "51d4bfa98f52726d315ecc57d9aaca528af207f
 URI_aarch64_ant-openjdk21 = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ant-openjdk21-1.10.15-1.el10.noarch.rpm;name=aarch64_ant-openjdk21;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ant-openjdk21}"
 SRC_URI[aarch64_ant-openjdk21.sha256sum] = "00551f332862d854c7773f56cda47ec453d8fa615ae4ecd71ce9895533caa750"
-RPROVIDES:ant-openjdk21:aarch64 = "virtual/ant-jdk-binding"
+RPROVIDES:ant-openjdk21:append:aarch64 = " virtual/ant-jdk-binding"
 
 URI_aarch64_ant-swing = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ant-swing-1.10.15-1.el10.noarch.rpm;name=aarch64_ant-swing;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ant-swing}"
@@ -235,7 +235,7 @@ SRC_URI[aarch64_ant-testutil.sha256sum] = "ad15ff6bb4e9bc83b82d41f862c2785c30061
 URI_aarch64_ant-unbound = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ant-unbound-1.10.15-1.el10.noarch.rpm;name=aarch64_ant-unbound;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ant-unbound}"
 SRC_URI[aarch64_ant-unbound.sha256sum] = "b0432d7c68e4d65606a5bb4377a31889d748051f9560e369aae1240971ccf9a9"
-RPROVIDES:ant-unbound:aarch64 = "virtual/ant-jdk-binding"
+RPROVIDES:ant-unbound:append:aarch64 = " virtual/ant-jdk-binding"
 
 URI_aarch64_ant-xz = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ant-xz-1.10.15-1.el10.noarch.rpm;name=aarch64_ant-xz;unpack=0"
 SRC_URI:append = " ${URI_aarch64_ant-xz}"
@@ -372,7 +372,3 @@ RDEPENDS:ant-xz = " \
  javapackages-filesystem \
  xz-java \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/ant-jdk-binding"
-
-PROVIDES:append:aarch64 = " rpm/virtual/ant-jdk-binding"

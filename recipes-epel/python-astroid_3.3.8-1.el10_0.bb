@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "7f158dd754ce9f0c864b3619c1b89ad565e3753730d01f36c5657f
 
 URI_x86_64_v2_python3-astroid = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-astroid-3.3.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-astroid;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-astroid}"
-SRC_URI[x86_64_v2_python3-astroid.sha256sum] = "14b7ba3f8d43c6471b7f634b2807d1b00ed7aea6698b80e0b7ad29af6563f4e3"
+SRC_URI[x86_64_v2_python3-astroid.sha256sum] = "4ebfdd7ae20f097f01f19fa9ba3fe49da505388258a83dcceb2ec5a3e03234fb"
 
 URI_aarch64_python3-astroid = "${EPEL_MIRROR}/aarch64/Packages/p/python3-astroid-3.3.8-1.el10_0.noarch.rpm;name=aarch64_python3-astroid;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-astroid}"

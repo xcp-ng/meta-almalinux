@@ -50,7 +50,7 @@ SRC_URI[aarch64_rust-bitvec_helpers-devel.sha256sum] = "cdbbd8568b89135f525e63d1
 
 RDEPENDS:rust-bitvec_helpers+bitstream-io-devel = " \
  cargo \
- rust-bitstream-io+default-devel \
+ rust-bitstream-io2+default-devel \
  rust-bitvec_helpers-devel \
  "
 RDEPENDS:rust-bitvec_helpers+bitvec-devel = " \

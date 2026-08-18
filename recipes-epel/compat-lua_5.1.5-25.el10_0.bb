@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "706974b38880ecefd071b063ad528f2fc43f6e7a28b4c4ba526f60
 URI_x86_64_v2_compat-lua = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/compat-lua-5.1.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_compat-lua;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_compat-lua}"
 SRC_URI[x86_64_v2_compat-lua.sha256sum] = "893821a9998e4fc7ee9f9671ccbf0e69e7fefcc8dbc27e9633130167b7d139f7"
-RPROVIDES:compat-lua:x86_64_v2 = "virtual/lua"
+RPROVIDES:compat-lua:append:x86_64_v2 = " virtual/lua"
 
 URI_x86_64_v2_compat-lua-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/compat-lua-devel-5.1.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_compat-lua-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_compat-lua-devel}"
@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_compat-lua-libs.sha256sum] = "9fa175f32574ea657d591330a09cc0cd
 URI_aarch64_compat-lua = "${EPEL_MIRROR}/aarch64/Packages/c/compat-lua-5.1.5-25.el10_0.aarch64.rpm;name=aarch64_compat-lua;unpack=0"
 SRC_URI:append = " ${URI_aarch64_compat-lua}"
 SRC_URI[aarch64_compat-lua.sha256sum] = "4018eead43655d6db3118d8460c548f5f4091bfc8225f638aa19f3835677d70c"
-RPROVIDES:compat-lua:aarch64 = "virtual/lua"
+RPROVIDES:compat-lua:append:aarch64 = " virtual/lua"
 
 URI_aarch64_compat-lua-devel = "${EPEL_MIRROR}/aarch64/Packages/c/compat-lua-devel-5.1.5-25.el10_0.aarch64.rpm;name=aarch64_compat-lua-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_compat-lua-devel}"
@@ -53,7 +53,3 @@ RDEPENDS:compat-lua-devel = " \
 RDEPENDS:compat-lua-libs = " \
  glibc \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/lua"
-
-PROVIDES:append:aarch64 = " rpm/virtual/lua"

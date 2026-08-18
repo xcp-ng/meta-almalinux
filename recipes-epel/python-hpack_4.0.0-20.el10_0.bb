@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "a87ea20c770d830050109df876a0342fbea14767c037c877c67f0d
 
 URI_x86_64_v2_python-hpack-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hpack-doc-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hpack-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-hpack-doc}"
-SRC_URI[x86_64_v2_python-hpack-doc.sha256sum] = "1029bfdf6467c6b1aef8442ab104bb0031ab8076a50809962e71caacd035e4ed"
+SRC_URI[x86_64_v2_python-hpack-doc.sha256sum] = "5f683238fcae97d4379c405bc4c46a8aa8495107bb3ef27d6eab7fc06b884d22"
 
 URI_x86_64_v2_python3-hpack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hpack-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hpack;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-hpack}"
-SRC_URI[x86_64_v2_python3-hpack.sha256sum] = "737eff5dd2c433798362702d8571e470ceffc82ae2ad4586bbf8c72cdefe3c50"
+SRC_URI[x86_64_v2_python3-hpack.sha256sum] = "0cdd5398082fb11bf1de46c2fb57333c557f062949c9cc6bb8372c98a2dfc6b3"
 
 URI_aarch64_python-hpack-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hpack-doc-4.0.0-20.el10_0.noarch.rpm;name=aarch64_python-hpack-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-hpack-doc}"

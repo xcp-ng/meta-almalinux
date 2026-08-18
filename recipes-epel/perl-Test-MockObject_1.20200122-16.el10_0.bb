@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "08c1c259582ed984f66dd5baacc7c2192c1249d50ec5b2e553004a
 
 URI_x86_64_v2_perl-Test-MockObject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-MockObject-1.20200122-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-MockObject;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-MockObject}"
-SRC_URI[x86_64_v2_perl-Test-MockObject.sha256sum] = "e0a42cfb31cc624e1b6c234e505ba10e3ded057d47c52c6a6925448827938810"
+SRC_URI[x86_64_v2_perl-Test-MockObject.sha256sum] = "aed06ad028045b23b9a94b41fb171f8bd44e6b79a12611efaa0ddebd31824648"
 
 URI_aarch64_perl-Test-MockObject = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-MockObject-1.20200122-16.el10_0.noarch.rpm;name=aarch64_perl-Test-MockObject;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-MockObject}"

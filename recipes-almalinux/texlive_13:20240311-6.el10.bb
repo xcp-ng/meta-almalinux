@@ -630,7 +630,7 @@ SRC_URI[x86_64_v2_texlive-collection-latex.sha256sum] = "c66be8884ddd627328200bc
 URI_x86_64_v2_texlive-collection-latexrecommended = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/texlive-collection-latexrecommended-20240311-6.el10.noarch.rpm;name=x86_64_v2_texlive-collection-latexrecommended;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_texlive-collection-latexrecommended}"
 SRC_URI[x86_64_v2_texlive-collection-latexrecommended.sha256sum] = "47028f87c999e2e45a46f178de683c2f6f2e3eb67d6d3464e3464a86c5295ebe"
-RPROVIDES:texlive-collection-latexrecommended:x86_64_v2 = "virtual/texlive-latex"
+RPROVIDES:texlive-collection-latexrecommended:append:x86_64_v2 = " virtual/texlive-latex"
 
 URI_x86_64_v2_texlive-collection-xetex = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/texlive-collection-xetex-20240311-6.el10.noarch.rpm;name=x86_64_v2_texlive-collection-xetex;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_texlive-collection-xetex}"
@@ -1079,7 +1079,7 @@ SRC_URI[x86_64_v2_texlive-lastpage.sha256sum] = "fd1b8f3fd8d386783689bb444385291
 URI_x86_64_v2_texlive-latex = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/texlive-latex-20240311-6.el10.noarch.rpm;name=x86_64_v2_texlive-latex;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_texlive-latex}"
 SRC_URI[x86_64_v2_texlive-latex.sha256sum] = "a463504942d7afe874247573cae24c4a9500d099b4c3fe34b2f422ca646dad4c"
-RPROVIDES:texlive-latex:x86_64_v2 = "virtual/tex_alltt.sty_ virtual/tex_article.cls_ virtual/tex_doc.sty_ virtual/tex_exscale.sty_ virtual/tex_fix-cm.sty_ virtual/tex_fixltx2e.sty_ virtual/tex_flafter.sty_ virtual/tex_fontenc.sty_ virtual/tex_ifthen.sty_ virtual/tex_inputenc.sty_ virtual/tex_latexsym.sty_ virtual/tex_makeidx.sty_ virtual/tex_oldlfont.sty_ virtual/tex_shortvrb.sty_ virtual/tex_t1cmr.fd_ virtual/tex_textcomp.sty_ virtual/texlive-latex"
+RPROVIDES:texlive-latex:append:x86_64_v2 = " virtual/tex_alltt.sty_ virtual/tex_article.cls_ virtual/tex_doc.sty_ virtual/tex_exscale.sty_ virtual/tex_fix-cm.sty_ virtual/tex_fixltx2e.sty_ virtual/tex_flafter.sty_ virtual/tex_fontenc.sty_ virtual/tex_ifthen.sty_ virtual/tex_inputenc.sty_ virtual/tex_latexsym.sty_ virtual/tex_makeidx.sty_ virtual/tex_oldlfont.sty_ virtual/tex_shortvrb.sty_ virtual/tex_t1cmr.fd_ virtual/tex_textcomp.sty_ virtual/texlive-latex"
 
 URI_x86_64_v2_texlive-latex-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/texlive-latex-fonts-20240311-6.el10.noarch.rpm;name=x86_64_v2_texlive-latex-fonts;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_texlive-latex-fonts}"
@@ -2144,7 +2144,7 @@ SRC_URI[aarch64_texlive-collection-latex.sha256sum] = "c66be8884ddd627328200bc76
 URI_aarch64_texlive-collection-latexrecommended = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/texlive-collection-latexrecommended-20240311-6.el10.noarch.rpm;name=aarch64_texlive-collection-latexrecommended;unpack=0"
 SRC_URI:append = " ${URI_aarch64_texlive-collection-latexrecommended}"
 SRC_URI[aarch64_texlive-collection-latexrecommended.sha256sum] = "47028f87c999e2e45a46f178de683c2f6f2e3eb67d6d3464e3464a86c5295ebe"
-RPROVIDES:texlive-collection-latexrecommended:aarch64 = "virtual/texlive-latex"
+RPROVIDES:texlive-collection-latexrecommended:append:aarch64 = " virtual/texlive-latex"
 
 URI_aarch64_texlive-collection-xetex = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/texlive-collection-xetex-20240311-6.el10.noarch.rpm;name=aarch64_texlive-collection-xetex;unpack=0"
 SRC_URI:append = " ${URI_aarch64_texlive-collection-xetex}"
@@ -2593,7 +2593,7 @@ SRC_URI[aarch64_texlive-lastpage.sha256sum] = "fd1b8f3fd8d386783689bb444385291e4
 URI_aarch64_texlive-latex = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/texlive-latex-20240311-6.el10.noarch.rpm;name=aarch64_texlive-latex;unpack=0"
 SRC_URI:append = " ${URI_aarch64_texlive-latex}"
 SRC_URI[aarch64_texlive-latex.sha256sum] = "a463504942d7afe874247573cae24c4a9500d099b4c3fe34b2f422ca646dad4c"
-RPROVIDES:texlive-latex:aarch64 = "virtual/tex_alltt.sty_ virtual/tex_article.cls_ virtual/tex_doc.sty_ virtual/tex_exscale.sty_ virtual/tex_fix-cm.sty_ virtual/tex_fixltx2e.sty_ virtual/tex_flafter.sty_ virtual/tex_fontenc.sty_ virtual/tex_ifthen.sty_ virtual/tex_inputenc.sty_ virtual/tex_latexsym.sty_ virtual/tex_makeidx.sty_ virtual/tex_oldlfont.sty_ virtual/tex_shortvrb.sty_ virtual/tex_t1cmr.fd_ virtual/tex_textcomp.sty_ virtual/texlive-latex"
+RPROVIDES:texlive-latex:append:aarch64 = " virtual/tex_alltt.sty_ virtual/tex_article.cls_ virtual/tex_doc.sty_ virtual/tex_exscale.sty_ virtual/tex_fix-cm.sty_ virtual/tex_fixltx2e.sty_ virtual/tex_flafter.sty_ virtual/tex_fontenc.sty_ virtual/tex_ifthen.sty_ virtual/tex_inputenc.sty_ virtual/tex_latexsym.sty_ virtual/tex_makeidx.sty_ virtual/tex_oldlfont.sty_ virtual/tex_shortvrb.sty_ virtual/tex_t1cmr.fd_ virtual/tex_textcomp.sty_ virtual/texlive-latex"
 
 URI_aarch64_texlive-latex-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/texlive-latex-fonts-20240311-6.el10.noarch.rpm;name=aarch64_texlive-latex-fonts;unpack=0"
 SRC_URI:append = " ${URI_aarch64_texlive-latex-fonts}"
@@ -5931,7 +5931,3 @@ RDEPENDS:texlive-zapfding = " \
 RDEPENDS:texlive-zref = " \
  texlive-kpathsea \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/tex_alltt.sty_ rpm/virtual/tex_article.cls_ rpm/virtual/tex_doc.sty_ rpm/virtual/tex_exscale.sty_ rpm/virtual/tex_fix-cm.sty_ rpm/virtual/tex_fixltx2e.sty_ rpm/virtual/tex_flafter.sty_ rpm/virtual/tex_fontenc.sty_ rpm/virtual/tex_ifthen.sty_ rpm/virtual/tex_inputenc.sty_ rpm/virtual/tex_latexsym.sty_ rpm/virtual/tex_makeidx.sty_ rpm/virtual/tex_oldlfont.sty_ rpm/virtual/tex_shortvrb.sty_ rpm/virtual/tex_t1cmr.fd_ rpm/virtual/tex_textcomp.sty_ rpm/virtual/texlive-latex"
-
-PROVIDES:append:aarch64 = " rpm/virtual/tex_alltt.sty_ rpm/virtual/tex_article.cls_ rpm/virtual/tex_doc.sty_ rpm/virtual/tex_exscale.sty_ rpm/virtual/tex_fix-cm.sty_ rpm/virtual/tex_fixltx2e.sty_ rpm/virtual/tex_flafter.sty_ rpm/virtual/tex_fontenc.sty_ rpm/virtual/tex_ifthen.sty_ rpm/virtual/tex_inputenc.sty_ rpm/virtual/tex_latexsym.sty_ rpm/virtual/tex_makeidx.sty_ rpm/virtual/tex_oldlfont.sty_ rpm/virtual/tex_shortvrb.sty_ rpm/virtual/tex_t1cmr.fd_ rpm/virtual/tex_textcomp.sty_ rpm/virtual/texlive-latex"

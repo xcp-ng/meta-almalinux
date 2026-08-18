@@ -121,7 +121,7 @@ RDEPENDS:rust-hdrhistogram+flate2-devel = " \
 RDEPENDS:rust-hdrhistogram+nom-devel = " \
  cargo \
  rust-hdrhistogram-devel \
- rust-nom+default-devel \
+ rust-nom7+default-devel \
  "
 RDEPENDS:rust-hdrhistogram+serialization-devel = " \
  cargo \

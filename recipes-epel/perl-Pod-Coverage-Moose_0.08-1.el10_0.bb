@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "f8a62867cb9651ac04bab72b938cb786436253109a1486b5f050ca
 
 URI_x86_64_v2_perl-Pod-Coverage-Moose = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-Moose-0.08-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-Moose;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Coverage-Moose}"
-SRC_URI[x86_64_v2_perl-Pod-Coverage-Moose.sha256sum] = "c0cd34a3766d4387c3a848ce9f7cd0bfd9c9633a91c8862c7dcb22f543b1ce3b"
+SRC_URI[x86_64_v2_perl-Pod-Coverage-Moose.sha256sum] = "bee4387e68b75b625aa18f08425f44f7af790bbfbce04ade0875c172e5cfaf4a"
 
 URI_aarch64_perl-Pod-Coverage-Moose = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-Moose-0.08-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-Moose;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Coverage-Moose}"

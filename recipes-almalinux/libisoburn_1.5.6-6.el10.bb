@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_libisoburn-doc.sha256sum] = "763c9eed912872e9a9df4ddc100d9afec
 URI_x86_64_v2_xorriso = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xorriso-1.5.6-6.el10.x86_64_v2.rpm;name=x86_64_v2_xorriso;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_xorriso}"
 SRC_URI[x86_64_v2_xorriso.sha256sum] = "8c6007c4612d4816d64db7ae9a8080fba65a4a0de4162181e9212e22fea110bf"
-RPROVIDES:xorriso:x86_64_v2 = "virtual//usr/bin/mkisofs"
+RPROVIDES:xorriso:append:x86_64_v2 = " virtual//usr/bin/mkisofs"
 
 URI_aarch64_libisoburn = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libisoburn-1.5.6-6.el10.aarch64.rpm;name=aarch64_libisoburn;unpack=0"
 SRC_URI:append = " ${URI_aarch64_libisoburn}"
@@ -48,7 +48,7 @@ SRC_URI[aarch64_libisoburn-doc.sha256sum] = "763c9eed912872e9a9df4ddc100d9afece9
 URI_aarch64_xorriso = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xorriso-1.5.6-6.el10.aarch64.rpm;name=aarch64_xorriso;unpack=0"
 SRC_URI:append = " ${URI_aarch64_xorriso}"
 SRC_URI[aarch64_xorriso.sha256sum] = "d59c7cf5d6e9a3322f0da3391468c8d5eb699721187a327fcadb67985d1368c8"
-RPROVIDES:xorriso:aarch64 = "virtual//usr/bin/mkisofs"
+RPROVIDES:xorriso:append:aarch64 = " virtual//usr/bin/mkisofs"
 
 RDEPENDS:libisoburn = " \
  glibc \
@@ -71,7 +71,3 @@ RDEPENDS:xorriso = " \
  libisoburn \
  virtual/coreutils \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual//usr/bin/mkisofs"
-
-PROVIDES:append:aarch64 = " rpm/virtual//usr/bin/mkisofs"

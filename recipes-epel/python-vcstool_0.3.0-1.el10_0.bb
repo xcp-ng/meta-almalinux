@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "87e7d423730028831a9c43923959f6fe1bd15eb8264e29f4d60fa3
 
 URI_x86_64_v2_python3-vcstool = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-vcstool-0.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-vcstool;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-vcstool}"
-SRC_URI[x86_64_v2_python3-vcstool.sha256sum] = "416843f800853652db0cbdc7c9fb2f0bab7180e9e00caef61128c27a9a0323fb"
+SRC_URI[x86_64_v2_python3-vcstool.sha256sum] = "22da5fdf035142d75a778e9bf849764d20743b98fa5af22547abc655d19692b1"
 
 URI_aarch64_python3-vcstool = "${EPEL_MIRROR}/aarch64/Packages/p/python3-vcstool-0.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-vcstool;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-vcstool}"

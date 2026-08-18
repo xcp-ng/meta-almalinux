@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "af613bc603b6f176542f72800bdc3c490a6dbbeccba6f4f6557579
 
 URI_x86_64_v2_python3-kiwisolver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kiwisolver-1.4.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-kiwisolver;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-kiwisolver}"
-SRC_URI[x86_64_v2_python3-kiwisolver.sha256sum] = "09a000f15e37b38cb138e45dee788d0a69d2b84fbd6b50806b1ecc45e996e322"
+SRC_URI[x86_64_v2_python3-kiwisolver.sha256sum] = "2458d49bdb5ce8dd6dc5c719dfa4c153f358ffb91354abab27cb154e2f50a0cd"
 
 URI_aarch64_python3-kiwisolver = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kiwisolver-1.4.7-1.el10_0.aarch64.rpm;name=aarch64_python3-kiwisolver;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-kiwisolver}"

@@ -17,7 +17,7 @@ SRC_URI[src.sha256sum] = "4877956f576c4d51ff913fa3f8e7ef6367b590bfc8502bb3ec82ce
 URI_x86_64_v2_perl-Mouse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Mouse-2.5.11-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Mouse;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Mouse}"
 SRC_URI[x86_64_v2_perl-Mouse.sha256sum] = "f4d4dfd6394044176437da29073a061f0796ec47d75f858de924a30e0109c513"
-RPROVIDES:perl-Mouse:x86_64_v2 = "virtual/perl_Any-Moose__ge_0.40"
+RPROVIDES:perl-Mouse:append:x86_64_v2 = " virtual/perl_Any-Moose__ge_0.40"
 
 URI_x86_64_v2_perl-Test-Mouse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Mouse-2.5.11-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Test-Mouse;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Mouse}"
@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_perl-Test-Mouse.sha256sum] = "0ba0f004b43b2dd71ded823e2f6210f4
 URI_aarch64_perl-Mouse = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Mouse-2.5.11-1.el10_0.aarch64.rpm;name=aarch64_perl-Mouse;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Mouse}"
 SRC_URI[aarch64_perl-Mouse.sha256sum] = "418be5ef57632c1c0e13bae88f6a759bf71633bf72a3a5116fbf5391a8d429a1"
-RPROVIDES:perl-Mouse:aarch64 = "virtual/perl_Any-Moose__ge_0.40"
+RPROVIDES:perl-Mouse:append:aarch64 = " virtual/perl_Any-Moose__ge_0.40"
 
 URI_aarch64_perl-Test-Mouse = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Mouse-2.5.11-1.el10_0.aarch64.rpm;name=aarch64_perl-Test-Mouse;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Mouse}"
@@ -52,7 +52,3 @@ RDEPENDS:perl-Test-Mouse = " \
  perl-Test-Simple \
  perl-libs \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/perl_Any-Moose__ge_0.40"
-
-PROVIDES:append:aarch64 = " rpm/virtual/perl_Any-Moose__ge_0.40"

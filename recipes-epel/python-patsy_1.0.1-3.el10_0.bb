@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "c253ba28eb749a221f19920a65019be3e94921810ac7c6162abf16
 
 URI_x86_64_v2_python3-patsy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-patsy-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-patsy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-patsy}"
-SRC_URI[x86_64_v2_python3-patsy.sha256sum] = "823321c8e4171ecf62b613e83093cdad31962b0665a1b57fe53f0b4f4cc81d05"
+SRC_URI[x86_64_v2_python3-patsy.sha256sum] = "a6a52a39188733058f49adac4c305013a2dd57328b0d4b60427978a9d1298ea6"
 
 URI_x86_64_v2_python3-patsy-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-patsy-doc-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-patsy-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-patsy-doc}"
-SRC_URI[x86_64_v2_python3-patsy-doc.sha256sum] = "f3236f4733d4a496989aabbb202399929f5ffa000238b45fb752d6d0d15f5799"
+SRC_URI[x86_64_v2_python3-patsy-doc.sha256sum] = "4b4ec4bc8d3dd1d390a583903f5caa62db86c13effa6ff9e446464c5d1128fc5"
 
 URI_aarch64_python3-patsy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-patsy-1.0.1-3.el10_0.noarch.rpm;name=aarch64_python3-patsy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-patsy}"

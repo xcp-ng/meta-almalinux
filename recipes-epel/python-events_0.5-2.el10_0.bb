@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a4144efe9f0bb274fd54da4105e0b12438013f821ec8c7aeb9084f
 
 URI_x86_64_v2_python3-events = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-events-0.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-events;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-events}"
-SRC_URI[x86_64_v2_python3-events.sha256sum] = "2a57548c864bec866662068be590de606ef14ead7f7d1bfbab9521e07c47311b"
+SRC_URI[x86_64_v2_python3-events.sha256sum] = "114925caad578599bb34849a6dadc1e0601daa7cf5bd9701418bf18401a85326"
 
 URI_aarch64_python3-events = "${EPEL_MIRROR}/aarch64/Packages/p/python3-events-0.5-2.el10_0.noarch.rpm;name=aarch64_python3-events;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-events}"

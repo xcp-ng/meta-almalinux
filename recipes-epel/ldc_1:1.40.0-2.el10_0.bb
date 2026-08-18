@@ -37,7 +37,7 @@ RDEPENDS:ldc = " \
  ldc-libs \
  libgcc \
  libstdc++ \
- llvm-libs \
+ llvm19-libs \
  "
 RDEPENDS:ldc-libs = " \
  glibc \

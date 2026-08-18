@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "2c94d3c5c1a3f7c62f1882c4b1fc6e9a042f6567c334ebc44dc541
 
 URI_x86_64_v2_perl-Test-Valgrind = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Valgrind-1.19-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Valgrind;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Valgrind}"
-SRC_URI[x86_64_v2_perl-Test-Valgrind.sha256sum] = "1b54543e5d3e96f60f3ab7f67c0a8267b807f2021950971ea734e9a06ac9e91f"
+SRC_URI[x86_64_v2_perl-Test-Valgrind.sha256sum] = "d11350403ce5ade587d362ba02d13a16d14487a81f308649a2f1b231328a8b96"
 
 URI_aarch64_perl-Test-Valgrind = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Valgrind-1.19-23.el10_0.noarch.rpm;name=aarch64_perl-Test-Valgrind;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Valgrind}"

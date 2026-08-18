@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "8414ee443dd31bc5d36daa92c2186a935c781f03c3746f4ce74507
 
 URI_x86_64_v2_python3-chameleon = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-chameleon-4.5.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-chameleon;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-chameleon}"
-SRC_URI[x86_64_v2_python3-chameleon.sha256sum] = "bf9382e69e80ecb559d10cf376982d0f6fc7dacb9fdd9328de6994bd06fa1f4d"
+SRC_URI[x86_64_v2_python3-chameleon.sha256sum] = "985a1ea14b07e5808cbaae0859d53fd3c950e08588559917bfa595741e3f2f77"
 
 URI_aarch64_python3-chameleon = "${EPEL_MIRROR}/aarch64/Packages/p/python3-chameleon-4.5.4-3.el10_0.noarch.rpm;name=aarch64_python3-chameleon;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-chameleon}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d3ea68ecdbd9a10f5103a3b0f61258ddd95e147c3eb83e5ae7caef
 
 URI_x86_64_v2_python3-krb5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-krb5-0.7.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-krb5;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-krb5}"
-SRC_URI[x86_64_v2_python3-krb5.sha256sum] = "340f07880e8e449eb4e4da5f24009b1b8e7bcd2e1ba339dcd3047615ba24c19d"
+SRC_URI[x86_64_v2_python3-krb5.sha256sum] = "9f56cd4a88e425077ff08c7eb2278692426e4d5741885c037f91d52ef9c6d132"
 
 URI_aarch64_python3-krb5 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-krb5-0.7.0-1.el10_0.aarch64.rpm;name=aarch64_python3-krb5;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-krb5}"

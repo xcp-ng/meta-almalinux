@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "a5c28ce0d45bd87b3aeee7cd8670605daa5ed8f12240f529fc3320
 
 URI_x86_64_v2_python3-cmdkit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cmdkit}"
-SRC_URI[x86_64_v2_python3-cmdkit.sha256sum] = "76b615f1b6a39d4ace7717e51ee3cbfaa0a6df149843cc5294061adbbf8fb2a7"
+SRC_URI[x86_64_v2_python3-cmdkit.sha256sum] = "958f3cc5f719fb3e8adeafbb83d23d0c2c34526377b7028ab1e3f5aad2bef573"
 
 URI_x86_64_v2_python3-cmdkit+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit+toml-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit+toml;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cmdkit+toml}"
-SRC_URI[x86_64_v2_python3-cmdkit+toml.sha256sum] = "8c0595e63b00996982b1397b4bb70358b6f0c070e0a4fa87065f2e18364f0c62"
+SRC_URI[x86_64_v2_python3-cmdkit+toml.sha256sum] = "687ca7476551a75aa6413c239762ac30e2d7c225dc2fb6c4ea69c750ee216397"
 
 URI_aarch64_python3-cmdkit = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cmdkit-2.7.7-4.el10_0.noarch.rpm;name=aarch64_python3-cmdkit;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cmdkit}"

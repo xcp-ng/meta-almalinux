@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "e9fe14e6f35e85c6355244c9a315a7da625361884d14870b682d7f
 
 URI_x86_64_v2_perl-Test-Trap = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Trap}"
-SRC_URI[x86_64_v2_perl-Test-Trap.sha256sum] = "fd1f22b7a81b9eb7cd2646cd35cec9e387c12f6bb49effcbf3d27c5678ac8e70"
+SRC_URI[x86_64_v2_perl-Test-Trap.sha256sum] = "dfdbac0f022315a477d15fff16d47db4d53741a87f126d4eedd094abdf7598d6"
 
 URI_x86_64_v2_perl-Test-Trap-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-tests-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Trap-tests}"
-SRC_URI[x86_64_v2_perl-Test-Trap-tests.sha256sum] = "b50945e9156c0bdb1f111af91731abdceaaa2683a172df8bdc3034294c28a55d"
+SRC_URI[x86_64_v2_perl-Test-Trap-tests.sha256sum] = "50f5cc24b629998cce39f07201008cb62dbca1ea25784c0a5a541000824d78cf"
 
 URI_aarch64_perl-Test-Trap = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Trap-0.3.5-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Trap;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Trap}"

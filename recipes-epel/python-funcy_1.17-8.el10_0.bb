@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "ea6b6dc4228908d0739ef8fb9ec4934838ffe592a83af3b28ab98b
 
 URI_x86_64_v2_python3-funcy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-funcy-1.17-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-funcy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-funcy}"
-SRC_URI[x86_64_v2_python3-funcy.sha256sum] = "3edc66628dbc341e0c3e6415ef04cd91e693b6766c11e134118d220e0f00bb2c"
+SRC_URI[x86_64_v2_python3-funcy.sha256sum] = "3d0c12120359c9e8d8bea68d503ae5f54ce7df78b81d812cccf3a57b76d98e86"
 
 URI_aarch64_python3-funcy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-funcy-1.17-8.el10_0.noarch.rpm;name=aarch64_python3-funcy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-funcy}"

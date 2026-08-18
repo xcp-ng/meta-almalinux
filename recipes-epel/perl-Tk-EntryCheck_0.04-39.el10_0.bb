@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "6a0051a4ae37ebbc1dfd9d89223a7256af6f9de54566e7473ce760
 
 URI_x86_64_v2_perl-Tk-EntryCheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-EntryCheck-0.04-39.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-EntryCheck;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-EntryCheck}"
-SRC_URI[x86_64_v2_perl-Tk-EntryCheck.sha256sum] = "984f540ce9bd520d198577b989da903e3a06d83845b459529b4801aa31426b1d"
+SRC_URI[x86_64_v2_perl-Tk-EntryCheck.sha256sum] = "9df9377f31849073e0e0097781b3b041c00d9a8e4a6571de1e586100e01bc058"
 
 URI_x86_64_v2_perl-Tk-EntryCheck-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-EntryCheck-tests-0.04-39.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-EntryCheck-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-EntryCheck-tests}"
-SRC_URI[x86_64_v2_perl-Tk-EntryCheck-tests.sha256sum] = "717727811f4c08ea61386c639098109627367ff39008388686d0ba406296c581"
+SRC_URI[x86_64_v2_perl-Tk-EntryCheck-tests.sha256sum] = "5739a22679b3aa2df9d2aabd4d8cfdfa048f8a0038fa1e70257c1f8fb448b94d"
 
 URI_aarch64_perl-Tk-EntryCheck = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-EntryCheck-0.04-39.el10_0.noarch.rpm;name=aarch64_perl-Tk-EntryCheck;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Tk-EntryCheck}"

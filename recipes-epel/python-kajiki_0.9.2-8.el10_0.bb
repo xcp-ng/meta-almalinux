@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "226987dc06d50cec34c4f41b073ff51de42cd84e5441cd672c140e
 
 URI_x86_64_v2_python3-kajiki = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kajiki-0.9.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kajiki;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-kajiki}"
-SRC_URI[x86_64_v2_python3-kajiki.sha256sum] = "1cc389ca2e2d8ed69b8faaa5b66fea947043b35a459d7dd6cd1ac06ac84fe093"
+SRC_URI[x86_64_v2_python3-kajiki.sha256sum] = "e59a0c5bea8911726b19f5fa9b2d2fd8f219f90dc3303dc88a82a5ab51da6411"
 
 URI_aarch64_python3-kajiki = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kajiki-0.9.2-8.el10_0.noarch.rpm;name=aarch64_python3-kajiki;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-kajiki}"

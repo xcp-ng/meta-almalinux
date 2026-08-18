@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "e6b042399cbc8f2243d6983385792b69fcbdb52c082fef28e8c559
 URI_x86_64_v2_rust-colored2+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-colored2+default-devel-2.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-colored2+default-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-colored2+default-devel}"
 SRC_URI[x86_64_v2_rust-colored2+default-devel.sha256sum] = "b5e13081d0e0cd0e2ef3f5c7f1d99f1db6dfc6976146a019bb8ff2e909093971"
-RPROVIDES:rust-colored2+default-devel:x86_64_v2 = "virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
+RPROVIDES:rust-colored2+default-devel:append:x86_64_v2 = " virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
 
 URI_x86_64_v2_rust-colored2+no-color-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-colored2+no-color-devel-2.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-colored2+no-color-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_rust-colored2+no-color-devel}"
@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_rust-colored2-devel.sha256sum] = "b931063da38ddb5084de634a0bee
 URI_aarch64_rust-colored2+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-colored2+default-devel-2.2.0-1.el10_0.noarch.rpm;name=aarch64_rust-colored2+default-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-colored2+default-devel}"
 SRC_URI[aarch64_rust-colored2+default-devel.sha256sum] = "a5af5f8e40d2c909efe09acef3bf8eed7b3f68c9f429ee2900bde2823eeeafc8"
-RPROVIDES:rust-colored2+default-devel:aarch64 = "virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
+RPROVIDES:rust-colored2+default-devel:append:aarch64 = " virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
 
 URI_aarch64_rust-colored2+no-color-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-colored2+no-color-devel-2.2.0-1.el10_0.noarch.rpm;name=aarch64_rust-colored2+no-color-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_rust-colored2+no-color-devel}"
@@ -54,7 +54,3 @@ RDEPENDS:rust-colored2-devel = " \
  rust \
  rust-lazy_static+default-devel \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"
-
-PROVIDES:append:aarch64 = " rpm/virtual/crate_colored/default__ge_2.0.0_with_crate_colored/default__lt_4.0.0~"

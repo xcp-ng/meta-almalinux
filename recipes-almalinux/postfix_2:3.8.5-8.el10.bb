@@ -25,7 +25,7 @@ SRC_URI[src.sha256sum] = "e3f2f446c30894df638bfca612c331d5bd55a398ef3b164ab388e3
 URI_x86_64_v2_postfix = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/postfix-3.8.5-8.el10.x86_64_v2.rpm;name=x86_64_v2_postfix;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_postfix}"
 SRC_URI[x86_64_v2_postfix.sha256sum] = "516306df2a76cbed1e0d741a48dc013d69dbc59bf1fed110829e80192cb6e3f0"
-RPROVIDES:postfix:x86_64_v2 = "virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
+RPROVIDES:postfix:append:x86_64_v2 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 
 URI_x86_64_v2_postfix-cdb = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/postfix-cdb-3.8.5-8.el10.x86_64_v2.rpm;name=x86_64_v2_postfix-cdb;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_postfix-cdb}"
@@ -62,7 +62,7 @@ SRC_URI[x86_64_v2_postfix-sqlite.sha256sum] = "8cafa9821751e993ef0404080b1910980
 URI_aarch64_postfix = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/postfix-3.8.5-8.el10.aarch64.rpm;name=aarch64_postfix;unpack=0"
 SRC_URI:append = " ${URI_aarch64_postfix}"
 SRC_URI[aarch64_postfix.sha256sum] = "abe43aad94cc6b116ea9bdfb1fdbee90df6946bbb334161e52ecfd2f047a52d9"
-RPROVIDES:postfix:aarch64 = "virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
+RPROVIDES:postfix:append:aarch64 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 
 URI_aarch64_postfix-cdb = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/postfix-cdb-3.8.5-8.el10.aarch64.rpm;name=aarch64_postfix-cdb;unpack=0"
 SRC_URI:append = " ${URI_aarch64_postfix-cdb}"
@@ -158,7 +158,3 @@ RDEPENDS:postfix-sqlite = " \
  postfix \
  sqlite-libs \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual//usr/bin/mailq rpm/virtual//usr/sbin/sendmail rpm/virtual/smtpdaemon"
-
-PROVIDES:append:aarch64 = " rpm/virtual//usr/bin/mailq rpm/virtual//usr/sbin/sendmail rpm/virtual/smtpdaemon"

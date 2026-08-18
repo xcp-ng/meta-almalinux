@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "3cdd028647211afca3e90a29387fd2be9d3f1e82b5bc49e6304ade
 
 URI_x86_64_v2_perl-Regexp-Trie = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Regexp-Trie-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Regexp-Trie;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Regexp-Trie}"
-SRC_URI[x86_64_v2_perl-Regexp-Trie.sha256sum] = "c0594105d76e96866d5c81d68ef7378d00f8ab798aa58d31d97e46b62a27d76d"
+SRC_URI[x86_64_v2_perl-Regexp-Trie.sha256sum] = "d066b547f05c8f016d62003890b645c7689429b0ba87694e85fc2225b7624464"
 
 URI_aarch64_perl-Regexp-Trie = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Regexp-Trie-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Regexp-Trie;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Regexp-Trie}"

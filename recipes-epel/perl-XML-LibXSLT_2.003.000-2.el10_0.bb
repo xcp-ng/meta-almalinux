@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "979e90a237241efa4f3882667da34ecdc1b0bc9f7c45c0d4c1794a
 
 URI_x86_64_v2_perl-XML-LibXSLT = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-LibXSLT}"
-SRC_URI[x86_64_v2_perl-XML-LibXSLT.sha256sum] = "c2f456c05f88f7976725b227094a112236761c18439c5ee11fca11a4e5399865"
+SRC_URI[x86_64_v2_perl-XML-LibXSLT.sha256sum] = "44fc7c14b937d3ac5491bd614ab283268e4b1d17f1570ce579953662f7bce01f"
 
 URI_x86_64_v2_perl-XML-LibXSLT-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-tests-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-XML-LibXSLT-tests}"
-SRC_URI[x86_64_v2_perl-XML-LibXSLT-tests.sha256sum] = "e49c56d0e5f69a80321ece4e5b2a04351fd03a4c85c766143f740e35d2e22517"
+SRC_URI[x86_64_v2_perl-XML-LibXSLT-tests.sha256sum] = "a872c9e126d3de56194cb8d7096ab31b4316de666934dee582529e6af89fb9ab"
 
 URI_aarch64_perl-XML-LibXSLT = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-LibXSLT-2.003.000-2.el10_0.aarch64.rpm;name=aarch64_perl-XML-LibXSLT;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-XML-LibXSLT}"

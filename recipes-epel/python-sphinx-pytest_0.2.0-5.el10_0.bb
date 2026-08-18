@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "9b17978fcdce80cae42fd95facba6058211b00afbfdccc104a293c
 
 URI_x86_64_v2_python3-sphinx-pytest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-pytest-0.2.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-pytest;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-pytest}"
-SRC_URI[x86_64_v2_python3-sphinx-pytest.sha256sum] = "171de06432d878a8097295c391eb538c34f23bddda47279ae526c9f679e4084d"
+SRC_URI[x86_64_v2_python3-sphinx-pytest.sha256sum] = "49ddd589d7ec79c4cb3b20673e217fc7f6b10032f3af15ff7f0e7890588ad5f9"
 
 URI_aarch64_python3-sphinx-pytest = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-pytest-0.2.0-5.el10_0.noarch.rpm;name=aarch64_python3-sphinx-pytest;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-sphinx-pytest}"

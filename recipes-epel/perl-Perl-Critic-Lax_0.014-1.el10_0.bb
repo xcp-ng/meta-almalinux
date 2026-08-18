@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "57f4f6b17eb2783202603b5982ed589b58a6a5aa9a9716d96204d5
 
 URI_x86_64_v2_perl-Perl-Critic-Lax = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Lax-0.014-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Lax;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Lax}"
-SRC_URI[x86_64_v2_perl-Perl-Critic-Lax.sha256sum] = "e0f4585d442778e74421a202a6d50601cfded7c83e8fff97216a1c33172f34db"
+SRC_URI[x86_64_v2_perl-Perl-Critic-Lax.sha256sum] = "050446d75e05238ced1af5388ede2d1da3f08aaf7906b00cc1a0bb5f633e332e"
 
 URI_aarch64_perl-Perl-Critic-Lax = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Lax-0.014-1.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Lax;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Perl-Critic-Lax}"

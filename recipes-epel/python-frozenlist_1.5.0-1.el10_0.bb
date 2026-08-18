@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "0c1251c0ecb048dcb506bf2c65e3b60622de5155fa77c1af63b158
 
 URI_x86_64_v2_python3-frozenlist = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-frozenlist-1.5.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-frozenlist;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-frozenlist}"
-SRC_URI[x86_64_v2_python3-frozenlist.sha256sum] = "1832e57264206cbcdf9152fe6c39e7a873522a5cca89d1a49d92e7712a274847"
+SRC_URI[x86_64_v2_python3-frozenlist.sha256sum] = "df6c74e6ba68bde51cbaede7922d3b823a36ac192ab94aeeb794e105300ce7ef"
 
 URI_aarch64_python3-frozenlist = "${EPEL_MIRROR}/aarch64/Packages/p/python3-frozenlist-1.5.0-1.el10_0.aarch64.rpm;name=aarch64_python3-frozenlist;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-frozenlist}"

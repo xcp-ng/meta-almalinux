@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "a42770e1e69ddf5b8904f02d397a9e1639d434cc4e1fcbb22c0303
 
 URI_x86_64_v2_python3-multidict = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-multidict-6.1.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-multidict;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-multidict}"
-SRC_URI[x86_64_v2_python3-multidict.sha256sum] = "30fa91ba4bbb84163ee363f91198caf6a62b29ad38ef461173e644f6a218c2c4"
+SRC_URI[x86_64_v2_python3-multidict.sha256sum] = "2275727b6ac143d82f1c2b623613b765a32fa22d4c147b24f57e2dd9895b1f8d"
 
 URI_aarch64_python3-multidict = "${EPEL_MIRROR}/aarch64/Packages/p/python3-multidict-6.1.0-2.el10_0.aarch64.rpm;name=aarch64_python3-multidict;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-multidict}"

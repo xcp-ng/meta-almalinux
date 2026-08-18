@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "4ac135c60abb3beb2894da43499680d6ea1044e3792cb3d870d0f8
 
 URI_x86_64_v2_python-bugzilla-cli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-bugzilla-cli-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-bugzilla-cli;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-bugzilla-cli}"
-SRC_URI[x86_64_v2_python-bugzilla-cli.sha256sum] = "9c164756536e97246bb7754bc15956d6f8c4bc30d23ff0c67f391bec172b25e3"
+SRC_URI[x86_64_v2_python-bugzilla-cli.sha256sum] = "5f9fc3abee433b56b74d963de44262473344a0559a8cad8a117260137c3835a3"
 
 URI_x86_64_v2_python3-bugzilla = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bugzilla-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-bugzilla;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-bugzilla}"
-SRC_URI[x86_64_v2_python3-bugzilla.sha256sum] = "c7bd666628035b19514573c5ec0de351157360ff2108d33718b263f3ea2cff18"
+SRC_URI[x86_64_v2_python3-bugzilla.sha256sum] = "990fda483a22489fccd2c1b0af7fcca8196270925a8d396f23a7ce211fba6948"
 
 URI_aarch64_python-bugzilla-cli = "${EPEL_MIRROR}/aarch64/Packages/p/python-bugzilla-cli-3.3.0-1.el10_0.noarch.rpm;name=aarch64_python-bugzilla-cli;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-bugzilla-cli}"

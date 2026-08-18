@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "2c5977322833128feee4078d7f7f50bece86d0577f14d3db44a76f
 
 URI_x86_64_v2_perl-Sys-Mmap = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sys-Mmap-0.20-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sys-Mmap;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Sys-Mmap}"
-SRC_URI[x86_64_v2_perl-Sys-Mmap.sha256sum] = "cc2281aeda593dc7f2855fd725f14fdffeac01a1ebca31c7610796cfbea07a30"
+SRC_URI[x86_64_v2_perl-Sys-Mmap.sha256sum] = "2263ff03144a8b26f20dddebf9b7437581ed9533636228e0507680ad87a511ba"
 
 URI_aarch64_perl-Sys-Mmap = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sys-Mmap-0.20-18.el10_0.aarch64.rpm;name=aarch64_perl-Sys-Mmap;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Sys-Mmap}"

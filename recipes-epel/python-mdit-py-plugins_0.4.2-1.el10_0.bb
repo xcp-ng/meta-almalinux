@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "d77bce5331cd44d775f17f1245d17551dfd621fa2dad2bd0352e31
 
 URI_x86_64_v2_python3-mdit-py-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mdit-py-plugins-0.4.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mdit-py-plugins;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-mdit-py-plugins}"
-SRC_URI[x86_64_v2_python3-mdit-py-plugins.sha256sum] = "b37439a2c8b68b32a3f4bb60ea6a09d2e5c85b981d95507c1e9779ef08779f82"
+SRC_URI[x86_64_v2_python3-mdit-py-plugins.sha256sum] = "ccfb4311e4c1a1ebef1f7a098222866f0a8097a0e62992ac12324dac1aec2760"
 
 URI_aarch64_python3-mdit-py-plugins = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mdit-py-plugins-0.4.2-1.el10_0.noarch.rpm;name=aarch64_python3-mdit-py-plugins;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-mdit-py-plugins}"

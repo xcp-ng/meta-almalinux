@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "15b14a89ff702d288d3db84f228e7816cbc9028f28cef0ef02ba4b
 
 URI_x86_64_v2_python3-trololio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trololio-1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trololio;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-trololio}"
-SRC_URI[x86_64_v2_python3-trololio.sha256sum] = "0d7600dbc2ae373c47dcf5ac00f6bf05db75ac7a1c96a6d585fd3a90ecb738e3"
+SRC_URI[x86_64_v2_python3-trololio.sha256sum] = "12d4f041635c5a4f5ee92e1192943896d9e7e23bb798ca8c49a3a2fd7ead86a4"
 
 URI_aarch64_python3-trololio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-trololio-1.0-22.el10_0.noarch.rpm;name=aarch64_python3-trololio;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-trololio}"

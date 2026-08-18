@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "1904cdc52ce28b5adec91d15eb7faa0dca5d40a257975d2635dad7
 
 URI_x86_64_v2_perl-Test-WWW-Mechanize = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-WWW-Mechanize-1.60-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-WWW-Mechanize;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-WWW-Mechanize}"
-SRC_URI[x86_64_v2_perl-Test-WWW-Mechanize.sha256sum] = "1260a14a51a1a53f0a081082b613334470cdc35ed9643775eeb7a6bd01f3ca8b"
+SRC_URI[x86_64_v2_perl-Test-WWW-Mechanize.sha256sum] = "1b5f0b42f971854ed57ffa2ffab243da5367e1cbee1d185e26115a99372bb8fc"
 
 URI_aarch64_perl-Test-WWW-Mechanize = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-WWW-Mechanize-1.60-7.el10_0.noarch.rpm;name=aarch64_perl-Test-WWW-Mechanize;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-WWW-Mechanize}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "11e1a332131d7044991875cec14297f4631a4c02cc9fc418e9d51a
 
 URI_x86_64_v2_perl-Pod-Coverage-TrustPod = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-TrustPod;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Coverage-TrustPod}"
-SRC_URI[x86_64_v2_perl-Pod-Coverage-TrustPod.sha256sum] = "f9406a979ee4e9613e0212c7fc18e32914ab4c8d2db3b739ec6e49a360bbcc6d"
+SRC_URI[x86_64_v2_perl-Pod-Coverage-TrustPod.sha256sum] = "75e97636533aa92c2e7b4a033cd379526f1528e939a5ada005d8ba35bcb53ebe"
 
 URI_aarch64_perl-Pod-Coverage-TrustPod = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-TrustPod;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Coverage-TrustPod}"

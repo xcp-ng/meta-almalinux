@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "3a1dcfcad7f371256f2f79ce4760e483fa1522d134cf898441302a
 URI_x86_64_v2_lua = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lua-5.4.6-7.el10.x86_64_v2.rpm;name=x86_64_v2_lua;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_lua}"
 SRC_URI[x86_64_v2_lua.sha256sum] = "3bb22b4928f4361b335191e3f492696867b8943d8a9b94e120fcd152c784c53b"
-RPROVIDES:lua:x86_64_v2 = "virtual/lua"
+RPROVIDES:lua:append:x86_64_v2 = " virtual/lua"
 
 URI_x86_64_v2_lua-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/lua-devel-5.4.6-7.el10.x86_64_v2.rpm;name=x86_64_v2_lua-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_lua-devel}"
@@ -31,7 +31,7 @@ SRC_URI[x86_64_v2_lua-libs.sha256sum] = "30d7e104d9990207bd6b279a47ad2d4d1bc6edf
 URI_aarch64_lua = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lua-5.4.6-7.el10.aarch64.rpm;name=aarch64_lua;unpack=0"
 SRC_URI:append = " ${URI_aarch64_lua}"
 SRC_URI[aarch64_lua.sha256sum] = "0448fc9e42debb48cde6afa9eaf9034d3db27227e7fcee7db1c741cb77d3eab1"
-RPROVIDES:lua:aarch64 = "virtual/lua"
+RPROVIDES:lua:append:aarch64 = " virtual/lua"
 
 URI_aarch64_lua-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/lua-devel-5.4.6-7.el10.aarch64.rpm;name=aarch64_lua-devel;unpack=0"
 SRC_URI:append = " ${URI_aarch64_lua-devel}"
@@ -54,7 +54,3 @@ RDEPENDS:lua-devel = " \
 RDEPENDS:lua-libs = " \
  glibc \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/lua"
-
-PROVIDES:append:aarch64 = " rpm/virtual/lua"

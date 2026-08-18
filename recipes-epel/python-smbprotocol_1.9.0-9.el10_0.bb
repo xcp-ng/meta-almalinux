@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "02533bf50d67afbac8fd7f2a57eb961465ea97eddeb5db3edb636d
 
 URI_x86_64_v2_python3-smbprotocol = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smbprotocol-1.9.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smbprotocol;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-smbprotocol}"
-SRC_URI[x86_64_v2_python3-smbprotocol.sha256sum] = "2eee878a65ddfbfd59431cce6fe09c6ad09fe51270538d38bea5137da6bfa604"
+SRC_URI[x86_64_v2_python3-smbprotocol.sha256sum] = "314bd22f04acd1054a267ed6d579c7a517bedd58018f0e405908ca421945dedc"
 
 URI_aarch64_python3-smbprotocol = "${EPEL_MIRROR}/aarch64/Packages/p/python3-smbprotocol-1.9.0-9.el10_0.noarch.rpm;name=aarch64_python3-smbprotocol;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-smbprotocol}"

@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "f3ded71c4a1be2c5c7abd10df77f0ec82678a4877b62a2e7761854
 
 URI_x86_64_v2_perl-asa = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-asa-1.04-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-asa;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-asa}"
-SRC_URI[x86_64_v2_perl-asa.sha256sum] = "6a7308dc0264ea42f4e2e0c921eb28c0596dbba75a28ec8fb98b087eff5a81f3"
+SRC_URI[x86_64_v2_perl-asa.sha256sum] = "36941829116ec2b02db66d6434d041aeec10bd2509d886cd8f299d6ddf6b6876"
 
 URI_x86_64_v2_perl-asa-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-asa-tests-1.04-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-asa-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-asa-tests}"
-SRC_URI[x86_64_v2_perl-asa-tests.sha256sum] = "63d0c1033b05d00174bfb85de8cccc5efd31be88ccabf86cee7a586102934900"
+SRC_URI[x86_64_v2_perl-asa-tests.sha256sum] = "7aa213fa72587c6cd6aaf01b9dfa10a75cac28dfec0b4e9aa7237ee00e161459"
 
 URI_aarch64_perl-asa = "${EPEL_MIRROR}/aarch64/Packages/p/perl-asa-1.04-18.el10_0.noarch.rpm;name=aarch64_perl-asa;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-asa}"

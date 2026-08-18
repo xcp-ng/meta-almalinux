@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "16cf6c57e2ed15e31c583541a1998d7edf0cbadbc1ce69eed35b3a
 
 URI_x86_64_v2_python3-partd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-partd}"
-SRC_URI[x86_64_v2_python3-partd.sha256sum] = "a5fed6f7dc9650cab1401a4a5a0774f9f96f7b0be2607cec613f9d793c81c8b0"
+SRC_URI[x86_64_v2_python3-partd.sha256sum] = "ff8beb078e78ec3063ba1b57c4dc258aae167d196cc06e2f1e37d5039273bf87"
 
 URI_x86_64_v2_python3-partd+complete = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd+complete-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd+complete;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-partd+complete}"
-SRC_URI[x86_64_v2_python3-partd+complete.sha256sum] = "600b06c2b9a8c410f0d1644f6d0283b1ecf32c46ccd5defc2c19ff7185ddacbb"
+SRC_URI[x86_64_v2_python3-partd+complete.sha256sum] = "352da77530eda4b8ec046a44a9b91da46a2895a8ad89e825a1d25b4542ec0606"
 
 URI_aarch64_python3-partd = "${EPEL_MIRROR}/aarch64/Packages/p/python3-partd-1.4.2-3.el10_0.noarch.rpm;name=aarch64_python3-partd;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-partd}"

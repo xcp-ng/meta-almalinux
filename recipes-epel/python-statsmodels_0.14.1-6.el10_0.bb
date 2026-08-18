@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "5ea6f693d8055d5e74acd96ce624fdd2be5432dee70288e9e1403d
 
 URI_x86_64_v2_python3-statsmodels = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-statsmodels-0.14.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-statsmodels;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-statsmodels}"
-SRC_URI[x86_64_v2_python3-statsmodels.sha256sum] = "5f419dd6e2d27df831828621503c27bbd492b6754183d60ad829923753e4a59d"
+SRC_URI[x86_64_v2_python3-statsmodels.sha256sum] = "c88c443ce48a1355ed75faec8975077900555461b2db48377ba5d536fd623397"
 
 URI_x86_64_v2_python3-statsmodels-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-statsmodels-doc-0.14.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-statsmodels-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-statsmodels-doc}"
-SRC_URI[x86_64_v2_python3-statsmodels-doc.sha256sum] = "a806f05a51a43cb93b5abd7b609a9ef1f3c0eca13b4df640ed6ec697efdd90e9"
+SRC_URI[x86_64_v2_python3-statsmodels-doc.sha256sum] = "1988439b0a56ae6f31a7a24cc9a8815845dea21244d5e0993e39ffd7a8debbfc"
 
 URI_aarch64_python3-statsmodels = "${EPEL_MIRROR}/aarch64/Packages/p/python3-statsmodels-0.14.1-6.el10_0.aarch64.rpm;name=aarch64_python3-statsmodels;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-statsmodels}"

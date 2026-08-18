@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "74223397dce802238abc1e7009dd444a4e3a85d8de9aad3d350f3c
 
 URI_x86_64_v2_python-furo-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-furo-doc-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-furo-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-furo-doc}"
-SRC_URI[x86_64_v2_python-furo-doc.sha256sum] = "d52c89ec1f0250dba57c1396c4d3e130b8a92fd0f481e6b0fb98a03a1f411fde"
+SRC_URI[x86_64_v2_python-furo-doc.sha256sum] = "755b8d1aeeb21e65946b1664f7bb30c754ddc125e2b6da704eb1d60c262d97ee"
 
 URI_x86_64_v2_python3-furo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-furo-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-furo;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-furo}"
-SRC_URI[x86_64_v2_python3-furo.sha256sum] = "e5ef43cd94bef51c1b83357b6445263263d5974dd8b77b8c8770888a287cc079"
+SRC_URI[x86_64_v2_python3-furo.sha256sum] = "31b26233ca7ba6c5cfc27e465ad8029860f3a30214b1e45c2c60707cb8257859"
 
 URI_aarch64_python-furo-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-furo-doc-2024.08.06-1.el10_0.noarch.rpm;name=aarch64_python-furo-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-furo-doc}"

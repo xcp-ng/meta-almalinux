@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "7af75ee900701c79c84343fd71b850ab8a0179ea4f6c477a6ee528
 
 URI_x86_64_v2_python-olefile-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-olefile-doc-0.47-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-olefile-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-olefile-doc}"
-SRC_URI[x86_64_v2_python-olefile-doc.sha256sum] = "90beba0109a12745159c896b9d855fbc691d1c4eb6ab505bf8dd2235d351e107"
+SRC_URI[x86_64_v2_python-olefile-doc.sha256sum] = "641e43262d10c9c2bdb6467a1f15960c00473d78137b0678f982d2c9f8f803ed"
 
 URI_x86_64_v2_python3-olefile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-olefile-0.47-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-olefile;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-olefile}"
-SRC_URI[x86_64_v2_python3-olefile.sha256sum] = "9814de5a390fcd5f013dd4b6d2d1adff132bc1de8a801c581735fb7ddfe89aed"
+SRC_URI[x86_64_v2_python3-olefile.sha256sum] = "38001beef552d10cd958ce280539dae313a9d21cc251d662f5a6a62a2f183fac"
 
 URI_aarch64_python-olefile-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-olefile-doc-0.47-5.el10_0.noarch.rpm;name=aarch64_python-olefile-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-olefile-doc}"

@@ -17,7 +17,7 @@ SRC_URI[src.sha256sum] = "b6bfe1479807a2ba9962d5b8c0f355fc7a48559460dd4dac61ea10
 URI_x86_64_v2_perl-Moose = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Moose-2.2207-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Moose;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Moose}"
 SRC_URI[x86_64_v2_perl-Moose.sha256sum] = "12e01f1602f017ad44c1d69e60e3f3dc0a60f43400b48b6cac6e671f675932ec"
-RPROVIDES:perl-Moose:x86_64_v2 = "virtual/perl_Any-Moose__ge_0.40"
+RPROVIDES:perl-Moose:append:x86_64_v2 = " virtual/perl_Any-Moose__ge_0.40"
 
 URI_x86_64_v2_perl-Test-Moose = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Moose-2.2207-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Test-Moose;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Moose}"
@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_perl-Test-Moose.sha256sum] = "f1aced6a2e7e2b384162c6987aa968a3
 URI_aarch64_perl-Moose = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Moose-2.2207-1.el10_0.aarch64.rpm;name=aarch64_perl-Moose;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Moose}"
 SRC_URI[aarch64_perl-Moose.sha256sum] = "65c3f737547e65dfe78083fc9c6564a2f7ce679df1528f41c83ce6ee7c47a42c"
-RPROVIDES:perl-Moose:aarch64 = "virtual/perl_Any-Moose__ge_0.40"
+RPROVIDES:perl-Moose:append:aarch64 = " virtual/perl_Any-Moose__ge_0.40"
 
 URI_aarch64_perl-Test-Moose = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Moose-2.2207-1.el10_0.aarch64.rpm;name=aarch64_perl-Test-Moose;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Test-Moose}"
@@ -73,7 +73,3 @@ RDEPENDS:perl-Test-Moose = " \
  perl-Test-Simple \
  perl-libs \
  "
-
-PROVIDES:append:x86_64_v2 = " rpm/virtual/perl_Any-Moose__ge_0.40"
-
-PROVIDES:append:aarch64 = " rpm/virtual/perl_Any-Moose__ge_0.40"

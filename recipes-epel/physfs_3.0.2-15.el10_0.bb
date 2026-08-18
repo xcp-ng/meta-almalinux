@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "d0119e42cf44b12fabc068a67d1b6a71a76e512ecb9f3d68115b89
 
 URI_x86_64_v2_physfs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_physfs}"
-SRC_URI[x86_64_v2_physfs.sha256sum] = "f71f9719dceaf752d25a2d8ddcda5349fceff64da4049f70f670f646f7204353"
+SRC_URI[x86_64_v2_physfs.sha256sum] = "6809a2064fdd79aa13ce15d5964cff68ebf4aa91afe8fa46dc49fd4be1df654f"
 
 URI_x86_64_v2_physfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-devel-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_physfs-devel}"
-SRC_URI[x86_64_v2_physfs-devel.sha256sum] = "239d6a44f0a88e06cc3ba76d9dde1bb09559e00f6832dace00f09ffc69a3e350"
+SRC_URI[x86_64_v2_physfs-devel.sha256sum] = "4d7aca8c6098886ec016329177e5e4539c7bcd7de3120b702799a6c4116d2b62"
 
 URI_aarch64_physfs = "${EPEL_MIRROR}/aarch64/Packages/p/physfs-3.0.2-15.el10_0.aarch64.rpm;name=aarch64_physfs;unpack=0"
 SRC_URI:append = " ${URI_aarch64_physfs}"

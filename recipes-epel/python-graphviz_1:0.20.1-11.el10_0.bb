@@ -17,11 +17,11 @@ SRC_URI[src.sha256sum] = "fe582d662470d0396a2c5ef48c249d6b6e1c81ee9021d2bf923ff1
 
 URI_x86_64_v2_python-graphviz-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-graphviz-doc-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-graphviz-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-graphviz-doc}"
-SRC_URI[x86_64_v2_python-graphviz-doc.sha256sum] = "d59e72e4c54b32b425ec7d8965ea41d4dc96b333bbcebd89bd2cf5ad62307608"
+SRC_URI[x86_64_v2_python-graphviz-doc.sha256sum] = "ee3594e89ab94ffe096b602ecbe29604865f4706d14ba43fc495108e16be2245"
 
 URI_x86_64_v2_python3-graphviz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-graphviz-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-graphviz;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-graphviz}"
-SRC_URI[x86_64_v2_python3-graphviz.sha256sum] = "48f4aa75c472defa3fda0b673fb8648841b63c155d79c4678a8a563eb2239925"
+SRC_URI[x86_64_v2_python3-graphviz.sha256sum] = "445bd7a823e1f81b098a167a191a365c1c9788d466a9a84e6e7e35425c5d2872"
 
 URI_aarch64_python-graphviz-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-graphviz-doc-0.20.1-11.el10_0.noarch.rpm;name=aarch64_python-graphviz-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-graphviz-doc}"

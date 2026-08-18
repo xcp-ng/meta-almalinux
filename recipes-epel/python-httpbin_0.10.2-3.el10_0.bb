@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "db2fbb4f38ad3dd22d9d724084f064a4f700d82a6c6cdedba663c0
 
 URI_x86_64_v2_python3-httpbin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-httpbin-0.10.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-httpbin;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-httpbin}"
-SRC_URI[x86_64_v2_python3-httpbin.sha256sum] = "9ce0100b5825e1567be75560927a1416af2aab72fef337aaae38e0b2eb1dd99d"
+SRC_URI[x86_64_v2_python3-httpbin.sha256sum] = "7c14182b7d220b8770bee3b17253c171eba8fa6864f2cb0877548bbecc40c4da"
 
 URI_aarch64_python3-httpbin = "${EPEL_MIRROR}/aarch64/Packages/p/python3-httpbin-0.10.2-3.el10_0.noarch.rpm;name=aarch64_python3-httpbin;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-httpbin}"

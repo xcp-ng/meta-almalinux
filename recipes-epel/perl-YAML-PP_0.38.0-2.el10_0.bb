@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "1caf458b9cfb214b081355dfbe3a4ab873c14af5869b8b15a37ff7
 
 URI_x86_64_v2_perl-YAML-PP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-PP}"
-SRC_URI[x86_64_v2_perl-YAML-PP.sha256sum] = "2dfed8c95db7bb4ab880997067de5a5932272241b750b9f613b5b6bdca6761e0"
+SRC_URI[x86_64_v2_perl-YAML-PP.sha256sum] = "541e2092d490c3978c7dbcfe8df80163fa3b50ecd57b82a1d3733a7f53117820"
 
 URI_x86_64_v2_perl-YAML-PP-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-tests-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP-tests;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-PP-tests}"
-SRC_URI[x86_64_v2_perl-YAML-PP-tests.sha256sum] = "bdbbdd6aa09d5616a426a685b069c4deaabe73bf1c10b62f97a9137ad1745221"
+SRC_URI[x86_64_v2_perl-YAML-PP-tests.sha256sum] = "e70842d009913053abf6eaa01151c395c76461e261f6d0fa51ee431646097aa8"
 
 URI_aarch64_perl-YAML-PP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-PP-0.38.0-2.el10_0.noarch.rpm;name=aarch64_perl-YAML-PP;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-YAML-PP}"

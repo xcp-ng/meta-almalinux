@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "574161822e05d40f5fda654d58884376698f281358e8ea2f88cc4b
 
 URI_x86_64_v2_python-pycares-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pycares-doc-4.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pycares-doc;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python-pycares-doc}"
-SRC_URI[x86_64_v2_python-pycares-doc.sha256sum] = "93a74632fa8b531114d333568d0fee7b8c72b769a2d1a006b71d410d6909eb55"
+SRC_URI[x86_64_v2_python-pycares-doc.sha256sum] = "21f268f65a2bfc9134a46d96893900fe5eb4ea13dcd21c13dcb7c84390452df9"
 
 URI_x86_64_v2_python3-pycares = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pycares-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pycares;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-pycares}"
-SRC_URI[x86_64_v2_python3-pycares.sha256sum] = "9a1121018830a3547c32b0f27a6d8b2d4efc6f056aa2218f10aad91ce9932921"
+SRC_URI[x86_64_v2_python3-pycares.sha256sum] = "d763fb53bfbc689b82f0675abf2796480fe0454d60e165601081591043cf849d"
 
 URI_aarch64_python-pycares-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pycares-doc-4.3.0-1.el10_0.noarch.rpm;name=aarch64_python-pycares-doc;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python-pycares-doc}"

@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "5f59b0502d6ab5a5136d797b549e2fb9d2de302d2fc2ad800015cd
 
 URI_x86_64_v2_perl-PerlIO-gzip = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PerlIO-gzip-0.20-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-PerlIO-gzip;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-PerlIO-gzip}"
-SRC_URI[x86_64_v2_perl-PerlIO-gzip.sha256sum] = "2e136b5a7b6fdea5644154b9196f3369d4bb8d666a2e0dffa3a1b9dcf20f9e0d"
+SRC_URI[x86_64_v2_perl-PerlIO-gzip.sha256sum] = "557e876c67b51157ee0c4bf68f7d1845fffecc7d3604ab72745357ae79c8effd"
 
 URI_aarch64_perl-PerlIO-gzip = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PerlIO-gzip-0.20-21.el10_0.aarch64.rpm;name=aarch64_perl-PerlIO-gzip;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-PerlIO-gzip}"

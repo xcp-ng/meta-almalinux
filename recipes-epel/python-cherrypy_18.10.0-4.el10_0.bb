@@ -16,11 +16,11 @@ SRC_URI[src.sha256sum] = "afe6c95a97d88aa29e8d7a28c72023d32f6a8d95dbd2b9dcc2ff8b
 
 URI_x86_64_v2_python3-cherrypy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cherrypy}"
-SRC_URI[x86_64_v2_python3-cherrypy.sha256sum] = "d762122bad9919eae6b141de2d1de4df4baf358c060008c7d1ed7ed4e05b2ef2"
+SRC_URI[x86_64_v2_python3-cherrypy.sha256sum] = "6b9ab08c636ec64f50f9ae33d795d35404d6591bab569e0358dd557e5ae1df96"
 
 URI_x86_64_v2_python3-cherrypy-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-devel-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_python3-cherrypy-devel}"
-SRC_URI[x86_64_v2_python3-cherrypy-devel.sha256sum] = "e30afa09678510ca1af215c703ad6211949cf388683a5437eea89fe52751c139"
+SRC_URI[x86_64_v2_python3-cherrypy-devel.sha256sum] = "7b9a34f6518ec9d890915b172c869d166966bef4b611c1c032d675e21f25ec78"
 
 URI_aarch64_python3-cherrypy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cherrypy-18.10.0-4.el10_0.noarch.rpm;name=aarch64_python3-cherrypy;unpack=0"
 SRC_URI:append = " ${URI_aarch64_python3-cherrypy}"

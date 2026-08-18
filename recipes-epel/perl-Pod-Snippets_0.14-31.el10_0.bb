@@ -15,7 +15,7 @@ SRC_URI[src.sha256sum] = "00f9b080279964eaa1b7063bba4af09b2132539dd64a3b3630e7f0
 
 URI_x86_64_v2_perl-Pod-Snippets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Snippets-0.14-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Snippets;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Snippets}"
-SRC_URI[x86_64_v2_perl-Pod-Snippets.sha256sum] = "2d13907cb468334e29ceaa20b1cfd6f6485887012622482ca0c65e74171618bf"
+SRC_URI[x86_64_v2_perl-Pod-Snippets.sha256sum] = "c6501c94ccbb96636c824e16f06f46b8106458aeab42af799f15793649a3e2a8"
 
 URI_aarch64_perl-Pod-Snippets = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Snippets-0.14-31.el10_0.noarch.rpm;name=aarch64_perl-Pod-Snippets;unpack=0"
 SRC_URI:append = " ${URI_aarch64_perl-Pod-Snippets}"

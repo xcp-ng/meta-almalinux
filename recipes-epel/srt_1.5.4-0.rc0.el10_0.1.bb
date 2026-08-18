@@ -17,15 +17,15 @@ SRC_URI[src.sha256sum] = "ae95ff9677dbc9f114673b4bc0471512349fd13f411c38ff717132
 
 URI_x86_64_v2_srt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_srt}"
-SRC_URI[x86_64_v2_srt.sha256sum] = "6814974a745230c278891fafb9c47aac552e540f0c8163d167b1e6f24d8a62b9"
+SRC_URI[x86_64_v2_srt.sha256sum] = "3539e4ec3fd9b6d2c89e8e0bacbea6778045d9cee892f9da7a51d06afa645b7a"
 
 URI_x86_64_v2_srt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-devel-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-devel;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_srt-devel}"
-SRC_URI[x86_64_v2_srt-devel.sha256sum] = "9a56b43d7da6cfe5221234c7b095dabb1eea9c5454a74e4956f518c48f6f1283"
+SRC_URI[x86_64_v2_srt-devel.sha256sum] = "15bdee3fff198c66d2cef237b21bcc27a4fec476e72d122e7ce4a5dc4ea15336"
 
 URI_x86_64_v2_srt-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-libs-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-libs;unpack=0"
 SRC_URI:append = " ${URI_x86_64_v2_srt-libs}"
-SRC_URI[x86_64_v2_srt-libs.sha256sum] = "69914f4972a3e86e655b7c6dd84a6c52c7475c5097c15ee5ac3dc3677080edc0"
+SRC_URI[x86_64_v2_srt-libs.sha256sum] = "f94bf6d664859ee922234107c9dbc7abf56a3cf4cdf34fcf8532275cda2b4877"
 
 URI_aarch64_srt = "${EPEL_MIRROR}/aarch64/Packages/s/srt-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt;unpack=0"
 SRC_URI:append = " ${URI_aarch64_srt}"
