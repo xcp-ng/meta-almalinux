@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-paginate-0.5.6-1.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "92992ab7347d0df41c55ce490fa186c0e6344da79589adc43b44a86db3f795db"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paginate-0.5.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paginate;unpack=0"
-SRC_URI[x86_64_v2_python3-paginate.sha256sum] = "e269558b3200228a39f22772b47f5a16c1bd0bb5dd7fa1f3e911b082428420b7"
+SRC_URI[x86_64_v2_python3-paginate.sha256sum] = "5ec0d6053e62163c3c248f3fbd3522035f651098895a09e4ee58145c0f26f17f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-paginate-0.5.6-1.el10_0.noarch.rpm;name=aarch64_python3-paginate;unpack=0"
 SRC_URI[aarch64_python3-paginate.sha256sum] = "6f9bcc76b9f95717fee3d321d4367d7a9d4e35bed5ba5901731987a8a5a9f064"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-testfixtures-8.3.0-2.el10_0.src.r
 SRC_URI[src.sha256sum] = "56ad278bae0518b2a306018d1b093c17ab554c496137819c7054bae9d357f21e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testfixtures-8.3.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testfixtures;unpack=0"
-SRC_URI[x86_64_v2_python3-testfixtures.sha256sum] = "0a7425c9842686dd5bb440e9e21ce8649bff45ca5b1220b10cd813a71282da2e"
+SRC_URI[x86_64_v2_python3-testfixtures.sha256sum] = "728e7117038fcd900efa92ebfc1bc25b4cfe5d8770f410588ecf0f03f5e1f425"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-testfixtures-8.3.0-2.el10_0.noarch.rpm;name=aarch64_python3-testfixtures;unpack=0"
 SRC_URI[aarch64_python3-testfixtures.sha256sum] = "7aadb15bc86a3806751bf8b6936fe094a9a7586aafee132855fd19576704893c"

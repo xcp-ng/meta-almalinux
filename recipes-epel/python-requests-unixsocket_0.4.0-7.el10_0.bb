@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-unixsocket-0.4.0-7.el10_
 SRC_URI[src.sha256sum] = "4c7533377e676d75578ce11b2975d668e26a43256e98b6402c1f6cedae9ad093"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-unixsocket-0.4.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-unixsocket;unpack=0"
-SRC_URI[x86_64_v2_python3-requests-unixsocket.sha256sum] = "80a90588295e79306a79dfbf645b962e97c0d28d4b1e956d771b8aca73bda887"
+SRC_URI[x86_64_v2_python3-requests-unixsocket.sha256sum] = "451afba93e69c37fcf146fa92c32b25bf3680932b5f8f3c817629df364435949"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-unixsocket-0.4.0-7.el10_0.noarch.rpm;name=aarch64_python3-requests-unixsocket;unpack=0"
 SRC_URI[aarch64_python3-requests-unixsocket.sha256sum] = "ae5ca4fa70e4d3a73a27efc1df2ea8795c8419f7d6a51dbbe3ab550d13c3b053"

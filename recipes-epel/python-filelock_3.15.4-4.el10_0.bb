@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-filelock-3.15.4-4.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "3a6d1696fb1e72582dcd5d8553a5e1c43fb314bd735be790d32cc95554c034f7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-filelock-3.15.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-filelock;unpack=0"
-SRC_URI[x86_64_v2_python3-filelock.sha256sum] = "ce1793e2732a8533286987dbd23c5450b8c8c78a5243f22f5c420237f6db40cd"
+SRC_URI[x86_64_v2_python3-filelock.sha256sum] = "2bb557cad853c7d5de5e22a95a9d01456c3d2bf07212635c4ae991f6df0ed6aa"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-filelock-3.15.4-4.el10_0.noarch.rpm;name=aarch64_python3-filelock;unpack=0"
 SRC_URI[aarch64_python3-filelock.sha256sum] = "db08ceb47aa81a7b6a4f1f8c1de888157fc2b0898c3ea9f9506cbb74d5c37d08"

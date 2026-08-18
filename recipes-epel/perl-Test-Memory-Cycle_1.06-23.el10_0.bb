@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Memory-Cycle-1.06-23.el10_0.sr
 SRC_URI[src.sha256sum] = "41ca66613aa3130f7540ac4c718e2a019c40a1d9131b676a4efa1b9f8235dfeb"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Memory-Cycle-1.06-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Memory-Cycle;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-Memory-Cycle.sha256sum] = "33cb328913168690d6036c0ca2b666b82c971ba47f70ba935f254f9eb1c41aef"
+SRC_URI[x86_64_v2_perl-Test-Memory-Cycle.sha256sum] = "cd8ee40657908335e2b532556a000e10534fc9c0dbbe43028ea2115109a00ff7"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Memory-Cycle-1.06-23.el10_0.noarch.rpm;name=aarch64_perl-Test-Memory-Cycle;unpack=0"
 SRC_URI[aarch64_perl-Test-Memory-Cycle.sha256sum] = "0d6848e9ecd98471c742211a7a4e22b34e439a0536aee023a41293ca1127f100"

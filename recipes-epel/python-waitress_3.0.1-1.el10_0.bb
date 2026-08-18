@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-waitress-3.0.1-1.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "5afc4312616c2b8d83e87bd21684a2397f9e19fde3105a04c67221ba4f501fd2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-waitress-3.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-waitress;unpack=0"
-SRC_URI[x86_64_v2_python3-waitress.sha256sum] = "a3e9dbf2fc28b4bf3abbdc98da499cba2cc2447e7ac2777fa84df214e48275f8"
+SRC_URI[x86_64_v2_python3-waitress.sha256sum] = "5530036632aec9360f93352e03ff0c66b4507f53734281b724121019c269d2bc"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-waitress-3.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-waitress;unpack=0"
 SRC_URI[aarch64_python3-waitress.sha256sum] = "f729c9b70432a16e73ce03d9088a5996778abe31746caacc663b629dc9b0f77b"

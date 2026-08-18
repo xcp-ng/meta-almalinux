@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-py27hash-1.1.0-17.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "a1797a4e88143cd3b6ca13e3adcca93b21b36e31411060a4884dab2d03a2af5b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-py27hash-1.1.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-py27hash;unpack=0"
-SRC_URI[x86_64_v2_python3-py27hash.sha256sum] = "a79970e36203c0112b20349b2dc13b7622b08e070aaffd91bc6ee3d782968bd0"
+SRC_URI[x86_64_v2_python3-py27hash.sha256sum] = "b56fe0b25c3260f07d9654a82696d46a100cbe1a336626173043ae10667785c9"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-py27hash-1.1.0-17.el10_0.noarch.rpm;name=aarch64_python3-py27hash;unpack=0"
 SRC_URI[aarch64_python3-py27hash.sha256sum] = "dbf42dac2e2c4c358e7ab38546ce2911365ed5a862b15f6fb322a90c1176d0d9"

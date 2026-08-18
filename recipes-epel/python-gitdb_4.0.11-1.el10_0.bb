@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-gitdb-4.0.11-1.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "c9661606b759279fce8608ee83e0ab260bd9859b8249d7ce7ba0660dae2ead2c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gitdb-4.0.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-gitdb;unpack=0"
-SRC_URI[x86_64_v2_python3-gitdb.sha256sum] = "1e31657a0f30f61fedb7a3f6eef2f065741bb4fa8133f4dbc3600dd90a62e8ef"
+SRC_URI[x86_64_v2_python3-gitdb.sha256sum] = "29dfa7f0783d64bb7e464b3691afa9e1ad212be61c35bcc8fc70e8c87b07a45b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-gitdb-4.0.11-1.el10_0.noarch.rpm;name=aarch64_python3-gitdb;unpack=0"
 SRC_URI[aarch64_python3-gitdb.sha256sum] = "42ee104ff3bb37148796ed84ef71b6a661d5387a7a0c263d12c627b6183dfa0b"

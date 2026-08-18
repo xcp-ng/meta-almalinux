@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pslib-0.4.6-7.el10_0.src.rpm;name=src;un
 SRC_URI[src.sha256sum] = "507d101ebd068329a8365efc75ab5894a6aff11f53148358f6d24cbf44d723ea"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib;unpack=0"
-SRC_URI[x86_64_v2_pslib.sha256sum] = "d1ca7c37641ac1dd8512e76b436a54493dfd225dabd312a4b7f765dd4d405fd5"
+SRC_URI[x86_64_v2_pslib.sha256sum] = "1cae303f2ee056e5320f7b4743b0345e153d667723210bb84dd083c3cbcfb226"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-devel-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib-devel;unpack=0"
-SRC_URI[x86_64_v2_pslib-devel.sha256sum] = "5991cc3f9378377ffbfcb42fd79599bc25377087eee495ed74f6662ba08ea698"
+SRC_URI[x86_64_v2_pslib-devel.sha256sum] = "30e381fbb427e1f21add3774e96c04df6037abcc647f8b660ca3bd112a2600f7"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pslib-0.4.6-7.el10_0.aarch64.rpm;name=aarch64_pslib;unpack=0"
 SRC_URI[aarch64_pslib.sha256sum] = "4097ba2e81767ab573f45ab9ad029ba99ff8d8cec7d5641364945c82549acc0b"

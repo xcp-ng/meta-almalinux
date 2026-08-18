@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-defaults-0.2.9-1.el10_0.sr
 SRC_URI[src.sha256sum] = "23de90f784d79353c28436a9b1730cb10284d74c0915fe9ca8871779fbef77bc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-defaults-0.2.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-defaults;unpack=0"
-SRC_URI[x86_64_v2_python3-colcon-defaults.sha256sum] = "d973d7905c3774c7df5cb6e16c010e21a4b2c99514affc91384899d15cda162c"
+SRC_URI[x86_64_v2_python3-colcon-defaults.sha256sum] = "ef58f44ac22fab2594d3386f17255870a6449d5333058109184ef1a94f918dbf"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-defaults-0.2.9-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-defaults;unpack=0"
 SRC_URI[aarch64_python3-colcon-defaults.sha256sum] = "d375dc5d84bd99d9866890a6c6589e96d86761fd759f117ddd6243ee133c4cd2"

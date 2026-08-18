@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sereal-Decoder-5.004-1.el10_0.src.r
 SRC_URI[src.sha256sum] = "43c8d5d273f1196044b8ae78095961b02f5456f7820ef5d8aec58f0adc9b79eb"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sereal-Decoder-5.004-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sereal-Decoder;unpack=0"
-SRC_URI[x86_64_v2_perl-Sereal-Decoder.sha256sum] = "03166a8b9863ed343d67b0b92660af78e9df162104f49d2ece0feeeb3daa9e85"
+SRC_URI[x86_64_v2_perl-Sereal-Decoder.sha256sum] = "a32aeb56f4b444e174708315ac5efde1e932c9b8ffed75c7de983243f3ad32c1"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sereal-Decoder-5.004-1.el10_0.aarch64.rpm;name=aarch64_perl-Sereal-Decoder;unpack=0"
 SRC_URI[aarch64_perl-Sereal-Decoder.sha256sum] = "2b1d89523b1f7d59e2a9d38dd357ab50593e9c19607ee1be065996d2642133e0"

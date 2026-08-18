@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Text-Table-1.135-6.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "c5edc1f4731e7d6fc051285299b288670b93737bddb1b8d5543ec632543c947e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Table-1.135-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Table;unpack=0"
-SRC_URI[x86_64_v2_perl-Text-Table.sha256sum] = "5f512f2d44d9f71b0564abef232956a6cbc821e4b12c180ef4e5355ddb28a4f6"
+SRC_URI[x86_64_v2_perl-Text-Table.sha256sum] = "3e9bb8247fce5b881ec872269ce2f47480d2205bac0a49e8c7b8f7ffd6c06c68"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Table-1.135-6.el10_0.noarch.rpm;name=aarch64_perl-Text-Table;unpack=0"
 SRC_URI[aarch64_perl-Text-Table.sha256sum] = "d85065700d8cac41c73a94dca6e3e96f7cb2cf118a965f9c1619e72088730e4a"

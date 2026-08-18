@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-spnego-0.11.1-1.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "61776e4ea1b5f67ce00bbb606e0b15711e7f88a669651ca8b59fd401f35ced38"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego;unpack=0"
-SRC_URI[x86_64_v2_python3-spnego.sha256sum] = "2a316a1080c349840a5c8a29ad31477e490d41099175bf44cb47840f680bf43b"
+SRC_URI[x86_64_v2_python3-spnego.sha256sum] = "585f37dd96143689536230cdc36c6d013c33a467f67f9a9994a003469eecc81b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego+kerberos-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego+kerberos;unpack=0"
-SRC_URI[x86_64_v2_python3-spnego+kerberos.sha256sum] = "fd17fa6894c851123cc014b92bc7518e4fdfb2240eea96340b9e3d80b4297711"
+SRC_URI[x86_64_v2_python3-spnego+kerberos.sha256sum] = "78021d0592652746055d26190e634221ee629ee81397969b26fd5369daec7637"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-spnego-0.11.1-1.el10_0.noarch.rpm;name=aarch64_python3-spnego;unpack=0"
 SRC_URI[aarch64_python3-spnego.sha256sum] = "e7f82a73448053329d46591dadac3644aeeb23c5aabf9d837e79fe92bdda98a2"

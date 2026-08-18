@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/psi-notify-1.3.1-7.el10_0.src.rpm;name=s
 SRC_URI[src.sha256sum] = "978b14994f7a47ca0389a58d5c0fa904c47bbbf6ca3b49cd1ba4e84693758ef2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/psi-notify-1.3.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_psi-notify;unpack=0"
-SRC_URI[x86_64_v2_psi-notify.sha256sum] = "9f5864300dad4c1dae1c1ab88b19ae29e75165a888ded483ce4a7656c9b7ca8c"
+SRC_URI[x86_64_v2_psi-notify.sha256sum] = "53f88af51507b315b546f7bcf61e3e88d6db38eb0b5fc00ac9c502f5212e1f0d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/psi-notify-1.3.1-7.el10_0.aarch64.rpm;name=aarch64_psi-notify;unpack=0"
 SRC_URI[aarch64_psi-notify.sha256sum] = "42ba50c3fe3a7b2ed599ac8d27e409ae004ab35274e2a27ad7153abb54b25cf1"

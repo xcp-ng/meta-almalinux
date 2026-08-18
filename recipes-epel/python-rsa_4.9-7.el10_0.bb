@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rsa-4.9-7.el10_0.src.rpm;name=src
 SRC_URI[src.sha256sum] = "3ca2025d915f8b36206860df131136e1f5deb8b736a61ffcd03f6797b87176df"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rsa-4.9-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rsa;unpack=0"
-SRC_URI[x86_64_v2_python3-rsa.sha256sum] = "6b1ae7c8efb3eb5e2bcb7c603448a790800f7ca94dea2a1b747574aead9c32e6"
+SRC_URI[x86_64_v2_python3-rsa.sha256sum] = "50139b95fed4a1ff891e4586ddb40c11b21ec612ce6f93f116c86b99a2f5468c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rsa-4.9-7.el10_0.noarch.rpm;name=aarch64_python3-rsa;unpack=0"
 SRC_URI[aarch64_python3-rsa.sha256sum] = "acbb8602d9ed5e7ef986fbc503b0149af8cd3789a088d0483f68b8a5bffd21d4"

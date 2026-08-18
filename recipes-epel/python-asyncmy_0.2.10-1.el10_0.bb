@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-asyncmy-0.2.10-1.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "770a3b4b230dec89e374f99978b96e46b4688b838bd67aeab826638639641a0c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asyncmy-0.2.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-asyncmy;unpack=0"
-SRC_URI[x86_64_v2_python3-asyncmy.sha256sum] = "f7e391a472aa505ac9111e483410861eb2897e398fb93aa59e0efa05aa3791ce"
+SRC_URI[x86_64_v2_python3-asyncmy.sha256sum] = "4cb488b102e91365ca2bc4df5dd31c65580e1060a34845dc381b6bdbd1fc35d3"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-asyncmy-0.2.10-1.el10_0.aarch64.rpm;name=aarch64_python3-asyncmy;unpack=0"
 SRC_URI[aarch64_python3-asyncmy.sha256sum] = "32abea17e529e6e353bfb3ae527db2bda3c5828099e0062ff93dfe11fbcba048"

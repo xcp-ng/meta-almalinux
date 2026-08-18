@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-locket-1.0.0-12.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "640e2c2c8521f1d26c86d683491e4eb0998a4c7ee45a3a023ddc127a861661d8"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-locket-1.0.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-locket;unpack=0"
-SRC_URI[x86_64_v2_python3-locket.sha256sum] = "7da29952bb368523fdef74464a0a522463691cde4c0452f03ee97b10241b1374"
+SRC_URI[x86_64_v2_python3-locket.sha256sum] = "675e49f7022492ccdc84017de4ee1d0d98fb87ee68d5fe5fe944c781f4e4403a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-locket-1.0.0-12.el10_0.noarch.rpm;name=aarch64_python3-locket;unpack=0"
 SRC_URI[aarch64_python3-locket.sha256sum] = "6195b9a30eedd043c914057d490b70cb9a86064bfb181ef762fa954ce0acea3f"

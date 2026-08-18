@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyperclip-1.8.2-1.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "448b3cbf0063816b8f2b7b4fa09c724ce6f2c4a382688b375668d546d189c591"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyperclip-doc-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyperclip-doc;unpack=0"
-SRC_URI[x86_64_v2_python-pyperclip-doc.sha256sum] = "425584a493575540a1f858dc50e47899fae85f970843e45ab9f3a668044f8e17"
+SRC_URI[x86_64_v2_python-pyperclip-doc.sha256sum] = "5d6e5159de290cb144b4ac03ed88c91bb5c17f61b02756a9054d8b17d8acb9dc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyperclip-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyperclip;unpack=0"
-SRC_URI[x86_64_v2_python3-pyperclip.sha256sum] = "fcb068a1b3de3a605944b2bfb327a4b686c33fb0bd623e60c194b9554f5cd0e0"
+SRC_URI[x86_64_v2_python3-pyperclip.sha256sum] = "c36ec7b580d168d22de0d55e6edd8a2b036198ff632f18dd22724370085429d1"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pyperclip-doc-1.8.2-1.el10_0.noarch.rpm;name=aarch64_python-pyperclip-doc;unpack=0"
 SRC_URI[aarch64_python-pyperclip-doc.sha256sum] = "b5e5d8680c313a8a396ca6d13288dd2dfc8db5ebd4c3e5f7a84d672123678335"

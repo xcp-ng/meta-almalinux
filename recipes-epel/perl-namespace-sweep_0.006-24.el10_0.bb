@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-namespace-sweep-0.006-24.el10_0.src
 SRC_URI[src.sha256sum] = "1b23fc1defd1281db8d77d366437de197edf110c970e81fdef6af39abe9295f7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-namespace-sweep-0.006-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-namespace-sweep;unpack=0"
-SRC_URI[x86_64_v2_perl-namespace-sweep.sha256sum] = "ca74f7add2af6f1e07bd568302071ad25f7cfe5291a4043acd70140b72fe53e6"
+SRC_URI[x86_64_v2_perl-namespace-sweep.sha256sum] = "b837d2241458803fd18d2cc7065a5f39e78e516041196d70d73e1f572faee102"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-namespace-sweep-0.006-24.el10_0.noarch.rpm;name=aarch64_perl-namespace-sweep;unpack=0"
 SRC_URI[aarch64_perl-namespace-sweep.sha256sum] = "641139abdc2a73a9417108cad138ed49eb946a36522f3fd570dee768918c2448"

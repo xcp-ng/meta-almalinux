@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-smartypants-2.0.1-22.el10_0.src.r
 SRC_URI[src.sha256sum] = "a2bba5014ce0d6c5630c2ad5b4ec4a7bc299a532c5a3a7c8ac4f9d3be3c9d494"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-smartypants-doc-2.0.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-smartypants-doc;unpack=0"
-SRC_URI[x86_64_v2_python-smartypants-doc.sha256sum] = "da46a89128d3ba421e332e62fe7ac6cdfbae7215cef5ad15c3f1a2f4d9e3e1c1"
+SRC_URI[x86_64_v2_python-smartypants-doc.sha256sum] = "efb9fd66644be603580a633fb36c9c060276589b0cd9e8573a116beb48cabeb2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smartypants-2.0.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smartypants;unpack=0"
-SRC_URI[x86_64_v2_python3-smartypants.sha256sum] = "202edc2b73e75d76fd266cc76b4f39c7aacaec8264449f8c86e7ac01e0323794"
+SRC_URI[x86_64_v2_python3-smartypants.sha256sum] = "1ef6713bdfaab0d0a6a12faa0339539558277053eb9be38911ed365c92b77087"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-smartypants-doc-2.0.1-22.el10_0.noarch.rpm;name=aarch64_python-smartypants-doc;unpack=0"
 SRC_URI[aarch64_python-smartypants-doc.sha256sum] = "b652738394e4f7d942cc7f6afdadc67687d35c1b60e0acb6673afd4c79a7125f"

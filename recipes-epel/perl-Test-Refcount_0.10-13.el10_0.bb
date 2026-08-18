@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Refcount-0.10-13.el10_0.src.rp
 SRC_URI[src.sha256sum] = "15e98061e402b5f0f22b951d4d6ddbb65aef8cbf5c0df8d9af3286a45dac610d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Refcount-0.10-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Refcount;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-Refcount.sha256sum] = "0ab54fb6dc6f811a9b0d1a5e1a76cca2fbba97ba31846258e503951697c418bd"
+SRC_URI[x86_64_v2_perl-Test-Refcount.sha256sum] = "3f060e805aa34b24f3baa6e7bb197feb2770e1a270e8cab60084b18bc26fb6be"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Refcount-0.10-13.el10_0.noarch.rpm;name=aarch64_perl-Test-Refcount;unpack=0"
 SRC_URI[aarch64_perl-Test-Refcount.sha256sum] = "88dcc9db2419ff481b89bc200e5e9c88be82cc1fa1419778345556e6d5aadce8"

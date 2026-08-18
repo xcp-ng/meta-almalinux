@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-setproctitle-1.3.3-4.el10_0.src.r
 SRC_URI[src.sha256sum] = "5b92bf529ad3a59b217477942f7cbf3cfb1c2df613f3c53a4232fbc2533333b2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-setproctitle-1.3.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-setproctitle;unpack=0"
-SRC_URI[x86_64_v2_python3-setproctitle.sha256sum] = "df84073467e5bb707f7eff688b068767bf65b445fc8e0fb141ca18028e5f6a12"
+SRC_URI[x86_64_v2_python3-setproctitle.sha256sum] = "4fe6d309d1c6ddfa051d2b8898a2c96105742a629802ade96c4e95a0f2f6bb6b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-setproctitle-1.3.3-4.el10_0.aarch64.rpm;name=aarch64_python3-setproctitle;unpack=0"
 SRC_URI[aarch64_python3-setproctitle.sha256sum] = "675be5ad19e79dbbdfcbc70883ac6ba9775638e6b3eee8b6d07803f18bba5557"

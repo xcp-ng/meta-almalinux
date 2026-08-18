@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-reactivex-4.0.4-9.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "2cdf95a9d33e298eefbddeb12ebf2a42bd6922430aaee5d39cc25c8ddf7f1ad1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-reactivex-4.0.4-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-reactivex;unpack=0"
-SRC_URI[x86_64_v2_python3-reactivex.sha256sum] = "9092f8ad0a8e6bfe0139d45335465647f7cce14000103c875366a006fbbeb7b6"
+SRC_URI[x86_64_v2_python3-reactivex.sha256sum] = "73579aca632afc962119c361c2d671156174c84887e165bb0372a4c82cfb21d8"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-reactivex-4.0.4-9.el10_0.noarch.rpm;name=aarch64_python3-reactivex;unpack=0"
 SRC_URI[aarch64_python3-reactivex.sha256sum] = "755605f8b441d635326862ac77d99618a6d46cdd9811d5e24e2dbd297da9afbd"

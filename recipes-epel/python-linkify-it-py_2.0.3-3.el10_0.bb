@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-linkify-it-py-2.0.3-3.el10_0.src.
 SRC_URI[src.sha256sum] = "612c4227ab51951bc97a494af1cc5d0af7e26e85b03f7f9fdf5c66e24c381afc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-linkify-it-py-2.0.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-linkify-it-py;unpack=0"
-SRC_URI[x86_64_v2_python3-linkify-it-py.sha256sum] = "d3405fcd9a30da3f987018c209850166cb3c7d7d2a22e1ad74ab0c205b8470ed"
+SRC_URI[x86_64_v2_python3-linkify-it-py.sha256sum] = "999ccd3dd94e0bcbeddb62f5b3dadf01f1a01cba53bdd2d8e5030055f5bc48a7"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-linkify-it-py-2.0.3-3.el10_0.noarch.rpm;name=aarch64_python3-linkify-it-py;unpack=0"
 SRC_URI[aarch64_python3-linkify-it-py.sha256sum] = "a2bb854eb4a7fa7dd77aade84f3d13d1eb9f9d685520c03d03fe1cc3c63fba8f"

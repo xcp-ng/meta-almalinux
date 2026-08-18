@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-parso-0.8.4-4.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "2d210cb2d87c789a8dcd3432d0ed1dc48de207289e34040f43a01086b60ad023"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-parso-0.8.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-parso;unpack=0"
-SRC_URI[x86_64_v2_python3-parso.sha256sum] = "8d7c6ba73b6c3a2b79b3a663e2171f0e5748ed9463435159770815ee14203908"
+SRC_URI[x86_64_v2_python3-parso.sha256sum] = "b3dcd7b2e954e6cf7785311391be0e59eac12179dbd47ef2e0ca01e8fd6d1920"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-parso-0.8.4-4.el10_0.noarch.rpm;name=aarch64_python3-parso;unpack=0"
 SRC_URI[aarch64_python3-parso.sha256sum] = "c0f72aec86a192e141c09a3b5cdcbc4a006e6c55250fc10ecf314a69bb72ff27"

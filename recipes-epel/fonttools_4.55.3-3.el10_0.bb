@@ -5,7 +5,10 @@ inherit dnf-bridge
 PN = "fonttools"
 PV = "4.55.3"
 PR = "3.el10_0"
-PACKAGES = " \
+PACKAGES:x86_64_v2 = " \
+  \
+"
+PACKAGES:aarch64 = " \
  fonttools \
  python3-fonttools \
  python3-fonttools+graphite \
@@ -16,40 +19,10 @@ PACKAGES = " \
  python3-fonttools+ufo \
  python3-fonttools+unicode \
  python3-fonttools+woff \
- "
+"
 
 SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fonttools-4.55.3-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a121aab664e43e3f7f75686bdb6e470df2da7d330aa3e6e7742567bcd347d1ba"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fonttools-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_fonttools;unpack=0"
-SRC_URI[x86_64_v2_fonttools.sha256sum] = "af89522cabda3c3bd7b3efa0407fd23251b7f38b50cbc640f0e19815e295d201"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools.sha256sum] = "ec9b5b65a846d2f60424b69a6d875779b4e13e7bded3e1472412ed54be45cc81"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+graphite-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+graphite;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+graphite.sha256sum] = "aa0735e5b7b51344933b17ccecda87bce292d4281bcc3828975707772c242ca9"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+interpolatable-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+interpolatable;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+interpolatable.sha256sum] = "9d71ae8b37a82e00b4c67e7f8a9e59f0bd4e86e5c67a6359b2882871b48171cd"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+lxml-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+lxml;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+lxml.sha256sum] = "070528609aa97caeba7320a8b8e05f33324380b31a09eea7c4fa4842265a4961"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+plot-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+plot;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+plot.sha256sum] = "6ffba8f92da7fcd3f149b8fe3abcf4e7ef44fa7060c2acecf539994926f9434f"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+type1-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+type1;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+type1.sha256sum] = "8f24b2b3084691c954371dbbc2ed114bdfc0f6705eb070513470a57cbfe966dc"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+ufo-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+ufo;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+ufo.sha256sum] = "6ed5b55b3cb8eadbffc1d6c3bb32dcace86023cdad675d98e84c888220172d6c"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+unicode-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+unicode;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+unicode.sha256sum] = "968f4a36089e26c0f3941d0d5c67d0cb2cc55eb3bff44c6a104173e44485a168"
-
-SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fonttools+woff-4.55.3-3.el10_0.alma_altarch.0.1.x86_64_v2.rpm;name=x86_64_v2_python3-fonttools+woff;unpack=0"
-SRC_URI[x86_64_v2_python3-fonttools+woff.sha256sum] = "53b50b8fa0f3334e2123e8fd4b5dc8db862dbaf2430fba924c4bc15098309194"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fonttools-4.55.3-3.el10_0.aarch64.rpm;name=aarch64_fonttools;unpack=0"
 SRC_URI[aarch64_fonttools.sha256sum] = "c96ac494c17c49a81c17dd7a783afc2fa136456fdd1534d29b1f4e4d40dcf5fe"

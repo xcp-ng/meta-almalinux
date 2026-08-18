@@ -15,13 +15,13 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-helpdev-0.7.1-10.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "ed8a914c020e350ad29ce855b5db3dd130bb006d0eaec144e6b6e746e8f7479b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-helpdev-doc-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-helpdev-doc;unpack=0"
-SRC_URI[x86_64_v2_python-helpdev-doc.sha256sum] = "c418840fcbc7afbec36adeb5cc5f14991f471624dd3e29a7b644904bfe147f22"
+SRC_URI[x86_64_v2_python-helpdev-doc.sha256sum] = "8391568c41db8b59b34351e95189a908c7e894a80408c875ac1ae2c8c5358fe8"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev;unpack=0"
-SRC_URI[x86_64_v2_python3-helpdev.sha256sum] = "dcd46a0a35fbc167c7111a97a9fb232e393925f687f4a3d2c6b7057a250b20d9"
+SRC_URI[x86_64_v2_python3-helpdev.sha256sum] = "0322860b73c0952ffdd8e715b093c4ab88e533c94753e5a251e0175104015ad5"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev+memory_info-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev+memory_info;unpack=0"
-SRC_URI[x86_64_v2_python3-helpdev+memory_info.sha256sum] = "d2e936fea93d62e85cd2c31c1673f0057b83bb4379e6ab49fb3ea5e2bc64627b"
+SRC_URI[x86_64_v2_python3-helpdev+memory_info.sha256sum] = "12adb13d653c90631d6091f79e7b08915e3732e2bd3bc79107f5bb399e17ee3a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-helpdev-doc-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python-helpdev-doc;unpack=0"
 SRC_URI[aarch64_python-helpdev-doc.sha256sum] = "c379e0085c15f2ae1ab4c96e7fa918cff1a7958eff96968d19b7bf916c2ff6ef"

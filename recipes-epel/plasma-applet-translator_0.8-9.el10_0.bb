@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-applet-translator-0.8-9.el10_0.sr
 SRC_URI[src.sha256sum] = "9cc2e0bf8b6a8e0f84e1a5dd799a9498123d30d889ee96b27325e5b0efbe0de7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-applet-translator-0.8-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-applet-translator;unpack=0"
-SRC_URI[x86_64_v2_plasma-applet-translator.sha256sum] = "7ed8648e78791284d08b20c58491dac6b68faedd38e68f1d60a36e07519584ff"
+SRC_URI[x86_64_v2_plasma-applet-translator.sha256sum] = "480b22460d8391d4f045ed25f26082e5bf9e107f04d84ad97d59a3971638ddbb"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-applet-translator-0.8-9.el10_0.noarch.rpm;name=aarch64_plasma-applet-translator;unpack=0"
 SRC_URI[aarch64_plasma-applet-translator.sha256sum] = "17f3e30c0b010cd5689b94ecd4d1996aba4bbbb827526822ac2686d30b8033cb"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-RegExp-0.04-34.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "a5eb48d711dae9b5f803627eae0c0c0bfadba26031fb45e0b8130d47ff6cee98"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-RegExp-0.04-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-RegExp;unpack=0"
-SRC_URI[x86_64_v2_perl-XML-RegExp.sha256sum] = "1a18d41cfdc17b63d235559d22f3745308b39e8c78d90f876cd95d9c7d3d71dc"
+SRC_URI[x86_64_v2_perl-XML-RegExp.sha256sum] = "76aad3844ef079bd491497968a138bc3b4c7058ec82b0ace6351d7041361a6f2"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-RegExp-0.04-34.el10_0.noarch.rpm;name=aarch64_perl-XML-RegExp;unpack=0"
 SRC_URI[aarch64_perl-XML-RegExp.sha256sum] = "63edfa48dcc0644cbf43f8a07421e2ffb61f328fc9a20f227dc5a9a36c6a7638"

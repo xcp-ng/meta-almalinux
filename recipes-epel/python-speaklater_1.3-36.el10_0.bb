@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-speaklater-1.3-36.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "308683f58e4aa64b391023fbd59000c68eb8685118683b40889a2d7eff87e9f9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-speaklater-1.3-36.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-speaklater;unpack=0"
-SRC_URI[x86_64_v2_python3-speaklater.sha256sum] = "f6a5c3223de73d43fdf0e4b0012e906221404d7eeca2c9174183464ed4d01799"
+SRC_URI[x86_64_v2_python3-speaklater.sha256sum] = "ace3f2c466d3c326388a2f33f33480e05d27f3fb8057da49de56f04bd19ba9c0"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-speaklater-1.3-36.el10_0.noarch.rpm;name=aarch64_python3-speaklater;unpack=0"
 SRC_URI[aarch64_python3-speaklater.sha256sum] = "92a6a84e2f1956ff400cde462f014044b8e8d8c6146d0ecf6315b5147a1f3a1b"

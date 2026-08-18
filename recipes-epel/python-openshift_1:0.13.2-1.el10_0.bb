@@ -14,7 +14,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-openshift-0.13.2-1.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "ac4d0b53e79a165ea6e034aa35e14566f69b70b03d43655fdd98dd6ed75e748c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openshift-0.13.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openshift;unpack=0"
-SRC_URI[x86_64_v2_python3-openshift.sha256sum] = "00bb83caa631c9a6d94809ff917e06ce34e4be803818410bb30d849e5df7310a"
+SRC_URI[x86_64_v2_python3-openshift.sha256sum] = "33e9a499d8c391bb86946a8239a7f37cfb0e4d5f2f5d283abbcdd1ba0c670181"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-openshift-0.13.2-1.el10_0.noarch.rpm;name=aarch64_python3-openshift;unpack=0"
 SRC_URI[aarch64_python3-openshift.sha256sum] = "2fbe7d7546313525800fb896156360cd7ea1ab8049e4ef5a9010e746c2205610"

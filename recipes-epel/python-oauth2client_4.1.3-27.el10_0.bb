@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-oauth2client-4.1.3-27.el10_0.src.
 SRC_URI[src.sha256sum] = "02be26b71babbdd739324ed777fbcd80508ece3259b67b996bd9c9e86f04a23f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-oauth2client-4.1.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-oauth2client;unpack=0"
-SRC_URI[x86_64_v2_python3-oauth2client.sha256sum] = "d355b638510296943a751d4f0ae4465caa78ed51b72678e3d34bab149aa2e950"
+SRC_URI[x86_64_v2_python3-oauth2client.sha256sum] = "222da5737769dd9966cc39c90edd8e19bd1690231cffe84395be826d0a784cdd"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-oauth2client-4.1.3-27.el10_0.noarch.rpm;name=aarch64_python3-oauth2client;unpack=0"
 SRC_URI[aarch64_python3-oauth2client.sha256sum] = "def53ee3b4d3755e00939b960a993bc68404c7a061654029852ad1fc286f3242"

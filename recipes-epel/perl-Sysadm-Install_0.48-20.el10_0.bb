@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sysadm-Install-0.48-20.el10_0.src.r
 SRC_URI[src.sha256sum] = "974c161c23b865649b1a57dd6db63700488ccf77355e94ee7e275196f2650baa"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sysadm-Install-0.48-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sysadm-Install;unpack=0"
-SRC_URI[x86_64_v2_perl-Sysadm-Install.sha256sum] = "8d5e99cc95fa7e4b93240978db94428b45959e302146ca882078587688be934c"
+SRC_URI[x86_64_v2_perl-Sysadm-Install.sha256sum] = "3ef41e37f54586d817aa19d0aa47eb953b29267c04f8b11d3026b464d87ba8f1"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sysadm-Install-0.48-20.el10_0.noarch.rpm;name=aarch64_perl-Sysadm-Install;unpack=0"
 SRC_URI[aarch64_perl-Sysadm-Install.sha256sum] = "d6c6bfe6a2275d3017842a62651594d6718b994cdf9dde277ab1a64afd0ec0dd"

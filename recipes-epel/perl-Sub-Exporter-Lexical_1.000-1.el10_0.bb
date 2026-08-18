@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Exporter-Lexical-1.000-1.el10_0
 SRC_URI[src.sha256sum] = "6e49853150f12b01635aff730e21218d6b712b1207b0730a790696592dd4578c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Exporter-Lexical-1.000-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Exporter-Lexical;unpack=0"
-SRC_URI[x86_64_v2_perl-Sub-Exporter-Lexical.sha256sum] = "90bdf5bbe0a6537ae65c2f2a8a95e6f870a18970bb7205a659786e02f1b74de4"
+SRC_URI[x86_64_v2_perl-Sub-Exporter-Lexical.sha256sum] = "a89915014b258fa51540b934d3929293cf63e5858a70c4746c0b97d251219b90"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Exporter-Lexical-1.000-1.el10_0.noarch.rpm;name=aarch64_perl-Sub-Exporter-Lexical;unpack=0"
 SRC_URI[aarch64_perl-Sub-Exporter-Lexical.sha256sum] = "dc0a96a6e26fe25d73be357e78e3a00c83bf20c60a4bb89c2757ee3a2267d109"

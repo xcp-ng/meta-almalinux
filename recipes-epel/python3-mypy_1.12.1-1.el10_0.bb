@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python3-mypy-1.12.1-1.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "297119fa15af3887df993c4609511f4f11df67ce7f99570463a4b35c517d1c7e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mypy-1.12.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mypy;unpack=0"
-SRC_URI[x86_64_v2_python3-mypy.sha256sum] = "df6373dc837cbd56bff22fc2980a67068d39a506b1aa21844149185ee7eaedec"
+SRC_URI[x86_64_v2_python3-mypy.sha256sum] = "935101dcd18a9ba3a43e2045f44815a561f3c3a74aae9fb2ff746091488ae6de"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mypy-1.12.1-1.el10_0.noarch.rpm;name=aarch64_python3-mypy;unpack=0"
 SRC_URI[aarch64_python3-mypy.sha256sum] = "fdc111b154c5ef5ad36eb3a8c6711b931693e1835c71ee63116027b8a6cc2d96"

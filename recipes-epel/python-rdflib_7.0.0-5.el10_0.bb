@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rdflib-7.0.0-5.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "05879e77369aa11a835eae95a3e0873bff17dbb830590e08f76c06064b899df8"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rdflib-7.0.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rdflib;unpack=0"
-SRC_URI[x86_64_v2_python3-rdflib.sha256sum] = "85031d232206d62cd4698e8d120d691f5e703bd6d4e0d6839561032b4a91b395"
+SRC_URI[x86_64_v2_python3-rdflib.sha256sum] = "505d3f3691d76904f51bff9f63f9bf39ff92681ead4292cc7d208e842f8fb4e4"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rdflib-7.0.0-5.el10_0.noarch.rpm;name=aarch64_python3-rdflib;unpack=0"
 SRC_URI[aarch64_python3-rdflib.sha256sum] = "dd1613c88fdc2b957fd49ee40db0b620c89ea2e3c9abc4fb0abd671fb6dca1c9"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Web-ID-1.927-19.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "da821bec0160ef6965eb49867ba6bfd2acae1a7514d2d60f997274edb0258ff0"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Web-ID-1.927-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Web-ID;unpack=0"
-SRC_URI[x86_64_v2_perl-Web-ID.sha256sum] = "a81611a152087b3f78103a4e6260700d87293f81727edff7f7be7052b78ed7de"
+SRC_URI[x86_64_v2_perl-Web-ID.sha256sum] = "ac883e0ef708b79b0b799e758f7f8c70a3267314aa94edb5cc408b4ff5c84768"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Web-ID-1.927-19.el10_0.noarch.rpm;name=aarch64_perl-Web-ID;unpack=0"
 SRC_URI[aarch64_perl-Web-ID.sha256sum] = "60e56b87570da82e9306f8bdff945404263dbfd94cfb3c07c0c6d70f620baf89"

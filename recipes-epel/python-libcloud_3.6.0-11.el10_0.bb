@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-libcloud-3.6.0-11.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "39cb1952c3dd251666416c55fa970f36578e78041dd7a28ca1ebb912ca5305b3"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libcloud-3.6.0-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-libcloud;unpack=0"
-SRC_URI[x86_64_v2_python3-libcloud.sha256sum] = "8f2605dec7d6be427d3b0d4006dff34897583446b99ac1622cbd77fe7f7eb520"
+SRC_URI[x86_64_v2_python3-libcloud.sha256sum] = "45dc0041a15376bd032d3497ab0e50bd52ced12ffc7e561dd8bed749a7fb307f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-libcloud-3.6.0-11.el10_0.noarch.rpm;name=aarch64_python3-libcloud;unpack=0"
 SRC_URI[aarch64_python3-libcloud.sha256sum] = "df57c1119a4c652d9da08f3143ddde06685c067d73960f7a5f723ba3412f293d"

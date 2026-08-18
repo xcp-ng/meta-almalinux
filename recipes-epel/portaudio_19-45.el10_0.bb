@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/portaudio-19-45.el10_0.src.rpm;name=src;
 SRC_URI[src.sha256sum] = "a4a34b2f634aaa1ae6bf9757b0497f5e72e8c3bac971aac04a64451e60435b79"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio;unpack=0"
-SRC_URI[x86_64_v2_portaudio.sha256sum] = "a53762505a076202fb3fea094168bfa841fbb2b76b23570a36ffc27e69b58e3a"
+SRC_URI[x86_64_v2_portaudio.sha256sum] = "1f373655abf98810a04e73f8f7ed495590c464f2f67f05a297bffb1bd08d67e2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-devel-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio-devel;unpack=0"
-SRC_URI[x86_64_v2_portaudio-devel.sha256sum] = "d0574c0a464db2382b8dcc167c33f76a53424378ec7967897f3974f735df6fd1"
+SRC_URI[x86_64_v2_portaudio-devel.sha256sum] = "45d83260507bd160956292d6fcdaa34d8195e000f41fef13786eee88bd684fed"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portaudio-19-45.el10_0.aarch64.rpm;name=aarch64_portaudio;unpack=0"
 SRC_URI[aarch64_portaudio.sha256sum] = "2e52cc92ac8f3ec7883f071abb7b412ebc7a2ab1fc67706fe09e1c0098607a83"

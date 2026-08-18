@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-poi-tracker-0.0.1-1.el10_0.src.rp
 SRC_URI[src.sha256sum] = "c4147e3d1e0b86328901b3f46b0dee856226c489d7464f592da1135f1da3484f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poi-tracker-0.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_poi-tracker;unpack=0"
-SRC_URI[x86_64_v2_poi-tracker.sha256sum] = "aaeb0ab31dc3b18e17b09b27db1f51e867eb3e1ebb48eda70c71c7ac7069b7f6"
+SRC_URI[x86_64_v2_poi-tracker.sha256sum] = "7037a716d55b8f825c6661d25d51d79419f21cd0bdb7f0a5b20deb9df8bb8f4d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/poi-tracker-0.0.1-1.el10_0.noarch.rpm;name=aarch64_poi-tracker;unpack=0"
 SRC_URI[aarch64_poi-tracker.sha256sum] = "b279e992d3a11c47dd7805d6bc58e52f9631cba66aea51e0a37efcaf80af5e71"

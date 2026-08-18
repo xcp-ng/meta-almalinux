@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-functools-4.0.2-4.el10_0.s
 SRC_URI[src.sha256sum] = "5f82053d0de0a550a41961c4d52b28b935275a52be5e1b6c43b84a7d93e4a03b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-functools-4.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-functools;unpack=0"
-SRC_URI[x86_64_v2_python3-jaraco-functools.sha256sum] = "a2f6f5fe2c22fd34a9563f969d03a493817ce43f5b79a57830860a9caa03f625"
+SRC_URI[x86_64_v2_python3-jaraco-functools.sha256sum] = "3ab67d9fdb2d3bc1b68e4b71fcc6676d0b36fd363c6631a4e42736fbe3a94d5b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-functools-4.0.2-4.el10_0.noarch.rpm;name=aarch64_python3-jaraco-functools;unpack=0"
 SRC_URI[aarch64_python3-jaraco-functools.sha256sum] = "a4b6684da9cc912ac5f96e27a86851d28c90a6881df10855c54b170143ce58a6"

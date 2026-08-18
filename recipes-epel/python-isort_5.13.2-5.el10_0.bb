@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-isort-5.13.2-5.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "a592a69974231f8f9d369926c5ea5aed16e32b9e9d3aee967fce8f08bf4320ac"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-isort-5.13.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-isort;unpack=0"
-SRC_URI[x86_64_v2_python3-isort.sha256sum] = "2788a96a92fc096995796e6d8773dd16bf99700f5050ee0f6791e03727290ad4"
+SRC_URI[x86_64_v2_python3-isort.sha256sum] = "f01383c7ef2fde94d6abf1f90df1fb23637dd63c37fd54c80d7fafc376efb20f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-isort-5.13.2-5.el10_0.noarch.rpm;name=aarch64_python3-isort;unpack=0"
 SRC_URI[aarch64_python3-isort.sha256sum] = "7c8941f102e9b2b89b34ffeed87951a5abd23a5c732e2efef53bdee22e9e8f36"

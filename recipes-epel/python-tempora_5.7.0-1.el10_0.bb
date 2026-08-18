@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tempora-5.7.0-1.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "e3132ada91dd8ef4aef976a650fe27b1b9842294ea11a936e669f0d8aa611eaa"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tempora-5.7.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tempora;unpack=0"
-SRC_URI[x86_64_v2_python3-tempora.sha256sum] = "8bca98652458a8d1facfb7b88b81da3100badd5893601282d492f4c9054be248"
+SRC_URI[x86_64_v2_python3-tempora.sha256sum] = "fd49cbb5c4676dc1a1ff8d4b155ceac0390843aa7a96e95c6ed1fb01b6171bc0"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tempora-5.7.0-1.el10_0.noarch.rpm;name=aarch64_python3-tempora;unpack=0"
 SRC_URI[aarch64_python3-tempora.sha256sum] = "f45bd9658200b26aa3cc98323777ef9a5473a28a6477d8a1f1deabfaf5a87a1f"

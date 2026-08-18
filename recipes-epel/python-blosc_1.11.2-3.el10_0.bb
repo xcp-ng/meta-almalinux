@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-blosc-1.11.2-3.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "ae02a2d41718ed74d8e999478c3ddee7b46f407c06d218cda9cd24d045c257ad"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-blosc-1.11.2-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-blosc;unpack=0"
-SRC_URI[x86_64_v2_python3-blosc.sha256sum] = "d4ff02aefabd22bc3c091a3e0601975da092f4b99a8906928f81bd490e54725c"
+SRC_URI[x86_64_v2_python3-blosc.sha256sum] = "d1b598f48c0012d29960460f042781b5801bb91013ae8a296218520330ff6ecf"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-blosc-1.11.2-3.el10_0.aarch64.rpm;name=aarch64_python3-blosc;unpack=0"
 SRC_URI[aarch64_python3-blosc.sha256sum] = "fe4a1674c0f2a8eda9421f424731b850d3dc51e6a0acd231e7efdc84ba36e773"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-boto3-1.35.81-1.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "0405ab65f50003d2b19fa488ef84854331755672a1eac02516855f2b8c53476d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-boto3-1.35.81-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-boto3;unpack=0"
-SRC_URI[x86_64_v2_python3-boto3.sha256sum] = "d6dc49fe87769225769967581572634e9d4ecec0b62ade659c310050c12e2566"
+SRC_URI[x86_64_v2_python3-boto3.sha256sum] = "b722d675b59c4311758146795ffb6b07b73f37a49b2611c2af8fa07b6d07d5d3"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-boto3-1.35.81-1.el10_0.noarch.rpm;name=aarch64_python3-boto3;unpack=0"
 SRC_URI[aarch64_python3-boto3.sha256sum] = "707e1dacd3a7e36d301de0339e29f67aa3823db6e95f4db3ab90ab40df244449"

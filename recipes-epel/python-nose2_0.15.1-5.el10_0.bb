@@ -15,13 +15,13 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-nose2-0.15.1-5.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "f5193e8539172b1808006dee887a101701dcae379ec43b34501c99dc4c049db3"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-nose2-doc-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-nose2-doc;unpack=0"
-SRC_URI[x86_64_v2_python-nose2-doc.sha256sum] = "791157883d2f78630a8651640b73372242829cb03a9f7ba08592464c4d4f7dab"
+SRC_URI[x86_64_v2_python-nose2-doc.sha256sum] = "d5fc4e933111cbf146327a5d27e8cf119a5ee9275d8a6a0ac0ede03605121e81"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2;unpack=0"
-SRC_URI[x86_64_v2_python3-nose2.sha256sum] = "ba77f787dc7f3a86ed588d078dcafc9c8c34c8330e9b0ae2af1351bfc191a326"
+SRC_URI[x86_64_v2_python3-nose2.sha256sum] = "0b4c7c7bff43f1b176b88f3d207ac5ff2a4a472f65d1b1893c59419ba5cc6883"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2+coverage_plugin-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2+coverage_plugin;unpack=0"
-SRC_URI[x86_64_v2_python3-nose2+coverage_plugin.sha256sum] = "74a749295c559c928aef44fb502177850f80644c6eeba28d0548e78c57acd76a"
+SRC_URI[x86_64_v2_python3-nose2+coverage_plugin.sha256sum] = "c3083d4be1fe82da7ea0d4b3a617c8bf736898fe4d759dd0e6319341b13d2e46"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-nose2-doc-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python-nose2-doc;unpack=0"
 SRC_URI[aarch64_python-nose2-doc.sha256sum] = "1407178260b5c1c9b7d2a47e64dfc3145438120a4034ebe4ebca8104ddefe6ae"

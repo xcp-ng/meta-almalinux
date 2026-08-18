@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-propcache-0.2.0-1.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "eabddd53daa3abebc3087e35e6343eec153eabac99ec36991bcf612f38a8af23"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-propcache-0.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-propcache;unpack=0"
-SRC_URI[x86_64_v2_python3-propcache.sha256sum] = "560a2d0f3367b870273bb69c1a6149052334caba156bc0354b53cf554fab2ba0"
+SRC_URI[x86_64_v2_python3-propcache.sha256sum] = "152bd72514c94d862958e9a8435f857149dc0232f2dbafe404c5879575dbba13"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-propcache-0.2.0-1.el10_0.aarch64.rpm;name=aarch64_python3-propcache;unpack=0"
 SRC_URI[aarch64_python3-propcache.sha256sum] = "bc163631f31a7627485432e25539d0de2a4bd2b7a8bee032cdd15e337fff3398"

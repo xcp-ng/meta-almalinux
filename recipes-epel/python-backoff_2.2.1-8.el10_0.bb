@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-backoff-2.2.1-8.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "a7548d06fb688015eec86c7a36ff3e24daa1bf5b48160b488648adfc29966f6d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backoff-2.2.1-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backoff;unpack=0"
-SRC_URI[x86_64_v2_python3-backoff.sha256sum] = "ac809f3534afa19c52a8a19cc01bdbfffe9a96183b552e22913278cc1b338f4b"
+SRC_URI[x86_64_v2_python3-backoff.sha256sum] = "a5de615f3e294f7627c5035476bd36ebb4da56765ec215e1459160a8abecbd7c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-backoff-2.2.1-8.el10_0.noarch.rpm;name=aarch64_python3-backoff;unpack=0"
 SRC_URI[aarch64_python3-backoff.sha256sum] = "b4819e5e640f3e2f1baab94a41a7741cc975ef4aaeba5eb72b0e5ec10fb320b5"

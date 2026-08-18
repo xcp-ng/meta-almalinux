@@ -20,7 +20,7 @@ SRC_URI[x86_64_v2_rust-unicode-width0.1+cjk-devel.sha256sum] = "9135a3136b882ec1
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-width0.1+default-devel-0.1.14-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-width0.1+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unicode-width0.1+default-devel.sha256sum] = "fc27e528f5e5bbd5bd59de9e76edcb8e099fc3de5aede260bbdd6e40c1efafb0"
-RPROVIDES:rust-unicode-width0.1+default-devel:append:x86_64_v2 = " virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+RPROVIDES:rust-unicode-width0.1+default-devel:append:x86_64_v2 = " virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-width0.1+no_std-devel-0.1.14-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-width0.1+no_std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unicode-width0.1+no_std-devel.sha256sum] = "eab3ab055f551349e643fe82fd73f90a5dd4622876becf204c02186c8d4e925e"
@@ -33,7 +33,7 @@ SRC_URI[aarch64_rust-unicode-width0.1+cjk-devel.sha256sum] = "e0237387c4fd5e3734
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-width0.1+default-devel-0.1.14-1.el10_0.noarch.rpm;name=aarch64_rust-unicode-width0.1+default-devel;unpack=0"
 SRC_URI[aarch64_rust-unicode-width0.1+default-devel.sha256sum] = "19ad7430a10798bc2e3ee9c668532e1612dc5ccc5e8c4113e8c73fe696433887"
-RPROVIDES:rust-unicode-width0.1+default-devel:append:aarch64 = " virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~"
+RPROVIDES:rust-unicode-width0.1+default-devel:append:aarch64 = " virtual/crate_unicode-width/default__ge_0.0.0_with_crate_unicode-width/default__lt_1.0.0~ virtual/crate_unicode-width/default__ge_0.1.0_with_crate_unicode-width/default__lt_0.3.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-width0.1+no_std-devel-0.1.14-1.el10_0.noarch.rpm;name=aarch64_rust-unicode-width0.1+no_std-devel;unpack=0"
 SRC_URI[aarch64_rust-unicode-width0.1+no_std-devel.sha256sum] = "70ac382506bf3233a8d01a29e797e9ba79ad92184d5eb384bec71e6b2c577c5a"

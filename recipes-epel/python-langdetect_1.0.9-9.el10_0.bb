@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-langdetect-1.0.9-9.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "01746f7d95e3eb51a12afb426a04e2414dc6c884b1c93bd7db9eb724c64ac311"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-langdetect-1.0.9-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-langdetect;unpack=0"
-SRC_URI[x86_64_v2_python3-langdetect.sha256sum] = "b3af547416031c3e06d229e74052cb129d94eca2def040e64e89c118bf1c741b"
+SRC_URI[x86_64_v2_python3-langdetect.sha256sum] = "d65c4fc9823131b96b692c5c51fb29026a9a609b9f82d6441d1c4ba0b7bc564f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-langdetect-1.0.9-9.el10_0.noarch.rpm;name=aarch64_python3-langdetect;unpack=0"
 SRC_URI[aarch64_python3-langdetect.sha256sum] = "acffbe3b910081dd398af0590ba6b2e4cd5e52c389415c97d7a652c25a0ca0b7"

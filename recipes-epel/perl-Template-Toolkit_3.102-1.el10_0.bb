@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Template-Toolkit-3.102-1.el10_0.src
 SRC_URI[src.sha256sum] = "834ec632866671bc68a9aa50bb4d8b00866309a16e43947cee9d4ca9ae2e8473"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Template-Toolkit-3.102-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Template-Toolkit;unpack=0"
-SRC_URI[x86_64_v2_perl-Template-Toolkit.sha256sum] = "e03918799f87d319be41cfe7a33ff634f9f593cfb7ca3e48149ec846b1d268f7"
+SRC_URI[x86_64_v2_perl-Template-Toolkit.sha256sum] = "de9aadee038d6cd4d2d768b1699e04e042126e1d3e3b15fb26d20a3287cb1af7"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Template-Toolkit-3.102-1.el10_0.aarch64.rpm;name=aarch64_perl-Template-Toolkit;unpack=0"
 SRC_URI[aarch64_perl-Template-Toolkit.sha256sum] = "d6a519b0c70083ed41dd6dae29cb977f8e4451a8fb83ab6326d4e4c17e6e9770"

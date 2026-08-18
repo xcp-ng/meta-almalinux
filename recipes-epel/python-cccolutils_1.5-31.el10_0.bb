@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cccolutils-1.5-31.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "dc8a552085e8991aa817ed5645b88c9fd0d0f778a4dc64aa85e902b98cde63dc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cccolutils-1.5-31.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cccolutils;unpack=0"
-SRC_URI[x86_64_v2_python3-cccolutils.sha256sum] = "559261dd15b978b82f15fed03b58f3820574c7b86dab9612690299323ee50546"
+SRC_URI[x86_64_v2_python3-cccolutils.sha256sum] = "302e9261c831874f7db79dcc4ac0cc35bcbe921968f2e447cadcee7c35eff95b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cccolutils-1.5-31.el10_0.aarch64.rpm;name=aarch64_python3-cccolutils;unpack=0"
 SRC_URI[aarch64_python3-cccolutils.sha256sum] = "db7dbc1d44d50928d0d27f77ad33d7f6dea1406f7f1c25f7e9359d0b13ddcb28"

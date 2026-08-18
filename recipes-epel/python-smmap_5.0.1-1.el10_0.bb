@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-smmap-5.0.1-1.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "4f83cf2e994fb3945eaee5b766aeaf3796bfe3b8ab04e54818c2fea4f3dc8882"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smmap-5.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smmap;unpack=0"
-SRC_URI[x86_64_v2_python3-smmap.sha256sum] = "ae2a497909e17f8b289a08f794df1115cba0645cc973b5a3ee233ad6819f6a41"
+SRC_URI[x86_64_v2_python3-smmap.sha256sum] = "623d779bd1caa49d87d3b0b64ff089f6a96b68fe8f0ca335ba959ab4d183412c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-smmap-5.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-smmap;unpack=0"
 SRC_URI[aarch64_python3-smmap.sha256sum] = "77d69361e06a1f3a127edfde494b613a2e4c90f596362b92805448c481782a08"

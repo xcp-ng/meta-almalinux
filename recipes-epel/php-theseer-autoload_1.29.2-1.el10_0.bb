@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-theseer-autoload-1.29.2-1.el10_0.src
 SRC_URI[src.sha256sum] = "7201b661d9917ea44aad9c5385140bcaa55de5f7f08299aa60fff2e84709f331"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-theseer-autoload-1.29.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-theseer-autoload;unpack=0"
-SRC_URI[x86_64_v2_php-theseer-autoload.sha256sum] = "fc19950956b5287b936586fbc5efaa089e1475878163e4e4ba845f17c429624a"
+SRC_URI[x86_64_v2_php-theseer-autoload.sha256sum] = "3b2531c6dda2a8c500bc96bd0d5f77fe42621bc433563dfdbb71db04263283a2"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-theseer-autoload-1.29.2-1.el10_0.noarch.rpm;name=aarch64_php-theseer-autoload;unpack=0"
 SRC_URI[aarch64_php-theseer-autoload.sha256sum] = "1ec6af8c4ec20e4c7fa937836687d9cb62d3302b5878f13445fa4cfec8b8b609"

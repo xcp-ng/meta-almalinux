@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plexus-components-pom-14.2-6.el10_0.src.
 SRC_URI[src.sha256sum] = "a3382b4390fe8cac66ffa25c29c48f4509a209620ebac0d187765b080bfe5cb7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plexus-components-pom-14.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plexus-components-pom;unpack=0"
-SRC_URI[x86_64_v2_plexus-components-pom.sha256sum] = "548d1a08a0fb5fe9671d5026e5846c3ba4b0823c3d01cc45a38184044f89b88a"
+SRC_URI[x86_64_v2_plexus-components-pom.sha256sum] = "0c2b35cdce28c75a753623f8a01e63ccf662f5d7af429ab390c30331bcad3586"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plexus-components-pom-14.2-6.el10_0.noarch.rpm;name=aarch64_plexus-components-pom;unpack=0"
 SRC_URI[aarch64_plexus-components-pom.sha256sum] = "0209ba360301239b8d1d3d62990a3eafc2e2962fbad21c991936ef93cde97c79"

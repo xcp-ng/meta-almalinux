@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-littleutils-0.2.4-2.el10_0.src.rp
 SRC_URI[src.sha256sum] = "dd2c60b7108b9d3a6cca16109073bca0a6491ec1d85c732b568544fb63c463a1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-littleutils-0.2.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-littleutils;unpack=0"
-SRC_URI[x86_64_v2_python3-littleutils.sha256sum] = "8442a37b394d950ee47090752941416f7f5a15ade71f091aabc863a1821ab2c6"
+SRC_URI[x86_64_v2_python3-littleutils.sha256sum] = "17b7bf9238972c70428d5044ac2e57a28e8e0c8043f33e0162088606348c2070"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-littleutils-0.2.4-2.el10_0.noarch.rpm;name=aarch64_python3-littleutils;unpack=0"
 SRC_URI[aarch64_python3-littleutils.sha256sum] = "9f802399bf6948f59c1f8895abc321283843049856bed7f12f66ab615d077992"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-junit_xml-1.9^20200222gitba89b41-
 SRC_URI[src.sha256sum] = "0b44397f333f0619b4d04801f203ab4ae06184f2bf8b2c348e3f9f7b196fa568"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-junit-xml-1.9^20200222gitba89b41-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-junit-xml;unpack=0"
-SRC_URI[x86_64_v2_python3-junit-xml.sha256sum] = "ee125137349ae02f7e9016210820ec01a47b0d81a9e71f44c8fe69a22cf1d8fe"
+SRC_URI[x86_64_v2_python3-junit-xml.sha256sum] = "06dba1af0783d5a2e304cefbb8ebd92d5b487ae4f557aa42b4cd0d0e63ca77f9"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-junit-xml-1.9^20200222gitba89b41-19.el10_0.noarch.rpm;name=aarch64_python3-junit-xml;unpack=0"
 SRC_URI[aarch64_python3-junit-xml.sha256sum] = "e61592f6a7c011b3e399fe06ba84cf51a41276818064070d2689ce7299fac5b2"

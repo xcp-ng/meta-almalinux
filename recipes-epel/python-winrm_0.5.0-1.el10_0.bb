@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-winrm-0.5.0-1.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "e62d5bbc85684fd4892bf4e1b2ece3beba38b0a190426607e5aadcd6fbc0fe7b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-winrm-0.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-winrm;unpack=0"
-SRC_URI[x86_64_v2_python3-winrm.sha256sum] = "0fe87b208b02e369130d6f4ab9c3d6454a87c00cb8d4a2eda1ae6e5b90f58e1c"
+SRC_URI[x86_64_v2_python3-winrm.sha256sum] = "623d1288e6a0c5bd48b995a2f279fd657e1d3a789b5f5ca50fffb21ad0a668ff"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-winrm-0.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-winrm;unpack=0"
 SRC_URI[aarch64_python3-winrm.sha256sum] = "15434694dd9f70282f2e824a3c2ecab38cd614a0260f42e5239d2f6dcc11d193"

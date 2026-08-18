@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-TableMatrix-1.29-9.el10_0.src.rp
 SRC_URI[src.sha256sum] = "605a3d75cbaa183962e66ee7db2a70ef1fbc18fbbb1c7bcd2910a63c62eec139"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-TableMatrix-1.29-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Tk-TableMatrix;unpack=0"
-SRC_URI[x86_64_v2_perl-Tk-TableMatrix.sha256sum] = "5cd6b253f9bb96f2912a4cb67e15fb7bd3642fcdec93f53fef1cb78d7ce4591c"
+SRC_URI[x86_64_v2_perl-Tk-TableMatrix.sha256sum] = "c9579792c0b63f7491706810f80d7a08bfc42bc07b4078ca14c9842663c5c61a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-TableMatrix-1.29-9.el10_0.aarch64.rpm;name=aarch64_perl-Tk-TableMatrix;unpack=0"
 SRC_URI[aarch64_perl-Tk-TableMatrix.sha256sum] = "fda069050f4887259f7c10468229cc7054bc6ac88053427bec61384bd9e10b38"

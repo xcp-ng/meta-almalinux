@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-fields-5.0.0-22.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "3267f849a84ada6a36b0532b68b430f9f73f7b56a3fde2bd961cdf2aed3f8de7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-fields-doc-5.0.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-fields-doc;unpack=0"
-SRC_URI[x86_64_v2_python-fields-doc.sha256sum] = "2035f1c22e14230d563663a78d8efb1394a64326d53c261dd9dba8369dbd02ea"
+SRC_URI[x86_64_v2_python-fields-doc.sha256sum] = "701b5376eed0a48b2f4b07d1a2023cac4ff9d5b42057f89ee01427cc851e103b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fields-5.0.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fields;unpack=0"
-SRC_URI[x86_64_v2_python3-fields.sha256sum] = "d43fbd0f3dccf3f70373a30ac4904c4ae047e0383a0f8b0ea774796cb0da4403"
+SRC_URI[x86_64_v2_python3-fields.sha256sum] = "6afbd39b674562059c068d5876a01816ee69837a98680dd5dba9bfa63b2c3b6f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-fields-doc-5.0.0-22.el10_0.noarch.rpm;name=aarch64_python-fields-doc;unpack=0"
 SRC_URI[aarch64_python-fields-doc.sha256sum] = "10201bf5a7576ab8722c2ab5216edb77ab826722c008cd918509e41a25d773ae"

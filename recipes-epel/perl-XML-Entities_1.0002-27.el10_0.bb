@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Entities-1.0002-27.el10_0.src.r
 SRC_URI[src.sha256sum] = "da8fcc9dbe1149657bebd3241e5d9042e8d34a528d657b72c22c48a73ce89ac0"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Entities-1.0002-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Entities;unpack=0"
-SRC_URI[x86_64_v2_perl-XML-Entities.sha256sum] = "93cd5e0c0386e5b4dd79cf46bce70cb7f408ce983e8555e1fa0a9e9f06eec28c"
+SRC_URI[x86_64_v2_perl-XML-Entities.sha256sum] = "25dbd98fa5448aac7f8649b5fbd496b5f53a41db18805976f24b90f24ed4560d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Entities-1.0002-27.el10_0.noarch.rpm;name=aarch64_perl-XML-Entities;unpack=0"
 SRC_URI[aarch64_perl-XML-Entities.sha256sum] = "d97fc06fbbc996227b7d5e94175abd3b84ee941a3927902eea9f24f06df99c92"

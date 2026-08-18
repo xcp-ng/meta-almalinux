@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pint-0.24.4-4.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "9b04343c654e38ef24663c71e8ae0942a78534498d69eaa6c406a0d51dc40fab"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint;unpack=0"
-SRC_URI[x86_64_v2_python3-pint.sha256sum] = "98974a5721b9ead5d21d33d1c08ca311a6909c13a939a744c371356415ecdd11"
+SRC_URI[x86_64_v2_python3-pint.sha256sum] = "67f87cd79a9307607115f44a5d1864d3d371bc03d559f1346d3eff09224a9a2a"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint+numpy-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint+numpy;unpack=0"
-SRC_URI[x86_64_v2_python3-pint+numpy.sha256sum] = "f6f9165be2652a5c3b76e0744879a99f166c1e1add1faa4605e9a098b8d0d591"
+SRC_URI[x86_64_v2_python3-pint+numpy.sha256sum] = "ea664627fd6eb3637e7115b08c8d32f612afe39089241ae415da1f65d50ea897"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pint-0.24.4-4.el10_0.noarch.rpm;name=aarch64_python3-pint;unpack=0"
 SRC_URI[aarch64_python3-pint.sha256sum] = "ea839124f76a2619a2da597eb600469144882456c6ef369f9e7c7ae39205047b"

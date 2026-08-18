@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-openslide-1.4.1-1.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "c50a582881edee1378eb07b29b6c4704db714255a3ae1514e4cfc1fc71cdda10"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openslide-1.4.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-openslide;unpack=0"
-SRC_URI[x86_64_v2_python3-openslide.sha256sum] = "49e93044241f47556a37252c2585580f00b1d4f49fd0d0a72fdcff49a95fca89"
+SRC_URI[x86_64_v2_python3-openslide.sha256sum] = "67ec62ef5176eba004088f6eeb0c2d6bfd7ca29c6cb9a06a88ebe793e7d5203d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-openslide-1.4.1-1.el10_0.aarch64.rpm;name=aarch64_python3-openslide;unpack=0"
 SRC_URI[aarch64_python3-openslide.sha256sum] = "5f17009ee48f890fde8cfbddd6f4401e894a4df6bec01a7798af27c154603450"

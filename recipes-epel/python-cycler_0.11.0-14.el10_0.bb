@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cycler-0.11.0-14.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "7f7534f1b950e027bf070a4ff31e75720cd9078f551c65efb13ccf98232a0f0c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cycler-0.11.0-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cycler;unpack=0"
-SRC_URI[x86_64_v2_python3-cycler.sha256sum] = "951739116e015cad4f0d90aedb4f807b8b6db3d7e1d151520ec6f5ce3f6f4451"
+SRC_URI[x86_64_v2_python3-cycler.sha256sum] = "aa28969d102fb6b1b7a448df4f461dfcb6f5499f01b38aac1c9a3fdf1c08805a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cycler-0.11.0-14.el10_0.noarch.rpm;name=aarch64_python3-cycler;unpack=0"
 SRC_URI[aarch64_python3-cycler.sha256sum] = "c90ff9b26aff0b82bd37d361acaff4d22ae24de3fc4f06979c3005900604477a"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pickleshare-0.7.5-18.el10_0.src.r
 SRC_URI[src.sha256sum] = "13154eab730389fc85112bf15c147b885417e9f8b1dabb21a371423e17d32ab1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pickleshare-0.7.5-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pickleshare;unpack=0"
-SRC_URI[x86_64_v2_python3-pickleshare.sha256sum] = "b8aa72e899556160a52e353e6c3f5459011a11e8b28f87cc8a1ca753a88eeab6"
+SRC_URI[x86_64_v2_python3-pickleshare.sha256sum] = "1a055f8a2d1a128fe8356b9e3ea8c272d26262e157648cad7a979a7263c43518"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pickleshare-0.7.5-18.el10_0.noarch.rpm;name=aarch64_python3-pickleshare;unpack=0"
 SRC_URI[aarch64_python3-pickleshare.sha256sum] = "b182f45992b134f475304129c08775daf40a386d0880c90cde844dfd9038b0a5"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hexdump-3.4-0.26.20160818hg66325c
 SRC_URI[src.sha256sum] = "afdc49cf3adef72d48d4aafa31fab53f0826b2b5cf4e82b8a0bcdd84ce054828"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hexdump-3.4-0.26.20160818hg66325cb5fed8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hexdump;unpack=0"
-SRC_URI[x86_64_v2_python3-hexdump.sha256sum] = "2573b42ba8f6c59a9413c6c25a0993ac9ad0425e55a0c25838ed40210047938b"
+SRC_URI[x86_64_v2_python3-hexdump.sha256sum] = "b3fe5b7050014355d3a41cd1d29e13a1819b9a3ef2eaf3b4bf1156778fd1254d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hexdump-3.4-0.26.20160818hg66325cb5fed8.el10_0.noarch.rpm;name=aarch64_python3-hexdump;unpack=0"
 SRC_URI[aarch64_python3-hexdump.sha256sum] = "328bf3a8d2cdbc4280726fd808c9af7c721e0a1c826736b66301892e7ab033ac"

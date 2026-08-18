@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Time-Fake-0.11-17.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "dd7372c83ce1a9c7f1cddddb7832e7bc9978486fb93a0d20acc6c926d53e94d8"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Time-Fake-0.11-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Time-Fake;unpack=0"
-SRC_URI[x86_64_v2_perl-Time-Fake.sha256sum] = "6931331ec81f8a6366ef204dda60c5da58e456a77f18ade4edd18f52831cc278"
+SRC_URI[x86_64_v2_perl-Time-Fake.sha256sum] = "2802d552c91c33e31610578446c7b31102255a6f6ac8276e4102eea91afee39b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Time-Fake-0.11-17.el10_0.noarch.rpm;name=aarch64_perl-Time-Fake;unpack=0"
 SRC_URI[aarch64_perl-Time-Fake.sha256sum] = "3656faea0f9e47fa266159b9e8493b8febd3a130e0050ad9c6c1cbb552592387"

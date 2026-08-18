@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Override-0.12-2.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "2a682e60e39da5858cbfc645d31e0bbfaf8d3e46fc1a8091a3aa1f6d4384b4db"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override;unpack=0"
-SRC_URI[x86_64_v2_perl-Sub-Override.sha256sum] = "31c83c3dcb4a334f9efcab49babd15caffa91cbcf0808179761929c2477b3bb0"
+SRC_URI[x86_64_v2_perl-Sub-Override.sha256sum] = "08fb220da9fd158a11aec5aba9ed5e9d34a142a8f6b2fe2cdba70696b1cd6edd"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-tests-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override-tests;unpack=0"
-SRC_URI[x86_64_v2_perl-Sub-Override-tests.sha256sum] = "e65de2cf2530191446c40e1aa1aa36ec628d2bd50432562e07ec76f32a878e96"
+SRC_URI[x86_64_v2_perl-Sub-Override-tests.sha256sum] = "17b3456214168e403225501f398dc289e60ade2314fa2272bea54ffa279fc04d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Override-0.12-2.el10_0.noarch.rpm;name=aarch64_perl-Sub-Override;unpack=0"
 SRC_URI[aarch64_perl-Sub-Override.sha256sum] = "b5cc43ee5536758ebac4b4fd97cd54ddbc58f4e9bb4072def67133d6572c001e"

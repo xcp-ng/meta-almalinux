@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sentry-Raven-1.14-12.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "04e81ce082c5125a515dfa3d80140a61ee3e5c90ffc89b655583683eb96ee1d9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sentry-Raven-1.14-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sentry-Raven;unpack=0"
-SRC_URI[x86_64_v2_perl-Sentry-Raven.sha256sum] = "1d53bada782d3430e3e36668c7b0f318bd83a43101cee9cd18b8e1d562532a0c"
+SRC_URI[x86_64_v2_perl-Sentry-Raven.sha256sum] = "1695c01258456e3493c69f3605a5c0f1c731e3d1ee7aa4c337a6211c59aa5225"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sentry-Raven-1.14-12.el10_0.noarch.rpm;name=aarch64_perl-Sentry-Raven;unpack=0"
 SRC_URI[aarch64_perl-Sentry-Raven.sha256sum] = "ea41038a86d92e6955e0740965dd77efc538f427cd2a3150c148befed60918ff"

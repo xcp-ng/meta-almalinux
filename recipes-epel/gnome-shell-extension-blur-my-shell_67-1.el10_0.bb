@@ -12,12 +12,6 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gnome-shell-extension-blur-my-shell-67-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4c36a02f7c86f95318250e19dd95bd96261cef9f7658a2043510c484c88bd0cd"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-blur-my-shell: gnome-shell >= 46
-
-## Requires (aarch64) that were seen as not satisfiable in original repo:
-# - gnome-shell-extension-blur-my-shell: gnome-shell >= 46
-
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gnome-shell-extension-blur-my-shell-67-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_gnome-shell-extension-blur-my-shell;unpack=0"
 SRC_URI[x86_64_v2_gnome-shell-extension-blur-my-shell.sha256sum] = "62be31e4261ed79fc96be265b0ff1af07a057ad55efdead178f11829627c16b5"
 
@@ -25,4 +19,5 @@ SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gnome-shell-extension-blur-
 SRC_URI[aarch64_gnome-shell-extension-blur-my-shell.sha256sum] = "3f947aa2bf0dbe77bd7535db0f01422cd8a92581ba7f96f2b0e69fb6aecd7a6b"
 
 RDEPENDS:gnome-shell-extension-blur-my-shell = " \
+ gnome-shell \
  "

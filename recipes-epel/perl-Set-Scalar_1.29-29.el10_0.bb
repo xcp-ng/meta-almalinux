@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Set-Scalar-1.29-29.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "9d4432413a5a8c5d085aea4c6b74bc7784d50854e72619997967cb15d5a22262"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Set-Scalar-1.29-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Set-Scalar;unpack=0"
-SRC_URI[x86_64_v2_perl-Set-Scalar.sha256sum] = "83fddfe20704fad0bbf1dc6bc1540723ae4ff36ad834962adbbebe21e92c24dd"
+SRC_URI[x86_64_v2_perl-Set-Scalar.sha256sum] = "d7e0cc783c5f00459b21da607a2990912871338748cd00adc2c7fd9369027c71"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Set-Scalar-1.29-29.el10_0.noarch.rpm;name=aarch64_perl-Set-Scalar;unpack=0"
 SRC_URI[aarch64_perl-Set-Scalar.sha256sum] = "e52e83612880d920e07e56754bd31b472eacd0828c98a0b1ee70102509d485fc"

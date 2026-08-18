@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-json-post-1.1.0-15.el10_0.src.r
 SRC_URI[src.sha256sum] = "f435e549f92594771611fc8191e1d023bf03c7c2c05165fcf70c64be9180acd4"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-json-post-1.1.0-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-json-post;unpack=0"
-SRC_URI[x86_64_v2_php-pecl-json-post.sha256sum] = "1b323e4a50adac809dfd34af57dc29223884d8a418cb212950fd327480fc7d12"
+SRC_URI[x86_64_v2_php-pecl-json-post.sha256sum] = "095a11ea1a6db166034618f897114cecf75b27c8206b08b403b631f91effe524"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-json-post-1.1.0-15.el10_0.aarch64.rpm;name=aarch64_php-pecl-json-post;unpack=0"
 SRC_URI[aarch64_php-pecl-json-post.sha256sum] = "d94e86e5bb41a95bf2581d07fc7613ebbe9ff7b9871412b35dae1a173e3a8016"

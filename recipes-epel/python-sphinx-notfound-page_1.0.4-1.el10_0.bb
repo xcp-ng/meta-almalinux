@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-notfound-page-1.0.4-1.el10
 SRC_URI[src.sha256sum] = "8ec79301f3fc796f4dc464f6460b97ed93e54a272ae63177b127c39c33a75841"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-notfound-page-1.0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-notfound-page;unpack=0"
-SRC_URI[x86_64_v2_python3-sphinx-notfound-page.sha256sum] = "86aa9e41b64e9ccde0a4707906ed350c7d4666b965ac1df912a63a85b4f2185c"
+SRC_URI[x86_64_v2_python3-sphinx-notfound-page.sha256sum] = "813f9ddd9b5a3592dfc0205e0fac69318bf2be92896d50e32781490f4a0b1684"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-notfound-page-1.0.4-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-notfound-page;unpack=0"
 SRC_URI[aarch64_python3-sphinx-notfound-page.sha256sum] = "029af44ca751262ca495e04a2d6bd442259cacd3fc47febbadcc921311937171"

@@ -5,34 +5,31 @@ inherit dnf-bridge
 PN = "pkgtreediff"
 PV = "0.6.0"
 PR = "8.el10_0"
-PACKAGES:x86_64_v2 = " \
- ghc-pkgtreediff \
- ghc-pkgtreediff-devel \
- ghc-pkgtreediff-doc \
- pkgtreediff \
-"
-PACKAGES:aarch64 = " \
+PACKAGES = " \
  ghc-pkgtreediff \
  ghc-pkgtreediff-devel \
  ghc-pkgtreediff-doc \
  ghc-pkgtreediff-prof \
  pkgtreediff \
-"
+ "
 
 SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pkgtreediff-0.6.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "78e4b98e9b0d6e905236e49e07eccd84f86ff127c064147e30aa26dfefd6959f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pkgtreediff-0.6.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pkgtreediff;unpack=0"
-SRC_URI[x86_64_v2_ghc-pkgtreediff.sha256sum] = "def416318e2a3617051215a818aed6f4381da549ed6734d4e18cc34ff9eff117"
+SRC_URI[x86_64_v2_ghc-pkgtreediff.sha256sum] = "a0cfb37230c8bfe3450b6a104a6897f3a7cd71619df5af13bbe70f849589e79f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pkgtreediff-devel-0.6.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pkgtreediff-devel;unpack=0"
-SRC_URI[x86_64_v2_ghc-pkgtreediff-devel.sha256sum] = "4b3fde7ae4bd4ef02c46b8642f59ae21290829cf8ead6f7b1a07dc0721525667"
+SRC_URI[x86_64_v2_ghc-pkgtreediff-devel.sha256sum] = "6ee209fbd82dc464579e21e599ef2d5bbc507b01f58f22adf637ebae163c5557"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pkgtreediff-doc-0.6.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-pkgtreediff-doc;unpack=0"
-SRC_URI[x86_64_v2_ghc-pkgtreediff-doc.sha256sum] = "d5e4e6e96c1c75eb7bfc42676534524c31b59e056e4aeef14a066941e9c0476e"
+SRC_URI[x86_64_v2_ghc-pkgtreediff-doc.sha256sum] = "6f53928a25fc99d4e3d080c182e754d3f4240bcf0f8041520166e7f6c7e1070d"
+
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pkgtreediff-prof-0.6.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pkgtreediff-prof;unpack=0"
+SRC_URI[x86_64_v2_ghc-pkgtreediff-prof.sha256sum] = "adfa2cd1338f4a9e08ba3e0c1847ecb6f63bd221aa44a7e97623fefc07c09cf6"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pkgtreediff-0.6.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pkgtreediff;unpack=0"
-SRC_URI[x86_64_v2_pkgtreediff.sha256sum] = "02c016615d655adc4ec380a756178136ef32a0e8289c3c1e03d9cc6319d6a0bd"
+SRC_URI[x86_64_v2_pkgtreediff.sha256sum] = "2b3c20272d69a55b5a769df9d4189573b2584f97c2d4ceb74067686afa1f3294"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pkgtreediff-0.6.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pkgtreediff;unpack=0"
 SRC_URI[aarch64_ghc-pkgtreediff.sha256sum] = "d1826bfb5fa4e76ec3fe28b4779ee53a155bd95b345d45794a9a4691f9b1134e"
@@ -82,15 +79,15 @@ RDEPENDS:ghc-pkgtreediff-devel = " \
 RDEPENDS:ghc-pkgtreediff-doc = " \
  ghc-filesystem \
  "
+RDEPENDS:ghc-pkgtreediff-prof = " \
+ ghc-base-prof \
+ ghc-pkgtreediff-devel \
+ ghc-rpm-nvr-prof \
+ "
 RDEPENDS:pkgtreediff = " \
  glibc \
  gmp \
  libffi \
  openssl-libs \
  zlib-ng-compat \
- "
-RDEPENDS:ghc-pkgtreediff-prof = " \
- ghc-base-prof \
- ghc-pkgtreediff-devel \
- ghc-rpm-nvr-prof \
  "

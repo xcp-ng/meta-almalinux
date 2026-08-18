@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-stack-data-0.6.3-12.el10_0.src.rp
 SRC_URI[src.sha256sum] = "97408ad4bb07e6b4dda5adffae2fa58293c215fd448ec3d15e5c46c373d51cb4"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-stack-data-0.6.3-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-stack-data;unpack=0"
-SRC_URI[x86_64_v2_python3-stack-data.sha256sum] = "d400c585ab66e7ce532824feedd1762049ffd4c671bcb44a2ed49c2efa0b1210"
+SRC_URI[x86_64_v2_python3-stack-data.sha256sum] = "e273c7b269799d454487bea5fcfc7d93b827cd5e7a6294ee5314a2070959433d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-stack-data-0.6.3-12.el10_0.noarch.rpm;name=aarch64_python3-stack-data;unpack=0"
 SRC_URI[aarch64_python3-stack-data.sha256sum] = "f126265b10b860a59b446546992a0e629d9f752cac0cccc030ae44332a6c211f"

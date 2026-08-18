@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-WWW-Twilio-API-0.21-25.el10_0.src.r
 SRC_URI[src.sha256sum] = "b821edc5f8fb1fcc01818064b4869799842b481b848014de75fa628fc7a24b34"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Twilio-API-0.21-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Twilio-API;unpack=0"
-SRC_URI[x86_64_v2_perl-WWW-Twilio-API.sha256sum] = "3723bb64b59b6b85f2f05816231fede49ced0eda466ff23a5b940d64b9249560"
+SRC_URI[x86_64_v2_perl-WWW-Twilio-API.sha256sum] = "5753147f9acbbd2bcf9201460670148fd2a18a60c141dbc7bff82a28b2cd43e6"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Twilio-API-0.21-25.el10_0.noarch.rpm;name=aarch64_perl-WWW-Twilio-API;unpack=0"
 SRC_URI[aarch64_perl-WWW-Twilio-API.sha256sum] = "9072fe5757687550b324d278175e0481014daa977b2f350348a730872799a973"

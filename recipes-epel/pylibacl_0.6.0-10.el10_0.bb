@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pylibacl-0.6.0-10.el10_0.src.rpm;name=sr
 SRC_URI[src.sha256sum] = "fe7d2e113009e3ca8728fcecae755eb4428b63438f3554d17d970f45f5eda231"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylibacl-0.6.0-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pylibacl;unpack=0"
-SRC_URI[x86_64_v2_python3-pylibacl.sha256sum] = "c8a7ff583558d050d39cff5e0206ba825596378834393c6dd7dfbba0c1cb5ca7"
+SRC_URI[x86_64_v2_python3-pylibacl.sha256sum] = "0f8fc7bc0d043ebec9c88f552b518120e6688462b5ccd2d300c866615f765f6f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pylibacl-0.6.0-10.el10_0.aarch64.rpm;name=aarch64_python3-pylibacl;unpack=0"
 SRC_URI[aarch64_python3-pylibacl.sha256sum] = "f5300fea1b7376bf9116427e64efd32a1c52ecae8e5f9b516f3464d21b50e991"

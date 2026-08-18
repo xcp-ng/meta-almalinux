@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-namespace-autoclean-0.31-1.el10_0.s
 SRC_URI[src.sha256sum] = "cb39b39a5347b5229abe6b8161a78626b9482cb6dc5c1ea2b9e6ce61a4244ceb"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-namespace-autoclean-0.31-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-namespace-autoclean;unpack=0"
-SRC_URI[x86_64_v2_perl-namespace-autoclean.sha256sum] = "eae44831f069a321d1cf3f151df4dbe460d6db02e625dfd7239b395473415c3f"
+SRC_URI[x86_64_v2_perl-namespace-autoclean.sha256sum] = "e9ee8a97474e840173f7e9ce56b84874fee5b5b3522328364d6737a790675259"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-namespace-autoclean-0.31-1.el10_0.noarch.rpm;name=aarch64_perl-namespace-autoclean;unpack=0"
 SRC_URI[aarch64_perl-namespace-autoclean.sha256sum] = "9e3644b285afff9b7b4131289e13457f58a92b746a10b6f9e0d603dcff769b81"

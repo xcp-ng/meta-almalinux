@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pecan-1.5.1-2.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "6fb05a81863092592c9636978bcaee84b459ab390a4cc0ed9d9602d9951dc42b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pecan-1.5.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pecan;unpack=0"
-SRC_URI[x86_64_v2_python3-pecan.sha256sum] = "7e8c522b8997541bc9b0d7a45439e75116209da1e989c6e86dfcc403554d1ada"
+SRC_URI[x86_64_v2_python3-pecan.sha256sum] = "6dab495b384c9916f1807126066e667bb5f6fe69d1a4851083595b994870f2ad"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pecan-1.5.1-2.el10_0.noarch.rpm;name=aarch64_python3-pecan;unpack=0"
 SRC_URI[aarch64_python3-pecan.sha256sum] = "82682ec5e8287ca5cad4c1f2998557c2f91e4f98a19d8e3605ffb1aaf75223cc"

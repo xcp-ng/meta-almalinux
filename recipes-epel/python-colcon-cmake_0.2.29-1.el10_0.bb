@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-cmake-0.2.29-1.el10_0.src.
 SRC_URI[src.sha256sum] = "e7fd59482cd862308a18b6628fe137f41b9399a07d8b901314347796b31b73c9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-cmake-0.2.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-cmake;unpack=0"
-SRC_URI[x86_64_v2_python3-colcon-cmake.sha256sum] = "28786a28a46b2d1a0fa7d94a9538c12ea1b554e249d0bd2bb4a8f3bd68da32c1"
+SRC_URI[x86_64_v2_python3-colcon-cmake.sha256sum] = "e5eb1ac1265e3a67283d6859873b32086f4187e0131f2c638e5ab930bf8b3061"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-cmake-0.2.29-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-cmake;unpack=0"
 SRC_URI[aarch64_python3-colcon-cmake.sha256sum] = "18e8c25ebe2773c51d37e0ad8dd6077a44166976a475e987b5931368e7a4035d"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-autodoc-typehints-2.5.0-4.
 SRC_URI[src.sha256sum] = "b07a189cf47bb27f0c8766123a9eeaa5dd9c00fe33b8d93ca68ae0afd88bed5f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-autodoc-typehints;unpack=0"
-SRC_URI[x86_64_v2_python3-sphinx-autodoc-typehints.sha256sum] = "8d1401ba6f1c9c59a1fd21fb244c08732ac71076da3f4121aafd6710e9a3b855"
+SRC_URI[x86_64_v2_python3-sphinx-autodoc-typehints.sha256sum] = "b24427991cc12cf39331ab728c020c5057f865a322dd5cb71e2c70f6d07fe508"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.noarch.rpm;name=aarch64_python3-sphinx-autodoc-typehints;unpack=0"
 SRC_URI[aarch64_python3-sphinx-autodoc-typehints.sha256sum] = "f3e2bef1a13877fda5ffa304fc4a31bcaeaf8b277a5cc6ca0b6e415bf23acdc9"

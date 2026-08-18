@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-zetacomponents-base-1.9.4-1.el10_0.s
 SRC_URI[src.sha256sum] = "ea01b8450f3d4888b17f46cfbd0575f7b78f12bf39df09298ad5b192eb95ff64"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-zetacomponents-base-1.9.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-zetacomponents-base;unpack=0"
-SRC_URI[x86_64_v2_php-zetacomponents-base.sha256sum] = "3366b8fef3656356e4380e68fc220f9cd9949eef2737a89ad58df4524972b244"
+SRC_URI[x86_64_v2_php-zetacomponents-base.sha256sum] = "836ec3b0200a696757b8ed515e525bbf87e512fca2f78d3a939001f63fd54d34"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-zetacomponents-base-1.9.4-1.el10_0.noarch.rpm;name=aarch64_php-zetacomponents-base;unpack=0"
 SRC_URI[aarch64_php-zetacomponents-base.sha256sum] = "c09255df95ac52077a5b8f7595d1d624f0a7950f772e6b7b56f57b24bdda411d"

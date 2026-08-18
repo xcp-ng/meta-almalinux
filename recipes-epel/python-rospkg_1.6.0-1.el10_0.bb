@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rospkg-1.6.0-1.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "1f0d23e615b88a1798d913aa546ce3b48ad37b6cfcd1c351d38e3f665b5c682d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-rospkg-doc-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-rospkg-doc;unpack=0"
-SRC_URI[x86_64_v2_python-rospkg-doc.sha256sum] = "223f233a9ff8f6ee45c2b71f388051d848143de39aeb6a9a5e5881bacc523023"
+SRC_URI[x86_64_v2_python-rospkg-doc.sha256sum] = "754990c00020292ff2110596d32544d6eda8c4257b61c046fe8990f486d52b1f"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rospkg-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rospkg;unpack=0"
-SRC_URI[x86_64_v2_python3-rospkg.sha256sum] = "928b15530e0e6a4e46d04af590d2c00cb0096a7bd66ba24da2f9ba4e2e04cca7"
+SRC_URI[x86_64_v2_python3-rospkg.sha256sum] = "09cafc62e6dc0b6374d875964b547cfd4c65a2b06a2308c8081784839c2b825e"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-rospkg-doc-1.6.0-1.el10_0.noarch.rpm;name=aarch64_python-rospkg-doc;unpack=0"
 SRC_URI[aarch64_python-rospkg-doc.sha256sum] = "9c8d469d9cd6946c913d88f1281a2df43ef8217f35055c4df2e38474f77b2573"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-aiodns-3.2.0-1.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "bb6c662cf5570eb89596d4710d476166668b70a510b6acbd73b7481e2787b4d5"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiodns-3.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-aiodns;unpack=0"
-SRC_URI[x86_64_v2_python3-aiodns.sha256sum] = "8d8a2deb871d617b63bef056c3cb19f9ed730b339924a8e27e9d5f2a85c88d62"
+SRC_URI[x86_64_v2_python3-aiodns.sha256sum] = "0b2c370b8da11f7c86f79c31c9d1a49cd01ee89f1dcc10816065a0e1eedd47b2"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-aiodns-3.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-aiodns;unpack=0"
 SRC_URI[aarch64_python3-aiodns.sha256sum] = "a7f84f38fa68b838784e3f43618ccf2603a33d40cf6a59ebbb3112279b78bce6"

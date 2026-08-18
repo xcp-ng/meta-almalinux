@@ -2,32 +2,29 @@ Requires that were seen as not satisfiable in original repo:
 
 For arch x86_64_v2:
 (fedora-release-common >= 38-0.23 if fedora-release-common)
-(gnome-shell >= 45.0 with gnome-shell < 49.0)
-(kernel-64k-debug-modules-extra if kernel-64k-debug-core)
+(kernel-64k-debug-modules-extra if kernel-64k-debug-modules-core)
 (kernel-64k-devel-matched if kernel-64k-core)
-(kernel-64k-modules-extra if kernel-64k-core)
-(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-core)
-(kernel-rt-64k-modules-extra if kernel-rt-64k-core)
+(kernel-64k-modules-extra if kernel-64k-modules-core)
+(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-modules-core)
+(kernel-rt-64k-modules-extra if kernel-rt-64k-modules-core)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
-(kernel-rt-debug-modules-extra if kernel-rt-debug-core)
+(kernel-rt-debug-modules-extra if kernel-rt-debug-modules-core)
 (kernel-rt-devel if kernel-rt-core)
-(kernel-rt-modules-extra if kernel-rt-core)
+(kernel-rt-modules-extra if kernel-rt-modules-core)
+(python3.12dist(semantic-version) < 3~~ with python3.12dist(semantic-version) >= 2.8.2)
+(python3.12dist(semantic-version) >= 2.10 with python3.12dist(semantic-version) < 2.11)
+(python3.12dist(uv) < 1~~ with python3.12dist(uv) >= 0.5.31)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 (sdubby > 1.0-3 if sdubby)
 (sway >= 1.6 if sway)
 /usr/bin/ffmpeg
-gnome-shell
-gnome-shell >= 3.14.0
-gnome-shell >= 40
-gnome-shell >= 46
-gnome-shell >= 47
-gnome-shell >= 47~alpha
+crate(tokei) = 13.0.0
+geos
 golang(github.com/alecthomas/units)
 golang(github.com/d2g/dhcp4)
 golang(github.com/docopt/docopt-go)
 golang(github.com/jessevdk/go-flags)
 golang(github.com/remyoudompheng/bigfft)
-golang(github.com/spf13/pflag)
 golang(github.com/vishvananda/netns)
 golang(github.com/xeipuuv/gojsonreference)
 golang(github.com/yvasiyarov/go-metrics)
@@ -37,6 +34,7 @@ golang(gopkg.in/stack.v0)
 golang(gopkg.in/tomb.v1)
 golang(gopkg.in/tomb.v2)
 libCore.so.6.36()(64bit)
+libQMobipocket6.so.2()(64bit)
 libRIO.so.6.36()(64bit)
 libTree.so.6.36()(64bit)
 libavcodec.so.61()(64bit)
@@ -49,13 +47,16 @@ libavformat.so.61()(64bit)
 libavformat.so.61(LIBAVFORMAT_61)(64bit)
 libavutil.so.59()(64bit)
 libavutil.so.59(LIBAVUTIL_59)(64bit)
+libgeos.so.3.13.1()(64bit)
+libgeos_c.so.1()(64bit)
+libgps.so.30()(64bit)
 libpostproc.so.58()(64bit)
 libpostproc.so.58(LIBPOSTPROC_58)(64bit)
 libswresample.so.5()(64bit)
 libswresample.so.5(LIBSWRESAMPLE_5)(64bit)
 libswscale.so.8()(64bit)
 libswscale.so.8(LIBSWSCALE_8)(64bit)
-nxproxy
+libupsclient.so.6()(64bit)
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
 ocaml(CamlinternalOO) = bf3206c1e533a97ee4e00a76bfe1dae6
 ocaml(Stdlib) = e8d9af458547c45080a71b9a6eaed658
@@ -89,35 +90,25 @@ pkgconfig(libavutil)
 pkgconfig(libavutil) >= 58.29.100
 pkgconfig(libswresample) >= 4.12.100
 pkgconfig(libswscale) >= 7.5.100
-python3-prometheus_client
-python3.12dist(python-gitlab)
+python3.12dist(uv) >= 0.4
+python3.12dist(uv) >= 0.5.23
+sshpass
 
 
 For arch aarch64:
 (fedora-release-common >= 38-0.23 if fedora-release-common)
-(gnome-shell >= 45.0 with gnome-shell < 49.0)
-(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-core)
-(kernel-rt-64k-modules-extra if kernel-rt-64k-core)
+(kernel-rt-64k-debug-modules-extra if kernel-rt-64k-debug-modules-core)
+(kernel-rt-64k-modules-extra if kernel-rt-64k-modules-core)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
-(kernel-rt-debug-modules-extra if kernel-rt-debug-core)
+(kernel-rt-debug-modules-extra if kernel-rt-debug-modules-core)
 (kernel-rt-devel if kernel-rt-core)
-(kernel-rt-modules-extra if kernel-rt-core)
+(kernel-rt-modules-extra if kernel-rt-modules-core)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 (sdubby > 1.0-3 if sdubby)
 (sway >= 1.6 if sway)
 (syslinux if (filesystem.x86_64 or filesystem.i686))
-gnome-shell
-gnome-shell >= 3.14.0
-gnome-shell >= 40
-gnome-shell >= 46
-gnome-shell >= 47
-gnome-shell >= 47~alpha
-libCore.so.6.36()(64bit)
-libRIO.so.6.36()(64bit)
-libTree.so.6.36()(64bit)
 mingw32(libstdc++-6.dll)
 mingw64(libstdc++-6.dll)
-nxproxy
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
 ocaml(CamlinternalOO) = bf3206c1e533a97ee4e00a76bfe1dae6
 ocaml(Stdlib) = e8d9af458547c45080a71b9a6eaed658
@@ -141,4 +132,5 @@ ocamlx(Stdlib__Array) = b3215f99afe054938b4b66df456093cb
 ocamlx(Stdlib__Bigarray) = 2fb6f37865dd77a707635669254911e1
 ocamlx(Stdlib__Callback) = bafc96ea60f2aa399fe753ac0e40f764
 ocamlx(Stdlib__Gc) = 197914694cd716338b4da966236687f4
+virt-v2v = 1:2.8.1-22.el10_1
 

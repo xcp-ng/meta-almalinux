@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-service-identity-24.2.0-1.el10_0.
 SRC_URI[src.sha256sum] = "bb455960f7f3f75be7c9fa42dec42d89f905f62faeaa510786e223f6d19ee016"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity;unpack=0"
-SRC_URI[x86_64_v2_python3-service-identity.sha256sum] = "e71f62c33052b80986ea2e7e3f6555a22a371b9133652b738d80e9fdaa6e1709"
+SRC_URI[x86_64_v2_python3-service-identity.sha256sum] = "9988e8a4f28fb40e11ea78952d44183865daffd415d5805e5cfa3daea202a4c1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity+idna-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity+idna;unpack=0"
-SRC_URI[x86_64_v2_python3-service-identity+idna.sha256sum] = "c5157a9701d25266bd762dd570a8cfe115f865af9d70ccff8ffc2e3c9f1dd95d"
+SRC_URI[x86_64_v2_python3-service-identity+idna.sha256sum] = "099539b922bce09f85a43bf482b2fac9ec485cedc37ce97930cdc9a0db9cacd8"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-service-identity-24.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-service-identity;unpack=0"
 SRC_URI[aarch64_python3-service-identity.sha256sum] = "6bb9aecd19bb0538758104530944f74fa2e9330624dbf367846698c90aca2425"

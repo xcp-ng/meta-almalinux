@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-importlib-resources-6.4.4-3.el10_
 SRC_URI[src.sha256sum] = "6fc8c5b447e9a1e9917b00c15ad746dc0339053f22b62c0c5acf53d823b8312a"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-importlib-resources-6.4.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-importlib-resources;unpack=0"
-SRC_URI[x86_64_v2_python3-importlib-resources.sha256sum] = "4b5675832faf8035f29076ca1cc59a56e27f0dbc2c90d034e60be6c26c051fd3"
+SRC_URI[x86_64_v2_python3-importlib-resources.sha256sum] = "041568d139b4799b706d7a7b7fa14a0e466721adbecbfd92cf4b7faede1c7c66"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-importlib-resources-6.4.4-3.el10_0.noarch.rpm;name=aarch64_python3-importlib-resources;unpack=0"
 SRC_URI[aarch64_python3-importlib-resources.sha256sum] = "c4b79ee779519c55131a9f3b2149ff6db8fc6b69a6c54197673d5eb8f0d58539"

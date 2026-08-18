@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sybil-6.1.1-1.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "a0833fef061f347db5473f59cc65c6e6f1ff64682f3503749310a19d5801359b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sybil-6.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sybil;unpack=0"
-SRC_URI[x86_64_v2_python3-sybil.sha256sum] = "88d90daa3761e8322c8944a04e53b2a91082254462d2f4c890827aa832d4bef6"
+SRC_URI[x86_64_v2_python3-sybil.sha256sum] = "a0943a58f8a0ef4550ba64a14e597496aead76506fe163e9533fde4061d3ee32"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sybil-6.1.1-1.el10_0.noarch.rpm;name=aarch64_python3-sybil;unpack=0"
 SRC_URI[aarch64_python3-sybil.sha256sum] = "0f5c2a26c77fbf09cf546b353915e2728fc3f4ead7fce9476284dad3f0a6fe81"

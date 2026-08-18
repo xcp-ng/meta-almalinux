@@ -6,6 +6,7 @@ PN = "tesseract-tessdata"
 PV = "4.1.0"
 PR = "9.el10"
 PACKAGES = " \
+ tesseract-equ \
  tesseract-langpack-afr \
  tesseract-langpack-amh \
  tesseract-langpack-ara \
@@ -129,11 +130,15 @@ PACKAGES = " \
  tesseract-langpack-vie \
  tesseract-langpack-yid \
  tesseract-langpack-yor \
+ tesseract-osd \
  tesseract-tessdata-doc \
  "
 
 SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/tesseract-tessdata-4.1.0-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c7a964598b80c8b3ff0740dfbff7cde5b3d3b5cbf957bdea4c9594759cb4512b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tesseract-equ-4.1.0-9.el10.noarch.rpm;name=x86_64_v2_tesseract-equ;unpack=0"
+SRC_URI[x86_64_v2_tesseract-equ.sha256sum] = "2db416741863566d16d552590015296c342081b23c6d61b816937f795bf00b4e"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tesseract-langpack-afr-4.1.0-9.el10.noarch.rpm;name=x86_64_v2_tesseract-langpack-afr;unpack=0"
 SRC_URI[x86_64_v2_tesseract-langpack-afr.sha256sum] = "2f975c82242d935894288c0d636f2b58834ce5fb2573225c6d6bd1e71496ba6d"
@@ -504,8 +509,14 @@ SRC_URI[x86_64_v2_tesseract-langpack-yid.sha256sum] = "8fa81c68541c7890139e82290
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tesseract-langpack-yor-4.1.0-9.el10.noarch.rpm;name=x86_64_v2_tesseract-langpack-yor;unpack=0"
 SRC_URI[x86_64_v2_tesseract-langpack-yor.sha256sum] = "cf0410afff986b543a43747cc430dd0ef130ceba839e9128535f7781556c448a"
 
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tesseract-osd-4.1.0-9.el10.noarch.rpm;name=x86_64_v2_tesseract-osd;unpack=0"
+SRC_URI[x86_64_v2_tesseract-osd.sha256sum] = "50cb21ec1dbd14003fe6885eb33a1f86a3405dae38eda51306c315eacbdee989"
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tesseract-tessdata-doc-4.1.0-9.el10.noarch.rpm;name=x86_64_v2_tesseract-tessdata-doc;unpack=0"
 SRC_URI[x86_64_v2_tesseract-tessdata-doc.sha256sum] = "1b95c5e1e125bf1b825a4e95caa3f98b1cd7b1d447fdee922cb861c0ea6bae73"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tesseract-equ-4.1.0-9.el10.noarch.rpm;name=aarch64_tesseract-equ;unpack=0"
+SRC_URI[aarch64_tesseract-equ.sha256sum] = "2db416741863566d16d552590015296c342081b23c6d61b816937f795bf00b4e"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tesseract-langpack-afr-4.1.0-9.el10.noarch.rpm;name=aarch64_tesseract-langpack-afr;unpack=0"
 SRC_URI[aarch64_tesseract-langpack-afr.sha256sum] = "2f975c82242d935894288c0d636f2b58834ce5fb2573225c6d6bd1e71496ba6d"
@@ -876,9 +887,16 @@ SRC_URI[aarch64_tesseract-langpack-yid.sha256sum] = "8fa81c68541c7890139e8229063
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tesseract-langpack-yor-4.1.0-9.el10.noarch.rpm;name=aarch64_tesseract-langpack-yor;unpack=0"
 SRC_URI[aarch64_tesseract-langpack-yor.sha256sum] = "cf0410afff986b543a43747cc430dd0ef130ceba839e9128535f7781556c448a"
 
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tesseract-osd-4.1.0-9.el10.noarch.rpm;name=aarch64_tesseract-osd;unpack=0"
+SRC_URI[aarch64_tesseract-osd.sha256sum] = "50cb21ec1dbd14003fe6885eb33a1f86a3405dae38eda51306c315eacbdee989"
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tesseract-tessdata-doc-4.1.0-9.el10.noarch.rpm;name=aarch64_tesseract-tessdata-doc;unpack=0"
 SRC_URI[aarch64_tesseract-tessdata-doc.sha256sum] = "1b95c5e1e125bf1b825a4e95caa3f98b1cd7b1d447fdee922cb861c0ea6bae73"
 
+RDEPENDS:tesseract-equ = " \
+ tesseract \
+ tesseract-tessdata-doc \
+ "
 RDEPENDS:tesseract-langpack-afr = " \
  tesseract \
  tesseract-tessdata-doc \
@@ -1368,6 +1386,10 @@ RDEPENDS:tesseract-langpack-yid = " \
  tesseract-tessdata-doc \
  "
 RDEPENDS:tesseract-langpack-yor = " \
+ tesseract \
+ tesseract-tessdata-doc \
+ "
+RDEPENDS:tesseract-osd = " \
  tesseract \
  tesseract-tessdata-doc \
  "

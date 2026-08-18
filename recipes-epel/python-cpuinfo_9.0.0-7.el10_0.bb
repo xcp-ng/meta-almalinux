@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cpuinfo-9.0.0-7.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "e841ebecb2baedfe4d338050831c07138f39635fc9780f4384553e40e8ebc51b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cpuinfo-9.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cpuinfo;unpack=0"
-SRC_URI[x86_64_v2_python3-cpuinfo.sha256sum] = "d6d6c287d21ca92f906ee0a63e6e89ead34129903adfa8bde21dc31b42a05352"
+SRC_URI[x86_64_v2_python3-cpuinfo.sha256sum] = "4197ee5cde7d5b0c4ae99a02ad9d2ea0131ffdf20a8c8ea0eb9bc065e202c442"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cpuinfo-9.0.0-7.el10_0.noarch.rpm;name=aarch64_python3-cpuinfo;unpack=0"
 SRC_URI[aarch64_python3-cpuinfo.sha256sum] = "7329b7ae3e6c67619d4f73091d9236298c6ee0fa46e0154cf098da5bb7e81c49"

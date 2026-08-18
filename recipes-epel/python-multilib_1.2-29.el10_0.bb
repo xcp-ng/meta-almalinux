@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-multilib-1.2-29.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "ab70889f75015595e431fe4c975990454c03c6bcba0dc31a811dcae8b6b96218"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-multilib-conf-1.2-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-multilib-conf;unpack=0"
-SRC_URI[x86_64_v2_python-multilib-conf.sha256sum] = "9a1739ac8fd5b63d50416dea9321c52ace2ba6ab42fa05b01ddef404112247ed"
+SRC_URI[x86_64_v2_python-multilib-conf.sha256sum] = "1fce4f723147a7f18a82dd84539611568f3b7431dc643f671d4dc222abba0333"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-multilib-1.2-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-multilib;unpack=0"
-SRC_URI[x86_64_v2_python3-multilib.sha256sum] = "3894ffe683ce0b43ae3cbb83622e12a5fcc3a72db39058fd4c4dfe255a8fa49f"
+SRC_URI[x86_64_v2_python3-multilib.sha256sum] = "fddf786833a4cf556bfe2b8e6834c9af8756f6f7be758d2a37510cd9ad4eb4fa"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-multilib-conf-1.2-29.el10_0.noarch.rpm;name=aarch64_python-multilib-conf;unpack=0"
 SRC_URI[aarch64_python-multilib-conf.sha256sum] = "1d64af6a149a2f6af68e43e2b64043c2281c84e46fa4142254b8c0fd6d276d93"

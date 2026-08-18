@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-setuptools-gettext-0.1.14-1.el10_
 SRC_URI[src.sha256sum] = "2a5e45a46b596e8f623b54265fe86f539a07413bb284cfef57950f189b8e4afc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-setuptools-gettext-0.1.14-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-setuptools-gettext;unpack=0"
-SRC_URI[x86_64_v2_python3-setuptools-gettext.sha256sum] = "9a736277be089ae7001efcad669d0815b83dba893902c0306da969f7dcf9fe19"
+SRC_URI[x86_64_v2_python3-setuptools-gettext.sha256sum] = "644d71b246a27a279c4adca3fcd2b0d685c3430b602a2650b0f1b05028959fca"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-setuptools-gettext-0.1.14-1.el10_0.noarch.rpm;name=aarch64_python3-setuptools-gettext;unpack=0"
 SRC_URI[aarch64_python3-setuptools-gettext.sha256sum] = "f56e391cb8da03c93e840ac886db8724b7e3785f5879cac96af9389a6866115a"

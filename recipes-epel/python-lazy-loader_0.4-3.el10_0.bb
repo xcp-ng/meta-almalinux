@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-lazy-loader-0.4-3.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "188ef88dd25ec2042d04a156e644f8f69917797d4c51daba07208c5996ae6de3"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lazy-loader-0.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-lazy-loader;unpack=0"
-SRC_URI[x86_64_v2_python3-lazy-loader.sha256sum] = "b41900aaebbf273e5c7cc1e263ee9007cc3e4af1bdd21a555c156a3f533d0b67"
+SRC_URI[x86_64_v2_python3-lazy-loader.sha256sum] = "01d12af240bb9d4328134188307fc54e9eb743dc66295a54cd9d96845a44bbb3"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-lazy-loader-0.4-3.el10_0.noarch.rpm;name=aarch64_python3-lazy-loader;unpack=0"
 SRC_URI[aarch64_python3-lazy-loader.sha256sum] = "ab7d13b14c96d9575459c84cbca8513d4e836d5832a0d476d7ee9c625f9335b0"

@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-Bottleneck-1.4.2-1.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "91b216e8cd6530bbaead3165f3f57bb732f2bf779c84b1c84e7b645c7d644720"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-Bottleneck-doc-1.4.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-Bottleneck-doc;unpack=0"
-SRC_URI[x86_64_v2_python-Bottleneck-doc.sha256sum] = "2c2a0efabb7e8fe9894fb8183f3e82919c323ce68c49035b6caf4b017a2b4cab"
+SRC_URI[x86_64_v2_python-Bottleneck-doc.sha256sum] = "da7abd0d23bf4759fa43b5d8989549aaae936e8d4095041bd3dacfa37080f8a2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-Bottleneck-1.4.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-Bottleneck;unpack=0"
-SRC_URI[x86_64_v2_python3-Bottleneck.sha256sum] = "57519d94dae267cbbca0efcb7032e4b5e2bd88eecc978d601820ac0a9c3c80c1"
+SRC_URI[x86_64_v2_python3-Bottleneck.sha256sum] = "38653062be05dcfb7a459b178887fa8ff18e114bafef66eebf2864c50edee866"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-Bottleneck-doc-1.4.2-1.el10_0.noarch.rpm;name=aarch64_python-Bottleneck-doc;unpack=0"
 SRC_URI[aarch64_python-Bottleneck-doc.sha256sum] = "1001474af549a22446c51057e4b9b6d133ea177312bc89728a45bdf63e598e9c"

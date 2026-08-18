@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Dumper-0.81-50.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "94d96156bc89bd4cf740f691e79b07560171e74a45d487f444e7e192b412cb6e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Dumper-0.81-50.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Dumper;unpack=0"
-SRC_URI[x86_64_v2_perl-XML-Dumper.sha256sum] = "3fa66f7e5409179169986cd3eb11947dbd265228064134c41e86e78c1cf31459"
+SRC_URI[x86_64_v2_perl-XML-Dumper.sha256sum] = "9b0b8f857cb9e518e412945c8acca6be4b302da679dd700047332c2f69cc0568"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Dumper-0.81-50.el10_0.noarch.rpm;name=aarch64_perl-XML-Dumper;unpack=0"
 SRC_URI[aarch64_perl-XML-Dumper.sha256sum] = "6d5ec995601cd43faaed4fdea0f37b55b60c47994eef1a517e7ad85245e2b267"

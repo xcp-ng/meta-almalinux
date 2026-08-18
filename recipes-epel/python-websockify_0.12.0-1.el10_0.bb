@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-websockify-0.12.0-1.el10_0.src.rp
 SRC_URI[src.sha256sum] = "3e7ab44d5eb771c5665be594189e8082869910e10eed15192229a04fe553273c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-websockify-doc-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-websockify-doc;unpack=0"
-SRC_URI[x86_64_v2_python-websockify-doc.sha256sum] = "4c312497088c8f5d32b6018dc50c527ec0e0b0acbab77d6455ea627eb8361c77"
+SRC_URI[x86_64_v2_python-websockify-doc.sha256sum] = "35c8d180a1026b99930b625a952b449c2fb753b81bc569f2e08d9632702cd6e9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websockify-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websockify;unpack=0"
-SRC_URI[x86_64_v2_python3-websockify.sha256sum] = "8dd8cedfd997b5f5da8c662a0113fdba9282934ba1f2f15fbdaef4fd79f68cf5"
+SRC_URI[x86_64_v2_python3-websockify.sha256sum] = "232df5b5b3cb2648b732168ac189a18d42567100d860575ecfbef1ecf597189c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-websockify-doc-0.12.0-1.el10_0.noarch.rpm;name=aarch64_python-websockify-doc;unpack=0"
 SRC_URI[aarch64_python-websockify-doc.sha256sum] = "768e2d116f8a763b96da352b0820860d08a2911e1200577539ed9489b093c679"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-wurlitzer-3.1.1-3.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "f40f7a174aac3fdb6efd5caf50e7114d580749ae724bf0716d3890bc334b0959"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wurlitzer-3.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wurlitzer;unpack=0"
-SRC_URI[x86_64_v2_python3-wurlitzer.sha256sum] = "57e66b0ebf1e47cec4617e100efda510a6b4654987e6dc1ae4ce4f137dc7d6eb"
+SRC_URI[x86_64_v2_python3-wurlitzer.sha256sum] = "da5f8175916e63c46140a629cb203bf3e0b98f2910d09ceaf79cad398f9d483a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-wurlitzer-3.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-wurlitzer;unpack=0"
 SRC_URI[aarch64_python3-wurlitzer.sha256sum] = "64e6fc8fa1644b05dafa38e395528b60fff65b2d3d63d0ef7f88671a4bcd79dc"

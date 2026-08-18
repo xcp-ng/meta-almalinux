@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-registry-1.4-15.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "4fa8151c19a3846eff3f4ac195dc53f486005ffd346a76b2a3df363071b3ee77"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-registry-1.4-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-registry;unpack=0"
-SRC_URI[x86_64_v2_python3-registry.sha256sum] = "ee4bdb83cc2ace9764a9a7e43ffcb70d987a6601db95b29855b37108efcdae51"
+SRC_URI[x86_64_v2_python3-registry.sha256sum] = "44a1e65e1e381f439847c4fb019c37c5df4d018fa7f6d0782c236e495998fb38"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-registry-1.4-15.el10_0.noarch.rpm;name=aarch64_python3-registry;unpack=0"
 SRC_URI[aarch64_python3-registry.sha256sum] = "6791f0aa96111b22328d4b0a006870351fe307636b7ed8e7c7590b477c1ece74"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-platformdirs-4.2.2-2.el10_0.src.r
 SRC_URI[src.sha256sum] = "0b18d8bb7e35f5c1a0961162b299d3adabef02bba69e32c31ef83cc98caf1c85"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-platformdirs-4.2.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-platformdirs;unpack=0"
-SRC_URI[x86_64_v2_python3-platformdirs.sha256sum] = "52e3b1887fb6e03b18b23c679a51bee19aa1f50570ae20ac7413ffa66464d9b6"
+SRC_URI[x86_64_v2_python3-platformdirs.sha256sum] = "5709a7b99ffed2ee82a653a15dbf5b73ea4ad0a59728fcd06bd18577f107b345"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-platformdirs-4.2.2-2.el10_0.noarch.rpm;name=aarch64_python3-platformdirs;unpack=0"
 SRC_URI[aarch64_python3-platformdirs.sha256sum] = "a2df000703daa151df42e1e16db80e5c151d28c883f54bbf839f75aa53dac37e"

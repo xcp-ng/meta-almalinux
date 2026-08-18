@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-ssdeep-1.1.0-24.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "be2998e2262939a2468537d70e448542e849f8183ba977373b60f1d38409acf6"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-ssdeep-1.1.0-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-ssdeep;unpack=0"
-SRC_URI[x86_64_v2_php-pecl-ssdeep.sha256sum] = "d62f126c35a8b3358020c005d5f8c46ce25ab0da46354104c4a6e05068fc9a3d"
+SRC_URI[x86_64_v2_php-pecl-ssdeep.sha256sum] = "5f938341fd9d5ad5c353778dbf3d924be732a2b4ac4dd14ca5f180060b7166c1"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-ssdeep-1.1.0-24.el10_0.aarch64.rpm;name=aarch64_php-pecl-ssdeep;unpack=0"
 SRC_URI[aarch64_php-pecl-ssdeep.sha256sum] = "ad81d67168ce99bd0cab551766847411b9cbe6032ef1ce13572b73cfc9f5ee70"

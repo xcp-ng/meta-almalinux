@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zope-exceptions-5.1-3.el10_0.src.
 SRC_URI[src.sha256sum] = "b61fce853ddabcc3cc219f98d891d1a83c3bc4aeb8a95fdaab41a693382d8f6d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-exceptions-5.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-exceptions;unpack=0"
-SRC_URI[x86_64_v2_python3-zope-exceptions.sha256sum] = "e0ae57881fd269b9588b8e4dd70dad9b55b630b7c3c18159d9dec31b37fd42e8"
+SRC_URI[x86_64_v2_python3-zope-exceptions.sha256sum] = "112e2aed3b7789795ecf939eedf5c1a63f14e3677f9fab36d0fcf03b19a65a5c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-exceptions-5.1-3.el10_0.noarch.rpm;name=aarch64_python3-zope-exceptions;unpack=0"
 SRC_URI[aarch64_python3-zope-exceptions.sha256sum] = "fcaf5ca3cd65e1c2f5b1bb027c65d78d027a156c0a671081725295c1a7b3131a"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-boolean.py-4.0-12.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "a1bafadc6d6d2248a96be3b2afe449a7b6edb032ea0d5d134c4ae271ee93d73c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-boolean.py-4.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-boolean.py;unpack=0"
-SRC_URI[x86_64_v2_python3-boolean.py.sha256sum] = "58175cb635c0b63e1d436c8a6cff7d3a3b6dce72b9aed648c74ac2e516d82dae"
+SRC_URI[x86_64_v2_python3-boolean.py.sha256sum] = "ca2de548fc3f888583b698b9fa1618fcfaded67d7b513d3050d3e853a3b05e53"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-boolean.py-4.0-12.el10_0.noarch.rpm;name=aarch64_python3-boolean.py;unpack=0"
 SRC_URI[aarch64_python3-boolean.py.sha256sum] = "1701dd50c83f92bf692f1c161c64c4879ed49f315026e33576d64c2e68de68b2"

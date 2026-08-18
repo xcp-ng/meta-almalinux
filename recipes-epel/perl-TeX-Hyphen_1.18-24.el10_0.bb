@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-TeX-Hyphen-1.18-24.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "801e7eab4ed080b6120ed7abd5025fc3de09fda89bcf28643335704495faec50"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-TeX-Hyphen-1.18-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-TeX-Hyphen;unpack=0"
-SRC_URI[x86_64_v2_perl-TeX-Hyphen.sha256sum] = "8304606343b0eb3d316f0dc644ae0a740f88eb54d5da235a96741f792445fdd3"
+SRC_URI[x86_64_v2_perl-TeX-Hyphen.sha256sum] = "1f006f79b8805a9c4c98550dfc9d78b0889a597456fff19e1874a7400262b68f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-TeX-Hyphen-1.18-24.el10_0.noarch.rpm;name=aarch64_perl-TeX-Hyphen;unpack=0"
 SRC_URI[aarch64_perl-TeX-Hyphen.sha256sum] = "b0629fd4a16a71e8191427d7ad7d2916c8ea9731d91e7a5d5be373e4fd88e2de"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-oracledb-2.5.1-1.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "2672f60f1994af97cf4c314eed43876f58f6e9dff6ebc828d29b5efd6f0a6125"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-oracledb-2.5.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-oracledb;unpack=0"
-SRC_URI[x86_64_v2_python3-oracledb.sha256sum] = "09961a3cb69046f4c59d95160a15c69fc098e23015eff238e3ea55ff38c6f0c9"
+SRC_URI[x86_64_v2_python3-oracledb.sha256sum] = "bad00385ec35799e294e26f29eb806a16ae55c100cdd9005266cdeebc3c1d20e"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-oracledb-2.5.1-1.el10_0.aarch64.rpm;name=aarch64_python3-oracledb;unpack=0"
 SRC_URI[aarch64_python3-oracledb.sha256sum] = "9c89f4af2725073a7e1b55508660160a9b167603aa5b00ab6aca168905b2ebbe"

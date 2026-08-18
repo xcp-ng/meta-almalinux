@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pdm-backend-2.3.3-1.el10_0.src.rp
 SRC_URI[src.sha256sum] = "ad20c58d447326fd588e2e81060768bcc9e5ca68611550ea5629f3990cfe6ff4"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pdm-backend-2.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pdm-backend;unpack=0"
-SRC_URI[x86_64_v2_python3-pdm-backend.sha256sum] = "909a730b6a8bad9b850c4f8b9b1f841be6fcfe77703879a4543e7f44d82c6050"
+SRC_URI[x86_64_v2_python3-pdm-backend.sha256sum] = "3d586142a448ccfe281444b34dd7c6460a586cbf3cd30a4350d633a4ac2e9e92"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pdm-backend-2.3.3-1.el10_0.noarch.rpm;name=aarch64_python3-pdm-backend;unpack=0"
 SRC_URI[aarch64_python3-pdm-backend.sha256sum] = "f2276af7bbd07f68bfbb96045681cc35f221fb71261e20fa5300289f613ccf4f"

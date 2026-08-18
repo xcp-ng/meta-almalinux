@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Types-URI-0.007-19.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "ca778b9f10eff3e576187aac7fffc1dc215622bc9bbd9ff43a649f87801f1003"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-URI-0.007-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-URI;unpack=0"
-SRC_URI[x86_64_v2_perl-Types-URI.sha256sum] = "55edfe520ce229d63836c04df4adf83d86dac41374b23da4023840909e51cd18"
+SRC_URI[x86_64_v2_perl-Types-URI.sha256sum] = "8be76831cba2c9a42b263f5de86ef334d26854ef7f2da4882d1fc9053e010d96"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-URI-tests-0.007-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-URI-tests;unpack=0"
-SRC_URI[x86_64_v2_perl-Types-URI-tests.sha256sum] = "079bce0051675c6bab176f7ceecd5da2dd1c5bc4dcad5cc73b87c7ee78bd040b"
+SRC_URI[x86_64_v2_perl-Types-URI-tests.sha256sum] = "01f0a65df45df2a6afdab83740409264ae9e8b5fee16473e224a54af4179f4d6"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-URI-0.007-19.el10_0.noarch.rpm;name=aarch64_perl-Types-URI;unpack=0"
 SRC_URI[aarch64_perl-Types-URI.sha256sum] = "94c0624906fd0f23e92e828f0ea9eb0f556ec8a57ba1e33d09a5b7665f60268c"

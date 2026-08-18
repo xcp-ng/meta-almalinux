@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests_ntlm-1.3.0-2.el10_0.src.
 SRC_URI[src.sha256sum] = "f2632cecd4fba5ae95e5cabf980ef1fec804909b661ca58649c1e4d7e5010296"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests_ntlm-1.3.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests_ntlm;unpack=0"
-SRC_URI[x86_64_v2_python3-requests_ntlm.sha256sum] = "a6d12e3fb706de3691ca0627d73e905a0d8d8400e792361b07907d0ff6362afc"
+SRC_URI[x86_64_v2_python3-requests_ntlm.sha256sum] = "6ae98c784757e2bb89631fd41baaa762aee4a68266e98fc0bc854ea56981afd7"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests_ntlm-1.3.0-2.el10_0.noarch.rpm;name=aarch64_python3-requests_ntlm;unpack=0"
 SRC_URI[aarch64_python3-requests_ntlm.sha256sum] = "29259c09912017a766f2480120253d95ceba8c5dee387a10741007ec405b8e28"

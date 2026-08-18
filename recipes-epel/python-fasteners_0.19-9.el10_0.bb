@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-fasteners-0.19-9.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "6b72d56dc41b4944a524c06b4d54bfe53bb98e90c2ea3fbf1a678f6085acd7cd"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fasteners-0.19-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fasteners;unpack=0"
-SRC_URI[x86_64_v2_python3-fasteners.sha256sum] = "884813b14cfa3ad4acf1ee19c7ab0d72641fb562ec94e5c67451f3078d3f139b"
+SRC_URI[x86_64_v2_python3-fasteners.sha256sum] = "aa3dcaecd790aba6eaf533953a072a42098889dfdbdcfcad5b2c3ffee2eba0c2"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-fasteners-0.19-9.el10_0.noarch.rpm;name=aarch64_python3-fasteners;unpack=0"
 SRC_URI[aarch64_python3-fasteners.sha256sum] = "7fb5592416eb62bdda49b3ff0333078d72dd538048c9ee752e7c98a63a5d4e88"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zope-sqlalchemy-3.1-6.el10_0.src.
 SRC_URI[src.sha256sum] = "4bc7a2da5482eb6ae3b77ef22b89b8c386352843f1c7d6b5bf35ff5f1a56dc98"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-sqlalchemy-3.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-sqlalchemy;unpack=0"
-SRC_URI[x86_64_v2_python3-zope-sqlalchemy.sha256sum] = "6cbf0d1fccb5788640798d46f113f309bfe3b1ec802ff725a718361a403fd9be"
+SRC_URI[x86_64_v2_python3-zope-sqlalchemy.sha256sum] = "cd9a54362503d2a392ffe3efb2dc18f07326112265076080f032855bf4648860"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-sqlalchemy-3.1-6.el10_0.noarch.rpm;name=aarch64_python3-zope-sqlalchemy;unpack=0"
 SRC_URI[aarch64_python3-zope-sqlalchemy.sha256sum] = "5f9ea70c6af6bc7122fdfb6113e283649f8f41c7a8ad5dc2e90f7fcc0deac4ac"

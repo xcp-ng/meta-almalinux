@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zc-lockfile-3.0.post1-11.el10_0.s
 SRC_URI[src.sha256sum] = "93a4fb8ac9eae55f68cbcb6cfdf285784b13e1c4c6d775e8e37828e4e01a9c3c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zc-lockfile-3.0.post1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zc-lockfile;unpack=0"
-SRC_URI[x86_64_v2_python3-zc-lockfile.sha256sum] = "b4679464404ee41bc6de0dd31e6b99bde1190e21819037f6512dcb8e8818fea1"
+SRC_URI[x86_64_v2_python3-zc-lockfile.sha256sum] = "8ab3f0db25b5f521e7055e0e47b4e365bab97cf4ab665ec5232a1ae5d551ddfd"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zc-lockfile-3.0.post1-11.el10_0.noarch.rpm;name=aarch64_python3-zc-lockfile;unpack=0"
 SRC_URI[aarch64_python3-zc-lockfile.sha256sum] = "dbe17c6781783b14d84a82d6a4fbf0e83274d7b61e35eda6b79849a3a38af54b"

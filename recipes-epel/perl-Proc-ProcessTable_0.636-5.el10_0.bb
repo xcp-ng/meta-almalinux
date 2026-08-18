@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Proc-ProcessTable-0.636-5.el10_0.sr
 SRC_URI[src.sha256sum] = "ae3dba7b0a4b83592c5cf78abc7ed0826423fab0b3ba4906fe2da2a4c667fd7d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Proc-ProcessTable-0.636-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Proc-ProcessTable;unpack=0"
-SRC_URI[x86_64_v2_perl-Proc-ProcessTable.sha256sum] = "d261cd23f3a15a06b3b4dcd738c3d9ff5001de5c8afc954f19ffbc85b1cc38e6"
+SRC_URI[x86_64_v2_perl-Proc-ProcessTable.sha256sum] = "98cb9d7d226f724cbfdda0d8b9e969c24e3d3015328bdfbc12dd59fa628ba58c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Proc-ProcessTable-0.636-5.el10_0.aarch64.rpm;name=aarch64_perl-Proc-ProcessTable;unpack=0"
 SRC_URI[aarch64_perl-Proc-ProcessTable.sha256sum] = "de4b64e0cde44cf01d952e5456cd15422ba4cc54ea8bc7f77c2b352728cf5fa3"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_
 SRC_URI[src.sha256sum] = "436a6049c91fce53526796e82b380bdae01ade4c25a1763ce201e2dc52f1138d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-RequiresInternet-0.05-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-RequiresInternet;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-RequiresInternet.sha256sum] = "8a19fd818b31b75e531ac9899b191459eb341c3614bbf32ee5f3ba0d256a0f30"
+SRC_URI[x86_64_v2_perl-Test-RequiresInternet.sha256sum] = "cfa30723710bb94a6da2439283b7fa23dd1974b8a1648b393880e6592e1f04b5"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_0.noarch.rpm;name=aarch64_perl-Test-RequiresInternet;unpack=0"
 SRC_URI[aarch64_perl-Test-RequiresInternet.sha256sum] = "7177581caf14ae032615dc3ef8d82ae371b9313053af9d3421e71a9ad4b60c0b"

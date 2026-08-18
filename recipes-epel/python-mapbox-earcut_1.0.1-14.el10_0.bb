@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mapbox-earcut-1.0.1-14.el10_0.src
 SRC_URI[src.sha256sum] = "14069ea52b572bd0b57d019ce48ff469ff6cdda0dc6ad8aca6122d826406c3eb"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mapbox-earcut-1.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-mapbox-earcut;unpack=0"
-SRC_URI[x86_64_v2_python3-mapbox-earcut.sha256sum] = "9d746f1f4c09cabdab913433dde117b225f529088258440cf285348f33a7484b"
+SRC_URI[x86_64_v2_python3-mapbox-earcut.sha256sum] = "71319b88135f4f17d0379dc4bc72a970748c9cb9c07a70dd69609383bdf03c91"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mapbox-earcut-1.0.1-14.el10_0.aarch64.rpm;name=aarch64_python3-mapbox-earcut;unpack=0"
 SRC_URI[aarch64_python3-mapbox-earcut.sha256sum] = "56f1f758fa9aa4e63a8da0c07d914525c4e258eb0b9a3ddfcc72b32f0e74aa42"

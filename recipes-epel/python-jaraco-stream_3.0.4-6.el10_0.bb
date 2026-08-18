@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-stream-3.0.4-6.el10_0.src.
 SRC_URI[src.sha256sum] = "4f081be561077117b1ff6411087368cb85b05e5f4176891fe9125f4b3b8703e4"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-stream-3.0.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-stream;unpack=0"
-SRC_URI[x86_64_v2_python3-jaraco-stream.sha256sum] = "9359ee03ae3760b67b15a8a4fc4a2c54192876f761ca46e583ac9d23cfbfc585"
+SRC_URI[x86_64_v2_python3-jaraco-stream.sha256sum] = "0a3097f49c456b99a65c8c0292cc03b3c7c86ee38ca8c32c841b3bbe6e4ea9ac"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-stream-3.0.4-6.el10_0.noarch.rpm;name=aarch64_python3-jaraco-stream;unpack=0"
 SRC_URI[aarch64_python3-jaraco-stream.sha256sum] = "7ba98d1f823c2df0641f1be6d18a7665e2b88694524cefab1dc7df0354e5df57"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Taint-Util-0.08-32.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "f69274d3ba16e6e636a13666cd49a0509246942c0c831c62ff9cd66b244192ac"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Taint-Util-0.08-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Taint-Util;unpack=0"
-SRC_URI[x86_64_v2_perl-Taint-Util.sha256sum] = "74098b4e6ea06827afba96f1b311b63950c1e751468205c2a0d6d1e28bf31bb8"
+SRC_URI[x86_64_v2_perl-Taint-Util.sha256sum] = "ac4c60520789148704aab820cc3a2300ace9eea68c64c99faf35f62dd43f15fe"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Taint-Util-0.08-32.el10_0.aarch64.rpm;name=aarch64_perl-Taint-Util;unpack=0"
 SRC_URI[aarch64_perl-Taint-Util.sha256sum] = "195e26eb051c8d77516905e98b87ef55e14c58e8a3f4a98956c480648e619736"

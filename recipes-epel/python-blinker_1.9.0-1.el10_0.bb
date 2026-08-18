@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-blinker-1.9.0-1.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "ec0334195b2ac56e802c934a196461c56022e295da35d4710ce3dad08bf600d1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-blinker-1.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-blinker;unpack=0"
-SRC_URI[x86_64_v2_python3-blinker.sha256sum] = "2f13f8f6e0aede13ddc414cea10ca6dee68499502c94dd725c5913e8b6452cbe"
+SRC_URI[x86_64_v2_python3-blinker.sha256sum] = "9fc175ad879e97908c34fa5570905547e5a9823315e234838182e7190494aecd"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-blinker-1.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-blinker;unpack=0"
 SRC_URI[aarch64_python3-blinker.sha256sum] = "65592511ff4756d5fdcf3531796f21c7e0deebe543275163c2704cf6c7beb96b"

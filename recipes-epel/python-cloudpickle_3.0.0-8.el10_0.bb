@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cloudpickle-3.0.0-8.el10_0.src.rp
 SRC_URI[src.sha256sum] = "05ff256bc04b9a97f0a31025f9800111901d92d7cdbe48b933ba0c864cbe7af5"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cloudpickle-3.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cloudpickle;unpack=0"
-SRC_URI[x86_64_v2_python3-cloudpickle.sha256sum] = "094f1a023fc590608c129443dff0261f14a9fc6b57ba8e5e73cf58b6d9416daa"
+SRC_URI[x86_64_v2_python3-cloudpickle.sha256sum] = "aa76742af5d2a50a49e0177e0d5b3f57dbb279c3abc7e38b24e9f6d6c114dc12"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cloudpickle-3.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-cloudpickle;unpack=0"
 SRC_URI[aarch64_python3-cloudpickle.sha256sum] = "02a9a22b9110452829b36f23f85d5bd1bab39458922ec11332c4adba3fb35b6e"

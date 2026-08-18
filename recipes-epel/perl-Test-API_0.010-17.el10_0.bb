@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-API-0.010-17.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "372501427db6b250ca4c3fecbbb5976a9a09a02d7bd1adfd6f2415a0bf121a39"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-API-0.010-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-API;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-API.sha256sum] = "49ed8b980c33d2b22c038b566084ce75b22f7ebc37978ac34a1e0e81d5408f81"
+SRC_URI[x86_64_v2_perl-Test-API.sha256sum] = "48fc533d8ed1466bde5d5ec8315d591cd9f027602f8d4329470094e4a0168c04"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-API-0.010-17.el10_0.noarch.rpm;name=aarch64_perl-Test-API;unpack=0"
 SRC_URI[aarch64_perl-Test-API.sha256sum] = "1239860a14af574de944cf0ece7bc006078e8e59a62dbaeca8cd9bbcc21dc3ac"

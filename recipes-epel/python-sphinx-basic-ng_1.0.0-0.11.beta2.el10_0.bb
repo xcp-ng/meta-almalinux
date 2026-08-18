@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-basic-ng-1.0.0-0.11.beta2.
 SRC_URI[src.sha256sum] = "a3a243ec04fcf947a89fb881bf94ef7b4c0917cd7b712f70e4be4f8503454835"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-sphinx-basic-ng-doc-1.0.0-0.11.beta2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-sphinx-basic-ng-doc;unpack=0"
-SRC_URI[x86_64_v2_python-sphinx-basic-ng-doc.sha256sum] = "cd9921b031bd9a868e04c73486a6d21ce339f6fe03785a5ebf788a6703a0e545"
+SRC_URI[x86_64_v2_python-sphinx-basic-ng-doc.sha256sum] = "122e8609e352b75e5a541628af3c8377674f8b6024efeb1d35851966584acce0"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-basic-ng-1.0.0-0.11.beta2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-basic-ng;unpack=0"
-SRC_URI[x86_64_v2_python3-sphinx-basic-ng.sha256sum] = "e986a8a540e54c542046511f7806b2511b0065051e6b3830f314d8b666275bc3"
+SRC_URI[x86_64_v2_python3-sphinx-basic-ng.sha256sum] = "e690a0ada75f03f8c07e2e6257493108983c5998223454980afa36786adb9f60"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-sphinx-basic-ng-doc-1.0.0-0.11.beta2.el10_0.noarch.rpm;name=aarch64_python-sphinx-basic-ng-doc;unpack=0"
 SRC_URI[aarch64_python-sphinx-basic-ng-doc.sha256sum] = "04c7c7ef4d0a26ddb1b8b788e7f16a885a9d4f0c50a3302576af4e5d2e9a37ce"

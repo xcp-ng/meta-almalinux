@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-freezegun-1.5.1-2.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "74f4ab78ea5e169ecc5a0e33d873f420b033ce24c8cad6f2a58c3a2558a42fe5"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-freezegun-1.5.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-freezegun;unpack=0"
-SRC_URI[x86_64_v2_python3-freezegun.sha256sum] = "3739ceb61fd682b7647c6de879c57d8d1ef22ac5e6df51cb507a7fd9d72da33d"
+SRC_URI[x86_64_v2_python3-freezegun.sha256sum] = "dfa18b3ae6541dd6d3aae43c0a71eef8f5983e21e1e80d1c9b6d2676e3e7014f"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-freezegun-1.5.1-2.el10_0.noarch.rpm;name=aarch64_python3-freezegun;unpack=0"
 SRC_URI[aarch64_python3-freezegun.sha256sum] = "48ec1a55bb904e3e38ddb967914ba01c5238dd174a3cb795766b2706ea648f58"

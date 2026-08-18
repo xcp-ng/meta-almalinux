@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-patiencediff-0.2.15-2.el10_0.src.
 SRC_URI[src.sha256sum] = "5ea220c53ce5ff82a6e086b1e2f09d9a78597fc79b358c20037668604f4ecb64"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-patiencediff-0.2.15-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-patiencediff;unpack=0"
-SRC_URI[x86_64_v2_python3-patiencediff.sha256sum] = "5dc744dc12042ee2a879acc331054d1aa3134aebc712713879248d70204fe07a"
+SRC_URI[x86_64_v2_python3-patiencediff.sha256sum] = "aea2c1022bf7881ee49d4096eb5e37c867e79c37aac48344fd680e5ea42a5ced"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-patiencediff-0.2.15-2.el10_0.aarch64.rpm;name=aarch64_python3-patiencediff;unpack=0"
 SRC_URI[aarch64_python3-patiencediff.sha256sum] = "296c371e73e54054fa08c7dcb8ddb4d20e75c93248eb2682a7680f638d802d07"

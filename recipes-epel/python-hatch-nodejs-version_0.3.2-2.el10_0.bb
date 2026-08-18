@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hatch-nodejs-version-0.3.2-2.el10
 SRC_URI[src.sha256sum] = "9238684bf1d37c8d9b416276d2ab0ec96478d9bfe1a428d4229185e100f44a1a"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hatch-nodejs-version-0.3.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hatch-nodejs-version;unpack=0"
-SRC_URI[x86_64_v2_python3-hatch-nodejs-version.sha256sum] = "ef4497c4a60ba6a3b4842631ad72aef74fec93f1c60f2668024b5488e00a1da8"
+SRC_URI[x86_64_v2_python3-hatch-nodejs-version.sha256sum] = "10c1ada66c51f9881f4ed34fe521e8d8a69763d17d181563fcf5077c4895f1f0"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hatch-nodejs-version-0.3.2-2.el10_0.noarch.rpm;name=aarch64_python3-hatch-nodejs-version;unpack=0"
 SRC_URI[aarch64_python3-hatch-nodejs-version.sha256sum] = "efdb34f93bcf5a8420b1be7501df3863441eeb60b462fc8366956a4b528cfe56"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mitogen-0.3.10-1.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "fd09ec9b0ae4967b3fe9941fb6fb01af43754390c8b03064696448f0b87b1857"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mitogen-0.3.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mitogen;unpack=0"
-SRC_URI[x86_64_v2_python3-mitogen.sha256sum] = "ef091beda4a70377243d0df93e41fe2a6f9bfc039a12eab128ac760d5d895019"
+SRC_URI[x86_64_v2_python3-mitogen.sha256sum] = "cee45cb554cb25e7ef50d6ee138e60ae2e447c32544bc2a4528cf7d94dee87fe"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mitogen-0.3.10-1.el10_0.noarch.rpm;name=aarch64_python3-mitogen;unpack=0"
 SRC_URI[aarch64_python3-mitogen.sha256sum] = "877134105e96952a32896d5a72042f546625d2245025802c1016b8e391866d52"

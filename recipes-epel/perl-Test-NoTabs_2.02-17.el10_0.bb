@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-NoTabs-2.02-17.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "348bf3b58e492ac8a551457d14a552cf4aad4807babb7e46fe56eb68e8205e09"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-NoTabs-2.02-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-NoTabs;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-NoTabs.sha256sum] = "d6e159c1bd84a34bcc0c0a123ae0a7932861a8641a2a84c9ab4c960e92dde6b8"
+SRC_URI[x86_64_v2_perl-Test-NoTabs.sha256sum] = "26d6faf3a032eda4ccb1c2c5d9362cc5bb748419afb9c5bf5163ff1767513994"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-NoTabs-2.02-17.el10_0.noarch.rpm;name=aarch64_perl-Test-NoTabs;unpack=0"
 SRC_URI[aarch64_perl-Test-NoTabs.sha256sum] = "fb4e901aadce2e1901aed9ce7891ba0eb3267cd9d06f817feaea7e3716d7cbe4"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-ssh2-1.4.1-6.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "3de2bbe8850e81e29acadac2bea2f2af8fc8fbbdad7bf65c3cea94c26b7c25da"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-ssh2-1.4.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-ssh2;unpack=0"
-SRC_URI[x86_64_v2_php-pecl-ssh2.sha256sum] = "7dcf1104aa4619a801c7d618dc28c077c5dbb106f434f81f700d6148d8c1b57f"
+SRC_URI[x86_64_v2_php-pecl-ssh2.sha256sum] = "aa43cb166dc9ce91b859c7826c9dddac349c5073796a57853b862bd9e53cd146"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-ssh2-1.4.1-6.el10_0.aarch64.rpm;name=aarch64_php-pecl-ssh2;unpack=0"
 SRC_URI[aarch64_php-pecl-ssh2.sha256sum] = "85c64fd86fc137cb77b5a86774acf92f8b039dedbe80b20b71933d5c47d66426"

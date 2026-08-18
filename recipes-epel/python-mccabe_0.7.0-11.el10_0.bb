@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mccabe-0.7.0-11.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "0c55a60c941a0300beb18dc16dfb300298de8bbc6606692a36257a5bf2180196"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mccabe-0.7.0-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mccabe;unpack=0"
-SRC_URI[x86_64_v2_python3-mccabe.sha256sum] = "db6e4088f8b4325a8e7a00a2909acc4b6f2f7ca5f9f5dcbdbae07024c6761acf"
+SRC_URI[x86_64_v2_python3-mccabe.sha256sum] = "6c05ae20e6a6e181e56249b2c8cf7b35d845ab2c580d5124c8d11498c35e8c90"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mccabe-0.7.0-11.el10_0.noarch.rpm;name=aarch64_python3-mccabe;unpack=0"
 SRC_URI[aarch64_python3-mccabe.sha256sum] = "897825d0ab7b5140d90496e5c4377a0dde1c4a0b4bcc89d893a59773a7e23a11"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CPAN-Meta-YAML-0.25-25.el10_0.
 SRC_URI[src.sha256sum] = "c1aab0404ebe6c24c6d0f296d785c791773df6a94d86f25d3d8a3b88f92b5d17"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CPAN-Meta-YAML-0.25-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CPAN-Meta-YAML;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-CPAN-Meta-YAML.sha256sum] = "ce6724ac58180d5d577762b4b3f717eccdfaa87ca1b3cdac4a8e196f71431d9a"
+SRC_URI[x86_64_v2_perl-Test-CPAN-Meta-YAML.sha256sum] = "0359d55aba2905970ef7ec4962c553f4d29c74833f39562dcf6f326316779315"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CPAN-Meta-YAML-0.25-25.el10_0.noarch.rpm;name=aarch64_perl-Test-CPAN-Meta-YAML;unpack=0"
 SRC_URI[aarch64_perl-Test-CPAN-Meta-YAML.sha256sum] = "6877a385282bfbdd18c64c857b46f73113eb5ba97b1e04d5d17cdeb00dfc97e8"

@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-design-0.6.1-3.el10_0.src.
 SRC_URI[src.sha256sum] = "0bef9a48878cb3a93be1730ef2062ff0fdff4892dcfe257a54e073df58df63f2"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-sphinx-design-doc-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-sphinx-design-doc;unpack=0"
-SRC_URI[x86_64_v2_python-sphinx-design-doc.sha256sum] = "3078b8c5734bbe348e5bd3e33566805036bf782618ce890cf21d369d3e60f450"
+SRC_URI[x86_64_v2_python-sphinx-design-doc.sha256sum] = "b8702cd84c31793d505a17941049126e7d163be7798cb719ee30edd03e36f8ee"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-design-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-design;unpack=0"
-SRC_URI[x86_64_v2_python3-sphinx-design.sha256sum] = "4d41dfb9274df74f22f2a24697eb308dc6aa36bc085a8e5bcdf3f63ffbc7a7ac"
+SRC_URI[x86_64_v2_python3-sphinx-design.sha256sum] = "fba659eb518f4b8525f168ee14658af3cd32077818ee0aca8358a4546d44e854"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-sphinx-design-doc-0.6.1-3.el10_0.noarch.rpm;name=aarch64_python-sphinx-design-doc;unpack=0"
 SRC_URI[aarch64_python-sphinx-design-doc.sha256sum] = "96845c56da1f2a245a1473e0a221af3792ca13caa8d01a7deba5f2a1f378d9b2"

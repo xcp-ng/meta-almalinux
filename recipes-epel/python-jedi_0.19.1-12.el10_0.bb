@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jedi-0.19.1-12.el10_0.src.rpm;nam
 SRC_URI[src.sha256sum] = "f707e519729e2975ef19f404ce5ad3c2840f8e577fc829c1cde341d46685b6ca"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jedi-0.19.1-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jedi;unpack=0"
-SRC_URI[x86_64_v2_python3-jedi.sha256sum] = "e75e2d4564aacab91160d0c030e75e07153ac2f6c314fd589e892cc75f3c55de"
+SRC_URI[x86_64_v2_python3-jedi.sha256sum] = "dc7f40f3ddb97858aafec1f7936a7aff424ac3ee3c8d18aa51ae223e41b52bb5"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jedi-0.19.1-12.el10_0.noarch.rpm;name=aarch64_python3-jedi;unpack=0"
 SRC_URI[aarch64_python3-jedi.sha256sum] = "f2cfa49a4a58beac6d73a1f780eceb0db2a53787cb980ca0dd92b878a5cdd169"

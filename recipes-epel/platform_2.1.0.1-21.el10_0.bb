@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/platform-2.1.0.1-21.el10_0.src.rpm;name=
 SRC_URI[src.sha256sum] = "6b32c39f965725a8b3100c065b30ae410e18ddd1f7bb7eda89e4c27251f5048c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/platform-2.1.0.1-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_platform;unpack=0"
-SRC_URI[x86_64_v2_platform.sha256sum] = "4e4fb14225767a8b556c3b6b437e9fa95cdae4c8bfb6be9f0f95011bd18bd2dd"
+SRC_URI[x86_64_v2_platform.sha256sum] = "4caa46c4d501f071d27f963891ad04362db0f41c11b36006cdf1da0b3ddbde90"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/platform-devel-2.1.0.1-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_platform-devel;unpack=0"
-SRC_URI[x86_64_v2_platform-devel.sha256sum] = "b7b40cb0c9c827e2a180ad1c7369ba0f5397b42fcecd00a22786716c3a9ef3f8"
+SRC_URI[x86_64_v2_platform-devel.sha256sum] = "863997d27b7a407a0c78f1bd430afaa0cdb0c54a33ce7dfcfc7171ae2e26cb31"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/platform-2.1.0.1-21.el10_0.aarch64.rpm;name=aarch64_platform;unpack=0"
 SRC_URI[aarch64_platform.sha256sum] = "370649a808114cc479687fbd0e68338ccd50729857da9a65aa4679ed5e80eb49"

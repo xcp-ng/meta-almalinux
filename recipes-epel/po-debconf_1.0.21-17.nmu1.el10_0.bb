@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/po-debconf-1.0.21-17.nmu1.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "548e11d9a42a01c6f31acd811b81cdd26f6912f7469984bcc45cc4fe7dc630d7"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/po-debconf-1.0.21-17.nmu1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_po-debconf;unpack=0"
-SRC_URI[x86_64_v2_po-debconf.sha256sum] = "c08c068858efe996096fb5237d4109ff13e5a82b2ad3db827cbdcc3f94ea42c0"
+SRC_URI[x86_64_v2_po-debconf.sha256sum] = "2d8fcfede26b77f7875441cebc94f087c47736b07f23ee9a37252fc7728fb659"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/po-debconf-1.0.21-17.nmu1.el10_0.noarch.rpm;name=aarch64_po-debconf;unpack=0"
 SRC_URI[aarch64_po-debconf.sha256sum] = "11cc9c7a95b7fc825cbe655ad5e2fb41ce384c09df528b5713b45263cdcd14ef"

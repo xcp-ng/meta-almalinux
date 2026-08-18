@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sniffio-1.3.1-4.el10_0.src.rpm;na
 SRC_URI[src.sha256sum] = "b7e89b0e1cfe3a6d281d039c66dedce7a8322dc3e535a9423ffb3356e3de945a"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sniffio-1.3.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sniffio;unpack=0"
-SRC_URI[x86_64_v2_python3-sniffio.sha256sum] = "9d50bb486ed757e1eb24c1e300e7f51109658bb545e934e65824c0f902ea6d59"
+SRC_URI[x86_64_v2_python3-sniffio.sha256sum] = "3a8cfd76f15ec179de280ffd5d11257dc7f3b1062beb2423894fd3ef598a6367"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sniffio-1.3.1-4.el10_0.noarch.rpm;name=aarch64_python3-sniffio;unpack=0"
 SRC_URI[aarch64_python3-sniffio.sha256sum] = "d93f18e08cae45ea6177a8f2346349a87023fea9a7ddadf2a759e55eb3ba8aa7"

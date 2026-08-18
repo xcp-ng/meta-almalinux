@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-xlsxwriter-3.2.0-6.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "115af26309eabc45124df697f060de81dea58848266021e8db58c264161b070e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xlsxwriter-3.2.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xlsxwriter;unpack=0"
-SRC_URI[x86_64_v2_python3-xlsxwriter.sha256sum] = "dd500b1f70d3270bd901b79d63514e9eab411c65458e84a165dfc326eb40b8f2"
+SRC_URI[x86_64_v2_python3-xlsxwriter.sha256sum] = "3569e503f1511603625ad04f7791292ffe0c8c2ff675fa05984a843ca60c7b74"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-xlsxwriter-3.2.0-6.el10_0.noarch.rpm;name=aarch64_python3-xlsxwriter;unpack=0"
 SRC_URI[aarch64_python3-xlsxwriter.sha256sum] = "f6bd598b3d132428ca9392f883da7dfd091776ea41faf4bedb6c426ed0bdc333"

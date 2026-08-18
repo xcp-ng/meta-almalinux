@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-s3transfer-0.10.4-1.el10_0.src.rp
 SRC_URI[src.sha256sum] = "caca25f354335d1efb9e840bb1a3540a7f726684c0bf3b80a8d2701894d8a765"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-s3transfer-0.10.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-s3transfer;unpack=0"
-SRC_URI[x86_64_v2_python3-s3transfer.sha256sum] = "f160771c6e8c680ef02858703e998ef76f6edf946448637c8c12e3c17d6fd966"
+SRC_URI[x86_64_v2_python3-s3transfer.sha256sum] = "2a9346a3c8ede9a7cd2637c47e8f6397aae856b0711899039deacfac8d165987"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-s3transfer-0.10.4-1.el10_0.noarch.rpm;name=aarch64_python3-s3transfer;unpack=0"
 SRC_URI[aarch64_python3-s3transfer.sha256sum] = "41d495828d683d609c44f5d1a6a16763c6ff6b710d7e157f798bab5743c7b72f"

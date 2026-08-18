@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-fastbencode-0.2-5.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "48d42250fb350c6d18ccbe4044552308eb1918370c72ff731422136c69daf306"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fastbencode-0.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-fastbencode;unpack=0"
-SRC_URI[x86_64_v2_python3-fastbencode.sha256sum] = "979723305f619cd5ffe8d340e223ea356e6ad2886861f45abd2c37d2d4cb8a37"
+SRC_URI[x86_64_v2_python3-fastbencode.sha256sum] = "3e3b61f40db500050a3025448123c7ab90caf088f593819a362e6e0d0c6ea315"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-fastbencode-0.2-5.el10_0.aarch64.rpm;name=aarch64_python3-fastbencode;unpack=0"
 SRC_URI[aarch64_python3-fastbencode.sha256sum] = "34b8557bdad21ac8a9b17424c8e99edfbdbed1b677105b460c8100aef9470c8e"

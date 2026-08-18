@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-runner-4.0-20.el10_0.src.r
 SRC_URI[src.sha256sum] = "80890a247a92795c6ee1d81e471d3f97dfb9e34ab3b71bc816ebfc525662c951"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-runner-4.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-runner;unpack=0"
-SRC_URI[x86_64_v2_python3-pytest-runner.sha256sum] = "311be18638ba9b3ec1ca6f8337d7f6ca9b68dfdaf2a5010f9abd392a5f92a7f8"
+SRC_URI[x86_64_v2_python3-pytest-runner.sha256sum] = "337e3636bacf78b4704e99c43188aa4f5531ec5b0971cf9dbd06bf7f5c41bbd5"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-runner-4.0-20.el10_0.noarch.rpm;name=aarch64_python3-pytest-runner;unpack=0"
 SRC_URI[aarch64_python3-pytest-runner.sha256sum] = "ecdbedc5ffdc5a3eecf0ff874c3e35b2da6a975ee0ad0eae422c04cf4ac22b35"

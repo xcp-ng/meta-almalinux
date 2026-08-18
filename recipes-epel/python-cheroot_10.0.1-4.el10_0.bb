@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cheroot-10.0.1-4.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "47f6a55d7fe425489f20a925f6128f5734bdc9f5b45a30896d4fce7243fa086d"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cheroot-10.0.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cheroot;unpack=0"
-SRC_URI[x86_64_v2_python3-cheroot.sha256sum] = "f98e0e018cbd5cc59634a8497a5e06edc9ec7dcf0b708af503d403117b40669e"
+SRC_URI[x86_64_v2_python3-cheroot.sha256sum] = "1d2300a6595102f60be61c5a42896d30561fd8d8b2a3b8aec8398144435b99da"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cheroot-10.0.1-4.el10_0.noarch.rpm;name=aarch64_python3-cheroot;unpack=0"
 SRC_URI[aarch64_python3-cheroot.sha256sum] = "245a6bf9fbebd8b7a51b415b8fb80f0f7e7ac0f21711e6642e11bc7929952dd0"

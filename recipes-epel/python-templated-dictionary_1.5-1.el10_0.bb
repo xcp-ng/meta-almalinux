@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-templated-dictionary-1.5-1.el10_0
 SRC_URI[src.sha256sum] = "449099c964016df1211bf02f35676bb0dd81c00ebf0048ad724a3954c745c74c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-templated-dictionary-1.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-templated-dictionary;unpack=0"
-SRC_URI[x86_64_v2_python3-templated-dictionary.sha256sum] = "a47bd67488b77f2cad10789339c6dbe680efcacb3e41e5e6dc24afa7d92c0718"
+SRC_URI[x86_64_v2_python3-templated-dictionary.sha256sum] = "f02a02c17ddf081a510ae8556b1735e634187d0f6aac10bcefeac757af615ddf"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-templated-dictionary-1.5-1.el10_0.noarch.rpm;name=aarch64_python3-templated-dictionary;unpack=0"
 SRC_URI[aarch64_python3-templated-dictionary.sha256sum] = "c349da53d7b7b05fe887d642feeb1898aefd57fec5efc47891163f6e51f1ec4a"

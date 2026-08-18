@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-openpyxl-3.1.2-8.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "a99b56319995a5dff84dda4840481a936a0ac90a9d206a9bca7848301ef7cbc1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openpyxl-3.1.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openpyxl;unpack=0"
-SRC_URI[x86_64_v2_python3-openpyxl.sha256sum] = "55cc9f051a4463a6e98f82ef12787f6f5b0f202c2e6a5fb8974e99417b637257"
+SRC_URI[x86_64_v2_python3-openpyxl.sha256sum] = "374f247f196660a7a4e370af757130a8a9994f6bfea5c33c686d8d2bae00fd7b"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-openpyxl-3.1.2-8.el10_0.noarch.rpm;name=aarch64_python3-openpyxl;unpack=0"
 SRC_URI[aarch64_python3-openpyxl.sha256sum] = "9012648e117bac4f448219fb34d9496183f746ea6ce6c6dc47634f3f13b49847"

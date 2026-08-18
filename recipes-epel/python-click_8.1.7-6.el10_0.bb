@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-click-8.1.7-6.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "1ef129601f33819f7fde102e36ecad95fc83bfb4cf922932c13c265ccf66ebca"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-click-8.1.7-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-click;unpack=0"
-SRC_URI[x86_64_v2_python3-click.sha256sum] = "a78f210607d99d825681cfa65b7c892873af3fb9a008ed3f43c3431e27223c65"
+SRC_URI[x86_64_v2_python3-click.sha256sum] = "45d2d236b44378c50f10c48c1ef3b5b6b2961846098cf374c3177f4c31f61785"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-click-8.1.7-6.el10_0.noarch.rpm;name=aarch64_python3-click;unpack=0"
 SRC_URI[aarch64_python3-click.sha256sum] = "c28b53be0a6f4e6977d4369f624d4cf5faea5a6056619f1a584efbe03eda460f"

@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-trio-0.29.0-1.el10_0.src.rpm;name
 SRC_URI[src.sha256sum] = "3af87612c826ae4af5f8261937f298ea1d8b1d5763e95ddbcaaba000e35e65f1"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trio-0.29.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trio;unpack=0"
-SRC_URI[x86_64_v2_python3-trio.sha256sum] = "a50d8f6521c4449ecf7668a8d66c00294af08c9cb2a30700128baeb979672548"
+SRC_URI[x86_64_v2_python3-trio.sha256sum] = "6a697a500ec44708c9c69d8e2602b4c12a19470af5403519027d0d01406dab28"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-trio-0.29.0-1.el10_0.noarch.rpm;name=aarch64_python3-trio;unpack=0"
 SRC_URI[aarch64_python3-trio.sha256sum] = "258b4cd10e1624b75c65c33afe809f8b4006ae879cc35345baaa2d0f19b8e95c"

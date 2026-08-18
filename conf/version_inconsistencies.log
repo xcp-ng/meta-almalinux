@@ -1,7 +1,10 @@
 Version inconsistencies leading to some archs not exposing all packages:
 
-epel-release: main: 10-6.el10_0 - altarch: 
-ffmpeg: main: 7.1.2-2.el10_0 - altarch: 7.1-1.el10_0.alma_altarch
+apcupsd: main: 3.14.14-36.el10_1 - altarch: 3.14.14-39.el10_0.alma_altarch
+debmirror: main: 2.46-1.el10_1 - altarch: 2.47-2.el10_0.alma_altarch
+egl-wayland2: main: 1.0.1-1.el10_1 - altarch: 1.0.1~20260109git1893c37-1.el10_1.alma_altarch
+epel-release: main: 10-7.el10_1 - altarch: 
+ffmpeg: main: 7.1.2-1.el10_1 - altarch: 7.1-1.el10_0.alma_altarch
 golang-bazil-fuse: main: 0-30.20200722gitfb710f7.el10_0 - altarch: 0-30.el10_0.alma_altarch
 golang-bitbucket-ww-goautoneg: main: 0-39.20180302hg75cd24f.el10_0 - altarch: 0-39.el10_0.alma_altarch
 golang-github-alecthomas-units: main: 0-0.23.20240609git9a357b5.el10_0 - altarch: 0-0.23.el10_0.alma_altarch
@@ -57,7 +60,7 @@ golang-github-kolo-xmlrpc: main: 0-21.20210110git38db28d.el10_0 - altarch: 0-21.
 golang-github-martini: main: 1.0-16.20190622git22fa469.el10_0 - altarch: 1.0-16.el10_0.alma_altarch
 golang-github-mistifyio-zfs: main: 2.1.1-18.20220917gitc6a6a34.el10_0 - altarch: 2.1.1-18.el10_0.alma_altarch
 golang-github-mitchellh-colorstring: main: 0-16.20190623gitd06e56a.el10_0 - altarch: 0-16.el10_0.alma_altarch
-golang-github-moby-sys: main: 0.6.2-7.20230421gitsequential.v0.5.0.el10_0 - altarch: 0.6.2-7.el10_0.alma_altarch
+golang-github-moby-sys: main: 0.6.2-9.20230421gitsequential.v0.5.0.el10_1 - altarch: 0.6.2-9.el10_1.alma_altarch
 golang-github-moby-term: main: 0-0.15.20230225git1aeaba8.el10_0 - altarch: 0-0.15.el10_0.alma_altarch
 golang-github-mohae-deepcopy: main: 0-0.14.20200303gitc48cc78.el10_0 - altarch: 0-0.14.el10_0.alma_altarch
 golang-github-mreiferson-httpclient: main: 0-18.20210110git5e475fd.el10_0 - altarch: 0-18.el10_0.alma_altarch
@@ -104,8 +107,17 @@ golang-gopkg-stack-0: main: 0-16.20190626git9b43fce.el10_0 - altarch: 0-16.el10_
 golang-gopkg-tomb-1: main: 1-15.20190623gitdd63297.el10_0 - altarch: 1-15.el10_0.alma_altarch
 golang-gopkg-tomb-2: main: 2-15.20190623gitd5d1b58.el10_0 - altarch: 2-15.el10_0.alma_altarch
 golang-mozilla-pkcs7: main: 0-0.12.20220831git33d0574.el10_0 - altarch: 0-0.12.el10_0.alma_altarch
+golang-rsc-qr: main: 0.2.0-19.20230806gitb6857d4.el10_1 - altarch: 0.2.0-19.el10_1.alma_altarch
 golang-x-xerrors: main: 0-18.20200807git5ec99f8.el10_0 - altarch: 0-18.el10_0.alma_altarch
-java-latest-openjdk-portable: main: 24.0.1.0.9-1.rolling.el8 - altarch: 
-python-gitlab: main: 5.6.0-2.el10_0 - altarch: 5.6.0-4.el10_0.alma_altarch
+lazarus: main: 4.2-2.el10_1 - altarch: 
+netperf: main: 2.7.0-12.20210803git3bc455b.el10_1 - altarch: 2.7.0-12.el10_1.alma_altarch
+nrpe: main: 4.1.3-1.el10_1 - altarch: 4.1.3-2.el10_0.alma_altarch
+nut: main: 2.8.2.1-0.el10_1.1.git20240703pr2505 - altarch: 2.8.3-1.el10_0.alma_altarch
+opencv: main: 4.10.0-7.el10_0 - altarch: 4.10.0-8.el10_0.alma_altarch
+plasma-discover: main: 6.3.4-1.el10_1 - altarch: 6.3.6-1.el10_0.alma_altarch
+plymouth-theme-hot-dog: main: 0.5-28.el10_1 - altarch: 0.5-29.el10_0.alma_altarch
 pyzor: main: 1.0.0-40.20240609git2be00c3.el10_0 - altarch: 1.0.0-40.el10_0.alma_altarch
+rust-test-log: main: 0.2.18-1.el10_1 - altarch: 0.2.18-2.el10_0.alma_altarch
 stressapptest: main: 1.0.9-7.20220222git6714c57.el10_0 - altarch: 1.0.9-7.el10_0.alma_altarch
+uv: main: 0.8.24-2.el10_1 - altarch: 0.6.17-3.el10_0.alma_altarch
+znc-clientbuffer: main: 0-0.31.20190129git9766a4a.el10_1 - altarch: 0-0.31.el10_1.alma_altarch

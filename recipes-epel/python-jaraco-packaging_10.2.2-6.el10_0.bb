@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-packaging-10.2.2-6.el10_0.
 SRC_URI[src.sha256sum] = "19edaba63b4b8ea58926b787da0c3f33970923c89800ab59a67e758a8bd64777"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-10.2.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco;unpack=0"
-SRC_URI[x86_64_v2_python3-jaraco.sha256sum] = "726384b2adf9c100494d73eb5f634859fb621745533ece0eba784a6d77e35c5d"
+SRC_URI[x86_64_v2_python3-jaraco.sha256sum] = "68b27175a63d48eb494dd3e9f6998ff5ad8bc5d39cfbf5111b778fa101983a25"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-packaging-10.2.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-packaging;unpack=0"
-SRC_URI[x86_64_v2_python3-jaraco-packaging.sha256sum] = "c4215fc19ce3e4fe112522c6774ea28424a1975e8fdaee3c5a95b401eceaaf37"
+SRC_URI[x86_64_v2_python3-jaraco-packaging.sha256sum] = "1a6f3558c488ee069cdc2adb76e60fb80c76e8979c7621974115419e2f06be49"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-10.2.2-6.el10_0.noarch.rpm;name=aarch64_python3-jaraco;unpack=0"
 SRC_URI[aarch64_python3-jaraco.sha256sum] = "627136324d3cd1f88653ff2e041afefc2b380d2e922f2b9e335a1c9742ef2216"

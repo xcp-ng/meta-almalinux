@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-match-simple-0.012-5.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "b9198abb4e341401121b188dde6483c47ace04924f82a9ad8bed10747dd403ee"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-match-simple-0.012-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-match-simple;unpack=0"
-SRC_URI[x86_64_v2_perl-match-simple.sha256sum] = "e6442ecb88288362c63e0f16288939352866838b3679348274bce0b12605c476"
+SRC_URI[x86_64_v2_perl-match-simple.sha256sum] = "d002b9b410a0f04dbaf20765c027aa790baf809ae009b063f325920af495ff58"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-match-simple-0.012-5.el10_0.noarch.rpm;name=aarch64_perl-match-simple;unpack=0"
 SRC_URI[aarch64_perl-match-simple.sha256sum] = "cdf9ac850efc8b22fd6a0b23ce70943ebed7c9114cbd171b6ca2a14dce4f5ed0"

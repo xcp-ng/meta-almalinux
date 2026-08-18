@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Unicode-String-2.10-29.el10_0.src.r
 SRC_URI[src.sha256sum] = "5e85627abc78aff24d62f70a6e9cf857e8b03d37ed5a5f44c7024db5cdfa10e9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-String-2.10-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-String;unpack=0"
-SRC_URI[x86_64_v2_perl-Unicode-String.sha256sum] = "7fb4386fcb92dae7d3be7d465980232da5b95ba7151f758a0b8c32684d36e783"
+SRC_URI[x86_64_v2_perl-Unicode-String.sha256sum] = "aa2c9d915f634f3158d14c7c6bf46cad42e9ce78934d5b0685eec89124b46c36"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-String-2.10-29.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-String;unpack=0"
 SRC_URI[aarch64_perl-Unicode-String.sha256sum] = "3d349fa8ed2acac483edf225081c41375591095f092715a50941b116611adcbb"

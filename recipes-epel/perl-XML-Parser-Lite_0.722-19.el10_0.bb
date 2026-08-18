@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.src
 SRC_URI[src.sha256sum] = "8ea6a9e077570f78c0b7804dd5e8835cd33837479e904b7dfd9152f4544af845"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Parser-Lite-0.722-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Parser-Lite;unpack=0"
-SRC_URI[x86_64_v2_perl-XML-Parser-Lite.sha256sum] = "76a05fb27da19c8653227fc8934e5989b99c15f540e76c4a1449bd48c6275382"
+SRC_URI[x86_64_v2_perl-XML-Parser-Lite.sha256sum] = "478953011c8b622a83fa4bd6e83d3752403148af2701235a9c33b75704ef9bf4"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.noarch.rpm;name=aarch64_perl-XML-Parser-Lite;unpack=0"
 SRC_URI[aarch64_perl-XML-Parser-Lite.sha256sum] = "96be2dc0cad2dfaa2e0a3d708d4823e04dad7185ea70b4a6ab18754cb9d1092c"

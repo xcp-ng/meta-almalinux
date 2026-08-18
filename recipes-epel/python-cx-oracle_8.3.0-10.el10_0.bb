@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cx-oracle-8.3.0-10.el10_0.src.rpm
 SRC_URI[src.sha256sum] = "401306b659d54450958441363a469eac2c5c1c8853a6fff82c26e7ddd793b181"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cx-oracle-8.3.0-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cx-oracle;unpack=0"
-SRC_URI[x86_64_v2_python3-cx-oracle.sha256sum] = "adc7af035fce60683f4ae3b6797d017f6d3d044ee50261b43eab0299a8a5e872"
+SRC_URI[x86_64_v2_python3-cx-oracle.sha256sum] = "8ab12c7772d345252687f1adbd0bb8b7d38b73a3a3a29e49d3265f1b0ce68810"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cx-oracle-8.3.0-10.el10_0.aarch64.rpm;name=aarch64_python3-cx-oracle;unpack=0"
 SRC_URI[aarch64_python3-cx-oracle.sha256sum] = "82bf609febf08e5827468163b72449891f439a0945ab07c7e7dbef545dd3ff54"

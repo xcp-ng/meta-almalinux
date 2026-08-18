@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-httpretty-1.1.4-2.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "e55370e2bdf456cf7412f2f80c64845d9a0d4e9e6fbcfe2d34fa440574261885"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-httpretty-1.1.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-httpretty;unpack=0"
-SRC_URI[x86_64_v2_python3-httpretty.sha256sum] = "63cdd187b23564860521c12965ec8bb42fa67a7a8c70293cfdcbb3f4c92d8c31"
+SRC_URI[x86_64_v2_python3-httpretty.sha256sum] = "074dd224053035daa8e4e45392dc5f5e8e08e57ae323fbcd2abb970b8b2bb4cb"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-httpretty-1.1.4-2.el10_0.noarch.rpm;name=aarch64_python3-httpretty;unpack=0"
 SRC_URI[aarch64_python3-httpretty.sha256sum] = "84f20432340cef314700337ab5641a5be86b55b8ef301d7539dffb6a347cbadb"

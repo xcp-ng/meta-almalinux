@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-docopt-ng-0.9.0-2.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "7fdb1cf64e87079a03981f701c3ceb898f0bda5c29013d1632ba5e0413888dcc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-docopt-ng-0.9.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-docopt-ng;unpack=0"
-SRC_URI[x86_64_v2_python3-docopt-ng.sha256sum] = "e2a848d93d4c1a37a8c5618f544b4d4347193efef9c92a16a2b8d1edc0472321"
+SRC_URI[x86_64_v2_python3-docopt-ng.sha256sum] = "bc7a13c60163a3cb9c8a6f7cc1d578f5f1b203c5abd180e19b2ef9dd35a70087"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-docopt-ng-0.9.0-2.el10_0.noarch.rpm;name=aarch64_python3-docopt-ng;unpack=0"
 SRC_URI[aarch64_python3-docopt-ng.sha256sum] = "7abed883fffefc11f351ebc418f7c2e8874beb3707f2db77d1db64832fea74d7"

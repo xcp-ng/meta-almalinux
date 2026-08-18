@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-cache-1.2.0-5.el10_0.src
 SRC_URI[src.sha256sum] = "c1d1b3bd7963d2ecca659b2ee60a1051b4362467ecd017b468fab54e2dc4050b"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-cache-1.2.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-cache;unpack=0"
-SRC_URI[x86_64_v2_python3-requests-cache.sha256sum] = "579a092db168aa15b0b68617d0aa2309b84735a6ebdca9573ea50ea929031795"
+SRC_URI[x86_64_v2_python3-requests-cache.sha256sum] = "ac6a0eac986b464c676a3af11dcff87b09a180d1d570161ca55ee1d0b1c37c6a"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-cache-1.2.0-5.el10_0.noarch.rpm;name=aarch64_python3-requests-cache;unpack=0"
 SRC_URI[aarch64_python3-requests-cache.sha256sum] = "7e9021ebc2ee3afa53ccac012bd764731688a749255b0eba3ea16bc2a06ce003"

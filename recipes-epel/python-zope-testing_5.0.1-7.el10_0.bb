@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zope-testing-5.0.1-7.el10_0.src.r
 SRC_URI[src.sha256sum] = "5b680988736470196e2ca4ab9f2066ba4b9c5463570623c371f30db24d208f04"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testing-5.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testing;unpack=0"
-SRC_URI[x86_64_v2_python3-zope-testing.sha256sum] = "5d07bfceeccfa220f6c9583aaad05e03a804f1754b12631c23d4d0494f8eae5e"
+SRC_URI[x86_64_v2_python3-zope-testing.sha256sum] = "54dfabce4910ebae14e0225588ceb1e527a79731d1bbd83d496ebefcc5c5c097"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-testing-5.0.1-7.el10_0.noarch.rpm;name=aarch64_python3-zope-testing;unpack=0"
 SRC_URI[aarch64_python3-zope-testing.sha256sum] = "6b868182d0ecdcc7e388c36ce301ca1b12da98d90366a7dffbaa7885aaf0627a"

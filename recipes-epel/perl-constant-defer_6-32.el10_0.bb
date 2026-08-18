@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-constant-defer-6-32.el10_0.src.rpm;
 SRC_URI[src.sha256sum] = "3fd7addd4fc2496b04807ce59ea9982e048a5e7297087ce89500bdfaed120021"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-constant-defer-6-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-constant-defer;unpack=0"
-SRC_URI[x86_64_v2_perl-constant-defer.sha256sum] = "e635544cf4013425213169e703b949c03caf71c42acc76559f46cad280d24b2f"
+SRC_URI[x86_64_v2_perl-constant-defer.sha256sum] = "e93ae50f43650e79a849bec713175df566a29d92c792f13e9fc2c4dfa16bdbaf"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-constant-defer-tests-6-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-constant-defer-tests;unpack=0"
-SRC_URI[x86_64_v2_perl-constant-defer-tests.sha256sum] = "d4995141d848dcb7dfe4db8776c38e4260e55a4115b74c61a179d74a308f2ac4"
+SRC_URI[x86_64_v2_perl-constant-defer-tests.sha256sum] = "f9602e07f8a961d6408ff8b8238a52325fb9b7891888a035fb86bfe282ca6a14"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-constant-defer-6-32.el10_0.noarch.rpm;name=aarch64_perl-constant-defer;unpack=0"
 SRC_URI[aarch64_perl-constant-defer.sha256sum] = "150aa7baf87b3c777e11ca9ae9b4d8f0f16e8740d8b71e1f8865c8aa584fc7e9"

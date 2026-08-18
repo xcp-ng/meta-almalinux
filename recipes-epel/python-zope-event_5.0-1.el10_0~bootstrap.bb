@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zope-event-5.0-1.el10_0~bootstrap
 SRC_URI[src.sha256sum] = "26d64c54d5e5c4266fc05d2ac0b9b8e5294309a0e267de7000ca1f567ad5c3ba"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-zope-event-doc-5.0-1.el10_0~bootstrap.alma_altarch.noarch.rpm;name=x86_64_v2_python-zope-event-doc;unpack=0"
-SRC_URI[x86_64_v2_python-zope-event-doc.sha256sum] = "471ea7e66ea0a44cac5fb309e8ced803180b0c8919a27bcd16274ae6aa9a918c"
+SRC_URI[x86_64_v2_python-zope-event-doc.sha256sum] = "fc40acc61874bcb40664f0382d6457faf1ff06748b7a774ccb7104597d1af7ee"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-event-5.0-1.el10_0~bootstrap.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-event;unpack=0"
-SRC_URI[x86_64_v2_python3-zope-event.sha256sum] = "5633bdae5dd65124b8a2f25f2fb6e5cccdd4e925fed5e2080d65e68780ad13c2"
+SRC_URI[x86_64_v2_python3-zope-event.sha256sum] = "9eecb3680fd9b10f55501444197c2797cdfe8e9b0cdd86565e75e57eea64dc3d"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-zope-event-doc-5.0-1.el10_0~bootstrap.noarch.rpm;name=aarch64_python-zope-event-doc;unpack=0"
 SRC_URI[aarch64_python-zope-event-doc.sha256sum] = "cb13d92c065d4de69f6041cfb507223dadebb38809f6bd16674ec977235e4f3f"

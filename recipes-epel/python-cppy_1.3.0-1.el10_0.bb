@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cppy-1.3.0-1.el10_0.src.rpm;name=
 SRC_URI[src.sha256sum] = "d9fec04ac5a07727a19de59ce708d173299d96c9d7bb5839719a073b1e3188a9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-cppy-doc-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-cppy-doc;unpack=0"
-SRC_URI[x86_64_v2_python-cppy-doc.sha256sum] = "1c159708781a3029b9c5a3310d86ac506b062e88f1f55307844428b8a94d58f0"
+SRC_URI[x86_64_v2_python-cppy-doc.sha256sum] = "d0fe8b9f276f2dd44bd60098471625b8aefa8d8d28c7c4ea19daf8760ffdca82"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cppy-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cppy;unpack=0"
-SRC_URI[x86_64_v2_python3-cppy.sha256sum] = "9b00b6b5503924573581449ad99bb23422ba6d079bf9c9ec42d6f587aeea9e54"
+SRC_URI[x86_64_v2_python3-cppy.sha256sum] = "c704a8102a8c83d6665324f3291a0bc2ad316714166ff3c42b4ce62145d232b3"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-cppy-doc-1.3.0-1.el10_0.noarch.rpm;name=aarch64_python-cppy-doc;unpack=0"
 SRC_URI[aarch64_python-cppy-doc.sha256sum] = "38ac864629e9633a7eb5e3ed78d25d8bf474b05ad89b7b25d863781be944be12"

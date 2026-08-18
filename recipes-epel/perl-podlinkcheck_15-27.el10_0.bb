@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-podlinkcheck-15-27.el10_0.src.rpm;n
 SRC_URI[src.sha256sum] = "b7618c3fa63805ad3c1219e5f36d7377164f22583e788e43dbcd7507990b90db"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck;unpack=0"
-SRC_URI[x86_64_v2_perl-podlinkcheck.sha256sum] = "c10662cf73e0d8020a5b8ef44516b22a4c7768b71677c4f8a255d5fce2a30e7b"
+SRC_URI[x86_64_v2_perl-podlinkcheck.sha256sum] = "d22d09969d4531c47cde778a208059dbcd89a4219a94fb206ac9d39c8506683e"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-tests-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck-tests;unpack=0"
-SRC_URI[x86_64_v2_perl-podlinkcheck-tests.sha256sum] = "aaef5450e339324b0efda71688b6961dcc21b10d8e3188e39d809b0bf3ae9bc5"
+SRC_URI[x86_64_v2_perl-podlinkcheck-tests.sha256sum] = "29763820c6e66ec11f51ef95fb4c895c431eab8d6baec8e905d690fd87510d75"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-podlinkcheck-15-27.el10_0.noarch.rpm;name=aarch64_perl-podlinkcheck;unpack=0"
 SRC_URI[aarch64_perl-podlinkcheck.sha256sum] = "0c3b49f8c86a507737c1c8fbb7dba546122c26784416ff0710703219fcbdef2e"

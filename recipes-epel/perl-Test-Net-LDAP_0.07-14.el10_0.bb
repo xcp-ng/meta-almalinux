@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.src.rp
 SRC_URI[src.sha256sum] = "b5c629178d65f421fc657db2dc43b4ddea4deadc83343767cb5d7fee5cc0e62c"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Net-LDAP-0.07-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Net-LDAP;unpack=0"
-SRC_URI[x86_64_v2_perl-Test-Net-LDAP.sha256sum] = "95294e74a188ef3878f1da77294ae1a4b7a8a86e846cc4d21df33a64c8425b4f"
+SRC_URI[x86_64_v2_perl-Test-Net-LDAP.sha256sum] = "2f00ef3c94cd94a257bb8ea6978a7b50313d30e458ef401ccd159226a2373690"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.noarch.rpm;name=aarch64_perl-Test-Net-LDAP;unpack=0"
 SRC_URI[aarch64_perl-Test-Net-LDAP.sha256sum] = "1c9ea9afa9d315cae00ff5dad1ff1ead39a5490fdac1e0e5093215583420359c"

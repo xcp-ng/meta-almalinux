@@ -19,5 +19,5 @@ SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/nodejs-node
 SRC_URI[aarch64_nodejs-nodemon.sha256sum] = "f0067da1d5d70c4974031fa9d58791313dcd07abec90625a6cb1d8c4602a53ae"
 
 RDEPENDS:nodejs-nodemon = " \
- nodejs \
+ virtual/nodejs_engine_ \
  "

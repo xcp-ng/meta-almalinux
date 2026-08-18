@@ -12,12 +12,6 @@ PACKAGES = " \
 SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-browser-connector-42.1-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9b4afbb2b4a93b45b50f0d879c153db2802489af67cbb19aa815b22aafd9127c"
 
-## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
-# - gnome-browser-connector: gnome-shell
-
-## Requires (aarch64) that were seen as not satisfiable in original repo:
-# - gnome-browser-connector: gnome-shell
-
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-browser-connector-42.1-9.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-browser-connector;unpack=0"
 SRC_URI[x86_64_v2_gnome-browser-connector.sha256sum] = "0d64fdfaad05bac97b8347100a6deac5c73f136f31afccbe9dbe6810a2baf973"
 
@@ -26,6 +20,7 @@ SRC_URI[aarch64_gnome-browser-connector.sha256sum] = "eef7e7efaab73302bfd4eebb8d
 
 RDEPENDS:gnome-browser-connector = " \
  dbus \
+ gnome-shell \
  hicolor-icon-theme \
  mozilla-filesystem \
  python3 \

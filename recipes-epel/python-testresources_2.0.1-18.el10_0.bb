@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-testresources-2.0.1-18.el10_0.src
 SRC_URI[src.sha256sum] = "3daa5a2cb8d3c6318ef68921337a70bcf03d537a078dedf6273953818e6c21c9"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testresources-2.0.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testresources;unpack=0"
-SRC_URI[x86_64_v2_python3-testresources.sha256sum] = "cab968e0a83c68cfd10112a891f929aa536531a449e5a5fb9d638debb1c73021"
+SRC_URI[x86_64_v2_python3-testresources.sha256sum] = "fb9ca82444256d6b6de607fcc0e75e1fcadba679103a9675825c27f927ba8212"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-testresources-2.0.1-18.el10_0.noarch.rpm;name=aarch64_python3-testresources;unpack=0"
 SRC_URI[aarch64_python3-testresources.sha256sum] = "148a6b29cd3d07d4082e97b28732405e16af39734f252086b382f28b70c3c4e4"

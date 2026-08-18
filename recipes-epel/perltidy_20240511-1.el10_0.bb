@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perltidy-20240511-1.el10_0.src.rpm;name=
 SRC_URI[src.sha256sum] = "69fc827eb8682000ba1becbbaadeba36ebde32d41eecde59443bffc472f3cbdc"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perltidy-20240511-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perltidy;unpack=0"
-SRC_URI[x86_64_v2_perltidy.sha256sum] = "ebc3ba02c96758fcd232854db3bef208707c32e8be65aecfa0287fa760eee59d"
+SRC_URI[x86_64_v2_perltidy.sha256sum] = "7ab9e482156d591767aab1ea5ae33786ee548d234e0e9b557fcbb1613f71b669"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perltidy-20240511-1.el10_0.noarch.rpm;name=aarch64_perltidy;unpack=0"
 SRC_URI[aarch64_perltidy.sha256sum] = "d6ed1d9d27fbf9afb613c0fa38b7d096396b8854b82e34cf56882aeac80dcf5c"

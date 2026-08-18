@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-theme-py3doc-enhanced-2.4.
 SRC_URI[src.sha256sum] = "ee97992d2b5cde81e8df9742cf8c768f61c877475cae06316f507e098e5e88f0"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-theme-py3doc-enhanced-2.4.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-theme-py3doc-enhanced;unpack=0"
-SRC_URI[x86_64_v2_python3-sphinx-theme-py3doc-enhanced.sha256sum] = "acd34f7a6fb81cc2bed3a81755a31fab8a6669b1767f4ad91d7bf1d336105339"
+SRC_URI[x86_64_v2_python3-sphinx-theme-py3doc-enhanced.sha256sum] = "73308651d39971725b18e255a6b23e861fa0b09d9c2e137add534cd66c669014"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-theme-py3doc-enhanced-2.4.0-12.el10_0.noarch.rpm;name=aarch64_python3-sphinx-theme-py3doc-enhanced;unpack=0"
 SRC_URI[aarch64_python3-sphinx-theme-py3doc-enhanced.sha256sum] = "19b327ad9292192f66e70b8334800c9faba1df3c87575f99f25ccf5c84700ab4"
