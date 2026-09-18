@@ -9,16 +9,13 @@ PACKAGES = " \
  ipp-usb \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/golang-github-openprinting-ipp-usb-0.9.27-5.el10_1.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/golang-github-openprinting-ipp-usb-0.9.27-5.el10_1.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "51c251fa8eca13cf42cefad314085e5d9167824e05f05b4165df0b1ca03d0576"
 
-URI_x86_64_v2_ipp-usb = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipp-usb-0.9.27-5.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_ipp-usb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipp-usb}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipp-usb-0.9.27-5.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_ipp-usb;unpack=0"
 SRC_URI[x86_64_v2_ipp-usb.sha256sum] = "7b0c11879bc762ef8c06a7e3829991e048a83af97de18fe9ccf13becde311fff"
 
-URI_aarch64_ipp-usb = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipp-usb-0.9.27-5.el10_1.1.aarch64.rpm;name=aarch64_ipp-usb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipp-usb}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipp-usb-0.9.27-5.el10_1.1.aarch64.rpm;name=aarch64_ipp-usb;unpack=0"
 SRC_URI[aarch64_ipp-usb.sha256sum] = "420704e638b7eef9266b1564ab1df0bd97e214f1779ab29ac72f0e34e358bc9e"
 
 RDEPENDS:ipp-usb = " \

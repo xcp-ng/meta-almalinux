@@ -11,24 +11,19 @@ PACKAGES = " \
  perl-YAML-LibYAML-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-YAML-LibYAML-0.89-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-YAML-LibYAML-0.89-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "051782a28c7ef89941a92d7f3e32f2b736f3a9c979aebc029ef286a6b0684c31"
 
-URI_x86_64_v2_perl-YAML-LibYAML = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-LibYAML-0.89-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-YAML-LibYAML;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-LibYAML}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-LibYAML-0.89-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-YAML-LibYAML;unpack=0"
 SRC_URI[x86_64_v2_perl-YAML-LibYAML.sha256sum] = "854c0c2819a6d5e3b7a6a1579687eb006e18fd9bb01e7c71a6c46d41835c69e1"
 
-URI_x86_64_v2_perl-YAML-LibYAML-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-LibYAML-tests-0.89-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-YAML-LibYAML-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-LibYAML-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-LibYAML-tests-0.89-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-YAML-LibYAML-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-YAML-LibYAML-tests.sha256sum] = "410fb2492e4a0854ce7dd58a37c3681bb81de0bb0e3596f817fd41f84a63264f"
 
-URI_aarch64_perl-YAML-LibYAML = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-LibYAML-0.89-2.el10_0.aarch64.rpm;name=aarch64_perl-YAML-LibYAML;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-YAML-LibYAML}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-LibYAML-0.89-2.el10_0.aarch64.rpm;name=aarch64_perl-YAML-LibYAML;unpack=0"
 SRC_URI[aarch64_perl-YAML-LibYAML.sha256sum] = "9e22cdabc0f111a03b7cbd4e70ec87c25fc2c0c860b31487f400da9b5644c03d"
 
-URI_aarch64_perl-YAML-LibYAML-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-LibYAML-tests-0.89-2.el10_0.aarch64.rpm;name=aarch64_perl-YAML-LibYAML-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-YAML-LibYAML-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-LibYAML-tests-0.89-2.el10_0.aarch64.rpm;name=aarch64_perl-YAML-LibYAML-tests;unpack=0"
 SRC_URI[aarch64_perl-YAML-LibYAML-tests.sha256sum] = "d86504fd3ce29c5cbdb1fa0916a52b1971febb694d3f2153ea26b4c6c05e0d4d"
 
 RDEPENDS:perl-YAML-LibYAML = " \

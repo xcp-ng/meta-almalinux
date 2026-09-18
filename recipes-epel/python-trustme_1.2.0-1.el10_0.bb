@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-trustme \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-trustme-1.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-trustme-1.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d060da6de88956e17ddc9476493054c34abbda35a577bf5dff3523c204ab9a42"
 
-URI_x86_64_v2_python3-trustme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trustme-1.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trustme;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-trustme}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trustme-1.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trustme;unpack=0"
 SRC_URI[x86_64_v2_python3-trustme.sha256sum] = "59a9bc1fe1f6e482d5ebe9c3d049f8f4faae9d851d207ded8a387d59b6d6768c"
 
-URI_aarch64_python3-trustme = "${EPEL_MIRROR}/aarch64/Packages/p/python3-trustme-1.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-trustme;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-trustme}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-trustme-1.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-trustme;unpack=0"
 SRC_URI[aarch64_python3-trustme.sha256sum] = "d86d83d68cf6c2aea84addab929f6447728edad8141864ffd26c92314b5d7645"
 
 RDEPENDS:python3-trustme = " \

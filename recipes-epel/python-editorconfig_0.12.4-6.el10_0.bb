@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-editorconfig \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-editorconfig-0.12.4-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-editorconfig-0.12.4-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b1259d88556210f11fb81b182a5ae7a64cf6535f2781dfa423bebddcda88f03d"
 
-URI_x86_64_v2_python-editorconfig-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-editorconfig-doc-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-editorconfig-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-editorconfig-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-editorconfig-doc-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-editorconfig-doc;unpack=0"
 SRC_URI[x86_64_v2_python-editorconfig-doc.sha256sum] = "b7578968a641db0ce44734c8afe58ee7c2b2156e738833fb12ba12ef3524f75f"
 
-URI_x86_64_v2_python3-editorconfig = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-editorconfig-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-editorconfig;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-editorconfig}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-editorconfig-0.12.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-editorconfig;unpack=0"
 SRC_URI[x86_64_v2_python3-editorconfig.sha256sum] = "c7e6587d73b32a46770bcd82c5579f0850abd80b5fc67af1903abc30ba1f0f45"
 
-URI_aarch64_python-editorconfig-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-editorconfig-doc-0.12.4-6.el10_0.noarch.rpm;name=aarch64_python-editorconfig-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-editorconfig-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-editorconfig-doc-0.12.4-6.el10_0.noarch.rpm;name=aarch64_python-editorconfig-doc;unpack=0"
 SRC_URI[aarch64_python-editorconfig-doc.sha256sum] = "5aeab5ab6ebb083cd03c0601673367f9dc863ed88f3b1c1517ad1dd1b11da2e2"
 
-URI_aarch64_python3-editorconfig = "${EPEL_MIRROR}/aarch64/Packages/p/python3-editorconfig-0.12.4-6.el10_0.noarch.rpm;name=aarch64_python3-editorconfig;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-editorconfig}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-editorconfig-0.12.4-6.el10_0.noarch.rpm;name=aarch64_python3-editorconfig;unpack=0"
 SRC_URI[aarch64_python3-editorconfig.sha256sum] = "a8e059325f6903bca334f8f2da8a39763411373ed373a0fd810091bac8f1d723"
 
 RDEPENDS:python-editorconfig-doc = " \

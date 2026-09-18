@@ -9,16 +9,13 @@ PACKAGES = " \
  termcolours \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/t/termcolours-0.7.0-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/t/termcolours-0.7.0-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "459c57ae92479f6cd0e384fbdbcbef7113214b80152ce53d51ad961a8835e96a"
 
-URI_x86_64_v2_termcolours = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/termcolours-0.7.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_termcolours;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_termcolours}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/termcolours-0.7.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_termcolours;unpack=0"
 SRC_URI[x86_64_v2_termcolours.sha256sum] = "7696a0c8c4609476597ae24a56b3a76a4275658a6fa1423c84124cb5363a0b70"
 
-URI_aarch64_termcolours = "${EPEL_MIRROR}/aarch64/Packages/t/termcolours-0.7.0-3.el10_1.noarch.rpm;name=aarch64_termcolours;unpack=0"
-SRC_URI:append = " ${URI_aarch64_termcolours}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/t/termcolours-0.7.0-3.el10_1.noarch.rpm;name=aarch64_termcolours;unpack=0"
 SRC_URI[aarch64_termcolours.sha256sum] = "346e79c550a601f409f80a19cfaddbddf5da7497116ebcf0787992569b1dd882"
 
 RDEPENDS:termcolours = " \

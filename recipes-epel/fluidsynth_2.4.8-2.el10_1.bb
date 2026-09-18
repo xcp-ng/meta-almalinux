@@ -11,32 +11,25 @@ PACKAGES = " \
  fluidsynth-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/fluidsynth-2.4.8-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fluidsynth-2.4.8-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb68b97c5028bdf89a0a219f3b3fb57e29375bce2fff100f162d67fac2eba02d"
 
-URI_x86_64_v2_fluidsynth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fluidsynth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth;unpack=0"
 SRC_URI[x86_64_v2_fluidsynth.sha256sum] = "34f78cc83f491bedb4bfc2736f5b76b0d1167200cbd8cdad817df89e1953fc3e"
 
-URI_x86_64_v2_fluidsynth-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-devel-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fluidsynth-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-devel-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth-devel;unpack=0"
 SRC_URI[x86_64_v2_fluidsynth-devel.sha256sum] = "081ced96a6cdd26e2c3bf943ab7357389b16575a82e4916bb4ee336cccbce786"
 
-URI_x86_64_v2_fluidsynth-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-libs-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fluidsynth-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluidsynth-libs-2.4.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluidsynth-libs;unpack=0"
 SRC_URI[x86_64_v2_fluidsynth-libs.sha256sum] = "4f56dca7667cef4f3369f98f1dde42b909f23f66be6526789bbd608913126857"
 
-URI_aarch64_fluidsynth = "${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fluidsynth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth;unpack=0"
 SRC_URI[aarch64_fluidsynth.sha256sum] = "02e8efff153883ae24b81b03fdc2bccdfb41e5c7a57a95b287f434d5edbf1c82"
 
-URI_aarch64_fluidsynth-devel = "${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-devel-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fluidsynth-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-devel-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth-devel;unpack=0"
 SRC_URI[aarch64_fluidsynth-devel.sha256sum] = "39d1132e6ab1e2b551d40528fc55dab1f2b530b666aad649c4ea018b52e1489e"
 
-URI_aarch64_fluidsynth-libs = "${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-libs-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fluidsynth-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fluidsynth-libs-2.4.8-2.el10_1.aarch64.rpm;name=aarch64_fluidsynth-libs;unpack=0"
 SRC_URI[aarch64_fluidsynth-libs.sha256sum] = "93987eb28d95a21e55a2d2f165531ddfc4563ea354ec99ee0f0c546493680029"
 
 RDEPENDS:fluidsynth = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-openssl-streams-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-openssl-streams-1.2.3.0-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-openssl-streams-1.2.3.0-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5385ab4dbc6f2f8907aeeb679c78e0439f61761e97b5c38a9a3540d676777591"
 
-URI_x86_64_v2_ghc-openssl-streams = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-openssl-streams}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams;unpack=0"
 SRC_URI[x86_64_v2_ghc-openssl-streams.sha256sum] = "6d6de82f482c7c54652fd537d236e9084baf9e8e587b9f8651abc7fdbdcdf098"
 
-URI_x86_64_v2_ghc-openssl-streams-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-devel-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-openssl-streams-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-devel-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-openssl-streams-devel.sha256sum] = "a9f5bf56fde66f675c44b3b14f089406ff7f6d1653d84ded30f457f9258210e3"
 
-URI_x86_64_v2_ghc-openssl-streams-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-doc-1.2.3.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-openssl-streams-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-openssl-streams-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-doc-1.2.3.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-openssl-streams-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-openssl-streams-doc.sha256sum] = "dafc65b40a421845138823934ec275d0797172d779ddf908722f35479d2afd26"
 
-URI_x86_64_v2_ghc-openssl-streams-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-prof-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-openssl-streams-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-openssl-streams-prof-1.2.3.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-openssl-streams-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-openssl-streams-prof.sha256sum] = "84d321c74b4536fb1d7eb1f67accc31129c39a788b226708677152cfece21cfb"
 
-URI_aarch64_ghc-openssl-streams = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-openssl-streams}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams;unpack=0"
 SRC_URI[aarch64_ghc-openssl-streams.sha256sum] = "8642e79535ce2f6a6577758850e68f2e93303b76636d6fb7148a31a6f2f4b850"
 
-URI_aarch64_ghc-openssl-streams-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-devel-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-openssl-streams-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-devel-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams-devel;unpack=0"
 SRC_URI[aarch64_ghc-openssl-streams-devel.sha256sum] = "61e223c33535b93fa32698088350652b7700b646f31f5b9369de81050dbe376b"
 
-URI_aarch64_ghc-openssl-streams-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-doc-1.2.3.0-17.el10_0.noarch.rpm;name=aarch64_ghc-openssl-streams-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-openssl-streams-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-doc-1.2.3.0-17.el10_0.noarch.rpm;name=aarch64_ghc-openssl-streams-doc;unpack=0"
 SRC_URI[aarch64_ghc-openssl-streams-doc.sha256sum] = "db0b6bd380d92a6b03f534f06c3cc27d2b2a39c12ecfacd805702bd3ebeda5cd"
 
-URI_aarch64_ghc-openssl-streams-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-prof-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-openssl-streams-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-openssl-streams-prof-1.2.3.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-openssl-streams-prof;unpack=0"
 SRC_URI[aarch64_ghc-openssl-streams-prof.sha256sum] = "54444264dee3bccd41afee598b87d2bd259db336504ebbe7240e07b10d8b4c4b"
 
 RDEPENDS:ghc-openssl-streams = " \

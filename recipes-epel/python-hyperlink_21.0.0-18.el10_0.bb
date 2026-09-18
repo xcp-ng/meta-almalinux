@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-hyperlink \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-hyperlink-21.0.0-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hyperlink-21.0.0-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6155badc7b7f3e4c7cbef82ac727c9fd6e7eaee6d9bc1ff46da080ceb9cff331"
 
-URI_x86_64_v2_python-hyperlink-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperlink-doc-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperlink-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-hyperlink-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperlink-doc-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperlink-doc;unpack=0"
 SRC_URI[x86_64_v2_python-hyperlink-doc.sha256sum] = "533ff440a49ba45686ae8ad9034d4e44c1cd393b4cce119562ac87020cbb415d"
 
-URI_x86_64_v2_python3-hyperlink = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperlink-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperlink;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hyperlink}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperlink-21.0.0-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperlink;unpack=0"
 SRC_URI[x86_64_v2_python3-hyperlink.sha256sum] = "8f40584e96eb80f86fb24dea683da49f998a8826c6e0e9ad17d6a3c69ce8263e"
 
-URI_aarch64_python-hyperlink-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hyperlink-doc-21.0.0-18.el10_0.noarch.rpm;name=aarch64_python-hyperlink-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-hyperlink-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-hyperlink-doc-21.0.0-18.el10_0.noarch.rpm;name=aarch64_python-hyperlink-doc;unpack=0"
 SRC_URI[aarch64_python-hyperlink-doc.sha256sum] = "d7d05ab7423531541b88261add315b17c22033689fc2fe8fa291195506cc8923"
 
-URI_aarch64_python3-hyperlink = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hyperlink-21.0.0-18.el10_0.noarch.rpm;name=aarch64_python3-hyperlink;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hyperlink}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hyperlink-21.0.0-18.el10_0.noarch.rpm;name=aarch64_python3-hyperlink;unpack=0"
 SRC_URI[aarch64_python3-hyperlink.sha256sum] = "af3649c05dfa3ffed82e27115dd7d4016388ea0b28eddfef3d6e6c802adf8be2"
 
 RDEPENDS:python-hyperlink-doc = " \

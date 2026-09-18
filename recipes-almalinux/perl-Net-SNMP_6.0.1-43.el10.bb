@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-SNMP \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-SNMP-6.0.1-43.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-SNMP-6.0.1-43.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ac59413df4398317b63cd04a7e05871592b739d06c0845046afbc38f08a59f39"
 
-URI_x86_64_v2_perl-Net-SNMP = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-SNMP-6.0.1-43.el10.noarch.rpm;name=x86_64_v2_perl-Net-SNMP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-SNMP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-SNMP-6.0.1-43.el10.noarch.rpm;name=x86_64_v2_perl-Net-SNMP;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-SNMP.sha256sum] = "b39207bf9fed2bf7b00e1aeb084b6860bca73aaa9ee397c38d2cfd810391fa92"
 
-URI_aarch64_perl-Net-SNMP = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-SNMP-6.0.1-43.el10.noarch.rpm;name=aarch64_perl-Net-SNMP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-SNMP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-SNMP-6.0.1-43.el10.noarch.rpm;name=aarch64_perl-Net-SNMP;unpack=0"
 SRC_URI[aarch64_perl-Net-SNMP.sha256sum] = "b39207bf9fed2bf7b00e1aeb084b6860bca73aaa9ee397c38d2cfd810391fa92"
 
 RDEPENDS:perl-Net-SNMP = " \

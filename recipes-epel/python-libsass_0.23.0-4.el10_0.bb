@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-libsass \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-libsass-0.23.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-libsass-0.23.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a3b90fc4160416d6ae8262531696bbac4cc33373415850bcde42d45241fb4a47"
 
-URI_x86_64_v2_python3-libsass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libsass-0.23.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-libsass;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-libsass}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libsass-0.23.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-libsass;unpack=0"
 SRC_URI[x86_64_v2_python3-libsass.sha256sum] = "e2cdb20a96c1c460f530bdae1b8b86d71e9af06406746b48926ba18dbb3b7fc2"
 
-URI_aarch64_python3-libsass = "${EPEL_MIRROR}/aarch64/Packages/p/python3-libsass-0.23.0-4.el10_0.aarch64.rpm;name=aarch64_python3-libsass;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-libsass}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-libsass-0.23.0-4.el10_0.aarch64.rpm;name=aarch64_python3-libsass;unpack=0"
 SRC_URI[aarch64_python3-libsass.sha256sum] = "4136b1143434272f3d46b08323f7fcfd9998d5293c77a37172d7b5b669d2c188"
 
 RDEPENDS:python3-libsass = " \

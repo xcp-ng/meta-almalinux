@@ -10,16 +10,13 @@ PACKAGES = " \
  php-pear \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/php-pear-1.10.14-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/php-pear-1.10.14-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1ce0c0e1d5b5444c299333c4bcc819d766adf749e736e9becba6eb11a8ab87ac"
 
-URI_x86_64_v2_php-pear = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/php-pear-1.10.14-6.el10.noarch.rpm;name=x86_64_v2_php-pear;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pear}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/php-pear-1.10.14-6.el10.noarch.rpm;name=x86_64_v2_php-pear;unpack=0"
 SRC_URI[x86_64_v2_php-pear.sha256sum] = "761cca1aea570919fed2b9b0aa6b292e68dbad671e80591de9fba90ae578ad03"
 
-URI_aarch64_php-pear = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/php-pear-1.10.14-6.el10.noarch.rpm;name=aarch64_php-pear;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pear}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/php-pear-1.10.14-6.el10.noarch.rpm;name=aarch64_php-pear;unpack=0"
 SRC_URI[aarch64_php-pear.sha256sum] = "761cca1aea570919fed2b9b0aa6b292e68dbad671e80591de9fba90ae578ad03"
 
 RDEPENDS:php-pear = " \

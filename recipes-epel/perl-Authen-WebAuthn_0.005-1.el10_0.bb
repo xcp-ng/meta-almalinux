@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Authen-WebAuthn \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Authen-WebAuthn-0.005-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Authen-WebAuthn-0.005-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e2ca602125de7c05e1f9d8655b19360abd2f488fa954edb22cf23bfa647e603"
 
-URI_x86_64_v2_perl-Authen-WebAuthn = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Authen-WebAuthn-0.005-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Authen-WebAuthn;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Authen-WebAuthn}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Authen-WebAuthn-0.005-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Authen-WebAuthn;unpack=0"
 SRC_URI[x86_64_v2_perl-Authen-WebAuthn.sha256sum] = "6c081e8d08c068040e1749585a229e2fc77125be9f4e856c910eff852f30189e"
 
-URI_aarch64_perl-Authen-WebAuthn = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Authen-WebAuthn-0.005-1.el10_0.noarch.rpm;name=aarch64_perl-Authen-WebAuthn;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Authen-WebAuthn}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Authen-WebAuthn-0.005-1.el10_0.noarch.rpm;name=aarch64_perl-Authen-WebAuthn;unpack=0"
 SRC_URI[aarch64_perl-Authen-WebAuthn.sha256sum] = "23d5d30b423b48b484d51da09ce43ef59e97d4eaf319caae074fc125fb715a50"
 
 RDEPENDS:perl-Authen-WebAuthn = " \

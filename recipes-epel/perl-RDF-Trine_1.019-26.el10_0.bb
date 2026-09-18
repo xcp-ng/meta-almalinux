@@ -15,64 +15,49 @@ PACKAGES = " \
  perl-Test-RDF-Trine-Store \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-RDF-Trine-1.019-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-RDF-Trine-1.019-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f42a89eb340e8cdedd0d95483fb784c514809b4fe2fb79e6bd1c563b5d3148a2"
 
-URI_x86_64_v2_perl-RDF-Trine = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine.sha256sum] = "000e96790c0c9c4eebe85e0eaa97f5a497d63d8682b043114436e21df3be05b5"
 
-URI_x86_64_v2_perl-RDF-Trine-mysql = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-mysql-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-mysql;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine-mysql}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-mysql-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-mysql;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine-mysql.sha256sum] = "f478e306f960d777069c05d94881eeca80088efae18e86578249a09a16255a7f"
 
-URI_x86_64_v2_perl-RDF-Trine-postgresql = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-postgresql-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-postgresql;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine-postgresql}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-postgresql-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-postgresql;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine-postgresql.sha256sum] = "a9e91a8c25cb3d3dbe0448fd3a4abbdc54531fbb953511a11b61a91f33aaba78"
 
-URI_x86_64_v2_perl-RDF-Trine-redis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-redis-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-redis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine-redis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-redis-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-redis;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine-redis.sha256sum] = "936ad49c813e29a7da7387e4f658f5c7aaef626d8cee8ebf99955323949c8b02"
 
-URI_x86_64_v2_perl-RDF-Trine-sqlite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-sqlite-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-sqlite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine-sqlite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-sqlite-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-sqlite;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine-sqlite.sha256sum] = "c68b39dd709dc2b20791b375b14c1bfe217ef4be2a8ebaef24d6876b26bd3bb4"
 
-URI_x86_64_v2_perl-RDF-Trine-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-tests-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Trine-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Trine-tests-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Trine-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Trine-tests.sha256sum] = "fdd0d2543b2960e41d1b34cde1d48c0c1939604dad2174729adb74e7320b01ff"
 
-URI_x86_64_v2_perl-Test-RDF-Trine-Store = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-RDF-Trine-Store-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-RDF-Trine-Store;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-RDF-Trine-Store}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-RDF-Trine-Store-1.019-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-RDF-Trine-Store;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-RDF-Trine-Store.sha256sum] = "a2ba8a0310f9cac69b4e6daf666f32272945c22a16a82c78ccc59285a99d0269"
 
-URI_aarch64_perl-RDF-Trine = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine.sha256sum] = "5f82f81263f6d8b128b3ac093fe3522d4b206b67f37ded2909f953c3b7af08c6"
 
-URI_aarch64_perl-RDF-Trine-mysql = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-mysql-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-mysql;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine-mysql}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-mysql-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-mysql;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine-mysql.sha256sum] = "87acbc7a11bc7f7ca68e02b2323bd521cc9b2c10fdb07d61c08a62d5b6cd6a6e"
 
-URI_aarch64_perl-RDF-Trine-postgresql = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-postgresql-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-postgresql;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine-postgresql}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-postgresql-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-postgresql;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine-postgresql.sha256sum] = "c19088690d02a4a5a7e05a2227850d5ceebc6092a01f01c42bc57c88f32f4614"
 
-URI_aarch64_perl-RDF-Trine-redis = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-redis-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-redis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine-redis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-redis-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-redis;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine-redis.sha256sum] = "df365b66150a26ef6c2f1a55f10ced18203a9efb2c57d71f968eb6c5a559b942"
 
-URI_aarch64_perl-RDF-Trine-sqlite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-sqlite-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-sqlite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine-sqlite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-sqlite-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-sqlite;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine-sqlite.sha256sum] = "b1d086782b2117e8aafe7dd7ff7f5bdbef16ff22909fa5d69d1db7492286955a"
 
-URI_aarch64_perl-RDF-Trine-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-tests-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Trine-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Trine-tests-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-RDF-Trine-tests;unpack=0"
 SRC_URI[aarch64_perl-RDF-Trine-tests.sha256sum] = "e49be1e44cd9a24129a1eeac4bca5e900509695ceb0faa2b5307e6b32b35b1e4"
 
-URI_aarch64_perl-Test-RDF-Trine-Store = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-RDF-Trine-Store-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-Test-RDF-Trine-Store;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-RDF-Trine-Store}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-RDF-Trine-Store-1.019-26.el10_0.noarch.rpm;name=aarch64_perl-Test-RDF-Trine-Store;unpack=0"
 SRC_URI[aarch64_perl-Test-RDF-Trine-Store.sha256sum] = "fd2b4af3a3a8445e883512397e4c56ae2e403a513d96d66b189aa127cd05c4a5"
 
 RDEPENDS:perl-RDF-Trine = " \

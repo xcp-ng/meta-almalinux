@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-serde_yaml0.8-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-serde_yaml0.8-0.8.26-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-serde_yaml0.8-0.8.26-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8012f5adf388d4665326d086fecaadc37be41efb156cbefd8f5890f92c827a84"
 
-URI_x86_64_v2_rust-serde_yaml0.8+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-serde_yaml0.8+default-devel-0.8.26-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-serde_yaml0.8+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-serde_yaml0.8+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-serde_yaml0.8+default-devel-0.8.26-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-serde_yaml0.8+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-serde_yaml0.8+default-devel.sha256sum] = "8d9afea8fe5687ab26f7c4345992925d0eccdbb3af4203073e2d4580b271f1a0"
 
-URI_x86_64_v2_rust-serde_yaml0.8-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-serde_yaml0.8-devel-0.8.26-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-serde_yaml0.8-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-serde_yaml0.8-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-serde_yaml0.8-devel-0.8.26-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-serde_yaml0.8-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-serde_yaml0.8-devel.sha256sum] = "f4f60071d3164a0c6ad08026870e35cdc5ad63e58fbb3baa2131a92806d8d2f6"
 
-URI_aarch64_rust-serde_yaml0.8+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-serde_yaml0.8+default-devel-0.8.26-5.el10_0.noarch.rpm;name=aarch64_rust-serde_yaml0.8+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-serde_yaml0.8+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-serde_yaml0.8+default-devel-0.8.26-5.el10_0.noarch.rpm;name=aarch64_rust-serde_yaml0.8+default-devel;unpack=0"
 SRC_URI[aarch64_rust-serde_yaml0.8+default-devel.sha256sum] = "b74d3656bf0762156f1824411aa735c7f5a5636cca9e53d353b0e9ec141d07ab"
 
-URI_aarch64_rust-serde_yaml0.8-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-serde_yaml0.8-devel-0.8.26-5.el10_0.noarch.rpm;name=aarch64_rust-serde_yaml0.8-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-serde_yaml0.8-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-serde_yaml0.8-devel-0.8.26-5.el10_0.noarch.rpm;name=aarch64_rust-serde_yaml0.8-devel;unpack=0"
 SRC_URI[aarch64_rust-serde_yaml0.8-devel.sha256sum] = "e22da7797532d43c83e50e9a3f6245cbdc13eae1f82a57eb89eb64d42136055b"
 
 RDEPENDS:rust-serde_yaml0.8+default-devel = " \

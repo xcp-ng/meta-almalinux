@@ -9,16 +9,13 @@ PACKAGES = " \
  redfish-finder \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/redfish-finder-0.4-15.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/redfish-finder-0.4-15.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8010dc5563b36d1a90ea23fc49c23c6e7c01898b90e012d731fc6957411e1c49"
 
-URI_x86_64_v2_redfish-finder = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/redfish-finder-0.4-15.el10.x86_64_v2.rpm;name=x86_64_v2_redfish-finder;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_redfish-finder}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/redfish-finder-0.4-15.el10.x86_64_v2.rpm;name=x86_64_v2_redfish-finder;unpack=0"
 SRC_URI[x86_64_v2_redfish-finder.sha256sum] = "75bcf82eb2f98608abc478ab9ba9452fb9edac95e89ca5b501ece20b202a86d6"
 
-URI_aarch64_redfish-finder = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/redfish-finder-0.4-15.el10.aarch64.rpm;name=aarch64_redfish-finder;unpack=0"
-SRC_URI:append = " ${URI_aarch64_redfish-finder}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/redfish-finder-0.4-15.el10.aarch64.rpm;name=aarch64_redfish-finder;unpack=0"
 SRC_URI[aarch64_redfish-finder.sha256sum] = "187f7d288b282e1304a2a60dbc3a6025567b2f700de2eefb765b07ff9866211b"
 
 RDEPENDS:redfish-finder = " \

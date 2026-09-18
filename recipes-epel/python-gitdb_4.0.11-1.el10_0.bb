@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-gitdb \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-gitdb-4.0.11-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-gitdb-4.0.11-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c9661606b759279fce8608ee83e0ab260bd9859b8249d7ce7ba0660dae2ead2c"
 
-URI_x86_64_v2_python3-gitdb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gitdb-4.0.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-gitdb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-gitdb}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gitdb-4.0.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-gitdb;unpack=0"
 SRC_URI[x86_64_v2_python3-gitdb.sha256sum] = "29dfa7f0783d64bb7e464b3691afa9e1ad212be61c35bcc8fc70e8c87b07a45b"
 
-URI_aarch64_python3-gitdb = "${EPEL_MIRROR}/aarch64/Packages/p/python3-gitdb-4.0.11-1.el10_0.noarch.rpm;name=aarch64_python3-gitdb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-gitdb}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-gitdb-4.0.11-1.el10_0.noarch.rpm;name=aarch64_python3-gitdb;unpack=0"
 SRC_URI[aarch64_python3-gitdb.sha256sum] = "42ee104ff3bb37148796ed84ef71b6a661d5387a7a0c263d12c627b6183dfa0b"
 
 RDEPENDS:python3-gitdb = " \

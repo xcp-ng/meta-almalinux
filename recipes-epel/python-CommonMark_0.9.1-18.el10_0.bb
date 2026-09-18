@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-CommonMark \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-CommonMark-0.9.1-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-CommonMark-0.9.1-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0b54cff41d6c002b3f77ce212a54b0886902e9cf7f0b2df7d4dbfa14e5e2ca37"
 
-URI_x86_64_v2_python-CommonMark-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-doc-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-CommonMark-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-doc-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-doc;unpack=0"
 SRC_URI[x86_64_v2_python-CommonMark-doc.sha256sum] = "94dd74d868fb5834bb1bacb9e30b94650dc2f9f4ff2ce155261e751171f434ee"
 
-URI_x86_64_v2_python-CommonMark-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-utils-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-CommonMark-utils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-CommonMark-utils-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-CommonMark-utils;unpack=0"
 SRC_URI[x86_64_v2_python-CommonMark-utils.sha256sum] = "28d3bcf85fcaeb4e0c0718f473649f613de89727d0d366853841571551e4793b"
 
-URI_x86_64_v2_python3-CommonMark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-CommonMark-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-CommonMark;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-CommonMark}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-CommonMark-0.9.1-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-CommonMark;unpack=0"
 SRC_URI[x86_64_v2_python3-CommonMark.sha256sum] = "f49fb0125361398e2b5a8b997bbc54faa07ee68fefbc7a385ad2afeaf12bac34"
 
-URI_aarch64_python-CommonMark-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-CommonMark-doc-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python-CommonMark-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-CommonMark-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-CommonMark-doc-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python-CommonMark-doc;unpack=0"
 SRC_URI[aarch64_python-CommonMark-doc.sha256sum] = "609e091c2f5ea6d6a60bdbf03ba550aee7dd76786fae2a8ae9562fe525ea931b"
 
-URI_aarch64_python-CommonMark-utils = "${EPEL_MIRROR}/aarch64/Packages/p/python-CommonMark-utils-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python-CommonMark-utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-CommonMark-utils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-CommonMark-utils-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python-CommonMark-utils;unpack=0"
 SRC_URI[aarch64_python-CommonMark-utils.sha256sum] = "d8b95d74d4e931a04c72d2460ecd14721e9c365851a83eb870209f0c8effb6a3"
 
-URI_aarch64_python3-CommonMark = "${EPEL_MIRROR}/aarch64/Packages/p/python3-CommonMark-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python3-CommonMark;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-CommonMark}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-CommonMark-0.9.1-18.el10_0.noarch.rpm;name=aarch64_python3-CommonMark;unpack=0"
 SRC_URI[aarch64_python3-CommonMark.sha256sum] = "694427020b30cf1191c59a1244477303cceee93b9f7c8308cd4f733a6179a4f7"
 
 RDEPENDS:python-CommonMark-doc = " \

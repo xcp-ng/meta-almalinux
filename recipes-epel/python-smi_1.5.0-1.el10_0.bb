@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-smi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-smi-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-smi-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "14cce5ea074897b2173dccd00cede49cd6d013a39a6bbd2747141109578a00fe"
 
-URI_x86_64_v2_python3-smi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smi-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-smi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smi-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smi;unpack=0"
 SRC_URI[x86_64_v2_python3-smi.sha256sum] = "d5f09be1938fbf33ca3180f40b1f20393f0daea7eccc9cf210aef03aafc22021"
 
-URI_aarch64_python3-smi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-smi-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-smi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-smi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-smi-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-smi;unpack=0"
 SRC_URI[aarch64_python3-smi.sha256sum] = "2710a670e32ebeb04eb8a909ca28c9afb34d33d9894e139e6b286a7e526cc591"
 
 RDEPENDS:python3-smi = " \

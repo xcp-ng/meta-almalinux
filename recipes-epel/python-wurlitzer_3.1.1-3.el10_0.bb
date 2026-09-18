@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-wurlitzer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-wurlitzer-3.1.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-wurlitzer-3.1.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f40f7a174aac3fdb6efd5caf50e7114d580749ae724bf0716d3890bc334b0959"
 
-URI_x86_64_v2_python3-wurlitzer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wurlitzer-3.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wurlitzer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-wurlitzer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wurlitzer-3.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wurlitzer;unpack=0"
 SRC_URI[x86_64_v2_python3-wurlitzer.sha256sum] = "da5f8175916e63c46140a629cb203bf3e0b98f2910d09ceaf79cad398f9d483a"
 
-URI_aarch64_python3-wurlitzer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-wurlitzer-3.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-wurlitzer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-wurlitzer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-wurlitzer-3.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-wurlitzer;unpack=0"
 SRC_URI[aarch64_python3-wurlitzer.sha256sum] = "64e6fc8fa1644b05dafa38e395528b60fff65b2d3d63d0ef7f88671a4bcd79dc"
 
 RDEPENDS:python3-wurlitzer = " \

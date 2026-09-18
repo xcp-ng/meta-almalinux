@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-JSON-PP \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-JSON-PP-4.16-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-JSON-PP-4.16-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2f146501e41c7f5e0abad9de05c5aaff7ea0ba43af24832fd595344765cf118f"
 
-URI_x86_64_v2_perl-JSON-PP = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-JSON-PP-4.16-512.el10.noarch.rpm;name=x86_64_v2_perl-JSON-PP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-JSON-PP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-JSON-PP-4.16-512.el10.noarch.rpm;name=x86_64_v2_perl-JSON-PP;unpack=0"
 SRC_URI[x86_64_v2_perl-JSON-PP.sha256sum] = "878851743ef985607359b574f527076df27ae928b21ecb775959470b5495e19b"
 
-URI_aarch64_perl-JSON-PP = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-JSON-PP-4.16-512.el10.noarch.rpm;name=aarch64_perl-JSON-PP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-JSON-PP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-JSON-PP-4.16-512.el10.noarch.rpm;name=aarch64_perl-JSON-PP;unpack=0"
 SRC_URI[aarch64_perl-JSON-PP.sha256sum] = "878851743ef985607359b574f527076df27ae928b21ecb775959470b5495e19b"
 
 RDEPENDS:perl-JSON-PP = " \

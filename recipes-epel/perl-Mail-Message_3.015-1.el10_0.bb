@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Mail-Message \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Mail-Message-3.015-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Mail-Message-3.015-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6c4c9b7ca40755ad85ee1ac3030e049fc8250030e37fbfa36f43b2a7b7c73df8"
 
-URI_x86_64_v2_perl-Mail-Message = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Mail-Message-3.015-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Mail-Message;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Mail-Message}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Mail-Message-3.015-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Mail-Message;unpack=0"
 SRC_URI[x86_64_v2_perl-Mail-Message.sha256sum] = "94c4688856b58057c721b0eca6ebf57e89c5824102c75855f51fecdf32e5cd67"
 
-URI_aarch64_perl-Mail-Message = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Mail-Message-3.015-1.el10_0.noarch.rpm;name=aarch64_perl-Mail-Message;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Mail-Message}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Mail-Message-3.015-1.el10_0.noarch.rpm;name=aarch64_perl-Mail-Message;unpack=0"
 SRC_URI[aarch64_perl-Mail-Message.sha256sum] = "e04328b7aa488949d38ed0bad40183fbc01ad5a59ac6bda99f49783a3b590169"
 
 RDEPENDS:perl-Mail-Message = " \

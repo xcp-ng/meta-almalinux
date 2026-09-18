@@ -11,24 +11,19 @@ PACKAGES = " \
  kdepim-runtime-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kdepim-runtime-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kdepim-runtime-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "47ca5ccbe6ef44b3ab3419e00e3bca56eead858992f676682a9558f53b72695a"
 
-URI_x86_64_v2_kdepim-runtime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-runtime-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-runtime;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdepim-runtime}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-runtime-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-runtime;unpack=0"
 SRC_URI[x86_64_v2_kdepim-runtime.sha256sum] = "8ef0ca4ad94e177f14ca763673d1699c08ea0a0fca9cd482869c59362daa8176"
 
-URI_x86_64_v2_kdepim-runtime-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-runtime-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-runtime-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdepim-runtime-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-runtime-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-runtime-libs;unpack=0"
 SRC_URI[x86_64_v2_kdepim-runtime-libs.sha256sum] = "ba72b12e4ffb173382213e70cd7c0352acc6b757940679e2c08b925d679dcae1"
 
-URI_aarch64_kdepim-runtime = "${EPEL_MIRROR}/aarch64/Packages/k/kdepim-runtime-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-runtime;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdepim-runtime}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdepim-runtime-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-runtime;unpack=0"
 SRC_URI[aarch64_kdepim-runtime.sha256sum] = "2f9c2c320c443dcde0d743fca3df4a9db64f5b09a8da6e716e8d86a602949034"
 
-URI_aarch64_kdepim-runtime-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kdepim-runtime-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-runtime-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdepim-runtime-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdepim-runtime-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-runtime-libs;unpack=0"
 SRC_URI[aarch64_kdepim-runtime-libs.sha256sum] = "e3a68fb12b3ba8b15c06a6caea0a0db74d9385f097de6353409bd4a71201cbdc"
 
 RDEPENDS:kdepim-runtime = " \

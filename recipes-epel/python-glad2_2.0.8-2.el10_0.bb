@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-glad2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-glad2-2.0.8-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-glad2-2.0.8-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9daba2371dca2c4226d361111a1e2385cf2191d1c1e273ce0b2815d547d19f35"
 
-URI_x86_64_v2_glad2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_glad2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_glad2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_glad2;unpack=0"
 SRC_URI[x86_64_v2_glad2.sha256sum] = "67f67d3c0ec2cd86d2072d371c8a354cde8f5539d3b28bf9bdeee2016b2ec1da"
 
-URI_x86_64_v2_python3-glad2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-glad2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-glad2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-glad2-2.0.8-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-glad2;unpack=0"
 SRC_URI[x86_64_v2_python3-glad2.sha256sum] = "d6aba184f827fb0a9de780cd7af519b9c45bc400384d39416514c0c81b436228"
 
-URI_aarch64_glad2 = "${EPEL_MIRROR}/aarch64/Packages/g/glad2-2.0.8-2.el10_0.noarch.rpm;name=aarch64_glad2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_glad2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/glad2-2.0.8-2.el10_0.noarch.rpm;name=aarch64_glad2;unpack=0"
 SRC_URI[aarch64_glad2.sha256sum] = "eb54b840722ccf6098da9daeecd3f907fea90fef54f6570fecdd2ce2624759fa"
 
-URI_aarch64_python3-glad2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-glad2-2.0.8-2.el10_0.noarch.rpm;name=aarch64_python3-glad2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-glad2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-glad2-2.0.8-2.el10_0.noarch.rpm;name=aarch64_python3-glad2;unpack=0"
 SRC_URI[aarch64_python3-glad2.sha256sum] = "395a04252c65d4f4401ce8f450a9e8f93dd84b8bb565b42b94ea7c7056cee536"
 
 RDEPENDS:glad2 = " \

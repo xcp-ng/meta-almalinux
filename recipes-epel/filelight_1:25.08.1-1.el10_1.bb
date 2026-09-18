@@ -10,16 +10,13 @@ PACKAGES = " \
  filelight \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/filelight-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/filelight-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a7989140237f7138eee0d6e23b26f90edc6e6565a8fbef85d26704e20ce00fb9"
 
-URI_x86_64_v2_filelight = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/filelight-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_filelight;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_filelight}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/filelight-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_filelight;unpack=0"
 SRC_URI[x86_64_v2_filelight.sha256sum] = "0acd75731fe64ef0241bda1a19f027b29f24dfbd49ec18765dae4104a3d49f1e"
 
-URI_aarch64_filelight = "${EPEL_MIRROR}/aarch64/Packages/f/filelight-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_filelight;unpack=0"
-SRC_URI:append = " ${URI_aarch64_filelight}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/filelight-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_filelight;unpack=0"
 SRC_URI[aarch64_filelight.sha256sum] = "4e02b467d76993ccc59b30ea2056a198c45bef3e191d6f361adf766f66cae23b"
 
 RDEPENDS:filelight = " \

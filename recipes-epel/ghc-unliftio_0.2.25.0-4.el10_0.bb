@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-unliftio-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-unliftio-0.2.25.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-unliftio-0.2.25.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e479e22c2500e47b41e796757632e48e16735006550327f6f62057e6625631c"
 
-URI_x86_64_v2_ghc-unliftio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unliftio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio;unpack=0"
 SRC_URI[x86_64_v2_ghc-unliftio.sha256sum] = "20c7c10838c7bc624c0908593a7410817e94bda411b7ae38b3891980af075d54"
 
-URI_x86_64_v2_ghc-unliftio-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-devel-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unliftio-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-devel-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-unliftio-devel.sha256sum] = "266d4416d84781d34d2f723905ff87347f1c589ab0ae27b316848a235621e3c2"
 
-URI_x86_64_v2_ghc-unliftio-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-doc-0.2.25.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unliftio-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unliftio-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-doc-0.2.25.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unliftio-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-unliftio-doc.sha256sum] = "568a83eaa468b24b76e91a52cf93d868f40c434f008ef48f96dc800ace079573"
 
-URI_x86_64_v2_ghc-unliftio-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-prof-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unliftio-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unliftio-prof-0.2.25.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unliftio-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-unliftio-prof.sha256sum] = "57e9211ae878808d690a8efdec62b34548f2a06de968ccb59455fdee7f59363a"
 
-URI_aarch64_ghc-unliftio = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unliftio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio;unpack=0"
 SRC_URI[aarch64_ghc-unliftio.sha256sum] = "afc38bcec82e2fc74a2c6c35853cd3d92b39216a767787245e69a4c86802350d"
 
-URI_aarch64_ghc-unliftio-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-devel-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unliftio-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-devel-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio-devel;unpack=0"
 SRC_URI[aarch64_ghc-unliftio-devel.sha256sum] = "34eb93134d63091a01a960f18ff095849259d977a6e1760c4fec2909489f837b"
 
-URI_aarch64_ghc-unliftio-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-doc-0.2.25.0-4.el10_0.noarch.rpm;name=aarch64_ghc-unliftio-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unliftio-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-doc-0.2.25.0-4.el10_0.noarch.rpm;name=aarch64_ghc-unliftio-doc;unpack=0"
 SRC_URI[aarch64_ghc-unliftio-doc.sha256sum] = "62a4705ad78081b2780f1731f3ad7d533de397fc7bfd621faa7a9687dd1b2b54"
 
-URI_aarch64_ghc-unliftio-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-prof-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unliftio-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unliftio-prof-0.2.25.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-unliftio-prof;unpack=0"
 SRC_URI[aarch64_ghc-unliftio-prof.sha256sum] = "9ba6691ec1af9e8f8a6ab7508797612b6d262b00069f53c1f19fc3f59dc4f5bd"
 
 RDEPENDS:ghc-unliftio = " \

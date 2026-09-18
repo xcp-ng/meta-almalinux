@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-gix-revwalk-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-gix-revwalk-0.21.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-gix-revwalk-0.21.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fb11ba8d1b7ef2cde16ac3b3426177561a367cbfcc9561e935a59c6818ee071b"
 
-URI_x86_64_v2_rust-gix-revwalk+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-revwalk+default-devel-0.21.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-revwalk+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-revwalk+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-revwalk+default-devel-0.21.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-revwalk+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-revwalk+default-devel.sha256sum] = "0d8769933ecf7b464dc2c86df77f5bb50b416e7232e7bdcdc1ea5337845310c7"
 
-URI_x86_64_v2_rust-gix-revwalk-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-revwalk-devel-0.21.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-revwalk-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-revwalk-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-revwalk-devel-0.21.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-revwalk-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-revwalk-devel.sha256sum] = "31c85db39b48aa98b005f0aa73b8815c580307825c993b344aa216ab10f19ac5"
 
-URI_aarch64_rust-gix-revwalk+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-revwalk+default-devel-0.21.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-revwalk+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-revwalk+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-revwalk+default-devel-0.21.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-revwalk+default-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-revwalk+default-devel.sha256sum] = "2dac35e0b7eb538cf174e62baab58e5eb7dfc845b11587959691e0837f45f07f"
 
-URI_aarch64_rust-gix-revwalk-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-revwalk-devel-0.21.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-revwalk-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-revwalk-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-revwalk-devel-0.21.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-revwalk-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-revwalk-devel.sha256sum] = "c0122cf014a12f42ca5593e9928f08b77a3d587c847707567e9815f02daedbbc"
 
 RDEPENDS:rust-gix-revwalk+default-devel = " \

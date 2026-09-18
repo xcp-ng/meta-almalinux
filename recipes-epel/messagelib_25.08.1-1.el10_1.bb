@@ -11,32 +11,25 @@ PACKAGES = " \
  messagelib-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/messagelib-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/messagelib-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e588ba7fe535a606988ae9e98a6e61008ff142ca09a8c327594cb0f687da24cf"
 
-URI_x86_64_v2_messagelib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_messagelib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_messagelib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_messagelib;unpack=0"
 SRC_URI[x86_64_v2_messagelib.sha256sum] = "0bedab6223e18f5cd2ba941878c8574c68950841a2fc77c9f73d0011732a5f88"
 
-URI_x86_64_v2_messagelib-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_messagelib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_messagelib-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_messagelib-devel;unpack=0"
 SRC_URI[x86_64_v2_messagelib-devel.sha256sum] = "96bcc153e576b6fd9f8914a838d1b8c069bedecd08b703a59080ba75208b1e7c"
 
-URI_x86_64_v2_messagelib-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_messagelib-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_messagelib-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/messagelib-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_messagelib-doc;unpack=0"
 SRC_URI[x86_64_v2_messagelib-doc.sha256sum] = "513aca303306dabe77708eca95d316700ba38c6cc31d9ce2f48a4b90cdc94355"
 
-URI_aarch64_messagelib = "${EPEL_MIRROR}/aarch64/Packages/m/messagelib-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_messagelib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_messagelib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/messagelib-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_messagelib;unpack=0"
 SRC_URI[aarch64_messagelib.sha256sum] = "0a34b7998eb07bf6a6cd891c9e0f3d18fdb40048325bd0d2e878020ddc3b0b41"
 
-URI_aarch64_messagelib-devel = "${EPEL_MIRROR}/aarch64/Packages/m/messagelib-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_messagelib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_messagelib-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/messagelib-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_messagelib-devel;unpack=0"
 SRC_URI[aarch64_messagelib-devel.sha256sum] = "d91b72a06ce9fa1fd5054b1af9ba2b73983e1edf98a11049e345409ac7fc8911"
 
-URI_aarch64_messagelib-doc = "${EPEL_MIRROR}/aarch64/Packages/m/messagelib-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_messagelib-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_messagelib-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/messagelib-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_messagelib-doc;unpack=0"
 SRC_URI[aarch64_messagelib-doc.sha256sum] = "b8033789c643a8473e25b171362dd0eebbdbbacd9ec278a161e721163bb184e1"
 
 RDEPENDS:messagelib = " \

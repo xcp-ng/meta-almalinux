@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-toolz \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-toolz-1.0.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-toolz-1.0.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b0c219f3b1a639632f9e6fdaa07435053840aa32703070d71be14e91cf5167e3"
 
-URI_x86_64_v2_python3-toolz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-toolz-1.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-toolz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-toolz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-toolz-1.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-toolz;unpack=0"
 SRC_URI[x86_64_v2_python3-toolz.sha256sum] = "721d978b5112ae92e9fe10408796b53892f46e0a4297cb96b3a83a2ceb444530"
 
-URI_aarch64_python3-toolz = "${EPEL_MIRROR}/aarch64/Packages/p/python3-toolz-1.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-toolz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-toolz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-toolz-1.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-toolz;unpack=0"
 SRC_URI[aarch64_python3-toolz.sha256sum] = "d4fc819d5d84cff2e2fd72f66ec83cdf38655b1dab7bf07530b4e5dc8887d25b"
 
 RDEPENDS:python3-toolz = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pkgconfig \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pkgconfig-1.5.5-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pkgconfig-1.5.5-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e2b065aa52c27a6184e60d27ecddc1ef5078530591e349339e769aa51b94e67b"
 
-URI_x86_64_v2_python3-pkgconfig = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pkgconfig-1.5.5-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pkgconfig;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pkgconfig}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pkgconfig-1.5.5-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pkgconfig;unpack=0"
 SRC_URI[x86_64_v2_python3-pkgconfig.sha256sum] = "e8d755e4ecb5c4582b3fa603b45210fc466cef804aa8debc66b6f19b93cdbc3d"
 
-URI_aarch64_python3-pkgconfig = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pkgconfig-1.5.5-11.el10_0.noarch.rpm;name=aarch64_python3-pkgconfig;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pkgconfig}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pkgconfig-1.5.5-11.el10_0.noarch.rpm;name=aarch64_python3-pkgconfig;unpack=0"
 SRC_URI[aarch64_python3-pkgconfig.sha256sum] = "86ffc5abee809ea6fd26f66b33cd5fa1fedd152358c166e5d442a9ad21405ccb"
 
 RDEPENDS:python3-pkgconfig = " \

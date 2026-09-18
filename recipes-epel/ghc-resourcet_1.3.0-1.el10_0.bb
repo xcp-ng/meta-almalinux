@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-resourcet-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-resourcet-1.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-resourcet-1.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6c98d25df97c863bb0d52d5a8d9c5e2aec1a22a28b48e00f71ce2e4fc9c0e724"
 
-URI_x86_64_v2_ghc-resourcet = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-resourcet}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet;unpack=0"
 SRC_URI[x86_64_v2_ghc-resourcet.sha256sum] = "99fb74808ad9eb90be0849ff0869603d882804e580a020eec723b85a508ea8e9"
 
-URI_x86_64_v2_ghc-resourcet-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-devel-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-resourcet-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-devel-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-resourcet-devel.sha256sum] = "acdd1fafb2c26aef1b4863b36f31cdd381d3de0c7925b738b487b305e1d9367f"
 
-URI_x86_64_v2_ghc-resourcet-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-doc-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-resourcet-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-resourcet-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-doc-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-resourcet-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-resourcet-doc.sha256sum] = "3198007e92d075cbc6878f203dd03d743b8aa1a560cc611c8714ca6dd6915c8e"
 
-URI_x86_64_v2_ghc-resourcet-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-prof-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-resourcet-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-resourcet-prof-1.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-resourcet-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-resourcet-prof.sha256sum] = "db60ed082788d052301f7c9dbae92f0403bec057e7743442c441161c0bfb5b69"
 
-URI_aarch64_ghc-resourcet = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-resourcet}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet;unpack=0"
 SRC_URI[aarch64_ghc-resourcet.sha256sum] = "affb7f5599fb62e5349504c075534236d04e0c02215b1b2fcdc42a914e190b16"
 
-URI_aarch64_ghc-resourcet-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-devel-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-resourcet-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-devel-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet-devel;unpack=0"
 SRC_URI[aarch64_ghc-resourcet-devel.sha256sum] = "0aed01c7296fc189ed5a503c355c6364406a070d2634812504c0f1ed31405af8"
 
-URI_aarch64_ghc-resourcet-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-doc-1.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-resourcet-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-resourcet-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-doc-1.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-resourcet-doc;unpack=0"
 SRC_URI[aarch64_ghc-resourcet-doc.sha256sum] = "677f21e2bfcd85d1c04783d4b7ada4cfa0d76c91b7fa1269201b286d4d37f5da"
 
-URI_aarch64_ghc-resourcet-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-prof-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-resourcet-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-resourcet-prof-1.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-resourcet-prof;unpack=0"
 SRC_URI[aarch64_ghc-resourcet-prof.sha256sum] = "1d698b02c5a182c1021a5fcaf013410702b9e5d437e8ebac164cfddbd898e07a"
 
 RDEPENDS:ghc-resourcet = " \

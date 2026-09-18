@@ -21,112 +21,85 @@ PACKAGES = " \
  ghc-strict-identity-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/darcs-2.18.2-44.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/darcs-2.18.2-44.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "377a1ca867710d508243f0a5eba0a58e73989c085429ad260a33d462d5a71f20"
 
-URI_x86_64_v2_darcs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/darcs-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_darcs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_darcs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/darcs-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_darcs;unpack=0"
 SRC_URI[x86_64_v2_darcs.sha256sum] = "16719e13dcde7a3e97943a075a9cb0cde96126fc1431336ef585decc88fd618a"
 
-URI_x86_64_v2_ghc-darcs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-darcs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs;unpack=0"
 SRC_URI[x86_64_v2_ghc-darcs.sha256sum] = "d8bbed9770627fcd2931235151ae37a517ee1ca098fa87ab244268725462f8da"
 
-URI_x86_64_v2_ghc-darcs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-devel-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-darcs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-devel-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-darcs-devel.sha256sum] = "b817fa2d6ef19ab9cb58620439fc951836213f2d2dd572eacc2a8fffd78a5905"
 
-URI_x86_64_v2_ghc-darcs-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-doc-2.18.2-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-darcs-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-darcs-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-doc-2.18.2-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-darcs-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-darcs-doc.sha256sum] = "695bc9cfcc3b7c29ad72c5ac766b246390a334a6e84b16a2b31b656ab0684c11"
 
-URI_x86_64_v2_ghc-darcs-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-prof-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-darcs-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-darcs-prof-2.18.2-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-darcs-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-darcs-prof.sha256sum] = "bb783c04521c2c1d4b314aaa5769feea6d3518c12f6a448ddcff243b82ee9c70"
 
-URI_x86_64_v2_ghc-data-ordlist = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-data-ordlist}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist;unpack=0"
 SRC_URI[x86_64_v2_ghc-data-ordlist.sha256sum] = "4de664466d7ef59b276305392806c9b98093d52b628351f766b48e36ed467cc3"
 
-URI_x86_64_v2_ghc-data-ordlist-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-devel-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-data-ordlist-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-devel-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-data-ordlist-devel.sha256sum] = "f8752e171ede21f584669d2389f898f20b13048a60c54b644b407164f88702a9"
 
-URI_x86_64_v2_ghc-data-ordlist-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-doc-0.4.7.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-data-ordlist-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-data-ordlist-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-doc-0.4.7.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-data-ordlist-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-data-ordlist-doc.sha256sum] = "b40462ed09bc1c0a91d87e0b449b78c3c51c0cf9d2aaa138881120278a1ac565"
 
-URI_x86_64_v2_ghc-data-ordlist-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-prof-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-data-ordlist-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-data-ordlist-prof-0.4.7.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-data-ordlist-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-data-ordlist-prof.sha256sum] = "10fb3b29f701240762b28c1004d51fa3acb2633bcb62eb2b5aff8dc640912440"
 
-URI_x86_64_v2_ghc-strict-identity = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-strict-identity}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity;unpack=0"
 SRC_URI[x86_64_v2_ghc-strict-identity.sha256sum] = "691b37f87a82af08efe3d209ddeb9f865178b675cc2054340107e33cc87546c6"
 
-URI_x86_64_v2_ghc-strict-identity-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-devel-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-strict-identity-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-devel-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-strict-identity-devel.sha256sum] = "4a0362f4caee5be26d50faca4f46a7583e184f9e930bbbff9a205de8958a417b"
 
-URI_x86_64_v2_ghc-strict-identity-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-doc-0.1.0.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-strict-identity-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-strict-identity-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-doc-0.1.0.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-strict-identity-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-strict-identity-doc.sha256sum] = "8108c835796d92fb47d92b98a86e4efa15346775dc54a8aa02525beb9c4e1d21"
 
-URI_x86_64_v2_ghc-strict-identity-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-prof-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-strict-identity-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-strict-identity-prof-0.1.0.0-44.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-strict-identity-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-strict-identity-prof.sha256sum] = "a9340c36e7472adf572cdec1879bd26b96eeb397776cb836cba7d7598435f73b"
 
-URI_aarch64_darcs = "${EPEL_MIRROR}/aarch64/Packages/d/darcs-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_darcs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_darcs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/darcs-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_darcs;unpack=0"
 SRC_URI[aarch64_darcs.sha256sum] = "4d9f2b6cd96ed873bb7f4c4f83d734a73ed3d6e920831e6bd0c70abf5436bcdc"
 
-URI_aarch64_ghc-darcs = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-darcs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs;unpack=0"
 SRC_URI[aarch64_ghc-darcs.sha256sum] = "f44e08c37cb9bc457fda1efe0eb838664ff58ff4bb7d92725400fd3ee7ac7a28"
 
-URI_aarch64_ghc-darcs-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-devel-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-darcs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-devel-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs-devel;unpack=0"
 SRC_URI[aarch64_ghc-darcs-devel.sha256sum] = "d75f30128869d18387ec3dcb5541c3c82c5a953334e238faa50c495ad70a5e4c"
 
-URI_aarch64_ghc-darcs-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-doc-2.18.2-44.el10_0.noarch.rpm;name=aarch64_ghc-darcs-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-darcs-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-doc-2.18.2-44.el10_0.noarch.rpm;name=aarch64_ghc-darcs-doc;unpack=0"
 SRC_URI[aarch64_ghc-darcs-doc.sha256sum] = "5438e35f9bb28e228d1164cf11ae712aae2dbe043000e00497923a82f26b6943"
 
-URI_aarch64_ghc-darcs-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-prof-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-darcs-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-darcs-prof-2.18.2-44.el10_0.aarch64.rpm;name=aarch64_ghc-darcs-prof;unpack=0"
 SRC_URI[aarch64_ghc-darcs-prof.sha256sum] = "1092008b28a27929de2b73a36bd84315dcd152bf05df6de67bce731c7a396c52"
 
-URI_aarch64_ghc-data-ordlist = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-data-ordlist}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist;unpack=0"
 SRC_URI[aarch64_ghc-data-ordlist.sha256sum] = "9192c6c6aadd8237bfe0fd1cac1c4dc663d72adf90baf6d9cfb787ff054aafc3"
 
-URI_aarch64_ghc-data-ordlist-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-devel-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-data-ordlist-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-devel-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist-devel;unpack=0"
 SRC_URI[aarch64_ghc-data-ordlist-devel.sha256sum] = "8d1e99578353b34346840a6cbb671ac3550031ac9c9cd77f7e4f5008ebb7d735"
 
-URI_aarch64_ghc-data-ordlist-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-doc-0.4.7.0-44.el10_0.noarch.rpm;name=aarch64_ghc-data-ordlist-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-data-ordlist-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-doc-0.4.7.0-44.el10_0.noarch.rpm;name=aarch64_ghc-data-ordlist-doc;unpack=0"
 SRC_URI[aarch64_ghc-data-ordlist-doc.sha256sum] = "e959992f308f7278c670f962279b2b218548b24923404731cf226f3aa1bb98a0"
 
-URI_aarch64_ghc-data-ordlist-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-prof-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-data-ordlist-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-data-ordlist-prof-0.4.7.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-data-ordlist-prof;unpack=0"
 SRC_URI[aarch64_ghc-data-ordlist-prof.sha256sum] = "c48cddc2dcb318e60bc4f46628c94c6bd2a79f2015d1b7ac90a7e61fbe261343"
 
-URI_aarch64_ghc-strict-identity = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-strict-identity}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity;unpack=0"
 SRC_URI[aarch64_ghc-strict-identity.sha256sum] = "73e3f64197cad10573953a79a8e38a0f1c37166e9ec3f04ef66e6503982265bc"
 
-URI_aarch64_ghc-strict-identity-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-devel-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-strict-identity-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-devel-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity-devel;unpack=0"
 SRC_URI[aarch64_ghc-strict-identity-devel.sha256sum] = "dc85de343ccd0ba19c6eda374cf540f1a6bdb26e17b200fbf06e1f88045f6aa0"
 
-URI_aarch64_ghc-strict-identity-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-doc-0.1.0.0-44.el10_0.noarch.rpm;name=aarch64_ghc-strict-identity-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-strict-identity-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-doc-0.1.0.0-44.el10_0.noarch.rpm;name=aarch64_ghc-strict-identity-doc;unpack=0"
 SRC_URI[aarch64_ghc-strict-identity-doc.sha256sum] = "658d5fa7dce0485a72362cba1c822da736632ff70af8266086b7ebabf2c6864e"
 
-URI_aarch64_ghc-strict-identity-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-prof-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-strict-identity-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-strict-identity-prof-0.1.0.0-44.el10_0.aarch64.rpm;name=aarch64_ghc-strict-identity-prof;unpack=0"
 SRC_URI[aarch64_ghc-strict-identity-prof.sha256sum] = "facc4996828493469b5bdc34bb87e4493bc4edfeef60f9ec1ea760cef0e663fd"
 
 RDEPENDS:darcs = " \

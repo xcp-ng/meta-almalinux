@@ -10,24 +10,19 @@ PACKAGES = " \
  openscad-MCAD \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/o/openscad-2021.01-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/o/openscad-2021.01-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6014136f434ac6fe14ff70f9ba8014d4108289afa3f4eabc2760d9bb2647115d"
 
-URI_x86_64_v2_openscad = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openscad-2021.01-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openscad;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_openscad}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openscad-2021.01-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openscad;unpack=0"
 SRC_URI[x86_64_v2_openscad.sha256sum] = "61fb2066628b1660beb34c6c7bde3f2f65f5da092fe8d01e306cdc004902377c"
 
-URI_x86_64_v2_openscad-MCAD = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openscad-MCAD-2021.01-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_openscad-MCAD;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_openscad-MCAD}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openscad-MCAD-2021.01-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_openscad-MCAD;unpack=0"
 SRC_URI[x86_64_v2_openscad-MCAD.sha256sum] = "6c107f6e3d642cdf74cd5bfbfac19b47fdb3581815a0aca82ece16cea47ab043"
 
-URI_aarch64_openscad = "${EPEL_MIRROR}/aarch64/Packages/o/openscad-2021.01-26.el10_0.aarch64.rpm;name=aarch64_openscad;unpack=0"
-SRC_URI:append = " ${URI_aarch64_openscad}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/openscad-2021.01-26.el10_0.aarch64.rpm;name=aarch64_openscad;unpack=0"
 SRC_URI[aarch64_openscad.sha256sum] = "3b9f570d79d7800dfb2943f4071fb848e8f679af14339b6c81fd79fffeb59d05"
 
-URI_aarch64_openscad-MCAD = "${EPEL_MIRROR}/aarch64/Packages/o/openscad-MCAD-2021.01-26.el10_0.noarch.rpm;name=aarch64_openscad-MCAD;unpack=0"
-SRC_URI:append = " ${URI_aarch64_openscad-MCAD}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/openscad-MCAD-2021.01-26.el10_0.noarch.rpm;name=aarch64_openscad-MCAD;unpack=0"
 SRC_URI[aarch64_openscad-MCAD.sha256sum] = "79f4482783ff699acf0247da9c063e6848730ed85b30a7b1a3dc2afda64d1752"
 
 RDEPENDS:openscad = " \

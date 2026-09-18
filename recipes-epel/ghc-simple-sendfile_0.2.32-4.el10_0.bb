@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-simple-sendfile-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-simple-sendfile-0.2.32-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-simple-sendfile-0.2.32-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3ebf5e282c3de58a455c728ea554b942c32da801b873af656c76259a849d905c"
 
-URI_x86_64_v2_ghc-simple-sendfile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-sendfile}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-sendfile.sha256sum] = "59ec33537f0e802c817508c0a6bda6904248ade0e9c4d577bd1f3f13627a4247"
 
-URI_x86_64_v2_ghc-simple-sendfile-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-devel-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-sendfile-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-devel-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-sendfile-devel.sha256sum] = "d4a356df763a85903d96c7c1762b03aab48ca141f80689de6208fc7651f6349c"
 
-URI_x86_64_v2_ghc-simple-sendfile-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-doc-0.2.32-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-simple-sendfile-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-sendfile-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-doc-0.2.32-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-simple-sendfile-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-sendfile-doc.sha256sum] = "12e5374a10dd0285a63f818de64d9d0f78d4032b9578d88e8c4710dec56ddf9e"
 
-URI_x86_64_v2_ghc-simple-sendfile-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-prof-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-sendfile-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-sendfile-prof-0.2.32-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-sendfile-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-sendfile-prof.sha256sum] = "e54501ddbad6654fab43637f4619ad50d0125d674050cba793626a503806c9ea"
 
-URI_aarch64_ghc-simple-sendfile = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-sendfile}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile;unpack=0"
 SRC_URI[aarch64_ghc-simple-sendfile.sha256sum] = "1b89f0c9aa41d261dc03a31417cde0fb5704124d048497799331a509c61bd054"
 
-URI_aarch64_ghc-simple-sendfile-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-devel-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-sendfile-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-devel-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile-devel;unpack=0"
 SRC_URI[aarch64_ghc-simple-sendfile-devel.sha256sum] = "cfcb0838b3a7ac99c3825fd6288dfe89c8055a0ab80098c2e2454de0bcff3087"
 
-URI_aarch64_ghc-simple-sendfile-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-doc-0.2.32-4.el10_0.noarch.rpm;name=aarch64_ghc-simple-sendfile-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-sendfile-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-doc-0.2.32-4.el10_0.noarch.rpm;name=aarch64_ghc-simple-sendfile-doc;unpack=0"
 SRC_URI[aarch64_ghc-simple-sendfile-doc.sha256sum] = "261728f2e88c5fba6d017e4e8473f723816668a759a9f566499989a781429db4"
 
-URI_aarch64_ghc-simple-sendfile-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-prof-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-sendfile-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-sendfile-prof-0.2.32-4.el10_0.aarch64.rpm;name=aarch64_ghc-simple-sendfile-prof;unpack=0"
 SRC_URI[aarch64_ghc-simple-sendfile-prof.sha256sum] = "71ed78a516ed00030afdc42da25a0b83288e307170c64f8eaa9089da472cc192"
 
 RDEPENDS:ghc-simple-sendfile = " \

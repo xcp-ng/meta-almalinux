@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-Pod-LinkCheck-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Pod-LinkCheck-0.008-37.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Pod-LinkCheck-0.008-37.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "42d0c13ec086ff93e8246a4fefc9c01433614bc9e5603b7a3d14215082252763"
 
-URI_x86_64_v2_perl-Test-Pod-LinkCheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Pod-LinkCheck-0.008-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Pod-LinkCheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Pod-LinkCheck}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Pod-LinkCheck-0.008-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Pod-LinkCheck;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Pod-LinkCheck.sha256sum] = "1ae00cf36db3ade2b4d55c298c207543d135739949b9d7f31522863adf73ff49"
 
-URI_x86_64_v2_perl-Test-Pod-LinkCheck-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Pod-LinkCheck-tests-0.008-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Pod-LinkCheck-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Pod-LinkCheck-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Pod-LinkCheck-tests-0.008-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Pod-LinkCheck-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Pod-LinkCheck-tests.sha256sum] = "a68d1d53d1a4bef97ac754d7f298c3088c39b1ae6b161e14982649a4d27237fb"
 
-URI_aarch64_perl-Test-Pod-LinkCheck = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Pod-LinkCheck-0.008-37.el10_0.noarch.rpm;name=aarch64_perl-Test-Pod-LinkCheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Pod-LinkCheck}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Pod-LinkCheck-0.008-37.el10_0.noarch.rpm;name=aarch64_perl-Test-Pod-LinkCheck;unpack=0"
 SRC_URI[aarch64_perl-Test-Pod-LinkCheck.sha256sum] = "988f483aa2996fb27cee7d256f3244fcee04b7ada6e2f2c0b19113e94aa36d22"
 
-URI_aarch64_perl-Test-Pod-LinkCheck-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Pod-LinkCheck-tests-0.008-37.el10_0.noarch.rpm;name=aarch64_perl-Test-Pod-LinkCheck-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Pod-LinkCheck-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Pod-LinkCheck-tests-0.008-37.el10_0.noarch.rpm;name=aarch64_perl-Test-Pod-LinkCheck-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-Pod-LinkCheck-tests.sha256sum] = "b8a52e6f1fd99f8a623fc0046f9b398ad95b2af18229577ec8b066695f8c636c"
 
 RDEPENDS:perl-Test-Pod-LinkCheck = " \

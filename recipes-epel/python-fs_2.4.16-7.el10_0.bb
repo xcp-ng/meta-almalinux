@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-fs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-fs-2.4.16-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-fs-2.4.16-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "30e9e2b9154e95382c71692cb745a4fc555dc0bd59f86338a3299f4631b3d3d1"
 
-URI_x86_64_v2_python3-fs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fs-2.4.16-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-fs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fs-2.4.16-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fs;unpack=0"
 SRC_URI[x86_64_v2_python3-fs.sha256sum] = "00990da1ac50733d3703bcf2a1f4111a86afbafc9df24f05410e526c6ce82fd8"
 
-URI_aarch64_python3-fs = "${EPEL_MIRROR}/aarch64/Packages/p/python3-fs-2.4.16-7.el10_0.noarch.rpm;name=aarch64_python3-fs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-fs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-fs-2.4.16-7.el10_0.noarch.rpm;name=aarch64_python3-fs;unpack=0"
 SRC_URI[aarch64_python3-fs.sha256sum] = "6fa34845e18bdf614a8eb43231b12c7909efcd779314ceb66baa487e28ba1e10"
 
 RDEPENDS:python3-fs = " \

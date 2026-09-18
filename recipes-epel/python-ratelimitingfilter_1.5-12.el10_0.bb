@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ratelimitingfilter \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ratelimitingfilter-1.5-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ratelimitingfilter-1.5-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "37b016f0d092c9b8f53ea623741d3d92057677d32534cf965a4282f59f21af0a"
 
-URI_x86_64_v2_python3-ratelimitingfilter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ratelimitingfilter-1.5-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ratelimitingfilter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ratelimitingfilter}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ratelimitingfilter-1.5-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ratelimitingfilter;unpack=0"
 SRC_URI[x86_64_v2_python3-ratelimitingfilter.sha256sum] = "7ca2394ae64c92971ad89d44523355b8baed8a12bc1f003ba3086674fc3ddd87"
 
-URI_aarch64_python3-ratelimitingfilter = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ratelimitingfilter-1.5-12.el10_0.noarch.rpm;name=aarch64_python3-ratelimitingfilter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ratelimitingfilter}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ratelimitingfilter-1.5-12.el10_0.noarch.rpm;name=aarch64_python3-ratelimitingfilter;unpack=0"
 SRC_URI[aarch64_python3-ratelimitingfilter.sha256sum] = "6edb2a3955a3e2b728b602e74fa7e9e1789135541c9afe78febe6904f687d59c"
 
 RDEPENDS:python3-ratelimitingfilter = " \

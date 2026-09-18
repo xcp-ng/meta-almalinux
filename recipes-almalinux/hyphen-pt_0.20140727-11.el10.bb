@@ -10,24 +10,19 @@ PACKAGES = " \
  hyphen-pt-BR \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-pt-0.20140727-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-pt-0.20140727-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e3e253650f6922d17059470651dad396cffa27bcde1c6765bc46bab2e4aec5dc"
 
-URI_x86_64_v2_hyphen-pt = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-pt-0.20140727-11.el10.noarch.rpm;name=x86_64_v2_hyphen-pt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hyphen-pt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-pt-0.20140727-11.el10.noarch.rpm;name=x86_64_v2_hyphen-pt;unpack=0"
 SRC_URI[x86_64_v2_hyphen-pt.sha256sum] = "857ba84bf33ba55551b10c57985a8ab068556dcefdb6d533d6216be976d951f8"
 
-URI_x86_64_v2_hyphen-pt-BR = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-pt-BR-0.20140727-11.el10.noarch.rpm;name=x86_64_v2_hyphen-pt-BR;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hyphen-pt-BR}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-pt-BR-0.20140727-11.el10.noarch.rpm;name=x86_64_v2_hyphen-pt-BR;unpack=0"
 SRC_URI[x86_64_v2_hyphen-pt-BR.sha256sum] = "8310094c3174070a1dbe9fb4862dec9d37cd1f1b49e190b2662c4a0e10900060"
 
-URI_aarch64_hyphen-pt = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-pt-0.20140727-11.el10.noarch.rpm;name=aarch64_hyphen-pt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hyphen-pt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-pt-0.20140727-11.el10.noarch.rpm;name=aarch64_hyphen-pt;unpack=0"
 SRC_URI[aarch64_hyphen-pt.sha256sum] = "857ba84bf33ba55551b10c57985a8ab068556dcefdb6d533d6216be976d951f8"
 
-URI_aarch64_hyphen-pt-BR = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-pt-BR-0.20140727-11.el10.noarch.rpm;name=aarch64_hyphen-pt-BR;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hyphen-pt-BR}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-pt-BR-0.20140727-11.el10.noarch.rpm;name=aarch64_hyphen-pt-BR;unpack=0"
 SRC_URI[aarch64_hyphen-pt-BR.sha256sum] = "8310094c3174070a1dbe9fb4862dec9d37cd1f1b49e190b2662c4a0e10900060"
 
 RDEPENDS:hyphen-pt = " \

@@ -11,32 +11,25 @@ PACKAGES = " \
  mockito-junit-jupiter \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mockito-5.8.0-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mockito-5.8.0-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d1ad2203be1913819b3d7babc3b9f6594bbdcb742f3617e81ac922b728eb39a2"
 
-URI_x86_64_v2_mockito = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mockito}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito;unpack=0"
 SRC_URI[x86_64_v2_mockito.sha256sum] = "a1a180201d39a6383f5ae7c8fe3f93233561592fff3e001128c2e57d04d9f738"
 
-URI_x86_64_v2_mockito-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-javadoc-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mockito-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-javadoc-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito-javadoc;unpack=0"
 SRC_URI[x86_64_v2_mockito-javadoc.sha256sum] = "37cc2ac5ebff52e11bd65be19a579d17c5c7770b33180b70b69402ae3290ca48"
 
-URI_x86_64_v2_mockito-junit-jupiter = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-junit-jupiter-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito-junit-jupiter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mockito-junit-jupiter}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mockito-junit-jupiter-5.8.0-6.el10.noarch.rpm;name=x86_64_v2_mockito-junit-jupiter;unpack=0"
 SRC_URI[x86_64_v2_mockito-junit-jupiter.sha256sum] = "58152f44610c43305c711bd3cd39cee7ea81206e4871c5ae5c547271d867f855"
 
-URI_aarch64_mockito = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mockito}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito;unpack=0"
 SRC_URI[aarch64_mockito.sha256sum] = "a1a180201d39a6383f5ae7c8fe3f93233561592fff3e001128c2e57d04d9f738"
 
-URI_aarch64_mockito-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-javadoc-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mockito-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-javadoc-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito-javadoc;unpack=0"
 SRC_URI[aarch64_mockito-javadoc.sha256sum] = "37cc2ac5ebff52e11bd65be19a579d17c5c7770b33180b70b69402ae3290ca48"
 
-URI_aarch64_mockito-junit-jupiter = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-junit-jupiter-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito-junit-jupiter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mockito-junit-jupiter}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mockito-junit-jupiter-5.8.0-6.el10.noarch.rpm;name=aarch64_mockito-junit-jupiter;unpack=0"
 SRC_URI[aarch64_mockito-junit-jupiter.sha256sum] = "58152f44610c43305c711bd3cd39cee7ea81206e4871c5ae5c547271d867f855"
 
 RDEPENDS:mockito = " \

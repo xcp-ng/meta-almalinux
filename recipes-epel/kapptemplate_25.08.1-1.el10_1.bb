@@ -9,16 +9,13 @@ PACKAGES = " \
  kapptemplate \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kapptemplate-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kapptemplate-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1df61efd85e82c133acfe55969cff71ff1df60a028438549302b02e8e4ac8053"
 
-URI_x86_64_v2_kapptemplate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kapptemplate-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kapptemplate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kapptemplate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kapptemplate-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kapptemplate;unpack=0"
 SRC_URI[x86_64_v2_kapptemplate.sha256sum] = "d6612e17420c2402849fda418aa5b6eba5cd066e3dcc62167ae46b4bab3982f7"
 
-URI_aarch64_kapptemplate = "${EPEL_MIRROR}/aarch64/Packages/k/kapptemplate-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kapptemplate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kapptemplate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kapptemplate-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kapptemplate;unpack=0"
 SRC_URI[aarch64_kapptemplate.sha256sum] = "7cee602c685b28628120f24926e352a6d4e287c77006e9cb6763f71eaf351632"
 
 RDEPENDS:kapptemplate = " \

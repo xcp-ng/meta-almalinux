@@ -12,32 +12,25 @@ PACKAGES = " \
  perl-ExtUtils-MakeMaker \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cfafb8b1a0dbf1183eb05234720fb675a78a64075c61a0192f3e2f04f17e93ed"
 
-URI_x86_64_v2_perl-ExtUtils-Command = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Command-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-Command;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-Command}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Command-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-Command;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-Command.sha256sum] = "1177483446c28371176a66dc2c7e9c3f94c4b358c37dbffea3ac9b0da69ea5d1"
 
-URI_x86_64_v2_perl-ExtUtils-MM-Utils = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MM-Utils-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-MM-Utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-MM-Utils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MM-Utils-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-MM-Utils;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-MM-Utils.sha256sum] = "dee9c8ba2297fa3f6b2959e5a2632ce74672511e41456a37634ee658cdbf63ca"
 
-URI_x86_64_v2_perl-ExtUtils-MakeMaker = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-MakeMaker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-MakeMaker}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-MakeMaker;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-MakeMaker.sha256sum] = "a0f0d1a419fbc64ed59a119758a83bde1ba4a052b6bf5130d9cfc3bffb03d9e6"
 
-URI_aarch64_perl-ExtUtils-Command = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-Command-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-Command;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-Command}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-Command-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-Command;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-Command.sha256sum] = "1177483446c28371176a66dc2c7e9c3f94c4b358c37dbffea3ac9b0da69ea5d1"
 
-URI_aarch64_perl-ExtUtils-MM-Utils = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-MM-Utils-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-MM-Utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-MM-Utils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-MM-Utils-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-MM-Utils;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-MM-Utils.sha256sum] = "dee9c8ba2297fa3f6b2959e5a2632ce74672511e41456a37634ee658cdbf63ca"
 
-URI_aarch64_perl-ExtUtils-MakeMaker = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-MakeMaker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-MakeMaker}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.noarch.rpm;name=aarch64_perl-ExtUtils-MakeMaker;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-MakeMaker.sha256sum] = "a0f0d1a419fbc64ed59a119758a83bde1ba4a052b6bf5130d9cfc3bffb03d9e6"
 
 RDEPENDS:perl-ExtUtils-Command = " \

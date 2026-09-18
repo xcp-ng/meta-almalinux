@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Archive-Zip \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Archive-Zip-1.68-17.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Archive-Zip-1.68-17.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c323ff2cd8b13352af74bcd2b2589677448c5b09099dd248133dc2a59e8b13f1"
 
-URI_x86_64_v2_perl-Archive-Zip = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Archive-Zip-1.68-17.el10.noarch.rpm;name=x86_64_v2_perl-Archive-Zip;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Archive-Zip}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Archive-Zip-1.68-17.el10.noarch.rpm;name=x86_64_v2_perl-Archive-Zip;unpack=0"
 SRC_URI[x86_64_v2_perl-Archive-Zip.sha256sum] = "ce9feae604b05530be7795a673c1594b0e001a71fe59c13f5b9a52ff76c4cb5f"
 
-URI_aarch64_perl-Archive-Zip = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Archive-Zip-1.68-17.el10.noarch.rpm;name=aarch64_perl-Archive-Zip;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Archive-Zip}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Archive-Zip-1.68-17.el10.noarch.rpm;name=aarch64_perl-Archive-Zip;unpack=0"
 SRC_URI[aarch64_perl-Archive-Zip.sha256sum] = "ce9feae604b05530be7795a673c1594b0e001a71fe59c13f5b9a52ff76c4cb5f"
 
 RDEPENDS:perl-Archive-Zip = " \

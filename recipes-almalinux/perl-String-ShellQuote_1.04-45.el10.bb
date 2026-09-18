@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-String-ShellQuote \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-String-ShellQuote-1.04-45.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-String-ShellQuote-1.04-45.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a554af9b60df0eacc7d2300ce8bf09a8be48ea6fd6c02dfbc4c7289fc8f0a256"
 
-URI_x86_64_v2_perl-String-ShellQuote = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-String-ShellQuote-1.04-45.el10.noarch.rpm;name=x86_64_v2_perl-String-ShellQuote;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-String-ShellQuote}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-String-ShellQuote-1.04-45.el10.noarch.rpm;name=x86_64_v2_perl-String-ShellQuote;unpack=0"
 SRC_URI[x86_64_v2_perl-String-ShellQuote.sha256sum] = "a36249964871707499b23f18470553379c202a867370124965250dd4baa8b9f4"
 
-URI_aarch64_perl-String-ShellQuote = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-String-ShellQuote-1.04-45.el10.noarch.rpm;name=aarch64_perl-String-ShellQuote;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-String-ShellQuote}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-String-ShellQuote-1.04-45.el10.noarch.rpm;name=aarch64_perl-String-ShellQuote;unpack=0"
 SRC_URI[aarch64_perl-String-ShellQuote.sha256sum] = "a36249964871707499b23f18470553379c202a867370124965250dd4baa8b9f4"
 
 RDEPENDS:perl-String-ShellQuote = " \

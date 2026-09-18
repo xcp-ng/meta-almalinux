@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Menlo-Legacy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Menlo-Legacy-1.9022-21.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Menlo-Legacy-1.9022-21.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "81a0d22b2bf3c79eecd5205d2e0eda9aeee8869cb829e20f8b3e83acc381d57c"
 
-URI_x86_64_v2_perl-Menlo-Legacy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Menlo-Legacy-1.9022-21.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Menlo-Legacy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Menlo-Legacy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Menlo-Legacy-1.9022-21.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Menlo-Legacy;unpack=0"
 SRC_URI[x86_64_v2_perl-Menlo-Legacy.sha256sum] = "af5ae4fdafe8bf5e2a0747f58e0c63a6343ac3c7103e420892dd812f63cdba37"
 
-URI_aarch64_perl-Menlo-Legacy = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Menlo-Legacy-1.9022-21.el10_1.noarch.rpm;name=aarch64_perl-Menlo-Legacy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Menlo-Legacy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Menlo-Legacy-1.9022-21.el10_1.noarch.rpm;name=aarch64_perl-Menlo-Legacy;unpack=0"
 SRC_URI[aarch64_perl-Menlo-Legacy.sha256sum] = "e03da11416e4920edb35fcd61b9fea2d0cb316a30193c71d1fd392e95f0362f5"
 
 RDEPENDS:perl-Menlo-Legacy = " \

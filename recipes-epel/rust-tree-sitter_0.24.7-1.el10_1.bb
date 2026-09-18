@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-tree-sitter-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-tree-sitter-0.24.7-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-tree-sitter-0.24.7-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "73765d3b29d1c6ec55ec77eadc25b6ce9bccf59d7484871c5271a6c416e3aac9"
 
-URI_x86_64_v2_rust-tree-sitter+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter+default-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-tree-sitter+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter+default-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-tree-sitter+default-devel.sha256sum] = "5366f2ca43a008cced7970fc14da707250cf7bd0381e5700395467a510d0427f"
 
-URI_x86_64_v2_rust-tree-sitter+std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter+std-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter+std-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-tree-sitter+std-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter+std-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter+std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-tree-sitter+std-devel.sha256sum] = "510083776019748ce81305a77b0602c426f5604d96b1c0e8e1152ff5228f321b"
 
-URI_x86_64_v2_rust-tree-sitter-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-tree-sitter-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tree-sitter-devel-0.24.7-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tree-sitter-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-tree-sitter-devel.sha256sum] = "306e20b58ef69ead3ecddd205a65e65b0c299959310f37229ad63fe80c7b897e"
 
-URI_aarch64_rust-tree-sitter+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter+default-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-tree-sitter+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter+default-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter+default-devel;unpack=0"
 SRC_URI[aarch64_rust-tree-sitter+default-devel.sha256sum] = "8e45bc6e6aced4ed35d587a327bd867c356e270427df5a0092587a4c983d65e2"
 
-URI_aarch64_rust-tree-sitter+std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter+std-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter+std-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-tree-sitter+std-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter+std-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter+std-devel;unpack=0"
 SRC_URI[aarch64_rust-tree-sitter+std-devel.sha256sum] = "e1341958ce7bd259be5f8781461307737e66fbfc2082087df103411b4ad440b7"
 
-URI_aarch64_rust-tree-sitter-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-tree-sitter-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-tree-sitter-devel-0.24.7-1.el10_1.noarch.rpm;name=aarch64_rust-tree-sitter-devel;unpack=0"
 SRC_URI[aarch64_rust-tree-sitter-devel.sha256sum] = "4a76831461d24e79b6e95e0c3f3490abe00b694edbd9cd4e22ae20e52da8fb12"
 
 RDEPENDS:rust-tree-sitter+default-devel = " \

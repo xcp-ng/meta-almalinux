@@ -10,24 +10,19 @@ PACKAGES = " \
  grantlee-editor-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/grantlee-editor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/grantlee-editor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6e1759038622f6a19bbc0c40f4e8969cf2e48b3abcef492cfe136e10810f854d"
 
-URI_x86_64_v2_grantlee-editor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/grantlee-editor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_grantlee-editor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_grantlee-editor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/grantlee-editor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_grantlee-editor;unpack=0"
 SRC_URI[x86_64_v2_grantlee-editor.sha256sum] = "fba96da119a4355e7fe95ab8c293bfe184d48e085124e0d07de93c5d87f37b19"
 
-URI_x86_64_v2_grantlee-editor-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/grantlee-editor-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_grantlee-editor-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_grantlee-editor-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/grantlee-editor-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_grantlee-editor-libs;unpack=0"
 SRC_URI[x86_64_v2_grantlee-editor-libs.sha256sum] = "54f4e7f90164bae245271162154d9e1dfe87cd438438e0a6202a8abff90ebe81"
 
-URI_aarch64_grantlee-editor = "${EPEL_MIRROR}/aarch64/Packages/g/grantlee-editor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_grantlee-editor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_grantlee-editor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/grantlee-editor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_grantlee-editor;unpack=0"
 SRC_URI[aarch64_grantlee-editor.sha256sum] = "c414381c600bebec24545c3ea93e11cbee3b74cf6dab8966063ab95a4b459641"
 
-URI_aarch64_grantlee-editor-libs = "${EPEL_MIRROR}/aarch64/Packages/g/grantlee-editor-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_grantlee-editor-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_grantlee-editor-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/grantlee-editor-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_grantlee-editor-libs;unpack=0"
 SRC_URI[aarch64_grantlee-editor-libs.sha256sum] = "94a3c5da5462f9401626dc01a2fd4967a2bf00158156499421a1567ce50b22de"
 
 RDEPENDS:grantlee-editor = " \

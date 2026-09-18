@@ -11,24 +11,19 @@ PACKAGES = " \
  NetworkManager-pptp-gnome \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/n/NetworkManager-pptp-1.2.12-9.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/n/NetworkManager-pptp-1.2.12-9.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9f3a6d47289b8224f9e09c13ec3d5667c4361ac9edbf70a10b3541f354dd0ee8"
 
-URI_x86_64_v2_NetworkManager-pptp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-pptp-1.2.12-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-pptp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_NetworkManager-pptp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-pptp-1.2.12-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-pptp;unpack=0"
 SRC_URI[x86_64_v2_NetworkManager-pptp.sha256sum] = "16214067406a808687ec9256328ea754165b5fb7d7964cbcd4e7125ecdbaace1"
 
-URI_x86_64_v2_NetworkManager-pptp-gnome = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-pptp-gnome-1.2.12-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-pptp-gnome;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_NetworkManager-pptp-gnome}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-pptp-gnome-1.2.12-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-pptp-gnome;unpack=0"
 SRC_URI[x86_64_v2_NetworkManager-pptp-gnome.sha256sum] = "692c743be9b39b67106d9e953a863cbf03557f1c961d56df9ca0fc20785fbe20"
 
-URI_aarch64_NetworkManager-pptp = "${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-pptp-1.2.12-9.el10_1.aarch64.rpm;name=aarch64_NetworkManager-pptp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_NetworkManager-pptp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-pptp-1.2.12-9.el10_1.aarch64.rpm;name=aarch64_NetworkManager-pptp;unpack=0"
 SRC_URI[aarch64_NetworkManager-pptp.sha256sum] = "a55b4abdfc2119b38f07f81f651dc6ecac49bc2676187af2864a4601ba2eb590"
 
-URI_aarch64_NetworkManager-pptp-gnome = "${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-pptp-gnome-1.2.12-9.el10_1.aarch64.rpm;name=aarch64_NetworkManager-pptp-gnome;unpack=0"
-SRC_URI:append = " ${URI_aarch64_NetworkManager-pptp-gnome}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-pptp-gnome-1.2.12-9.el10_1.aarch64.rpm;name=aarch64_NetworkManager-pptp-gnome;unpack=0"
 SRC_URI[aarch64_NetworkManager-pptp-gnome.sha256sum] = "b222fa37dc1d406a11ad02cbbe6b6efefb4b821f34e26848d85109b63ff32b2e"
 
 RDEPENDS:NetworkManager-pptp = " \

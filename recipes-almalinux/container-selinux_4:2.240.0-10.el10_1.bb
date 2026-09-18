@@ -10,16 +10,13 @@ PACKAGES = " \
  container-selinux \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/container-selinux-2.240.0-10.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/container-selinux-2.240.0-10.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "785599711ee45baa0a753c2977d3b6d0dd687a0b9c9b386ce116b8294f8c1030"
 
-URI_x86_64_v2_container-selinux = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/container-selinux-2.240.0-10.el10_1.noarch.rpm;name=x86_64_v2_container-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_container-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/container-selinux-2.240.0-10.el10_1.noarch.rpm;name=x86_64_v2_container-selinux;unpack=0"
 SRC_URI[x86_64_v2_container-selinux.sha256sum] = "bb9c211772563bec163547e3484540164d50972a82f72189eec445de52ecdc34"
 
-URI_aarch64_container-selinux = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/container-selinux-2.240.0-10.el10_1.noarch.rpm;name=aarch64_container-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_container-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/container-selinux-2.240.0-10.el10_1.noarch.rpm;name=aarch64_container-selinux;unpack=0"
 SRC_URI[aarch64_container-selinux.sha256sum] = "bb9c211772563bec163547e3484540164d50972a82f72189eec445de52ecdc34"
 
 RDEPENDS:container-selinux = " \

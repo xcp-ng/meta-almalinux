@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-microstache-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-microstache-1.0.2.3-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-microstache-1.0.2.3-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "70e2f65a76617241dd155a1165fd959c961db26413682b822fc3c195dcd31777"
 
-URI_x86_64_v2_ghc-microstache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-microstache}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache;unpack=0"
 SRC_URI[x86_64_v2_ghc-microstache.sha256sum] = "451c3f340efa201208d95cf45d2953e95738faacd58cce3dbab9c0e031cede38"
 
-URI_x86_64_v2_ghc-microstache-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-devel-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-microstache-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-devel-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-microstache-devel.sha256sum] = "b62ee9d04c531907219a4aa1dcafca040d96f527d46cf80d8a75beda2f6685b7"
 
-URI_x86_64_v2_ghc-microstache-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-doc-1.0.2.3-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-microstache-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-microstache-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-doc-1.0.2.3-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-microstache-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-microstache-doc.sha256sum] = "c4e3783d0874772dab1bc5a768b4781c5f4ef541ff36128a7691e5bb6fd7aaf2"
 
-URI_x86_64_v2_ghc-microstache-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-prof-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-microstache-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-microstache-prof-1.0.2.3-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-microstache-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-microstache-prof.sha256sum] = "5e8c6d2046057c9379a4335b2ef782129d9635f76bab633a58faa9753ac0877d"
 
-URI_aarch64_ghc-microstache = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-microstache}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache;unpack=0"
 SRC_URI[aarch64_ghc-microstache.sha256sum] = "9b7ae99b734545d7a142178cd9275ab3dd533e517564bbb725e2a75f35d2eb30"
 
-URI_aarch64_ghc-microstache-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-devel-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-microstache-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-devel-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache-devel;unpack=0"
 SRC_URI[aarch64_ghc-microstache-devel.sha256sum] = "6ef8f0ac5763512b28c3af99e013c80b2dc16b61310e7ae04daa2f3c441cd6e1"
 
-URI_aarch64_ghc-microstache-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-doc-1.0.2.3-9.el10_0.noarch.rpm;name=aarch64_ghc-microstache-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-microstache-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-doc-1.0.2.3-9.el10_0.noarch.rpm;name=aarch64_ghc-microstache-doc;unpack=0"
 SRC_URI[aarch64_ghc-microstache-doc.sha256sum] = "1783b288feacece15c0012cace5b1380fa55ba7113900e6880d84d957d80c341"
 
-URI_aarch64_ghc-microstache-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-prof-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-microstache-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-microstache-prof-1.0.2.3-9.el10_0.aarch64.rpm;name=aarch64_ghc-microstache-prof;unpack=0"
 SRC_URI[aarch64_ghc-microstache-prof.sha256sum] = "12bf34c7f86cd9d27da32ee28a22b618ba023e17b772db7dccc67c7fba277b04"
 
 RDEPENDS:ghc-microstache = " \

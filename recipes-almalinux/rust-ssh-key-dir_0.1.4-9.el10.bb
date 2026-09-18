@@ -9,16 +9,13 @@ PACKAGES = " \
  ssh-key-dir \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/rust-ssh-key-dir-0.1.4-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/rust-ssh-key-dir-0.1.4-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "50393507c31c9331fb8634e732f5645089061e749598142254997ffef058e5fc"
 
-URI_x86_64_v2_ssh-key-dir = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ssh-key-dir-0.1.4-9.el10.x86_64_v2.rpm;name=x86_64_v2_ssh-key-dir;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ssh-key-dir}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ssh-key-dir-0.1.4-9.el10.x86_64_v2.rpm;name=x86_64_v2_ssh-key-dir;unpack=0"
 SRC_URI[x86_64_v2_ssh-key-dir.sha256sum] = "95ab8b46f682878f174d3a909cdfb26b73fc72c51b64fd9e79d241923ed5fb70"
 
-URI_aarch64_ssh-key-dir = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ssh-key-dir-0.1.4-9.el10.aarch64.rpm;name=aarch64_ssh-key-dir;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ssh-key-dir}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ssh-key-dir-0.1.4-9.el10.aarch64.rpm;name=aarch64_ssh-key-dir;unpack=0"
 SRC_URI[aarch64_ssh-key-dir.sha256sum] = "9a1eef4b24aa02ba854dab4b31981388d8a2b8ee5b7655ad17b2d1033dc98cf5"
 
 RDEPENDS:ssh-key-dir = " \

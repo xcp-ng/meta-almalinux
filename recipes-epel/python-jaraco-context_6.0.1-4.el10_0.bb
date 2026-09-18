@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-jaraco-context \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-context-6.0.1-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-context-6.0.1-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4b73bd6e65dc04b99703c43d547c1bdf001f568656d3965fb0ffb6fca52b12f9"
 
-URI_x86_64_v2_python3-jaraco-context = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-context-6.0.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-context;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jaraco-context}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-context-6.0.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-context;unpack=0"
 SRC_URI[x86_64_v2_python3-jaraco-context.sha256sum] = "18bac6ee557e08dc6fc22983e313091c999950bff1c84069f07cbc2288e7e86d"
 
-URI_aarch64_python3-jaraco-context = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-context-6.0.1-4.el10_0.noarch.rpm;name=aarch64_python3-jaraco-context;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jaraco-context}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-context-6.0.1-4.el10_0.noarch.rpm;name=aarch64_python3-jaraco-context;unpack=0"
 SRC_URI[aarch64_python3-jaraco-context.sha256sum] = "cdab6d99fd05bcf5e30dad4cceb27ef7be51ec29f187e9cd8c1ff74dfb21e45d"
 
 RDEPENDS:python3-jaraco-context = " \

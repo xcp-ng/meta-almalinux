@@ -11,24 +11,19 @@ PACKAGES = " \
  python3-flask+async \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-flask-3.1.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-flask-3.1.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d1a20539edb6a337c4e7ed4b0f3e258566a2acd3acf206a5ccffe15bc0aafb1"
 
-URI_x86_64_v2_python3-flask = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flask}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask;unpack=0"
 SRC_URI[x86_64_v2_python3-flask.sha256sum] = "423ae811d2e9cbd5ca83680734910c2a5ed1bfe24410fa91238fe7957ff2824f"
 
-URI_x86_64_v2_python3-flask+async = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask+async-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask+async;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flask+async}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flask+async-3.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flask+async;unpack=0"
 SRC_URI[x86_64_v2_python3-flask+async.sha256sum] = "33152a323ecd79ab0a13d7483fd1b431e43cd9c2f7cfa29c3821c7e5852572aa"
 
-URI_aarch64_python3-flask = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flask-3.1.0-2.el10_0.noarch.rpm;name=aarch64_python3-flask;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flask}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flask-3.1.0-2.el10_0.noarch.rpm;name=aarch64_python3-flask;unpack=0"
 SRC_URI[aarch64_python3-flask.sha256sum] = "9bf34721463f190dc09c8128172716c62247ebc2a686bffb5846e85235b4d209"
 
-URI_aarch64_python3-flask+async = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flask+async-3.1.0-2.el10_0.noarch.rpm;name=aarch64_python3-flask+async;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flask+async}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flask+async-3.1.0-2.el10_0.noarch.rpm;name=aarch64_python3-flask+async;unpack=0"
 SRC_URI[aarch64_python3-flask+async.sha256sum] = "02d3a1f0022a051e1bfa52e261bfa8eb4b158bce8b1957fa80f6b2f78da26f5b"
 
 RDEPENDS:python3-flask = " \

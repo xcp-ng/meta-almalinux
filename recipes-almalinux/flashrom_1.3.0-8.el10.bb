@@ -9,16 +9,13 @@ PACKAGES = " \
  flashrom \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/flashrom-1.3.0-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/flashrom-1.3.0-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a01fba84460d39db36ba179cf0cdc06e8beaedce2d7de25f207e6779ca099d62"
 
-URI_x86_64_v2_flashrom = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flashrom-1.3.0-8.el10.x86_64_v2.rpm;name=x86_64_v2_flashrom;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flashrom}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flashrom-1.3.0-8.el10.x86_64_v2.rpm;name=x86_64_v2_flashrom;unpack=0"
 SRC_URI[x86_64_v2_flashrom.sha256sum] = "e1b8dc762780bdc884bbd2334f2ad5b5e4b81bda3d6bbd3b6d598b74feb41719"
 
-URI_aarch64_flashrom = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flashrom-1.3.0-8.el10.aarch64.rpm;name=aarch64_flashrom;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flashrom}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flashrom-1.3.0-8.el10.aarch64.rpm;name=aarch64_flashrom;unpack=0"
 SRC_URI[aarch64_flashrom.sha256sum] = "463928fb733f07326b8e6d50a888b9bf75bef7be1d602b11da9fb387cca12585"
 
 RDEPENDS:flashrom = " \

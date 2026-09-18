@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-reretry \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-reretry-0.11.8-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-reretry-0.11.8-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "71c640154de3a88f99618e4f650ec24aca87de6ddfed8e4b410bcd282ec13641"
 
-URI_x86_64_v2_python3-reretry = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-reretry-0.11.8-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-reretry;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-reretry}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-reretry-0.11.8-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-reretry;unpack=0"
 SRC_URI[x86_64_v2_python3-reretry.sha256sum] = "090bcc4f24c8ec715242baad186605609f69ff7b53cf7b9966b86fb2dfad8ec9"
 
-URI_aarch64_python3-reretry = "${EPEL_MIRROR}/aarch64/Packages/p/python3-reretry-0.11.8-11.el10_0.noarch.rpm;name=aarch64_python3-reretry;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-reretry}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-reretry-0.11.8-11.el10_0.noarch.rpm;name=aarch64_python3-reretry;unpack=0"
 SRC_URI[aarch64_python3-reretry.sha256sum] = "807b450b5d9f7705fff4af43c8210d80badac3384ec008ce343d414497726837"
 
 RDEPENDS:python3-reretry = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  gnome-system-monitor \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-system-monitor-46.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-system-monitor-46.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2e9992c1c2f45930f92ec52c0c8df2eedfc961449150dee3f3e43aa675296d56"
 
-URI_x86_64_v2_gnome-system-monitor = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-system-monitor-46.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-system-monitor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-system-monitor}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-system-monitor-46.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-system-monitor;unpack=0"
 SRC_URI[x86_64_v2_gnome-system-monitor.sha256sum] = "9f01ab154728edc819283b90b3f623831367cda3e3fa168185472d1daeb22d2f"
 
-URI_aarch64_gnome-system-monitor = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-system-monitor-46.0-1.el10.aarch64.rpm;name=aarch64_gnome-system-monitor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-system-monitor}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-system-monitor-46.0-1.el10.aarch64.rpm;name=aarch64_gnome-system-monitor;unpack=0"
 SRC_URI[aarch64_gnome-system-monitor.sha256sum] = "a120b96c2a7277252b27ed918ec34fd664d23aa44159559e123c536040f48df2"
 
 RDEPENDS:gnome-system-monitor = " \

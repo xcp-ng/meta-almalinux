@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-date-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-date-0.0.11-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-date-0.0.11-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2dd7b685e0be7d065664a29c6b659f7485b32b97075cb1e53c44ca54021a6590"
 
-URI_x86_64_v2_ghc-http-date = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-date}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-date.sha256sum] = "8a1753efd359f18dfe70058c6ffc08d4ef0a52f7bbec719ec1d396ebf4cacce8"
 
-URI_x86_64_v2_ghc-http-date-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-devel-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-date-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-devel-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-date-devel.sha256sum] = "ee08c5454c776d6d1f85b5fcddfb5adc2a6468d0efe67c847b1f094f23893bd2"
 
-URI_x86_64_v2_ghc-http-date-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-doc-0.0.11-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-date-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-date-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-doc-0.0.11-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-date-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-date-doc.sha256sum] = "07e935966bbd2b8f6b8abe2d466bed6d4832d4af72bfa4a15dd0346d55cdb598"
 
-URI_x86_64_v2_ghc-http-date-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-prof-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-date-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-date-prof-0.0.11-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-date-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-date-prof.sha256sum] = "7cced237b4f4c26267152efa728cc7a7e78f775b7f739070c9eb885be637f097"
 
-URI_aarch64_ghc-http-date = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-date}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date;unpack=0"
 SRC_URI[aarch64_ghc-http-date.sha256sum] = "6c45529500e8558d03366e86c9ea8016883d468f2170ce2293351b8f00606ed4"
 
-URI_aarch64_ghc-http-date-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-devel-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-date-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-devel-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-date-devel.sha256sum] = "1b7ffe4f035dbd18aba82461a67142f88f9da8d7aafc40dbedd7798c4bf9a8eb"
 
-URI_aarch64_ghc-http-date-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-doc-0.0.11-11.el10_0.noarch.rpm;name=aarch64_ghc-http-date-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-date-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-doc-0.0.11-11.el10_0.noarch.rpm;name=aarch64_ghc-http-date-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-date-doc.sha256sum] = "c13cb5f3c90dd1e4666d669b7e10cc15f95ec418b6c3aee1da43136dbe425bea"
 
-URI_aarch64_ghc-http-date-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-prof-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-date-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-date-prof-0.0.11-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-date-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-date-prof.sha256sum] = "242d1ecc1e53ccf4350cadb0952912a41575e31feecac5897eaceee84dd095bd"
 
 RDEPENDS:ghc-http-date = " \

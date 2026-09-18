@@ -11,32 +11,25 @@ PACKAGES = " \
  qt6-qtremoteobjects-examples \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qt6-qtremoteobjects-6.9.1-3.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qt6-qtremoteobjects-6.9.1-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4bf220c518b82cbf20faad98d73b998122ad528623886ef2262a1c7a16d9c303"
 
-URI_x86_64_v2_qt6-qtremoteobjects = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtremoteobjects-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtremoteobjects}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtremoteobjects-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtremoteobjects.sha256sum] = "00e1effc9dbbee05e8f3a3f6d3a85c2a384f38d6bf38a73369634bd5187d323d"
 
-URI_x86_64_v2_qt6-qtremoteobjects-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtremoteobjects-devel-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtremoteobjects-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtremoteobjects-devel-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects-devel;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtremoteobjects-devel.sha256sum] = "89e8fec8979de173fa414a01fc4f959ec8ad5013890e1f028f1669a0d1adc57f"
 
-URI_x86_64_v2_qt6-qtremoteobjects-examples = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qt6-qtremoteobjects-examples-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects-examples;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtremoteobjects-examples}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qt6-qtremoteobjects-examples-6.9.1-3.el10.x86_64_v2.rpm;name=x86_64_v2_qt6-qtremoteobjects-examples;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtremoteobjects-examples.sha256sum] = "c24ea02c9ee84532361b6c8ab2c80ae56ee64eca4eabbd88cab127e105f39719"
 
-URI_aarch64_qt6-qtremoteobjects = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtremoteobjects-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtremoteobjects}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtremoteobjects-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects;unpack=0"
 SRC_URI[aarch64_qt6-qtremoteobjects.sha256sum] = "b330a772955219f5df91d41331efb3ac99be97a665aa7400f4617560b915722c"
 
-URI_aarch64_qt6-qtremoteobjects-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtremoteobjects-devel-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtremoteobjects-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtremoteobjects-devel-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects-devel;unpack=0"
 SRC_URI[aarch64_qt6-qtremoteobjects-devel.sha256sum] = "5e1ad5300190f52d938a42cd00fd7732ac8277e872f271bbeb367caf5b1e5548"
 
-URI_aarch64_qt6-qtremoteobjects-examples = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/qt6-qtremoteobjects-examples-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects-examples;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtremoteobjects-examples}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/qt6-qtremoteobjects-examples-6.9.1-3.el10.aarch64.rpm;name=aarch64_qt6-qtremoteobjects-examples;unpack=0"
 SRC_URI[aarch64_qt6-qtremoteobjects-examples.sha256sum] = "57cf234136b8b448c74af2ca6e30fd8fa928fcfb81efdf244f96cc45bdd16bec"
 
 RDEPENDS:qt6-qtremoteobjects = " \

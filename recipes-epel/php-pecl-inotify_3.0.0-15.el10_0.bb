@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-inotify \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-inotify-3.0.0-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-inotify-3.0.0-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e8ca1d071bf67ad6008b5c4b8da91f8b9fd5ae693ba9e106c01ea400aa8b65d7"
 
-URI_x86_64_v2_php-pecl-inotify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-inotify-3.0.0-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-inotify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-inotify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-inotify-3.0.0-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-inotify;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-inotify.sha256sum] = "0d8b029b1da3d9b1a6984f9e5c9148411d07ff5a865d6e15fec49c948da0ca76"
 
-URI_aarch64_php-pecl-inotify = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-inotify-3.0.0-15.el10_0.aarch64.rpm;name=aarch64_php-pecl-inotify;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-inotify}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-inotify-3.0.0-15.el10_0.aarch64.rpm;name=aarch64_php-pecl-inotify;unpack=0"
 SRC_URI[aarch64_php-pecl-inotify.sha256sum] = "f3c848d028144ced51c29b67b25cd75f9d5d7d590b982292f3a8dd8b850333d1"
 
 RDEPENDS:php-pecl-inotify = " \

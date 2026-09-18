@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-zmap-rc2-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-zmap-rc2-0-15.20190810gitabaa705.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-zmap-rc2-0-15.20190810gitabaa705.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8cd2bc09a56e18e6bf988b1838c91b9dfb143dfc91ac50c19d99ac4b4409287a"
 
-URI_aarch64_golang-github-zmap-rc2-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-zmap-rc2-devel-0-15.20190810gitabaa705.el10_0.noarch.rpm;name=aarch64_golang-github-zmap-rc2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-zmap-rc2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-zmap-rc2-devel-0-15.20190810gitabaa705.el10_0.noarch.rpm;name=aarch64_golang-github-zmap-rc2-devel;unpack=0"
 SRC_URI[aarch64_golang-github-zmap-rc2-devel.sha256sum] = "720c0bb3b9456146793b8a82e28d98012cd89902760335d6a8d404a1af8d72b3"
 
 RDEPENDS:golang-github-zmap-rc2-devel = " \

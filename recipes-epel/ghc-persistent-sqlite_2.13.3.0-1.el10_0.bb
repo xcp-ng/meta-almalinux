@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-persistent-sqlite-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-persistent-sqlite-2.13.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-persistent-sqlite-2.13.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "12b6b32ae6756b405820e6cdd989510e535abf9bc9c73d8146ecfd44b39c815c"
 
-URI_x86_64_v2_ghc-persistent-sqlite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-persistent-sqlite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite;unpack=0"
 SRC_URI[x86_64_v2_ghc-persistent-sqlite.sha256sum] = "93058d175ebeaf1ab9c81389704a700afb9af37b51b49a32b9a89be30f6ba083"
 
-URI_x86_64_v2_ghc-persistent-sqlite-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-devel-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-persistent-sqlite-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-devel-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-persistent-sqlite-devel.sha256sum] = "dfa82b5fbb2992449fca530bd31b9acbbd25401b3b9c8f68bbbb0e8e4f11d74e"
 
-URI_x86_64_v2_ghc-persistent-sqlite-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-doc-2.13.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-persistent-sqlite-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-persistent-sqlite-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-doc-2.13.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-persistent-sqlite-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-persistent-sqlite-doc.sha256sum] = "031067e49bf7a4fa7dcb4e8879ebeda50f0848afbe6804017a2e0a5b5a350957"
 
-URI_x86_64_v2_ghc-persistent-sqlite-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-prof-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-persistent-sqlite-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-persistent-sqlite-prof-2.13.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-persistent-sqlite-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-persistent-sqlite-prof.sha256sum] = "0e08a67edd7c72d71691d5d04a740cd718ba0a66f60aeeab52bc18c69774d4e7"
 
-URI_aarch64_ghc-persistent-sqlite = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-persistent-sqlite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite;unpack=0"
 SRC_URI[aarch64_ghc-persistent-sqlite.sha256sum] = "514c847b201a373d281e5bf97c23b9637393fe26511aceaf0cde752341165f28"
 
-URI_aarch64_ghc-persistent-sqlite-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-devel-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-persistent-sqlite-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-devel-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite-devel;unpack=0"
 SRC_URI[aarch64_ghc-persistent-sqlite-devel.sha256sum] = "ded73682538c1e0cd3c9942abec88c992789b7312339ff5b98a16d04bd767665"
 
-URI_aarch64_ghc-persistent-sqlite-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-doc-2.13.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-persistent-sqlite-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-persistent-sqlite-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-doc-2.13.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-persistent-sqlite-doc;unpack=0"
 SRC_URI[aarch64_ghc-persistent-sqlite-doc.sha256sum] = "06ca699b3dfa23ab74c79fa1f797a4257d1525853804acac00bef1d6076c0756"
 
-URI_aarch64_ghc-persistent-sqlite-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-prof-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-persistent-sqlite-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-persistent-sqlite-prof-2.13.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-persistent-sqlite-prof;unpack=0"
 SRC_URI[aarch64_ghc-persistent-sqlite-prof.sha256sum] = "82c024edfeac92f4066150fcea6f159ff10595dfa01702673be72781ffda9dfe"
 
 RDEPENDS:ghc-persistent-sqlite = " \

@@ -16,72 +16,55 @@ PACKAGES = " \
  ghc-kan-extensions-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-kan-extensions-5.2.6-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-kan-extensions-5.2.6-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7af9d46957a66bac8eeb63b73492737aeba2d1c6810364778243bf0e17bfd6ad"
 
-URI_x86_64_v2_ghc-invariant = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-invariant}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant;unpack=0"
 SRC_URI[x86_64_v2_ghc-invariant.sha256sum] = "6c3589adc5247e3703b6e62ffde74ab10c6c38471f86bb41956b2b7f2d54e368"
 
-URI_x86_64_v2_ghc-invariant-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-devel-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-invariant-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-devel-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-invariant-devel.sha256sum] = "5bbd5d82b80cba1e1301bdceff6e14ef57273ceafe087b7f81eb61ad45cf9dd1"
 
-URI_x86_64_v2_ghc-invariant-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-doc-0.6.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-invariant-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-invariant-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-doc-0.6.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-invariant-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-invariant-doc.sha256sum] = "494b0c8b0c2d364c44804a940da678a8185f3b49064b18c3ce9780eca1ea83de"
 
-URI_x86_64_v2_ghc-invariant-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-prof-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-invariant-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-invariant-prof-0.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-invariant-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-invariant-prof.sha256sum] = "031ddb6171e3eb6d4f471cb9a5a9d1780336e2447b2b0ca147002d5dfb1f2a5b"
 
-URI_x86_64_v2_ghc-kan-extensions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-kan-extensions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions;unpack=0"
 SRC_URI[x86_64_v2_ghc-kan-extensions.sha256sum] = "a66dd82e888db6ae47557de36cf4550cd67dcdccc0fa10681e45314b1bd9972a"
 
-URI_x86_64_v2_ghc-kan-extensions-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-devel-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-kan-extensions-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-devel-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-kan-extensions-devel.sha256sum] = "6deb741a0677764240d75e7b3ab581f9fcc62d36abcd35964adae17908b9632d"
 
-URI_x86_64_v2_ghc-kan-extensions-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-doc-5.2.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-kan-extensions-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-kan-extensions-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-doc-5.2.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-kan-extensions-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-kan-extensions-doc.sha256sum] = "9d3faf2d07117b10be6d5af2d98b34e7709c060b8416061e9282f500f4c5c84a"
 
-URI_x86_64_v2_ghc-kan-extensions-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-prof-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-kan-extensions-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-kan-extensions-prof-5.2.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-kan-extensions-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-kan-extensions-prof.sha256sum] = "a9b6e1de990d1e0205f01a3a26328493d968ee5c92454fa1512a7a0737c6fc6a"
 
-URI_aarch64_ghc-invariant = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-invariant}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant;unpack=0"
 SRC_URI[aarch64_ghc-invariant.sha256sum] = "1abe878f8173d1abb1f30df265e8e40b5ee33de85f9fdcd202965db9291c807a"
 
-URI_aarch64_ghc-invariant-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-devel-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-invariant-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-devel-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant-devel;unpack=0"
 SRC_URI[aarch64_ghc-invariant-devel.sha256sum] = "dd3210df87f8b1df5e7ff53df143b685a9b3dd27ff931697caf1a47700d57e87"
 
-URI_aarch64_ghc-invariant-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-doc-0.6.3-1.el10_0.noarch.rpm;name=aarch64_ghc-invariant-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-invariant-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-doc-0.6.3-1.el10_0.noarch.rpm;name=aarch64_ghc-invariant-doc;unpack=0"
 SRC_URI[aarch64_ghc-invariant-doc.sha256sum] = "04cb78203b1aa50921ca8ea7c0082b3dc15623ade777f44a03145b6142094f28"
 
-URI_aarch64_ghc-invariant-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-prof-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-invariant-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-invariant-prof-0.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-invariant-prof;unpack=0"
 SRC_URI[aarch64_ghc-invariant-prof.sha256sum] = "6e5e849f5bdedcf927d6813b9542777d21881684c3ef1cdde30d3b039bbc1a03"
 
-URI_aarch64_ghc-kan-extensions = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-kan-extensions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions;unpack=0"
 SRC_URI[aarch64_ghc-kan-extensions.sha256sum] = "3bdc68ad0270e6c349c63dce40e4983078962d1f6086e77665e743418915f976"
 
-URI_aarch64_ghc-kan-extensions-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-devel-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-kan-extensions-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-devel-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions-devel;unpack=0"
 SRC_URI[aarch64_ghc-kan-extensions-devel.sha256sum] = "4c7863058ccd184112f8dbc9d7a48ede95aa5f6000a103bb9e70774a0425ec67"
 
-URI_aarch64_ghc-kan-extensions-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-doc-5.2.6-1.el10_0.noarch.rpm;name=aarch64_ghc-kan-extensions-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-kan-extensions-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-doc-5.2.6-1.el10_0.noarch.rpm;name=aarch64_ghc-kan-extensions-doc;unpack=0"
 SRC_URI[aarch64_ghc-kan-extensions-doc.sha256sum] = "b2426232cff41fb5ecc53eb80091bb08addb10f8a84236f1edf52d48ba3913ae"
 
-URI_aarch64_ghc-kan-extensions-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-prof-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-kan-extensions-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-kan-extensions-prof-5.2.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-kan-extensions-prof;unpack=0"
 SRC_URI[aarch64_ghc-kan-extensions-prof.sha256sum] = "87709efe5e0cb9fd759bbf9e447b9fd76ac6f79ffbef0e5b9c24310d9b666faf"
 
 RDEPENDS:ghc-invariant = " \

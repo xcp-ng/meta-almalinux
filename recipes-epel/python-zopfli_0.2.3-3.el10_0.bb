@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-zopfli \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-zopfli-0.2.3-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zopfli-0.2.3-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cdc073f730e413b947ed1883c0714c817c95a2b16581eb9540d4e3ce1562431d"
 
-URI_x86_64_v2_python3-zopfli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zopfli-0.2.3-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-zopfli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-zopfli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zopfli-0.2.3-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-zopfli;unpack=0"
 SRC_URI[x86_64_v2_python3-zopfli.sha256sum] = "a4c7a8188ff31eafa4ba823c372ee627967d3b89132d0bd3ed103556bb868cbb"
 
-URI_aarch64_python3-zopfli = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zopfli-0.2.3-3.el10_0.aarch64.rpm;name=aarch64_python3-zopfli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-zopfli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zopfli-0.2.3-3.el10_0.aarch64.rpm;name=aarch64_python3-zopfli;unpack=0"
 SRC_URI[aarch64_python3-zopfli.sha256sum] = "a8348404534a9b2221e376be5bcba7e86c00a2307403b44bca9c5759629943a7"
 
 RDEPENDS:python3-zopfli = " \

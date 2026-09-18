@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-cargo-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-0.89.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-0.89.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2928cd559bbb00057d99195c842ca058f777642277c44b853b6414ed17ed5775"
 
-URI_x86_64_v2_rust-cargo+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo+default-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo+default-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo+default-devel.sha256sum] = "104162df62e944e0e6deb86c1bfbe02c8ef0f35ef0d81bad578a8a79662f684d"
 
-URI_x86_64_v2_rust-cargo+openssl-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo+openssl-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo+openssl-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo+openssl-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo+openssl-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo+openssl-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo+openssl-devel.sha256sum] = "8e2ea347fb4fd7cb0de69db2ec5d089d90559fd106fd1ddde07038af4c4ae65a"
 
-URI_x86_64_v2_rust-cargo-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-devel-0.89.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo-devel.sha256sum] = "056601a20dd0a2f20c2fe4fbf381dc91f78f67e41c87624c8c63eb5344b16348"
 
-URI_aarch64_rust-cargo+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo+default-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo+default-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo+default-devel.sha256sum] = "8d5b9266f8d9deb386f41d69c9d18dcb3314ffff7045a3335f33b3febd4ecf16"
 
-URI_aarch64_rust-cargo+openssl-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo+openssl-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo+openssl-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo+openssl-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo+openssl-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo+openssl-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo+openssl-devel.sha256sum] = "d63c9f9f4710d9629739976f4c813c0561a427f324684a76b9e75f377b46b432"
 
-URI_aarch64_rust-cargo-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-devel-0.89.0-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo-devel.sha256sum] = "a03739a7f1f281554ab1780a286333489986ea86bab6ef56b470500a72dc12c3"
 
 RDEPENDS:rust-cargo+default-devel = " \

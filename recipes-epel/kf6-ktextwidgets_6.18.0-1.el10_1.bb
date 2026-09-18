@@ -12,40 +12,31 @@ PACKAGES = " \
  kf6-ktextwidgets-html \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kf6-ktextwidgets-6.18.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kf6-ktextwidgets-6.18.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7edbafd37b96b2fd08f18e07cd451cd0f2f34917b7ca5f37fc3c4b1b27b4fc5c"
 
-URI_x86_64_v2_kf6-ktextwidgets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-6.18.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kf6-ktextwidgets;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kf6-ktextwidgets}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-6.18.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kf6-ktextwidgets;unpack=0"
 SRC_URI[x86_64_v2_kf6-ktextwidgets.sha256sum] = "b46d025a7b944568adf6689910e811b624c5d400edca1a0ad2b098797fff7e32"
 
-URI_x86_64_v2_kf6-ktextwidgets-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-devel-6.18.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kf6-ktextwidgets-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kf6-ktextwidgets-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-devel-6.18.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kf6-ktextwidgets-devel;unpack=0"
 SRC_URI[x86_64_v2_kf6-ktextwidgets-devel.sha256sum] = "16388e0909e725d18df222aeb4f5f275166463271a3d8cddce6c76a6036df20e"
 
-URI_x86_64_v2_kf6-ktextwidgets-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-doc-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-ktextwidgets-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kf6-ktextwidgets-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-doc-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-ktextwidgets-doc;unpack=0"
 SRC_URI[x86_64_v2_kf6-ktextwidgets-doc.sha256sum] = "a9c1fc86684010e1ec36646fa02aaf9766c0affd606f137848d29bd0100ec18c"
 
-URI_x86_64_v2_kf6-ktextwidgets-html = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-html-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-ktextwidgets-html;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kf6-ktextwidgets-html}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-ktextwidgets-html-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-ktextwidgets-html;unpack=0"
 SRC_URI[x86_64_v2_kf6-ktextwidgets-html.sha256sum] = "f4e864f7978b12de642ecd4293989ab6f4b2018cd03befdeea17b28db1cf80e1"
 
-URI_aarch64_kf6-ktextwidgets = "${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-6.18.0-1.el10_1.aarch64.rpm;name=aarch64_kf6-ktextwidgets;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kf6-ktextwidgets}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-6.18.0-1.el10_1.aarch64.rpm;name=aarch64_kf6-ktextwidgets;unpack=0"
 SRC_URI[aarch64_kf6-ktextwidgets.sha256sum] = "5992408efe4cb3edc6b1b1bc8c83e2e4074a841a03e1b1f554862c03f045a384"
 
-URI_aarch64_kf6-ktextwidgets-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-devel-6.18.0-1.el10_1.aarch64.rpm;name=aarch64_kf6-ktextwidgets-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kf6-ktextwidgets-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-devel-6.18.0-1.el10_1.aarch64.rpm;name=aarch64_kf6-ktextwidgets-devel;unpack=0"
 SRC_URI[aarch64_kf6-ktextwidgets-devel.sha256sum] = "43501ed1171be48fa6eda0ac8845be2b1f3ed85ecc66cdab4c65847f65026717"
 
-URI_aarch64_kf6-ktextwidgets-doc = "${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-doc-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-ktextwidgets-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kf6-ktextwidgets-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-doc-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-ktextwidgets-doc;unpack=0"
 SRC_URI[aarch64_kf6-ktextwidgets-doc.sha256sum] = "d8d379d6c85a9c86d74374cdbbfb1189a997548e737b35a9fe6e2c6c151aeb32"
 
-URI_aarch64_kf6-ktextwidgets-html = "${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-html-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-ktextwidgets-html;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kf6-ktextwidgets-html}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kf6-ktextwidgets-html-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-ktextwidgets-html;unpack=0"
 SRC_URI[aarch64_kf6-ktextwidgets-html.sha256sum] = "002ee89eea02d6149161b8ee35a0c7cc64624129c657f013f75615f2c59cb3c2"
 
 RDEPENDS:kf6-ktextwidgets = " \

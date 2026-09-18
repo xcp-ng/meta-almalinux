@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-phply \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-phply-1.2.5-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-phply-1.2.5-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d781bd4ee5716f7b00355a1a5209bc8e1d5d16496ed1e14ed9de4896ed381fe6"
 
-URI_x86_64_v2_python3-phply = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-phply-1.2.5-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-phply;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-phply}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-phply-1.2.5-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-phply;unpack=0"
 SRC_URI[x86_64_v2_python3-phply.sha256sum] = "c5fe3b8435c4148ebc2fc8d4ec8637d1c2997b94e04ac083e7369d5ca0887678"
 
-URI_aarch64_python3-phply = "${EPEL_MIRROR}/aarch64/Packages/p/python3-phply-1.2.5-10.el10_0.noarch.rpm;name=aarch64_python3-phply;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-phply}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-phply-1.2.5-10.el10_0.noarch.rpm;name=aarch64_python3-phply;unpack=0"
 SRC_URI[aarch64_python3-phply.sha256sum] = "8db12ca0112f9b67071d855b558a6956a492d9e1cf8d1806426457859ed0f20a"
 
 RDEPENDS:python3-phply = " \

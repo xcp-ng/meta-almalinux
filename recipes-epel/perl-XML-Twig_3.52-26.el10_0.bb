@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-Twig \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Twig-3.52-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Twig-3.52-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4b109e32f4096c6146e79ab5b5dd3d2094c0a9318ba872af80c10113210499d0"
 
-URI_x86_64_v2_perl-XML-Twig = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Twig-3.52-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Twig;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Twig}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Twig-3.52-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Twig;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Twig.sha256sum] = "0c80eab6b04be942dd0a420dd677b781c4e757099633e4d9d54cbe743e9a5419"
 
-URI_aarch64_perl-XML-Twig = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Twig-3.52-26.el10_0.noarch.rpm;name=aarch64_perl-XML-Twig;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Twig}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Twig-3.52-26.el10_0.noarch.rpm;name=aarch64_perl-XML-Twig;unpack=0"
 SRC_URI[aarch64_perl-XML-Twig.sha256sum] = "05f34ce95f159166ebd42e6f302b01ae31af6ece8fa7c2bcc571e95b7cf54f7b"
 
 RDEPENDS:perl-XML-Twig = " \

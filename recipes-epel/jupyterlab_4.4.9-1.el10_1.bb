@@ -9,16 +9,13 @@ PACKAGES = " \
  jupyterlab \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/j/jupyterlab-4.4.9-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/j/jupyterlab-4.4.9-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a87749e0524c81c14020211abfea696b1985c50e14115e5bfbbd1d7090bb1a83"
 
-URI_x86_64_v2_jupyterlab = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/jupyterlab-4.4.9-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_jupyterlab;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_jupyterlab}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/jupyterlab-4.4.9-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_jupyterlab;unpack=0"
 SRC_URI[x86_64_v2_jupyterlab.sha256sum] = "c15443be63a798f064c9ae99df412ae2bdfbe92bbe214b95bf27d10545725fdb"
 
-URI_aarch64_jupyterlab = "${EPEL_MIRROR}/aarch64/Packages/j/jupyterlab-4.4.9-1.el10_1.noarch.rpm;name=aarch64_jupyterlab;unpack=0"
-SRC_URI:append = " ${URI_aarch64_jupyterlab}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/j/jupyterlab-4.4.9-1.el10_1.noarch.rpm;name=aarch64_jupyterlab;unpack=0"
 SRC_URI[aarch64_jupyterlab.sha256sum] = "7b0c69c391fb7eb0367d4c742c4dd0dee2be17ab0c4f1db2d913ddb0b69c9ac6"
 
 RDEPENDS:jupyterlab = " \

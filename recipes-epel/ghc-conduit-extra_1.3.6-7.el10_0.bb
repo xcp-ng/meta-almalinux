@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-conduit-extra-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-conduit-extra-1.3.6-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-conduit-extra-1.3.6-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "454272b895063be75e45915f2be16af15b6b42a1ce774d213c6adeea9197104c"
 
-URI_x86_64_v2_ghc-conduit-extra = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-conduit-extra}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra;unpack=0"
 SRC_URI[x86_64_v2_ghc-conduit-extra.sha256sum] = "d6f8b83c67cd170744e0d2dd5323cc59f905cbbd0836a832a3c3e3f55e5ca769"
 
-URI_x86_64_v2_ghc-conduit-extra-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-devel-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-conduit-extra-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-devel-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-conduit-extra-devel.sha256sum] = "0aa59b1a88ff3933cb3370aaaffe04360221665e5c774d45680e9d5cdf49abdb"
 
-URI_x86_64_v2_ghc-conduit-extra-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-doc-1.3.6-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-conduit-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-conduit-extra-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-doc-1.3.6-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-conduit-extra-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-conduit-extra-doc.sha256sum] = "1d780297e355078b8c040146c509cf2c0d4000d84ad0609ce88e91cde4f10591"
 
-URI_x86_64_v2_ghc-conduit-extra-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-prof-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-conduit-extra-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-conduit-extra-prof-1.3.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-conduit-extra-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-conduit-extra-prof.sha256sum] = "891f61f3889bba0b3d577b4350997d1d766243db2e27429a204b134f7178e574"
 
-URI_aarch64_ghc-conduit-extra = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-conduit-extra}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra;unpack=0"
 SRC_URI[aarch64_ghc-conduit-extra.sha256sum] = "61ee6288727d8d2f5289810daa0a7c26aca311251ba8c4c795780146e8ac818d"
 
-URI_aarch64_ghc-conduit-extra-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-devel-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-conduit-extra-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-devel-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra-devel;unpack=0"
 SRC_URI[aarch64_ghc-conduit-extra-devel.sha256sum] = "c32d9e3a0c09120046f05936ba6de348b8d80ef58a9c1dcbc6bf16226a2735d0"
 
-URI_aarch64_ghc-conduit-extra-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-doc-1.3.6-7.el10_0.noarch.rpm;name=aarch64_ghc-conduit-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-conduit-extra-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-doc-1.3.6-7.el10_0.noarch.rpm;name=aarch64_ghc-conduit-extra-doc;unpack=0"
 SRC_URI[aarch64_ghc-conduit-extra-doc.sha256sum] = "b60f000f051921ad292801ef631da6e43e2818e818cb6dd9761bfb815dbfc713"
 
-URI_aarch64_ghc-conduit-extra-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-prof-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-conduit-extra-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-conduit-extra-prof-1.3.6-7.el10_0.aarch64.rpm;name=aarch64_ghc-conduit-extra-prof;unpack=0"
 SRC_URI[aarch64_ghc-conduit-extra-prof.sha256sum] = "65b6534568f614c4ba90873039d6579e80bdc71c137e5b90e79a362ef1c69d51"
 
 RDEPENDS:ghc-conduit-extra = " \

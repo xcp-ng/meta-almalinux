@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-multi_key_dict \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-multi_key_dict-2.0.3-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-multi_key_dict-2.0.3-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "996aa8c2f39f12ea658423e635e31c06d773803ff161b3c4353053e855b08653"
 
-URI_x86_64_v2_python3-multi_key_dict = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-multi_key_dict-2.0.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-multi_key_dict;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-multi_key_dict}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-multi_key_dict-2.0.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-multi_key_dict;unpack=0"
 SRC_URI[x86_64_v2_python3-multi_key_dict.sha256sum] = "d5637f24932dfd77430d0adb96c80c41f541de11cb36d4b90852d8b8fa09f54f"
 
-URI_aarch64_python3-multi_key_dict = "${EPEL_MIRROR}/aarch64/Packages/p/python3-multi_key_dict-2.0.3-27.el10_0.noarch.rpm;name=aarch64_python3-multi_key_dict;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-multi_key_dict}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-multi_key_dict-2.0.3-27.el10_0.noarch.rpm;name=aarch64_python3-multi_key_dict;unpack=0"
 SRC_URI[aarch64_python3-multi_key_dict.sha256sum] = "1fdbd81bd17a40f9b90e8814f04090e615c956fad7f1f0159c56edeba4a860ca"
 
 RDEPENDS:python3-multi_key_dict = " \

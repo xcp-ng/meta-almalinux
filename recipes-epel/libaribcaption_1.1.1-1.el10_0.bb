@@ -10,24 +10,19 @@ PACKAGES = " \
  libaribcaption-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libaribcaption-1.1.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libaribcaption-1.1.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d75b23eda79eec8553eda3814acf5bbdc75f387ac3388f57ebff9740125b6004"
 
-URI_x86_64_v2_libaribcaption = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libaribcaption-1.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libaribcaption;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libaribcaption}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libaribcaption-1.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libaribcaption;unpack=0"
 SRC_URI[x86_64_v2_libaribcaption.sha256sum] = "9a4206732b878364b4ad628af81b416c6768d4da31e574277d44419689553c9b"
 
-URI_x86_64_v2_libaribcaption-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libaribcaption-devel-1.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libaribcaption-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libaribcaption-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libaribcaption-devel-1.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libaribcaption-devel;unpack=0"
 SRC_URI[x86_64_v2_libaribcaption-devel.sha256sum] = "2b3bf48434d887b91101e331e59b2d40627da9f7325dd01a601110007ed74307"
 
-URI_aarch64_libaribcaption = "${EPEL_MIRROR}/aarch64/Packages/l/libaribcaption-1.1.1-1.el10_0.aarch64.rpm;name=aarch64_libaribcaption;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libaribcaption}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libaribcaption-1.1.1-1.el10_0.aarch64.rpm;name=aarch64_libaribcaption;unpack=0"
 SRC_URI[aarch64_libaribcaption.sha256sum] = "6fda7751dc5d1971190adfc3295b9146bcb7e5d6add71b08206eca09e6a38ad6"
 
-URI_aarch64_libaribcaption-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libaribcaption-devel-1.1.1-1.el10_0.aarch64.rpm;name=aarch64_libaribcaption-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libaribcaption-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libaribcaption-devel-1.1.1-1.el10_0.aarch64.rpm;name=aarch64_libaribcaption-devel;unpack=0"
 SRC_URI[aarch64_libaribcaption-devel.sha256sum] = "83094635beea5c1c94a3312f8ab9af443914b41b30076fe5985ff7e68facd50f"
 
 RDEPENDS:libaribcaption = " \

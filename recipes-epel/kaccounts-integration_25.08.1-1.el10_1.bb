@@ -10,24 +10,19 @@ PACKAGES = " \
  kaccounts-integration-qt6-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kaccounts-integration-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kaccounts-integration-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c7f688f94972e8725a6d0aeaab96c9126e219a5da04915d78fe1f89d00911a0c"
 
-URI_x86_64_v2_kaccounts-integration-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaccounts-integration-qt6-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaccounts-integration-qt6;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kaccounts-integration-qt6}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaccounts-integration-qt6-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaccounts-integration-qt6;unpack=0"
 SRC_URI[x86_64_v2_kaccounts-integration-qt6.sha256sum] = "f524ac2a4385d41d06253dc1c6057a219c309b85e1b50328d8e6f8fedf36fadf"
 
-URI_x86_64_v2_kaccounts-integration-qt6-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaccounts-integration-qt6-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaccounts-integration-qt6-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kaccounts-integration-qt6-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaccounts-integration-qt6-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaccounts-integration-qt6-devel;unpack=0"
 SRC_URI[x86_64_v2_kaccounts-integration-qt6-devel.sha256sum] = "060807ec08e14cf0eac394f6387dba5ae28656c5db4635b78e8ef4ebdad2d47b"
 
-URI_aarch64_kaccounts-integration-qt6 = "${EPEL_MIRROR}/aarch64/Packages/k/kaccounts-integration-qt6-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaccounts-integration-qt6;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kaccounts-integration-qt6}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kaccounts-integration-qt6-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaccounts-integration-qt6;unpack=0"
 SRC_URI[aarch64_kaccounts-integration-qt6.sha256sum] = "f2ebd7c64d123f8c1500240d58a6285076afbe0ac5027f0612a0a29020c62948"
 
-URI_aarch64_kaccounts-integration-qt6-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kaccounts-integration-qt6-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaccounts-integration-qt6-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kaccounts-integration-qt6-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kaccounts-integration-qt6-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaccounts-integration-qt6-devel;unpack=0"
 SRC_URI[aarch64_kaccounts-integration-qt6-devel.sha256sum] = "43a26267cc9fc07f9b58b56f9f7e389a39123e4a0626a8e968bb0aadb140aadd"
 
 RDEPENDS:kaccounts-integration-qt6 = " \

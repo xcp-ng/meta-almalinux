@@ -23,8 +23,7 @@ PACKAGES = " \
  python3-libguestfs \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libguestfs-1.56.1-6.el10_1.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libguestfs-1.56.1-6.el10_1.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c8da33a7888828744e60d51a3308bc5ed5e8dee030b9fcfd225308c44faefd70"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -71,116 +70,88 @@ SRC_URI[src.sha256sum] = "c8da33a7888828744e60d51a3308bc5ed5e8dee030b9fcfd225308
 # - ocaml-libguestfs: ocaml(Stdlib__Obj) = 592f14b225bd7cf0051f4b04372640d7
 # - ocaml-libguestfs: ocaml(Stdlib__Printexc) = 1e5e75f741ca414dd916c0c65b646827
 
-URI_x86_64_v2_libguestfs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs;unpack=0"
 SRC_URI[x86_64_v2_libguestfs.sha256sum] = "5d3f4c6b2adae481cade85d5383c20853aba1037a2e7627836abf5b93a01f758"
 
-URI_x86_64_v2_libguestfs-appliance = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-appliance-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-appliance;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-appliance}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-appliance-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-appliance;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-appliance.sha256sum] = "68dd3d283dfa0af527279f8eda4474e125a3feec02011f9605bc9b89c72d1ce7"
 
-URI_x86_64_v2_libguestfs-bash-completion = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-bash-completion-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-bash-completion-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-bash-completion;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-bash-completion.sha256sum] = "428d9b994eb3edc08b7e93e8d3b2b9aee865a107a175bf029902a4c0d89a1e14"
 
-URI_x86_64_v2_libguestfs-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-devel-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-devel-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-devel;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-devel.sha256sum] = "6f23a55104bd5abac195a8f297087e1e3dd7869e75a3f476b2fd352f03cd7335"
 
-URI_x86_64_v2_libguestfs-inspect-icons = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-inspect-icons-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-inspect-icons;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-inspect-icons}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-inspect-icons-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-inspect-icons;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-inspect-icons.sha256sum] = "557837d5ef8a12b5a5ca02e3614dc3a3f3242796450deae5ddadca0b5fbdec7b"
 
-URI_x86_64_v2_libguestfs-man-pages-ja = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-man-pages-ja-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-man-pages-ja;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-man-pages-ja}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-man-pages-ja-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-man-pages-ja;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-man-pages-ja.sha256sum] = "393343dd1c173b4eb25b622b60400c170915010078bce68330370defb8547c9e"
 
-URI_x86_64_v2_libguestfs-man-pages-uk = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-man-pages-uk-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-man-pages-uk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-man-pages-uk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libguestfs-man-pages-uk-1.56.1-6.el10_1.alma.1.noarch.rpm;name=x86_64_v2_libguestfs-man-pages-uk;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-man-pages-uk.sha256sum] = "6e8f9ef3cbc9a5ee265ae5e4b36439757606601c76da07d5b37804125315373b"
 
-URI_x86_64_v2_libguestfs-rescue = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-rescue-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-rescue;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-rescue}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-rescue-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-rescue;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-rescue.sha256sum] = "0df7c550b465ad7894d9baf32c9ae17d136e3db1fc763f207d553bb8a47e0196"
 
-URI_x86_64_v2_libguestfs-rsync = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-rsync-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-rsync;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-rsync}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-rsync-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-rsync;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-rsync.sha256sum] = "c329624c98a53b6c4cadcfdbd9f3caf544ec589efd6599dcf9cfc5e1f5f83e6e"
 
-URI_x86_64_v2_libguestfs-xfs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-xfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-xfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libguestfs-xfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libguestfs-xfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_libguestfs-xfs;unpack=0"
 SRC_URI[x86_64_v2_libguestfs-xfs.sha256sum] = "bde347358605e4ae28a34bff8eeff09f1522e6f878c7f93519d49c6684f5b989"
 
-URI_x86_64_v2_ocaml-libguestfs = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libguestfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ocaml-libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libguestfs;unpack=0"
 SRC_URI[x86_64_v2_ocaml-libguestfs.sha256sum] = "fc0d940becdf5d90c182e8eade45b17fe41f8c9846c4b30cb4e0da4f5c5dd207"
 
-URI_x86_64_v2_ocaml-libguestfs-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libguestfs-devel-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libguestfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ocaml-libguestfs-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libguestfs-devel-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libguestfs-devel;unpack=0"
 SRC_URI[x86_64_v2_ocaml-libguestfs-devel.sha256sum] = "a2a1d3f74e944c6ad71888f24ee7bf6acebf93edfb4394295febd9c2e44dc246"
 
-URI_x86_64_v2_perl-Sys-Guestfs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Sys-Guestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_perl-Sys-Guestfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sys-Guestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Sys-Guestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_perl-Sys-Guestfs;unpack=0"
 SRC_URI[x86_64_v2_perl-Sys-Guestfs.sha256sum] = "57287a486feb7a4820b481e43f024f835a13ae44886c1621c3b93641b49408fa"
 
-URI_x86_64_v2_python3-libguestfs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_python3-libguestfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-libguestfs-1.56.1-6.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_python3-libguestfs;unpack=0"
 SRC_URI[x86_64_v2_python3-libguestfs.sha256sum] = "442838f6927310d13ac5e96d1e62b04be5a5aec5c09c1841bb6de6ad6efebb88"
 
-URI_aarch64_libguestfs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs;unpack=0"
 SRC_URI[aarch64_libguestfs.sha256sum] = "75027ae149c4bee2a665763a5833c19e635b772f6f561dcc51b77ba0e2bbb352"
 
-URI_aarch64_libguestfs-appliance = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-appliance-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-appliance;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-appliance}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-appliance-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-appliance;unpack=0"
 SRC_URI[aarch64_libguestfs-appliance.sha256sum] = "c47b23116bddbe16975612acd8004a89d9cbda465b918c24be452d24f6ef703e"
 
-URI_aarch64_libguestfs-bash-completion = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-bash-completion-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-bash-completion-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-bash-completion;unpack=0"
 SRC_URI[aarch64_libguestfs-bash-completion.sha256sum] = "428d9b994eb3edc08b7e93e8d3b2b9aee865a107a175bf029902a4c0d89a1e14"
 
-URI_aarch64_libguestfs-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-devel-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-devel-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-devel;unpack=0"
 SRC_URI[aarch64_libguestfs-devel.sha256sum] = "176bd395d8aed5ef64c6a9c1dd4c7df0d645ccca7e0bdbd4f8c15b73412b233e"
 
-URI_aarch64_libguestfs-inspect-icons = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-inspect-icons-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-inspect-icons;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-inspect-icons}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-inspect-icons-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-inspect-icons;unpack=0"
 SRC_URI[aarch64_libguestfs-inspect-icons.sha256sum] = "557837d5ef8a12b5a5ca02e3614dc3a3f3242796450deae5ddadca0b5fbdec7b"
 
-URI_aarch64_libguestfs-man-pages-ja = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-man-pages-ja-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-man-pages-ja;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-man-pages-ja}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-man-pages-ja-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-man-pages-ja;unpack=0"
 SRC_URI[aarch64_libguestfs-man-pages-ja.sha256sum] = "393343dd1c173b4eb25b622b60400c170915010078bce68330370defb8547c9e"
 
-URI_aarch64_libguestfs-man-pages-uk = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-man-pages-uk-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-man-pages-uk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-man-pages-uk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libguestfs-man-pages-uk-1.56.1-6.el10_1.alma.1.noarch.rpm;name=aarch64_libguestfs-man-pages-uk;unpack=0"
 SRC_URI[aarch64_libguestfs-man-pages-uk.sha256sum] = "6e8f9ef3cbc9a5ee265ae5e4b36439757606601c76da07d5b37804125315373b"
 
-URI_aarch64_libguestfs-rescue = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-rescue-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-rescue;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-rescue}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-rescue-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-rescue;unpack=0"
 SRC_URI[aarch64_libguestfs-rescue.sha256sum] = "42c8a49e312adf32fe4fe22982e72e5d932f3b4bbed9ec03db9c8200a64c6890"
 
-URI_aarch64_libguestfs-rsync = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-rsync-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-rsync;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-rsync}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-rsync-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-rsync;unpack=0"
 SRC_URI[aarch64_libguestfs-rsync.sha256sum] = "145ece866de1370d4ee3398500496b839131625b4d59b75b4176f0c46d974080"
 
-URI_aarch64_libguestfs-xfs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-xfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-xfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libguestfs-xfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libguestfs-xfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_libguestfs-xfs;unpack=0"
 SRC_URI[aarch64_libguestfs-xfs.sha256sum] = "4b46e92302abc3e4d24b03ef009a7e11c1efde90eb3535f208e3c022ec965291"
 
-URI_aarch64_ocaml-libguestfs = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_ocaml-libguestfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ocaml-libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_ocaml-libguestfs;unpack=0"
 SRC_URI[aarch64_ocaml-libguestfs.sha256sum] = "d177a29f2bfa046f1fd3eb21d409cc6ceb001664a161b0a3c388fbe12f2ab18c"
 
-URI_aarch64_ocaml-libguestfs-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libguestfs-devel-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_ocaml-libguestfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ocaml-libguestfs-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libguestfs-devel-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_ocaml-libguestfs-devel;unpack=0"
 SRC_URI[aarch64_ocaml-libguestfs-devel.sha256sum] = "4a8aeec42d4970ea907c806acdb70c02ca78089ba7026c734bebf0bdb67d7b70"
 
-URI_aarch64_perl-Sys-Guestfs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Sys-Guestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_perl-Sys-Guestfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sys-Guestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Sys-Guestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_perl-Sys-Guestfs;unpack=0"
 SRC_URI[aarch64_perl-Sys-Guestfs.sha256sum] = "30168f6f805d9776be742f2bfbd377ee428b8e7702b8fd579bf940b861fca386"
 
-URI_aarch64_python3-libguestfs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_python3-libguestfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-libguestfs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-libguestfs-1.56.1-6.el10_1.alma.1.aarch64.rpm;name=aarch64_python3-libguestfs;unpack=0"
 SRC_URI[aarch64_python3-libguestfs.sha256sum] = "b16a1aac66cad7186f9571c776c210e97dac02c56db7df4b516af3a61e8f0b7d"
 
 RDEPENDS:libguestfs:x86_64_v2 = " \

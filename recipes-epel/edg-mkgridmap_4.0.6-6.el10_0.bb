@@ -9,16 +9,13 @@ PACKAGES = " \
  edg-mkgridmap \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/e/edg-mkgridmap-4.0.6-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/e/edg-mkgridmap-4.0.6-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8416b0b8c6bafd51cb5b6ff78aea72fced81982a35a6909a8f4a0e888f36de98"
 
-URI_x86_64_v2_edg-mkgridmap = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/edg-mkgridmap-4.0.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_edg-mkgridmap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_edg-mkgridmap}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/edg-mkgridmap-4.0.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_edg-mkgridmap;unpack=0"
 SRC_URI[x86_64_v2_edg-mkgridmap.sha256sum] = "214cba24e8bfeab081a4fe28b6154f3fdc4e294441c375fbbabf3441b571f4b0"
 
-URI_aarch64_edg-mkgridmap = "${EPEL_MIRROR}/aarch64/Packages/e/edg-mkgridmap-4.0.6-6.el10_0.noarch.rpm;name=aarch64_edg-mkgridmap;unpack=0"
-SRC_URI:append = " ${URI_aarch64_edg-mkgridmap}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/e/edg-mkgridmap-4.0.6-6.el10_0.noarch.rpm;name=aarch64_edg-mkgridmap;unpack=0"
 SRC_URI[aarch64_edg-mkgridmap.sha256sum] = "4baab53e8212165d95cb88d32030bc2a16f51717cc5195e78654f9bbe926fee0"
 
 RDEPENDS:edg-mkgridmap = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  system-config-printer-udev \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/system-config-printer-1.5.18-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/system-config-printer-1.5.18-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8f78105d97d4b8e7fe55a2ef164588b20d29e9a7f88a907d4eec76da7c79ee62"
 
-URI_x86_64_v2_system-config-printer-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/system-config-printer-libs-1.5.18-11.el10.noarch.rpm;name=x86_64_v2_system-config-printer-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_system-config-printer-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/system-config-printer-libs-1.5.18-11.el10.noarch.rpm;name=x86_64_v2_system-config-printer-libs;unpack=0"
 SRC_URI[x86_64_v2_system-config-printer-libs.sha256sum] = "41e1254df1b1667546a8a0a679dd4563649b224a65a7a24e656b4a4da76d1067"
 
-URI_x86_64_v2_system-config-printer-udev = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/system-config-printer-udev-1.5.18-11.el10.x86_64_v2.rpm;name=x86_64_v2_system-config-printer-udev;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_system-config-printer-udev}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/system-config-printer-udev-1.5.18-11.el10.x86_64_v2.rpm;name=x86_64_v2_system-config-printer-udev;unpack=0"
 SRC_URI[x86_64_v2_system-config-printer-udev.sha256sum] = "dbf68bebc55a66172fdc00ebb2a2c59eb2b4d40e3c020822e1ad751ad495b570"
 
-URI_aarch64_system-config-printer-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/system-config-printer-libs-1.5.18-11.el10.noarch.rpm;name=aarch64_system-config-printer-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_system-config-printer-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/system-config-printer-libs-1.5.18-11.el10.noarch.rpm;name=aarch64_system-config-printer-libs;unpack=0"
 SRC_URI[aarch64_system-config-printer-libs.sha256sum] = "41e1254df1b1667546a8a0a679dd4563649b224a65a7a24e656b4a4da76d1067"
 
-URI_aarch64_system-config-printer-udev = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/system-config-printer-udev-1.5.18-11.el10.aarch64.rpm;name=aarch64_system-config-printer-udev;unpack=0"
-SRC_URI:append = " ${URI_aarch64_system-config-printer-udev}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/system-config-printer-udev-1.5.18-11.el10.aarch64.rpm;name=aarch64_system-config-printer-udev;unpack=0"
 SRC_URI[aarch64_system-config-printer-udev.sha256sum] = "7922567ff44d4f1c193bfd105711aa809b7b03b0303b35a676ac585ce4b7f5d3"
 
 RDEPENDS:system-config-printer-libs = " \

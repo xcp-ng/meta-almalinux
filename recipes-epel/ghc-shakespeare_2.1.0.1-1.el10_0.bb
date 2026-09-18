@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-shakespeare-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-shakespeare-2.1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-shakespeare-2.1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b5e68a8a4519e2d9bf31c221a42a5ac83e545282a19606bde626e83f1dabcd16"
 
-URI_x86_64_v2_ghc-shakespeare = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-shakespeare}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare;unpack=0"
 SRC_URI[x86_64_v2_ghc-shakespeare.sha256sum] = "31bf8833ba659050d6b7e72df7f8afa7a257cd8152df7fe42e12ea0993fed354"
 
-URI_x86_64_v2_ghc-shakespeare-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-devel-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-shakespeare-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-devel-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-shakespeare-devel.sha256sum] = "84ae94bd04dcfae0f553a8be58c15ef5654b472eaf908fd61c11f54de0d486a0"
 
-URI_x86_64_v2_ghc-shakespeare-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-doc-2.1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-shakespeare-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-shakespeare-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-doc-2.1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-shakespeare-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-shakespeare-doc.sha256sum] = "5df9a4636f99d9ee6b62925bf6a37fe3ee084f6cf692e7eb24604e200cce05a7"
 
-URI_x86_64_v2_ghc-shakespeare-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-prof-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-shakespeare-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-shakespeare-prof-2.1.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-shakespeare-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-shakespeare-prof.sha256sum] = "7d71788b2276a80c9175339473e729989b02756aaa5ff8aa3d361559a6e10382"
 
-URI_aarch64_ghc-shakespeare = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-shakespeare}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare;unpack=0"
 SRC_URI[aarch64_ghc-shakespeare.sha256sum] = "41833b3b0be7c35bee4bd321189de3db9f093d2f2b1aa9846247e96831997ae7"
 
-URI_aarch64_ghc-shakespeare-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-devel-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-shakespeare-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-devel-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare-devel;unpack=0"
 SRC_URI[aarch64_ghc-shakespeare-devel.sha256sum] = "7da906a4c686124db4c6e6e9ba00e9510dc00b1758db31960913dc17aef7556d"
 
-URI_aarch64_ghc-shakespeare-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-doc-2.1.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-shakespeare-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-shakespeare-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-doc-2.1.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-shakespeare-doc;unpack=0"
 SRC_URI[aarch64_ghc-shakespeare-doc.sha256sum] = "a9cf3ddb3ddbee46f4e18c00ad7c710a767eff742b7ef185f689c73417f72a8d"
 
-URI_aarch64_ghc-shakespeare-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-prof-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-shakespeare-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-shakespeare-prof-2.1.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-shakespeare-prof;unpack=0"
 SRC_URI[aarch64_ghc-shakespeare-prof.sha256sum] = "ef1fd1ccb94a0e55ffea884c36efb9c4450691e0e828af73f707175ad9eabbea"
 
 RDEPENDS:ghc-shakespeare = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  libuser-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libuser-0.64-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libuser-0.64-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e4b72044c5b6a435f268957067cd89686e7dc16e3886885db2ebc1a18269180"
 
-URI_x86_64_v2_libuser = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libuser-0.64-11.el10.x86_64_v2.rpm;name=x86_64_v2_libuser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libuser}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libuser-0.64-11.el10.x86_64_v2.rpm;name=x86_64_v2_libuser;unpack=0"
 SRC_URI[x86_64_v2_libuser.sha256sum] = "4a2cbb16dce8d600cb70942ae00918f9ca693c08fd54f9fc5aabb49ba84ec56e"
 
-URI_x86_64_v2_libuser-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libuser-devel-0.64-11.el10.x86_64_v2.rpm;name=x86_64_v2_libuser-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libuser-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libuser-devel-0.64-11.el10.x86_64_v2.rpm;name=x86_64_v2_libuser-devel;unpack=0"
 SRC_URI[x86_64_v2_libuser-devel.sha256sum] = "8b697222b61d1ad9b38582a6f820e5e55d4e6728e7618f9f54f4007108ca4423"
 
-URI_aarch64_libuser = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libuser-0.64-11.el10.aarch64.rpm;name=aarch64_libuser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libuser}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libuser-0.64-11.el10.aarch64.rpm;name=aarch64_libuser;unpack=0"
 SRC_URI[aarch64_libuser.sha256sum] = "b80b5ecd28a767e6fae3af80f755fecf389ee3d434baaa14316f831db9fd1632"
 
-URI_aarch64_libuser-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libuser-devel-0.64-11.el10.aarch64.rpm;name=aarch64_libuser-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libuser-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libuser-devel-0.64-11.el10.aarch64.rpm;name=aarch64_libuser-devel;unpack=0"
 SRC_URI[aarch64_libuser-devel.sha256sum] = "c724f4468d674b4e7727eef4d0e58b79e27b788b36cd16f540715fa384e84ddf"
 
 RDEPENDS:libuser = " \

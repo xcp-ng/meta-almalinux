@@ -9,16 +9,13 @@ PACKAGES = " \
  kgpg \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kgpg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kgpg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ccb26816dc81b51d7b7fd097cd88ec1e371c4bb87cbb88cab484c8286994a383"
 
-URI_x86_64_v2_kgpg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgpg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgpg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kgpg}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgpg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgpg;unpack=0"
 SRC_URI[x86_64_v2_kgpg.sha256sum] = "698aceb6659a4b70a25ddc4657a74389aabaa4d0ba2e3e106ad08e25b53b7ac6"
 
-URI_aarch64_kgpg = "${EPEL_MIRROR}/aarch64/Packages/k/kgpg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgpg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kgpg}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kgpg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgpg;unpack=0"
 SRC_URI[aarch64_kgpg.sha256sum] = "7eaa0b8069785f0833b2e40a7f9cf2403cb738cf1e82fce88640e036d7c5371e"
 
 RDEPENDS:kgpg = " \

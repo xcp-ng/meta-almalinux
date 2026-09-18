@@ -11,32 +11,25 @@ PACKAGES = " \
  texinfo-tex \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/texinfo-7.1-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/texinfo-7.1-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0c9360dd44db430539915cb2b3485684c02157f5645932849b9021209bffe0a4"
 
-URI_x86_64_v2_info = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/info-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_info;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_info}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/info-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_info;unpack=0"
 SRC_URI[x86_64_v2_info.sha256sum] = "00c7a0e7ff17a7e3fa6f31cdc8e1be2a6ccde49c2d422e6828e92dba8cd84e0f"
 
-URI_x86_64_v2_texinfo = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/texinfo-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_texinfo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_texinfo}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/texinfo-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_texinfo;unpack=0"
 SRC_URI[x86_64_v2_texinfo.sha256sum] = "b4ab93ac969dda24d027898bb9e264802d0465ced9ddd46ca45cdafeb7328fa0"
 
-URI_x86_64_v2_texinfo-tex = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/texinfo-tex-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_texinfo-tex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_texinfo-tex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/texinfo-tex-7.1-6.el10.x86_64_v2.rpm;name=x86_64_v2_texinfo-tex;unpack=0"
 SRC_URI[x86_64_v2_texinfo-tex.sha256sum] = "242163545bbfe2208f455aeadf237addb1336a22108e339dbd356436df1a9332"
 
-URI_aarch64_info = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/info-7.1-6.el10.aarch64.rpm;name=aarch64_info;unpack=0"
-SRC_URI:append = " ${URI_aarch64_info}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/info-7.1-6.el10.aarch64.rpm;name=aarch64_info;unpack=0"
 SRC_URI[aarch64_info.sha256sum] = "f96b6f5e9535227324276779e330fc15a8a0cac5ec55e17149afd73b71193422"
 
-URI_aarch64_texinfo = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/texinfo-7.1-6.el10.aarch64.rpm;name=aarch64_texinfo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_texinfo}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/texinfo-7.1-6.el10.aarch64.rpm;name=aarch64_texinfo;unpack=0"
 SRC_URI[aarch64_texinfo.sha256sum] = "38a3979c19246260dce0f3a960eb93e0c976649261911b75997b9cd4f6eb1514"
 
-URI_aarch64_texinfo-tex = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/texinfo-tex-7.1-6.el10.aarch64.rpm;name=aarch64_texinfo-tex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_texinfo-tex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/texinfo-tex-7.1-6.el10.aarch64.rpm;name=aarch64_texinfo-tex;unpack=0"
 SRC_URI[aarch64_texinfo-tex.sha256sum] = "658a9213050d862a90e4f722a7556361b088fcfb5aafa0edfb2161d709196056"
 
 RDEPENDS:info = " \

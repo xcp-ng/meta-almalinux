@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-disks \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-disks-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-disks-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d4bdf3e386a423abcbb77067288bd36c7cd41dea0a73f61a640bb57ce9649d91"
 
-URI_x86_64_v2_plasma-disks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-disks-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-disks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-disks}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-disks-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-disks;unpack=0"
 SRC_URI[x86_64_v2_plasma-disks.sha256sum] = "8df79da4c3fce2c5db007bb303dccc97498e0590af3aff145b5d411bf51f8c90"
 
-URI_aarch64_plasma-disks = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-disks-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-disks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-disks}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-disks-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-disks;unpack=0"
 SRC_URI[aarch64_plasma-disks.sha256sum] = "fa314bdca0e4a97224b0d330fdf4921cdb1894ac4221d7476f26f199af7d229a"
 
 RDEPENDS:plasma-disks = " \

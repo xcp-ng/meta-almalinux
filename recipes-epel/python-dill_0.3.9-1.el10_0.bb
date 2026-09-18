@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-dill+readline \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-dill-0.3.9-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-dill-0.3.9-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b164360667bc81d8e963cc0b2ea7549bcc5066a0ab84b21a2f4637fa413399d9"
 
-URI_x86_64_v2_python3-dill = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dill}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill;unpack=0"
 SRC_URI[x86_64_v2_python3-dill.sha256sum] = "0eda644323ea679a5574d55d27a3a2c6b4585de74ef8c087c557d72e0338c0dd"
 
-URI_x86_64_v2_python3-dill+readline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill+readline-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill+readline;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dill+readline}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dill+readline-0.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dill+readline;unpack=0"
 SRC_URI[x86_64_v2_python3-dill+readline.sha256sum] = "60740b01be84b09a628ba3afa85efde0160d56cc88e173f3904c06bdaec06a2a"
 
-URI_aarch64_python3-dill = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dill-0.3.9-1.el10_0.noarch.rpm;name=aarch64_python3-dill;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dill}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dill-0.3.9-1.el10_0.noarch.rpm;name=aarch64_python3-dill;unpack=0"
 SRC_URI[aarch64_python3-dill.sha256sum] = "38d60ffb13089386f76d853f4c9b4b4f0b921ea518352db8ed51ad7d8923430e"
 
-URI_aarch64_python3-dill+readline = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dill+readline-0.3.9-1.el10_0.noarch.rpm;name=aarch64_python3-dill+readline;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dill+readline}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dill+readline-0.3.9-1.el10_0.noarch.rpm;name=aarch64_python3-dill+readline;unpack=0"
 SRC_URI[aarch64_python3-dill+readline.sha256sum] = "4f35bb62af0f695ebd418f4ba5c2f39a1d9676707a91fed4d97c51015d854e2b"
 
 RDEPENDS:python3-dill = " \

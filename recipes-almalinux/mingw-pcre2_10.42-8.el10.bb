@@ -15,24 +15,19 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-pcre2-10.42-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-pcre2-10.42-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b88948fd91298fcf687f47bc3b02bb8addf8018f0e32602043bf6a29af2e4ecf"
 
-URI_x86_64_v2_mingw32-pcre2 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-pcre2-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw32-pcre2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw32-pcre2}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-pcre2-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw32-pcre2;unpack=0"
 SRC_URI[x86_64_v2_mingw32-pcre2.sha256sum] = "7caef9a8235081454db10c4049b6a21723a9900a8516b724ed9a21482ddfb5a6"
 
-URI_x86_64_v2_mingw32-pcre2-static = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-pcre2-static-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw32-pcre2-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw32-pcre2-static}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-pcre2-static-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw32-pcre2-static;unpack=0"
 SRC_URI[x86_64_v2_mingw32-pcre2-static.sha256sum] = "7e5591c74a10fbf9071fc81c55c16e461a551fb68e3b13a6dfcc662a1646e98d"
 
-URI_x86_64_v2_mingw64-pcre2 = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-pcre2-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw64-pcre2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw64-pcre2}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-pcre2-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw64-pcre2;unpack=0"
 SRC_URI[x86_64_v2_mingw64-pcre2.sha256sum] = "f762f0472919caf5555eaa308922886884f161318b88979f43994c382cf3c2cd"
 
-URI_x86_64_v2_mingw64-pcre2-static = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-pcre2-static-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw64-pcre2-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw64-pcre2-static}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-pcre2-static-10.42-8.el10.noarch.rpm;name=x86_64_v2_mingw64-pcre2-static;unpack=0"
 SRC_URI[x86_64_v2_mingw64-pcre2-static.sha256sum] = "8e92ce698e145cb61fdf1e52ad2abc0e72cf87816e6f0ce10f95cfad79cbabc8"
 
 RDEPENDS:mingw32-pcre2 = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-paste \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-paste-3.10.1-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-paste-3.10.1-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ecdb56c1bd80e77ae8638321c29d705a19b14456ea136a24496e21b6897cfe47"
 
-URI_x86_64_v2_python3-paste = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paste-3.10.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paste;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-paste}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paste-3.10.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paste;unpack=0"
 SRC_URI[x86_64_v2_python3-paste.sha256sum] = "dd9c2cb21c56ee4f46ba9c25f25ecac2bad6000da11e56261e1e838135e21034"
 
-URI_aarch64_python3-paste = "${EPEL_MIRROR}/aarch64/Packages/p/python3-paste-3.10.1-5.el10_0.noarch.rpm;name=aarch64_python3-paste;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-paste}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-paste-3.10.1-5.el10_0.noarch.rpm;name=aarch64_python3-paste;unpack=0"
 SRC_URI[aarch64_python3-paste.sha256sum] = "6ea175d5d96448a9e42bb5549bb5b043ca1bbcedc16a6dec82d852dbc429e142"
 
 RDEPENDS:python3-paste = " \

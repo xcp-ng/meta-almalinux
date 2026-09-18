@@ -12,40 +12,31 @@ PACKAGES = " \
  python3-createrepo_c \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/createrepo_c-1.1.2-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/createrepo_c-1.1.2-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d5d9c587eeb6baf22b93c9ecb8ee91b263a2e7136f215b6082ef15df0fff539b"
 
-URI_x86_64_v2_createrepo_c = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_createrepo_c}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c;unpack=0"
 SRC_URI[x86_64_v2_createrepo_c.sha256sum] = "6f69f732bd30d3cd2753af7baaaaf4ff36a16d36197cb4bac7a1a980f2e83f9b"
 
-URI_x86_64_v2_createrepo_c-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/createrepo_c-devel-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_createrepo_c-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/createrepo_c-devel-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c-devel;unpack=0"
 SRC_URI[x86_64_v2_createrepo_c-devel.sha256sum] = "54a503b83c07a3c54dcdd50cb6eee1bf697fef7c747f007a0876ca20be7f46d0"
 
-URI_x86_64_v2_createrepo_c-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/createrepo_c-libs-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_createrepo_c-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/createrepo_c-libs-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_createrepo_c-libs;unpack=0"
 SRC_URI[x86_64_v2_createrepo_c-libs.sha256sum] = "3c5451bb61e1156e2b719bfe7f7f85d8117d4c379cdb962879e55b9dcaae0dd5"
 
-URI_x86_64_v2_python3-createrepo_c = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_python3-createrepo_c;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-createrepo_c}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;name=x86_64_v2_python3-createrepo_c;unpack=0"
 SRC_URI[x86_64_v2_python3-createrepo_c.sha256sum] = "f204a5e3c202b8fb8c6f1f860c17d670c27155732da552173cc3978311850a96"
 
-URI_aarch64_createrepo_c = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/createrepo_c-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c;unpack=0"
-SRC_URI:append = " ${URI_aarch64_createrepo_c}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/createrepo_c-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c;unpack=0"
 SRC_URI[aarch64_createrepo_c.sha256sum] = "94e0a6b3864a68cc66cd6ec186e7f50049296307a3d730321ac45eaf52168ba1"
 
-URI_aarch64_createrepo_c-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/createrepo_c-devel-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_createrepo_c-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/createrepo_c-devel-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c-devel;unpack=0"
 SRC_URI[aarch64_createrepo_c-devel.sha256sum] = "bc7d04b6bfe6069fbf7cf142773e0dafb2bf76148fdeb809f2c0b83e5442f3ba"
 
-URI_aarch64_createrepo_c-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/createrepo_c-libs-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_createrepo_c-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/createrepo_c-libs-1.1.2-4.el10.aarch64.rpm;name=aarch64_createrepo_c-libs;unpack=0"
 SRC_URI[aarch64_createrepo_c-libs.sha256sum] = "26ba3bd1f54dcc732a1da7d34c23492349f65f9d7c0235f9a242418adb11d11b"
 
-URI_aarch64_python3-createrepo_c = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-createrepo_c-1.1.2-4.el10.aarch64.rpm;name=aarch64_python3-createrepo_c;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-createrepo_c}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-createrepo_c-1.1.2-4.el10.aarch64.rpm;name=aarch64_python3-createrepo_c;unpack=0"
 SRC_URI[aarch64_python3-createrepo_c.sha256sum] = "4eaeebb0ee8e089fa3970854ec051aa01a37386f9b9c6a8b3ee307fc3b99154d"
 
 RDEPENDS:createrepo_c = " \

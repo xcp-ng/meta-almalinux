@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-edsrzf-mmap-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-edsrzf-mmap-1.0.0-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-edsrzf-mmap-1.0.0-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "24a441d1e4ff8ee0ced87f6f57028b000496286f80baf834fbc2df9a29a2e48b"
 
-URI_x86_64_v2_golang-github-edsrzf-mmap-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-edsrzf-mmap-devel-1.0.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-edsrzf-mmap-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-edsrzf-mmap-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-edsrzf-mmap-devel-1.0.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-edsrzf-mmap-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-edsrzf-mmap-devel.sha256sum] = "714f35017bd33ac4a8b22d99b7f32b28e8ef5a54b4fce434e4bd4638eb8ea751"
 
-URI_aarch64_golang-github-edsrzf-mmap-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-edsrzf-mmap-devel-1.0.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-edsrzf-mmap-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-edsrzf-mmap-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-edsrzf-mmap-devel-1.0.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-edsrzf-mmap-devel;unpack=0"
 SRC_URI[aarch64_golang-github-edsrzf-mmap-devel.sha256sum] = "1daf44a23f21219c4a12ca5dfc5a94e16e0f132af686053aa601abea26f4ef80"
 
 RDEPENDS:golang-github-edsrzf-mmap-devel = " \

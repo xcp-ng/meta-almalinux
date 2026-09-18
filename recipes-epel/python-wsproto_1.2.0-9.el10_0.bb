@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-wsproto \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-wsproto-1.2.0-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-wsproto-1.2.0-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eccbb77d7ed7ea87a6c45dfdb5bb02f94083d1999ce60100bf7f19561e08491f"
 
-URI_x86_64_v2_python3-wsproto = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsproto-1.2.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsproto;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-wsproto}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsproto-1.2.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsproto;unpack=0"
 SRC_URI[x86_64_v2_python3-wsproto.sha256sum] = "d9e769aff4470ead0f550276fcb69e00ea8c13f38ac4d78e75c83ca9f87077a4"
 
-URI_aarch64_python3-wsproto = "${EPEL_MIRROR}/aarch64/Packages/p/python3-wsproto-1.2.0-9.el10_0.noarch.rpm;name=aarch64_python3-wsproto;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-wsproto}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-wsproto-1.2.0-9.el10_0.noarch.rpm;name=aarch64_python3-wsproto;unpack=0"
 SRC_URI[aarch64_python3-wsproto.sha256sum] = "dfbdfdb11458b950269e860285f14afe2ee834427e5bb86bbe3e601f79931d15"
 
 RDEPENDS:python3-wsproto = " \

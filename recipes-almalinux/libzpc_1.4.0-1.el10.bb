@@ -8,7 +8,6 @@ PR = "1.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libzpc-1.4.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libzpc-1.4.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3281a456c55cf8d28d25da378c47af6b7ca5a8a05f8cdb0463067082c9214b02"
 

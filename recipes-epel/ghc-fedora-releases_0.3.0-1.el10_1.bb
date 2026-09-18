@@ -17,36 +17,28 @@ PACKAGES:aarch64 = " \
  ghc-fedora-releases-prof \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-fedora-releases-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-fedora-releases-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "90d63a04485ab869533fdeb58ead2e95e3d2dbdfeaad8e6aeda0da7931aa3776"
 
-URI_x86_64_v2_ghc-fedora-releases = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fedora-releases;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fedora-releases}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fedora-releases;unpack=0"
 SRC_URI[x86_64_v2_ghc-fedora-releases.sha256sum] = "f3580b0eec064537d690cb8cbf79ecfc2ad1f5b5d3200037931e32cda63be4b7"
 
-URI_x86_64_v2_ghc-fedora-releases-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-devel-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fedora-releases-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fedora-releases-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-devel-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fedora-releases-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-fedora-releases-devel.sha256sum] = "d897390bd44aae38f90e43e0a135fd8c4227728cd537614b219b8eb5f5596100"
 
-URI_x86_64_v2_ghc-fedora-releases-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-doc-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fedora-releases-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fedora-releases-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fedora-releases-doc-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fedora-releases-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-fedora-releases-doc.sha256sum] = "bbb46393f3c5fb28a8968c18058e00fb3cbcd324cce9245963b7f074cac1e59f"
 
-URI_aarch64_ghc-fedora-releases = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fedora-releases}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases;unpack=0"
 SRC_URI[aarch64_ghc-fedora-releases.sha256sum] = "381d7f301f49d79c0b073c84d5e3052cd208537d326b416fab8f1e5976de694f"
 
-URI_aarch64_ghc-fedora-releases-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-devel-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fedora-releases-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-devel-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases-devel;unpack=0"
 SRC_URI[aarch64_ghc-fedora-releases-devel.sha256sum] = "55aa52cd3fa0fdc2f118db242c21b1686c11414c0fb2da1c3190a71fa39cefa2"
 
-URI_aarch64_ghc-fedora-releases-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-doc-0.3.0-1.el10_1.noarch.rpm;name=aarch64_ghc-fedora-releases-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fedora-releases-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-doc-0.3.0-1.el10_1.noarch.rpm;name=aarch64_ghc-fedora-releases-doc;unpack=0"
 SRC_URI[aarch64_ghc-fedora-releases-doc.sha256sum] = "d7604562e0ccae271b336ec67cf72e65a6d7097764eec1f9764ed39ce047dc72"
 
-URI_aarch64_ghc-fedora-releases-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-prof-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fedora-releases-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fedora-releases-prof-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-fedora-releases-prof;unpack=0"
 SRC_URI[aarch64_ghc-fedora-releases-prof.sha256sum] = "5684ebab33607d73b2c4dfdc8fb4806943d7a6c96c8d7aacefe254938895b4ff"
 
 RDEPENDS:ghc-fedora-releases = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kmail-account-wizard \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmail-account-wizard-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmail-account-wizard-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d0dc68f29ecfea05ebe292d7cd6bce5363a52fbb8d748ce6ba3400f78a71700b"
 
-URI_x86_64_v2_kmail-account-wizard = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-account-wizard-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail-account-wizard;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmail-account-wizard}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-account-wizard-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail-account-wizard;unpack=0"
 SRC_URI[x86_64_v2_kmail-account-wizard.sha256sum] = "19d039f00d29a31b04e770310af0510c93a29e8f60b1ae18f44d8ca5017963a1"
 
-URI_aarch64_kmail-account-wizard = "${EPEL_MIRROR}/aarch64/Packages/k/kmail-account-wizard-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail-account-wizard;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmail-account-wizard}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmail-account-wizard-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail-account-wizard;unpack=0"
 SRC_URI[aarch64_kmail-account-wizard.sha256sum] = "76686be6f15e6aedd59a4328e0ae0ce9ffbafe7711cdb8b13dba7693d90cf854"
 
 RDEPENDS:kmail-account-wizard = " \

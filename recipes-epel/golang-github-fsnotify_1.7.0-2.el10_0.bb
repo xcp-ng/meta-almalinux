@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-fsnotify-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-fsnotify-1.7.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-fsnotify-1.7.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6200de33cf7d37b441730c0de76fa60af36b83c818e1b79949fa25dc935bd2fe"
 
-URI_x86_64_v2_golang-github-fsnotify-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-fsnotify-devel-1.7.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-fsnotify-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-fsnotify-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-fsnotify-devel-1.7.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-fsnotify-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-fsnotify-devel.sha256sum] = "a40de05f4c988af70a942fd7e45897b430d7d02d467a2ffaddc6b12accd79f2f"
 
-URI_aarch64_golang-github-fsnotify-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-fsnotify-devel-1.7.0-2.el10_0.noarch.rpm;name=aarch64_golang-github-fsnotify-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-fsnotify-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-fsnotify-devel-1.7.0-2.el10_0.noarch.rpm;name=aarch64_golang-github-fsnotify-devel;unpack=0"
 SRC_URI[aarch64_golang-github-fsnotify-devel.sha256sum] = "864f00503e105fb9914ad30aed86510e844fec61cc4d0c7df8f72a30ea19d24f"
 
 RDEPENDS:golang-github-fsnotify-devel = " \

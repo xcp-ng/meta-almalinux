@@ -8,7 +8,6 @@ PR = "1.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libzfcphbaapi-3.0.3-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libzfcphbaapi-3.0.3-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2d713509829d343ca4ea387feb5bbd922450a360b25671a9b8840acc682b1d62"
 

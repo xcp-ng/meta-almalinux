@@ -12,40 +12,31 @@ PACKAGES = " \
  gtk4-devel-tools \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gtk4-4.16.7-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gtk4-4.16.7-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b7717e5c347c8e457e21d820240de4298595f5919c03936df001a2593601b550"
 
-URI_x86_64_v2_gtk4 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtk4-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtk4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtk4-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4;unpack=0"
 SRC_URI[x86_64_v2_gtk4.sha256sum] = "745d8659f71473fc47462b7b7313e2ec27a3db31871bbd7fc86fb154f2c77cea"
 
-URI_x86_64_v2_gtk4-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtk4-devel-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtk4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtk4-devel-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4-devel;unpack=0"
 SRC_URI[x86_64_v2_gtk4-devel.sha256sum] = "27ba0cdcf32c62143fa241b722fbb7f64c4cda5c3a7d52cc5760d7498d8f1e8c"
 
-URI_x86_64_v2_gtk4-devel-docs = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtk4-devel-docs-4.16.7-4.el10.noarch.rpm;name=x86_64_v2_gtk4-devel-docs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtk4-devel-docs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtk4-devel-docs-4.16.7-4.el10.noarch.rpm;name=x86_64_v2_gtk4-devel-docs;unpack=0"
 SRC_URI[x86_64_v2_gtk4-devel-docs.sha256sum] = "57c00939927f7c36a390fb67afd5d6c35fa2ea07cc932dbaf606e08cda25c70c"
 
-URI_x86_64_v2_gtk4-devel-tools = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtk4-devel-tools-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4-devel-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtk4-devel-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtk4-devel-tools-4.16.7-4.el10.x86_64_v2.rpm;name=x86_64_v2_gtk4-devel-tools;unpack=0"
 SRC_URI[x86_64_v2_gtk4-devel-tools.sha256sum] = "de7692a92cf274e1e65c5d09e7fdedcff133d325654926c283eb528969fc0133"
 
-URI_aarch64_gtk4 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtk4-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtk4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtk4-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4;unpack=0"
 SRC_URI[aarch64_gtk4.sha256sum] = "e7295e7f35c3f2139024fe1c06883337110b1a5364d9ed5196807a391c1ddc50"
 
-URI_aarch64_gtk4-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtk4-devel-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtk4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtk4-devel-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4-devel;unpack=0"
 SRC_URI[aarch64_gtk4-devel.sha256sum] = "2c48e4b18ad5763996e9410e2340b56ebe3effcd22beb1ebf2ce635815058c61"
 
-URI_aarch64_gtk4-devel-docs = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtk4-devel-docs-4.16.7-4.el10.noarch.rpm;name=aarch64_gtk4-devel-docs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtk4-devel-docs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtk4-devel-docs-4.16.7-4.el10.noarch.rpm;name=aarch64_gtk4-devel-docs;unpack=0"
 SRC_URI[aarch64_gtk4-devel-docs.sha256sum] = "57c00939927f7c36a390fb67afd5d6c35fa2ea07cc932dbaf606e08cda25c70c"
 
-URI_aarch64_gtk4-devel-tools = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtk4-devel-tools-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4-devel-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtk4-devel-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtk4-devel-tools-4.16.7-4.el10.aarch64.rpm;name=aarch64_gtk4-devel-tools;unpack=0"
 SRC_URI[aarch64_gtk4-devel-tools.sha256sum] = "1f141a3d6265a70d53495a828e30545977ae68817d728f0dd8c381e00375e65c"
 
 RDEPENDS:gtk4 = " \

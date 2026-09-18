@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-HTTP \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-HTTP-6.23-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-HTTP-6.23-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f3f3e714202e9fb0ddcb8b50f931afddb1b1a9cbfbe89775127717e604305ce3"
 
-URI_x86_64_v2_perl-Net-HTTP = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-HTTP-6.23-6.el10.noarch.rpm;name=x86_64_v2_perl-Net-HTTP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-HTTP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-HTTP-6.23-6.el10.noarch.rpm;name=x86_64_v2_perl-Net-HTTP;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-HTTP.sha256sum] = "d55220ae7778d1d0fe34dfb0001d86de2d96cab9d2e43163d584d16f8a09beb1"
 
-URI_aarch64_perl-Net-HTTP = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-HTTP-6.23-6.el10.noarch.rpm;name=aarch64_perl-Net-HTTP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-HTTP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-HTTP-6.23-6.el10.noarch.rpm;name=aarch64_perl-Net-HTTP;unpack=0"
 SRC_URI[aarch64_perl-Net-HTTP.sha256sum] = "d55220ae7778d1d0fe34dfb0001d86de2d96cab9d2e43163d584d16f8a09beb1"
 
 RDEPENDS:perl-Net-HTTP = " \

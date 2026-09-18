@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-Find-Rule-Perl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-File-Find-Rule-Perl-1.16-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-File-Find-Rule-Perl-1.16-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d531cc33a5363982a18034ca0ef11eb31179b9f63b848aad2e16055f1b2bfd5"
 
-URI_x86_64_v2_perl-File-Find-Rule-Perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-File-Find-Rule-Perl-1.16-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-File-Find-Rule-Perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-Find-Rule-Perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-File-Find-Rule-Perl-1.16-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-File-Find-Rule-Perl;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Find-Rule-Perl.sha256sum] = "2475235e062077c351841830da3468412a8bbe993bf2996ca2b37979235f3d16"
 
-URI_aarch64_perl-File-Find-Rule-Perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-File-Find-Rule-Perl-1.16-1.el10_0.noarch.rpm;name=aarch64_perl-File-Find-Rule-Perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-Find-Rule-Perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-File-Find-Rule-Perl-1.16-1.el10_0.noarch.rpm;name=aarch64_perl-File-Find-Rule-Perl;unpack=0"
 SRC_URI[aarch64_perl-File-Find-Rule-Perl.sha256sum] = "0f8844bc10d3b5d7e700af9eee16ad1773a7bf6d34461072e19ea47d97278c4a"
 
 RDEPENDS:perl-File-Find-Rule-Perl = " \

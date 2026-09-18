@@ -9,16 +9,13 @@ PACKAGES = " \
  plymouth-kcm \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plymouth-kcm-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plymouth-kcm-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5850e43d429c9345c0261d39651f5bb0f5e403f8d46ffdc119ea12b3e548db9d"
 
-URI_x86_64_v2_plymouth-kcm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plymouth-kcm-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plymouth-kcm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plymouth-kcm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plymouth-kcm-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plymouth-kcm;unpack=0"
 SRC_URI[x86_64_v2_plymouth-kcm.sha256sum] = "0abf17db099e55eb713459641d6cac20a5eadee05d76e7b09e010467a7982129"
 
-URI_aarch64_plymouth-kcm = "${EPEL_MIRROR}/aarch64/Packages/p/plymouth-kcm-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plymouth-kcm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plymouth-kcm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plymouth-kcm-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plymouth-kcm;unpack=0"
 SRC_URI[aarch64_plymouth-kcm.sha256sum] = "a736e32e3c7abf374fd4c947c1ca1bf96c0c0e3af3c09aed71e34939257f77ed"
 
 RDEPENDS:plymouth-kcm = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-UNIVERSAL-require \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-UNIVERSAL-require-0.19-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-UNIVERSAL-require-0.19-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f0e92ad5015a0887fe484f6179961c770568f8ff71e4dc9d5e3c3c870c1f3666"
 
-URI_x86_64_v2_perl-UNIVERSAL-require = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UNIVERSAL-require-0.19-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UNIVERSAL-require;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-UNIVERSAL-require}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UNIVERSAL-require-0.19-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UNIVERSAL-require;unpack=0"
 SRC_URI[x86_64_v2_perl-UNIVERSAL-require.sha256sum] = "a446d527c94947e9dad31a61d03661bfd237d02c28bbf6a39786a899659e1a82"
 
-URI_aarch64_perl-UNIVERSAL-require = "${EPEL_MIRROR}/aarch64/Packages/p/perl-UNIVERSAL-require-0.19-11.el10_0.noarch.rpm;name=aarch64_perl-UNIVERSAL-require;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-UNIVERSAL-require}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-UNIVERSAL-require-0.19-11.el10_0.noarch.rpm;name=aarch64_perl-UNIVERSAL-require;unpack=0"
 SRC_URI[aarch64_perl-UNIVERSAL-require.sha256sum] = "5aad460333e779a9e2e0cfce0ebcda084c2f51d3ae5152998d5030018d900578"
 
 RDEPENDS:perl-UNIVERSAL-require = " \

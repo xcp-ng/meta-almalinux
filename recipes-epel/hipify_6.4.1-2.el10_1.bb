@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/h/hipify-6.4.1-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/h/hipify-6.4.1-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dc69b8cd9c3ed43160f3cb41f5a56f9d71afac18f23a17c0b6a76037e090b522"
 
-URI_x86_64_v2_hipify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipify-6.4.1-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hipify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipify-6.4.1-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipify;unpack=0"
 SRC_URI[x86_64_v2_hipify.sha256sum] = "441c75afe99b69c951db77415622e5a7b329b8b321835a0f76f6bc4ade0f4079"
 
 RDEPENDS:hipify = " \

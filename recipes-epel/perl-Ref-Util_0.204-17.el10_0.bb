@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Ref-Util \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Ref-Util-0.204-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Ref-Util-0.204-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5ef90eecfba21434486a8ceaeb51afdec85593ec9becd7cd224015e1bd4578b7"
 
-URI_x86_64_v2_perl-Ref-Util = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ref-Util-0.204-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Ref-Util;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Ref-Util}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ref-Util-0.204-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Ref-Util;unpack=0"
 SRC_URI[x86_64_v2_perl-Ref-Util.sha256sum] = "70c0807be43c5003a41db85c167535495966455fe6350f3c7607a02a75d28804"
 
-URI_aarch64_perl-Ref-Util = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Ref-Util-0.204-17.el10_0.noarch.rpm;name=aarch64_perl-Ref-Util;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Ref-Util}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Ref-Util-0.204-17.el10_0.noarch.rpm;name=aarch64_perl-Ref-Util;unpack=0"
 SRC_URI[aarch64_perl-Ref-Util.sha256sum] = "180a0a467b7ceef09b9d4b23b29ff0181a01fe559023383366cbe2924ffe3f73"
 
 RDEPENDS:perl-Ref-Util = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-FailWarnings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-FailWarnings-0.008-34.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-FailWarnings-0.008-34.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe851dc3710082e4b93332a226dc087271c7d9debf159bd2cab75794c607d0b9"
 
-URI_x86_64_v2_perl-Test-FailWarnings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-FailWarnings-0.008-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-FailWarnings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-FailWarnings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-FailWarnings-0.008-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-FailWarnings;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-FailWarnings.sha256sum] = "e9659c12f81b09d466ad8ea61497b94a76b5a63772d54cc0328967ed72ab5820"
 
-URI_aarch64_perl-Test-FailWarnings = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-FailWarnings-0.008-34.el10_0.noarch.rpm;name=aarch64_perl-Test-FailWarnings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-FailWarnings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-FailWarnings-0.008-34.el10_0.noarch.rpm;name=aarch64_perl-Test-FailWarnings;unpack=0"
 SRC_URI[aarch64_perl-Test-FailWarnings.sha256sum] = "192e755b4ceab77e9a1f3826199e2d8fb8646caa2f9794efeeffc822477ad5c8"
 
 RDEPENDS:perl-Test-FailWarnings = " \

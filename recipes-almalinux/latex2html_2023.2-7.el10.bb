@@ -9,16 +9,13 @@ PACKAGES = " \
  latex2html \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/latex2html-2023.2-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/latex2html-2023.2-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0d89980751e6dcbc42f535a0d42a9ae064e5506d27418e4b005af85f17d6d0ce"
 
-URI_x86_64_v2_latex2html = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/latex2html-2023.2-7.el10.noarch.rpm;name=x86_64_v2_latex2html;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_latex2html}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/latex2html-2023.2-7.el10.noarch.rpm;name=x86_64_v2_latex2html;unpack=0"
 SRC_URI[x86_64_v2_latex2html.sha256sum] = "bf0edda7da935029cd0ebee8408262399b841bdfb9f06b84f0255e810cd4bfff"
 
-URI_aarch64_latex2html = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/latex2html-2023.2-7.el10.noarch.rpm;name=aarch64_latex2html;unpack=0"
-SRC_URI:append = " ${URI_aarch64_latex2html}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/latex2html-2023.2-7.el10.noarch.rpm;name=aarch64_latex2html;unpack=0"
 SRC_URI[aarch64_latex2html.sha256sum] = "bf0edda7da935029cd0ebee8408262399b841bdfb9f06b84f0255e810cd4bfff"
 
 RDEPENDS:latex2html = " \

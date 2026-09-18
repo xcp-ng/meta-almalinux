@@ -10,24 +10,19 @@ PACKAGES = " \
  ampache_browser-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/ampache_browser-1.0.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/ampache_browser-1.0.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "580f5e9a7c832cbadb1a1d34ed3052f61abbbb42ebe15ec22c4a4f98c2e96087"
 
-URI_x86_64_v2_ampache_browser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ampache_browser-1.0.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ampache_browser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ampache_browser}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ampache_browser-1.0.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ampache_browser;unpack=0"
 SRC_URI[x86_64_v2_ampache_browser.sha256sum] = "eb87e4915085a4b5f3e43dce7e05352ba0c7fb0a9661650692f6b376138e90f6"
 
-URI_x86_64_v2_ampache_browser-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ampache_browser-devel-1.0.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ampache_browser-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ampache_browser-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ampache_browser-devel-1.0.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ampache_browser-devel;unpack=0"
 SRC_URI[x86_64_v2_ampache_browser-devel.sha256sum] = "31d056915864555dbe0ff509862f178c2c8e8576981f5f84957c01d60d5146e6"
 
-URI_aarch64_ampache_browser = "${EPEL_MIRROR}/aarch64/Packages/a/ampache_browser-1.0.8-1.el10_0.aarch64.rpm;name=aarch64_ampache_browser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ampache_browser}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/ampache_browser-1.0.8-1.el10_0.aarch64.rpm;name=aarch64_ampache_browser;unpack=0"
 SRC_URI[aarch64_ampache_browser.sha256sum] = "89d9e87d89032624bb2ec72e9db8ea838590f4e40b3ae2699986a63abcd9e426"
 
-URI_aarch64_ampache_browser-devel = "${EPEL_MIRROR}/aarch64/Packages/a/ampache_browser-devel-1.0.8-1.el10_0.aarch64.rpm;name=aarch64_ampache_browser-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ampache_browser-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/ampache_browser-devel-1.0.8-1.el10_0.aarch64.rpm;name=aarch64_ampache_browser-devel;unpack=0"
 SRC_URI[aarch64_ampache_browser-devel.sha256sum] = "a22e395fec54694fc0d1a3c7af9d7250b5f45f0f9f7713765978bcd557e57ac5"
 
 RDEPENDS:ampache_browser = " \

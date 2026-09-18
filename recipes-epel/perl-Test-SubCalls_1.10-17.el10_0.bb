@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-SubCalls \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-SubCalls-1.10-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-SubCalls-1.10-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec36e45f5e2298812afec326091a9d7a127cd57828205c77450950f58d36a949"
 
-URI_x86_64_v2_perl-Test-SubCalls = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-SubCalls-1.10-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-SubCalls;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-SubCalls}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-SubCalls-1.10-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-SubCalls;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-SubCalls.sha256sum] = "2cb3ce1270babf33a109d47328a8f46fc3e1104a07222642c97b814754076c8a"
 
-URI_aarch64_perl-Test-SubCalls = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-SubCalls-1.10-17.el10_0.noarch.rpm;name=aarch64_perl-Test-SubCalls;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-SubCalls}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-SubCalls-1.10-17.el10_0.noarch.rpm;name=aarch64_perl-Test-SubCalls;unpack=0"
 SRC_URI[aarch64_perl-Test-SubCalls.sha256sum] = "a3c3f372f3a645de298ef70120efbfb06006762361c083b30e91439cc542ba8b"
 
 RDEPENDS:perl-Test-SubCalls = " \

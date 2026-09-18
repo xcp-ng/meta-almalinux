@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-cmdkit+toml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cmdkit-2.7.7-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cmdkit-2.7.7-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a5c28ce0d45bd87b3aeee7cd8670605daa5ed8f12240f529fc3320edf7804b79"
 
-URI_x86_64_v2_python3-cmdkit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cmdkit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit;unpack=0"
 SRC_URI[x86_64_v2_python3-cmdkit.sha256sum] = "958f3cc5f719fb3e8adeafbb83d23d0c2c34526377b7028ab1e3f5aad2bef573"
 
-URI_x86_64_v2_python3-cmdkit+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit+toml-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit+toml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cmdkit+toml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cmdkit+toml-2.7.7-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cmdkit+toml;unpack=0"
 SRC_URI[x86_64_v2_python3-cmdkit+toml.sha256sum] = "687ca7476551a75aa6413c239762ac30e2d7c225dc2fb6c4ea69c750ee216397"
 
-URI_aarch64_python3-cmdkit = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cmdkit-2.7.7-4.el10_0.noarch.rpm;name=aarch64_python3-cmdkit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cmdkit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cmdkit-2.7.7-4.el10_0.noarch.rpm;name=aarch64_python3-cmdkit;unpack=0"
 SRC_URI[aarch64_python3-cmdkit.sha256sum] = "0d09b6fe07a357d79f8abb9e3870e825913e705837e3de64b6bc8c4b19a50192"
 
-URI_aarch64_python3-cmdkit+toml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cmdkit+toml-2.7.7-4.el10_0.noarch.rpm;name=aarch64_python3-cmdkit+toml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cmdkit+toml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cmdkit+toml-2.7.7-4.el10_0.noarch.rpm;name=aarch64_python3-cmdkit+toml;unpack=0"
 SRC_URI[aarch64_python3-cmdkit+toml.sha256sum] = "80ab21df080882c152588aaabbdc658ea6df03b03fd39694e346804aeaf63f66"
 
 RDEPENDS:python3-cmdkit = " \

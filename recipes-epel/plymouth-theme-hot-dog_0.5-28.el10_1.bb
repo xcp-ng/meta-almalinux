@@ -9,12 +9,10 @@ PACKAGES = " \
  plymouth-theme-hot-dog \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d1088fc9bab2a8939653246428eab91ae8ead9dca4b7987eeb2873ff72ed87bc"
 
-URI_aarch64_plymouth-theme-hot-dog = "${EPEL_MIRROR}/aarch64/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.noarch.rpm;name=aarch64_plymouth-theme-hot-dog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plymouth-theme-hot-dog}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plymouth-theme-hot-dog-0.5-28.el10_1.noarch.rpm;name=aarch64_plymouth-theme-hot-dog;unpack=0"
 SRC_URI[aarch64_plymouth-theme-hot-dog.sha256sum] = "d12be368e3ee3796ade23146029c6e9c4423479d7a5695b2b7cbc4cf0e32dbc9"
 
 RDEPENDS:plymouth-theme-hot-dog = " \

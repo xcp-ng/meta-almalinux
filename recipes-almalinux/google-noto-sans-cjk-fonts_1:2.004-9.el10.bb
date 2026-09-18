@@ -10,16 +10,13 @@ PACKAGES = " \
  google-noto-sans-cjk-fonts \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9a9f40ffa93f1c305234f881dca82fbf012cafa05939f20547011233847727e0"
 
-URI_x86_64_v2_google-noto-sans-cjk-fonts = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-cjk-fonts;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_google-noto-sans-cjk-fonts}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.noarch.rpm;name=x86_64_v2_google-noto-sans-cjk-fonts;unpack=0"
 SRC_URI[x86_64_v2_google-noto-sans-cjk-fonts.sha256sum] = "29b55abd89b1d8c96fd15063f5ddeac6fa8b17d8cf17fa97db7192689af1ce75"
 
-URI_aarch64_google-noto-sans-cjk-fonts = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.noarch.rpm;name=aarch64_google-noto-sans-cjk-fonts;unpack=0"
-SRC_URI:append = " ${URI_aarch64_google-noto-sans-cjk-fonts}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/google-noto-sans-cjk-fonts-2.004-9.el10.noarch.rpm;name=aarch64_google-noto-sans-cjk-fonts;unpack=0"
 SRC_URI[aarch64_google-noto-sans-cjk-fonts.sha256sum] = "29b55abd89b1d8c96fd15063f5ddeac6fa8b17d8cf17fa97db7192689af1ce75"
 
 RDEPENDS:google-noto-sans-cjk-fonts = " \

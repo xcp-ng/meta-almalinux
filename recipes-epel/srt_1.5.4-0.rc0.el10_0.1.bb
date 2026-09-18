@@ -11,32 +11,25 @@ PACKAGES = " \
  srt-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/srt-1.5.4-0.rc0.el10_0.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/srt-1.5.4-0.rc0.el10_0.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ae95ff9677dbc9f114673b4bc0471512349fd13f411c38ff717132f8e53c3b2f"
 
-URI_x86_64_v2_srt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_srt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt;unpack=0"
 SRC_URI[x86_64_v2_srt.sha256sum] = "3539e4ec3fd9b6d2c89e8e0bacbea6778045d9cee892f9da7a51d06afa645b7a"
 
-URI_x86_64_v2_srt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-devel-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_srt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-devel-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-devel;unpack=0"
 SRC_URI[x86_64_v2_srt-devel.sha256sum] = "15bdee3fff198c66d2cef237b21bcc27a4fec476e72d122e7ce4a5dc4ea15336"
 
-URI_x86_64_v2_srt-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-libs-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_srt-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/srt-libs-1.5.4-0.rc0.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_srt-libs;unpack=0"
 SRC_URI[x86_64_v2_srt-libs.sha256sum] = "f94bf6d664859ee922234107c9dbc7abf56a3cf4cdf34fcf8532275cda2b4877"
 
-URI_aarch64_srt = "${EPEL_MIRROR}/aarch64/Packages/s/srt-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_srt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/srt-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt;unpack=0"
 SRC_URI[aarch64_srt.sha256sum] = "8a84c46d7a665e3b0ccf5cf0a9fd2d21fc76ebf6b66550fa75973a212bd6ae5c"
 
-URI_aarch64_srt-devel = "${EPEL_MIRROR}/aarch64/Packages/s/srt-devel-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_srt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/srt-devel-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt-devel;unpack=0"
 SRC_URI[aarch64_srt-devel.sha256sum] = "a45b8053b99cec7b7ff25766a1c5aacec90cf4823ea3be67dde648661cc53daf"
 
-URI_aarch64_srt-libs = "${EPEL_MIRROR}/aarch64/Packages/s/srt-libs-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_srt-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/srt-libs-1.5.4-0.rc0.el10_0.1.aarch64.rpm;name=aarch64_srt-libs;unpack=0"
 SRC_URI[aarch64_srt-libs.sha256sum] = "6cea40d389d00e301925c991ae4f5e88c0f4d642e2a4a7975a1d1a34bf4275bf"
 
 RDEPENDS:srt = " \

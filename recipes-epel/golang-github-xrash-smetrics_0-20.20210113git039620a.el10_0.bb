@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-xrash-smetrics-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-xrash-smetrics-0-20.20210113git039620a.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-xrash-smetrics-0-20.20210113git039620a.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d0bafabd9a50199fb2f69cc201bb6863eddb9111ecd764f0c9d8e2fcba84542b"
 
-URI_aarch64_golang-github-xrash-smetrics-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-xrash-smetrics-devel-0-20.20210113git039620a.el10_0.noarch.rpm;name=aarch64_golang-github-xrash-smetrics-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-xrash-smetrics-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-xrash-smetrics-devel-0-20.20210113git039620a.el10_0.noarch.rpm;name=aarch64_golang-github-xrash-smetrics-devel;unpack=0"
 SRC_URI[aarch64_golang-github-xrash-smetrics-devel.sha256sum] = "eff724d219abe40eb81c17faf430309515e757e129322908777b6d20083496aa"
 
 RDEPENDS:golang-github-xrash-smetrics-devel = " \

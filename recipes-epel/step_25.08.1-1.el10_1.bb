@@ -9,16 +9,13 @@ PACKAGES = " \
  step \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/step-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/step-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f08c7889454ea7c855c2ea65cae926fd34870c8eb426ec53e7e71bd1203f1f52"
 
-URI_x86_64_v2_step = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/step-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_step;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_step}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/step-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_step;unpack=0"
 SRC_URI[x86_64_v2_step.sha256sum] = "7f73f5961b4b7511d41ec8b3ee50b68454d8aaa1e880c64b6df9a845a387013a"
 
-URI_aarch64_step = "${EPEL_MIRROR}/aarch64/Packages/s/step-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_step;unpack=0"
-SRC_URI:append = " ${URI_aarch64_step}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/step-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_step;unpack=0"
 SRC_URI[aarch64_step.sha256sum] = "488ef87f3d8d9b252510f2d74fc106e45bde22204773b56b1a8bf54b07791fd0"
 
 RDEPENDS:step = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Time \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Time-0.092-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Time-0.092-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1e8f690bc35b9f18c7b83255372fe55bc741f18cdad0705d12a400ab7226c9f7"
 
-URI_x86_64_v2_perl-Test-Time = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Time-0.092-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Time;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Time}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Time-0.092-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Time;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Time.sha256sum] = "228b05e3fe59a3d863932774858b3c514fa5516206df35288055fe71fdb6cef4"
 
-URI_aarch64_perl-Test-Time = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Time-0.092-8.el10_0.noarch.rpm;name=aarch64_perl-Test-Time;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Time}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Time-0.092-8.el10_0.noarch.rpm;name=aarch64_perl-Test-Time;unpack=0"
 SRC_URI[aarch64_perl-Test-Time.sha256sum] = "74983332341f9314a48030def2b7587b570b1eae18b5590ca48cfe125bf25804"
 
 RDEPENDS:perl-Test-Time = " \

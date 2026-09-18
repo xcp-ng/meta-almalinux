@@ -9,16 +9,13 @@ PACKAGES = " \
  sip6 \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sip6-6.9.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sip6-6.9.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "770cb20cbe4c143d82230cfc43fefd9b35c0799748b2dc69e730a5c2403d595d"
 
-URI_x86_64_v2_sip6 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sip6-6.9.0-1.el10.noarch.rpm;name=x86_64_v2_sip6;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sip6}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sip6-6.9.0-1.el10.noarch.rpm;name=x86_64_v2_sip6;unpack=0"
 SRC_URI[x86_64_v2_sip6.sha256sum] = "7698bee06f89fe02583730f3b73e493b5acdace8bf3c2ec6257f54bd0578ed6c"
 
-URI_aarch64_sip6 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sip6-6.9.0-1.el10.noarch.rpm;name=aarch64_sip6;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sip6}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sip6-6.9.0-1.el10.noarch.rpm;name=aarch64_sip6;unpack=0"
 SRC_URI[aarch64_sip6.sha256sum] = "7698bee06f89fe02583730f3b73e493b5acdace8bf3c2ec6257f54bd0578ed6c"
 
 RDEPENDS:sip6 = " \

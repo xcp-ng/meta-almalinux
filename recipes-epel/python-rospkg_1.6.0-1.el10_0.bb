@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-rospkg \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-rospkg-1.6.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rospkg-1.6.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1f0d23e615b88a1798d913aa546ce3b48ad37b6cfcd1c351d38e3f665b5c682d"
 
-URI_x86_64_v2_python-rospkg-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-rospkg-doc-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-rospkg-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-rospkg-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-rospkg-doc-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-rospkg-doc;unpack=0"
 SRC_URI[x86_64_v2_python-rospkg-doc.sha256sum] = "754990c00020292ff2110596d32544d6eda8c4257b61c046fe8990f486d52b1f"
 
-URI_x86_64_v2_python3-rospkg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rospkg-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rospkg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rospkg}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rospkg-1.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rospkg;unpack=0"
 SRC_URI[x86_64_v2_python3-rospkg.sha256sum] = "09cafc62e6dc0b6374d875964b547cfd4c65a2b06a2308c8081784839c2b825e"
 
-URI_aarch64_python-rospkg-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-rospkg-doc-1.6.0-1.el10_0.noarch.rpm;name=aarch64_python-rospkg-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-rospkg-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-rospkg-doc-1.6.0-1.el10_0.noarch.rpm;name=aarch64_python-rospkg-doc;unpack=0"
 SRC_URI[aarch64_python-rospkg-doc.sha256sum] = "9c8d469d9cd6946c913d88f1281a2df43ef8217f35055c4df2e38474f77b2573"
 
-URI_aarch64_python3-rospkg = "${EPEL_MIRROR}/aarch64/Packages/p/python3-rospkg-1.6.0-1.el10_0.noarch.rpm;name=aarch64_python3-rospkg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rospkg}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rospkg-1.6.0-1.el10_0.noarch.rpm;name=aarch64_python3-rospkg;unpack=0"
 SRC_URI[aarch64_python3-rospkg.sha256sum] = "0e0543ac0dfe51bc7dc12d86f0d6e701687648275d8eca40d8963448b8b61d90"
 
 RDEPENDS:python-rospkg-doc = " \

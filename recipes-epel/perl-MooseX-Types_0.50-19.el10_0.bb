@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MooseX-Types \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MooseX-Types-0.50-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MooseX-Types-0.50-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5095fe9410b375feba896db57f079c3b7646691944a2c3f6c76b26551aff6eb7"
 
-URI_x86_64_v2_perl-MooseX-Types = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooseX-Types-0.50-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooseX-Types;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MooseX-Types}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooseX-Types-0.50-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooseX-Types;unpack=0"
 SRC_URI[x86_64_v2_perl-MooseX-Types.sha256sum] = "92ffd7a798a36d75aecdc5ba3f31635648e41c8197488b1404c2366e563dd3f6"
 
-URI_aarch64_perl-MooseX-Types = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MooseX-Types-0.50-19.el10_0.noarch.rpm;name=aarch64_perl-MooseX-Types;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MooseX-Types}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MooseX-Types-0.50-19.el10_0.noarch.rpm;name=aarch64_perl-MooseX-Types;unpack=0"
 SRC_URI[aarch64_perl-MooseX-Types.sha256sum] = "999ac3d23faf70f934961a520d4c7ad0b3d00e270ebe44773fb3b6d9bf0d58b1"
 
 RDEPENDS:perl-MooseX-Types = " \

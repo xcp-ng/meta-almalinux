@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Term-Table \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Term-Table-0.018-513.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Term-Table-0.018-513.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d25c6bf6603b857e35f64a37349299de3fbd9f7ec26bc5da072496ac015e0291"
 
-URI_x86_64_v2_perl-Term-Table = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Term-Table-0.018-513.el10.noarch.rpm;name=x86_64_v2_perl-Term-Table;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Term-Table}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Term-Table-0.018-513.el10.noarch.rpm;name=x86_64_v2_perl-Term-Table;unpack=0"
 SRC_URI[x86_64_v2_perl-Term-Table.sha256sum] = "54d4b0d6a536a56a7e70c80cc43760684f43fcd140e3127d329e2a831f35d9bf"
 
-URI_aarch64_perl-Term-Table = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Term-Table-0.018-513.el10.noarch.rpm;name=aarch64_perl-Term-Table;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Term-Table}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Term-Table-0.018-513.el10.noarch.rpm;name=aarch64_perl-Term-Table;unpack=0"
 SRC_URI[aarch64_perl-Term-Table.sha256sum] = "54d4b0d6a536a56a7e70c80cc43760684f43fcd140e3127d329e2a831f35d9bf"
 
 RDEPENDS:perl-Term-Table = " \

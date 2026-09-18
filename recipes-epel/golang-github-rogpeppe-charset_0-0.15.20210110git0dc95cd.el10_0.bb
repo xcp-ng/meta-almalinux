@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-rogpeppe-charset-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-rogpeppe-charset-0-0.15.20210110git0dc95cd.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-rogpeppe-charset-0-0.15.20210110git0dc95cd.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "edea95f256ead768d280f74b58a14dd36c55512dcb1d397f3157af420b2167c3"
 
-URI_aarch64_golang-github-rogpeppe-charset-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rogpeppe-charset-devel-0-0.15.20210110git0dc95cd.el10_0.noarch.rpm;name=aarch64_golang-github-rogpeppe-charset-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-rogpeppe-charset-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rogpeppe-charset-devel-0-0.15.20210110git0dc95cd.el10_0.noarch.rpm;name=aarch64_golang-github-rogpeppe-charset-devel;unpack=0"
 SRC_URI[aarch64_golang-github-rogpeppe-charset-devel.sha256sum] = "a66e35f4fea42cd811bbd88ce34d9687d894654d51d302ed9ec5c3b83099d622"
 
 RDEPENDS:golang-github-rogpeppe-charset-devel = " \

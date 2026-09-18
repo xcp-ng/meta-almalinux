@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-distlib \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-distlib-0.3.8-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-distlib-0.3.8-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4f225d52ec449229132a2b0c4186cc591cdd1887f605087de107d74ca8bf9e17"
 
-URI_x86_64_v2_python3-distlib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-distlib-0.3.8-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-distlib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-distlib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-distlib-0.3.8-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-distlib;unpack=0"
 SRC_URI[x86_64_v2_python3-distlib.sha256sum] = "24005df817b48d59053c773b172828ed2f1e8aa72912168b2cda703c3d45b6dc"
 
-URI_aarch64_python3-distlib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-distlib-0.3.8-3.el10_0.noarch.rpm;name=aarch64_python3-distlib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-distlib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-distlib-0.3.8-3.el10_0.noarch.rpm;name=aarch64_python3-distlib;unpack=0"
 SRC_URI[aarch64_python3-distlib.sha256sum] = "30ec985ca42358e305304719cf9a8b9c1a87aa2bfc36b019aae13c11408ceeac"
 
 RDEPENDS:python3-distlib = " \

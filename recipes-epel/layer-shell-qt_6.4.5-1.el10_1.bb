@@ -10,24 +10,19 @@ PACKAGES = " \
  layer-shell-qt-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/layer-shell-qt-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/layer-shell-qt-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ca56cdc5f2b56121eacd736ab57d5dc4cae31c95a63fffb5281488bf8526f5de"
 
-URI_x86_64_v2_layer-shell-qt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/layer-shell-qt-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_layer-shell-qt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_layer-shell-qt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/layer-shell-qt-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_layer-shell-qt;unpack=0"
 SRC_URI[x86_64_v2_layer-shell-qt.sha256sum] = "10394c5f520096de53fad95989145b0ec1adfd206c25969099f085944fb71d5a"
 
-URI_x86_64_v2_layer-shell-qt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/layer-shell-qt-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_layer-shell-qt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_layer-shell-qt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/layer-shell-qt-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_layer-shell-qt-devel;unpack=0"
 SRC_URI[x86_64_v2_layer-shell-qt-devel.sha256sum] = "3a675f549fbe50fd40145ec824a7f28c6e1e1f570ea3e7ca055e54500c7e3d17"
 
-URI_aarch64_layer-shell-qt = "${EPEL_MIRROR}/aarch64/Packages/l/layer-shell-qt-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_layer-shell-qt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_layer-shell-qt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/layer-shell-qt-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_layer-shell-qt;unpack=0"
 SRC_URI[aarch64_layer-shell-qt.sha256sum] = "102886d5f870b02ef1b357a36d7eaa88a338d677dffcfab3ed47576a7fbf1180"
 
-URI_aarch64_layer-shell-qt-devel = "${EPEL_MIRROR}/aarch64/Packages/l/layer-shell-qt-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_layer-shell-qt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_layer-shell-qt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/layer-shell-qt-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_layer-shell-qt-devel;unpack=0"
 SRC_URI[aarch64_layer-shell-qt-devel.sha256sum] = "1e0a9eb3032d07d94a2029e472be11964e42872fdd2eb90888db21ba6be35bab"
 
 RDEPENDS:layer-shell-qt = " \

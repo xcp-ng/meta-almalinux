@@ -11,34 +11,27 @@ PACKAGES = " \
  fuse-libs \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/fuse-2.9.9-25.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/fuse-2.9.9-25.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "002ad749efec12bec6badf5a9bd6b0aae327b97d6aad9ce67d1d089f33539397"
 
-URI_x86_64_v2_fuse = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fuse-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fuse}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fuse-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse;unpack=0"
 SRC_URI[x86_64_v2_fuse.sha256sum] = "61d73e32ebfaaa3c448a606e0e54ea65c8ad522138dc2e45a284e69913fb612c"
 RPROVIDES:fuse:append:x86_64_v2 = " virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
 
-URI_x86_64_v2_fuse-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/fuse-devel-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fuse-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/fuse-devel-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse-devel;unpack=0"
 SRC_URI[x86_64_v2_fuse-devel.sha256sum] = "1e601e226e85dce95391555de18d2cd81ca79747e186e84ad032028b23b03d52"
 
-URI_x86_64_v2_fuse-libs = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fuse-libs-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fuse-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fuse-libs-2.9.9-25.el10.x86_64_v2.rpm;name=x86_64_v2_fuse-libs;unpack=0"
 SRC_URI[x86_64_v2_fuse-libs.sha256sum] = "73f72e88c99c90ddbe52cb250ee246ac0716ae46f22419de84c75b7790e27a62"
 
-URI_aarch64_fuse = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fuse}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse;unpack=0"
 SRC_URI[aarch64_fuse.sha256sum] = "105f8d652415fd422860640340c9cd2abf40a98d0519f4fde1b4d0e130c4ac4c"
 RPROVIDES:fuse:append:aarch64 = " virtual/_squashfuse_and_fuse__or_kmod_squashfs.ko_"
 
-URI_aarch64_fuse-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/fuse-devel-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fuse-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/fuse-devel-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse-devel;unpack=0"
 SRC_URI[aarch64_fuse-devel.sha256sum] = "cac4b38182d84fce0fcef3f19b8d154853d769bdf35f3581d3333b5667fdf1bd"
 
-URI_aarch64_fuse-libs = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse-libs-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fuse-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fuse-libs-2.9.9-25.el10.aarch64.rpm;name=aarch64_fuse-libs;unpack=0"
 SRC_URI[aarch64_fuse-libs.sha256sum] = "dc7869ff1b1a8678bd8d358628fbadf7d32e2d356a69aecc6c7f7677e3c889aa"
 
 RDEPENDS:fuse = " \

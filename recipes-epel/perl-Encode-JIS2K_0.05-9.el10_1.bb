@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Encode-JIS2K \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Encode-JIS2K-0.05-9.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Encode-JIS2K-0.05-9.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "98bd77e0061786ed02abf5daf06ef610a4a7fe0c095826f4eb3fbfebd7dbc38e"
 
-URI_x86_64_v2_perl-Encode-JIS2K = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Encode-JIS2K-0.05-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Encode-JIS2K;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Encode-JIS2K}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Encode-JIS2K-0.05-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Encode-JIS2K;unpack=0"
 SRC_URI[x86_64_v2_perl-Encode-JIS2K.sha256sum] = "69868118db81b58f2c52c3d07838be7dfbf496abdb7a781667d6647240a4b7cc"
 
-URI_aarch64_perl-Encode-JIS2K = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Encode-JIS2K-0.05-9.el10_1.aarch64.rpm;name=aarch64_perl-Encode-JIS2K;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Encode-JIS2K}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Encode-JIS2K-0.05-9.el10_1.aarch64.rpm;name=aarch64_perl-Encode-JIS2K;unpack=0"
 SRC_URI[aarch64_perl-Encode-JIS2K.sha256sum] = "eddaf380c4ff4fb2efe62eb671ff630622a27ca8f4a88791859712b456fd0e56"
 
 RDEPENDS:perl-Encode-JIS2K = " \

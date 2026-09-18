@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-gix-blame-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-gix-blame-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-gix-blame-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1593a524c067e8fea929e02d5f5ccfeeab2dda183992d73b7032703881e2de8d"
 
-URI_x86_64_v2_rust-gix-blame+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-blame+default-devel-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-blame+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-blame+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-blame+default-devel-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-blame+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-blame+default-devel.sha256sum] = "4a654b54e2ae544f63dc8450934864cb0fdda708f203289b11edd054e18ccae1"
 
-URI_x86_64_v2_rust-gix-blame-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-blame-devel-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-blame-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-blame-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-blame-devel-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-blame-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-blame-devel.sha256sum] = "c8d1250ca868d654e80adcd6c70b0fbec7c64e71491b11618ec72290588c6883"
 
-URI_aarch64_rust-gix-blame+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-blame+default-devel-0.3.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-blame+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-blame+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-blame+default-devel-0.3.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-blame+default-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-blame+default-devel.sha256sum] = "b2702a46cf279a2ad89b3c5ef201e3b404f16ed153171038364756c8dc194add"
 
-URI_aarch64_rust-gix-blame-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-blame-devel-0.3.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-blame-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-blame-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-blame-devel-0.3.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-blame-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-blame-devel.sha256sum] = "5e9db5952ed08f6bb7e19ab129af0597428a059100016dacb5eee3a9a48c2ac1"
 
 RDEPENDS:rust-gix-blame+default-devel = " \

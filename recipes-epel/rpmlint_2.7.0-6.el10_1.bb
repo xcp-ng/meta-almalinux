@@ -9,16 +9,13 @@ PACKAGES = " \
  rpmlint \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rpmlint-2.7.0-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rpmlint-2.7.0-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2861edf20ef53cbd3ccf311363bf5c2f8676400fc5b082710018e1946e1e22dc"
 
-URI_x86_64_v2_rpmlint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rpmlint-2.7.0-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rpmlint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rpmlint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rpmlint-2.7.0-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rpmlint;unpack=0"
 SRC_URI[x86_64_v2_rpmlint.sha256sum] = "0d39e8b2500b488ea832ed37f0334eff7c09a312d4e2f5ea2ba34248307efdb9"
 
-URI_aarch64_rpmlint = "${EPEL_MIRROR}/aarch64/Packages/r/rpmlint-2.7.0-6.el10_1.noarch.rpm;name=aarch64_rpmlint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rpmlint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rpmlint-2.7.0-6.el10_1.noarch.rpm;name=aarch64_rpmlint;unpack=0"
 SRC_URI[aarch64_rpmlint.sha256sum] = "9a1ab467c0e8ac4d82df046ab68b6415d436f048c182b157a5100831f6cb9922"
 
 RDEPENDS:rpmlint = " \

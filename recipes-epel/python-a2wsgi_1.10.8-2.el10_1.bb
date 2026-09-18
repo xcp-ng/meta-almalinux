@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-a2wsgi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-a2wsgi-1.10.8-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-a2wsgi-1.10.8-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e0fd4715357d0179eeff27727972dc9fbfa21ad2925e74395d1177fb77fc0266"
 
-URI_x86_64_v2_python3-a2wsgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-a2wsgi-1.10.8-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-a2wsgi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-a2wsgi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-a2wsgi-1.10.8-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-a2wsgi;unpack=0"
 SRC_URI[x86_64_v2_python3-a2wsgi.sha256sum] = "442689601b7c7731cf8b1a98c29dfcf7e4dbe83e260e0610f02329516dee71d0"
 
-URI_aarch64_python3-a2wsgi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-a2wsgi-1.10.8-2.el10_1.noarch.rpm;name=aarch64_python3-a2wsgi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-a2wsgi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-a2wsgi-1.10.8-2.el10_1.noarch.rpm;name=aarch64_python3-a2wsgi;unpack=0"
 SRC_URI[aarch64_python3-a2wsgi.sha256sum] = "01a0f62be77682a4321c0cbe184025dbb06edb265ea9cbbc2b0328d6c96594c4"
 
 RDEPENDS:python3-a2wsgi = " \

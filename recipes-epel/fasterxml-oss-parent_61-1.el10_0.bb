@@ -9,16 +9,13 @@ PACKAGES = " \
  fasterxml-oss-parent \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/fasterxml-oss-parent-61-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fasterxml-oss-parent-61-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dc82dddf6de346a66492e2bacc80eaeb4e49f196d02070e349c383b012b5a174"
 
-URI_x86_64_v2_fasterxml-oss-parent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fasterxml-oss-parent-61-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_fasterxml-oss-parent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fasterxml-oss-parent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fasterxml-oss-parent-61-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_fasterxml-oss-parent;unpack=0"
 SRC_URI[x86_64_v2_fasterxml-oss-parent.sha256sum] = "3b94b502c1d7a1924624302bd6a294222f8231dfe529a2e0b93e65cf03cabbf8"
 
-URI_aarch64_fasterxml-oss-parent = "${EPEL_MIRROR}/aarch64/Packages/f/fasterxml-oss-parent-61-1.el10_0.noarch.rpm;name=aarch64_fasterxml-oss-parent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fasterxml-oss-parent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fasterxml-oss-parent-61-1.el10_0.noarch.rpm;name=aarch64_fasterxml-oss-parent;unpack=0"
 SRC_URI[aarch64_fasterxml-oss-parent.sha256sum] = "cc91f225a202310e4ceea0fabb74691d1e2773efbde7823267e7ac4b4e9dbee5"
 
 RDEPENDS:fasterxml-oss-parent = " \

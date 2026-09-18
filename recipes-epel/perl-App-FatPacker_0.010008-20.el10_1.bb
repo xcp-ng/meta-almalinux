@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-App-FatPacker \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-App-FatPacker-0.010008-20.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-App-FatPacker-0.010008-20.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "496f8da8bd3ccde996d6419bdab7ac6d997ca7c532b52f0beeea353fded5d9d4"
 
-URI_x86_64_v2_perl-App-FatPacker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-FatPacker-0.010008-20.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-FatPacker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-App-FatPacker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-FatPacker-0.010008-20.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-FatPacker;unpack=0"
 SRC_URI[x86_64_v2_perl-App-FatPacker.sha256sum] = "e6cafdd0a1362283f1f7b05afe6e530bddfbc893bbd05a0741586cc0d8591b60"
 
-URI_aarch64_perl-App-FatPacker = "${EPEL_MIRROR}/aarch64/Packages/p/perl-App-FatPacker-0.010008-20.el10_1.noarch.rpm;name=aarch64_perl-App-FatPacker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-App-FatPacker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-App-FatPacker-0.010008-20.el10_1.noarch.rpm;name=aarch64_perl-App-FatPacker;unpack=0"
 SRC_URI[aarch64_perl-App-FatPacker.sha256sum] = "1df731881595537e994a5f61191b5ccaaea0d0c9f10d163ffb933fb8fc279a04"
 
 RDEPENDS:perl-App-FatPacker = " \

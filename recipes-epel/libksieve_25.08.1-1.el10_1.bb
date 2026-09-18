@@ -11,32 +11,25 @@ PACKAGES = " \
  libksieve-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libksieve-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libksieve-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "93c21cf3e80dc2d065aa0908706268d676b9336dc0ffca22c6df7c12374e4c0c"
 
-URI_x86_64_v2_libksieve = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libksieve;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libksieve}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libksieve;unpack=0"
 SRC_URI[x86_64_v2_libksieve.sha256sum] = "1494bf3a301f280b1c1aee9f3aecc6d87861b23a004e1b30c4c1b92edd665add"
 
-URI_x86_64_v2_libksieve-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libksieve-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libksieve-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libksieve-devel;unpack=0"
 SRC_URI[x86_64_v2_libksieve-devel.sha256sum] = "6d6a0a8b4c82d7f815b944c683f2d1768fbd8b2809fbaa32ec01164585b5e5de"
 
-URI_x86_64_v2_libksieve-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_libksieve-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libksieve-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libksieve-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_libksieve-doc;unpack=0"
 SRC_URI[x86_64_v2_libksieve-doc.sha256sum] = "e11cc92f4ab9e0fd19781eb734c4e9e65b9d673b453490801f04e5d4a1a3fc6d"
 
-URI_aarch64_libksieve = "${EPEL_MIRROR}/aarch64/Packages/l/libksieve-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libksieve;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libksieve}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libksieve-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libksieve;unpack=0"
 SRC_URI[aarch64_libksieve.sha256sum] = "54f863a8822a8eb464d7002b5f1ab0eb0550203a75a41ef6ca6470c246628a10"
 
-URI_aarch64_libksieve-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libksieve-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libksieve-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libksieve-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libksieve-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libksieve-devel;unpack=0"
 SRC_URI[aarch64_libksieve-devel.sha256sum] = "d2681ec89010332d28fb79802d9e3066d23322fae75fddfa44c297215f7281ec"
 
-URI_aarch64_libksieve-doc = "${EPEL_MIRROR}/aarch64/Packages/l/libksieve-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_libksieve-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libksieve-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libksieve-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_libksieve-doc;unpack=0"
 SRC_URI[aarch64_libksieve-doc.sha256sum] = "e0ab5b772c551e64fc0ad215ed1bfe848a8faa04bb11cd6d8db4ecd90ef19757"
 
 RDEPENDS:libksieve = " \

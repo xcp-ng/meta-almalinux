@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-factory-boy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-factory-boy-3.3.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-factory-boy-3.3.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7b76265b13e53d8040b69aa809460b5ec8f549e4e4322a718c2c46839d4771eb"
 
-URI_x86_64_v2_python-factory-boy-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-factory-boy-doc-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-factory-boy-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-factory-boy-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-factory-boy-doc-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-factory-boy-doc;unpack=0"
 SRC_URI[x86_64_v2_python-factory-boy-doc.sha256sum] = "e33d1be2f8f8ae3fb40313dfacf03d06be24f8e2794576b21f5ba8683b8f1d21"
 
-URI_x86_64_v2_python3-factory-boy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-factory-boy-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-factory-boy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-factory-boy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-factory-boy-3.3.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-factory-boy;unpack=0"
 SRC_URI[x86_64_v2_python3-factory-boy.sha256sum] = "08f58a898a51df001c79d68c211ccece5a10189b1392dd3ac323444516c50e23"
 
-URI_aarch64_python-factory-boy-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-factory-boy-doc-3.3.1-2.el10_0.noarch.rpm;name=aarch64_python-factory-boy-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-factory-boy-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-factory-boy-doc-3.3.1-2.el10_0.noarch.rpm;name=aarch64_python-factory-boy-doc;unpack=0"
 SRC_URI[aarch64_python-factory-boy-doc.sha256sum] = "d3a743fe3a3311ddadbb770335fe67533d277e0c30ca2bd7834120cc0b87b9ab"
 
-URI_aarch64_python3-factory-boy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-factory-boy-3.3.1-2.el10_0.noarch.rpm;name=aarch64_python3-factory-boy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-factory-boy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-factory-boy-3.3.1-2.el10_0.noarch.rpm;name=aarch64_python3-factory-boy;unpack=0"
 SRC_URI[aarch64_python3-factory-boy.sha256sum] = "6d43f4873b6ebe1fbc1678e1368e7b2798b524d9e1fb395dae09afb3eb68daa4"
 
 RDEPENDS:python-factory-boy-doc = " \

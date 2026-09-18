@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-docker-events-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-events-0-0.16.20200726gite31b211.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-events-0-0.16.20200726gite31b211.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9ee1eabcb5fa03bcce42dd0cbca288b76c6d89af4ae2d27bb981b7bcea8736bc"
 
-URI_aarch64_golang-github-docker-events-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-events-devel-0-0.16.20200726gite31b211.el10_0.noarch.rpm;name=aarch64_golang-github-docker-events-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-docker-events-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-events-devel-0-0.16.20200726gite31b211.el10_0.noarch.rpm;name=aarch64_golang-github-docker-events-devel;unpack=0"
 SRC_URI[aarch64_golang-github-docker-events-devel.sha256sum] = "4738f1b5714feecf064072b68fd4e77a0f2813fe09736073e6334d361ce8c0fc"
 
 RDEPENDS:golang-github-docker-events-devel = " \

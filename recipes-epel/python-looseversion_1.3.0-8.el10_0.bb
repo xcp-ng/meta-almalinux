@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-looseversion \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-looseversion-1.3.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-looseversion-1.3.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f9469721d9fadb5c6a1bd8598efd3685580e81e7b7fc1d1c3425e7e836f88fb3"
 
-URI_x86_64_v2_python3-looseversion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-looseversion-1.3.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-looseversion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-looseversion}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-looseversion-1.3.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-looseversion;unpack=0"
 SRC_URI[x86_64_v2_python3-looseversion.sha256sum] = "a92f2fc22f8fe32ef9ef9a6d57e8bb15be882b0d4d8b2f25748fa06764f8355b"
 
-URI_aarch64_python3-looseversion = "${EPEL_MIRROR}/aarch64/Packages/p/python3-looseversion-1.3.0-8.el10_0.noarch.rpm;name=aarch64_python3-looseversion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-looseversion}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-looseversion-1.3.0-8.el10_0.noarch.rpm;name=aarch64_python3-looseversion;unpack=0"
 SRC_URI[aarch64_python3-looseversion.sha256sum] = "6e8726f15bdfff9c2635f5829356a648e4e4a9fe4cacb883e9221b518fdd8768"
 
 RDEPENDS:python3-looseversion = " \

@@ -17,80 +17,61 @@ PACKAGES = " \
  python3-hypothesis+zoneinfo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-hypothesis-6.104.2-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hypothesis-6.104.2-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "842f0586187da3f1d6b4e2c32c52839299e48fdc83b0ce31ac5d28632590a59d"
 
-URI_x86_64_v2_python3-hypothesis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis.sha256sum] = "e6771d8e30950a76d07a0852f4691772266dba91d390b065cdc2c1d50e903a86"
 
-URI_x86_64_v2_python3-hypothesis+dateutil = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+dateutil-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+dateutil;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+dateutil}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+dateutil-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+dateutil;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+dateutil.sha256sum] = "09812d61572fa34984c12dcd055de171db63990607eadacfd619708bebf878d0"
 
-URI_x86_64_v2_python3-hypothesis+lark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+lark-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+lark;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+lark}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+lark-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+lark;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+lark.sha256sum] = "df11723bad9623911cf457a05f2d78262e2a3432991197cc55596a8868e18e8c"
 
-URI_x86_64_v2_python3-hypothesis+numpy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+numpy-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+numpy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+numpy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+numpy-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+numpy;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+numpy.sha256sum] = "919e463c060a285876e59a7bd6dc06b5ace38e5edece53063a5d14d55c127ad4"
 
-URI_x86_64_v2_python3-hypothesis+pandas = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pandas-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pandas;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+pandas}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pandas-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pandas;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+pandas.sha256sum] = "df9d111bfb94aeb3d20d0c744c21fe23f7793c2184aa668cb8dd0888dae63e60"
 
-URI_x86_64_v2_python3-hypothesis+pytest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pytest-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pytest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+pytest}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pytest-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pytest;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+pytest.sha256sum] = "f1eada4836dbd9074046f3a969c16a807160eb4f65b329c0bb0f0e5b3e490d92"
 
-URI_x86_64_v2_python3-hypothesis+pytz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pytz-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pytz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+pytz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+pytz-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+pytz;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+pytz.sha256sum] = "2a3004dbe64d770a6adb49135dc2d8182ac989a432c60bf4ae712ca1f6a3fbd7"
 
-URI_x86_64_v2_python3-hypothesis+redis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+redis-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+redis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+redis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+redis-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+redis;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+redis.sha256sum] = "159a3b53866c79701ea71a9f3e30148eaa3978614ba81f4bae965f3dfcd9a596"
 
-URI_x86_64_v2_python3-hypothesis+zoneinfo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+zoneinfo-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+zoneinfo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hypothesis+zoneinfo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hypothesis+zoneinfo-6.104.2-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hypothesis+zoneinfo;unpack=0"
 SRC_URI[x86_64_v2_python3-hypothesis+zoneinfo.sha256sum] = "7e6502e60b292a13d908631ff44137fe9eb0185f3d468cc5899b9d2a0f8d71a8"
 
-URI_aarch64_python3-hypothesis = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis;unpack=0"
 SRC_URI[aarch64_python3-hypothesis.sha256sum] = "b11538d78ed33dfe5f3f153140d2a537bf8909c02e9d9044d76a820d7f1394b1"
 
-URI_aarch64_python3-hypothesis+dateutil = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+dateutil-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+dateutil;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+dateutil}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+dateutil-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+dateutil;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+dateutil.sha256sum] = "48c4894d487dbf5bd0f1ca35aaf1db28e0141047b0fdd6b8d31fdd5986b634f7"
 
-URI_aarch64_python3-hypothesis+lark = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+lark-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+lark;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+lark}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+lark-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+lark;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+lark.sha256sum] = "a7b0eeef9e1b6aaef95559f8ef7b03d02c82c85252218ba2902d0ea019b33633"
 
-URI_aarch64_python3-hypothesis+numpy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+numpy-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+numpy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+numpy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+numpy-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+numpy;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+numpy.sha256sum] = "31e6bdcaf06bf1122bf2c5d6adb556a6af09bdeb259e9d534583339b9fa53c89"
 
-URI_aarch64_python3-hypothesis+pandas = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pandas-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pandas;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+pandas}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pandas-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pandas;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+pandas.sha256sum] = "2381d2d2fc15f4457a06d3ff6b41e56ecc7308cd6b19bd74daead9468bd73af7"
 
-URI_aarch64_python3-hypothesis+pytest = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pytest-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pytest;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+pytest}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pytest-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pytest;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+pytest.sha256sum] = "b751de220290644e30146c10eae12d315f7f57ef0a0a9b1c83133af960ba4bb5"
 
-URI_aarch64_python3-hypothesis+pytz = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pytz-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pytz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+pytz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+pytz-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+pytz;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+pytz.sha256sum] = "e289d52034918f39c7f0e0efc77471669e5d68863af433483868f06ffc35c7ae"
 
-URI_aarch64_python3-hypothesis+redis = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+redis-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+redis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+redis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+redis-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+redis;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+redis.sha256sum] = "1879806d42b844a6be08c2dd0b51c62fb4ee36cafd452dd7e6a84a4e3545ec3a"
 
-URI_aarch64_python3-hypothesis+zoneinfo = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+zoneinfo-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+zoneinfo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hypothesis+zoneinfo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hypothesis+zoneinfo-6.104.2-7.el10_0.noarch.rpm;name=aarch64_python3-hypothesis+zoneinfo;unpack=0"
 SRC_URI[aarch64_python3-hypothesis+zoneinfo.sha256sum] = "315dc12c42763e9233e591e78dec376a23a5f64a04dc94f709f00173b19e8b58"
 
 RDEPENDS:python3-hypothesis = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-distributed \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-distributed-2025.4.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-distributed-2025.4.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "939ffa5a3b8e55f396bd99aa29cc9e6fb1ce84e2835a7fc9bad4801791e32062"
 
-URI_x86_64_v2_python3-distributed = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-distributed-2025.4.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-distributed;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-distributed}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-distributed-2025.4.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-distributed;unpack=0"
 SRC_URI[x86_64_v2_python3-distributed.sha256sum] = "b7e47b09ee4bd1e6130af02d8f788431991de86e752646584c9f08eea6ce43ef"
 
-URI_aarch64_python3-distributed = "${EPEL_MIRROR}/aarch64/Packages/p/python3-distributed-2025.4.0-2.el10_1.noarch.rpm;name=aarch64_python3-distributed;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-distributed}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-distributed-2025.4.0-2.el10_1.noarch.rpm;name=aarch64_python3-distributed;unpack=0"
 SRC_URI[aarch64_python3-distributed.sha256sum] = "1baf1b0eeb7d0628c8bc79f762634b7505c3c32a35436738698803b8ff88cbf1"
 
 RDEPENDS:python3-distributed = " \

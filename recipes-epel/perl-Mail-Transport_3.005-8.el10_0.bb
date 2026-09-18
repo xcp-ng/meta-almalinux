@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Mail-Transport \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Mail-Transport-3.005-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Mail-Transport-3.005-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5cc977bc57720397f2154acf21bc3f773a06638194eb563f08b3d66b6ef33e3a"
 
-URI_x86_64_v2_perl-Mail-Transport = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Mail-Transport-3.005-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Mail-Transport;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Mail-Transport}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Mail-Transport-3.005-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Mail-Transport;unpack=0"
 SRC_URI[x86_64_v2_perl-Mail-Transport.sha256sum] = "996f4018aa040012ac810e0d33ce1de5a450d003708f54ddf9dcd11019e8776b"
 
-URI_aarch64_perl-Mail-Transport = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Mail-Transport-3.005-8.el10_0.noarch.rpm;name=aarch64_perl-Mail-Transport;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Mail-Transport}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Mail-Transport-3.005-8.el10_0.noarch.rpm;name=aarch64_perl-Mail-Transport;unpack=0"
 SRC_URI[aarch64_perl-Mail-Transport.sha256sum] = "b4fe4d86a5429f6605804f49108823bbb303212ecf5609b50520b3304bfde7cf"
 
 RDEPENDS:perl-Mail-Transport = " \

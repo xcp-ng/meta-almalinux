@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-fusepy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-fuse-3.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-fuse-3.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "771e7397e6b5da28f0879ec364d2a949f67ab1bfde994b3b0ddde4c021969e30"
 
-URI_x86_64_v2_python3-fusepy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fusepy-3.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fusepy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-fusepy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-fusepy-3.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-fusepy;unpack=0"
 SRC_URI[x86_64_v2_python3-fusepy.sha256sum] = "acc4b71453b489951f074b4e50009a1cdfe7cd2d5c84bd1409227c62d19c5847"
 
-URI_aarch64_python3-fusepy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-fusepy-3.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-fusepy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-fusepy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-fusepy-3.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-fusepy;unpack=0"
 SRC_URI[aarch64_python3-fusepy.sha256sum] = "6ad2cff01b0db9c70e34a289eb0aae9fb647b6b850ef745ded573a86026f5eda"
 
 RDEPENDS:python3-fusepy = " \

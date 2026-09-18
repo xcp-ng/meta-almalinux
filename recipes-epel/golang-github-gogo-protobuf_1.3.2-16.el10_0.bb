@@ -10,24 +10,19 @@ PACKAGES = " \
  golang-github-gogo-protobuf-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-gogo-protobuf-1.3.2-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-gogo-protobuf-1.3.2-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a05f6fc14979d08869558dd2ff3fa1fcc65e0a86b6c82e2a76a31efa57fb213a"
 
-URI_x86_64_v2_golang-github-gogo-protobuf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gogo-protobuf-1.3.2-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_golang-github-gogo-protobuf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-gogo-protobuf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gogo-protobuf-1.3.2-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_golang-github-gogo-protobuf;unpack=0"
 SRC_URI[x86_64_v2_golang-github-gogo-protobuf.sha256sum] = "ce46035d45aa105adb8084205d15bf6529f733a88357b3bd5fdca82e986384b8"
 
-URI_x86_64_v2_golang-github-gogo-protobuf-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gogo-protobuf-devel-1.3.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gogo-protobuf-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-gogo-protobuf-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gogo-protobuf-devel-1.3.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gogo-protobuf-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-gogo-protobuf-devel.sha256sum] = "d02276291d701e04b3fef52abbc315a7dde7115490ee0142367bf96526b89f9b"
 
-URI_aarch64_golang-github-gogo-protobuf = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gogo-protobuf-1.3.2-16.el10_0.aarch64.rpm;name=aarch64_golang-github-gogo-protobuf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-gogo-protobuf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gogo-protobuf-1.3.2-16.el10_0.aarch64.rpm;name=aarch64_golang-github-gogo-protobuf;unpack=0"
 SRC_URI[aarch64_golang-github-gogo-protobuf.sha256sum] = "6724d79081f4db99e90d8edc4e19b4178a2b76eec05d46902e0a23d135f0f1d5"
 
-URI_aarch64_golang-github-gogo-protobuf-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gogo-protobuf-devel-1.3.2-16.el10_0.noarch.rpm;name=aarch64_golang-github-gogo-protobuf-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-gogo-protobuf-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gogo-protobuf-devel-1.3.2-16.el10_0.noarch.rpm;name=aarch64_golang-github-gogo-protobuf-devel;unpack=0"
 SRC_URI[aarch64_golang-github-gogo-protobuf-devel.sha256sum] = "62697d663a37bca0417dc77c16a7b8d03be54b0f48e413b9b16c9fdad593689f"
 
 RDEPENDS:golang-github-gogo-protobuf = " \

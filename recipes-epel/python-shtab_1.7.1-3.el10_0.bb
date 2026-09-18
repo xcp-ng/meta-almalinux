@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-shtab \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-shtab-1.7.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-shtab-1.7.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b56919b1128e6d1efd74373cfd65e6c4dcbbc338f35fddafdf9b38d3b13d8377"
 
-URI_x86_64_v2_python3-shtab = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-shtab-1.7.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-shtab;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-shtab}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-shtab-1.7.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-shtab;unpack=0"
 SRC_URI[x86_64_v2_python3-shtab.sha256sum] = "5962a216adf143ecabb9116e641bee2ca9f0be24bfd820a922790f38fa37a714"
 
-URI_aarch64_python3-shtab = "${EPEL_MIRROR}/aarch64/Packages/p/python3-shtab-1.7.1-3.el10_0.noarch.rpm;name=aarch64_python3-shtab;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-shtab}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-shtab-1.7.1-3.el10_0.noarch.rpm;name=aarch64_python3-shtab;unpack=0"
 SRC_URI[aarch64_python3-shtab.sha256sum] = "457745bfd86c5dd3af6d305e3b843324238569428e6ff61b1c2db83b7ed602dc"
 
 RDEPENDS:python3-shtab = " \

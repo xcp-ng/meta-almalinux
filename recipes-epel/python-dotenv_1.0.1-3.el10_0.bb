@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-dotenv+cli \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-dotenv-1.0.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-dotenv-1.0.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "66711dba2fa5a807f7cc6218b7945a1673e95034be7cd998eeea4cc2d4a690c5"
 
-URI_x86_64_v2_python3-dotenv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dotenv-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dotenv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dotenv}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dotenv-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dotenv;unpack=0"
 SRC_URI[x86_64_v2_python3-dotenv.sha256sum] = "aad33ed6594a28260f84584d8f62faf51f956164e87c5c56fc59355e036b23c2"
 
-URI_x86_64_v2_python3-dotenv+cli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dotenv+cli-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dotenv+cli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dotenv+cli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dotenv+cli-1.0.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dotenv+cli;unpack=0"
 SRC_URI[x86_64_v2_python3-dotenv+cli.sha256sum] = "f869a5f245a0f84af24839fd7f75d21a6928b5a1151d3bcde1c846e50c95845e"
 
-URI_aarch64_python3-dotenv = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dotenv-1.0.1-3.el10_0.noarch.rpm;name=aarch64_python3-dotenv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dotenv}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dotenv-1.0.1-3.el10_0.noarch.rpm;name=aarch64_python3-dotenv;unpack=0"
 SRC_URI[aarch64_python3-dotenv.sha256sum] = "f248d05f58e38f77ed4e0a5975d469bc2dd40d95792aa37818d6d806b2f29b51"
 
-URI_aarch64_python3-dotenv+cli = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dotenv+cli-1.0.1-3.el10_0.noarch.rpm;name=aarch64_python3-dotenv+cli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dotenv+cli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dotenv+cli-1.0.1-3.el10_0.noarch.rpm;name=aarch64_python3-dotenv+cli;unpack=0"
 SRC_URI[aarch64_python3-dotenv+cli.sha256sum] = "44eb3930535b16e2562ac16fc8a6f6184b580b36e098f6d237caa0cf8fcc8406"
 
 RDEPENDS:python3-dotenv = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  knavalbattle \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/knavalbattle-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/knavalbattle-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c6b32f19372213e852593d8c9f1168ae3ab97c222c0ff242bfe60bbc1ddb317"
 
-URI_x86_64_v2_knavalbattle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/knavalbattle-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_knavalbattle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_knavalbattle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/knavalbattle-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_knavalbattle;unpack=0"
 SRC_URI[x86_64_v2_knavalbattle.sha256sum] = "59c8c6d08755b55e2bafc9f752e0038852941d2d98418d6bd2f87df21fa74d49"
 
-URI_aarch64_knavalbattle = "${EPEL_MIRROR}/aarch64/Packages/k/knavalbattle-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_knavalbattle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_knavalbattle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/knavalbattle-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_knavalbattle;unpack=0"
 SRC_URI[aarch64_knavalbattle.sha256sum] = "ed3ae61cdd566a4cbffc3080f30091f4cfa309c86537c53a988a7a60e1259056"
 
 RDEPENDS:knavalbattle = " \

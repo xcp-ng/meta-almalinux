@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-SSH-Perl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SSH-Perl-2.142-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SSH-Perl-2.142-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "46dc846555dfa96d292818006899ffbe69f0ae73df5885b4313034be1f6b1e70"
 
-URI_x86_64_v2_perl-Net-SSH-Perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SSH-Perl-2.142-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Net-SSH-Perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-SSH-Perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SSH-Perl-2.142-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Net-SSH-Perl;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-SSH-Perl.sha256sum] = "70149e598971cf6f348ef029a91ce95221092d1b520a8cac9d66b2efb23f6f92"
 
-URI_aarch64_perl-Net-SSH-Perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SSH-Perl-2.142-1.el10_0.aarch64.rpm;name=aarch64_perl-Net-SSH-Perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-SSH-Perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SSH-Perl-2.142-1.el10_0.aarch64.rpm;name=aarch64_perl-Net-SSH-Perl;unpack=0"
 SRC_URI[aarch64_perl-Net-SSH-Perl.sha256sum] = "9e0a8f3c3a7866084d7347bf25f6cd338e9ab1be68a4fcb1fcd1cf24ae5cb46a"
 
 RDEPENDS:perl-Net-SSH-Perl = " \

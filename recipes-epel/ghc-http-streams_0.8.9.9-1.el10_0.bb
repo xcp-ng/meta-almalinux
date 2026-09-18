@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-streams-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-streams-0.8.9.9-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-streams-0.8.9.9-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "27a0311be929ad1ca056e7605d65bb42cefddcc36640f71584f6e33df9e2bc65"
 
-URI_x86_64_v2_ghc-http-streams = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-streams}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-streams.sha256sum] = "91b0b20353714c57fb1118b0c7057bb08761ca48c9b3ebbdbb6c995e20d19524"
 
-URI_x86_64_v2_ghc-http-streams-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-devel-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-streams-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-devel-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-streams-devel.sha256sum] = "3cdf0e40ae382589da2b482f5e3101eabb85e4bb396e8dc7a21b7a27ee299a94"
 
-URI_x86_64_v2_ghc-http-streams-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-doc-0.8.9.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-streams-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-streams-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-doc-0.8.9.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-streams-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-streams-doc.sha256sum] = "5882ab948999985715c8ea17d4662a3dca614f2d8b0145a74eaa8f3ed7310f3a"
 
-URI_x86_64_v2_ghc-http-streams-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-prof-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-streams-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-streams-prof-0.8.9.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-streams-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-streams-prof.sha256sum] = "c57a40ce7a3e87491060af9343fefbafd6789561d3a58fd04b83fc1d0d8988f0"
 
-URI_aarch64_ghc-http-streams = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-streams}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams;unpack=0"
 SRC_URI[aarch64_ghc-http-streams.sha256sum] = "5fb0353b8de58aa7fddc5feebfee2862808163a7ae127d31e8fbf1e744a50c77"
 
-URI_aarch64_ghc-http-streams-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-devel-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-streams-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-devel-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-streams-devel.sha256sum] = "0c85708fb94aa7ed1731557971d4c74e20d0363e12099e1c13f04f10be640882"
 
-URI_aarch64_ghc-http-streams-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-doc-0.8.9.9-1.el10_0.noarch.rpm;name=aarch64_ghc-http-streams-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-streams-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-doc-0.8.9.9-1.el10_0.noarch.rpm;name=aarch64_ghc-http-streams-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-streams-doc.sha256sum] = "2621dbbe32e3db5a55ba507696222eff6c78551266ccda580caff4f0ccea90d2"
 
-URI_aarch64_ghc-http-streams-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-prof-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-streams-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-streams-prof-0.8.9.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-streams-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-streams-prof.sha256sum] = "1e0b47ce40e0f09390a9d306bec56e9ff7793f5f18660b3653dafa6de61941c6"
 
 RDEPENDS:ghc-http-streams = " \

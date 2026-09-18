@@ -11,24 +11,19 @@ PACKAGES = " \
  gwenview-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gwenview-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gwenview-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c3472419dccee4d9de5c343a5108649a489c1464245081c65b3203acc641fc8"
 
-URI_x86_64_v2_gwenview = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gwenview-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gwenview;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gwenview}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gwenview-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gwenview;unpack=0"
 SRC_URI[x86_64_v2_gwenview.sha256sum] = "91073b340a31481fa7ea0289141995b155ac7b36803620109cb099a670238708"
 
-URI_x86_64_v2_gwenview-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gwenview-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gwenview-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gwenview-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gwenview-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gwenview-libs;unpack=0"
 SRC_URI[x86_64_v2_gwenview-libs.sha256sum] = "ac5fb2703b203e7088c4bc2f66447abe2a29b24de81fecee456cd1136dfe59a6"
 
-URI_aarch64_gwenview = "${EPEL_MIRROR}/aarch64/Packages/g/gwenview-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_gwenview;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gwenview}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gwenview-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_gwenview;unpack=0"
 SRC_URI[aarch64_gwenview.sha256sum] = "a1e50db9eb24a0e8ff74a0207fe5878c758b9125c7a167ba698c18ec8b72e652"
 
-URI_aarch64_gwenview-libs = "${EPEL_MIRROR}/aarch64/Packages/g/gwenview-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_gwenview-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gwenview-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gwenview-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_gwenview-libs;unpack=0"
 SRC_URI[aarch64_gwenview-libs.sha256sum] = "a2f26258be0188c330825b1577f4a1db000a57a86b7d634745191e78376f816e"
 
 RDEPENDS:gwenview = " \

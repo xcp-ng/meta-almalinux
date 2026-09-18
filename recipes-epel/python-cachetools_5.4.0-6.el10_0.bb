@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cachetools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cachetools-5.4.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cachetools-5.4.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "db2410006d35186f536a666013d5911061d243b57c0374ef654dbf50b13378f4"
 
-URI_x86_64_v2_python3-cachetools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachetools-5.4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachetools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cachetools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachetools-5.4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachetools;unpack=0"
 SRC_URI[x86_64_v2_python3-cachetools.sha256sum] = "9df95d984e8067971b0451d509e65bac99f53fc0e4b7f1d3fbedadbd3a7db990"
 
-URI_aarch64_python3-cachetools = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cachetools-5.4.0-6.el10_0.noarch.rpm;name=aarch64_python3-cachetools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cachetools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cachetools-5.4.0-6.el10_0.noarch.rpm;name=aarch64_python3-cachetools;unpack=0"
 SRC_URI[aarch64_python3-cachetools.sha256sum] = "ede62979c1a52fe13c8c1d2f3b8f691419d0f5f3c33e40a29b7e6d539f28abf2"
 
 RDEPENDS:python3-cachetools = " \

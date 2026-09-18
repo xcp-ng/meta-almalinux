@@ -10,24 +10,19 @@ PACKAGES = " \
  plexus-io-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/plexus-io-3.4.2-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/plexus-io-3.4.2-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fc18f2e23a4f8419c46076fb50d66c78f9e29a4936f5d0e4e616795999eea87f"
 
-URI_x86_64_v2_plexus-io = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/plexus-io-3.4.2-4.el10.noarch.rpm;name=x86_64_v2_plexus-io;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plexus-io}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/plexus-io-3.4.2-4.el10.noarch.rpm;name=x86_64_v2_plexus-io;unpack=0"
 SRC_URI[x86_64_v2_plexus-io.sha256sum] = "e0a59a14708715aa62c4e8a1556671c9ca177069d8e8497fbc0db5d0a856fe13"
 
-URI_x86_64_v2_plexus-io-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/plexus-io-javadoc-3.4.2-4.el10.noarch.rpm;name=x86_64_v2_plexus-io-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plexus-io-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/plexus-io-javadoc-3.4.2-4.el10.noarch.rpm;name=x86_64_v2_plexus-io-javadoc;unpack=0"
 SRC_URI[x86_64_v2_plexus-io-javadoc.sha256sum] = "6bdb55aac6e8ce62fa3947bce36621251fa2caeae17065d642fd964c45b583bc"
 
-URI_aarch64_plexus-io = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/plexus-io-3.4.2-4.el10.noarch.rpm;name=aarch64_plexus-io;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plexus-io}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/plexus-io-3.4.2-4.el10.noarch.rpm;name=aarch64_plexus-io;unpack=0"
 SRC_URI[aarch64_plexus-io.sha256sum] = "e0a59a14708715aa62c4e8a1556671c9ca177069d8e8497fbc0db5d0a856fe13"
 
-URI_aarch64_plexus-io-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/plexus-io-javadoc-3.4.2-4.el10.noarch.rpm;name=aarch64_plexus-io-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plexus-io-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/plexus-io-javadoc-3.4.2-4.el10.noarch.rpm;name=aarch64_plexus-io-javadoc;unpack=0"
 SRC_URI[aarch64_plexus-io-javadoc.sha256sum] = "6bdb55aac6e8ce62fa3947bce36621251fa2caeae17065d642fd964c45b583bc"
 
 RDEPENDS:plexus-io = " \

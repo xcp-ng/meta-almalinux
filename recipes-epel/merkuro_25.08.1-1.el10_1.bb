@@ -9,16 +9,13 @@ PACKAGES = " \
  merkuro \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/merkuro-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/merkuro-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c04a20a4d7a7389d6b7de146f5467a6439676dc19f05a3e01f4ce6d9cad1e07f"
 
-URI_x86_64_v2_merkuro = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/merkuro-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_merkuro;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_merkuro}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/merkuro-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_merkuro;unpack=0"
 SRC_URI[x86_64_v2_merkuro.sha256sum] = "f708a7771dfbe04002dca781750532dc63bbb9721abefe24e5c45d67ba43597f"
 
-URI_aarch64_merkuro = "${EPEL_MIRROR}/aarch64/Packages/m/merkuro-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_merkuro;unpack=0"
-SRC_URI:append = " ${URI_aarch64_merkuro}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/merkuro-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_merkuro;unpack=0"
 SRC_URI[aarch64_merkuro.sha256sum] = "97f1922d16beea3f53992396690f990a438d262328e1ba151389475a676b958b"
 
 RDEPENDS:merkuro = " \

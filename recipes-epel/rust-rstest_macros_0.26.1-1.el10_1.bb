@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-rstest_macros-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-rstest_macros-0.26.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-rstest_macros-0.26.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9570153e6edf7d5c03f4d0195a9e05b74605318994e395dd256e5d6dc1209bcc"
 
-URI_x86_64_v2_rust-rstest_macros+async-timeout-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+async-timeout-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+async-timeout-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rstest_macros+async-timeout-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+async-timeout-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+async-timeout-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rstest_macros+async-timeout-devel.sha256sum] = "7139a851980754e9b4eee8f4ce5d2af70a8f72ed68106400a3ccf2b61781d4fd"
 
-URI_x86_64_v2_rust-rstest_macros+crate-name-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+crate-name-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+crate-name-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rstest_macros+crate-name-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+crate-name-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+crate-name-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rstest_macros+crate-name-devel.sha256sum] = "f1ea601ad4d0a359f4d1291ceb74c39bc771447d351ac41def705f51414f9329"
 
-URI_x86_64_v2_rust-rstest_macros+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+default-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rstest_macros+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros+default-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rstest_macros+default-devel.sha256sum] = "a368709805d28656653ff8cd66dbb67b8a3114a679eab33c12db5cef523f4f8f"
 
-URI_x86_64_v2_rust-rstest_macros-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rstest_macros-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rstest_macros-devel-0.26.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rstest_macros-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rstest_macros-devel.sha256sum] = "053e9b2cf6ef56631ea2c6dca445dd812215bed989e1f89b0fa26c0eac7ab607"
 
-URI_aarch64_rust-rstest_macros+async-timeout-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+async-timeout-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+async-timeout-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rstest_macros+async-timeout-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+async-timeout-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+async-timeout-devel;unpack=0"
 SRC_URI[aarch64_rust-rstest_macros+async-timeout-devel.sha256sum] = "0f87ff80e7f61db59ad7c7a0b4bd9ea9a87ab1ff801721d5da19d21ca23d188e"
 
-URI_aarch64_rust-rstest_macros+crate-name-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+crate-name-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+crate-name-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rstest_macros+crate-name-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+crate-name-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+crate-name-devel;unpack=0"
 SRC_URI[aarch64_rust-rstest_macros+crate-name-devel.sha256sum] = "d1d4a47546bee017444cdc5021613b63fae49ed9d799373a4d0918f6fc84fd69"
 
-URI_aarch64_rust-rstest_macros+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+default-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rstest_macros+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros+default-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros+default-devel;unpack=0"
 SRC_URI[aarch64_rust-rstest_macros+default-devel.sha256sum] = "bd0a0caf9c0eb40d110987db8743d9ec888628c4f02602cb2139174e37821873"
 
-URI_aarch64_rust-rstest_macros-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rstest_macros-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rstest_macros-devel-0.26.1-1.el10_1.noarch.rpm;name=aarch64_rust-rstest_macros-devel;unpack=0"
 SRC_URI[aarch64_rust-rstest_macros-devel.sha256sum] = "4d041557629e471a85d7e531ac4590d6eae72d301ea20e648ef9a8e537f48c82"
 
 RDEPENDS:rust-rstest_macros+async-timeout-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-flake8-import-order \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-flake8-import-order-0.19.2-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-flake8-import-order-0.19.2-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d129d96116b11aa167555752333ab8b3e25858e02fb025eb7a1559b80ce84ac"
 
-URI_x86_64_v2_python3-flake8-import-order = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flake8-import-order-0.19.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flake8-import-order;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flake8-import-order}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flake8-import-order-0.19.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flake8-import-order;unpack=0"
 SRC_URI[x86_64_v2_python3-flake8-import-order.sha256sum] = "0293a01ac3ef90f70daca14001ca0591c8eaf17fb5c0f9e1f9b57bb31af92658"
 
-URI_aarch64_python3-flake8-import-order = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flake8-import-order-0.19.2-2.el10_1.noarch.rpm;name=aarch64_python3-flake8-import-order;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flake8-import-order}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flake8-import-order-0.19.2-2.el10_1.noarch.rpm;name=aarch64_python3-flake8-import-order;unpack=0"
 SRC_URI[aarch64_python3-flake8-import-order.sha256sum] = "9464e2ec955af2a72dd055110df21ac6b07200f1681cc97f6688638147a87f78"
 
 RDEPENDS:python3-flake8-import-order = " \

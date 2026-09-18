@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-feed-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-feed-1.3.2.1-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-feed-1.3.2.1-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d946413cfcb0dfad5c5ab89c122b0ac5de5573f0c6669bf2cfc087000b711c2c"
 
-URI_x86_64_v2_ghc-feed = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-feed}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed;unpack=0"
 SRC_URI[x86_64_v2_ghc-feed.sha256sum] = "1cfe1a21796afa6aa679c6a698f7f9b93c673fde4ff6827e72b0a9fad4fe1d7e"
 
-URI_x86_64_v2_ghc-feed-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-devel-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-feed-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-devel-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-feed-devel.sha256sum] = "8dd5d0b765a39e97b69a0f30fc4be4cecf0c9ef507a47fa4dceb835918b981a0"
 
-URI_x86_64_v2_ghc-feed-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-doc-1.3.2.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-feed-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-feed-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-doc-1.3.2.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-feed-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-feed-doc.sha256sum] = "19c868e746f4b35817d96f3e48e98f14920f4f1b9a72b0fbf3f17d073a9d43e6"
 
-URI_x86_64_v2_ghc-feed-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-prof-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-feed-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-feed-prof-1.3.2.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-feed-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-feed-prof.sha256sum] = "36f7a34c3bf3ede905d0ac18e3cfc8683c6f65927cb0c3fdec6c51b41a5faf17"
 
-URI_aarch64_ghc-feed = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-feed}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed;unpack=0"
 SRC_URI[aarch64_ghc-feed.sha256sum] = "d43d716d6910527eddaa4749f8109ea5f996673da2234f2db28bba4f37710967"
 
-URI_aarch64_ghc-feed-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-devel-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-feed-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-devel-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed-devel;unpack=0"
 SRC_URI[aarch64_ghc-feed-devel.sha256sum] = "5e788df7cbb077dc14ff262696f82a444c91fbccd44d0a0926adfa5aa1407921"
 
-URI_aarch64_ghc-feed-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-doc-1.3.2.1-9.el10_0.noarch.rpm;name=aarch64_ghc-feed-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-feed-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-doc-1.3.2.1-9.el10_0.noarch.rpm;name=aarch64_ghc-feed-doc;unpack=0"
 SRC_URI[aarch64_ghc-feed-doc.sha256sum] = "84dc75e2e465bd8ec8348bbeca81db111207eccde452d1d97586a423d0f8542f"
 
-URI_aarch64_ghc-feed-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-prof-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-feed-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-feed-prof-1.3.2.1-9.el10_0.aarch64.rpm;name=aarch64_ghc-feed-prof;unpack=0"
 SRC_URI[aarch64_ghc-feed-prof.sha256sum] = "e5c9d132e0175298e746a4bde8ecc29297e1376ba7a3999c15df8646958cc8dd"
 
 RDEPENDS:ghc-feed = " \

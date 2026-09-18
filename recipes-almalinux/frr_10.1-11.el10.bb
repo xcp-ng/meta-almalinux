@@ -10,24 +10,19 @@ PACKAGES = " \
  frr-selinux \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/frr-10.1-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/frr-10.1-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b7106820a6645006cf345ab8ae09384665bbad5a5c55c835d88840833acfc722"
 
-URI_x86_64_v2_frr = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/frr-10.1-11.el10.x86_64_v2.rpm;name=x86_64_v2_frr;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_frr}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/frr-10.1-11.el10.x86_64_v2.rpm;name=x86_64_v2_frr;unpack=0"
 SRC_URI[x86_64_v2_frr.sha256sum] = "6dcfe7940381bcc2a57caad54425e3117834be69cdb0eab8f5ce500d787b5ab6"
 
-URI_x86_64_v2_frr-selinux = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/frr-selinux-10.1-11.el10.noarch.rpm;name=x86_64_v2_frr-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_frr-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/frr-selinux-10.1-11.el10.noarch.rpm;name=x86_64_v2_frr-selinux;unpack=0"
 SRC_URI[x86_64_v2_frr-selinux.sha256sum] = "6a0a09431e76c64225fc21ff62a9e43002447b3e7cceaaf7b1b75f14779c3a1f"
 
-URI_aarch64_frr = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/frr-10.1-11.el10.aarch64.rpm;name=aarch64_frr;unpack=0"
-SRC_URI:append = " ${URI_aarch64_frr}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/frr-10.1-11.el10.aarch64.rpm;name=aarch64_frr;unpack=0"
 SRC_URI[aarch64_frr.sha256sum] = "1d086e854971e9dcd6869a9c51f423090e8d6bfa8e243dae7e1587f081abcc21"
 
-URI_aarch64_frr-selinux = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/frr-selinux-10.1-11.el10.noarch.rpm;name=aarch64_frr-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_frr-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/frr-selinux-10.1-11.el10.noarch.rpm;name=aarch64_frr-selinux;unpack=0"
 SRC_URI[aarch64_frr-selinux.sha256sum] = "6a0a09431e76c64225fc21ff62a9e43002447b3e7cceaaf7b1b75f14779c3a1f"
 
 RDEPENDS:frr:x86_64_v2 = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-below-model-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-below-model-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-below-model-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7ebc99100a4589ddd4f127d018834c061ffa76f05b10f516720817b79fa17632"
 
-URI_x86_64_v2_rust-below-model+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-model+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-model+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-below-model+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-model+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-model+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-below-model+default-devel.sha256sum] = "3041fe3357cd357e72ed2d7f0e96a1cb00a2aa70947503e065e4ec0b003e63ae"
 
-URI_x86_64_v2_rust-below-model-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-model-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-model-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-below-model-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-model-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-model-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-below-model-devel.sha256sum] = "bfbcfbb8b14a91ed27df8beb3748345e6d908abe7c2777b87c1511ac794970e3"
 
-URI_aarch64_rust-below-model+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-below-model+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-below-model+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-below-model+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-below-model+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-below-model+default-devel;unpack=0"
 SRC_URI[aarch64_rust-below-model+default-devel.sha256sum] = "0a8055b37e04fad1fdbb4a26bf4b4e5ad347df812b93fa3c80b31f0f725e8cf6"
 
-URI_aarch64_rust-below-model-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-below-model-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-below-model-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-below-model-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-below-model-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-below-model-devel;unpack=0"
 SRC_URI[aarch64_rust-below-model-devel.sha256sum] = "357efe9ac3e8c5fb80621fdf729952b47e5e7dd4b149881941029f5bc7573656"
 
 RDEPENDS:rust-below-model+default-devel = " \

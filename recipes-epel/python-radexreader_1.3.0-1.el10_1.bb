@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-radexreader \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-radexreader-1.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-radexreader-1.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e46aaf9a21aa6c0d78a44957c2b443f9180d48993b89ca1578fd03724e1322ee"
 
-URI_x86_64_v2_python3-radexreader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-radexreader-1.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-radexreader;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-radexreader}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-radexreader-1.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-radexreader;unpack=0"
 SRC_URI[x86_64_v2_python3-radexreader.sha256sum] = "cfac22d0f5e7bfef77c3dd4aac5b0f1fddfab3bede25c92a970891457fe4f743"
 
-URI_aarch64_python3-radexreader = "${EPEL_MIRROR}/aarch64/Packages/p/python3-radexreader-1.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-radexreader;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-radexreader}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-radexreader-1.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-radexreader;unpack=0"
 SRC_URI[aarch64_python3-radexreader.sha256sum] = "ac0099433eda6f54ca871be015a112e1562021c0ece0e0f73a6e849b69a50086"
 
 RDEPENDS:python3-radexreader = " \

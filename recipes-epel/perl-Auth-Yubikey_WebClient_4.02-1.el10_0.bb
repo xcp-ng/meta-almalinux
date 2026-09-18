@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Auth-Yubikey_WebClient \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb95504426095ab98afcac4cbdc86e4c413b84386084e9f42e7029a532f5cc2e"
 
-URI_x86_64_v2_perl-Auth-Yubikey_WebClient = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Auth-Yubikey_WebClient;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Auth-Yubikey_WebClient}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Auth-Yubikey_WebClient;unpack=0"
 SRC_URI[x86_64_v2_perl-Auth-Yubikey_WebClient.sha256sum] = "2a4af12edd835372bf41cd613b841ff442117c1827785a08c52b68dede8f0b68"
 
-URI_aarch64_perl-Auth-Yubikey_WebClient = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.noarch.rpm;name=aarch64_perl-Auth-Yubikey_WebClient;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Auth-Yubikey_WebClient}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Auth-Yubikey_WebClient-4.02-1.el10_0.noarch.rpm;name=aarch64_perl-Auth-Yubikey_WebClient;unpack=0"
 SRC_URI[aarch64_perl-Auth-Yubikey_WebClient.sha256sum] = "44a5d019112dbfe71c441e9512468a5013354ab2e5e33ca3b4877d7acf6b3762"
 
 RDEPENDS:perl-Auth-Yubikey_WebClient = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-X10 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-X10-0.04-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-X10-0.04-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9870d815262a687c46504a40831af169510005a21067739fab48bd24669afd51"
 
-URI_x86_64_v2_perl-X10 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-X10-0.04-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-X10;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-X10}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-X10-0.04-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-X10;unpack=0"
 SRC_URI[x86_64_v2_perl-X10.sha256sum] = "8ac0a9711b0c1b4d63af91f23976124a78c0b2a412670017f1468032fe1cb31e"
 
-URI_aarch64_perl-X10 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-X10-0.04-26.el10_0.noarch.rpm;name=aarch64_perl-X10;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-X10}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-X10-0.04-26.el10_0.noarch.rpm;name=aarch64_perl-X10;unpack=0"
 SRC_URI[aarch64_perl-X10.sha256sum] = "7ebf96b759160ed173eafe87594335f8cf1295eb959f73e52fc2f8e1571fce1b"
 
 RDEPENDS:perl-X10 = " \

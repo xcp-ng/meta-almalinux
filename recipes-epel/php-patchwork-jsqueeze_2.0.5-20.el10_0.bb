@@ -9,16 +9,13 @@ PACKAGES = " \
  php-patchwork-jsqueeze \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-patchwork-jsqueeze-2.0.5-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-patchwork-jsqueeze-2.0.5-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fc2175644f673aff86566eb454b2c0dfc23b780f79ffba00f29a2c9fa5099bb1"
 
-URI_x86_64_v2_php-patchwork-jsqueeze = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-patchwork-jsqueeze-2.0.5-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-patchwork-jsqueeze;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-patchwork-jsqueeze}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-patchwork-jsqueeze-2.0.5-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-patchwork-jsqueeze;unpack=0"
 SRC_URI[x86_64_v2_php-patchwork-jsqueeze.sha256sum] = "59d8846388157b60e9319e52a41cae1392d8fa97e76243168d6eea9f76f925a8"
 
-URI_aarch64_php-patchwork-jsqueeze = "${EPEL_MIRROR}/aarch64/Packages/p/php-patchwork-jsqueeze-2.0.5-20.el10_0.noarch.rpm;name=aarch64_php-patchwork-jsqueeze;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-patchwork-jsqueeze}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-patchwork-jsqueeze-2.0.5-20.el10_0.noarch.rpm;name=aarch64_php-patchwork-jsqueeze;unpack=0"
 SRC_URI[aarch64_php-patchwork-jsqueeze.sha256sum] = "61f5d38e5e90fba0679d636d53df205cd8c07bcd6bf6cd1269d5f70bf79304a3"
 
 RDEPENDS:php-patchwork-jsqueeze = " \

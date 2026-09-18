@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-jaraco-classes \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-classes-3.4.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-classes-3.4.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "abdc993df0af595bf24fb849b731f9417268644169ad858ddc70d3dc2175aa59"
 
-URI_x86_64_v2_python3-jaraco-classes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-classes-3.4.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-classes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jaraco-classes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-classes-3.4.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-classes;unpack=0"
 SRC_URI[x86_64_v2_python3-jaraco-classes.sha256sum] = "c5722716dfbf823a84f3dd8f4b99bd2cffcd2e6a6027c698e99d76c902a9ce01"
 
-URI_aarch64_python3-jaraco-classes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-classes-3.4.0-5.el10_0.noarch.rpm;name=aarch64_python3-jaraco-classes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jaraco-classes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-classes-3.4.0-5.el10_0.noarch.rpm;name=aarch64_python3-jaraco-classes;unpack=0"
 SRC_URI[aarch64_python3-jaraco-classes.sha256sum] = "7d60714cd9b6a6ceee3b11b4e9f6c1f274ab6e79cb93fb03690327c0c00ee139"
 
 RDEPENDS:python3-jaraco-classes = " \

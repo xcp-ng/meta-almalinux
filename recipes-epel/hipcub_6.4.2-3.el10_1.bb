@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/h/hipcub-6.4.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/h/hipcub-6.4.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9358d0b1c5cf9a83f921068ac38c18d1df28d43b4c7a0933f3aabf5f13edaccd"
 
-URI_x86_64_v2_hipcub-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipcub-devel-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipcub-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hipcub-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipcub-devel-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipcub-devel;unpack=0"
 SRC_URI[x86_64_v2_hipcub-devel.sha256sum] = "29744cf109893bbdd80d9b9e86c2373144971b8a88de51cd9d5b9090f0827378"
 
 RDEPENDS:hipcub-devel = " \

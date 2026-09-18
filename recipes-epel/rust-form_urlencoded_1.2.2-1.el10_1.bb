@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-form_urlencoded-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-form_urlencoded-1.2.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-form_urlencoded-1.2.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a7a71f54ad32dd17565ded110fe353c376d3183ae9b36b1c24c6e9cb57cf88b2"
 
-URI_x86_64_v2_rust-form_urlencoded+alloc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+alloc-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-form_urlencoded+alloc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+alloc-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+alloc-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-form_urlencoded+alloc-devel.sha256sum] = "683792bb84fc1d3cd3be8e502688dedde7a5ce34f34c6b516c30aed36f216b29"
 
-URI_x86_64_v2_rust-form_urlencoded+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+default-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-form_urlencoded+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+default-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-form_urlencoded+default-devel.sha256sum] = "4767b2a6ba6c6a04ccdc3b3e61f5d6ee146ac381cb96bb14633e716c7eeb81db"
 
-URI_x86_64_v2_rust-form_urlencoded+std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+std-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+std-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-form_urlencoded+std-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded+std-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded+std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-form_urlencoded+std-devel.sha256sum] = "17960c28266ae3226ef95f6ac05021bbd248137ec52911db18ff261e689250c1"
 
-URI_x86_64_v2_rust-form_urlencoded-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-form_urlencoded-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-form_urlencoded-devel-1.2.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-form_urlencoded-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-form_urlencoded-devel.sha256sum] = "ceca28e017eda2e36a2b88b82726ec27134263c732f559205671b213652be160"
 
-URI_aarch64_rust-form_urlencoded+alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+alloc-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-form_urlencoded+alloc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+alloc-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+alloc-devel;unpack=0"
 SRC_URI[aarch64_rust-form_urlencoded+alloc-devel.sha256sum] = "fb794e26d0a9200640e88d99da318f552157bf4acc6d42f93d2b98bf0e7a1f02"
 
-URI_aarch64_rust-form_urlencoded+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+default-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-form_urlencoded+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+default-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+default-devel;unpack=0"
 SRC_URI[aarch64_rust-form_urlencoded+default-devel.sha256sum] = "3656ee468a1a15aa4613f18d9aa65d080570c66280c92747598c857217a216aa"
 
-URI_aarch64_rust-form_urlencoded+std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+std-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+std-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-form_urlencoded+std-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded+std-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded+std-devel;unpack=0"
 SRC_URI[aarch64_rust-form_urlencoded+std-devel.sha256sum] = "f936b9c70b852107481baebe7269f6130b766a5f36c7454af862719cf4771d80"
 
-URI_aarch64_rust-form_urlencoded-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-form_urlencoded-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-form_urlencoded-devel-1.2.2-1.el10_1.noarch.rpm;name=aarch64_rust-form_urlencoded-devel;unpack=0"
 SRC_URI[aarch64_rust-form_urlencoded-devel.sha256sum] = "99efc6796440ed141dca5d50f2c68dfb4c8b11502ba10d72f75d497929fc2a41"
 
 RDEPENDS:rust-form_urlencoded+alloc-devel = " \

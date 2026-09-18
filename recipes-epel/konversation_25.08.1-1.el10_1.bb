@@ -9,16 +9,13 @@ PACKAGES = " \
  konversation \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/konversation-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/konversation-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "df43f9bae53fc59e4f445917718dcc13a0c9ad1b02c8c2ce960bd5199ae0be15"
 
-URI_x86_64_v2_konversation = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konversation-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konversation;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_konversation}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konversation-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konversation;unpack=0"
 SRC_URI[x86_64_v2_konversation.sha256sum] = "fc8ee6cec78d57be525cb696293b862b605d536f20df6ca7ab7608b0fb8fd656"
 
-URI_aarch64_konversation = "${EPEL_MIRROR}/aarch64/Packages/k/konversation-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konversation;unpack=0"
-SRC_URI:append = " ${URI_aarch64_konversation}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/konversation-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konversation;unpack=0"
 SRC_URI[aarch64_konversation.sha256sum] = "55dcfe6ee79082c61d64b7b7f642daf0f14f16d88b0253f79f9ad149dd681d60"
 
 RDEPENDS:konversation = " \

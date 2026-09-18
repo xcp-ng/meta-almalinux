@@ -14,21 +14,17 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rocm-omp-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rocm-omp-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "91ffbe7e582adb98a2ba83271ceafab8129e1f8b122c66eb82d2f3dd2da47c7b"
 
-URI_x86_64_v2_rocm-omp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-omp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp;unpack=0"
 SRC_URI[x86_64_v2_rocm-omp.sha256sum] = "5f51cc58ddb2fe954c0eb7cfffa5ea7e764f1ea285d618e0353887f91bb77707"
 
-URI_x86_64_v2_rocm-omp-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-omp-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp-devel;unpack=0"
 SRC_URI[x86_64_v2_rocm-omp-devel.sha256sum] = "20d2d23772586ecdb909c7afb3db7c4a183d0574ad767a0db926fe1591545516"
 RPROVIDES:rocm-omp-devel:append:x86_64_v2 = " virtual/libomp.so_VERSION__64bit_ virtual/libomp.so___64bit_"
 
-URI_x86_64_v2_rocm-omp-static = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-static-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-omp-static}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-omp-static-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-omp-static;unpack=0"
 SRC_URI[x86_64_v2_rocm-omp-static.sha256sum] = "cb608bb20b5b7273d884aeeaae129e28492effa079849bed1e4e089e642e7b74"
 
 RDEPENDS:rocm-omp = " \

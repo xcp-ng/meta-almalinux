@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Needs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Needs-0.002010-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Needs-0.002010-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "85433d318e5ff7d47ed133cc0382756110b12444ee818fe4e7329ed1d71b5f94"
 
-URI_x86_64_v2_perl-Test-Needs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Needs-0.002010-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Needs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Needs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Needs-0.002010-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Needs;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Needs.sha256sum] = "a2369acf17d753ada3d1baf01ebb12488b124fbb2942367cf7d0c4308ef55633"
 
-URI_aarch64_perl-Test-Needs = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Needs-0.002010-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Needs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Needs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Needs-0.002010-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Needs;unpack=0"
 SRC_URI[aarch64_perl-Test-Needs.sha256sum] = "6aa9f3a700bd416c103143d277c8d0f68343cf0ccb084ee5290c316a805668bf"
 
 RDEPENDS:perl-Test-Needs = " \

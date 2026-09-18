@@ -9,16 +9,13 @@ PACKAGES = " \
  kdepim-addons \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kdepim-addons-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kdepim-addons-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "254794e6e2b475886dc4f8d0bcdbf6be23fb74177bc997f0054b558119d90fee"
 
-URI_x86_64_v2_kdepim-addons = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-addons-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-addons;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdepim-addons}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdepim-addons-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdepim-addons;unpack=0"
 SRC_URI[x86_64_v2_kdepim-addons.sha256sum] = "679d987d82274e1d173e48ea0189eb3f8f2d38c9c559d1bc050c79ccdf747b7d"
 
-URI_aarch64_kdepim-addons = "${EPEL_MIRROR}/aarch64/Packages/k/kdepim-addons-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-addons;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdepim-addons}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdepim-addons-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdepim-addons;unpack=0"
 SRC_URI[aarch64_kdepim-addons.sha256sum] = "c19d53e7d48f772dabf9507ef22508e752fe442e66904cf561d6043345af2938"
 
 RDEPENDS:kdepim-addons = " \

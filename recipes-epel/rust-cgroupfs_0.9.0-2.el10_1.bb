@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-cgroupfs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cgroupfs-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cgroupfs-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6958126b200f47795188557190190482f724bc534b3c9d76b3f7f0eb4667096b"
 
-URI_x86_64_v2_rust-cgroupfs+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cgroupfs+default-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cgroupfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cgroupfs+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cgroupfs+default-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cgroupfs+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cgroupfs+default-devel.sha256sum] = "39cdf4a9c4660549d3cd989206645bcde7aa8ee2494bb0d62e02882259178cae"
 
-URI_x86_64_v2_rust-cgroupfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cgroupfs-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cgroupfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cgroupfs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cgroupfs-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cgroupfs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cgroupfs-devel.sha256sum] = "d7554b5adff1d3a06c7d9d543d5ce122b2a79d78388c8a7ad577485ebc288850"
 
-URI_aarch64_rust-cgroupfs+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cgroupfs+default-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-cgroupfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cgroupfs+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cgroupfs+default-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-cgroupfs+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cgroupfs+default-devel.sha256sum] = "85ee7690a23916e4464232853fb92fb9e67bf0a37588d148934cf60a917e82bb"
 
-URI_aarch64_rust-cgroupfs-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cgroupfs-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-cgroupfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cgroupfs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cgroupfs-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-cgroupfs-devel;unpack=0"
 SRC_URI[aarch64_rust-cgroupfs-devel.sha256sum] = "40421b461b76e0bcf0abbff61f0bf5648017e8b9a9b70156dc6a65a47a73c901"
 
 RDEPENDS:rust-cgroupfs+default-devel = " \

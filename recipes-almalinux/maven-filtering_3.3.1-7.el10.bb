@@ -10,24 +10,19 @@ PACKAGES = " \
  maven-filtering-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-filtering-3.3.1-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-filtering-3.3.1-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8fc11a6b8d24d088be5ee985c5771850fc2e4f9d31ff29a3b47da6d21d974a0e"
 
-URI_x86_64_v2_maven-filtering = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-filtering-3.3.1-7.el10.noarch.rpm;name=x86_64_v2_maven-filtering;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-filtering}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-filtering-3.3.1-7.el10.noarch.rpm;name=x86_64_v2_maven-filtering;unpack=0"
 SRC_URI[x86_64_v2_maven-filtering.sha256sum] = "181d79503c6ab81296c467bc6261f37258abe839782ef0879ff5121cb15baf91"
 
-URI_x86_64_v2_maven-filtering-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-filtering-javadoc-3.3.1-7.el10.noarch.rpm;name=x86_64_v2_maven-filtering-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-filtering-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-filtering-javadoc-3.3.1-7.el10.noarch.rpm;name=x86_64_v2_maven-filtering-javadoc;unpack=0"
 SRC_URI[x86_64_v2_maven-filtering-javadoc.sha256sum] = "44ebdd8bde0ed4d98c03bf7144adbac31cc2e1c80bbd1c4c11053a90fb87fe28"
 
-URI_aarch64_maven-filtering = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-filtering-3.3.1-7.el10.noarch.rpm;name=aarch64_maven-filtering;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-filtering}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-filtering-3.3.1-7.el10.noarch.rpm;name=aarch64_maven-filtering;unpack=0"
 SRC_URI[aarch64_maven-filtering.sha256sum] = "181d79503c6ab81296c467bc6261f37258abe839782ef0879ff5121cb15baf91"
 
-URI_aarch64_maven-filtering-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-filtering-javadoc-3.3.1-7.el10.noarch.rpm;name=aarch64_maven-filtering-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-filtering-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-filtering-javadoc-3.3.1-7.el10.noarch.rpm;name=aarch64_maven-filtering-javadoc;unpack=0"
 SRC_URI[aarch64_maven-filtering-javadoc.sha256sum] = "44ebdd8bde0ed4d98c03bf7144adbac31cc2e1c80bbd1c4c11053a90fb87fe28"
 
 RDEPENDS:maven-filtering = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  mod_perl-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/mod_perl-2.0.13-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/mod_perl-2.0.13-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c3a84868dd60bd02144391ce5a9f343ae3d96fd80962da6e53596c42391dc030"
 
-URI_x86_64_v2_mod_perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mod_perl-2.0.13-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_mod_perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mod_perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mod_perl-2.0.13-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_mod_perl;unpack=0"
 SRC_URI[x86_64_v2_mod_perl.sha256sum] = "7327f518574c980c50792b209f0d8d05106ecb3649e35976f38389c28dbec7b2"
 
-URI_x86_64_v2_mod_perl-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mod_perl-devel-2.0.13-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_mod_perl-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mod_perl-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mod_perl-devel-2.0.13-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_mod_perl-devel;unpack=0"
 SRC_URI[x86_64_v2_mod_perl-devel.sha256sum] = "d1ebce0c22d19e638fed56928ba77147913b6b45aba07ce96b68a8a72f1db497"
 
-URI_aarch64_mod_perl = "${EPEL_MIRROR}/aarch64/Packages/m/mod_perl-2.0.13-8.el10_0.aarch64.rpm;name=aarch64_mod_perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mod_perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mod_perl-2.0.13-8.el10_0.aarch64.rpm;name=aarch64_mod_perl;unpack=0"
 SRC_URI[aarch64_mod_perl.sha256sum] = "05c1a16ab64b881d049b5c5d6de332bc08842eced1fb6457ed1f8fce6aadd3fc"
 
-URI_aarch64_mod_perl-devel = "${EPEL_MIRROR}/aarch64/Packages/m/mod_perl-devel-2.0.13-8.el10_0.aarch64.rpm;name=aarch64_mod_perl-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mod_perl-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mod_perl-devel-2.0.13-8.el10_0.aarch64.rpm;name=aarch64_mod_perl-devel;unpack=0"
 SRC_URI[aarch64_mod_perl-devel.sha256sum] = "d1832b6de1594a0d237169549012d9625c29489cc542a2e9d696d59b9054f0e8"
 
 RDEPENDS:mod_perl = " \

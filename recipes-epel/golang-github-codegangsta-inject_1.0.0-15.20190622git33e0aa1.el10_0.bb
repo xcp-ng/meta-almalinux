@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-codegangsta-inject-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-codegangsta-inject-1.0.0-15.20190622git33e0aa1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-codegangsta-inject-1.0.0-15.20190622git33e0aa1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e5814f6d39b0015c0d11a51f999ed6a133294146d21be60c07cbd79f67446bcd"
 
-URI_aarch64_golang-github-codegangsta-inject-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-codegangsta-inject-devel-1.0.0-15.20190622git33e0aa1.el10_0.noarch.rpm;name=aarch64_golang-github-codegangsta-inject-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-codegangsta-inject-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-codegangsta-inject-devel-1.0.0-15.20190622git33e0aa1.el10_0.noarch.rpm;name=aarch64_golang-github-codegangsta-inject-devel;unpack=0"
 SRC_URI[aarch64_golang-github-codegangsta-inject-devel.sha256sum] = "f26d6dd78097c7383b0502e3fdf025d6ae4a7d70adcc1afb48443201c4020251"
 
 RDEPENDS:golang-github-codegangsta-inject-devel = " \

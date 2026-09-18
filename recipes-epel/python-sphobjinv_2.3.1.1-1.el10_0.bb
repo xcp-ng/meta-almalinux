@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphobjinv \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphobjinv-2.3.1.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphobjinv-2.3.1.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "845acdb2ab44f97eecd9de9103d008fc60d35e0ff7b3b87ec048052efd9bcfe5"
 
-URI_x86_64_v2_python3-sphobjinv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphobjinv-2.3.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphobjinv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphobjinv}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphobjinv-2.3.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphobjinv;unpack=0"
 SRC_URI[x86_64_v2_python3-sphobjinv.sha256sum] = "076164a6bda807ced667d5cf98714e8b682da3fc55c558f08582eb5820f5e0f0"
 
-URI_aarch64_python3-sphobjinv = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphobjinv-2.3.1.1-1.el10_0.noarch.rpm;name=aarch64_python3-sphobjinv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphobjinv}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphobjinv-2.3.1.1-1.el10_0.noarch.rpm;name=aarch64_python3-sphobjinv;unpack=0"
 SRC_URI[aarch64_python3-sphobjinv.sha256sum] = "e6eb3f15976c315f20a1393027603b2bc978fc883c161be469c405467cffb87f"
 
 RDEPENDS:python3-sphobjinv = " \

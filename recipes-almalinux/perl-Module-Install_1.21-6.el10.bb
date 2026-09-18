@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-Install \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-Install-1.21-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-Install-1.21-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f7af1dea2f370b7effdc8a1adc1422e42b05482c604eedc9c4fbcc8c90fce9e"
 
-URI_x86_64_v2_perl-Module-Install = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;name=x86_64_v2_perl-Module-Install;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Install}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;name=x86_64_v2_perl-Module-Install;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Install.sha256sum] = "f330f49849544d4c950a18adf8125e8de829ce3f15bab5a66ecee2f21363b268"
 
-URI_aarch64_perl-Module-Install = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;name=aarch64_perl-Module-Install;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Install}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;name=aarch64_perl-Module-Install;unpack=0"
 SRC_URI[aarch64_perl-Module-Install.sha256sum] = "f330f49849544d4c950a18adf8125e8de829ce3f15bab5a66ecee2f21363b268"
 
 RDEPENDS:perl-Module-Install = " \

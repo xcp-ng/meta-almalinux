@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-warp-tls-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-warp-tls-3.4.6-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-warp-tls-3.4.6-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b6fd2c046acbba196a031f63e2c5f60ffcfc35d9ce05e18b6c19876cdf0c62bf"
 
-URI_x86_64_v2_ghc-warp-tls = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-warp-tls}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls;unpack=0"
 SRC_URI[x86_64_v2_ghc-warp-tls.sha256sum] = "294ee64f362335bc69ee58f2e51612b1b213402664ad4c5a6b3c71afd842578f"
 
-URI_x86_64_v2_ghc-warp-tls-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-devel-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-warp-tls-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-devel-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-warp-tls-devel.sha256sum] = "794cd75c8173fbbd25e64811d2228510a4ca5575fa5467bd9da3753d2ad2df69"
 
-URI_x86_64_v2_ghc-warp-tls-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-doc-3.4.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-warp-tls-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-warp-tls-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-doc-3.4.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-warp-tls-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-warp-tls-doc.sha256sum] = "17cfa369018a6ac1309af41b60a864a0f25f49885d09fe011cb0d706856fbbe5"
 
-URI_x86_64_v2_ghc-warp-tls-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-prof-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-warp-tls-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-warp-tls-prof-3.4.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-warp-tls-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-warp-tls-prof.sha256sum] = "7bc6445c26310214904054050534d0340c1ddf70d39e99c54721eff0a15dc316"
 
-URI_aarch64_ghc-warp-tls = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-warp-tls}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls;unpack=0"
 SRC_URI[aarch64_ghc-warp-tls.sha256sum] = "bfef30623662ba3639336f673c1f95b34bc564b08dc1ae500339b928f69fb14a"
 
-URI_aarch64_ghc-warp-tls-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-devel-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-warp-tls-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-devel-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls-devel;unpack=0"
 SRC_URI[aarch64_ghc-warp-tls-devel.sha256sum] = "4dea526a0ff99497ee150abc498a831dd323fd692ef5ffca38c8a7bd4a906bc7"
 
-URI_aarch64_ghc-warp-tls-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-doc-3.4.6-1.el10_0.noarch.rpm;name=aarch64_ghc-warp-tls-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-warp-tls-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-doc-3.4.6-1.el10_0.noarch.rpm;name=aarch64_ghc-warp-tls-doc;unpack=0"
 SRC_URI[aarch64_ghc-warp-tls-doc.sha256sum] = "86974de41a558c0370bd813c578be6f19cd066e0075c4bfa97db66dca8c79e22"
 
-URI_aarch64_ghc-warp-tls-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-prof-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-warp-tls-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-warp-tls-prof-3.4.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-warp-tls-prof;unpack=0"
 SRC_URI[aarch64_ghc-warp-tls-prof.sha256sum] = "aa409201c1b993ecbe5165701ab8e80a726fa6ceff1be9828081a3fbd57055a4"
 
 RDEPENDS:ghc-warp-tls = " \

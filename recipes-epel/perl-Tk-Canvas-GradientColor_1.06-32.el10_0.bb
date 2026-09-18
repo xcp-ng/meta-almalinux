@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Tk-Canvas-GradientColor-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "828f96f58bfb1a94e1a1d739ae438650317523e04f5dd216151501fe1399ac4e"
 
-URI_x86_64_v2_perl-Tk-Canvas-GradientColor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Canvas-GradientColor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Canvas-GradientColor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Canvas-GradientColor;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Canvas-GradientColor.sha256sum] = "854d52ff8e331bb3b08c5e0cd4027ac658ac1c80504181a44c2488918df5a112"
 
-URI_x86_64_v2_perl-Tk-Canvas-GradientColor-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Canvas-GradientColor-tests-1.06-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Canvas-GradientColor-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Canvas-GradientColor-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Canvas-GradientColor-tests-1.06-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Canvas-GradientColor-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Canvas-GradientColor-tests.sha256sum] = "2f159cf253dbe0bfa1b83511fe465ed363cc7ac9fc9305aea58d1ba492f9ca3a"
 
-URI_aarch64_perl-Tk-Canvas-GradientColor = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.noarch.rpm;name=aarch64_perl-Tk-Canvas-GradientColor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Canvas-GradientColor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Canvas-GradientColor-1.06-32.el10_0.noarch.rpm;name=aarch64_perl-Tk-Canvas-GradientColor;unpack=0"
 SRC_URI[aarch64_perl-Tk-Canvas-GradientColor.sha256sum] = "f1f8395745cd5ebdbf628814b948ccf1875c701607b927d49b8b36e4759245d8"
 
-URI_aarch64_perl-Tk-Canvas-GradientColor-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Canvas-GradientColor-tests-1.06-32.el10_0.noarch.rpm;name=aarch64_perl-Tk-Canvas-GradientColor-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Canvas-GradientColor-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Canvas-GradientColor-tests-1.06-32.el10_0.noarch.rpm;name=aarch64_perl-Tk-Canvas-GradientColor-tests;unpack=0"
 SRC_URI[aarch64_perl-Tk-Canvas-GradientColor-tests.sha256sum] = "927fef8ae8f9eb2c17237d8d28946ecb8b4cc5699a24967ec1d5cc216a7e5407"
 
 RDEPENDS:perl-Tk-Canvas-GradientColor = " \

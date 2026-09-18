@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colcon-package-information \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colcon-package-information-0.4.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-package-information-0.4.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8fc9a7e09b7e440c96a9be59b1dda25ce32063c1f5ab8844cdd61b3f862f3a05"
 
-URI_x86_64_v2_python3-colcon-package-information = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-package-information-0.4.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-package-information;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-package-information}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-package-information-0.4.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-package-information;unpack=0"
 SRC_URI[x86_64_v2_python3-colcon-package-information.sha256sum] = "b2564c3a2ec815192aaf9bf41137d81d570724351d4f46483ad2a6230f180f0b"
 
-URI_aarch64_python3-colcon-package-information = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-package-information-0.4.0-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-package-information;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colcon-package-information}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-package-information-0.4.0-1.el10_0.noarch.rpm;name=aarch64_python3-colcon-package-information;unpack=0"
 SRC_URI[aarch64_python3-colcon-package-information.sha256sum] = "6275041bdf1b58d1e60c0b12a8951b2ccec02e4881f746c2b357e367c86b673d"
 
 RDEPENDS:python3-colcon-package-information = " \

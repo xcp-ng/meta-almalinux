@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-stefanberger-pkcs11uri-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-stefanberger-pkcs11uri-0-0.8.20220202git78d3cae.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-stefanberger-pkcs11uri-0-0.8.20220202git78d3cae.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6c62b307e7ab84a201a8d179d94ab4bed16da7a09c864db6e878a97dcef440f8"
 
-URI_aarch64_golang-github-stefanberger-pkcs11uri-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-stefanberger-pkcs11uri-devel-0-0.8.20220202git78d3cae.el10_0.noarch.rpm;name=aarch64_golang-github-stefanberger-pkcs11uri-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-stefanberger-pkcs11uri-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-stefanberger-pkcs11uri-devel-0-0.8.20220202git78d3cae.el10_0.noarch.rpm;name=aarch64_golang-github-stefanberger-pkcs11uri-devel;unpack=0"
 SRC_URI[aarch64_golang-github-stefanberger-pkcs11uri-devel.sha256sum] = "211927f648e38822b687b144b8a32d04bdfb25c5b1709aa0e42e2ce501dd0ff1"
 
 RDEPENDS:golang-github-stefanberger-pkcs11uri-devel = " \

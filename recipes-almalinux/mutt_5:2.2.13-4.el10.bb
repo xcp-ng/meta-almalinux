@@ -10,16 +10,13 @@ PACKAGES = " \
  mutt \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mutt-2.2.13-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mutt-2.2.13-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "11a6f56b136625ce46dc45f191609fa3ab279df554f8d4e9308a519dfea6925e"
 
-URI_x86_64_v2_mutt = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mutt-2.2.13-4.el10.x86_64_v2.rpm;name=x86_64_v2_mutt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mutt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mutt-2.2.13-4.el10.x86_64_v2.rpm;name=x86_64_v2_mutt;unpack=0"
 SRC_URI[x86_64_v2_mutt.sha256sum] = "3219313069aba95d5a7747fa27cb5a58a36946449b3bf17dcb8a6a0206750b83"
 
-URI_aarch64_mutt = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mutt-2.2.13-4.el10.aarch64.rpm;name=aarch64_mutt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mutt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mutt-2.2.13-4.el10.aarch64.rpm;name=aarch64_mutt;unpack=0"
 SRC_URI[aarch64_mutt.sha256sum] = "739699723322ccc29db8d6b8b6e2339fff7c7fffb6ff4d7fb96aa35809ccf4b2"
 
 RDEPENDS:mutt = " \

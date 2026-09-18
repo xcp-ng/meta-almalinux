@@ -10,24 +10,19 @@ PACKAGES = " \
  kmail-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmail-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmail-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "288f435217a34b49a8332e6d85fb8debcba5e5ad595b999b2726645c2d30b456"
 
-URI_x86_64_v2_kmail = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmail}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail;unpack=0"
 SRC_URI[x86_64_v2_kmail.sha256sum] = "eb71243dfc305d715770a0db5cecd99999eb83500755b1f1b1287bd0e87cbd65"
 
-URI_x86_64_v2_kmail-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmail-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmail-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmail-libs;unpack=0"
 SRC_URI[x86_64_v2_kmail-libs.sha256sum] = "7ad215eb256f3d5962ba60349fa85b4533966a74e0cde410b97f5d894ce8fcb0"
 
-URI_aarch64_kmail = "${EPEL_MIRROR}/aarch64/Packages/k/kmail-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmail}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmail-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail;unpack=0"
 SRC_URI[aarch64_kmail.sha256sum] = "6e7c1af989bbed7c1173501e8ca81a2a9f0faade50f04804da45761859ee1117"
 
-URI_aarch64_kmail-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kmail-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmail-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmail-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmail-libs;unpack=0"
 SRC_URI[aarch64_kmail-libs.sha256sum] = "b61363983222c210a503046e616f060d6b8db50ef53d2de520faab518069419b"
 
 RDEPENDS:kmail = " \

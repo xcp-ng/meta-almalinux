@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Math-Base-Convert \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Math-Base-Convert-0.11-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Math-Base-Convert-0.11-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4fd6d378bbb6c75e9b43f9c583143c663430e11410a48f6959caef8605b0b160"
 
-URI_x86_64_v2_perl-Math-Base-Convert = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Math-Base-Convert-0.11-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Math-Base-Convert;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Math-Base-Convert}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Math-Base-Convert-0.11-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Math-Base-Convert;unpack=0"
 SRC_URI[x86_64_v2_perl-Math-Base-Convert.sha256sum] = "0254d9148ebd8b6367950e50de149a6999056efdbe6b9159fd6f81490df5869b"
 
-URI_aarch64_perl-Math-Base-Convert = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Math-Base-Convert-0.11-26.el10_0.noarch.rpm;name=aarch64_perl-Math-Base-Convert;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Math-Base-Convert}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Math-Base-Convert-0.11-26.el10_0.noarch.rpm;name=aarch64_perl-Math-Base-Convert;unpack=0"
 SRC_URI[aarch64_perl-Math-Base-Convert.sha256sum] = "523c05a8e53fbfb777229b5132efd54cc1f61a6e5eea31b9f1a8381e4969a84e"
 
 RDEPENDS:perl-Math-Base-Convert = " \

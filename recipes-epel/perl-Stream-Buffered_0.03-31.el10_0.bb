@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Stream-Buffered \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Stream-Buffered-0.03-31.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Stream-Buffered-0.03-31.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c0c39308dc4b1d357e7aa24f51c240916500cd7688593ffbe1a8520446135539"
 
-URI_x86_64_v2_perl-Stream-Buffered = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Stream-Buffered-0.03-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Stream-Buffered;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Stream-Buffered}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Stream-Buffered-0.03-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Stream-Buffered;unpack=0"
 SRC_URI[x86_64_v2_perl-Stream-Buffered.sha256sum] = "36fc5a61de3acf78c5042c9a1e7db0a19682f5a0414f4ed6871d6faafa9e315a"
 
-URI_aarch64_perl-Stream-Buffered = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Stream-Buffered-0.03-31.el10_0.noarch.rpm;name=aarch64_perl-Stream-Buffered;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Stream-Buffered}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Stream-Buffered-0.03-31.el10_0.noarch.rpm;name=aarch64_perl-Stream-Buffered;unpack=0"
 SRC_URI[aarch64_perl-Stream-Buffered.sha256sum] = "f1705b5766e62295f5528f2538d473dff00ea0f6589be91d2adb3f7278b79e2f"
 
 RDEPENDS:perl-Stream-Buffered = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-Install-ReadmeFromPod \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d6209f75c301be763619a82f67f1bf4f658370cfdf51db365c3cf1dc4d4a7eb5"
 
-URI_x86_64_v2_perl-Module-Install-ReadmeFromPod = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.noarch.rpm;name=x86_64_v2_perl-Module-Install-ReadmeFromPod;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Install-ReadmeFromPod}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.noarch.rpm;name=x86_64_v2_perl-Module-Install-ReadmeFromPod;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Install-ReadmeFromPod.sha256sum] = "c4ea5bc195ca870999d7e2b4d77e3c8df82a3c13c310128bfd87eb34426a2d98"
 
-URI_aarch64_perl-Module-Install-ReadmeFromPod = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.noarch.rpm;name=aarch64_perl-Module-Install-ReadmeFromPod;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Install-ReadmeFromPod}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-Install-ReadmeFromPod-0.30-26.el10.noarch.rpm;name=aarch64_perl-Module-Install-ReadmeFromPod;unpack=0"
 SRC_URI[aarch64_perl-Module-Install-ReadmeFromPod.sha256sum] = "c4ea5bc195ca870999d7e2b4d77e3c8df82a3c13c310128bfd87eb34426a2d98"
 
 RDEPENDS:perl-Module-Install-ReadmeFromPod = " \

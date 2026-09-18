@@ -9,16 +9,13 @@ PACKAGES = " \
  simple-scan \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/simple-scan-46.0-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/simple-scan-46.0-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e30105d995b5e343df016619935276a9fc3a6950fc2e1432965ab601c8a4d1c8"
 
-URI_x86_64_v2_simple-scan = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/simple-scan-46.0-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_simple-scan;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_simple-scan}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/simple-scan-46.0-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_simple-scan;unpack=0"
 SRC_URI[x86_64_v2_simple-scan.sha256sum] = "10dcf843c2fc83986dcf2b828ccea3b374a3a019bc1734bbed67f8d34f17007d"
 
-URI_aarch64_simple-scan = "${EPEL_MIRROR}/aarch64/Packages/s/simple-scan-46.0-4.el10_1.aarch64.rpm;name=aarch64_simple-scan;unpack=0"
-SRC_URI:append = " ${URI_aarch64_simple-scan}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/simple-scan-46.0-4.el10_1.aarch64.rpm;name=aarch64_simple-scan;unpack=0"
 SRC_URI[aarch64_simple-scan.sha256sum] = "2045f3af9f20de4b4799026637ccd4dff4b55dee59f1b1083f1329da2016eb81"
 
 RDEPENDS:simple-scan = " \

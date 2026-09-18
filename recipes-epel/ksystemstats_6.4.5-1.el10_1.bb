@@ -9,16 +9,13 @@ PACKAGES = " \
  ksystemstats \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ksystemstats-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ksystemstats-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "82a79e401cd8285ab5103b786b25fc6d3fdeae60759d05aec3725b37c24c31db"
 
-URI_x86_64_v2_ksystemstats = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksystemstats-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksystemstats;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ksystemstats}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksystemstats-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksystemstats;unpack=0"
 SRC_URI[x86_64_v2_ksystemstats.sha256sum] = "bc9aa51663ebbc84756a2d45668076321e545c59f41823873fa45253488f9fc7"
 
-URI_aarch64_ksystemstats = "${EPEL_MIRROR}/aarch64/Packages/k/ksystemstats-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_ksystemstats;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ksystemstats}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ksystemstats-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_ksystemstats;unpack=0"
 SRC_URI[aarch64_ksystemstats.sha256sum] = "8cb9f1e33cd25fb4592d0882ebb692ee6fa26cb045df930291dc4cd938078c32"
 
 RDEPENDS:ksystemstats = " \

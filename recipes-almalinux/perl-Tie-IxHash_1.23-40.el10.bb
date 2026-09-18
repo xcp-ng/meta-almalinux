@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Tie-IxHash \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Tie-IxHash-1.23-40.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Tie-IxHash-1.23-40.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0fbbe072b62d96682dff818fcf96c071e1f4528579c57c57f4a1e27737e032a0"
 
-URI_x86_64_v2_perl-Tie-IxHash = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Tie-IxHash-1.23-40.el10.noarch.rpm;name=x86_64_v2_perl-Tie-IxHash;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tie-IxHash}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Tie-IxHash-1.23-40.el10.noarch.rpm;name=x86_64_v2_perl-Tie-IxHash;unpack=0"
 SRC_URI[x86_64_v2_perl-Tie-IxHash.sha256sum] = "656d39990056bf6dff88ea305dc71076e3948baed279e1b10dbdb2a18e3cd3eb"
 
-URI_aarch64_perl-Tie-IxHash = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Tie-IxHash-1.23-40.el10.noarch.rpm;name=aarch64_perl-Tie-IxHash;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tie-IxHash}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Tie-IxHash-1.23-40.el10.noarch.rpm;name=aarch64_perl-Tie-IxHash;unpack=0"
 SRC_URI[aarch64_perl-Tie-IxHash.sha256sum] = "656d39990056bf6dff88ea305dc71076e3948baed279e1b10dbdb2a18e3cd3eb"
 
 RDEPENDS:perl-Tie-IxHash = " \

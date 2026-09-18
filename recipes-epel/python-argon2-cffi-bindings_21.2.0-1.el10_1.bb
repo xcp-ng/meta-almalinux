@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-argon2-cffi-bindings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-argon2-cffi-bindings-21.2.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-argon2-cffi-bindings-21.2.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fec048c6ed74d66b85a98202be2c68412851502843658fe6e8e03ec67e2b9060"
 
-URI_x86_64_v2_python3-argon2-cffi-bindings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-argon2-cffi-bindings-21.2.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-argon2-cffi-bindings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-argon2-cffi-bindings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-argon2-cffi-bindings-21.2.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-argon2-cffi-bindings;unpack=0"
 SRC_URI[x86_64_v2_python3-argon2-cffi-bindings.sha256sum] = "9ac877991e8e12f58f4e9510381850a2685931edba41e4853ed68a47d13e9523"
 
-URI_aarch64_python3-argon2-cffi-bindings = "${EPEL_MIRROR}/aarch64/Packages/p/python3-argon2-cffi-bindings-21.2.0-1.el10_1.aarch64.rpm;name=aarch64_python3-argon2-cffi-bindings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-argon2-cffi-bindings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-argon2-cffi-bindings-21.2.0-1.el10_1.aarch64.rpm;name=aarch64_python3-argon2-cffi-bindings;unpack=0"
 SRC_URI[aarch64_python3-argon2-cffi-bindings.sha256sum] = "f30eb87237eb8b1e840432ec7ba515a8960fc70b3a21ef67a3c011083ed7ca28"
 
 RDEPENDS:python3-argon2-cffi-bindings = " \

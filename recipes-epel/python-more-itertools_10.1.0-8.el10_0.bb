@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-more-itertools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-more-itertools-10.1.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-more-itertools-10.1.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6dd1b65df0c58533378fa5358e83ae84554fd342f0ef84772771cd73d05c0210"
 
-URI_x86_64_v2_python3-more-itertools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-more-itertools-10.1.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-more-itertools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-more-itertools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-more-itertools-10.1.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-more-itertools;unpack=0"
 SRC_URI[x86_64_v2_python3-more-itertools.sha256sum] = "5a176894a1f2161da28550c48e918286efa0e8f95a2e46fc0cb6524e86f2b028"
 
-URI_aarch64_python3-more-itertools = "${EPEL_MIRROR}/aarch64/Packages/p/python3-more-itertools-10.1.0-8.el10_0.noarch.rpm;name=aarch64_python3-more-itertools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-more-itertools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-more-itertools-10.1.0-8.el10_0.noarch.rpm;name=aarch64_python3-more-itertools;unpack=0"
 SRC_URI[aarch64_python3-more-itertools.sha256sum] = "21a59ba4e742c112a21c1a7b441e6e7de9f64e5105dc1515e084a09fac8a42ec"
 
 RDEPENDS:python3-more-itertools = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-urlgrabber \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-urlgrabber-4.1.0-22.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-urlgrabber-4.1.0-22.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d1e6f78a3138b8cf0f5268793e6dc29768b028e5b33ac75f1413b95f05e8947e"
 
-URI_x86_64_v2_python3-urlgrabber = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-urlgrabber-4.1.0-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-urlgrabber;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-urlgrabber}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-urlgrabber-4.1.0-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-urlgrabber;unpack=0"
 SRC_URI[x86_64_v2_python3-urlgrabber.sha256sum] = "40baa96f3464e6084a6f4d6d6cdc3272b6c6ce3d39d9aa6d2db2bf215c271792"
 
-URI_aarch64_python3-urlgrabber = "${EPEL_MIRROR}/aarch64/Packages/p/python3-urlgrabber-4.1.0-22.el10_1.noarch.rpm;name=aarch64_python3-urlgrabber;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-urlgrabber}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-urlgrabber-4.1.0-22.el10_1.noarch.rpm;name=aarch64_python3-urlgrabber;unpack=0"
 SRC_URI[aarch64_python3-urlgrabber.sha256sum] = "3af84b9394cf00d5a53899e4192ea68a75f1e985d072113bc7ce8646bfedbafb"
 
 RDEPENDS:python3-urlgrabber = " \

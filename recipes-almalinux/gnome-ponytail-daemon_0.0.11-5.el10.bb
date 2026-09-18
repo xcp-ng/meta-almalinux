@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-gnome-ponytail-daemon \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-ponytail-daemon-0.0.11-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-ponytail-daemon-0.0.11-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fb2d4e4801ffa532fb4e1e6347dff4d0ac553237498cdd3b91cdf6d25fcf85b3"
 
-URI_x86_64_v2_gnome-ponytail-daemon = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-ponytail-daemon-0.0.11-5.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-ponytail-daemon;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-ponytail-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-ponytail-daemon-0.0.11-5.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-ponytail-daemon;unpack=0"
 SRC_URI[x86_64_v2_gnome-ponytail-daemon.sha256sum] = "40ecd19039df96b8f4a5a2e9db53fce9f3bbcbe7f46b22cc353d0afc54a20a32"
 
-URI_x86_64_v2_python3-gnome-ponytail-daemon = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-gnome-ponytail-daemon-0.0.11-5.el10.noarch.rpm;name=x86_64_v2_python3-gnome-ponytail-daemon;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-gnome-ponytail-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-gnome-ponytail-daemon-0.0.11-5.el10.noarch.rpm;name=x86_64_v2_python3-gnome-ponytail-daemon;unpack=0"
 SRC_URI[x86_64_v2_python3-gnome-ponytail-daemon.sha256sum] = "13c8e9b7657d63fd8c458889d4afb83a083ea0beefb9b2d761b37de8ce8c5a1d"
 
-URI_aarch64_gnome-ponytail-daemon = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-ponytail-daemon-0.0.11-5.el10.aarch64.rpm;name=aarch64_gnome-ponytail-daemon;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-ponytail-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-ponytail-daemon-0.0.11-5.el10.aarch64.rpm;name=aarch64_gnome-ponytail-daemon;unpack=0"
 SRC_URI[aarch64_gnome-ponytail-daemon.sha256sum] = "b4e2951c447844f5030c82f13660415f583a81e414c728cd6c71134247fc3a6d"
 
-URI_aarch64_python3-gnome-ponytail-daemon = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-gnome-ponytail-daemon-0.0.11-5.el10.noarch.rpm;name=aarch64_python3-gnome-ponytail-daemon;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-gnome-ponytail-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-gnome-ponytail-daemon-0.0.11-5.el10.noarch.rpm;name=aarch64_python3-gnome-ponytail-daemon;unpack=0"
 SRC_URI[aarch64_python3-gnome-ponytail-daemon.sha256sum] = "13c8e9b7657d63fd8c458889d4afb83a083ea0beefb9b2d761b37de8ce8c5a1d"
 
 RDEPENDS:gnome-ponytail-daemon = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kfind \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kfind-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kfind-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "20887bafdf9f30e30c1acaa6a21d30a204096e635e93c68cfd7f8c1f97a877e4"
 
-URI_x86_64_v2_kfind = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kfind-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kfind;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kfind}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kfind-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kfind;unpack=0"
 SRC_URI[x86_64_v2_kfind.sha256sum] = "d70aaff85367b34c6adef15b71151d6ff72bb6422e1d2a006d3d5979b36eb1a8"
 
-URI_aarch64_kfind = "${EPEL_MIRROR}/aarch64/Packages/k/kfind-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kfind;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kfind}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kfind-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kfind;unpack=0"
 SRC_URI[aarch64_kfind.sha256sum] = "056c291c6e8f1947567e2c22c5da3ae2ec7855d3e05446cc358827a4525ad41a"
 
 RDEPENDS:kfind = " \

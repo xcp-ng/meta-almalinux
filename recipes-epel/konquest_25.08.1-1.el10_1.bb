@@ -9,16 +9,13 @@ PACKAGES = " \
  konquest \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/konquest-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/konquest-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "06ad2f14659b3dedd67658ebca5491e318211f119e52c5fa58a6ccb67b3b5a16"
 
-URI_x86_64_v2_konquest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konquest-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konquest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_konquest}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konquest-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konquest;unpack=0"
 SRC_URI[x86_64_v2_konquest.sha256sum] = "034eadad26ab2fdbe8ee22df6706795229421975839e6c29b26a210524139f8d"
 
-URI_aarch64_konquest = "${EPEL_MIRROR}/aarch64/Packages/k/konquest-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konquest;unpack=0"
-SRC_URI:append = " ${URI_aarch64_konquest}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/konquest-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konquest;unpack=0"
 SRC_URI[aarch64_konquest.sha256sum] = "280166babf94939e57bc9e85ab06cb5fe400f3e6c433221bb7b8f6ff2295b6b2"
 
 RDEPENDS:konquest = " \

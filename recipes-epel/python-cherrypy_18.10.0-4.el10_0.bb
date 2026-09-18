@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-cherrypy-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cherrypy-18.10.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cherrypy-18.10.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "afe6c95a97d88aa29e8d7a28c72023d32f6a8d95dbd2b9dcc2ff8b671e28fe8a"
 
-URI_x86_64_v2_python3-cherrypy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cherrypy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy;unpack=0"
 SRC_URI[x86_64_v2_python3-cherrypy.sha256sum] = "6b9ab08c636ec64f50f9ae33d795d35404d6591bab569e0358dd557e5ae1df96"
 
-URI_x86_64_v2_python3-cherrypy-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-devel-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cherrypy-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cherrypy-devel-18.10.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cherrypy-devel;unpack=0"
 SRC_URI[x86_64_v2_python3-cherrypy-devel.sha256sum] = "7b9a34f6518ec9d890915b172c869d166966bef4b611c1c032d675e21f25ec78"
 
-URI_aarch64_python3-cherrypy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cherrypy-18.10.0-4.el10_0.noarch.rpm;name=aarch64_python3-cherrypy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cherrypy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cherrypy-18.10.0-4.el10_0.noarch.rpm;name=aarch64_python3-cherrypy;unpack=0"
 SRC_URI[aarch64_python3-cherrypy.sha256sum] = "d11411fa6288bd5b529f9af5057c67e991e0469584db550a2476243a5086b988"
 
-URI_aarch64_python3-cherrypy-devel = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cherrypy-devel-18.10.0-4.el10_0.noarch.rpm;name=aarch64_python3-cherrypy-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cherrypy-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cherrypy-devel-18.10.0-4.el10_0.noarch.rpm;name=aarch64_python3-cherrypy-devel;unpack=0"
 SRC_URI[aarch64_python3-cherrypy-devel.sha256sum] = "84d1ba2c8184e36bd080ee4e218e11d83df888903e61a2605bab122a2a00396d"
 
 RDEPENDS:python3-cherrypy = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-URI-Encode \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-URI-Encode-1.1.1-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-URI-Encode-1.1.1-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "313b711ae044f1a4083c178115a67a2850446f7d52510a90a4ed184d705b0d81"
 
-URI_x86_64_v2_perl-URI-Encode = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-URI-Encode-1.1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-URI-Encode;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-URI-Encode}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-URI-Encode-1.1.1-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-URI-Encode;unpack=0"
 SRC_URI[x86_64_v2_perl-URI-Encode.sha256sum] = "951648f480aa893c339a77139892ab7cbe038d739cfa11436ecfd63892c01c41"
 
-URI_aarch64_perl-URI-Encode = "${EPEL_MIRROR}/aarch64/Packages/p/perl-URI-Encode-1.1.1-25.el10_0.noarch.rpm;name=aarch64_perl-URI-Encode;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-URI-Encode}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-URI-Encode-1.1.1-25.el10_0.noarch.rpm;name=aarch64_perl-URI-Encode;unpack=0"
 SRC_URI[aarch64_perl-URI-Encode.sha256sum] = "11763b061359e6d1001bffbd6c7c758970d0c32ba63a2eee94d51b464ea64195"
 
 RDEPENDS:perl-URI-Encode = " \

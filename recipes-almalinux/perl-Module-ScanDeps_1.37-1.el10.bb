@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-ScanDeps \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-ScanDeps-1.37-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Module-ScanDeps-1.37-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4116c024e4669adfa9f54a818138dbb0686e88b5048b15aa6373c44190f51c12"
 
-URI_x86_64_v2_perl-Module-ScanDeps = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-ScanDeps-1.37-1.el10.noarch.rpm;name=x86_64_v2_perl-Module-ScanDeps;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-ScanDeps}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Module-ScanDeps-1.37-1.el10.noarch.rpm;name=x86_64_v2_perl-Module-ScanDeps;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-ScanDeps.sha256sum] = "dda42cde2a8e49a5ee15a5f5bba3553bc63b1a7b979884f084f929bb4f534b84"
 
-URI_aarch64_perl-Module-ScanDeps = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-ScanDeps-1.37-1.el10.noarch.rpm;name=aarch64_perl-Module-ScanDeps;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-ScanDeps}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Module-ScanDeps-1.37-1.el10.noarch.rpm;name=aarch64_perl-Module-ScanDeps;unpack=0"
 SRC_URI[aarch64_perl-Module-ScanDeps.sha256sum] = "dda42cde2a8e49a5ee15a5f5bba3553bc63b1a7b979884f084f929bb4f534b84"
 
 RDEPENDS:perl-Module-ScanDeps = " \

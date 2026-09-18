@@ -14,56 +14,43 @@ PACKAGES = " \
  log4j-web \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/log4j-2.20.0-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/log4j-2.20.0-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a20bb82ce2c526df51ff4b74a8f734d555a53bd18549a12c4511b121831a4cec"
 
-URI_x86_64_v2_log4j = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j;unpack=0"
 SRC_URI[x86_64_v2_log4j.sha256sum] = "bb047fb7bb656e50da7733d1be468a404abc4d9cdf3c7b4b9fcad1adf5f137ce"
 
-URI_x86_64_v2_log4j-bom = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-bom-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-bom;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j-bom}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-bom-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-bom;unpack=0"
 SRC_URI[x86_64_v2_log4j-bom.sha256sum] = "c0bc1fa487c37b34eaf3a7664f2c8d5ee1253e35c5b869b4430e878faed7d704"
 
-URI_x86_64_v2_log4j-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-javadoc-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-javadoc-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-javadoc;unpack=0"
 SRC_URI[x86_64_v2_log4j-javadoc.sha256sum] = "5c8fac65b41e90049d039d7e35d4554eaeb1d929b4b3adebe52ae81e4c2f3151"
 
-URI_x86_64_v2_log4j-jcl = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-jcl-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-jcl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j-jcl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-jcl-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-jcl;unpack=0"
 SRC_URI[x86_64_v2_log4j-jcl.sha256sum] = "a1ae3b0f9154ee8fe0db1cf74ba56dce83a2c0fab1bbc8d993daaaa3ff0b0245"
 
-URI_x86_64_v2_log4j-slf4j = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-slf4j-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-slf4j;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j-slf4j}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/log4j-slf4j-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-slf4j;unpack=0"
 SRC_URI[x86_64_v2_log4j-slf4j.sha256sum] = "8cc5ddc2dfa40cdfe8abe288c9d9160c2f4d48652ea9cbf4fd7fa38f974a3a67"
 
-URI_x86_64_v2_log4j-web = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-web-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-web;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_log4j-web}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/log4j-web-2.20.0-9.el10.noarch.rpm;name=x86_64_v2_log4j-web;unpack=0"
 SRC_URI[x86_64_v2_log4j-web.sha256sum] = "3682897a0774e22cdf80e853abe0f7b8d779cf3c0e8473d67099c7a15b2d34f1"
 
-URI_aarch64_log4j = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j;unpack=0"
 SRC_URI[aarch64_log4j.sha256sum] = "bb047fb7bb656e50da7733d1be468a404abc4d9cdf3c7b4b9fcad1adf5f137ce"
 
-URI_aarch64_log4j-bom = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-bom-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-bom;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j-bom}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-bom-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-bom;unpack=0"
 SRC_URI[aarch64_log4j-bom.sha256sum] = "c0bc1fa487c37b34eaf3a7664f2c8d5ee1253e35c5b869b4430e878faed7d704"
 
-URI_aarch64_log4j-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-javadoc-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-javadoc-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-javadoc;unpack=0"
 SRC_URI[aarch64_log4j-javadoc.sha256sum] = "5c8fac65b41e90049d039d7e35d4554eaeb1d929b4b3adebe52ae81e4c2f3151"
 
-URI_aarch64_log4j-jcl = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-jcl-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-jcl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j-jcl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-jcl-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-jcl;unpack=0"
 SRC_URI[aarch64_log4j-jcl.sha256sum] = "a1ae3b0f9154ee8fe0db1cf74ba56dce83a2c0fab1bbc8d993daaaa3ff0b0245"
 
-URI_aarch64_log4j-slf4j = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-slf4j-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-slf4j;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j-slf4j}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/log4j-slf4j-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-slf4j;unpack=0"
 SRC_URI[aarch64_log4j-slf4j.sha256sum] = "8cc5ddc2dfa40cdfe8abe288c9d9160c2f4d48652ea9cbf4fd7fa38f974a3a67"
 
-URI_aarch64_log4j-web = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-web-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-web;unpack=0"
-SRC_URI:append = " ${URI_aarch64_log4j-web}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/log4j-web-2.20.0-9.el10.noarch.rpm;name=aarch64_log4j-web;unpack=0"
 SRC_URI[aarch64_log4j-web.sha256sum] = "3682897a0774e22cdf80e853abe0f7b8d779cf3c0e8473d67099c7a15b2d34f1"
 
 RDEPENDS:log4j = " \

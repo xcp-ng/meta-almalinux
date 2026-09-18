@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-docker-libtrust-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-libtrust-0-0.35.20190501gitaabc10e.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-libtrust-0-0.35.20190501gitaabc10e.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0ef2260d59789c53caa0c04e68605b4a72017871ec52392cc6695878432a451d"
 
-URI_aarch64_golang-github-docker-libtrust-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-libtrust-devel-0-0.35.20190501gitaabc10e.el10_0.noarch.rpm;name=aarch64_golang-github-docker-libtrust-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-docker-libtrust-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-libtrust-devel-0-0.35.20190501gitaabc10e.el10_0.noarch.rpm;name=aarch64_golang-github-docker-libtrust-devel;unpack=0"
 SRC_URI[aarch64_golang-github-docker-libtrust-devel.sha256sum] = "61d7a0164a989b50fa16afacd46df9e09c9b594f84bcf6c8bf4df8432a72360c"
 
 RDEPENDS:golang-github-docker-libtrust-devel = " \

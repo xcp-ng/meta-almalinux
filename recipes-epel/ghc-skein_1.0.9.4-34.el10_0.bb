@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-skein-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-skein-1.0.9.4-34.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-skein-1.0.9.4-34.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fb268fe36bc59a1944f01f911b3d0c0c3f4b3f689de9309b32e05c93ab885e88"
 
-URI_x86_64_v2_ghc-skein = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-skein}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein;unpack=0"
 SRC_URI[x86_64_v2_ghc-skein.sha256sum] = "356a8d16752ee7cc8e69fb12aa31f54dbb761a5b9cba94a74bff273dba3dc519"
 
-URI_x86_64_v2_ghc-skein-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-devel-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-skein-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-devel-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-skein-devel.sha256sum] = "90f7fea02fe243fb96d22f229635bdace3b1e4deeb29be19aa6078b04a271113"
 
-URI_x86_64_v2_ghc-skein-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-doc-1.0.9.4-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-skein-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-skein-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-doc-1.0.9.4-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-skein-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-skein-doc.sha256sum] = "56282d89f8d020be8f2af6ece76259734a16ae7d04f50de2222349b3f09fbade"
 
-URI_x86_64_v2_ghc-skein-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-prof-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-skein-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-skein-prof-1.0.9.4-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-skein-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-skein-prof.sha256sum] = "9b912a3a2c9f2531a601a0ec1683dec2ca623d8ec200e46101f4f78bdd695122"
 
-URI_aarch64_ghc-skein = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-skein}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein;unpack=0"
 SRC_URI[aarch64_ghc-skein.sha256sum] = "1465c5ab0d505a2be0f46d50b513a46f5e72cc9b9718903a24a54ba0895a8249"
 
-URI_aarch64_ghc-skein-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-devel-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-skein-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-devel-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein-devel;unpack=0"
 SRC_URI[aarch64_ghc-skein-devel.sha256sum] = "6ba60f1c11973eaf3cc2f4db17a37650acf7058d2a8126b72f1e3cd1fc075c13"
 
-URI_aarch64_ghc-skein-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-doc-1.0.9.4-34.el10_0.noarch.rpm;name=aarch64_ghc-skein-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-skein-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-doc-1.0.9.4-34.el10_0.noarch.rpm;name=aarch64_ghc-skein-doc;unpack=0"
 SRC_URI[aarch64_ghc-skein-doc.sha256sum] = "81a412b99a7630c1871d1283f3f139393c292c1fd42adb532c974939b0d31658"
 
-URI_aarch64_ghc-skein-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-prof-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-skein-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-skein-prof-1.0.9.4-34.el10_0.aarch64.rpm;name=aarch64_ghc-skein-prof;unpack=0"
 SRC_URI[aarch64_ghc-skein-prof.sha256sum] = "4acf269f6d620265a25bead5f78d2233b234bd3d8b332b6b4bab0fe9dcd9eb72"
 
 RDEPENDS:ghc-skein = " \

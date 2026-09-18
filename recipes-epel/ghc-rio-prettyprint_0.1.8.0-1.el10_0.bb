@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-rio-prettyprint-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-rio-prettyprint-0.1.8.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-rio-prettyprint-0.1.8.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9054ed6a05fdc68d01f234de97852878308a473201193bfabe3d04e0b724b36a"
 
-URI_x86_64_v2_ghc-rio-prettyprint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-prettyprint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-prettyprint.sha256sum] = "917e0d77eaff83a1869ade81884c86ae2224399ba23619ac6c116d06729444a8"
 
-URI_x86_64_v2_ghc-rio-prettyprint-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-devel-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-prettyprint-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-devel-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-prettyprint-devel.sha256sum] = "0a23a5c58b29ee5268a48ffb57318b03f804889581aa1e08e3699f03ef9edee0"
 
-URI_x86_64_v2_ghc-rio-prettyprint-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-doc-0.1.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-rio-prettyprint-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-prettyprint-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-doc-0.1.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-rio-prettyprint-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-prettyprint-doc.sha256sum] = "7e6db28a982c62b5f006865ad57d782788f60d1358d99a2b59092925b9392247"
 
-URI_x86_64_v2_ghc-rio-prettyprint-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-prof-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-prettyprint-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prettyprint-prof-0.1.8.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prettyprint-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-prettyprint-prof.sha256sum] = "a00dde595006ca9971dd85e34c2c4767f3044d586fd0d9dcb4ee0180a54d9405"
 
-URI_aarch64_ghc-rio-prettyprint = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-prettyprint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint;unpack=0"
 SRC_URI[aarch64_ghc-rio-prettyprint.sha256sum] = "4a2a03662b61987a74fe5d5ff87bf42223d3529d1947f8e937b5d48385c46c26"
 
-URI_aarch64_ghc-rio-prettyprint-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-devel-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-prettyprint-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-devel-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint-devel;unpack=0"
 SRC_URI[aarch64_ghc-rio-prettyprint-devel.sha256sum] = "497b64a9ffce73866f81d328c6a7bf82afb1919d9cdb688a720fba77ce2519b2"
 
-URI_aarch64_ghc-rio-prettyprint-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-doc-0.1.8.0-1.el10_0.noarch.rpm;name=aarch64_ghc-rio-prettyprint-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-prettyprint-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-doc-0.1.8.0-1.el10_0.noarch.rpm;name=aarch64_ghc-rio-prettyprint-doc;unpack=0"
 SRC_URI[aarch64_ghc-rio-prettyprint-doc.sha256sum] = "714ad7a91a99df9f878f161091d3a9d13fc64939086664e103681e646ac13844"
 
-URI_aarch64_ghc-rio-prettyprint-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-prof-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-prettyprint-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prettyprint-prof-0.1.8.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prettyprint-prof;unpack=0"
 SRC_URI[aarch64_ghc-rio-prettyprint-prof.sha256sum] = "857bf83508b4f5ea435c8edee7558688fd4794df21898ecc97e44a2411569941"
 
 RDEPENDS:ghc-rio-prettyprint = " \

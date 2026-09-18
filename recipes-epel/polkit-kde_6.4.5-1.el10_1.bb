@@ -9,17 +9,14 @@ PACKAGES = " \
  polkit-kde \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/polkit-kde-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/polkit-kde-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f568b1a5e418acf4ac0be08b98b5490fa2c477fe2135c8a4e121dd126f6afa40"
 
-URI_x86_64_v2_polkit-kde = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-kde-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-kde;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_polkit-kde}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polkit-kde-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polkit-kde;unpack=0"
 SRC_URI[x86_64_v2_polkit-kde.sha256sum] = "93f24b8375163ca7fbd6e00bb6994c2ee2c79347fd6a0a6b20a6377339783bc8"
 RPROVIDES:polkit-kde:append:x86_64_v2 = " virtual/PolicyKit-authentication-agent"
 
-URI_aarch64_polkit-kde = "${EPEL_MIRROR}/aarch64/Packages/p/polkit-kde-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_polkit-kde;unpack=0"
-SRC_URI:append = " ${URI_aarch64_polkit-kde}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/polkit-kde-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_polkit-kde;unpack=0"
 SRC_URI[aarch64_polkit-kde.sha256sum] = "237ba1152696678377c110e40a159b9443601208f87858cf1ceb7642338355db"
 RPROVIDES:polkit-kde:append:aarch64 = " virtual/PolicyKit-authentication-agent"
 

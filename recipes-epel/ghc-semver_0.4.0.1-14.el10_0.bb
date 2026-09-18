@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-semver-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-semver-0.4.0.1-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-semver-0.4.0.1-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "58f7e90dc78f242adbdcb3ab85e900a927fb804255dc9aa02c8a727e3f22a6d1"
 
-URI_x86_64_v2_ghc-semver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semver}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver;unpack=0"
 SRC_URI[x86_64_v2_ghc-semver.sha256sum] = "17555973c86f79fc0137ce180a6c2edeb49d0a3c9525cf30f061608b9b01f658"
 
-URI_x86_64_v2_ghc-semver-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-devel-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semver-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-devel-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-semver-devel.sha256sum] = "eceae03fc12946b42031e7debbb5e37bd376a6d1e43b49f374f643915cc91674"
 
-URI_x86_64_v2_ghc-semver-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-doc-0.4.0.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-semver-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semver-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-doc-0.4.0.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-semver-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-semver-doc.sha256sum] = "e5f76e5e3c5c681e1ade46a0c78dd89c8355c1c3f872e8d06a0e23905d0c9345"
 
-URI_x86_64_v2_ghc-semver-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-prof-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semver-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semver-prof-0.4.0.1-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semver-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-semver-prof.sha256sum] = "2659c2dbf3e13c3313c7eefb4e703a74547c923b5bc27016e4d1bff874dc24e5"
 
-URI_aarch64_ghc-semver = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semver}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver;unpack=0"
 SRC_URI[aarch64_ghc-semver.sha256sum] = "2cae8c6e506cbbb9900434919f99e4749a75954b1ffe7ebb264b451b114462db"
 
-URI_aarch64_ghc-semver-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-devel-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semver-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-devel-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver-devel;unpack=0"
 SRC_URI[aarch64_ghc-semver-devel.sha256sum] = "7ffeb73b4c905159e7ac41d6539b622642b72a6b39da9d6b84737990c5c47ece"
 
-URI_aarch64_ghc-semver-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-doc-0.4.0.1-14.el10_0.noarch.rpm;name=aarch64_ghc-semver-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semver-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-doc-0.4.0.1-14.el10_0.noarch.rpm;name=aarch64_ghc-semver-doc;unpack=0"
 SRC_URI[aarch64_ghc-semver-doc.sha256sum] = "438825855b4b7896e3bb5351a8e2593314f4e0b9191c83f319dcc4a3024d381b"
 
-URI_aarch64_ghc-semver-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-prof-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semver-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semver-prof-0.4.0.1-14.el10_0.aarch64.rpm;name=aarch64_ghc-semver-prof;unpack=0"
 SRC_URI[aarch64_ghc-semver-prof.sha256sum] = "ce2d4a117f584801259d02e2c4ddc70597d08c06d54169203807dc54d7072e1e"
 
 RDEPENDS:ghc-semver = " \

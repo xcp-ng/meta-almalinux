@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-twinj-uuid-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-twinj-uuid-1.0.0-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-twinj-uuid-1.0.0-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5b2d7d6d67afad5b7c1f35431f8dc6556c04117877265ce4e4e55374adc5fb93"
 
-URI_x86_64_v2_golang-github-twinj-uuid-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-twinj-uuid-devel-1.0.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-twinj-uuid-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-twinj-uuid-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-twinj-uuid-devel-1.0.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-twinj-uuid-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-twinj-uuid-devel.sha256sum] = "48b472ebaa5d21de0f961d14d5510078e2fa751be05f1746bec4b9bd8a3b9630"
 
-URI_aarch64_golang-github-twinj-uuid-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-twinj-uuid-devel-1.0.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-twinj-uuid-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-twinj-uuid-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-twinj-uuid-devel-1.0.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-twinj-uuid-devel;unpack=0"
 SRC_URI[aarch64_golang-github-twinj-uuid-devel.sha256sum] = "b186e8dc535e7fea2f0c0773e9771e5d4073289688b73cd37daf3df17efd11a8"
 
 RDEPENDS:golang-github-twinj-uuid-devel = " \

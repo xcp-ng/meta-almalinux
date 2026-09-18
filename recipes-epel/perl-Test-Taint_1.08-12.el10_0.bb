@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Taint \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Taint-1.08-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Taint-1.08-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ee154512b4c92a5d2f603308e7f762b6e2e09bffa4a8bb12ba3722a459912af6"
 
-URI_x86_64_v2_perl-Test-Taint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Taint-1.08-12.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Test-Taint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Taint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Taint-1.08-12.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Test-Taint;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Taint.sha256sum] = "8776b311bbc422f92734dd67a1ab8dbca7d22bd3032ca34d45b17675fee092ae"
 
-URI_aarch64_perl-Test-Taint = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Taint-1.08-12.el10_0.aarch64.rpm;name=aarch64_perl-Test-Taint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Taint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Taint-1.08-12.el10_0.aarch64.rpm;name=aarch64_perl-Test-Taint;unpack=0"
 SRC_URI[aarch64_perl-Test-Taint.sha256sum] = "0498f606e66ab041eb3859b49d772a2b439e9cee6ec6ddd485adc3f1e3700196"
 
 RDEPENDS:perl-Test-Taint = " \

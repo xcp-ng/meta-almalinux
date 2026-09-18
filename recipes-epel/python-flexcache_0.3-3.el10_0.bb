@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-flexcache \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-flexcache-0.3-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-flexcache-0.3-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "78b4f24b43206127f0364f39510e3c826adbd09ecba68f178f455e71649baeb1"
 
-URI_x86_64_v2_python3-flexcache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flexcache-0.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flexcache;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flexcache}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flexcache-0.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flexcache;unpack=0"
 SRC_URI[x86_64_v2_python3-flexcache.sha256sum] = "4daee0b42572fd06e552f483f0a6c837ec8755284f9561dd9acf7238d9088e7e"
 
-URI_aarch64_python3-flexcache = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flexcache-0.3-3.el10_0.noarch.rpm;name=aarch64_python3-flexcache;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flexcache}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flexcache-0.3-3.el10_0.noarch.rpm;name=aarch64_python3-flexcache;unpack=0"
 SRC_URI[aarch64_python3-flexcache.sha256sum] = "ed85b442c7f36a77c889ca8dc7a315a8832934a0d6c1673141ecc7186866bf34"
 
 RDEPENDS:python3-flexcache = " \

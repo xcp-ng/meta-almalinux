@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-openidc-client \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-openidc-client-0.6.0^1.0e2ed81-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-openidc-client-0.6.0^1.0e2ed81-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2d08a4183e5a00269df5213a14e2a521af047d97b36d468b54b2cdf9adb67d02"
 
-URI_x86_64_v2_python3-openidc-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openidc-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-openidc-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openidc-client;unpack=0"
 SRC_URI[x86_64_v2_python3-openidc-client.sha256sum] = "00bd7c3b24c0bd89f46a40e68d6b6c4c7bd6c736df805db67beb525d7b357383"
 
-URI_aarch64_python3-openidc-client = "${EPEL_MIRROR}/aarch64/Packages/p/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.noarch.rpm;name=aarch64_python3-openidc-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-openidc-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-openidc-client-0.6.0^1.0e2ed81-2.el10_0.noarch.rpm;name=aarch64_python3-openidc-client;unpack=0"
 SRC_URI[aarch64_python3-openidc-client.sha256sum] = "228eeacb9ea916795ecfe60b1d8b88a97190f56979a75dbaafbf7e1a95046093"
 
 RDEPENDS:python3-openidc-client = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  po4a \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/po4a-0.69-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/po4a-0.69-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1d89cf7183fa23e48d416033504eed96674ff1c6f77d49777f254add60c6f9fe"
 
-URI_x86_64_v2_po4a = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/po4a-0.69-7.el10.noarch.rpm;name=x86_64_v2_po4a;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_po4a}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/po4a-0.69-7.el10.noarch.rpm;name=x86_64_v2_po4a;unpack=0"
 SRC_URI[x86_64_v2_po4a.sha256sum] = "8ac6b8799221e5fc85c3c801276f19025aa0ce6326761421b9e1e1ef0cece2d3"
 
-URI_aarch64_po4a = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/po4a-0.69-7.el10.noarch.rpm;name=aarch64_po4a;unpack=0"
-SRC_URI:append = " ${URI_aarch64_po4a}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/po4a-0.69-7.el10.noarch.rpm;name=aarch64_po4a;unpack=0"
 SRC_URI[aarch64_po4a.sha256sum] = "8ac6b8799221e5fc85c3c801276f19025aa0ce6326761421b9e1e1ef0cece2d3"
 
 RDEPENDS:po4a = " \

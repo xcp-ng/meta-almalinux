@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-watchdog \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-watchdog-6.0.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-watchdog-6.0.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f8159d77da90d766372cfe40f16018aebeaf94472bc79fb0b1cdb0f65f2f958e"
 
-URI_x86_64_v2_python3-watchdog = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-watchdog-6.0.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-watchdog;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-watchdog}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-watchdog-6.0.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-watchdog;unpack=0"
 SRC_URI[x86_64_v2_python3-watchdog.sha256sum] = "3f908308360990b19735fb53c91b7690a8e4a13012082605d5bca17ea7c5d138"
 
-URI_aarch64_python3-watchdog = "${EPEL_MIRROR}/aarch64/Packages/p/python3-watchdog-6.0.0-5.el10_0.noarch.rpm;name=aarch64_python3-watchdog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-watchdog}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-watchdog-6.0.0-5.el10_0.noarch.rpm;name=aarch64_python3-watchdog;unpack=0"
 SRC_URI[aarch64_python3-watchdog.sha256sum] = "b560020bf9dec9435af0c7d1ee35cabb19370e0975204732ce80e8877d9ec15e"
 
 RDEPENDS:python3-watchdog = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ldap3 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ldap3-2.9.1-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ldap3-2.9.1-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1c0cd0930a9e38857eb09ae5ec6b41034123c25e4ca97cc592184e7b510f8151"
 
-URI_x86_64_v2_python3-ldap3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ldap3-2.9.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ldap3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ldap3}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ldap3-2.9.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ldap3;unpack=0"
 SRC_URI[x86_64_v2_python3-ldap3.sha256sum] = "dd43fc8a2a02a6fb36bf347ab8fb6d4ad9df2ca0bbe07052c82093a1509dc185"
 
-URI_aarch64_python3-ldap3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ldap3-2.9.1-10.el10_0.noarch.rpm;name=aarch64_python3-ldap3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ldap3}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ldap3-2.9.1-10.el10_0.noarch.rpm;name=aarch64_python3-ldap3;unpack=0"
 SRC_URI[aarch64_python3-ldap3.sha256sum] = "96373b3da0c3893d2b1e80e3b7049b0bf85a598b420ef8b700651c9abfcdcd18"
 
 RDEPENDS:python3-ldap3 = " \

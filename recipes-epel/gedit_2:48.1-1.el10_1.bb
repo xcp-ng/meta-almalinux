@@ -11,24 +11,19 @@ PACKAGES = " \
  gedit-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gedit-48.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gedit-48.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4a207425719776cc34ae7df7939e4de6298ada5b4a1377e40895c4df7219abdd"
 
-URI_x86_64_v2_gedit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gedit-48.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gedit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gedit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gedit-48.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gedit;unpack=0"
 SRC_URI[x86_64_v2_gedit.sha256sum] = "fb4674441d27621f94a0038b2baa0dca0bb730c97cc815976bd77c95fb3bd5ff"
 
-URI_x86_64_v2_gedit-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gedit-devel-48.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gedit-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gedit-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gedit-devel-48.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gedit-devel;unpack=0"
 SRC_URI[x86_64_v2_gedit-devel.sha256sum] = "e8403e0a6c5848f0dd6981c828f0697cf287b5f7a6b95b652533a1f359f3e4ca"
 
-URI_aarch64_gedit = "${EPEL_MIRROR}/aarch64/Packages/g/gedit-48.1-1.el10_1.aarch64.rpm;name=aarch64_gedit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gedit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gedit-48.1-1.el10_1.aarch64.rpm;name=aarch64_gedit;unpack=0"
 SRC_URI[aarch64_gedit.sha256sum] = "e72028520a782bef3a1286e4b22e918fccb2085eb6d1020c75019229ec795cf3"
 
-URI_aarch64_gedit-devel = "${EPEL_MIRROR}/aarch64/Packages/g/gedit-devel-48.1-1.el10_1.aarch64.rpm;name=aarch64_gedit-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gedit-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gedit-devel-48.1-1.el10_1.aarch64.rpm;name=aarch64_gedit-devel;unpack=0"
 SRC_URI[aarch64_gedit-devel.sha256sum] = "d1d219937c7fae256f31d3d619a189114b4d855cb3a42ec5be906f98aa1eb2be"
 
 RDEPENDS:gedit = " \

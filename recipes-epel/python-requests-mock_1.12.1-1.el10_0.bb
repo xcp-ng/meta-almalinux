@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-requests-mock \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-requests-mock-1.12.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-mock-1.12.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5c272f2ce81496abd2fb2b83950a5948633870a5e9ad9c412eab1748cef49819"
 
-URI_x86_64_v2_python3-requests-mock = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-mock-1.12.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-mock;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-requests-mock}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-mock-1.12.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-mock;unpack=0"
 SRC_URI[x86_64_v2_python3-requests-mock.sha256sum] = "d98181e03b496f7e7c3957b3a8027152b4537ba1d2f351858d5f57df23bd7052"
 
-URI_aarch64_python3-requests-mock = "${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-mock-1.12.1-1.el10_0.noarch.rpm;name=aarch64_python3-requests-mock;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-requests-mock}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-mock-1.12.1-1.el10_0.noarch.rpm;name=aarch64_python3-requests-mock;unpack=0"
 SRC_URI[aarch64_python3-requests-mock.sha256sum] = "d5c51067af5c393f103fee10134d6bfcec616087d109fa12fd290aa350f46235"
 
 RDEPENDS:python3-requests-mock = " \

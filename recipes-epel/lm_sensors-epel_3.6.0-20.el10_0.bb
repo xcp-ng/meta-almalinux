@@ -8,7 +8,6 @@ PR = "20.el10_0"
 PACKAGES = " \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/lm_sensors-epel-3.6.0-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/lm_sensors-epel-3.6.0-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "231e903b6fbd5ee95e28d81f98da60082f58bbd98f9fdbbe14f765b53206df03"
 

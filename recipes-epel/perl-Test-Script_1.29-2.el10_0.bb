@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Script \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Script-1.29-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Script-1.29-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "525f071a4f80cb056d8e867857d278d6ad5fc3df839771ebe576d09a5bac212f"
 
-URI_x86_64_v2_perl-Test-Script = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Script-1.29-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Script;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Script}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Script-1.29-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Script;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Script.sha256sum] = "27662dcf5518cc8d5b73a907f73182b08fcaa90a59905555db00e47b0758a356"
 
-URI_aarch64_perl-Test-Script = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Script-1.29-2.el10_0.noarch.rpm;name=aarch64_perl-Test-Script;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Script}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Script-1.29-2.el10_0.noarch.rpm;name=aarch64_perl-Test-Script;unpack=0"
 SRC_URI[aarch64_perl-Test-Script.sha256sum] = "07b713b6a8853a12ed95e1a139405b68654dd48e4cd5381abbc5b3e269a55a00"
 
 RDEPENDS:perl-Test-Script = " \

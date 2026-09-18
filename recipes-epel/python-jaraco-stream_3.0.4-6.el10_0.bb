@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-jaraco-stream \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-stream-3.0.4-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jaraco-stream-3.0.4-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4f081be561077117b1ff6411087368cb85b05e5f4176891fe9125f4b3b8703e4"
 
-URI_x86_64_v2_python3-jaraco-stream = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-stream-3.0.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-stream;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jaraco-stream}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jaraco-stream-3.0.4-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jaraco-stream;unpack=0"
 SRC_URI[x86_64_v2_python3-jaraco-stream.sha256sum] = "0a3097f49c456b99a65c8c0292cc03b3c7c86ee38ca8c32c841b3bbe6e4ea9ac"
 
-URI_aarch64_python3-jaraco-stream = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-stream-3.0.4-6.el10_0.noarch.rpm;name=aarch64_python3-jaraco-stream;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jaraco-stream}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jaraco-stream-3.0.4-6.el10_0.noarch.rpm;name=aarch64_python3-jaraco-stream;unpack=0"
 SRC_URI[aarch64_python3-jaraco-stream.sha256sum] = "7ba98d1f823c2df0641f1be6d18a7665e2b88694524cefab1dc7df0354e5df57"
 
 RDEPENDS:python3-jaraco-stream = " \

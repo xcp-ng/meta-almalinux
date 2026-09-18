@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-welcome \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-welcome-6.4.5-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-welcome-6.4.5-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fcc4435ae691779bc0a8af38a4f041dec43ce9fa504aab1ecb3dba6a0f6d7967"
 
-URI_x86_64_v2_plasma-welcome = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-welcome-6.4.5-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-welcome;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-welcome}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-welcome-6.4.5-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-welcome;unpack=0"
 SRC_URI[x86_64_v2_plasma-welcome.sha256sum] = "415c49fb61e4e1016d3d0c1d77450d9be01655b632bab307a172b6bd25be62ca"
 
-URI_aarch64_plasma-welcome = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-welcome-6.4.5-2.el10_1.aarch64.rpm;name=aarch64_plasma-welcome;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-welcome}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-welcome-6.4.5-2.el10_1.aarch64.rpm;name=aarch64_plasma-welcome;unpack=0"
 SRC_URI[aarch64_plasma-welcome.sha256sum] = "cef8682ff7bad64b53b31892a2d9e3cfb8951083d5b6a2d347f7c2c566c52b6f"
 
 RDEPENDS:plasma-welcome = " \

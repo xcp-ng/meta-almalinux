@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-d2g-hardwareaddr-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-d2g-hardwareaddr-0-0.6.20230111gite7d9fbe.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-d2g-hardwareaddr-0-0.6.20230111gite7d9fbe.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d288ad8056ecefa28af60e44c7e9e6dc459b487f9596f42b3a8f5779b7aadd3"
 
-URI_aarch64_golang-github-d2g-hardwareaddr-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-d2g-hardwareaddr-devel-0-0.6.20230111gite7d9fbe.el10_0.noarch.rpm;name=aarch64_golang-github-d2g-hardwareaddr-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-d2g-hardwareaddr-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-d2g-hardwareaddr-devel-0-0.6.20230111gite7d9fbe.el10_0.noarch.rpm;name=aarch64_golang-github-d2g-hardwareaddr-devel;unpack=0"
 SRC_URI[aarch64_golang-github-d2g-hardwareaddr-devel.sha256sum] = "975b0b7f3a4cff661e51fc8a739feb6685056be9327df04dc9f3256c09107f63"
 
 RDEPENDS:golang-github-d2g-hardwareaddr-devel = " \

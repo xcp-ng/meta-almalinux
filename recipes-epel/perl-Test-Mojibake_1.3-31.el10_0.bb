@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Mojibake \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Mojibake-1.3-31.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Mojibake-1.3-31.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bedd248d290551d377067d52513d929aa1f918039b2fb38c896cb0fac3ca7a74"
 
-URI_x86_64_v2_perl-Test-Mojibake = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Mojibake-1.3-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Mojibake;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Mojibake}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Mojibake-1.3-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Mojibake;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Mojibake.sha256sum] = "723bde7c3fdc1ca33cbaaf9f249770ee6de38a99a5cfdc2403f422167f252e2e"
 
-URI_aarch64_perl-Test-Mojibake = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Mojibake-1.3-31.el10_0.noarch.rpm;name=aarch64_perl-Test-Mojibake;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Mojibake}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Mojibake-1.3-31.el10_0.noarch.rpm;name=aarch64_perl-Test-Mojibake;unpack=0"
 SRC_URI[aarch64_perl-Test-Mojibake.sha256sum] = "3289a723effe08b1788b9ec0be71702966c821a22b7d7c1c4b690ce4c2e34954"
 
 RDEPENDS:perl-Test-Mojibake = " \

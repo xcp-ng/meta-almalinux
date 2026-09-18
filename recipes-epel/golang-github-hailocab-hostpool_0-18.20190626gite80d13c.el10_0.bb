@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-hailocab-hostpool-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-hailocab-hostpool-0-18.20190626gite80d13c.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-hailocab-hostpool-0-18.20190626gite80d13c.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "41207690c614f62552814e37cadd017507f6f00e855e9bf6af24d8e3c725cd5a"
 
-URI_aarch64_golang-github-hailocab-hostpool-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-hailocab-hostpool-devel-0-18.20190626gite80d13c.el10_0.noarch.rpm;name=aarch64_golang-github-hailocab-hostpool-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-hailocab-hostpool-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-hailocab-hostpool-devel-0-18.20190626gite80d13c.el10_0.noarch.rpm;name=aarch64_golang-github-hailocab-hostpool-devel;unpack=0"
 SRC_URI[aarch64_golang-github-hailocab-hostpool-devel.sha256sum] = "2b84333c5629d434ffedfff0036f812a467a03e5c513940eb129801a424b122f"
 
 RDEPENDS:golang-github-hailocab-hostpool-devel = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  gnome-menus-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-menus-3.36.0-16.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-menus-3.36.0-16.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d6113f3f5b47d10f2db091c518b643ccdb741c9c0e7dddaef4c0032e62841c19"
 
-URI_x86_64_v2_gnome-menus = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-menus-3.36.0-16.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-menus;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-menus}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-menus-3.36.0-16.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-menus;unpack=0"
 SRC_URI[x86_64_v2_gnome-menus.sha256sum] = "1970d1209d60dd35e80ee3f550edf8ee8f0f96b32ca83cf344626f4fe7395183"
 
-URI_x86_64_v2_gnome-menus-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-menus-devel-3.36.0-16.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-menus-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-menus-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-menus-devel-3.36.0-16.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-menus-devel;unpack=0"
 SRC_URI[x86_64_v2_gnome-menus-devel.sha256sum] = "9f7fdd45900149b9c78314e50841645e156348280c17805e55df126b195cd480"
 
-URI_aarch64_gnome-menus = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-menus-3.36.0-16.el10.aarch64.rpm;name=aarch64_gnome-menus;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-menus}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-menus-3.36.0-16.el10.aarch64.rpm;name=aarch64_gnome-menus;unpack=0"
 SRC_URI[aarch64_gnome-menus.sha256sum] = "b397c6aa86b6d4a8cfc29448ca98be1c84e57f6763f51405efaf4fb7967d2a07"
 
-URI_aarch64_gnome-menus-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-menus-devel-3.36.0-16.el10.aarch64.rpm;name=aarch64_gnome-menus-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-menus-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-menus-devel-3.36.0-16.el10.aarch64.rpm;name=aarch64_gnome-menus-devel;unpack=0"
 SRC_URI[aarch64_gnome-menus-devel.sha256sum] = "2700944f680957522806bd0f4d434aee7afcc42d4292edbc918c70c95ce34de3"
 
 RDEPENDS:gnome-menus = " \

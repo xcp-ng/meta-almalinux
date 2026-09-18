@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-requests-futures \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-requests-futures-1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-futures-1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "59de3f1ad7c6ebf307e5431733f691081fbe6ff177c16b76145fb7ba3acba2cc"
 
-URI_x86_64_v2_python3-requests-futures = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-futures-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-futures;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-requests-futures}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-futures-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-futures;unpack=0"
 SRC_URI[x86_64_v2_python3-requests-futures.sha256sum] = "7e71b6a113a2f85e12f74d32b897f800c07fdd1d363fbc639136a23feae6bf03"
 
-URI_aarch64_python3-requests-futures = "${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-futures-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-requests-futures;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-requests-futures}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-futures-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-requests-futures;unpack=0"
 SRC_URI[aarch64_python3-requests-futures.sha256sum] = "7435acfb4e8b6d601cd0f5f568c39e536356e274612f22bc079b83ef2b7f4208"
 
 RDEPENDS:python3-requests-futures = " \

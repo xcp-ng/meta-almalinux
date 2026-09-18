@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mkdocs-get-deps \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-get-deps-0.2.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-get-deps-0.2.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7b45d84d46feeb329c90a8a669e76cf562ce2211bec530fb0a530a07517053b2"
 
-URI_x86_64_v2_python3-mkdocs-get-deps = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-get-deps-0.2.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-get-deps;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-get-deps}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-get-deps-0.2.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-get-deps;unpack=0"
 SRC_URI[x86_64_v2_python3-mkdocs-get-deps.sha256sum] = "5e27c2bf14a541b83de995bf939a2e7b25bd6a44e8fda957411210393d806e40"
 
-URI_aarch64_python3-mkdocs-get-deps = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-get-deps-0.2.0-3.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-get-deps;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mkdocs-get-deps}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-get-deps-0.2.0-3.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-get-deps;unpack=0"
 SRC_URI[aarch64_python3-mkdocs-get-deps.sha256sum] = "339795d322f772ca2e4b8a91cfb8effacfa27cc1d00be87dfa09529678b2b0dc"
 
 RDEPENDS:python3-mkdocs-get-deps = " \

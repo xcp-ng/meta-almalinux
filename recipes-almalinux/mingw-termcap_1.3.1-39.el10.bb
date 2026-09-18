@@ -13,16 +13,13 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-termcap-1.3.1-39.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-termcap-1.3.1-39.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe9a9eefec9e46af92490f172c510552efbf31fd10bce7e3401fb3f8b356fe03"
 
-URI_x86_64_v2_mingw32-termcap = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-termcap-1.3.1-39.el10.noarch.rpm;name=x86_64_v2_mingw32-termcap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw32-termcap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-termcap-1.3.1-39.el10.noarch.rpm;name=x86_64_v2_mingw32-termcap;unpack=0"
 SRC_URI[x86_64_v2_mingw32-termcap.sha256sum] = "efd61cfbab544ff4d51eb2fe937f9d8e8e453f35a719b5ca5eb7076527cdd224"
 
-URI_x86_64_v2_mingw64-termcap = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-termcap-1.3.1-39.el10.noarch.rpm;name=x86_64_v2_mingw64-termcap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw64-termcap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-termcap-1.3.1-39.el10.noarch.rpm;name=x86_64_v2_mingw64-termcap;unpack=0"
 SRC_URI[x86_64_v2_mingw64-termcap.sha256sum] = "839570258a98dbdb62659587c75571b5ec824387bba2ccd3e0a85ea5337b3957"
 
 RDEPENDS:mingw32-termcap = " \

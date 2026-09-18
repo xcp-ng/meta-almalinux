@@ -10,24 +10,19 @@ PACKAGES = " \
  php-zetacomponents-console-tools-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-zetacomponents-console-tools-1.7.5-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-zetacomponents-console-tools-1.7.5-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a4c466a9d1c19eb47a7fffb1f231f62c1bf8c5b28cd2472cf0fe94220c69d4f3"
 
-URI_x86_64_v2_php-zetacomponents-console-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-zetacomponents-console-tools-1.7.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-zetacomponents-console-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-zetacomponents-console-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-zetacomponents-console-tools-1.7.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-zetacomponents-console-tools;unpack=0"
 SRC_URI[x86_64_v2_php-zetacomponents-console-tools.sha256sum] = "86a3a398d1ec2274633f1f1218756fd0561847a1272530552e67bf5c48be084c"
 
-URI_x86_64_v2_php-zetacomponents-console-tools-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-zetacomponents-console-tools-doc-1.7.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-zetacomponents-console-tools-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-zetacomponents-console-tools-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-zetacomponents-console-tools-doc-1.7.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-zetacomponents-console-tools-doc;unpack=0"
 SRC_URI[x86_64_v2_php-zetacomponents-console-tools-doc.sha256sum] = "a1f1cf5416983767f331f3f33c9b0c5a302a63eaaa7a14c81f60c07785a15f85"
 
-URI_aarch64_php-zetacomponents-console-tools = "${EPEL_MIRROR}/aarch64/Packages/p/php-zetacomponents-console-tools-1.7.5-1.el10_0.noarch.rpm;name=aarch64_php-zetacomponents-console-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-zetacomponents-console-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-zetacomponents-console-tools-1.7.5-1.el10_0.noarch.rpm;name=aarch64_php-zetacomponents-console-tools;unpack=0"
 SRC_URI[aarch64_php-zetacomponents-console-tools.sha256sum] = "9f1a6d05c11abd241c9cadcc9d5bab14ec5a8db35a082684a571480fe816bb60"
 
-URI_aarch64_php-zetacomponents-console-tools-doc = "${EPEL_MIRROR}/aarch64/Packages/p/php-zetacomponents-console-tools-doc-1.7.5-1.el10_0.noarch.rpm;name=aarch64_php-zetacomponents-console-tools-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-zetacomponents-console-tools-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-zetacomponents-console-tools-doc-1.7.5-1.el10_0.noarch.rpm;name=aarch64_php-zetacomponents-console-tools-doc;unpack=0"
 SRC_URI[aarch64_php-zetacomponents-console-tools-doc.sha256sum] = "3acac00f5252dcc723f46aecabb88499e6a05c1750b57338a50bc075fe7dfa9e"
 
 RDEPENDS:php-zetacomponents-console-tools = " \

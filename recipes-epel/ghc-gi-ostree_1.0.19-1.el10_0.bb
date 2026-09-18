@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-ostree-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-ostree-1.0.19-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-ostree-1.0.19-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8450978ddfa28846d93a5b69f592b299156dd9d4db75231c2514b29f5e243052"
 
-URI_x86_64_v2_ghc-gi-ostree = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-ostree}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-ostree.sha256sum] = "0e61308509bf1bdbba834b33b4c5893ad0c0f213196f4687ae7770d6ea86602f"
 
-URI_x86_64_v2_ghc-gi-ostree-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-devel-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-ostree-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-devel-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-ostree-devel.sha256sum] = "063fdc994a47fc917da01318d966f1e782c8ebbef0af2231fee3d8fb62c79a49"
 
-URI_x86_64_v2_ghc-gi-ostree-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-doc-1.0.19-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-ostree-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-ostree-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-doc-1.0.19-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-ostree-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-ostree-doc.sha256sum] = "694ef2cdca3a281f9bd549e36e67b464dce44f147d3055bb17d772906465b5d0"
 
-URI_x86_64_v2_ghc-gi-ostree-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-prof-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-ostree-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-ostree-prof-1.0.19-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-ostree-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-ostree-prof.sha256sum] = "3278ab540e983a245208b56788d37fb0b60f168e05a52d6624967cdfd1f2ccde"
 
-URI_aarch64_ghc-gi-ostree = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-ostree}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree;unpack=0"
 SRC_URI[aarch64_ghc-gi-ostree.sha256sum] = "81c5f51ffa20dc690fae759d004be8a370c6eeae8872e7253de2a037a857cb7a"
 
-URI_aarch64_ghc-gi-ostree-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-devel-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-ostree-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-devel-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-ostree-devel.sha256sum] = "73bdd571a2d56289d7b68602f371e8dc4a10feda1ab0a08990d2fdc41e71229a"
 
-URI_aarch64_ghc-gi-ostree-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-doc-1.0.19-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-ostree-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-ostree-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-doc-1.0.19-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-ostree-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-ostree-doc.sha256sum] = "9c1dcc2be65129d8cbe6ce547635e13838f7a209e8e5503dc0abf9f2eb05276b"
 
-URI_aarch64_ghc-gi-ostree-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-prof-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-ostree-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-ostree-prof-1.0.19-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-ostree-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-ostree-prof.sha256sum] = "c4fb932a28debcfff7babec1e2c4bb7bd07328d010d47b4ee4591199b0953c24"
 
 RDEPENDS:ghc-gi-ostree = " \

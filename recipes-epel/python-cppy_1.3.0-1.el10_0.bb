@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-cppy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cppy-1.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cppy-1.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d9fec04ac5a07727a19de59ce708d173299d96c9d7bb5839719a073b1e3188a9"
 
-URI_x86_64_v2_python-cppy-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-cppy-doc-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-cppy-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-cppy-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-cppy-doc-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-cppy-doc;unpack=0"
 SRC_URI[x86_64_v2_python-cppy-doc.sha256sum] = "d0fe8b9f276f2dd44bd60098471625b8aefa8d8d28c7c4ea19daf8760ffdca82"
 
-URI_x86_64_v2_python3-cppy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cppy-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cppy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cppy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cppy-1.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cppy;unpack=0"
 SRC_URI[x86_64_v2_python3-cppy.sha256sum] = "c704a8102a8c83d6665324f3291a0bc2ad316714166ff3c42b4ce62145d232b3"
 
-URI_aarch64_python-cppy-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-cppy-doc-1.3.0-1.el10_0.noarch.rpm;name=aarch64_python-cppy-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-cppy-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-cppy-doc-1.3.0-1.el10_0.noarch.rpm;name=aarch64_python-cppy-doc;unpack=0"
 SRC_URI[aarch64_python-cppy-doc.sha256sum] = "38ac864629e9633a7eb5e3ed78d25d8bf474b05ad89b7b25d863781be944be12"
 
-URI_aarch64_python3-cppy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cppy-1.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-cppy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cppy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cppy-1.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-cppy;unpack=0"
 SRC_URI[aarch64_python3-cppy.sha256sum] = "11d1e1792bc3721dd21076787486b70a364eca744668ac023427d8a2ee775b58"
 
 RDEPENDS:python-cppy-doc = " \

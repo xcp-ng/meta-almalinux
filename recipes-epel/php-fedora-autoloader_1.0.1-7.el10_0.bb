@@ -10,24 +10,19 @@ PACKAGES = " \
  php-fedora-autoloader-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-fedora-autoloader-1.0.1-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-fedora-autoloader-1.0.1-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af88a4ccaa77875e82fa0f89c085f4105269c2c56b60580172643fc955b757b7"
 
-URI_x86_64_v2_php-fedora-autoloader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-fedora-autoloader}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader;unpack=0"
 SRC_URI[x86_64_v2_php-fedora-autoloader.sha256sum] = "021848e77c1f6c975695da892a226334da883544f795d7ed483852d582b9b3cb"
 
-URI_x86_64_v2_php-fedora-autoloader-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-devel-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-fedora-autoloader-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-fedora-autoloader-devel-1.0.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_php-fedora-autoloader-devel;unpack=0"
 SRC_URI[x86_64_v2_php-fedora-autoloader-devel.sha256sum] = "b2509fe1b2fc997b51c9429f27a22a1b196c10e615b3440756af32c2ed28be42"
 
-URI_aarch64_php-fedora-autoloader = "${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-1.0.1-7.el10_0.noarch.rpm;name=aarch64_php-fedora-autoloader;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-fedora-autoloader}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-1.0.1-7.el10_0.noarch.rpm;name=aarch64_php-fedora-autoloader;unpack=0"
 SRC_URI[aarch64_php-fedora-autoloader.sha256sum] = "6d8dfae8dfb2ed39e9e394165cedee41916a078018b2b79757cd66ba59daa27d"
 
-URI_aarch64_php-fedora-autoloader-devel = "${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-devel-1.0.1-7.el10_0.noarch.rpm;name=aarch64_php-fedora-autoloader-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-fedora-autoloader-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-fedora-autoloader-devel-1.0.1-7.el10_0.noarch.rpm;name=aarch64_php-fedora-autoloader-devel;unpack=0"
 SRC_URI[aarch64_php-fedora-autoloader-devel.sha256sum] = "d1ba8c0413c1c95564bc3a1ed69989dd5f2fe226fc81268355442f7420a27510"
 
 RDEPENDS:php-fedora-autoloader = " \

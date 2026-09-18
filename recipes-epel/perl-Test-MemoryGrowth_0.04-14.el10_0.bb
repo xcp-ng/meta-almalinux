@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-MemoryGrowth \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-MemoryGrowth-0.04-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-MemoryGrowth-0.04-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4408850b7cadc02150fda079e9ed26d1942534cfb1ea9164f5af9c9634fe349e"
 
-URI_x86_64_v2_perl-Test-MemoryGrowth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-MemoryGrowth-0.04-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-MemoryGrowth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-MemoryGrowth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-MemoryGrowth-0.04-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-MemoryGrowth;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-MemoryGrowth.sha256sum] = "6749f29ef991b4e51f23b63e4c852d6abe5cc999113f4931ddcf0ed64b218c2a"
 
-URI_aarch64_perl-Test-MemoryGrowth = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-MemoryGrowth-0.04-14.el10_0.noarch.rpm;name=aarch64_perl-Test-MemoryGrowth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-MemoryGrowth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-MemoryGrowth-0.04-14.el10_0.noarch.rpm;name=aarch64_perl-Test-MemoryGrowth;unpack=0"
 SRC_URI[aarch64_perl-Test-MemoryGrowth.sha256sum] = "fc35a96bbb01cef192940981a8a58d5e916fd608b44a8aef23dda4b90649a6e1"
 
 RDEPENDS:perl-Test-MemoryGrowth = " \

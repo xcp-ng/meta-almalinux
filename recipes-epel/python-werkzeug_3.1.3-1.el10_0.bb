@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-werkzeug \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-werkzeug-3.1.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-werkzeug-3.1.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7cb6c1f6f479f225a44fb58abdd6d06ebc2fcb387e6d426e2263b72538e6ad65"
 
-URI_x86_64_v2_python3-werkzeug = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-werkzeug-3.1.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-werkzeug;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-werkzeug}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-werkzeug-3.1.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-werkzeug;unpack=0"
 SRC_URI[x86_64_v2_python3-werkzeug.sha256sum] = "d3f6cef8f4fa80009a0f863c74005c6155f61ff4adc8d24f7ac509c938a663bb"
 
-URI_aarch64_python3-werkzeug = "${EPEL_MIRROR}/aarch64/Packages/p/python3-werkzeug-3.1.3-1.el10_0.noarch.rpm;name=aarch64_python3-werkzeug;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-werkzeug}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-werkzeug-3.1.3-1.el10_0.noarch.rpm;name=aarch64_python3-werkzeug;unpack=0"
 SRC_URI[aarch64_python3-werkzeug.sha256sum] = "af6ac3723e912605f06842c905ead9ede66ac4b44e278b6b4989557da6b5dfbb"
 
 RDEPENDS:python3-werkzeug = " \

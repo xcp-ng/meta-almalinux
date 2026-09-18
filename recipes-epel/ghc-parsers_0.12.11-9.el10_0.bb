@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-parsers-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-parsers-0.12.11-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-parsers-0.12.11-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5c3631b985422da9c6d95dde22cb02084cda660c41f2fa883345fa3b3a6ad964"
 
-URI_x86_64_v2_ghc-parsers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parsers}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers;unpack=0"
 SRC_URI[x86_64_v2_ghc-parsers.sha256sum] = "2009b873c03f3f37fe91daff6a935d5384db9ef6a5d0ac356f6c71a6408b8755"
 
-URI_x86_64_v2_ghc-parsers-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-devel-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parsers-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-devel-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-parsers-devel.sha256sum] = "3bca919da10b09cbb4c8e5f739004aeb1b56475cd841cf8efc37aee2454df7ab"
 
-URI_x86_64_v2_ghc-parsers-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-doc-0.12.11-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-parsers-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parsers-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-doc-0.12.11-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-parsers-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-parsers-doc.sha256sum] = "611a76f9de35112bf850216bfcb4f61d6a28eb56256d2f91e5b5bcc537e020bf"
 
-URI_x86_64_v2_ghc-parsers-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-prof-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parsers-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parsers-prof-0.12.11-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parsers-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-parsers-prof.sha256sum] = "25ae232d1dc6e9ad99f2ca4e77d7049ef9ce349f00b2e3ad65c469494d10faf2"
 
-URI_aarch64_ghc-parsers = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parsers}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers;unpack=0"
 SRC_URI[aarch64_ghc-parsers.sha256sum] = "5d98594a0029ad281205a961b70504f039c326fdb3bf37400256624d4da4da55"
 
-URI_aarch64_ghc-parsers-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-devel-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parsers-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-devel-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers-devel;unpack=0"
 SRC_URI[aarch64_ghc-parsers-devel.sha256sum] = "3abb019da0329bc3e79f2d9d772169a3cce42becd899ede31322047a151dc9cc"
 
-URI_aarch64_ghc-parsers-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-doc-0.12.11-9.el10_0.noarch.rpm;name=aarch64_ghc-parsers-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parsers-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-doc-0.12.11-9.el10_0.noarch.rpm;name=aarch64_ghc-parsers-doc;unpack=0"
 SRC_URI[aarch64_ghc-parsers-doc.sha256sum] = "49f3042c74de7dbc543e8d1d8f09d6f0c677e87f1711f992a26883239a4a9b1a"
 
-URI_aarch64_ghc-parsers-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-prof-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parsers-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parsers-prof-0.12.11-9.el10_0.aarch64.rpm;name=aarch64_ghc-parsers-prof;unpack=0"
 SRC_URI[aarch64_ghc-parsers-prof.sha256sum] = "45d304b18513cacbfa9e0adf6933aed42eaad1048b0e095ed40fb84f65da34f8"
 
 RDEPENDS:ghc-parsers = " \

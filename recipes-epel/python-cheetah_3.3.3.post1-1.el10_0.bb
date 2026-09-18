@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cheetah \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cheetah-3.3.3.post1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cheetah-3.3.3.post1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8434890830418f395eb4fac02ea3f6bfe6dbc6d37a4e6ebd57440473f753cc34"
 
-URI_x86_64_v2_python3-cheetah = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cheetah-3.3.3.post1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cheetah;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cheetah}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cheetah-3.3.3.post1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cheetah;unpack=0"
 SRC_URI[x86_64_v2_python3-cheetah.sha256sum] = "be72d10222f2f6e45a959243900ab1bbb3c45a45993e22c083894e1702d29413"
 
-URI_aarch64_python3-cheetah = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cheetah-3.3.3.post1-1.el10_0.aarch64.rpm;name=aarch64_python3-cheetah;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cheetah}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cheetah-3.3.3.post1-1.el10_0.aarch64.rpm;name=aarch64_python3-cheetah;unpack=0"
 SRC_URI[aarch64_python3-cheetah.sha256sum] = "495c5a7d39cf01d3feab0231f47a98b8ff54e1f1ab0b8c0c2c98e6554b056ad0"
 
 RDEPENDS:python3-cheetah = " \

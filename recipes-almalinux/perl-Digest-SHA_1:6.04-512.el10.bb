@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-Digest-SHA \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Digest-SHA-6.04-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Digest-SHA-6.04-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5c2bf097c83f77f1f2ccb8fac7a531c26d9fd1baea9beeaf808f38b501fbcf44"
 
-URI_x86_64_v2_perl-Digest-SHA = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Digest-SHA-6.04-512.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Digest-SHA;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Digest-SHA}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Digest-SHA-6.04-512.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Digest-SHA;unpack=0"
 SRC_URI[x86_64_v2_perl-Digest-SHA.sha256sum] = "a4a3abd9436ebd5ccee6d131fcca0fef32ffe33b28b96c1b8d717ea9af7be934"
 
-URI_aarch64_perl-Digest-SHA = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Digest-SHA-6.04-512.el10.aarch64.rpm;name=aarch64_perl-Digest-SHA;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Digest-SHA}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Digest-SHA-6.04-512.el10.aarch64.rpm;name=aarch64_perl-Digest-SHA;unpack=0"
 SRC_URI[aarch64_perl-Digest-SHA.sha256sum] = "f1fe2731e441356b0637e31022a442b7e1c15f8303050cc9fb2b20147b8c03f6"
 
 RDEPENDS:perl-Digest-SHA = " \

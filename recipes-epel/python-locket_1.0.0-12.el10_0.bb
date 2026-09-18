@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-locket \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-locket-1.0.0-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-locket-1.0.0-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "640e2c2c8521f1d26c86d683491e4eb0998a4c7ee45a3a023ddc127a861661d8"
 
-URI_x86_64_v2_python3-locket = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-locket-1.0.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-locket;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-locket}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-locket-1.0.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-locket;unpack=0"
 SRC_URI[x86_64_v2_python3-locket.sha256sum] = "675e49f7022492ccdc84017de4ee1d0d98fb87ee68d5fe5fe944c781f4e4403a"
 
-URI_aarch64_python3-locket = "${EPEL_MIRROR}/aarch64/Packages/p/python3-locket-1.0.0-12.el10_0.noarch.rpm;name=aarch64_python3-locket;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-locket}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-locket-1.0.0-12.el10_0.noarch.rpm;name=aarch64_python3-locket;unpack=0"
 SRC_URI[aarch64_python3-locket.sha256sum] = "6195b9a30eedd043c914057d490b70cb9a86064bfb181ef762fa954ce0acea3f"
 
 RDEPENDS:python3-locket = " \

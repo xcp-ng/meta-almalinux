@@ -9,16 +9,13 @@ PACKAGES = " \
  kmahjongg \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmahjongg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmahjongg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eaa5f64d266ffb5f9ab7f68c2a1361c0ca412a65a950eb795ba570ceb25e4c33"
 
-URI_x86_64_v2_kmahjongg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmahjongg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmahjongg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmahjongg}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmahjongg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmahjongg;unpack=0"
 SRC_URI[x86_64_v2_kmahjongg.sha256sum] = "1ee12a2588fae21fbd7371291bf5e38668eec6341b2a66c30fb592a74c713526"
 
-URI_aarch64_kmahjongg = "${EPEL_MIRROR}/aarch64/Packages/k/kmahjongg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmahjongg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmahjongg}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmahjongg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmahjongg;unpack=0"
 SRC_URI[aarch64_kmahjongg.sha256sum] = "7cf7af4cbec892ebbca5ccd41dd2b75fd3c60c1c2c861f0d3afe8c9581c8bfef"
 
 RDEPENDS:kmahjongg = " \

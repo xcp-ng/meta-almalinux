@@ -11,32 +11,25 @@ PACKAGES = " \
  mingw64-filesystem \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-filesystem-148-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-filesystem-148-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2e9d94e5e8d17bc4426d5d2ac419577a4ea2ad54936e5f25dc7e8f4f6e29314f"
 
-URI_x86_64_v2_mingw-filesystem-base = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw-filesystem-base-148-7.el10.noarch.rpm;name=x86_64_v2_mingw-filesystem-base;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw-filesystem-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw-filesystem-base-148-7.el10.noarch.rpm;name=x86_64_v2_mingw-filesystem-base;unpack=0"
 SRC_URI[x86_64_v2_mingw-filesystem-base.sha256sum] = "343e920f85b5348c13644bf9a70a0b9c1eb9b1128e7ad67a922ac26255f30f80"
 
-URI_x86_64_v2_mingw32-filesystem = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-filesystem-148-7.el10.noarch.rpm;name=x86_64_v2_mingw32-filesystem;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw32-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-filesystem-148-7.el10.noarch.rpm;name=x86_64_v2_mingw32-filesystem;unpack=0"
 SRC_URI[x86_64_v2_mingw32-filesystem.sha256sum] = "42b6b053cb2206e97fecfa6e4909951908b0080153b2850a44e9e520248017c2"
 
-URI_x86_64_v2_mingw64-filesystem = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-filesystem-148-7.el10.noarch.rpm;name=x86_64_v2_mingw64-filesystem;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mingw64-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-filesystem-148-7.el10.noarch.rpm;name=x86_64_v2_mingw64-filesystem;unpack=0"
 SRC_URI[x86_64_v2_mingw64-filesystem.sha256sum] = "25eed24210748a2afff1d7c15958e62a7227dad2d7bc4054a21a688811caea48"
 
-URI_aarch64_mingw-filesystem-base = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw-filesystem-base-148-7.el10.noarch.rpm;name=aarch64_mingw-filesystem-base;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mingw-filesystem-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw-filesystem-base-148-7.el10.noarch.rpm;name=aarch64_mingw-filesystem-base;unpack=0"
 SRC_URI[aarch64_mingw-filesystem-base.sha256sum] = "343e920f85b5348c13644bf9a70a0b9c1eb9b1128e7ad67a922ac26255f30f80"
 
-URI_aarch64_mingw32-filesystem = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-filesystem-148-7.el10.noarch.rpm;name=aarch64_mingw32-filesystem;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mingw32-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-filesystem-148-7.el10.noarch.rpm;name=aarch64_mingw32-filesystem;unpack=0"
 SRC_URI[aarch64_mingw32-filesystem.sha256sum] = "42b6b053cb2206e97fecfa6e4909951908b0080153b2850a44e9e520248017c2"
 
-URI_aarch64_mingw64-filesystem = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-filesystem-148-7.el10.noarch.rpm;name=aarch64_mingw64-filesystem;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mingw64-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-filesystem-148-7.el10.noarch.rpm;name=aarch64_mingw64-filesystem;unpack=0"
 SRC_URI[aarch64_mingw64-filesystem.sha256sum] = "25eed24210748a2afff1d7c15958e62a7227dad2d7bc4054a21a688811caea48"
 
 RDEPENDS:mingw-filesystem-base = " \

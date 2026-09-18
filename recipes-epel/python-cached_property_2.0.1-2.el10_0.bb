@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cached_property \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cached_property-2.0.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cached_property-2.0.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2f905c4f3bb3c668ac0356fc472933426b16f935332e881b6a9753eae1434484"
 
-URI_x86_64_v2_python3-cached_property = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cached_property-2.0.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cached_property;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cached_property}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cached_property-2.0.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cached_property;unpack=0"
 SRC_URI[x86_64_v2_python3-cached_property.sha256sum] = "043fc2fc16b857e73a7e5c95000d9fb757689346bce27fe038544a35a8b206f7"
 
-URI_aarch64_python3-cached_property = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cached_property-2.0.1-2.el10_0.noarch.rpm;name=aarch64_python3-cached_property;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cached_property}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cached_property-2.0.1-2.el10_0.noarch.rpm;name=aarch64_python3-cached_property;unpack=0"
 SRC_URI[aarch64_python3-cached_property.sha256sum] = "f8d0dee99be96fdf674999da55485590b70f03ba15da6e6c58c6d557b4ac6449"
 
 RDEPENDS:python3-cached_property = " \

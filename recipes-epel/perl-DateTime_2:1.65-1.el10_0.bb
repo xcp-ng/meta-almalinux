@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-DateTime \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-1.65-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-1.65-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe9a1301066526534915b3eacc3c1d5460dba04388e931d5a7dffcb0042147f8"
 
-URI_x86_64_v2_perl-DateTime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-1.65-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-DateTime;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-1.65-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-DateTime;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime.sha256sum] = "2afd5ac86e7b23e67d05b9673f5b06a75d8f5307628b3676b75930670221362a"
 
-URI_aarch64_perl-DateTime = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-1.65-1.el10_0.aarch64.rpm;name=aarch64_perl-DateTime;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-1.65-1.el10_0.aarch64.rpm;name=aarch64_perl-DateTime;unpack=0"
 SRC_URI[aarch64_perl-DateTime.sha256sum] = "993c34d2461836ce8bd658f9ffde5c30945356a877ad806fc171f300fdcb04c1"
 
 RDEPENDS:perl-DateTime = " \

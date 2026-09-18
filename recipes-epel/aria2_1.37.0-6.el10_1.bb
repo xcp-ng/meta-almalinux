@@ -9,16 +9,13 @@ PACKAGES = " \
  aria2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/aria2-1.37.0-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/aria2-1.37.0-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1fa8389436b98124df3a39d87001d4b853cac60229d85a599dc2858294b3bc4c"
 
-URI_x86_64_v2_aria2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aria2-1.37.0-6.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aria2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aria2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aria2-1.37.0-6.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aria2;unpack=0"
 SRC_URI[x86_64_v2_aria2.sha256sum] = "45284c0dafc06661391bfd932ad90506b4a1c415fb60ecb5cdea4e6fc5f730f8"
 
-URI_aarch64_aria2 = "${EPEL_MIRROR}/aarch64/Packages/a/aria2-1.37.0-6.el10_1.aarch64.rpm;name=aarch64_aria2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aria2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aria2-1.37.0-6.el10_1.aarch64.rpm;name=aarch64_aria2;unpack=0"
 SRC_URI[aarch64_aria2.sha256sum] = "edcf7aff349d30342464f3714f8b0c62ca0cdea4953b8901db5e21c8973d0f87"
 
 RDEPENDS:aria2 = " \

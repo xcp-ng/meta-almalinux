@@ -9,16 +9,13 @@ PACKAGES = " \
  killbots \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/killbots-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/killbots-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0eb836673e6ed76528e41dc42dde98fb595f7d3fcf414f447c4b0c4e419cd3b3"
 
-URI_x86_64_v2_killbots = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/killbots-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_killbots;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_killbots}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/killbots-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_killbots;unpack=0"
 SRC_URI[x86_64_v2_killbots.sha256sum] = "27133bba78bc5719f699658e537109e155fcce6451d11b65787a52c5c8a95b9c"
 
-URI_aarch64_killbots = "${EPEL_MIRROR}/aarch64/Packages/k/killbots-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_killbots;unpack=0"
-SRC_URI:append = " ${URI_aarch64_killbots}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/killbots-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_killbots;unpack=0"
 SRC_URI[aarch64_killbots.sha256sum] = "d996421414eed4961e6d438e04e8ed1ea34720be9fe3cb788f026e0fa847f85d"
 
 RDEPENDS:killbots = " \

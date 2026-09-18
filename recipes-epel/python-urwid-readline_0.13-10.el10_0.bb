@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-urwid-readline \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-urwid-readline-0.13-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-urwid-readline-0.13-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e275627338225e8053011924342a1e364f14214aef8fc9c296a0f6fc53d5b01e"
 
-URI_x86_64_v2_python3-urwid-readline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-urwid-readline-0.13-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-urwid-readline;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-urwid-readline}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-urwid-readline-0.13-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-urwid-readline;unpack=0"
 SRC_URI[x86_64_v2_python3-urwid-readline.sha256sum] = "a61c71b5488ecbbb4604b2822427682c21f48c7a7e72ebbc8fd20d0c3a693817"
 
-URI_aarch64_python3-urwid-readline = "${EPEL_MIRROR}/aarch64/Packages/p/python3-urwid-readline-0.13-10.el10_0.noarch.rpm;name=aarch64_python3-urwid-readline;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-urwid-readline}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-urwid-readline-0.13-10.el10_0.noarch.rpm;name=aarch64_python3-urwid-readline;unpack=0"
 SRC_URI[aarch64_python3-urwid-readline.sha256sum] = "12cef78e1772d4fd3d7368b2e432e9885c9b10467571d8bf533adf39ff423fd6"
 
 RDEPENDS:python3-urwid-readline = " \

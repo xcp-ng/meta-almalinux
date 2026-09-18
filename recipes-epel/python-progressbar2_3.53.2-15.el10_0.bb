@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-progressbar2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-progressbar2-3.53.2-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-progressbar2-3.53.2-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eabfcb9016edaa47dcfc2e8c2b0de5a4fd4d5fbf161601ec97d6d32b5fd3b800"
 
-URI_x86_64_v2_python3-progressbar2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-progressbar2-3.53.2-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-progressbar2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-progressbar2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-progressbar2-3.53.2-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-progressbar2;unpack=0"
 SRC_URI[x86_64_v2_python3-progressbar2.sha256sum] = "b40959ba44c525f6cfddc3ad8f4ca2b627d38c3ee1a3a4f32ba09f7a87503f7c"
 
-URI_aarch64_python3-progressbar2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-progressbar2-3.53.2-15.el10_0.noarch.rpm;name=aarch64_python3-progressbar2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-progressbar2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-progressbar2-3.53.2-15.el10_0.noarch.rpm;name=aarch64_python3-progressbar2;unpack=0"
 SRC_URI[aarch64_python3-progressbar2.sha256sum] = "5ecbe5f01a3e0bfb3f101f3aa076c054dc1e70df9ae80ddcff19214fe97e1c4c"
 
 RDEPENDS:python3-progressbar2 = " \

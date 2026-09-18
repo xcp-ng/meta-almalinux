@@ -9,16 +9,13 @@ PACKAGES = " \
  xdpyinfo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/x/xdpyinfo-1.3.4-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/x/xdpyinfo-1.3.4-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ae45e84bef7cf918bf85c45fb54f5341c3d9302f8b0ee2afb923221f7bbe13a1"
 
-URI_x86_64_v2_xdpyinfo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xdpyinfo-1.3.4-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xdpyinfo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xdpyinfo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xdpyinfo-1.3.4-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xdpyinfo;unpack=0"
 SRC_URI[x86_64_v2_xdpyinfo.sha256sum] = "4f197b5608179425ff51cf658ef9671ac470c2812c924056c79ecf877d9b627e"
 
-URI_aarch64_xdpyinfo = "${EPEL_MIRROR}/aarch64/Packages/x/xdpyinfo-1.3.4-2.el10_1.aarch64.rpm;name=aarch64_xdpyinfo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xdpyinfo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xdpyinfo-1.3.4-2.el10_1.aarch64.rpm;name=aarch64_xdpyinfo;unpack=0"
 SRC_URI[aarch64_xdpyinfo.sha256sum] = "791800ec20b3654449e7f03a05f604a7a42f130d081484e69ab2749eef7c1e08"
 
 RDEPENDS:xdpyinfo = " \

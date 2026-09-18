@@ -9,16 +9,13 @@ PACKAGES = " \
  stratis-cli \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/stratis-cli-3.8.1-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/stratis-cli-3.8.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c50727d05f7170ab1d35474d0ad1e7845d4e0d20008d19a115765f7c3fc7e5a"
 
-URI_x86_64_v2_stratis-cli = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/stratis-cli-3.8.1-1.el10.noarch.rpm;name=x86_64_v2_stratis-cli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_stratis-cli}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/stratis-cli-3.8.1-1.el10.noarch.rpm;name=x86_64_v2_stratis-cli;unpack=0"
 SRC_URI[x86_64_v2_stratis-cli.sha256sum] = "7387c8febb5dd311ebe90dce320b8769c762f6987a3fdf7286c97b09e6a925e1"
 
-URI_aarch64_stratis-cli = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/stratis-cli-3.8.1-1.el10.noarch.rpm;name=aarch64_stratis-cli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_stratis-cli}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/stratis-cli-3.8.1-1.el10.noarch.rpm;name=aarch64_stratis-cli;unpack=0"
 SRC_URI[aarch64_stratis-cli.sha256sum] = "7387c8febb5dd311ebe90dce320b8769c762f6987a3fdf7286c97b09e6a925e1"
 
 RDEPENDS:stratis-cli = " \

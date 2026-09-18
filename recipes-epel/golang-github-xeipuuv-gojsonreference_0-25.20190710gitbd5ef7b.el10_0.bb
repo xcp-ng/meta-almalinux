@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-xeipuuv-gojsonreference-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-xeipuuv-gojsonreference-0-25.20190710gitbd5ef7b.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-xeipuuv-gojsonreference-0-25.20190710gitbd5ef7b.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6331f145490fb5da2c8580852c43b0fef0c06fa1e3f61d3d8c59fe1682b411bb"
 
-URI_aarch64_golang-github-xeipuuv-gojsonreference-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-xeipuuv-gojsonreference-devel-0-25.20190710gitbd5ef7b.el10_0.noarch.rpm;name=aarch64_golang-github-xeipuuv-gojsonreference-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-xeipuuv-gojsonreference-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-xeipuuv-gojsonreference-devel-0-25.20190710gitbd5ef7b.el10_0.noarch.rpm;name=aarch64_golang-github-xeipuuv-gojsonreference-devel;unpack=0"
 SRC_URI[aarch64_golang-github-xeipuuv-gojsonreference-devel.sha256sum] = "60925cc135085658b10b7fa264986ecf10eca06ca0021a7a19f9511402368639"
 
 RDEPENDS:golang-github-xeipuuv-gojsonreference-devel = " \

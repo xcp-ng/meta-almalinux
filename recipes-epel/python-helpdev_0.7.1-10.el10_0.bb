@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-helpdev+memory_info \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-helpdev-0.7.1-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-helpdev-0.7.1-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ed8a914c020e350ad29ce855b5db3dd130bb006d0eaec144e6b6e746e8f7479b"
 
-URI_x86_64_v2_python-helpdev-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-helpdev-doc-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-helpdev-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-helpdev-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-helpdev-doc-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-helpdev-doc;unpack=0"
 SRC_URI[x86_64_v2_python-helpdev-doc.sha256sum] = "8391568c41db8b59b34351e95189a908c7e894a80408c875ac1ae2c8c5358fe8"
 
-URI_x86_64_v2_python3-helpdev = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-helpdev}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev;unpack=0"
 SRC_URI[x86_64_v2_python3-helpdev.sha256sum] = "0322860b73c0952ffdd8e715b093c4ab88e533c94753e5a251e0175104015ad5"
 
-URI_x86_64_v2_python3-helpdev+memory_info = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev+memory_info-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev+memory_info;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-helpdev+memory_info}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-helpdev+memory_info-0.7.1-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-helpdev+memory_info;unpack=0"
 SRC_URI[x86_64_v2_python3-helpdev+memory_info.sha256sum] = "12adb13d653c90631d6091f79e7b08915e3732e2bd3bc79107f5bb399e17ee3a"
 
-URI_aarch64_python-helpdev-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-helpdev-doc-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python-helpdev-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-helpdev-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-helpdev-doc-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python-helpdev-doc;unpack=0"
 SRC_URI[aarch64_python-helpdev-doc.sha256sum] = "c379e0085c15f2ae1ab4c96e7fa918cff1a7958eff96968d19b7bf916c2ff6ef"
 
-URI_aarch64_python3-helpdev = "${EPEL_MIRROR}/aarch64/Packages/p/python3-helpdev-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python3-helpdev;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-helpdev}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-helpdev-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python3-helpdev;unpack=0"
 SRC_URI[aarch64_python3-helpdev.sha256sum] = "8974f66610d6657129e03eaf30b873c8fafbc5620e840337153f2c587bf250e5"
 
-URI_aarch64_python3-helpdev+memory_info = "${EPEL_MIRROR}/aarch64/Packages/p/python3-helpdev+memory_info-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python3-helpdev+memory_info;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-helpdev+memory_info}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-helpdev+memory_info-0.7.1-10.el10_0.noarch.rpm;name=aarch64_python3-helpdev+memory_info;unpack=0"
 SRC_URI[aarch64_python3-helpdev+memory_info.sha256sum] = "a50681cb8debfdd447fa5eb7b3600b07d8bc002b6399e983b8b4168d8f0df14b"
 
 RDEPENDS:python-helpdev-doc = " \

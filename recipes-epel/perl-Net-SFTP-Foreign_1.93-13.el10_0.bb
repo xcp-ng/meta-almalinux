@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-SFTP-Foreign \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SFTP-Foreign-1.93-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SFTP-Foreign-1.93-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d031a61fb9dfcc5ec9674f2a0bb2c71e6440d783263e48d4b84b645dfe3b3b4a"
 
-URI_x86_64_v2_perl-Net-SFTP-Foreign = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SFTP-Foreign-1.93-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-SFTP-Foreign;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-SFTP-Foreign}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SFTP-Foreign-1.93-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-SFTP-Foreign;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-SFTP-Foreign.sha256sum] = "dd16339e21a1fbf8cda1b0442414260dba09fcc66f273645f9007c6c3cd85028"
 
-URI_aarch64_perl-Net-SFTP-Foreign = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SFTP-Foreign-1.93-13.el10_0.noarch.rpm;name=aarch64_perl-Net-SFTP-Foreign;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-SFTP-Foreign}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SFTP-Foreign-1.93-13.el10_0.noarch.rpm;name=aarch64_perl-Net-SFTP-Foreign;unpack=0"
 SRC_URI[aarch64_perl-Net-SFTP-Foreign.sha256sum] = "2cd89e4385260f7ce67a7eeb7c329628fb509784fecd0af1e10f63ecd326023c"
 
 RDEPENDS:perl-Net-SFTP-Foreign = " \

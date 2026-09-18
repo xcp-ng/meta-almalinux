@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-asyncio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-asyncio-0.23.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-asyncio-0.23.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea44152e238510ad6e0a98967ff4341c6ee46f85afe0e805c20ce8ad7cb58674"
 
-URI_x86_64_v2_python3-pytest-asyncio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-asyncio-0.23.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-asyncio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-asyncio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-asyncio-0.23.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-asyncio;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-asyncio.sha256sum] = "b5bae99fd6340fa024fa8b5a23485ed4e36e8d4f20ffcd496cac9d5dafd5b6b6"
 
-URI_aarch64_python3-pytest-asyncio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-asyncio-0.23.8-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-asyncio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-asyncio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-asyncio-0.23.8-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-asyncio;unpack=0"
 SRC_URI[aarch64_python3-pytest-asyncio.sha256sum] = "9c3468285f75d8f04ba9c1b92e5b98689818928021d98d20ee146259654c7818"
 
 RDEPENDS:python3-pytest-asyncio = " \

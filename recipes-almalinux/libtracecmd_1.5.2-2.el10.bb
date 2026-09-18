@@ -10,24 +10,19 @@ PACKAGES = " \
  libtracecmd-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libtracecmd-1.5.2-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libtracecmd-1.5.2-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "729b723e558e6f434121a978c35358009b47a8b7fa1dedfcd3189ce6eafd4825"
 
-URI_x86_64_v2_libtracecmd = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libtracecmd-1.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_libtracecmd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libtracecmd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libtracecmd-1.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_libtracecmd;unpack=0"
 SRC_URI[x86_64_v2_libtracecmd.sha256sum] = "ceb5095ea8f9e7c367832b029fd87b6c220cb697b1abf0fc80b22da39304494b"
 
-URI_x86_64_v2_libtracecmd-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libtracecmd-devel-1.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_libtracecmd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libtracecmd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libtracecmd-devel-1.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_libtracecmd-devel;unpack=0"
 SRC_URI[x86_64_v2_libtracecmd-devel.sha256sum] = "28feb33ac2199b818e6aa8d9e4b129ae96b32aa491bf5dfb25028dbc6e05dba9"
 
-URI_aarch64_libtracecmd = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libtracecmd-1.5.2-2.el10.aarch64.rpm;name=aarch64_libtracecmd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libtracecmd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libtracecmd-1.5.2-2.el10.aarch64.rpm;name=aarch64_libtracecmd;unpack=0"
 SRC_URI[aarch64_libtracecmd.sha256sum] = "323f01f69d8125b5d49b2ceffc751f62747e23484e172df68344e9a2a18b3a49"
 
-URI_aarch64_libtracecmd-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libtracecmd-devel-1.5.2-2.el10.aarch64.rpm;name=aarch64_libtracecmd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libtracecmd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libtracecmd-devel-1.5.2-2.el10.aarch64.rpm;name=aarch64_libtracecmd-devel;unpack=0"
 SRC_URI[aarch64_libtracecmd-devel.sha256sum] = "f71da75dbb4226beb42b95c8362ebee4bdbc3c80c2a164517c59aeab22c02d67"
 
 RDEPENDS:libtracecmd = " \

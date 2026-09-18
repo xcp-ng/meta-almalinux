@@ -10,24 +10,19 @@ PACKAGES = " \
  irssi-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/irssi-1.4.5-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/irssi-1.4.5-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d47c1e013b9aea85642755d97207bc33e0a47c5c657d9eaf7a73b5e36b4bb02a"
 
-URI_x86_64_v2_irssi = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/irssi-1.4.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_irssi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_irssi}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/irssi-1.4.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_irssi;unpack=0"
 SRC_URI[x86_64_v2_irssi.sha256sum] = "7b9b88d4f0674c6eee12979e2b329a36a774122d9f1382a763c20efd7d837c1e"
 
-URI_x86_64_v2_irssi-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/irssi-devel-1.4.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_irssi-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_irssi-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/irssi-devel-1.4.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_irssi-devel;unpack=0"
 SRC_URI[x86_64_v2_irssi-devel.sha256sum] = "c5a35f30ab739be90bb9eb6631e0e8e88d4cee4303ef96daf6d0f500d0faf39a"
 
-URI_aarch64_irssi = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/irssi-1.4.5-6.el10.aarch64.rpm;name=aarch64_irssi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_irssi}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/irssi-1.4.5-6.el10.aarch64.rpm;name=aarch64_irssi;unpack=0"
 SRC_URI[aarch64_irssi.sha256sum] = "ce4f1ed4f5849f16d7e7035e259fb4e529f3770666973549c0fc34c78adab094"
 
-URI_aarch64_irssi-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/irssi-devel-1.4.5-6.el10.aarch64.rpm;name=aarch64_irssi-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_irssi-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/irssi-devel-1.4.5-6.el10.aarch64.rpm;name=aarch64_irssi-devel;unpack=0"
 SRC_URI[aarch64_irssi-devel.sha256sum] = "c6989e19364919b1eef66a55030485d249ec35dce6d918b433537e70f704603c"
 
 RDEPENDS:irssi = " \

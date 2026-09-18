@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-bmizerany-assert-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-bmizerany-assert-0-36.20181110gitb7ed37b.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-bmizerany-assert-0-36.20181110gitb7ed37b.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b59b69f74d5230a426c901ab00f38ae84f4542cb61aceb182bc3914ec33f1035"
 
-URI_aarch64_golang-github-bmizerany-assert-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-bmizerany-assert-devel-0-36.20181110gitb7ed37b.el10_0.noarch.rpm;name=aarch64_golang-github-bmizerany-assert-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-bmizerany-assert-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-bmizerany-assert-devel-0-36.20181110gitb7ed37b.el10_0.noarch.rpm;name=aarch64_golang-github-bmizerany-assert-devel;unpack=0"
 SRC_URI[aarch64_golang-github-bmizerany-assert-devel.sha256sum] = "9c23810d6861639a868de03b3b931d52abb35084f5aad99620a21d5ec627664f"
 
 RDEPENDS:golang-github-bmizerany-assert-devel = " \

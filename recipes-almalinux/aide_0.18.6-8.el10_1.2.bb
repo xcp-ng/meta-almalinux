@@ -9,16 +9,13 @@ PACKAGES = " \
  aide \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/aide-0.18.6-8.el10_1.2.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/aide-0.18.6-8.el10_1.2.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6b92fe0bd100c5cddbc3b6d32993096b23e840904d8e063b9c8e88da37ee180b"
 
-URI_x86_64_v2_aide = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/aide-0.18.6-8.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_aide;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aide}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/aide-0.18.6-8.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_aide;unpack=0"
 SRC_URI[x86_64_v2_aide.sha256sum] = "e1c238195a5c21ee10f8b8789693172d278562727c30d6ddfe9564831ef3e1b4"
 
-URI_aarch64_aide = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/aide-0.18.6-8.el10_1.2.aarch64.rpm;name=aarch64_aide;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aide}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/aide-0.18.6-8.el10_1.2.aarch64.rpm;name=aarch64_aide;unpack=0"
 SRC_URI[aarch64_aide.sha256sum] = "080fe468590af74326c1a23b0ad78f52597702dcad99fa968a66e13604238bdc"
 
 RDEPENDS:aide = " \

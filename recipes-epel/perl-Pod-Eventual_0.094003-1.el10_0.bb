@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Pod-Eventual \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Eventual-0.094003-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Eventual-0.094003-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0140899fbf53b1c009db99bdb0a8f9cd5f8a6658085f858e7a31078543105f34"
 
-URI_x86_64_v2_perl-Pod-Eventual = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Eventual-0.094003-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Eventual;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Eventual}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Eventual-0.094003-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Eventual;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Eventual.sha256sum] = "6437c13d08e0bc7ba9a3797b650a70e2461f98741af87cdec38ce6512d63f909"
 
-URI_aarch64_perl-Pod-Eventual = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Eventual-0.094003-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Eventual;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Eventual}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Eventual-0.094003-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Eventual;unpack=0"
 SRC_URI[aarch64_perl-Pod-Eventual.sha256sum] = "aad71979aa3d12bb54f03ecd27b6da81dfd33d24b824f8c912eb028c3a36b8cd"
 
 RDEPENDS:perl-Pod-Eventual = " \

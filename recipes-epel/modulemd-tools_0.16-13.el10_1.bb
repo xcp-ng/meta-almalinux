@@ -9,16 +9,13 @@ PACKAGES = " \
  modulemd-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/modulemd-tools-0.16-13.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/modulemd-tools-0.16-13.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9f3c97419fb3f22044d4f69499282c030450f6b2bff71bc200a01df85b77db10"
 
-URI_x86_64_v2_modulemd-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/modulemd-tools-0.16-13.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_modulemd-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_modulemd-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/modulemd-tools-0.16-13.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_modulemd-tools;unpack=0"
 SRC_URI[x86_64_v2_modulemd-tools.sha256sum] = "90f9736febac2dad921371bb1d2d018379cfbd1318edf1a8fd43acdfe44e6117"
 
-URI_aarch64_modulemd-tools = "${EPEL_MIRROR}/aarch64/Packages/m/modulemd-tools-0.16-13.el10_1.noarch.rpm;name=aarch64_modulemd-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_modulemd-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/modulemd-tools-0.16-13.el10_1.noarch.rpm;name=aarch64_modulemd-tools;unpack=0"
 SRC_URI[aarch64_modulemd-tools.sha256sum] = "ad30946db47a264f120766ff79b599f1d231f130c6735353dd5ecfde1de34b94"
 
 RDEPENDS:modulemd-tools = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Sub-Exporter-ForMethods \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a07591dac5afc3a247e08a32313d24f44ec5bbe2dee082c2e68319bc649842dc"
 
-URI_x86_64_v2_perl-Sub-Exporter-ForMethods = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Exporter-ForMethods;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Exporter-ForMethods}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Exporter-ForMethods;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Exporter-ForMethods.sha256sum] = "1f6e8436da3a609d842ff51e70a61108345f33765f2ebd1a85dd4299165e952e"
 
-URI_aarch64_perl-Sub-Exporter-ForMethods = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.noarch.rpm;name=aarch64_perl-Sub-Exporter-ForMethods;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Exporter-ForMethods}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Exporter-ForMethods-0.100055-1.el10_0.noarch.rpm;name=aarch64_perl-Sub-Exporter-ForMethods;unpack=0"
 SRC_URI[aarch64_perl-Sub-Exporter-ForMethods.sha256sum] = "975368238008b594bbb0f4b906a763c22943bbde405452f4e039564ca15b2e40"
 
 RDEPENDS:perl-Sub-Exporter-ForMethods = " \

@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-axum-core-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-axum-core-0.4.5-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-axum-core-0.4.5-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "37d82f8318c1246e340aabbc5e50f3246bd77e5905b25cd8c5540fdfabcfc552"
 
-URI_x86_64_v2_rust-axum-core+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core+default-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-axum-core+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core+default-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-axum-core+default-devel.sha256sum] = "94f09d019f2da6df8e29034bf423d4417ee1ed1807af82f09f245d6e93bc804a"
 
-URI_x86_64_v2_rust-axum-core+tracing-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core+tracing-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core+tracing-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-axum-core+tracing-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core+tracing-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core+tracing-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-axum-core+tracing-devel.sha256sum] = "70c0c1d30a1ac9f5e6eb3b03e0accc367ac36b75621e1f9f7a1a26b049ae7b0c"
 
-URI_x86_64_v2_rust-axum-core-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-axum-core-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-axum-core-devel-0.4.5-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-axum-core-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-axum-core-devel.sha256sum] = "c905dba815534441e9cb1baf04be623ed2267668818eb6b3ff6cdaeea41ad3a1"
 
-URI_aarch64_rust-axum-core+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core+default-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-axum-core+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core+default-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core+default-devel;unpack=0"
 SRC_URI[aarch64_rust-axum-core+default-devel.sha256sum] = "d18a49153825e59edf378002f5c68b8034b3896e692851928aab38b1dd57440a"
 
-URI_aarch64_rust-axum-core+tracing-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core+tracing-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core+tracing-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-axum-core+tracing-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core+tracing-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core+tracing-devel;unpack=0"
 SRC_URI[aarch64_rust-axum-core+tracing-devel.sha256sum] = "eea02779abb07630c344f1a5ff9bd933d1e2e7bc5634156eed71b9fe56ecaaa4"
 
-URI_aarch64_rust-axum-core-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-axum-core-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-axum-core-devel-0.4.5-2.el10_1.noarch.rpm;name=aarch64_rust-axum-core-devel;unpack=0"
 SRC_URI[aarch64_rust-axum-core-devel.sha256sum] = "0279f6e337eeb2def63d4321a368fcdc0151c505c36df84bbfc67727f6983a8b"
 
 RDEPENDS:rust-axum-core+default-devel = " \

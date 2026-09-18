@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-strictures \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-strictures-2.000006-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-strictures-2.000006-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "825b60fb9ecf53bd1614cc3dbb416607304093603e51ff627b30ee22fa674329"
 
-URI_x86_64_v2_perl-strictures = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-strictures-2.000006-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-strictures;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-strictures}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-strictures-2.000006-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-strictures;unpack=0"
 SRC_URI[x86_64_v2_perl-strictures.sha256sum] = "5a2ecda9e3519fd55ac4a9a0e0de5d2b61864342f70222fe64adf74f50a08825"
 
-URI_aarch64_perl-strictures = "${EPEL_MIRROR}/aarch64/Packages/p/perl-strictures-2.000006-15.el10_0.noarch.rpm;name=aarch64_perl-strictures;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-strictures}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-strictures-2.000006-15.el10_0.noarch.rpm;name=aarch64_perl-strictures;unpack=0"
 SRC_URI[aarch64_perl-strictures.sha256sum] = "a955fcb9e2424ce3437e8f6954a908ead232b63db8f280f06993663a53ae22c8"
 
 RDEPENDS:perl-strictures = " \

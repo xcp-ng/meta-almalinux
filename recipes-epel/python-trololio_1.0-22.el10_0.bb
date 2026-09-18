@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-trololio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-trololio-1.0-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-trololio-1.0-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "15b14a89ff702d288d3db84f228e7816cbc9028f28cef0ef02ba4b13ed1e024f"
 
-URI_x86_64_v2_python3-trololio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trololio-1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trololio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-trololio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-trololio-1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-trololio;unpack=0"
 SRC_URI[x86_64_v2_python3-trololio.sha256sum] = "12d4f041635c5a4f5ee92e1192943896d9e7e23bb798ca8c49a3a2fd7ead86a4"
 
-URI_aarch64_python3-trololio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-trololio-1.0-22.el10_0.noarch.rpm;name=aarch64_python3-trololio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-trololio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-trololio-1.0-22.el10_0.noarch.rpm;name=aarch64_python3-trololio;unpack=0"
 SRC_URI[aarch64_python3-trololio.sha256sum] = "3b5af9ca8944f473b75eba1ebe5d050936363b55a515da37f22872d49acbf22d"
 
 RDEPENDS:python3-trololio = " \

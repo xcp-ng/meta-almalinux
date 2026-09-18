@@ -8,7 +8,6 @@ PR = "11.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libocxl-1.2.1-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libocxl-1.2.1-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e0e80977f39c45b83630183f1db2389a0ce5c68684a594362d2dbf818ff2a0ff"
 

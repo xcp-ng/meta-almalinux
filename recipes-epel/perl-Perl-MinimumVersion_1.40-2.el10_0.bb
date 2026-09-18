@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Perl-MinimumVersion \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-MinimumVersion-1.40-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-MinimumVersion-1.40-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c967452c6c2b43c474cd3e8cdfa39b950a8e5673ae1ecfc8fcc5074928d16c04"
 
-URI_x86_64_v2_perl-Perl-MinimumVersion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-MinimumVersion-1.40-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-MinimumVersion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-MinimumVersion}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-MinimumVersion-1.40-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-MinimumVersion;unpack=0"
 SRC_URI[x86_64_v2_perl-Perl-MinimumVersion.sha256sum] = "bd52259919a9115e95d79e633b9d0a7f07fc61b49707c57a4d7963fdd40c1c75"
 
-URI_aarch64_perl-Perl-MinimumVersion = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-MinimumVersion-1.40-2.el10_0.noarch.rpm;name=aarch64_perl-Perl-MinimumVersion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Perl-MinimumVersion}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-MinimumVersion-1.40-2.el10_0.noarch.rpm;name=aarch64_perl-Perl-MinimumVersion;unpack=0"
 SRC_URI[aarch64_perl-Perl-MinimumVersion.sha256sum] = "acf8cdc4ce33eb67062a98fdccdd3152d0de65aac3eba4773270d086909a0cde"
 
 RDEPENDS:perl-Perl-MinimumVersion = " \

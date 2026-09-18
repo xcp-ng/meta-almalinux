@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Types-UUID-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Types-UUID-0.004-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Types-UUID-0.004-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "07786b2a8f59d47272541f7716b49d5478b489b204c01562a366a1457304ccf7"
 
-URI_x86_64_v2_perl-Types-UUID = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Types-UUID}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID;unpack=0"
 SRC_URI[x86_64_v2_perl-Types-UUID.sha256sum] = "c28814e122dc22d78a0a3e5ecd40c90124c455b4abf094325d7a121d240896ca"
 
-URI_x86_64_v2_perl-Types-UUID-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-tests-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Types-UUID-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Types-UUID-tests-0.004-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Types-UUID-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Types-UUID-tests.sha256sum] = "04bd7c9c0a4ac0c239f706c6c9765f6ff03db72cd49c482663aea648035a493b"
 
-URI_aarch64_perl-Types-UUID = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-UUID-0.004-25.el10_0.noarch.rpm;name=aarch64_perl-Types-UUID;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Types-UUID}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-UUID-0.004-25.el10_0.noarch.rpm;name=aarch64_perl-Types-UUID;unpack=0"
 SRC_URI[aarch64_perl-Types-UUID.sha256sum] = "888e0b614353f7caf46689c88d607b2bcea9f520353779731899acac2ff30439"
 
-URI_aarch64_perl-Types-UUID-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-UUID-tests-0.004-25.el10_0.noarch.rpm;name=aarch64_perl-Types-UUID-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Types-UUID-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Types-UUID-tests-0.004-25.el10_0.noarch.rpm;name=aarch64_perl-Types-UUID-tests;unpack=0"
 SRC_URI[aarch64_perl-Types-UUID-tests.sha256sum] = "39624e61319a6350aedd8d3a3891d42d4f39c18a2d7e4df2dcc283114f7352b6"
 
 RDEPENDS:perl-Types-UUID = " \

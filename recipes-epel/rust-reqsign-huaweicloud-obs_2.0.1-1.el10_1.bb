@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-reqsign-huaweicloud-obs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-reqsign-huaweicloud-obs-2.0.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-reqsign-huaweicloud-obs-2.0.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1c1aac905e3ce18cb91dd38a5b43e4e63d012d854ed4638ae0b691b57ba49d9d"
 
-URI_x86_64_v2_rust-reqsign-huaweicloud-obs+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-reqsign-huaweicloud-obs+default-devel-2.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-reqsign-huaweicloud-obs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-reqsign-huaweicloud-obs+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-reqsign-huaweicloud-obs+default-devel-2.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-reqsign-huaweicloud-obs+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-reqsign-huaweicloud-obs+default-devel.sha256sum] = "2ea25d985a1b515655daacee237a6904511855466622acb3909777a1493074b8"
 
-URI_x86_64_v2_rust-reqsign-huaweicloud-obs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-reqsign-huaweicloud-obs-devel-2.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-reqsign-huaweicloud-obs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-reqsign-huaweicloud-obs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-reqsign-huaweicloud-obs-devel-2.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-reqsign-huaweicloud-obs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-reqsign-huaweicloud-obs-devel.sha256sum] = "3252624eef5b99d15807f69a095f58015f7f9fbb7c62b9786a3dc95b8bde316f"
 
-URI_aarch64_rust-reqsign-huaweicloud-obs+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-reqsign-huaweicloud-obs+default-devel-2.0.1-1.el10_1.noarch.rpm;name=aarch64_rust-reqsign-huaweicloud-obs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-reqsign-huaweicloud-obs+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-reqsign-huaweicloud-obs+default-devel-2.0.1-1.el10_1.noarch.rpm;name=aarch64_rust-reqsign-huaweicloud-obs+default-devel;unpack=0"
 SRC_URI[aarch64_rust-reqsign-huaweicloud-obs+default-devel.sha256sum] = "a026a4464863c944f2bea88f0ce0404b1ad37745ba24511fc6aeb876a342e15d"
 
-URI_aarch64_rust-reqsign-huaweicloud-obs-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-reqsign-huaweicloud-obs-devel-2.0.1-1.el10_1.noarch.rpm;name=aarch64_rust-reqsign-huaweicloud-obs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-reqsign-huaweicloud-obs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-reqsign-huaweicloud-obs-devel-2.0.1-1.el10_1.noarch.rpm;name=aarch64_rust-reqsign-huaweicloud-obs-devel;unpack=0"
 SRC_URI[aarch64_rust-reqsign-huaweicloud-obs-devel.sha256sum] = "20b4614eea4e11290ac738644f93e833e934747a4781d9292422d68b5303f62a"
 
 RDEPENDS:rust-reqsign-huaweicloud-obs+default-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Sub-Infix \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Infix-0.004-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Infix-0.004-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2fd87fc5716a43a4f655d0918be9771451a8f718fed3dc8b15f3171926b7002"
 
-URI_x86_64_v2_perl-Sub-Infix = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Infix-0.004-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Infix;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Infix}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Infix-0.004-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Infix;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Infix.sha256sum] = "b3cd943c805901ae31daa0c11bc7c4fa11485e9333e0574f47e3df91861733dc"
 
-URI_aarch64_perl-Sub-Infix = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Infix-0.004-24.el10_0.noarch.rpm;name=aarch64_perl-Sub-Infix;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Infix}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Infix-0.004-24.el10_0.noarch.rpm;name=aarch64_perl-Sub-Infix;unpack=0"
 SRC_URI[aarch64_perl-Sub-Infix.sha256sum] = "4bcef6d8bfcd434d0f931483da09ac794dc9b1b51bc75f4c1b442164df3fe812"
 
 RDEPENDS:perl-Sub-Infix = " \

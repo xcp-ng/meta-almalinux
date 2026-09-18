@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colcon-common-extensions \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colcon-common-extensions-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-common-extensions-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6e3f7fb279868dfd4edfd762a5ea1ad9abf6247152ab037aa399ab50014ac0d9"
 
-URI_x86_64_v2_python3-colcon-common-extensions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-common-extensions-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-common-extensions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-common-extensions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-common-extensions-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-common-extensions;unpack=0"
 SRC_URI[x86_64_v2_python3-colcon-common-extensions.sha256sum] = "46eb4d7a90fcb2f52b9519510eb324e55083b85981f77e24ac9e5546a5d3ff59"
 
-URI_aarch64_python3-colcon-common-extensions = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-common-extensions-0.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-common-extensions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colcon-common-extensions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-common-extensions-0.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-common-extensions;unpack=0"
 SRC_URI[aarch64_python3-colcon-common-extensions.sha256sum] = "85cf4292c60bfac58553a3c6f188cabfe1f3c694a16641a53c866dc7d9d4f7c7"
 
 RDEPENDS:python3-colcon-common-extensions = " \

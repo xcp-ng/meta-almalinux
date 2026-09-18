@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-CheckDeps \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CheckDeps-0.010-37.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CheckDeps-0.010-37.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "949596b1e9e7c160a81aeddc7b9f3485f347569b72cc4ff62b787ae9e1d399cb"
 
-URI_x86_64_v2_perl-Test-CheckDeps = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CheckDeps-0.010-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CheckDeps;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-CheckDeps}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CheckDeps-0.010-37.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CheckDeps;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-CheckDeps.sha256sum] = "815798e48b486ee8acea9274f8721f75c754aec553f6e3bd22b68a1a0b477b7c"
 
-URI_aarch64_perl-Test-CheckDeps = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CheckDeps-0.010-37.el10_0.noarch.rpm;name=aarch64_perl-Test-CheckDeps;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-CheckDeps}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CheckDeps-0.010-37.el10_0.noarch.rpm;name=aarch64_perl-Test-CheckDeps;unpack=0"
 SRC_URI[aarch64_perl-Test-CheckDeps.sha256sum] = "701f2460f7624cb3b789edeccc45f5ee153480de8bfed2fd7a353b55ca0eaf04"
 
 RDEPENDS:perl-Test-CheckDeps = " \

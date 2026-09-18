@@ -9,16 +9,13 @@ PACKAGES = " \
  keysmith \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/keysmith-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/keysmith-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "64219224fcd501a63219b1df02093963e8e941f180eb08cd6a60f1f64c9e67ce"
 
-URI_x86_64_v2_keysmith = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keysmith-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keysmith;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_keysmith}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keysmith-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keysmith;unpack=0"
 SRC_URI[x86_64_v2_keysmith.sha256sum] = "eeee331e58b5705169b22d13009526f366a98dce0b3343c8c9ed2e36a4ccd29d"
 
-URI_aarch64_keysmith = "${EPEL_MIRROR}/aarch64/Packages/k/keysmith-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keysmith;unpack=0"
-SRC_URI:append = " ${URI_aarch64_keysmith}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/keysmith-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keysmith;unpack=0"
 SRC_URI[aarch64_keysmith.sha256sum] = "4ba76200cc0c34ce6557184e2039f3dff2c1ec184b55c12115f89a106e8c010d"
 
 RDEPENDS:keysmith = " \

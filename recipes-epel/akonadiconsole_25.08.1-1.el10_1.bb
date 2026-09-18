@@ -9,16 +9,13 @@ PACKAGES = " \
  akonadiconsole \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/akonadiconsole-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/akonadiconsole-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ffd72521a3270018fa5b527eeec29331553cfeb2b8f4ba8d4db5b208ae650062"
 
-URI_x86_64_v2_akonadiconsole = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadiconsole-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadiconsole;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akonadiconsole}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadiconsole-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadiconsole;unpack=0"
 SRC_URI[x86_64_v2_akonadiconsole.sha256sum] = "fcc22b8179d8ae75b330c1fae0416699d1d7e3c0346b2000c8a70fb41b5bee6a"
 
-URI_aarch64_akonadiconsole = "${EPEL_MIRROR}/aarch64/Packages/a/akonadiconsole-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadiconsole;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akonadiconsole}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akonadiconsole-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadiconsole;unpack=0"
 SRC_URI[aarch64_akonadiconsole.sha256sum] = "7a8b4f62e5ecda738ac100163355d4fe5e2ed94c9e2add0556c2640a2b921566"
 
 RDEPENDS:akonadiconsole = " \

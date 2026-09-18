@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-lens-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-lens-5.2.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-lens-5.2.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0b51e8c17227a3fe5359cc19b9c9d90960d172f109635dc93f501b93d8bc27f0"
 
-URI_x86_64_v2_ghc-lens = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lens}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens;unpack=0"
 SRC_URI[x86_64_v2_ghc-lens.sha256sum] = "1630d20cca43585feddba77c0b4af2c6d7a0264515710c3ffee0a9dc65b3ae11"
 
-URI_x86_64_v2_ghc-lens-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-devel-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lens-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-devel-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-lens-devel.sha256sum] = "3f32755f170e40225fd54eb276ce3143e5452698a0f4579d64072c743c66baaa"
 
-URI_x86_64_v2_ghc-lens-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-doc-5.2.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-lens-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lens-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-doc-5.2.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-lens-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-lens-doc.sha256sum] = "95c12a66f1972f3380a96ed64adc399029cb778d93eae611e30dd02c1ee7f246"
 
-URI_x86_64_v2_ghc-lens-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-prof-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lens-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lens-prof-5.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lens-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-lens-prof.sha256sum] = "c108b0c77734ee33871ae2c664aa78b908b309a04891e2564379a7bdaf65f2fc"
 
-URI_aarch64_ghc-lens = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lens}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens;unpack=0"
 SRC_URI[aarch64_ghc-lens.sha256sum] = "e47e26000ed8756fbe152aa0e32339414a6f8625264e1bfa0527a04ee6c5be75"
 
-URI_aarch64_ghc-lens-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-devel-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lens-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-devel-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens-devel;unpack=0"
 SRC_URI[aarch64_ghc-lens-devel.sha256sum] = "cb9b5e3aaa23190af90b0557015a55b30e20835ba8390a198a1c8a3177f83c73"
 
-URI_aarch64_ghc-lens-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-doc-5.2.3-1.el10_0.noarch.rpm;name=aarch64_ghc-lens-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lens-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-doc-5.2.3-1.el10_0.noarch.rpm;name=aarch64_ghc-lens-doc;unpack=0"
 SRC_URI[aarch64_ghc-lens-doc.sha256sum] = "e7859cf7de4e2db9d9af6f86eade679f80baa4dee1d9fc4feeb33fa044f27504"
 
-URI_aarch64_ghc-lens-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-prof-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lens-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lens-prof-5.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-lens-prof;unpack=0"
 SRC_URI[aarch64_ghc-lens-prof.sha256sum] = "484ea4261d91f291014949a7c545d32026680f22c04b213f6e1f394d3864d7f5"
 
 RDEPENDS:ghc-lens = " \

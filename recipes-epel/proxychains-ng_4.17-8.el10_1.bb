@@ -9,16 +9,13 @@ PACKAGES = " \
  proxychains-ng \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/proxychains-ng-4.17-8.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/proxychains-ng-4.17-8.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c62dfa64be358676409817641a192e395407620f3ed052d45212bca7473a0ab"
 
-URI_x86_64_v2_proxychains-ng = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/proxychains-ng-4.17-8.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_proxychains-ng;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_proxychains-ng}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/proxychains-ng-4.17-8.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_proxychains-ng;unpack=0"
 SRC_URI[x86_64_v2_proxychains-ng.sha256sum] = "148c10434b848716b8f9809cbfb733673cfd90055f77df24b123c13e044e9444"
 
-URI_aarch64_proxychains-ng = "${EPEL_MIRROR}/aarch64/Packages/p/proxychains-ng-4.17-8.el10_1.aarch64.rpm;name=aarch64_proxychains-ng;unpack=0"
-SRC_URI:append = " ${URI_aarch64_proxychains-ng}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/proxychains-ng-4.17-8.el10_1.aarch64.rpm;name=aarch64_proxychains-ng;unpack=0"
 SRC_URI[aarch64_proxychains-ng.sha256sum] = "609f90a27e09558661c44dfd8fd118cbba825c448e8d689ba1d0956c4f12d11a"
 
 RDEPENDS:proxychains-ng = " \

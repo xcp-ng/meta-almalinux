@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-ExtUtils-HasCompiler \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-ExtUtils-HasCompiler-0.025-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-ExtUtils-HasCompiler-0.025-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d32401c10e1d72bdf91d7c73d4d3cd41b9ce816568d55ba274614f6636b4d9e3"
 
-URI_x86_64_v2_perl-ExtUtils-HasCompiler = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-ExtUtils-HasCompiler-0.025-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-ExtUtils-HasCompiler;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-HasCompiler}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-ExtUtils-HasCompiler-0.025-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-ExtUtils-HasCompiler;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-HasCompiler.sha256sum] = "27e0c86ab86cbc50ad4c872c3d22abbd32b9918b62c0eb2d327142b2452792bf"
 
-URI_aarch64_perl-ExtUtils-HasCompiler = "${EPEL_MIRROR}/aarch64/Packages/p/perl-ExtUtils-HasCompiler-0.025-2.el10_0.noarch.rpm;name=aarch64_perl-ExtUtils-HasCompiler;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-HasCompiler}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-ExtUtils-HasCompiler-0.025-2.el10_0.noarch.rpm;name=aarch64_perl-ExtUtils-HasCompiler;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-HasCompiler.sha256sum] = "34106fd1942d60811b3fd57eaa4424081bd37facfc2fd4c81baf5205ad8073b0"
 
 RDEPENDS:perl-ExtUtils-HasCompiler = " \

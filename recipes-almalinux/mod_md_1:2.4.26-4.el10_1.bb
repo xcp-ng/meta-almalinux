@@ -10,16 +10,13 @@ PACKAGES = " \
  mod_md \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mod_md-2.4.26-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mod_md-2.4.26-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f2baadbea92941346258cfff857cdbfa72dc570da4be7c196546650935932786"
 
-URI_x86_64_v2_mod_md = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mod_md-2.4.26-4.el10_1.x86_64_v2.rpm;name=x86_64_v2_mod_md;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mod_md}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mod_md-2.4.26-4.el10_1.x86_64_v2.rpm;name=x86_64_v2_mod_md;unpack=0"
 SRC_URI[x86_64_v2_mod_md.sha256sum] = "1deab40e6d0561aa5b0790e638aa7dac811c31de3c2584ee28eae49268ae8230"
 
-URI_aarch64_mod_md = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mod_md-2.4.26-4.el10_1.aarch64.rpm;name=aarch64_mod_md;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mod_md}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mod_md-2.4.26-4.el10_1.aarch64.rpm;name=aarch64_mod_md;unpack=0"
 SRC_URI[aarch64_mod_md.sha256sum] = "ebfea913baea70e3107e9da94d0c9642a6f9cb71049af72dd52a089d4653e327"
 
 RDEPENDS:mod_md = " \

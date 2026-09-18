@@ -8,7 +8,6 @@ PR = "1.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libica-4.4.1-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libica-4.4.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "12023fff6217eeb00006c09d91fb1c0dc8093e74b83a243f38e440da2d6b4c67"
 

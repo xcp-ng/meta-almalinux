@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-conda-inject \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-conda-inject-1.3.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-conda-inject-1.3.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "68c03cfdc3614dfd802653ea2049dc4db7effd9fe23a15e4113abf8035ab03d9"
 
-URI_x86_64_v2_python3-conda-inject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-conda-inject-1.3.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-conda-inject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-conda-inject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-conda-inject-1.3.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-conda-inject;unpack=0"
 SRC_URI[x86_64_v2_python3-conda-inject.sha256sum] = "cba372389e9c7e438aa817a338d2ab460fb6970b59460f66c9d92514a31e090f"
 
-URI_aarch64_python3-conda-inject = "${EPEL_MIRROR}/aarch64/Packages/p/python3-conda-inject-1.3.2-3.el10_0.noarch.rpm;name=aarch64_python3-conda-inject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-conda-inject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-conda-inject-1.3.2-3.el10_0.noarch.rpm;name=aarch64_python3-conda-inject;unpack=0"
 SRC_URI[aarch64_python3-conda-inject.sha256sum] = "6b5aa43a1e337dce69636a56dbd597bb79bb0007f3ba2276c868f3c73b0e9ec6"
 
 RDEPENDS:python3-conda-inject = " \

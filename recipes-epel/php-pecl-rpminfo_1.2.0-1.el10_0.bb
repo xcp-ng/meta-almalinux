@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-rpminfo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-rpminfo-1.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-rpminfo-1.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "86e14c883c26e22bd89046cfdd2cac5ada13b7f5be20a06c45523a5d0b024aac"
 
-URI_x86_64_v2_php-pecl-rpminfo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-rpminfo-1.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-rpminfo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-rpminfo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-rpminfo-1.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-rpminfo;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-rpminfo.sha256sum] = "70ddf51d780260e82607df48a3c11f3843ae5f12ba4c21341645a78e64fd0881"
 
-URI_aarch64_php-pecl-rpminfo = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-rpminfo-1.2.0-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-rpminfo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-rpminfo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-rpminfo-1.2.0-1.el10_0.aarch64.rpm;name=aarch64_php-pecl-rpminfo;unpack=0"
 SRC_URI[aarch64_php-pecl-rpminfo.sha256sum] = "68855809739e56747140f12f6106092fc0958d7bd90390c673ae221c4cc661af"
 
 RDEPENDS:php-pecl-rpminfo = " \

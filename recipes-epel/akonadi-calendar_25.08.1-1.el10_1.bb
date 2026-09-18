@@ -11,32 +11,25 @@ PACKAGES = " \
  akonadi-calendar-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/akonadi-calendar-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/akonadi-calendar-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fbac88464cc2fa8de23a2fae784d5f6fab20b1dcecfdaae970a7f5c7f02e59a3"
 
-URI_x86_64_v2_akonadi-calendar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadi-calendar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akonadi-calendar}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadi-calendar;unpack=0"
 SRC_URI[x86_64_v2_akonadi-calendar.sha256sum] = "8f7739e2be85f5d5a2de3fab34e223ffeaf4c71a813cf197de26d00e0b8f2e5a"
 
-URI_x86_64_v2_akonadi-calendar-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadi-calendar-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akonadi-calendar-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akonadi-calendar-devel;unpack=0"
 SRC_URI[x86_64_v2_akonadi-calendar-devel.sha256sum] = "3e515fc360dd0ffa761ee58ab048d37883e4e2fba10006244ff60a2af585d157"
 
-URI_x86_64_v2_akonadi-calendar-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_akonadi-calendar-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akonadi-calendar-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akonadi-calendar-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_akonadi-calendar-doc;unpack=0"
 SRC_URI[x86_64_v2_akonadi-calendar-doc.sha256sum] = "1e45db9f74c5ff2c44e56191e415e7f5ef04af049e9835b615364ed5c5072ae1"
 
-URI_aarch64_akonadi-calendar = "${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadi-calendar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akonadi-calendar}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadi-calendar;unpack=0"
 SRC_URI[aarch64_akonadi-calendar.sha256sum] = "30b6bb1b7780f9b0f0d63b7772ea83903bce0d15dd83d3e10991a9966f3bbd6f"
 
-URI_aarch64_akonadi-calendar-devel = "${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadi-calendar-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akonadi-calendar-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akonadi-calendar-devel;unpack=0"
 SRC_URI[aarch64_akonadi-calendar-devel.sha256sum] = "5e00b06bb9b7c1c3c4baa06b27b924c5f0be77f79c7a034d4bb70f0060d97a71"
 
-URI_aarch64_akonadi-calendar-doc = "${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_akonadi-calendar-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akonadi-calendar-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akonadi-calendar-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_akonadi-calendar-doc;unpack=0"
 SRC_URI[aarch64_akonadi-calendar-doc.sha256sum] = "a5e7d26a3bdc923563dc4e476b13a2dba81af9276b1e586a8ee351e9a944dbdb"
 
 RDEPENDS:akonadi-calendar = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-semver \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-semver-3.0.2-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-semver-3.0.2-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ac5ae136a53e8079ffb9ee2c7973e03c12252d7cd48ab66a63052157a5589c1f"
 
-URI_x86_64_v2_python3-semver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-semver-3.0.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-semver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-semver}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-semver-3.0.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-semver;unpack=0"
 SRC_URI[x86_64_v2_python3-semver.sha256sum] = "eda1b430113c6654d0d4318d78c4d874493dcd49ea06676af38b571870516e6d"
 
-URI_aarch64_python3-semver = "${EPEL_MIRROR}/aarch64/Packages/p/python3-semver-3.0.2-2.el10_0.noarch.rpm;name=aarch64_python3-semver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-semver}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-semver-3.0.2-2.el10_0.noarch.rpm;name=aarch64_python3-semver;unpack=0"
 SRC_URI[aarch64_python3-semver.sha256sum] = "2c7c10e145f467d459bb53eec023653e69d45d8e982aa5dda6e92654dae9a364"
 
 RDEPENDS:python3-semver = " \

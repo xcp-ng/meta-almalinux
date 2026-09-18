@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-fdo-notify-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-fdo-notify-0.3.1-33.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-fdo-notify-0.3.1-33.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ac0066daf1089184cb0f0f02819fbdce0e63f85dec401e75660b8b337fdef00d"
 
-URI_x86_64_v2_ghc-fdo-notify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fdo-notify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify;unpack=0"
 SRC_URI[x86_64_v2_ghc-fdo-notify.sha256sum] = "d3199be1cbab06c6ad8c4e97ccae72aede2e0e8f752eee293d16c7becd760230"
 
-URI_x86_64_v2_ghc-fdo-notify-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-devel-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fdo-notify-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-devel-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-fdo-notify-devel.sha256sum] = "1edfe68d8e2ed80508ab3c2da9adec1364c9ff1ebb18ed0f08873530c9705ac2"
 
-URI_x86_64_v2_ghc-fdo-notify-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-doc-0.3.1-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fdo-notify-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fdo-notify-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-doc-0.3.1-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fdo-notify-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-fdo-notify-doc.sha256sum] = "53f82f00ca657bad48b98d30d62444fb2c80c2e6cf82a71054eea399810eb037"
 
-URI_x86_64_v2_ghc-fdo-notify-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-prof-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fdo-notify-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fdo-notify-prof-0.3.1-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fdo-notify-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-fdo-notify-prof.sha256sum] = "a0cf1654abd8e90064cf26ec848e22ebbf30f9c0192edf7f7b25dfde17f95fbc"
 
-URI_aarch64_ghc-fdo-notify = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fdo-notify}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify;unpack=0"
 SRC_URI[aarch64_ghc-fdo-notify.sha256sum] = "adb1f06214ee091c03da0b2a1bd74caa0a5f89027f729d5752726be6cc6a7133"
 
-URI_aarch64_ghc-fdo-notify-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-devel-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fdo-notify-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-devel-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify-devel;unpack=0"
 SRC_URI[aarch64_ghc-fdo-notify-devel.sha256sum] = "3ee406a4878ac3563f25fe130a4e0aa11610d20837eeb2b6c6ae88ba19ef2d36"
 
-URI_aarch64_ghc-fdo-notify-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-doc-0.3.1-33.el10_0.noarch.rpm;name=aarch64_ghc-fdo-notify-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fdo-notify-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-doc-0.3.1-33.el10_0.noarch.rpm;name=aarch64_ghc-fdo-notify-doc;unpack=0"
 SRC_URI[aarch64_ghc-fdo-notify-doc.sha256sum] = "c22b0fa8e41db57aafa9f90440699d245fbcf7a088a83e4f5ee44a6340bc3c8d"
 
-URI_aarch64_ghc-fdo-notify-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-prof-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fdo-notify-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fdo-notify-prof-0.3.1-33.el10_0.aarch64.rpm;name=aarch64_ghc-fdo-notify-prof;unpack=0"
 SRC_URI[aarch64_ghc-fdo-notify-prof.sha256sum] = "66e2b16a2f65ca0714256a424a8e3f5a3b4ab5f556fbd2fd0ae2b29346c1e42a"
 
 RDEPENDS:ghc-fdo-notify = " \

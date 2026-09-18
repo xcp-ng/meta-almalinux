@@ -13,48 +13,37 @@ PACKAGES = " \
  ghc-dhall-json-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/dhall-json-1.7.12-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/dhall-json-1.7.12-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "22c0123e80181df1e011628dbb9da62db71290d356ff1d4222dec10ce91cc642"
 
-URI_x86_64_v2_dhall-json = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-json-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dhall-json;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dhall-json}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-json-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dhall-json;unpack=0"
 SRC_URI[x86_64_v2_dhall-json.sha256sum] = "90e117ca67a582bed6d5e649a5f6567d11a83bb27a34048e7ab4bc3d843909a8"
 
-URI_x86_64_v2_ghc-dhall-json = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-json}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-json.sha256sum] = "e8518ae3c1d5d12c2a0a4882a6046076f52a8b2086707cc4863e5036c28161e9"
 
-URI_x86_64_v2_ghc-dhall-json-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-devel-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-json-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-devel-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-json-devel.sha256sum] = "d0f5e82cb5379dfa0ef0de652fc4c1bf6ab930ef33edd73752a2eb66dded55bb"
 
-URI_x86_64_v2_ghc-dhall-json-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-doc-1.7.12-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dhall-json-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-json-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-doc-1.7.12-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dhall-json-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-json-doc.sha256sum] = "f68c9894cb8c752e9a80edefb51d1f6cc741384ec59448fc71e8438c3a56b6c2"
 
-URI_x86_64_v2_ghc-dhall-json-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-prof-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-json-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-json-prof-1.7.12-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-json-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-json-prof.sha256sum] = "ed07dbfa230fff0cba844b208e4f8c37f659256415d2c530d7b7ec11ba63a533"
 
-URI_aarch64_dhall-json = "${EPEL_MIRROR}/aarch64/Packages/d/dhall-json-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_dhall-json;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dhall-json}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dhall-json-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_dhall-json;unpack=0"
 SRC_URI[aarch64_dhall-json.sha256sum] = "6a97b94031f03772629facdf7d2b42417c0c8b61b823c4911baa53531a7e1520"
 
-URI_aarch64_ghc-dhall-json = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-json}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json;unpack=0"
 SRC_URI[aarch64_ghc-dhall-json.sha256sum] = "ebb73a864e31a24762be10050c56f1045f284ce1a13177a6b89f02f52e521693"
 
-URI_aarch64_ghc-dhall-json-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-devel-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-json-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-devel-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json-devel;unpack=0"
 SRC_URI[aarch64_ghc-dhall-json-devel.sha256sum] = "4860911c761b104d92c6b10a80fe05fa4d49ef262c3724ded357f1006f642622"
 
-URI_aarch64_ghc-dhall-json-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-doc-1.7.12-1.el10_0.noarch.rpm;name=aarch64_ghc-dhall-json-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-json-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-doc-1.7.12-1.el10_0.noarch.rpm;name=aarch64_ghc-dhall-json-doc;unpack=0"
 SRC_URI[aarch64_ghc-dhall-json-doc.sha256sum] = "89cb80c028c7eefdb3a875e603cfd30e559febdb48c99cf0aca7d0a8deabb74e"
 
-URI_aarch64_ghc-dhall-json-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-prof-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-json-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-json-prof-1.7.12-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-json-prof;unpack=0"
 SRC_URI[aarch64_ghc-dhall-json-prof.sha256sum] = "09b686de710203d4bce689c587db99342328c67bec74f6387ae0afd930c71407"
 
 RDEPENDS:dhall-json = " \

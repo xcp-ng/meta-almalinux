@@ -11,32 +11,25 @@ PACKAGES = " \
  imlib2-id3tag-loader \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/imlib2-1.11.1-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/imlib2-1.11.1-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "24b6593db0591ee95c43ef97af268af6844af61ea99b7c9dceed31a5ca276dd7"
 
-URI_x86_64_v2_imlib2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_imlib2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2;unpack=0"
 SRC_URI[x86_64_v2_imlib2.sha256sum] = "a8ce1105a733a3f83dde725dbe5305d3cd76538ce84ea5356d0373510c1e0145"
 
-URI_x86_64_v2_imlib2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-devel-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_imlib2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-devel-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2-devel;unpack=0"
 SRC_URI[x86_64_v2_imlib2-devel.sha256sum] = "d3df094faa8d51ae34d11b0326d5198e811716838c4625dac17368388675c0dd"
 
-URI_x86_64_v2_imlib2-id3tag-loader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-id3tag-loader-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2-id3tag-loader;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_imlib2-id3tag-loader}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/imlib2-id3tag-loader-1.11.1-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_imlib2-id3tag-loader;unpack=0"
 SRC_URI[x86_64_v2_imlib2-id3tag-loader.sha256sum] = "4cacb76248bc57f8ec8f6704e6605b0b8a6f832f4aacf1d176839084635b03b0"
 
-URI_aarch64_imlib2 = "${EPEL_MIRROR}/aarch64/Packages/i/imlib2-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_imlib2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/imlib2-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2;unpack=0"
 SRC_URI[aarch64_imlib2.sha256sum] = "99a45af88b74105be3ee266b2933d29e83b1cdb1fbb2a5df5eb55b78965712cc"
 
-URI_aarch64_imlib2-devel = "${EPEL_MIRROR}/aarch64/Packages/i/imlib2-devel-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_imlib2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/imlib2-devel-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2-devel;unpack=0"
 SRC_URI[aarch64_imlib2-devel.sha256sum] = "2c9b9d75270d803283a57e96fccfa1feb2e9b6ee57b7875fe7e6d1bc9faf7bf5"
 
-URI_aarch64_imlib2-id3tag-loader = "${EPEL_MIRROR}/aarch64/Packages/i/imlib2-id3tag-loader-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2-id3tag-loader;unpack=0"
-SRC_URI:append = " ${URI_aarch64_imlib2-id3tag-loader}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/imlib2-id3tag-loader-1.11.1-9.el10_0.aarch64.rpm;name=aarch64_imlib2-id3tag-loader;unpack=0"
 SRC_URI[aarch64_imlib2-id3tag-loader.sha256sum] = "bd66e3b9408c859b7eab4d25f811f15928706071770dcfbe0427f589df690336"
 
 RDEPENDS:imlib2 = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-labstack-gommon-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-labstack-gommon-0.3.0-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-labstack-gommon-0.3.0-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "25c842a634ded19bf96170460de9ce023edadd51eb924b52619846c76f70fd75"
 
-URI_x86_64_v2_golang-github-labstack-gommon-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-labstack-gommon-devel-0.3.0-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-labstack-gommon-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-labstack-gommon-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-labstack-gommon-devel-0.3.0-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-labstack-gommon-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-labstack-gommon-devel.sha256sum] = "c1453dab6fdeae4940562ab4f284455d762041c61e308a6f626bdf814ecb8221"
 
-URI_aarch64_golang-github-labstack-gommon-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-labstack-gommon-devel-0.3.0-13.el10_0.noarch.rpm;name=aarch64_golang-github-labstack-gommon-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-labstack-gommon-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-labstack-gommon-devel-0.3.0-13.el10_0.noarch.rpm;name=aarch64_golang-github-labstack-gommon-devel;unpack=0"
 SRC_URI[aarch64_golang-github-labstack-gommon-devel.sha256sum] = "7be2f4760ce89f9894ea77e292c7cf285e5a4c35830eb89ce36d65f32b0ce87f"
 
 RDEPENDS:golang-github-labstack-gommon-devel = " \

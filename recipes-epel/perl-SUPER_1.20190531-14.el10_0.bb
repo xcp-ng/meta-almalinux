@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-SUPER \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-SUPER-1.20190531-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-SUPER-1.20190531-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8ea157116043add59e3587b5cd240b8a63295e39f3dec8c102c5a83c00e9ef20"
 
-URI_x86_64_v2_perl-SUPER = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SUPER-1.20190531-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SUPER;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SUPER}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SUPER-1.20190531-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SUPER;unpack=0"
 SRC_URI[x86_64_v2_perl-SUPER.sha256sum] = "86437fd172f9cb918f5e3bf131a9d6370f73a2ef6e10bc947856f04d818b8b41"
 
-URI_aarch64_perl-SUPER = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SUPER-1.20190531-14.el10_0.noarch.rpm;name=aarch64_perl-SUPER;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SUPER}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SUPER-1.20190531-14.el10_0.noarch.rpm;name=aarch64_perl-SUPER;unpack=0"
 SRC_URI[aarch64_perl-SUPER.sha256sum] = "8234b1d4cb19591db909124a5569451e648f92c7b9d54e4ca50ccd83ca6343df"
 
 RDEPENDS:perl-SUPER = " \

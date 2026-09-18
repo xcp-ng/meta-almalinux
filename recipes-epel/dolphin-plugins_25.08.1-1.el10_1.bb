@@ -9,16 +9,13 @@ PACKAGES = " \
  dolphin-plugins \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/dolphin-plugins-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/dolphin-plugins-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "47614f0cfd37bb7c2f54c69c5495622808e0e28064f7d1ead0ad58850521a353"
 
-URI_x86_64_v2_dolphin-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-plugins-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-plugins;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dolphin-plugins}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-plugins-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-plugins;unpack=0"
 SRC_URI[x86_64_v2_dolphin-plugins.sha256sum] = "b8e2c714176e99ad55e824d52b897e5a6226762021f67707743b26ae9f746307"
 
-URI_aarch64_dolphin-plugins = "${EPEL_MIRROR}/aarch64/Packages/d/dolphin-plugins-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-plugins;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dolphin-plugins}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dolphin-plugins-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-plugins;unpack=0"
 SRC_URI[aarch64_dolphin-plugins.sha256sum] = "4eaa6ca1cb2aa55c2428ae3b3b8f330b0d98b3293c1aaa02b6c1a15c8f5b69d8"
 
 RDEPENDS:dolphin-plugins = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-copilot-theorem-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-theorem-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-theorem-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5026706d77e9d26f31e57794389ba6a4a4f1b79cd67e932c3ba6d358db49107a"
 
-URI_x86_64_v2_ghc-copilot-theorem = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-theorem}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-theorem.sha256sum] = "21617b39b26c8d2afb97ba21dff83fa5a163b1de101945f80ac187a9a9b675fe"
 
-URI_x86_64_v2_ghc-copilot-theorem-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-theorem-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-theorem-devel.sha256sum] = "549578768a744b930f40975e763060401b059715a0096f29a83ee6a2da501778"
 
-URI_x86_64_v2_ghc-copilot-theorem-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-theorem-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-theorem-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-theorem-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-theorem-doc.sha256sum] = "59e275ed29a8468d3dff43caa05df17f574d96c586433220c661ec37d86d0b91"
 
-URI_x86_64_v2_ghc-copilot-theorem-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-theorem-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-theorem-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-theorem-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-theorem-prof.sha256sum] = "00760acb64bb97a484288ca11b7bbe56ec4696fb15f789bf2155694a85ef573f"
 
-URI_aarch64_ghc-copilot-theorem = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-theorem}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem;unpack=0"
 SRC_URI[aarch64_ghc-copilot-theorem.sha256sum] = "a261ded056f74717f3ca15d89b75f3a08b337bbb657c348c92b90856f054e4f0"
 
-URI_aarch64_ghc-copilot-theorem-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-theorem-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem-devel;unpack=0"
 SRC_URI[aarch64_ghc-copilot-theorem-devel.sha256sum] = "755f98df55ff660e474cf32aacdb15af39b95a8f367720fe6e0711e2abac8197"
 
-URI_aarch64_ghc-copilot-theorem-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-theorem-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-theorem-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-theorem-doc;unpack=0"
 SRC_URI[aarch64_ghc-copilot-theorem-doc.sha256sum] = "719212a56b2d4c04dc9ae402701ede4a75a6addffbfd58058ce609d8951e4521"
 
-URI_aarch64_ghc-copilot-theorem-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-theorem-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-theorem-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-theorem-prof;unpack=0"
 SRC_URI[aarch64_ghc-copilot-theorem-prof.sha256sum] = "69e6d2f8c69ab4534f7db8e18650ade1c4d65aed0ee39d528010f6b493af26ec"
 
 RDEPENDS:ghc-copilot-theorem = " \

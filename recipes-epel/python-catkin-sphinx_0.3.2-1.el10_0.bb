@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-catkin-sphinx \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-catkin-sphinx-0.3.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-catkin-sphinx-0.3.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c1ce135135db09f683599f9e1d247fb0b8d6b335494d5daf2eb80894a821d522"
 
-URI_x86_64_v2_python3-catkin-sphinx = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-catkin-sphinx-0.3.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-catkin-sphinx;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-catkin-sphinx}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-catkin-sphinx-0.3.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-catkin-sphinx;unpack=0"
 SRC_URI[x86_64_v2_python3-catkin-sphinx.sha256sum] = "ab136ce4a44910feb7ec3fb7d875e3b560b446d068ff7772eb8f1f12a7e89c3d"
 
-URI_aarch64_python3-catkin-sphinx = "${EPEL_MIRROR}/aarch64/Packages/p/python3-catkin-sphinx-0.3.2-1.el10_0.noarch.rpm;name=aarch64_python3-catkin-sphinx;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-catkin-sphinx}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-catkin-sphinx-0.3.2-1.el10_0.noarch.rpm;name=aarch64_python3-catkin-sphinx;unpack=0"
 SRC_URI[aarch64_python3-catkin-sphinx.sha256sum] = "e8ba33ffa43074eadd20b32b693d4f68f3c7bc026d73fb56afda064800b173ee"
 
 RDEPENDS:python3-catkin-sphinx = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  unrealircd-maxmind \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/u/unrealircd-6.1.10-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/u/unrealircd-6.1.10-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e36340008e422d6391cb2b128ac3b5c3c914747f852e49e2bc844b779dae47cb"
 
-URI_x86_64_v2_unrealircd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/unrealircd-6.1.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_unrealircd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_unrealircd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/unrealircd-6.1.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_unrealircd;unpack=0"
 SRC_URI[x86_64_v2_unrealircd.sha256sum] = "76eca739bf366c5f4c6c0c3df6b6b9897b4a7acb49e74062100885c45d030e28"
 
-URI_x86_64_v2_unrealircd-maxmind = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/unrealircd-maxmind-6.1.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_unrealircd-maxmind;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_unrealircd-maxmind}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/unrealircd-maxmind-6.1.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_unrealircd-maxmind;unpack=0"
 SRC_URI[x86_64_v2_unrealircd-maxmind.sha256sum] = "dedad4c5b01b2cee5e66850d621bfc9763874a12a501fd2acce19ab7c970bc88"
 
-URI_aarch64_unrealircd = "${EPEL_MIRROR}/aarch64/Packages/u/unrealircd-6.1.10-1.el10_1.aarch64.rpm;name=aarch64_unrealircd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_unrealircd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/u/unrealircd-6.1.10-1.el10_1.aarch64.rpm;name=aarch64_unrealircd;unpack=0"
 SRC_URI[aarch64_unrealircd.sha256sum] = "066e0b4f6885d268f435b7335f0269598cb8193aab42f99a1cd1d5a330e2e2da"
 
-URI_aarch64_unrealircd-maxmind = "${EPEL_MIRROR}/aarch64/Packages/u/unrealircd-maxmind-6.1.10-1.el10_1.aarch64.rpm;name=aarch64_unrealircd-maxmind;unpack=0"
-SRC_URI:append = " ${URI_aarch64_unrealircd-maxmind}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/u/unrealircd-maxmind-6.1.10-1.el10_1.aarch64.rpm;name=aarch64_unrealircd-maxmind;unpack=0"
 SRC_URI[aarch64_unrealircd-maxmind.sha256sum] = "4109f1bce8dea2809abdfa6f0dcf0792d409ce1843577dfbe0e4028a80d646ac"
 
 RDEPENDS:unrealircd = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-send2trash \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-send2trash-1.8.3-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-send2trash-1.8.3-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f7d811ce3b5ff8ad7e02e7e695727a440675aee43351f36b9d2f557d91147ad0"
 
-URI_x86_64_v2_python3-send2trash = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-send2trash-1.8.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-send2trash;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-send2trash}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-send2trash-1.8.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-send2trash;unpack=0"
 SRC_URI[x86_64_v2_python3-send2trash.sha256sum] = "cbb7ea52a7d5801af7f4c60d49f6fea9de367b1bf0cf969f12cd9aa33405d0c4"
 
-URI_aarch64_python3-send2trash = "${EPEL_MIRROR}/aarch64/Packages/p/python3-send2trash-1.8.3-1.el10_1.noarch.rpm;name=aarch64_python3-send2trash;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-send2trash}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-send2trash-1.8.3-1.el10_1.noarch.rpm;name=aarch64_python3-send2trash;unpack=0"
 SRC_URI[aarch64_python3-send2trash.sha256sum] = "5681a19c2842d0802c8c8036f8779b527c4774885f536f0b985a57549c573c33"
 
 RDEPENDS:python3-send2trash = " \

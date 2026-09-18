@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-icalendar \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-icalendar-6.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-icalendar-6.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e087c4241d6bdd590a16a70ec4d84e996c15e63f23c690fe5af5d4ecc0bbd73e"
 
-URI_x86_64_v2_python3-icalendar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-icalendar-6.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-icalendar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-icalendar}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-icalendar-6.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-icalendar;unpack=0"
 SRC_URI[x86_64_v2_python3-icalendar.sha256sum] = "7f39f3ea291caefadf065a7b7d6e6c4403d9d84b6fe3d875282063cd6cf442c8"
 
-URI_aarch64_python3-icalendar = "${EPEL_MIRROR}/aarch64/Packages/p/python3-icalendar-6.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-icalendar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-icalendar}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-icalendar-6.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-icalendar;unpack=0"
 SRC_URI[aarch64_python3-icalendar.sha256sum] = "d409bff5eb819ce94bb8c432da833d1ca0d8793605a4212e426f7a033b8c0cb9"
 
 RDEPENDS:python3-icalendar = " \

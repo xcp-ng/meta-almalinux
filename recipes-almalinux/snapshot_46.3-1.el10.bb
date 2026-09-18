@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/snapshot-46.3-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/snapshot-46.3-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "00163a418a890deeaa5c260dbc914287f6752f31bd3730427633241412384a71"
 
-URI_x86_64_v2_snapshot = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/snapshot-46.3-1.el10.x86_64_v2.rpm;name=x86_64_v2_snapshot;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_snapshot}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/snapshot-46.3-1.el10.x86_64_v2.rpm;name=x86_64_v2_snapshot;unpack=0"
 SRC_URI[x86_64_v2_snapshot.sha256sum] = "d05e3d9889d134b8e068ad8670292c3b7424411fff314ff0d35babf7cc2dc9ee"
 
 RDEPENDS:snapshot = " \

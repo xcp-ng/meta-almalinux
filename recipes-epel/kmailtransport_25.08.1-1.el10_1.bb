@@ -11,32 +11,25 @@ PACKAGES = " \
  kmailtransport-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmailtransport-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmailtransport-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3f859eb4cf0c95d18d7e37b657746d1d890312186a36d4733b273ac0d1ed3ef7"
 
-URI_x86_64_v2_kmailtransport = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmailtransport;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmailtransport}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmailtransport;unpack=0"
 SRC_URI[x86_64_v2_kmailtransport.sha256sum] = "4ef6cbe8d250522b24b470dcf536f072b2dadcc86542d42a09a1667e93f0fada"
 
-URI_x86_64_v2_kmailtransport-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmailtransport-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmailtransport-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmailtransport-devel;unpack=0"
 SRC_URI[x86_64_v2_kmailtransport-devel.sha256sum] = "2b23d134f137589c34962821a6533a7f4db2e2322c45397fbdd5a765498071a3"
 
-URI_x86_64_v2_kmailtransport-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kmailtransport-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmailtransport-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmailtransport-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kmailtransport-doc;unpack=0"
 SRC_URI[x86_64_v2_kmailtransport-doc.sha256sum] = "8ae01d36a152df6ac06c1a2cb614780251d146b2fd1210222b74b661cf381497"
 
-URI_aarch64_kmailtransport = "${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmailtransport;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmailtransport}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmailtransport;unpack=0"
 SRC_URI[aarch64_kmailtransport.sha256sum] = "f50b33d3302eedcb887ec105601dc5d36eef83140eb99c9e80e6204f8c6ada7a"
 
-URI_aarch64_kmailtransport-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmailtransport-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmailtransport-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmailtransport-devel;unpack=0"
 SRC_URI[aarch64_kmailtransport-devel.sha256sum] = "2ff2e841714cca2d17b81990f2989a3d2e0fad0b13fdd9092376d889c3ba089e"
 
-URI_aarch64_kmailtransport-doc = "${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kmailtransport-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmailtransport-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmailtransport-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kmailtransport-doc;unpack=0"
 SRC_URI[aarch64_kmailtransport-doc.sha256sum] = "0f170b4fe981674bcbe0019fd3c44e4a65cb44185397cc813120db5dabc21b50"
 
 RDEPENDS:kmailtransport = " \

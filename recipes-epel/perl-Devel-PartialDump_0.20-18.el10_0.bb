@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Devel-PartialDump \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-PartialDump-0.20-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-PartialDump-0.20-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "42c7adc333538f6fd4f97528e72b2f700b91ad54086aaaa5eeb5ec0a166fa574"
 
-URI_x86_64_v2_perl-Devel-PartialDump = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-PartialDump-0.20-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Devel-PartialDump;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Devel-PartialDump}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-PartialDump-0.20-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Devel-PartialDump;unpack=0"
 SRC_URI[x86_64_v2_perl-Devel-PartialDump.sha256sum] = "10431d3549d8812ca54e3d14834dcc79f92a7443fcce58ed9a198928cc548b6c"
 
-URI_aarch64_perl-Devel-PartialDump = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-PartialDump-0.20-18.el10_0.noarch.rpm;name=aarch64_perl-Devel-PartialDump;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Devel-PartialDump}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-PartialDump-0.20-18.el10_0.noarch.rpm;name=aarch64_perl-Devel-PartialDump;unpack=0"
 SRC_URI[aarch64_perl-Devel-PartialDump.sha256sum] = "47f3c1dcacb36fb5aa16d6725bde97e176a93e01facb07870e15dd1d62706822"
 
 RDEPENDS:perl-Devel-PartialDump = " \

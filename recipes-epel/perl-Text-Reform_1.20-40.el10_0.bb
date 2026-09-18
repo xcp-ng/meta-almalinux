@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Text-Reform \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Text-Reform-1.20-40.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Text-Reform-1.20-40.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6e534a69125ec5f0634f759e2b5401f2bb100b7eba23091b554bec8fd8391988"
 
-URI_x86_64_v2_perl-Text-Reform = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Reform-1.20-40.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Reform;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Reform}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Reform-1.20-40.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Reform;unpack=0"
 SRC_URI[x86_64_v2_perl-Text-Reform.sha256sum] = "df24386fe504b2c02dd26e24012cfcce53a3e714a4127dee3c934aa815fe9d15"
 
-URI_aarch64_perl-Text-Reform = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Reform-1.20-40.el10_0.noarch.rpm;name=aarch64_perl-Text-Reform;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Text-Reform}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Reform-1.20-40.el10_0.noarch.rpm;name=aarch64_perl-Text-Reform;unpack=0"
 SRC_URI[aarch64_perl-Text-Reform.sha256sum] = "3e4ec07827a479746498e92a5753427fb95e33c10cccac4e7596a91108208c3f"
 
 RDEPENDS:perl-Text-Reform = " \

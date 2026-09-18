@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinx-copybutton \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-copybutton-0.5.2-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-copybutton-0.5.2-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "793a05092051566f1f17c5da99721a6ab46d634149229640c323e46e13eebb19"
 
-URI_x86_64_v2_python3-sphinx-copybutton = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-copybutton-0.5.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-copybutton;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-copybutton}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-copybutton-0.5.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-copybutton;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-copybutton.sha256sum] = "46fa585f41b6e3b25a88649b682285e5dba8c623ee06b692d4bfd36e553df9e3"
 
-URI_aarch64_python3-sphinx-copybutton = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-copybutton-0.5.2-6.el10_0.noarch.rpm;name=aarch64_python3-sphinx-copybutton;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-copybutton}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-copybutton-0.5.2-6.el10_0.noarch.rpm;name=aarch64_python3-sphinx-copybutton;unpack=0"
 SRC_URI[aarch64_python3-sphinx-copybutton.sha256sum] = "6c0cc7365f6ef66b0e4ca61801b347697b2a09682688d6a44b9e30ec4faa371a"
 
 RDEPENDS:python3-sphinx-copybutton = " \

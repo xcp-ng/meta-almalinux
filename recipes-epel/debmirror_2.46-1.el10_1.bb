@@ -9,12 +9,10 @@ PACKAGES = " \
  debmirror \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/debmirror-2.46-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/debmirror-2.46-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3c707a889d8c59bb37c975e0f1231cf36697d7e38b42bfeea494b6443de54fa0"
 
-URI_aarch64_debmirror = "${EPEL_MIRROR}/aarch64/Packages/d/debmirror-2.46-1.el10_1.noarch.rpm;name=aarch64_debmirror;unpack=0"
-SRC_URI:append = " ${URI_aarch64_debmirror}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/debmirror-2.46-1.el10_1.noarch.rpm;name=aarch64_debmirror;unpack=0"
 SRC_URI[aarch64_debmirror.sha256sum] = "a2cf9ab5d5de7575c52693c14f0343830ecfd65ddff5d87edeb246a9f6b5bffc"
 
 RDEPENDS:debmirror = " \

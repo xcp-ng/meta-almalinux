@@ -9,17 +9,14 @@ PACKAGES = " \
  gnome-shell \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-shell-47.8-6.el10.alma.4.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-shell-47.8-6.el10.alma.4.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7bc5351f51672f60244656925551e59900936d48882a8942276785aaea1d2c59"
 
-URI_x86_64_v2_gnome-shell = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-shell-47.8-6.el10.alma.4.x86_64_v2.rpm;name=x86_64_v2_gnome-shell;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-shell}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-shell-47.8-6.el10.alma.4.x86_64_v2.rpm;name=x86_64_v2_gnome-shell;unpack=0"
 SRC_URI[x86_64_v2_gnome-shell.sha256sum] = "069e491c4c6a4afbd5e2d65c3a2ecaf8e191904db13c7903fee52c7de46f48ac"
 RPROVIDES:gnome-shell:append:x86_64_v2 = " virtual/PolicyKit-authentication-agent"
 
-URI_aarch64_gnome-shell = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-shell-47.8-6.el10.alma.4.aarch64.rpm;name=aarch64_gnome-shell;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-shell}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-shell-47.8-6.el10.alma.4.aarch64.rpm;name=aarch64_gnome-shell;unpack=0"
 SRC_URI[aarch64_gnome-shell.sha256sum] = "8c625892c90687fdf8d5d92deaa3fa2ad13a207c58bdfc21f9725fac4994e380"
 RPROVIDES:gnome-shell:append:aarch64 = " virtual/PolicyKit-authentication-agent"
 

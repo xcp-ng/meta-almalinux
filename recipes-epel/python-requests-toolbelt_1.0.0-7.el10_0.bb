@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-requests-toolbelt \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-requests-toolbelt-1.0.0-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-toolbelt-1.0.0-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dc0fbc2bfaaffa1d37bfc48c75853ec6a3d747b82c3110c556a479b40317b54a"
 
-URI_x86_64_v2_python3-requests-toolbelt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-toolbelt-1.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-toolbelt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-requests-toolbelt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-toolbelt-1.0.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-toolbelt;unpack=0"
 SRC_URI[x86_64_v2_python3-requests-toolbelt.sha256sum] = "ab1150325168b85562abb2c47b3a147acdf0ba6c71465547d77ee8b9c5abf0de"
 
-URI_aarch64_python3-requests-toolbelt = "${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-toolbelt-1.0.0-7.el10_0.noarch.rpm;name=aarch64_python3-requests-toolbelt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-requests-toolbelt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-toolbelt-1.0.0-7.el10_0.noarch.rpm;name=aarch64_python3-requests-toolbelt;unpack=0"
 SRC_URI[aarch64_python3-requests-toolbelt.sha256sum] = "9f6141ab0d0f6058774f03e9221e668451c3346ac1e6bb92d59ec884849ce165"
 
 RDEPENDS:python3-requests-toolbelt = " \

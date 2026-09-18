@@ -13,48 +13,37 @@ PACKAGES = " \
  boinc-manager \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/b/boinc-client-8.2.4-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/b/boinc-client-8.2.4-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "218cee5832d66598756e5dba638ecfac4dffe3408fc4f46c17e48a2429c7619d"
 
-URI_x86_64_v2_boinc-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_boinc-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client;unpack=0"
 SRC_URI[x86_64_v2_boinc-client.sha256sum] = "4d4d454a27b692978b0718d5802335cceea135d1b80c564428509944844e3ffb"
 
-URI_x86_64_v2_boinc-client-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-devel-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_boinc-client-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-devel-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client-devel;unpack=0"
 SRC_URI[x86_64_v2_boinc-client-devel.sha256sum] = "988ea10375ffa6b39951d2d1f8ee82b5d86aa68ed9b0dcba300bcbb3132ba726"
 
-URI_x86_64_v2_boinc-client-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-doc-8.2.4-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_boinc-client-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_boinc-client-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-doc-8.2.4-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_boinc-client-doc;unpack=0"
 SRC_URI[x86_64_v2_boinc-client-doc.sha256sum] = "9bd72fb63de193f26a8b84ccad18846ba22f6dc30b9629e956bf760d2ec60405"
 
-URI_x86_64_v2_boinc-client-static = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-static-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_boinc-client-static}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-client-static-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-client-static;unpack=0"
 SRC_URI[x86_64_v2_boinc-client-static.sha256sum] = "ae3dba38e84b22e4ec908f2523bfca7b7edad407dfbf2bc50c06b38769087d62"
 
-URI_x86_64_v2_boinc-manager = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-manager-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-manager;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_boinc-manager}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/boinc-manager-8.2.4-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_boinc-manager;unpack=0"
 SRC_URI[x86_64_v2_boinc-manager.sha256sum] = "e609a027367d6b9dd849ffc80cd347e6ccb9cf45f9402e1b0da152d179e32a77"
 
-URI_aarch64_boinc-client = "${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_boinc-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client;unpack=0"
 SRC_URI[aarch64_boinc-client.sha256sum] = "01ac582c86904ad6bb7684f21c12db55d041a5d5e018fc8ddf181cb7f04d0bb3"
 
-URI_aarch64_boinc-client-devel = "${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-devel-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_boinc-client-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-devel-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client-devel;unpack=0"
 SRC_URI[aarch64_boinc-client-devel.sha256sum] = "8c52f68b965d4d465a52546d20c17478de263fd597f509e966954a9e66a5c2a6"
 
-URI_aarch64_boinc-client-doc = "${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-doc-8.2.4-1.el10_1.noarch.rpm;name=aarch64_boinc-client-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_boinc-client-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-doc-8.2.4-1.el10_1.noarch.rpm;name=aarch64_boinc-client-doc;unpack=0"
 SRC_URI[aarch64_boinc-client-doc.sha256sum] = "e629b4ab00ae5d948134be8ce6594962afd7b5237d000b5d6bb0d1cd21c6d357"
 
-URI_aarch64_boinc-client-static = "${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-static-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client-static;unpack=0"
-SRC_URI:append = " ${URI_aarch64_boinc-client-static}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/boinc-client-static-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-client-static;unpack=0"
 SRC_URI[aarch64_boinc-client-static.sha256sum] = "b6009430f0e02fcf125dc1dc16ba743324ee19dbf46fe2cda06ecc7da8f54917"
 
-URI_aarch64_boinc-manager = "${EPEL_MIRROR}/aarch64/Packages/b/boinc-manager-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-manager;unpack=0"
-SRC_URI:append = " ${URI_aarch64_boinc-manager}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/boinc-manager-8.2.4-1.el10_1.aarch64.rpm;name=aarch64_boinc-manager;unpack=0"
 SRC_URI[aarch64_boinc-manager.sha256sum] = "f5359e0388bac053c84b0df5ea0ad554b41207bea280b90556ef5298c995915c"
 
 RDEPENDS:boinc-client = " \

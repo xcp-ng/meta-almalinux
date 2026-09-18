@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Crypt-CBC \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-CBC-3.07-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-CBC-3.07-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f7449d487f00e7311952e3d9e8ab3741baac3610e97d9a13d7c895ff7f8bdac2"
 
-URI_x86_64_v2_perl-Crypt-CBC = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-CBC-3.07-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-CBC;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-CBC}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-CBC-3.07-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-CBC;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-CBC.sha256sum] = "61a141bd9e3ef218107ce7e503e1ba270fbfdbfb6ea6ba5bb3df3febd82b826e"
 
-URI_aarch64_perl-Crypt-CBC = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-CBC-3.07-1.el10_1.noarch.rpm;name=aarch64_perl-Crypt-CBC;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-CBC}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-CBC-3.07-1.el10_1.noarch.rpm;name=aarch64_perl-Crypt-CBC;unpack=0"
 SRC_URI[aarch64_perl-Crypt-CBC.sha256sum] = "4683ffbad8e6438a2045a6e2b28393f3ea60d67cd618fb6d3115a1824926b782"
 
 RDEPENDS:perl-Crypt-CBC = " \

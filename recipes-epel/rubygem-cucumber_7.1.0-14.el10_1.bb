@@ -10,24 +10,19 @@ PACKAGES = " \
  rubygem-cucumber-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rubygem-cucumber-7.1.0-14.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rubygem-cucumber-7.1.0-14.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "54be46e5e4c278c080a6e802e0b5b60a336e647d796b56f8e7aad2b921e52261"
 
-URI_x86_64_v2_rubygem-cucumber = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rubygem-cucumber-7.1.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rubygem-cucumber;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rubygem-cucumber}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rubygem-cucumber-7.1.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rubygem-cucumber;unpack=0"
 SRC_URI[x86_64_v2_rubygem-cucumber.sha256sum] = "c4dd58487196696debd7312c6f03309bec90773a083c71613c3828f0197e92b1"
 
-URI_x86_64_v2_rubygem-cucumber-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rubygem-cucumber-doc-7.1.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rubygem-cucumber-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rubygem-cucumber-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rubygem-cucumber-doc-7.1.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rubygem-cucumber-doc;unpack=0"
 SRC_URI[x86_64_v2_rubygem-cucumber-doc.sha256sum] = "9b769b2d9d83b10860263d86e45f573ce22eb9f277a5512244222b8e7287b484"
 
-URI_aarch64_rubygem-cucumber = "${EPEL_MIRROR}/aarch64/Packages/r/rubygem-cucumber-7.1.0-14.el10_1.noarch.rpm;name=aarch64_rubygem-cucumber;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rubygem-cucumber}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rubygem-cucumber-7.1.0-14.el10_1.noarch.rpm;name=aarch64_rubygem-cucumber;unpack=0"
 SRC_URI[aarch64_rubygem-cucumber.sha256sum] = "d7108b9df97e3373a67548bfe1cad5b226862afe3e606ac0f674db9a4d482ee4"
 
-URI_aarch64_rubygem-cucumber-doc = "${EPEL_MIRROR}/aarch64/Packages/r/rubygem-cucumber-doc-7.1.0-14.el10_1.noarch.rpm;name=aarch64_rubygem-cucumber-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rubygem-cucumber-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rubygem-cucumber-doc-7.1.0-14.el10_1.noarch.rpm;name=aarch64_rubygem-cucumber-doc;unpack=0"
 SRC_URI[aarch64_rubygem-cucumber-doc.sha256sum] = "a00a49ca190878286f082f41b1dbdd4ca277b81e6d2755f4fa04e5f9f089443b"
 
 RDEPENDS:rubygem-cucumber = " \

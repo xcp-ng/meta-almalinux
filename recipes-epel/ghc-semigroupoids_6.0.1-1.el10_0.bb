@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-semigroupoids-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-semigroupoids-6.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-semigroupoids-6.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a1162c02a1a6b94b23dd0c74f9df4b258bdd76c4d220007ea47591c6ab880fdd"
 
-URI_x86_64_v2_ghc-semigroupoids = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semigroupoids}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids;unpack=0"
 SRC_URI[x86_64_v2_ghc-semigroupoids.sha256sum] = "72e0fe70ae9a10f000588d941541fbbd3e680ca44122f80df4669eaea423d8b4"
 
-URI_x86_64_v2_ghc-semigroupoids-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-devel-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semigroupoids-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-devel-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-semigroupoids-devel.sha256sum] = "f715c6e84818d44d7444d64f5c2f62b8b0137fd7693982adc5cc556a5ce61bb5"
 
-URI_x86_64_v2_ghc-semigroupoids-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-doc-6.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-semigroupoids-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semigroupoids-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-doc-6.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-semigroupoids-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-semigroupoids-doc.sha256sum] = "982daa56c0c4df770ba0cfa496e743e99ffc766f0d4574deca906a061099b944"
 
-URI_x86_64_v2_ghc-semigroupoids-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-prof-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-semigroupoids-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-semigroupoids-prof-6.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-semigroupoids-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-semigroupoids-prof.sha256sum] = "614502a2cbffe10baf2523dbcf2c6977034d7248f32143b14d7df4f8d94d7162"
 
-URI_aarch64_ghc-semigroupoids = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semigroupoids}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids;unpack=0"
 SRC_URI[aarch64_ghc-semigroupoids.sha256sum] = "3b4bfe57d770c604bc71637496d4084d423062d9c034127abe809022426ea16a"
 
-URI_aarch64_ghc-semigroupoids-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-devel-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semigroupoids-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-devel-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids-devel;unpack=0"
 SRC_URI[aarch64_ghc-semigroupoids-devel.sha256sum] = "06445c5c83406cb55f6640afa2b97e14ed5006a18da4f859673619b28eabf2e3"
 
-URI_aarch64_ghc-semigroupoids-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-doc-6.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-semigroupoids-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semigroupoids-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-doc-6.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-semigroupoids-doc;unpack=0"
 SRC_URI[aarch64_ghc-semigroupoids-doc.sha256sum] = "ed3952ca74c5ddc5aaa3484056d2964d7543e616770cd28b8355c29510427a3d"
 
-URI_aarch64_ghc-semigroupoids-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-prof-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-semigroupoids-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-semigroupoids-prof-6.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-semigroupoids-prof;unpack=0"
 SRC_URI[aarch64_ghc-semigroupoids-prof.sha256sum] = "8c3023e488699a85eb261eea9528c648aad796072909274f44be14ef5cc0dba3"
 
 RDEPENDS:ghc-semigroupoids = " \

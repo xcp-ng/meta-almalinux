@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-fb_procfs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-fb_procfs-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-fb_procfs-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a6216ba84f79e83ac0a3209a592f78db3f7d8207111a053e0962561a4e54370b"
 
-URI_x86_64_v2_rust-fb_procfs+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-fb_procfs+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-fb_procfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-fb_procfs+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-fb_procfs+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-fb_procfs+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-fb_procfs+default-devel.sha256sum] = "c8a61879f411bf792b31ddff0988c3fec41bd95c4a1d81dea863fd07357052d2"
 
-URI_x86_64_v2_rust-fb_procfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-fb_procfs-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-fb_procfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-fb_procfs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-fb_procfs-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-fb_procfs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-fb_procfs-devel.sha256sum] = "092ddaff56d806f67dd5aa0321e2c607e0a5d4413f19dbcb25c129c8319bd844"
 
-URI_aarch64_rust-fb_procfs+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-fb_procfs+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-fb_procfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-fb_procfs+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-fb_procfs+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-fb_procfs+default-devel;unpack=0"
 SRC_URI[aarch64_rust-fb_procfs+default-devel.sha256sum] = "68c2887bad3a62b112621985e228200e40e421d4add83afb04d60bb73de2b0b3"
 
-URI_aarch64_rust-fb_procfs-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-fb_procfs-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-fb_procfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-fb_procfs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-fb_procfs-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-fb_procfs-devel;unpack=0"
 SRC_URI[aarch64_rust-fb_procfs-devel.sha256sum] = "e06de4da3df6d94fde12d51bd873c3de44f0b06888f4e286238612f14ffe4ae8"
 
 RDEPENDS:rust-fb_procfs+default-devel = " \

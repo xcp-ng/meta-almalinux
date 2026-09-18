@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-libxml-perl-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-libxml-perl-0.08-53.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-libxml-perl-0.08-53.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4d30829416845120a96baa82083d04d02e700263a7d9a8a6352c9308ea93b7ac"
 
-URI_x86_64_v2_perl-libxml-perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-libxml-perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl;unpack=0"
 SRC_URI[x86_64_v2_perl-libxml-perl.sha256sum] = "9a9bf76e52ff344eb6f82a07d3ad171e6690db0ce8c00d27c6d71df2797d9e7a"
 
-URI_x86_64_v2_perl-libxml-perl-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-tests-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-libxml-perl-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-libxml-perl-tests-0.08-53.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-libxml-perl-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-libxml-perl-tests.sha256sum] = "105191cc2905b7761752092f7f045d4e4a4ab0925b3ff66ceabc0a6ae411b5d8"
 
-URI_aarch64_perl-libxml-perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-libxml-perl-0.08-53.el10_0.noarch.rpm;name=aarch64_perl-libxml-perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-libxml-perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-libxml-perl-0.08-53.el10_0.noarch.rpm;name=aarch64_perl-libxml-perl;unpack=0"
 SRC_URI[aarch64_perl-libxml-perl.sha256sum] = "b814d91611e6fc65b9f4a3bbcc4a2cf84119516e59263272519190b4fde69ce1"
 
-URI_aarch64_perl-libxml-perl-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-libxml-perl-tests-0.08-53.el10_0.noarch.rpm;name=aarch64_perl-libxml-perl-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-libxml-perl-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-libxml-perl-tests-0.08-53.el10_0.noarch.rpm;name=aarch64_perl-libxml-perl-tests;unpack=0"
 SRC_URI[aarch64_perl-libxml-perl-tests.sha256sum] = "b42fb52e017d259513991cbf2cd3d9bd1c244ddb8a2e7e60c97bfe4cf232f0fb"
 
 RDEPENDS:perl-libxml-perl = " \

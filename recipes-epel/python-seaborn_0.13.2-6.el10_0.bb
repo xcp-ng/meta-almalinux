@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-seaborn \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-seaborn-0.13.2-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-seaborn-0.13.2-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3f9b7489e64c34353c1da33ca19f8914b8aad067133d54ac70524a25175d7814"
 
-URI_x86_64_v2_python3-seaborn = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-seaborn-0.13.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-seaborn;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-seaborn}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-seaborn-0.13.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-seaborn;unpack=0"
 SRC_URI[x86_64_v2_python3-seaborn.sha256sum] = "c2ad0cf85bd9f183aa0bcc973146b84f95b0ded399f6801ea79a325d171ebc48"
 
-URI_aarch64_python3-seaborn = "${EPEL_MIRROR}/aarch64/Packages/p/python3-seaborn-0.13.2-6.el10_0.noarch.rpm;name=aarch64_python3-seaborn;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-seaborn}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-seaborn-0.13.2-6.el10_0.noarch.rpm;name=aarch64_python3-seaborn;unpack=0"
 SRC_URI[aarch64_python3-seaborn.sha256sum] = "35455933439989ff58cd5ece8124f14682011f901032f92241c5cc11fe5f9074"
 
 RDEPENDS:python3-seaborn = " \

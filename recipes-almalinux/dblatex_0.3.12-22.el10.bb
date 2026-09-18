@@ -9,16 +9,13 @@ PACKAGES = " \
  dblatex \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/dblatex-0.3.12-22.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/dblatex-0.3.12-22.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "36e0ef2e21fddb9c7054b6949c0e78fc95b0744a2fcf1bbc5cf53ee52f380998"
 
-URI_x86_64_v2_dblatex = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/dblatex-0.3.12-22.el10.noarch.rpm;name=x86_64_v2_dblatex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dblatex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/dblatex-0.3.12-22.el10.noarch.rpm;name=x86_64_v2_dblatex;unpack=0"
 SRC_URI[x86_64_v2_dblatex.sha256sum] = "57d01dd14b10f86d271da99997c2ebb8ff705cefece15750d7afbbc68281a7d6"
 
-URI_aarch64_dblatex = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/dblatex-0.3.12-22.el10.noarch.rpm;name=aarch64_dblatex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dblatex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/dblatex-0.3.12-22.el10.noarch.rpm;name=aarch64_dblatex;unpack=0"
 SRC_URI[aarch64_dblatex.sha256sum] = "57d01dd14b10f86d271da99997c2ebb8ff705cefece15750d7afbbc68281a7d6"
 
 RDEPENDS:dblatex = " \

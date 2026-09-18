@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-expect \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-expect-1.1.0-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-expect-1.1.0-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3e203a14b5edfa729b4a3b36f17879917a7e279acb2e60905fc5b511d5913d7c"
 
-URI_x86_64_v2_python3-pytest-expect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-expect-1.1.0-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-expect;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-expect}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-expect-1.1.0-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-expect;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-expect.sha256sum] = "3b90662d9d39af713ae1d394fbfff7808a55df0135e58ead59f37e32173b298f"
 
-URI_aarch64_python3-pytest-expect = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-expect-1.1.0-24.el10_0.noarch.rpm;name=aarch64_python3-pytest-expect;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-expect}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-expect-1.1.0-24.el10_0.noarch.rpm;name=aarch64_python3-pytest-expect;unpack=0"
 SRC_URI[aarch64_python3-pytest-expect.sha256sum] = "028f2dfe2d9d619b64adeb217f808967971cf0efc819ac263295bf00d3058dd9"
 
 RDEPENDS:python3-pytest-expect = " \

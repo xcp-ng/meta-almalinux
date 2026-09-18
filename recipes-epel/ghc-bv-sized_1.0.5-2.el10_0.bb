@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-bv-sized-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-bv-sized-1.0.5-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-bv-sized-1.0.5-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d79044b6c2d77dd9476195846eff36e91eafa1d2936a427926fb32cbc6ea694c"
 
-URI_x86_64_v2_ghc-bv-sized = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bv-sized}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized;unpack=0"
 SRC_URI[x86_64_v2_ghc-bv-sized.sha256sum] = "b699ed246d6aa1756f649ed1069158e08bdb1c2aaa83da65b88f72ae19f66bfe"
 
-URI_x86_64_v2_ghc-bv-sized-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-devel-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bv-sized-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-devel-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-bv-sized-devel.sha256sum] = "a9e3f50e22195d073a78f5cba4bff75510bedcf79e22ac48b0f795826d88598d"
 
-URI_x86_64_v2_ghc-bv-sized-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-doc-1.0.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bv-sized-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bv-sized-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-doc-1.0.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bv-sized-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-bv-sized-doc.sha256sum] = "4ca67b4d9325058fd7fb9670d7a6d52170533eff52acc978a540688263d03a04"
 
-URI_x86_64_v2_ghc-bv-sized-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-prof-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bv-sized-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bv-sized-prof-1.0.5-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bv-sized-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-bv-sized-prof.sha256sum] = "77402d71f083941c4f1780c7aca0564e998c3eeadb1e3e4755df8714374c57ea"
 
-URI_aarch64_ghc-bv-sized = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bv-sized}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized;unpack=0"
 SRC_URI[aarch64_ghc-bv-sized.sha256sum] = "52a47f5be3e0515a391b4dbacbbcd75700ed26969db2f1bafeacf3fe709781d0"
 
-URI_aarch64_ghc-bv-sized-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-devel-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bv-sized-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-devel-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized-devel;unpack=0"
 SRC_URI[aarch64_ghc-bv-sized-devel.sha256sum] = "0aa1726ef26936d530f0321a7f5a52bf11ed752b7d71e2304e39c6c96917ce4a"
 
-URI_aarch64_ghc-bv-sized-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-doc-1.0.5-2.el10_0.noarch.rpm;name=aarch64_ghc-bv-sized-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bv-sized-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-doc-1.0.5-2.el10_0.noarch.rpm;name=aarch64_ghc-bv-sized-doc;unpack=0"
 SRC_URI[aarch64_ghc-bv-sized-doc.sha256sum] = "425db4e2b9e8d0c67e636ab848a31a159e93946fecb7e955724fa1f138f78b6d"
 
-URI_aarch64_ghc-bv-sized-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-prof-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bv-sized-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bv-sized-prof-1.0.5-2.el10_0.aarch64.rpm;name=aarch64_ghc-bv-sized-prof;unpack=0"
 SRC_URI[aarch64_ghc-bv-sized-prof.sha256sum] = "93d2ba737c55657343091d3e83c1bdf8fda1f5cebcbc6b2f8e35bab5ea7b7a85"
 
 RDEPENDS:ghc-bv-sized = " \

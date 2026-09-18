@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-cargo-credential-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-credential-0.4.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-credential-0.4.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b96a57e4c1838cde8360f4d4d3f68b26b240dc3909ebafeb8efda0de6c0c57fb"
 
-URI_x86_64_v2_rust-cargo-credential+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-credential+default-devel-0.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-credential+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo-credential+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-credential+default-devel-0.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-credential+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo-credential+default-devel.sha256sum] = "3d96ac8c5b5da5d06ab890b5749662af5494bf005c040310fab0eda48765c6c2"
 
-URI_x86_64_v2_rust-cargo-credential-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-credential-devel-0.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-credential-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo-credential-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-credential-devel-0.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-credential-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo-credential-devel.sha256sum] = "9268566782213713b26190fb300186ca9dd8f2baf8cd5811d49ad8e97191fb1a"
 
-URI_aarch64_rust-cargo-credential+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-credential+default-devel-0.4.8-1.el10_0.noarch.rpm;name=aarch64_rust-cargo-credential+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo-credential+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-credential+default-devel-0.4.8-1.el10_0.noarch.rpm;name=aarch64_rust-cargo-credential+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo-credential+default-devel.sha256sum] = "d2703bb6d2080aeee6361d9670d8f015d647607ccaf4e90386fd5cec9d88bd64"
 
-URI_aarch64_rust-cargo-credential-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-credential-devel-0.4.8-1.el10_0.noarch.rpm;name=aarch64_rust-cargo-credential-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo-credential-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-credential-devel-0.4.8-1.el10_0.noarch.rpm;name=aarch64_rust-cargo-credential-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo-credential-devel.sha256sum] = "b943d076edc4ddf3654bfd941ff255be9eb30ce10352b2c075648b48412d8f2c"
 
 RDEPENDS:rust-cargo-credential+default-devel = " \

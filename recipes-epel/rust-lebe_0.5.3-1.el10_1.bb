@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-lebe-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-lebe-0.5.3-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-lebe-0.5.3-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3c7b7ee9d383fd084f3e619c3af012b23462f7666017c7b35aa222c876eb28d8"
 
-URI_x86_64_v2_rust-lebe+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lebe+default-devel-0.5.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lebe+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lebe+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lebe+default-devel-0.5.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lebe+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lebe+default-devel.sha256sum] = "72a7090a75ce36b6670e926f30053c1934fae00a75e1a4ef8407ecbec2484852"
 
-URI_x86_64_v2_rust-lebe-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lebe-devel-0.5.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lebe-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lebe-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lebe-devel-0.5.3-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lebe-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lebe-devel.sha256sum] = "fa83b01c736ef9f8b863cfac794f0b031213d90f08f3a013e83cae537037aaae"
 
-URI_aarch64_rust-lebe+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lebe+default-devel-0.5.3-1.el10_1.noarch.rpm;name=aarch64_rust-lebe+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lebe+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lebe+default-devel-0.5.3-1.el10_1.noarch.rpm;name=aarch64_rust-lebe+default-devel;unpack=0"
 SRC_URI[aarch64_rust-lebe+default-devel.sha256sum] = "40db73c9066d5201ffbeaef780d6a958a94529283040168ab376c8dcfb884ef9"
 
-URI_aarch64_rust-lebe-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lebe-devel-0.5.3-1.el10_1.noarch.rpm;name=aarch64_rust-lebe-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lebe-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lebe-devel-0.5.3-1.el10_1.noarch.rpm;name=aarch64_rust-lebe-devel;unpack=0"
 SRC_URI[aarch64_rust-lebe-devel.sha256sum] = "71646f456f2354882f865bcc563e8b88322c267ad84f51db69a5c5d98a1ac020"
 
 RDEPENDS:rust-lebe+default-devel = " \

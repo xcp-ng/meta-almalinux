@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-XML-LibXML \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-LibXML-2.0210-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-LibXML-2.0210-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "abac4609fee4c330cf4415ef9e3bbc47e4c5b27a6eb13e5e6721a427e110556d"
 
-URI_x86_64_v2_perl-XML-LibXML = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-LibXML-2.0210-4.el10.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXML;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-LibXML}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-LibXML-2.0210-4.el10.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXML;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-LibXML.sha256sum] = "22bafe32557714144e157336ed1263e4065aa1fc50ca3ccf521877ec12fdb8b8"
 
-URI_aarch64_perl-XML-LibXML = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-LibXML-2.0210-4.el10.aarch64.rpm;name=aarch64_perl-XML-LibXML;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-LibXML}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-LibXML-2.0210-4.el10.aarch64.rpm;name=aarch64_perl-XML-LibXML;unpack=0"
 SRC_URI[aarch64_perl-XML-LibXML.sha256sum] = "c75a011ee71cdb8b5d237071aac494b0cbb69e20110b0e5d61eb7c5aecde2aa5"
 
 RDEPENDS:perl-XML-LibXML = " \

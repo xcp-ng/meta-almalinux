@@ -9,16 +9,13 @@ PACKAGES = " \
  cockpit-session-recording \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-session-recording-20-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-session-recording-20-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8a9745d532c098c7317f2a2f0277d5efaae5a0fa463b826989241d64748aa6c2"
 
-URI_x86_64_v2_cockpit-session-recording = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-session-recording-20-1.el10.noarch.rpm;name=x86_64_v2_cockpit-session-recording;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cockpit-session-recording}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-session-recording-20-1.el10.noarch.rpm;name=x86_64_v2_cockpit-session-recording;unpack=0"
 SRC_URI[x86_64_v2_cockpit-session-recording.sha256sum] = "532b7581b1642fadde87636782983aa73902c98a447785c97586f7b228d36052"
 
-URI_aarch64_cockpit-session-recording = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-session-recording-20-1.el10.noarch.rpm;name=aarch64_cockpit-session-recording;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cockpit-session-recording}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-session-recording-20-1.el10.noarch.rpm;name=aarch64_cockpit-session-recording;unpack=0"
 SRC_URI[aarch64_cockpit-session-recording.sha256sum] = "532b7581b1642fadde87636782983aa73902c98a447785c97586f7b228d36052"
 
 RDEPENDS:cockpit-session-recording = " \

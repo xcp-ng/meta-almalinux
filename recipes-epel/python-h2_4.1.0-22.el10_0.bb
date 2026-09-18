@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-h2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-h2-4.1.0-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-h2-4.1.0-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "63bac33a2ca20ec28d6d6d3b1a1cf972bbb15f6ea4d837ba0eab140bb983d593"
 
-URI_x86_64_v2_python-h2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-h2-doc-4.1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-h2-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-h2-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-h2-doc-4.1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-h2-doc;unpack=0"
 SRC_URI[x86_64_v2_python-h2-doc.sha256sum] = "3ba49589282dc1766319380b53c4a234511debecf1705fc65f5b0ec0ee710cc4"
 
-URI_x86_64_v2_python3-h2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-h2-4.1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-h2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-h2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-h2-4.1.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-h2;unpack=0"
 SRC_URI[x86_64_v2_python3-h2.sha256sum] = "17967991bedb5c1de092c538c70076361715e95b5d97caa5d1b358ee707607b1"
 
-URI_aarch64_python-h2-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-h2-doc-4.1.0-22.el10_0.noarch.rpm;name=aarch64_python-h2-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-h2-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-h2-doc-4.1.0-22.el10_0.noarch.rpm;name=aarch64_python-h2-doc;unpack=0"
 SRC_URI[aarch64_python-h2-doc.sha256sum] = "2daf6fc686407eba761d209c5d749b1c70f8189f00b4a61f2bc05edae73576fb"
 
-URI_aarch64_python3-h2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-h2-4.1.0-22.el10_0.noarch.rpm;name=aarch64_python3-h2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-h2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-h2-4.1.0-22.el10_0.noarch.rpm;name=aarch64_python3-h2;unpack=0"
 SRC_URI[aarch64_python3-h2.sha256sum] = "589a4cf4e532853fe70390efcee5459fc77db2b83d4dd3f6f80b9604d9d03cd0"
 
 RDEPENDS:python-h2-doc = " \

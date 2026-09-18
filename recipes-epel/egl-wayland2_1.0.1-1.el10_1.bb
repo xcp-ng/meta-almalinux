@@ -9,12 +9,10 @@ PACKAGES = " \
  egl-wayland2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/e/egl-wayland2-1.0.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/e/egl-wayland2-1.0.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eb1604c13bf5c51daea3d6c6fb01cc4b8747ba7afe1abb4ada3fbce164f48178"
 
-URI_aarch64_egl-wayland2 = "${EPEL_MIRROR}/aarch64/Packages/e/egl-wayland2-1.0.1-1.el10_1.aarch64.rpm;name=aarch64_egl-wayland2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_egl-wayland2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/e/egl-wayland2-1.0.1-1.el10_1.aarch64.rpm;name=aarch64_egl-wayland2;unpack=0"
 SRC_URI[aarch64_egl-wayland2.sha256sum] = "1b4c0b69ed052e35a373bf76bfa66ecb582ca697b3e372f4b8a447acdf598d93"
 
 RDEPENDS:egl-wayland2 = " \

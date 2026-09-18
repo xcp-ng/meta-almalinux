@@ -17,36 +17,28 @@ PACKAGES:aarch64 = " \
  python3-imgcreate \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/livecd-tools-31.0-15.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/livecd-tools-31.0-15.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b6dd9eff00feac060d4e8cd5d7ad21d30daeaa757e797d7ed03a8ecc7e8795ad"
 
-URI_x86_64_v2_livecd-iso-to-mediums = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/livecd-iso-to-mediums-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_livecd-iso-to-mediums;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_livecd-iso-to-mediums}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/livecd-iso-to-mediums-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_livecd-iso-to-mediums;unpack=0"
 SRC_URI[x86_64_v2_livecd-iso-to-mediums.sha256sum] = "10963722055c01d38fefc3d7184e397f1e6af45674d555f4a7861ee6a5e0ee75"
 
-URI_x86_64_v2_livecd-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/livecd-tools-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_livecd-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_livecd-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/livecd-tools-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_livecd-tools;unpack=0"
 SRC_URI[x86_64_v2_livecd-tools.sha256sum] = "59d6930210bd9b713fdd12c73ba280d65eef76072954e6dcfdb0f60e3202fedc"
 
-URI_x86_64_v2_python-imgcreate-sysdeps = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-imgcreate-sysdeps-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-imgcreate-sysdeps;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-imgcreate-sysdeps}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-imgcreate-sysdeps-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-imgcreate-sysdeps;unpack=0"
 SRC_URI[x86_64_v2_python-imgcreate-sysdeps.sha256sum] = "f766edae8b6eddcf8984cf1db65b98f96da1660f5adce5a90d33b49710af2884"
 
-URI_x86_64_v2_python3-imgcreate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-imgcreate-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-imgcreate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-imgcreate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-imgcreate-31.0-15.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-imgcreate;unpack=0"
 SRC_URI[x86_64_v2_python3-imgcreate.sha256sum] = "6a4be99ec7a79b213d94a4993fc326d2392f2116f6c5bba40cbf2726532f361d"
 
-URI_aarch64_livecd-tools = "${EPEL_MIRROR}/aarch64/Packages/l/livecd-tools-31.0-15.el10_1.aarch64.rpm;name=aarch64_livecd-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_livecd-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/livecd-tools-31.0-15.el10_1.aarch64.rpm;name=aarch64_livecd-tools;unpack=0"
 SRC_URI[aarch64_livecd-tools.sha256sum] = "e37b9d7106ae5766ec9e031af662ae4db1f89e505e781af20705bc6e1bf5c611"
 
-URI_aarch64_python-imgcreate-sysdeps = "${EPEL_MIRROR}/aarch64/Packages/p/python-imgcreate-sysdeps-31.0-15.el10_1.aarch64.rpm;name=aarch64_python-imgcreate-sysdeps;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-imgcreate-sysdeps}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-imgcreate-sysdeps-31.0-15.el10_1.aarch64.rpm;name=aarch64_python-imgcreate-sysdeps;unpack=0"
 SRC_URI[aarch64_python-imgcreate-sysdeps.sha256sum] = "5badb610cbc82f37620e0af621e11bca9e211adb0d7aa840fcb0ed0bd589fdac"
 
-URI_aarch64_python3-imgcreate = "${EPEL_MIRROR}/aarch64/Packages/p/python3-imgcreate-31.0-15.el10_1.aarch64.rpm;name=aarch64_python3-imgcreate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-imgcreate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-imgcreate-31.0-15.el10_1.aarch64.rpm;name=aarch64_python3-imgcreate;unpack=0"
 SRC_URI[aarch64_python3-imgcreate.sha256sum] = "c6af1dfc99efd92f35497a04fc65a539945ce5105d95857f6d9de32e3c431c5c"
 
 RDEPENDS:livecd-iso-to-mediums = " \

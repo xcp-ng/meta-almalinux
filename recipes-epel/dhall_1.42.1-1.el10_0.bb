@@ -14,56 +14,43 @@ PACKAGES = " \
  ghc-dhall-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/dhall-1.42.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/dhall-1.42.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0de73afa1416a4f1e3018208e230c452cee57c44056effeb4fb32f98a000f432"
 
-URI_x86_64_v2_dhall = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dhall;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dhall}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dhall;unpack=0"
 SRC_URI[x86_64_v2_dhall.sha256sum] = "eb1ed491ca6e004e2e7c548db62ab86523fd9e241e23b9af0945ce68da52d18c"
 
-URI_x86_64_v2_dhall-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-common-1.42.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_dhall-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dhall-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dhall-common-1.42.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_dhall-common;unpack=0"
 SRC_URI[x86_64_v2_dhall-common.sha256sum] = "771e5e072f5a765b59eb836a0934b5244d36674f006461ee75af2b1b1a750848"
 
-URI_x86_64_v2_ghc-dhall = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall.sha256sum] = "9c0f74821f8eb814b74b45ed245b9a32bed6e5d39d520da290bbe74addb8aa0e"
 
-URI_x86_64_v2_ghc-dhall-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-devel-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-devel-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-devel.sha256sum] = "d0cce6dc072718b2183c9907346217d203d207d675de253eacb4fd5798843089"
 
-URI_x86_64_v2_ghc-dhall-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-doc-1.42.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dhall-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-doc-1.42.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dhall-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-doc.sha256sum] = "ede4c6d63448a0a78a59ecc4b68aeb82e333e9bbce49d2ab143df30c733878a0"
 
-URI_x86_64_v2_ghc-dhall-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-prof-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dhall-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dhall-prof-1.42.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dhall-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-dhall-prof.sha256sum] = "306134c067355bfca84fc1ceae2fbd5768bda3d1306fc88c4ddaca7ac269f8b8"
 
-URI_aarch64_dhall = "${EPEL_MIRROR}/aarch64/Packages/d/dhall-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_dhall;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dhall}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dhall-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_dhall;unpack=0"
 SRC_URI[aarch64_dhall.sha256sum] = "1ac295017253ae4a80ec43f521de6d2dc57513e9272752d335958a86099913de"
 
-URI_aarch64_dhall-common = "${EPEL_MIRROR}/aarch64/Packages/d/dhall-common-1.42.1-1.el10_0.noarch.rpm;name=aarch64_dhall-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dhall-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dhall-common-1.42.1-1.el10_0.noarch.rpm;name=aarch64_dhall-common;unpack=0"
 SRC_URI[aarch64_dhall-common.sha256sum] = "22ae4132b363b28b0a7be23ee482c390ca07c81269f58bfebddc1a6602f52a69"
 
-URI_aarch64_ghc-dhall = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall;unpack=0"
 SRC_URI[aarch64_ghc-dhall.sha256sum] = "9b18959bffae5c11fef64716c6493d83a2f0187a1550725abc90ba0861a65517"
 
-URI_aarch64_ghc-dhall-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-devel-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-devel-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-devel;unpack=0"
 SRC_URI[aarch64_ghc-dhall-devel.sha256sum] = "046836481b5bd98f9a3a7ffa4a0b362e2c16d878a68b7473b667343626ceb39a"
 
-URI_aarch64_ghc-dhall-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-doc-1.42.1-1.el10_0.noarch.rpm;name=aarch64_ghc-dhall-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-doc-1.42.1-1.el10_0.noarch.rpm;name=aarch64_ghc-dhall-doc;unpack=0"
 SRC_URI[aarch64_ghc-dhall-doc.sha256sum] = "71207bf984c3b3763f163a90e1bf4404697ccaeb2b5ee813af9c38452390bc69"
 
-URI_aarch64_ghc-dhall-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-prof-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dhall-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dhall-prof-1.42.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-dhall-prof;unpack=0"
 SRC_URI[aarch64_ghc-dhall-prof.sha256sum] = "bd060d3be42e47bc5345bb499956791c3ce9018afe814f004d003245827eff1e"
 
 RDEPENDS:dhall = " \

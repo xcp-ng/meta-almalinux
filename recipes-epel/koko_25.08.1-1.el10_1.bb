@@ -9,16 +9,13 @@ PACKAGES = " \
  koko \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/koko-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/koko-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "decffada393dc2b8fb8538cab8f4b525327991952692e38db84f1a10874fceb5"
 
-URI_x86_64_v2_koko = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/koko-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_koko;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_koko}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/koko-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_koko;unpack=0"
 SRC_URI[x86_64_v2_koko.sha256sum] = "7e32983a62cab1a68bf847c3ab74539c3864f64d778ffc9454cd958f023ee1f5"
 
-URI_aarch64_koko = "${EPEL_MIRROR}/aarch64/Packages/k/koko-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_koko;unpack=0"
-SRC_URI:append = " ${URI_aarch64_koko}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/koko-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_koko;unpack=0"
 SRC_URI[aarch64_koko.sha256sum] = "b423f20da0d7a3ad982e383b368238ed3530528dbfeba54f881c83290e4e1383"
 
 RDEPENDS:koko = " \

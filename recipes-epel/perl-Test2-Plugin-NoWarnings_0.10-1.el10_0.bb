@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test2-Plugin-NoWarnings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "40b9704164324085a0e8860985975f225fb6bb530ddeb0e181660e8731a9ac1c"
 
-URI_x86_64_v2_perl-Test2-Plugin-NoWarnings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test2-Plugin-NoWarnings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test2-Plugin-NoWarnings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test2-Plugin-NoWarnings;unpack=0"
 SRC_URI[x86_64_v2_perl-Test2-Plugin-NoWarnings.sha256sum] = "0a99c77a17d4d43e30918eaf1f6aa5e2d4314b38e39979c33e7b5bedbdca472b"
 
-URI_aarch64_perl-Test2-Plugin-NoWarnings = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.noarch.rpm;name=aarch64_perl-Test2-Plugin-NoWarnings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test2-Plugin-NoWarnings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test2-Plugin-NoWarnings-0.10-1.el10_0.noarch.rpm;name=aarch64_perl-Test2-Plugin-NoWarnings;unpack=0"
 SRC_URI[aarch64_perl-Test2-Plugin-NoWarnings.sha256sum] = "d72337cdfdb0ae58e08dc124b526fd56b578c3ad0bd4d5be595c54f304bce4f5"
 
 RDEPENDS:perl-Test2-Plugin-NoWarnings = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-WWW-Form-UrlEncoded \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f081b0de485b35ce81808e00c9e3d7e7d315a068f83e5f8bf0ee1683797f785"
 
-URI_x86_64_v2_perl-WWW-Form-UrlEncoded = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Form-UrlEncoded;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-WWW-Form-UrlEncoded}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Form-UrlEncoded;unpack=0"
 SRC_URI[x86_64_v2_perl-WWW-Form-UrlEncoded.sha256sum] = "e87c1639771b28ba74cb1dd127d7b4d265b39355f200e77a92edd16035011e83"
 
-URI_aarch64_perl-WWW-Form-UrlEncoded = "${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.noarch.rpm;name=aarch64_perl-WWW-Form-UrlEncoded;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-WWW-Form-UrlEncoded}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Form-UrlEncoded-0.26-17.el10_0.noarch.rpm;name=aarch64_perl-WWW-Form-UrlEncoded;unpack=0"
 SRC_URI[aarch64_perl-WWW-Form-UrlEncoded.sha256sum] = "42851c403fed556d724dd59891aafc92d1e81639039a9a28af4e5b2c7415031d"
 
 RDEPENDS:perl-WWW-Form-UrlEncoded = " \

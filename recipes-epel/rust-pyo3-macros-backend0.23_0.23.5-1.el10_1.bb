@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-pyo3-macros-backend0.23-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-pyo3-macros-backend0.23-0.23.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-pyo3-macros-backend0.23-0.23.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "81b391d26164782e0e033f823ac75d36db66f34824cc901202225d11ac98d9c8"
 
-URI_x86_64_v2_rust-pyo3-macros-backend0.23+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23+default-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-pyo3-macros-backend0.23+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23+default-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-pyo3-macros-backend0.23+default-devel.sha256sum] = "49e0daa326358cebd46814dc1cb6a4e1f50cfd0748c11ad48de5acb2a389621b"
 
-URI_x86_64_v2_rust-pyo3-macros-backend0.23+experimental-async-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23+experimental-async-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23+experimental-async-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-pyo3-macros-backend0.23+experimental-async-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23+experimental-async-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23+experimental-async-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-pyo3-macros-backend0.23+experimental-async-devel.sha256sum] = "71f4e8a9c8cb2916e990058fabee68bdb62f2cd009aed70799ea7517593438a2"
 
-URI_x86_64_v2_rust-pyo3-macros-backend0.23-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-pyo3-macros-backend0.23-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pyo3-macros-backend0.23-devel-0.23.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pyo3-macros-backend0.23-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-pyo3-macros-backend0.23-devel.sha256sum] = "236ccff2034b4141ac8524a82121c0b47c7fcf477862f2a0c9ef46e6d71197ab"
 
-URI_aarch64_rust-pyo3-macros-backend0.23+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23+default-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-pyo3-macros-backend0.23+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23+default-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23+default-devel;unpack=0"
 SRC_URI[aarch64_rust-pyo3-macros-backend0.23+default-devel.sha256sum] = "fea642572d355ee24d12537e1d31db453c0f1b9f6ee52252f5eaae4d5cd11282"
 
-URI_aarch64_rust-pyo3-macros-backend0.23+experimental-async-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23+experimental-async-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23+experimental-async-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-pyo3-macros-backend0.23+experimental-async-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23+experimental-async-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23+experimental-async-devel;unpack=0"
 SRC_URI[aarch64_rust-pyo3-macros-backend0.23+experimental-async-devel.sha256sum] = "56896e3bb922e18a5a699c08643932c39014890326ba31850849fb16a6fe80d8"
 
-URI_aarch64_rust-pyo3-macros-backend0.23-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-pyo3-macros-backend0.23-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-pyo3-macros-backend0.23-devel-0.23.5-1.el10_1.noarch.rpm;name=aarch64_rust-pyo3-macros-backend0.23-devel;unpack=0"
 SRC_URI[aarch64_rust-pyo3-macros-backend0.23-devel.sha256sum] = "7a4dbcdb98b85614ca4357a89da181e8fc5536b18116d5b99f341c609f246e59"
 
 RDEPENDS:rust-pyo3-macros-backend0.23+default-devel = " \

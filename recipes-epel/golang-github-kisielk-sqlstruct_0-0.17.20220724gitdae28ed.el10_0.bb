@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-kisielk-sqlstruct-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-kisielk-sqlstruct-0-0.17.20220724gitdae28ed.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-kisielk-sqlstruct-0-0.17.20220724gitdae28ed.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1f1a798cb01c252413286f0d0519b61371b1be81b81c2949030be5ad0836908f"
 
-URI_aarch64_golang-github-kisielk-sqlstruct-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-kisielk-sqlstruct-devel-0-0.17.20220724gitdae28ed.el10_0.noarch.rpm;name=aarch64_golang-github-kisielk-sqlstruct-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-kisielk-sqlstruct-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-kisielk-sqlstruct-devel-0-0.17.20220724gitdae28ed.el10_0.noarch.rpm;name=aarch64_golang-github-kisielk-sqlstruct-devel;unpack=0"
 SRC_URI[aarch64_golang-github-kisielk-sqlstruct-devel.sha256sum] = "775995d0e77acd6c50032b5f5ff8743af427d4a37a2eadefba0262d0ea8674c0"
 
 RDEPENDS:golang-github-kisielk-sqlstruct-devel = " \

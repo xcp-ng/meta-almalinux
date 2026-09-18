@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-pango-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-pango-1.0.30-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-pango-1.0.30-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8162ca7e2fc68343ffade621e141247c300d86b79f4cdb82aab3cb5e9f58e1ad"
 
-URI_x86_64_v2_ghc-gi-pango = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-pango}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-pango.sha256sum] = "94152a9cfbffb05d70b8720ad0b28667f4121276be79c0ae06225374eba3264d"
 
-URI_x86_64_v2_ghc-gi-pango-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-devel-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-pango-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-devel-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-pango-devel.sha256sum] = "8eff380da0e8a9d4a03dbb38b575b2f9b436cbc131c8209c306f3000ec508bdb"
 
-URI_x86_64_v2_ghc-gi-pango-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-doc-1.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-pango-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-pango-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-doc-1.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-pango-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-pango-doc.sha256sum] = "5a6591f766fea910ff09ddb212640ca51cb8a81fc9502073b116943a425ac621"
 
-URI_x86_64_v2_ghc-gi-pango-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-prof-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-pango-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-pango-prof-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-pango-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-pango-prof.sha256sum] = "13f36a2508d34f30a2d797955013c3e17f8e6a75d2a65e7909fef4140a4d0cc8"
 
-URI_aarch64_ghc-gi-pango = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-pango}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango;unpack=0"
 SRC_URI[aarch64_ghc-gi-pango.sha256sum] = "67024d28797105ca6464f6cc19b3c5fe5234c2cde7d06c2d6d63b9af18988699"
 
-URI_aarch64_ghc-gi-pango-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-devel-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-pango-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-devel-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-pango-devel.sha256sum] = "25b21264cd372570f1a8794d33f41300d454da54b1034ea9fc325076923b7ed6"
 
-URI_aarch64_ghc-gi-pango-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-doc-1.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-pango-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-pango-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-doc-1.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-pango-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-pango-doc.sha256sum] = "a3f4be80821f081291d4c018f5b2f5eb40a444cecb20060aa480f166526bed3b"
 
-URI_aarch64_ghc-gi-pango-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-prof-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-pango-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-pango-prof-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-pango-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-pango-prof.sha256sum] = "38c412607fce544a17e3c9a1eaa1fe1f3a78e96edfe72ac56b0e59ce17014269"
 
 RDEPENDS:ghc-gi-pango = " \

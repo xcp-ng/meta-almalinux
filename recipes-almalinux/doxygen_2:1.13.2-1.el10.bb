@@ -11,24 +11,19 @@ PACKAGES = " \
  doxygen-latex \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/doxygen-1.13.2-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/doxygen-1.13.2-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "edec03c9427fb8e7d921142551658fd1afcd64dafb6b231b7b99d02b95a4f4ef"
 
-URI_x86_64_v2_doxygen = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/doxygen-1.13.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_doxygen;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_doxygen}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/doxygen-1.13.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_doxygen;unpack=0"
 SRC_URI[x86_64_v2_doxygen.sha256sum] = "bbf4a04c2a3cd66ac638a394ea38a3b4ad7dd5f76f19eab17a7ecdd603752164"
 
-URI_x86_64_v2_doxygen-latex = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/doxygen-latex-1.13.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_doxygen-latex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_doxygen-latex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/doxygen-latex-1.13.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_doxygen-latex;unpack=0"
 SRC_URI[x86_64_v2_doxygen-latex.sha256sum] = "0cdca04d50b7045edda852ec0b60d64f37c005d256024727b75adc40f051b7a3"
 
-URI_aarch64_doxygen = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/doxygen-1.13.2-1.el10.aarch64.rpm;name=aarch64_doxygen;unpack=0"
-SRC_URI:append = " ${URI_aarch64_doxygen}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/doxygen-1.13.2-1.el10.aarch64.rpm;name=aarch64_doxygen;unpack=0"
 SRC_URI[aarch64_doxygen.sha256sum] = "a8affa96dc6aec54fb4d7ea63bfcfbbe2083be2e05cb18d6c6773076e224d817"
 
-URI_aarch64_doxygen-latex = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/doxygen-latex-1.13.2-1.el10.aarch64.rpm;name=aarch64_doxygen-latex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_doxygen-latex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/doxygen-latex-1.13.2-1.el10.aarch64.rpm;name=aarch64_doxygen-latex;unpack=0"
 SRC_URI[aarch64_doxygen-latex.sha256sum] = "3967cf0ab5c456a3582cabedf2f485b4a93aee3cf157988a660ed2e63259ef91"
 
 RDEPENDS:doxygen = " \

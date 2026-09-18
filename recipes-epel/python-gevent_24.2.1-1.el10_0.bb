@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-gevent \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-gevent-24.2.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-gevent-24.2.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ee0d37a3d0434768ca36975523607677f3017d3a3b6eefb2afc082ab8c55a0ee"
 
-URI_x86_64_v2_python3-gevent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gevent-24.2.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-gevent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-gevent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gevent-24.2.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-gevent;unpack=0"
 SRC_URI[x86_64_v2_python3-gevent.sha256sum] = "3175fabd6dc7ae7777c526ff8774dfe5a2ecba0f46005e69497c2f29f2e7fde7"
 
-URI_aarch64_python3-gevent = "${EPEL_MIRROR}/aarch64/Packages/p/python3-gevent-24.2.1-1.el10_0.aarch64.rpm;name=aarch64_python3-gevent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-gevent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-gevent-24.2.1-1.el10_0.aarch64.rpm;name=aarch64_python3-gevent;unpack=0"
 SRC_URI[aarch64_python3-gevent.sha256sum] = "da99b67f1f147c4599cdf07c6a760276d1f28172ac28f4d07f6fa3f16be6952e"
 
 RDEPENDS:python3-gevent = " \

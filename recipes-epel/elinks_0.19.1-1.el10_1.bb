@@ -9,17 +9,14 @@ PACKAGES = " \
  elinks \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/e/elinks-0.19.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/e/elinks-0.19.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5e2d63618ffe7457d0891933fb562ae9aa940f7637d1437e0a9a6d1c7ba53135"
 
-URI_x86_64_v2_elinks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/elinks-0.19.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_elinks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_elinks}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/elinks-0.19.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_elinks;unpack=0"
 SRC_URI[x86_64_v2_elinks.sha256sum] = "27651a4ddffd17173f268da97c24c972eec1f0e75817c1e7eb8a56d10d4702e0"
 RPROVIDES:elinks:append:x86_64_v2 = " virtual/text-www-browser"
 
-URI_aarch64_elinks = "${EPEL_MIRROR}/aarch64/Packages/e/elinks-0.19.1-1.el10_1.aarch64.rpm;name=aarch64_elinks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_elinks}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/e/elinks-0.19.1-1.el10_1.aarch64.rpm;name=aarch64_elinks;unpack=0"
 SRC_URI[aarch64_elinks.sha256sum] = "235d04c0a11f28e7c367b8063c95fae15ddb31aeef6ae2b4224ebc918c1d79f1"
 RPROVIDES:elinks:append:aarch64 = " virtual/text-www-browser"
 

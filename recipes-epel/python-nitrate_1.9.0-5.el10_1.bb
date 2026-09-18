@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-nitrate \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-nitrate-1.9.0-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-nitrate-1.9.0-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "744e20bb2868fd36a8c15e1c94d3af28608720c2304d6487aa5b6e1c9494387f"
 
-URI_x86_64_v2_python3-nitrate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nitrate-1.9.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nitrate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-nitrate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nitrate-1.9.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nitrate;unpack=0"
 SRC_URI[x86_64_v2_python3-nitrate.sha256sum] = "204282e5ce82c32ef268ddef790f1acd62017a17d6c5a1658c77cc9af43549fa"
 
-URI_aarch64_python3-nitrate = "${EPEL_MIRROR}/aarch64/Packages/p/python3-nitrate-1.9.0-5.el10_1.noarch.rpm;name=aarch64_python3-nitrate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-nitrate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-nitrate-1.9.0-5.el10_1.noarch.rpm;name=aarch64_python3-nitrate;unpack=0"
 SRC_URI[aarch64_python3-nitrate.sha256sum] = "35499c64b5bdb5ecc38cd96e7c2d150165dbd533c1b50b8d31e0529cce842435"
 
 RDEPENDS:python3-nitrate = " \

@@ -11,24 +11,19 @@ PACKAGES = " \
  NetworkManager-openvpn-gnome \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/n/NetworkManager-openvpn-1.12.0-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/n/NetworkManager-openvpn-1.12.0-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cd3997668c4f9f30cf1edff9037b660bdcc9cbc710fa27144e52a878fc9c945d"
 
-URI_x86_64_v2_NetworkManager-openvpn = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-openvpn-1.12.0-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-openvpn;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_NetworkManager-openvpn}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-openvpn-1.12.0-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-openvpn;unpack=0"
 SRC_URI[x86_64_v2_NetworkManager-openvpn.sha256sum] = "0d5645f471a072813a8ef482d1951225e9d72670986e2706019066bfb8ee253d"
 
-URI_x86_64_v2_NetworkManager-openvpn-gnome = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-openvpn-gnome-1.12.0-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-openvpn-gnome;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_NetworkManager-openvpn-gnome}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/NetworkManager-openvpn-gnome-1.12.0-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_NetworkManager-openvpn-gnome;unpack=0"
 SRC_URI[x86_64_v2_NetworkManager-openvpn-gnome.sha256sum] = "9c158ddf2b9daf5ab6a1c9bb41bf5e25c737486195a6883e3b752c01458109c4"
 
-URI_aarch64_NetworkManager-openvpn = "${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-openvpn-1.12.0-3.el10_1.aarch64.rpm;name=aarch64_NetworkManager-openvpn;unpack=0"
-SRC_URI:append = " ${URI_aarch64_NetworkManager-openvpn}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-openvpn-1.12.0-3.el10_1.aarch64.rpm;name=aarch64_NetworkManager-openvpn;unpack=0"
 SRC_URI[aarch64_NetworkManager-openvpn.sha256sum] = "e2c31bbf261383679b25dc51147a04813f6e683f0cbd39bcb93ea0b9726c12b4"
 
-URI_aarch64_NetworkManager-openvpn-gnome = "${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-openvpn-gnome-1.12.0-3.el10_1.aarch64.rpm;name=aarch64_NetworkManager-openvpn-gnome;unpack=0"
-SRC_URI:append = " ${URI_aarch64_NetworkManager-openvpn-gnome}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/NetworkManager-openvpn-gnome-1.12.0-3.el10_1.aarch64.rpm;name=aarch64_NetworkManager-openvpn-gnome;unpack=0"
 SRC_URI[aarch64_NetworkManager-openvpn-gnome.sha256sum] = "0f1d222bfd10535851bcbbd7f7d3159d0e0f09ddb4f61af2c8fee059091cb68a"
 
 RDEPENDS:NetworkManager-openvpn = " \

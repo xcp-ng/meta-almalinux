@@ -14,56 +14,43 @@ PACKAGES = " \
  python3-lib389 \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/389-ds-base-3.1.3-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/389-ds-base-3.1.3-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "949eb05068f3e34a5d5b9f81d005f6b7f235e8b9ed17854090726ce179a7a99c"
 
-URI_x86_64_v2_389-ds-base = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_389-ds-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base;unpack=0"
 SRC_URI[x86_64_v2_389-ds-base.sha256sum] = "5aa1b30ebf29ede45160c02f680854793e0eba4c571508f19dfc24f9e1dcce17"
 
-URI_x86_64_v2_389-ds-base-bdb = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/389-ds-base-bdb-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-bdb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_389-ds-base-bdb}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/389-ds-base-bdb-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-bdb;unpack=0"
 SRC_URI[x86_64_v2_389-ds-base-bdb.sha256sum] = "f4f54db78814f2c193ae9fbafe59c45f300d5b6b0f6c852ba345488c71ee6b5e"
 
-URI_x86_64_v2_389-ds-base-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/389-ds-base-devel-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_389-ds-base-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/389-ds-base-devel-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-devel;unpack=0"
 SRC_URI[x86_64_v2_389-ds-base-devel.sha256sum] = "58921f350d752c9d7eb61587c5e897e14e483352be29911bd60c705d47e319d0"
 
-URI_x86_64_v2_389-ds-base-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-libs-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_389-ds-base-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-libs-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-libs;unpack=0"
 SRC_URI[x86_64_v2_389-ds-base-libs.sha256sum] = "cc27acef3129eb2a9200bca13f96809af4aed83a166bbec267a565ef3498b282"
 
-URI_x86_64_v2_389-ds-base-snmp = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-snmp-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-snmp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_389-ds-base-snmp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/389-ds-base-snmp-3.1.3-7.el10_1.x86_64_v2.rpm;name=x86_64_v2_389-ds-base-snmp;unpack=0"
 SRC_URI[x86_64_v2_389-ds-base-snmp.sha256sum] = "f44080135e60363d48e8b3e629948ee55d02cdff6f280aef611f09f2aea3d1b1"
 
-URI_x86_64_v2_python3-lib389 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-lib389-3.1.3-7.el10_1.noarch.rpm;name=x86_64_v2_python3-lib389;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-lib389}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-lib389-3.1.3-7.el10_1.noarch.rpm;name=x86_64_v2_python3-lib389;unpack=0"
 SRC_URI[x86_64_v2_python3-lib389.sha256sum] = "c394208007c8c5a5c5d1c1be5c1e70e43a8cfe94580e45ab5aff7ed4d6dc1543"
 
-URI_aarch64_389-ds-base = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base;unpack=0"
-SRC_URI:append = " ${URI_aarch64_389-ds-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base;unpack=0"
 SRC_URI[aarch64_389-ds-base.sha256sum] = "714fe0a39fd8b2d5c476cf5411b3b37dee3690dff132fcfad035ce8d68cf39b3"
 
-URI_aarch64_389-ds-base-bdb = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/389-ds-base-bdb-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-bdb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_389-ds-base-bdb}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/389-ds-base-bdb-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-bdb;unpack=0"
 SRC_URI[aarch64_389-ds-base-bdb.sha256sum] = "ee809aea15b2a766445072f2e2d4f9320ebab2d092dc707900b3f6f5a9160520"
 
-URI_aarch64_389-ds-base-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/389-ds-base-devel-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_389-ds-base-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/389-ds-base-devel-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-devel;unpack=0"
 SRC_URI[aarch64_389-ds-base-devel.sha256sum] = "48359e996df865bb2add2f0859dc2960acdd5caeca75596fb361d60ee825e6c3"
 
-URI_aarch64_389-ds-base-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-libs-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_389-ds-base-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-libs-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-libs;unpack=0"
 SRC_URI[aarch64_389-ds-base-libs.sha256sum] = "db40d24928a9080e9c13a6a5a91847edce473345ba60884bb08672967c5b3db2"
 
-URI_aarch64_389-ds-base-snmp = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-snmp-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-snmp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_389-ds-base-snmp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/389-ds-base-snmp-3.1.3-7.el10_1.aarch64.rpm;name=aarch64_389-ds-base-snmp;unpack=0"
 SRC_URI[aarch64_389-ds-base-snmp.sha256sum] = "173642d9fac1304e22c328ff24ca676682429fbee59442efd96e5afd39666e5b"
 
-URI_aarch64_python3-lib389 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-lib389-3.1.3-7.el10_1.noarch.rpm;name=aarch64_python3-lib389;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-lib389}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-lib389-3.1.3-7.el10_1.noarch.rpm;name=aarch64_python3-lib389;unpack=0"
 SRC_URI[aarch64_python3-lib389.sha256sum] = "c394208007c8c5a5c5d1c1be5c1e70e43a8cfe94580e45ab5aff7ed4d6dc1543"
 
 RDEPENDS:389-ds-base = " \

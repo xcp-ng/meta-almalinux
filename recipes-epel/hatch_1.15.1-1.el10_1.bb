@@ -9,19 +9,16 @@ PACKAGES = " \
  hatch \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/h/hatch-1.15.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/h/hatch-1.15.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "427d6ec4773ce901efb0b5267fe3dc4537530db116c95775b0dfcbc14d5b9b81"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
 # - hatch: python3.12dist(uv) >= 0.5.23
 
-URI_x86_64_v2_hatch = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hatch-1.15.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_hatch;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hatch}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hatch-1.15.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_hatch;unpack=0"
 SRC_URI[x86_64_v2_hatch.sha256sum] = "9abca4fe01fb43e0048a1aedc668b3cc97d8e864266374a60e176a4e3a4400cd"
 
-URI_aarch64_hatch = "${EPEL_MIRROR}/aarch64/Packages/h/hatch-1.15.1-1.el10_1.noarch.rpm;name=aarch64_hatch;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hatch}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/h/hatch-1.15.1-1.el10_1.noarch.rpm;name=aarch64_hatch;unpack=0"
 SRC_URI[aarch64_hatch.sha256sum] = "f522057402c5ecccfb2686b32ab27b4786c056958ef27353ca8dc72f112cfbef"
 
 RDEPENDS:hatch:x86_64_v2 = " \

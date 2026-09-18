@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-wsgidav+pam \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-wsgidav-4.3.3-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-wsgidav-4.3.3-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7880a7c10302c3a66778aaca7d74c911b7542fc304c67b94eeae5a5178d3c5b3"
 
-URI_x86_64_v2_python3-wsgidav = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsgidav-4.3.3-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsgidav;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-wsgidav}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsgidav-4.3.3-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsgidav;unpack=0"
 SRC_URI[x86_64_v2_python3-wsgidav.sha256sum] = "587e53dec5d051ac121a9e7f53924433c169a721c4f34a60cb2e461a87f0de1a"
 
-URI_x86_64_v2_python3-wsgidav+pam = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsgidav+pam-4.3.3-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsgidav+pam;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-wsgidav+pam}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-wsgidav+pam-4.3.3-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-wsgidav+pam;unpack=0"
 SRC_URI[x86_64_v2_python3-wsgidav+pam.sha256sum] = "80237d553fd0e17ef6b2d107ca86cffed437601df98b2862ff095e829171488f"
 
-URI_aarch64_python3-wsgidav = "${EPEL_MIRROR}/aarch64/Packages/p/python3-wsgidav-4.3.3-6.el10_1.noarch.rpm;name=aarch64_python3-wsgidav;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-wsgidav}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-wsgidav-4.3.3-6.el10_1.noarch.rpm;name=aarch64_python3-wsgidav;unpack=0"
 SRC_URI[aarch64_python3-wsgidav.sha256sum] = "db9cba0bb367dc649a673cfde38437606ff14d05f5d60e2e1c5f368024f3252c"
 
-URI_aarch64_python3-wsgidav+pam = "${EPEL_MIRROR}/aarch64/Packages/p/python3-wsgidav+pam-4.3.3-6.el10_1.noarch.rpm;name=aarch64_python3-wsgidav+pam;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-wsgidav+pam}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-wsgidav+pam-4.3.3-6.el10_1.noarch.rpm;name=aarch64_python3-wsgidav+pam;unpack=0"
 SRC_URI[aarch64_python3-wsgidav+pam.sha256sum] = "e8076cea8abff86eef33f388a821f64a6ee42a51541323fae5cb746a2385532a"
 
 RDEPENDS:python3-wsgidav = " \

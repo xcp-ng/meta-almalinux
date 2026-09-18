@@ -10,24 +10,19 @@ PACKAGES = " \
  leptonica-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/leptonica-1.84.1-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/leptonica-1.84.1-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5f96cd78c9b0200876ec572c2d439a55d1ee240cc34ce1953182e7e8e83b0832"
 
-URI_x86_64_v2_leptonica = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/leptonica-1.84.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_leptonica;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_leptonica}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/leptonica-1.84.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_leptonica;unpack=0"
 SRC_URI[x86_64_v2_leptonica.sha256sum] = "f9040bf62517b2ed4a0e634847fc7cfdd20df0dbc89be577a50c8cc799528b4d"
 
-URI_x86_64_v2_leptonica-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/leptonica-devel-1.84.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_leptonica-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_leptonica-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/leptonica-devel-1.84.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_leptonica-devel;unpack=0"
 SRC_URI[x86_64_v2_leptonica-devel.sha256sum] = "da6ef6bdb9740cb545e11c5fdfc59bf9bf01b315658a86d5c89c96c1ec4b71dc"
 
-URI_aarch64_leptonica = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/leptonica-1.84.1-5.el10.aarch64.rpm;name=aarch64_leptonica;unpack=0"
-SRC_URI:append = " ${URI_aarch64_leptonica}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/leptonica-1.84.1-5.el10.aarch64.rpm;name=aarch64_leptonica;unpack=0"
 SRC_URI[aarch64_leptonica.sha256sum] = "3f188c273dd1e81cab5cef70900cbe9c4c8341869174778c3fc0612648bc9e2e"
 
-URI_aarch64_leptonica-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/leptonica-devel-1.84.1-5.el10.aarch64.rpm;name=aarch64_leptonica-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_leptonica-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/leptonica-devel-1.84.1-5.el10.aarch64.rpm;name=aarch64_leptonica-devel;unpack=0"
 SRC_URI[aarch64_leptonica-devel.sha256sum] = "ec899c0bef543be1fa50f04b04a5cbac760f74421218581f5e6f06e2004ca692"
 
 RDEPENDS:leptonica = " \

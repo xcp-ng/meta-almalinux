@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-sphinx-design \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-design-0.6.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-design-0.6.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0bef9a48878cb3a93be1730ef2062ff0fdff4892dcfe257a54e073df58df63f2"
 
-URI_x86_64_v2_python-sphinx-design-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-sphinx-design-doc-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-sphinx-design-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-sphinx-design-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-sphinx-design-doc-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-sphinx-design-doc;unpack=0"
 SRC_URI[x86_64_v2_python-sphinx-design-doc.sha256sum] = "b8702cd84c31793d505a17941049126e7d163be7798cb719ee30edd03e36f8ee"
 
-URI_x86_64_v2_python3-sphinx-design = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-design-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-design;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-design}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-design-0.6.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-design;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-design.sha256sum] = "fba659eb518f4b8525f168ee14658af3cd32077818ee0aca8358a4546d44e854"
 
-URI_aarch64_python-sphinx-design-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-sphinx-design-doc-0.6.1-3.el10_0.noarch.rpm;name=aarch64_python-sphinx-design-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-sphinx-design-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-sphinx-design-doc-0.6.1-3.el10_0.noarch.rpm;name=aarch64_python-sphinx-design-doc;unpack=0"
 SRC_URI[aarch64_python-sphinx-design-doc.sha256sum] = "96845c56da1f2a245a1473e0a221af3792ca13caa8d01a7deba5f2a1f378d9b2"
 
-URI_aarch64_python3-sphinx-design = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-design-0.6.1-3.el10_0.noarch.rpm;name=aarch64_python3-sphinx-design;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-design}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-design-0.6.1-3.el10_0.noarch.rpm;name=aarch64_python3-sphinx-design;unpack=0"
 SRC_URI[aarch64_python3-sphinx-design.sha256sum] = "c34ae7ed92355b6a7386b8018b53d1ec4411e5812d8894eadfbb20201e9404d2"
 
 RDEPENDS:python-sphinx-design-doc = " \

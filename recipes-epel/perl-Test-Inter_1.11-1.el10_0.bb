@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-Inter-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Inter-1.11-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Inter-1.11-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c343216b74848666aa223e310fcbbb16a02dd6d7aebb966aa60ec934469b0b7e"
 
-URI_x86_64_v2_perl-Test-Inter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Inter-1.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Inter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Inter}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Inter-1.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Inter;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Inter.sha256sum] = "27a6f97de9c3bdf05904024ec98a85d4537935bdef2bfc597c4f0218c9361627"
 
-URI_x86_64_v2_perl-Test-Inter-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Inter-tests-1.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Inter-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Inter-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Inter-tests-1.11-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Inter-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Inter-tests.sha256sum] = "b74528b8617a4c7db0b8aa68f5b5f4808560a07fdf2ecbd53e2aa2893e790494"
 
-URI_aarch64_perl-Test-Inter = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Inter-1.11-1.el10_0.noarch.rpm;name=aarch64_perl-Test-Inter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Inter}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Inter-1.11-1.el10_0.noarch.rpm;name=aarch64_perl-Test-Inter;unpack=0"
 SRC_URI[aarch64_perl-Test-Inter.sha256sum] = "67393e2f84417a58c9e78d3dd315d06c13c8be40bad7292c33bb11cac3805f8f"
 
-URI_aarch64_perl-Test-Inter-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Inter-tests-1.11-1.el10_0.noarch.rpm;name=aarch64_perl-Test-Inter-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Inter-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Inter-tests-1.11-1.el10_0.noarch.rpm;name=aarch64_perl-Test-Inter-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-Inter-tests.sha256sum] = "f02d7fca70bde000e3246b649778de000324ebb8dc53e5f71d6468a60301b50b"
 
 RDEPENDS:perl-Test-Inter = " \

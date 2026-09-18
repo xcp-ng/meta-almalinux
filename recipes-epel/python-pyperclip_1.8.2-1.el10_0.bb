@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pyperclip \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyperclip-1.8.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyperclip-1.8.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "448b3cbf0063816b8f2b7b4fa09c724ce6f2c4a382688b375668d546d189c591"
 
-URI_x86_64_v2_python-pyperclip-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyperclip-doc-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyperclip-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-pyperclip-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyperclip-doc-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyperclip-doc;unpack=0"
 SRC_URI[x86_64_v2_python-pyperclip-doc.sha256sum] = "5d6e5159de290cb144b4ac03ed88c91bb5c17f61b02756a9054d8b17d8acb9dc"
 
-URI_x86_64_v2_python3-pyperclip = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyperclip-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyperclip;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyperclip}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyperclip-1.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyperclip;unpack=0"
 SRC_URI[x86_64_v2_python3-pyperclip.sha256sum] = "c36ec7b580d168d22de0d55e6edd8a2b036198ff632f18dd22724370085429d1"
 
-URI_aarch64_python-pyperclip-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pyperclip-doc-1.8.2-1.el10_0.noarch.rpm;name=aarch64_python-pyperclip-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-pyperclip-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pyperclip-doc-1.8.2-1.el10_0.noarch.rpm;name=aarch64_python-pyperclip-doc;unpack=0"
 SRC_URI[aarch64_python-pyperclip-doc.sha256sum] = "b5e5d8680c313a8a396ca6d13288dd2dfc8db5ebd4c3e5f7a84d672123678335"
 
-URI_aarch64_python3-pyperclip = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyperclip-1.8.2-1.el10_0.noarch.rpm;name=aarch64_python3-pyperclip;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyperclip}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyperclip-1.8.2-1.el10_0.noarch.rpm;name=aarch64_python3-pyperclip;unpack=0"
 SRC_URI[aarch64_python3-pyperclip.sha256sum] = "87b6f8a54239693483f75b4c6ca2cd1bce2ba4cb488d6a98a1692e8adaf9f23e"
 
 RDEPENDS:python-pyperclip-doc = " \

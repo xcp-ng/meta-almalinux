@@ -9,16 +9,13 @@ PACKAGES = " \
  itinerary \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/itinerary-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/itinerary-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8b4ea7b008adc7808d7858c427e94459a961f33daaf554fee09f45f8e27193f6"
 
-URI_x86_64_v2_itinerary = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/itinerary-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_itinerary;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_itinerary}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/itinerary-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_itinerary;unpack=0"
 SRC_URI[x86_64_v2_itinerary.sha256sum] = "3cf8dfe7ba2b5bb679f28b2427b3e7c6b25777d962ce5516df367f8fb92f87e7"
 
-URI_aarch64_itinerary = "${EPEL_MIRROR}/aarch64/Packages/i/itinerary-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_itinerary;unpack=0"
-SRC_URI:append = " ${URI_aarch64_itinerary}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/itinerary-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_itinerary;unpack=0"
 SRC_URI[aarch64_itinerary.sha256sum] = "c3173f8b696bdac42e31bcfb6c0889e59567060ccd7a8b9b88575ddd29c4ffde"
 
 RDEPENDS:itinerary = " \

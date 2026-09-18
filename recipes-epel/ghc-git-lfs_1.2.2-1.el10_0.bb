@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-git-lfs-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-git-lfs-1.2.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-git-lfs-1.2.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6d0a7f070a3630ae3bb5de034ad4df4b3c51358bfc8aa005c58cb806f039c8ca"
 
-URI_x86_64_v2_ghc-git-lfs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-git-lfs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs;unpack=0"
 SRC_URI[x86_64_v2_ghc-git-lfs.sha256sum] = "f2e4065602680d1ca97ab68350513218cf5439a5b1a06512828bac3c712c139d"
 
-URI_x86_64_v2_ghc-git-lfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-devel-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-git-lfs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-devel-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-git-lfs-devel.sha256sum] = "3d74b3abc64c9f6ea0115f009a1199ce0bc58e91d6ea01261fc94db29e354c50"
 
-URI_x86_64_v2_ghc-git-lfs-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-doc-1.2.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-git-lfs-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-git-lfs-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-doc-1.2.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-git-lfs-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-git-lfs-doc.sha256sum] = "7e6b7bbd9ab2f8bf6d0813dcdbf4c0e61249272b1b14791e141f5a6bc5799a85"
 
-URI_x86_64_v2_ghc-git-lfs-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-prof-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-git-lfs-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-git-lfs-prof-1.2.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-git-lfs-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-git-lfs-prof.sha256sum] = "33bd6117a49d77ef4ad7c9fc087105f7f79b890366c3c31c8446ad172df3c4ee"
 
-URI_aarch64_ghc-git-lfs = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-git-lfs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs;unpack=0"
 SRC_URI[aarch64_ghc-git-lfs.sha256sum] = "d042e1051b1a006319e1f05a2aab125ddce428ea8739f8226bc64cc068e8fc7b"
 
-URI_aarch64_ghc-git-lfs-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-devel-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-git-lfs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-devel-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs-devel;unpack=0"
 SRC_URI[aarch64_ghc-git-lfs-devel.sha256sum] = "ffc6643004b1206bcf249c3e21325bb0989567c3d4f4db4cd20f22076e946a4f"
 
-URI_aarch64_ghc-git-lfs-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-doc-1.2.2-1.el10_0.noarch.rpm;name=aarch64_ghc-git-lfs-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-git-lfs-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-doc-1.2.2-1.el10_0.noarch.rpm;name=aarch64_ghc-git-lfs-doc;unpack=0"
 SRC_URI[aarch64_ghc-git-lfs-doc.sha256sum] = "c8d94ce0c30ed25993583cbada44a7f283063109b93b83bada42ad1e49dc9600"
 
-URI_aarch64_ghc-git-lfs-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-prof-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-git-lfs-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-git-lfs-prof-1.2.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-git-lfs-prof;unpack=0"
 SRC_URI[aarch64_ghc-git-lfs-prof.sha256sum] = "003914f9f7f43c200910ca8b5dd76fd8cea45c6a7c47c88a326c3d6824275b2b"
 
 RDEPENDS:ghc-git-lfs = " \

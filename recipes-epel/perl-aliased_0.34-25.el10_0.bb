@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-aliased \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-aliased-0.34-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-aliased-0.34-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f865f03bbf65f9a911ba56a683010225dd75ee564abaf97325478385b0c6b9e"
 
-URI_x86_64_v2_perl-aliased = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-aliased-0.34-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-aliased;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-aliased}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-aliased-0.34-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-aliased;unpack=0"
 SRC_URI[x86_64_v2_perl-aliased.sha256sum] = "e28778576c5e4745a3fccc97b7cdec86cd8b97d3b0d43112733490d0d49e53a0"
 
-URI_aarch64_perl-aliased = "${EPEL_MIRROR}/aarch64/Packages/p/perl-aliased-0.34-25.el10_0.noarch.rpm;name=aarch64_perl-aliased;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-aliased}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-aliased-0.34-25.el10_0.noarch.rpm;name=aarch64_perl-aliased;unpack=0"
 SRC_URI[aarch64_perl-aliased.sha256sum] = "15bfa645fc3affe07b0c714e2b0fca6ccaf367ab3f2ecf445d932a39fa99df53"
 
 RDEPENDS:perl-aliased = " \

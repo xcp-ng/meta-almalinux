@@ -10,24 +10,19 @@ PACKAGES = " \
  polyclipping-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/polyclipping-6.4.2-34.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/polyclipping-6.4.2-34.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9ba5363412b5b1afe357a54c1ea2c1a4fc839dc453b52c9ac3bca882df958d39"
 
-URI_x86_64_v2_polyclipping = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_polyclipping}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping;unpack=0"
 SRC_URI[x86_64_v2_polyclipping.sha256sum] = "7412d85bf15c8ed3bf16d52a89bb0520146a0f1453097481ea00056521d72593"
 
-URI_x86_64_v2_polyclipping-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-devel-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_polyclipping-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/polyclipping-devel-6.4.2-34.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_polyclipping-devel;unpack=0"
 SRC_URI[x86_64_v2_polyclipping-devel.sha256sum] = "1854eaeb3eadca84d8e24ddebe87e96fd2222968bd3d4eccb1b7e88a97a3c435"
 
-URI_aarch64_polyclipping = "${EPEL_MIRROR}/aarch64/Packages/p/polyclipping-6.4.2-34.el10_0.aarch64.rpm;name=aarch64_polyclipping;unpack=0"
-SRC_URI:append = " ${URI_aarch64_polyclipping}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/polyclipping-6.4.2-34.el10_0.aarch64.rpm;name=aarch64_polyclipping;unpack=0"
 SRC_URI[aarch64_polyclipping.sha256sum] = "cc0bafd17b1a55deaa759b5928d4be589e5fc08b04d1516fb347366c16613720"
 
-URI_aarch64_polyclipping-devel = "${EPEL_MIRROR}/aarch64/Packages/p/polyclipping-devel-6.4.2-34.el10_0.aarch64.rpm;name=aarch64_polyclipping-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_polyclipping-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/polyclipping-devel-6.4.2-34.el10_0.aarch64.rpm;name=aarch64_polyclipping-devel;unpack=0"
 SRC_URI[aarch64_polyclipping-devel.sha256sum] = "cc5c46514e41111ae6b0c69df955eee0cce5b7cc88ce7453490d11447cc40ebe"
 
 RDEPENDS:polyclipping = " \

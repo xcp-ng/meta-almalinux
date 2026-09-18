@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Taint-Runtime \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Taint-Runtime-0.03-56.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Taint-Runtime-0.03-56.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2f0a4ff1cd6ded38346ace0923bc9967c3434e5de050a5513721a33810bf3da1"
 
-URI_x86_64_v2_perl-Taint-Runtime = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Taint-Runtime-0.03-56.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Taint-Runtime;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Taint-Runtime}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Taint-Runtime-0.03-56.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Taint-Runtime;unpack=0"
 SRC_URI[x86_64_v2_perl-Taint-Runtime.sha256sum] = "ea1cbfa61844155c3586d8080df69ba16e5bee8c1d5b83007243144800b49d70"
 
-URI_aarch64_perl-Taint-Runtime = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Taint-Runtime-0.03-56.el10.aarch64.rpm;name=aarch64_perl-Taint-Runtime;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Taint-Runtime}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Taint-Runtime-0.03-56.el10.aarch64.rpm;name=aarch64_perl-Taint-Runtime;unpack=0"
 SRC_URI[aarch64_perl-Taint-Runtime.sha256sum] = "64f49701e6fdd13b82fa2e46eea20a8ad62358d3411b7188df599ba9a80a5843"
 
 RDEPENDS:perl-Taint-Runtime = " \

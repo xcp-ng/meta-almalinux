@@ -10,24 +10,19 @@ PACKAGES = " \
  pure-ftpd-selinux \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pure-ftpd-1.0.52-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pure-ftpd-1.0.52-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0584ea9858085f1b951b57bded2bfe1b25e2066889c3f1c64686432692599552"
 
-URI_x86_64_v2_pure-ftpd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pure-ftpd-1.0.52-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pure-ftpd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pure-ftpd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pure-ftpd-1.0.52-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pure-ftpd;unpack=0"
 SRC_URI[x86_64_v2_pure-ftpd.sha256sum] = "bd975fd9303f94b9064d484803f6d62bf8580514bef80231e3d40a95c7942a8a"
 
-URI_x86_64_v2_pure-ftpd-selinux = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pure-ftpd-selinux-1.0.52-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pure-ftpd-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pure-ftpd-selinux}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pure-ftpd-selinux-1.0.52-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pure-ftpd-selinux;unpack=0"
 SRC_URI[x86_64_v2_pure-ftpd-selinux.sha256sum] = "5f2de1054bac4d8b1e19b3f56e456f4410ac3c35d104c9410dedf19c0511553d"
 
-URI_aarch64_pure-ftpd = "${EPEL_MIRROR}/aarch64/Packages/p/pure-ftpd-1.0.52-1.el10_1.aarch64.rpm;name=aarch64_pure-ftpd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pure-ftpd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pure-ftpd-1.0.52-1.el10_1.aarch64.rpm;name=aarch64_pure-ftpd;unpack=0"
 SRC_URI[aarch64_pure-ftpd.sha256sum] = "a0e221e7d879399434923489d00c3278267adc6bca754866315eb9c5a59201e2"
 
-URI_aarch64_pure-ftpd-selinux = "${EPEL_MIRROR}/aarch64/Packages/p/pure-ftpd-selinux-1.0.52-1.el10_1.aarch64.rpm;name=aarch64_pure-ftpd-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pure-ftpd-selinux}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pure-ftpd-selinux-1.0.52-1.el10_1.aarch64.rpm;name=aarch64_pure-ftpd-selinux;unpack=0"
 SRC_URI[aarch64_pure-ftpd-selinux.sha256sum] = "4389bdebf33ee0c5902d9e9d26c09d2520a2ee9faaf7f669bba1fdbfba6be024"
 
 RDEPENDS:pure-ftpd = " \

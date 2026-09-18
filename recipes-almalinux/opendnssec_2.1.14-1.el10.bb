@@ -9,16 +9,13 @@ PACKAGES = " \
  opendnssec \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/opendnssec-2.1.14-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/opendnssec-2.1.14-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f21bb0f21731ed4a1b2f64308ea67469677a4f6f2c6fedf1a3403eb48fa5ec25"
 
-URI_x86_64_v2_opendnssec = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/opendnssec-2.1.14-1.el10.x86_64_v2.rpm;name=x86_64_v2_opendnssec;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_opendnssec}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/opendnssec-2.1.14-1.el10.x86_64_v2.rpm;name=x86_64_v2_opendnssec;unpack=0"
 SRC_URI[x86_64_v2_opendnssec.sha256sum] = "93dbd63edb967b418e40bb5ec6876d5c3d89cf31182d8b35a47b40695ad0f118"
 
-URI_aarch64_opendnssec = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opendnssec-2.1.14-1.el10.aarch64.rpm;name=aarch64_opendnssec;unpack=0"
-SRC_URI:append = " ${URI_aarch64_opendnssec}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opendnssec-2.1.14-1.el10.aarch64.rpm;name=aarch64_opendnssec;unpack=0"
 SRC_URI[aarch64_opendnssec.sha256sum] = "3ddcfa347546b8312173c4534cbf3f02df361cfcd20ac5db849c294794c0cc44"
 
 RDEPENDS:opendnssec = " \

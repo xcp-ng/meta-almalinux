@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-LDAP \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-LDAP-0.68-16.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-LDAP-0.68-16.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f6621bcddba1e3e4b5328de88d2f35cbcc324c2c6b919cbaf9a7b8cd346f6243"
 
-URI_x86_64_v2_perl-LDAP = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-LDAP-0.68-16.el10.noarch.rpm;name=x86_64_v2_perl-LDAP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-LDAP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-LDAP-0.68-16.el10.noarch.rpm;name=x86_64_v2_perl-LDAP;unpack=0"
 SRC_URI[x86_64_v2_perl-LDAP.sha256sum] = "84d58baa55e5ed317dd474f4fd014d9c2e2fffb8a5c0d29b4b1fb5e4d2038b05"
 
-URI_aarch64_perl-LDAP = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-LDAP-0.68-16.el10.noarch.rpm;name=aarch64_perl-LDAP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-LDAP}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-LDAP-0.68-16.el10.noarch.rpm;name=aarch64_perl-LDAP;unpack=0"
 SRC_URI[aarch64_perl-LDAP.sha256sum] = "84d58baa55e5ed317dd474f4fd014d9c2e2fffb8a5c0d29b4b1fb5e4d2038b05"
 
 RDEPENDS:perl-LDAP = " \

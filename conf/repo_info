@@ -1,4 +1,4 @@
-generated-by: 4f5932b:scripts/gen-dnf-proxy.py
+generated-by: e79cb03:scripts/gen-dnf-proxy.py
 
 almalinux-10.1-AppStream-aarch64: revision: 1779228762, updated-utc: Tue May 19 22:12:42 2026
 almalinux-10.1-AppStream-src: revision: 1779228735, updated-utc: Tue May 19 22:12:15 2026

@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-IPC-Cmd \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IPC-Cmd-1.04-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IPC-Cmd-1.04-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9137b796f36864ada8d3846071185453b55a44467275b5cdf8a7fd57a8bb491b"
 
-URI_x86_64_v2_perl-IPC-Cmd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IPC-Cmd-1.04-512.el10.noarch.rpm;name=x86_64_v2_perl-IPC-Cmd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-IPC-Cmd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IPC-Cmd-1.04-512.el10.noarch.rpm;name=x86_64_v2_perl-IPC-Cmd;unpack=0"
 SRC_URI[x86_64_v2_perl-IPC-Cmd.sha256sum] = "3ccc494901ce2e9d8962854853f53c1ea8dbd03f865bb03e411d68b87a6d1123"
 
-URI_aarch64_perl-IPC-Cmd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IPC-Cmd-1.04-512.el10.noarch.rpm;name=aarch64_perl-IPC-Cmd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-IPC-Cmd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IPC-Cmd-1.04-512.el10.noarch.rpm;name=aarch64_perl-IPC-Cmd;unpack=0"
 SRC_URI[aarch64_perl-IPC-Cmd.sha256sum] = "3ccc494901ce2e9d8962854853f53c1ea8dbd03f865bb03e411d68b87a6d1123"
 
 RDEPENDS:perl-IPC-Cmd = " \

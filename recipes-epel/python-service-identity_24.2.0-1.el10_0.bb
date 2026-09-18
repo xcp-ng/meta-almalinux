@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-service-identity+idna \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-service-identity-24.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-service-identity-24.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb455960f7f3f75be7c9fa42dec42d89f905f62faeaa510786e223f6d19ee016"
 
-URI_x86_64_v2_python3-service-identity = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-service-identity}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity;unpack=0"
 SRC_URI[x86_64_v2_python3-service-identity.sha256sum] = "9988e8a4f28fb40e11ea78952d44183865daffd415d5805e5cfa3daea202a4c1"
 
-URI_x86_64_v2_python3-service-identity+idna = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity+idna-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity+idna;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-service-identity+idna}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-service-identity+idna-24.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-service-identity+idna;unpack=0"
 SRC_URI[x86_64_v2_python3-service-identity+idna.sha256sum] = "099539b922bce09f85a43bf482b2fac9ec485cedc37ce97930cdc9a0db9cacd8"
 
-URI_aarch64_python3-service-identity = "${EPEL_MIRROR}/aarch64/Packages/p/python3-service-identity-24.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-service-identity;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-service-identity}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-service-identity-24.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-service-identity;unpack=0"
 SRC_URI[aarch64_python3-service-identity.sha256sum] = "6bb9aecd19bb0538758104530944f74fa2e9330624dbf367846698c90aca2425"
 
-URI_aarch64_python3-service-identity+idna = "${EPEL_MIRROR}/aarch64/Packages/p/python3-service-identity+idna-24.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-service-identity+idna;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-service-identity+idna}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-service-identity+idna-24.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-service-identity+idna;unpack=0"
 SRC_URI[aarch64_python3-service-identity+idna.sha256sum] = "19ab0f3bb1d1eb08245f717cb782c09283013aad0ccd635424510befcac773c6"
 
 RDEPENDS:python3-service-identity = " \

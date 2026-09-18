@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-mitchellh-hashstructure-2-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-mitchellh-hashstructure-2-2.0.2-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-mitchellh-hashstructure-2-2.0.2-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4b160bb14ad70625c99a35c8b80e6a629092efffe5d0eaa614141baea9ca00bc"
 
-URI_x86_64_v2_golang-github-mitchellh-hashstructure-2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-mitchellh-hashstructure-2-devel-2.0.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-mitchellh-hashstructure-2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-mitchellh-hashstructure-2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-mitchellh-hashstructure-2-devel-2.0.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-mitchellh-hashstructure-2-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-mitchellh-hashstructure-2-devel.sha256sum] = "1c52e8243a8d7846d0442c8b9f4e7f6a7b564c3938196fa7afbfabab52705886"
 
-URI_aarch64_golang-github-mitchellh-hashstructure-2-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mitchellh-hashstructure-2-devel-2.0.2-8.el10_0.noarch.rpm;name=aarch64_golang-github-mitchellh-hashstructure-2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-mitchellh-hashstructure-2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mitchellh-hashstructure-2-devel-2.0.2-8.el10_0.noarch.rpm;name=aarch64_golang-github-mitchellh-hashstructure-2-devel;unpack=0"
 SRC_URI[aarch64_golang-github-mitchellh-hashstructure-2-devel.sha256sum] = "6644b3ebe7150fabef1e5989e6d028239def2ab353da1a803397ca75d68e8e72"
 
 RDEPENDS:golang-github-mitchellh-hashstructure-2-devel = " \

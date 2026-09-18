@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyroute2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyroute2-0.7.12-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyroute2-0.7.12-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0fdcd0e891e23d62c2586009bcdc70e00f552eb464d90c5480f45c1a32657f24"
 
-URI_x86_64_v2_python3-pyroute2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyroute2-0.7.12-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyroute2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyroute2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyroute2-0.7.12-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyroute2;unpack=0"
 SRC_URI[x86_64_v2_python3-pyroute2.sha256sum] = "d5f2f27d098fdac798a9458590608d9a0aeea65b624b93c23f677336488b83b5"
 
-URI_aarch64_python3-pyroute2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyroute2-0.7.12-4.el10_0.noarch.rpm;name=aarch64_python3-pyroute2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyroute2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyroute2-0.7.12-4.el10_0.noarch.rpm;name=aarch64_python3-pyroute2;unpack=0"
 SRC_URI[aarch64_python3-pyroute2.sha256sum] = "c3173aab901fa5b095a63e1068b85317bb1ba667566c5447176505e31d102d9c"
 
 RDEPENDS:python3-pyroute2 = " \

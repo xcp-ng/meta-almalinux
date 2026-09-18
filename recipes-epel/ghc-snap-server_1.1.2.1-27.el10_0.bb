@@ -16,72 +16,55 @@ PACKAGES = " \
  ghc-snap-server-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-snap-server-1.1.2.1-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-snap-server-1.1.2.1-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "591a1a32bb7b5d3b3d92694bc2065ebd0bfac561595129ced71945f24cc030e0"
 
-URI_x86_64_v2_ghc-io-streams-haproxy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-io-streams-haproxy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy;unpack=0"
 SRC_URI[x86_64_v2_ghc-io-streams-haproxy.sha256sum] = "2d4ca75ad894dcf25a242c1c18dd6dd95cb94d0da8d3414ff1c0776f2892b5c3"
 
-URI_x86_64_v2_ghc-io-streams-haproxy-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-devel-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-io-streams-haproxy-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-devel-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-io-streams-haproxy-devel.sha256sum] = "0a539c2a0c23e3d50f4d762699198e88f2753ec99223a65cfa2c4fe144e7f9f8"
 
-URI_x86_64_v2_ghc-io-streams-haproxy-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-doc-1.0.1.0-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-io-streams-haproxy-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-io-streams-haproxy-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-doc-1.0.1.0-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-io-streams-haproxy-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-io-streams-haproxy-doc.sha256sum] = "74e9606f2645763262e8484c9895f444884620a8f50dee572bac24337a77bae9"
 
-URI_x86_64_v2_ghc-io-streams-haproxy-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-prof-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-io-streams-haproxy-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-io-streams-haproxy-prof-1.0.1.0-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-io-streams-haproxy-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-io-streams-haproxy-prof.sha256sum] = "693013172c58b4e11155569937be1080f2e6d930c8ef36f67886c9a6878574f0"
 
-URI_x86_64_v2_ghc-snap-server = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-snap-server}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server;unpack=0"
 SRC_URI[x86_64_v2_ghc-snap-server.sha256sum] = "b700fb09bacdba10a8143a2ea892b311935525f40069d91dc57123ab09f41082"
 
-URI_x86_64_v2_ghc-snap-server-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-devel-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-snap-server-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-devel-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-snap-server-devel.sha256sum] = "ecc43aadc2746b69d4817b82c37d2032147fd9efaa1741426f53dc489e68acef"
 
-URI_x86_64_v2_ghc-snap-server-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-doc-1.1.2.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-snap-server-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-snap-server-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-doc-1.1.2.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-snap-server-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-snap-server-doc.sha256sum] = "8e79a073afd4fcab8fdd8906edd5f9be83bcf856880c7c5db2ff6268c4569178"
 
-URI_x86_64_v2_ghc-snap-server-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-prof-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-snap-server-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-snap-server-prof-1.1.2.1-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-snap-server-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-snap-server-prof.sha256sum] = "328c429c3ac7fb7f9014995039bc7517375ba9506bfec17a520732aa297af052"
 
-URI_aarch64_ghc-io-streams-haproxy = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-io-streams-haproxy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy;unpack=0"
 SRC_URI[aarch64_ghc-io-streams-haproxy.sha256sum] = "8da5c7c1c8273ba4d94d58677d17dc12438f14e548ab5b7594bdef40adb2a8d6"
 
-URI_aarch64_ghc-io-streams-haproxy-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-devel-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-io-streams-haproxy-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-devel-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy-devel;unpack=0"
 SRC_URI[aarch64_ghc-io-streams-haproxy-devel.sha256sum] = "c24809ecf86d20aaa58002bdfd64407475f0c575475852457c618714ee34eb9d"
 
-URI_aarch64_ghc-io-streams-haproxy-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-doc-1.0.1.0-27.el10_0.noarch.rpm;name=aarch64_ghc-io-streams-haproxy-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-io-streams-haproxy-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-doc-1.0.1.0-27.el10_0.noarch.rpm;name=aarch64_ghc-io-streams-haproxy-doc;unpack=0"
 SRC_URI[aarch64_ghc-io-streams-haproxy-doc.sha256sum] = "0c51afcbc7eaec5d72289dba9fbddfd5b77e2d32ca3a09b401b0584ad2666261"
 
-URI_aarch64_ghc-io-streams-haproxy-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-prof-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-io-streams-haproxy-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-io-streams-haproxy-prof-1.0.1.0-27.el10_0.aarch64.rpm;name=aarch64_ghc-io-streams-haproxy-prof;unpack=0"
 SRC_URI[aarch64_ghc-io-streams-haproxy-prof.sha256sum] = "be444ed79ca134565c7daf1df7fd48cec450babf5a8c3e6ab71b171077b9a8ca"
 
-URI_aarch64_ghc-snap-server = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-snap-server}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server;unpack=0"
 SRC_URI[aarch64_ghc-snap-server.sha256sum] = "ddcce29ab8c1f679da065e9b26689ca0fcb10904c645bc0c6154f3350ecbe81c"
 
-URI_aarch64_ghc-snap-server-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-devel-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-snap-server-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-devel-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server-devel;unpack=0"
 SRC_URI[aarch64_ghc-snap-server-devel.sha256sum] = "f9078ff6fac3c99f5268abdbee327418e89c101fc785195cdecea6c2990a438a"
 
-URI_aarch64_ghc-snap-server-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-doc-1.1.2.1-27.el10_0.noarch.rpm;name=aarch64_ghc-snap-server-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-snap-server-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-doc-1.1.2.1-27.el10_0.noarch.rpm;name=aarch64_ghc-snap-server-doc;unpack=0"
 SRC_URI[aarch64_ghc-snap-server-doc.sha256sum] = "cb39721e10c14a729776242bd8e562cfa78231a2b3975054d2f36572a424aa2f"
 
-URI_aarch64_ghc-snap-server-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-prof-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-snap-server-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-snap-server-prof-1.1.2.1-27.el10_0.aarch64.rpm;name=aarch64_ghc-snap-server-prof;unpack=0"
 SRC_URI[aarch64_ghc-snap-server-prof.sha256sum] = "f836637138b92aa480827fee607cfe04ffe3e611e784139104e550d3c2415f25"
 
 RDEPENDS:ghc-io-streams-haproxy = " \

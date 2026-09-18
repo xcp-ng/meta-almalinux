@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-common-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-common-0.8.3.4-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-common-0.8.3.4-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4f48c9fe846331547cdbdeeb10782c9f0f633e17571f8a7feaa248bcd7af755"
 
-URI_x86_64_v2_ghc-http-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-common.sha256sum] = "a89ff6020ac839ae18d515c94af8f43493292f3190ee0d5b44be65e59663c438"
 
-URI_x86_64_v2_ghc-http-common-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-devel-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-common-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-devel-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-common-devel.sha256sum] = "db0ee63b6cefb6cff18c5a839a28bb94701509e619db264619df6570d33ee0c3"
 
-URI_x86_64_v2_ghc-http-common-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-doc-0.8.3.4-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-common-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-common-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-doc-0.8.3.4-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-common-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-common-doc.sha256sum] = "e966a8dc23ba95f929dafbcf8b1fe93845b826a185347c48ea7a2b87978887bb"
 
-URI_x86_64_v2_ghc-http-common-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-prof-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-common-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-common-prof-0.8.3.4-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-common-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-common-prof.sha256sum] = "a2f0d1a6da766f7e137817f4c46c1daa687c7ad33104a4f53288e5106dffde6e"
 
-URI_aarch64_ghc-http-common = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common;unpack=0"
 SRC_URI[aarch64_ghc-http-common.sha256sum] = "ad5d96bedc75134ee643053baeccac6eb90ef3ad07f960fff1a16939489065d6"
 
-URI_aarch64_ghc-http-common-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-devel-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-common-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-devel-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-common-devel.sha256sum] = "f18e1c8ebbe9a65805c1a242751e192cfb7c78ea3bce049ffb5725db06c80c12"
 
-URI_aarch64_ghc-http-common-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-doc-0.8.3.4-9.el10_0.noarch.rpm;name=aarch64_ghc-http-common-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-common-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-doc-0.8.3.4-9.el10_0.noarch.rpm;name=aarch64_ghc-http-common-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-common-doc.sha256sum] = "7d148a989d1da715277547a22db1f02087bd62f04966f7706c3ba3ca334bb751"
 
-URI_aarch64_ghc-http-common-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-prof-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-common-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-common-prof-0.8.3.4-9.el10_0.aarch64.rpm;name=aarch64_ghc-http-common-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-common-prof.sha256sum] = "bcd51391a5a058579e3f69b418729003becf7612568e0b9c422a84f2596e3f1a"
 
 RDEPENDS:ghc-http-common = " \

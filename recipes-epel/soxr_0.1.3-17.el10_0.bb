@@ -10,24 +10,19 @@ PACKAGES = " \
  soxr-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/soxr-0.1.3-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/soxr-0.1.3-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "329d79e0ab698b7151a7aabc34135915e080b2b1543cfdaf40eade7ddead18e8"
 
-URI_x86_64_v2_soxr = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/soxr-0.1.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_soxr;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_soxr}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/soxr-0.1.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_soxr;unpack=0"
 SRC_URI[x86_64_v2_soxr.sha256sum] = "e2925014b4bed40379fbaab201f524d68d8420e30aebe9303fb88f8580797f15"
 
-URI_x86_64_v2_soxr-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/soxr-devel-0.1.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_soxr-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_soxr-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/soxr-devel-0.1.3-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_soxr-devel;unpack=0"
 SRC_URI[x86_64_v2_soxr-devel.sha256sum] = "9d45c90821370a10a25d1551daf28b6d9f037ee135134c3432f99b0e295ee9a6"
 
-URI_aarch64_soxr = "${EPEL_MIRROR}/aarch64/Packages/s/soxr-0.1.3-17.el10_0.aarch64.rpm;name=aarch64_soxr;unpack=0"
-SRC_URI:append = " ${URI_aarch64_soxr}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/soxr-0.1.3-17.el10_0.aarch64.rpm;name=aarch64_soxr;unpack=0"
 SRC_URI[aarch64_soxr.sha256sum] = "5c58d92c11684d538cf2b12c3a53e204c239cd41ba0b9e7882ea1fa999e2e6a7"
 
-URI_aarch64_soxr-devel = "${EPEL_MIRROR}/aarch64/Packages/s/soxr-devel-0.1.3-17.el10_0.aarch64.rpm;name=aarch64_soxr-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_soxr-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/soxr-devel-0.1.3-17.el10_0.aarch64.rpm;name=aarch64_soxr-devel;unpack=0"
 SRC_URI[aarch64_soxr-devel.sha256sum] = "89e4c8e0559d9e4b5aa1d75b8268e962503420a7ba13e42b3ed893aa2c12081e"
 
 RDEPENDS:soxr = " \

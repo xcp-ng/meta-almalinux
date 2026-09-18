@@ -12,40 +12,31 @@ PACKAGES = " \
  python3-portmidi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/portmidi-217-58.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/portmidi-217-58.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "35a69c62bde81574a9a43f917759d7c544e2bce6475d6427c1da9b2b37315782"
 
-URI_x86_64_v2_portmidi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_portmidi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi;unpack=0"
 SRC_URI[x86_64_v2_portmidi.sha256sum] = "14d048a067501188594da974085e0153150a702b6e42e1d0024d036d4aaa8a1d"
 
-URI_x86_64_v2_portmidi-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-devel-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_portmidi-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-devel-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-devel;unpack=0"
 SRC_URI[x86_64_v2_portmidi-devel.sha256sum] = "d8354c22382b4373829b4e5c1ecbbf9d7dfc19b902b720265afcf41e86d7e1ce"
 
-URI_x86_64_v2_portmidi-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-tools-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_portmidi-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portmidi-tools-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portmidi-tools;unpack=0"
 SRC_URI[x86_64_v2_portmidi-tools.sha256sum] = "e68f26ddfa02ba1d178a9dda63026c0dbdae11b5c52d9e054ff5a7df9ff7d6cf"
 
-URI_x86_64_v2_python3-portmidi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-portmidi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-portmidi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-portmidi-217-58.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-portmidi;unpack=0"
 SRC_URI[x86_64_v2_python3-portmidi.sha256sum] = "4d536f3e2f4a66c414ad3f1e56881d8514a2585b5ff7704cad908ec32568e2a3"
 
-URI_aarch64_portmidi = "${EPEL_MIRROR}/aarch64/Packages/p/portmidi-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_portmidi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portmidi-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi;unpack=0"
 SRC_URI[aarch64_portmidi.sha256sum] = "fef9ab5a655e9c459f1c706d77953fe47cdb3ee11cbc02ec06ce1b266582e488"
 
-URI_aarch64_portmidi-devel = "${EPEL_MIRROR}/aarch64/Packages/p/portmidi-devel-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_portmidi-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portmidi-devel-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi-devel;unpack=0"
 SRC_URI[aarch64_portmidi-devel.sha256sum] = "9e03d73b11631eff7f2ff7771b7569c3a5215cfa2ffeef593c7cdf34be7ffe70"
 
-URI_aarch64_portmidi-tools = "${EPEL_MIRROR}/aarch64/Packages/p/portmidi-tools-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_portmidi-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portmidi-tools-217-58.el10_0.aarch64.rpm;name=aarch64_portmidi-tools;unpack=0"
 SRC_URI[aarch64_portmidi-tools.sha256sum] = "fbdf60311cf10edade9e1521c90393be33d2641ddbecbb05be655f718caa7a22"
 
-URI_aarch64_python3-portmidi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-portmidi-217-58.el10_0.aarch64.rpm;name=aarch64_python3-portmidi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-portmidi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-portmidi-217-58.el10_0.aarch64.rpm;name=aarch64_python3-portmidi;unpack=0"
 SRC_URI[aarch64_python3-portmidi.sha256sum] = "b7d907941bb199479f267ae20aaf40f197c2d20265e40771938f2e98f1b74def"
 
 RDEPENDS:portmidi = " \

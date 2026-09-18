@@ -10,16 +10,13 @@ PACKAGES = " \
  hyphen-bn \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-bn-0.7.0-27.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-bn-0.7.0-27.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "83cea01ddb524fe79b603aeecd75a1b05183abc4ac8457a53dba49473305e90b"
 
-URI_x86_64_v2_hyphen-bn = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-bn-0.7.0-27.el10.noarch.rpm;name=x86_64_v2_hyphen-bn;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hyphen-bn}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-bn-0.7.0-27.el10.noarch.rpm;name=x86_64_v2_hyphen-bn;unpack=0"
 SRC_URI[x86_64_v2_hyphen-bn.sha256sum] = "d4ba35e3bc5a6db4dea032d683c4ac1ad3b55e6c467bcf0242daf005a60e0cc2"
 
-URI_aarch64_hyphen-bn = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-bn-0.7.0-27.el10.noarch.rpm;name=aarch64_hyphen-bn;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hyphen-bn}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-bn-0.7.0-27.el10.noarch.rpm;name=aarch64_hyphen-bn;unpack=0"
 SRC_URI[aarch64_hyphen-bn.sha256sum] = "d4ba35e3bc5a6db4dea032d683c4ac1ad3b55e6c467bcf0242daf005a60e0cc2"
 
 RDEPENDS:hyphen-bn = " \

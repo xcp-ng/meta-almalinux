@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-libwww-perl \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-libwww-perl-6.76-3.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-libwww-perl-6.76-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "29583d98e587a971f0f917a73a8715eb657ddf5cf01f70e64c28c6612ec670e1"
 
-URI_x86_64_v2_perl-libwww-perl = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;name=x86_64_v2_perl-libwww-perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-libwww-perl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;name=x86_64_v2_perl-libwww-perl;unpack=0"
 SRC_URI[x86_64_v2_perl-libwww-perl.sha256sum] = "f14d6a0a1b28f378aab5215183f314a8c0a3c298d2fdf7ad74bd66d3a4742b00"
 
-URI_aarch64_perl-libwww-perl = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;name=aarch64_perl-libwww-perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-libwww-perl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;name=aarch64_perl-libwww-perl;unpack=0"
 SRC_URI[aarch64_perl-libwww-perl.sha256sum] = "f14d6a0a1b28f378aab5215183f314a8c0a3c298d2fdf7ad74bd66d3a4742b00"
 
 RDEPENDS:perl-libwww-perl = " \

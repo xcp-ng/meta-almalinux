@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-autocommand \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-autocommand-2.2.2-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-autocommand-2.2.2-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "be0e0160b0b47cd2bf1d576c5e9718958b147352b25242b7fedbd44ecabb237d"
 
-URI_x86_64_v2_python3-autocommand = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-autocommand-2.2.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-autocommand;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-autocommand}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-autocommand-2.2.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-autocommand;unpack=0"
 SRC_URI[x86_64_v2_python3-autocommand.sha256sum] = "dd547f4b547af59c7b37b5be707ec755ed5e112d7fba16b28ddfa269444ca3d5"
 
-URI_aarch64_python3-autocommand = "${EPEL_MIRROR}/aarch64/Packages/p/python3-autocommand-2.2.2-9.el10_0.noarch.rpm;name=aarch64_python3-autocommand;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-autocommand}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-autocommand-2.2.2-9.el10_0.noarch.rpm;name=aarch64_python3-autocommand;unpack=0"
 SRC_URI[aarch64_python3-autocommand.sha256sum] = "71aac8c0bca1d6757ecb5d73e5aaac336caf3f20fdc83b2dc4e3fc1e36e7479d"
 
 RDEPENDS:python3-autocommand = " \

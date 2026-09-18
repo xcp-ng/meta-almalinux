@@ -9,16 +9,13 @@ PACKAGES = " \
  gnome-initial-setup \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bae2f6767e3246603cf69e26003631113d29c032dee96327fd6bc5b4f8e54ef6"
 
-URI_x86_64_v2_gnome-initial-setup = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-initial-setup;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-initial-setup}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-initial-setup;unpack=0"
 SRC_URI[x86_64_v2_gnome-initial-setup.sha256sum] = "ac6f1f4162505c7a31bc2d810dcfa85661ccc368769c2f5a7ee2e1442343433f"
 
-URI_aarch64_gnome-initial-setup = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.aarch64.rpm;name=aarch64_gnome-initial-setup;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-initial-setup}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-initial-setup-46.7-2.el10_1.alma.1.aarch64.rpm;name=aarch64_gnome-initial-setup;unpack=0"
 SRC_URI[aarch64_gnome-initial-setup.sha256sum] = "5c5588050f663de2af5e30afd5b6bee4076fbdb591fadbe71b6e849e1469b398"
 
 RDEPENDS:gnome-initial-setup = " \

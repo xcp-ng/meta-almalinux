@@ -9,16 +9,13 @@ PACKAGES = " \
  calindori \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/calindori-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/calindori-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7e424cb73d6613d74bd53d45f7325cd1fd33c9fc9213bf36c2893535015734c4"
 
-URI_x86_64_v2_calindori = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/calindori-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_calindori;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_calindori}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/calindori-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_calindori;unpack=0"
 SRC_URI[x86_64_v2_calindori.sha256sum] = "820787466ea78580ce04c0c417c309d7953b5540d21b2beab9df396197ec7f63"
 
-URI_aarch64_calindori = "${EPEL_MIRROR}/aarch64/Packages/c/calindori-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_calindori;unpack=0"
-SRC_URI:append = " ${URI_aarch64_calindori}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/calindori-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_calindori;unpack=0"
 SRC_URI[aarch64_calindori.sha256sum] = "8553263fca27b4ee04afe0cf16b0187c739057ede1d8bbc0bb527b85283a4b9f"
 
 RDEPENDS:calindori = " \

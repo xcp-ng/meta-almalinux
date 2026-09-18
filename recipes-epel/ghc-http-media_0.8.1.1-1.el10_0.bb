@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-media-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-media-0.8.1.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-media-0.8.1.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "724e374988de5374a4dda096b6d9cd73e393af93875d99ebf998b3e7588e2595"
 
-URI_x86_64_v2_ghc-http-media = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-media}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-media.sha256sum] = "a34f65ece1dea7d17fbe8c646370eb9607bf3881be7683fa216a1ac8874c6391"
 
-URI_x86_64_v2_ghc-http-media-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-devel-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-media-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-devel-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-media-devel.sha256sum] = "7f78c5169bd792ad79ef60b7ec16c25a722873e93aeb87fb955ef18de3ea5de4"
 
-URI_x86_64_v2_ghc-http-media-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-doc-0.8.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-media-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-media-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-doc-0.8.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-media-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-media-doc.sha256sum] = "5cf2709618f896118767ba4189d814abb115abb10a21c3c05c2488a5aa407bec"
 
-URI_x86_64_v2_ghc-http-media-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-prof-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-media-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-media-prof-0.8.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-media-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-media-prof.sha256sum] = "f05f5778909136ba854bcb6671a7901cf3e85237d178215a47ab37a5baf4f63a"
 
-URI_aarch64_ghc-http-media = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-media}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media;unpack=0"
 SRC_URI[aarch64_ghc-http-media.sha256sum] = "de015f3fd0246ca2c79a9b7c6efb8bb805a5a4312884b76533f7f1f4ebf26504"
 
-URI_aarch64_ghc-http-media-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-devel-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-media-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-devel-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-media-devel.sha256sum] = "f279417989c77bdbeb1c50cf7b65d0647e6f553d88940381de7ac5b5d89f0316"
 
-URI_aarch64_ghc-http-media-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-doc-0.8.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-http-media-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-media-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-doc-0.8.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-http-media-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-media-doc.sha256sum] = "d88a6ed4064b7ee0198a06e7adc63b7014ae18bc33a6058cbc72df7d93cc8b20"
 
-URI_aarch64_ghc-http-media-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-prof-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-media-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-media-prof-0.8.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-media-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-media-prof.sha256sum] = "c476a0880ad1b95a275b17ac6c2bb589a683f5cf9550fd32e2fe4bd2103b4089"
 
 RDEPENDS:ghc-http-media = " \

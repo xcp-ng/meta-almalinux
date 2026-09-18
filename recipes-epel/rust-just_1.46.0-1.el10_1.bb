@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-just-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-just-1.46.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-just-1.46.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7b4a90daa55b1798b2d284c98043fbe15f3e9b5200f14e74cefb16763b939cde"
 
-URI_x86_64_v2_just = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/just-1.46.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_just;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_just}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/just-1.46.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_just;unpack=0"
 SRC_URI[x86_64_v2_just.sha256sum] = "670d483bb4c282485ea03927fcf21c5e3abf4333c4d3258be7fa882752ecbcb5"
 
-URI_x86_64_v2_rust-just+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-just+default-devel-1.46.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-just+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-just+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-just+default-devel-1.46.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-just+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-just+default-devel.sha256sum] = "860e2626c478395a766e54b70e1da33b3a01893d888c777e7a5d4ea63ae48c8a"
 
-URI_x86_64_v2_rust-just-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-just-devel-1.46.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-just-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-just-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-just-devel-1.46.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-just-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-just-devel.sha256sum] = "2cbc7eebdb539319b61503754aadd2f26d9839c119d9f4f2d9067aef41316413"
 
-URI_aarch64_just = "${EPEL_MIRROR}/aarch64/Packages/j/just-1.46.0-1.el10_1.aarch64.rpm;name=aarch64_just;unpack=0"
-SRC_URI:append = " ${URI_aarch64_just}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/j/just-1.46.0-1.el10_1.aarch64.rpm;name=aarch64_just;unpack=0"
 SRC_URI[aarch64_just.sha256sum] = "31b2b4ae603bcbe3583bf11ef84a5d7a2df3082e9dd900c8f81c757f6e7509a3"
 
-URI_aarch64_rust-just+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-just+default-devel-1.46.0-1.el10_1.noarch.rpm;name=aarch64_rust-just+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-just+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-just+default-devel-1.46.0-1.el10_1.noarch.rpm;name=aarch64_rust-just+default-devel;unpack=0"
 SRC_URI[aarch64_rust-just+default-devel.sha256sum] = "7af7d585ec6940b274a7e2208f4b9f484ae356339daac167dfe0bc3d65379557"
 
-URI_aarch64_rust-just-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-just-devel-1.46.0-1.el10_1.noarch.rpm;name=aarch64_rust-just-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-just-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-just-devel-1.46.0-1.el10_1.noarch.rpm;name=aarch64_rust-just-devel;unpack=0"
 SRC_URI[aarch64_rust-just-devel.sha256sum] = "8e0da24c6e4f6f7596d1a6174d67dde58b434d027383b65a11c4f4f40430589e"
 
 RDEPENDS:just = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-IPC-ShareLite \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-IPC-ShareLite-0.17-47.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-IPC-ShareLite-0.17-47.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fce2220efd103029a96d8c0992160b58bc0267b2758c3c781bf5d632b820f6d6"
 
-URI_x86_64_v2_perl-IPC-ShareLite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-IPC-ShareLite-0.17-47.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-IPC-ShareLite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-IPC-ShareLite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-IPC-ShareLite-0.17-47.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-IPC-ShareLite;unpack=0"
 SRC_URI[x86_64_v2_perl-IPC-ShareLite.sha256sum] = "f177e002d934e247544ca7067490c0394af792866064431bb9b616a61fd61fc2"
 
-URI_aarch64_perl-IPC-ShareLite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-IPC-ShareLite-0.17-47.el10_0.aarch64.rpm;name=aarch64_perl-IPC-ShareLite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-IPC-ShareLite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-IPC-ShareLite-0.17-47.el10_0.aarch64.rpm;name=aarch64_perl-IPC-ShareLite;unpack=0"
 SRC_URI[aarch64_perl-IPC-ShareLite.sha256sum] = "efb8f045f942a9499ddc10a43d1def7b92b4e3fbb07835ae3317ca0bc4bb10d0"
 
 RDEPENDS:perl-IPC-ShareLite = " \

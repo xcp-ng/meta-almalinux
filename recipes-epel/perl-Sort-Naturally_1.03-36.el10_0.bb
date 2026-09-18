@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Sort-Naturally \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sort-Naturally-1.03-36.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sort-Naturally-1.03-36.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5579632c4426084bddbf685590dcaf439f2e1400ef3b204a71bcdc4f3558338f"
 
-URI_x86_64_v2_perl-Sort-Naturally = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Naturally-1.03-36.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sort-Naturally;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sort-Naturally}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Naturally-1.03-36.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sort-Naturally;unpack=0"
 SRC_URI[x86_64_v2_perl-Sort-Naturally.sha256sum] = "acd9082faa2f9509a71917ecf27a3cbba961f1fda6ac749d60dd5a69c8817cac"
 
-URI_aarch64_perl-Sort-Naturally = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Naturally-1.03-36.el10_0.noarch.rpm;name=aarch64_perl-Sort-Naturally;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sort-Naturally}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Naturally-1.03-36.el10_0.noarch.rpm;name=aarch64_perl-Sort-Naturally;unpack=0"
 SRC_URI[aarch64_perl-Sort-Naturally.sha256sum] = "618a7aabdb2e53948b0b436f6bf8b05ead24ab487dee08c0be7a583a4943e9cc"
 
 RDEPENDS:perl-Sort-Naturally = " \

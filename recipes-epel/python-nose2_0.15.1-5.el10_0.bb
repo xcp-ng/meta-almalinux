@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-nose2+coverage_plugin \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-nose2-0.15.1-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-nose2-0.15.1-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f5193e8539172b1808006dee887a101701dcae379ec43b34501c99dc4c049db3"
 
-URI_x86_64_v2_python-nose2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-nose2-doc-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-nose2-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-nose2-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-nose2-doc-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-nose2-doc;unpack=0"
 SRC_URI[x86_64_v2_python-nose2-doc.sha256sum] = "d5fc4e933111cbf146327a5d27e8cf119a5ee9275d8a6a0ac0ede03605121e81"
 
-URI_x86_64_v2_python3-nose2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-nose2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2;unpack=0"
 SRC_URI[x86_64_v2_python3-nose2.sha256sum] = "0b4c7c7bff43f1b176b88f3d207ac5ff2a4a472f65d1b1893c59419ba5cc6883"
 
-URI_x86_64_v2_python3-nose2+coverage_plugin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2+coverage_plugin-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2+coverage_plugin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-nose2+coverage_plugin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nose2+coverage_plugin-0.15.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nose2+coverage_plugin;unpack=0"
 SRC_URI[x86_64_v2_python3-nose2+coverage_plugin.sha256sum] = "c3083d4be1fe82da7ea0d4b3a617c8bf736898fe4d759dd0e6319341b13d2e46"
 
-URI_aarch64_python-nose2-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-nose2-doc-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python-nose2-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-nose2-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-nose2-doc-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python-nose2-doc;unpack=0"
 SRC_URI[aarch64_python-nose2-doc.sha256sum] = "1407178260b5c1c9b7d2a47e64dfc3145438120a4034ebe4ebca8104ddefe6ae"
 
-URI_aarch64_python3-nose2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-nose2-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python3-nose2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-nose2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-nose2-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python3-nose2;unpack=0"
 SRC_URI[aarch64_python3-nose2.sha256sum] = "880ac315712440950abbd90aaabac0c231680dc8f16091bd2d8073884bff2180"
 
-URI_aarch64_python3-nose2+coverage_plugin = "${EPEL_MIRROR}/aarch64/Packages/p/python3-nose2+coverage_plugin-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python3-nose2+coverage_plugin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-nose2+coverage_plugin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-nose2+coverage_plugin-0.15.1-5.el10_0.noarch.rpm;name=aarch64_python3-nose2+coverage_plugin;unpack=0"
 SRC_URI[aarch64_python3-nose2+coverage_plugin.sha256sum] = "6560abc47c84262a413a962207a002d3c2118af5b1dc0c35533f145a6d0f4c89"
 
 RDEPENDS:python-nose2-doc = " \

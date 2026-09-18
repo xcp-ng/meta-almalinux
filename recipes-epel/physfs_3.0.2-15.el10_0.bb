@@ -10,24 +10,19 @@ PACKAGES = " \
  physfs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/physfs-3.0.2-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/physfs-3.0.2-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d0119e42cf44b12fabc068a67d1b6a71a76e512ecb9f3d68115b8915cebeb0d4"
 
-URI_x86_64_v2_physfs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_physfs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs;unpack=0"
 SRC_URI[x86_64_v2_physfs.sha256sum] = "6809a2064fdd79aa13ce15d5964cff68ebf4aa91afe8fa46dc49fd4be1df654f"
 
-URI_x86_64_v2_physfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-devel-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_physfs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/physfs-devel-3.0.2-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_physfs-devel;unpack=0"
 SRC_URI[x86_64_v2_physfs-devel.sha256sum] = "4d7aca8c6098886ec016329177e5e4539c7bcd7de3120b702799a6c4116d2b62"
 
-URI_aarch64_physfs = "${EPEL_MIRROR}/aarch64/Packages/p/physfs-3.0.2-15.el10_0.aarch64.rpm;name=aarch64_physfs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_physfs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/physfs-3.0.2-15.el10_0.aarch64.rpm;name=aarch64_physfs;unpack=0"
 SRC_URI[aarch64_physfs.sha256sum] = "eb89e16afd1cc2eee0948faa6af1aa609f959ddf44c3e13a6d6e34a1c85516d1"
 
-URI_aarch64_physfs-devel = "${EPEL_MIRROR}/aarch64/Packages/p/physfs-devel-3.0.2-15.el10_0.aarch64.rpm;name=aarch64_physfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_physfs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/physfs-devel-3.0.2-15.el10_0.aarch64.rpm;name=aarch64_physfs-devel;unpack=0"
 SRC_URI[aarch64_physfs-devel.sha256sum] = "85d8da1a4001584a53b66f9ee4db3276f511929eea5972e6c86fd833a472d451"
 
 RDEPENDS:physfs = " \

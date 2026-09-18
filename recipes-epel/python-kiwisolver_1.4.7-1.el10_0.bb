@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-kiwisolver \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-kiwisolver-1.4.7-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-kiwisolver-1.4.7-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af613bc603b6f176542f72800bdc3c490a6dbbeccba6f4f6557579fe856280db"
 
-URI_x86_64_v2_python3-kiwisolver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kiwisolver-1.4.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-kiwisolver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kiwisolver}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kiwisolver-1.4.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-kiwisolver;unpack=0"
 SRC_URI[x86_64_v2_python3-kiwisolver.sha256sum] = "2458d49bdb5ce8dd6dc5c719dfa4c153f358ffb91354abab27cb154e2f50a0cd"
 
-URI_aarch64_python3-kiwisolver = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kiwisolver-1.4.7-1.el10_0.aarch64.rpm;name=aarch64_python3-kiwisolver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kiwisolver}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-kiwisolver-1.4.7-1.el10_0.aarch64.rpm;name=aarch64_python3-kiwisolver;unpack=0"
 SRC_URI[aarch64_python3-kiwisolver.sha256sum] = "ce30d74746e0cd2d9dcd1c39845fec9774c1e11dd806ae93008907bd0587d303"
 
 RDEPENDS:python3-kiwisolver = " \

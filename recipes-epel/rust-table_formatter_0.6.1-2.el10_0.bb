@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-table_formatter-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-table_formatter-0.6.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-table_formatter-0.6.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "71fe3d134dd671541bdd3b45ccb1f34486be97126f3f6918a9edbbe90325099f"
 
-URI_x86_64_v2_rust-table_formatter+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-table_formatter+default-devel-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-table_formatter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-table_formatter+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-table_formatter+default-devel-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-table_formatter+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-table_formatter+default-devel.sha256sum] = "06fd02b5fdfa7a8a906f273fa9dcb715f7afa2207fca49a39db70304a8338956"
 
-URI_x86_64_v2_rust-table_formatter-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-table_formatter-devel-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-table_formatter-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-table_formatter-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-table_formatter-devel-0.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-table_formatter-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-table_formatter-devel.sha256sum] = "7bf0e7934029ceb5a10ecffa907ad4cff7e87358279b5fbe91c439c42f8a6cec"
 
-URI_aarch64_rust-table_formatter+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-table_formatter+default-devel-0.6.1-2.el10_0.noarch.rpm;name=aarch64_rust-table_formatter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-table_formatter+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-table_formatter+default-devel-0.6.1-2.el10_0.noarch.rpm;name=aarch64_rust-table_formatter+default-devel;unpack=0"
 SRC_URI[aarch64_rust-table_formatter+default-devel.sha256sum] = "4c6e8f8493b49bcde91392b56e6476d5e5111f5db656426de5a228034b24ad66"
 
-URI_aarch64_rust-table_formatter-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-table_formatter-devel-0.6.1-2.el10_0.noarch.rpm;name=aarch64_rust-table_formatter-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-table_formatter-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-table_formatter-devel-0.6.1-2.el10_0.noarch.rpm;name=aarch64_rust-table_formatter-devel;unpack=0"
 SRC_URI[aarch64_rust-table_formatter-devel.sha256sum] = "a90a8cba88d54f6aabaf260ad85e33a455ae4f1072a9a855e993c41c3d92d941"
 
 RDEPENDS:rust-table_formatter+default-devel = " \

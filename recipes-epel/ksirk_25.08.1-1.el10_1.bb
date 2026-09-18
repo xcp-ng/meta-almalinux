@@ -9,16 +9,13 @@ PACKAGES = " \
  ksirk \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ksirk-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ksirk-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0db272a9bff70e5cecdbec13e890129506b9271e0bfe095477e2197b0f93eea2"
 
-URI_x86_64_v2_ksirk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksirk-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksirk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ksirk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksirk-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksirk;unpack=0"
 SRC_URI[x86_64_v2_ksirk.sha256sum] = "2170f8f94cf25e3cd891f82a29e453b81944ab9d1342ac0ea33182116def0c0d"
 
-URI_aarch64_ksirk = "${EPEL_MIRROR}/aarch64/Packages/k/ksirk-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksirk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ksirk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ksirk-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksirk;unpack=0"
 SRC_URI[aarch64_ksirk.sha256sum] = "b4631bfd6023b355c3e662393c1e24d1b9a9b1e540f2d460e094a7de6ddb7c67"
 
 RDEPENDS:ksirk = " \

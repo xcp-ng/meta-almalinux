@@ -10,24 +10,19 @@ PACKAGES = " \
  gnome-settings-daemon-server-defaults \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dfcf6e2fb41aa663ab164d03c3b0bae6a443acc853ae1ff05e15548d9f351da5"
 
-URI_x86_64_v2_gnome-settings-daemon = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-settings-daemon;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-settings-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-settings-daemon;unpack=0"
 SRC_URI[x86_64_v2_gnome-settings-daemon.sha256sum] = "d3bd51d069357b637deda548a407e76aa95eb2482aee9ab69a85e7be1ef6d28a"
 
-URI_x86_64_v2_gnome-settings-daemon-server-defaults = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-server-defaults-47.2-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-settings-daemon-server-defaults;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-settings-daemon-server-defaults}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-server-defaults-47.2-5.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gnome-settings-daemon-server-defaults;unpack=0"
 SRC_URI[x86_64_v2_gnome-settings-daemon-server-defaults.sha256sum] = "da7872678c760a312633056e4315b8f3c349f7d3b3ebc4c8026c6c27b4b96a99"
 
-URI_aarch64_gnome-settings-daemon = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.aarch64.rpm;name=aarch64_gnome-settings-daemon;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-settings-daemon}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.aarch64.rpm;name=aarch64_gnome-settings-daemon;unpack=0"
 SRC_URI[aarch64_gnome-settings-daemon.sha256sum] = "11fe8515d10f42c6f495e6c5e170825d467469ff89db48d0e4b825d836a0ba7a"
 
-URI_aarch64_gnome-settings-daemon-server-defaults = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-settings-daemon-server-defaults-47.2-5.el10.alma.1.aarch64.rpm;name=aarch64_gnome-settings-daemon-server-defaults;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-settings-daemon-server-defaults}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-settings-daemon-server-defaults-47.2-5.el10.alma.1.aarch64.rpm;name=aarch64_gnome-settings-daemon-server-defaults;unpack=0"
 SRC_URI[aarch64_gnome-settings-daemon-server-defaults.sha256sum] = "a044523d01558e36d6d8bd3686f92c835df846426b421fc3e437ff4b1eedb06e"
 
 RDEPENDS:gnome-settings-daemon = " \

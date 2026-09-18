@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-yesod-persistent-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-persistent-1.6.0.8-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-persistent-1.6.0.8-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "df89ce2115f3f812c9569f91d26543e76487ee8cf464f99e6ca9b394826c842c"
 
-URI_x86_64_v2_ghc-yesod-persistent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-persistent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-persistent.sha256sum] = "f0ec28dc312b80e62d000b7326e10a3c6e21625b6963d63774cbdf2ce43c42d1"
 
-URI_x86_64_v2_ghc-yesod-persistent-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-devel-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-persistent-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-devel-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-persistent-devel.sha256sum] = "b9f45e3a86784c0f48d48280a2567a645f31e23dba6f1bbec23bad192f79ad82"
 
-URI_x86_64_v2_ghc-yesod-persistent-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-doc-1.6.0.8-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-persistent-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-persistent-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-doc-1.6.0.8-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-persistent-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-persistent-doc.sha256sum] = "be86214cd312959d8aa57eeca1df2dbdd512e76011b5241a03f9cba2c152eefc"
 
-URI_x86_64_v2_ghc-yesod-persistent-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-prof-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-persistent-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-persistent-prof-1.6.0.8-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-persistent-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-persistent-prof.sha256sum] = "0ec84fed1e265fab8eee5b8cc7893afaca12600c6f81a4affa94d84c6597c032"
 
-URI_aarch64_ghc-yesod-persistent = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-persistent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent;unpack=0"
 SRC_URI[aarch64_ghc-yesod-persistent.sha256sum] = "9968941a3cfede8ac90dccce27d0e5352b6b872503004a527622eb4aca6d1e37"
 
-URI_aarch64_ghc-yesod-persistent-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-devel-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-persistent-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-devel-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent-devel;unpack=0"
 SRC_URI[aarch64_ghc-yesod-persistent-devel.sha256sum] = "daa1b7fbd0389e7087d288b23ac0df103fc57212d6a01792b3111b8b79cd295a"
 
-URI_aarch64_ghc-yesod-persistent-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-doc-1.6.0.8-7.el10_0.noarch.rpm;name=aarch64_ghc-yesod-persistent-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-persistent-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-doc-1.6.0.8-7.el10_0.noarch.rpm;name=aarch64_ghc-yesod-persistent-doc;unpack=0"
 SRC_URI[aarch64_ghc-yesod-persistent-doc.sha256sum] = "f606b6bbe0d6bed99a1a4016933e443d70308320a74b2b8adeeec6f6e35f1a36"
 
-URI_aarch64_ghc-yesod-persistent-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-prof-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-persistent-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-persistent-prof-1.6.0.8-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-persistent-prof;unpack=0"
 SRC_URI[aarch64_ghc-yesod-persistent-prof.sha256sum] = "fff49a6900a975dfa02c839d11c9fd5ad65ed31f8effe99e40d5e7c665ab98f1"
 
 RDEPENDS:ghc-yesod-persistent = " \

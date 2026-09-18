@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-portend \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-portend-3.2.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-portend-3.2.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8547b3cf38ea259992b483111219b681a08885eabe0e9b42735cac2f4aca6ab7"
 
-URI_x86_64_v2_python3-portend = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-portend-3.2.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-portend;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-portend}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-portend-3.2.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-portend;unpack=0"
 SRC_URI[x86_64_v2_python3-portend.sha256sum] = "37be3a7bd3ddcc1342f20d3ad4b3a4efe47391bb60149f23e6e31178b415dc94"
 
-URI_aarch64_python3-portend = "${EPEL_MIRROR}/aarch64/Packages/p/python3-portend-3.2.0-6.el10_0.noarch.rpm;name=aarch64_python3-portend;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-portend}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-portend-3.2.0-6.el10_0.noarch.rpm;name=aarch64_python3-portend;unpack=0"
 SRC_URI[aarch64_python3-portend.sha256sum] = "fac6cf30a2ec512ab95e4bc3fdebe51f46f7110ae4974f37ada7a839019aaec8"
 
 RDEPENDS:python3-portend = " \

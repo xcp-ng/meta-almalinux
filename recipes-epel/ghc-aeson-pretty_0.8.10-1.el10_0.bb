@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-aeson-pretty-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-aeson-pretty-0.8.10-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-aeson-pretty-0.8.10-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1a788c394fd2e8558099c6ab95e633700aecb00bf64fc8b98f9dc51e35ec76dd"
 
-URI_x86_64_v2_ghc-aeson-pretty = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aeson-pretty}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty;unpack=0"
 SRC_URI[x86_64_v2_ghc-aeson-pretty.sha256sum] = "57e06b079be27577dfa29f67d83302164ef9bbb3c8f3fb8ee1619038aea7d346"
 
-URI_x86_64_v2_ghc-aeson-pretty-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-devel-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aeson-pretty-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-devel-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-aeson-pretty-devel.sha256sum] = "fe2c93fb7eaa591d407bb58ab78d2084e70c9689f53570b289fc0d30ed32c667"
 
-URI_x86_64_v2_ghc-aeson-pretty-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-doc-0.8.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-aeson-pretty-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aeson-pretty-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-doc-0.8.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-aeson-pretty-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-aeson-pretty-doc.sha256sum] = "687674d4d7f3283eb34396fa77b090f43a07884504d3e1aee6b798ca35554f76"
 
-URI_x86_64_v2_ghc-aeson-pretty-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-prof-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aeson-pretty-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aeson-pretty-prof-0.8.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aeson-pretty-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-aeson-pretty-prof.sha256sum] = "9e9598c0165e79978c5877ed23b2b289c4a7be00a5e04fa55f5261b875b47361"
 
-URI_aarch64_ghc-aeson-pretty = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aeson-pretty}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty;unpack=0"
 SRC_URI[aarch64_ghc-aeson-pretty.sha256sum] = "0530eb3a88d316406d1e29dfcf4643b8cb1eab00a4e4485ce4edbc3bda764a25"
 
-URI_aarch64_ghc-aeson-pretty-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-devel-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aeson-pretty-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-devel-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty-devel;unpack=0"
 SRC_URI[aarch64_ghc-aeson-pretty-devel.sha256sum] = "be1ef47b1c8157572bfdf556b10cbf5c685abd90af5bea1cc0a685959627570e"
 
-URI_aarch64_ghc-aeson-pretty-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-doc-0.8.10-1.el10_0.noarch.rpm;name=aarch64_ghc-aeson-pretty-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aeson-pretty-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-doc-0.8.10-1.el10_0.noarch.rpm;name=aarch64_ghc-aeson-pretty-doc;unpack=0"
 SRC_URI[aarch64_ghc-aeson-pretty-doc.sha256sum] = "a8a3411b3dfedb9eb53f9376bc1330d1feb8aac823a7636d34c711a27a0646b7"
 
-URI_aarch64_ghc-aeson-pretty-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-prof-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aeson-pretty-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aeson-pretty-prof-0.8.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-aeson-pretty-prof;unpack=0"
 SRC_URI[aarch64_ghc-aeson-pretty-prof.sha256sum] = "147d4d8be1999d581398a32d1071fd9df48f5560bdbecff76136464a813a992f"
 
 RDEPENDS:ghc-aeson-pretty = " \

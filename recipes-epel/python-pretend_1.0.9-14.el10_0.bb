@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pretend \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pretend-1.0.9-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pretend-1.0.9-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b4715b8d919db5109ba00cb5417c00af8e59e8ba82e6ebffd65a38a69ee6e690"
 
-URI_x86_64_v2_python3-pretend = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pretend-1.0.9-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pretend;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pretend}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pretend-1.0.9-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pretend;unpack=0"
 SRC_URI[x86_64_v2_python3-pretend.sha256sum] = "bb6caa5fee68c779f505f7931a2ad4a0ee72a367a8b4299384f602bf9f8acf91"
 
-URI_aarch64_python3-pretend = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pretend-1.0.9-14.el10_0.noarch.rpm;name=aarch64_python3-pretend;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pretend}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pretend-1.0.9-14.el10_0.noarch.rpm;name=aarch64_python3-pretend;unpack=0"
 SRC_URI[aarch64_python3-pretend.sha256sum] = "3ca86d1212801f60bc86a766cc65b6c2e94fd453818b4bf433045fd0c38832ce"
 
 RDEPENDS:python3-pretend = " \

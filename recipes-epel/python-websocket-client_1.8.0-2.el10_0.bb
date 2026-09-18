@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-websocket-client \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-websocket-client-1.8.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-websocket-client-1.8.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4f3941d8a1b3343dc63ce8b43c07d8ba4376989c629ceba954ee49a75db8810d"
 
-URI_x86_64_v2_python3-websocket-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websocket-client-1.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websocket-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-websocket-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websocket-client-1.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websocket-client;unpack=0"
 SRC_URI[x86_64_v2_python3-websocket-client.sha256sum] = "691b85f6098946106becc04f6bba52686eed7d0764c1e2b4048933fe0d712bb7"
 
-URI_aarch64_python3-websocket-client = "${EPEL_MIRROR}/aarch64/Packages/p/python3-websocket-client-1.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-websocket-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-websocket-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-websocket-client-1.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-websocket-client;unpack=0"
 SRC_URI[aarch64_python3-websocket-client.sha256sum] = "54e9e5efe5bad1eccf3f0614a23002f0892dcdc78082447f417651724c0f74ea"
 
 RDEPENDS:python3-websocket-client = " \

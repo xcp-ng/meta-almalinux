@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tomlkit \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tomlkit-0.13.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tomlkit-0.13.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "862da55d5b947afccfae66fc180d30fab925dcc714e4f01f9252e3e243a705e3"
 
-URI_x86_64_v2_python3-tomlkit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tomlkit-0.13.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tomlkit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tomlkit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tomlkit-0.13.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tomlkit;unpack=0"
 SRC_URI[x86_64_v2_python3-tomlkit.sha256sum] = "f7ed0bb703e69851530d052f6c490f756d9d6f62ce0a63feebec889b7816eeaf"
 
-URI_aarch64_python3-tomlkit = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tomlkit-0.13.2-1.el10_0.noarch.rpm;name=aarch64_python3-tomlkit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tomlkit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tomlkit-0.13.2-1.el10_0.noarch.rpm;name=aarch64_python3-tomlkit;unpack=0"
 SRC_URI[aarch64_python3-tomlkit.sha256sum] = "853a7dec31adf83a33f03f4bc88a0fb14b3cf623464b0fcf7e1398d9b6462c28"
 
 RDEPENDS:python3-tomlkit = " \

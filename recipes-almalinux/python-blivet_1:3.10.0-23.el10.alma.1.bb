@@ -11,24 +11,19 @@ PACKAGES = " \
  python3-blivet \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-blivet-3.10.0-23.el10.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-blivet-3.10.0-23.el10.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb0f37796c4c682ec5fd4437366bc8a9228e711c9f683557041fc51e1cb2cebd"
 
-URI_x86_64_v2_blivet-data = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/blivet-data-3.10.0-23.el10.alma.1.noarch.rpm;name=x86_64_v2_blivet-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_blivet-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/blivet-data-3.10.0-23.el10.alma.1.noarch.rpm;name=x86_64_v2_blivet-data;unpack=0"
 SRC_URI[x86_64_v2_blivet-data.sha256sum] = "845d1b62f0a10a5144c00759beaf3aca7c3d41349c8ddaf4fe93436a4d01c9d3"
 
-URI_x86_64_v2_python3-blivet = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-blivet-3.10.0-23.el10.alma.1.noarch.rpm;name=x86_64_v2_python3-blivet;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-blivet}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-blivet-3.10.0-23.el10.alma.1.noarch.rpm;name=x86_64_v2_python3-blivet;unpack=0"
 SRC_URI[x86_64_v2_python3-blivet.sha256sum] = "8860a57f4199ef0babf72f2659d800d731e1a8a0fe759118a51013c6f37a3547"
 
-URI_aarch64_blivet-data = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/blivet-data-3.10.0-23.el10.alma.1.noarch.rpm;name=aarch64_blivet-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_blivet-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/blivet-data-3.10.0-23.el10.alma.1.noarch.rpm;name=aarch64_blivet-data;unpack=0"
 SRC_URI[aarch64_blivet-data.sha256sum] = "845d1b62f0a10a5144c00759beaf3aca7c3d41349c8ddaf4fe93436a4d01c9d3"
 
-URI_aarch64_python3-blivet = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-blivet-3.10.0-23.el10.alma.1.noarch.rpm;name=aarch64_python3-blivet;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-blivet}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-blivet-3.10.0-23.el10.alma.1.noarch.rpm;name=aarch64_python3-blivet;unpack=0"
 SRC_URI[aarch64_python3-blivet.sha256sum] = "8860a57f4199ef0babf72f2659d800d731e1a8a0fe759118a51013c6f37a3547"
 
 RDEPENDS:blivet-data = " \

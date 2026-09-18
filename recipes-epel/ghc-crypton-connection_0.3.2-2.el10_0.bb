@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-crypton-connection-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-crypton-connection-0.3.2-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-crypton-connection-0.3.2-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a7c7a74ef207470094a941c330a6d57e1db6f23fce74c43d21f810896b3955ad"
 
-URI_x86_64_v2_ghc-crypton-connection = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-connection}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-connection.sha256sum] = "80a2d0903a7c4f216e1c298fd6ac317e9d530d05eab46bf59289e4e47c9d3e2d"
 
-URI_x86_64_v2_ghc-crypton-connection-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-devel-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-connection-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-devel-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-connection-devel.sha256sum] = "4d6023deb8a0ad43f7644c0fd0bc158ac0bc166b5a1b43f7b522d74afa78138c"
 
-URI_x86_64_v2_ghc-crypton-connection-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-doc-0.3.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-crypton-connection-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-connection-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-doc-0.3.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-crypton-connection-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-connection-doc.sha256sum] = "9a0031ab0a44ae3323e1b778c530579ce7b8749205c01d8e8e0bf08f230c91a8"
 
-URI_x86_64_v2_ghc-crypton-connection-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-prof-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-connection-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-connection-prof-0.3.2-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-connection-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-connection-prof.sha256sum] = "31b9f90da1bbd4642b4eb7eecf50433cd50063d4bd46a321d32975655c912d05"
 
-URI_aarch64_ghc-crypton-connection = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-connection}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection;unpack=0"
 SRC_URI[aarch64_ghc-crypton-connection.sha256sum] = "a65c50bc3e3f76919eec232eea6d5646a7a8439da707db19a9462284c014691d"
 
-URI_aarch64_ghc-crypton-connection-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-devel-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-connection-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-devel-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection-devel;unpack=0"
 SRC_URI[aarch64_ghc-crypton-connection-devel.sha256sum] = "f659a11d5e406abea267020bb96d8fc8d038ff47c3a91b6712355a26ed3141ae"
 
-URI_aarch64_ghc-crypton-connection-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-doc-0.3.2-2.el10_0.noarch.rpm;name=aarch64_ghc-crypton-connection-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-connection-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-doc-0.3.2-2.el10_0.noarch.rpm;name=aarch64_ghc-crypton-connection-doc;unpack=0"
 SRC_URI[aarch64_ghc-crypton-connection-doc.sha256sum] = "cccc828a8aa3be6c201d8feec1f39dd25d51140c81cb3c05a854d3d4a140c102"
 
-URI_aarch64_ghc-crypton-connection-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-prof-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-connection-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-connection-prof-0.3.2-2.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-connection-prof;unpack=0"
 SRC_URI[aarch64_ghc-crypton-connection-prof.sha256sum] = "f84c6b7eb04ecfa8fadc7c1c450bd67b81e103e21b19cb772afa77b673fec1a5"
 
 RDEPENDS:ghc-crypton-connection = " \

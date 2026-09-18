@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-mysqlclient \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mysqlclient-2.2.4-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mysqlclient-2.2.4-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c3affcf86636f89bc7f7d11ce3a1488329693f00e9bad1e1b5100a7ce6360b93"
 
-URI_x86_64_v2_python-mysqlclient-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-mysqlclient-doc-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-mysqlclient-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-mysqlclient-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-mysqlclient-doc-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python-mysqlclient-doc;unpack=0"
 SRC_URI[x86_64_v2_python-mysqlclient-doc.sha256sum] = "adbd202dbcb993d92b98caa17bc5748f8611322786598a7e5e517661749d8789"
 
-URI_x86_64_v2_python3-mysqlclient = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mysqlclient-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-mysqlclient;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mysqlclient}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mysqlclient-2.2.4-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-mysqlclient;unpack=0"
 SRC_URI[x86_64_v2_python3-mysqlclient.sha256sum] = "ec879ffc8d31941c11cd1f56479abed630beadbfdf055bffe52146fab4f19cfa"
 
-URI_aarch64_python-mysqlclient-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-mysqlclient-doc-2.2.4-5.el10_0.aarch64.rpm;name=aarch64_python-mysqlclient-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-mysqlclient-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-mysqlclient-doc-2.2.4-5.el10_0.aarch64.rpm;name=aarch64_python-mysqlclient-doc;unpack=0"
 SRC_URI[aarch64_python-mysqlclient-doc.sha256sum] = "b30e444c8096598b60eb952274e52f587751592373212b9dce39cd21c5e38880"
 
-URI_aarch64_python3-mysqlclient = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mysqlclient-2.2.4-5.el10_0.aarch64.rpm;name=aarch64_python3-mysqlclient;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mysqlclient}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mysqlclient-2.2.4-5.el10_0.aarch64.rpm;name=aarch64_python3-mysqlclient;unpack=0"
 SRC_URI[aarch64_python3-mysqlclient.sha256sum] = "1da296f08a03eee3847e9280165db5735a154e0605deb7af788c25ffb93685e1"
 
 RDEPENDS:python-mysqlclient-doc = " \

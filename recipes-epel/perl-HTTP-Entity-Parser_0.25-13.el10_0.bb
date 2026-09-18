@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-HTTP-Entity-Parser \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Entity-Parser-0.25-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Entity-Parser-0.25-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2cc902951d52cec2ed72ac379ca2b1c52ae025cb179a773b18802e5c752e0fb"
 
-URI_x86_64_v2_perl-HTTP-Entity-Parser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Entity-Parser-0.25-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Entity-Parser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Entity-Parser}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Entity-Parser-0.25-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Entity-Parser;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-Entity-Parser.sha256sum] = "631d644236e5cf2fec35f7c306704f188c0490ce59ab58b63542812d7bb5abe8"
 
-URI_aarch64_perl-HTTP-Entity-Parser = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Entity-Parser-0.25-13.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Entity-Parser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-Entity-Parser}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Entity-Parser-0.25-13.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Entity-Parser;unpack=0"
 SRC_URI[aarch64_perl-HTTP-Entity-Parser.sha256sum] = "a19c265dfd4fdee36c77c3e186477461c5e5351548629837a0378976ab0ebfd1"
 
 RDEPENDS:perl-HTTP-Entity-Parser = " \

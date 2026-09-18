@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-graphviz-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-graphviz-2999.20.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-graphviz-2999.20.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a13a3572572b055b6f6762856daaec6c433f02f8ff43fa204613ca14e93b4f32"
 
-URI_x86_64_v2_ghc-graphviz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-graphviz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz;unpack=0"
 SRC_URI[x86_64_v2_ghc-graphviz.sha256sum] = "08f7db0684f7010bd01ca72c4790a52d73a0a8ffa022bbe8816a27e30904da36"
 
-URI_x86_64_v2_ghc-graphviz-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-devel-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-graphviz-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-devel-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-graphviz-devel.sha256sum] = "93efc02840056e9d5a7d413f26199982f9923c6bbd40608bd8955677edcc1a97"
 
-URI_x86_64_v2_ghc-graphviz-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-doc-2999.20.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-graphviz-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-graphviz-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-doc-2999.20.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-graphviz-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-graphviz-doc.sha256sum] = "04fb353d763cffe96bab28a7c3b05c71bdc622fdd008b9d67494de89055cd04a"
 
-URI_x86_64_v2_ghc-graphviz-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-prof-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-graphviz-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-graphviz-prof-2999.20.2.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-graphviz-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-graphviz-prof.sha256sum] = "791d5ac888de334bce443f55f7fd3cc856904fdb634628fa73d539ef9e6f4747"
 
-URI_aarch64_ghc-graphviz = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-graphviz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz;unpack=0"
 SRC_URI[aarch64_ghc-graphviz.sha256sum] = "3b9d48d6d0d86ee2acf6c14cc57dd368de9005504ba09146a3bd725ededde87a"
 
-URI_aarch64_ghc-graphviz-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-devel-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-graphviz-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-devel-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz-devel;unpack=0"
 SRC_URI[aarch64_ghc-graphviz-devel.sha256sum] = "375b688751b732a83fdee1bbf0710a5f881a0b4b5833146784accd61a7788233"
 
-URI_aarch64_ghc-graphviz-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-doc-2999.20.2.0-1.el10_0.noarch.rpm;name=aarch64_ghc-graphviz-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-graphviz-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-doc-2999.20.2.0-1.el10_0.noarch.rpm;name=aarch64_ghc-graphviz-doc;unpack=0"
 SRC_URI[aarch64_ghc-graphviz-doc.sha256sum] = "7b3227101a83a0fbce9c8ca1d3c134878680989cb5c4860e0e4027342ce0ee42"
 
-URI_aarch64_ghc-graphviz-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-prof-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-graphviz-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-graphviz-prof-2999.20.2.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-graphviz-prof;unpack=0"
 SRC_URI[aarch64_ghc-graphviz-prof.sha256sum] = "1cc59dc786548420d4f04be6b17a2a42d13577213e955d4ae8a95fe33a1b4059"
 
 RDEPENDS:ghc-graphviz = " \

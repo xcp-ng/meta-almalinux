@@ -9,16 +9,13 @@ PACKAGES = " \
  fmf \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/fmf-1.7.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fmf-1.7.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3a135669bdf7bb94b6fd162251e9fd956fa6f0e043fcd2b6921d8e4756865ff8"
 
-URI_x86_64_v2_fmf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fmf-1.7.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_fmf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fmf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fmf-1.7.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_fmf;unpack=0"
 SRC_URI[x86_64_v2_fmf.sha256sum] = "8a4adc59c0d20bcff539328da44e68abdcc245aff424668fbf13fee5fb5668da"
 
-URI_aarch64_fmf = "${EPEL_MIRROR}/aarch64/Packages/f/fmf-1.7.0-1.el10_1.noarch.rpm;name=aarch64_fmf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fmf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fmf-1.7.0-1.el10_1.noarch.rpm;name=aarch64_fmf;unpack=0"
 SRC_URI[aarch64_fmf.sha256sum] = "4ebf4be926bb2a4b932e5188fa5a862323f2958dbaf6ef75fb7f9ebea5384b6b"
 
 RDEPENDS:fmf = " \

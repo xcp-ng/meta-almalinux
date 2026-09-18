@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-monad-logger-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-monad-logger-0.3.40-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-monad-logger-0.3.40-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "064907edced1b1bacefd0a89bc4c054bca680a085d342727cca529284f56c308"
 
-URI_x86_64_v2_ghc-monad-logger = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-monad-logger}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger;unpack=0"
 SRC_URI[x86_64_v2_ghc-monad-logger.sha256sum] = "11662ec58783aaf114dbc8a8079aa6af519f66b5267eb919e949a779b8fb6df1"
 
-URI_x86_64_v2_ghc-monad-logger-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-devel-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-monad-logger-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-devel-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-monad-logger-devel.sha256sum] = "a31d2ebead83a3fc6a9a4ba1820207bb55f59c4a9603ffd0c7a8d8ecd2289afe"
 
-URI_x86_64_v2_ghc-monad-logger-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-doc-0.3.40-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-monad-logger-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-monad-logger-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-doc-0.3.40-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-monad-logger-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-monad-logger-doc.sha256sum] = "00c496fb410cb597ea6fd8422eb2619a56a9da67cbb6bb68a4e25b7a7fb1364b"
 
-URI_x86_64_v2_ghc-monad-logger-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-prof-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-monad-logger-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-monad-logger-prof-0.3.40-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-monad-logger-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-monad-logger-prof.sha256sum] = "3f7ad3718260fcf88e2ad7e28f277316296e83a5a9f81bd6f03a3b014e0564d2"
 
-URI_aarch64_ghc-monad-logger = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-monad-logger}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger;unpack=0"
 SRC_URI[aarch64_ghc-monad-logger.sha256sum] = "107e30776adf71a2bf824ec5c78f47c7a2d88fa5bf3ff3c19669bce337bfaa3f"
 
-URI_aarch64_ghc-monad-logger-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-devel-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-monad-logger-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-devel-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger-devel;unpack=0"
 SRC_URI[aarch64_ghc-monad-logger-devel.sha256sum] = "8d8f805db0b75eeb1550eb92e38c9f5cbfac8ae2f75c8411b07019595827f190"
 
-URI_aarch64_ghc-monad-logger-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-doc-0.3.40-4.el10_0.noarch.rpm;name=aarch64_ghc-monad-logger-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-monad-logger-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-doc-0.3.40-4.el10_0.noarch.rpm;name=aarch64_ghc-monad-logger-doc;unpack=0"
 SRC_URI[aarch64_ghc-monad-logger-doc.sha256sum] = "f51773aaa5072effbcfeddaa82e8c092cb9faf4a012f611bd9c13d62059f6d82"
 
-URI_aarch64_ghc-monad-logger-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-prof-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-monad-logger-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-monad-logger-prof-0.3.40-4.el10_0.aarch64.rpm;name=aarch64_ghc-monad-logger-prof;unpack=0"
 SRC_URI[aarch64_ghc-monad-logger-prof.sha256sum] = "6740fbb49e493e80b81032a36f52196bea94a5d9b994e4a89addc8805bceb3eb"
 
 RDEPENDS:ghc-monad-logger = " \

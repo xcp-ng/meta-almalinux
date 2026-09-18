@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-littleutils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-littleutils-0.2.4-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-littleutils-0.2.4-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dd2c60b7108b9d3a6cca16109073bca0a6491ec1d85c732b568544fb63c463a1"
 
-URI_x86_64_v2_python3-littleutils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-littleutils-0.2.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-littleutils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-littleutils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-littleutils-0.2.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-littleutils;unpack=0"
 SRC_URI[x86_64_v2_python3-littleutils.sha256sum] = "17b7bf9238972c70428d5044ac2e57a28e8e0c8043f33e0162088606348c2070"
 
-URI_aarch64_python3-littleutils = "${EPEL_MIRROR}/aarch64/Packages/p/python3-littleutils-0.2.4-2.el10_0.noarch.rpm;name=aarch64_python3-littleutils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-littleutils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-littleutils-0.2.4-2.el10_0.noarch.rpm;name=aarch64_python3-littleutils;unpack=0"
 SRC_URI[aarch64_python3-littleutils.sha256sum] = "9f802399bf6948f59c1f8895abc321283843049856bed7f12f66ab615d077992"
 
 RDEPENDS:python3-littleutils = " \

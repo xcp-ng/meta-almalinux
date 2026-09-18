@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-podlinkcheck-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-podlinkcheck-15-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-podlinkcheck-15-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b7618c3fa63805ad3c1219e5f36d7377164f22583e788e43dbcd7507990b90db"
 
-URI_x86_64_v2_perl-podlinkcheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-podlinkcheck}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck;unpack=0"
 SRC_URI[x86_64_v2_perl-podlinkcheck.sha256sum] = "d22d09969d4531c47cde778a208059dbcd89a4219a94fb206ac9d39c8506683e"
 
-URI_x86_64_v2_perl-podlinkcheck-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-tests-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-podlinkcheck-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-podlinkcheck-tests-15-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-podlinkcheck-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-podlinkcheck-tests.sha256sum] = "29763820c6e66ec11f51ef95fb4c895c431eab8d6baec8e905d690fd87510d75"
 
-URI_aarch64_perl-podlinkcheck = "${EPEL_MIRROR}/aarch64/Packages/p/perl-podlinkcheck-15-27.el10_0.noarch.rpm;name=aarch64_perl-podlinkcheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-podlinkcheck}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-podlinkcheck-15-27.el10_0.noarch.rpm;name=aarch64_perl-podlinkcheck;unpack=0"
 SRC_URI[aarch64_perl-podlinkcheck.sha256sum] = "0c3b49f8c86a507737c1c8fbb7dba546122c26784416ff0710703219fcbdef2e"
 
-URI_aarch64_perl-podlinkcheck-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-podlinkcheck-tests-15-27.el10_0.noarch.rpm;name=aarch64_perl-podlinkcheck-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-podlinkcheck-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-podlinkcheck-tests-15-27.el10_0.noarch.rpm;name=aarch64_perl-podlinkcheck-tests;unpack=0"
 SRC_URI[aarch64_perl-podlinkcheck-tests.sha256sum] = "682e05b9d65eb72b629821480bd2e949f732c630239e6450a1dfc9f1295d9042"
 
 RDEPENDS:perl-podlinkcheck = " \

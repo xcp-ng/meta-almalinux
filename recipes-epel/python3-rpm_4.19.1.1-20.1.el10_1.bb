@@ -9,16 +9,13 @@ PACKAGES = " \
  python3.13-rpm \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python3-rpm-4.19.1.1-20.1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python3-rpm-4.19.1.1-20.1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4c215149bb2b99a73832f47b2a3838e3f3eb1b9e0479f10aa382e2e70021f725"
 
-URI_x86_64_v2_python3.13-rpm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-rpm-4.19.1.1-20.1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-rpm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-rpm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-rpm-4.19.1.1-20.1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-rpm;unpack=0"
 SRC_URI[x86_64_v2_python3.13-rpm.sha256sum] = "be799eba7ff57f3fe451a68a3fdc1dbec41d078d9beefea8e04bb0706b9d6466"
 
-URI_aarch64_python3.13-rpm = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-rpm-4.19.1.1-20.1.el10_1.aarch64.rpm;name=aarch64_python3.13-rpm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-rpm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-rpm-4.19.1.1-20.1.el10_1.aarch64.rpm;name=aarch64_python3.13-rpm;unpack=0"
 SRC_URI[aarch64_python3.13-rpm.sha256sum] = "dcc2e1e2afcb1e6d6cdee49af2fa5c955cb9f085a94f5cfe53e4d0ea6adfa3de"
 
 RDEPENDS:python3.13-rpm = " \

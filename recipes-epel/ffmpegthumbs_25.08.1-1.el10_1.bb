@@ -9,8 +9,7 @@ PACKAGES = " \
  ffmpegthumbs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/ffmpegthumbs-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/ffmpegthumbs-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c5c78738c6bcc787816ef33d4322386eae077e34d597fc4c12f5c4ecbb89197"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -25,12 +24,10 @@ SRC_URI[src.sha256sum] = "2c5c78738c6bcc787816ef33d4322386eae077e34d597fc4c12f5c
 # - ffmpegthumbs: libswscale.so.8()(64bit)
 # - ffmpegthumbs: libswscale.so.8(LIBSWSCALE_8)(64bit)
 
-URI_x86_64_v2_ffmpegthumbs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ffmpegthumbs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ffmpegthumbs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ffmpegthumbs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ffmpegthumbs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ffmpegthumbs;unpack=0"
 SRC_URI[x86_64_v2_ffmpegthumbs.sha256sum] = "bd740bd8483845c856ead44ea8a1c867b5834e373f3d26ba0076f13ae6364a4c"
 
-URI_aarch64_ffmpegthumbs = "${EPEL_MIRROR}/aarch64/Packages/f/ffmpegthumbs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ffmpegthumbs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ffmpegthumbs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/ffmpegthumbs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ffmpegthumbs;unpack=0"
 SRC_URI[aarch64_ffmpegthumbs.sha256sum] = "4915977ab8ab052efe96fdbcf1a781c20cd258fc42953dc33dfe0c3f1615bbea"
 
 RDEPENDS:ffmpegthumbs:x86_64_v2 = " \

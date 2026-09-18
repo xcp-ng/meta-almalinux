@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-PDF-API2-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-PDF-API2-2.047-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-PDF-API2-2.047-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c423f8902d690e98b78032fbc9a94ddf2d3609b96b0b426d8cbc35d08e000f90"
 
-URI_x86_64_v2_perl-PDF-API2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-API2-2.047-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-API2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PDF-API2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-API2-2.047-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-API2;unpack=0"
 SRC_URI[x86_64_v2_perl-PDF-API2.sha256sum] = "fe38531f9cd0dd4f4b068c3cc76515f3651fb38d60e74392ec20b59d4faa97d2"
 
-URI_x86_64_v2_perl-PDF-API2-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-API2-tests-2.047-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-API2-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PDF-API2-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-API2-tests-2.047-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-API2-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-PDF-API2-tests.sha256sum] = "c3ef79394e5cef72f5cde14bdd6d3888c5344ae21c409708f2d07e22e74d6607"
 
-URI_aarch64_perl-PDF-API2 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-API2-2.047-3.el10_1.noarch.rpm;name=aarch64_perl-PDF-API2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PDF-API2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-API2-2.047-3.el10_1.noarch.rpm;name=aarch64_perl-PDF-API2;unpack=0"
 SRC_URI[aarch64_perl-PDF-API2.sha256sum] = "cabdb09945efc7866687da96f242ba783ea2465b975b0f018611bf13f4ea1308"
 
-URI_aarch64_perl-PDF-API2-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-API2-tests-2.047-3.el10_1.noarch.rpm;name=aarch64_perl-PDF-API2-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PDF-API2-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-API2-tests-2.047-3.el10_1.noarch.rpm;name=aarch64_perl-PDF-API2-tests;unpack=0"
 SRC_URI[aarch64_perl-PDF-API2-tests.sha256sum] = "9c3ff0830aee0bd0445f6962fdc5f53cae3d84164b0f27b79820505b48d15683"
 
 RDEPENDS:perl-PDF-API2 = " \

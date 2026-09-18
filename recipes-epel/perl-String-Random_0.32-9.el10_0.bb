@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-String-Random \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-String-Random-0.32-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-String-Random-0.32-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "337b14fb055b9f0a98e9c3e0d70bfded81b4be1eb5d689c8d5d3f72e60405e84"
 
-URI_x86_64_v2_perl-String-Random = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Random-0.32-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Random;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-String-Random}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Random-0.32-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Random;unpack=0"
 SRC_URI[x86_64_v2_perl-String-Random.sha256sum] = "5b51a3feaf0db6d93b75089df67be2304278a50a84d66872bbfc66487b16bb56"
 
-URI_aarch64_perl-String-Random = "${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Random-0.32-9.el10_0.noarch.rpm;name=aarch64_perl-String-Random;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-String-Random}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Random-0.32-9.el10_0.noarch.rpm;name=aarch64_perl-String-Random;unpack=0"
 SRC_URI[aarch64_perl-String-Random.sha256sum] = "8f0a46f64d705a2e5b569f48fff476654b30a509ee25631c22e9dbcc845d7daa"
 
 RDEPENDS:perl-String-Random = " \

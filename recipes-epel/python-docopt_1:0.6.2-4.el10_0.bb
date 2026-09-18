@@ -10,16 +10,13 @@ PACKAGES = " \
  python3-docopt \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-docopt-0.6.2-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-docopt-0.6.2-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "112deda7e7471c4e3b286411c067415859b90bb4c997fa4caa2fe3bd1a33b41f"
 
-URI_x86_64_v2_python3-docopt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-docopt-0.6.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-docopt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-docopt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-docopt-0.6.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-docopt;unpack=0"
 SRC_URI[x86_64_v2_python3-docopt.sha256sum] = "81708e8a30bbfe1a8c96429f271f4c55dc0fc9af5bb2776b1d0e16643c9a94d9"
 
-URI_aarch64_python3-docopt = "${EPEL_MIRROR}/aarch64/Packages/p/python3-docopt-0.6.2-4.el10_0.noarch.rpm;name=aarch64_python3-docopt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-docopt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-docopt-0.6.2-4.el10_0.noarch.rpm;name=aarch64_python3-docopt;unpack=0"
 SRC_URI[aarch64_python3-docopt.sha256sum] = "8309e6fdd4c73329aecece57507f295beaa9a9e57f99494012f32339c0040cb8"
 
 RDEPENDS:python3-docopt = " \

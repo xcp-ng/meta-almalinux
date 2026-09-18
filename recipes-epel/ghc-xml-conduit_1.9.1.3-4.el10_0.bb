@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-xml-conduit-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-xml-conduit-1.9.1.3-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-xml-conduit-1.9.1.3-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0269fd5f10767498bda797ed56cea14cae1cfbef15aabf42dd5e8e406d7f6248"
 
-URI_x86_64_v2_ghc-xml-conduit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-xml-conduit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit;unpack=0"
 SRC_URI[x86_64_v2_ghc-xml-conduit.sha256sum] = "2672490db1b400d6a937c936ba7c1e4896d82784be75ad96566d242e1f613773"
 
-URI_x86_64_v2_ghc-xml-conduit-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-devel-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-xml-conduit-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-devel-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-xml-conduit-devel.sha256sum] = "c9caf1283e4584c2c769822521842d58bc86574dd1739ffd16c30346581c8d12"
 
-URI_x86_64_v2_ghc-xml-conduit-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-doc-1.9.1.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-xml-conduit-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-xml-conduit-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-doc-1.9.1.3-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-xml-conduit-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-xml-conduit-doc.sha256sum] = "968021aed52d8205197bfec48cca23448e2af23a78cb6a8387036a94f3cb09ac"
 
-URI_x86_64_v2_ghc-xml-conduit-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-prof-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-xml-conduit-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-xml-conduit-prof-1.9.1.3-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-xml-conduit-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-xml-conduit-prof.sha256sum] = "37bb98fef8dac6b34dc4962121b669efebc50faa35afae67c118262bedea362e"
 
-URI_aarch64_ghc-xml-conduit = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-xml-conduit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit;unpack=0"
 SRC_URI[aarch64_ghc-xml-conduit.sha256sum] = "31e3964a00cfb91ea787a0207004482cf46a263dbbafb3b937f8980ec747eb00"
 
-URI_aarch64_ghc-xml-conduit-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-devel-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-xml-conduit-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-devel-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit-devel;unpack=0"
 SRC_URI[aarch64_ghc-xml-conduit-devel.sha256sum] = "1bcd4f96a65cbb944d34e98a41e34b453c77be0e9a03ab9f3292b3ab7d7be402"
 
-URI_aarch64_ghc-xml-conduit-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-doc-1.9.1.3-4.el10_0.noarch.rpm;name=aarch64_ghc-xml-conduit-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-xml-conduit-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-doc-1.9.1.3-4.el10_0.noarch.rpm;name=aarch64_ghc-xml-conduit-doc;unpack=0"
 SRC_URI[aarch64_ghc-xml-conduit-doc.sha256sum] = "f567914a450972c2b56edb36d926e22bd42cdc20309e946f822a3421a0535775"
 
-URI_aarch64_ghc-xml-conduit-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-prof-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-xml-conduit-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-xml-conduit-prof-1.9.1.3-4.el10_0.aarch64.rpm;name=aarch64_ghc-xml-conduit-prof;unpack=0"
 SRC_URI[aarch64_ghc-xml-conduit-prof.sha256sum] = "30f8e762fadc51427d0258d5f8aa3fb5287917df3ccd7ab91bb9c4a66971dfea"
 
 RDEPENDS:ghc-xml-conduit = " \

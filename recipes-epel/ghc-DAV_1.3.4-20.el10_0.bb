@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-DAV-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-DAV-1.3.4-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-DAV-1.3.4-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e1d1758898df86be688f07dbab8657edfc2a9dc27635860ed8cd251cd11e5942"
 
-URI_x86_64_v2_ghc-DAV = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-DAV}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV;unpack=0"
 SRC_URI[x86_64_v2_ghc-DAV.sha256sum] = "c5dd2441d9218c36cbbc572e6b23740f8a2af69455af20bf932326000eb4d461"
 
-URI_x86_64_v2_ghc-DAV-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-devel-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-DAV-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-devel-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-DAV-devel.sha256sum] = "37217e230690795e5f1d9ff287aa3ef63f7fe2483b75bb7c8171c20c9af4d658"
 
-URI_x86_64_v2_ghc-DAV-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-doc-1.3.4-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-DAV-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-DAV-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-doc-1.3.4-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-DAV-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-DAV-doc.sha256sum] = "e834a8150c9e14f84003cba1d5315e9dadfd9611b16eb1c623400cb6b31f2790"
 
-URI_x86_64_v2_ghc-DAV-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-prof-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-DAV-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-DAV-prof-1.3.4-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-DAV-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-DAV-prof.sha256sum] = "7998dcdadcbd6416bad6eb44e65e436c832718e240221d81bb3725ed702833f6"
 
-URI_aarch64_ghc-DAV = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-DAV}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV;unpack=0"
 SRC_URI[aarch64_ghc-DAV.sha256sum] = "6abf64f8ce554761b9215a6ec3d1dbffc43e18ec0fa7ae2b38ea84daa62ec5e3"
 
-URI_aarch64_ghc-DAV-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-devel-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-DAV-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-devel-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV-devel;unpack=0"
 SRC_URI[aarch64_ghc-DAV-devel.sha256sum] = "69f546cdc36860906ff5529a310f16692b02396037a503bd9e1894bd82343f73"
 
-URI_aarch64_ghc-DAV-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-doc-1.3.4-20.el10_0.noarch.rpm;name=aarch64_ghc-DAV-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-DAV-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-doc-1.3.4-20.el10_0.noarch.rpm;name=aarch64_ghc-DAV-doc;unpack=0"
 SRC_URI[aarch64_ghc-DAV-doc.sha256sum] = "517bd4cdee827d316d0c3a48c4e0353a646c921647f24b7fe5536a4aee3e6c30"
 
-URI_aarch64_ghc-DAV-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-prof-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-DAV-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-DAV-prof-1.3.4-20.el10_0.aarch64.rpm;name=aarch64_ghc-DAV-prof;unpack=0"
 SRC_URI[aarch64_ghc-DAV-prof.sha256sum] = "6780b75faf1cf26fad93377df7ac4712305761533f63c7cca351ad9b0dbaff1e"
 
 RDEPENDS:ghc-DAV = " \

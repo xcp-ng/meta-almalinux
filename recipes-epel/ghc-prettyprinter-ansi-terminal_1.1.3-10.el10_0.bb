@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-prettyprinter-ansi-terminal-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d56573595894ee5f22f8696149c5471b2a029c39317d5142c161c0495619ac9d"
 
-URI_x86_64_v2_ghc-prettyprinter-ansi-terminal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-prettyprinter-ansi-terminal}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal;unpack=0"
 SRC_URI[x86_64_v2_ghc-prettyprinter-ansi-terminal.sha256sum] = "e59d8846db8f978dd7056948494cb2b5f5140d8f4544e321e03950a9b5cba51c"
 
-URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-devel-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-devel-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-prettyprinter-ansi-terminal-devel.sha256sum] = "aafe2754ad2607e5fd8595b9c11604a37ab87d302d5a13392651ad6ecce61f08"
 
-URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-doc-1.1.3-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-doc-1.1.3-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-prettyprinter-ansi-terminal-doc.sha256sum] = "eeeee654e467dd9563df1ca37c509f875427b1b2377933b648abfcc3a098d927"
 
-URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-prof-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-prettyprinter-ansi-terminal-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-prettyprinter-ansi-terminal-prof-1.1.3-10.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-prettyprinter-ansi-terminal-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-prettyprinter-ansi-terminal-prof.sha256sum] = "ddd5c519b34ab7586c23804f726b360bb4a139c8b0e98277b88f40031fc812f9"
 
-URI_aarch64_ghc-prettyprinter-ansi-terminal = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-prettyprinter-ansi-terminal}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal;unpack=0"
 SRC_URI[aarch64_ghc-prettyprinter-ansi-terminal.sha256sum] = "1ffd6d9b7c7d7c6303d3ccad98a166d89bfa37ff7e628f335ab493c28427fa86"
 
-URI_aarch64_ghc-prettyprinter-ansi-terminal-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-devel-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-prettyprinter-ansi-terminal-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-devel-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-devel;unpack=0"
 SRC_URI[aarch64_ghc-prettyprinter-ansi-terminal-devel.sha256sum] = "f92a83d3909c3ed137459d9395c83721cb0ad5866a400e2bf333409426aa71e3"
 
-URI_aarch64_ghc-prettyprinter-ansi-terminal-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-doc-1.1.3-10.el10_0.noarch.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-prettyprinter-ansi-terminal-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-doc-1.1.3-10.el10_0.noarch.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-doc;unpack=0"
 SRC_URI[aarch64_ghc-prettyprinter-ansi-terminal-doc.sha256sum] = "ca1a43cd71d3c81a961ee93e860aa6dd11b0de5e37a784ef664b5858a186db4c"
 
-URI_aarch64_ghc-prettyprinter-ansi-terminal-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-prof-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-prettyprinter-ansi-terminal-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-prettyprinter-ansi-terminal-prof-1.1.3-10.el10_0.aarch64.rpm;name=aarch64_ghc-prettyprinter-ansi-terminal-prof;unpack=0"
 SRC_URI[aarch64_ghc-prettyprinter-ansi-terminal-prof.sha256sum] = "db7f466d8a4d70626e670f84925c9006e6dbbcaeabcba8d39e1e70388b8131b1"
 
 RDEPENDS:ghc-prettyprinter-ansi-terminal = " \

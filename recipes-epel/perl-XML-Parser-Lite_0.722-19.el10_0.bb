@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-Parser-Lite \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8ea6a9e077570f78c0b7804dd5e8835cd33837479e904b7dfd9152f4544af845"
 
-URI_x86_64_v2_perl-XML-Parser-Lite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Parser-Lite-0.722-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Parser-Lite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Parser-Lite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Parser-Lite-0.722-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Parser-Lite;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Parser-Lite.sha256sum] = "478953011c8b622a83fa4bd6e83d3752403148af2701235a9c33b75704ef9bf4"
 
-URI_aarch64_perl-XML-Parser-Lite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.noarch.rpm;name=aarch64_perl-XML-Parser-Lite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Parser-Lite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Parser-Lite-0.722-19.el10_0.noarch.rpm;name=aarch64_perl-XML-Parser-Lite;unpack=0"
 SRC_URI[aarch64_perl-XML-Parser-Lite.sha256sum] = "96be2dc0cad2dfaa2e0a3d708d4823e04dad7185ea70b4a6ab18754cb9d1092c"
 
 RDEPENDS:perl-XML-Parser-Lite = " \

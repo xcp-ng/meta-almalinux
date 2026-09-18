@@ -10,24 +10,19 @@ PACKAGES = " \
  golang-etcd-bbolt-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-etcd-bbolt-1.3.7-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-etcd-bbolt-1.3.7-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "760d83ae5d3cd4dadc489d271d658da828cd2fd93f37f69e392eb598d7ebafa2"
 
-URI_x86_64_v2_golang-etcd-bbolt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-etcd-bbolt-1.3.7-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_golang-etcd-bbolt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-etcd-bbolt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-etcd-bbolt-1.3.7-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_golang-etcd-bbolt;unpack=0"
 SRC_URI[x86_64_v2_golang-etcd-bbolt.sha256sum] = "33523e8c220f727d8cf71209164a406be73cbf6346d6a1ce6c57f1c80bdec3a8"
 
-URI_x86_64_v2_golang-etcd-bbolt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-etcd-bbolt-devel-1.3.7-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-etcd-bbolt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-etcd-bbolt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-etcd-bbolt-devel-1.3.7-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-etcd-bbolt-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-etcd-bbolt-devel.sha256sum] = "08c794e12c73e928b9f69adde4ae4205beaf388f5c64438d55dd229a2b6f9799"
 
-URI_aarch64_golang-etcd-bbolt = "${EPEL_MIRROR}/aarch64/Packages/g/golang-etcd-bbolt-1.3.7-5.el10_0.aarch64.rpm;name=aarch64_golang-etcd-bbolt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-etcd-bbolt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-etcd-bbolt-1.3.7-5.el10_0.aarch64.rpm;name=aarch64_golang-etcd-bbolt;unpack=0"
 SRC_URI[aarch64_golang-etcd-bbolt.sha256sum] = "d7ef5e3a66c9d42eb41cdf9412a53431bbcaa541ba283556d670b20fc526f163"
 
-URI_aarch64_golang-etcd-bbolt-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-etcd-bbolt-devel-1.3.7-5.el10_0.noarch.rpm;name=aarch64_golang-etcd-bbolt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-etcd-bbolt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-etcd-bbolt-devel-1.3.7-5.el10_0.noarch.rpm;name=aarch64_golang-etcd-bbolt-devel;unpack=0"
 SRC_URI[aarch64_golang-etcd-bbolt-devel.sha256sum] = "d33b1ab454711ee0219c8095a250426ae012c2964b59cb2319745bed8455772b"
 
 RDEPENDS:golang-etcd-bbolt = " \

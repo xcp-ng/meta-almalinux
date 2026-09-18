@@ -13,16 +13,13 @@ PACKAGES:aarch64 = " \
  opencsd-devel \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/opencsd-1.4.1-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/opencsd-1.4.1-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bea9c58415be95b131e487d04b745788f057a2fc1c8bbd9dc3638cbb478e6c66"
 
-URI_aarch64_opencsd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opencsd-1.4.1-4.el10.aarch64.rpm;name=aarch64_opencsd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_opencsd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/opencsd-1.4.1-4.el10.aarch64.rpm;name=aarch64_opencsd;unpack=0"
 SRC_URI[aarch64_opencsd.sha256sum] = "aced47a40a7369853adba4bc3690ec671970f296dbefbdf0af3cbbac583227c9"
 
-URI_aarch64_opencsd-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/opencsd-devel-1.4.1-4.el10.aarch64.rpm;name=aarch64_opencsd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_opencsd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/opencsd-devel-1.4.1-4.el10.aarch64.rpm;name=aarch64_opencsd-devel;unpack=0"
 SRC_URI[aarch64_opencsd-devel.sha256sum] = "4e8848bf3c0ff83f5f4bad56858eb4cfa108fbe67b1c3946775dffbcbedacc02"
 
 RDEPENDS:opencsd = " \

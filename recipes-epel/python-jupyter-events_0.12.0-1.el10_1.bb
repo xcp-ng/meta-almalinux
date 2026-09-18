@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-jupyter-events \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-events-0.12.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-events-0.12.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e6b132d0ebc3d5b25d3d367a87d7df9afe7ebac14f874aef299ec97644271729"
 
-URI_x86_64_v2_python3-jupyter-events = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-events-0.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-events;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jupyter-events}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-events-0.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-events;unpack=0"
 SRC_URI[x86_64_v2_python3-jupyter-events.sha256sum] = "2afdbec979f4ef1ae0b39e612d84b2800efabbb16806419e4b886869b6785a0c"
 
-URI_aarch64_python3-jupyter-events = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-events-0.12.0-1.el10_1.noarch.rpm;name=aarch64_python3-jupyter-events;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jupyter-events}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-events-0.12.0-1.el10_1.noarch.rpm;name=aarch64_python3-jupyter-events;unpack=0"
 SRC_URI[aarch64_python3-jupyter-events.sha256sum] = "7bcf676dd78eaef25cbb5f8b3fd6ff7d44f04fade8b8598ace2d5dc8ba44f770"
 
 RDEPENDS:python3-jupyter-events = " \

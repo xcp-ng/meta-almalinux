@@ -9,16 +9,13 @@ PACKAGES = " \
  uxplay \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/u/uxplay-1.69-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/u/uxplay-1.69-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4f0b39c843fe2c57b418c513cf2ed06c1c50f4f170b95ea2d324250b1b6cbb64"
 
-URI_x86_64_v2_uxplay = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/uxplay-1.69-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_uxplay;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_uxplay}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/uxplay-1.69-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_uxplay;unpack=0"
 SRC_URI[x86_64_v2_uxplay.sha256sum] = "77b2f65af87bef43743ac20a75df271d3e83062c068b8ab63b528cf7c48002f5"
 
-URI_aarch64_uxplay = "${EPEL_MIRROR}/aarch64/Packages/u/uxplay-1.69-1.el10_0.aarch64.rpm;name=aarch64_uxplay;unpack=0"
-SRC_URI:append = " ${URI_aarch64_uxplay}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/u/uxplay-1.69-1.el10_0.aarch64.rpm;name=aarch64_uxplay;unpack=0"
 SRC_URI[aarch64_uxplay.sha256sum] = "40ff1eeb12a612ce2e9679cee91109f3229d69623579dbb3a27be51c7da50c7b"
 
 RDEPENDS:uxplay = " \

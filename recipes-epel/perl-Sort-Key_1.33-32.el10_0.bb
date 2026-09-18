@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Sort-Key \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sort-Key-1.33-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sort-Key-1.33-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "878b90a158b6c65440b69598e85d976d67d56a00b2892cb39aad6a58e621a5a5"
 
-URI_x86_64_v2_perl-Sort-Key = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Key-1.33-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sort-Key;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sort-Key}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sort-Key-1.33-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sort-Key;unpack=0"
 SRC_URI[x86_64_v2_perl-Sort-Key.sha256sum] = "aeb3bc96b1c4a1fc75ac97921a08d9aec93fc6479c7a2a97eb7384a3b4aff515"
 
-URI_aarch64_perl-Sort-Key = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Key-1.33-32.el10_0.aarch64.rpm;name=aarch64_perl-Sort-Key;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sort-Key}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sort-Key-1.33-32.el10_0.aarch64.rpm;name=aarch64_perl-Sort-Key;unpack=0"
 SRC_URI[aarch64_perl-Sort-Key.sha256sum] = "4746405a6588047b4020536bc998c7269ebf85997f44bbf63e626069843391ec"
 
 RDEPENDS:perl-Sort-Key = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-rosdistro \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-rosdistro-1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rosdistro-1.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c1e4198f4f7355f4bbcdd6c64b0b53c3c78348e6bef73984fa656493f44ddcb1"
 
-URI_x86_64_v2_python-rosdistro-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-rosdistro-doc-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-rosdistro-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-rosdistro-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-rosdistro-doc-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-rosdistro-doc;unpack=0"
 SRC_URI[x86_64_v2_python-rosdistro-doc.sha256sum] = "338b6f92ab42ccb06859539e242803e4ac00567d67a5c59ed75b72ed5f60b7ec"
 
-URI_x86_64_v2_python3-rosdistro = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rosdistro-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rosdistro;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rosdistro}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rosdistro-1.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rosdistro;unpack=0"
 SRC_URI[x86_64_v2_python3-rosdistro.sha256sum] = "1f590849ea15f4738aff272994f240c215a223e1cb67215b5f4e0b2700d5a35c"
 
-URI_aarch64_python-rosdistro-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-rosdistro-doc-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python-rosdistro-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-rosdistro-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-rosdistro-doc-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python-rosdistro-doc;unpack=0"
 SRC_URI[aarch64_python-rosdistro-doc.sha256sum] = "478d8155efce9955d17390aa905039c8964de36f6b0b9f65331b5463cd0911de"
 
-URI_aarch64_python3-rosdistro = "${EPEL_MIRROR}/aarch64/Packages/p/python3-rosdistro-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-rosdistro;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rosdistro}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rosdistro-1.0.1-1.el10_0.noarch.rpm;name=aarch64_python3-rosdistro;unpack=0"
 SRC_URI[aarch64_python3-rosdistro.sha256sum] = "9f5fb1376ec479490def5f68534add513fb185c8e1e47b4b07126b3f880a4440"
 
 RDEPENDS:python-rosdistro-doc = " \

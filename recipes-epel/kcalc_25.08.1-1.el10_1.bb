@@ -9,16 +9,13 @@ PACKAGES = " \
  kcalc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kcalc-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kcalc-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4c4f5d3f0e0df62976d19d6c9be7b41cd77591f066858503aed3266612014e7d"
 
-URI_x86_64_v2_kcalc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kcalc-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kcalc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kcalc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kcalc-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kcalc;unpack=0"
 SRC_URI[x86_64_v2_kcalc.sha256sum] = "1280e333690e77488b04ebfe91877c09eec9711ddfec447b60cfbd7bae68c18c"
 
-URI_aarch64_kcalc = "${EPEL_MIRROR}/aarch64/Packages/k/kcalc-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kcalc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kcalc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kcalc-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kcalc;unpack=0"
 SRC_URI[aarch64_kcalc.sha256sum] = "1d922dfdc376cb3dced5dc7e622c54f75f85e6decaf4fc5c39e05b1413a2b934"
 
 RDEPENDS:kcalc = " \

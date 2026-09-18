@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-XML-Writer-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Writer-0.900-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Writer-0.900-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5623541a319d8acaf62caaa6d5ade3c2ce94b4b23a75880de8c32eda997bcdb9"
 
-URI_x86_64_v2_perl-XML-Writer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Writer-0.900-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Writer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Writer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Writer-0.900-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Writer;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Writer.sha256sum] = "b4c377c1a6ba7fd849a3bd369a5a0fa8e21ee7932ef44950446233f6db825669"
 
-URI_x86_64_v2_perl-XML-Writer-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Writer-tests-0.900-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Writer-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Writer-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Writer-tests-0.900-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Writer-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Writer-tests.sha256sum] = "9093825bc9f5ce8c39774c53e48c975157e9bd4b386fc8d760e9d99af5463fed"
 
-URI_aarch64_perl-XML-Writer = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Writer-0.900-15.el10_0.noarch.rpm;name=aarch64_perl-XML-Writer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Writer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Writer-0.900-15.el10_0.noarch.rpm;name=aarch64_perl-XML-Writer;unpack=0"
 SRC_URI[aarch64_perl-XML-Writer.sha256sum] = "19334bc9fcd069a1b05cf0df9cfdc0a67c391a3d3d5ec9689655a716de33aff7"
 
-URI_aarch64_perl-XML-Writer-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Writer-tests-0.900-15.el10_0.noarch.rpm;name=aarch64_perl-XML-Writer-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Writer-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Writer-tests-0.900-15.el10_0.noarch.rpm;name=aarch64_perl-XML-Writer-tests;unpack=0"
 SRC_URI[aarch64_perl-XML-Writer-tests.sha256sum] = "9c3b2f76413adb9f1c2a6c0e11fc9bfd72e14098376540558bbcad3bfe3fffaa"
 
 RDEPENDS:perl-XML-Writer = " \

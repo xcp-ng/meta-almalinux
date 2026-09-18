@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-xcffib \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-xcffib-1.5.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-xcffib-1.5.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "60e710cecfabec0ad238a2aa7a935ed637bd3b28a6910ac11709a1cc84b8e37a"
 
-URI_x86_64_v2_python3-xcffib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xcffib-1.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xcffib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-xcffib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xcffib-1.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xcffib;unpack=0"
 SRC_URI[x86_64_v2_python3-xcffib.sha256sum] = "6216f5fe7746c043f8c718153113adfe4f5863594c9bbd77b6bab66351a5d83f"
 
-URI_aarch64_python3-xcffib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-xcffib-1.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-xcffib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-xcffib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-xcffib-1.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-xcffib;unpack=0"
 SRC_URI[aarch64_python3-xcffib.sha256sum] = "90f1901b170d59dd39d6d8229f76f8b6c810e5e2beeff35a03fb5d4b1960712e"
 
 RDEPENDS:python3-xcffib = " \

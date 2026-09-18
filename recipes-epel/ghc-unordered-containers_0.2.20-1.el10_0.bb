@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-unordered-containers-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-unordered-containers-0.2.20-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-unordered-containers-0.2.20-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "85bcd97ab98b4ce627ebbac2596070ffb35e75f34eb78301b78dba4538d99323"
 
-URI_x86_64_v2_ghc-unordered-containers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unordered-containers}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers;unpack=0"
 SRC_URI[x86_64_v2_ghc-unordered-containers.sha256sum] = "dbe3b7f216e117a504672c68f0042171c50ef5b918fa17afc6ddd045d30e81d1"
 
-URI_x86_64_v2_ghc-unordered-containers-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-devel-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unordered-containers-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-devel-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-unordered-containers-devel.sha256sum] = "d14e7afb58dbb035a9961d9b6db4d02d0f4f854489241b312d647ed88a6808cf"
 
-URI_x86_64_v2_ghc-unordered-containers-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-doc-0.2.20-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unordered-containers-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unordered-containers-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-doc-0.2.20-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unordered-containers-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-unordered-containers-doc.sha256sum] = "1fb39acdd52ed7eff8fce0996f3e9e082a0407cbe089aab8b3ba31170d12675a"
 
-URI_x86_64_v2_ghc-unordered-containers-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-prof-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unordered-containers-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unordered-containers-prof-0.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unordered-containers-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-unordered-containers-prof.sha256sum] = "a57f56154fcd95e9e7fcae89cbbdaacdbc40796d78267e2582155217a2e579b4"
 
-URI_aarch64_ghc-unordered-containers = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unordered-containers}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers;unpack=0"
 SRC_URI[aarch64_ghc-unordered-containers.sha256sum] = "fba564b0cb1385afe28ed4c5c5095258e64ca6366f1d3fab051cd3bb44771ff2"
 
-URI_aarch64_ghc-unordered-containers-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-devel-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unordered-containers-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-devel-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers-devel;unpack=0"
 SRC_URI[aarch64_ghc-unordered-containers-devel.sha256sum] = "716b8762e1a835f7c5001107ea6bd173c6921057d9e68f9934dddac4449d6928"
 
-URI_aarch64_ghc-unordered-containers-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-doc-0.2.20-1.el10_0.noarch.rpm;name=aarch64_ghc-unordered-containers-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unordered-containers-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-doc-0.2.20-1.el10_0.noarch.rpm;name=aarch64_ghc-unordered-containers-doc;unpack=0"
 SRC_URI[aarch64_ghc-unordered-containers-doc.sha256sum] = "c9ea579fcb5e5d0c92f2abc59308d41e3321f90b3adfcfcfe64eae3e129cd188"
 
-URI_aarch64_ghc-unordered-containers-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-prof-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unordered-containers-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unordered-containers-prof-0.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-unordered-containers-prof;unpack=0"
 SRC_URI[aarch64_ghc-unordered-containers-prof.sha256sum] = "91987355e5db575dcc86241895ad8db8ce505dce8e79b827b30e7df2f2b5f0d9"
 
 RDEPENDS:ghc-unordered-containers = " \

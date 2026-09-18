@@ -9,16 +9,13 @@ PACKAGES = " \
  kwalletmanager5 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kwalletmanager5-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kwalletmanager5-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "276d8a9009af0ee9289cb360ffe85dfc593e4b7931cd1e481198e11a0ca6b182"
 
-URI_x86_64_v2_kwalletmanager5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwalletmanager5-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwalletmanager5;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwalletmanager5}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwalletmanager5-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwalletmanager5;unpack=0"
 SRC_URI[x86_64_v2_kwalletmanager5.sha256sum] = "64e63b61957f91de855209af0bec33e59cecbaa1913aeda10cc463abf398e262"
 
-URI_aarch64_kwalletmanager5 = "${EPEL_MIRROR}/aarch64/Packages/k/kwalletmanager5-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwalletmanager5;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwalletmanager5}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwalletmanager5-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwalletmanager5;unpack=0"
 SRC_URI[aarch64_kwalletmanager5.sha256sum] = "0af311b12d8572f51aad47e1e001c8b356c698afc8908e79c468bf11c1baad14"
 
 RDEPENDS:kwalletmanager5 = " \

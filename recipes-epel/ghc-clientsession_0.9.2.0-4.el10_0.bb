@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-clientsession-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-clientsession-0.9.2.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-clientsession-0.9.2.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d2126a71dad8416b2c06c1308fba61900b635a5600138292b85d0103ce0d5568"
 
-URI_x86_64_v2_ghc-clientsession = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-clientsession}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession;unpack=0"
 SRC_URI[x86_64_v2_ghc-clientsession.sha256sum] = "4d1af30e5d23f8b0d6d646996994fbb3c50086d098e94a4c0234b0f249242e00"
 
-URI_x86_64_v2_ghc-clientsession-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-devel-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-clientsession-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-devel-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-clientsession-devel.sha256sum] = "4c75c3173dd02b04ee839383f9dde1f706aab12484f8972e26481b8726ab0852"
 
-URI_x86_64_v2_ghc-clientsession-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-doc-0.9.2.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-clientsession-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-clientsession-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-doc-0.9.2.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-clientsession-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-clientsession-doc.sha256sum] = "129b35edb3ce01f25867623af67ac12e68fb1e743b80c8d1953939af0c5e56e7"
 
-URI_x86_64_v2_ghc-clientsession-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-prof-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-clientsession-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-clientsession-prof-0.9.2.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-clientsession-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-clientsession-prof.sha256sum] = "136c3086f1d76c9bf8189cd9214babbae3a5c65116eb8dda00c21696d7a89b06"
 
-URI_aarch64_ghc-clientsession = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-clientsession}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession;unpack=0"
 SRC_URI[aarch64_ghc-clientsession.sha256sum] = "ffab3464581bf31921c72cdbefe035865b75d1645a4f1f16504f9cf399a6d11a"
 
-URI_aarch64_ghc-clientsession-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-devel-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-clientsession-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-devel-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession-devel;unpack=0"
 SRC_URI[aarch64_ghc-clientsession-devel.sha256sum] = "84de8daf3d960e27faf186f9fca71a6ed80e821e50d126a6343b56f161203525"
 
-URI_aarch64_ghc-clientsession-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-doc-0.9.2.0-4.el10_0.noarch.rpm;name=aarch64_ghc-clientsession-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-clientsession-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-doc-0.9.2.0-4.el10_0.noarch.rpm;name=aarch64_ghc-clientsession-doc;unpack=0"
 SRC_URI[aarch64_ghc-clientsession-doc.sha256sum] = "9d26bdf64b06199c0e02b6d4e11541c05b963eff5afb861f90eadabc78d2d086"
 
-URI_aarch64_ghc-clientsession-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-prof-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-clientsession-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-clientsession-prof-0.9.2.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-clientsession-prof;unpack=0"
 SRC_URI[aarch64_ghc-clientsession-prof.sha256sum] = "11505309dc00f63cce83c6c2cc77a2dee4eea3a19c49377626d47cfa5965ef08"
 
 RDEPENDS:ghc-clientsession = " \

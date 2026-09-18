@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-webencodings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-webencodings-0.5.1-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-webencodings-0.5.1-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c5826a91d7f2c037843b78ed23372b897ce01d1afe9b1c55f88511d0334bcf2b"
 
-URI_x86_64_v2_python-webencodings-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-webencodings-doc-0.5.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-webencodings-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-webencodings-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-webencodings-doc-0.5.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-webencodings-doc;unpack=0"
 SRC_URI[x86_64_v2_python-webencodings-doc.sha256sum] = "a8f365b11ada5deaded7fef81b63aa1e5c8ebc7a52a3b15490160bbfb78be96c"
 
-URI_x86_64_v2_python3-webencodings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-webencodings-0.5.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-webencodings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-webencodings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-webencodings-0.5.1-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-webencodings;unpack=0"
 SRC_URI[x86_64_v2_python3-webencodings.sha256sum] = "b4e14addc93151511d725b4caedee339517e11f4223172dcdc2481a43701012e"
 
-URI_aarch64_python-webencodings-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-webencodings-doc-0.5.1-27.el10_0.noarch.rpm;name=aarch64_python-webencodings-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-webencodings-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-webencodings-doc-0.5.1-27.el10_0.noarch.rpm;name=aarch64_python-webencodings-doc;unpack=0"
 SRC_URI[aarch64_python-webencodings-doc.sha256sum] = "a03ccbf8607084e55d9ea95b7c116787e3f8e74acd801769ddf422a6354a9a24"
 
-URI_aarch64_python3-webencodings = "${EPEL_MIRROR}/aarch64/Packages/p/python3-webencodings-0.5.1-27.el10_0.noarch.rpm;name=aarch64_python3-webencodings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-webencodings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-webencodings-0.5.1-27.el10_0.noarch.rpm;name=aarch64_python3-webencodings;unpack=0"
 SRC_URI[aarch64_python3-webencodings.sha256sum] = "f3320cf72f63ba72df008befed34624ad829aee4d2cf07fcb8df674d0e3a55c8"
 
 RDEPENDS:python-webencodings-doc = " \

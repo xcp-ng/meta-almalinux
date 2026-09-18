@@ -16,72 +16,55 @@ PACKAGES = " \
  rust-winnow-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-winnow-0.7.15-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-winnow-0.7.15-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f9ec48f1c9eb8bc9f3eb988388c033ceb58a33c6e0d08b9b8b32494e83b8e610"
 
-URI_x86_64_v2_rust-winnow+alloc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+alloc-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+alloc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+alloc-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+alloc-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+alloc-devel.sha256sum] = "e2c2d99d9fb3ab4efe3ce3d8f1478c65e02decda204837fbd4bf853cb6268c39"
 
-URI_x86_64_v2_rust-winnow+debug-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+debug-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+debug-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+debug-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+debug-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+debug-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+debug-devel.sha256sum] = "d086487aa518ba727d5d57a2fb63e5274e6d59bd2abcb65f076415f3646b3784"
 
-URI_x86_64_v2_rust-winnow+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+default-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+default-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+default-devel.sha256sum] = "8aac84915f42cdc65a071953dadc13f54ea398c9379a05bb8dcb5b97ff5281aa"
 
-URI_x86_64_v2_rust-winnow+simd-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+simd-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+simd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+simd-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+simd-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+simd-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+simd-devel.sha256sum] = "6b8fbc401299b491398cd115b843ab6310db2604d816c22739fb2406ddcca642"
 
-URI_x86_64_v2_rust-winnow+std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+std-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+std-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+std-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+std-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+std-devel.sha256sum] = "4072297689f1bdfef5e46d73bb27b7262891ab6201a5476a84646bb957e9dfcb"
 
-URI_x86_64_v2_rust-winnow+unstable-doc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+unstable-doc-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+unstable-doc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+unstable-doc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+unstable-doc-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+unstable-doc-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+unstable-doc-devel.sha256sum] = "14bd6fbdcce99d3b52003fd3207d8f22ec5020417d06846fc0b324d03215dabd"
 
-URI_x86_64_v2_rust-winnow+unstable-recover-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+unstable-recover-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+unstable-recover-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow+unstable-recover-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow+unstable-recover-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow+unstable-recover-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow+unstable-recover-devel.sha256sum] = "dc4b4349a1e6e806735ca9e3f54f041ff3fb661bf0aa6573826c27ecee675672"
 
-URI_x86_64_v2_rust-winnow-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-winnow-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-winnow-devel-0.7.15-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-winnow-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-winnow-devel.sha256sum] = "cc6f871d42888ba7f5efa671a2b7038bf4be078240e32d4510cab89d7621604a"
 
-URI_aarch64_rust-winnow+alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+alloc-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+alloc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+alloc-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+alloc-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+alloc-devel.sha256sum] = "17a8e9b4b0cfa4c1a2ff8e0204cadf3dab6e350d44f5a999498095ca56df30f3"
 
-URI_aarch64_rust-winnow+debug-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+debug-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+debug-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+debug-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+debug-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+debug-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+debug-devel.sha256sum] = "a648e73143a68cec042e91952ad482a944fb5bd95034bb99a744a8987d5308df"
 
-URI_aarch64_rust-winnow+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+default-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+default-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+default-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+default-devel.sha256sum] = "4d7d9e5c40ec14a69b78f4455f8ad5b48ac8dbefcf28acc080317eaee2b6287e"
 
-URI_aarch64_rust-winnow+simd-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+simd-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+simd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+simd-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+simd-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+simd-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+simd-devel.sha256sum] = "72e855ea27717b710136e67f97c0ed139115ff35156af2dc55b794da8d8ad6d1"
 
-URI_aarch64_rust-winnow+std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+std-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+std-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+std-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+std-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+std-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+std-devel.sha256sum] = "e0a174939f6848113af72b154cecafbca4c84a80e82074aed22747a2833c12b3"
 
-URI_aarch64_rust-winnow+unstable-doc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+unstable-doc-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+unstable-doc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+unstable-doc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+unstable-doc-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+unstable-doc-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+unstable-doc-devel.sha256sum] = "8134a71bd30a89251535784c642a1503d4f131d9967aa9d0a47cfcada588cec5"
 
-URI_aarch64_rust-winnow+unstable-recover-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+unstable-recover-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+unstable-recover-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow+unstable-recover-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow+unstable-recover-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow+unstable-recover-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow+unstable-recover-devel.sha256sum] = "da1396b22aa069a2dc20fffc74b8453275b4144c06957178a24dfc33cb528c3c"
 
-URI_aarch64_rust-winnow-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-winnow-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-winnow-devel-0.7.15-1.el10_1.noarch.rpm;name=aarch64_rust-winnow-devel;unpack=0"
 SRC_URI[aarch64_rust-winnow-devel.sha256sum] = "c1b809f06f7d6b316eeb334d5d275051a8476f1edb8e51cd175d3fc0184f32c9"
 
 RDEPENDS:rust-winnow+alloc-devel = " \

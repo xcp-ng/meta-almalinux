@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pywizlight \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pywizlight-0.5.14-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pywizlight-0.5.14-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d2a7772063abe9f1e4d88b201152ad16ad049c9790950dd94c42a410cd50bdc3"
 
-URI_x86_64_v2_python3-pywizlight = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pywizlight-0.5.14-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pywizlight;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pywizlight}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pywizlight-0.5.14-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pywizlight;unpack=0"
 SRC_URI[x86_64_v2_python3-pywizlight.sha256sum] = "1377a10e1818d12c92ce0de4134ce0e6a202ba60c703cf7dd6575be9dcccb801"
 
-URI_aarch64_python3-pywizlight = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pywizlight-0.5.14-9.el10_0.noarch.rpm;name=aarch64_python3-pywizlight;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pywizlight}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pywizlight-0.5.14-9.el10_0.noarch.rpm;name=aarch64_python3-pywizlight;unpack=0"
 SRC_URI[aarch64_python3-pywizlight.sha256sum] = "97164e2769ae7331e38dd0bf986d04b439716e1125d8cef4770409a0465f1d5b"
 
 RDEPENDS:python3-pywizlight = " \

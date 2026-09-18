@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-language-docker-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-language-docker-12.1.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-language-docker-12.1.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4252a3f8aebf33b441997f088dc79f127f7d3079b51516df4263c4fa455bb864"
 
-URI_x86_64_v2_ghc-language-docker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-docker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-docker.sha256sum] = "9cb920ac302becd6ce91cc49f7d3ce888ab313113a77fcff949ec2f038c1c06b"
 
-URI_x86_64_v2_ghc-language-docker-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-devel-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-docker-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-devel-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-docker-devel.sha256sum] = "acea25da9b6f604125b9018d68f465b5a6c5ad04beb370c85e605b0d9e669ae7"
 
-URI_x86_64_v2_ghc-language-docker-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-doc-12.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-language-docker-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-docker-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-doc-12.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-language-docker-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-docker-doc.sha256sum] = "89828b6856144ef2b938f59222adadaf8e5d42b2bf727f83eea830c5b8b71412"
 
-URI_x86_64_v2_ghc-language-docker-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-prof-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-docker-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-docker-prof-12.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-docker-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-docker-prof.sha256sum] = "cb138516c36d2dfc0590dd00d2e63f194a053c6a9a4f04eab871ee9c1cbae621"
 
-URI_aarch64_ghc-language-docker = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-docker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker;unpack=0"
 SRC_URI[aarch64_ghc-language-docker.sha256sum] = "07575ef18112565a59e51d0e0c819d00bcd8893dbf634b914d3e1e9d49c86683"
 
-URI_aarch64_ghc-language-docker-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-devel-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-docker-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-devel-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker-devel;unpack=0"
 SRC_URI[aarch64_ghc-language-docker-devel.sha256sum] = "35c1310ca02764fda6eb992e705bbcfd05531bf7f80af64149181bf55d953709"
 
-URI_aarch64_ghc-language-docker-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-doc-12.1.0-1.el10_0.noarch.rpm;name=aarch64_ghc-language-docker-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-docker-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-doc-12.1.0-1.el10_0.noarch.rpm;name=aarch64_ghc-language-docker-doc;unpack=0"
 SRC_URI[aarch64_ghc-language-docker-doc.sha256sum] = "1479bd46b15575c28b44217210b968976255c0e2e8f0f3c6fdd9a32111fd0e9f"
 
-URI_aarch64_ghc-language-docker-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-prof-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-docker-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-docker-prof-12.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-language-docker-prof;unpack=0"
 SRC_URI[aarch64_ghc-language-docker-prof.sha256sum] = "464a66a04d1fb0d0fb0077d5f49167b28625e202dacc02fd5595c489b0f4c777"
 
 RDEPENDS:ghc-language-docker = " \

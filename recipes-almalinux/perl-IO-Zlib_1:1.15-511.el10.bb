@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-IO-Zlib \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Zlib-1.15-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Zlib-1.15-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6250f68470385f3efde449ec5430637fa2c508c74f1105c712e8b39153bd008a"
 
-URI_x86_64_v2_perl-IO-Zlib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Zlib-1.15-511.el10.noarch.rpm;name=x86_64_v2_perl-IO-Zlib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-IO-Zlib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Zlib-1.15-511.el10.noarch.rpm;name=x86_64_v2_perl-IO-Zlib;unpack=0"
 SRC_URI[x86_64_v2_perl-IO-Zlib.sha256sum] = "737006cd553813bd89a4aa7525c57f3b4eda977a41f7ea3d2e67c661251088c1"
 
-URI_aarch64_perl-IO-Zlib = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Zlib-1.15-511.el10.noarch.rpm;name=aarch64_perl-IO-Zlib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-IO-Zlib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Zlib-1.15-511.el10.noarch.rpm;name=aarch64_perl-IO-Zlib;unpack=0"
 SRC_URI[aarch64_perl-IO-Zlib.sha256sum] = "737006cd553813bd89a4aa7525c57f3b4eda977a41f7ea3d2e67c661251088c1"
 
 RDEPENDS:perl-IO-Zlib = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Net-LDAP \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b5c629178d65f421fc657db2dc43b4ddea4deadc83343767cb5d7fee5cc0e62c"
 
-URI_x86_64_v2_perl-Test-Net-LDAP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Net-LDAP-0.07-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Net-LDAP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Net-LDAP}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Net-LDAP-0.07-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Net-LDAP;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Net-LDAP.sha256sum] = "2f00ef3c94cd94a257bb8ea6978a7b50313d30e458ef401ccd159226a2373690"
 
-URI_aarch64_perl-Test-Net-LDAP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.noarch.rpm;name=aarch64_perl-Test-Net-LDAP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Net-LDAP}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Net-LDAP-0.07-14.el10_0.noarch.rpm;name=aarch64_perl-Test-Net-LDAP;unpack=0"
 SRC_URI[aarch64_perl-Test-Net-LDAP.sha256sum] = "1c9ea9afa9d315cae00ff5dad1ff1ead39a5490fdac1e0e5093215583420359c"
 
 RDEPENDS:perl-Test-Net-LDAP = " \

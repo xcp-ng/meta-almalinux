@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-SOAP-Lite \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-SOAP-Lite-1.27-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-SOAP-Lite-1.27-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e99d8bd593404941954cbee63c2bfb79eb8d9e959272b66f60961e49c0cb0a36"
 
-URI_x86_64_v2_perl-SOAP-Lite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-Lite-1.27-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-Lite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-Lite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-Lite-1.27-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-Lite;unpack=0"
 SRC_URI[x86_64_v2_perl-SOAP-Lite.sha256sum] = "aeefc7871a5e371fe7db96fe5a6a8e0908591f4366bc7074078e4ccd7c778010"
 
-URI_aarch64_perl-SOAP-Lite = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-Lite-1.27-25.el10_0.noarch.rpm;name=aarch64_perl-SOAP-Lite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SOAP-Lite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-Lite-1.27-25.el10_0.noarch.rpm;name=aarch64_perl-SOAP-Lite;unpack=0"
 SRC_URI[aarch64_perl-SOAP-Lite.sha256sum] = "e7c4083c55f9ff4831d7610213a7292e4f4dbb77606bf7d6bdf60267270939d5"
 
 RDEPENDS:perl-SOAP-Lite = " \

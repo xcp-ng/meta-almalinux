@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-CPANfile \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-CPANfile-1.1004-22.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-CPANfile-1.1004-22.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4e275f64950ea63efa4f28b672c34fb13933192680cac17752c5734c034f092d"
 
-URI_x86_64_v2_perl-Module-CPANfile = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-CPANfile-1.1004-22.el10.noarch.rpm;name=x86_64_v2_perl-Module-CPANfile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-CPANfile}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-CPANfile-1.1004-22.el10.noarch.rpm;name=x86_64_v2_perl-Module-CPANfile;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-CPANfile.sha256sum] = "3fbacc6ffc35c094cc0cdade121f312aa3d0d3fec398b98eb6ba33b77e8c905f"
 
-URI_aarch64_perl-Module-CPANfile = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-CPANfile-1.1004-22.el10.noarch.rpm;name=aarch64_perl-Module-CPANfile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-CPANfile}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-CPANfile-1.1004-22.el10.noarch.rpm;name=aarch64_perl-Module-CPANfile;unpack=0"
 SRC_URI[aarch64_perl-Module-CPANfile.sha256sum] = "3fbacc6ffc35c094cc0cdade121f312aa3d0d3fec398b98eb6ba33b77e8c905f"
 
 RDEPENDS:perl-Module-CPANfile = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-gdk-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gdk-3.0.29-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gdk-3.0.29-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "125baff95fc4b728bd290740bb1767647e4eaceed2bb39461d42b4120d17abd4"
 
-URI_x86_64_v2_ghc-gi-gdk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdk.sha256sum] = "cf1cf07eaa1b66aaeb52f5288a42572b836ab7b1b7c23a9de1e56dbf10f1d852"
 
-URI_x86_64_v2_ghc-gi-gdk-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-devel-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdk-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-devel-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdk-devel.sha256sum] = "7e2f4a965795bdfdb0356c41db01ce1e02613251d82491e45a4684287c615664"
 
-URI_x86_64_v2_ghc-gi-gdk-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-doc-3.0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gdk-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdk-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-doc-3.0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gdk-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdk-doc.sha256sum] = "ea3581f1a7200f473019274e309c3e00f3c62aa6673d44e68481a94a97bad099"
 
-URI_x86_64_v2_ghc-gi-gdk-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-prof-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdk-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdk-prof-3.0.29-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdk-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdk-prof.sha256sum] = "75f6984f149f036b7ed9faec40cc2173a58d3deeba6f335c92d1aa7c94f18a4b"
 
-URI_aarch64_ghc-gi-gdk = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdk.sha256sum] = "d174b74af50cd6502af5ea3bb9155646617c79295eae312b0dd80530791ec828"
 
-URI_aarch64_ghc-gi-gdk-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-devel-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdk-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-devel-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdk-devel.sha256sum] = "c973da5e3fc86838979d4366fd09e9586d6db7b4883b9138c3070f08a284a80d"
 
-URI_aarch64_ghc-gi-gdk-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-doc-3.0.29-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gdk-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdk-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-doc-3.0.29-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gdk-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdk-doc.sha256sum] = "618fe86cc2dfadc91027e54265604304ec9f7eae62e5e26d5f0d7dae0157947d"
 
-URI_aarch64_ghc-gi-gdk-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-prof-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdk-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdk-prof-3.0.29-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdk-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdk-prof.sha256sum] = "78f171efbd5e6f23e6147a3f453b93c1d5fcb055aff99a76b72f8bd6f270a885"
 
 RDEPENDS:ghc-gi-gdk = " \

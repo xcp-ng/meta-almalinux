@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-CPAN-Meta \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-CPAN-Meta-2.150010-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-CPAN-Meta-2.150010-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5b9705e76276cccf3d6a24367519d18261f1a17edfeabfae1e0cb0b6793496ec"
 
-URI_x86_64_v2_perl-CPAN-Meta = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-CPAN-Meta-2.150010-511.el10.noarch.rpm;name=x86_64_v2_perl-CPAN-Meta;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CPAN-Meta}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-CPAN-Meta-2.150010-511.el10.noarch.rpm;name=x86_64_v2_perl-CPAN-Meta;unpack=0"
 SRC_URI[x86_64_v2_perl-CPAN-Meta.sha256sum] = "c42daa47e93bbc7b6ca5c636178949ae4331ce3050d981c017ea27b4cbdb079c"
 
-URI_aarch64_perl-CPAN-Meta = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-CPAN-Meta-2.150010-511.el10.noarch.rpm;name=aarch64_perl-CPAN-Meta;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CPAN-Meta}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-CPAN-Meta-2.150010-511.el10.noarch.rpm;name=aarch64_perl-CPAN-Meta;unpack=0"
 SRC_URI[aarch64_perl-CPAN-Meta.sha256sum] = "c42daa47e93bbc7b6ca5c636178949ae4331ce3050d981c017ea27b4cbdb079c"
 
 RDEPENDS:perl-CPAN-Meta = " \

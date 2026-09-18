@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-hackage-security-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-hackage-security-0.6.2.4-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-hackage-security-0.6.2.4-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4e07e0df81c68fd1745554ec17d4c490f4578ade8e5ab5fc163f0942e1f174b2"
 
-URI_x86_64_v2_ghc-hackage-security = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hackage-security}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security;unpack=0"
 SRC_URI[x86_64_v2_ghc-hackage-security.sha256sum] = "a1ecdd64d8102455455441b61e7b4b79a8a2f6fe2c08401ee063257fc35a4e2b"
 
-URI_x86_64_v2_ghc-hackage-security-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-devel-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hackage-security-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-devel-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-hackage-security-devel.sha256sum] = "d5a432a9367d59874a3f47fac469f9207c913d245c63e7fbc3d1ab2df5a99047"
 
-URI_x86_64_v2_ghc-hackage-security-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-doc-0.6.2.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hackage-security-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hackage-security-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-doc-0.6.2.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hackage-security-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-hackage-security-doc.sha256sum] = "ae87bb00152f61c4d5f0601f66b13b87cddb7d64a7dea3fb11b985943dadda3e"
 
-URI_x86_64_v2_ghc-hackage-security-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-prof-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hackage-security-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hackage-security-prof-0.6.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hackage-security-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-hackage-security-prof.sha256sum] = "42d1ec5ec191da21d78ce6fd0c466d45a8e0c6ede0df7fce7863daf37d2cf2b0"
 
-URI_aarch64_ghc-hackage-security = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hackage-security}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security;unpack=0"
 SRC_URI[aarch64_ghc-hackage-security.sha256sum] = "e04d8426be321acceaa61956ce473f6eb264170a65ccc30e4f53ba5cf2dc72b8"
 
-URI_aarch64_ghc-hackage-security-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-devel-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hackage-security-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-devel-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security-devel;unpack=0"
 SRC_URI[aarch64_ghc-hackage-security-devel.sha256sum] = "590c2510ae626fef2ffec3368846ba2c0c7172f51dc57de541c7ae4d17cdfdc9"
 
-URI_aarch64_ghc-hackage-security-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-doc-0.6.2.4-2.el10_0.noarch.rpm;name=aarch64_ghc-hackage-security-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hackage-security-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-doc-0.6.2.4-2.el10_0.noarch.rpm;name=aarch64_ghc-hackage-security-doc;unpack=0"
 SRC_URI[aarch64_ghc-hackage-security-doc.sha256sum] = "f07e56dbbb363032d151a10b544cb7f92ddf09870a8e63e560b263356af50fd8"
 
-URI_aarch64_ghc-hackage-security-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-prof-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hackage-security-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hackage-security-prof-0.6.2.4-2.el10_0.aarch64.rpm;name=aarch64_ghc-hackage-security-prof;unpack=0"
 SRC_URI[aarch64_ghc-hackage-security-prof.sha256sum] = "a1b38d34fff92a177b09eecfbb9766dd86aad4d001f67dcd984908fe6802da3d"
 
 RDEPENDS:ghc-hackage-security = " \

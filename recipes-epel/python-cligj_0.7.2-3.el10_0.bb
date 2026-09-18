@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cligj \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cligj-0.7.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cligj-0.7.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3c2847010496e682a39b07c6260d697ba238ebb1a94d805665dc2d8d054458eb"
 
-URI_x86_64_v2_python3-cligj = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cligj-0.7.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cligj;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cligj}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cligj-0.7.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cligj;unpack=0"
 SRC_URI[x86_64_v2_python3-cligj.sha256sum] = "bf2fc4bff15d7b00a3073cbf9b7d64809f7fd13ee530128e15e959590afcd499"
 
-URI_aarch64_python3-cligj = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cligj-0.7.2-3.el10_0.noarch.rpm;name=aarch64_python3-cligj;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cligj}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cligj-0.7.2-3.el10_0.noarch.rpm;name=aarch64_python3-cligj;unpack=0"
 SRC_URI[aarch64_python3-cligj.sha256sum] = "3e31740f0d6e4e373b861a822586acc0ea857f2996f8c3121806f538b7e65c2e"
 
 RDEPENDS:python3-cligj = " \

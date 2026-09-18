@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Protocol-WebSocket \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Protocol-WebSocket-0.26-19.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Protocol-WebSocket-0.26-19.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "96e6806c5cdbe6fc6b006eb3d197ce81afe317690dfceff631f1ca289f6797bd"
 
-URI_x86_64_v2_perl-Protocol-WebSocket = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Protocol-WebSocket-0.26-19.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Protocol-WebSocket;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Protocol-WebSocket}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Protocol-WebSocket-0.26-19.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Protocol-WebSocket;unpack=0"
 SRC_URI[x86_64_v2_perl-Protocol-WebSocket.sha256sum] = "465cb6025b9ab7b2f600d200459e68e92a3a217932bcd8118e4bef07ac32433c"
 
-URI_aarch64_perl-Protocol-WebSocket = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Protocol-WebSocket-0.26-19.el10_1.noarch.rpm;name=aarch64_perl-Protocol-WebSocket;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Protocol-WebSocket}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Protocol-WebSocket-0.26-19.el10_1.noarch.rpm;name=aarch64_perl-Protocol-WebSocket;unpack=0"
 SRC_URI[aarch64_perl-Protocol-WebSocket.sha256sum] = "4510f586a96155ea31ad4a253376ce41d184d446f22e61f257595e5ab82ae906"
 
 RDEPENDS:perl-Protocol-WebSocket = " \

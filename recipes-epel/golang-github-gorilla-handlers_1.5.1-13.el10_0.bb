@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-gorilla-handlers-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-gorilla-handlers-1.5.1-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-gorilla-handlers-1.5.1-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "32b10af34de3b7bf436b7659de50ab7bd8c22125a603bbb4eb08e9b93b558279"
 
-URI_x86_64_v2_golang-github-gorilla-handlers-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gorilla-handlers-devel-1.5.1-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gorilla-handlers-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-gorilla-handlers-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gorilla-handlers-devel-1.5.1-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gorilla-handlers-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-gorilla-handlers-devel.sha256sum] = "fcc47df8067222f5720da66327759153200f9570decf06102127745f14a3eec0"
 
-URI_aarch64_golang-github-gorilla-handlers-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gorilla-handlers-devel-1.5.1-13.el10_0.noarch.rpm;name=aarch64_golang-github-gorilla-handlers-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-gorilla-handlers-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gorilla-handlers-devel-1.5.1-13.el10_0.noarch.rpm;name=aarch64_golang-github-gorilla-handlers-devel;unpack=0"
 SRC_URI[aarch64_golang-github-gorilla-handlers-devel.sha256sum] = "a322cc3777b4890fcb2a553b314c9af79ab4e8d171d891d47898cde312e66fec"
 
 RDEPENDS:golang-github-gorilla-handlers-devel = " \

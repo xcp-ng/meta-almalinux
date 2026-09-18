@@ -9,16 +9,13 @@ PACKAGES = " \
  autoconf \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/autoconf-2.71-13.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/autoconf-2.71-13.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ff656e20e1954313e194ea7239de6752613d22807778df795d8f465b84d60bb2"
 
-URI_x86_64_v2_autoconf = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/autoconf-2.71-13.el10.noarch.rpm;name=x86_64_v2_autoconf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_autoconf}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/autoconf-2.71-13.el10.noarch.rpm;name=x86_64_v2_autoconf;unpack=0"
 SRC_URI[x86_64_v2_autoconf.sha256sum] = "a601c794610b261b12bc87e4986ca8bb95693a4d28a4b1d22764226b5fc9a412"
 
-URI_aarch64_autoconf = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/autoconf-2.71-13.el10.noarch.rpm;name=aarch64_autoconf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_autoconf}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/autoconf-2.71-13.el10.noarch.rpm;name=aarch64_autoconf;unpack=0"
 SRC_URI[aarch64_autoconf.sha256sum] = "a601c794610b261b12bc87e4986ca8bb95693a4d28a4b1d22764226b5fc9a412"
 
 RDEPENDS:autoconf = " \

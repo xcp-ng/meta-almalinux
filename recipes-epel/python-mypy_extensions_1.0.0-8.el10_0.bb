@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mypy_extensions \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mypy_extensions-1.0.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mypy_extensions-1.0.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "99d2988b46530ce1394cf402b8192ba34eac901e73228ad27088fa82aee6d87b"
 
-URI_x86_64_v2_python3-mypy_extensions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mypy_extensions-1.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mypy_extensions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mypy_extensions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mypy_extensions-1.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mypy_extensions;unpack=0"
 SRC_URI[x86_64_v2_python3-mypy_extensions.sha256sum] = "ebffa4936d8ded7e302ad937b67758b12e443d6a59583899c9d8b29567497e85"
 
-URI_aarch64_python3-mypy_extensions = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mypy_extensions-1.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-mypy_extensions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mypy_extensions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mypy_extensions-1.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-mypy_extensions;unpack=0"
 SRC_URI[aarch64_python3-mypy_extensions.sha256sum] = "6676bfb29d3333c66d47e3c58a7ace2cc3f6469b900459eaee69ad985907a23b"
 
 RDEPENDS:python3-mypy_extensions = " \

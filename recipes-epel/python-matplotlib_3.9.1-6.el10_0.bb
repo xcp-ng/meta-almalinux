@@ -17,80 +17,61 @@ PACKAGES = " \
  python3-matplotlib-tk \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-matplotlib-3.9.1-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-matplotlib-3.9.1-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "998af7d2989c2cf4fdda6bf78aa80d222310ff9b66ba114ad5472fff4b86a7e2"
 
-URI_x86_64_v2_python3-matplotlib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib.sha256sum] = "6675a56f3427c114f3c8f11a5d77b8d21ac743a172475e8199c9e5766be79809"
 
-URI_x86_64_v2_python3-matplotlib-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-data}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-data.sha256sum] = "1f7dcf4e997531297992de5553d4365e63fa0d6e876ebb9beed29ce25784488e"
 
-URI_x86_64_v2_python3-matplotlib-data-fonts = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-fonts-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data-fonts;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-data-fonts}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-data-fonts-3.9.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-data-fonts;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-data-fonts.sha256sum] = "5611a648a405c263bf876dd2ed9f298e3980fefe97b8f96d19b9ee19e257387f"
 
-URI_x86_64_v2_python3-matplotlib-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-doc-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-doc-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-doc;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-doc.sha256sum] = "1b42903e1e41c2f8f2bb9203f23f71a1740c4c5fd13808c0f1906a470e978e49"
 
-URI_x86_64_v2_python3-matplotlib-gtk3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk3-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-gtk3}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk3-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk3;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-gtk3.sha256sum] = "870203d1c528216ba6908acd412d6f491777a31f7edd1b74f2268349926003ac"
 
-URI_x86_64_v2_python3-matplotlib-gtk4 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk4-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-gtk4}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-gtk4-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-gtk4;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-gtk4.sha256sum] = "2db1cccca9271694a0849725895958d73e21e6f077dbb4ea52d6ed23c1997038"
 
-URI_x86_64_v2_python3-matplotlib-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-qt6-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-qt6;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-qt6}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-qt6-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-qt6;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-qt6.sha256sum] = "459cfb489b6b7dca24f36ff9023126b628ed86db4a31cccc07cd5308ed11d471"
 
-URI_x86_64_v2_python3-matplotlib-test-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-test-data-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-test-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-test-data}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-test-data-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-test-data;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-test-data.sha256sum] = "34fb9384d5da8586198a56e439fd902815734606474ee73982c76ba9336fbbbf"
 
-URI_x86_64_v2_python3-matplotlib-tk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-tk-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-tk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-tk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-tk-3.9.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-matplotlib-tk;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-tk.sha256sum] = "c097bff77bbbc10595ad46b18b96bd0d00f6b5c79bd21d0fad448b391f99c483"
 
-URI_aarch64_python3-matplotlib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib;unpack=0"
 SRC_URI[aarch64_python3-matplotlib.sha256sum] = "e2b03fd357d79be781f9adfe54a66a0333f2a37a4a8e9bcf970762eca3973a3a"
 
-URI_aarch64_python3-matplotlib-data = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-data-3.9.1-6.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-data}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-data-3.9.1-6.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-data;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-data.sha256sum] = "88e678ce5df4f96b501c66aa3235b55aaf3eaf280f35bc9a34665e796c9e4053"
 
-URI_aarch64_python3-matplotlib-data-fonts = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-data-fonts-3.9.1-6.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-data-fonts;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-data-fonts}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-data-fonts-3.9.1-6.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-data-fonts;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-data-fonts.sha256sum] = "105290e0be69289fbeb0f1c44a2c7e548e9d674f5aa7e5cd638c7964d6108b2c"
 
-URI_aarch64_python3-matplotlib-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-doc-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-doc-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-doc;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-doc.sha256sum] = "36d487e0e8a90a1609943d25a8c9c0d7e1f3191af2dfa7b361afc7d41f7853c9"
 
-URI_aarch64_python3-matplotlib-gtk3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-gtk3-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-gtk3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-gtk3}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-gtk3-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-gtk3;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-gtk3.sha256sum] = "cd440da8ea358299d66dcd38f0531b4fc35af51e40aa243200b5a6f2ccb3c17a"
 
-URI_aarch64_python3-matplotlib-gtk4 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-gtk4-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-gtk4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-gtk4}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-gtk4-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-gtk4;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-gtk4.sha256sum] = "81a79735055ca3b3296d724c12bebac97c8e94e57603e32ae0ccdede9c22bbd1"
 
-URI_aarch64_python3-matplotlib-qt6 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-qt6-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-qt6;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-qt6}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-qt6-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-qt6;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-qt6.sha256sum] = "55324035cd4ab8354f6acc6a4b551bddb7a22fe33fdb997ffaae98134849c21d"
 
-URI_aarch64_python3-matplotlib-test-data = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-test-data-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-test-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-test-data}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-test-data-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-test-data;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-test-data.sha256sum] = "15d2358f5d3e97426ef140e9c190512faac3ff8bdb1475f463259efb39fde0b9"
 
-URI_aarch64_python3-matplotlib-tk = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-tk-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-tk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-tk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-tk-3.9.1-6.el10_0.aarch64.rpm;name=aarch64_python3-matplotlib-tk;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-tk.sha256sum] = "9a43228b0a65ad8aa76bba799e5d1f403333abbf25a7e538f129da5b3aa6bd63"
 
 RDEPENDS:python3-matplotlib = " \

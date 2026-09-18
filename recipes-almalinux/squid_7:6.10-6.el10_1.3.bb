@@ -10,16 +10,13 @@ PACKAGES = " \
  squid \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/squid-6.10-6.el10_1.3.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/squid-6.10-6.el10_1.3.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b8b18f6cf32dab05e6fc086c9b9cef1c378ffdec3d0e06b3bb3970e5dfbfd0d1"
 
-URI_x86_64_v2_squid = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/squid-6.10-6.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_squid;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_squid}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/squid-6.10-6.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_squid;unpack=0"
 SRC_URI[x86_64_v2_squid.sha256sum] = "592185c5b53b3c301d2d62d3e8c46e9ad0dee9e1272b0a47e0ac2606e27e9f6f"
 
-URI_aarch64_squid = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/squid-6.10-6.el10_1.3.aarch64.rpm;name=aarch64_squid;unpack=0"
-SRC_URI:append = " ${URI_aarch64_squid}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/squid-6.10-6.el10_1.3.aarch64.rpm;name=aarch64_squid;unpack=0"
 SRC_URI[aarch64_squid.sha256sum] = "e6db2443bc8fa4a77a5c9f52c20bd61fd9e9ffe65a4ad3540ba11cb9dfed247b"
 
 RDEPENDS:squid = " \

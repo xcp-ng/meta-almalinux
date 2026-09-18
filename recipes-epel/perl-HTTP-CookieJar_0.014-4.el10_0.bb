@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-HTTP-CookieJar \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-CookieJar-0.014-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-CookieJar-0.014-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "27b83b80aa60fb44189f700e9fc6174da437a7610f54b6a9dd0235acaf91b1ae"
 
-URI_x86_64_v2_perl-HTTP-CookieJar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-CookieJar-0.014-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-CookieJar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-CookieJar}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-CookieJar-0.014-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-CookieJar;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-CookieJar.sha256sum] = "4785e0959437174619d0228eceac1bd5d82faee36c52ff25c5eb03c2e254b0e8"
 
-URI_aarch64_perl-HTTP-CookieJar = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-CookieJar-0.014-4.el10_0.noarch.rpm;name=aarch64_perl-HTTP-CookieJar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-CookieJar}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-CookieJar-0.014-4.el10_0.noarch.rpm;name=aarch64_perl-HTTP-CookieJar;unpack=0"
 SRC_URI[aarch64_perl-HTTP-CookieJar.sha256sum] = "6d61f3893ec2dfef98947f85fc1d83eb18d162bf4bf93011c0bf99a112187f3b"
 
 RDEPENDS:perl-HTTP-CookieJar = " \

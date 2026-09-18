@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-CGI-Compile \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-CGI-Compile-0.26-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-CGI-Compile-0.26-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "800b75d7342183886fb9c5ce6a15d0c14766d1cfbb6c19d834ac960f44aa9117"
 
-URI_x86_64_v2_perl-CGI-Compile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CGI-Compile-0.26-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CGI-Compile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CGI-Compile}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CGI-Compile-0.26-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CGI-Compile;unpack=0"
 SRC_URI[x86_64_v2_perl-CGI-Compile.sha256sum] = "4f4d59c356e510bd6d4bce50036db38153d33592a8679289433c2a56eeb2ee61"
 
-URI_aarch64_perl-CGI-Compile = "${EPEL_MIRROR}/aarch64/Packages/p/perl-CGI-Compile-0.26-6.el10_0.noarch.rpm;name=aarch64_perl-CGI-Compile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CGI-Compile}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-CGI-Compile-0.26-6.el10_0.noarch.rpm;name=aarch64_perl-CGI-Compile;unpack=0"
 SRC_URI[aarch64_perl-CGI-Compile.sha256sum] = "b6bc5c45f30eb5f0b6b89359b667af7ee4228cc560214b27ea6b88c092af9f2d"
 
 RDEPENDS:perl-CGI-Compile = " \

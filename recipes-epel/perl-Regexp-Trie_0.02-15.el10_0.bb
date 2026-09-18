@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Regexp-Trie \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Regexp-Trie-0.02-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Regexp-Trie-0.02-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3cdd028647211afca3e90a29387fd2be9d3f1e82b5bc49e6304ade102c0286f8"
 
-URI_x86_64_v2_perl-Regexp-Trie = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Regexp-Trie-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Regexp-Trie;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Regexp-Trie}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Regexp-Trie-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Regexp-Trie;unpack=0"
 SRC_URI[x86_64_v2_perl-Regexp-Trie.sha256sum] = "d066b547f05c8f016d62003890b645c7689429b0ba87694e85fc2225b7624464"
 
-URI_aarch64_perl-Regexp-Trie = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Regexp-Trie-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Regexp-Trie;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Regexp-Trie}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Regexp-Trie-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Regexp-Trie;unpack=0"
 SRC_URI[aarch64_perl-Regexp-Trie.sha256sum] = "d8003ae512a3e28b121f8a25379c45e71935648d943c47adbb25444807bf6800"
 
 RDEPENDS:perl-Regexp-Trie = " \

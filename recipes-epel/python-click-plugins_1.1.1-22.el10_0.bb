@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-click-plugins \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-click-plugins-1.1.1-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-click-plugins-1.1.1-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "90b04eda43912108253e6e43fddd1b94c3416798fc686d2ad1728bf9656d3102"
 
-URI_x86_64_v2_python3-click-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-click-plugins-1.1.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-click-plugins;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-click-plugins}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-click-plugins-1.1.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-click-plugins;unpack=0"
 SRC_URI[x86_64_v2_python3-click-plugins.sha256sum] = "bb25b2ac63389c34730f365684cb1febde93515bcaabaa0356716b4c34371060"
 
-URI_aarch64_python3-click-plugins = "${EPEL_MIRROR}/aarch64/Packages/p/python3-click-plugins-1.1.1-22.el10_0.noarch.rpm;name=aarch64_python3-click-plugins;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-click-plugins}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-click-plugins-1.1.1-22.el10_0.noarch.rpm;name=aarch64_python3-click-plugins;unpack=0"
 SRC_URI[aarch64_python3-click-plugins.sha256sum] = "ba88444634f43ca486ca5df3bd72e74a94500c8440ed8aa8c859f7590cbe0c57"
 
 RDEPENDS:python3-click-plugins = " \

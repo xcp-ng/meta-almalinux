@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-simple-prompt-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-simple-prompt-0.2.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-simple-prompt-0.2.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "202ff8cfe267c1470aa1f414e4d4f04911efcea53f7b3b843149b96b22ade369"
 
-URI_x86_64_v2_ghc-simple-prompt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-prompt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-prompt.sha256sum] = "21d0960c6a94b43502b9acf25c44c5f9e699d7be3f93957f1863b09688a5d479"
 
-URI_x86_64_v2_ghc-simple-prompt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-devel-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-prompt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-devel-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-prompt-devel.sha256sum] = "49b353dbdcdf39f5a861d824bf88416417fabaab5784a2384b9d439bd0054ccb"
 
-URI_x86_64_v2_ghc-simple-prompt-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-doc-0.2.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-simple-prompt-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-prompt-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-doc-0.2.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-simple-prompt-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-prompt-doc.sha256sum] = "2b420e01aa09b02ed9cd25eb8ea0c0b552e0bb8b4c5e3813797ed2b1c0ddbd38"
 
-URI_x86_64_v2_ghc-simple-prompt-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-prof-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-simple-prompt-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-simple-prompt-prof-0.2.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-simple-prompt-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-simple-prompt-prof.sha256sum] = "ea89aff3e8f77724416e7fa4bff6711bf6e8acc3ca63114d3a93c510d19fd45f"
 
-URI_aarch64_ghc-simple-prompt = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-prompt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt;unpack=0"
 SRC_URI[aarch64_ghc-simple-prompt.sha256sum] = "7d7c3f2a0e8a84f97938aa2701ccde351b94b7828755bf2e5e19eefeedcc93d9"
 
-URI_aarch64_ghc-simple-prompt-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-devel-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-prompt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-devel-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt-devel;unpack=0"
 SRC_URI[aarch64_ghc-simple-prompt-devel.sha256sum] = "1598655d0cd3a3d5c527f1bccb8068307f0e313af1e045513d6655df38a1a00c"
 
-URI_aarch64_ghc-simple-prompt-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-doc-0.2.3-1.el10_0.noarch.rpm;name=aarch64_ghc-simple-prompt-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-prompt-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-doc-0.2.3-1.el10_0.noarch.rpm;name=aarch64_ghc-simple-prompt-doc;unpack=0"
 SRC_URI[aarch64_ghc-simple-prompt-doc.sha256sum] = "39ffc3d1a8031891ab82e9e93a43f5721d90ee155b3d52771859aba53b6e92da"
 
-URI_aarch64_ghc-simple-prompt-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-prof-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-simple-prompt-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-simple-prompt-prof-0.2.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-simple-prompt-prof;unpack=0"
 SRC_URI[aarch64_ghc-simple-prompt-prof.sha256sum] = "fbd3f89c6eddebba7648273a7a4433080a68135508578fc8dabfacc3e2b3e4b2"
 
 RDEPENDS:ghc-simple-prompt = " \

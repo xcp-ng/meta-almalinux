@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-cargo-util-schemas-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-util-schemas-0.8.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cargo-util-schemas-0.8.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2e528d8a9c93d6d14145500a94556a21878cce80d86d019ef0c9c2e3bffc3732"
 
-URI_x86_64_v2_rust-cargo-util-schemas+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-util-schemas+default-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-util-schemas+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo-util-schemas+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-util-schemas+default-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-util-schemas+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo-util-schemas+default-devel.sha256sum] = "89ee49c007b65b60f76433c024dd9769dff41b898929b413943503268dfd2bcd"
 
-URI_x86_64_v2_rust-cargo-util-schemas-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-util-schemas-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-util-schemas-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cargo-util-schemas-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cargo-util-schemas-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cargo-util-schemas-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cargo-util-schemas-devel.sha256sum] = "234bdb5dbd1aa5bfe47e40e2e4c76782a803355ff3f80c5c9230bb094c102bc4"
 
-URI_aarch64_rust-cargo-util-schemas+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-util-schemas+default-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-util-schemas+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo-util-schemas+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-util-schemas+default-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-util-schemas+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo-util-schemas+default-devel.sha256sum] = "3d765deec278c5a1395b90edc344218a0e35bc9c8c199ea19841b44caa491413"
 
-URI_aarch64_rust-cargo-util-schemas-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-util-schemas-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-util-schemas-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cargo-util-schemas-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cargo-util-schemas-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-cargo-util-schemas-devel;unpack=0"
 SRC_URI[aarch64_rust-cargo-util-schemas-devel.sha256sum] = "58962b6334cffb59ece7e5afbde4973cd8d01094459a2456b90f963fc284f38b"
 
 RDEPENDS:rust-cargo-util-schemas+default-devel = " \

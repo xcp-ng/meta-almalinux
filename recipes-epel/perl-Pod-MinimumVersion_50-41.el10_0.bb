@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Pod-MinimumVersion-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-MinimumVersion-50-41.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-MinimumVersion-50-41.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0b6cac8c605fccfc2d1db731503b68920e83d76e0f4b0219e56bfab4cdc7e460"
 
-URI_x86_64_v2_perl-Pod-MinimumVersion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-MinimumVersion}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-MinimumVersion.sha256sum] = "1ac871a0753246adbeccb8ac7daa308fc283b1e6d68cee14e851baa3b35cbb4d"
 
-URI_x86_64_v2_perl-Pod-MinimumVersion-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-tests-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-MinimumVersion-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-MinimumVersion-tests-50-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-MinimumVersion-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-MinimumVersion-tests.sha256sum] = "466e0b1732a4dc6cc33a41b4179b51387712f753e66d9080f637d2a81aeda0c6"
 
-URI_aarch64_perl-Pod-MinimumVersion = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-MinimumVersion-50-41.el10_0.noarch.rpm;name=aarch64_perl-Pod-MinimumVersion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-MinimumVersion}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-MinimumVersion-50-41.el10_0.noarch.rpm;name=aarch64_perl-Pod-MinimumVersion;unpack=0"
 SRC_URI[aarch64_perl-Pod-MinimumVersion.sha256sum] = "e81fb5d549b3ecdc68a7b9784aed584a647dad1b64bba0fdf2522a8fe38ecba5"
 
-URI_aarch64_perl-Pod-MinimumVersion-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-MinimumVersion-tests-50-41.el10_0.noarch.rpm;name=aarch64_perl-Pod-MinimumVersion-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-MinimumVersion-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-MinimumVersion-tests-50-41.el10_0.noarch.rpm;name=aarch64_perl-Pod-MinimumVersion-tests;unpack=0"
 SRC_URI[aarch64_perl-Pod-MinimumVersion-tests.sha256sum] = "f394a61c7ac817e72176aac48a750565131dd917c1e1912cdc91d617e2961c30"
 
 RDEPENDS:perl-Pod-MinimumVersion = " \

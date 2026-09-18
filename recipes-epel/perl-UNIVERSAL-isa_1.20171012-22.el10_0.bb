@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-UNIVERSAL-isa \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-UNIVERSAL-isa-1.20171012-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-UNIVERSAL-isa-1.20171012-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c6f7f445347d630eb7e8ade5234ade529c25fc88a19717d4b2ff4b6a6d8dc317"
 
-URI_x86_64_v2_perl-UNIVERSAL-isa = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UNIVERSAL-isa-1.20171012-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UNIVERSAL-isa;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-UNIVERSAL-isa}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UNIVERSAL-isa-1.20171012-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UNIVERSAL-isa;unpack=0"
 SRC_URI[x86_64_v2_perl-UNIVERSAL-isa.sha256sum] = "7eea881c02d5f8105e9950137e29b946336137178ad87d16356249a05b7c68ae"
 
-URI_aarch64_perl-UNIVERSAL-isa = "${EPEL_MIRROR}/aarch64/Packages/p/perl-UNIVERSAL-isa-1.20171012-22.el10_0.noarch.rpm;name=aarch64_perl-UNIVERSAL-isa;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-UNIVERSAL-isa}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-UNIVERSAL-isa-1.20171012-22.el10_0.noarch.rpm;name=aarch64_perl-UNIVERSAL-isa;unpack=0"
 SRC_URI[aarch64_perl-UNIVERSAL-isa.sha256sum] = "a8351c42b6cb52385a4dcc3ae322c6431285914d39afe4771c8638e7d735eb3a"
 
 RDEPENDS:perl-UNIVERSAL-isa = " \

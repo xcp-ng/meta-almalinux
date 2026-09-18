@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-IP \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Net-IP-1.26-30.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Net-IP-1.26-30.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "361f7a2ed8bdcb5b6413388050aae24f2624dfeb105f17d0ff1ba6e03aa7ae06"
 
-URI_x86_64_v2_perl-Net-IP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-IP-1.26-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-IP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-IP}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-IP-1.26-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-IP;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-IP.sha256sum] = "e2186a44294c863807a8383e73e9e2c74129f29d4b9798a868674fefb8ca3349"
 
-URI_aarch64_perl-Net-IP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-IP-1.26-30.el10_0.noarch.rpm;name=aarch64_perl-Net-IP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-IP}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-IP-1.26-30.el10_0.noarch.rpm;name=aarch64_perl-Net-IP;unpack=0"
 SRC_URI[aarch64_perl-Net-IP.sha256sum] = "770e79f83e9c27409d15ae888615da72c3fbda32920314248dba2b7854bdb4ff"
 
 RDEPENDS:perl-Net-IP = " \

@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-ExtUtils-CBuilder \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bc7704fb79c66d9b4dad14427d8fa19e912f5f88290581f611d0c3f23519eaa6"
 
-URI_x86_64_v2_perl-ExtUtils-CBuilder = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-CBuilder;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-CBuilder}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-CBuilder;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-CBuilder.sha256sum] = "4fad62492a7d30e88767901a6098be78700d597e2700b503802a5427067ae418"
 
-URI_aarch64_perl-ExtUtils-CBuilder = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.noarch.rpm;name=aarch64_perl-ExtUtils-CBuilder;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-CBuilder}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-CBuilder-0.280240-511.el10.noarch.rpm;name=aarch64_perl-ExtUtils-CBuilder;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-CBuilder.sha256sum] = "4fad62492a7d30e88767901a6098be78700d597e2700b503802a5427067ae418"
 
 RDEPENDS:perl-ExtUtils-CBuilder = " \

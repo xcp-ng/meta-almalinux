@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-sean-seed-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-sean-seed-0-16.20190623gite2103e2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-sean-seed-0-16.20190623gite2103e2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7bce578c0b50a096fc7b8db478777c429c7d33c7d2c16b65c2526e8cfee5608c"
 
-URI_aarch64_golang-github-sean-seed-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sean-seed-devel-0-16.20190623gite2103e2.el10_0.noarch.rpm;name=aarch64_golang-github-sean-seed-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-sean-seed-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sean-seed-devel-0-16.20190623gite2103e2.el10_0.noarch.rpm;name=aarch64_golang-github-sean-seed-devel;unpack=0"
 SRC_URI[aarch64_golang-github-sean-seed-devel.sha256sum] = "ed2605856328dcbe64cffbd57c169e52b87f7361357bbbb450388d211aae7f25"
 
 RDEPENDS:golang-github-sean-seed-devel = " \

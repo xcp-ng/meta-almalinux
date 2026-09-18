@@ -9,16 +9,13 @@ PACKAGES = " \
  ideviceinstaller \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d8d989b0c90d7ab610a03c74670b558b343a16b2a918485803a8ab1a9224c797"
 
-URI_x86_64_v2_ideviceinstaller = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ideviceinstaller;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ideviceinstaller}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ideviceinstaller;unpack=0"
 SRC_URI[x86_64_v2_ideviceinstaller.sha256sum] = "8a85acfaedcb6be226d5a65a18da98f91a3c0665fa4c519b16080ae48e9f8028"
 
-URI_aarch64_ideviceinstaller = "${EPEL_MIRROR}/aarch64/Packages/i/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.aarch64.rpm;name=aarch64_ideviceinstaller;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ideviceinstaller}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/ideviceinstaller-1.1.1^20240518git1431d42-1.el10_0.aarch64.rpm;name=aarch64_ideviceinstaller;unpack=0"
 SRC_URI[aarch64_ideviceinstaller.sha256sum] = "8330b8cb98fd5390e9723af87ae217199948f1f7b842c38bb15a3452f31d083c"
 
 RDEPENDS:ideviceinstaller = " \

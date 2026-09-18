@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-lru-cache-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-lru-cache-0.1.2-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-lru-cache-0.1.2-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d8717f1481b1ba30590c24731bede186f91a5a68c1404dadae5176179ff828c7"
 
-URI_x86_64_v2_rust-lru-cache+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+default-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lru-cache+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+default-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lru-cache+default-devel.sha256sum] = "b4366200ec85dc5777c1b5b27b00ca2f70c80389da22e9d917f92118157dca11"
 
-URI_x86_64_v2_rust-lru-cache+heapsize-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+heapsize-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+heapsize-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lru-cache+heapsize-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+heapsize-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+heapsize-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lru-cache+heapsize-devel.sha256sum] = "dca5d52c77b23e8bb2fb2c201174faf114f861bf47c095d5046298d8bb2b56da"
 
-URI_x86_64_v2_rust-lru-cache+heapsize_impl-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+heapsize_impl-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+heapsize_impl-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lru-cache+heapsize_impl-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache+heapsize_impl-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache+heapsize_impl-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lru-cache+heapsize_impl-devel.sha256sum] = "f276650b3f522c8f9b7f3abc6836f42c1917f479c17e09c1f72c2bf7cb5b858c"
 
-URI_x86_64_v2_rust-lru-cache-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lru-cache-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lru-cache-devel-0.1.2-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lru-cache-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lru-cache-devel.sha256sum] = "ef5c54150157178d33e90c6161324ef064459a14ccbc3cc32b020742c2069f5a"
 
-URI_aarch64_rust-lru-cache+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+default-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lru-cache+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+default-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+default-devel;unpack=0"
 SRC_URI[aarch64_rust-lru-cache+default-devel.sha256sum] = "4fe3790a319089c7827646c707335a392683a22d4ba270f4f8f7c48917dbb516"
 
-URI_aarch64_rust-lru-cache+heapsize-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+heapsize-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+heapsize-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lru-cache+heapsize-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+heapsize-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+heapsize-devel;unpack=0"
 SRC_URI[aarch64_rust-lru-cache+heapsize-devel.sha256sum] = "ee1f161e6a760a600b6e136f3dfe642cb56e4bb7bb6de51b9a38a5aeb1d78348"
 
-URI_aarch64_rust-lru-cache+heapsize_impl-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+heapsize_impl-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+heapsize_impl-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lru-cache+heapsize_impl-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache+heapsize_impl-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache+heapsize_impl-devel;unpack=0"
 SRC_URI[aarch64_rust-lru-cache+heapsize_impl-devel.sha256sum] = "97874820fc9864a8121198f8e020a2185cfbd02de11ad165c5a367441e2cdc0c"
 
-URI_aarch64_rust-lru-cache-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lru-cache-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lru-cache-devel-0.1.2-16.el10_0.noarch.rpm;name=aarch64_rust-lru-cache-devel;unpack=0"
 SRC_URI[aarch64_rust-lru-cache-devel.sha256sum] = "7c5557c0556318887c5ebdfb800d6620ab8c8d54ba7a9a5afe1cddbf9cf45475"
 
 RDEPENDS:rust-lru-cache+default-devel = " \

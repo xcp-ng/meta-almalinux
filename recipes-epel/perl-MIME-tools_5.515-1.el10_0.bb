@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MIME-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MIME-tools-5.515-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MIME-tools-5.515-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ace8fb3a1ed90fd4ab31c912eb110f1378ee14560fbabd20bd8c0ec4136bf424"
 
-URI_x86_64_v2_perl-MIME-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MIME-tools-5.515-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MIME-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MIME-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MIME-tools-5.515-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MIME-tools;unpack=0"
 SRC_URI[x86_64_v2_perl-MIME-tools.sha256sum] = "155b5e245367d0f760f78618606a1f7d0216bda3c388abcf2a53c8e0ac0b0238"
 
-URI_aarch64_perl-MIME-tools = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MIME-tools-5.515-1.el10_0.noarch.rpm;name=aarch64_perl-MIME-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MIME-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MIME-tools-5.515-1.el10_0.noarch.rpm;name=aarch64_perl-MIME-tools;unpack=0"
 SRC_URI[aarch64_perl-MIME-tools.sha256sum] = "ed22b05558e0de1a3fcd4fbeeb78e3b3affe8fb27ee6d3197ec94edbe5ed5e27"
 
 RDEPENDS:perl-MIME-tools = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  kdeconnectd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kde-connect-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kde-connect-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3adf6b14d79a2973b083a0870125104b1b6ccd26ac8e6caeba3eddce1b01f5a0"
 
-URI_x86_64_v2_kde-connect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-connect}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect;unpack=0"
 SRC_URI[x86_64_v2_kde-connect.sha256sum] = "b7ce4d4ecf3da3064d1882e77fb6bc073d74d40ad1bdd1881d2843aa88a3ffce"
 
-URI_x86_64_v2_kde-connect-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-connect-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect-libs;unpack=0"
 SRC_URI[x86_64_v2_kde-connect-libs.sha256sum] = "f327d4cb77a7a48f069422a056c9bc1dd3772e27d0762c6742286b89442fa17c"
 
-URI_x86_64_v2_kde-connect-nautilus = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-nautilus-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect-nautilus;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-connect-nautilus}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-connect-nautilus-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-connect-nautilus;unpack=0"
 SRC_URI[x86_64_v2_kde-connect-nautilus.sha256sum] = "fa6e7e51467ae5ca290564d67ddf381d6f1a40ba6ba3d5dcb90d3e8cdcdb8fac"
 
-URI_x86_64_v2_kdeconnectd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdeconnectd-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdeconnectd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdeconnectd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdeconnectd-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdeconnectd;unpack=0"
 SRC_URI[x86_64_v2_kdeconnectd.sha256sum] = "18341b20534ce6e4adc12f9c733c23ff8adbf80674f56fe81208f74176cfff74"
 
-URI_aarch64_kde-connect = "${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-connect}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect;unpack=0"
 SRC_URI[aarch64_kde-connect.sha256sum] = "f84a0d70a965cca3e96311d677954fb84221702248a80f903547dc0fd532ccb4"
 
-URI_aarch64_kde-connect-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-connect-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect-libs;unpack=0"
 SRC_URI[aarch64_kde-connect-libs.sha256sum] = "700cced90fea5a75f2ce568604a905a85d680709d6316ac24828254ede5b73a8"
 
-URI_aarch64_kde-connect-nautilus = "${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-nautilus-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect-nautilus;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-connect-nautilus}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-connect-nautilus-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-connect-nautilus;unpack=0"
 SRC_URI[aarch64_kde-connect-nautilus.sha256sum] = "b5b4591737b212ad6cb53155ce3a3843dcbcf6af13d6d7955de087c2e59cee88"
 
-URI_aarch64_kdeconnectd = "${EPEL_MIRROR}/aarch64/Packages/k/kdeconnectd-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdeconnectd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdeconnectd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdeconnectd-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdeconnectd;unpack=0"
 SRC_URI[aarch64_kdeconnectd.sha256sum] = "99365ddcc1f31cda6ff3796dd52bc7b33da718cc625e9bf09fe59bcd4f5d8c60"
 
 RDEPENDS:kde-connect = " \

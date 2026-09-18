@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-gix-filter-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-gix-filter-0.20.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-gix-filter-0.20.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e73d487bb1fb739ca7b1e211dc2f73597a99957611aad4b67ab7c45c3d95fa3e"
 
-URI_x86_64_v2_rust-gix-filter+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-filter+default-devel-0.20.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-filter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-filter+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-filter+default-devel-0.20.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-filter+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-filter+default-devel.sha256sum] = "eca191189a18fdb325235a867a8add9b5fc692156c808dba0fddc5a31117387c"
 
-URI_x86_64_v2_rust-gix-filter-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-filter-devel-0.20.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-filter-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-filter-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-filter-devel-0.20.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-filter-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-filter-devel.sha256sum] = "cc69e68458a8b4ba4f9ae3ac82d941879d45c5ad9c35a6c8a106bb25eb6ce1bd"
 
-URI_aarch64_rust-gix-filter+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-filter+default-devel-0.20.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-filter+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-filter+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-filter+default-devel-0.20.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-filter+default-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-filter+default-devel.sha256sum] = "68ccd04e9865fa3fd0a821df14716756529f0fde460e35e284af290ec658cf1a"
 
-URI_aarch64_rust-gix-filter-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-filter-devel-0.20.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-filter-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-filter-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-filter-devel-0.20.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-filter-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-filter-devel.sha256sum] = "c558a8f1bdae9940eb3483af0bd8604a7efd3ccbacd5f973f3676fcb5dc24e38"
 
 RDEPENDS:rust-gix-filter+default-devel = " \

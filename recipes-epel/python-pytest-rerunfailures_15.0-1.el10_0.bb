@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-rerunfailures \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-rerunfailures-15.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-rerunfailures-15.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b8d6c3f18dbbb1b2356812c4dd2b81811147dc8747a529872e6f94817dc2fb08"
 
-URI_x86_64_v2_python3-pytest-rerunfailures = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-rerunfailures-15.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-rerunfailures;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-rerunfailures}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-rerunfailures-15.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-rerunfailures;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-rerunfailures.sha256sum] = "5809b3a2f955a276cbed98de67b15f18a93d248a914879055106b1dbb19443dd"
 
-URI_aarch64_python3-pytest-rerunfailures = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-rerunfailures-15.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-rerunfailures;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-rerunfailures}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-rerunfailures-15.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-rerunfailures;unpack=0"
 SRC_URI[aarch64_python3-pytest-rerunfailures.sha256sum] = "74a5c5ddceeaf231bc2a96b6965c90b043e20852ce2f70fc788035798407674d"
 
 RDEPENDS:python3-pytest-rerunfailures = " \

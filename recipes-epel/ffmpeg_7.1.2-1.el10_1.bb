@@ -26,80 +26,61 @@ PACKAGES = " \
  libswscale-free-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/ffmpeg-7.1.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/ffmpeg-7.1.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "529179aa52620a2cb3496380035eb2c8c29d228ef759d8702eede0ebb314c6d5"
 
-URI_aarch64_ffmpeg-free = "${EPEL_MIRROR}/aarch64/Packages/f/ffmpeg-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_ffmpeg-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ffmpeg-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/ffmpeg-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_ffmpeg-free;unpack=0"
 SRC_URI[aarch64_ffmpeg-free.sha256sum] = "ffb2874c53a90e69b61d6832fc70361910e9c27b428056bed84fbae9d9c2b3bc"
 
-URI_aarch64_ffmpeg-free-devel = "${EPEL_MIRROR}/aarch64/Packages/f/ffmpeg-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_ffmpeg-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ffmpeg-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/ffmpeg-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_ffmpeg-free-devel;unpack=0"
 SRC_URI[aarch64_ffmpeg-free-devel.sha256sum] = "5c2629069c4e4c3eea78956eacf793aa0e1f3673c55f46112f2597bced3f59a6"
 
-URI_aarch64_libavcodec-free = "${EPEL_MIRROR}/aarch64/Packages/l/libavcodec-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavcodec-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavcodec-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavcodec-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavcodec-free;unpack=0"
 SRC_URI[aarch64_libavcodec-free.sha256sum] = "66f9cececbd3e7e163f8605ed5c69303d4468c533230176a5cd790e75fb70228"
 
-URI_aarch64_libavcodec-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libavcodec-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavcodec-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavcodec-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavcodec-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavcodec-free-devel;unpack=0"
 SRC_URI[aarch64_libavcodec-free-devel.sha256sum] = "88d969b37ccdd120073dbd64b5458f2217bf26797d7e4dfe925478963b35b5f4"
 
-URI_aarch64_libavdevice-free = "${EPEL_MIRROR}/aarch64/Packages/l/libavdevice-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavdevice-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavdevice-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavdevice-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavdevice-free;unpack=0"
 SRC_URI[aarch64_libavdevice-free.sha256sum] = "654db288bfb725e00662424c08227a6d5bbe50f8eee43a694613e66d4e8ae496"
 
-URI_aarch64_libavdevice-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libavdevice-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavdevice-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavdevice-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavdevice-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavdevice-free-devel;unpack=0"
 SRC_URI[aarch64_libavdevice-free-devel.sha256sum] = "41297783549db35f778fff56256877c6d5c7ed74cb7f39aff159dcab3caccbf3"
 
-URI_aarch64_libavfilter-free = "${EPEL_MIRROR}/aarch64/Packages/l/libavfilter-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavfilter-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavfilter-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavfilter-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavfilter-free;unpack=0"
 SRC_URI[aarch64_libavfilter-free.sha256sum] = "8ac37a8ae18afaea3b1ee4170f804ea28b66afb57590f339c4eedb38580d2af0"
 
-URI_aarch64_libavfilter-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libavfilter-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavfilter-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavfilter-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavfilter-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavfilter-free-devel;unpack=0"
 SRC_URI[aarch64_libavfilter-free-devel.sha256sum] = "917e01005d8a61de9f834b9e512482c468d1cbbd823defd7d674ad3c3822a7b1"
 
-URI_aarch64_libavformat-free = "${EPEL_MIRROR}/aarch64/Packages/l/libavformat-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavformat-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavformat-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavformat-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavformat-free;unpack=0"
 SRC_URI[aarch64_libavformat-free.sha256sum] = "aa4ce0b7526b04a2c66a1dd68bb428d04ef9727760f010c9ed654d32d64aed57"
 
-URI_aarch64_libavformat-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libavformat-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavformat-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavformat-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavformat-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavformat-free-devel;unpack=0"
 SRC_URI[aarch64_libavformat-free-devel.sha256sum] = "73afd83e524ae08ab38f3db1421bb4ae4734fb3330ebe47b5d62be991b78fa3b"
 
-URI_aarch64_libavutil-free = "${EPEL_MIRROR}/aarch64/Packages/l/libavutil-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavutil-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavutil-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavutil-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavutil-free;unpack=0"
 SRC_URI[aarch64_libavutil-free.sha256sum] = "84174c7201b493a1c8bbe605d3e97f36e3d293f6667b96d9c0b30475f34a5d88"
 
-URI_aarch64_libavutil-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libavutil-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavutil-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libavutil-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libavutil-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libavutil-free-devel;unpack=0"
 SRC_URI[aarch64_libavutil-free-devel.sha256sum] = "5423d55a9db59551a13b775cdc6b7a8ff8ac45da30f8e617c2b0a93c6af5d58d"
 
-URI_aarch64_libpostproc-free = "${EPEL_MIRROR}/aarch64/Packages/l/libpostproc-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libpostproc-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libpostproc-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libpostproc-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libpostproc-free;unpack=0"
 SRC_URI[aarch64_libpostproc-free.sha256sum] = "10bf4674b6429cdbae6f89c20ef3c6300335ce6fdef71bcd571d6d963d427f96"
 
-URI_aarch64_libpostproc-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libpostproc-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libpostproc-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libpostproc-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libpostproc-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libpostproc-free-devel;unpack=0"
 SRC_URI[aarch64_libpostproc-free-devel.sha256sum] = "b7199c20c03cafab5ebecf2ef03274cbaddf33770b65e643c844d07be6b76506"
 
-URI_aarch64_libswresample-free = "${EPEL_MIRROR}/aarch64/Packages/l/libswresample-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswresample-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libswresample-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libswresample-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswresample-free;unpack=0"
 SRC_URI[aarch64_libswresample-free.sha256sum] = "1c9a411fbfe1e7bf630ef5ccbea02a80d192f3bf4f3020c6915c8f455126fd87"
 
-URI_aarch64_libswresample-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libswresample-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswresample-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libswresample-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libswresample-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswresample-free-devel;unpack=0"
 SRC_URI[aarch64_libswresample-free-devel.sha256sum] = "d77eaea213622834f965a26ea997b7029d733499b06f796552b81bd0d16e0780"
 
-URI_aarch64_libswscale-free = "${EPEL_MIRROR}/aarch64/Packages/l/libswscale-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswscale-free;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libswscale-free}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libswscale-free-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswscale-free;unpack=0"
 SRC_URI[aarch64_libswscale-free.sha256sum] = "b24b3d8875028e6c6573e0d1b65a925b219ed8d7e09be2d137e131a2aa129a14"
 
-URI_aarch64_libswscale-free-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libswscale-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswscale-free-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libswscale-free-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libswscale-free-devel-7.1.2-1.el10_1.aarch64.rpm;name=aarch64_libswscale-free-devel;unpack=0"
 SRC_URI[aarch64_libswscale-free-devel.sha256sum] = "faa4db2f1ee1034453bdce19e042de595451486bc82c26aa91eebd2542d349a2"
 
 RDEPENDS:ffmpeg-free = " \

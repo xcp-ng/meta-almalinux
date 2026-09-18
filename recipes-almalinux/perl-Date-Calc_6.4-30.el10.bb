@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Date-Calc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Date-Calc-6.4-30.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Date-Calc-6.4-30.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a3f50c806880ab7a9d1ba5ae7ba102188a328fa076d9c4550d19b702c6495c88"
 
-URI_x86_64_v2_perl-Date-Calc = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Date-Calc-6.4-30.el10.noarch.rpm;name=x86_64_v2_perl-Date-Calc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Date-Calc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Date-Calc-6.4-30.el10.noarch.rpm;name=x86_64_v2_perl-Date-Calc;unpack=0"
 SRC_URI[x86_64_v2_perl-Date-Calc.sha256sum] = "5bf91457c2365f6d816f00ed0e9f4065b1284eab772500bc895ca73393000b5e"
 
-URI_aarch64_perl-Date-Calc = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Date-Calc-6.4-30.el10.noarch.rpm;name=aarch64_perl-Date-Calc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Date-Calc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Date-Calc-6.4-30.el10.noarch.rpm;name=aarch64_perl-Date-Calc;unpack=0"
 SRC_URI[aarch64_perl-Date-Calc.sha256sum] = "5bf91457c2365f6d816f00ed0e9f4065b1284eab772500bc895ca73393000b5e"
 
 RDEPENDS:perl-Date-Calc = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  qrca \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/q/qrca-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/q/qrca-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f94280c4763be70abf2b861de9e55e3b2131dd87dcee3a5f0f97473b384512ce"
 
-URI_x86_64_v2_qrca = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qrca-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qrca;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qrca}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qrca-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qrca;unpack=0"
 SRC_URI[x86_64_v2_qrca.sha256sum] = "b21fd94715596b18bb9085d95dc7958a22a01098bf7dbaddef088c0ba1ffcb88"
 
-URI_aarch64_qrca = "${EPEL_MIRROR}/aarch64/Packages/q/qrca-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_qrca;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qrca}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qrca-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_qrca;unpack=0"
 SRC_URI[aarch64_qrca.sha256sum] = "253289523016ef657f67e0d5aee99cc0e3a3bfccb5fca5a580caa10e38ec4ad2"
 
 RDEPENDS:qrca = " \

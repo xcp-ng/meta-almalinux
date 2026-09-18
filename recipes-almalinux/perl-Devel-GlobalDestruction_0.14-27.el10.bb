@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Devel-GlobalDestruction \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "72482a611f65338df7294999b2d20b6f5dbab7bc0734c88307cf11e71fc29403"
 
-URI_x86_64_v2_perl-Devel-GlobalDestruction = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.noarch.rpm;name=x86_64_v2_perl-Devel-GlobalDestruction;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Devel-GlobalDestruction}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.noarch.rpm;name=x86_64_v2_perl-Devel-GlobalDestruction;unpack=0"
 SRC_URI[x86_64_v2_perl-Devel-GlobalDestruction.sha256sum] = "42ea06db4fc26ab92d59a9327936c474ac5c75dfa0bda42f47193863c769eb66"
 
-URI_aarch64_perl-Devel-GlobalDestruction = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.noarch.rpm;name=aarch64_perl-Devel-GlobalDestruction;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Devel-GlobalDestruction}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Devel-GlobalDestruction-0.14-27.el10.noarch.rpm;name=aarch64_perl-Devel-GlobalDestruction;unpack=0"
 SRC_URI[aarch64_perl-Devel-GlobalDestruction.sha256sum] = "42ea06db4fc26ab92d59a9327936c474ac5c75dfa0bda42f47193863c769eb66"
 
 RDEPENDS:perl-Devel-GlobalDestruction = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-X11-Protocol-Other \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-X11-Protocol-Other-31-19.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-X11-Protocol-Other-31-19.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9f0fd435aaf024372016874dda0faa134987d30cd45a82e2acd415136155eda5"
 
-URI_x86_64_v2_perl-X11-Protocol-Other = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-X11-Protocol-Other-31-19.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-X11-Protocol-Other;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-X11-Protocol-Other}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-X11-Protocol-Other-31-19.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-X11-Protocol-Other;unpack=0"
 SRC_URI[x86_64_v2_perl-X11-Protocol-Other.sha256sum] = "e7b0f33e0b9d636818e721fe36735316afb71a97b3ca0e4ca3592c6453fb3692"
 
-URI_aarch64_perl-X11-Protocol-Other = "${EPEL_MIRROR}/aarch64/Packages/p/perl-X11-Protocol-Other-31-19.el10_1.noarch.rpm;name=aarch64_perl-X11-Protocol-Other;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-X11-Protocol-Other}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-X11-Protocol-Other-31-19.el10_1.noarch.rpm;name=aarch64_perl-X11-Protocol-Other;unpack=0"
 SRC_URI[aarch64_perl-X11-Protocol-Other.sha256sum] = "4c84a3e8de7daac9e815736d11008459c37746aee366d289bba678c152bb5c08"
 
 RDEPENDS:perl-X11-Protocol-Other = " \

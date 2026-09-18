@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tzlocal \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tzlocal-5.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tzlocal-5.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "97263fc268da1d9f5bcb117a90b08e0fa337bccf5c93b45763c50440653e0eb6"
 
-URI_x86_64_v2_python3-tzlocal = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tzlocal-5.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tzlocal;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tzlocal}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tzlocal-5.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tzlocal;unpack=0"
 SRC_URI[x86_64_v2_python3-tzlocal.sha256sum] = "48918029fe338a961f427bc45dad8f05adaa8782a4095a87031d55ac146e1c14"
 
-URI_aarch64_python3-tzlocal = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tzlocal-5.2-3.el10_0.noarch.rpm;name=aarch64_python3-tzlocal;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tzlocal}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tzlocal-5.2-3.el10_0.noarch.rpm;name=aarch64_python3-tzlocal;unpack=0"
 SRC_URI[aarch64_python3-tzlocal.sha256sum] = "c79087ed04b648f424b74c0ec9a20338f6e8073f7cd99a1e6660321fcc9ac122"
 
 RDEPENDS:python3-tzlocal = " \

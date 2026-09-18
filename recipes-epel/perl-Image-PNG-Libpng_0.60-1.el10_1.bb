@@ -11,32 +11,25 @@ PACKAGES = " \
  perl-Image-PNG-Libpng-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Image-PNG-Libpng-0.60-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Image-PNG-Libpng-0.60-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ed20fe1c0345f3ab94c268588cf41e68c06cf23580c396da4d3ec28ced092963"
 
-URI_x86_64_v2_perl-Image-PNG-Libpng = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-0.60-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Image-PNG-Libpng;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Image-PNG-Libpng}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-0.60-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Image-PNG-Libpng;unpack=0"
 SRC_URI[x86_64_v2_perl-Image-PNG-Libpng.sha256sum] = "ff33f5a21982bfec32ada89ad0f6dd3869e74c4dda77e71f9d37c37f1e60107c"
 
-URI_x86_64_v2_perl-Image-PNG-Libpng-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-tests-0.60-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-PNG-Libpng-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Image-PNG-Libpng-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-tests-0.60-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-PNG-Libpng-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Image-PNG-Libpng-tests.sha256sum] = "0bfefbd535182057c36b0b54b944dd62ec8cb7753f53e9b8173fb9f8da349069"
 
-URI_x86_64_v2_perl-Image-PNG-Libpng-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-tools-0.60-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-PNG-Libpng-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Image-PNG-Libpng-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-PNG-Libpng-tools-0.60-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-PNG-Libpng-tools;unpack=0"
 SRC_URI[x86_64_v2_perl-Image-PNG-Libpng-tools.sha256sum] = "9a3a40ea79b6cb3aee708809397cdb154187e4606c29826dbcb5891e2fdc60ba"
 
-URI_aarch64_perl-Image-PNG-Libpng = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-0.60-1.el10_1.aarch64.rpm;name=aarch64_perl-Image-PNG-Libpng;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Image-PNG-Libpng}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-0.60-1.el10_1.aarch64.rpm;name=aarch64_perl-Image-PNG-Libpng;unpack=0"
 SRC_URI[aarch64_perl-Image-PNG-Libpng.sha256sum] = "1614a392367ba90846d7c9c7ac6e69614cb346d42b338991e6ba2356d5124ba5"
 
-URI_aarch64_perl-Image-PNG-Libpng-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-tests-0.60-1.el10_1.noarch.rpm;name=aarch64_perl-Image-PNG-Libpng-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Image-PNG-Libpng-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-tests-0.60-1.el10_1.noarch.rpm;name=aarch64_perl-Image-PNG-Libpng-tests;unpack=0"
 SRC_URI[aarch64_perl-Image-PNG-Libpng-tests.sha256sum] = "1ec90501274751f2e239abb21e36e04f952d077ff1b0ea31e1671864c146b9e8"
 
-URI_aarch64_perl-Image-PNG-Libpng-tools = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-tools-0.60-1.el10_1.noarch.rpm;name=aarch64_perl-Image-PNG-Libpng-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Image-PNG-Libpng-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-PNG-Libpng-tools-0.60-1.el10_1.noarch.rpm;name=aarch64_perl-Image-PNG-Libpng-tools;unpack=0"
 SRC_URI[aarch64_perl-Image-PNG-Libpng-tools.sha256sum] = "3ca1c6d3dfbe6525cfa61ae4732fe46ce77d905fbd87cbc0f44396a34a9d257f"
 
 RDEPENDS:perl-Image-PNG-Libpng = " \

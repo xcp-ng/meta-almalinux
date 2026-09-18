@@ -9,16 +9,13 @@ PACKAGES = " \
  tracker-miners \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/tracker-miners-3.7.3-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/tracker-miners-3.7.3-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b866872b1b065c5ec2d7144f97273ee1a59babbe59108bf2cc5442ad4b1386fd"
 
-URI_x86_64_v2_tracker-miners = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tracker-miners-3.7.3-4.el10.x86_64_v2.rpm;name=x86_64_v2_tracker-miners;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_tracker-miners}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/tracker-miners-3.7.3-4.el10.x86_64_v2.rpm;name=x86_64_v2_tracker-miners;unpack=0"
 SRC_URI[x86_64_v2_tracker-miners.sha256sum] = "9351f55d7ecbe5bc21b4e8522c68c30e7fd891f7cada3b8fdffeac464acd7ca6"
 
-URI_aarch64_tracker-miners = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tracker-miners-3.7.3-4.el10.aarch64.rpm;name=aarch64_tracker-miners;unpack=0"
-SRC_URI:append = " ${URI_aarch64_tracker-miners}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/tracker-miners-3.7.3-4.el10.aarch64.rpm;name=aarch64_tracker-miners;unpack=0"
 SRC_URI[aarch64_tracker-miners.sha256sum] = "3858368b8f5a044f70cf243cf6883d79e49328c9979049907933261f9ef89c9a"
 
 RDEPENDS:tracker-miners = " \

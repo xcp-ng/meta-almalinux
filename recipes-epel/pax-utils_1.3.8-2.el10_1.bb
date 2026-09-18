@@ -9,16 +9,13 @@ PACKAGES = " \
  pax-utils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pax-utils-1.3.8-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pax-utils-1.3.8-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4a673d7aa573b5b20a231af3f50e5ea0c95b5db4a6f5e62083bdb55bf94e5e66"
 
-URI_x86_64_v2_pax-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pax-utils-1.3.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pax-utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pax-utils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pax-utils-1.3.8-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pax-utils;unpack=0"
 SRC_URI[x86_64_v2_pax-utils.sha256sum] = "87c1e6cc93b1a447cd719406848b0fc3818d053bc32ee42b89df30ef02a4afa4"
 
-URI_aarch64_pax-utils = "${EPEL_MIRROR}/aarch64/Packages/p/pax-utils-1.3.8-2.el10_1.aarch64.rpm;name=aarch64_pax-utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pax-utils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pax-utils-1.3.8-2.el10_1.aarch64.rpm;name=aarch64_pax-utils;unpack=0"
 SRC_URI[aarch64_pax-utils.sha256sum] = "46fa73faf420d177cda691cc882734da3d5389cfba49aa6450889587b9c3b792"
 
 RDEPENDS:pax-utils = " \

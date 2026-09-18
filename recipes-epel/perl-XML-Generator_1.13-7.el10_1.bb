@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-XML-Generator-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Generator-1.13-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-Generator-1.13-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7973ba7d80322aa4aa35d746270c0c2ef8eb8dc378a2f6684a0142bda8bf4dee"
 
-URI_x86_64_v2_perl-XML-Generator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Generator-1.13-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Generator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Generator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Generator-1.13-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Generator;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Generator.sha256sum] = "4db66e7bcc343531c2b5641e088e468dbf10c780024fc5f1a91690ab50cfe348"
 
-URI_x86_64_v2_perl-XML-Generator-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Generator-tests-1.13-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Generator-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Generator-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-Generator-tests-1.13-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-Generator-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Generator-tests.sha256sum] = "83394c42071f7de7403112176bb7f65c20fa5cdcf22ece14b03641b1dbc4d014"
 
-URI_aarch64_perl-XML-Generator = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Generator-1.13-7.el10_1.noarch.rpm;name=aarch64_perl-XML-Generator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Generator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Generator-1.13-7.el10_1.noarch.rpm;name=aarch64_perl-XML-Generator;unpack=0"
 SRC_URI[aarch64_perl-XML-Generator.sha256sum] = "f5b9aa07b597c015841802a23fbea98861051a4da18b6bec93601233dcea5036"
 
-URI_aarch64_perl-XML-Generator-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Generator-tests-1.13-7.el10_1.noarch.rpm;name=aarch64_perl-XML-Generator-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Generator-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-Generator-tests-1.13-7.el10_1.noarch.rpm;name=aarch64_perl-XML-Generator-tests;unpack=0"
 SRC_URI[aarch64_perl-XML-Generator-tests.sha256sum] = "9abf41c39b99a21df3d71994ab5ad5089ff83de16320a877d655c817d0fa5c19"
 
 RDEPENDS:perl-XML-Generator = " \

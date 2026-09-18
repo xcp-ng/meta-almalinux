@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-Test-Simple \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Test-Simple-1.302199-513.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Test-Simple-1.302199-513.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "26c889164fdcab64d0bd7ff5563813f93b2474d4b00ce7b2aa9c22ef63d5bb53"
 
-URI_x86_64_v2_perl-Test-Simple = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Test-Simple-1.302199-513.el10.noarch.rpm;name=x86_64_v2_perl-Test-Simple;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Simple}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Test-Simple-1.302199-513.el10.noarch.rpm;name=x86_64_v2_perl-Test-Simple;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Simple.sha256sum] = "f7ad13060a6ce8c7350f38ac58bf877d7d3a5a044cbeb996be20ef71442458cf"
 
-URI_aarch64_perl-Test-Simple = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Test-Simple-1.302199-513.el10.noarch.rpm;name=aarch64_perl-Test-Simple;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Simple}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Test-Simple-1.302199-513.el10.noarch.rpm;name=aarch64_perl-Test-Simple;unpack=0"
 SRC_URI[aarch64_perl-Test-Simple.sha256sum] = "f7ad13060a6ce8c7350f38ac58bf877d7d3a5a044cbeb996be20ef71442458cf"
 
 RDEPENDS:perl-Test-Simple = " \

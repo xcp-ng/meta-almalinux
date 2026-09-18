@@ -9,16 +9,13 @@ PACKAGES = " \
  impressive \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/impressive-0.13.2-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/impressive-0.13.2-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f35b1e9fc7530e004383b86224a168c2ad0f32dfba8bdd93297f4cf311b8e77"
 
-URI_x86_64_v2_impressive = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/impressive-0.13.2-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_impressive;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_impressive}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/impressive-0.13.2-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_impressive;unpack=0"
 SRC_URI[x86_64_v2_impressive.sha256sum] = "28179ec73b715b680050274299f6bc8ab23c996fc124e4594a86b00243390f36"
 
-URI_aarch64_impressive = "${EPEL_MIRROR}/aarch64/Packages/i/impressive-0.13.2-6.el10_1.noarch.rpm;name=aarch64_impressive;unpack=0"
-SRC_URI:append = " ${URI_aarch64_impressive}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/impressive-0.13.2-6.el10_1.noarch.rpm;name=aarch64_impressive;unpack=0"
 SRC_URI[aarch64_impressive.sha256sum] = "b2d274c1695c470efe09d27a1f15ebcdef7d120cd3452161e82bc1264ea75a34"
 
 RDEPENDS:impressive = " \

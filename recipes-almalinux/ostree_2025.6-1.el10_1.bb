@@ -12,40 +12,31 @@ PACKAGES = " \
  ostree-libs \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ostree-2025.6-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ostree-2025.6-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a716aacc67fb85e597793e4823559070df7dcdff207d46217d3113cb7be70fb6"
 
-URI_x86_64_v2_ostree = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ostree}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree;unpack=0"
 SRC_URI[x86_64_v2_ostree.sha256sum] = "acddbccd2df40e5c78cc246a183d741abf0121ba40fd19b2aec035c4d1550163"
 
-URI_x86_64_v2_ostree-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ostree-devel-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ostree-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ostree-devel-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-devel;unpack=0"
 SRC_URI[x86_64_v2_ostree-devel.sha256sum] = "b875b16d27adcea1f758b283f696e5295aea0509f93a524ba015f29816739019"
 
-URI_x86_64_v2_ostree-grub2 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-grub2-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-grub2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ostree-grub2}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-grub2-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-grub2;unpack=0"
 SRC_URI[x86_64_v2_ostree-grub2.sha256sum] = "4d665f09ac03d01447bf530b838c297a62521485e9c0f359959001e0155d509a"
 
-URI_x86_64_v2_ostree-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-libs-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ostree-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ostree-libs-2025.6-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_ostree-libs;unpack=0"
 SRC_URI[x86_64_v2_ostree-libs.sha256sum] = "09e3aba1eaae50a6b91a722dadbb46f1551134c6c3e8678cfe0dafe714874d72"
 
-URI_aarch64_ostree = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ostree}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree;unpack=0"
 SRC_URI[aarch64_ostree.sha256sum] = "06a508defe0f0042ef947c192ace91f760142b846bb1f2ee6944690078e84f4c"
 
-URI_aarch64_ostree-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ostree-devel-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ostree-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ostree-devel-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-devel;unpack=0"
 SRC_URI[aarch64_ostree-devel.sha256sum] = "20e2efd84237ad6de16ee07b235a192c904d493014d2895280936e903bbd077a"
 
-URI_aarch64_ostree-grub2 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-grub2-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-grub2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ostree-grub2}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-grub2-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-grub2;unpack=0"
 SRC_URI[aarch64_ostree-grub2.sha256sum] = "be7cdfee87ea23817dfa972b7d137ac98ab4c7bc1b3f16e4d7b1ad93751c2097"
 
-URI_aarch64_ostree-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-libs-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ostree-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ostree-libs-2025.6-1.el10_1.aarch64.rpm;name=aarch64_ostree-libs;unpack=0"
 SRC_URI[aarch64_ostree-libs.sha256sum] = "93fe468a02b46a72180f89238132dc766b06560b8328ab065a8ddebc2a18bcb4"
 
 RDEPENDS:ostree = " \

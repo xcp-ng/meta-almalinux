@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Convert-BinHex \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Convert-BinHex-1.125-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Convert-BinHex-1.125-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3a6192edb4531040012a3ea2c5a5a64db4d78b3e3a012f0377418a85bf0636d5"
 
-URI_x86_64_v2_perl-Convert-BinHex = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Convert-BinHex-1.125-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Convert-BinHex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Convert-BinHex}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Convert-BinHex-1.125-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Convert-BinHex;unpack=0"
 SRC_URI[x86_64_v2_perl-Convert-BinHex.sha256sum] = "9ac5b81bf2c7d1838fd7f2ac31520b8b68b3e25f0151834df78ba404a707f763"
 
-URI_aarch64_perl-Convert-BinHex = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Convert-BinHex-1.125-29.el10_0.noarch.rpm;name=aarch64_perl-Convert-BinHex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Convert-BinHex}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Convert-BinHex-1.125-29.el10_0.noarch.rpm;name=aarch64_perl-Convert-BinHex;unpack=0"
 SRC_URI[aarch64_perl-Convert-BinHex.sha256sum] = "939ad5edd5e0efc29f42d9601ea408b3c43cf554e6bfad0802bc6164a1c8da94"
 
 RDEPENDS:perl-Convert-BinHex = " \

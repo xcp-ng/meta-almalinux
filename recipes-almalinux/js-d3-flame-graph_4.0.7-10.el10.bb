@@ -9,16 +9,13 @@ PACKAGES = " \
  js-d3-flame-graph \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/js-d3-flame-graph-4.0.7-10.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/js-d3-flame-graph-4.0.7-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0222f5a2db70a10c7fd4f3202dd176c0b436a5ab682e8edb242163becdab5120"
 
-URI_x86_64_v2_js-d3-flame-graph = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/js-d3-flame-graph-4.0.7-10.el10.noarch.rpm;name=x86_64_v2_js-d3-flame-graph;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_js-d3-flame-graph}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/js-d3-flame-graph-4.0.7-10.el10.noarch.rpm;name=x86_64_v2_js-d3-flame-graph;unpack=0"
 SRC_URI[x86_64_v2_js-d3-flame-graph.sha256sum] = "b09387b211f37d629d26b5928a40239fa5942e2fb2e2765f8fee61cff6daa247"
 
-URI_aarch64_js-d3-flame-graph = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/js-d3-flame-graph-4.0.7-10.el10.noarch.rpm;name=aarch64_js-d3-flame-graph;unpack=0"
-SRC_URI:append = " ${URI_aarch64_js-d3-flame-graph}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/js-d3-flame-graph-4.0.7-10.el10.noarch.rpm;name=aarch64_js-d3-flame-graph;unpack=0"
 SRC_URI[aarch64_js-d3-flame-graph.sha256sum] = "b09387b211f37d629d26b5928a40239fa5942e2fb2e2765f8fee61cff6daa247"
 
 RDEPENDS:js-d3-flame-graph = " \

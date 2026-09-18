@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-openapi-spec-validator \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-openapi-spec-validator-0.7.2-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-openapi-spec-validator-0.7.2-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1b0f49fa8ba31e589c2fe95014e594d19a9ee3d71bab9285c0e1dc25169d62bd"
 
-URI_x86_64_v2_python3-openapi-spec-validator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openapi-spec-validator-0.7.2-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openapi-spec-validator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-openapi-spec-validator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-openapi-spec-validator-0.7.2-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-openapi-spec-validator;unpack=0"
 SRC_URI[x86_64_v2_python3-openapi-spec-validator.sha256sum] = "cd95604c69026cf361976a4e41ffbf1bfe0ef4e46450886d289865ee9d640cba"
 
-URI_aarch64_python3-openapi-spec-validator = "${EPEL_MIRROR}/aarch64/Packages/p/python3-openapi-spec-validator-0.7.2-5.el10_1.noarch.rpm;name=aarch64_python3-openapi-spec-validator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-openapi-spec-validator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-openapi-spec-validator-0.7.2-5.el10_1.noarch.rpm;name=aarch64_python3-openapi-spec-validator;unpack=0"
 SRC_URI[aarch64_python3-openapi-spec-validator.sha256sum] = "0a148ef741644aae2fe1fe7f896d611a6795dcdb260cc0e65a507f49c514e55e"
 
 RDEPENDS:python3-openapi-spec-validator = " \

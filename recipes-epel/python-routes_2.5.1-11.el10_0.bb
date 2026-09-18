@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-routes \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-routes-2.5.1-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-routes-2.5.1-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "07dc8233511956453424428bc40f2c18b963c74fd913f35bf379b269ef0b3b38"
 
-URI_x86_64_v2_python3-routes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-routes-2.5.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-routes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-routes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-routes-2.5.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-routes;unpack=0"
 SRC_URI[x86_64_v2_python3-routes.sha256sum] = "0310f74e991525cebf0b8d8b0042017555ac135ee5c9f720575464e80ff0e5b6"
 
-URI_aarch64_python3-routes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-routes-2.5.1-11.el10_0.noarch.rpm;name=aarch64_python3-routes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-routes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-routes-2.5.1-11.el10_0.noarch.rpm;name=aarch64_python3-routes;unpack=0"
 SRC_URI[aarch64_python3-routes.sha256sum] = "706fb59306a6ec738f6789584b802ddcbef932546e2cbc2adc7bddb935e3ec8c"
 
 RDEPENDS:python3-routes = " \

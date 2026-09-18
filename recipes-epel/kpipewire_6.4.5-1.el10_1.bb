@@ -10,8 +10,7 @@ PACKAGES = " \
  kpipewire-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kpipewire-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kpipewire-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3d049d09157c175bc0e30d8c21064e9ea75700e2658dec02a80de0deb7d4cf58"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -24,20 +23,16 @@ SRC_URI[src.sha256sum] = "3d049d09157c175bc0e30d8c21064e9ea75700e2658dec02a80de0
 # - kpipewire: libavutil.so.59()(64bit)
 # - kpipewire: libavutil.so.59(LIBAVUTIL_59)(64bit)
 
-URI_x86_64_v2_kpipewire = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpipewire-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kpipewire;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kpipewire}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpipewire-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kpipewire;unpack=0"
 SRC_URI[x86_64_v2_kpipewire.sha256sum] = "3e17b2ad35f06f5dce0544f167cac9beb4bb43fd05efeacd21478563078f66d4"
 
-URI_x86_64_v2_kpipewire-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpipewire-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kpipewire-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kpipewire-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpipewire-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kpipewire-devel;unpack=0"
 SRC_URI[x86_64_v2_kpipewire-devel.sha256sum] = "aa26483690ba39f39180f2b43fe3266ff2b67f35542a450795b5cb799467e22f"
 
-URI_aarch64_kpipewire = "${EPEL_MIRROR}/aarch64/Packages/k/kpipewire-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kpipewire;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kpipewire}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kpipewire-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kpipewire;unpack=0"
 SRC_URI[aarch64_kpipewire.sha256sum] = "314d3e66bd0c0d5eed3f99afa5a225c2c6869e61e6c4773d74a08465f36c1a62"
 
-URI_aarch64_kpipewire-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kpipewire-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kpipewire-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kpipewire-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kpipewire-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kpipewire-devel;unpack=0"
 SRC_URI[aarch64_kpipewire-devel.sha256sum] = "c144ce1560ed26464923fa2193d2fb61df0332511565f2c4dc8882c225fe51e9"
 
 RDEPENDS:kpipewire:x86_64_v2 = " \

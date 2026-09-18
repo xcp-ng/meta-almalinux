@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-DateTime-TimeZone-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-TimeZone-2.66-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-TimeZone-2.66-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ce66732e241640118997f0d1b39440a035f7d2544ef7c8db2b93ec29b2954697"
 
-URI_x86_64_v2_perl-DateTime-TimeZone = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-TimeZone-2.66-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-TimeZone;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime-TimeZone}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-TimeZone-2.66-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-TimeZone;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime-TimeZone.sha256sum] = "0ad559d90cc80859385fea6f9e1c9eeeeb78f56fe7adeb7fd61183f56d4890d0"
 
-URI_x86_64_v2_perl-DateTime-TimeZone-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-TimeZone-tests-2.66-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-TimeZone-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime-TimeZone-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-TimeZone-tests-2.66-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-TimeZone-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime-TimeZone-tests.sha256sum] = "ec139689ac15e82bd56830f421f817f82d4b773724118c633427dd07e3b198c7"
 
-URI_aarch64_perl-DateTime-TimeZone = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-TimeZone-2.66-1.el10_1.noarch.rpm;name=aarch64_perl-DateTime-TimeZone;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime-TimeZone}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-TimeZone-2.66-1.el10_1.noarch.rpm;name=aarch64_perl-DateTime-TimeZone;unpack=0"
 SRC_URI[aarch64_perl-DateTime-TimeZone.sha256sum] = "07acaf19c41a1a220a95c3daa591f70955902e1c770f6cde2595602863f28a02"
 
-URI_aarch64_perl-DateTime-TimeZone-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-TimeZone-tests-2.66-1.el10_1.noarch.rpm;name=aarch64_perl-DateTime-TimeZone-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime-TimeZone-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-TimeZone-tests-2.66-1.el10_1.noarch.rpm;name=aarch64_perl-DateTime-TimeZone-tests;unpack=0"
 SRC_URI[aarch64_perl-DateTime-TimeZone-tests.sha256sum] = "ba114e12934a8fcecdeab2ee484b722d46181d91e653899c4536f8ce0e34ee0b"
 
 RDEPENDS:perl-DateTime-TimeZone = " \

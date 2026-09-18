@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-wizards-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-wizards-1.0.3-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-wizards-1.0.3-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "43b8522c7dbe2719d4c7450f4637a0b31a4b29c23c011ebfa269e30169405dd9"
 
-URI_x86_64_v2_ghc-wizards = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wizards}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards;unpack=0"
 SRC_URI[x86_64_v2_ghc-wizards.sha256sum] = "73db0f28d5f4df669e58aacd9ac49745bb7e2c3bd6e03fb80cad86fcf24503d0"
 
-URI_x86_64_v2_ghc-wizards-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-devel-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wizards-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-devel-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-wizards-devel.sha256sum] = "1af69afb078e25ab4a003f2fa9cdb68753e314e60839c50bfb94dc2ccffa259b"
 
-URI_x86_64_v2_ghc-wizards-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-doc-1.0.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wizards-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wizards-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-doc-1.0.3-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wizards-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-wizards-doc.sha256sum] = "522063d4ef58bd0867fcebcb5e7418750a9fe08c3c768921179fdfdecf9e1882"
 
-URI_x86_64_v2_ghc-wizards-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-prof-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wizards-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wizards-prof-1.0.3-27.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wizards-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-wizards-prof.sha256sum] = "535da3b3323430f57885d290fce87da231fbeef1ce86dc43d12a62f73359f62a"
 
-URI_aarch64_ghc-wizards = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wizards}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards;unpack=0"
 SRC_URI[aarch64_ghc-wizards.sha256sum] = "9128f0811d474cca2e26a4363ac501b9325e5f4ac4ab2870bcc3b7799ec92255"
 
-URI_aarch64_ghc-wizards-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-devel-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wizards-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-devel-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards-devel;unpack=0"
 SRC_URI[aarch64_ghc-wizards-devel.sha256sum] = "9e1f942da51c660edcf7e17a5736580e836cef2938d7045fb8645652b5696029"
 
-URI_aarch64_ghc-wizards-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-doc-1.0.3-27.el10_0.noarch.rpm;name=aarch64_ghc-wizards-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wizards-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-doc-1.0.3-27.el10_0.noarch.rpm;name=aarch64_ghc-wizards-doc;unpack=0"
 SRC_URI[aarch64_ghc-wizards-doc.sha256sum] = "562effb9342e55f4214ddf2daed03839ffc0113c569b4ee93eec525a6adb7e3c"
 
-URI_aarch64_ghc-wizards-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-prof-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wizards-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wizards-prof-1.0.3-27.el10_0.aarch64.rpm;name=aarch64_ghc-wizards-prof;unpack=0"
 SRC_URI[aarch64_ghc-wizards-prof.sha256sum] = "61ec59a8d0ccbe66f030bcddf11eab3ded8c86015f46db5bd16f19635a13a682"
 
 RDEPENDS:ghc-wizards = " \

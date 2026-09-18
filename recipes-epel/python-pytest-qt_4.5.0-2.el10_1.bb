@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-qt \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-qt-4.5.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-qt-4.5.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "df70271d01a8414e02180bae066049d504023dadc2e3c2cbdb11f32b746cde9e"
 
-URI_x86_64_v2_python3-pytest-qt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-qt-4.5.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-qt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-qt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-qt-4.5.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-qt;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-qt.sha256sum] = "5f6f66f382e460d5292aaae79bdeb0b646babdd4e8aad7a1b1e57987ce4bbc61"
 
-URI_aarch64_python3-pytest-qt = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-qt-4.5.0-2.el10_1.noarch.rpm;name=aarch64_python3-pytest-qt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-qt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-qt-4.5.0-2.el10_1.noarch.rpm;name=aarch64_python3-pytest-qt;unpack=0"
 SRC_URI[aarch64_python3-pytest-qt.sha256sum] = "24e06e0a577eef94db6d611cf3dd60bba6f372c6221ce7657bc0bcd6ed30edb8"
 
 RDEPENDS:python3-pytest-qt = " \

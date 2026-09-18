@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-App-cpm-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-App-cpm-0.997.023-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-App-cpm-0.997.023-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "98fc0bd7f086c33c5414541e767c3c3ae9d7c5040a271859c74552d7d06ca7cf"
 
-URI_x86_64_v2_perl-App-cpm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-cpm-0.997.023-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-cpm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-App-cpm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-cpm-0.997.023-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-cpm;unpack=0"
 SRC_URI[x86_64_v2_perl-App-cpm.sha256sum] = "bf4b46f7513e1cc5124c7aefe7ac5a6904094eb362fe45e0c2fa25e234d7b78f"
 
-URI_x86_64_v2_perl-App-cpm-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-cpm-tests-0.997.023-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-cpm-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-App-cpm-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-App-cpm-tests-0.997.023-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-App-cpm-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-App-cpm-tests.sha256sum] = "d5ceb7aa1cdd07b2b53750c2bb48679ccda4c721e4c23d3deaa86abfc2eca0b3"
 
-URI_aarch64_perl-App-cpm = "${EPEL_MIRROR}/aarch64/Packages/p/perl-App-cpm-0.997.023-1.el10_1.noarch.rpm;name=aarch64_perl-App-cpm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-App-cpm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-App-cpm-0.997.023-1.el10_1.noarch.rpm;name=aarch64_perl-App-cpm;unpack=0"
 SRC_URI[aarch64_perl-App-cpm.sha256sum] = "fe367f5878cd0b5de1ba40334cace180b73e8b5ff3cb2ef69616dc0de82ec7e0"
 
-URI_aarch64_perl-App-cpm-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-App-cpm-tests-0.997.023-1.el10_1.noarch.rpm;name=aarch64_perl-App-cpm-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-App-cpm-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-App-cpm-tests-0.997.023-1.el10_1.noarch.rpm;name=aarch64_perl-App-cpm-tests;unpack=0"
 SRC_URI[aarch64_perl-App-cpm-tests.sha256sum] = "ef9ab967729ae9a7b57ac79180f88981337e4eb890094b5d677c7f2fd765a326"
 
 RDEPENDS:perl-App-cpm = " \

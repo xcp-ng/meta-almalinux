@@ -9,16 +9,13 @@ PACKAGES = " \
  kblocks \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kblocks-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kblocks-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0f3b363adc3f63aed47774f463465201bead2ed939cba853778ef28f36bd0e71"
 
-URI_x86_64_v2_kblocks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kblocks-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kblocks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kblocks}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kblocks-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kblocks;unpack=0"
 SRC_URI[x86_64_v2_kblocks.sha256sum] = "c83a10dd5d105446f72cb108d7eb9c7362585fa39fdebd091d81a9d14f1b28bb"
 
-URI_aarch64_kblocks = "${EPEL_MIRROR}/aarch64/Packages/k/kblocks-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kblocks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kblocks}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kblocks-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kblocks;unpack=0"
 SRC_URI[aarch64_kblocks.sha256sum] = "3e30adb422282661e1fb8e714d92d1fdde866b8e4666c6e26a1e2f3c0354adb3"
 
 RDEPENDS:kblocks = " \

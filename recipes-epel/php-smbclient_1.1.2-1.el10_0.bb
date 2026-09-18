@@ -9,16 +9,13 @@ PACKAGES = " \
  php-smbclient \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-smbclient-1.1.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-smbclient-1.1.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bc6e45a08a038a10d4c24893ea2f35c80c044d463f49434711e7434f29799e29"
 
-URI_x86_64_v2_php-smbclient = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-smbclient-1.1.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-smbclient;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-smbclient}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-smbclient-1.1.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-smbclient;unpack=0"
 SRC_URI[x86_64_v2_php-smbclient.sha256sum] = "63d51c171f983e6bc589b17b92c9690a9e26e51ecef56660476c743f595c00c8"
 
-URI_aarch64_php-smbclient = "${EPEL_MIRROR}/aarch64/Packages/p/php-smbclient-1.1.2-1.el10_0.aarch64.rpm;name=aarch64_php-smbclient;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-smbclient}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-smbclient-1.1.2-1.el10_0.aarch64.rpm;name=aarch64_php-smbclient;unpack=0"
 SRC_URI[aarch64_php-smbclient.sha256sum] = "c4414e8310373c2306f4b512a8ecdd53f0d094a0ed61a91c303328f0a89e18b8"
 
 RDEPENDS:php-smbclient = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-Catalog \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-Catalog-1.03-32.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-Catalog-1.03-32.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0dc48b251ebf5ada9672c19ca9335ac1f42afd8cac8ee8a92e436291460de454"
 
-URI_x86_64_v2_perl-XML-Catalog = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-Catalog-1.03-32.el10.noarch.rpm;name=x86_64_v2_perl-XML-Catalog;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-Catalog}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-Catalog-1.03-32.el10.noarch.rpm;name=x86_64_v2_perl-XML-Catalog;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-Catalog.sha256sum] = "1f7271c2fbf4f48efddafbb5217044554b1ea598287dda53dc69573cbaf5605a"
 
-URI_aarch64_perl-XML-Catalog = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-Catalog-1.03-32.el10.noarch.rpm;name=aarch64_perl-XML-Catalog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-Catalog}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-Catalog-1.03-32.el10.noarch.rpm;name=aarch64_perl-XML-Catalog;unpack=0"
 SRC_URI[aarch64_perl-XML-Catalog.sha256sum] = "1f7271c2fbf4f48efddafbb5217044554b1ea598287dda53dc69573cbaf5605a"
 
 RDEPENDS:perl-XML-Catalog = " \

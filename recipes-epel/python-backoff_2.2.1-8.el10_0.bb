@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-backoff \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-backoff-2.2.1-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-backoff-2.2.1-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a7548d06fb688015eec86c7a36ff3e24daa1bf5b48160b488648adfc29966f6d"
 
-URI_x86_64_v2_python3-backoff = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backoff-2.2.1-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backoff;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-backoff}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backoff-2.2.1-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backoff;unpack=0"
 SRC_URI[x86_64_v2_python3-backoff.sha256sum] = "a5de615f3e294f7627c5035476bd36ebb4da56765ec215e1459160a8abecbd7c"
 
-URI_aarch64_python3-backoff = "${EPEL_MIRROR}/aarch64/Packages/p/python3-backoff-2.2.1-8.el10_0.noarch.rpm;name=aarch64_python3-backoff;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-backoff}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-backoff-2.2.1-8.el10_0.noarch.rpm;name=aarch64_python3-backoff;unpack=0"
 SRC_URI[aarch64_python3-backoff.sha256sum] = "b4819e5e640f3e2f1baab94a41a7741cc975ef4aaeba5eb72b0e5ec10fb320b5"
 
 RDEPENDS:python3-backoff = " \

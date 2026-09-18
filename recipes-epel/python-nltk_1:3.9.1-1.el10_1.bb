@@ -10,16 +10,13 @@ PACKAGES = " \
  python3-nltk \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-nltk-3.9.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-nltk-3.9.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8043075d39b09be82133e451ea603de57974082d6dbb3206280685395de82759"
 
-URI_x86_64_v2_python3-nltk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nltk-3.9.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nltk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-nltk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nltk-3.9.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nltk;unpack=0"
 SRC_URI[x86_64_v2_python3-nltk.sha256sum] = "75abdd18222c6ac52d010a29b1c567ed0a0eee3118eed007c9a1b28aed43a23a"
 
-URI_aarch64_python3-nltk = "${EPEL_MIRROR}/aarch64/Packages/p/python3-nltk-3.9.1-1.el10_1.noarch.rpm;name=aarch64_python3-nltk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-nltk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-nltk-3.9.1-1.el10_1.noarch.rpm;name=aarch64_python3-nltk;unpack=0"
 SRC_URI[aarch64_python3-nltk.sha256sum] = "2d48bcf113f9361287521a28bcb8419d37edbbbd1caecfadf81d7ecb216a33e7"
 
 RDEPENDS:python3-nltk = " \

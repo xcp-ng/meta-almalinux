@@ -11,32 +11,25 @@ PACKAGES = " \
  dolphin-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/dolphin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/dolphin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "42529f8e5a86476cbbbf21ced8fd350ac8c6ecf0cd02d54c0c56b1455e6622c3"
 
-URI_x86_64_v2_dolphin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dolphin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin;unpack=0"
 SRC_URI[x86_64_v2_dolphin.sha256sum] = "795b6bf255edc4935383bc986323999b5aca0fe050ab81a8621ae9208cfcd5e9"
 
-URI_x86_64_v2_dolphin-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dolphin-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-devel;unpack=0"
 SRC_URI[x86_64_v2_dolphin-devel.sha256sum] = "17beeb55fb68340bf622f714d21cd9943cc11bac7c6d980b2956b0c0f8e76a3a"
 
-URI_x86_64_v2_dolphin-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dolphin-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dolphin-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dolphin-libs;unpack=0"
 SRC_URI[x86_64_v2_dolphin-libs.sha256sum] = "b627b248d1f4bc1cb74d2d4e29917bbfe39af9b83d2685f1a13b996c57d5d3b0"
 
-URI_aarch64_dolphin = "${EPEL_MIRROR}/aarch64/Packages/d/dolphin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dolphin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dolphin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin;unpack=0"
 SRC_URI[aarch64_dolphin.sha256sum] = "15acbc47844e4966705a72597cc8d3bef4bfb8d93c35f45e1c2c22866a2769fc"
 
-URI_aarch64_dolphin-devel = "${EPEL_MIRROR}/aarch64/Packages/d/dolphin-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dolphin-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dolphin-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-devel;unpack=0"
 SRC_URI[aarch64_dolphin-devel.sha256sum] = "acc75d61be5308d278a2bf65b1d0bf024d4d819411f0dd0225d83d6f07e4c0a1"
 
-URI_aarch64_dolphin-libs = "${EPEL_MIRROR}/aarch64/Packages/d/dolphin-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dolphin-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dolphin-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_dolphin-libs;unpack=0"
 SRC_URI[aarch64_dolphin-libs.sha256sum] = "da61a67faf67e251fecbfb7ef24c1db86b582f6ca959753b97ed9e628570e115"
 
 RDEPENDS:dolphin = " \

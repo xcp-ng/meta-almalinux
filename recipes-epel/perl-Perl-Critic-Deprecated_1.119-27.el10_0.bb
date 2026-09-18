@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Perl-Critic-Deprecated \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-Critic-Deprecated-1.119-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-Critic-Deprecated-1.119-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0a0d35ce0b3fa304ceceb1f66732676cc17c35f62c2f9dcda22b729063d3e2ab"
 
-URI_x86_64_v2_perl-Perl-Critic-Deprecated = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Deprecated-1.119-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Deprecated;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Deprecated}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Deprecated-1.119-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Deprecated;unpack=0"
 SRC_URI[x86_64_v2_perl-Perl-Critic-Deprecated.sha256sum] = "60facdbc8138d299728204c2511f24d9bb1fdc84a7e53fcbf5f7ee69c38eea4a"
 
-URI_aarch64_perl-Perl-Critic-Deprecated = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Deprecated-1.119-27.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Deprecated;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Perl-Critic-Deprecated}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Deprecated-1.119-27.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Deprecated;unpack=0"
 SRC_URI[aarch64_perl-Perl-Critic-Deprecated.sha256sum] = "a4fdfc7b6da97179b9eb3c908a61e5333ddcceddd83f83ea4e4025ea96cc6415"
 
 RDEPENDS:perl-Perl-Critic-Deprecated = " \

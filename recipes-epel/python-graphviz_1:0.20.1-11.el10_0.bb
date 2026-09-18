@@ -11,24 +11,19 @@ PACKAGES = " \
  python3-graphviz \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-graphviz-0.20.1-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-graphviz-0.20.1-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe582d662470d0396a2c5ef48c249d6b6e1c81ee9021d2bf923ff1a522b6be67"
 
-URI_x86_64_v2_python-graphviz-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-graphviz-doc-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-graphviz-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-graphviz-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-graphviz-doc-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-graphviz-doc;unpack=0"
 SRC_URI[x86_64_v2_python-graphviz-doc.sha256sum] = "ee3594e89ab94ffe096b602ecbe29604865f4706d14ba43fc495108e16be2245"
 
-URI_x86_64_v2_python3-graphviz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-graphviz-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-graphviz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-graphviz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-graphviz-0.20.1-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-graphviz;unpack=0"
 SRC_URI[x86_64_v2_python3-graphviz.sha256sum] = "445bd7a823e1f81b098a167a191a365c1c9788d466a9a84e6e7e35425c5d2872"
 
-URI_aarch64_python-graphviz-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-graphviz-doc-0.20.1-11.el10_0.noarch.rpm;name=aarch64_python-graphviz-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-graphviz-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-graphviz-doc-0.20.1-11.el10_0.noarch.rpm;name=aarch64_python-graphviz-doc;unpack=0"
 SRC_URI[aarch64_python-graphviz-doc.sha256sum] = "e3f4a45c744668dbec0e40603f21c922c618548aad2dd91c6b96ff0a92914723"
 
-URI_aarch64_python3-graphviz = "${EPEL_MIRROR}/aarch64/Packages/p/python3-graphviz-0.20.1-11.el10_0.noarch.rpm;name=aarch64_python3-graphviz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-graphviz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-graphviz-0.20.1-11.el10_0.noarch.rpm;name=aarch64_python3-graphviz;unpack=0"
 SRC_URI[aarch64_python3-graphviz.sha256sum] = "3d3ca112d31123389aabef75f4d1da1ab408b1b6707225b445f14024cc922fa1"
 
 RDEPENDS:python-graphviz-doc = " \

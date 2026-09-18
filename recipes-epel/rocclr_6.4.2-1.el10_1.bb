@@ -13,16 +13,13 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rocclr-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rocclr-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2bd888ccf9f4da3705aba8914b45edd4388d1aba3ae1b72086aafd9964be3e0b"
 
-URI_x86_64_v2_rocm-hip = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-hip-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-hip;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-hip}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-hip-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-hip;unpack=0"
 SRC_URI[x86_64_v2_rocm-hip.sha256sum] = "f6695f2a06a1e58354acdcbf6266f43100e5d719c78e437f4b7cdd858d9053b2"
 
-URI_x86_64_v2_rocm-hip-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-hip-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-hip-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-hip-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-hip-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-hip-devel;unpack=0"
 SRC_URI[x86_64_v2_rocm-hip-devel.sha256sum] = "1d037305a6c02db39f8aba4460be949bc27cffbac9540cb60c5b9269b84d3045"
 
 RDEPENDS:rocm-hip = " \

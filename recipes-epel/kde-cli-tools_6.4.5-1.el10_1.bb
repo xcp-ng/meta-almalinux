@@ -10,24 +10,19 @@ PACKAGES = " \
  kdesu \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kde-cli-tools-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kde-cli-tools-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "965de125d3cface56ec424cc543dcd0d2ec9cff1a5f5ac0cea81880f3f77231e"
 
-URI_x86_64_v2_kde-cli-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-cli-tools-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-cli-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-cli-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-cli-tools-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-cli-tools;unpack=0"
 SRC_URI[x86_64_v2_kde-cli-tools.sha256sum] = "b499cf8663b3041d5a13219f950c3d9aa1eb49406fa4c87e7627295dd8fb63aa"
 
-URI_x86_64_v2_kdesu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdesu-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdesu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdesu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdesu-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdesu;unpack=0"
 SRC_URI[x86_64_v2_kdesu.sha256sum] = "ac057bc0d35227529351207994a7ce88bcb5c8b7fe81fab7583ed56b870f6a82"
 
-URI_aarch64_kde-cli-tools = "${EPEL_MIRROR}/aarch64/Packages/k/kde-cli-tools-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kde-cli-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-cli-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-cli-tools-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kde-cli-tools;unpack=0"
 SRC_URI[aarch64_kde-cli-tools.sha256sum] = "d30d3180da1a15ca353f18df4d87eed757f43480d7804eb7bc5009d47c9398fb"
 
-URI_aarch64_kdesu = "${EPEL_MIRROR}/aarch64/Packages/k/kdesu-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kdesu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdesu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdesu-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kdesu;unpack=0"
 SRC_URI[aarch64_kdesu.sha256sum] = "0f0d485c1d0ccbc4591cd8daa87a95a8471bd24fbed0c5eb99b051c567d25210"
 
 RDEPENDS:kde-cli-tools = " \

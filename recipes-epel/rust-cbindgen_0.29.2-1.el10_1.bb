@@ -13,48 +13,37 @@ PACKAGES = " \
  rust-cbindgen-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cbindgen-0.29.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cbindgen-0.29.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6b9b2598562adcba87420959852b2187e61c67655c4c6bec2ac41b5df9f687db"
 
-URI_x86_64_v2_cbindgen = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cbindgen-0.29.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cbindgen;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cbindgen}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cbindgen-0.29.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cbindgen;unpack=0"
 SRC_URI[x86_64_v2_cbindgen.sha256sum] = "39fc7c4223ec277ebe4f5557dcf86dfcb850a913bf354f55dac328c79da7eb4e"
 
-URI_x86_64_v2_rust-cbindgen+clap-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+clap-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+clap-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen+clap-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+clap-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+clap-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen+clap-devel.sha256sum] = "86efc4e7172d51e4ba82613fd03f097b12242a70b7d9afdd9d1825980a51bd73"
 
-URI_x86_64_v2_rust-cbindgen+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+default-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+default-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen+default-devel.sha256sum] = "797a9e54013a2a33a4239a475b8f85e43e60e53012419afaff51777cf0a43d67"
 
-URI_x86_64_v2_rust-cbindgen+unstable_ir-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+unstable_ir-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+unstable_ir-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen+unstable_ir-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen+unstable_ir-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen+unstable_ir-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen+unstable_ir-devel.sha256sum] = "c7ba0bdf8124cd2be4189ea9ee6c0522947d4ccbdd07cb8a804793ed74c00d58"
 
-URI_x86_64_v2_rust-cbindgen-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen-devel-0.29.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen-devel.sha256sum] = "afc83c28dfc75b10f27361775a225e382196f61031fb7fa9ce6a20e1fe07736d"
 
-URI_aarch64_cbindgen = "${EPEL_MIRROR}/aarch64/Packages/c/cbindgen-0.29.2-1.el10_1.aarch64.rpm;name=aarch64_cbindgen;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cbindgen}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cbindgen-0.29.2-1.el10_1.aarch64.rpm;name=aarch64_cbindgen;unpack=0"
 SRC_URI[aarch64_cbindgen.sha256sum] = "f603201f38f68ac4ea8ff472db2fc1c7d098aea92f37263a125d9370d0c4074f"
 
-URI_aarch64_rust-cbindgen+clap-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+clap-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+clap-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen+clap-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+clap-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+clap-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen+clap-devel.sha256sum] = "24890af22bce1f0b4d56efc90be119d76cfe71b8051a5d714bb4afc1623c0145"
 
-URI_aarch64_rust-cbindgen+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+default-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+default-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen+default-devel.sha256sum] = "6d07e071d3ce04b97e78d5a1042b25adf016a3b71d2c50cb4da4af569445f2e8"
 
-URI_aarch64_rust-cbindgen+unstable_ir-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+unstable_ir-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+unstable_ir-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen+unstable_ir-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen+unstable_ir-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen+unstable_ir-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen+unstable_ir-devel.sha256sum] = "d5bbbdd83de4d31658ad02b12bc1b1696c6b3eb61edfd72bfe416d32477510dd"
 
-URI_aarch64_rust-cbindgen-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen-devel-0.29.2-1.el10_1.noarch.rpm;name=aarch64_rust-cbindgen-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen-devel.sha256sum] = "962eda2cf8398deb47d511de4671b815d919cf7e0b496419ab5ed56f68e9b711"
 
 RDEPENDS:cbindgen = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kwordquiz \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kwordquiz-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kwordquiz-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "01309f4dad3b20c5d44b9978917ca66b6c23ee38dc72e28eb8dc2cf2b5b0d58f"
 
-URI_x86_64_v2_kwordquiz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwordquiz-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwordquiz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwordquiz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwordquiz-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwordquiz;unpack=0"
 SRC_URI[x86_64_v2_kwordquiz.sha256sum] = "21aa6f2865d4e6b51d89e1f274d2792a9a16414e8920b3e7c18a868f000046f9"
 
-URI_aarch64_kwordquiz = "${EPEL_MIRROR}/aarch64/Packages/k/kwordquiz-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwordquiz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwordquiz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwordquiz-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwordquiz;unpack=0"
 SRC_URI[aarch64_kwordquiz.sha256sum] = "ae0a843badcb29538d70b672a6921ec40de6a99f38639981bfa393bafaf55940"
 
 RDEPENDS:kwordquiz = " \

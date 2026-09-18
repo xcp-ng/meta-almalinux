@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-terminfo-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-terminfo-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-terminfo-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b111a42c1aa841a6496515d63741243c63182ad4bbb479b230cf6f0c32cb9a96"
 
-URI_x86_64_v2_rust-terminfo+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-terminfo+default-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-terminfo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-terminfo+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-terminfo+default-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-terminfo+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-terminfo+default-devel.sha256sum] = "b120d27548698a8adc597e7bcabe704356b7035824e6f3e8cc7dbf4c631af20f"
 
-URI_x86_64_v2_rust-terminfo-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-terminfo-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-terminfo-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-terminfo-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-terminfo-devel-0.9.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-terminfo-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-terminfo-devel.sha256sum] = "2e6f35f402d248c3e14c101bdd5322538eca80c81c89a7c0b43f3a164e0663fa"
 
-URI_aarch64_rust-terminfo+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-terminfo+default-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-terminfo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-terminfo+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-terminfo+default-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-terminfo+default-devel;unpack=0"
 SRC_URI[aarch64_rust-terminfo+default-devel.sha256sum] = "40005be0a574ce44e8308dbc3879adc7c16f26955c52f25b156de3ebfb5baf11"
 
-URI_aarch64_rust-terminfo-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-terminfo-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-terminfo-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-terminfo-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-terminfo-devel-0.9.0-2.el10_1.noarch.rpm;name=aarch64_rust-terminfo-devel;unpack=0"
 SRC_URI[aarch64_rust-terminfo-devel.sha256sum] = "5ddc3680c5c0297a640b76eb94a43aa5be1c3c446671389252523a63f83e0f92"
 
 RDEPENDS:rust-terminfo+default-devel = " \

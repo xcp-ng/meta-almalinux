@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-ExtUtils-ParseXS \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f04b4cdcc87a8f6fbe03b2f7aae97040c8ad4027e0548e3304fcab48e8d6a946"
 
-URI_x86_64_v2_perl-ExtUtils-ParseXS = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-ParseXS;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-ParseXS}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-ParseXS;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-ParseXS.sha256sum] = "08653f50841f2c5ac8a07edbf93665304cae988b6fbf6e7ce680d07803ca0322"
 
-URI_aarch64_perl-ExtUtils-ParseXS = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.noarch.rpm;name=aarch64_perl-ExtUtils-ParseXS;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-ParseXS}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.noarch.rpm;name=aarch64_perl-ExtUtils-ParseXS;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-ParseXS.sha256sum] = "08653f50841f2c5ac8a07edbf93665304cae988b6fbf6e7ce680d07803ca0322"
 
 RDEPENDS:perl-ExtUtils-ParseXS = " \

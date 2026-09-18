@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Text-CSV \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Text-CSV-2.06-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Text-CSV-2.06-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7d5a23919ca3fd5474f64ebdd456decd5119a72015f10a2f8b8dfca5ac9ff38a"
 
-URI_x86_64_v2_perl-Text-CSV = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-CSV-2.06-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-CSV;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Text-CSV}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-CSV-2.06-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-CSV;unpack=0"
 SRC_URI[x86_64_v2_perl-Text-CSV.sha256sum] = "decde04b2dde1442a970345dc59f6c025f1b08d136427a398d4acb733e888a71"
 
-URI_aarch64_perl-Text-CSV = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-CSV-2.06-1.el10_1.noarch.rpm;name=aarch64_perl-Text-CSV;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Text-CSV}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-CSV-2.06-1.el10_1.noarch.rpm;name=aarch64_perl-Text-CSV;unpack=0"
 SRC_URI[aarch64_perl-Text-CSV.sha256sum] = "e5964998d5eaa39c564e431739735e809ec0046ef6c6c9ac1cdbc2e91a9a6ac1"
 
 RDEPENDS:perl-Text-CSV = " \

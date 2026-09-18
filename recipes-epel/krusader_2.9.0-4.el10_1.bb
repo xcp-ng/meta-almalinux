@@ -9,16 +9,13 @@ PACKAGES = " \
  krusader \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/krusader-2.9.0-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/krusader-2.9.0-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a38d7a0692e424f1771ab254729abb5413c986b2ea43a613678aab1aeacfd846"
 
-URI_x86_64_v2_krusader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krusader-2.9.0-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krusader;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_krusader}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krusader-2.9.0-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krusader;unpack=0"
 SRC_URI[x86_64_v2_krusader.sha256sum] = "725ff89595ca5bc8392d9004ac3b103e7f7d6456ded80e74b5bf96bdb58274b6"
 
-URI_aarch64_krusader = "${EPEL_MIRROR}/aarch64/Packages/k/krusader-2.9.0-4.el10_1.aarch64.rpm;name=aarch64_krusader;unpack=0"
-SRC_URI:append = " ${URI_aarch64_krusader}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/krusader-2.9.0-4.el10_1.aarch64.rpm;name=aarch64_krusader;unpack=0"
 SRC_URI[aarch64_krusader.sha256sum] = "de5ce4ea25b52d7b469c24a2d0374d303906e9d0c9897dc7b5bd5de2757ae64b"
 
 RDEPENDS:krusader:x86_64_v2 = " \

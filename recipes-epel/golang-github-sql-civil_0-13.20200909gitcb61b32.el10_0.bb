@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-sql-civil-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-sql-civil-0-13.20200909gitcb61b32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-sql-civil-0-13.20200909gitcb61b32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "07dbcd15714fd4d4a88c9b30e52e8010871346389d38fedce802496ce1c4c854"
 
-URI_aarch64_golang-github-sql-civil-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sql-civil-devel-0-13.20200909gitcb61b32.el10_0.noarch.rpm;name=aarch64_golang-github-sql-civil-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-sql-civil-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sql-civil-devel-0-13.20200909gitcb61b32.el10_0.noarch.rpm;name=aarch64_golang-github-sql-civil-devel;unpack=0"
 SRC_URI[aarch64_golang-github-sql-civil-devel.sha256sum] = "d38121ec29e1d31c4472dbf633a627f64af2aa0d62a15425661a2f9e50354911"
 
 RDEPENDS:golang-github-sql-civil-devel = " \

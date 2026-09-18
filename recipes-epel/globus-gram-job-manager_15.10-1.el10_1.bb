@@ -10,24 +10,19 @@ PACKAGES = " \
  globus-seg-job-manager \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/globus-gram-job-manager-15.10-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/globus-gram-job-manager-15.10-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "06ccf5d32698d8c894f65363950debe8f5b556a88a59c763275ec32389198884"
 
-URI_x86_64_v2_globus-gram-job-manager = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gram-job-manager-15.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gram-job-manager;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gram-job-manager}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gram-job-manager-15.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gram-job-manager;unpack=0"
 SRC_URI[x86_64_v2_globus-gram-job-manager.sha256sum] = "5620abb2b045b1364bd7942e5582a2b5a6d2cd8c2086345b01d8d80223176615"
 
-URI_x86_64_v2_globus-seg-job-manager = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-seg-job-manager-15.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-seg-job-manager;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-seg-job-manager}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-seg-job-manager-15.10-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-seg-job-manager;unpack=0"
 SRC_URI[x86_64_v2_globus-seg-job-manager.sha256sum] = "f30326dccb262a4ffd0f0d1d94e553d5a25d2ab6e1723a890000db5c23e98333"
 
-URI_aarch64_globus-gram-job-manager = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gram-job-manager-15.10-1.el10_1.aarch64.rpm;name=aarch64_globus-gram-job-manager;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gram-job-manager}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gram-job-manager-15.10-1.el10_1.aarch64.rpm;name=aarch64_globus-gram-job-manager;unpack=0"
 SRC_URI[aarch64_globus-gram-job-manager.sha256sum] = "0deade9587d427d52882cf08d4d711a7ba63ad812c553442e3d0834b94a73bac"
 
-URI_aarch64_globus-seg-job-manager = "${EPEL_MIRROR}/aarch64/Packages/g/globus-seg-job-manager-15.10-1.el10_1.aarch64.rpm;name=aarch64_globus-seg-job-manager;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-seg-job-manager}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-seg-job-manager-15.10-1.el10_1.aarch64.rpm;name=aarch64_globus-seg-job-manager;unpack=0"
 SRC_URI[aarch64_globus-seg-job-manager.sha256sum] = "c481520298c15b386c40a92600b3d8517e4b47084fa6ca105989e76123602389"
 
 RDEPENDS:globus-gram-job-manager = " \

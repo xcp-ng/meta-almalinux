@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Kwalitee \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Kwalitee-1.28-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Kwalitee-1.28-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec283567cb4c8839e89de4f0302e15ac9a3609c08640d78c81a84c94d10978af"
 
-URI_x86_64_v2_perl-Test-Kwalitee = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Kwalitee-1.28-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Kwalitee;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Kwalitee}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Kwalitee-1.28-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Kwalitee;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Kwalitee.sha256sum] = "e9b7d6e9bd466aac0d536057e9acb25f5a2e6d9a67383fd08bc489d32f902700"
 
-URI_aarch64_perl-Test-Kwalitee = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Kwalitee-1.28-13.el10_0.noarch.rpm;name=aarch64_perl-Test-Kwalitee;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Kwalitee}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Kwalitee-1.28-13.el10_0.noarch.rpm;name=aarch64_perl-Test-Kwalitee;unpack=0"
 SRC_URI[aarch64_perl-Test-Kwalitee.sha256sum] = "dde6da6b185a72410d7d5c4acba5eeebb819d0867112dc82b7f5994aed12ee96"
 
 RDEPENDS:perl-Test-Kwalitee = " \

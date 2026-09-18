@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tomli \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tomli-2.0.1-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tomli-2.0.1-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1e7053ff047ecf4d94a55df6a0a9294bae2a88ad741d563c781d6826ca9e2f3d"
 
-URI_x86_64_v2_python3-tomli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tomli-2.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tomli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tomli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tomli-2.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tomli;unpack=0"
 SRC_URI[x86_64_v2_python3-tomli.sha256sum] = "229eae01605540b4c79bc756a081e83126f8dfcdb0666494f29e8c506477286f"
 
-URI_aarch64_python3-tomli = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tomli-2.0.1-17.el10_0.noarch.rpm;name=aarch64_python3-tomli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tomli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tomli-2.0.1-17.el10_0.noarch.rpm;name=aarch64_python3-tomli;unpack=0"
 SRC_URI[aarch64_python3-tomli.sha256sum] = "fcc92299e686077775409c85e1f88735085420d2d322774b9e2358ee49b48c90"
 
 RDEPENDS:python3-tomli = " \

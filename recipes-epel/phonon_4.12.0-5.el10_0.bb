@@ -11,32 +11,25 @@ PACKAGES = " \
  phonon-qt6-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/phonon-4.12.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/phonon-4.12.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c541f355e992a1d9111099c6cea6b173e948995af3bde736f61638bd4a124c77"
 
-URI_x86_64_v2_phonon-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-common-4.12.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_phonon-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_phonon-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-common-4.12.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_phonon-common;unpack=0"
 SRC_URI[x86_64_v2_phonon-common.sha256sum] = "c49941ea2cdb4c5ff6d0139ab3d61ed2a5dc3803f1dcb34d55f7a1c02d13325e"
 
-URI_x86_64_v2_phonon-qt6 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_phonon-qt6}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6;unpack=0"
 SRC_URI[x86_64_v2_phonon-qt6.sha256sum] = "ac6a63739d6689ce6ef249164f78f02a255ca7396a86cc42affc89be204d9e91"
 
-URI_x86_64_v2_phonon-qt6-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-devel-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_phonon-qt6-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/phonon-qt6-devel-4.12.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_phonon-qt6-devel;unpack=0"
 SRC_URI[x86_64_v2_phonon-qt6-devel.sha256sum] = "5142da3f5dadb17753b846049a55beb8e7de83859599367c9af0f9ab973a648d"
 
-URI_aarch64_phonon-common = "${EPEL_MIRROR}/aarch64/Packages/p/phonon-common-4.12.0-5.el10_0.noarch.rpm;name=aarch64_phonon-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_phonon-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/phonon-common-4.12.0-5.el10_0.noarch.rpm;name=aarch64_phonon-common;unpack=0"
 SRC_URI[aarch64_phonon-common.sha256sum] = "8454ec7bc563c5ed9dd23b09c5e1c837e09eba7444a408b6ca66b063772eed2c"
 
-URI_aarch64_phonon-qt6 = "${EPEL_MIRROR}/aarch64/Packages/p/phonon-qt6-4.12.0-5.el10_0.aarch64.rpm;name=aarch64_phonon-qt6;unpack=0"
-SRC_URI:append = " ${URI_aarch64_phonon-qt6}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/phonon-qt6-4.12.0-5.el10_0.aarch64.rpm;name=aarch64_phonon-qt6;unpack=0"
 SRC_URI[aarch64_phonon-qt6.sha256sum] = "735ab8ea4d404b89c8e9c27c5248a7920ab3feb5a0f62129ce8927475a05061a"
 
-URI_aarch64_phonon-qt6-devel = "${EPEL_MIRROR}/aarch64/Packages/p/phonon-qt6-devel-4.12.0-5.el10_0.aarch64.rpm;name=aarch64_phonon-qt6-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_phonon-qt6-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/phonon-qt6-devel-4.12.0-5.el10_0.aarch64.rpm;name=aarch64_phonon-qt6-devel;unpack=0"
 SRC_URI[aarch64_phonon-qt6-devel.sha256sum] = "cfe4d1a5982c8dc3ba10ba51610073cb00f96f8b5b78205ee1105df8311071ce"
 
 RDEPENDS:phonon-common = " \

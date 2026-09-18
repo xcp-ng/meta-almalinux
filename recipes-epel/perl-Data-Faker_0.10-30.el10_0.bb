@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Faker \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Faker-0.10-30.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Faker-0.10-30.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e418c4cb1073f9aacf34aa399cc20f32f50aa28a10c18970d38b7ab7240f7732"
 
-URI_x86_64_v2_perl-Data-Faker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Faker-0.10-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Faker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Faker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Faker-0.10-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Faker;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Faker.sha256sum] = "0a05ce1277af64bfb90c7b9749136fd58f4ba1574f59c2ae0925963d669e18ab"
 
-URI_aarch64_perl-Data-Faker = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Faker-0.10-30.el10_0.noarch.rpm;name=aarch64_perl-Data-Faker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Faker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Faker-0.10-30.el10_0.noarch.rpm;name=aarch64_perl-Data-Faker;unpack=0"
 SRC_URI[aarch64_perl-Data-Faker.sha256sum] = "e386b77f67655f36ace5eebf7899fbf40160994292d55bc0e473281a5a37b3cd"
 
 RDEPENDS:perl-Data-Faker = " \

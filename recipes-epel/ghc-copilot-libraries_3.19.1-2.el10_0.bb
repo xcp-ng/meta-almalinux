@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-copilot-libraries-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-libraries-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-libraries-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af2bbcca2991bd5a97c8974d2c1ae00c06fcec43e2e9d03ce087f8d1493a7db0"
 
-URI_x86_64_v2_ghc-copilot-libraries = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-libraries}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-libraries.sha256sum] = "dcae2cd51012960456862ea401bb6b5bffd10b5fd2ed15cd9376027496e7cc6b"
 
-URI_x86_64_v2_ghc-copilot-libraries-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-libraries-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-libraries-devel.sha256sum] = "b32c64a1f97c40766a2810391bc9e22525e03291921c8581984a975c071239c8"
 
-URI_x86_64_v2_ghc-copilot-libraries-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-libraries-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-libraries-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-libraries-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-libraries-doc.sha256sum] = "fbc9bf129499ac54130fee571f4f9fea4cf15d2a0552c724d0a144dd73f757e7"
 
-URI_x86_64_v2_ghc-copilot-libraries-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-libraries-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-libraries-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-libraries-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-libraries-prof.sha256sum] = "8daa688870804e65a5309c62855612a7cded9f2cdcff21d41f08df6883f6c5f8"
 
-URI_aarch64_ghc-copilot-libraries = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-libraries}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries;unpack=0"
 SRC_URI[aarch64_ghc-copilot-libraries.sha256sum] = "ca8ed2a8e2edcf04e886282fbad50eb8375af469c24a38501383fa736eb24e7b"
 
-URI_aarch64_ghc-copilot-libraries-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-libraries-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries-devel;unpack=0"
 SRC_URI[aarch64_ghc-copilot-libraries-devel.sha256sum] = "cfebe139a05a9c03b448dd2f47b24611a217d234971fc6876f79f62457ce5b95"
 
-URI_aarch64_ghc-copilot-libraries-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-libraries-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-libraries-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-libraries-doc;unpack=0"
 SRC_URI[aarch64_ghc-copilot-libraries-doc.sha256sum] = "8381deb9f25c487bfa309ef9f2c4017f5b042e24f3d9489a0460a5b0d33d62ce"
 
-URI_aarch64_ghc-copilot-libraries-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-libraries-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-libraries-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-libraries-prof;unpack=0"
 SRC_URI[aarch64_ghc-copilot-libraries-prof.sha256sum] = "2dd4c6c3bf0bb457d90c0a6dd884d038156f3dbce0bf4ea2509c4faa8c0ff70c"
 
 RDEPENDS:ghc-copilot-libraries = " \

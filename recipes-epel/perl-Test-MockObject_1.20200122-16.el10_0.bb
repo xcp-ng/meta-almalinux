@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-MockObject \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-MockObject-1.20200122-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-MockObject-1.20200122-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "08c1c259582ed984f66dd5baacc7c2192c1249d50ec5b2e553004abb37ed71ff"
 
-URI_x86_64_v2_perl-Test-MockObject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-MockObject-1.20200122-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-MockObject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-MockObject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-MockObject-1.20200122-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-MockObject;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-MockObject.sha256sum] = "aed06ad028045b23b9a94b41fb171f8bd44e6b79a12611efaa0ddebd31824648"
 
-URI_aarch64_perl-Test-MockObject = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-MockObject-1.20200122-16.el10_0.noarch.rpm;name=aarch64_perl-Test-MockObject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-MockObject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-MockObject-1.20200122-16.el10_0.noarch.rpm;name=aarch64_perl-Test-MockObject;unpack=0"
 SRC_URI[aarch64_perl-Test-MockObject.sha256sum] = "cf0999dfa4af45e7f0e44904cf9927853004a9c1ba4dfe5e206e3c4747944558"
 
 RDEPENDS:perl-Test-MockObject = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  kglobalacceld-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kglobalacceld-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kglobalacceld-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "72f45e5829a93a2acd12571095d07895b8ccd9b02de66bf9d6cc267b2c9f864d"
 
-URI_x86_64_v2_kglobalacceld = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kglobalacceld-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kglobalacceld;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kglobalacceld}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kglobalacceld-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kglobalacceld;unpack=0"
 SRC_URI[x86_64_v2_kglobalacceld.sha256sum] = "09afd6a3f7f1eb92aff6f09fd5c78be199586d3c513307f604f9b7a4d4de58ad"
 
-URI_x86_64_v2_kglobalacceld-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kglobalacceld-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kglobalacceld-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kglobalacceld-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kglobalacceld-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kglobalacceld-devel;unpack=0"
 SRC_URI[x86_64_v2_kglobalacceld-devel.sha256sum] = "2e09e5081d39f3b93efed04393350628ed4fa55baa67926bff13d0e7f6a05752"
 
-URI_aarch64_kglobalacceld = "${EPEL_MIRROR}/aarch64/Packages/k/kglobalacceld-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kglobalacceld;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kglobalacceld}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kglobalacceld-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kglobalacceld;unpack=0"
 SRC_URI[aarch64_kglobalacceld.sha256sum] = "a261cb9ba59b8709ea029eed41971c1b31996bf3d3c345fb622ab2dcfc8051bd"
 
-URI_aarch64_kglobalacceld-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kglobalacceld-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kglobalacceld-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kglobalacceld-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kglobalacceld-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kglobalacceld-devel;unpack=0"
 SRC_URI[aarch64_kglobalacceld-devel.sha256sum] = "6f26f0c44de0caaee8aa325593036d594e76bbe665831dd5c39f39b5ae8458a3"
 
 RDEPENDS:kglobalacceld = " \

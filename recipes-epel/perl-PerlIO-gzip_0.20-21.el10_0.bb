@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-PerlIO-gzip \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-PerlIO-gzip-0.20-21.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-PerlIO-gzip-0.20-21.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5f59b0502d6ab5a5136d797b549e2fb9d2de302d2fc2ad800015cdcb9db42e30"
 
-URI_x86_64_v2_perl-PerlIO-gzip = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PerlIO-gzip-0.20-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-PerlIO-gzip;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PerlIO-gzip}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PerlIO-gzip-0.20-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-PerlIO-gzip;unpack=0"
 SRC_URI[x86_64_v2_perl-PerlIO-gzip.sha256sum] = "557e876c67b51157ee0c4bf68f7d1845fffecc7d3604ab72745357ae79c8effd"
 
-URI_aarch64_perl-PerlIO-gzip = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PerlIO-gzip-0.20-21.el10_0.aarch64.rpm;name=aarch64_perl-PerlIO-gzip;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PerlIO-gzip}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PerlIO-gzip-0.20-21.el10_0.aarch64.rpm;name=aarch64_perl-PerlIO-gzip;unpack=0"
 SRC_URI[aarch64_perl-PerlIO-gzip.sha256sum] = "ca493aa431bf81a78cdf764b412bdf33827e298a6a60f13d0486e618f50049b5"
 
 RDEPENDS:perl-PerlIO-gzip = " \

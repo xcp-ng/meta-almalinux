@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-YAML-Valid \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-YAML-Valid-0.04-39.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-YAML-Valid-0.04-39.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "97654db5d3944a64a065f6ac8f61cb570e615672cf2427e4a002d1a12986f4df"
 
-URI_x86_64_v2_perl-Test-YAML-Valid = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-YAML-Valid-0.04-39.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-YAML-Valid;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-YAML-Valid}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-YAML-Valid-0.04-39.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-YAML-Valid;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-YAML-Valid.sha256sum] = "b244e63588e602ca4927492771f23b38b14021858683dc4d5ee54672ab746517"
 
-URI_aarch64_perl-Test-YAML-Valid = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-YAML-Valid-0.04-39.el10_0.noarch.rpm;name=aarch64_perl-Test-YAML-Valid;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-YAML-Valid}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-YAML-Valid-0.04-39.el10_0.noarch.rpm;name=aarch64_perl-Test-YAML-Valid;unpack=0"
 SRC_URI[aarch64_perl-Test-YAML-Valid.sha256sum] = "04bd195af6d856bb2be07f7f1c7b7f29ea39b173163cb738bdbcee00a0fdfb07"
 
 RDEPENDS:perl-Test-YAML-Valid = " \

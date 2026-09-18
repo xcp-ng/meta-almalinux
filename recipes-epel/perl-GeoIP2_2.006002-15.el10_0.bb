@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-GeoIP2-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-GeoIP2-2.006002-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-GeoIP2-2.006002-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d59388db245db630037d1576e88884cdd43d5094200d51803730aa5d0c0a0066"
 
-URI_x86_64_v2_perl-GeoIP2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GeoIP2-2.006002-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GeoIP2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-GeoIP2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GeoIP2-2.006002-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GeoIP2;unpack=0"
 SRC_URI[x86_64_v2_perl-GeoIP2.sha256sum] = "c7feabe0cbbd98ea1d76bbbd58ded6054762e84ad513556f8f7f0cd934193b08"
 
-URI_x86_64_v2_perl-GeoIP2-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GeoIP2-tests-2.006002-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GeoIP2-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-GeoIP2-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GeoIP2-tests-2.006002-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GeoIP2-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-GeoIP2-tests.sha256sum] = "a81fe40b80e3261a7a5b83980421ad62fc5eb93e99e36ef95516eee980d92944"
 
-URI_aarch64_perl-GeoIP2 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-GeoIP2-2.006002-15.el10_0.noarch.rpm;name=aarch64_perl-GeoIP2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-GeoIP2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-GeoIP2-2.006002-15.el10_0.noarch.rpm;name=aarch64_perl-GeoIP2;unpack=0"
 SRC_URI[aarch64_perl-GeoIP2.sha256sum] = "4720c6da092aea03899656a3743105a630e0057702b4a3cd74e78a3fa9eec1cc"
 
-URI_aarch64_perl-GeoIP2-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-GeoIP2-tests-2.006002-15.el10_0.noarch.rpm;name=aarch64_perl-GeoIP2-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-GeoIP2-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-GeoIP2-tests-2.006002-15.el10_0.noarch.rpm;name=aarch64_perl-GeoIP2-tests;unpack=0"
 SRC_URI[aarch64_perl-GeoIP2-tests.sha256sum] = "25175e7aa3f1412dad26d02290c4a850839d88923156b34ac9bc7e4a128d5b7e"
 
 RDEPENDS:perl-GeoIP2 = " \

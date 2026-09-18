@@ -10,24 +10,19 @@ PACKAGES = " \
  gscan2pdf-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gscan2pdf-2.13.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gscan2pdf-2.13.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "52f51b51fda3293e22c34a96093e8aadfc67c77d49edf5f22d67b9eebd8eace6"
 
-URI_x86_64_v2_gscan2pdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gscan2pdf-2.13.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gscan2pdf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gscan2pdf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gscan2pdf-2.13.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gscan2pdf;unpack=0"
 SRC_URI[x86_64_v2_gscan2pdf.sha256sum] = "6e2082318d36f4b3ebbf9e345acb606306a04911b2c3e18218f4e5c273fa304d"
 
-URI_x86_64_v2_gscan2pdf-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gscan2pdf-tests-2.13.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gscan2pdf-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gscan2pdf-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gscan2pdf-tests-2.13.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gscan2pdf-tests;unpack=0"
 SRC_URI[x86_64_v2_gscan2pdf-tests.sha256sum] = "f1bef3d1842efe48fc6a5220613ba273862a76145c2fda2ff5d4df8e28b8a9a3"
 
-URI_aarch64_gscan2pdf = "${EPEL_MIRROR}/aarch64/Packages/g/gscan2pdf-2.13.5-1.el10_1.noarch.rpm;name=aarch64_gscan2pdf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gscan2pdf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gscan2pdf-2.13.5-1.el10_1.noarch.rpm;name=aarch64_gscan2pdf;unpack=0"
 SRC_URI[aarch64_gscan2pdf.sha256sum] = "e80569541f217bc2613bba103257ea865a81925e8ecf0d29bff4f5a0c9eb7937"
 
-URI_aarch64_gscan2pdf-tests = "${EPEL_MIRROR}/aarch64/Packages/g/gscan2pdf-tests-2.13.5-1.el10_1.noarch.rpm;name=aarch64_gscan2pdf-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gscan2pdf-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gscan2pdf-tests-2.13.5-1.el10_1.noarch.rpm;name=aarch64_gscan2pdf-tests;unpack=0"
 SRC_URI[aarch64_gscan2pdf-tests.sha256sum] = "56d2679599f5496798a6317df5b252ae1796c92ad4fb9e5f81e3b354682c0f63"
 
 RDEPENDS:gscan2pdf = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-MimeInfo \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-File-MimeInfo-0.34-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-File-MimeInfo-0.34-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "822b785a0d486bd253bd3537734a141653c7afa03f2ebb4bf1090065e822acbc"
 
-URI_x86_64_v2_perl-File-MimeInfo = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-File-MimeInfo-0.34-5.el10.noarch.rpm;name=x86_64_v2_perl-File-MimeInfo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-MimeInfo}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-File-MimeInfo-0.34-5.el10.noarch.rpm;name=x86_64_v2_perl-File-MimeInfo;unpack=0"
 SRC_URI[x86_64_v2_perl-File-MimeInfo.sha256sum] = "25b06a5cc6124dafcca9a839b2c36f2f71d7be74448aa3113f504834352d0b8e"
 
-URI_aarch64_perl-File-MimeInfo = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-File-MimeInfo-0.34-5.el10.noarch.rpm;name=aarch64_perl-File-MimeInfo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-MimeInfo}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-File-MimeInfo-0.34-5.el10.noarch.rpm;name=aarch64_perl-File-MimeInfo;unpack=0"
 SRC_URI[aarch64_perl-File-MimeInfo.sha256sum] = "25b06a5cc6124dafcca9a839b2c36f2f71d7be74448aa3113f504834352d0b8e"
 
 RDEPENDS:perl-File-MimeInfo = " \

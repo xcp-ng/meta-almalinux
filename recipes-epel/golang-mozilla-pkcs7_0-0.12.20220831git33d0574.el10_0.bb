@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-mozilla-pkcs7-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-mozilla-pkcs7-0-0.12.20220831git33d0574.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-mozilla-pkcs7-0-0.12.20220831git33d0574.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5fe4988c52f1bcca4994492283b014c270c3b31a7299f6d2e172782cd0010204"
 
-URI_aarch64_golang-mozilla-pkcs7-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-mozilla-pkcs7-devel-0-0.12.20220831git33d0574.el10_0.noarch.rpm;name=aarch64_golang-mozilla-pkcs7-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-mozilla-pkcs7-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-mozilla-pkcs7-devel-0-0.12.20220831git33d0574.el10_0.noarch.rpm;name=aarch64_golang-mozilla-pkcs7-devel;unpack=0"
 SRC_URI[aarch64_golang-mozilla-pkcs7-devel.sha256sum] = "1c4b86df32ebe7e65cd449f17f935f6b12c2695d379a94ee6657b6774bbb9368"
 
 RDEPENDS:golang-mozilla-pkcs7-devel = " \

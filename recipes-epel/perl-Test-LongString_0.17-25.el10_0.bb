@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-LongString \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-LongString-0.17-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-LongString-0.17-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af1290494cc693ad5a61252ad7b26742a577eb1d4f79dbdaa2ff3957b96d9f52"
 
-URI_x86_64_v2_perl-Test-LongString = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LongString-0.17-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LongString;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-LongString}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LongString-0.17-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LongString;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-LongString.sha256sum] = "9c21981a7959edaf9a9edb03891a89035d1113ad693920334337156293cec59d"
 
-URI_aarch64_perl-Test-LongString = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LongString-0.17-25.el10_0.noarch.rpm;name=aarch64_perl-Test-LongString;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-LongString}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LongString-0.17-25.el10_0.noarch.rpm;name=aarch64_perl-Test-LongString;unpack=0"
 SRC_URI[aarch64_perl-Test-LongString.sha256sum] = "e1a771200023395d18a8d1995f5be14a624cf595cb72d015a447c7b7ce4e9bf8"
 
 RDEPENDS:perl-Test-LongString = " \

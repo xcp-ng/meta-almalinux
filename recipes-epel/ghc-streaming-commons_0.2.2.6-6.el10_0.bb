@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-streaming-commons-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-streaming-commons-0.2.2.6-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-streaming-commons-0.2.2.6-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "811e19ff071229dff845f53e2b4acdc794b4e3934f30a767008cc99fa16d3517"
 
-URI_x86_64_v2_ghc-streaming-commons = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-streaming-commons}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons;unpack=0"
 SRC_URI[x86_64_v2_ghc-streaming-commons.sha256sum] = "9cb552988cf7bdac65672597446f746970854ae254977bc7945ef4b9552af81d"
 
-URI_x86_64_v2_ghc-streaming-commons-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-devel-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-streaming-commons-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-devel-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-streaming-commons-devel.sha256sum] = "7840fc37a4a3c6beab1b0a87766f4c5bf9d1a03d2740a97d046ee434a9d1aac5"
 
-URI_x86_64_v2_ghc-streaming-commons-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-doc-0.2.2.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-streaming-commons-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-streaming-commons-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-doc-0.2.2.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-streaming-commons-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-streaming-commons-doc.sha256sum] = "caad0b076c95c77b12053c8674d5d0cca2992859c47995244aceccbb425eacf9"
 
-URI_x86_64_v2_ghc-streaming-commons-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-prof-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-streaming-commons-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-streaming-commons-prof-0.2.2.6-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-streaming-commons-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-streaming-commons-prof.sha256sum] = "16f53b7879b9d626c447d97263d482e3bd2c65f83b97cbb9661e088196348338"
 
-URI_aarch64_ghc-streaming-commons = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-streaming-commons}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons;unpack=0"
 SRC_URI[aarch64_ghc-streaming-commons.sha256sum] = "4fbb7c73ae2985b5d6577fb5398256319b98d0272d4969d15386184cd3e8798d"
 
-URI_aarch64_ghc-streaming-commons-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-devel-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-streaming-commons-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-devel-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons-devel;unpack=0"
 SRC_URI[aarch64_ghc-streaming-commons-devel.sha256sum] = "7ec820866f529db8b2872bc8cbbe62039a1d4d30d99170dd701dab8956e3e56a"
 
-URI_aarch64_ghc-streaming-commons-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-doc-0.2.2.6-6.el10_0.noarch.rpm;name=aarch64_ghc-streaming-commons-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-streaming-commons-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-doc-0.2.2.6-6.el10_0.noarch.rpm;name=aarch64_ghc-streaming-commons-doc;unpack=0"
 SRC_URI[aarch64_ghc-streaming-commons-doc.sha256sum] = "1b572e51dbd2364fefefb40cc3e3e2d3329dd34428b6a93f6056851f18dc93c9"
 
-URI_aarch64_ghc-streaming-commons-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-prof-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-streaming-commons-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-streaming-commons-prof-0.2.2.6-6.el10_0.aarch64.rpm;name=aarch64_ghc-streaming-commons-prof;unpack=0"
 SRC_URI[aarch64_ghc-streaming-commons-prof.sha256sum] = "e49efc274be9e44908d402e13eb751800f80c573d53c2ecba33a65cd420246e2"
 
 RDEPENDS:ghc-streaming-commons = " \

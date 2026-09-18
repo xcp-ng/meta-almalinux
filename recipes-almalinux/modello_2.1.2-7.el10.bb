@@ -10,24 +10,19 @@ PACKAGES = " \
  modello-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/modello-2.1.2-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/modello-2.1.2-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "99f9014bb3c17a1a36d934971b79560b214b71f2575f4fe5dfd6a7fbd3c04fad"
 
-URI_x86_64_v2_modello = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/modello-2.1.2-7.el10.noarch.rpm;name=x86_64_v2_modello;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_modello}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/modello-2.1.2-7.el10.noarch.rpm;name=x86_64_v2_modello;unpack=0"
 SRC_URI[x86_64_v2_modello.sha256sum] = "24b0a252b7006339589cc326f1902328e142bf4ecd3743b48754cb4df0c22b2f"
 
-URI_x86_64_v2_modello-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/modello-javadoc-2.1.2-7.el10.noarch.rpm;name=x86_64_v2_modello-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_modello-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/modello-javadoc-2.1.2-7.el10.noarch.rpm;name=x86_64_v2_modello-javadoc;unpack=0"
 SRC_URI[x86_64_v2_modello-javadoc.sha256sum] = "2620e4aabcbae7fe86672d5bb9d3bec138ad9e38accfd7c0e700fb16b2fa47a8"
 
-URI_aarch64_modello = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/modello-2.1.2-7.el10.noarch.rpm;name=aarch64_modello;unpack=0"
-SRC_URI:append = " ${URI_aarch64_modello}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/modello-2.1.2-7.el10.noarch.rpm;name=aarch64_modello;unpack=0"
 SRC_URI[aarch64_modello.sha256sum] = "24b0a252b7006339589cc326f1902328e142bf4ecd3743b48754cb4df0c22b2f"
 
-URI_aarch64_modello-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/modello-javadoc-2.1.2-7.el10.noarch.rpm;name=aarch64_modello-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_modello-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/modello-javadoc-2.1.2-7.el10.noarch.rpm;name=aarch64_modello-javadoc;unpack=0"
 SRC_URI[aarch64_modello-javadoc.sha256sum] = "2620e4aabcbae7fe86672d5bb9d3bec138ad9e38accfd7c0e700fb16b2fa47a8"
 
 RDEPENDS:modello = " \

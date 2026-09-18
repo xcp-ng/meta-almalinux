@@ -9,16 +9,13 @@ PACKAGES = " \
  kdf \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kdf-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kdf-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6099f80ecbd824868682cffb55ebf7bb4af1c43a2fa83dcdd6c5af3bff44d3a1"
 
-URI_x86_64_v2_kdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdf-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdf-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdf;unpack=0"
 SRC_URI[x86_64_v2_kdf.sha256sum] = "661e0b463bb754132b69e93c74bf838e9b63794d06454d6627fd1db186aa9a41"
 
-URI_aarch64_kdf = "${EPEL_MIRROR}/aarch64/Packages/k/kdf-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdf-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdf;unpack=0"
 SRC_URI[aarch64_kdf.sha256sum] = "f3541e6beb516770c96baf34b462cfa6a4f00f16dd2448da5de6ef7f08b89b10"
 
 RDEPENDS:kdf = " \

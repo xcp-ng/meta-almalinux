@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-nptyping \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-nptyping-2.5.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-nptyping-2.5.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "60205a86fc93e0d80a82fb17b139960eb325286f04cbad1fdfec1546bf46e0f8"
 
-URI_x86_64_v2_python3-nptyping = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nptyping-2.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nptyping;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-nptyping}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-nptyping-2.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-nptyping;unpack=0"
 SRC_URI[x86_64_v2_python3-nptyping.sha256sum] = "6acb27645979bfe4390986d413534521477ae7afaf0da10328931ae9e2f038d3"
 
-URI_aarch64_python3-nptyping = "${EPEL_MIRROR}/aarch64/Packages/p/python3-nptyping-2.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-nptyping;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-nptyping}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-nptyping-2.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-nptyping;unpack=0"
 SRC_URI[aarch64_python3-nptyping.sha256sum] = "aa970d101bcd72cd44fc57e507c6fb989938289000391c92d251c6110aa69416"
 
 RDEPENDS:python3-nptyping = " \

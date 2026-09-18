@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cftime \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cftime-1.6.4-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cftime-1.6.4-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6185892dff59253d883a2b98e6e5e19ac9f3d4cba8094e9d7f4c12defbec22ea"
 
-URI_x86_64_v2_python3-cftime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cftime-1.6.4-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cftime;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cftime}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cftime-1.6.4-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-cftime;unpack=0"
 SRC_URI[x86_64_v2_python3-cftime.sha256sum] = "3e5199a78f488dbe29231615ea5497ccbafed2ab220b6be93f33f5f201f81446"
 
-URI_aarch64_python3-cftime = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cftime-1.6.4-1.el10_0.aarch64.rpm;name=aarch64_python3-cftime;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cftime}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cftime-1.6.4-1.el10_0.aarch64.rpm;name=aarch64_python3-cftime;unpack=0"
 SRC_URI[aarch64_python3-cftime.sha256sum] = "588fbed917fedd5e697cfd640e6c07a3e894cbdb008442f66ccf13eb20a9af0a"
 
 RDEPENDS:python3-cftime = " \

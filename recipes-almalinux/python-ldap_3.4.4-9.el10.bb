@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ldap \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-ldap-3.4.4-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-ldap-3.4.4-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b4570e1f04762502046b93e576e561382e5f77b9fb7ff4f2b4ffd434710dbcc8"
 
-URI_x86_64_v2_python3-ldap = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ldap-3.4.4-9.el10.x86_64_v2.rpm;name=x86_64_v2_python3-ldap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ldap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ldap-3.4.4-9.el10.x86_64_v2.rpm;name=x86_64_v2_python3-ldap;unpack=0"
 SRC_URI[x86_64_v2_python3-ldap.sha256sum] = "bf074980ca026578fbf40d46b2619727c81da952586ff2f1c8b3edda0b56cec3"
 
-URI_aarch64_python3-ldap = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ldap-3.4.4-9.el10.aarch64.rpm;name=aarch64_python3-ldap;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ldap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ldap-3.4.4-9.el10.aarch64.rpm;name=aarch64_python3-ldap;unpack=0"
 SRC_URI[aarch64_python3-ldap.sha256sum] = "97042752bb510b1e1c09c56e13998ad61c835dfd3670ccd17bf108fffd9417fb"
 
 RDEPENDS:python3-ldap = " \

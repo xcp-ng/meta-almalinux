@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Sub-Name \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Name-0.27-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Name-0.27-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "04d16fbd22a1a4bd9d638593734645475d7653f47906b18b54a21668b5ab2309"
 
-URI_x86_64_v2_perl-Sub-Name = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Name-0.27-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sub-Name;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Name}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Name-0.27-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Sub-Name;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Name.sha256sum] = "b9615a0b1f4fb3b01733fda31cf162514c574282ee507a59fd62f5322e8e0767"
 
-URI_aarch64_perl-Sub-Name = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Name-0.27-1.el10_0.aarch64.rpm;name=aarch64_perl-Sub-Name;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Name}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Name-0.27-1.el10_0.aarch64.rpm;name=aarch64_perl-Sub-Name;unpack=0"
 SRC_URI[aarch64_perl-Sub-Name.sha256sum] = "76a4eff8a9d26b6cd6c32fc13bd78a726dbb7e28ce4ad35c9a56fe6171141bbe"
 
 RDEPENDS:perl-Sub-Name = " \

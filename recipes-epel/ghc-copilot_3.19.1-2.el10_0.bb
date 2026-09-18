@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-copilot-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "81793a46da9e0eb76eb4283b9c0b73ae2a1eab816a11ea25a38013eacb0e39ae"
 
-URI_x86_64_v2_ghc-copilot = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot.sha256sum] = "f093a0a3989a5b4b6008ac24ad990665afbfc8fdac6e461db2c514857278d4f2"
 
-URI_x86_64_v2_ghc-copilot-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-devel.sha256sum] = "9d63d65f04355b4f9b3ffa09f5640e6efdee1023911f569023f7736c10e92a3c"
 
-URI_x86_64_v2_ghc-copilot-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-doc.sha256sum] = "01e919dd7da12d7385b4cb8c19118e8bc9a36ba28e0eaa6a38cc13cbd9b02c7d"
 
-URI_x86_64_v2_ghc-copilot-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-prof.sha256sum] = "924f280d1c461126df56a2afcf07b387518bf3ae893c5d2d97b84e15c2ef7eb8"
 
-URI_aarch64_ghc-copilot = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot;unpack=0"
 SRC_URI[aarch64_ghc-copilot.sha256sum] = "40f7d70cbbee2838cbe5fc544fc4bb0006a5b0852afdc3b018fe0094e3c0f66d"
 
-URI_aarch64_ghc-copilot-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-devel;unpack=0"
 SRC_URI[aarch64_ghc-copilot-devel.sha256sum] = "cec34bf3d61db55fe8b9a1df3db2f2d2bd99452fd57c6bd7de158596372d84c4"
 
-URI_aarch64_ghc-copilot-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-doc;unpack=0"
 SRC_URI[aarch64_ghc-copilot-doc.sha256sum] = "69d516991a216119b2b92042a74f093676a72fb106977b4248fd93c15115d2a8"
 
-URI_aarch64_ghc-copilot-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-prof;unpack=0"
 SRC_URI[aarch64_ghc-copilot-prof.sha256sum] = "f30c472f5afb28b8548a798fe6bf5c12f8e5d45fd5967dcc9fdf70ead68d5a8a"
 
 RDEPENDS:ghc-copilot = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cloudflare \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cloudflare-2.19.4-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cloudflare-2.19.4-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7761bc4890cbf4305be7a7f6958e232b23ffa3cbb5eca900eea7b59037a04229"
 
-URI_x86_64_v2_python3-cloudflare = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cloudflare-2.19.4-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cloudflare;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cloudflare}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cloudflare-2.19.4-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cloudflare;unpack=0"
 SRC_URI[x86_64_v2_python3-cloudflare.sha256sum] = "0cf047be6147406e7bdfdbf7e733dc0807ed3226097e4a9d9de3feae268adc34"
 
-URI_aarch64_python3-cloudflare = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cloudflare-2.19.4-2.el10_1.noarch.rpm;name=aarch64_python3-cloudflare;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cloudflare}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cloudflare-2.19.4-2.el10_1.noarch.rpm;name=aarch64_python3-cloudflare;unpack=0"
 SRC_URI[aarch64_python3-cloudflare.sha256sum] = "1e4d4bdc74152d3b6c7d525b0ba080e278d3c2cb228129d98771f7dd5b27b999"
 
 RDEPENDS:python3-cloudflare = " \

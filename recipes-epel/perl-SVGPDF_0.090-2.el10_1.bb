@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-SVGPDF \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-SVGPDF-0.090-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-SVGPDF-0.090-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb1406dac72874c0b1731597bf2e1f213899bd1be4af253671452737985e615d"
 
-URI_x86_64_v2_perl-SVGPDF = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SVGPDF-0.090-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SVGPDF;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SVGPDF}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SVGPDF-0.090-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SVGPDF;unpack=0"
 SRC_URI[x86_64_v2_perl-SVGPDF.sha256sum] = "969e49263bbed0866bfb3b7dcfa49561fe78ba5641e2d232d340f66ac59fc1df"
 
-URI_aarch64_perl-SVGPDF = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SVGPDF-0.090-2.el10_1.noarch.rpm;name=aarch64_perl-SVGPDF;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SVGPDF}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SVGPDF-0.090-2.el10_1.noarch.rpm;name=aarch64_perl-SVGPDF;unpack=0"
 SRC_URI[aarch64_perl-SVGPDF.sha256sum] = "84b771dc65e844a154243ce6cd06eec0c5f3c893ab9a6a95dea5721f47b0b006"
 
 RDEPENDS:perl-SVGPDF = " \

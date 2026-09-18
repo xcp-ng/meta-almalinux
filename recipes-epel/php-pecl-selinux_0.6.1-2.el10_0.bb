@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-selinux \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-selinux-0.6.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-selinux-0.6.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "65f0801dcf86492f9fbfceb780c6b2c70bddefde13e28de70efd33c597f0d6b9"
 
-URI_x86_64_v2_php-pecl-selinux = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-selinux-0.6.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-selinux}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-selinux-0.6.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-selinux;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-selinux.sha256sum] = "5eb925cf40c5abec750b098f8b33e4af89a9440ca96f2110c4bf1f24eeab2433"
 
-URI_aarch64_php-pecl-selinux = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-selinux-0.6.1-2.el10_0.aarch64.rpm;name=aarch64_php-pecl-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-selinux}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-selinux-0.6.1-2.el10_0.aarch64.rpm;name=aarch64_php-pecl-selinux;unpack=0"
 SRC_URI[aarch64_php-pecl-selinux.sha256sum] = "adad33ff6e4c46c8f6f7bada439569ec9a09e6aa8af716c5fab288c7346832c4"
 
 RDEPENDS:php-pecl-selinux = " \

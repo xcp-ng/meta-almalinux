@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-cheapskate-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-cheapskate-0.1.1.2-23.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-cheapskate-0.1.1.2-23.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd3e30d9c8a5a257036d5ac2b50fc2af70f5d7e2633ba9b80b86b25c90a85572"
 
-URI_x86_64_v2_ghc-cheapskate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cheapskate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate;unpack=0"
 SRC_URI[x86_64_v2_ghc-cheapskate.sha256sum] = "b3e11c232cca236006089f821c368f69a54342c1ef413d99f3dc4e58c3bfbe99"
 
-URI_x86_64_v2_ghc-cheapskate-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-devel-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cheapskate-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-devel-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-cheapskate-devel.sha256sum] = "375ff18be61e9470ee7289901ea2159b435a73214efd840b87fcd6d468b4a499"
 
-URI_x86_64_v2_ghc-cheapskate-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-doc-0.1.1.2-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cheapskate-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cheapskate-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-doc-0.1.1.2-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cheapskate-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-cheapskate-doc.sha256sum] = "abe1f33a7847ba0d38b264a672b3b043ee6d923fc41cc3d07a9cf23e25eca5c9"
 
-URI_x86_64_v2_ghc-cheapskate-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-prof-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cheapskate-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cheapskate-prof-0.1.1.2-23.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cheapskate-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-cheapskate-prof.sha256sum] = "bb3e5bc215b113193ed66b847cdbf6fe81bc2dc0d47fe15fc2b608494f04980f"
 
-URI_aarch64_ghc-cheapskate = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cheapskate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate;unpack=0"
 SRC_URI[aarch64_ghc-cheapskate.sha256sum] = "6b8d7066bee8ebc02dafd4ccc384974ea59d073637f65b5f1ba329ab0749c6af"
 
-URI_aarch64_ghc-cheapskate-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-devel-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cheapskate-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-devel-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate-devel;unpack=0"
 SRC_URI[aarch64_ghc-cheapskate-devel.sha256sum] = "3d6a220d658254c7948b55058faeae02c8d5a37bebded5e6302e88bc131b5cc0"
 
-URI_aarch64_ghc-cheapskate-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-doc-0.1.1.2-23.el10_0.noarch.rpm;name=aarch64_ghc-cheapskate-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cheapskate-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-doc-0.1.1.2-23.el10_0.noarch.rpm;name=aarch64_ghc-cheapskate-doc;unpack=0"
 SRC_URI[aarch64_ghc-cheapskate-doc.sha256sum] = "c5acaabb4b9958e613efca0c9f62b6f5fea300187487606e97d9da496191bd65"
 
-URI_aarch64_ghc-cheapskate-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-prof-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cheapskate-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cheapskate-prof-0.1.1.2-23.el10_0.aarch64.rpm;name=aarch64_ghc-cheapskate-prof;unpack=0"
 SRC_URI[aarch64_ghc-cheapskate-prof.sha256sum] = "d73a980f3816e5aadfc90a7c83634b9da8af2310699d8fcd240aecf864c008c7"
 
 RDEPENDS:ghc-cheapskate = " \

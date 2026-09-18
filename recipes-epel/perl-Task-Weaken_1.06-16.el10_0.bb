@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Task-Weaken \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Task-Weaken-1.06-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Task-Weaken-1.06-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6f83bc9714ae0b191813f8c5fe5b9a462c80463eda315c050d979917edce9219"
 
-URI_x86_64_v2_perl-Task-Weaken = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Task-Weaken-1.06-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Task-Weaken;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Task-Weaken}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Task-Weaken-1.06-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Task-Weaken;unpack=0"
 SRC_URI[x86_64_v2_perl-Task-Weaken.sha256sum] = "d9d8a5b2e20f011bca9f1dcc791699109b0057fa721706f48be67df1ef3fe148"
 
-URI_aarch64_perl-Task-Weaken = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Task-Weaken-1.06-16.el10_0.noarch.rpm;name=aarch64_perl-Task-Weaken;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Task-Weaken}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Task-Weaken-1.06-16.el10_0.noarch.rpm;name=aarch64_perl-Task-Weaken;unpack=0"
 SRC_URI[aarch64_perl-Task-Weaken.sha256sum] = "6ef18295f44461329375e07a05175203a824be305badabe7346be0827baceed7"
 
 RDEPENDS:perl-Task-Weaken = " \

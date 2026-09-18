@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-error-chain-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-error-chain-0.12.4-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-error-chain-0.12.4-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2caa6ce960f7edf48292689ccfe5e74992504fad00d6f573f884cf7dbbac37dc"
 
-URI_x86_64_v2_rust-error-chain+backtrace-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+backtrace-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+backtrace-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+backtrace-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-error-chain+backtrace-devel.sha256sum] = "ff7c3033c969446393f3ce90491647af9673662e878da50f2971f812a269e598"
 
-URI_x86_64_v2_rust-error-chain+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+default-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+default-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-error-chain+default-devel.sha256sum] = "c7e57c3fbff03d55ec44dcab0c85235b94340e3127845ad9687f74ee3f97926b"
 
-URI_x86_64_v2_rust-error-chain+example_generated-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+example_generated-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+example_generated-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain+example_generated-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain+example_generated-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain+example_generated-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-error-chain+example_generated-devel.sha256sum] = "870ee48c6cc9eedbde2b3c899a6f445d895aec6f1842d648018070f1943acebd"
 
-URI_x86_64_v2_rust-error-chain-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-error-chain-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-error-chain-devel-0.12.4-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-error-chain-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-error-chain-devel.sha256sum] = "11534256711bdbbc5471fa481f3150ab09c1b75ac549904850d1e32e6af1f517"
 
-URI_aarch64_rust-error-chain+backtrace-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+backtrace-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-error-chain+backtrace-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+backtrace-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+backtrace-devel;unpack=0"
 SRC_URI[aarch64_rust-error-chain+backtrace-devel.sha256sum] = "13a5423839837d330902fd57de4a6b287b401cd0c555c8c632d2342631d7c844"
 
-URI_aarch64_rust-error-chain+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+default-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-error-chain+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+default-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+default-devel;unpack=0"
 SRC_URI[aarch64_rust-error-chain+default-devel.sha256sum] = "27279521daaec3266beeaf542363327d1b71b96750957b8eda1296fb8882ab6d"
 
-URI_aarch64_rust-error-chain+example_generated-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+example_generated-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+example_generated-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-error-chain+example_generated-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain+example_generated-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain+example_generated-devel;unpack=0"
 SRC_URI[aarch64_rust-error-chain+example_generated-devel.sha256sum] = "09cccdefa24e810283e039a9914febcc9641ae264ec2ef78aceb0baf283c402a"
 
-URI_aarch64_rust-error-chain-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-error-chain-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-error-chain-devel-0.12.4-12.el10_0.noarch.rpm;name=aarch64_rust-error-chain-devel;unpack=0"
 SRC_URI[aarch64_rust-error-chain-devel.sha256sum] = "e69bee5ff50295976251d303e221fa286d2cceda06afa595e054378221418762"
 
 RDEPENDS:rust-error-chain+backtrace-devel = " \

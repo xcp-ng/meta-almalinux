@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-husl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-husl-4.0.3-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-husl-4.0.3-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c5e75a591b72cd8fafa91464cdd3c1e2f44095179435dabee04221871a1b0a5"
 
-URI_x86_64_v2_python3-husl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-husl-4.0.3-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-husl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-husl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-husl-4.0.3-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-husl;unpack=0"
 SRC_URI[x86_64_v2_python3-husl.sha256sum] = "34e83c78a82114f36ed2d8e8b52d85e9dde4fcbaaa61a4b5fa84650914a2185c"
 
-URI_aarch64_python3-husl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-husl-4.0.3-32.el10_0.noarch.rpm;name=aarch64_python3-husl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-husl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-husl-4.0.3-32.el10_0.noarch.rpm;name=aarch64_python3-husl;unpack=0"
 SRC_URI[aarch64_python3-husl.sha256sum] = "94a29ae6b3ee57c199f26e6923e9c6d223300ecb5315318ffef62cd40c7bcb28"
 
 RDEPENDS:python3-husl = " \

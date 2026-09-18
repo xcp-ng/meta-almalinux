@@ -9,16 +9,13 @@ PACKAGES = " \
  rear \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/rear-2.9-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/rear-2.9-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ba4b52c7d0c618b771648a7238a4d67ba7be960ed50aff9442c5bdea918f65fa"
 
-URI_x86_64_v2_rear = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/rear-2.9-4.el10.x86_64_v2.rpm;name=x86_64_v2_rear;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rear}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/rear-2.9-4.el10.x86_64_v2.rpm;name=x86_64_v2_rear;unpack=0"
 SRC_URI[x86_64_v2_rear.sha256sum] = "3597f31e8560bcd2fe5146ab2723983623f5dde9325dd3a75c59c6c5ca127c50"
 
-URI_aarch64_rear = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/rear-2.9-4.el10.aarch64.rpm;name=aarch64_rear;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rear}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/rear-2.9-4.el10.aarch64.rpm;name=aarch64_rear;unpack=0"
 SRC_URI[aarch64_rear.sha256sum] = "59b9cc98006f51df2b62c935df0054adfe54f3ffd508c2eee2d633e675fe81cf"
 
 RDEPENDS:rear:x86_64_v2 = " \

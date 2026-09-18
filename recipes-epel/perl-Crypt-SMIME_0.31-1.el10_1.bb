@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Crypt-SMIME-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-SMIME-0.31-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-SMIME-0.31-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b5ddf57c6e58010bed7f7ad9addadb3a57cfae53458c3e90cd7e2912ebc6ec50"
 
-URI_x86_64_v2_perl-Crypt-SMIME = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-SMIME-0.31-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Crypt-SMIME;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-SMIME}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-SMIME-0.31-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Crypt-SMIME;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-SMIME.sha256sum] = "b899763557b2f1e19973a18fc58ceeaf90f0b0b3f72ad1309e174e3f99611377"
 
-URI_x86_64_v2_perl-Crypt-SMIME-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-SMIME-tests-0.31-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Crypt-SMIME-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-SMIME-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-SMIME-tests-0.31-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Crypt-SMIME-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-SMIME-tests.sha256sum] = "a8ef53193d519c5341a3f586d44b06e4fc2307a89bf434ef51b5d5902d32ea5f"
 
-URI_aarch64_perl-Crypt-SMIME = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-SMIME-0.31-1.el10_1.aarch64.rpm;name=aarch64_perl-Crypt-SMIME;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-SMIME}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-SMIME-0.31-1.el10_1.aarch64.rpm;name=aarch64_perl-Crypt-SMIME;unpack=0"
 SRC_URI[aarch64_perl-Crypt-SMIME.sha256sum] = "97a98eea55ba28efdff3fa334dd733716851a4da018ebb47da94c153dad755bc"
 
-URI_aarch64_perl-Crypt-SMIME-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-SMIME-tests-0.31-1.el10_1.aarch64.rpm;name=aarch64_perl-Crypt-SMIME-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-SMIME-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-SMIME-tests-0.31-1.el10_1.aarch64.rpm;name=aarch64_perl-Crypt-SMIME-tests;unpack=0"
 SRC_URI[aarch64_perl-Crypt-SMIME-tests.sha256sum] = "fcf2ae77639a1601942b4dec4a543f3b1cc4351379c41e8c063fcb46f8ac71ee"
 
 RDEPENDS:perl-Crypt-SMIME = " \

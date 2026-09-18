@@ -11,8 +11,7 @@ PACKAGES = " \
  libchromaprint-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/chromaprint-1.5.1-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/chromaprint-1.5.1-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b97d64e8d220ebc523cb9ba6c0de74da026e181db4923641f75fb8694d327908"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -29,28 +28,22 @@ SRC_URI[src.sha256sum] = "b97d64e8d220ebc523cb9ba6c0de74da026e181db4923641f75fb8
 # - libchromaprint: libavutil.so.59()(64bit)
 # - libchromaprint: libavutil.so.59(LIBAVUTIL_59)(64bit)
 
-URI_x86_64_v2_chromaprint-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/chromaprint-tools-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_chromaprint-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_chromaprint-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/chromaprint-tools-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_chromaprint-tools;unpack=0"
 SRC_URI[x86_64_v2_chromaprint-tools.sha256sum] = "046a6fff732e90b40fb518d0134aabbce3bd5f83d0e69a4cc3f945fb9efffe8e"
 
-URI_x86_64_v2_libchromaprint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libchromaprint-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libchromaprint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libchromaprint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libchromaprint-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libchromaprint;unpack=0"
 SRC_URI[x86_64_v2_libchromaprint.sha256sum] = "c3fef4d5a3011d179e5d4d5166b062826595b57876a8b596d03625703a6410cd"
 
-URI_x86_64_v2_libchromaprint-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libchromaprint-devel-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libchromaprint-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libchromaprint-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libchromaprint-devel-1.5.1-24.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libchromaprint-devel;unpack=0"
 SRC_URI[x86_64_v2_libchromaprint-devel.sha256sum] = "d6ab19ed5dac58f92ee624965fd11aae926014b12111fe56c4b768d59400fd6c"
 
-URI_aarch64_chromaprint-tools = "${EPEL_MIRROR}/aarch64/Packages/c/chromaprint-tools-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_chromaprint-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_chromaprint-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/chromaprint-tools-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_chromaprint-tools;unpack=0"
 SRC_URI[aarch64_chromaprint-tools.sha256sum] = "87bd42a37aca5c83dbcbd8a25f47bf0f7fb1c37fd51c173cbb5e7fdb549bf486"
 
-URI_aarch64_libchromaprint = "${EPEL_MIRROR}/aarch64/Packages/l/libchromaprint-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_libchromaprint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libchromaprint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libchromaprint-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_libchromaprint;unpack=0"
 SRC_URI[aarch64_libchromaprint.sha256sum] = "ded086601b91c26f36c10c4318e01d2cf446842f8ca68c83949b3dceb6704ed4"
 
-URI_aarch64_libchromaprint-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libchromaprint-devel-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_libchromaprint-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libchromaprint-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libchromaprint-devel-1.5.1-24.el10_0.aarch64.rpm;name=aarch64_libchromaprint-devel;unpack=0"
 SRC_URI[aarch64_libchromaprint-devel.sha256sum] = "90ecff575c1a9f1905fd990dcd3be555ced3dbae8ec83e95d59826b25cb5a354"
 
 RDEPENDS:chromaprint-tools:x86_64_v2 = " \

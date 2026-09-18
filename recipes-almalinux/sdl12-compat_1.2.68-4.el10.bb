@@ -10,24 +10,19 @@ PACKAGES = " \
  sdl12-compat-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sdl12-compat-1.2.68-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sdl12-compat-1.2.68-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec91b3a65ff4f49a10ae9f2ccf39223f547d918cba25adfcf7c21a802efbefb2"
 
-URI_x86_64_v2_sdl12-compat = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sdl12-compat-1.2.68-4.el10.x86_64_v2.rpm;name=x86_64_v2_sdl12-compat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sdl12-compat}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sdl12-compat-1.2.68-4.el10.x86_64_v2.rpm;name=x86_64_v2_sdl12-compat;unpack=0"
 SRC_URI[x86_64_v2_sdl12-compat.sha256sum] = "5cfa434312572bf2eb78a3dd0eed5b2790f46dfc76772cd7964ed196bad3cc50"
 
-URI_x86_64_v2_sdl12-compat-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/sdl12-compat-devel-1.2.68-4.el10.x86_64_v2.rpm;name=x86_64_v2_sdl12-compat-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sdl12-compat-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/sdl12-compat-devel-1.2.68-4.el10.x86_64_v2.rpm;name=x86_64_v2_sdl12-compat-devel;unpack=0"
 SRC_URI[x86_64_v2_sdl12-compat-devel.sha256sum] = "096e8c1a890c6ee43b21563a7bf8fc85c9899cd0d16c928380281f31704061cb"
 
-URI_aarch64_sdl12-compat = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sdl12-compat-1.2.68-4.el10.aarch64.rpm;name=aarch64_sdl12-compat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sdl12-compat}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sdl12-compat-1.2.68-4.el10.aarch64.rpm;name=aarch64_sdl12-compat;unpack=0"
 SRC_URI[aarch64_sdl12-compat.sha256sum] = "c7abf1573ecad074c31376b5fdfc505238a8a7d9a89057b6498107dbd6553e4a"
 
-URI_aarch64_sdl12-compat-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/sdl12-compat-devel-1.2.68-4.el10.aarch64.rpm;name=aarch64_sdl12-compat-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sdl12-compat-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/sdl12-compat-devel-1.2.68-4.el10.aarch64.rpm;name=aarch64_sdl12-compat-devel;unpack=0"
 SRC_URI[aarch64_sdl12-compat-devel.sha256sum] = "fd5c7a806e30fe39171d64133a40e98d13eb5ace30be4fa496a764a9ed1098ca"
 
 RDEPENDS:sdl12-compat:x86_64_v2 = " \

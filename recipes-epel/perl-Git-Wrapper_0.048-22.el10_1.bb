@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Git-Wrapper \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Git-Wrapper-0.048-22.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Git-Wrapper-0.048-22.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "84d2f3a14aa576db206f7fde8b413357bacb267b61be05d63791c8673dfc3796"
 
-URI_x86_64_v2_perl-Git-Wrapper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Git-Wrapper-0.048-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Git-Wrapper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Git-Wrapper}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Git-Wrapper-0.048-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Git-Wrapper;unpack=0"
 SRC_URI[x86_64_v2_perl-Git-Wrapper.sha256sum] = "2f14575c2c81512e4003a176f1b9308066134c56be16f45b5982ac7df704f4b0"
 
-URI_aarch64_perl-Git-Wrapper = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Git-Wrapper-0.048-22.el10_1.noarch.rpm;name=aarch64_perl-Git-Wrapper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Git-Wrapper}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Git-Wrapper-0.048-22.el10_1.noarch.rpm;name=aarch64_perl-Git-Wrapper;unpack=0"
 SRC_URI[aarch64_perl-Git-Wrapper.sha256sum] = "6baaead83b0bbe458bc936e8aa3dd9c5e8c45a908031fb8db74a348be7c47754"
 
 RDEPENDS:perl-Git-Wrapper = " \

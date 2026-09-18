@@ -11,32 +11,25 @@ PACKAGES = " \
  incidenceeditor-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/incidenceeditor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/incidenceeditor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9b231cb0e19132cedd62df5de07f9449c6d000be2ec31c2551f475679ee6372c"
 
-URI_x86_64_v2_incidenceeditor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_incidenceeditor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_incidenceeditor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_incidenceeditor;unpack=0"
 SRC_URI[x86_64_v2_incidenceeditor.sha256sum] = "d1bb0119eba0929471fd3e8135f697916b3734fc12c84ed35bef8ffb041e9b41"
 
-URI_x86_64_v2_incidenceeditor-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_incidenceeditor-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_incidenceeditor-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_incidenceeditor-devel;unpack=0"
 SRC_URI[x86_64_v2_incidenceeditor-devel.sha256sum] = "141672893423366081272ca42e67992eb4d9ba18f4ec71b0bfd2d044279a3afd"
 
-URI_x86_64_v2_incidenceeditor-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_incidenceeditor-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_incidenceeditor-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/incidenceeditor-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_incidenceeditor-doc;unpack=0"
 SRC_URI[x86_64_v2_incidenceeditor-doc.sha256sum] = "f3a16bd7a0607510f65fdf2f5aed2f2d5fc2e7879e3c132056ba8a73e754911f"
 
-URI_aarch64_incidenceeditor = "${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_incidenceeditor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_incidenceeditor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_incidenceeditor;unpack=0"
 SRC_URI[aarch64_incidenceeditor.sha256sum] = "abcd4429b5c39a05c4f53bafa99973d98c4a450e85b9bd1a39717d4bc7295031"
 
-URI_aarch64_incidenceeditor-devel = "${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_incidenceeditor-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_incidenceeditor-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_incidenceeditor-devel;unpack=0"
 SRC_URI[aarch64_incidenceeditor-devel.sha256sum] = "2eaccba2babb946e5cd6d118bc35f82a3ca7a2b4bfc2f202575c7effa901cca8"
 
-URI_aarch64_incidenceeditor-doc = "${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_incidenceeditor-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_incidenceeditor-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/incidenceeditor-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_incidenceeditor-doc;unpack=0"
 SRC_URI[aarch64_incidenceeditor-doc.sha256sum] = "0adc6d7389afb773a912bd7c1361f67daa7e157eae2f52f2b2c658505635ca84"
 
 RDEPENDS:incidenceeditor = " \

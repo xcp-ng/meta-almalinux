@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-JSON-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-JSON-0.11-41.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-JSON-0.11-41.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c942315a3423c5d5b7261b3fc75f416c09b0137b921cac055487424481e5ddb3"
 
-URI_x86_64_v2_perl-Test-JSON = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-JSON-0.11-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-JSON;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-JSON}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-JSON-0.11-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-JSON;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-JSON.sha256sum] = "6ba9521fd568c0d9984d2bd7148e8cb55ed3b956eaf4bac58fcf9231fa7c161a"
 
-URI_x86_64_v2_perl-Test-JSON-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-JSON-tests-0.11-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-JSON-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-JSON-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-JSON-tests-0.11-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-JSON-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-JSON-tests.sha256sum] = "94b5d1c52a148d791350e6ee866db34e26f6bf824625bf1337fb1abf259ddc95"
 
-URI_aarch64_perl-Test-JSON = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-JSON-0.11-41.el10_0.noarch.rpm;name=aarch64_perl-Test-JSON;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-JSON}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-JSON-0.11-41.el10_0.noarch.rpm;name=aarch64_perl-Test-JSON;unpack=0"
 SRC_URI[aarch64_perl-Test-JSON.sha256sum] = "1faa092bd6d5ece76dd9f7c8f64f7ebd1410146d1dda71436b44fc839902547d"
 
-URI_aarch64_perl-Test-JSON-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-JSON-tests-0.11-41.el10_0.noarch.rpm;name=aarch64_perl-Test-JSON-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-JSON-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-JSON-tests-0.11-41.el10_0.noarch.rpm;name=aarch64_perl-Test-JSON-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-JSON-tests.sha256sum] = "89a23d8354475ea73519c4fc2285d30664cd10c5aabe0d7a32aa8b8b0e664be4"
 
 RDEPENDS:perl-Test-JSON = " \

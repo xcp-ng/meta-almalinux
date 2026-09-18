@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-concurrent-output-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-concurrent-output-1.10.21-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-concurrent-output-1.10.21-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2558670d7ebf79492f0597c94dca050ce2747df3e3d7fa31d1ea8ae9020cb05e"
 
-URI_x86_64_v2_ghc-concurrent-output = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-output}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-output.sha256sum] = "63f99338f22228093663fc1dc92f864413301b12868c2a30488afc4722c76cf9"
 
-URI_x86_64_v2_ghc-concurrent-output-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-devel-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-output-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-devel-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-output-devel.sha256sum] = "2f0387dca8f938549f7ba186e8a21d7958be7c21329ae524bf315f52ae8baa07"
 
-URI_x86_64_v2_ghc-concurrent-output-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-doc-1.10.21-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-concurrent-output-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-output-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-doc-1.10.21-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-concurrent-output-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-output-doc.sha256sum] = "a705d8a5e573bf709c158ec8af4fd5e87b12a1e259e1688b709aa07634a6fc79"
 
-URI_x86_64_v2_ghc-concurrent-output-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-prof-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-output-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-output-prof-1.10.21-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-output-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-output-prof.sha256sum] = "57912edf630ffa00a6ff86595cc731b8437746d17de4495395088277b4b35d48"
 
-URI_aarch64_ghc-concurrent-output = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-output}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-output.sha256sum] = "daa4e298a5d85af71712232b7f914e69e89048086856c6762414c7e7f0b2c1bd"
 
-URI_aarch64_ghc-concurrent-output-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-devel-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-output-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-devel-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output-devel;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-output-devel.sha256sum] = "45e89a50bcc93e7f4f5f6dd973f2a41b9d230899cfb72b82c454926a7102c742"
 
-URI_aarch64_ghc-concurrent-output-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-doc-1.10.21-1.el10_0.noarch.rpm;name=aarch64_ghc-concurrent-output-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-output-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-doc-1.10.21-1.el10_0.noarch.rpm;name=aarch64_ghc-concurrent-output-doc;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-output-doc.sha256sum] = "b83e068c3186d4fa763d006510671fe5eb8a71195ce666dc009fd305e666e674"
 
-URI_aarch64_ghc-concurrent-output-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-prof-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-output-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-output-prof-1.10.21-1.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-output-prof;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-output-prof.sha256sum] = "d435a36883af7fdd74a92de16d12cb28468e4869a6b54ee77cf9f3afd981f0a6"
 
 RDEPENDS:ghc-concurrent-output = " \

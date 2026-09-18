@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-TreePP \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-TreePP-0.43-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-TreePP-0.43-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd0f764f8093497b6871e3e62bd91e7d71c4e0e6741cd3c4c1591b5335fe9637"
 
-URI_x86_64_v2_perl-XML-TreePP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-TreePP-0.43-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-TreePP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-TreePP}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-TreePP-0.43-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-TreePP;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-TreePP.sha256sum] = "b88f07f2bdf8424a8617a4906e5df0a5105dbc8e23d994d987086965f76ec029"
 
-URI_aarch64_perl-XML-TreePP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-TreePP-0.43-29.el10_0.noarch.rpm;name=aarch64_perl-XML-TreePP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-TreePP}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-TreePP-0.43-29.el10_0.noarch.rpm;name=aarch64_perl-XML-TreePP;unpack=0"
 SRC_URI[aarch64_perl-XML-TreePP.sha256sum] = "55d1412524869c499b24a0660311ab502fb3a356fa4078882ec5e5d0cfee8bf8"
 
 RDEPENDS:perl-XML-TreePP = " \

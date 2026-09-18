@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-relaxed \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-relaxed-2.0.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-relaxed-2.0.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0d4d470e2e1bbea7f8341fba30a6ea5b080b1ef0470e8951df60ec11b22c2166"
 
-URI_x86_64_v2_python3-pytest-relaxed = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-relaxed-2.0.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-relaxed;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-relaxed}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-relaxed-2.0.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-relaxed;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-relaxed.sha256sum] = "8da3d971db404f90002aaf90d8663ee42c47e68d6b3a1cf32ca9080b50ea2b77"
 
-URI_aarch64_python3-pytest-relaxed = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-relaxed-2.0.2-3.el10_0.noarch.rpm;name=aarch64_python3-pytest-relaxed;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-relaxed}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-relaxed-2.0.2-3.el10_0.noarch.rpm;name=aarch64_python3-pytest-relaxed;unpack=0"
 SRC_URI[aarch64_python3-pytest-relaxed.sha256sum] = "d5e055011acd5252daf78b82dcc4e01c25e038a00776273802c9889af6cf6f2e"
 
 RDEPENDS:python3-pytest-relaxed = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-below-common-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-below-common-0.9.0-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-below-common-0.9.0-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9c62967dcae58d1339745119426db3ac74f9c36f04797d4ed08dedb062b08a23"
 
-URI_x86_64_v2_rust-below-common+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-common+default-devel-0.9.0-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-common+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-below-common+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-common+default-devel-0.9.0-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-common+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-below-common+default-devel.sha256sum] = "aeeefd7e565f8daf0512be238bd1dfad66be0ddcac8ebf991350f1842b8478ae"
 
-URI_x86_64_v2_rust-below-common-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-common-devel-0.9.0-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-common-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-below-common-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-below-common-devel-0.9.0-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-below-common-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-below-common-devel.sha256sum] = "d62a1506c0a2a2e4a0a37e0feab82c452f57af046758ec343ea4466e0b0ad2bc"
 
-URI_aarch64_rust-below-common+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-below-common+default-devel-0.9.0-4.el10_1.noarch.rpm;name=aarch64_rust-below-common+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-below-common+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-below-common+default-devel-0.9.0-4.el10_1.noarch.rpm;name=aarch64_rust-below-common+default-devel;unpack=0"
 SRC_URI[aarch64_rust-below-common+default-devel.sha256sum] = "91a2323f3e42263d9ccbc7325eb636861077126e8055afc7e4277a03f4e95f04"
 
-URI_aarch64_rust-below-common-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-below-common-devel-0.9.0-4.el10_1.noarch.rpm;name=aarch64_rust-below-common-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-below-common-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-below-common-devel-0.9.0-4.el10_1.noarch.rpm;name=aarch64_rust-below-common-devel;unpack=0"
 SRC_URI[aarch64_rust-below-common-devel.sha256sum] = "c4c325f314541ed7593d6f5563327e5b6a72ceee2e4ec5ae231a5fb0ad7a7e02"
 
 RDEPENDS:rust-below-common+default-devel = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Ocsinventory-Agent \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/o/ocsinventory-agent-2.10.4-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/o/ocsinventory-agent-2.10.4-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "44da79815b269bff3c6bd5e82585e23958f28776dee5ae4f7880249322db3764"
 
-URI_x86_64_v2_ocsinventory-agent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ocsinventory-agent-2.10.4-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ocsinventory-agent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ocsinventory-agent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ocsinventory-agent-2.10.4-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ocsinventory-agent;unpack=0"
 SRC_URI[x86_64_v2_ocsinventory-agent.sha256sum] = "b35338b26ff0e1fa349890d0dddb4c341555cf99e4c1c9ee91cd2437211be9d1"
 
-URI_x86_64_v2_perl-Ocsinventory-Agent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ocsinventory-Agent-2.10.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Ocsinventory-Agent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Ocsinventory-Agent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ocsinventory-Agent-2.10.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Ocsinventory-Agent;unpack=0"
 SRC_URI[x86_64_v2_perl-Ocsinventory-Agent.sha256sum] = "86623caa21f500a51e657dd9edeaf43fdf66b503dda5f0256832166e020e24a5"
 
-URI_aarch64_ocsinventory-agent = "${EPEL_MIRROR}/aarch64/Packages/o/ocsinventory-agent-2.10.4-4.el10_0.aarch64.rpm;name=aarch64_ocsinventory-agent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ocsinventory-agent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/ocsinventory-agent-2.10.4-4.el10_0.aarch64.rpm;name=aarch64_ocsinventory-agent;unpack=0"
 SRC_URI[aarch64_ocsinventory-agent.sha256sum] = "ed282886f0f92c176775ba6708b523169e1bce74f8f34f3c10d612f0e8d2b069"
 
-URI_aarch64_perl-Ocsinventory-Agent = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Ocsinventory-Agent-2.10.4-4.el10_0.noarch.rpm;name=aarch64_perl-Ocsinventory-Agent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Ocsinventory-Agent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Ocsinventory-Agent-2.10.4-4.el10_0.noarch.rpm;name=aarch64_perl-Ocsinventory-Agent;unpack=0"
 SRC_URI[aarch64_perl-Ocsinventory-Agent.sha256sum] = "7ae9fa34182e6edbb270fd47058f6fa3872d792f206d50505bb70c004349c9fd"
 
 RDEPENDS:ocsinventory-agent:x86_64_v2 = " \

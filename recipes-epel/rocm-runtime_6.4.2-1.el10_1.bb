@@ -14,20 +14,16 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rocm-runtime-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rocm-runtime-6.4.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e948e5773b19de36e251a028a9201ced6e6e7411ee26a05716ca744a9dd03ed8"
 
-URI_x86_64_v2_kfdtest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kfdtest-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kfdtest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kfdtest}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kfdtest-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kfdtest;unpack=0"
 SRC_URI[x86_64_v2_kfdtest.sha256sum] = "b233a941719cf4693f97cfcb15540a16c344be271d6d95c71472ba143d5bc2c8"
 
-URI_x86_64_v2_rocm-runtime = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-runtime-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-runtime;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-runtime}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-runtime-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-runtime;unpack=0"
 SRC_URI[x86_64_v2_rocm-runtime.sha256sum] = "41869e564a611ae8b588a971420873395c22285bfa4219b47d241f756bc55bb1"
 
-URI_x86_64_v2_rocm-runtime-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-runtime-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-runtime-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rocm-runtime-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rocm-runtime-devel-6.4.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_rocm-runtime-devel;unpack=0"
 SRC_URI[x86_64_v2_rocm-runtime-devel.sha256sum] = "937f67bfcde2c4c5676ec7ce9fda796b52c977bb4725953bd3b598599fe7b96c"
 
 RDEPENDS:kfdtest = " \

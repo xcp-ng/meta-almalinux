@@ -9,16 +9,13 @@ PACKAGES = " \
  osinfo-db-tools \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/osinfo-db-tools-1.11.0-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/osinfo-db-tools-1.11.0-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b3bb84a5c7d3d75d6ffbc71f98cd1e5a17e473860761db68602702cd3ae99644"
 
-URI_x86_64_v2_osinfo-db-tools = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/osinfo-db-tools-1.11.0-8.el10.x86_64_v2.rpm;name=x86_64_v2_osinfo-db-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_osinfo-db-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/osinfo-db-tools-1.11.0-8.el10.x86_64_v2.rpm;name=x86_64_v2_osinfo-db-tools;unpack=0"
 SRC_URI[x86_64_v2_osinfo-db-tools.sha256sum] = "c2b3f41c15f1f4e0d29bab7248464c837fef8f940ac3a98b11356d4d6fd6677d"
 
-URI_aarch64_osinfo-db-tools = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/osinfo-db-tools-1.11.0-8.el10.aarch64.rpm;name=aarch64_osinfo-db-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_osinfo-db-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/osinfo-db-tools-1.11.0-8.el10.aarch64.rpm;name=aarch64_osinfo-db-tools;unpack=0"
 SRC_URI[aarch64_osinfo-db-tools.sha256sum] = "52caed0fabca974385063473ff9abe73ef63583327ed8b147c189d89d215ea6f"
 
 RDEPENDS:osinfo-db-tools = " \

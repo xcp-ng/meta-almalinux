@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-SMTP-SSL \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-SMTP-SSL-1.04-26.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Net-SMTP-SSL-1.04-26.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a9408e602e82f65cf2bfafc1d1ffe0a2acc7b5dbba2d111c7d6e0f4435406cfd"
 
-URI_x86_64_v2_perl-Net-SMTP-SSL = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-SMTP-SSL-1.04-26.el10.noarch.rpm;name=x86_64_v2_perl-Net-SMTP-SSL;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-SMTP-SSL}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Net-SMTP-SSL-1.04-26.el10.noarch.rpm;name=x86_64_v2_perl-Net-SMTP-SSL;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-SMTP-SSL.sha256sum] = "1a9c493183b6b05b654de681e3d4bb955e8ab5f85bde3e7144cbf1ccd939be41"
 
-URI_aarch64_perl-Net-SMTP-SSL = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-SMTP-SSL-1.04-26.el10.noarch.rpm;name=aarch64_perl-Net-SMTP-SSL;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-SMTP-SSL}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Net-SMTP-SSL-1.04-26.el10.noarch.rpm;name=aarch64_perl-Net-SMTP-SSL;unpack=0"
 SRC_URI[aarch64_perl-Net-SMTP-SSL.sha256sum] = "1a9c493183b6b05b654de681e3d4bb955e8ab5f85bde3e7144cbf1ccd939be41"
 
 RDEPENDS:perl-Net-SMTP-SSL = " \

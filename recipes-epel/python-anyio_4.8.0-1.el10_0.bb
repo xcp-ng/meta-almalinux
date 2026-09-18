@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-anyio+trio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-anyio-4.8.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-anyio-4.8.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b0237d11c3725eeed9c718697b286d414277a62ec0dcfab82dac231c623f1e25"
 
-URI_x86_64_v2_python3-anyio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-anyio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio;unpack=0"
 SRC_URI[x86_64_v2_python3-anyio.sha256sum] = "eae0d22e3cbb9140559b26882543de95b53bc281e5d26dc614ec4b3429cc0bde"
 
-URI_x86_64_v2_python3-anyio+trio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio+trio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio+trio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-anyio+trio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-anyio+trio-4.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-anyio+trio;unpack=0"
 SRC_URI[x86_64_v2_python3-anyio+trio.sha256sum] = "2f8fe55035feb3ab3030f987ab356d7583699c9049d9400db367eb8f70b4eb8a"
 
-URI_aarch64_python3-anyio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-anyio-4.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-anyio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-anyio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-anyio-4.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-anyio;unpack=0"
 SRC_URI[aarch64_python3-anyio.sha256sum] = "e62a5d9f15a8a7446959e6e9875a6c8356be2e709b00ad1d05dd0f4961dfd289"
 
-URI_aarch64_python3-anyio+trio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-anyio+trio-4.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-anyio+trio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-anyio+trio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-anyio+trio-4.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-anyio+trio;unpack=0"
 SRC_URI[aarch64_python3-anyio+trio.sha256sum] = "9da183f21384b610a82960c2d9aa98f60135529412ca03bcebe20f0f90dbf703"
 
 RDEPENDS:python3-anyio = " \

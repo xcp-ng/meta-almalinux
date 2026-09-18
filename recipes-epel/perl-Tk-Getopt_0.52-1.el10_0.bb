@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Tk-Getopt-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Getopt-0.52-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Getopt-0.52-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1d33343a6e86523b0cf0b8a2ecec89aa61d262ae347cda74ce84305f70e915b5"
 
-URI_x86_64_v2_perl-Tk-Getopt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Getopt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Getopt.sha256sum] = "b9683253eae48fd509e204b2f677acff7961749aa632a03f76d7203aeff11d60"
 
-URI_x86_64_v2_perl-Tk-Getopt-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-tests-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Getopt-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Getopt-tests-0.52-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Getopt-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Getopt-tests.sha256sum] = "44fe0e910d400eecceb785901a3ccf841f45b44d0ef24abd9acea5603259619b"
 
-URI_aarch64_perl-Tk-Getopt = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Getopt-0.52-1.el10_0.noarch.rpm;name=aarch64_perl-Tk-Getopt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Getopt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Getopt-0.52-1.el10_0.noarch.rpm;name=aarch64_perl-Tk-Getopt;unpack=0"
 SRC_URI[aarch64_perl-Tk-Getopt.sha256sum] = "981401568831c210bd6aed78b56af232b6d4ca9023d8375866e4988be092ea8c"
 
-URI_aarch64_perl-Tk-Getopt-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Getopt-tests-0.52-1.el10_0.noarch.rpm;name=aarch64_perl-Tk-Getopt-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Getopt-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Getopt-tests-0.52-1.el10_0.noarch.rpm;name=aarch64_perl-Tk-Getopt-tests;unpack=0"
 SRC_URI[aarch64_perl-Tk-Getopt-tests.sha256sum] = "616c16c5fc63ccc4fa0226ef539404321bdd9c0ec73d80e76c0bb7a29f9eea5c"
 
 RDEPENDS:perl-Tk-Getopt = " \

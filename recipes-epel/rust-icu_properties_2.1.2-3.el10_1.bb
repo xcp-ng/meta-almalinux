@@ -15,64 +15,49 @@ PACKAGES = " \
  rust-icu_properties-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-icu_properties-2.1.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-icu_properties-2.1.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "945a41dc66dfbd87fe99d52415c751bd5bbde68a6c751464627a0d5701d44415"
 
-URI_x86_64_v2_rust-icu_properties+alloc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+alloc-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+alloc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+alloc-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+alloc-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+alloc-devel.sha256sum] = "e9efeb43753a3ceff637856ab65862ae14b0dcab070dba66573d0e8690bf268b"
 
-URI_x86_64_v2_rust-icu_properties+compiled_data-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+compiled_data-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+compiled_data-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+compiled_data-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+compiled_data-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+compiled_data-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+compiled_data-devel.sha256sum] = "91daced5b0bac8c2301028fce4947827b612c344a8776150d649d4dc1404d793"
 
-URI_x86_64_v2_rust-icu_properties+datagen-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+datagen-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+datagen-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+datagen-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+datagen-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+datagen-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+datagen-devel.sha256sum] = "28071f406a893808d6947b386bad7a2d9223bd21363f5814cc8826a9dddb2d20"
 
-URI_x86_64_v2_rust-icu_properties+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+default-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+default-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+default-devel.sha256sum] = "2594070c9fda31a3c472c596046094323ac248e2731d20a911a4989c1e709306"
 
-URI_x86_64_v2_rust-icu_properties+serde-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+serde-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+serde-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+serde-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+serde-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+serde-devel.sha256sum] = "69411338b7e8f66d3842f41c02c0d1835245e7f1b11b3e645965645eda7bc73f"
 
-URI_x86_64_v2_rust-icu_properties+unicode_bidi-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+unicode_bidi-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+unicode_bidi-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties+unicode_bidi-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties+unicode_bidi-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties+unicode_bidi-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties+unicode_bidi-devel.sha256sum] = "bbd6a4954f0592731ad8afeba9c47b4e1ef88a1478cfe8a2f4a5d066f0cbd9f8"
 
-URI_x86_64_v2_rust-icu_properties-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-icu_properties-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-icu_properties-devel-2.1.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-icu_properties-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-icu_properties-devel.sha256sum] = "2b6e3da64ecb09e457ef939fc2cb40b53a442fe3e0f83ed8adcbcac29a310f7d"
 
-URI_aarch64_rust-icu_properties+alloc-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+alloc-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+alloc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+alloc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+alloc-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+alloc-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+alloc-devel.sha256sum] = "8c2a6a16fec0e0a80e60df8e2a828a905310162359f74bf5dd38497f0487f69c"
 
-URI_aarch64_rust-icu_properties+compiled_data-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+compiled_data-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+compiled_data-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+compiled_data-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+compiled_data-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+compiled_data-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+compiled_data-devel.sha256sum] = "631c336cdeb8d02d8a0e959f1fd60049b6bfaa5896883689b63e6ffdc8a3388c"
 
-URI_aarch64_rust-icu_properties+datagen-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+datagen-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+datagen-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+datagen-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+datagen-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+datagen-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+datagen-devel.sha256sum] = "9edee4d5818dc37ff6bbad5c8bf8a767a724c0a25d59451c43e49c5680d70a6b"
 
-URI_aarch64_rust-icu_properties+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+default-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+default-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+default-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+default-devel.sha256sum] = "1e9db78f5a8ac3cb964dba3c755624a6baee59b04d5fa4651f943b238a2fc7eb"
 
-URI_aarch64_rust-icu_properties+serde-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+serde-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+serde-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+serde-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+serde-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+serde-devel.sha256sum] = "d56b9863af70b8aae64e9d649ff7d6737502516f8fafb3a86344b8665b229d6a"
 
-URI_aarch64_rust-icu_properties+unicode_bidi-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+unicode_bidi-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+unicode_bidi-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties+unicode_bidi-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties+unicode_bidi-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties+unicode_bidi-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties+unicode_bidi-devel.sha256sum] = "e10b7ddb8a562033589eff4d11f953e9429e58f68dfeaae19053417fa637e0e4"
 
-URI_aarch64_rust-icu_properties-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-icu_properties-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-icu_properties-devel-2.1.2-3.el10_1.noarch.rpm;name=aarch64_rust-icu_properties-devel;unpack=0"
 SRC_URI[aarch64_rust-icu_properties-devel.sha256sum] = "a34792baf95010a975a5798504409a47525ae6bc37983d735fcea842453c807b"
 
 RDEPENDS:rust-icu_properties+alloc-devel = " \

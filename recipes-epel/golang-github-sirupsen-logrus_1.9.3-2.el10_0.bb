@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-sirupsen-logrus-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-sirupsen-logrus-1.9.3-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-sirupsen-logrus-1.9.3-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3e3fe83ee20814cc8ea517f4991dd874143fae49e32d0fba0780dc08c254e578"
 
-URI_x86_64_v2_golang-github-sirupsen-logrus-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-sirupsen-logrus-devel-1.9.3-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-sirupsen-logrus-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-sirupsen-logrus-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-sirupsen-logrus-devel-1.9.3-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-sirupsen-logrus-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-sirupsen-logrus-devel.sha256sum] = "fe1e553d627b89961c923c8ebcc209b4180f01189127ff5ee1060f48e8d9acff"
 
-URI_aarch64_golang-github-sirupsen-logrus-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sirupsen-logrus-devel-1.9.3-2.el10_0.noarch.rpm;name=aarch64_golang-github-sirupsen-logrus-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-sirupsen-logrus-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-sirupsen-logrus-devel-1.9.3-2.el10_0.noarch.rpm;name=aarch64_golang-github-sirupsen-logrus-devel;unpack=0"
 SRC_URI[aarch64_golang-github-sirupsen-logrus-devel.sha256sum] = "31a7d9b695903e9f8cf7899144a6f3715f52af63d560e2ebe19496949e86754a"
 
 RDEPENDS:golang-github-sirupsen-logrus-devel = " \

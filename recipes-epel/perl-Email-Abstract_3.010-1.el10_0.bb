@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Email-Abstract \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Email-Abstract-3.010-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Email-Abstract-3.010-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cdb9021c9bf238a1c6b3e2e1c1acd6d127478664348409c3ba2a1f668c787dda"
 
-URI_x86_64_v2_perl-Email-Abstract = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Email-Abstract-3.010-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Email-Abstract;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Email-Abstract}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Email-Abstract-3.010-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Email-Abstract;unpack=0"
 SRC_URI[x86_64_v2_perl-Email-Abstract.sha256sum] = "eba63d40735e9f331fc097e410b53c860d6a4ff97df1fdb0b4f74378fd4953f6"
 
-URI_aarch64_perl-Email-Abstract = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Email-Abstract-3.010-1.el10_0.noarch.rpm;name=aarch64_perl-Email-Abstract;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Email-Abstract}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Email-Abstract-3.010-1.el10_0.noarch.rpm;name=aarch64_perl-Email-Abstract;unpack=0"
 SRC_URI[aarch64_perl-Email-Abstract.sha256sum] = "fe1b4ab24c4675bd42e8c3d5f723856a72718e85429ac17db1d73d3befefce6f"
 
 RDEPENDS:perl-Email-Abstract = " \

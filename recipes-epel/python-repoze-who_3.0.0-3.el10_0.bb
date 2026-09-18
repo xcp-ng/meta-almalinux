@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-repoze-who \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-repoze-who-3.0.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-repoze-who-3.0.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "140ebf09323ff5f32fc4971cd2239e99fc0b8cdfe2f6f385761615d2dbb2dd31"
 
-URI_x86_64_v2_python3-repoze-who = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-who-3.0.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-who;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-repoze-who}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-who-3.0.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-who;unpack=0"
 SRC_URI[x86_64_v2_python3-repoze-who.sha256sum] = "2e11500b633b42bd917c293499f63c9af1b4fde41613907c46e9f268a4bb837b"
 
-URI_aarch64_python3-repoze-who = "${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-who-3.0.0-3.el10_0.noarch.rpm;name=aarch64_python3-repoze-who;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-repoze-who}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-who-3.0.0-3.el10_0.noarch.rpm;name=aarch64_python3-repoze-who;unpack=0"
 SRC_URI[aarch64_python3-repoze-who.sha256sum] = "81b38d82c788ffcf49aaaff32635ff932b5b6a14424e0a6bc0b01451a78718d0"
 
 RDEPENDS:python3-repoze-who = " \

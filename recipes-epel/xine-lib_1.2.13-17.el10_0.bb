@@ -11,8 +11,7 @@ PACKAGES = " \
  xine-lib-extras \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/x/xine-lib-1.2.13-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/x/xine-lib-1.2.13-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9240f1e31f02a8540b2dc792e513261c894b9647fa420b547223f78196173b6f"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -25,28 +24,22 @@ SRC_URI[src.sha256sum] = "9240f1e31f02a8540b2dc792e513261c894b9647fa420b547223f7
 # - xine-lib: libpostproc.so.58()(64bit)
 # - xine-lib: libpostproc.so.58(LIBPOSTPROC_58)(64bit)
 
-URI_x86_64_v2_xine-lib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xine-lib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib;unpack=0"
 SRC_URI[x86_64_v2_xine-lib.sha256sum] = "7d75e3d0a1a855d3c843f20add5c85570c4bd74166f1f0bc36c63f2806512e3d"
 
-URI_x86_64_v2_xine-lib-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-devel-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xine-lib-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-devel-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib-devel;unpack=0"
 SRC_URI[x86_64_v2_xine-lib-devel.sha256sum] = "678f6aa6cd44b9335e0f91c35023925b8df07506695ecc165427f033fff82505"
 
-URI_x86_64_v2_xine-lib-extras = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-extras-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib-extras;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xine-lib-extras}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xine-lib-extras-1.2.13-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xine-lib-extras;unpack=0"
 SRC_URI[x86_64_v2_xine-lib-extras.sha256sum] = "c6fbd5f43fd15e5427d59023fe6284b245b6c59e645c2a55a115dce8530efee9"
 
-URI_aarch64_xine-lib = "${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xine-lib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib;unpack=0"
 SRC_URI[aarch64_xine-lib.sha256sum] = "d9ebaf9fb3a31a942b269b179e7ae38be9855861a792d7586b1d328bfe204ec4"
 
-URI_aarch64_xine-lib-devel = "${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-devel-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xine-lib-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-devel-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib-devel;unpack=0"
 SRC_URI[aarch64_xine-lib-devel.sha256sum] = "94db32fbb8cc362feabd55cdf9157fd440b7ad977feb477531cc5aaf0f74fbd0"
 
-URI_aarch64_xine-lib-extras = "${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-extras-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib-extras;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xine-lib-extras}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xine-lib-extras-1.2.13-17.el10_0.aarch64.rpm;name=aarch64_xine-lib-extras;unpack=0"
 SRC_URI[aarch64_xine-lib-extras.sha256sum] = "761eb1bb52aaf9a20b41f976146179e8f05820680f21dc1b3ca15eb519f4b857"
 
 RDEPENDS:xine-lib:x86_64_v2 = " \

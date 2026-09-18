@@ -12,40 +12,31 @@ PACKAGES = " \
  gnome-desktop4-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-desktop3-44.1-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gnome-desktop3-44.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3280e26b29f9b7833612267b258a054096563ccfd6685208da6c4621de308765"
 
-URI_x86_64_v2_gnome-desktop3 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-desktop3-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-desktop3}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-desktop3-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop3;unpack=0"
 SRC_URI[x86_64_v2_gnome-desktop3.sha256sum] = "ec7ad19172d67d89df59e5822e3c8c623efba469f30f61c601457539f61eb98e"
 
-URI_x86_64_v2_gnome-desktop3-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-desktop3-devel-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop3-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-desktop3-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-desktop3-devel-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop3-devel;unpack=0"
 SRC_URI[x86_64_v2_gnome-desktop3-devel.sha256sum] = "c6fb4ff6efacd26337f6283819704f39e6f6e78226a0581ac0d038ff234efb73"
 
-URI_x86_64_v2_gnome-desktop4 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-desktop4-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-desktop4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gnome-desktop4-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop4;unpack=0"
 SRC_URI[x86_64_v2_gnome-desktop4.sha256sum] = "55c714c2543d86de6b1446308ee37a91f180a320cce6c83312c21977a98625e4"
 
-URI_x86_64_v2_gnome-desktop4-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-desktop4-devel-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop4-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-desktop4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gnome-desktop4-devel-44.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_gnome-desktop4-devel;unpack=0"
 SRC_URI[x86_64_v2_gnome-desktop4-devel.sha256sum] = "56ae2ed49ee97095714c239a2b11fafe68a7efb1728145b61e56ebfa35c2af32"
 
-URI_aarch64_gnome-desktop3 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-desktop3-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-desktop3}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-desktop3-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop3;unpack=0"
 SRC_URI[aarch64_gnome-desktop3.sha256sum] = "a33a6cef6ef30b59e6380f26815fec77332877c2b814a4d74e3e131d2a4e96e7"
 
-URI_aarch64_gnome-desktop3-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-desktop3-devel-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop3-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-desktop3-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-desktop3-devel-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop3-devel;unpack=0"
 SRC_URI[aarch64_gnome-desktop3-devel.sha256sum] = "0a535b601897b6f0b312689576ca3ccd1eccf04080242e5ab9023e1068f9bc5b"
 
-URI_aarch64_gnome-desktop4 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-desktop4-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-desktop4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gnome-desktop4-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop4;unpack=0"
 SRC_URI[aarch64_gnome-desktop4.sha256sum] = "fd463bb6b98fbd98de3d11c4c84b8cec5def3536c0e608cfe6016645b23d61bc"
 
-URI_aarch64_gnome-desktop4-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-desktop4-devel-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop4-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-desktop4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gnome-desktop4-devel-44.1-1.el10.aarch64.rpm;name=aarch64_gnome-desktop4-devel;unpack=0"
 SRC_URI[aarch64_gnome-desktop4-devel.sha256sum] = "779cb282d05d3bb7d752232a6ed7a3ac5db474209542f253f6cd7a2d80322fd1"
 
 RDEPENDS:gnome-desktop3 = " \

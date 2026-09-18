@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-turtle-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-turtle-1.6.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-turtle-1.6.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "095929549d313ea08fcfeb2811fb42e257f58222d533724af73dd105ebf38791"
 
-URI_x86_64_v2_ghc-turtle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-turtle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle;unpack=0"
 SRC_URI[x86_64_v2_ghc-turtle.sha256sum] = "ae2ade04c713dc1ab53f3a5a91088a68eaa38e84f72c96a1f9f9d74a57a5be69"
 
-URI_x86_64_v2_ghc-turtle-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-devel-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-turtle-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-devel-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-turtle-devel.sha256sum] = "a89f695d85aa0a83118b7f57080818cfffecc04e8d1bfed73ca9cbef07b16a92"
 
-URI_x86_64_v2_ghc-turtle-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-doc-1.6.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-turtle-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-turtle-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-doc-1.6.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-turtle-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-turtle-doc.sha256sum] = "eb9b02613c8d92ea654b3bccc27938d7e2ea74ab24cd9e27fefcfa874f820661"
 
-URI_x86_64_v2_ghc-turtle-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-prof-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-turtle-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-turtle-prof-1.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-turtle-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-turtle-prof.sha256sum] = "e08e828f44d028653cacaf37013c667d090f16fc41966a9460701c0eaae4bc1d"
 
-URI_aarch64_ghc-turtle = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-turtle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle;unpack=0"
 SRC_URI[aarch64_ghc-turtle.sha256sum] = "a196bc0b1651fa8ef112d92eedc630e65cf6608f3b3e1b50924c577f92a0c875"
 
-URI_aarch64_ghc-turtle-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-devel-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-turtle-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-devel-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle-devel;unpack=0"
 SRC_URI[aarch64_ghc-turtle-devel.sha256sum] = "c89d5b11a7afb2a23cc03226ef58f5ea2775c3f943832ff1e3d732c503ee2258"
 
-URI_aarch64_ghc-turtle-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-doc-1.6.2-1.el10_0.noarch.rpm;name=aarch64_ghc-turtle-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-turtle-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-doc-1.6.2-1.el10_0.noarch.rpm;name=aarch64_ghc-turtle-doc;unpack=0"
 SRC_URI[aarch64_ghc-turtle-doc.sha256sum] = "e57db29204d750d68d23e8a8b14f9bd75573961dc00e88eb607ad1f7bc78ff85"
 
-URI_aarch64_ghc-turtle-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-prof-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-turtle-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-turtle-prof-1.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-turtle-prof;unpack=0"
 SRC_URI[aarch64_ghc-turtle-prof.sha256sum] = "2385cb8c6ff7d7b63958c7fe84c9bcf6ddea92755857e439f138694808d2c77f"
 
 RDEPENDS:ghc-turtle = " \

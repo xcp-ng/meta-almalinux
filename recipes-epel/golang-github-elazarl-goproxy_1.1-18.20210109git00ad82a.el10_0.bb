@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-elazarl-goproxy-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-elazarl-goproxy-1.1-18.20210109git00ad82a.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-elazarl-goproxy-1.1-18.20210109git00ad82a.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6fd9aeff0217d6df5b477098fa7f7b311b57035db3018ed0dfbc4f6370cbdc80"
 
-URI_aarch64_golang-github-elazarl-goproxy-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-elazarl-goproxy-devel-1.1-18.20210109git00ad82a.el10_0.noarch.rpm;name=aarch64_golang-github-elazarl-goproxy-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-elazarl-goproxy-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-elazarl-goproxy-devel-1.1-18.20210109git00ad82a.el10_0.noarch.rpm;name=aarch64_golang-github-elazarl-goproxy-devel;unpack=0"
 SRC_URI[aarch64_golang-github-elazarl-goproxy-devel.sha256sum] = "31c2d5eb44b6c6bdd47dfe27c7264703bc96695f150ad9bf882f97b79d4f6fd8"
 
 RDEPENDS:golang-github-elazarl-goproxy-devel = " \

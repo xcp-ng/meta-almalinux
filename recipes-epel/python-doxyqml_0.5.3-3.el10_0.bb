@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-doxyqml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-doxyqml-0.5.3-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-doxyqml-0.5.3-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4693a2ec1b7f21692fcc88d7d81a3607f1a7da8de0372748eadf19b53eec0fbb"
 
-URI_x86_64_v2_python3-doxyqml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-doxyqml-0.5.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-doxyqml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-doxyqml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-doxyqml-0.5.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-doxyqml;unpack=0"
 SRC_URI[x86_64_v2_python3-doxyqml.sha256sum] = "2803789b8541d42def9b91c47f95d77de8fbce35e7e6f2b918e70d96d6ee8b98"
 
-URI_aarch64_python3-doxyqml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-doxyqml-0.5.3-3.el10_0.noarch.rpm;name=aarch64_python3-doxyqml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-doxyqml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-doxyqml-0.5.3-3.el10_0.noarch.rpm;name=aarch64_python3-doxyqml;unpack=0"
 SRC_URI[aarch64_python3-doxyqml.sha256sum] = "7a0af6d2d2786e631b7241933232d55840684819e322b6380533ca6442d7343c"
 
 RDEPENDS:python3-doxyqml = " \

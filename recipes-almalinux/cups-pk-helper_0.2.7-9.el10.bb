@@ -9,16 +9,13 @@ PACKAGES = " \
  cups-pk-helper \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cups-pk-helper-0.2.7-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cups-pk-helper-0.2.7-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ba43ef2a616e2b3a5c807c5a9cb555ffa31f861caccf2ee144168e5d92d2ed76"
 
-URI_x86_64_v2_cups-pk-helper = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cups-pk-helper-0.2.7-9.el10.x86_64_v2.rpm;name=x86_64_v2_cups-pk-helper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cups-pk-helper}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cups-pk-helper-0.2.7-9.el10.x86_64_v2.rpm;name=x86_64_v2_cups-pk-helper;unpack=0"
 SRC_URI[x86_64_v2_cups-pk-helper.sha256sum] = "dc75e15a805d8b783a8982cd14a8e99053c8e4be6933607c3ef8729755bc9e1e"
 
-URI_aarch64_cups-pk-helper = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cups-pk-helper-0.2.7-9.el10.aarch64.rpm;name=aarch64_cups-pk-helper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cups-pk-helper}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cups-pk-helper-0.2.7-9.el10.aarch64.rpm;name=aarch64_cups-pk-helper;unpack=0"
 SRC_URI[aarch64_cups-pk-helper.sha256sum] = "41f8ef89bcd832832a809d0640491cd70e75e2fd83f93f0adc13bbb6b0306de0"
 
 RDEPENDS:cups-pk-helper = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-sdk \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-sdk-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-sdk-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3ce3885b825968e0c85f577c4932504980fa0a43609b2774e2bcf5f94a8c4a00"
 
-URI_x86_64_v2_plasma-sdk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-sdk-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-sdk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-sdk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-sdk-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-sdk;unpack=0"
 SRC_URI[x86_64_v2_plasma-sdk.sha256sum] = "296e5694d8aab66e984764c848f3a29df6db53beae08228df1435e34f6bb157b"
 
-URI_aarch64_plasma-sdk = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-sdk-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-sdk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-sdk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-sdk-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-sdk;unpack=0"
 SRC_URI[aarch64_plasma-sdk.sha256sum] = "8f4e00e1e8500ed944902ad9c5a9ee153548aa31a18cae379d6c88e44eb14849"
 
 RDEPENDS:plasma-sdk = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-defusedxml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-defusedxml-0.7.1-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-defusedxml-0.7.1-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "25916401a11be2a289721842b8588686c173f7816b561c77ddf9ca235b50b78d"
 
-URI_x86_64_v2_python3-defusedxml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-defusedxml-0.7.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-defusedxml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-defusedxml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-defusedxml-0.7.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-defusedxml;unpack=0"
 SRC_URI[x86_64_v2_python3-defusedxml.sha256sum] = "ad2325889c3039479f6f7b603aa5df5cb3ef984f9ae09cfb0d2f66f2d47cb2d3"
 
-URI_aarch64_python3-defusedxml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-defusedxml-0.7.1-17.el10_0.noarch.rpm;name=aarch64_python3-defusedxml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-defusedxml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-defusedxml-0.7.1-17.el10_0.noarch.rpm;name=aarch64_python3-defusedxml;unpack=0"
 SRC_URI[aarch64_python3-defusedxml.sha256sum] = "413152d8fa8757c60414a2b391eed43a103cc419c0f66db3b69d69f2c0abaf82"
 
 RDEPENDS:python3-defusedxml = " \

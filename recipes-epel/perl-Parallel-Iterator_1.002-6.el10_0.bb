@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Parallel-Iterator-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Parallel-Iterator-1.002-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Parallel-Iterator-1.002-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "670c984e4dfc5cbf6f4be06cc1aab27818792f0f77b832ef5cbbd758bba3c861"
 
-URI_x86_64_v2_perl-Parallel-Iterator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Parallel-Iterator-1.002-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Parallel-Iterator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Parallel-Iterator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Parallel-Iterator-1.002-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Parallel-Iterator;unpack=0"
 SRC_URI[x86_64_v2_perl-Parallel-Iterator.sha256sum] = "be2eb1263654571eaad2c52743cd829de9bc5801139f20ff582e5feef342325e"
 
-URI_x86_64_v2_perl-Parallel-Iterator-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Parallel-Iterator-tests-1.002-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Parallel-Iterator-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Parallel-Iterator-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Parallel-Iterator-tests-1.002-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Parallel-Iterator-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Parallel-Iterator-tests.sha256sum] = "aef6db3b36afb93e8640247a5ced672542885672d4cea0aec6090ec43ffb68f5"
 
-URI_aarch64_perl-Parallel-Iterator = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Parallel-Iterator-1.002-6.el10_0.noarch.rpm;name=aarch64_perl-Parallel-Iterator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Parallel-Iterator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Parallel-Iterator-1.002-6.el10_0.noarch.rpm;name=aarch64_perl-Parallel-Iterator;unpack=0"
 SRC_URI[aarch64_perl-Parallel-Iterator.sha256sum] = "7fcc8d4c6352014c0f5fc0f90f9ee11329ca46765da7253c176df5371b651837"
 
-URI_aarch64_perl-Parallel-Iterator-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Parallel-Iterator-tests-1.002-6.el10_0.noarch.rpm;name=aarch64_perl-Parallel-Iterator-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Parallel-Iterator-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Parallel-Iterator-tests-1.002-6.el10_0.noarch.rpm;name=aarch64_perl-Parallel-Iterator-tests;unpack=0"
 SRC_URI[aarch64_perl-Parallel-Iterator-tests.sha256sum] = "7bb73d32b71ec5da3464813be5daddf1cef3cfd0b83b141ea8d4632f608878e2"
 
 RDEPENDS:perl-Parallel-Iterator = " \

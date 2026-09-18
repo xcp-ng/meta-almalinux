@@ -10,16 +10,13 @@ PACKAGES = " \
  apache-resource-bundles \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/apache-resource-bundles-1.5-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/apache-resource-bundles-1.5-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3044486921e6282ebeb20ee68652cdebcf8eab68ceb878c7f162415f5aeab1c6"
 
-URI_x86_64_v2_apache-resource-bundles = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/apache-resource-bundles-1.5-8.el10.noarch.rpm;name=x86_64_v2_apache-resource-bundles;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_apache-resource-bundles}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/apache-resource-bundles-1.5-8.el10.noarch.rpm;name=x86_64_v2_apache-resource-bundles;unpack=0"
 SRC_URI[x86_64_v2_apache-resource-bundles.sha256sum] = "0d62245c9cfd85f80aeb4d53ab7f27756d5756fbb85fe2b8bd250584aa7fb7a1"
 
-URI_aarch64_apache-resource-bundles = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/apache-resource-bundles-1.5-8.el10.noarch.rpm;name=aarch64_apache-resource-bundles;unpack=0"
-SRC_URI:append = " ${URI_aarch64_apache-resource-bundles}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/apache-resource-bundles-1.5-8.el10.noarch.rpm;name=aarch64_apache-resource-bundles;unpack=0"
 SRC_URI[aarch64_apache-resource-bundles.sha256sum] = "0d62245c9cfd85f80aeb4d53ab7f27756d5756fbb85fe2b8bd250584aa7fb7a1"
 
 RDEPENDS:apache-resource-bundles = " \

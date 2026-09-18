@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Lexical-Var-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Lexical-Var-0.010-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Lexical-Var-0.010-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8705c63f7ac41504d278c2d93016eba9bfc2882c855a65eb54daed8a612f925c"
 
-URI_x86_64_v2_perl-Lexical-Var = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Lexical-Var-0.010-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Lexical-Var;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Lexical-Var}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Lexical-Var-0.010-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Lexical-Var;unpack=0"
 SRC_URI[x86_64_v2_perl-Lexical-Var.sha256sum] = "022a6d3877de7c8ffe990bdc6b8780d388637aa2c5208ce9921f84ca88b2edd1"
 
-URI_x86_64_v2_perl-Lexical-Var-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Lexical-Var-tests-0.010-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Lexical-Var-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Lexical-Var-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Lexical-Var-tests-0.010-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Lexical-Var-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Lexical-Var-tests.sha256sum] = "1daee739b49e5fd6b873222350f5e3f149e7b6fa102c962142574961c76f8fb8"
 
-URI_aarch64_perl-Lexical-Var = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Lexical-Var-0.010-1.el10_0.aarch64.rpm;name=aarch64_perl-Lexical-Var;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Lexical-Var}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Lexical-Var-0.010-1.el10_0.aarch64.rpm;name=aarch64_perl-Lexical-Var;unpack=0"
 SRC_URI[aarch64_perl-Lexical-Var.sha256sum] = "798d4a03fccd19a303ea9ce290a3b45524aedef7283227bb94d4e9fd7ec73a65"
 
-URI_aarch64_perl-Lexical-Var-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Lexical-Var-tests-0.010-1.el10_0.noarch.rpm;name=aarch64_perl-Lexical-Var-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Lexical-Var-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Lexical-Var-tests-0.010-1.el10_0.noarch.rpm;name=aarch64_perl-Lexical-Var-tests;unpack=0"
 SRC_URI[aarch64_perl-Lexical-Var-tests.sha256sum] = "26f448dad1d786bab8f57e0e83fb42bbbf505adb68f58d2f0324c3368fb00231"
 
 RDEPENDS:perl-Lexical-Var = " \

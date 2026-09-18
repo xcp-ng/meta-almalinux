@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-partd+complete \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-partd-1.4.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-partd-1.4.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "16cf6c57e2ed15e31c583541a1998d7edf0cbadbc1ce69eed35b3ad6569e33ea"
 
-URI_x86_64_v2_python3-partd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-partd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd;unpack=0"
 SRC_URI[x86_64_v2_python3-partd.sha256sum] = "ff8beb078e78ec3063ba1b57c4dc258aae167d196cc06e2f1e37d5039273bf87"
 
-URI_x86_64_v2_python3-partd+complete = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd+complete-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd+complete;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-partd+complete}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-partd+complete-1.4.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-partd+complete;unpack=0"
 SRC_URI[x86_64_v2_python3-partd+complete.sha256sum] = "352da77530eda4b8ec046a44a9b91da46a2895a8ad89e825a1d25b4542ec0606"
 
-URI_aarch64_python3-partd = "${EPEL_MIRROR}/aarch64/Packages/p/python3-partd-1.4.2-3.el10_0.noarch.rpm;name=aarch64_python3-partd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-partd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-partd-1.4.2-3.el10_0.noarch.rpm;name=aarch64_python3-partd;unpack=0"
 SRC_URI[aarch64_python3-partd.sha256sum] = "d299e41dcd19022a9f1d6149616b91f7cd553351af4e5bbb53ca152515ba34c7"
 
-URI_aarch64_python3-partd+complete = "${EPEL_MIRROR}/aarch64/Packages/p/python3-partd+complete-1.4.2-3.el10_0.noarch.rpm;name=aarch64_python3-partd+complete;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-partd+complete}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-partd+complete-1.4.2-3.el10_0.noarch.rpm;name=aarch64_python3-partd+complete;unpack=0"
 SRC_URI[aarch64_python3-partd+complete.sha256sum] = "cc49b889dae7cdbee4a840c8c7786ceabdc15f3f32ab60b3c392ffea52cb32cb"
 
 RDEPENDS:python3-partd = " \

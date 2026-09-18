@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Deep \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Test-Deep-1.204-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Test-Deep-1.204-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "42668e3225860c3298ef3e5a9be0ffbc9093fb2a49628dffd130c5abdec738c6"
 
-URI_x86_64_v2_perl-Test-Deep = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Test-Deep-1.204-9.el10.noarch.rpm;name=x86_64_v2_perl-Test-Deep;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Deep}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Test-Deep-1.204-9.el10.noarch.rpm;name=x86_64_v2_perl-Test-Deep;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Deep.sha256sum] = "9e8dc2602ce28df1acb92a0e540b4d6874393fd7e4bee1518b6c961071620e3f"
 
-URI_aarch64_perl-Test-Deep = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Test-Deep-1.204-9.el10.noarch.rpm;name=aarch64_perl-Test-Deep;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Deep}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Test-Deep-1.204-9.el10.noarch.rpm;name=aarch64_perl-Test-Deep;unpack=0"
 SRC_URI[aarch64_perl-Test-Deep.sha256sum] = "9e8dc2602ce28df1acb92a0e540b4d6874393fd7e4bee1518b6c961071620e3f"
 
 RDEPENDS:perl-Test-Deep = " \

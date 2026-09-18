@@ -10,24 +10,19 @@ PACKAGES = " \
  gstreamer1-plugins-good-gtk \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "76e38267161b9694707678fd1c67935126827f263bffc22b47e16ed0550aadbc"
 
-URI_x86_64_v2_gstreamer1-plugins-good = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.x86_64_v2.rpm;name=x86_64_v2_gstreamer1-plugins-good;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gstreamer1-plugins-good}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.x86_64_v2.rpm;name=x86_64_v2_gstreamer1-plugins-good;unpack=0"
 SRC_URI[x86_64_v2_gstreamer1-plugins-good.sha256sum] = "56d65ea8f5f867f1686238d6a1ff9682cb8b3c9940c6fc62f648ffe186c71bbd"
 
-URI_x86_64_v2_gstreamer1-plugins-good-gtk = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-gtk-1.24.11-2.el10_1.x86_64_v2.rpm;name=x86_64_v2_gstreamer1-plugins-good-gtk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gstreamer1-plugins-good-gtk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-gtk-1.24.11-2.el10_1.x86_64_v2.rpm;name=x86_64_v2_gstreamer1-plugins-good-gtk;unpack=0"
 SRC_URI[x86_64_v2_gstreamer1-plugins-good-gtk.sha256sum] = "ae71dc05759b945b805ba75815da890150da2018cf655c0f9e421aba8febce0f"
 
-URI_aarch64_gstreamer1-plugins-good = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.aarch64.rpm;name=aarch64_gstreamer1-plugins-good;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gstreamer1-plugins-good}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gstreamer1-plugins-good-1.24.11-2.el10_1.aarch64.rpm;name=aarch64_gstreamer1-plugins-good;unpack=0"
 SRC_URI[aarch64_gstreamer1-plugins-good.sha256sum] = "d95b9191dc34f7f9fc570dc305c8a2f2df2bb7509350209ce6cda5a67cc4af64"
 
-URI_aarch64_gstreamer1-plugins-good-gtk = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gstreamer1-plugins-good-gtk-1.24.11-2.el10_1.aarch64.rpm;name=aarch64_gstreamer1-plugins-good-gtk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gstreamer1-plugins-good-gtk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gstreamer1-plugins-good-gtk-1.24.11-2.el10_1.aarch64.rpm;name=aarch64_gstreamer1-plugins-good-gtk;unpack=0"
 SRC_URI[aarch64_gstreamer1-plugins-good-gtk.sha256sum] = "107c5eacc08d79e7222a90e84c74eef950ccdbf2e28006802f153794b88846d3"
 
 RDEPENDS:gstreamer1-plugins-good = " \

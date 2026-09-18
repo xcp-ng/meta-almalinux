@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-cairocffi+xcb \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cairocffi-1.7.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cairocffi-1.7.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bcac4b1a24e6f4451abd0a17352c380ab3131a93bcbeca98b8b7ac8fa0adc426"
 
-URI_x86_64_v2_python3-cairocffi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cairocffi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi;unpack=0"
 SRC_URI[x86_64_v2_python3-cairocffi.sha256sum] = "5d9e54ab257d2d1cab74b7a0f8010ba0d55e619d96630e0151485d2fad545367"
 
-URI_x86_64_v2_python3-cairocffi+xcb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi+xcb-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi+xcb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cairocffi+xcb}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cairocffi+xcb-1.7.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cairocffi+xcb;unpack=0"
 SRC_URI[x86_64_v2_python3-cairocffi+xcb.sha256sum] = "71bb033efc2cf3b83b5040ce3743f8fc15d9a01a9fd1ca0eaddf99df6eb7adb0"
 
-URI_aarch64_python3-cairocffi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cairocffi-1.7.0-8.el10_0.noarch.rpm;name=aarch64_python3-cairocffi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cairocffi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cairocffi-1.7.0-8.el10_0.noarch.rpm;name=aarch64_python3-cairocffi;unpack=0"
 SRC_URI[aarch64_python3-cairocffi.sha256sum] = "781db592fdd8afb8d2b5011a4f37ec9621d0073c3dbf25e0e7087c376d3097df"
 
-URI_aarch64_python3-cairocffi+xcb = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cairocffi+xcb-1.7.0-8.el10_0.noarch.rpm;name=aarch64_python3-cairocffi+xcb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cairocffi+xcb}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cairocffi+xcb-1.7.0-8.el10_0.noarch.rpm;name=aarch64_python3-cairocffi+xcb;unpack=0"
 SRC_URI[aarch64_python3-cairocffi+xcb.sha256sum] = "d0308d89599b93a87f5cbf33101eeb42b7ce7d4bf80c203b9a534340ffaccb41"
 
 RDEPENDS:python3-cairocffi = " \

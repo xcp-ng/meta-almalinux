@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-cloudflare-backoff-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-cloudflare-backoff-0-0.15.20190628git647f3cd.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-cloudflare-backoff-0-0.15.20190628git647f3cd.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "32b05e2a19ea0726dc143fd18ed67930f091fbdf4baf0da2e8afd95009fb8594"
 
-URI_aarch64_golang-github-cloudflare-backoff-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-cloudflare-backoff-devel-0-0.15.20190628git647f3cd.el10_0.noarch.rpm;name=aarch64_golang-github-cloudflare-backoff-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-cloudflare-backoff-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-cloudflare-backoff-devel-0-0.15.20190628git647f3cd.el10_0.noarch.rpm;name=aarch64_golang-github-cloudflare-backoff-devel;unpack=0"
 SRC_URI[aarch64_golang-github-cloudflare-backoff-devel.sha256sum] = "ad938df28c801272b2fd6c7953bbfb92973907f20208db6561d3437bef4586c1"
 
 RDEPENDS:golang-github-cloudflare-backoff-devel = " \

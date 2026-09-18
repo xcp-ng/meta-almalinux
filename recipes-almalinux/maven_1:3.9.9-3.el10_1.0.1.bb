@@ -15,61 +15,48 @@ PACKAGES = " \
  maven-unbound \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/maven-3.9.9-3.el10_1.0.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/maven-3.9.9-3.el10_1.0.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e06f1e264a76b7361edbfd560754ad92465f781219125ca2f2f6fa899ac7b55e"
 
-URI_x86_64_v2_maven = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven;unpack=0"
 SRC_URI[x86_64_v2_maven.sha256sum] = "ca82c0f487c785986dae801772d3ce5e0cb051fab53168e321fc499cbe5b7865"
 
-URI_x86_64_v2_maven-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-javadoc-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-javadoc-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-javadoc;unpack=0"
 SRC_URI[x86_64_v2_maven-javadoc.sha256sum] = "ac944f686ffff7f2d8dbc95ac3d0ef49e5be9db90a5ec3e308f63313b5683f58"
 
-URI_x86_64_v2_maven-lib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-lib-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-lib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-lib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-lib-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-lib;unpack=0"
 SRC_URI[x86_64_v2_maven-lib.sha256sum] = "cb12faae1318e6ca595ebfeea7fd5c15efbe8c4ae2e9c4d5ad4c61d1809fff4c"
 
-URI_x86_64_v2_maven-openjdk21 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-openjdk21-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-openjdk21;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-openjdk21}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-openjdk21-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-openjdk21;unpack=0"
 SRC_URI[x86_64_v2_maven-openjdk21.sha256sum] = "1dff42d2a79379313e32047ae1af1f4f48b5fbec604e0aa3045a596556fa01e2"
 RPROVIDES:maven-openjdk21:append:x86_64_v2 = " virtual/maven-jdk-binding"
 
-URI_x86_64_v2_maven-openjdk25 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-openjdk25-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-openjdk25;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-openjdk25}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/maven-openjdk25-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-openjdk25;unpack=0"
 SRC_URI[x86_64_v2_maven-openjdk25.sha256sum] = "bae5a3190d0d645efc74e4201326779f747753b5dadb92e91e036a8f1f8f4ae9"
 RPROVIDES:maven-openjdk25:append:x86_64_v2 = " virtual/maven-jdk-binding"
 
-URI_x86_64_v2_maven-unbound = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-unbound-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-unbound;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-unbound}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-unbound-3.9.9-3.el10_1.0.1.noarch.rpm;name=x86_64_v2_maven-unbound;unpack=0"
 SRC_URI[x86_64_v2_maven-unbound.sha256sum] = "7b536785f01902830731115de71f5086ece76390a196c21a168b77faedbc0ec2"
 RPROVIDES:maven-unbound:append:x86_64_v2 = " virtual/maven-jdk-binding"
 
-URI_aarch64_maven = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven;unpack=0"
 SRC_URI[aarch64_maven.sha256sum] = "ca82c0f487c785986dae801772d3ce5e0cb051fab53168e321fc499cbe5b7865"
 
-URI_aarch64_maven-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-javadoc-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-javadoc-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-javadoc;unpack=0"
 SRC_URI[aarch64_maven-javadoc.sha256sum] = "ac944f686ffff7f2d8dbc95ac3d0ef49e5be9db90a5ec3e308f63313b5683f58"
 
-URI_aarch64_maven-lib = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-lib-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-lib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-lib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-lib-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-lib;unpack=0"
 SRC_URI[aarch64_maven-lib.sha256sum] = "cb12faae1318e6ca595ebfeea7fd5c15efbe8c4ae2e9c4d5ad4c61d1809fff4c"
 
-URI_aarch64_maven-openjdk21 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-openjdk21-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-openjdk21;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-openjdk21}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-openjdk21-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-openjdk21;unpack=0"
 SRC_URI[aarch64_maven-openjdk21.sha256sum] = "1dff42d2a79379313e32047ae1af1f4f48b5fbec604e0aa3045a596556fa01e2"
 RPROVIDES:maven-openjdk21:append:aarch64 = " virtual/maven-jdk-binding"
 
-URI_aarch64_maven-openjdk25 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-openjdk25-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-openjdk25;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-openjdk25}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/maven-openjdk25-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-openjdk25;unpack=0"
 SRC_URI[aarch64_maven-openjdk25.sha256sum] = "bae5a3190d0d645efc74e4201326779f747753b5dadb92e91e036a8f1f8f4ae9"
 RPROVIDES:maven-openjdk25:append:aarch64 = " virtual/maven-jdk-binding"
 
-URI_aarch64_maven-unbound = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-unbound-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-unbound;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-unbound}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-unbound-3.9.9-3.el10_1.0.1.noarch.rpm;name=aarch64_maven-unbound;unpack=0"
 SRC_URI[aarch64_maven-unbound.sha256sum] = "7b536785f01902830731115de71f5086ece76390a196c21a168b77faedbc0ec2"
 RPROVIDES:maven-unbound:append:aarch64 = " virtual/maven-jdk-binding"
 

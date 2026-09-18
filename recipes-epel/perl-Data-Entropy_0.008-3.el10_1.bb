@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Entropy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Entropy-0.008-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Entropy-0.008-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a90aa45a28e43e01f6d5bddf7aab6867af4dd57f977e0a978fc7ced878dffb97"
 
-URI_x86_64_v2_perl-Data-Entropy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Entropy-0.008-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Entropy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Entropy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Entropy-0.008-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Entropy;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Entropy.sha256sum] = "3ac7c988a06b43bd9200e00bfce4baa685ff43f7f5530c20fdc1f8a0c83dcba3"
 
-URI_aarch64_perl-Data-Entropy = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Entropy-0.008-3.el10_1.noarch.rpm;name=aarch64_perl-Data-Entropy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Entropy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Entropy-0.008-3.el10_1.noarch.rpm;name=aarch64_perl-Data-Entropy;unpack=0"
 SRC_URI[aarch64_perl-Data-Entropy.sha256sum] = "e94e32a716ddfbb19ed969c3397ea40a8a84fd40c93dfb07957f0dfc01a74af2"
 
 RDEPENDS:perl-Data-Entropy = " \

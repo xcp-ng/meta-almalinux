@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-cbindgen0.26-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cbindgen0.26-0.26.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cbindgen0.26-0.26.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea33df09efea23c5834ee79e2f70bb248405813d5ae0f2d3d244f52d7ce2ab38"
 
-URI_x86_64_v2_rust-cbindgen0.26+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen0.26+default-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen0.26+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen0.26+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen0.26+default-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen0.26+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen0.26+default-devel.sha256sum] = "636855f976d93830de76600af96567194fb243e584c49c2b2316949ea68c6613"
 
-URI_x86_64_v2_rust-cbindgen0.26-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen0.26-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen0.26-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cbindgen0.26-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cbindgen0.26-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cbindgen0.26-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cbindgen0.26-devel.sha256sum] = "cd35e2e363e4d0906629d19ec4cca1d492ad6017cb4a818dce37883316a2f125"
 
-URI_aarch64_rust-cbindgen0.26+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen0.26+default-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-cbindgen0.26+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen0.26+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen0.26+default-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-cbindgen0.26+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen0.26+default-devel.sha256sum] = "f0b9806db194c8dad6a4a455dc2dab56f2b09ce6f63b90464702af351b314ed9"
 
-URI_aarch64_rust-cbindgen0.26-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen0.26-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-cbindgen0.26-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cbindgen0.26-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cbindgen0.26-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-cbindgen0.26-devel;unpack=0"
 SRC_URI[aarch64_rust-cbindgen0.26-devel.sha256sum] = "50b7f7d534f2e6adc7a517cddaf3380483e723e7a6c8d3f454ef476d16f3e142"
 
 RDEPENDS:rust-cbindgen0.26+default-devel = " \

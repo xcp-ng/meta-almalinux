@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-backlash \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-backlash-0.3.2-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-backlash-0.3.2-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "94f5b0a46f02d1c7ecd312c7b2b7ab7c55321f504025d69760b045559bcd2ffa"
 
-URI_x86_64_v2_python3-backlash = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backlash-0.3.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backlash;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-backlash}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backlash-0.3.2-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backlash;unpack=0"
 SRC_URI[x86_64_v2_python3-backlash.sha256sum] = "23c3909f3366659e5de0b61eb9ff41e5d3fdbc5d39322f93d3089a0eeaa8a05a"
 
-URI_aarch64_python3-backlash = "${EPEL_MIRROR}/aarch64/Packages/p/python3-backlash-0.3.2-3.el10_0.noarch.rpm;name=aarch64_python3-backlash;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-backlash}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-backlash-0.3.2-3.el10_0.noarch.rpm;name=aarch64_python3-backlash;unpack=0"
 SRC_URI[aarch64_python3-backlash.sha256sum] = "15aea5b87669ab8d2a13fab20686c18c7961a8da3e1db6eaf0348d71485e3765"
 
 RDEPENDS:python3-backlash = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  gdk-pixbuf2-xlib-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gdk-pixbuf2-xlib-2.40.2-11.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gdk-pixbuf2-xlib-2.40.2-11.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ecb3474acea28a9e90630b2a3fe5846e97a8aa783ed4c31200c42f427265e869"
 
-URI_x86_64_v2_gdk-pixbuf2-xlib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gdk-pixbuf2-xlib-2.40.2-11.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gdk-pixbuf2-xlib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gdk-pixbuf2-xlib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gdk-pixbuf2-xlib-2.40.2-11.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gdk-pixbuf2-xlib;unpack=0"
 SRC_URI[x86_64_v2_gdk-pixbuf2-xlib.sha256sum] = "6d729ebde5dfc9aafff7e286bb636462c2492fbf4702d62012d55c6c788a5696"
 
-URI_x86_64_v2_gdk-pixbuf2-xlib-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gdk-pixbuf2-xlib-devel-2.40.2-11.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gdk-pixbuf2-xlib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gdk-pixbuf2-xlib-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gdk-pixbuf2-xlib-devel-2.40.2-11.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gdk-pixbuf2-xlib-devel;unpack=0"
 SRC_URI[x86_64_v2_gdk-pixbuf2-xlib-devel.sha256sum] = "8c40ab41223f1a7e54ef50ac8f58f10b736b196553acb8ccb3138f4b178e5ec7"
 
-URI_aarch64_gdk-pixbuf2-xlib = "${EPEL_MIRROR}/aarch64/Packages/g/gdk-pixbuf2-xlib-2.40.2-11.el10_1.aarch64.rpm;name=aarch64_gdk-pixbuf2-xlib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gdk-pixbuf2-xlib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gdk-pixbuf2-xlib-2.40.2-11.el10_1.aarch64.rpm;name=aarch64_gdk-pixbuf2-xlib;unpack=0"
 SRC_URI[aarch64_gdk-pixbuf2-xlib.sha256sum] = "7e2bd81bd73bcfa3c748ad4bfd8c16141c1380170468986a4dd52e158b5c50f2"
 
-URI_aarch64_gdk-pixbuf2-xlib-devel = "${EPEL_MIRROR}/aarch64/Packages/g/gdk-pixbuf2-xlib-devel-2.40.2-11.el10_1.aarch64.rpm;name=aarch64_gdk-pixbuf2-xlib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gdk-pixbuf2-xlib-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gdk-pixbuf2-xlib-devel-2.40.2-11.el10_1.aarch64.rpm;name=aarch64_gdk-pixbuf2-xlib-devel;unpack=0"
 SRC_URI[aarch64_gdk-pixbuf2-xlib-devel.sha256sum] = "cd0d82108ddc47a5cd61b0f45528b641294bd639e1a9bd679c46a471e6679d3c"
 
 RDEPENDS:gdk-pixbuf2-xlib = " \

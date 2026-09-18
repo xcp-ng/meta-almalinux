@@ -9,16 +9,13 @@ PACKAGES = " \
  kf6-kapidox \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kf6-kapidox-6.18.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kf6-kapidox-6.18.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "534b71ac18216b7c160a800ba925c01980646ae58a9cad1f7f631c3aaca13021"
 
-URI_x86_64_v2_kf6-kapidox = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-kapidox-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-kapidox;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kf6-kapidox}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kf6-kapidox-6.18.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kf6-kapidox;unpack=0"
 SRC_URI[x86_64_v2_kf6-kapidox.sha256sum] = "b77c0d552a5a3f6837e61de63c0b42ab6556219cdfd335367a24affc62035f07"
 
-URI_aarch64_kf6-kapidox = "${EPEL_MIRROR}/aarch64/Packages/k/kf6-kapidox-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-kapidox;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kf6-kapidox}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kf6-kapidox-6.18.0-1.el10_1.noarch.rpm;name=aarch64_kf6-kapidox;unpack=0"
 SRC_URI[aarch64_kf6-kapidox.sha256sum] = "0d96341946cc6d441680dd6f612c1ba732faf5abbf516dd0c5197568c37263ab"
 
 RDEPENDS:kf6-kapidox = " \

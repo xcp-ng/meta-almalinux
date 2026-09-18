@@ -9,17 +9,14 @@ PACKAGES = " \
  lynx \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/lynx-2.9.0-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/lynx-2.9.0-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "efd97e65f02db5696c1116d0b2deb86c059a1116c51faf6f196e7e948ed72834"
 
-URI_x86_64_v2_lynx = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lynx-2.9.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_lynx;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lynx}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lynx-2.9.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_lynx;unpack=0"
 SRC_URI[x86_64_v2_lynx.sha256sum] = "0b80ef6ca398c93a4939190210ba9326480b1fba2c56241bd6e121f0cdf36f9a"
 RPROVIDES:lynx:append:x86_64_v2 = " virtual/text-www-browser"
 
-URI_aarch64_lynx = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lynx-2.9.0-6.el10.aarch64.rpm;name=aarch64_lynx;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lynx}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lynx-2.9.0-6.el10.aarch64.rpm;name=aarch64_lynx;unpack=0"
 SRC_URI[aarch64_lynx.sha256sum] = "ddf2526f3077481c5307a7b51d3e98a1a2764079e8e500d935e738a74511d2e4"
 RPROVIDES:lynx:append:aarch64 = " virtual/text-www-browser"
 

@@ -10,24 +10,19 @@ PACKAGES = " \
  pkcs11-helper-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pkcs11-helper-1.30.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pkcs11-helper-1.30.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb4146ddfce61650fadc6a79c7c7fcbbdb1f88cc81a7434b31d66b8b705774c3"
 
-URI_x86_64_v2_pkcs11-helper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pkcs11-helper-1.30.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pkcs11-helper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pkcs11-helper}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pkcs11-helper-1.30.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pkcs11-helper;unpack=0"
 SRC_URI[x86_64_v2_pkcs11-helper.sha256sum] = "dde81999124b9bc20f1c47bb63d63e800ab0bc2ebaa3447363aa47d715cecc0e"
 
-URI_x86_64_v2_pkcs11-helper-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pkcs11-helper-devel-1.30.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pkcs11-helper-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pkcs11-helper-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pkcs11-helper-devel-1.30.0-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pkcs11-helper-devel;unpack=0"
 SRC_URI[x86_64_v2_pkcs11-helper-devel.sha256sum] = "c4b3beba2a04c6ef4b0cc229b889c888587cf1dbd11284d6d98da131b497bad2"
 
-URI_aarch64_pkcs11-helper = "${EPEL_MIRROR}/aarch64/Packages/p/pkcs11-helper-1.30.0-2.el10_0.aarch64.rpm;name=aarch64_pkcs11-helper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pkcs11-helper}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pkcs11-helper-1.30.0-2.el10_0.aarch64.rpm;name=aarch64_pkcs11-helper;unpack=0"
 SRC_URI[aarch64_pkcs11-helper.sha256sum] = "f5995520d4c170202d6658cd9f5a70ad325078c74d8f51f2cfc63bf3daa970b7"
 
-URI_aarch64_pkcs11-helper-devel = "${EPEL_MIRROR}/aarch64/Packages/p/pkcs11-helper-devel-1.30.0-2.el10_0.aarch64.rpm;name=aarch64_pkcs11-helper-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pkcs11-helper-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pkcs11-helper-devel-1.30.0-2.el10_0.aarch64.rpm;name=aarch64_pkcs11-helper-devel;unpack=0"
 SRC_URI[aarch64_pkcs11-helper-devel.sha256sum] = "a5e93ba498e671f898085cf516046335625ce244478c7eb556701ded9cf431e1"
 
 RDEPENDS:pkcs11-helper = " \

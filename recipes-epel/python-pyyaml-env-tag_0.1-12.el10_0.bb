@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyyaml-env-tag \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyyaml-env-tag-0.1-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyyaml-env-tag-0.1-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4ff6c519854dca7b64dad9933e487f2f9f21451f0be4fc1d3ecef8b0406982bd"
 
-URI_x86_64_v2_python3-pyyaml-env-tag = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyyaml-env-tag-0.1-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyyaml-env-tag;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyyaml-env-tag}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyyaml-env-tag-0.1-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyyaml-env-tag;unpack=0"
 SRC_URI[x86_64_v2_python3-pyyaml-env-tag.sha256sum] = "4fad8c950f85e3858786b6f49521a7b9f3a38dfdd29430855c975fc95409d1d2"
 
-URI_aarch64_python3-pyyaml-env-tag = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyyaml-env-tag-0.1-12.el10_0.noarch.rpm;name=aarch64_python3-pyyaml-env-tag;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyyaml-env-tag}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyyaml-env-tag-0.1-12.el10_0.noarch.rpm;name=aarch64_python3-pyyaml-env-tag;unpack=0"
 SRC_URI[aarch64_python3-pyyaml-env-tag.sha256sum] = "98a22dab93e09040bbbfa65608b1fb0c972008c8297d24c281c3eeec9d3fcc06"
 
 RDEPENDS:python3-pyyaml-env-tag = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-backcall \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-backcall-0.1.0-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-backcall-0.1.0-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "edce347f1033d03a22ee0429206069d6dbb055ef0c40f2a6ff8b949718c0434b"
 
-URI_x86_64_v2_python3-backcall = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backcall-0.1.0-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backcall;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-backcall}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-backcall-0.1.0-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-backcall;unpack=0"
 SRC_URI[x86_64_v2_python3-backcall.sha256sum] = "4f8dbc28130eda217142c0a5208ec51ef7ef6a22243cccbba114c07307357e9c"
 
-URI_aarch64_python3-backcall = "${EPEL_MIRROR}/aarch64/Packages/p/python3-backcall-0.1.0-24.el10_0.noarch.rpm;name=aarch64_python3-backcall;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-backcall}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-backcall-0.1.0-24.el10_0.noarch.rpm;name=aarch64_python3-backcall;unpack=0"
 SRC_URI[aarch64_python3-backcall.sha256sum] = "9bb43fb45aa6c2fe317d7dd45d78f04219b435ef887f1fb5de7f61ce81f74924"
 
 RDEPENDS:python3-backcall = " \

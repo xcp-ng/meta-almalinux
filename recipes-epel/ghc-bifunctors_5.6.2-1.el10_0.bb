@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-bifunctors-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-bifunctors-5.6.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-bifunctors-5.6.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e7758b66dcb1656401449d844809dd95fd7b3c87d548002c2be8604c1eb0301a"
 
-URI_x86_64_v2_ghc-bifunctors = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bifunctors}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors;unpack=0"
 SRC_URI[x86_64_v2_ghc-bifunctors.sha256sum] = "7768068954504bb95ff94d6490096e5fe71207afe2fae2a3d20f2cbd096a00dd"
 
-URI_x86_64_v2_ghc-bifunctors-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-devel-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bifunctors-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-devel-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-bifunctors-devel.sha256sum] = "096c3648b6aa28a341382c31efa563775d1169895952201772a6978f5f8429d3"
 
-URI_x86_64_v2_ghc-bifunctors-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-doc-5.6.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bifunctors-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bifunctors-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-doc-5.6.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bifunctors-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-bifunctors-doc.sha256sum] = "e1ce8db922b64383867822d527c65c4e2ff656a6a88e317e1b1fce861a9f779e"
 
-URI_x86_64_v2_ghc-bifunctors-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-prof-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bifunctors-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bifunctors-prof-5.6.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bifunctors-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-bifunctors-prof.sha256sum] = "9cd54de2b11600747e29e959e2aa556f1ff1f0878166beb6ff4e765353a9b7e1"
 
-URI_aarch64_ghc-bifunctors = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bifunctors}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors;unpack=0"
 SRC_URI[aarch64_ghc-bifunctors.sha256sum] = "4726633ba520f3ddab6e4639d3a53f8af85ca7b27dd36c83a248e24c66bcbb9c"
 
-URI_aarch64_ghc-bifunctors-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-devel-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bifunctors-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-devel-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors-devel;unpack=0"
 SRC_URI[aarch64_ghc-bifunctors-devel.sha256sum] = "1ba0ef0dbc8de031b633856505ed846f05e9ba8084822cab061ef73fc70758a2"
 
-URI_aarch64_ghc-bifunctors-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-doc-5.6.2-1.el10_0.noarch.rpm;name=aarch64_ghc-bifunctors-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bifunctors-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-doc-5.6.2-1.el10_0.noarch.rpm;name=aarch64_ghc-bifunctors-doc;unpack=0"
 SRC_URI[aarch64_ghc-bifunctors-doc.sha256sum] = "f7c8c16be381668071c739709313449dfffcd829389ef6de21a531dbb07269b1"
 
-URI_aarch64_ghc-bifunctors-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-prof-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bifunctors-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bifunctors-prof-5.6.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-bifunctors-prof;unpack=0"
 SRC_URI[aarch64_ghc-bifunctors-prof.sha256sum] = "63b90ba0bc3614b8bffd99620d1034803f06641b4e2a124633265bf65035c65c"
 
 RDEPENDS:ghc-bifunctors = " \

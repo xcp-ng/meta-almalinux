@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-UUID-Tiny \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-UUID-Tiny-1.04-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-UUID-Tiny-1.04-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7594ada1ced55872fbadbefecbe17f5d0b70037c93a21e14c9a3266cb7b16411"
 
-URI_x86_64_v2_perl-UUID-Tiny = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UUID-Tiny-1.04-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UUID-Tiny;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-UUID-Tiny}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-UUID-Tiny-1.04-32.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-UUID-Tiny;unpack=0"
 SRC_URI[x86_64_v2_perl-UUID-Tiny.sha256sum] = "5f3ee2463396b57c0c7a6f1cd49bcf4e3eae20d1ea1728e982cb899a3f1fea70"
 
-URI_aarch64_perl-UUID-Tiny = "${EPEL_MIRROR}/aarch64/Packages/p/perl-UUID-Tiny-1.04-32.el10_0.noarch.rpm;name=aarch64_perl-UUID-Tiny;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-UUID-Tiny}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-UUID-Tiny-1.04-32.el10_0.noarch.rpm;name=aarch64_perl-UUID-Tiny;unpack=0"
 SRC_URI[aarch64_perl-UUID-Tiny.sha256sum] = "77c198ef3b3b0c4a3acbca803e5dc22e345839ec756dd5c215eadd83b0964977"
 
 RDEPENDS:perl-UUID-Tiny = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinx-epytext \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-epytext-0.0.4-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-epytext-0.0.4-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "60219ff9267d647e1a7b0d05e87d59c4808684a127d4e364524c3b0efa888a5b"
 
-URI_x86_64_v2_python3-sphinx-epytext = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-epytext-0.0.4-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-epytext;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-epytext}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-epytext-0.0.4-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-epytext;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-epytext.sha256sum] = "17fd71d2dccaef93ee9ee959009e6a39b5f989d4e50df8d2d5eeb3ac04493f8b"
 
-URI_aarch64_python3-sphinx-epytext = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-epytext-0.0.4-19.el10_0.noarch.rpm;name=aarch64_python3-sphinx-epytext;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-epytext}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-epytext-0.0.4-19.el10_0.noarch.rpm;name=aarch64_python3-sphinx-epytext;unpack=0"
 SRC_URI[aarch64_python3-sphinx-epytext.sha256sum] = "46e611a48e1ae106c1502dbefb6eb5e20ac76d9544571bf1771255e568ca9624"
 
 RDEPENDS:python3-sphinx-epytext = " \

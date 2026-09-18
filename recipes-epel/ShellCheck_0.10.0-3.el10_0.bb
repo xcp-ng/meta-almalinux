@@ -13,48 +13,37 @@ PACKAGES = " \
  ghc-ShellCheck-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/ShellCheck-0.10.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/ShellCheck-0.10.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "19b8885963b669a36a030bcc3bf98d715bb39e2d9c811ae083269132c93cef84"
 
-URI_x86_64_v2_ShellCheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ShellCheck-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ShellCheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ShellCheck}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ShellCheck-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ShellCheck;unpack=0"
 SRC_URI[x86_64_v2_ShellCheck.sha256sum] = "a06720fa78eeb7c52b88ce2e850f9ae08a8018b471a1a9978d30391fbb8f1b6e"
 
-URI_x86_64_v2_ghc-ShellCheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-ShellCheck}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck;unpack=0"
 SRC_URI[x86_64_v2_ghc-ShellCheck.sha256sum] = "7d94c5896966a1be994160f36ac93ab819dda997d56231fff906f5ae6399b708"
 
-URI_x86_64_v2_ghc-ShellCheck-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-devel-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-ShellCheck-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-devel-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-ShellCheck-devel.sha256sum] = "2ded0944f2aa0452c1fee139ee429f3760d58ba1615b8ed205363b2404e4a4df"
 
-URI_x86_64_v2_ghc-ShellCheck-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-doc-0.10.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-ShellCheck-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-ShellCheck-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-doc-0.10.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-ShellCheck-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-ShellCheck-doc.sha256sum] = "0c2b01d37f03a0414d5b591bbea83ff2ac0f5f86d7e9fe7f47135b182febbcab"
 
-URI_x86_64_v2_ghc-ShellCheck-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-prof-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-ShellCheck-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-ShellCheck-prof-0.10.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-ShellCheck-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-ShellCheck-prof.sha256sum] = "ccc8cd2363212fac33f79874efc88b4f8996bd7ebbde78a5547ac683716e0411"
 
-URI_aarch64_ShellCheck = "${EPEL_MIRROR}/aarch64/Packages/s/ShellCheck-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ShellCheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ShellCheck}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/ShellCheck-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ShellCheck;unpack=0"
 SRC_URI[aarch64_ShellCheck.sha256sum] = "a36727daac52516565f04f1b332b0cc7f889b9980cd24f36c01d82f3978c1d87"
 
-URI_aarch64_ghc-ShellCheck = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-ShellCheck}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck;unpack=0"
 SRC_URI[aarch64_ghc-ShellCheck.sha256sum] = "12cb1cff624b8c585ee97a872aa6392574add990d31c508752a3ca8f6e9175ce"
 
-URI_aarch64_ghc-ShellCheck-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-devel-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-ShellCheck-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-devel-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck-devel;unpack=0"
 SRC_URI[aarch64_ghc-ShellCheck-devel.sha256sum] = "d52e9fa6bc647c6f45b18acb10f97e3480657df0ee9187410d38d9a75bc7e06f"
 
-URI_aarch64_ghc-ShellCheck-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-doc-0.10.0-3.el10_0.noarch.rpm;name=aarch64_ghc-ShellCheck-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-ShellCheck-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-doc-0.10.0-3.el10_0.noarch.rpm;name=aarch64_ghc-ShellCheck-doc;unpack=0"
 SRC_URI[aarch64_ghc-ShellCheck-doc.sha256sum] = "9727bcce651295b3c2c8e71554bf5d37336a0583d2ae113d0992ac528c457e1f"
 
-URI_aarch64_ghc-ShellCheck-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-prof-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-ShellCheck-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-ShellCheck-prof-0.10.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-ShellCheck-prof;unpack=0"
 SRC_URI[aarch64_ghc-ShellCheck-prof.sha256sum] = "cb790dea483f5f09d41c7c971f3bd569e910943df24e1db5be8e8125819e1dae"
 
 RDEPENDS:ShellCheck = " \

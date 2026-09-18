@@ -9,16 +9,13 @@ PACKAGES = " \
  pwauth \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pwauth-2.3.10-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pwauth-2.3.10-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "aaebd18a040edd120b3cc012d449c622a63cbb45b3b0220990664938758d736e"
 
-URI_x86_64_v2_pwauth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pwauth-2.3.10-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pwauth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pwauth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pwauth-2.3.10-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pwauth;unpack=0"
 SRC_URI[x86_64_v2_pwauth.sha256sum] = "14702835aa39e279c172093b08c447b881d43573aec35150f76e0c409f00535e"
 
-URI_aarch64_pwauth = "${EPEL_MIRROR}/aarch64/Packages/p/pwauth-2.3.10-32.el10_0.aarch64.rpm;name=aarch64_pwauth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pwauth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pwauth-2.3.10-32.el10_0.aarch64.rpm;name=aarch64_pwauth;unpack=0"
 SRC_URI[aarch64_pwauth.sha256sum] = "68a10bb092b96f159aec2a90e6f0b4383ea88a118abf783d7d20f733193c1e65"
 
 RDEPENDS:pwauth = " \

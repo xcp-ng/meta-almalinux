@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-uc-micro-py \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-uc-micro-py-1.0.3-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-uc-micro-py-1.0.3-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "deaaaf78cf58b2641f473cfebd78663793776d08d26f2e39c92f171f0612b7cb"
 
-URI_x86_64_v2_python3-uc-micro-py = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-uc-micro-py-1.0.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-uc-micro-py;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-uc-micro-py}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-uc-micro-py-1.0.3-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-uc-micro-py;unpack=0"
 SRC_URI[x86_64_v2_python3-uc-micro-py.sha256sum] = "610fae6ed1af8a77a319ff5055ac9cfcfcda29d5e3c63421f3973d0a58792935"
 
-URI_aarch64_python3-uc-micro-py = "${EPEL_MIRROR}/aarch64/Packages/p/python3-uc-micro-py-1.0.3-3.el10_0.noarch.rpm;name=aarch64_python3-uc-micro-py;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-uc-micro-py}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-uc-micro-py-1.0.3-3.el10_0.noarch.rpm;name=aarch64_python3-uc-micro-py;unpack=0"
 SRC_URI[aarch64_python3-uc-micro-py.sha256sum] = "a709583c979f79f70a3e71057f73f844c86bc6dbb102032765edd784b14a007e"
 
 RDEPENDS:python3-uc-micro-py = " \

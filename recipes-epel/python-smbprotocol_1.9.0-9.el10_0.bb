@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-smbprotocol \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-smbprotocol-1.9.0-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-smbprotocol-1.9.0-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "02533bf50d67afbac8fd7f2a57eb961465ea97eddeb5db3edb636df0215a0971"
 
-URI_x86_64_v2_python3-smbprotocol = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smbprotocol-1.9.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smbprotocol;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-smbprotocol}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-smbprotocol-1.9.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-smbprotocol;unpack=0"
 SRC_URI[x86_64_v2_python3-smbprotocol.sha256sum] = "314bd22f04acd1054a267ed6d579c7a517bedd58018f0e405908ca421945dedc"
 
-URI_aarch64_python3-smbprotocol = "${EPEL_MIRROR}/aarch64/Packages/p/python3-smbprotocol-1.9.0-9.el10_0.noarch.rpm;name=aarch64_python3-smbprotocol;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-smbprotocol}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-smbprotocol-1.9.0-9.el10_0.noarch.rpm;name=aarch64_python3-smbprotocol;unpack=0"
 SRC_URI[aarch64_python3-smbprotocol.sha256sum] = "1763694415e210a346815c5e06176463927e0c9bb82b0bf29569a1a8090e6155"
 
 RDEPENDS:python3-smbprotocol = " \

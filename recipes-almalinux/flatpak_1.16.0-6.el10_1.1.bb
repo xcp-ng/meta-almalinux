@@ -13,48 +13,37 @@ PACKAGES = " \
  flatpak-session-helper \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/flatpak-1.16.0-6.el10_1.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/flatpak-1.16.0-6.el10_1.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6e650f8c6b93fab7a3f1d8fa4b2328ebb3873178fc3abb9e9062a4cc57e01f14"
 
-URI_x86_64_v2_flatpak = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flatpak}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak;unpack=0"
 SRC_URI[x86_64_v2_flatpak.sha256sum] = "0d13725ed8d074086077b31cdddea4383daf8a6f0d14c390b1ccaf8cac730f87"
 
-URI_x86_64_v2_flatpak-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/flatpak-devel-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flatpak-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/flatpak-devel-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-devel;unpack=0"
 SRC_URI[x86_64_v2_flatpak-devel.sha256sum] = "fe788656d4d79c686ac1082ae358ed3a2f2df41bfdb322b7af3e0d17b72fb4d6"
 
-URI_x86_64_v2_flatpak-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-libs-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flatpak-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-libs-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-libs;unpack=0"
 SRC_URI[x86_64_v2_flatpak-libs.sha256sum] = "73c9278d1f369ce0d39b85db922f5ee0ae4e2557d9e78452495ffb29f7fc41b5"
 
-URI_x86_64_v2_flatpak-selinux = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-selinux-1.16.0-6.el10_1.1.noarch.rpm;name=x86_64_v2_flatpak-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flatpak-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-selinux-1.16.0-6.el10_1.1.noarch.rpm;name=x86_64_v2_flatpak-selinux;unpack=0"
 SRC_URI[x86_64_v2_flatpak-selinux.sha256sum] = "ed2b1d1da461f0a5a2149d1c469f8f1ffe54778659036bdcc78d0f1ba12b977c"
 
-URI_x86_64_v2_flatpak-session-helper = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-session-helper-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-session-helper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_flatpak-session-helper}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/flatpak-session-helper-1.16.0-6.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_flatpak-session-helper;unpack=0"
 SRC_URI[x86_64_v2_flatpak-session-helper.sha256sum] = "2265f7a2d30fee9062697397ac27b8764cc305d9a6a21b69cdffe7c0c199a427"
 
-URI_aarch64_flatpak = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flatpak}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak;unpack=0"
 SRC_URI[aarch64_flatpak.sha256sum] = "29573cb41ffc0595d5671c176e51b0dbf42a2a440dfd69bf207c90b3ee91674a"
 
-URI_aarch64_flatpak-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/flatpak-devel-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flatpak-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/flatpak-devel-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-devel;unpack=0"
 SRC_URI[aarch64_flatpak-devel.sha256sum] = "17dfcaaa450ba11d9fd747d0a2bb51da7027c7b33c8e1896e525d5e3525ec1c5"
 
-URI_aarch64_flatpak-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-libs-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flatpak-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-libs-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-libs;unpack=0"
 SRC_URI[aarch64_flatpak-libs.sha256sum] = "7457579d0928ce24b9600575aeab0913f238a9417413ee3ed358a3c0b18a32f2"
 
-URI_aarch64_flatpak-selinux = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-selinux-1.16.0-6.el10_1.1.noarch.rpm;name=aarch64_flatpak-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flatpak-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-selinux-1.16.0-6.el10_1.1.noarch.rpm;name=aarch64_flatpak-selinux;unpack=0"
 SRC_URI[aarch64_flatpak-selinux.sha256sum] = "ed2b1d1da461f0a5a2149d1c469f8f1ffe54778659036bdcc78d0f1ba12b977c"
 
-URI_aarch64_flatpak-session-helper = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-session-helper-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-session-helper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_flatpak-session-helper}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/flatpak-session-helper-1.16.0-6.el10_1.1.aarch64.rpm;name=aarch64_flatpak-session-helper;unpack=0"
 SRC_URI[aarch64_flatpak-session-helper.sha256sum] = "2d3bd246977fb99ad5998d453b03ebc55d0e9a233fbb63efd97656644b3c20e3"
 
 RDEPENDS:flatpak:x86_64_v2 = " \

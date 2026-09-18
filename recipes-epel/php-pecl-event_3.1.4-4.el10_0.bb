@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-event \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-event-3.1.4-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-event-3.1.4-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8b394fdcb96d35de82079da9ebdd8483d59423f8ac4b704a36aad939b05a642d"
 
-URI_x86_64_v2_php-pecl-event = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-event-3.1.4-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-event;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-event}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-event-3.1.4-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-event;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-event.sha256sum] = "b1afc77f17b0492d476e61ba6917dd931c039c13cf09513cbc775129c18e1d4a"
 
-URI_aarch64_php-pecl-event = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-event-3.1.4-4.el10_0.aarch64.rpm;name=aarch64_php-pecl-event;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-event}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-event-3.1.4-4.el10_0.aarch64.rpm;name=aarch64_php-pecl-event;unpack=0"
 SRC_URI[aarch64_php-pecl-event.sha256sum] = "2464a7dbaa37edc734f4549826510175d6fa56414d78ab27246af9dada58e5a0"
 
 RDEPENDS:php-pecl-event = " \

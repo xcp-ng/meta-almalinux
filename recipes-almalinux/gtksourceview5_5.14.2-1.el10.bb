@@ -10,24 +10,19 @@ PACKAGES = " \
  gtksourceview5-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gtksourceview5-5.14.2-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/gtksourceview5-5.14.2-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9fab32aab18f79f374a0535e2b9400f336251e1f9e423cb1d4abb6eca041034e"
 
-URI_x86_64_v2_gtksourceview5 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtksourceview5-5.14.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_gtksourceview5;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtksourceview5}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gtksourceview5-5.14.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_gtksourceview5;unpack=0"
 SRC_URI[x86_64_v2_gtksourceview5.sha256sum] = "73bd032c1013fc4766be4086be97563a17158a9c1f7717028bf592ab60325f8b"
 
-URI_x86_64_v2_gtksourceview5-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtksourceview5-devel-5.14.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_gtksourceview5-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtksourceview5-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gtksourceview5-devel-5.14.2-1.el10.x86_64_v2.rpm;name=x86_64_v2_gtksourceview5-devel;unpack=0"
 SRC_URI[x86_64_v2_gtksourceview5-devel.sha256sum] = "eac16600c3004e04d64b08b6a95e532d3a97bbe3f2bd53e6bba90a53e3d06104"
 
-URI_aarch64_gtksourceview5 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtksourceview5-5.14.2-1.el10.aarch64.rpm;name=aarch64_gtksourceview5;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtksourceview5}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gtksourceview5-5.14.2-1.el10.aarch64.rpm;name=aarch64_gtksourceview5;unpack=0"
 SRC_URI[aarch64_gtksourceview5.sha256sum] = "6a1030b365ee72e1d39a228366fec13c744d24bc635ce2e61ed304ba4b3ec814"
 
-URI_aarch64_gtksourceview5-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtksourceview5-devel-5.14.2-1.el10.aarch64.rpm;name=aarch64_gtksourceview5-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtksourceview5-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gtksourceview5-devel-5.14.2-1.el10.aarch64.rpm;name=aarch64_gtksourceview5-devel;unpack=0"
 SRC_URI[aarch64_gtksourceview5-devel.sha256sum] = "18f11893c714fe5af33e4aa57ad3b9fa970781a1430957648f3de25e467db4da"
 
 RDEPENDS:gtksourceview5 = " \

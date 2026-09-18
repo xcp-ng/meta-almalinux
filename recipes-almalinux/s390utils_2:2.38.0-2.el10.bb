@@ -11,24 +11,19 @@ PACKAGES = " \
  s390utils-se-data \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/s390utils-2.38.0-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/s390utils-2.38.0-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b0836a0932fd35b371200457f82ab190ca507762a91729d5881ccc0a7e7823e0"
 
-URI_x86_64_v2_s390utils = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/s390utils-2.38.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_s390utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_s390utils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/s390utils-2.38.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_s390utils;unpack=0"
 SRC_URI[x86_64_v2_s390utils.sha256sum] = "3f205a61b04c1b7a28c9030bf529433abf29e4d96699cae6d3d974a3c6c9499d"
 
-URI_x86_64_v2_s390utils-se-data = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/s390utils-se-data-2.38.0-2.el10.noarch.rpm;name=x86_64_v2_s390utils-se-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_s390utils-se-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/s390utils-se-data-2.38.0-2.el10.noarch.rpm;name=x86_64_v2_s390utils-se-data;unpack=0"
 SRC_URI[x86_64_v2_s390utils-se-data.sha256sum] = "238fa1d188aa0849b65873a5019b8ff2ef1b800c5d4cecd08c70ff9a19fc2a44"
 
-URI_aarch64_s390utils = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/s390utils-2.38.0-2.el10.aarch64.rpm;name=aarch64_s390utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_s390utils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/s390utils-2.38.0-2.el10.aarch64.rpm;name=aarch64_s390utils;unpack=0"
 SRC_URI[aarch64_s390utils.sha256sum] = "cc4ace98cbb9b30e7e57a33b17fd9d027372cc046540f10f142b79b058340516"
 
-URI_aarch64_s390utils-se-data = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/s390utils-se-data-2.38.0-2.el10.noarch.rpm;name=aarch64_s390utils-se-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_s390utils-se-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/s390utils-se-data-2.38.0-2.el10.noarch.rpm;name=aarch64_s390utils-se-data;unpack=0"
 SRC_URI[aarch64_s390utils-se-data.sha256sum] = "238fa1d188aa0849b65873a5019b8ff2ef1b800c5d4cecd08c70ff9a19fc2a44"
 
 RDEPENDS:s390utils = " \

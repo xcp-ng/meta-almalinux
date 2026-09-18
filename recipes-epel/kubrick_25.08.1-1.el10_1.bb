@@ -9,16 +9,13 @@ PACKAGES = " \
  kubrick \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kubrick-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kubrick-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "112385b5e773a2447c885d9d1f5c2dc2e48791838452ad1a764634400cac959a"
 
-URI_x86_64_v2_kubrick = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kubrick-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kubrick;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kubrick}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kubrick-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kubrick;unpack=0"
 SRC_URI[x86_64_v2_kubrick.sha256sum] = "11bdfbad8ea502183dda85d81a820a780ab8360c2380a75df4e519425bb68b19"
 
-URI_aarch64_kubrick = "${EPEL_MIRROR}/aarch64/Packages/k/kubrick-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kubrick;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kubrick}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kubrick-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kubrick;unpack=0"
 SRC_URI[aarch64_kubrick.sha256sum] = "c74fc7cfe7690e311b46776bbe233005e85e72e30862396d7b93ac63ce5cd11f"
 
 RDEPENDS:kubrick = " \

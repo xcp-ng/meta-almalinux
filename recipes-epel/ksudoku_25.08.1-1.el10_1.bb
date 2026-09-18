@@ -9,16 +9,13 @@ PACKAGES = " \
  ksudoku \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ksudoku-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ksudoku-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fcb5dfd05e6acc7b78806ea9becf52c6334c8447d65048bf71a7f70afba137e0"
 
-URI_x86_64_v2_ksudoku = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksudoku-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksudoku;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ksudoku}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksudoku-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksudoku;unpack=0"
 SRC_URI[x86_64_v2_ksudoku.sha256sum] = "1a2f25df7ac312fbcee3fa769e25917d0c00fb5f19f165cb60c67d644712547c"
 
-URI_aarch64_ksudoku = "${EPEL_MIRROR}/aarch64/Packages/k/ksudoku-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksudoku;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ksudoku}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ksudoku-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksudoku;unpack=0"
 SRC_URI[aarch64_ksudoku.sha256sum] = "6cd79adc86312182b6580d18ca8236a98fe8e47fcb0de5f19c9b2312d2e1e50f"
 
 RDEPENDS:ksudoku = " \

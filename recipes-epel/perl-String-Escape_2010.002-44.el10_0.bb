@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-String-Escape \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-String-Escape-2010.002-44.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-String-Escape-2010.002-44.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9c1a603ea79b6f41bca9bbf721152676e7daf4ae67f2890e831be7e1f91be870"
 
-URI_x86_64_v2_perl-String-Escape = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Escape-2010.002-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Escape;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-String-Escape}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Escape-2010.002-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Escape;unpack=0"
 SRC_URI[x86_64_v2_perl-String-Escape.sha256sum] = "4a3a93e36d8af920f73812e3a04d7e6ac337bde25f2d0bd23f422def5df8da53"
 
-URI_aarch64_perl-String-Escape = "${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Escape-2010.002-44.el10_0.noarch.rpm;name=aarch64_perl-String-Escape;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-String-Escape}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Escape-2010.002-44.el10_0.noarch.rpm;name=aarch64_perl-String-Escape;unpack=0"
 SRC_URI[aarch64_perl-String-Escape.sha256sum] = "0382c41b168f6427420d25aef573adcd81fab884738da3f1af3d4b77c13dcd33"
 
 RDEPENDS:perl-String-Escape = " \

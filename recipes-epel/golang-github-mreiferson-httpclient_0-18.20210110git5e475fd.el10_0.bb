@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-mreiferson-httpclient-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-mreiferson-httpclient-0-18.20210110git5e475fd.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-mreiferson-httpclient-0-18.20210110git5e475fd.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "da21e1b5fc0536f79d35697981f9b91e6af658a18f58e5a35dc10662fdaa8477"
 
-URI_aarch64_golang-github-mreiferson-httpclient-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mreiferson-httpclient-devel-0-18.20210110git5e475fd.el10_0.noarch.rpm;name=aarch64_golang-github-mreiferson-httpclient-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-mreiferson-httpclient-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mreiferson-httpclient-devel-0-18.20210110git5e475fd.el10_0.noarch.rpm;name=aarch64_golang-github-mreiferson-httpclient-devel;unpack=0"
 SRC_URI[aarch64_golang-github-mreiferson-httpclient-devel.sha256sum] = "b80406e50bb89c083fefd2caa8384c4f0e96d8a28c45838fc096761a85b2758f"
 
 RDEPENDS:golang-github-mreiferson-httpclient-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-hatchling \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-hatchling-1.27.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-hatchling-1.27.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c58d8a744a986550a3444629b036c471e40a853cd5bd5241b7afefa89d19160a"
 
-URI_x86_64_v2_python3-hatchling = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-hatchling-1.27.0-1.el10.noarch.rpm;name=x86_64_v2_python3-hatchling;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hatchling}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-hatchling-1.27.0-1.el10.noarch.rpm;name=x86_64_v2_python3-hatchling;unpack=0"
 SRC_URI[x86_64_v2_python3-hatchling.sha256sum] = "cf61603da81ce16099d1a8eea5816b8b2c89226bd8e14ad11fb619f8e69925e0"
 
-URI_aarch64_python3-hatchling = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-hatchling-1.27.0-1.el10.noarch.rpm;name=aarch64_python3-hatchling;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hatchling}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-hatchling-1.27.0-1.el10.noarch.rpm;name=aarch64_python3-hatchling;unpack=0"
 SRC_URI[aarch64_python3-hatchling.sha256sum] = "cf61603da81ce16099d1a8eea5816b8b2c89226bd8e14ad11fb619f8e69925e0"
 
 RDEPENDS:python3-hatchling = " \

@@ -13,8 +13,7 @@ PACKAGES = " \
  audacious-plugins-jack \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/audacious-plugins-4.4.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/audacious-plugins-4.4.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ed1c6111e5e53c011efffb2eac310a2f51bde138550c853f03bd50576a5847e2"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -25,44 +24,34 @@ SRC_URI[src.sha256sum] = "ed1c6111e5e53c011efffb2eac310a2f51bde138550c853f03bd50
 # - audacious-plugins-ffaudio: libavutil.so.59()(64bit)
 # - audacious-plugins-ffaudio: libavutil.so.59(LIBAVUTIL_59)(64bit)
 
-URI_x86_64_v2_audacious-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins;unpack=0"
 SRC_URI[x86_64_v2_audacious-plugins.sha256sum] = "e3893ac2feffb77cdbcc6a009ff6b7f9503d8752b480847f311d06a5de874fa7"
 
-URI_x86_64_v2_audacious-plugins-amidi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-amidi-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-amidi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins-amidi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-amidi-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-amidi;unpack=0"
 SRC_URI[x86_64_v2_audacious-plugins-amidi.sha256sum] = "8629f272a443f4b3c33aefa8140c9ba0f36f169d979d3b6d4b26f24554870108"
 
-URI_x86_64_v2_audacious-plugins-exotic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-exotic-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-exotic;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins-exotic}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-exotic-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-exotic;unpack=0"
 SRC_URI[x86_64_v2_audacious-plugins-exotic.sha256sum] = "13e47121b5411b86250c75c11abdcd5e9f84eb0f10a7f1a8fae519ce825c3ed0"
 
-URI_x86_64_v2_audacious-plugins-ffaudio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-ffaudio-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-ffaudio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins-ffaudio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-ffaudio-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-ffaudio;unpack=0"
 SRC_URI[x86_64_v2_audacious-plugins-ffaudio.sha256sum] = "cc36c44aec4d91f6780579ad10f6a1f2d7e287a1246d4b387cec1feb846740c1"
 
-URI_x86_64_v2_audacious-plugins-jack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-jack-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-jack;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_audacious-plugins-jack}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/audacious-plugins-jack-4.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_audacious-plugins-jack;unpack=0"
 SRC_URI[x86_64_v2_audacious-plugins-jack.sha256sum] = "35fba3c73281c9291d44ad31472a83570e51d266bc713d4ece58dc3b9de799f6"
 
-URI_aarch64_audacious-plugins = "${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins;unpack=0"
-SRC_URI:append = " ${URI_aarch64_audacious-plugins}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins;unpack=0"
 SRC_URI[aarch64_audacious-plugins.sha256sum] = "f22939e06cdd9adbeade4d872a62ce4e03cf5b8752d742a17d9208e5f95b5705"
 
-URI_aarch64_audacious-plugins-amidi = "${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-amidi-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-amidi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_audacious-plugins-amidi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-amidi-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-amidi;unpack=0"
 SRC_URI[aarch64_audacious-plugins-amidi.sha256sum] = "448f1652087a1b42d4013e02aa50780706ba9e57003a46e82d24b42368847a2f"
 
-URI_aarch64_audacious-plugins-exotic = "${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-exotic-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-exotic;unpack=0"
-SRC_URI:append = " ${URI_aarch64_audacious-plugins-exotic}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-exotic-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-exotic;unpack=0"
 SRC_URI[aarch64_audacious-plugins-exotic.sha256sum] = "e92ca0dcd43d214f3a5acffa4977dff9ec4aa3fcd847e99e93d1309502dfe3d7"
 
-URI_aarch64_audacious-plugins-ffaudio = "${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-ffaudio-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-ffaudio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_audacious-plugins-ffaudio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-ffaudio-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-ffaudio;unpack=0"
 SRC_URI[aarch64_audacious-plugins-ffaudio.sha256sum] = "7d77ed351842183a1d15e98d9a8aa8ddb3b0180a0d253e8a1449a804b120f4ee"
 
-URI_aarch64_audacious-plugins-jack = "${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-jack-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-jack;unpack=0"
-SRC_URI:append = " ${URI_aarch64_audacious-plugins-jack}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/audacious-plugins-jack-4.4.2-3.el10_1.aarch64.rpm;name=aarch64_audacious-plugins-jack;unpack=0"
 SRC_URI[aarch64_audacious-plugins-jack.sha256sum] = "afb573a933772b32022a89ab9214073b16b7d9aae09f9bb339ff27487d1c4421"
 
 RDEPENDS:audacious-plugins = " \

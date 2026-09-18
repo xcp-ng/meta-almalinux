@@ -9,16 +9,13 @@ PACKAGES = " \
  mhonarc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/mhonarc-2.6.24-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/mhonarc-2.6.24-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7bf3728ecc9fa8dd8c83c9752baad7d0f615558c8d15a76dc708d51cb89c7849"
 
-URI_x86_64_v2_mhonarc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mhonarc-2.6.24-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_mhonarc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mhonarc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mhonarc-2.6.24-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_mhonarc;unpack=0"
 SRC_URI[x86_64_v2_mhonarc.sha256sum] = "ff1b9497adca9bf33aaefbd14414dba59ad3cdafec7312895431c0a30d146f86"
 
-URI_aarch64_mhonarc = "${EPEL_MIRROR}/aarch64/Packages/m/mhonarc-2.6.24-14.el10_0.noarch.rpm;name=aarch64_mhonarc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mhonarc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mhonarc-2.6.24-14.el10_0.noarch.rpm;name=aarch64_mhonarc;unpack=0"
 SRC_URI[aarch64_mhonarc.sha256sum] = "904f0c5d5aed1a74d93e6970ad90074196deb95ae7daa1fb9b98cde8b8ef4bb0"
 
 RDEPENDS:mhonarc = " \

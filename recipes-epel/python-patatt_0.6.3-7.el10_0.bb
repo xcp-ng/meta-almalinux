@@ -9,16 +9,13 @@ PACKAGES = " \
  patatt \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-patatt-0.6.3-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-patatt-0.6.3-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4703cd35d69e8097f6160b04b30b4d2a62b0779b65725ebc4bcee0fdf1e4e23"
 
-URI_x86_64_v2_patatt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/patatt-0.6.3-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_patatt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_patatt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/patatt-0.6.3-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_patatt;unpack=0"
 SRC_URI[x86_64_v2_patatt.sha256sum] = "bb327a43def28f80b4f5305b13e9c4f8c1d7756aa98c12f301948623c1fa1b48"
 
-URI_aarch64_patatt = "${EPEL_MIRROR}/aarch64/Packages/p/patatt-0.6.3-7.el10_0.noarch.rpm;name=aarch64_patatt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_patatt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/patatt-0.6.3-7.el10_0.noarch.rpm;name=aarch64_patatt;unpack=0"
 SRC_URI[aarch64_patatt.sha256sum] = "7b635f62421c1002fbcf4a84ad374bf1fb329109eb9e4c025d12a9d3646eb875"
 
 RDEPENDS:patatt = " \

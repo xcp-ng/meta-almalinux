@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-scientific-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-scientific-0.3.7.0-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-scientific-0.3.7.0-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b94eaff7899e77fc0ee8cc866da4821a680e2100d73d7e31cc54920c6a129b9b"
 
-URI_x86_64_v2_ghc-scientific = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-scientific}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific;unpack=0"
 SRC_URI[x86_64_v2_ghc-scientific.sha256sum] = "a0ee07ad92629b02ab7f1d70148eff2c4b67b9d1ab35dc73b9c862f5d5261c25"
 
-URI_x86_64_v2_ghc-scientific-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-devel-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-scientific-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-devel-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-scientific-devel.sha256sum] = "61524d26dd23c19d577bf9dfbf7c82c8150bb1c52bb22690ecf1de6efb8a7d8c"
 
-URI_x86_64_v2_ghc-scientific-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-doc-0.3.7.0-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-scientific-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-scientific-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-doc-0.3.7.0-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-scientific-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-scientific-doc.sha256sum] = "8e5f22889721f56e543645c28533bf9790045fff035d944ba57b3be7535add0f"
 
-URI_x86_64_v2_ghc-scientific-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-prof-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-scientific-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-scientific-prof-0.3.7.0-14.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-scientific-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-scientific-prof.sha256sum] = "df80963fcb2d50f9d5b22f8d3c6bff4f5a4230f16da2a1c05e2263a9cb5aa647"
 
-URI_aarch64_ghc-scientific = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-scientific}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific;unpack=0"
 SRC_URI[aarch64_ghc-scientific.sha256sum] = "b08c247e0f1deed9aaf688875aef7151e56677707071cfb2a74b6e84183d135d"
 
-URI_aarch64_ghc-scientific-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-devel-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-scientific-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-devel-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific-devel;unpack=0"
 SRC_URI[aarch64_ghc-scientific-devel.sha256sum] = "44d3738f370f1388d3cbcf3be32fb2f27163c7d3f576ef3b1aa5049e73ed3e62"
 
-URI_aarch64_ghc-scientific-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-doc-0.3.7.0-14.el10_0.noarch.rpm;name=aarch64_ghc-scientific-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-scientific-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-doc-0.3.7.0-14.el10_0.noarch.rpm;name=aarch64_ghc-scientific-doc;unpack=0"
 SRC_URI[aarch64_ghc-scientific-doc.sha256sum] = "6fc2687f60c5f6a5f2791737770d904d14a5f501ef689ecf6838e99b9a034d2f"
 
-URI_aarch64_ghc-scientific-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-prof-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-scientific-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-scientific-prof-0.3.7.0-14.el10_0.aarch64.rpm;name=aarch64_ghc-scientific-prof;unpack=0"
 SRC_URI[aarch64_ghc-scientific-prof.sha256sum] = "0777476b05e51ec06de57f0602b5b7259c2a7b5ea686a33a3d6fe15eb4d8878e"
 
 RDEPENDS:ghc-scientific = " \

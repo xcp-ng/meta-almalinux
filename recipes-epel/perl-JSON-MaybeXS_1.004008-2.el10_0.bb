@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-JSON-MaybeXS \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-JSON-MaybeXS-1.004008-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-JSON-MaybeXS-1.004008-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "850197b38727024b6956657c14e9cc03d836e9a051f6441894286e90ede0c343"
 
-URI_x86_64_v2_perl-JSON-MaybeXS = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-JSON-MaybeXS-1.004008-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-JSON-MaybeXS;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-JSON-MaybeXS}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-JSON-MaybeXS-1.004008-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-JSON-MaybeXS;unpack=0"
 SRC_URI[x86_64_v2_perl-JSON-MaybeXS.sha256sum] = "4576cd2df44d067b30e96b285f708eb128f6bbf1d62a686b944936c67643cfa6"
 
-URI_aarch64_perl-JSON-MaybeXS = "${EPEL_MIRROR}/aarch64/Packages/p/perl-JSON-MaybeXS-1.004008-2.el10_0.noarch.rpm;name=aarch64_perl-JSON-MaybeXS;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-JSON-MaybeXS}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-JSON-MaybeXS-1.004008-2.el10_0.noarch.rpm;name=aarch64_perl-JSON-MaybeXS;unpack=0"
 SRC_URI[aarch64_perl-JSON-MaybeXS.sha256sum] = "60dcfcfab3c8dba26c653ab83e2edd7d7a81e9dbc9b3d0c510765b0035b5ed87"
 
 RDEPENDS:perl-JSON-MaybeXS = " \

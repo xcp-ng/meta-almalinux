@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-docker-go-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-go-1.5.1-32.20180609gitd30aec9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-docker-go-1.5.1-32.20180609gitd30aec9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "68f01231679ac9111f2477555587d2c807a5b92909a77838babbd2a739fcdd19"
 
-URI_aarch64_golang-github-docker-go-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-go-devel-1.5.1-32.20180609gitd30aec9.el10_0.noarch.rpm;name=aarch64_golang-github-docker-go-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-docker-go-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-docker-go-devel-1.5.1-32.20180609gitd30aec9.el10_0.noarch.rpm;name=aarch64_golang-github-docker-go-devel;unpack=0"
 SRC_URI[aarch64_golang-github-docker-go-devel.sha256sum] = "ad2276f1986e38702416918be6a8af47c4a780336d6066a12defc7e0fd928ab2"
 
 RDEPENDS:golang-github-docker-go-devel = " \

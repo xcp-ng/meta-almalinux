@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Tk-Pod-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Pod-0.9943-28.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Tk-Pod-0.9943-28.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7311fe90b41fa33d0484d078cd88ab2ba281d72c15ac65cf32ff8b74c3d61114"
 
-URI_x86_64_v2_perl-Tk-Pod = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Pod}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Pod.sha256sum] = "8d1f0c79dae31e27c761e7cb192c42e609dd35f843902530aba208a8b0c0f542"
 
-URI_x86_64_v2_perl-Tk-Pod-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-tests-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tk-Pod-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tk-Pod-tests-0.9943-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tk-Pod-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Tk-Pod-tests.sha256sum] = "4aba5ed91f7a1543289ce95c7233d66123a7723a9e00df81baa62ca3a1e7f932"
 
-URI_aarch64_perl-Tk-Pod = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Pod-0.9943-28.el10_0.noarch.rpm;name=aarch64_perl-Tk-Pod;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Pod}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Pod-0.9943-28.el10_0.noarch.rpm;name=aarch64_perl-Tk-Pod;unpack=0"
 SRC_URI[aarch64_perl-Tk-Pod.sha256sum] = "99eee40dd5e706ec9ee4f6d29fba393e5d1311c2ace3f5b8efe5d5dff836a4c7"
 
-URI_aarch64_perl-Tk-Pod-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Pod-tests-0.9943-28.el10_0.noarch.rpm;name=aarch64_perl-Tk-Pod-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tk-Pod-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tk-Pod-tests-0.9943-28.el10_0.noarch.rpm;name=aarch64_perl-Tk-Pod-tests;unpack=0"
 SRC_URI[aarch64_perl-Tk-Pod-tests.sha256sum] = "cf8c7bc78a484af51d4820e622e93dedffe729616f6fe56d553fc794247b6ebd"
 
 RDEPENDS:perl-Tk-Pod = " \

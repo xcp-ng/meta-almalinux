@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-path-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-path-0.9.5-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-path-0.9.5-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "939fa8473293fec750a83c15072c54d0d5d4d021d31e035c4c985c2740c30186"
 
-URI_x86_64_v2_ghc-path = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-path}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path;unpack=0"
 SRC_URI[x86_64_v2_ghc-path.sha256sum] = "ca9a03ee3c526417d059caff9b4bf2cfc400cba36ac929d2ab4b8377a765513f"
 
-URI_x86_64_v2_ghc-path-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-devel-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-path-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-devel-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-path-devel.sha256sum] = "f9119da77dbe60da0dbb505cb7fd383c72b59e837d5feac41f16abd7262c56b9"
 
-URI_x86_64_v2_ghc-path-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-doc-0.9.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-path-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-path-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-doc-0.9.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-path-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-path-doc.sha256sum] = "b110dc287f47065e742795f62348d8a2920b0eac54fbce8a603f8ad9b43c7ffc"
 
-URI_x86_64_v2_ghc-path-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-prof-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-path-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-path-prof-0.9.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-path-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-path-prof.sha256sum] = "e38f463dfd95dc432db2eea918b911abebf4e62b63f8776ac879d79fdce953bb"
 
-URI_aarch64_ghc-path = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-path}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path;unpack=0"
 SRC_URI[aarch64_ghc-path.sha256sum] = "b9fd9b59fbaa109b624e8f4dc68710550deb34629b7c0ceee5ab95daf3e24b98"
 
-URI_aarch64_ghc-path-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-devel-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-path-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-devel-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path-devel;unpack=0"
 SRC_URI[aarch64_ghc-path-devel.sha256sum] = "0c24832f9d366648831c12fb135b40cfd6582f1a86c27058f8b777d22b5dfa45"
 
-URI_aarch64_ghc-path-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-doc-0.9.5-1.el10_0.noarch.rpm;name=aarch64_ghc-path-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-path-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-doc-0.9.5-1.el10_0.noarch.rpm;name=aarch64_ghc-path-doc;unpack=0"
 SRC_URI[aarch64_ghc-path-doc.sha256sum] = "e63b9ec5b59778f3d9547dcd2ddb41fdbf1073230e6af49150dc46bf8952ce8d"
 
-URI_aarch64_ghc-path-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-prof-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-path-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-path-prof-0.9.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-path-prof;unpack=0"
 SRC_URI[aarch64_ghc-path-prof.sha256sum] = "30b7e1ab8c594bbd8a4d534a25db041e29d3a8bb3a6ed55bec8e015222e3e7d2"
 
 RDEPENDS:ghc-path = " \

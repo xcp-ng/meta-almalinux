@@ -12,8 +12,7 @@ PACKAGES = " \
  ipset-service \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/ipset-7.22-10.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/ipset-7.22-10.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "18b77dda101fcef8d0401154c01a34e07f25ca0423322d39c3ef14755ded5e0d"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -30,36 +29,28 @@ SRC_URI[src.sha256sum] = "18b77dda101fcef8d0401154c01a34e07f25ca0423322d39c3ef14
 # - ipset: (kernel-rt-debug-modules-extra if kernel-rt-debug-modules-core)
 # - ipset: (kernel-rt-modules-extra if kernel-rt-modules-core)
 
-URI_x86_64_v2_ipset = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/ipset-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipset}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/ipset-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset;unpack=0"
 SRC_URI[x86_64_v2_ipset.sha256sum] = "281c151f7dd56568e9ca835199fcdc8de74fb8c0a6c0e0c2f025c8fce02c1dce"
 
-URI_x86_64_v2_ipset-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ipset-devel-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipset-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ipset-devel-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset-devel;unpack=0"
 SRC_URI[x86_64_v2_ipset-devel.sha256sum] = "24e593823b9ccb05cce1f91c64d642e48758fc10855a36258865d5d718b08c78"
 
-URI_x86_64_v2_ipset-libs = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/ipset-libs-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipset-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/ipset-libs-7.22-10.el10_1.x86_64_v2.rpm;name=x86_64_v2_ipset-libs;unpack=0"
 SRC_URI[x86_64_v2_ipset-libs.sha256sum] = "c323214f9a158289e0b4d42ebe45848e4460d586772d98ea81cd4d5525b2dcf4"
 
-URI_x86_64_v2_ipset-service = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipset-service-7.22-10.el10_1.noarch.rpm;name=x86_64_v2_ipset-service;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipset-service}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipset-service-7.22-10.el10_1.noarch.rpm;name=x86_64_v2_ipset-service;unpack=0"
 SRC_URI[x86_64_v2_ipset-service.sha256sum] = "12c09860322e58b77f268e8e8536d59f0d2d3359d94e52bd390216380331a590"
 
-URI_aarch64_ipset = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/ipset-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipset}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/ipset-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset;unpack=0"
 SRC_URI[aarch64_ipset.sha256sum] = "2b4922893265ae76dd8d9f094e66cf5883484ce582ad57b56d8a165ab8e645fd"
 
-URI_aarch64_ipset-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ipset-devel-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipset-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ipset-devel-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset-devel;unpack=0"
 SRC_URI[aarch64_ipset-devel.sha256sum] = "b795dbbc485403d47e07ecf4ed7ffe487cd49e5488fcc9f4c49bdb770605a7f1"
 
-URI_aarch64_ipset-libs = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/ipset-libs-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipset-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/ipset-libs-7.22-10.el10_1.aarch64.rpm;name=aarch64_ipset-libs;unpack=0"
 SRC_URI[aarch64_ipset-libs.sha256sum] = "86df157ed04df211092a454bce7572a27f4f18ef9e1f182a5b9218b5520d136c"
 
-URI_aarch64_ipset-service = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipset-service-7.22-10.el10_1.noarch.rpm;name=aarch64_ipset-service;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipset-service}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipset-service-7.22-10.el10_1.noarch.rpm;name=aarch64_ipset-service;unpack=0"
 SRC_URI[aarch64_ipset-service.sha256sum] = "12c09860322e58b77f268e8e8536d59f0d2d3359d94e52bd390216380331a590"
 
 RDEPENDS:ipset:x86_64_v2 = " \

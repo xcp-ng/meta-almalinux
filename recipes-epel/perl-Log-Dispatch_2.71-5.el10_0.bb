@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Log-Dispatch \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Log-Dispatch-2.71-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Log-Dispatch-2.71-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "46bf9cbac2cd0975b81a5244191f008352b358e048400c3354a6876ff6eb21ee"
 
-URI_x86_64_v2_perl-Log-Dispatch = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Log-Dispatch-2.71-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Log-Dispatch;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Log-Dispatch}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Log-Dispatch-2.71-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Log-Dispatch;unpack=0"
 SRC_URI[x86_64_v2_perl-Log-Dispatch.sha256sum] = "5b84728f4abd84623813a7d0d0b4f89c4d0c48964884cee67ff2a67ca31f827e"
 
-URI_aarch64_perl-Log-Dispatch = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Log-Dispatch-2.71-5.el10_0.noarch.rpm;name=aarch64_perl-Log-Dispatch;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Log-Dispatch}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Log-Dispatch-2.71-5.el10_0.noarch.rpm;name=aarch64_perl-Log-Dispatch;unpack=0"
 SRC_URI[aarch64_perl-Log-Dispatch.sha256sum] = "e1acf94d87c36ca33518b60394f6de47bb1c3364bb9c1035a9bc8ecfbe431161"
 
 RDEPENDS:perl-Log-Dispatch = " \

@@ -8,7 +8,6 @@ PR = "3.el10_1.1"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/powerpc-utils-1.3.13-3.el10_1.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/powerpc-utils-1.3.13-3.el10_1.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "968e4635589a7072d9f2c58a9c6140e6071e13187f8fdc9a09d5ba5f0f94c94b"
 

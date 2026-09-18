@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-gobject-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gobject-2.0.31-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gobject-2.0.31-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "457296fcf3ec1ad1e337a80d8f98f124e44fb301f951062937c33397b13626f0"
 
-URI_x86_64_v2_ghc-gi-gobject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gobject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gobject.sha256sum] = "beae99d4ae0034e8ac548374ef19cafec2d2d3140871029526faee39a4078154"
 
-URI_x86_64_v2_ghc-gi-gobject-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-devel-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gobject-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-devel-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gobject-devel.sha256sum] = "e165affb7731406e921603818ef350c51d927e44f3967bc9f8abc4cda684e590"
 
-URI_x86_64_v2_ghc-gi-gobject-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-doc-2.0.31-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gobject-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gobject-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-doc-2.0.31-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gobject-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gobject-doc.sha256sum] = "24ef0cabfa802b933ec50352d4e0e53d7d42df658470c1515d9f95354813b632"
 
-URI_x86_64_v2_ghc-gi-gobject-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-prof-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gobject-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gobject-prof-2.0.31-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gobject-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gobject-prof.sha256sum] = "7fa81f6df8000ddd9151feb06ec8bad8d1ea1d6dda062a158fdee0c028846130"
 
-URI_aarch64_ghc-gi-gobject = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gobject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject;unpack=0"
 SRC_URI[aarch64_ghc-gi-gobject.sha256sum] = "2e1eeb4af5595cf4a7e9e6c4bd644eb5e67adb2cabc8f39fc756b386a6273de3"
 
-URI_aarch64_ghc-gi-gobject-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-devel-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gobject-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-devel-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-gobject-devel.sha256sum] = "3dd3793e1921e4daf8cbea4dcc2212aebd9178cdddb20a0f817de1bc9098b793"
 
-URI_aarch64_ghc-gi-gobject-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-doc-2.0.31-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gobject-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gobject-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-doc-2.0.31-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gobject-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-gobject-doc.sha256sum] = "c60746b8dc7243dc53cb32f726487a08396c6c764d37a5f432181746870024d3"
 
-URI_aarch64_ghc-gi-gobject-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-prof-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gobject-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gobject-prof-2.0.31-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gobject-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-gobject-prof.sha256sum] = "7e8522e0e558bebfb5fa167042298bdbf5530533f3d98217211db718f9cb029e"
 
 RDEPENDS:ghc-gi-gobject = " \

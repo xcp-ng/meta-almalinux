@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Ref-Util-XS \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Ref-Util-XS-0.117-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Ref-Util-XS-0.117-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7596557cf3ba26dd910ccf96be233c74b7340eeccb78e46d36822ea3dff7a45e"
 
-URI_x86_64_v2_perl-Ref-Util-XS = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ref-Util-XS-0.117-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Ref-Util-XS;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Ref-Util-XS}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Ref-Util-XS-0.117-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Ref-Util-XS;unpack=0"
 SRC_URI[x86_64_v2_perl-Ref-Util-XS.sha256sum] = "0f5a0092a2e7abae7d18a3b0349d59d05413ead7b32709b5609ed94dfcb19acd"
 
-URI_aarch64_perl-Ref-Util-XS = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Ref-Util-XS-0.117-18.el10_0.aarch64.rpm;name=aarch64_perl-Ref-Util-XS;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Ref-Util-XS}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Ref-Util-XS-0.117-18.el10_0.aarch64.rpm;name=aarch64_perl-Ref-Util-XS;unpack=0"
 SRC_URI[aarch64_perl-Ref-Util-XS.sha256sum] = "3fec75a9f12c68c2ce257310ded187bdc4ebe66fbb50d522a9457b5cb70d5d95"
 
 RDEPENDS:perl-Ref-Util-XS = " \

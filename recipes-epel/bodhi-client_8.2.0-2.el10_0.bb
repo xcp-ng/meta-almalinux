@@ -9,16 +9,13 @@ PACKAGES = " \
  bodhi-client \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/b/bodhi-client-8.2.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/b/bodhi-client-8.2.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "883f7870c838c6c79cd60da54b498f4b1e9fbc66dec3d0b340f6193f9ca30324"
 
-URI_x86_64_v2_bodhi-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bodhi-client-8.2.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_bodhi-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_bodhi-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bodhi-client-8.2.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_bodhi-client;unpack=0"
 SRC_URI[x86_64_v2_bodhi-client.sha256sum] = "146ea29f73402f2d57a24cec843ee63091973a398ca576050a2d3a3560059bfc"
 
-URI_aarch64_bodhi-client = "${EPEL_MIRROR}/aarch64/Packages/b/bodhi-client-8.2.0-2.el10_0.noarch.rpm;name=aarch64_bodhi-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_bodhi-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/bodhi-client-8.2.0-2.el10_0.noarch.rpm;name=aarch64_bodhi-client;unpack=0"
 SRC_URI[aarch64_bodhi-client.sha256sum] = "a33f26c91c49dedb78f3c05ed6f7c39e59dc31662b02b982b8236abbe1475d2c"
 
 RDEPENDS:bodhi-client = " \

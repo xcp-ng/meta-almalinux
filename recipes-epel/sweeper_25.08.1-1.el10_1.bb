@@ -9,16 +9,13 @@ PACKAGES = " \
  sweeper \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/sweeper-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/sweeper-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ebab0e50ec993e2f5dc7ab15219e72ca9ca0882f30f002ec0f64d43d5d187c9a"
 
-URI_x86_64_v2_sweeper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sweeper-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sweeper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sweeper}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sweeper-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sweeper;unpack=0"
 SRC_URI[x86_64_v2_sweeper.sha256sum] = "e050cdde53930b17c74c67dcb320e1e770a7f86cc53ce81fdeb5b43527e1623e"
 
-URI_aarch64_sweeper = "${EPEL_MIRROR}/aarch64/Packages/s/sweeper-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_sweeper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sweeper}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/sweeper-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_sweeper;unpack=0"
 SRC_URI[aarch64_sweeper.sha256sum] = "508c93e3440b9b02506360ac0799e296d9f81b129cb88631ed4dabc546d5bc46"
 
 RDEPENDS:sweeper = " \

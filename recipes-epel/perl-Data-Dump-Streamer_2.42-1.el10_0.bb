@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Dump-Streamer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Dump-Streamer-2.42-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Dump-Streamer-2.42-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "28c3a59463c4566c6c4cd0cf0bb51618dd6f644026c237b4282bc2cb610372cc"
 
-URI_x86_64_v2_perl-Data-Dump-Streamer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Dump-Streamer-2.42-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Data-Dump-Streamer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Dump-Streamer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Dump-Streamer-2.42-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Data-Dump-Streamer;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Dump-Streamer.sha256sum] = "8e4a44d9bd558b1525319ab2a7ce5ef5117e58a42e76470986833716cb7dcb3c"
 
-URI_aarch64_perl-Data-Dump-Streamer = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Dump-Streamer-2.42-1.el10_0.aarch64.rpm;name=aarch64_perl-Data-Dump-Streamer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Dump-Streamer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Dump-Streamer-2.42-1.el10_0.aarch64.rpm;name=aarch64_perl-Data-Dump-Streamer;unpack=0"
 SRC_URI[aarch64_perl-Data-Dump-Streamer.sha256sum] = "fe199465aec1e9c9c66601ff5953b1e4a34b44270cae90019b61cc3d515882f5"
 
 RDEPENDS:perl-Data-Dump-Streamer = " \

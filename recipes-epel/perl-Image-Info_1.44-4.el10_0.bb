@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Image-Info \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Image-Info-1.44-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Image-Info-1.44-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1a0ec6782f42e42ba2391ed2080fd50a6208b87dbe8efd48d086dcdd6ad20847"
 
-URI_x86_64_v2_perl-Image-Info = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-Info-1.44-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-Info;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Image-Info}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Image-Info-1.44-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Image-Info;unpack=0"
 SRC_URI[x86_64_v2_perl-Image-Info.sha256sum] = "c25b2d2d173ac5d55c0c0fa3b8c77017f865ce6d6af97576d60856d31cf01bb4"
 
-URI_aarch64_perl-Image-Info = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-Info-1.44-4.el10_0.noarch.rpm;name=aarch64_perl-Image-Info;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Image-Info}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Image-Info-1.44-4.el10_0.noarch.rpm;name=aarch64_perl-Image-Info;unpack=0"
 SRC_URI[aarch64_perl-Image-Info.sha256sum] = "f7b198850487d36bbfea6b53876fbe7bafc82b662fd31d1ab46af8351a22b858"
 
 RDEPENDS:perl-Image-Info = " \

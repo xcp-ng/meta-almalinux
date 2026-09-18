@@ -9,16 +9,13 @@ PACKAGES = " \
  xrootd-s3-http \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/x/xrootd-s3-http-0.6.6-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/x/xrootd-s3-http-0.6.6-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "609a7c81c37697cb5bfab22c189295601122e999bbcfb8923c45e2a47ebd8fbf"
 
-URI_x86_64_v2_xrootd-s3-http = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xrootd-s3-http-0.6.6-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xrootd-s3-http;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xrootd-s3-http}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xrootd-s3-http-0.6.6-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xrootd-s3-http;unpack=0"
 SRC_URI[x86_64_v2_xrootd-s3-http.sha256sum] = "e4c53bc0f7bd3697ded60ce7a819231dc3b215d881096181a0da2683423bacdb"
 
-URI_aarch64_xrootd-s3-http = "${EPEL_MIRROR}/aarch64/Packages/x/xrootd-s3-http-0.6.6-1.el10_1.aarch64.rpm;name=aarch64_xrootd-s3-http;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xrootd-s3-http}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xrootd-s3-http-0.6.6-1.el10_1.aarch64.rpm;name=aarch64_xrootd-s3-http;unpack=0"
 SRC_URI[aarch64_xrootd-s3-http.sha256sum] = "aae28792ecea1133e066b51275d48dde3afdc8f91ee42cf403d08ff0d7f55cc2"
 
 RDEPENDS:xrootd-s3-http = " \

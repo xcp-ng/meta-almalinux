@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-vobject \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-vobject-0.9.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-vobject-0.9.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af5290e99a65eafa82cf7d964cc72409d6273165a5789eb2130a81c61aba9d44"
 
-URI_x86_64_v2_python3-vobject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-vobject-0.9.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-vobject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-vobject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-vobject-0.9.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-vobject;unpack=0"
 SRC_URI[x86_64_v2_python3-vobject.sha256sum] = "16b986d02f019e89c36d89eebc913b9b5d96ef8b99e1139df12c63601df24cfa"
 
-URI_aarch64_python3-vobject = "${EPEL_MIRROR}/aarch64/Packages/p/python3-vobject-0.9.8-1.el10_0.noarch.rpm;name=aarch64_python3-vobject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-vobject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-vobject-0.9.8-1.el10_0.noarch.rpm;name=aarch64_python3-vobject;unpack=0"
 SRC_URI[aarch64_python3-vobject.sha256sum] = "65c3e5ac2ea032f85794d382d0a1bdb10eab26796201fd10f687fa86dc007ec2"
 
 RDEPENDS:python3-vobject = " \

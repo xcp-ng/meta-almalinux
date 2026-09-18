@@ -9,16 +9,13 @@ PACKAGES = " \
  xdg-desktop-portal-gnome \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xdg-desktop-portal-gnome-47.3-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xdg-desktop-portal-gnome-47.3-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ce0b7cc4a3ae0de394da3c3081994d21568fa02b481321f2c538b8538353cb53"
 
-URI_x86_64_v2_xdg-desktop-portal-gnome = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xdg-desktop-portal-gnome-47.3-1.el10.x86_64_v2.rpm;name=x86_64_v2_xdg-desktop-portal-gnome;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xdg-desktop-portal-gnome}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xdg-desktop-portal-gnome-47.3-1.el10.x86_64_v2.rpm;name=x86_64_v2_xdg-desktop-portal-gnome;unpack=0"
 SRC_URI[x86_64_v2_xdg-desktop-portal-gnome.sha256sum] = "3a79a052932b66d99ed5f5cb340142d43bdabbec40bf70299ef6b93b68af1c99"
 
-URI_aarch64_xdg-desktop-portal-gnome = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xdg-desktop-portal-gnome-47.3-1.el10.aarch64.rpm;name=aarch64_xdg-desktop-portal-gnome;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xdg-desktop-portal-gnome}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xdg-desktop-portal-gnome-47.3-1.el10.aarch64.rpm;name=aarch64_xdg-desktop-portal-gnome;unpack=0"
 SRC_URI[aarch64_xdg-desktop-portal-gnome.sha256sum] = "c1bb2d29c0406be5897a12eadaa189ded16ecc7be6ecdbcfdff148133a276a87"
 
 RDEPENDS:xdg-desktop-portal-gnome = " \

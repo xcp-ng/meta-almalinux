@@ -10,24 +10,19 @@ PACKAGES = " \
  golang-gopkg-logex-1-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-logex-1-1.1.10-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-logex-1-1.1.10-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7a4860ca469b0f3a61aaae2f0ba2b7ebc9946f114e3ca6cc31c75cd4b85cb524"
 
-URI_x86_64_v2_compat-golang-github-chzyer-logex-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/compat-golang-github-chzyer-logex-devel-1.1.10-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_compat-golang-github-chzyer-logex-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_compat-golang-github-chzyer-logex-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/compat-golang-github-chzyer-logex-devel-1.1.10-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_compat-golang-github-chzyer-logex-devel;unpack=0"
 SRC_URI[x86_64_v2_compat-golang-github-chzyer-logex-devel.sha256sum] = "7a288365982635053f8c1cfbbafd249f8bd2ed09ba755ccf47d2a03e6128fcac"
 
-URI_x86_64_v2_golang-gopkg-logex-1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-gopkg-logex-1-devel-1.1.10-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-gopkg-logex-1-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-gopkg-logex-1-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-gopkg-logex-1-devel-1.1.10-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-gopkg-logex-1-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-gopkg-logex-1-devel.sha256sum] = "d1e64f930da0d5961b9c74f161ef50c81f0f1622e13ad5703649b2b78520c965"
 
-URI_aarch64_compat-golang-github-chzyer-logex-devel = "${EPEL_MIRROR}/aarch64/Packages/c/compat-golang-github-chzyer-logex-devel-1.1.10-16.el10_0.noarch.rpm;name=aarch64_compat-golang-github-chzyer-logex-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_compat-golang-github-chzyer-logex-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/compat-golang-github-chzyer-logex-devel-1.1.10-16.el10_0.noarch.rpm;name=aarch64_compat-golang-github-chzyer-logex-devel;unpack=0"
 SRC_URI[aarch64_compat-golang-github-chzyer-logex-devel.sha256sum] = "188356f6108d02f03343aa316f626b21a3be48976896fcd1eea9a77d976698c1"
 
-URI_aarch64_golang-gopkg-logex-1-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-logex-1-devel-1.1.10-16.el10_0.noarch.rpm;name=aarch64_golang-gopkg-logex-1-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-gopkg-logex-1-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-logex-1-devel-1.1.10-16.el10_0.noarch.rpm;name=aarch64_golang-gopkg-logex-1-devel;unpack=0"
 SRC_URI[aarch64_golang-gopkg-logex-1-devel.sha256sum] = "08b4b04818fe86e571178d44b9d9873606e85ac340d0b077fa0738fefab33d31"
 
 RDEPENDS:compat-golang-github-chzyer-logex-devel = " \

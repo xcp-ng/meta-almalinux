@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-Path \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Path-2.18-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Path-2.18-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "09e6228449ea9b8ba46e70da0a52ffde07c059cdf41008eb01a5ec1b44ebe4d7"
 
-URI_x86_64_v2_perl-File-Path = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm;name=x86_64_v2_perl-File-Path;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-Path}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm;name=x86_64_v2_perl-File-Path;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Path.sha256sum] = "dc36e3a86a5566ca0b83afa49a9ec40a2568fe37378a39e132e175c316342cfd"
 
-URI_aarch64_perl-File-Path = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm;name=aarch64_perl-File-Path;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-Path}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm;name=aarch64_perl-File-Path;unpack=0"
 SRC_URI[aarch64_perl-File-Path.sha256sum] = "dc36e3a86a5566ca0b83afa49a9ec40a2568fe37378a39e132e175c316342cfd"
 
 RDEPENDS:perl-File-Path = " \

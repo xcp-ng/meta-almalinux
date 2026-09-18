@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-pillow-tk \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pillow-11.0.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pillow-11.0.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4f35e5b48ff69e7c290260c745786742d9256c654b81ecba431ae2eec40061b"
 
-URI_x86_64_v2_python3-pillow = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pillow}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow;unpack=0"
 SRC_URI[x86_64_v2_python3-pillow.sha256sum] = "06f0fca080cd44d18b63ea765b1e079c9976f73fe76e6c1b98b700291447d12b"
 
-URI_x86_64_v2_python3-pillow-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-devel-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pillow-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-devel-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-devel;unpack=0"
 SRC_URI[x86_64_v2_python3-pillow-devel.sha256sum] = "894bf3bb3d17bf33a266f8b4563a7c65fa000c9202bd92ed784ea94153174dd3"
 
-URI_x86_64_v2_python3-pillow-tk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-tk-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-tk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pillow-tk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pillow-tk-11.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pillow-tk;unpack=0"
 SRC_URI[x86_64_v2_python3-pillow-tk.sha256sum] = "45343f45c03eab9f968d88e2b957ab9da7fa4cfa1bfd465b289c4ae3efc2560d"
 
-URI_aarch64_python3-pillow = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pillow}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow;unpack=0"
 SRC_URI[aarch64_python3-pillow.sha256sum] = "550fd9001a41aad7b48f22cb218f4cf54bb98d8e35d5ad36be6310adc9ccc3cc"
 
-URI_aarch64_python3-pillow-devel = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-devel-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pillow-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-devel-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow-devel;unpack=0"
 SRC_URI[aarch64_python3-pillow-devel.sha256sum] = "411ddf5b8797264ea56f88aea1142c5ab60fbc3f14dac340e6b6523f2fb67719"
 
-URI_aarch64_python3-pillow-tk = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-tk-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow-tk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pillow-tk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pillow-tk-11.0.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pillow-tk;unpack=0"
 SRC_URI[aarch64_python3-pillow-tk.sha256sum] = "3739115462893bbf2e1cc181fafc5e3ec451a601a17464171ab9d0ff2151b619"
 
 RDEPENDS:python3-pillow = " \

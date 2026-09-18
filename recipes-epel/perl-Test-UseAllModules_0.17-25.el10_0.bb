@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-UseAllModules \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-UseAllModules-0.17-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-UseAllModules-0.17-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d6d1c1c53362a8aa7a265858e57c80326d513eb1e3bc7d82dc9e7480e345e6da"
 
-URI_x86_64_v2_perl-Test-UseAllModules = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-UseAllModules-0.17-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-UseAllModules;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-UseAllModules}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-UseAllModules-0.17-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-UseAllModules;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-UseAllModules.sha256sum] = "031966f9a9167cd2cd9dd908cbe0ea9f9a77b41ab94f44b1677b9fccf6797fa9"
 
-URI_aarch64_perl-Test-UseAllModules = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-UseAllModules-0.17-25.el10_0.noarch.rpm;name=aarch64_perl-Test-UseAllModules;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-UseAllModules}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-UseAllModules-0.17-25.el10_0.noarch.rpm;name=aarch64_perl-Test-UseAllModules;unpack=0"
 SRC_URI[aarch64_perl-Test-UseAllModules.sha256sum] = "eb7d43aebd5c59f89aeedc8f9cf56ac4fe096676a836fdb9f796d85f4615d9fa"
 
 RDEPENDS:perl-Test-UseAllModules = " \

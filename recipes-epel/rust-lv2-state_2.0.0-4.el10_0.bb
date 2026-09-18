@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-lv2-state-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-lv2-state-2.0.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-lv2-state-2.0.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f0e14c22408782862d069f31f4e53cdb7bc1800df6a64ab19a71b5230eaab12e"
 
-URI_x86_64_v2_rust-lv2-state+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lv2-state+default-devel-2.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lv2-state+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lv2-state+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lv2-state+default-devel-2.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lv2-state+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lv2-state+default-devel.sha256sum] = "c7a91cdf6b548e1e8865c7c64a22e7622372ad3ecae7ecdc994ab8ce19445cef"
 
-URI_x86_64_v2_rust-lv2-state-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lv2-state-devel-2.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lv2-state-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lv2-state-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lv2-state-devel-2.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lv2-state-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lv2-state-devel.sha256sum] = "2bb1f4c7555c12493346df9578eb8b20a82fad62d99df25b62acfecb4b8c60fe"
 
-URI_aarch64_rust-lv2-state+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lv2-state+default-devel-2.0.0-4.el10_0.noarch.rpm;name=aarch64_rust-lv2-state+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lv2-state+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lv2-state+default-devel-2.0.0-4.el10_0.noarch.rpm;name=aarch64_rust-lv2-state+default-devel;unpack=0"
 SRC_URI[aarch64_rust-lv2-state+default-devel.sha256sum] = "e778576841ab1059b01f20a6f8e3ff7336ec471e1cf7a4cb2f54e0219fe4bbe7"
 
-URI_aarch64_rust-lv2-state-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lv2-state-devel-2.0.0-4.el10_0.noarch.rpm;name=aarch64_rust-lv2-state-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lv2-state-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lv2-state-devel-2.0.0-4.el10_0.noarch.rpm;name=aarch64_rust-lv2-state-devel;unpack=0"
 SRC_URI[aarch64_rust-lv2-state-devel.sha256sum] = "3db3b36e18faa66289d37941683ff2da090048cdfb5d7e23c2d2041afb1c6d22"
 
 RDEPENDS:rust-lv2-state+default-devel = " \

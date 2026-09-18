@@ -16,72 +16,55 @@ PACKAGES = " \
  ghc-gi-harfbuzz-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-harfbuzz-0.0.10-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-harfbuzz-0.0.10-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "77ad79b51614981d17685cc2bc1236402d068173de2844ad36deb3abb8ac1dd1"
 
-URI_x86_64_v2_ghc-gi-freetype2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-freetype2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-freetype2.sha256sum] = "af5619326e0708d4ba5c3cc2e4b07a4471bab455b8fc9a66a08a7ac1cf2770b3"
 
-URI_x86_64_v2_ghc-gi-freetype2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-devel-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-freetype2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-devel-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-freetype2-devel.sha256sum] = "62b44dc8e0d5fcb4a0f7b0f0272241f32c8aa469aface759f25727bc6f7872da"
 
-URI_x86_64_v2_ghc-gi-freetype2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-doc-2.0.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-freetype2-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-freetype2-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-doc-2.0.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-freetype2-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-freetype2-doc.sha256sum] = "6b65e115ac1898537c94a2f66694a76fc2788bcbd0cca92b7cc74c3eff478057"
 
-URI_x86_64_v2_ghc-gi-freetype2-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-prof-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-freetype2-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-freetype2-prof-2.0.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-freetype2-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-freetype2-prof.sha256sum] = "cd8973e9d055ac15db3504ac4bdac025f262e0f803c07b3ff1440cb9fe4165de"
 
-URI_x86_64_v2_ghc-gi-harfbuzz = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-harfbuzz}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-harfbuzz.sha256sum] = "66a7ffc03e6e9bd8743e2bfa70d9f26f73e87a9185612aaf8e8a4f6d8473c8b5"
 
-URI_x86_64_v2_ghc-gi-harfbuzz-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-devel-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-harfbuzz-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-devel-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-harfbuzz-devel.sha256sum] = "3e3f9e652cce95e776e490806595dcc863f8f816edd9e81d9cdab28e5e09f1e2"
 
-URI_x86_64_v2_ghc-gi-harfbuzz-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-doc-0.0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-harfbuzz-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-harfbuzz-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-doc-0.0.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-harfbuzz-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-harfbuzz-doc.sha256sum] = "a2d5d50cf46a45bf7528e9257c73a8da4a6d2c880a2e208d65b970a8e67be5b4"
 
-URI_x86_64_v2_ghc-gi-harfbuzz-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-prof-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-harfbuzz-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-harfbuzz-prof-0.0.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-harfbuzz-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-harfbuzz-prof.sha256sum] = "b0b27acdc3a6f121f550b0239d244ef115bf13119ff241670ddf906ce63719e2"
 
-URI_aarch64_ghc-gi-freetype2 = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-freetype2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2;unpack=0"
 SRC_URI[aarch64_ghc-gi-freetype2.sha256sum] = "4e02f4c220d27b5d2c3e25c404023d3657357de49b8eab09ab503c84f74ce576"
 
-URI_aarch64_ghc-gi-freetype2-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-devel-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-freetype2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-devel-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-freetype2-devel.sha256sum] = "74c848c08619593fa85ebb4c6e43e9b796a10b715957ec01a865cf43f969f9b7"
 
-URI_aarch64_ghc-gi-freetype2-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-doc-2.0.5-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-freetype2-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-freetype2-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-doc-2.0.5-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-freetype2-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-freetype2-doc.sha256sum] = "26606941d3aee024daf67682c5472196ff80fd6abaef40a15920e6261801b64e"
 
-URI_aarch64_ghc-gi-freetype2-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-prof-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-freetype2-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-freetype2-prof-2.0.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-freetype2-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-freetype2-prof.sha256sum] = "da252671e8b90b616bea084ae561bd09c1ebc04346db427766162976b1b55fe6"
 
-URI_aarch64_ghc-gi-harfbuzz = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-harfbuzz}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz;unpack=0"
 SRC_URI[aarch64_ghc-gi-harfbuzz.sha256sum] = "91decda85bf7688bc82eee0ddde26944047167cf7c778e8b2ee92e1029187016"
 
-URI_aarch64_ghc-gi-harfbuzz-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-devel-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-harfbuzz-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-devel-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-harfbuzz-devel.sha256sum] = "5bb42aa98723721d561fa8bca32a3607a1b07c0e9b999da7ab1405de740301fb"
 
-URI_aarch64_ghc-gi-harfbuzz-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-doc-0.0.10-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-harfbuzz-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-harfbuzz-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-doc-0.0.10-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-harfbuzz-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-harfbuzz-doc.sha256sum] = "0d5d94760848465821e331616cef2fe8ca10a8f95d63dafded54e158d2d36ff7"
 
-URI_aarch64_ghc-gi-harfbuzz-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-prof-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-harfbuzz-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-harfbuzz-prof-0.0.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-harfbuzz-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-harfbuzz-prof.sha256sum] = "f7efcaf7c0dd30f41a1ab88edb5a9afeb7b08ce3c96eae2154a55ec99bb58268"
 
 RDEPENDS:ghc-gi-freetype2 = " \

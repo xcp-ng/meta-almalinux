@@ -9,8 +9,7 @@ PACKAGES = " \
  dkms \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/dkms-3.4.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/dkms-3.4.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0cd4fcbd4b9a0b5ff7ed74440394695b0ae080ec9630f72917ac9f9e248caf7e"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -22,12 +21,10 @@ SRC_URI[src.sha256sum] = "0cd4fcbd4b9a0b5ff7ed74440394695b0ae080ec9630f72917ac9f
 # - dkms: (kernel-rt-debug-devel if kernel-rt-debug-core)
 # - dkms: (kernel-rt-devel if kernel-rt-core)
 
-URI_x86_64_v2_dkms = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dkms-3.4.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dkms;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dkms}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dkms-3.4.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dkms;unpack=0"
 SRC_URI[x86_64_v2_dkms.sha256sum] = "f9ee8d9d85d2f2e8e18d96c6503e14f7af6c75ec489540eb870ced08739e0f16"
 
-URI_aarch64_dkms = "${EPEL_MIRROR}/aarch64/Packages/d/dkms-3.4.1-1.el10_1.noarch.rpm;name=aarch64_dkms;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dkms}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dkms-3.4.1-1.el10_1.noarch.rpm;name=aarch64_dkms;unpack=0"
 SRC_URI[aarch64_dkms.sha256sum] = "4f039e3f774bf42e17e80a6cadf587e6e4fcc2eecf468afd5f71cae55692ce7b"
 
 RDEPENDS:dkms:x86_64_v2 = " \

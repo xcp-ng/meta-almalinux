@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-id \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-id-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-id-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "39a70f9c979803b8c29636ff4a944313401bf18e46e234adce5dea6605e33ecf"
 
-URI_x86_64_v2_python3-id = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-id-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-id;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-id}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-id-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-id;unpack=0"
 SRC_URI[x86_64_v2_python3-id.sha256sum] = "e1343bf1f3ccc66fb003ed41ba7eb4d844738c2270e3545e330d5aaa20614c61"
 
-URI_aarch64_python3-id = "${EPEL_MIRROR}/aarch64/Packages/p/python3-id-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-id;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-id}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-id-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-id;unpack=0"
 SRC_URI[aarch64_python3-id.sha256sum] = "ad1079c933f3231af28a6b8b459e40c1586a1dafe098135cb54e05389caebe85"
 
 RDEPENDS:python3-id = " \

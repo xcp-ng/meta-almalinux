@@ -11,32 +11,25 @@ PACKAGES = " \
  cantor-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/cantor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cantor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5927c79a2e89eec48153539214a8da9d67db0d3ab2b1b8f1fe296313820e6db9"
 
-URI_x86_64_v2_cantor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cantor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor;unpack=0"
 SRC_URI[x86_64_v2_cantor.sha256sum] = "597c0207e016402b8f58ba4963f00959fac262a751c7bbffd1507272e0ab7f6c"
 
-URI_x86_64_v2_cantor-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cantor-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor-devel;unpack=0"
 SRC_URI[x86_64_v2_cantor-devel.sha256sum] = "46e6059c4680f418b041ca65d2982212bac4de4293b63f6b5ab271c527f89e10"
 
-URI_x86_64_v2_cantor-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cantor-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cantor-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cantor-libs;unpack=0"
 SRC_URI[x86_64_v2_cantor-libs.sha256sum] = "3ecfcd20b55ff5ce93a0ed27410536016bf3b956b314cf2329ba02068224f6d1"
 
-URI_aarch64_cantor = "${EPEL_MIRROR}/aarch64/Packages/c/cantor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cantor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cantor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor;unpack=0"
 SRC_URI[aarch64_cantor.sha256sum] = "e6a1e1e15a6cc5f010cf25fcf84c33c1ce63f1d97a3dd0ebef0a7865d821acc8"
 
-URI_aarch64_cantor-devel = "${EPEL_MIRROR}/aarch64/Packages/c/cantor-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cantor-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cantor-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor-devel;unpack=0"
 SRC_URI[aarch64_cantor-devel.sha256sum] = "bcc01f3bbf931c7f7d262ac19757815356feeb6b2d4b9f186012f6bfd3fa2cbe"
 
-URI_aarch64_cantor-libs = "${EPEL_MIRROR}/aarch64/Packages/c/cantor-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cantor-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cantor-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_cantor-libs;unpack=0"
 SRC_URI[aarch64_cantor-libs.sha256sum] = "7333a4aef1e76db520da608d8cc10e9c0025a675a3b6993a1b56d3fb5744e92b"
 
 RDEPENDS:cantor = " \

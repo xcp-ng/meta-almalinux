@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-RDF-Query-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-RDF-Query-2.919-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-RDF-Query-2.919-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "56ff9388a8f0a53b63fb68094f96760dd46072fac9682ff2611cabb1cebf1b17"
 
-URI_x86_64_v2_perl-RDF-Query = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Query}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Query.sha256sum] = "d31d07c994e362ee5643ee66cec2d6e3a557725448d28a34a5d6e79c342793f3"
 
-URI_x86_64_v2_perl-RDF-Query-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-tests-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-RDF-Query-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-RDF-Query-tests-2.919-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-RDF-Query-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-RDF-Query-tests.sha256sum] = "76608ade0233e193f544d84cf1b8c9352712030025588d4f9b8f3a10a41b97a8"
 
-URI_aarch64_perl-RDF-Query = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Query-2.919-2.el10_0.noarch.rpm;name=aarch64_perl-RDF-Query;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Query}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Query-2.919-2.el10_0.noarch.rpm;name=aarch64_perl-RDF-Query;unpack=0"
 SRC_URI[aarch64_perl-RDF-Query.sha256sum] = "f22054c9d4412ec99a7803dc2fdcf79592adf3dd6a61db21e09797cf2e942bb3"
 
-URI_aarch64_perl-RDF-Query-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Query-tests-2.919-2.el10_0.noarch.rpm;name=aarch64_perl-RDF-Query-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-RDF-Query-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-RDF-Query-tests-2.919-2.el10_0.noarch.rpm;name=aarch64_perl-RDF-Query-tests;unpack=0"
 SRC_URI[aarch64_perl-RDF-Query-tests.sha256sum] = "175e11258197405acb77c02e1ce00ac0fda83c87ae24ca44dfeb64cd0313f6c5"
 
 RDEPENDS:perl-RDF-Query = " \

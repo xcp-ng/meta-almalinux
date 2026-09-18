@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mergedeep \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mergedeep-1.3.4-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mergedeep-1.3.4-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe3de824ab2817ee0cdd2f1fb292d4cd89742c8d041ed64eca24b8d755e68249"
 
-URI_x86_64_v2_python3-mergedeep = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mergedeep-1.3.4-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mergedeep;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mergedeep}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mergedeep-1.3.4-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mergedeep;unpack=0"
 SRC_URI[x86_64_v2_python3-mergedeep.sha256sum] = "3e08ba814fa9106821efe99f590187475f2f1e6fd23f448cce4e4c421aa51afd"
 
-URI_aarch64_python3-mergedeep = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mergedeep-1.3.4-14.el10_0.noarch.rpm;name=aarch64_python3-mergedeep;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mergedeep}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mergedeep-1.3.4-14.el10_0.noarch.rpm;name=aarch64_python3-mergedeep;unpack=0"
 SRC_URI[aarch64_python3-mergedeep.sha256sum] = "83a472bf1ea64901824a808a211dd6e89f24f2d712c32a1b2994b8b2809daed0"
 
 RDEPENDS:python3-mergedeep = " \

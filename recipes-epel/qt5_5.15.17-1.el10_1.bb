@@ -13,48 +13,37 @@ PACKAGES = " \
  qt5-srpm-macros \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/q/qt5-5.15.17-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/q/qt5-5.15.17-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2a211c43352a703a1da6fe05f5905c564a4285aef5703855cd80c36e67889235"
 
-URI_x86_64_v2_qt5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt5}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5;unpack=0"
 SRC_URI[x86_64_v2_qt5.sha256sum] = "fc6e719f7c717051c8e6322a463788455aa1de5a31670db929434b177923a36a"
 
-URI_x86_64_v2_qt5-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-devel-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt5-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-devel-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5-devel;unpack=0"
 SRC_URI[x86_64_v2_qt5-devel.sha256sum] = "883295c5b3a00907985fabaf4a46c06333365069882aec450dc5b1c40096a088"
 
-URI_x86_64_v2_qt5-filesystem = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-filesystem-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5-filesystem;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt5-filesystem}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-filesystem-5.15.17-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt5-filesystem;unpack=0"
 SRC_URI[x86_64_v2_qt5-filesystem.sha256sum] = "f023dd32bb0387ab3f5f7063ee97b59ce2d58ee1f35482f825258688a72633a1"
 
-URI_x86_64_v2_qt5-rpm-macros = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-rpm-macros-5.15.17-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt5-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt5-rpm-macros}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-rpm-macros-5.15.17-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt5-rpm-macros;unpack=0"
 SRC_URI[x86_64_v2_qt5-rpm-macros.sha256sum] = "4fe8a41188abaf897335a209ed6d666da7c086dc193288e19d2715d4890177f2"
 
-URI_x86_64_v2_qt5-srpm-macros = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-srpm-macros-5.15.17-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt5-srpm-macros;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt5-srpm-macros}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt5-srpm-macros-5.15.17-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt5-srpm-macros;unpack=0"
 SRC_URI[x86_64_v2_qt5-srpm-macros.sha256sum] = "60713c018b328569c907c8286cf0f2efa792eabfafb70da5bcdeb2ff82b14e3a"
 
-URI_aarch64_qt5 = "${EPEL_MIRROR}/aarch64/Packages/q/qt5-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt5}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt5-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5;unpack=0"
 SRC_URI[aarch64_qt5.sha256sum] = "bdf8c7c309d04572dcf9b44ace10d5518c1e97c7cfec0b9ed85c014149eea698"
 
-URI_aarch64_qt5-devel = "${EPEL_MIRROR}/aarch64/Packages/q/qt5-devel-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt5-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt5-devel-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5-devel;unpack=0"
 SRC_URI[aarch64_qt5-devel.sha256sum] = "5bea0d148638974fa63b91c84485f35d8f06ea98ea2490907f0a9d9eb6142529"
 
-URI_aarch64_qt5-filesystem = "${EPEL_MIRROR}/aarch64/Packages/q/qt5-filesystem-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5-filesystem;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt5-filesystem}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt5-filesystem-5.15.17-1.el10_1.aarch64.rpm;name=aarch64_qt5-filesystem;unpack=0"
 SRC_URI[aarch64_qt5-filesystem.sha256sum] = "39767fc496542168efdac4ec129b3c8533e1e022f85bbf93654eb91ba23126c1"
 
-URI_aarch64_qt5-rpm-macros = "${EPEL_MIRROR}/aarch64/Packages/q/qt5-rpm-macros-5.15.17-1.el10_1.noarch.rpm;name=aarch64_qt5-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt5-rpm-macros}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt5-rpm-macros-5.15.17-1.el10_1.noarch.rpm;name=aarch64_qt5-rpm-macros;unpack=0"
 SRC_URI[aarch64_qt5-rpm-macros.sha256sum] = "c8d1f93e2a6527e813d9a6cdec9dceae5622b879c72a3bcfdbd54936d4b27696"
 
-URI_aarch64_qt5-srpm-macros = "${EPEL_MIRROR}/aarch64/Packages/q/qt5-srpm-macros-5.15.17-1.el10_1.noarch.rpm;name=aarch64_qt5-srpm-macros;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt5-srpm-macros}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt5-srpm-macros-5.15.17-1.el10_1.noarch.rpm;name=aarch64_qt5-srpm-macros;unpack=0"
 SRC_URI[aarch64_qt5-srpm-macros.sha256sum] = "9dd929d80ae164a9fd1b14e97a81c57c411cedc95e89ea37882dff5da85ef2fe"
 
 RDEPENDS:qt5 = " \

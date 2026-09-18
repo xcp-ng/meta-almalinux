@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-types-requests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-types-requests-2.26.1-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-types-requests-2.26.1-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6d3840bbd5228f434779cd85b6dd59ff53a449ea9551229226e4999fc1057e1a"
 
-URI_x86_64_v2_python3-types-requests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-types-requests-2.26.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-types-requests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-types-requests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-types-requests-2.26.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-types-requests;unpack=0"
 SRC_URI[x86_64_v2_python3-types-requests.sha256sum] = "e9fa85e0acd9ec1027aaf5fd8c296a6302ea4a687d9387155bbb2b0064b685fa"
 
-URI_aarch64_python3-types-requests = "${EPEL_MIRROR}/aarch64/Packages/p/python3-types-requests-2.26.1-14.el10_0.noarch.rpm;name=aarch64_python3-types-requests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-types-requests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-types-requests-2.26.1-14.el10_0.noarch.rpm;name=aarch64_python3-types-requests;unpack=0"
 SRC_URI[aarch64_python3-types-requests.sha256sum] = "455951912a300a02009254c8da5b7abf5f03d11f9fea1a8edb27eb21a04a7453"
 
 RDEPENDS:python3-types-requests = " \

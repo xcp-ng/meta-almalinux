@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-events \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-events-0.5-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-events-0.5-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a4144efe9f0bb274fd54da4105e0b12438013f821ec8c7aeb9084f0f807de184"
 
-URI_x86_64_v2_python3-events = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-events-0.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-events;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-events}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-events-0.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-events;unpack=0"
 SRC_URI[x86_64_v2_python3-events.sha256sum] = "114925caad578599bb34849a6dadc1e0601daa7cf5bd9701418bf18401a85326"
 
-URI_aarch64_python3-events = "${EPEL_MIRROR}/aarch64/Packages/p/python3-events-0.5-2.el10_0.noarch.rpm;name=aarch64_python3-events;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-events}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-events-0.5-2.el10_0.noarch.rpm;name=aarch64_python3-events;unpack=0"
 SRC_URI[aarch64_python3-events.sha256sum] = "7feaa62f8adc8a2b5150a61d9f9ec6dd521d406c5d0339e96d2e1d9e2d7e0972"
 
 RDEPENDS:python3-events = " \

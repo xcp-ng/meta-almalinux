@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-boolean \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-boolean-0.46-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-boolean-0.46-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c958f11dc426e7585d6842b848b760e65a2e79822bae910812fe8ca0d7253555"
 
-URI_x86_64_v2_perl-boolean = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-boolean-0.46-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-boolean;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-boolean}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-boolean-0.46-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-boolean;unpack=0"
 SRC_URI[x86_64_v2_perl-boolean.sha256sum] = "71b7ffbcdb397cc0e28f0bdfe932182f8fd69b45b8fe4c1ed2428e014b5df56e"
 
-URI_aarch64_perl-boolean = "${EPEL_MIRROR}/aarch64/Packages/p/perl-boolean-0.46-24.el10_0.noarch.rpm;name=aarch64_perl-boolean;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-boolean}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-boolean-0.46-24.el10_0.noarch.rpm;name=aarch64_perl-boolean;unpack=0"
 SRC_URI[aarch64_perl-boolean.sha256sum] = "032ba5996f4f50ec841dc6abd8b7649e5fe065a327517e60f698efbf4dc57b9d"
 
 RDEPENDS:perl-boolean = " \

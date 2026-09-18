@@ -9,16 +9,13 @@ PACKAGES = " \
  fetch-crl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/fetch-crl-3.0.23-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fetch-crl-3.0.23-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6b2e40ee33f96429e3aaf863318308608addd7bf3ddfa125d6f8887cc1c60f81"
 
-URI_x86_64_v2_fetch-crl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fetch-crl-3.0.23-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_fetch-crl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fetch-crl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fetch-crl-3.0.23-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_fetch-crl;unpack=0"
 SRC_URI[x86_64_v2_fetch-crl.sha256sum] = "e4f562408bdd3c875761f18ca6a51a157e84744cc6fd394a2e8999a96c179b6b"
 
-URI_aarch64_fetch-crl = "${EPEL_MIRROR}/aarch64/Packages/f/fetch-crl-3.0.23-6.el10_1.noarch.rpm;name=aarch64_fetch-crl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fetch-crl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fetch-crl-3.0.23-6.el10_1.noarch.rpm;name=aarch64_fetch-crl;unpack=0"
 SRC_URI[aarch64_fetch-crl.sha256sum] = "fe72427b6a25e42ba9b5cdb57223e9f7452986cb39fa0aa33e6862dc688a2383"
 
 RDEPENDS:fetch-crl = " \

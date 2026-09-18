@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-testtools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-testtools-2.7.2-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-testtools-2.7.2-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "31fabb4a6479766ad952b3d4d83c46b09940d999832df170ec0d74bc579222a2"
 
-URI_x86_64_v2_python-testtools-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-testtools-doc-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-testtools-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-testtools-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-testtools-doc-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-testtools-doc;unpack=0"
 SRC_URI[x86_64_v2_python-testtools-doc.sha256sum] = "87e676fe604a51c799765dead26de613227783022f9f572e6b28f1282a72ca42"
 
-URI_x86_64_v2_python3-testtools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testtools-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testtools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-testtools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testtools-2.7.2-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testtools;unpack=0"
 SRC_URI[x86_64_v2_python3-testtools.sha256sum] = "e3efcbef0c5cf3363d86b355ea9844fc3f8a563a41ba7007c0eec563c23e489e"
 
-URI_aarch64_python-testtools-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-testtools-doc-2.7.2-5.el10_0.noarch.rpm;name=aarch64_python-testtools-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-testtools-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-testtools-doc-2.7.2-5.el10_0.noarch.rpm;name=aarch64_python-testtools-doc;unpack=0"
 SRC_URI[aarch64_python-testtools-doc.sha256sum] = "ce1e93f72ca1fb90313b55f8ed7a01a00f1faad427cf02eef763336819af6efd"
 
-URI_aarch64_python3-testtools = "${EPEL_MIRROR}/aarch64/Packages/p/python3-testtools-2.7.2-5.el10_0.noarch.rpm;name=aarch64_python3-testtools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-testtools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-testtools-2.7.2-5.el10_0.noarch.rpm;name=aarch64_python3-testtools;unpack=0"
 SRC_URI[aarch64_python3-testtools.sha256sum] = "e3e7b70d4719731fdc5dadab5530c23de2d1f7a86ec302e820c0d1e2050f34a4"
 
 RDEPENDS:python-testtools-doc = " \

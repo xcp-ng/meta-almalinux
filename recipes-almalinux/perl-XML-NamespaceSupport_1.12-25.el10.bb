@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-NamespaceSupport \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-NamespaceSupport-1.12-25.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-NamespaceSupport-1.12-25.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d16deda6b8b35ec8a580021a3e9a593327fda3c83b2cdee6dbd3d82c87940989"
 
-URI_x86_64_v2_perl-XML-NamespaceSupport = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-NamespaceSupport-1.12-25.el10.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceSupport;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-NamespaceSupport}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-NamespaceSupport-1.12-25.el10.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceSupport;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-NamespaceSupport.sha256sum] = "aadce69e4bd85d3228b052dfcfec1483f0cfc5417ea57a6094e0db8572ba467f"
 
-URI_aarch64_perl-XML-NamespaceSupport = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-NamespaceSupport-1.12-25.el10.noarch.rpm;name=aarch64_perl-XML-NamespaceSupport;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-NamespaceSupport}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-NamespaceSupport-1.12-25.el10.noarch.rpm;name=aarch64_perl-XML-NamespaceSupport;unpack=0"
 SRC_URI[aarch64_perl-XML-NamespaceSupport.sha256sum] = "aadce69e4bd85d3228b052dfcfec1483f0cfc5417ea57a6094e0db8572ba467f"
 
 RDEPENDS:perl-XML-NamespaceSupport = " \

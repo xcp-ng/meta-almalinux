@@ -9,16 +9,13 @@ PACKAGES = " \
  kmix \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmix-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmix-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "54ff89e34e564ec507df747dc64fdb8c806582b41a7d55a30ee62ffbdaa62d64"
 
-URI_x86_64_v2_kmix = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmix-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmix;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmix}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmix-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmix;unpack=0"
 SRC_URI[x86_64_v2_kmix.sha256sum] = "ba139a9d02247b5ed46cc8cb3861fa0f2b3eba543ef6adb6416aced81dad1eb1"
 
-URI_aarch64_kmix = "${EPEL_MIRROR}/aarch64/Packages/k/kmix-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmix;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmix}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmix-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmix;unpack=0"
 SRC_URI[aarch64_kmix.sha256sum] = "bab72cf59fab0ceb399be8e05ebf64367fd54e23003fddfb315157a03ab15bde"
 
 RDEPENDS:kmix = " \

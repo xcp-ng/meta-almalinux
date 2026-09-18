@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Valgrind \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Valgrind-1.19-23.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Valgrind-1.19-23.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c94d3c5c1a3f7c62f1882c4b1fc6e9a042f6567c334ebc44dc54109edc35eb4"
 
-URI_x86_64_v2_perl-Test-Valgrind = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Valgrind-1.19-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Valgrind;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Valgrind}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Valgrind-1.19-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Valgrind;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Valgrind.sha256sum] = "d11350403ce5ade587d362ba02d13a16d14487a81f308649a2f1b231328a8b96"
 
-URI_aarch64_perl-Test-Valgrind = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Valgrind-1.19-23.el10_0.noarch.rpm;name=aarch64_perl-Test-Valgrind;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Valgrind}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Valgrind-1.19-23.el10_0.noarch.rpm;name=aarch64_perl-Test-Valgrind;unpack=0"
 SRC_URI[aarch64_perl-Test-Valgrind.sha256sum] = "fbe6e3ce17cf95ab3c99b4895f2e55c9f297e2692711d65bc08b069af8aa6f03"
 
 RDEPENDS:perl-Test-Valgrind = " \

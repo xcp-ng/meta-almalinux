@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-CPAN-Common-Index \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-CPAN-Common-Index-0.010-23.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-CPAN-Common-Index-0.010-23.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d464b8510532bfbda1b82ade28b29aa55e4543296544ac7e7e7fe7138d483ea7"
 
-URI_x86_64_v2_perl-CPAN-Common-Index = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CPAN-Common-Index-0.010-23.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CPAN-Common-Index;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CPAN-Common-Index}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CPAN-Common-Index-0.010-23.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CPAN-Common-Index;unpack=0"
 SRC_URI[x86_64_v2_perl-CPAN-Common-Index.sha256sum] = "921277cc151721c1917aac05f0c4b94a5afb7bf3994019c6d9ac18ec62c7b1e3"
 
-URI_aarch64_perl-CPAN-Common-Index = "${EPEL_MIRROR}/aarch64/Packages/p/perl-CPAN-Common-Index-0.010-23.el10_1.noarch.rpm;name=aarch64_perl-CPAN-Common-Index;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CPAN-Common-Index}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-CPAN-Common-Index-0.010-23.el10_1.noarch.rpm;name=aarch64_perl-CPAN-Common-Index;unpack=0"
 SRC_URI[aarch64_perl-CPAN-Common-Index.sha256sum] = "15a852186ac8b4ff7fa0b94e8ddd654f8e8bd196537adf04219085fa357fa540"
 
 RDEPENDS:perl-CPAN-Common-Index = " \

@@ -13,48 +13,37 @@ PACKAGES = " \
  python3-qt5-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-qt5-5.15.11-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-qt5-5.15.11-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "37d909c7c5ef89bb9bd383c5789ea4c94413810a1fff212f9d6b52e795009bf2"
 
-URI_x86_64_v2_python-qt5-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-qt5-doc-5.15.11-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python-qt5-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-qt5-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-qt5-doc-5.15.11-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python-qt5-doc;unpack=0"
 SRC_URI[x86_64_v2_python-qt5-doc.sha256sum] = "711702cea31dda3e4593b648929fa3bc3f64d4306643ef9496b382bf16e28102"
 
-URI_x86_64_v2_python-qt5-rpm-macros = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-qt5-rpm-macros-5.15.11-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python-qt5-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-qt5-rpm-macros}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-qt5-rpm-macros-5.15.11-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python-qt5-rpm-macros;unpack=0"
 SRC_URI[x86_64_v2_python-qt5-rpm-macros.sha256sum] = "fa105e7a878974b861ae549554685c4978d5a8f36cfd457f4e4e77e398ed241a"
 
-URI_x86_64_v2_python3-qt5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-qt5}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5;unpack=0"
 SRC_URI[x86_64_v2_python3-qt5.sha256sum] = "a0a3b712aaf99970fda111125720ee4ba163995e2170f44041178866c0990f47"
 
-URI_x86_64_v2_python3-qt5-base = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-base-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5-base;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-qt5-base}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-base-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5-base;unpack=0"
 SRC_URI[x86_64_v2_python3-qt5-base.sha256sum] = "2598ce0cab0893c60d218277eb444a15a9b767601b16670bed9aec62bcbc187a"
 
-URI_x86_64_v2_python3-qt5-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-devel-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-qt5-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qt5-devel-5.15.11-7.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-qt5-devel;unpack=0"
 SRC_URI[x86_64_v2_python3-qt5-devel.sha256sum] = "aa9ed39c52233e898eb3e5289503ce2e6be7539ece9092ed0a82a3b11bbc60bc"
 
-URI_aarch64_python-qt5-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-qt5-doc-5.15.11-7.el10_1.noarch.rpm;name=aarch64_python-qt5-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-qt5-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-qt5-doc-5.15.11-7.el10_1.noarch.rpm;name=aarch64_python-qt5-doc;unpack=0"
 SRC_URI[aarch64_python-qt5-doc.sha256sum] = "a13ce1dcf689373a71a0b78cdc4a02fa8b5e3db4eb4ec1b074c9497cf4f376ef"
 
-URI_aarch64_python-qt5-rpm-macros = "${EPEL_MIRROR}/aarch64/Packages/p/python-qt5-rpm-macros-5.15.11-7.el10_1.noarch.rpm;name=aarch64_python-qt5-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-qt5-rpm-macros}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-qt5-rpm-macros-5.15.11-7.el10_1.noarch.rpm;name=aarch64_python-qt5-rpm-macros;unpack=0"
 SRC_URI[aarch64_python-qt5-rpm-macros.sha256sum] = "5c2d9c1585cd11be1ffcf7b77a90754b8fc8ad385015aa998e71742b520f0191"
 
-URI_aarch64_python3-qt5 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-qt5}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5;unpack=0"
 SRC_URI[aarch64_python3-qt5.sha256sum] = "0d8768c7e71d4d303e106031b8f794a509e4b6dd015fdd8b70a0b1f1d369e221"
 
-URI_aarch64_python3-qt5-base = "${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-base-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5-base;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-qt5-base}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-base-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5-base;unpack=0"
 SRC_URI[aarch64_python3-qt5-base.sha256sum] = "ed4153e2d792e7f5a557147411d06658909386350b374fa7a820f217a7d16af4"
 
-URI_aarch64_python3-qt5-devel = "${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-devel-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-qt5-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-qt5-devel-5.15.11-7.el10_1.aarch64.rpm;name=aarch64_python3-qt5-devel;unpack=0"
 SRC_URI[aarch64_python3-qt5-devel.sha256sum] = "3010acecde33aedca493984362fdb300a8e41d3553736e9fde7910e07e676bb6"
 
 RDEPENDS:python-qt5-doc = " \

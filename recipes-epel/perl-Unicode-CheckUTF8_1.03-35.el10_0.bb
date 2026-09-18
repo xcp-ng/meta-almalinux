@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Unicode-CheckUTF8 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Unicode-CheckUTF8-1.03-35.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Unicode-CheckUTF8-1.03-35.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4e8252da42254a3ed37791342692340f949f23f2ad642a7b083b193122e9d502"
 
-URI_x86_64_v2_perl-Unicode-CheckUTF8 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-CheckUTF8-1.03-35.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-CheckUTF8;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Unicode-CheckUTF8}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-CheckUTF8-1.03-35.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-CheckUTF8;unpack=0"
 SRC_URI[x86_64_v2_perl-Unicode-CheckUTF8.sha256sum] = "240ec22bdc49813a612c95bc34e19554ee760010bf2ad3ce021e0c2262228cf1"
 
-URI_aarch64_perl-Unicode-CheckUTF8 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-CheckUTF8-1.03-35.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-CheckUTF8;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Unicode-CheckUTF8}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-CheckUTF8-1.03-35.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-CheckUTF8;unpack=0"
 SRC_URI[aarch64_perl-Unicode-CheckUTF8.sha256sum] = "5038f5db5fc917d99178ff543dfb7925a22b8d7379f9b13838511f29e6691f6a"
 
 RDEPENDS:perl-Unicode-CheckUTF8 = " \

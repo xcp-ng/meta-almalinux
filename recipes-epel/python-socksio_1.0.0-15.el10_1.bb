@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-socksio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-socksio-1.0.0-15.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-socksio-1.0.0-15.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af7d6a79b221713176c4efcd50ff2788116e90ea9782d7bab6ae1883c95db7ec"
 
-URI_x86_64_v2_python3-socksio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-socksio-1.0.0-15.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-socksio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-socksio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-socksio-1.0.0-15.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-socksio;unpack=0"
 SRC_URI[x86_64_v2_python3-socksio.sha256sum] = "d21511a6499026b4cd33170d5f9b925f04deb53466d29d1f219420bd76ad4782"
 
-URI_aarch64_python3-socksio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-socksio-1.0.0-15.el10_1.noarch.rpm;name=aarch64_python3-socksio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-socksio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-socksio-1.0.0-15.el10_1.noarch.rpm;name=aarch64_python3-socksio;unpack=0"
 SRC_URI[aarch64_python3-socksio.sha256sum] = "ff15c9fbcb10972edb8f5753eb772689903bac2105a11d2a47a860e64e5e7515"
 
 RDEPENDS:python3-socksio = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-repoze-tm2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-repoze-tm2-2.2.0-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-repoze-tm2-2.2.0-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eee012c71f65d1b4062935cdbcfa64c3332f730212e47e21ab911bad39d36f26"
 
-URI_x86_64_v2_python3-repoze-tm2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-tm2-2.2.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-tm2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-repoze-tm2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-repoze-tm2-2.2.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-repoze-tm2;unpack=0"
 SRC_URI[x86_64_v2_python3-repoze-tm2.sha256sum] = "dedf8d31d37b339b2a0b0707b6c75bba618ee6daea8649f95c8b0c284f8d1d0a"
 
-URI_aarch64_python3-repoze-tm2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-tm2-2.2.0-10.el10_0.noarch.rpm;name=aarch64_python3-repoze-tm2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-repoze-tm2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-repoze-tm2-2.2.0-10.el10_0.noarch.rpm;name=aarch64_python3-repoze-tm2;unpack=0"
 SRC_URI[aarch64_python3-repoze-tm2.sha256sum] = "af39f7c095087acb464392df7f9b80be5a32f8b8667b346337a3c1bd3c4415e1"
 
 RDEPENDS:python3-repoze-tm2 = " \

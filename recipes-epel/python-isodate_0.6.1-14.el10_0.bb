@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-isodate \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-isodate-0.6.1-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-isodate-0.6.1-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "782da501d5c7a76dd0bcb439f26b43491df9efc77141523c85f424fd173fc129"
 
-URI_x86_64_v2_python3-isodate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-isodate-0.6.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-isodate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-isodate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-isodate-0.6.1-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-isodate;unpack=0"
 SRC_URI[x86_64_v2_python3-isodate.sha256sum] = "0d0a67c95b78c935f2c785e6bf942c8f90b61bd79a8b18804e913fbabee5264b"
 
-URI_aarch64_python3-isodate = "${EPEL_MIRROR}/aarch64/Packages/p/python3-isodate-0.6.1-14.el10_0.noarch.rpm;name=aarch64_python3-isodate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-isodate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-isodate-0.6.1-14.el10_0.noarch.rpm;name=aarch64_python3-isodate;unpack=0"
 SRC_URI[aarch64_python3-isodate.sha256sum] = "000fd952b1b7000a7baa77c5986de66e9f1c1e1b327bd98d4e4f6dc678a0c5dd"
 
 RDEPENDS:python3-isodate = " \

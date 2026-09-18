@@ -9,16 +9,13 @@ PACKAGES = " \
  xorg-x11-xtrans-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5f55a7cab437bf353ee0f62d011c54749858b1c6a65c430072fc279d01b159b7"
 
-URI_x86_64_v2_xorg-x11-xtrans-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.noarch.rpm;name=x86_64_v2_xorg-x11-xtrans-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xorg-x11-xtrans-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.noarch.rpm;name=x86_64_v2_xorg-x11-xtrans-devel;unpack=0"
 SRC_URI[x86_64_v2_xorg-x11-xtrans-devel.sha256sum] = "d9f3d159bb5bc707af6144cd0efd92253794dc343fb00fbcf9182e89ca527047"
 
-URI_aarch64_xorg-x11-xtrans-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.noarch.rpm;name=aarch64_xorg-x11-xtrans-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xorg-x11-xtrans-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xorg-x11-xtrans-devel-1.4.0-15.el10.noarch.rpm;name=aarch64_xorg-x11-xtrans-devel;unpack=0"
 SRC_URI[aarch64_xorg-x11-xtrans-devel.sha256sum] = "d9f3d159bb5bc707af6144cd0efd92253794dc343fb00fbcf9182e89ca527047"
 
 RDEPENDS:xorg-x11-xtrans-devel = " \

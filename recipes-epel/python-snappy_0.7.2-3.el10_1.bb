@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-snappy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-snappy-0.7.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-snappy-0.7.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "423ac106b6f2d017a37b7464a7420e7e9b895bfdd5168cea5da2b25c7ee5174d"
 
-URI_x86_64_v2_python3-snappy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-snappy-0.7.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-snappy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-snappy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-snappy-0.7.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-snappy;unpack=0"
 SRC_URI[x86_64_v2_python3-snappy.sha256sum] = "77262c4735e3c291a57cc439f8836e811203f66b8d2e6e281cf8660ed30b6e36"
 
-URI_aarch64_python3-snappy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-snappy-0.7.2-3.el10_1.noarch.rpm;name=aarch64_python3-snappy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-snappy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-snappy-0.7.2-3.el10_1.noarch.rpm;name=aarch64_python3-snappy;unpack=0"
 SRC_URI[aarch64_python3-snappy.sha256sum] = "cf538edf22d556e9e55cd5386175342db56ac5ae27eed2b092439404280222d8"
 
 RDEPENDS:python3-snappy = " \

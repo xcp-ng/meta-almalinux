@@ -9,16 +9,13 @@ PACKAGES = " \
  docbook2X \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/docbook2X-0.8.8-50.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/docbook2X-0.8.8-50.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2baed6ea762b44080e6dfe2cce6cdebb5fe8b54e64201726b7ab9a5756bd483e"
 
-URI_x86_64_v2_docbook2X = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/docbook2X-0.8.8-50.el10.x86_64_v2.rpm;name=x86_64_v2_docbook2X;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_docbook2X}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/docbook2X-0.8.8-50.el10.x86_64_v2.rpm;name=x86_64_v2_docbook2X;unpack=0"
 SRC_URI[x86_64_v2_docbook2X.sha256sum] = "1696b6012bcf6567b60487c80ba9252e34879d1f8de06e3430ace9175fcdcf24"
 
-URI_aarch64_docbook2X = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/docbook2X-0.8.8-50.el10.aarch64.rpm;name=aarch64_docbook2X;unpack=0"
-SRC_URI:append = " ${URI_aarch64_docbook2X}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/docbook2X-0.8.8-50.el10.aarch64.rpm;name=aarch64_docbook2X;unpack=0"
 SRC_URI[aarch64_docbook2X.sha256sum] = "1097b28a2ba2515fb68e9cad0fafc4b36e0a4f95e79bf9f4a725f82ea112f5ed"
 
 RDEPENDS:docbook2X = " \

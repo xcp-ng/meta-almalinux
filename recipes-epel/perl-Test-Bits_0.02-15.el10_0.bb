@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-Bits-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Bits-0.02-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Bits-0.02-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0016b743ab3de13a647ff6ea7c14993c05252adb030ba5382cd6b710c0d36827"
 
-URI_x86_64_v2_perl-Test-Bits = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Bits-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Bits;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Bits}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Bits-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Bits;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Bits.sha256sum] = "2e394d5581533008efc938d3c0975720479e03caa4c2414bb13eb9c4b03f785a"
 
-URI_x86_64_v2_perl-Test-Bits-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Bits-tests-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Bits-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Bits-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Bits-tests-0.02-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Bits-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Bits-tests.sha256sum] = "415d69c371bba718a8bf966bee052b813059c87c5b05a2e2ab2803e7de340a00"
 
-URI_aarch64_perl-Test-Bits = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Bits-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Test-Bits;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Bits}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Bits-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Test-Bits;unpack=0"
 SRC_URI[aarch64_perl-Test-Bits.sha256sum] = "15a91ab2fd5097c6bd87f1de3ef4a28f03e6476a19f5d9c6ceb36b63699eae55"
 
-URI_aarch64_perl-Test-Bits-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Bits-tests-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Test-Bits-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Bits-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Bits-tests-0.02-15.el10_0.noarch.rpm;name=aarch64_perl-Test-Bits-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-Bits-tests.sha256sum] = "9c2a93a6e2c5e5ef5a78b6fc51f0d49cc8236db8ee180841902eac469475050d"
 
 RDEPENDS:perl-Test-Bits = " \

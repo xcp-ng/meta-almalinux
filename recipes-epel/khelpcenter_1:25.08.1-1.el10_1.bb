@@ -10,16 +10,13 @@ PACKAGES = " \
  khelpcenter \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/khelpcenter-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/khelpcenter-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b2612ef46e84a89f693b3e6e1f81938f462f14c71c1e0505ad46660c71d88556"
 
-URI_x86_64_v2_khelpcenter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/khelpcenter-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_khelpcenter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_khelpcenter}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/khelpcenter-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_khelpcenter;unpack=0"
 SRC_URI[x86_64_v2_khelpcenter.sha256sum] = "ab58a208f09f11c054bc3d4f7d8f530eaa766db0a85a3b01239aa8f26a4e304b"
 
-URI_aarch64_khelpcenter = "${EPEL_MIRROR}/aarch64/Packages/k/khelpcenter-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_khelpcenter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_khelpcenter}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/khelpcenter-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_khelpcenter;unpack=0"
 SRC_URI[aarch64_khelpcenter.sha256sum] = "6419ac9f87ef9d808b5d5cfd3933444ca488d89447696b1af1445e9a1b7f7e04"
 
 RDEPENDS:khelpcenter = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-cborg-json-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-cborg-json-0.2.6.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-cborg-json-0.2.6.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "48d7b7567b9f29afc95fecad2a42ed9417b2ac00c6eddd4c580c724779fc5432"
 
-URI_x86_64_v2_ghc-cborg-json = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cborg-json}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json;unpack=0"
 SRC_URI[x86_64_v2_ghc-cborg-json.sha256sum] = "edded5d4e2ad14dc255ad9a7c06c6c83db8225c30ac7cc8a232576c41625fe83"
 
-URI_x86_64_v2_ghc-cborg-json-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-devel-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cborg-json-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-devel-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-cborg-json-devel.sha256sum] = "c69ef4111f4fb3982dbfed4a4ff6cf6e69e8472395d730381a7286d988bac47a"
 
-URI_x86_64_v2_ghc-cborg-json-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-doc-0.2.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cborg-json-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cborg-json-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-doc-0.2.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cborg-json-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-cborg-json-doc.sha256sum] = "a6d0dfdee2bb45e2eb209e451fb9a047cfdfc9df1a83f01eaba676e45a53c364"
 
-URI_x86_64_v2_ghc-cborg-json-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-prof-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cborg-json-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cborg-json-prof-0.2.6.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cborg-json-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-cborg-json-prof.sha256sum] = "a041854c3ea95694576e79ea074e35c8842253d8e460f4dc6a720b6bc3f893fb"
 
-URI_aarch64_ghc-cborg-json = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cborg-json}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json;unpack=0"
 SRC_URI[aarch64_ghc-cborg-json.sha256sum] = "64da88086b2c58d2864b34906eb7166ad1f8415bdfac652787c17c73d119690b"
 
-URI_aarch64_ghc-cborg-json-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-devel-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cborg-json-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-devel-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json-devel;unpack=0"
 SRC_URI[aarch64_ghc-cborg-json-devel.sha256sum] = "33ec1dec4abd41f745b0fa1c071d2436fdaa78443962446cbe7e3f4331b35863"
 
-URI_aarch64_ghc-cborg-json-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-doc-0.2.6.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cborg-json-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cborg-json-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-doc-0.2.6.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cborg-json-doc;unpack=0"
 SRC_URI[aarch64_ghc-cborg-json-doc.sha256sum] = "a16f7f5b016d9efe3c0aef09fc5d5b68ff35ee0c1b59f470382c6c608391fe83"
 
-URI_aarch64_ghc-cborg-json-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-prof-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cborg-json-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cborg-json-prof-0.2.6.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cborg-json-prof;unpack=0"
 SRC_URI[aarch64_ghc-cborg-json-prof.sha256sum] = "06851bc33f5d87169ea1ed94795cad685e7e5028d5bf0bc3e3f77b7723b894f6"
 
 RDEPENDS:ghc-cborg-json = " \

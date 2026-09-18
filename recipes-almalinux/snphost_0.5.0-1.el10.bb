@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/snphost-0.5.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/snphost-0.5.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6ad5600f039e82cbae5f3e9dabdbba10c79ec8732baf8dd0e77238f93e2996fb"
 
-URI_x86_64_v2_snphost = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/snphost-0.5.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_snphost;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_snphost}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/snphost-0.5.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_snphost;unpack=0"
 SRC_URI[x86_64_v2_snphost.sha256sum] = "9dfbea5584e909d747bcbe049802599881285733c7967b8f8bb4a1749d81866d"
 
 RDEPENDS:snphost = " \

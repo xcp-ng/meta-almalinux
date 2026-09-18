@@ -9,16 +9,13 @@ PACKAGES = " \
  powerdevil \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/powerdevil-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/powerdevil-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "90327f85b1feb769146b5878cc69e6e69516ac2b9fada50f92a4033befade5f5"
 
-URI_x86_64_v2_powerdevil = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/powerdevil-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_powerdevil;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_powerdevil}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/powerdevil-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_powerdevil;unpack=0"
 SRC_URI[x86_64_v2_powerdevil.sha256sum] = "74f4d1cdbefd8cfcbbc150daca458be67e6e8d1c696c441f0fb4b2531f1d15bd"
 
-URI_aarch64_powerdevil = "${EPEL_MIRROR}/aarch64/Packages/p/powerdevil-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_powerdevil;unpack=0"
-SRC_URI:append = " ${URI_aarch64_powerdevil}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/powerdevil-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_powerdevil;unpack=0"
 SRC_URI[aarch64_powerdevil.sha256sum] = "35153dd41d66e354074f5a41084449b32f438b7ea44042ab2b41fc2ad9923301"
 
 RDEPENDS:powerdevil = " \

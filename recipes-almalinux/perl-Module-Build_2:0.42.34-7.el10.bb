@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-Module-Build \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Build-0.42.34-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Build-0.42.34-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "691695adbbd2d5b3919864a855f7a132a8166fa4f91cd7bfce6728e7b6ae81ad"
 
-URI_x86_64_v2_perl-Module-Build = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Build-0.42.34-7.el10.noarch.rpm;name=x86_64_v2_perl-Module-Build;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Build}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Build-0.42.34-7.el10.noarch.rpm;name=x86_64_v2_perl-Module-Build;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Build.sha256sum] = "5a3ae36574d432531f5738b4db075b970b352014c25de2347c7346fa9f032ac1"
 
-URI_aarch64_perl-Module-Build = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Build-0.42.34-7.el10.noarch.rpm;name=aarch64_perl-Module-Build;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Build}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Build-0.42.34-7.el10.noarch.rpm;name=aarch64_perl-Module-Build;unpack=0"
 SRC_URI[aarch64_perl-Module-Build.sha256sum] = "5a3ae36574d432531f5738b4db075b970b352014c25de2347c7346fa9f032ac1"
 
 RDEPENDS:perl-Module-Build = " \

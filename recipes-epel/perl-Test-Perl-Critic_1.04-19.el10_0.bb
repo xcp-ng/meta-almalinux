@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Perl-Critic \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Perl-Critic-1.04-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Perl-Critic-1.04-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "587221a6e6941e351b70a64c36d3b0aef83f93d2f20e10ce9780012e295f9087"
 
-URI_x86_64_v2_perl-Test-Perl-Critic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Perl-Critic-1.04-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Perl-Critic;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Perl-Critic}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Perl-Critic-1.04-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Perl-Critic;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Perl-Critic.sha256sum] = "18363f8e1a08c8dbb788b8bd3bcb9254674ec2acbca3549d78290f41ea62ae7c"
 
-URI_aarch64_perl-Test-Perl-Critic = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Perl-Critic-1.04-19.el10_0.noarch.rpm;name=aarch64_perl-Test-Perl-Critic;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Perl-Critic}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Perl-Critic-1.04-19.el10_0.noarch.rpm;name=aarch64_perl-Test-Perl-Critic;unpack=0"
 SRC_URI[aarch64_perl-Test-Perl-Critic.sha256sum] = "f0ad7b439da86a97aa41c6a8236e9e2b55ae3eff5a0c1c0500f88839afad645e"
 
 RDEPENDS:perl-Test-Perl-Critic = " \

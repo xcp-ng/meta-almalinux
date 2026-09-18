@@ -16,74 +16,57 @@ PACKAGES = " \
  mysql8.4-test-data \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mysql8.4-8.4.8-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/mysql8.4-8.4.8-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "56abb8cb52977e7343d8a1d578aca7961a8d266d41f166a078f5b0119bc09264"
 
-URI_x86_64_v2_mysql8.4 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4.sha256sum] = "116ef4d1bc4a440c077cc29f854ed0f3672d5de8cac0b362242c2f39c00d1296"
 RPROVIDES:mysql8.4:append:x86_64_v2 = " virtual//usr/bin/mysqldump"
 
-URI_x86_64_v2_mysql8.4-common = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-common-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-common-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-common;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-common.sha256sum] = "eec88d488fd5238df4a8629a24930090d3f62d1ec05d4bc2dd3084af54600547"
 
-URI_x86_64_v2_mysql8.4-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-devel-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-devel-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-devel;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-devel.sha256sum] = "cd0bf68f03b02fcdba1613de7e95a9c38ecf95083dec1465aca7ecbe07465530"
 
-URI_x86_64_v2_mysql8.4-errmsg = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-errmsg-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-errmsg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-errmsg}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-errmsg-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-errmsg;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-errmsg.sha256sum] = "78f667c08e617ddf3b4635c7e9100167179b923f33e882643f3b2c6ed70430f8"
 
-URI_x86_64_v2_mysql8.4-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-libs-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-libs-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-libs;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-libs.sha256sum] = "7482a84e6790aefdfcef79edb4489e45c0c974ee647c2f40e89a018965c0989e"
 
-URI_x86_64_v2_mysql8.4-server = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-server-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/mysql8.4-server-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-server;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-server.sha256sum] = "ab448e9cb825dac6d208798ffd6376521163a2c4a17c6dc9cbded40b7592e862"
 
-URI_x86_64_v2_mysql8.4-test = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-test-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-test;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-test}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-test-8.4.8-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_mysql8.4-test;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-test.sha256sum] = "42a2b89ec9f4c48c92c75973b3d69141f55480c1c562ec47dd4ee6e7dce09db6"
 
-URI_x86_64_v2_mysql8.4-test-data = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-test-data-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-test-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql8.4-test-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mysql8.4-test-data-8.4.8-1.el10_1.noarch.rpm;name=x86_64_v2_mysql8.4-test-data;unpack=0"
 SRC_URI[x86_64_v2_mysql8.4-test-data.sha256sum] = "a7d2e5dbb29aab6cd92c703b1768a5b6fc58dbb66692d5f75fb0809936e4b1ba"
 
-URI_aarch64_mysql8.4 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4;unpack=0"
 SRC_URI[aarch64_mysql8.4.sha256sum] = "efc7d6341b40bf4a51f0ec7ab4fa18d0762f4afb4fd96da4f7fd60243eb9092d"
 RPROVIDES:mysql8.4:append:aarch64 = " virtual//usr/bin/mysqldump"
 
-URI_aarch64_mysql8.4-common = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-common-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-common-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-common;unpack=0"
 SRC_URI[aarch64_mysql8.4-common.sha256sum] = "eec88d488fd5238df4a8629a24930090d3f62d1ec05d4bc2dd3084af54600547"
 
-URI_aarch64_mysql8.4-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-devel-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-devel-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-devel;unpack=0"
 SRC_URI[aarch64_mysql8.4-devel.sha256sum] = "d8befee261a866613e808629798a3257eecc81d2f1b0334716decaa79779264d"
 
-URI_aarch64_mysql8.4-errmsg = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-errmsg-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-errmsg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-errmsg}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-errmsg-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-errmsg;unpack=0"
 SRC_URI[aarch64_mysql8.4-errmsg.sha256sum] = "78f667c08e617ddf3b4635c7e9100167179b923f33e882643f3b2c6ed70430f8"
 
-URI_aarch64_mysql8.4-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-libs-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-libs-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-libs;unpack=0"
 SRC_URI[aarch64_mysql8.4-libs.sha256sum] = "3659bed559cea015c1dddd2c7b383529c16241c8f34a8e05aa8ab08b58573742"
 
-URI_aarch64_mysql8.4-server = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-server-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/mysql8.4-server-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-server;unpack=0"
 SRC_URI[aarch64_mysql8.4-server.sha256sum] = "e176a12750d4ee14c3cccf39ee47b5005e47d602941c5cad2e841293ee64ecb0"
 
-URI_aarch64_mysql8.4-test = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-test-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-test;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-test}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-test-8.4.8-1.el10_1.aarch64.rpm;name=aarch64_mysql8.4-test;unpack=0"
 SRC_URI[aarch64_mysql8.4-test.sha256sum] = "1c21c6354b8720028ecc2120b3015765d7fd14da627e783244ec00a0100c640c"
 
-URI_aarch64_mysql8.4-test-data = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-test-data-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-test-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql8.4-test-data}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mysql8.4-test-data-8.4.8-1.el10_1.noarch.rpm;name=aarch64_mysql8.4-test-data;unpack=0"
 SRC_URI[aarch64_mysql8.4-test-data.sha256sum] = "a7d2e5dbb29aab6cd92c703b1768a5b6fc58dbb66692d5f75fb0809936e4b1ba"
 
 RDEPENDS:mysql8.4 = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-wai-extra-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-wai-extra-3.1.15-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-wai-extra-3.1.15-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a78e96b761ec420b3ffdb130f33bf34e48dfc7cdf5c2fe86ee24f968eb6f4e5b"
 
-URI_x86_64_v2_ghc-wai-extra = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-extra}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-extra.sha256sum] = "99f1dc9d044d8d4cf9c60dc2124fe6f71acc32a64684980b442f0241eb231f7d"
 
-URI_x86_64_v2_ghc-wai-extra-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-devel-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-extra-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-devel-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-extra-devel.sha256sum] = "4b0189ae1be846b7c83fbc7f035ddd4375cb538113131db050c4a12bf3b1721a"
 
-URI_x86_64_v2_ghc-wai-extra-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-doc-3.1.15-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wai-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-extra-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-doc-3.1.15-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wai-extra-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-extra-doc.sha256sum] = "dd70f2bc18d807f8884fc0c6264ebebf1b216fbdeffb09a34fabe78201363f55"
 
-URI_x86_64_v2_ghc-wai-extra-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-prof-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-extra-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-extra-prof-3.1.15-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-extra-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-extra-prof.sha256sum] = "20357e2460953ebfd0914236da0c3f3c77e64c18cd32a73404e0f2d93ac4f2f2"
 
-URI_aarch64_ghc-wai-extra = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-extra}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra;unpack=0"
 SRC_URI[aarch64_ghc-wai-extra.sha256sum] = "8a1df7be3007c95315f65612073907162484fde0df733e1d51f1567c9d1e719f"
 
-URI_aarch64_ghc-wai-extra-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-devel-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-extra-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-devel-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra-devel;unpack=0"
 SRC_URI[aarch64_ghc-wai-extra-devel.sha256sum] = "06e6a67d7a02f89c94b2371b20360ca7e1bc6d2818ac751174f01f96fdd1fb2d"
 
-URI_aarch64_ghc-wai-extra-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-doc-3.1.15-1.el10_0.noarch.rpm;name=aarch64_ghc-wai-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-extra-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-doc-3.1.15-1.el10_0.noarch.rpm;name=aarch64_ghc-wai-extra-doc;unpack=0"
 SRC_URI[aarch64_ghc-wai-extra-doc.sha256sum] = "02f49d40e3d9f654cc91beee8e74e350bf44f478cddb129c91bc6c854f577bd0"
 
-URI_aarch64_ghc-wai-extra-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-prof-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-extra-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-extra-prof-3.1.15-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-extra-prof;unpack=0"
 SRC_URI[aarch64_ghc-wai-extra-prof.sha256sum] = "8c76815c7336ed8b25c887fd9193e7a54a0672609892c49cb009241896925029"
 
 RDEPENDS:ghc-wai-extra = " \

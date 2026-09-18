@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-BSD-Resource \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-BSD-Resource-1.291.100-29.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-BSD-Resource-1.291.100-29.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "683073c42419fbeacc962bd1780c3432497cbb205a430110f5f95f47b387a2fb"
 
-URI_x86_64_v2_perl-BSD-Resource = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-BSD-Resource-1.291.100-29.el10.x86_64_v2.rpm;name=x86_64_v2_perl-BSD-Resource;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-BSD-Resource}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-BSD-Resource-1.291.100-29.el10.x86_64_v2.rpm;name=x86_64_v2_perl-BSD-Resource;unpack=0"
 SRC_URI[x86_64_v2_perl-BSD-Resource.sha256sum] = "9a4446459869f0421897d581fcdb04d8502948dccc37b616e3de9643e63e724b"
 
-URI_aarch64_perl-BSD-Resource = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-BSD-Resource-1.291.100-29.el10.aarch64.rpm;name=aarch64_perl-BSD-Resource;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-BSD-Resource}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-BSD-Resource-1.291.100-29.el10.aarch64.rpm;name=aarch64_perl-BSD-Resource;unpack=0"
 SRC_URI[aarch64_perl-BSD-Resource.sha256sum] = "dcee264164b701950139dbaafc8655e20e326c3bfb69d7e6e7b723ee5a02d9ab"
 
 RDEPENDS:perl-BSD-Resource = " \

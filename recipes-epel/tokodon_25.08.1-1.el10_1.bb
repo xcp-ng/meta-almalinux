@@ -9,16 +9,13 @@ PACKAGES = " \
  tokodon \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/t/tokodon-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/t/tokodon-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "367a19f93c6f16a93a710cb94e630dd7a68ba3b54babe311f455e550c1629ce9"
 
-URI_x86_64_v2_tokodon = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/tokodon-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_tokodon;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_tokodon}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/tokodon-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_tokodon;unpack=0"
 SRC_URI[x86_64_v2_tokodon.sha256sum] = "7ac9d16dbd6f85fd9f6e910975fee8af78e4aeb1173e250affbb58839a0d9ce4"
 
-URI_aarch64_tokodon = "${EPEL_MIRROR}/aarch64/Packages/t/tokodon-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_tokodon;unpack=0"
-SRC_URI:append = " ${URI_aarch64_tokodon}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/t/tokodon-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_tokodon;unpack=0"
 SRC_URI[aarch64_tokodon.sha256sum] = "85c576901f073f881427986313067d31af8a760c3030f51fdc09cd8dde7c8a11"
 
 RDEPENDS:tokodon = " \

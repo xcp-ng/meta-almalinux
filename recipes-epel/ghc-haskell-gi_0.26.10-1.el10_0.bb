@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-haskell-gi-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-haskell-gi-0.26.10-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-haskell-gi-0.26.10-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "739480fdd76a7d19258db445e47c20678ba2d097ef3c0f5d9210153a5fae1553"
 
-URI_x86_64_v2_ghc-haskell-gi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haskell-gi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi;unpack=0"
 SRC_URI[x86_64_v2_ghc-haskell-gi.sha256sum] = "da2e0fcccbdbedf4e10ea5cd5a0ce567efe04c545908955f7bfdfdf137d49bba"
 
-URI_x86_64_v2_ghc-haskell-gi-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-devel-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haskell-gi-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-devel-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-haskell-gi-devel.sha256sum] = "92ce2fab3ef0eed24a1143fbb0df144ddba5a528f38f05441ea63eed3c394de3"
 
-URI_x86_64_v2_ghc-haskell-gi-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-doc-0.26.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-haskell-gi-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haskell-gi-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-doc-0.26.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-haskell-gi-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-haskell-gi-doc.sha256sum] = "d3fc57219ce09f0b867dc640eee4dc66853452c949c35ec9dd8659c635483961"
 
-URI_x86_64_v2_ghc-haskell-gi-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-prof-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haskell-gi-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haskell-gi-prof-0.26.10-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haskell-gi-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-haskell-gi-prof.sha256sum] = "cd43204b97b094bf27c5756d37005fd0d4d3622f3d2480d9fa7006d0b6cdb8c9"
 
-URI_aarch64_ghc-haskell-gi = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haskell-gi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi;unpack=0"
 SRC_URI[aarch64_ghc-haskell-gi.sha256sum] = "cca0897c2bfe5d3cdedc61a33998f38e51990222a3144b38cc9ae7b864dfb424"
 
-URI_aarch64_ghc-haskell-gi-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-devel-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haskell-gi-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-devel-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi-devel;unpack=0"
 SRC_URI[aarch64_ghc-haskell-gi-devel.sha256sum] = "70b3d4e57016a0270708b5f91adb77a7791f1fe443c0a3f9d53ffa73f975d148"
 
-URI_aarch64_ghc-haskell-gi-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-doc-0.26.10-1.el10_0.noarch.rpm;name=aarch64_ghc-haskell-gi-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haskell-gi-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-doc-0.26.10-1.el10_0.noarch.rpm;name=aarch64_ghc-haskell-gi-doc;unpack=0"
 SRC_URI[aarch64_ghc-haskell-gi-doc.sha256sum] = "cac527ccbab3e8e380c73e6987fbe194f34848b01dc14fcf3ebf049e77730cfd"
 
-URI_aarch64_ghc-haskell-gi-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-prof-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haskell-gi-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haskell-gi-prof-0.26.10-1.el10_0.aarch64.rpm;name=aarch64_ghc-haskell-gi-prof;unpack=0"
 SRC_URI[aarch64_ghc-haskell-gi-prof.sha256sum] = "c89cdb92161c631899339744cc1c16409dbe5235f15ef90b8657d30e7bb7c7b8"
 
 RDEPENDS:ghc-haskell-gi = " \

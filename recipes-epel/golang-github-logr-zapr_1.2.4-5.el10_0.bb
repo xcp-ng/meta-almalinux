@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-logr-zapr-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-logr-zapr-1.2.4-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-logr-zapr-1.2.4-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c93e2af350206b8c8aaa1131eaf68ac8fda722573cdcde4d36203b7a0078872c"
 
-URI_x86_64_v2_golang-github-logr-zapr-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-logr-zapr-devel-1.2.4-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-logr-zapr-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-logr-zapr-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-logr-zapr-devel-1.2.4-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-logr-zapr-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-logr-zapr-devel.sha256sum] = "d08f0ea5d2e49c2a30b0eb2ef7a7234df049ac17b1d1a2308d8b8a2a3fe5dd33"
 
-URI_aarch64_golang-github-logr-zapr-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-logr-zapr-devel-1.2.4-5.el10_0.noarch.rpm;name=aarch64_golang-github-logr-zapr-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-logr-zapr-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-logr-zapr-devel-1.2.4-5.el10_0.noarch.rpm;name=aarch64_golang-github-logr-zapr-devel;unpack=0"
 SRC_URI[aarch64_golang-github-logr-zapr-devel.sha256sum] = "6ab10aeab90521dccb7b404e8b6109eb2930a6726c3bd43ae62e28e1cd336c0d"
 
 RDEPENDS:golang-github-logr-zapr-devel = " \

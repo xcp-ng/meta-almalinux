@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-w3lib \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-w3lib-2.3.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-w3lib-2.3.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3660f08cef7a1a06ce32d4d5116ede80fe254f48bc0492756ac9cc711a151314"
 
-URI_x86_64_v2_python3-w3lib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-w3lib-2.3.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-w3lib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-w3lib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-w3lib-2.3.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-w3lib;unpack=0"
 SRC_URI[x86_64_v2_python3-w3lib.sha256sum] = "0a187914566d5d9d504e7cf65db0076ea0a6bc60278ef023df4c8fbb75d4092d"
 
-URI_aarch64_python3-w3lib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-w3lib-2.3.1-1.el10_1.noarch.rpm;name=aarch64_python3-w3lib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-w3lib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-w3lib-2.3.1-1.el10_1.noarch.rpm;name=aarch64_python3-w3lib;unpack=0"
 SRC_URI[aarch64_python3-w3lib.sha256sum] = "66b05483e90da0ebc151d648705abb9007ba4bb00acca9fe831e03223dadf285"
 
 RDEPENDS:python3-w3lib = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-typogrify \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-typogrify-2.0.7-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-typogrify-2.0.7-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9dda318af622009d441adf961c6e9dd33e64d214d1ac953eb5fcfb6daf093f0f"
 
-URI_x86_64_v2_python3-typogrify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-typogrify-2.0.7-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-typogrify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-typogrify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-typogrify-2.0.7-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-typogrify;unpack=0"
 SRC_URI[x86_64_v2_python3-typogrify.sha256sum] = "e9ffa62333291021c7beab51b10f1010848e63cddaa72065e6e477422190712b"
 
-URI_aarch64_python3-typogrify = "${EPEL_MIRROR}/aarch64/Packages/p/python3-typogrify-2.0.7-22.el10_0.noarch.rpm;name=aarch64_python3-typogrify;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-typogrify}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-typogrify-2.0.7-22.el10_0.noarch.rpm;name=aarch64_python3-typogrify;unpack=0"
 SRC_URI[aarch64_python3-typogrify.sha256sum] = "c46db0c64a595ba202129450e8a8ada366432db008681776d9102058e1f5bb5c"
 
 RDEPENDS:python3-typogrify = " \

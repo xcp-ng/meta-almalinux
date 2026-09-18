@@ -9,16 +9,13 @@ PACKAGES = " \
  swift-lang \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/swift-lang-5.8.1-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/swift-lang-5.8.1-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "05d8552e497911463cc7673dece3aca1a1f03ee3429f463f4615f25d160ff532"
 
-URI_x86_64_v2_swift-lang = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/swift-lang-5.8.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_swift-lang;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_swift-lang}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/swift-lang-5.8.1-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_swift-lang;unpack=0"
 SRC_URI[x86_64_v2_swift-lang.sha256sum] = "a473cc4c5caec98b4c0fd93bda55a0541dc7aa373563231f059ccc6327938390"
 
-URI_aarch64_swift-lang = "${EPEL_MIRROR}/aarch64/Packages/s/swift-lang-5.8.1-6.el10_0.aarch64.rpm;name=aarch64_swift-lang;unpack=0"
-SRC_URI:append = " ${URI_aarch64_swift-lang}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/swift-lang-5.8.1-6.el10_0.aarch64.rpm;name=aarch64_swift-lang;unpack=0"
 SRC_URI[aarch64_swift-lang.sha256sum] = "cf85a982fa3c194056ff18a0765ed96a44c80c77126adcec2d5d23504a05fbb3"
 
 RDEPENDS:swift-lang = " \

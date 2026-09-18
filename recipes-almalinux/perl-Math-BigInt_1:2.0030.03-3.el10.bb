@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-Math-BigInt \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Math-BigInt-2.0030.03-3.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Math-BigInt-2.0030.03-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1bc21adb0e89e5cc63f8215dfb362745ba0cf9c2115309a7a32580ba0f74c816"
 
-URI_x86_64_v2_perl-Math-BigInt = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Math-BigInt-2.0030.03-3.el10.noarch.rpm;name=x86_64_v2_perl-Math-BigInt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Math-BigInt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Math-BigInt-2.0030.03-3.el10.noarch.rpm;name=x86_64_v2_perl-Math-BigInt;unpack=0"
 SRC_URI[x86_64_v2_perl-Math-BigInt.sha256sum] = "02876f2380f250e93434934b2e57ddc0b29a744039ab8906c96c25625ac6c076"
 
-URI_aarch64_perl-Math-BigInt = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Math-BigInt-2.0030.03-3.el10.noarch.rpm;name=aarch64_perl-Math-BigInt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Math-BigInt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Math-BigInt-2.0030.03-3.el10.noarch.rpm;name=aarch64_perl-Math-BigInt;unpack=0"
 SRC_URI[aarch64_perl-Math-BigInt.sha256sum] = "02876f2380f250e93434934b2e57ddc0b29a744039ab8906c96c25625ac6c076"
 
 RDEPENDS:perl-Math-BigInt = " \

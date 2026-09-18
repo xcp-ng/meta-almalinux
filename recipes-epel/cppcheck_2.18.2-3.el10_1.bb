@@ -11,32 +11,25 @@ PACKAGES = " \
  cppcheck-htmlreport \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/cppcheck-2.18.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cppcheck-2.18.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5eed7bc4db75f6c7bb8ba26c081433edbdb5ca4719a1bcc2d4436978b48662db"
 
-URI_x86_64_v2_cppcheck = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cppcheck}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck;unpack=0"
 SRC_URI[x86_64_v2_cppcheck.sha256sum] = "15f12e7ccaffa6d6bbcffed2fe54968f78dde1a7ac3d8e4aaa8bffb0fbfa367e"
 
-URI_x86_64_v2_cppcheck-gui = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-gui-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck-gui;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cppcheck-gui}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-gui-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck-gui;unpack=0"
 SRC_URI[x86_64_v2_cppcheck-gui.sha256sum] = "285fff9cfaaf09dbd04cb5b3d7936dc92c019829662994bc345878162cf4904d"
 
-URI_x86_64_v2_cppcheck-htmlreport = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-htmlreport-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck-htmlreport;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cppcheck-htmlreport}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cppcheck-htmlreport-2.18.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cppcheck-htmlreport;unpack=0"
 SRC_URI[x86_64_v2_cppcheck-htmlreport.sha256sum] = "fb054bac1e1eb35fd09bcf2f31754a577c0c4f1c8adf4eceec5b7d0660e35a3e"
 
-URI_aarch64_cppcheck = "${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cppcheck}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck;unpack=0"
 SRC_URI[aarch64_cppcheck.sha256sum] = "4a506a1cd3c4573136327b537dce8d747cc7f29b1f6868fd7446218e042f2ec9"
 
-URI_aarch64_cppcheck-gui = "${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-gui-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck-gui;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cppcheck-gui}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-gui-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck-gui;unpack=0"
 SRC_URI[aarch64_cppcheck-gui.sha256sum] = "33e9442d8dd9c6202c13542d08ea3713e5f707df650b87377bbc05cc06b7a0c0"
 
-URI_aarch64_cppcheck-htmlreport = "${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-htmlreport-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck-htmlreport;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cppcheck-htmlreport}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cppcheck-htmlreport-2.18.2-3.el10_1.aarch64.rpm;name=aarch64_cppcheck-htmlreport;unpack=0"
 SRC_URI[aarch64_cppcheck-htmlreport.sha256sum] = "230247d1ca6724dd513ba7f8e2fb2ee1d2f29c48d729b98d964a84c3ec45fa8f"
 
 RDEPENDS:cppcheck = " \

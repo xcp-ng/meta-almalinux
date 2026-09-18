@@ -10,24 +10,19 @@ PACKAGES = " \
  korganizer-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/korganizer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/korganizer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b84714f6cc0badb732562ec4747dfaccdfa56cd1c6c9d92a3bf527699d456712"
 
-URI_x86_64_v2_korganizer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/korganizer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_korganizer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_korganizer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/korganizer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_korganizer;unpack=0"
 SRC_URI[x86_64_v2_korganizer.sha256sum] = "85671e7085540f00a0266032f927638c41a0f4d5e28caf1a7eaf69ac2e5849b6"
 
-URI_x86_64_v2_korganizer-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/korganizer-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_korganizer-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_korganizer-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/korganizer-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_korganizer-libs;unpack=0"
 SRC_URI[x86_64_v2_korganizer-libs.sha256sum] = "19489d3d2681243639901edae8e761142822df7b573a813d048dfab2dedcb3de"
 
-URI_aarch64_korganizer = "${EPEL_MIRROR}/aarch64/Packages/k/korganizer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_korganizer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_korganizer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/korganizer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_korganizer;unpack=0"
 SRC_URI[aarch64_korganizer.sha256sum] = "d7477c9bc39969465b62aec4da1c6dc29b9ba6c934a6a316d1ac7beb70aba271"
 
-URI_aarch64_korganizer-libs = "${EPEL_MIRROR}/aarch64/Packages/k/korganizer-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_korganizer-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_korganizer-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/korganizer-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_korganizer-libs;unpack=0"
 SRC_URI[aarch64_korganizer-libs.sha256sum] = "66bd4abcc1f0973e6f8bc2136853038d6eab2c7ad9ae1ca34efe333afda69da9"
 
 RDEPENDS:korganizer = " \

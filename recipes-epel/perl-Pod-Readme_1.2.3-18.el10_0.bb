@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Pod-Readme \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Readme-1.2.3-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Readme-1.2.3-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3ae8c0c05c5b227cd4d1859de4dd1b57093b219ba7f3f03a612c7aba573acb3c"
 
-URI_x86_64_v2_perl-Pod-Readme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Readme-1.2.3-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Readme;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Readme}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Readme-1.2.3-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Readme;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Readme.sha256sum] = "44490f4e522da60a5fb8313804b9abbd1e345cc315b91a28d8c8c71b12f74691"
 
-URI_aarch64_perl-Pod-Readme = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Readme-1.2.3-18.el10_0.noarch.rpm;name=aarch64_perl-Pod-Readme;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Readme}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Readme-1.2.3-18.el10_0.noarch.rpm;name=aarch64_perl-Pod-Readme;unpack=0"
 SRC_URI[aarch64_perl-Pod-Readme.sha256sum] = "8169cb15a9f6962ea5ffdf5762d55a620f3130fdd3ab562aa5898afc6439ba60"
 
 RDEPENDS:perl-Pod-Readme = " \

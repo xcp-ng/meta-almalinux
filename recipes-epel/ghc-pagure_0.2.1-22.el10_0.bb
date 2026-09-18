@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-pagure-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-pagure-0.2.1-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-pagure-0.2.1-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "45caa6429abcc4c1d1f03b50575dda5ab14581fc37e7a446b97c0722526517ad"
 
-URI_x86_64_v2_ghc-pagure = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pagure}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure;unpack=0"
 SRC_URI[x86_64_v2_ghc-pagure.sha256sum] = "8e5837844ab23fba169f53660bf31e06a34ff79d5a3c48d0452b182e80f10c2c"
 
-URI_x86_64_v2_ghc-pagure-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-devel-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pagure-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-devel-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-pagure-devel.sha256sum] = "8e9b9eb36c07246447000c9efc1b65550bb689b69e9e8581651b48fcbe3edec3"
 
-URI_x86_64_v2_ghc-pagure-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-doc-0.2.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-pagure-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pagure-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-doc-0.2.1-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-pagure-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-pagure-doc.sha256sum] = "6c239ce5e3fd7e042d4d74d123a6828dcb0b28e6576edba320b039f130633609"
 
-URI_x86_64_v2_ghc-pagure-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-prof-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pagure-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pagure-prof-0.2.1-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pagure-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-pagure-prof.sha256sum] = "62851c4f847b64930489c56c1983d7bf2f5f7a1b19b3c31ee0b6ccd71e45d94f"
 
-URI_aarch64_ghc-pagure = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pagure}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure;unpack=0"
 SRC_URI[aarch64_ghc-pagure.sha256sum] = "8bde96ddafbf9d568f86cd986e34d7d6ffd106a56578bcb448dc80821c44da47"
 
-URI_aarch64_ghc-pagure-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-devel-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pagure-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-devel-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure-devel;unpack=0"
 SRC_URI[aarch64_ghc-pagure-devel.sha256sum] = "f93ccca5f3dd05ab703114c6825fd97b48c1f71d7ae4402b867fc561cfd0a3dc"
 
-URI_aarch64_ghc-pagure-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-doc-0.2.1-22.el10_0.noarch.rpm;name=aarch64_ghc-pagure-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pagure-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-doc-0.2.1-22.el10_0.noarch.rpm;name=aarch64_ghc-pagure-doc;unpack=0"
 SRC_URI[aarch64_ghc-pagure-doc.sha256sum] = "b5dd9602f76f7a7a344ec13f3fad40000154b3e5199411b4fc1d767ead21badd"
 
-URI_aarch64_ghc-pagure-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-prof-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pagure-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pagure-prof-0.2.1-22.el10_0.aarch64.rpm;name=aarch64_ghc-pagure-prof;unpack=0"
 SRC_URI[aarch64_ghc-pagure-prof.sha256sum] = "ac5b0ae1f70a6117b25b360fd1ef5d62afa21a35cf26aa60faabd2c7405aca9f"
 
 RDEPENDS:ghc-pagure = " \

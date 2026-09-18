@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/intel-lpmd-0.0.9-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/intel-lpmd-0.0.9-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1cf739bb1c5198e51ceb6d278ed3ccfb60e7b43defab4cc72f36e78f4444502e"
 
-URI_x86_64_v2_intel-lpmd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/intel-lpmd-0.0.9-1.el10.x86_64_v2.rpm;name=x86_64_v2_intel-lpmd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_intel-lpmd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/intel-lpmd-0.0.9-1.el10.x86_64_v2.rpm;name=x86_64_v2_intel-lpmd;unpack=0"
 SRC_URI[x86_64_v2_intel-lpmd.sha256sum] = "7d57604c1e2e4fc321669a6116495408c4e9c5c483792a88e1877f00026e2bc9"
 
 RDEPENDS:intel-lpmd = " \

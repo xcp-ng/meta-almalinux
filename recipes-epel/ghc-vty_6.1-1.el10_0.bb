@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-vty-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-vty-6.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-vty-6.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4bffa96aa82e58e497a68298f33d5b99c5d2b319a5736dc192bccb03211ec5d8"
 
-URI_x86_64_v2_ghc-vty = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-vty}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty;unpack=0"
 SRC_URI[x86_64_v2_ghc-vty.sha256sum] = "f033cced2064c6889cda914139e396469ce2e207ebd7775ea7227be8378b6597"
 
-URI_x86_64_v2_ghc-vty-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-devel-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-vty-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-devel-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-vty-devel.sha256sum] = "2423761e9c9b99807d5e5bb786fbe61b03543c61f09d55b8d4c0c6662d1b40ef"
 
-URI_x86_64_v2_ghc-vty-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-doc-6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-vty-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-vty-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-doc-6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-vty-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-vty-doc.sha256sum] = "61994ece5971a9157f70b167245e6a79f6b4df9623d5c524797f18b4dc14ff9a"
 
-URI_x86_64_v2_ghc-vty-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-prof-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-vty-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-vty-prof-6.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-vty-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-vty-prof.sha256sum] = "a5cb53b63bd183eb5ed1fec2e5fd59bfa22bf79781284f4b9a20f105e475fc2b"
 
-URI_aarch64_ghc-vty = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-vty}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty;unpack=0"
 SRC_URI[aarch64_ghc-vty.sha256sum] = "97908d1abe795929270c1c732558846a9ddbd747d2b1a1ef7e5258976e0ab183"
 
-URI_aarch64_ghc-vty-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-devel-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-vty-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-devel-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty-devel;unpack=0"
 SRC_URI[aarch64_ghc-vty-devel.sha256sum] = "a92bffe812244b83d7d3d58d8bfd559283969639f8d6940986a1ef9221bea341"
 
-URI_aarch64_ghc-vty-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-doc-6.1-1.el10_0.noarch.rpm;name=aarch64_ghc-vty-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-vty-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-doc-6.1-1.el10_0.noarch.rpm;name=aarch64_ghc-vty-doc;unpack=0"
 SRC_URI[aarch64_ghc-vty-doc.sha256sum] = "61ba85379905ef770b43f0abf66fd72cb36ff55ef5bad6a7d26a29c83a7dc658"
 
-URI_aarch64_ghc-vty-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-prof-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-vty-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-vty-prof-6.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-vty-prof;unpack=0"
 SRC_URI[aarch64_ghc-vty-prof.sha256sum] = "7d2c17c8d2269319b5d275d68bc577e46d0f6df966b2966a0f4991b93ca9fa7d"
 
 RDEPENDS:ghc-vty = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  keditbookmarks-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/keditbookmarks-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/keditbookmarks-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "45d37ec33954c5825ca08b6e01e217c2aebc61ea325a52e3369ae6cd90af5a08"
 
-URI_x86_64_v2_keditbookmarks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keditbookmarks-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keditbookmarks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_keditbookmarks}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keditbookmarks-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keditbookmarks;unpack=0"
 SRC_URI[x86_64_v2_keditbookmarks.sha256sum] = "02f1517cb3d13adfc560a31a66b4336ce2df647f918c2eb820ee3840ad570cb8"
 
-URI_x86_64_v2_keditbookmarks-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keditbookmarks-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keditbookmarks-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_keditbookmarks-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/keditbookmarks-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_keditbookmarks-libs;unpack=0"
 SRC_URI[x86_64_v2_keditbookmarks-libs.sha256sum] = "772d02e523e1107463cc81699cbd758064f442ae2e23b5fd5748349980378882"
 
-URI_aarch64_keditbookmarks = "${EPEL_MIRROR}/aarch64/Packages/k/keditbookmarks-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keditbookmarks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_keditbookmarks}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/keditbookmarks-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keditbookmarks;unpack=0"
 SRC_URI[aarch64_keditbookmarks.sha256sum] = "f7a073415e87b4e273a435601f36da2e76737147b19eba6485512268e6e3018f"
 
-URI_aarch64_keditbookmarks-libs = "${EPEL_MIRROR}/aarch64/Packages/k/keditbookmarks-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keditbookmarks-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_keditbookmarks-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/keditbookmarks-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_keditbookmarks-libs;unpack=0"
 SRC_URI[aarch64_keditbookmarks-libs.sha256sum] = "52496d107b7e9ce17013598c6d4494f20b82ddcd1b69b51cce693389ffffe79c"
 
 RDEPENDS:keditbookmarks = " \

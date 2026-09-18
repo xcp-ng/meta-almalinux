@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-SSLGlue \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SSLGlue-1.058-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Net-SSLGlue-1.058-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "61bd6080b545186af68c0ecb0b81979f68fe7ff0800404cd8bf11d8ed031a652"
 
-URI_x86_64_v2_perl-Net-SSLGlue = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SSLGlue-1.058-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-SSLGlue;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-SSLGlue}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-SSLGlue-1.058-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-SSLGlue;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-SSLGlue.sha256sum] = "85374195ae42cbde3652e12608679ee52028c86068256bac90d81e41516b25d9"
 
-URI_aarch64_perl-Net-SSLGlue = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SSLGlue-1.058-25.el10_0.noarch.rpm;name=aarch64_perl-Net-SSLGlue;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-SSLGlue}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-SSLGlue-1.058-25.el10_0.noarch.rpm;name=aarch64_perl-Net-SSLGlue;unpack=0"
 SRC_URI[aarch64_perl-Net-SSLGlue.sha256sum] = "eade3e0bbf39e2081cbfd4673892e457322c918cb71e9bedbdb99315e676fdab"
 
 RDEPENDS:perl-Net-SSLGlue = " \

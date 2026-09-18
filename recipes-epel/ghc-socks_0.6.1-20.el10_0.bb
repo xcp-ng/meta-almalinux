@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-socks-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-socks-0.6.1-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-socks-0.6.1-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "44b0f6ac71d183a2a3a427e69f41f866d599404e5f903cce4e65393cecd72cc3"
 
-URI_x86_64_v2_ghc-socks = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-socks}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks;unpack=0"
 SRC_URI[x86_64_v2_ghc-socks.sha256sum] = "5526aa962d0c769bbcb859d0ef324cc3238013cf0d16fa5a334f5d089e89df49"
 
-URI_x86_64_v2_ghc-socks-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-devel-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-socks-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-devel-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-socks-devel.sha256sum] = "623692960bfb57e2ec601ac3a0d437d5096a885ad771290c9c45ed9094b97288"
 
-URI_x86_64_v2_ghc-socks-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-doc-0.6.1-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-socks-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-socks-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-doc-0.6.1-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-socks-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-socks-doc.sha256sum] = "8e2142e71d6bfd4f1c2196d343643d0634199c4d91278eda4b2faf1c28cc79a5"
 
-URI_x86_64_v2_ghc-socks-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-prof-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-socks-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-socks-prof-0.6.1-20.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-socks-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-socks-prof.sha256sum] = "40715aea04c32f70dc30dabd4bae252ff9327ce12dd33c7353051d4eff499b25"
 
-URI_aarch64_ghc-socks = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-socks}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks;unpack=0"
 SRC_URI[aarch64_ghc-socks.sha256sum] = "9680f3556171e2fcde1ccb47d45a7fc06dd3d2b9950d21c2f3c453069b355d3f"
 
-URI_aarch64_ghc-socks-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-devel-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-socks-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-devel-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks-devel;unpack=0"
 SRC_URI[aarch64_ghc-socks-devel.sha256sum] = "76823bcbf66490a561edcdff35cb0475bf3a030a87a45f4d7bdab41c5570f997"
 
-URI_aarch64_ghc-socks-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-doc-0.6.1-20.el10_0.noarch.rpm;name=aarch64_ghc-socks-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-socks-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-doc-0.6.1-20.el10_0.noarch.rpm;name=aarch64_ghc-socks-doc;unpack=0"
 SRC_URI[aarch64_ghc-socks-doc.sha256sum] = "4bac301949b48e351a5714cf90c4fa727a23bbc95bef7e26920c2257163b3a0b"
 
-URI_aarch64_ghc-socks-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-prof-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-socks-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-socks-prof-0.6.1-20.el10_0.aarch64.rpm;name=aarch64_ghc-socks-prof;unpack=0"
 SRC_URI[aarch64_ghc-socks-prof.sha256sum] = "787f4a16d62c5ff761c011802e081b4002cc46b3263bdf7f1693f9fd8a523634"
 
 RDEPENDS:ghc-socks = " \

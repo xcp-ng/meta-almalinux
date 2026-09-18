@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-hpack \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-hpack-4.0.0-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hpack-4.0.0-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a87ea20c770d830050109df876a0342fbea14767c037c877c67f0d0bafa2bd79"
 
-URI_x86_64_v2_python-hpack-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hpack-doc-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hpack-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-hpack-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hpack-doc-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hpack-doc;unpack=0"
 SRC_URI[x86_64_v2_python-hpack-doc.sha256sum] = "5f683238fcae97d4379c405bc4c46a8aa8495107bb3ef27d6eab7fc06b884d22"
 
-URI_x86_64_v2_python3-hpack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hpack-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hpack;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hpack}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hpack-4.0.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hpack;unpack=0"
 SRC_URI[x86_64_v2_python3-hpack.sha256sum] = "0cdd5398082fb11bf1de46c2fb57333c557f062949c9cc6bb8372c98a2dfc6b3"
 
-URI_aarch64_python-hpack-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hpack-doc-4.0.0-20.el10_0.noarch.rpm;name=aarch64_python-hpack-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-hpack-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-hpack-doc-4.0.0-20.el10_0.noarch.rpm;name=aarch64_python-hpack-doc;unpack=0"
 SRC_URI[aarch64_python-hpack-doc.sha256sum] = "401140fa8dc718097a31d4e1e73aa5b4694b9c9588eba16c686c371191b63f1b"
 
-URI_aarch64_python3-hpack = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hpack-4.0.0-20.el10_0.noarch.rpm;name=aarch64_python3-hpack;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hpack}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hpack-4.0.0-20.el10_0.noarch.rpm;name=aarch64_python3-hpack;unpack=0"
 SRC_URI[aarch64_python3-hpack.sha256sum] = "220bb042270b17f3217d8bb6f34abea292dae831425b43cc188c040cf1993771"
 
 RDEPENDS:python-hpack-doc = " \

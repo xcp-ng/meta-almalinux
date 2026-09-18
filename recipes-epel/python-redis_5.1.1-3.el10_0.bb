@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-redis \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-redis-5.1.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-redis-5.1.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4fa4dd6a41201fb7d20f4d3cf61d9bcc7279bb3070a383b9300c612f8e81ee27"
 
-URI_x86_64_v2_python3-redis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-redis-5.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-redis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-redis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-redis-5.1.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-redis;unpack=0"
 SRC_URI[x86_64_v2_python3-redis.sha256sum] = "11add13ba38bbc9b3d61cda08d5d8297a5cf96533d47d7d0e1394cce3194f1ee"
 
-URI_aarch64_python3-redis = "${EPEL_MIRROR}/aarch64/Packages/p/python3-redis-5.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-redis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-redis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-redis-5.1.1-3.el10_0.noarch.rpm;name=aarch64_python3-redis;unpack=0"
 SRC_URI[aarch64_python3-redis.sha256sum] = "b55b9d615e4bdd9f6fc7b76d8a876629a96d8264886cd0010f46b632656f894f"
 
 RDEPENDS:python3-redis = " \

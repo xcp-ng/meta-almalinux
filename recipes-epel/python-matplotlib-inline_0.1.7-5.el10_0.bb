@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-matplotlib-inline \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-matplotlib-inline-0.1.7-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-matplotlib-inline-0.1.7-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "231e7b4e3e6e139b7f8ad9b1c83c0a744937656a95f386eb20c384af4569b905"
 
-URI_x86_64_v2_python3-matplotlib-inline = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-inline-0.1.7-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-inline;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-matplotlib-inline}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-matplotlib-inline-0.1.7-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-matplotlib-inline;unpack=0"
 SRC_URI[x86_64_v2_python3-matplotlib-inline.sha256sum] = "6dbcfb689923870b71958f7b2313fa251d2e327bf5ecf2bd0e05b8a27a9e6e68"
 
-URI_aarch64_python3-matplotlib-inline = "${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-inline-0.1.7-5.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-inline;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-matplotlib-inline}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-matplotlib-inline-0.1.7-5.el10_0.noarch.rpm;name=aarch64_python3-matplotlib-inline;unpack=0"
 SRC_URI[aarch64_python3-matplotlib-inline.sha256sum] = "a65850c1771c52dea9b552603d71a3a0c4c88de03064bdb27074acbe37782ef7"
 
 RDEPENDS:python3-matplotlib-inline = " \

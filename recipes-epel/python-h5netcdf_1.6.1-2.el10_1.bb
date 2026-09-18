@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-h5netcdf \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-h5netcdf-1.6.1-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-h5netcdf-1.6.1-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bcfda15ee88b1c557150c3abbbea364cc6fab4614fcbb55996a4ba779cb8d069"
 
-URI_x86_64_v2_python3-h5netcdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-h5netcdf-1.6.1-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-h5netcdf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-h5netcdf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-h5netcdf-1.6.1-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-h5netcdf;unpack=0"
 SRC_URI[x86_64_v2_python3-h5netcdf.sha256sum] = "da15f7b0c7b34d71b4d99d76a2210e21c5187d1e501915fe9ceb4c068659585e"
 
-URI_aarch64_python3-h5netcdf = "${EPEL_MIRROR}/aarch64/Packages/p/python3-h5netcdf-1.6.1-2.el10_1.noarch.rpm;name=aarch64_python3-h5netcdf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-h5netcdf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-h5netcdf-1.6.1-2.el10_1.noarch.rpm;name=aarch64_python3-h5netcdf;unpack=0"
 SRC_URI[aarch64_python3-h5netcdf.sha256sum] = "e260ff61181564ae03e88c7ecf9eaac2a022e17e81d135eae5953b7e3a2336d5"
 
 RDEPENDS:python3-h5netcdf = " \

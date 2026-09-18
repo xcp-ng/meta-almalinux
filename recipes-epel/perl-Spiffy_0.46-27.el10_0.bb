@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Spiffy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Spiffy-0.46-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Spiffy-0.46-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d0a0426a5a4783d9e22b8ca9bd0b1b47b0e7dcc61af689be2d4757cbb0b5fdd7"
 
-URI_x86_64_v2_perl-Spiffy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spiffy-0.46-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spiffy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Spiffy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Spiffy-0.46-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Spiffy;unpack=0"
 SRC_URI[x86_64_v2_perl-Spiffy.sha256sum] = "343b9408ccf08552c58d49a0390a1f7f2b8d9c5a06f640edf5c57a0d2bec7abc"
 
-URI_aarch64_perl-Spiffy = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Spiffy-0.46-27.el10_0.noarch.rpm;name=aarch64_perl-Spiffy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Spiffy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Spiffy-0.46-27.el10_0.noarch.rpm;name=aarch64_perl-Spiffy;unpack=0"
 SRC_URI[aarch64_perl-Spiffy.sha256sum] = "61179ba0ca6512c95c9146ceec0e87c07e90de420fc01287e6acc29aa3acab97"
 
 RDEPENDS:perl-Spiffy = " \

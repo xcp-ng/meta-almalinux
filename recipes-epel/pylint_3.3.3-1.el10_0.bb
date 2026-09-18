@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pylint \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pylint-3.3.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pylint-3.3.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "56b61b09c2628bb71060d6dadc1fe85dde5417e9a77b85e52b94a6a980698b0e"
 
-URI_x86_64_v2_pylint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_pylint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pylint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_pylint;unpack=0"
 SRC_URI[x86_64_v2_pylint.sha256sum] = "a3f55383abdd15681d735dd89fa693341204a23df62ee2db2d6b6438237bceae"
 
-URI_x86_64_v2_python3-pylint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pylint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylint-3.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylint;unpack=0"
 SRC_URI[x86_64_v2_python3-pylint.sha256sum] = "4945e1cd54a42aa53eb894d960c44343db3f8bb4d1d24058e0763d25f15d764e"
 
-URI_aarch64_pylint = "${EPEL_MIRROR}/aarch64/Packages/p/pylint-3.3.3-1.el10_0.noarch.rpm;name=aarch64_pylint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pylint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pylint-3.3.3-1.el10_0.noarch.rpm;name=aarch64_pylint;unpack=0"
 SRC_URI[aarch64_pylint.sha256sum] = "aa34914c970a71d0c07b563c051e6821ae52fdc55ce6e4c008422fb62b6aef64"
 
-URI_aarch64_python3-pylint = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pylint-3.3.3-1.el10_0.noarch.rpm;name=aarch64_python3-pylint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pylint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pylint-3.3.3-1.el10_0.noarch.rpm;name=aarch64_python3-pylint;unpack=0"
 SRC_URI[aarch64_python3-pylint.sha256sum] = "a371351ad81f70e7a75fe919af6987857cf11f7c741a98859c2cfaa6d1da780a"
 
 RDEPENDS:pylint = " \

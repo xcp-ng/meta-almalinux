@@ -9,16 +9,13 @@ PACKAGES = " \
  thunderbird \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/thunderbird-140.10.0-1.el10_1.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/thunderbird-140.10.0-1.el10_1.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5d19b73310bbe09e34b9a0c4652a6142a8c09b7c40ea6f80dd99ed3c4cad3150"
 
-URI_x86_64_v2_thunderbird = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/thunderbird-140.10.0-1.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_thunderbird;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_thunderbird}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/thunderbird-140.10.0-1.el10_1.alma.1.x86_64_v2.rpm;name=x86_64_v2_thunderbird;unpack=0"
 SRC_URI[x86_64_v2_thunderbird.sha256sum] = "4352f5a811132dbb2b40da97755c56bb307f2bb53b088b5bfa9fa676f114f7ff"
 
-URI_aarch64_thunderbird = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/thunderbird-140.10.0-1.el10_1.alma.1.aarch64.rpm;name=aarch64_thunderbird;unpack=0"
-SRC_URI:append = " ${URI_aarch64_thunderbird}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/thunderbird-140.10.0-1.el10_1.alma.1.aarch64.rpm;name=aarch64_thunderbird;unpack=0"
 SRC_URI[aarch64_thunderbird.sha256sum] = "c0452b2d7af2244545159dd6a22dd7951b9f7ccd0e03fc6fe4da26a6ddf2ecfd"
 
 RDEPENDS:thunderbird = " \

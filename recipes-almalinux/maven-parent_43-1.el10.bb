@@ -9,16 +9,13 @@ PACKAGES = " \
  maven-parent \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-parent-43-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-parent-43-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "62bd050274a0d45a52bef33ed9a29c38752bad8846fdaa9490ea76af7a456904"
 
-URI_x86_64_v2_maven-parent = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-parent-43-1.el10.noarch.rpm;name=x86_64_v2_maven-parent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-parent}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-parent-43-1.el10.noarch.rpm;name=x86_64_v2_maven-parent;unpack=0"
 SRC_URI[x86_64_v2_maven-parent.sha256sum] = "c7faf0ea25f3483ed76c3f0501b547261305338a3f1370f7a413ce4549c9b703"
 
-URI_aarch64_maven-parent = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-parent-43-1.el10.noarch.rpm;name=aarch64_maven-parent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-parent}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-parent-43-1.el10.noarch.rpm;name=aarch64_maven-parent;unpack=0"
 SRC_URI[aarch64_maven-parent.sha256sum] = "c7faf0ea25f3483ed76c3f0501b547261305338a3f1370f7a413ce4549c9b703"
 
 RDEPENDS:maven-parent = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-python-string-utils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-string_utils-1.0.0-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-string_utils-1.0.0-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a3f2aa909cf164c271caac74614e725d1f090a2569a1a3b787ccc8306089a6fa"
 
-URI_x86_64_v2_python-string_utils-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-string_utils-doc-1.0.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-string_utils-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-string_utils-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-string_utils-doc-1.0.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-string_utils-doc;unpack=0"
 SRC_URI[x86_64_v2_python-string_utils-doc.sha256sum] = "3389818b1bb0978cb99b9eaddc8447556c2e25456317650f3ed58ae5bf41fe39"
 
-URI_x86_64_v2_python3-python-string-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-python-string-utils-1.0.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-python-string-utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-python-string-utils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-python-string-utils-1.0.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-python-string-utils;unpack=0"
 SRC_URI[x86_64_v2_python3-python-string-utils.sha256sum] = "eeab88eec3fe90e4b0537d29ea71e35513ba19bbadaebc325e4e69d2c4a81048"
 
-URI_aarch64_python-string_utils-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-string_utils-doc-1.0.0-17.el10_0.noarch.rpm;name=aarch64_python-string_utils-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-string_utils-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-string_utils-doc-1.0.0-17.el10_0.noarch.rpm;name=aarch64_python-string_utils-doc;unpack=0"
 SRC_URI[aarch64_python-string_utils-doc.sha256sum] = "2c50fe7a604366969a0d9c535a2e05be3f82b53dd39cbf17a51dbb97d95a6fb3"
 
-URI_aarch64_python3-python-string-utils = "${EPEL_MIRROR}/aarch64/Packages/p/python3-python-string-utils-1.0.0-17.el10_0.noarch.rpm;name=aarch64_python3-python-string-utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-python-string-utils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-python-string-utils-1.0.0-17.el10_0.noarch.rpm;name=aarch64_python3-python-string-utils;unpack=0"
 SRC_URI[aarch64_python3-python-string-utils.sha256sum] = "95f00fd20e29613307a6735689a580cadf43d1dd5c5a4900c2ed2025ae48d106"
 
 RDEPENDS:python-string_utils-doc = " \

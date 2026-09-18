@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Config-Simple \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Config-Simple-4.59-47.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Config-Simple-4.59-47.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fc19aa5a93483f1f30ca1f7360cfba2a3dedbf3b7b2b6a70d83a70bab5566788"
 
-URI_x86_64_v2_perl-Config-Simple = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Config-Simple-4.59-47.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Config-Simple;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Config-Simple}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Config-Simple-4.59-47.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Config-Simple;unpack=0"
 SRC_URI[x86_64_v2_perl-Config-Simple.sha256sum] = "00d9c63494c38002b5e398f03b1dc240f15200269df93fba4bda87cbfef382b9"
 
-URI_aarch64_perl-Config-Simple = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Config-Simple-4.59-47.el10_1.noarch.rpm;name=aarch64_perl-Config-Simple;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Config-Simple}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Config-Simple-4.59-47.el10_1.noarch.rpm;name=aarch64_perl-Config-Simple;unpack=0"
 SRC_URI[aarch64_perl-Config-Simple.sha256sum] = "5f191c37f8450716f4b852d596074e0e8dd49b28cec51f0ea87b2474a5f589f1"
 
 RDEPENDS:perl-Config-Simple = " \

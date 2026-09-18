@@ -11,32 +11,25 @@ PACKAGES = " \
  ipv6calc-mod_ipv6calc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/ipv6calc-4.4.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/ipv6calc-4.4.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ba459807eb4481779b7337f728419dc24be7dcd500e45dce564354f7512b038f"
 
-URI_x86_64_v2_ipv6calc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipv6calc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc;unpack=0"
 SRC_URI[x86_64_v2_ipv6calc.sha256sum] = "14c6d3f855c07a0216ae72906e3e02461d0ae9d94487065977e14a1da5d24dd2"
 
-URI_x86_64_v2_ipv6calc-ipv6calcweb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-ipv6calcweb-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc-ipv6calcweb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipv6calc-ipv6calcweb}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-ipv6calcweb-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc-ipv6calcweb;unpack=0"
 SRC_URI[x86_64_v2_ipv6calc-ipv6calcweb.sha256sum] = "c5b4f4ce04f2b94be781320c44e3da0e2d5d13cf2e472363df695e02d2595dc9"
 
-URI_x86_64_v2_ipv6calc-mod_ipv6calc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-mod_ipv6calc-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc-mod_ipv6calc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipv6calc-mod_ipv6calc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ipv6calc-mod_ipv6calc-4.4.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ipv6calc-mod_ipv6calc;unpack=0"
 SRC_URI[x86_64_v2_ipv6calc-mod_ipv6calc.sha256sum] = "d621c054cfead7f14b794c63766b5ef16037716be5c70b7c278c93367dbcf2af"
 
-URI_aarch64_ipv6calc = "${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipv6calc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc;unpack=0"
 SRC_URI[aarch64_ipv6calc.sha256sum] = "2956659c8f3a76a907f189088395add38ed029e0d012ea5f616f32123b7fa36d"
 
-URI_aarch64_ipv6calc-ipv6calcweb = "${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-ipv6calcweb-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc-ipv6calcweb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipv6calc-ipv6calcweb}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-ipv6calcweb-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc-ipv6calcweb;unpack=0"
 SRC_URI[aarch64_ipv6calc-ipv6calcweb.sha256sum] = "deba8e7bd0980c96c45ba584b811f56bfd70c912d483776a646aca46e37bc40c"
 
-URI_aarch64_ipv6calc-mod_ipv6calc = "${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-mod_ipv6calc-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc-mod_ipv6calc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipv6calc-mod_ipv6calc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/i/ipv6calc-mod_ipv6calc-4.4.0-1.el10_1.aarch64.rpm;name=aarch64_ipv6calc-mod_ipv6calc;unpack=0"
 SRC_URI[aarch64_ipv6calc-mod_ipv6calc.sha256sum] = "011bf405bacddcfe9b0305ac57a2f12b1a43d4d0c7ea7af64ccad76cafaf6307"
 
 RDEPENDS:ipv6calc = " \

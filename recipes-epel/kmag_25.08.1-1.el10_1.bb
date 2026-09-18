@@ -9,16 +9,13 @@ PACKAGES = " \
  kmag \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmag-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmag-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c0a5efcdceb1e85c4c7a93aa44d2e16f386a02904efa369cf3e3f5c25aa3cd8e"
 
-URI_x86_64_v2_kmag = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmag-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmag;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmag}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmag-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmag;unpack=0"
 SRC_URI[x86_64_v2_kmag.sha256sum] = "7358636f581fc2b3ef2e240ac234561c3a4ed2b2d3e64ed61e167ae5a717ebd7"
 
-URI_aarch64_kmag = "${EPEL_MIRROR}/aarch64/Packages/k/kmag-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmag;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmag}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmag-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmag;unpack=0"
 SRC_URI[aarch64_kmag.sha256sum] = "ee5cff3ea4712bee0fb95ddced86bf2258f2a3535370dd9aed86c3474f49f69e"
 
 RDEPENDS:kmag = " \

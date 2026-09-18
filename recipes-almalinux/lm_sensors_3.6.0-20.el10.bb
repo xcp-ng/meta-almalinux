@@ -12,40 +12,31 @@ PACKAGES = " \
  lm_sensors-sensord \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/lm_sensors-3.6.0-20.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/lm_sensors-3.6.0-20.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d678b4386742db80e93f0ec623884aed765209d18631954b5265762e19164b9e"
 
-URI_x86_64_v2_lm_sensors = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lm_sensors}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors;unpack=0"
 SRC_URI[x86_64_v2_lm_sensors.sha256sum] = "ef6c390912bf83b5da9695fc535243f1454f4ba27e639a2f40d958e4d3bedac6"
 
-URI_x86_64_v2_lm_sensors-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-devel-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lm_sensors-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-devel-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-devel;unpack=0"
 SRC_URI[x86_64_v2_lm_sensors-devel.sha256sum] = "0456cc45474e34349a42e2147810def62456591fe1a51c3d19847981a7becd51"
 
-URI_x86_64_v2_lm_sensors-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-libs-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lm_sensors-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-libs-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-libs;unpack=0"
 SRC_URI[x86_64_v2_lm_sensors-libs.sha256sum] = "f4c4159d0f1ab7dfed80caa83cece9cb7193ada1cffd24ec585b02190249f9f4"
 
-URI_x86_64_v2_lm_sensors-sensord = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-sensord-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-sensord;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lm_sensors-sensord}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/lm_sensors-sensord-3.6.0-20.el10.x86_64_v2.rpm;name=x86_64_v2_lm_sensors-sensord;unpack=0"
 SRC_URI[x86_64_v2_lm_sensors-sensord.sha256sum] = "e0ddb49c6a8e9f053d9d6a856abd7e68ae7731889fe9d5716448eadba0ed044c"
 
-URI_aarch64_lm_sensors = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lm_sensors}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors;unpack=0"
 SRC_URI[aarch64_lm_sensors.sha256sum] = "da310a66b8e953cb0f58396d565191ba2e151daf93a0648087f09427e12fefdb"
 
-URI_aarch64_lm_sensors-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-devel-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lm_sensors-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-devel-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-devel;unpack=0"
 SRC_URI[aarch64_lm_sensors-devel.sha256sum] = "877190a24f4af767264a39ea37f5fc157a80803a0e5d25805e0cfca6f1591c3b"
 
-URI_aarch64_lm_sensors-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-libs-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lm_sensors-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-libs-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-libs;unpack=0"
 SRC_URI[aarch64_lm_sensors-libs.sha256sum] = "5f006075d668db4e0103c165407430c4928c0d755dcc9a0354682cc5dc617e7e"
 
-URI_aarch64_lm_sensors-sensord = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-sensord-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-sensord;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lm_sensors-sensord}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/lm_sensors-sensord-3.6.0-20.el10.aarch64.rpm;name=aarch64_lm_sensors-sensord;unpack=0"
 SRC_URI[aarch64_lm_sensors-sensord.sha256sum] = "7954165c63961c8a4bc0c5c2113e20563dee0bca066bb9c50fd4bdec0b5f9ce2"
 
 RDEPENDS:lm_sensors:x86_64_v2 = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-concurrent-extra-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-concurrent-extra-0.7.0.12-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-concurrent-extra-0.7.0.12-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "43a95d3a5dc25dd42c5281f197ce78de3e25dba2001e46f52d323c4feb5ba3a8"
 
-URI_x86_64_v2_ghc-concurrent-extra = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-extra}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-extra.sha256sum] = "d3ace5d93951f67b96e271e15d998182de368d5c6873f92813b1c808ed6b227b"
 
-URI_x86_64_v2_ghc-concurrent-extra-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-devel-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-extra-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-devel-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-extra-devel.sha256sum] = "e5c0dd352103a574ed98e2551dfb5b59d12a001a3d31c59dd2575b1c679ad0cc"
 
-URI_x86_64_v2_ghc-concurrent-extra-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-doc-0.7.0.12-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-concurrent-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-extra-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-doc-0.7.0.12-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-concurrent-extra-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-extra-doc.sha256sum] = "865c4a6660ea2036c7f0f2548813bafd9e4454620c9c728155d9c70b558e8f66"
 
-URI_x86_64_v2_ghc-concurrent-extra-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-prof-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-concurrent-extra-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-concurrent-extra-prof-0.7.0.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-concurrent-extra-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-concurrent-extra-prof.sha256sum] = "4f7b7543719461b70e432503f07ec2a30218400eb9551256a53fa3fe7e9ac1bb"
 
-URI_aarch64_ghc-concurrent-extra = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-extra}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-extra.sha256sum] = "2d9811f3411b8b3c34dd9dc07f3f2426bcae8317babce12c9df4294a20288317"
 
-URI_aarch64_ghc-concurrent-extra-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-devel-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-extra-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-devel-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra-devel;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-extra-devel.sha256sum] = "e6f7ea93675a403b9a65a6ad99ad6273e02544475b0d9b3cab96ad19bdd6f06e"
 
-URI_aarch64_ghc-concurrent-extra-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-doc-0.7.0.12-26.el10_0.noarch.rpm;name=aarch64_ghc-concurrent-extra-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-extra-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-doc-0.7.0.12-26.el10_0.noarch.rpm;name=aarch64_ghc-concurrent-extra-doc;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-extra-doc.sha256sum] = "b84a83255215c4349e8fbc031a37bf5d587953ea419bde775db12b89afd6ebb4"
 
-URI_aarch64_ghc-concurrent-extra-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-prof-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-concurrent-extra-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-concurrent-extra-prof-0.7.0.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-concurrent-extra-prof;unpack=0"
 SRC_URI[aarch64_ghc-concurrent-extra-prof.sha256sum] = "eadd08b0d017567c5db5adc9a6bd47b9d126965aa78f1448d8d7b6d707859345"
 
 RDEPENDS:ghc-concurrent-extra = " \

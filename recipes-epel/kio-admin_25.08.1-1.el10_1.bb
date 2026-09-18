@@ -9,16 +9,13 @@ PACKAGES = " \
  kio-admin \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kio-admin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kio-admin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7ffed611387050eda853e9f1a882bcbc844dfaa7b514c9691bb5fcb27ef1f980"
 
-URI_x86_64_v2_kio-admin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-admin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-admin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kio-admin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-admin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-admin;unpack=0"
 SRC_URI[x86_64_v2_kio-admin.sha256sum] = "ab939ba7b310e136d0f1f0fdeddb3f630b146d4a13e63d00f858d5dd306f7505"
 
-URI_aarch64_kio-admin = "${EPEL_MIRROR}/aarch64/Packages/k/kio-admin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-admin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kio-admin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kio-admin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-admin;unpack=0"
 SRC_URI[aarch64_kio-admin.sha256sum] = "c004dddb320a788f270264e4dfcfbdd1c82f91b90d1b10aa2eef9880e3323bb0"
 
 RDEPENDS:kio-admin = " \

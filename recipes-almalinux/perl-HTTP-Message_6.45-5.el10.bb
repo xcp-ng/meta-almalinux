@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-HTTP-Message \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-HTTP-Message-6.45-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-HTTP-Message-6.45-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9374108a6b0fd9959c1a9a087dbd89819698e8e5ff13a930a00e19b21d7200a5"
 
-URI_x86_64_v2_perl-HTTP-Message = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-HTTP-Message-6.45-5.el10.noarch.rpm;name=x86_64_v2_perl-HTTP-Message;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Message}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-HTTP-Message-6.45-5.el10.noarch.rpm;name=x86_64_v2_perl-HTTP-Message;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-Message.sha256sum] = "98cbcbc4df158ede628f9f78fae8e78dc2bed1757865be03eba33208e52f9173"
 
-URI_aarch64_perl-HTTP-Message = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-HTTP-Message-6.45-5.el10.noarch.rpm;name=aarch64_perl-HTTP-Message;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-Message}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-HTTP-Message-6.45-5.el10.noarch.rpm;name=aarch64_perl-HTTP-Message;unpack=0"
 SRC_URI[aarch64_perl-HTTP-Message.sha256sum] = "98cbcbc4df158ede628f9f78fae8e78dc2bed1757865be03eba33208e52f9173"
 
 RDEPENDS:perl-HTTP-Message = " \

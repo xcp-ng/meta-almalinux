@@ -9,16 +9,13 @@ PACKAGES = " \
  ostree-pin \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/o/ostree-pin-0.1.1-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/o/ostree-pin-0.1.1-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cbc1b4df08d263bcf6b74791ea8a2491d0d1b55d5e61ff142460233f24c362ad"
 
-URI_x86_64_v2_ostree-pin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ostree-pin-0.1.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ostree-pin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ostree-pin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ostree-pin-0.1.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ostree-pin;unpack=0"
 SRC_URI[x86_64_v2_ostree-pin.sha256sum] = "9b68f1751f54acb33ffcc974e0d197237f5873c137fd1fbec6a5f9d84ec02c0a"
 
-URI_aarch64_ostree-pin = "${EPEL_MIRROR}/aarch64/Packages/o/ostree-pin-0.1.1-4.el10_0.aarch64.rpm;name=aarch64_ostree-pin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ostree-pin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/ostree-pin-0.1.1-4.el10_0.aarch64.rpm;name=aarch64_ostree-pin;unpack=0"
 SRC_URI[aarch64_ostree-pin.sha256sum] = "72190afee99c1056cdea31f91611319c7f8b512cc308f0636ef1830d090a480b"
 
 RDEPENDS:ostree-pin = " \

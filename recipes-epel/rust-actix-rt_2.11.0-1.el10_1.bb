@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-actix-rt-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-actix-rt-2.11.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-actix-rt-2.11.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7eb9afec1c1f2339400d8fdee3a3b30cfeaf99c9a0e68e49e65298114b83094e"
 
-URI_x86_64_v2_rust-actix-rt+actix-macros-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+actix-macros-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+actix-macros-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-actix-rt+actix-macros-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+actix-macros-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+actix-macros-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-actix-rt+actix-macros-devel.sha256sum] = "96574f0f136d2435ac91672a9e63903adadccfdd8ce3abfeaaea0e64ef83a60c"
 
-URI_x86_64_v2_rust-actix-rt+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+default-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-actix-rt+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+default-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-actix-rt+default-devel.sha256sum] = "68b9421f9c2344cc492f89cb21cb94745728f712145aa5cd81008e4a25979821"
 
-URI_x86_64_v2_rust-actix-rt+macros-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+macros-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+macros-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-actix-rt+macros-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt+macros-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt+macros-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-actix-rt+macros-devel.sha256sum] = "b079059199dbedf83ca81e7002fbc5b52b0f8902ddb451cf54890ad04ca52412"
 
-URI_x86_64_v2_rust-actix-rt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-actix-rt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-actix-rt-devel-2.11.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-actix-rt-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-actix-rt-devel.sha256sum] = "6e68aa759f74c99f8a8751cf9e067d47cc28963a56f8dfbf7d469a83846072dc"
 
-URI_aarch64_rust-actix-rt+actix-macros-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+actix-macros-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+actix-macros-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-actix-rt+actix-macros-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+actix-macros-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+actix-macros-devel;unpack=0"
 SRC_URI[aarch64_rust-actix-rt+actix-macros-devel.sha256sum] = "df8670e0847dff31e8b59bda5a8333393936f89b5d8ccb57611c660dd1ab14bf"
 
-URI_aarch64_rust-actix-rt+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+default-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-actix-rt+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+default-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+default-devel;unpack=0"
 SRC_URI[aarch64_rust-actix-rt+default-devel.sha256sum] = "e8918f809aff5a826512556d8e10af787db434d7ed742847b9e9c7cbb9288068"
 
-URI_aarch64_rust-actix-rt+macros-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+macros-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+macros-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-actix-rt+macros-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt+macros-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt+macros-devel;unpack=0"
 SRC_URI[aarch64_rust-actix-rt+macros-devel.sha256sum] = "efb0fce52e57ff7dd615060e2c459d6f26d0b69933612a205be80b67d1744d0d"
 
-URI_aarch64_rust-actix-rt-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-actix-rt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-actix-rt-devel-2.11.0-1.el10_1.noarch.rpm;name=aarch64_rust-actix-rt-devel;unpack=0"
 SRC_URI[aarch64_rust-actix-rt-devel.sha256sum] = "568b112fbf0c879c5621ca4f19b174b32348074bf458a5bfefe0116931beb34c"
 
 RDEPENDS:rust-actix-rt+actix-macros-devel = " \

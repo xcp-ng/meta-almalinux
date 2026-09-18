@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-unix-compat-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-unix-compat-0.7.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-unix-compat-0.7.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c67ad5e68a0e3da003cced8c51645ca106d3c1651ecd585834acf2802d13c078"
 
-URI_x86_64_v2_ghc-unix-compat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unix-compat}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat;unpack=0"
 SRC_URI[x86_64_v2_ghc-unix-compat.sha256sum] = "e978687abf3a5fc5ebb48eac5329bf1830d9c4d19f2ab8868493d7627b6e6757"
 
-URI_x86_64_v2_ghc-unix-compat-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-devel-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unix-compat-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-devel-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-unix-compat-devel.sha256sum] = "ee1d7fdea5208100476893a27db514e09171e287d5860e924f87643e4d816fae"
 
-URI_x86_64_v2_ghc-unix-compat-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-doc-0.7.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unix-compat-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unix-compat-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-doc-0.7.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-unix-compat-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-unix-compat-doc.sha256sum] = "c2de906998457c8fa746dd6c890efbcdacc9d6d1a59dc6dd91ba549016fd7bb3"
 
-URI_x86_64_v2_ghc-unix-compat-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-prof-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-unix-compat-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-unix-compat-prof-0.7.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-unix-compat-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-unix-compat-prof.sha256sum] = "d5784dcaf64a41577b4d79da58b4f535bdbd57f0391be0d79814958a4bfabfd3"
 
-URI_aarch64_ghc-unix-compat = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unix-compat}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat;unpack=0"
 SRC_URI[aarch64_ghc-unix-compat.sha256sum] = "0c7fbca96695a46ba88140d3cf0137a943d9bd928496591e194291947847b728"
 
-URI_aarch64_ghc-unix-compat-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-devel-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unix-compat-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-devel-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat-devel;unpack=0"
 SRC_URI[aarch64_ghc-unix-compat-devel.sha256sum] = "5a97cac78d9242ed14eed0bbe920a2f5f4b1fd1756693953f0f9bdaebe03920e"
 
-URI_aarch64_ghc-unix-compat-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-doc-0.7.2-1.el10_0.noarch.rpm;name=aarch64_ghc-unix-compat-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unix-compat-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-doc-0.7.2-1.el10_0.noarch.rpm;name=aarch64_ghc-unix-compat-doc;unpack=0"
 SRC_URI[aarch64_ghc-unix-compat-doc.sha256sum] = "32ce1e374509e6a3e1e523ca9ae7d327a76a0c2660d479817954418ea779ed1f"
 
-URI_aarch64_ghc-unix-compat-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-prof-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-unix-compat-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-unix-compat-prof-0.7.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-unix-compat-prof;unpack=0"
 SRC_URI[aarch64_ghc-unix-compat-prof.sha256sum] = "4280fd012f54d106a89df42f5a5d5460cc84675d682676237d814b64de8642b7"
 
 RDEPENDS:ghc-unix-compat = " \

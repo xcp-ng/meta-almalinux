@@ -15,36 +15,28 @@ PACKAGES = " \
  plasma-discover-snap \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-discover-6.3.4-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-discover-6.3.4-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1bf84b373990d53aaeace0d2abbf0d0a2236bbb0b0508581d9e3488428c7a9d7"
 
-URI_aarch64_plasma-discover = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover;unpack=0"
 SRC_URI[aarch64_plasma-discover.sha256sum] = "9e791b73c3e32559e264350f51cfb8fdb6d004bf4375af7c16ce2b4220a8a28d"
 
-URI_aarch64_plasma-discover-flatpak = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-flatpak-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-flatpak;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-flatpak}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-flatpak-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-flatpak;unpack=0"
 SRC_URI[aarch64_plasma-discover-flatpak.sha256sum] = "5e71d67fe6c10a00057734f908e98b3863d79d9661a86a7474636093f4fccc19"
 
-URI_aarch64_plasma-discover-libs = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-libs-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-libs-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-libs;unpack=0"
 SRC_URI[aarch64_plasma-discover-libs.sha256sum] = "f6f15428a9c0cfc1418f65b0532cb8f2826a3c5298e4c0f5af2c4cbc97583b1b"
 
-URI_aarch64_plasma-discover-notifier = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-notifier-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-notifier;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-notifier}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-notifier-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-notifier;unpack=0"
 SRC_URI[aarch64_plasma-discover-notifier.sha256sum] = "85dc5092147aa2802078b81080b451459195651242f29c058f7a6a9b9a2ad1b6"
 
-URI_aarch64_plasma-discover-offline-updates = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-offline-updates-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-offline-updates;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-offline-updates}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-offline-updates-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-offline-updates;unpack=0"
 SRC_URI[aarch64_plasma-discover-offline-updates.sha256sum] = "6248c89d5a18e9149eb144a114757cfe09ff13bcd34fc43a476620cc915b4e14"
 
-URI_aarch64_plasma-discover-packagekit = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-packagekit-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-packagekit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-packagekit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-packagekit-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-packagekit;unpack=0"
 SRC_URI[aarch64_plasma-discover-packagekit.sha256sum] = "a4658042b4a7e73eac8bbdaec52fb8e41352cb7510985d72f3eb9ac139446362"
 
-URI_aarch64_plasma-discover-snap = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-snap-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-snap;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-discover-snap}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-discover-snap-6.3.4-1.el10_1.aarch64.rpm;name=aarch64_plasma-discover-snap;unpack=0"
 SRC_URI[aarch64_plasma-discover-snap.sha256sum] = "aee0c7d615fcbdf019d72ae2b801f6ba263473e4ac572f71fbc0e4fa69d05295"
 
 RDEPENDS:plasma-discover = " \

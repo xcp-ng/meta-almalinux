@@ -65,464 +65,349 @@ PACKAGES = " \
  gcc-xtensa-linux-gnu \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/cross-gcc-14.1.1-1.el10_0.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cross-gcc-14.1.1-1.el10_0.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b18156db931d0e5e596b67e944604aa6bdaf0032ba6989b2b86b54d1d32d5c7a"
 
-URI_x86_64_v2_cross-gcc-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cross-gcc-common-14.1.1-1.el10_0.1.alma_altarch.1.noarch.rpm;name=x86_64_v2_cross-gcc-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cross-gcc-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cross-gcc-common-14.1.1-1.el10_0.1.alma_altarch.1.noarch.rpm;name=x86_64_v2_cross-gcc-common;unpack=0"
 SRC_URI[x86_64_v2_cross-gcc-common.sha256sum] = "6b81f17b73c78cfdd0db102b5e1ed670041f06124d599b9cdac991b425b11922"
 
-URI_x86_64_v2_gcc-aarch64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-aarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-aarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-aarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-aarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-aarch64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-aarch64-linux-gnu.sha256sum] = "d9e80481f173b34f86295ab8723e182eb581705f40b3ca90dc3c8e2fab785d39"
 
-URI_x86_64_v2_gcc-alpha-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-alpha-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-alpha-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-alpha-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-alpha-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-alpha-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-alpha-linux-gnu.sha256sum] = "c17a039db4fc4cc45f3ad15362c3dbe0ff1a2e1263bbb80db42f44be5b587ecf"
 
-URI_x86_64_v2_gcc-arc-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-arc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-arc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-arc-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-arc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-arc-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-arc-linux-gnu.sha256sum] = "7daa051f6c7722e46eb3d73b7c37f10ebbca25b0ebde06289ad9edba149df145"
 
-URI_x86_64_v2_gcc-arm-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-arm-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-arm-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-arm-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-arm-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-arm-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-arm-linux-gnu.sha256sum] = "1a850c5dc6d70948184f1893551c8f7c6413d678dd59af4495588cb7de53d1e9"
 
-URI_x86_64_v2_gcc-avr32-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-avr32-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-avr32-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-avr32-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-avr32-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-avr32-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-avr32-linux-gnu.sha256sum] = "0424fa31987f6b5f4c28a8c18923a84e8d81db865174dd856ed899cb64b7137f"
 
-URI_x86_64_v2_gcc-bfin-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-bfin-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-bfin-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-bfin-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-bfin-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-bfin-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-bfin-linux-gnu.sha256sum] = "32e7a42748b95a7775e8946e9756854f837a4f7017e6f98e691780ae4446a60b"
 
-URI_x86_64_v2_gcc-c++-aarch64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-aarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-aarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-aarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-aarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-aarch64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-aarch64-linux-gnu.sha256sum] = "d0c10715b4d005c13b2d10a9b481d40f2ffed8703048da65e3b3d47e2af70796"
 
-URI_x86_64_v2_gcc-c++-alpha-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-alpha-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-alpha-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-alpha-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-alpha-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-alpha-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-alpha-linux-gnu.sha256sum] = "44028bae98334e75ec9a40a7e1e672928d7df97371c32dd16d6c78246a08e53a"
 
-URI_x86_64_v2_gcc-c++-arc-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-arc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-arc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-arc-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-arc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-arc-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-arc-linux-gnu.sha256sum] = "7c074c60fcb7726d97851aa627c7b34dbac947f38291ab1fbebee2e50cdaece9"
 
-URI_x86_64_v2_gcc-c++-arm-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-arm-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-arm-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-arm-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-arm-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-arm-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-arm-linux-gnu.sha256sum] = "35ed86d43a58dac93ebb6252c6dbf6e0811fec70d0168872bd472c2325681ce0"
 
-URI_x86_64_v2_gcc-c++-avr32-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-avr32-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-avr32-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-avr32-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-avr32-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-avr32-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-avr32-linux-gnu.sha256sum] = "9ab644152566e6ed093ae4649cf2708c51a8e94ff041d34de0e115810d160c13"
 
-URI_x86_64_v2_gcc-c++-bfin-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-bfin-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-bfin-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-bfin-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-bfin-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-bfin-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-bfin-linux-gnu.sha256sum] = "b5d28df4323016e0b8c67be5aade04467d5624f706be6f3e964c8ae12c7fbe16"
 
-URI_x86_64_v2_gcc-c++-c6x-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-c6x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-c6x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-c6x-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-c6x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-c6x-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-c6x-linux-gnu.sha256sum] = "8d64eb46c7c9b39cf4e70cc5f9f0fba6ecf089b93370242612398202c44480ef"
 
-URI_x86_64_v2_gcc-c++-frv-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-frv-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-frv-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-frv-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-frv-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-frv-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-frv-linux-gnu.sha256sum] = "d3fca98da2eb219e9eab7d1fa8fc320f5433b74d38b516622b001c7284be1b7e"
 
-URI_x86_64_v2_gcc-c++-h8300-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-h8300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-h8300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-h8300-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-h8300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-h8300-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-h8300-linux-gnu.sha256sum] = "9c9f2a531c0076134c1ebb7bf4b122a69837578e438a1f9c56474977eb27757c"
 
-URI_x86_64_v2_gcc-c++-hppa-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-hppa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-hppa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-hppa-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-hppa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-hppa-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-hppa-linux-gnu.sha256sum] = "7afda8c3bd1682ea6161f1dbaf17f2b6f0d225f55adc05cbb19d6ef7d5adda38"
 
-URI_x86_64_v2_gcc-c++-hppa64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-hppa64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-hppa64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-hppa64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-hppa64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-hppa64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-hppa64-linux-gnu.sha256sum] = "7a33b8d5b6e04aff1ed13d69c3cdf48727a19d487f0fc412bbc642d0aceb02dd"
 
-URI_x86_64_v2_gcc-c++-ia64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ia64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ia64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-ia64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ia64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ia64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-ia64-linux-gnu.sha256sum] = "c636b6b7e7287838edb484649708d01b57e991de853e9430a7df3e923ef286f1"
 
-URI_x86_64_v2_gcc-c++-loongarch64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-loongarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-loongarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-loongarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-loongarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-loongarch64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-loongarch64-linux-gnu.sha256sum] = "f10b563dd7ee0a760e84ba4df152bfd80d6b1522e0bc2c3de0e3806316b389eb"
 
-URI_x86_64_v2_gcc-c++-m68k-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-m68k-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-m68k-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-m68k-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-m68k-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-m68k-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-m68k-linux-gnu.sha256sum] = "80e603a50be08b65d4b307ccc106bc50ebd729d3ee410ed371da7dbfcacdb55b"
 
-URI_x86_64_v2_gcc-c++-microblaze-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-microblaze-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-microblaze-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-microblaze-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-microblaze-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-microblaze-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-microblaze-linux-gnu.sha256sum] = "ff108d51de6ffa61179859b691d9e39b2895407687c19dd7f12f3ca4605a52b0"
 
-URI_x86_64_v2_gcc-c++-mips64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-mips64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-mips64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-mips64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-mips64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-mips64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-mips64-linux-gnu.sha256sum] = "9173bd8e39cb357425b856e30ade9e855562cfa3546af7799149fa11baba5a7f"
 
-URI_x86_64_v2_gcc-c++-mn10300-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-mn10300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-mn10300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-mn10300-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-mn10300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-mn10300-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-mn10300-linux-gnu.sha256sum] = "c5550561b088c77925a5c39af8e2ea0bd06e14cd92d0926a19a59c5f2845ca08"
 
-URI_x86_64_v2_gcc-c++-nios2-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-nios2-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-nios2-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-nios2-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-nios2-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-nios2-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-nios2-linux-gnu.sha256sum] = "7982414994dae223610c23231fc204c382bc77997ca2b10215d4cfbfab38f745"
 
-URI_x86_64_v2_gcc-c++-openrisc-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-openrisc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-openrisc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-openrisc-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-openrisc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-openrisc-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-openrisc-linux-gnu.sha256sum] = "5f7ee95c13df0628572ca284e1fc50cba7541a4b13981a5eef65c4c8f0f504f8"
 
-URI_x86_64_v2_gcc-c++-powerpc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-powerpc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-powerpc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-powerpc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-powerpc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-powerpc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-powerpc64-linux-gnu.sha256sum] = "e1f7325b5e8b3983f047bb2392c7474b2a576c09107c7e095374b8981472066c"
 
-URI_x86_64_v2_gcc-c++-powerpc64le-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-powerpc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-powerpc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-powerpc64le-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-powerpc64le-linux-gnu.sha256sum] = "15f8b7f3050c537be02406b631ba9bb92c8fbfb3f70364aa55d128a5d88155d0"
 
-URI_x86_64_v2_gcc-c++-ppc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ppc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ppc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-ppc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ppc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ppc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-ppc64-linux-gnu.sha256sum] = "d8e05adb7ecf0b22e8658931b3435acd2988cf4ad2249441c680719486be70f9"
 
-URI_x86_64_v2_gcc-c++-ppc64le-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ppc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ppc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-ppc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-ppc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-ppc64le-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-ppc64le-linux-gnu.sha256sum] = "29d5e83580f9b1482181f7c4285ed1e2604b34462d4645f329ddd07f0b2c1f64"
 
-URI_x86_64_v2_gcc-c++-riscv64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-riscv64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-riscv64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-riscv64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-riscv64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-riscv64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-riscv64-linux-gnu.sha256sum] = "038c703e34ce32b8ae374e97178a1f1a0851554284c25673fd8e901cfe241cb4"
 
-URI_x86_64_v2_gcc-c++-s390x-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-s390x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-s390x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-s390x-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-s390x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-s390x-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-s390x-linux-gnu.sha256sum] = "8e5ead1b9454d35424b0bf1b8341491dd6de32cb3828bf9e2bc9f84915a983fd"
 
-URI_x86_64_v2_gcc-c++-sparc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-sparc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-sparc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-sparc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-sparc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-sparc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-sparc64-linux-gnu.sha256sum] = "eed48152e777ccbb2071f4715538c8aeeb95427373d31386f4ee977688c15463"
 
-URI_x86_64_v2_gcc-c++-x86_64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-x86_64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-x86_64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-x86_64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-x86_64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-x86_64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-x86_64-linux-gnu.sha256sum] = "8d85097f9016cbdc6746a3c93215f1e7f63b9c4fe25428f80c1e1652cc44641a"
 
-URI_x86_64_v2_gcc-c++-xtensa-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-xtensa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-xtensa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c++-xtensa-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c++-xtensa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c++-xtensa-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c++-xtensa-linux-gnu.sha256sum] = "af80c1b7e3e16c84446371dfbfdb97fbe423bf99fc2adc53432f598b7dfdcfaf"
 
-URI_x86_64_v2_gcc-c6x-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c6x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c6x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-c6x-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-c6x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-c6x-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-c6x-linux-gnu.sha256sum] = "52fb1c2dccc5433f4edc5418c627af0380a7f4ed7c73ae6f984b3fa43b6d027f"
 
-URI_x86_64_v2_gcc-frv-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-frv-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-frv-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-frv-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-frv-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-frv-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-frv-linux-gnu.sha256sum] = "0315ef8a5992d9d593c8ab1ea564f5daf926b90c11291d0effe5066b721449d3"
 
-URI_x86_64_v2_gcc-h8300-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-h8300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-h8300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-h8300-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-h8300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-h8300-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-h8300-linux-gnu.sha256sum] = "dca0d07e3d9eb577474549c9338056113fbfeadd785bf450e090ac676ceedaed"
 
-URI_x86_64_v2_gcc-hppa-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-hppa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-hppa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-hppa-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-hppa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-hppa-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-hppa-linux-gnu.sha256sum] = "d4b9baf30a0414e29bda3ba97e5839db6c20f7a12df3dc8686318f232ef26cf7"
 
-URI_x86_64_v2_gcc-hppa64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-hppa64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-hppa64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-hppa64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-hppa64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-hppa64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-hppa64-linux-gnu.sha256sum] = "2060c477aa74d2382e93a03c6e6e368734cf5e02285c977c472e8966bb87b4a6"
 
-URI_x86_64_v2_gcc-ia64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ia64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ia64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-ia64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ia64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ia64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-ia64-linux-gnu.sha256sum] = "0b1f52e2afb4e97558b609899b667b843a898671f26b0625ee6cf00844228ac1"
 
-URI_x86_64_v2_gcc-loongarch64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-loongarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-loongarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-loongarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-loongarch64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-loongarch64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-loongarch64-linux-gnu.sha256sum] = "d5751c40abe61e6402317f3d268d307ec3374e4cc1899c28cf468d39ab90a5a7"
 
-URI_x86_64_v2_gcc-m68k-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-m68k-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-m68k-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-m68k-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-m68k-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-m68k-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-m68k-linux-gnu.sha256sum] = "d42faba7f1042c55cd3e3a8e0d3c7936bcc6e80a8a633c9e5849f049fa8803ba"
 
-URI_x86_64_v2_gcc-microblaze-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-microblaze-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-microblaze-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-microblaze-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-microblaze-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-microblaze-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-microblaze-linux-gnu.sha256sum] = "a870631efc690e2b171eadeb8652235df9986b8b1c72fdaf8f4680bdf797d59a"
 
-URI_x86_64_v2_gcc-mips64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-mips64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-mips64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-mips64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-mips64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-mips64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-mips64-linux-gnu.sha256sum] = "bd78be739ccdaf2daa36cc4dc83a93b6444558cff90437204289a0de4777d1b8"
 
-URI_x86_64_v2_gcc-mn10300-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-mn10300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-mn10300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-mn10300-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-mn10300-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-mn10300-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-mn10300-linux-gnu.sha256sum] = "954e9fabeb818d79767518bb82ac12e60d8536f181d27646009cfc77672be3fe"
 
-URI_x86_64_v2_gcc-nios2-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-nios2-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-nios2-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-nios2-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-nios2-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-nios2-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-nios2-linux-gnu.sha256sum] = "6f0688af04cb28e0b0d46fa8fc574c2132c2ed6575b62ab2caea2163dc9851bb"
 
-URI_x86_64_v2_gcc-openrisc-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-openrisc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-openrisc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-openrisc-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-openrisc-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-openrisc-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-openrisc-linux-gnu.sha256sum] = "a7dba1fe2f686f0a57a4c7ac7ed4bd4bd1ae1649e01083a98e852384f0740c1f"
 
-URI_x86_64_v2_gcc-powerpc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-powerpc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-powerpc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-powerpc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-powerpc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-powerpc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-powerpc64-linux-gnu.sha256sum] = "c4c95e7633f10b5b569fa825183d8024db114f0e639b3760a45a4114d758470f"
 
-URI_x86_64_v2_gcc-powerpc64le-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-powerpc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-powerpc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-powerpc64le-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-powerpc64le-linux-gnu.sha256sum] = "7a80bf3a911b8a3ddfd16570c1f91c22a186d3643758b8c113a101a7d4deb201"
 
-URI_x86_64_v2_gcc-ppc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ppc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ppc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-ppc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ppc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ppc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-ppc64-linux-gnu.sha256sum] = "abd29fc73f30ef7e4f4e58c586b4e9fa51707024e35d7bca3340b75f13e9ddad"
 
-URI_x86_64_v2_gcc-ppc64le-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ppc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ppc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-ppc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-ppc64le-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-ppc64le-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-ppc64le-linux-gnu.sha256sum] = "0a28fbf5d7596d1a949199ee90abce3a22f7aa53f3a07b0bd7b02fb2f74f3253"
 
-URI_x86_64_v2_gcc-riscv64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-riscv64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-riscv64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-riscv64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-riscv64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-riscv64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-riscv64-linux-gnu.sha256sum] = "44969e608e564d1dfcb89194a0867ae8f8c178bb4a45b1ab5a508cd3c789321b"
 
-URI_x86_64_v2_gcc-s390x-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-s390x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-s390x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-s390x-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-s390x-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-s390x-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-s390x-linux-gnu.sha256sum] = "7aa5462e25dd923bab28dd5431207431430baf476eb8934f15b71900b7e349d4"
 
-URI_x86_64_v2_gcc-sparc64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-sparc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-sparc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-sparc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-sparc64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-sparc64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-sparc64-linux-gnu.sha256sum] = "2daeb849bebf1d8532d13528107bada13f07c9d61b931d66df908b176f2d6d92"
 
-URI_x86_64_v2_gcc-x86_64-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-x86_64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-x86_64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-x86_64-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-x86_64-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-x86_64-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-x86_64-linux-gnu.sha256sum] = "633267aa07ce05755b695a8bc7f451671e6f86716bac8d5923ad9b6f05b3b5cb"
 
-URI_x86_64_v2_gcc-xtensa-linux-gnu = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-xtensa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-xtensa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gcc-xtensa-linux-gnu}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gcc-xtensa-linux-gnu-14.1.1-1.el10_0.1.alma_altarch.1.x86_64_v2.rpm;name=x86_64_v2_gcc-xtensa-linux-gnu;unpack=0"
 SRC_URI[x86_64_v2_gcc-xtensa-linux-gnu.sha256sum] = "92c33675eb21a573cc17a2f4f9bf5a3a8f2f8d1c0e338ef14c2c5b2ff419a27c"
 
-URI_aarch64_cross-gcc-common = "${EPEL_MIRROR}/aarch64/Packages/c/cross-gcc-common-14.1.1-1.el10_0.1.noarch.rpm;name=aarch64_cross-gcc-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cross-gcc-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cross-gcc-common-14.1.1-1.el10_0.1.noarch.rpm;name=aarch64_cross-gcc-common;unpack=0"
 SRC_URI[aarch64_cross-gcc-common.sha256sum] = "03de222347b80a9e66d990296c5a3581a0d3bccfa52f48b8109b1b45aae01882"
 
-URI_aarch64_gcc-aarch64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-aarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-aarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-aarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-aarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-aarch64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-aarch64-linux-gnu.sha256sum] = "94d35820cd040c8f28b528674cabd25429adc43e320de26b40cf38427c4f4daf"
 
-URI_aarch64_gcc-alpha-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-alpha-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-alpha-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-alpha-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-alpha-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-alpha-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-alpha-linux-gnu.sha256sum] = "0970e3af7e34390ca0071c615e5173aa85bb7f86d43e19fffccbff2f3f4af93e"
 
-URI_aarch64_gcc-arc-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-arc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-arc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-arc-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-arc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-arc-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-arc-linux-gnu.sha256sum] = "bf9243ab624bd8cc0d1296c206021329c0fc27096ebab7a6f710356288613ea4"
 
-URI_aarch64_gcc-arm-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-arm-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-arm-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-arm-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-arm-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-arm-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-arm-linux-gnu.sha256sum] = "0a500d835b2de0a54d1534438b8129a44fe15dea34aca8f740a1d00835c641e8"
 
-URI_aarch64_gcc-avr32-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-avr32-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-avr32-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-avr32-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-avr32-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-avr32-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-avr32-linux-gnu.sha256sum] = "b786402dadfcb291909aad70f30dd0c9f55a3ba9cbe71cac8aade1d86b8592c4"
 
-URI_aarch64_gcc-bfin-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-bfin-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-bfin-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-bfin-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-bfin-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-bfin-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-bfin-linux-gnu.sha256sum] = "b51fb9c2f89a25b9ecbf748597734e035c21f6518242d5c4d0a47d87e534afa1"
 
-URI_aarch64_gcc-c++-aarch64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-aarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-aarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-aarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-aarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-aarch64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-aarch64-linux-gnu.sha256sum] = "71d86c5c5ec2e21d179214d82e7a3b7f51a48e7ce41d726b5d08c348540fb70a"
 
-URI_aarch64_gcc-c++-alpha-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-alpha-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-alpha-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-alpha-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-alpha-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-alpha-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-alpha-linux-gnu.sha256sum] = "afb2e97180214815ab7ac087646f409fe12cf281decf61da8f94236161537124"
 
-URI_aarch64_gcc-c++-arc-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-arc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-arc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-arc-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-arc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-arc-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-arc-linux-gnu.sha256sum] = "1f61a67095ace16beb374172d06bbfe20f8a1f939a03c291ed25fb4900385e52"
 
-URI_aarch64_gcc-c++-arm-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-arm-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-arm-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-arm-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-arm-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-arm-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-arm-linux-gnu.sha256sum] = "432c242c1f3a68c63f8d624e595e7a9cda74063b60ba06370598e65e10713cad"
 
-URI_aarch64_gcc-c++-avr32-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-avr32-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-avr32-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-avr32-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-avr32-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-avr32-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-avr32-linux-gnu.sha256sum] = "9893fb022bf7efc2cf1eb5a26d1cef36da84781e0d782af04085c6fcb1cd7426"
 
-URI_aarch64_gcc-c++-bfin-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-bfin-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-bfin-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-bfin-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-bfin-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-bfin-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-bfin-linux-gnu.sha256sum] = "a2c95aadfd66442d27e761416dee4fc6f9122c70c900446db262c7546ff02433"
 
-URI_aarch64_gcc-c++-c6x-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-c6x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-c6x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-c6x-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-c6x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-c6x-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-c6x-linux-gnu.sha256sum] = "61c6bea42cf0c767f45e8135071a7ecf74218077c9bea8f06553b4c263228575"
 
-URI_aarch64_gcc-c++-frv-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-frv-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-frv-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-frv-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-frv-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-frv-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-frv-linux-gnu.sha256sum] = "f9413584c1ece352265fbdb3e0d9134d7ee283e24bab3a6866eef53c930a56bd"
 
-URI_aarch64_gcc-c++-h8300-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-h8300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-h8300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-h8300-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-h8300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-h8300-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-h8300-linux-gnu.sha256sum] = "b0697932e2768f147053386c1121422c5bee476c95f676654a6558ccabf458c4"
 
-URI_aarch64_gcc-c++-hppa-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-hppa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-hppa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-hppa-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-hppa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-hppa-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-hppa-linux-gnu.sha256sum] = "d65afe83e9e2f89398e10e0be615180dedcb9961749ea1f5e8291aa9375ed2b6"
 
-URI_aarch64_gcc-c++-hppa64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-hppa64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-hppa64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-hppa64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-hppa64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-hppa64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-hppa64-linux-gnu.sha256sum] = "47feb1a0d1533536af373e2647d89e41c5e7fbe7416e7e3066f5f48bc01508a8"
 
-URI_aarch64_gcc-c++-ia64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ia64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ia64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-ia64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ia64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ia64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-ia64-linux-gnu.sha256sum] = "a5af80befab4264b5ff19de90fb80f825f3ea7f623162cddaab6943721f72cef"
 
-URI_aarch64_gcc-c++-loongarch64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-loongarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-loongarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-loongarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-loongarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-loongarch64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-loongarch64-linux-gnu.sha256sum] = "52808cda66de963cf41d9377aa3710a19af402c2931a5b2e67c8a1b0397978a7"
 
-URI_aarch64_gcc-c++-m68k-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-m68k-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-m68k-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-m68k-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-m68k-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-m68k-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-m68k-linux-gnu.sha256sum] = "b9671456bdca9eecaca70687bf37b6b8655547cd6f5c8d877fb8e1fcfa571623"
 
-URI_aarch64_gcc-c++-microblaze-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-microblaze-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-microblaze-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-microblaze-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-microblaze-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-microblaze-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-microblaze-linux-gnu.sha256sum] = "9cc1a5ea6c9e987d60b809f2f48f5f87c9343f522e8ae2caf222c848b7aa4bfc"
 
-URI_aarch64_gcc-c++-mips64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-mips64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-mips64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-mips64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-mips64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-mips64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-mips64-linux-gnu.sha256sum] = "e590a78408bc80d6c8839c938a4e8d57bcf333ef590f262816096f258415d8bb"
 
-URI_aarch64_gcc-c++-mn10300-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-mn10300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-mn10300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-mn10300-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-mn10300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-mn10300-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-mn10300-linux-gnu.sha256sum] = "7ba64868fea6680233175502c8829c4650f640f8eece4c97d355a48cd9609164"
 
-URI_aarch64_gcc-c++-nios2-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-nios2-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-nios2-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-nios2-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-nios2-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-nios2-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-nios2-linux-gnu.sha256sum] = "247536f99d84aac69b0974340a7c4e126d345f638ab53eab87c45adcf43ad9d8"
 
-URI_aarch64_gcc-c++-openrisc-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-openrisc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-openrisc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-openrisc-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-openrisc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-openrisc-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-openrisc-linux-gnu.sha256sum] = "85de32c47b10186337815bf1224d8ec7493f904ed51b65dd4878d9e6e0f7d360"
 
-URI_aarch64_gcc-c++-powerpc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-powerpc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-powerpc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-powerpc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-powerpc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-powerpc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-powerpc64-linux-gnu.sha256sum] = "4910736d8e474eef9ac1bd39df834bbde3c479d299102095c49fc20da8dd6255"
 
-URI_aarch64_gcc-c++-powerpc64le-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-powerpc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-powerpc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-powerpc64le-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-powerpc64le-linux-gnu.sha256sum] = "335fb0ca89b7f370a46635c6571f4568abc4de762f07b6592627ef40ecb7d0a9"
 
-URI_aarch64_gcc-c++-ppc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ppc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ppc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-ppc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ppc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ppc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-ppc64-linux-gnu.sha256sum] = "6771f660fd8c10ca8ffa2a5301907c2a1fea5e8cd2cfec3cb54032366b9bcff0"
 
-URI_aarch64_gcc-c++-ppc64le-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ppc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ppc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-ppc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-ppc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-ppc64le-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-ppc64le-linux-gnu.sha256sum] = "4d7528e3eb46736b52039cd3c1d2eaf697f9985cbfa2a30827984d782ca5b3b5"
 
-URI_aarch64_gcc-c++-riscv64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-riscv64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-riscv64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-riscv64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-riscv64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-riscv64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-riscv64-linux-gnu.sha256sum] = "9d31f014dee8ff52abd5e2adab90500023635802e522ca048b1efb7d6a4e42f7"
 
-URI_aarch64_gcc-c++-s390x-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-s390x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-s390x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-s390x-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-s390x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-s390x-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-s390x-linux-gnu.sha256sum] = "cc72d6829c730091d26a2f226420d957f1e228a6a315709bede86173687f9bef"
 
-URI_aarch64_gcc-c++-sparc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-sparc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-sparc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-sparc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-sparc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-sparc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-sparc64-linux-gnu.sha256sum] = "053cc5166912f92976b5c71cf5bc38bd7cd55c225ff4f71c04fe3e9f8b93142c"
 
-URI_aarch64_gcc-c++-x86_64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-x86_64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-x86_64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-x86_64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-x86_64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-x86_64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-x86_64-linux-gnu.sha256sum] = "93555bec802c302cb5f03226f520c704ba69711146ba8621587f1836e1d16e7c"
 
-URI_aarch64_gcc-c++-xtensa-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-xtensa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-xtensa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c++-xtensa-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c++-xtensa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c++-xtensa-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c++-xtensa-linux-gnu.sha256sum] = "f063d9af7d638f55ef156e525a3944185d1b6d3d6c9bfd353a5a51bd8c98c7f4"
 
-URI_aarch64_gcc-c6x-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-c6x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c6x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-c6x-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-c6x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-c6x-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-c6x-linux-gnu.sha256sum] = "df75179512824ca795f0d6f09b3303236fc7d4870554650fdfab785d25998d42"
 
-URI_aarch64_gcc-frv-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-frv-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-frv-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-frv-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-frv-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-frv-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-frv-linux-gnu.sha256sum] = "819cfd4cfc291547543e3658d01eff2ae17b7daebca06ad91707da015e840381"
 
-URI_aarch64_gcc-h8300-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-h8300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-h8300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-h8300-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-h8300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-h8300-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-h8300-linux-gnu.sha256sum] = "0ef0466b4cb0c8580622bc90d3e74b36ae5eed0100b0844e341171181350f6f9"
 
-URI_aarch64_gcc-hppa-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-hppa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-hppa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-hppa-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-hppa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-hppa-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-hppa-linux-gnu.sha256sum] = "1c40a5bf7fc8482b2b210e9346511c114107e4fa316a4cbe0af1928ec28cc9c4"
 
-URI_aarch64_gcc-hppa64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-hppa64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-hppa64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-hppa64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-hppa64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-hppa64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-hppa64-linux-gnu.sha256sum] = "3d3c190c33308f7e9a40f0b6c923819768d5a7fc42b435b7aed8baa80c43165b"
 
-URI_aarch64_gcc-ia64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-ia64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ia64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-ia64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-ia64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ia64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-ia64-linux-gnu.sha256sum] = "b511a72cd010821493d355b68fbb21602286f23e9f28645a0e479cdf7e56c331"
 
-URI_aarch64_gcc-loongarch64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-loongarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-loongarch64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-loongarch64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-loongarch64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-loongarch64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-loongarch64-linux-gnu.sha256sum] = "e29b930c647b7cb510f5c4589e793a62420174f6e9dacd29d60ae3737204143b"
 
-URI_aarch64_gcc-m68k-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-m68k-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-m68k-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-m68k-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-m68k-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-m68k-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-m68k-linux-gnu.sha256sum] = "94dba9ede5d8e46bf881de1a7886ba69b855d1f83130adea034f8bc3f078c86b"
 
-URI_aarch64_gcc-microblaze-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-microblaze-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-microblaze-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-microblaze-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-microblaze-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-microblaze-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-microblaze-linux-gnu.sha256sum] = "9a9c7c78b86e905c22fd20850556bae86d8f8b9a1f453aeb70c729e6b495cfd4"
 
-URI_aarch64_gcc-mips64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-mips64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-mips64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-mips64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-mips64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-mips64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-mips64-linux-gnu.sha256sum] = "1da44f8f0933e9e9f1b52a0f98eb3c3b12d305a5859fcc4993ac567c31e0277b"
 
-URI_aarch64_gcc-mn10300-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-mn10300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-mn10300-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-mn10300-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-mn10300-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-mn10300-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-mn10300-linux-gnu.sha256sum] = "782d1b6a94bb52880edc70a702c211f9a345e276e9c9720c33707749a8bd037b"
 
-URI_aarch64_gcc-nios2-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-nios2-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-nios2-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-nios2-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-nios2-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-nios2-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-nios2-linux-gnu.sha256sum] = "55141683071ea6d78b06a36558cfe99c7727c81e076afe39d824c9a6a676a5a6"
 
-URI_aarch64_gcc-openrisc-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-openrisc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-openrisc-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-openrisc-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-openrisc-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-openrisc-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-openrisc-linux-gnu.sha256sum] = "12f87882ab0980141775685611fe9ac7763dc201fd6c27b353679469776f357e"
 
-URI_aarch64_gcc-powerpc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-powerpc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-powerpc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-powerpc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-powerpc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-powerpc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-powerpc64-linux-gnu.sha256sum] = "07a30fb08090ad52dd4ca0acf463dc44728801a8bbdcda8e30fd848fe674466e"
 
-URI_aarch64_gcc-powerpc64le-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-powerpc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-powerpc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-powerpc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-powerpc64le-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-powerpc64le-linux-gnu.sha256sum] = "847a40368f176d49d2cb544dcff6df79053ecfb69345f43acac3bc6f2fba2e95"
 
-URI_aarch64_gcc-ppc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-ppc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ppc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-ppc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-ppc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ppc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-ppc64-linux-gnu.sha256sum] = "894be5aa918db2199a8cbaf9ee705c2c196e0a3c79b0caad09e4897494fd20e5"
 
-URI_aarch64_gcc-ppc64le-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-ppc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ppc64le-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-ppc64le-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-ppc64le-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-ppc64le-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-ppc64le-linux-gnu.sha256sum] = "c67d6b0d4b10b1fd6f040324dde2a86b11f4c5e95442c470e2c9c6b6fe9327c4"
 
-URI_aarch64_gcc-riscv64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-riscv64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-riscv64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-riscv64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-riscv64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-riscv64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-riscv64-linux-gnu.sha256sum] = "3fe67f73bea3e3ce0b98e3d4999b502fee1f222e4f8d29e3bdf4ddc4a7498811"
 
-URI_aarch64_gcc-s390x-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-s390x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-s390x-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-s390x-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-s390x-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-s390x-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-s390x-linux-gnu.sha256sum] = "bdcd1ff16ec7dc3628bfbeaaff2585d6d945d7d5e950d14aaf122525c15936e2"
 
-URI_aarch64_gcc-sparc64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-sparc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-sparc64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-sparc64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-sparc64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-sparc64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-sparc64-linux-gnu.sha256sum] = "60b1d3ef0efe345540b409cfad9fa08bf9b65c07d27a54d10c87812a19967f3c"
 
-URI_aarch64_gcc-x86_64-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-x86_64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-x86_64-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-x86_64-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-x86_64-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-x86_64-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-x86_64-linux-gnu.sha256sum] = "a15b242ef4b2796cf41bc9f616c264fb4c37200e20037456ad3e8e400a02ebd0"
 
-URI_aarch64_gcc-xtensa-linux-gnu = "${EPEL_MIRROR}/aarch64/Packages/g/gcc-xtensa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-xtensa-linux-gnu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gcc-xtensa-linux-gnu}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gcc-xtensa-linux-gnu-14.1.1-1.el10_0.1.aarch64.rpm;name=aarch64_gcc-xtensa-linux-gnu;unpack=0"
 SRC_URI[aarch64_gcc-xtensa-linux-gnu.sha256sum] = "9bd760af9ad552e7619f2364905015cdf5b4515546f07ab8ba30ec16efe58930"
 
 RDEPENDS:cross-gcc-common = " \

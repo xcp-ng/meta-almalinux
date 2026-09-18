@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-glib-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-glib-2.0.30-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-glib-2.0.30-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "db4859057c77d83c0f18e49a841b49ba6d9f6e6ce2a04fd5a76b968b4443b339"
 
-URI_x86_64_v2_ghc-gi-glib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-glib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-glib.sha256sum] = "7a1c1b9b03067cde786e34f270e10b518dddafb9ef051690a50577aa73dc37f8"
 
-URI_x86_64_v2_ghc-gi-glib-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-devel-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-glib-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-devel-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-glib-devel.sha256sum] = "052a11e20b7f8a87288b6f6d94256ce86c0a83c52349c3c35e105147e3daebd9"
 
-URI_x86_64_v2_ghc-gi-glib-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-doc-2.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-glib-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-glib-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-doc-2.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-glib-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-glib-doc.sha256sum] = "23a966bbb4881088cb020a181db06a9393797e90fe2054c739ca3f2b47b81f04"
 
-URI_x86_64_v2_ghc-gi-glib-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-prof-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-glib-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-glib-prof-2.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-glib-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-glib-prof.sha256sum] = "4ac16406306dd88f1d9feb97ed7693b67628be22d844d05f17e2eea83a42f60d"
 
-URI_aarch64_ghc-gi-glib = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-glib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib;unpack=0"
 SRC_URI[aarch64_ghc-gi-glib.sha256sum] = "bcd19bfc6721c2e66a30df483ec7fef2da9a07e734ecab94315bfa03743b3070"
 
-URI_aarch64_ghc-gi-glib-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-devel-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-glib-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-devel-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-glib-devel.sha256sum] = "df70bd3061338c000cdcc984546233a9924406a3883940e0a7c45c7b342f5890"
 
-URI_aarch64_ghc-gi-glib-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-doc-2.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-glib-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-glib-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-doc-2.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-glib-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-glib-doc.sha256sum] = "45ca559616954123b08e2b9dccdffd1952e8dc36248c85094eefa8a5e2f6ef13"
 
-URI_aarch64_ghc-gi-glib-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-prof-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-glib-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-glib-prof-2.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-glib-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-glib-prof.sha256sum] = "234f83a218cfd780cd831ec8752159f75f50288d112b0f8ffe3f495608f8a418"
 
 RDEPENDS:ghc-gi-glib = " \

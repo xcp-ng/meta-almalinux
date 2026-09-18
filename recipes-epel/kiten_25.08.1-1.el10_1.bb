@@ -11,32 +11,25 @@ PACKAGES = " \
  kiten-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kiten-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kiten-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "335e6c8133ef98dff4f67a2167e43cabdb6c8cdd722f05526061cd77480f2a01"
 
-URI_x86_64_v2_kiten = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiten}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten;unpack=0"
 SRC_URI[x86_64_v2_kiten.sha256sum] = "f5c50f2d44c74f8412b7a94790f8c0505bb629cacf63d09b377f22b1d63747ef"
 
-URI_x86_64_v2_kiten-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiten-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten-devel;unpack=0"
 SRC_URI[x86_64_v2_kiten-devel.sha256sum] = "520b8d1be59ba736f56b5d095ee57ec1b9769e9b077310d337f73f01522afdb8"
 
-URI_x86_64_v2_kiten-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiten-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiten-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiten-libs;unpack=0"
 SRC_URI[x86_64_v2_kiten-libs.sha256sum] = "b9f024021c6abb6f6bec05a92c1c0a60bbcb5282d3dbd36736539330ea8afbd0"
 
-URI_aarch64_kiten = "${EPEL_MIRROR}/aarch64/Packages/k/kiten-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiten}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiten-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten;unpack=0"
 SRC_URI[aarch64_kiten.sha256sum] = "e85e4bed8c38f00e8307ef3aaa5bbfe6875e4f1fefba85c447f1cfee1977e985"
 
-URI_aarch64_kiten-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kiten-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiten-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiten-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten-devel;unpack=0"
 SRC_URI[aarch64_kiten-devel.sha256sum] = "540abfdd81db5457e734269a7a4a7974862b744bf21fc5f3b6eb2d629231ec16"
 
-URI_aarch64_kiten-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kiten-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiten-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiten-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kiten-libs;unpack=0"
 SRC_URI[aarch64_kiten-libs.sha256sum] = "69b0a76d2e01bbe6a3cfaa9b8a1068be8837a9f1f1d2f065f389d315ff34484a"
 
 RDEPENDS:kiten = " \

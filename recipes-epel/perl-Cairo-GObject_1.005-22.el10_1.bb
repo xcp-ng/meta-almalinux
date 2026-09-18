@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Cairo-GObject-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Cairo-GObject-1.005-22.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Cairo-GObject-1.005-22.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "46372e9ca5259485eb4aced648ba09d56c98b433e1b42ee23f3372d563900347"
 
-URI_x86_64_v2_perl-Cairo-GObject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cairo-GObject-1.005-22.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Cairo-GObject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Cairo-GObject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cairo-GObject-1.005-22.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Cairo-GObject;unpack=0"
 SRC_URI[x86_64_v2_perl-Cairo-GObject.sha256sum] = "a8df4c9d7fbdeeba4c5db8ac28a74d83071ccac31dfb203784437b8f90af4f8c"
 
-URI_x86_64_v2_perl-Cairo-GObject-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cairo-GObject-tests-1.005-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Cairo-GObject-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Cairo-GObject-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cairo-GObject-tests-1.005-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Cairo-GObject-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Cairo-GObject-tests.sha256sum] = "4b4cb017f46af6a910fc4c688861b5e863128bc67a411ba635e2f8b4fd6723ca"
 
-URI_aarch64_perl-Cairo-GObject = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Cairo-GObject-1.005-22.el10_1.aarch64.rpm;name=aarch64_perl-Cairo-GObject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Cairo-GObject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Cairo-GObject-1.005-22.el10_1.aarch64.rpm;name=aarch64_perl-Cairo-GObject;unpack=0"
 SRC_URI[aarch64_perl-Cairo-GObject.sha256sum] = "9c9c0cff98cdf613d1b0d316813a2b92f3311cb7146c25968763f3530e9e4b0b"
 
-URI_aarch64_perl-Cairo-GObject-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Cairo-GObject-tests-1.005-22.el10_1.noarch.rpm;name=aarch64_perl-Cairo-GObject-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Cairo-GObject-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Cairo-GObject-tests-1.005-22.el10_1.noarch.rpm;name=aarch64_perl-Cairo-GObject-tests;unpack=0"
 SRC_URI[aarch64_perl-Cairo-GObject-tests.sha256sum] = "297af4ee89be4e2ce760a45791577300c6a4dd125c9f2a8aa2ed7f7b58e0e6e0"
 
 RDEPENDS:perl-Cairo-GObject = " \

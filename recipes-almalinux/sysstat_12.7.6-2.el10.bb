@@ -9,16 +9,13 @@ PACKAGES = " \
  sysstat \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sysstat-12.7.6-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/sysstat-12.7.6-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea622d95eee42cd9d17c2bc1c6d355d813c670eadae0f2a644df09f2dcbfdf79"
 
-URI_x86_64_v2_sysstat = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sysstat-12.7.6-2.el10.x86_64_v2.rpm;name=x86_64_v2_sysstat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sysstat}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/sysstat-12.7.6-2.el10.x86_64_v2.rpm;name=x86_64_v2_sysstat;unpack=0"
 SRC_URI[x86_64_v2_sysstat.sha256sum] = "b54673ba76252eca3931017d596bef7d568c5c93bdd7759ac3d6bd2887a5fbf9"
 
-URI_aarch64_sysstat = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sysstat-12.7.6-2.el10.aarch64.rpm;name=aarch64_sysstat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sysstat}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/sysstat-12.7.6-2.el10.aarch64.rpm;name=aarch64_sysstat;unpack=0"
 SRC_URI[aarch64_sysstat.sha256sum] = "4034eb0154e4d9467f03716a9fd53bb65dec920e4310889b279d06d7f02551ad"
 
 RDEPENDS:sysstat = " \

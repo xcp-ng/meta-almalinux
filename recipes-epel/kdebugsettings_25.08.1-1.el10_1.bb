@@ -9,16 +9,13 @@ PACKAGES = " \
  kdebugsettings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kdebugsettings-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kdebugsettings-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2c09a0dbe817eddbffa8546b17a7bd42e603c3fb4ed04f141dff55de8c7f8eb"
 
-URI_x86_64_v2_kdebugsettings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdebugsettings-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdebugsettings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kdebugsettings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kdebugsettings-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kdebugsettings;unpack=0"
 SRC_URI[x86_64_v2_kdebugsettings.sha256sum] = "4bf5753464b45039fd0f7e373da93a8de0d4537b109373fd43c402ec1837663e"
 
-URI_aarch64_kdebugsettings = "${EPEL_MIRROR}/aarch64/Packages/k/kdebugsettings-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdebugsettings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kdebugsettings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kdebugsettings-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kdebugsettings;unpack=0"
 SRC_URI[aarch64_kdebugsettings.sha256sum] = "c3b7ae37ab3aab9190a43cff1ed17292499300014654193d93296d664b3b536f"
 
 RDEPENDS:kdebugsettings = " \

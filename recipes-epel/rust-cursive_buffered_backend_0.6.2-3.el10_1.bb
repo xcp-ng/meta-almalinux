@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-cursive_buffered_backend-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-cursive_buffered_backend-0.6.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-cursive_buffered_backend-0.6.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "47b0afd5cfabac92a6b341ed1fb900d2b6d21bc3e9eb3cb1e28baf6e0c6730dc"
 
-URI_x86_64_v2_rust-cursive_buffered_backend+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cursive_buffered_backend+default-devel-0.6.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cursive_buffered_backend+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cursive_buffered_backend+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cursive_buffered_backend+default-devel-0.6.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cursive_buffered_backend+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cursive_buffered_backend+default-devel.sha256sum] = "0b967fba9e05d278c0bcf1498cd0d249d644737b084939ec613265bca85aaa9a"
 
-URI_x86_64_v2_rust-cursive_buffered_backend-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cursive_buffered_backend-devel-0.6.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cursive_buffered_backend-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-cursive_buffered_backend-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-cursive_buffered_backend-devel-0.6.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-cursive_buffered_backend-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-cursive_buffered_backend-devel.sha256sum] = "9d71127a42d564c51b54e243444b67622674d2d9627049bd25241050fb3a08e5"
 
-URI_aarch64_rust-cursive_buffered_backend+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cursive_buffered_backend+default-devel-0.6.2-3.el10_1.noarch.rpm;name=aarch64_rust-cursive_buffered_backend+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cursive_buffered_backend+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cursive_buffered_backend+default-devel-0.6.2-3.el10_1.noarch.rpm;name=aarch64_rust-cursive_buffered_backend+default-devel;unpack=0"
 SRC_URI[aarch64_rust-cursive_buffered_backend+default-devel.sha256sum] = "918b708177fbe99160dd4f79ebb73e54661cf89155c79db54deea8a0df9909f1"
 
-URI_aarch64_rust-cursive_buffered_backend-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-cursive_buffered_backend-devel-0.6.2-3.el10_1.noarch.rpm;name=aarch64_rust-cursive_buffered_backend-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-cursive_buffered_backend-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-cursive_buffered_backend-devel-0.6.2-3.el10_1.noarch.rpm;name=aarch64_rust-cursive_buffered_backend-devel;unpack=0"
 SRC_URI[aarch64_rust-cursive_buffered_backend-devel.sha256sum] = "a9122064015d111fbc427a6550fa7436f773f93c64cea14d497dcffded0ba2cf"
 
 RDEPENDS:rust-cursive_buffered_backend+default-devel = " \

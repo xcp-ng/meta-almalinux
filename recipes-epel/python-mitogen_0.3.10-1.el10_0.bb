@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mitogen \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mitogen-0.3.10-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mitogen-0.3.10-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd09ec9b0ae4967b3fe9941fb6fb01af43754390c8b03064696448f0b87b1857"
 
-URI_x86_64_v2_python3-mitogen = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mitogen-0.3.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mitogen;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mitogen}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mitogen-0.3.10-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mitogen;unpack=0"
 SRC_URI[x86_64_v2_python3-mitogen.sha256sum] = "cee45cb554cb25e7ef50d6ee138e60ae2e447c32544bc2a4528cf7d94dee87fe"
 
-URI_aarch64_python3-mitogen = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mitogen-0.3.10-1.el10_0.noarch.rpm;name=aarch64_python3-mitogen;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mitogen}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mitogen-0.3.10-1.el10_0.noarch.rpm;name=aarch64_python3-mitogen;unpack=0"
 SRC_URI[aarch64_python3-mitogen.sha256sum] = "877134105e96952a32896d5a72042f546625d2245025802c1016b8e391866d52"
 
 RDEPENDS:python3-mitogen = " \

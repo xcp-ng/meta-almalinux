@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-HTTP-Server-Simple \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Server-Simple-0.52-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Server-Simple-0.52-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8d2c3d2e534efb7a40893ece4a65de137f0874fd8a2dc63b47a3a55f519fdaee"
 
-URI_x86_64_v2_perl-HTTP-Server-Simple = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Server-Simple-0.52-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Server-Simple;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Server-Simple}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Server-Simple-0.52-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Server-Simple;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-Server-Simple.sha256sum] = "87cc7c6a398f1040678f7287d017be9ce79329ae3edbcf50281661f18a83f52c"
 
-URI_aarch64_perl-HTTP-Server-Simple = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Server-Simple-0.52-26.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Server-Simple;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-Server-Simple}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Server-Simple-0.52-26.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Server-Simple;unpack=0"
 SRC_URI[aarch64_perl-HTTP-Server-Simple.sha256sum] = "f99aa27cbf6f68fdb222f2dd200be62ad9a00e99264cf489e3c61631e7a78ba6"
 
 RDEPENDS:perl-HTTP-Server-Simple = " \

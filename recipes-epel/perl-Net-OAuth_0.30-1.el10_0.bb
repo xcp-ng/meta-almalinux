@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Net-OAuth \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Net-OAuth-0.30-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Net-OAuth-0.30-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b3b22d550898e19270e5d272927ed252cf5cbfaba6b586f98fa8bab7a6dc61d0"
 
-URI_x86_64_v2_perl-Net-OAuth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-OAuth-0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-OAuth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Net-OAuth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Net-OAuth-0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Net-OAuth;unpack=0"
 SRC_URI[x86_64_v2_perl-Net-OAuth.sha256sum] = "68ae35ea3b24b158c2b9bfc39c7393b9dc54841b5bcbec6dcacabeda1689016c"
 
-URI_aarch64_perl-Net-OAuth = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-OAuth-0.30-1.el10_0.noarch.rpm;name=aarch64_perl-Net-OAuth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Net-OAuth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Net-OAuth-0.30-1.el10_0.noarch.rpm;name=aarch64_perl-Net-OAuth;unpack=0"
 SRC_URI[aarch64_perl-Net-OAuth.sha256sum] = "f9481492a5d3d42913ca2fcf6d108ee70f3511d5239a311a2fa2f5b139779378"
 
 RDEPENDS:perl-Net-OAuth = " \

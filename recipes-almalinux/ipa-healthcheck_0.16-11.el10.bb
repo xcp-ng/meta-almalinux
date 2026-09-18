@@ -10,24 +10,19 @@ PACKAGES = " \
  ipa-healthcheck-core \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ipa-healthcheck-0.16-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ipa-healthcheck-0.16-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a3fa5055b3988a9f1a07e93191f4de0d01bfff0764f43ee4418d8aa26e9a717a"
 
-URI_x86_64_v2_ipa-healthcheck = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-0.16-11.el10.noarch.rpm;name=x86_64_v2_ipa-healthcheck;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-healthcheck}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-0.16-11.el10.noarch.rpm;name=x86_64_v2_ipa-healthcheck;unpack=0"
 SRC_URI[x86_64_v2_ipa-healthcheck.sha256sum] = "dd0400ce10bfbc87afb7ae858cdeb3095cf024da4787f1e3e7c0364d71795639"
 
-URI_x86_64_v2_ipa-healthcheck-core = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-core-0.16-11.el10.noarch.rpm;name=x86_64_v2_ipa-healthcheck-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-healthcheck-core}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-core-0.16-11.el10.noarch.rpm;name=x86_64_v2_ipa-healthcheck-core;unpack=0"
 SRC_URI[x86_64_v2_ipa-healthcheck-core.sha256sum] = "fc49da5e4513c9b2893d67aafd262fa96000c3864da6d57a089c97f06044be87"
 
-URI_aarch64_ipa-healthcheck = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-healthcheck-0.16-11.el10.noarch.rpm;name=aarch64_ipa-healthcheck;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-healthcheck}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-healthcheck-0.16-11.el10.noarch.rpm;name=aarch64_ipa-healthcheck;unpack=0"
 SRC_URI[aarch64_ipa-healthcheck.sha256sum] = "dd0400ce10bfbc87afb7ae858cdeb3095cf024da4787f1e3e7c0364d71795639"
 
-URI_aarch64_ipa-healthcheck-core = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-healthcheck-core-0.16-11.el10.noarch.rpm;name=aarch64_ipa-healthcheck-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-healthcheck-core}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-healthcheck-core-0.16-11.el10.noarch.rpm;name=aarch64_ipa-healthcheck-core;unpack=0"
 SRC_URI[aarch64_ipa-healthcheck-core.sha256sum] = "fc49da5e4513c9b2893d67aafd262fa96000c3864da6d57a089c97f06044be87"
 
 RDEPENDS:ipa-healthcheck = " \

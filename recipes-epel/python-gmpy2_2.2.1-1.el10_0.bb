@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-gmpy2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-gmpy2-2.2.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-gmpy2-2.2.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d0aaa80c4ef4636a31c174ee3c459dc3fb05a575fe088fcd1e14d8168a6424b6"
 
-URI_x86_64_v2_python-gmpy2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-gmpy2-doc-2.2.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-gmpy2-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-gmpy2-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-gmpy2-doc-2.2.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-gmpy2-doc;unpack=0"
 SRC_URI[x86_64_v2_python-gmpy2-doc.sha256sum] = "c3839b5cadcb834acc50da2780cedad4ce81484793a123a6ec9a423c88ce964e"
 
-URI_x86_64_v2_python3-gmpy2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gmpy2-2.2.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-gmpy2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-gmpy2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-gmpy2-2.2.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-gmpy2;unpack=0"
 SRC_URI[x86_64_v2_python3-gmpy2.sha256sum] = "edaac2ec5802291d1b6e4b566d4d44012fcd2a1b81e5e4b1ecb933d9c0929ea3"
 
-URI_aarch64_python-gmpy2-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-gmpy2-doc-2.2.1-1.el10_0.noarch.rpm;name=aarch64_python-gmpy2-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-gmpy2-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-gmpy2-doc-2.2.1-1.el10_0.noarch.rpm;name=aarch64_python-gmpy2-doc;unpack=0"
 SRC_URI[aarch64_python-gmpy2-doc.sha256sum] = "4ab564032b9e17fcef16885bef643309af4e463c56e6cc38e02e7738a2651b63"
 
-URI_aarch64_python3-gmpy2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-gmpy2-2.2.1-1.el10_0.aarch64.rpm;name=aarch64_python3-gmpy2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-gmpy2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-gmpy2-2.2.1-1.el10_0.aarch64.rpm;name=aarch64_python3-gmpy2;unpack=0"
 SRC_URI[aarch64_python3-gmpy2.sha256sum] = "82c71465ef802b53888458bf7821d339743b0a898c6b57ef75e0d4fa76cefa1b"
 
 RDEPENDS:python-gmpy2-doc = " \

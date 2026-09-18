@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Unicode-Map \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Unicode-Map-0.112-59.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Unicode-Map-0.112-59.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9aa9448cfc4eff6c8c615e31bfaee975d4da3d058d6ac04eba631e98da220a71"
 
-URI_x86_64_v2_perl-Unicode-Map = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-Map-0.112-59.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-Map;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Unicode-Map}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Unicode-Map-0.112-59.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Unicode-Map;unpack=0"
 SRC_URI[x86_64_v2_perl-Unicode-Map.sha256sum] = "421a15743365cd29b756c2d49e0ce4dcb4f3d472d986e4e01dff253e42f721c7"
 
-URI_aarch64_perl-Unicode-Map = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-Map-0.112-59.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-Map;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Unicode-Map}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Unicode-Map-0.112-59.el10_0.aarch64.rpm;name=aarch64_perl-Unicode-Map;unpack=0"
 SRC_URI[aarch64_perl-Unicode-Map.sha256sum] = "73c7b812b6b891cf9c46157df7f8694f2866dd0837da64a1cc41cb7235ea4688"
 
 RDEPENDS:perl-Unicode-Map = " \

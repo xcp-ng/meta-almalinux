@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Section-Simple \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Section-Simple-0.07-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Section-Simple-0.07-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "73964de004646a53307b40cfc4e54a05f3b59f470e15edf14a4b16ec03610368"
 
-URI_x86_64_v2_perl-Data-Section-Simple = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Section-Simple-0.07-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Section-Simple;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Section-Simple}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Section-Simple-0.07-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Section-Simple;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Section-Simple.sha256sum] = "4bd170f3717709715f08c73b5068eec7106b1663e9df27c291e875c9d5d36115"
 
-URI_aarch64_perl-Data-Section-Simple = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Section-Simple-0.07-27.el10_0.noarch.rpm;name=aarch64_perl-Data-Section-Simple;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Section-Simple}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Section-Simple-0.07-27.el10_0.noarch.rpm;name=aarch64_perl-Data-Section-Simple;unpack=0"
 SRC_URI[aarch64_perl-Data-Section-Simple.sha256sum] = "5346c41be276244ead506a75e370eb16ae01f85ffb0e7d002c691bb10373bdba"
 
 RDEPENDS:perl-Data-Section-Simple = " \

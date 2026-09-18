@@ -13,48 +13,37 @@ PACKAGES = " \
  patat \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/patat-0.12.0.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/patat-0.12.0.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "caa56b3eed43b597186ee1b099b8d4e1349f8b06bd080d145fd87d2bd2bbf06a"
 
-URI_x86_64_v2_ghc-patat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-patat}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat;unpack=0"
 SRC_URI[x86_64_v2_ghc-patat.sha256sum] = "abb7322952ea404e87a1acc29c367ffa90be69932c171002f3feff47687eb122"
 
-URI_x86_64_v2_ghc-patat-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-devel-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-patat-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-devel-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-patat-devel.sha256sum] = "c495880bcb0d06338c0e3eeb48b44a231ee344ee937205cc68bcbd3bd07a8b67"
 
-URI_x86_64_v2_ghc-patat-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-doc-0.12.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-patat-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-patat-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-doc-0.12.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-patat-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-patat-doc.sha256sum] = "eafc7d26be3463766b592087f12e4c12db3e403e84936f4720b0b23074808b1f"
 
-URI_x86_64_v2_ghc-patat-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-prof-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-patat-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-patat-prof-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-patat-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-patat-prof.sha256sum] = "89b1b1ffc45b9e6bcefa2fe191748916bfae1b064c18f8676ae74f9bcd16dbee"
 
-URI_x86_64_v2_patat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/patat-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_patat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_patat}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/patat-0.12.0.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_patat;unpack=0"
 SRC_URI[x86_64_v2_patat.sha256sum] = "282c1e861844ffb1f7dab65e24a43ec5bc31ae29f4c8cc5463778e897ff7e1b2"
 
-URI_aarch64_ghc-patat = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-patat}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat;unpack=0"
 SRC_URI[aarch64_ghc-patat.sha256sum] = "4fa6fc5c9e66b0f09aee27bc043a62c096a66393bde49f5dc7875c1607ce963b"
 
-URI_aarch64_ghc-patat-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-devel-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-patat-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-devel-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat-devel;unpack=0"
 SRC_URI[aarch64_ghc-patat-devel.sha256sum] = "2213b7f20ef8ca7acaeef6e6015629b48017ce427a66b37957d3a2ca7558e213"
 
-URI_aarch64_ghc-patat-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-doc-0.12.0.0-1.el10_0.noarch.rpm;name=aarch64_ghc-patat-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-patat-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-doc-0.12.0.0-1.el10_0.noarch.rpm;name=aarch64_ghc-patat-doc;unpack=0"
 SRC_URI[aarch64_ghc-patat-doc.sha256sum] = "0325de058ced9003c5907499ee553ea66ce486afa9027f13ab46925108293f80"
 
-URI_aarch64_ghc-patat-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-prof-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-patat-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-patat-prof-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-patat-prof;unpack=0"
 SRC_URI[aarch64_ghc-patat-prof.sha256sum] = "d7229c58dca6f1059287d675c40b121bc874a7cbb7762b7036f12d06dc7e336f"
 
-URI_aarch64_patat = "${EPEL_MIRROR}/aarch64/Packages/p/patat-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_patat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_patat}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/patat-0.12.0.0-1.el10_0.aarch64.rpm;name=aarch64_patat;unpack=0"
 SRC_URI[aarch64_patat.sha256sum] = "e585d20bb5267fe3642cfc4fae685cdaecaf407dd4afc3dd20060441c515c6c2"
 
 RDEPENDS:ghc-patat = " \

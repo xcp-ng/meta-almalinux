@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyotp \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyotp-2.9.0-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyotp-2.9.0-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dda74ed8ba8659b8671d58f97a5afafeaf9b1322a1cbd734ea99071e6f5f0cda"
 
-URI_x86_64_v2_python3-pyotp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyotp-2.9.0-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyotp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyotp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyotp-2.9.0-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyotp;unpack=0"
 SRC_URI[x86_64_v2_python3-pyotp.sha256sum] = "1d522a77fdbeab1d50c86f403b9d0308e8aa772f282b5547227526c72c4b8b88"
 
-URI_aarch64_python3-pyotp = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyotp-2.9.0-7.el10_1.noarch.rpm;name=aarch64_python3-pyotp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyotp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyotp-2.9.0-7.el10_1.noarch.rpm;name=aarch64_python3-pyotp;unpack=0"
 SRC_URI[aarch64_python3-pyotp.sha256sum] = "ede01f93366c7395426c9f1d7c3fbb525413544632e7e49a16f28d696b41d718"
 
 RDEPENDS:python3-pyotp = " \

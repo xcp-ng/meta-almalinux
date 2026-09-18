@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-bsddb3 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-bsddb3-6.2.9-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-bsddb3-6.2.9-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "12c57a92015d484418e700546cf037a9abe651402f484e6acebe82957b06bf35"
 
-URI_x86_64_v2_python3-bsddb3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bsddb3-6.2.9-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-bsddb3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-bsddb3}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bsddb3-6.2.9-18.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-bsddb3;unpack=0"
 SRC_URI[x86_64_v2_python3-bsddb3.sha256sum] = "2244d225de20becedabf3623ab35c0db83c64bca433778fbea57dac0ea6a8fa8"
 
-URI_aarch64_python3-bsddb3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-bsddb3-6.2.9-18.el10_0.aarch64.rpm;name=aarch64_python3-bsddb3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-bsddb3}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-bsddb3-6.2.9-18.el10_0.aarch64.rpm;name=aarch64_python3-bsddb3;unpack=0"
 SRC_URI[aarch64_python3-bsddb3.sha256sum] = "c0f51e43d55f4079a1d051409b56eeba52d6f1a157024fec552b4f86150b5e72"
 
 RDEPENDS:python3-bsddb3 = " \

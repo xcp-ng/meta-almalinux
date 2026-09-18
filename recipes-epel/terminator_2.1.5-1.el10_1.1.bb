@@ -9,16 +9,13 @@ PACKAGES = " \
  terminator \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/t/terminator-2.1.5-1.el10_1.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/t/terminator-2.1.5-1.el10_1.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8f88fa9c3aec98e012afefa4ea0a29add162b40b33f2c3c1404236d2c430d969"
 
-URI_x86_64_v2_terminator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/terminator-2.1.5-1.el10_1.1.alma_altarch.1.noarch.rpm;name=x86_64_v2_terminator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_terminator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/terminator-2.1.5-1.el10_1.1.alma_altarch.1.noarch.rpm;name=x86_64_v2_terminator;unpack=0"
 SRC_URI[x86_64_v2_terminator.sha256sum] = "fab59a06f382f4203d9a091fd032a721102b34ec2d5d5c7e96e37e12b8dcdc29"
 
-URI_aarch64_terminator = "${EPEL_MIRROR}/aarch64/Packages/t/terminator-2.1.5-1.el10_1.1.noarch.rpm;name=aarch64_terminator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_terminator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/t/terminator-2.1.5-1.el10_1.1.noarch.rpm;name=aarch64_terminator;unpack=0"
 SRC_URI[aarch64_terminator.sha256sum] = "232ea2703141b81d74a4371a764dde3b732f201bb2660fc51256b2c9677629dc"
 
 RDEPENDS:terminator = " \

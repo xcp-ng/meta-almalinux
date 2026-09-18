@@ -9,16 +9,13 @@ PACKAGES = " \
  kile \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kile-2.9.94-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kile-2.9.94-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "98b9b018970d1da5f125b226e3f43a22bf4079e5117d172da557c211fbfee240"
 
-URI_x86_64_v2_kile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kile-2.9.94-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kile}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kile-2.9.94-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kile;unpack=0"
 SRC_URI[x86_64_v2_kile.sha256sum] = "ff6f8ea98b87d5c2ef2ba3a42edf527a9f0cff8cec4becdf65c76855ebdb2f74"
 
-URI_aarch64_kile = "${EPEL_MIRROR}/aarch64/Packages/k/kile-2.9.94-3.el10_0.aarch64.rpm;name=aarch64_kile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kile}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kile-2.9.94-3.el10_0.aarch64.rpm;name=aarch64_kile;unpack=0"
 SRC_URI[aarch64_kile.sha256sum] = "04a19420b75c7e473264810d70cbe9bf8804a588003c518f6a8ba614208e9503"
 
 RDEPENDS:kile = " \

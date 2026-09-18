@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-pytest-xdist+setproctitle \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-xdist-3.6.1-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-xdist-3.6.1-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b22b84277f4f035fdd63b15fcded6dab8fd3765fd90759e96290e7cb4a48a5a0"
 
-URI_x86_64_v2_python3-pytest-xdist = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-xdist.sha256sum] = "188be93173eae02a49e580d6334f168b2f869e3a420046836a899903479624f2"
 
-URI_x86_64_v2_python3-pytest-xdist+psutil = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+psutil-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+psutil;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist+psutil}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+psutil-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+psutil;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-xdist+psutil.sha256sum] = "26e7991305e51d5b952dd5ad97e383e72e512ccf148c8431ddbe17b143f1d1ef"
 
-URI_x86_64_v2_python3-pytest-xdist+setproctitle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+setproctitle-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+setproctitle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-xdist+setproctitle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-xdist+setproctitle-3.6.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-xdist+setproctitle;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-xdist+setproctitle.sha256sum] = "2574902f64655761b86183c094bd27bfd6b57933cdc6dced9d2bbf403ef87407"
 
-URI_aarch64_python3-pytest-xdist = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-xdist}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist;unpack=0"
 SRC_URI[aarch64_python3-pytest-xdist.sha256sum] = "62d35e06c08f248ba4f25cc2397eee6d771a14f48ca8b8e578fabe3f181c0cda"
 
-URI_aarch64_python3-pytest-xdist+psutil = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist+psutil-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist+psutil;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-xdist+psutil}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist+psutil-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist+psutil;unpack=0"
 SRC_URI[aarch64_python3-pytest-xdist+psutil.sha256sum] = "c2db2c826c7bd740edda9bc2410cbe12c92421568bf4c9e0873ca7ddd28cb584"
 
-URI_aarch64_python3-pytest-xdist+setproctitle = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist+setproctitle-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist+setproctitle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-xdist+setproctitle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-xdist+setproctitle-3.6.1-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-xdist+setproctitle;unpack=0"
 SRC_URI[aarch64_python3-pytest-xdist+setproctitle.sha256sum] = "7f49ed303ce8ac17d0efac41af3569577dd717b9546ec2b3c8fbf0620745293e"
 
 RDEPENDS:python3-pytest-xdist = " \

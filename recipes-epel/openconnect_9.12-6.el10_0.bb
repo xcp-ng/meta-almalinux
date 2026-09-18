@@ -10,24 +10,19 @@ PACKAGES = " \
  openconnect-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/o/openconnect-9.12-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/o/openconnect-9.12-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1bc24056e48c5208041af576c12cbfdee1e6292af71dbb989c039c7dcfe45c92"
 
-URI_x86_64_v2_openconnect = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openconnect-9.12-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openconnect;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_openconnect}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openconnect-9.12-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openconnect;unpack=0"
 SRC_URI[x86_64_v2_openconnect.sha256sum] = "f67f170e2a2afc1514246c51f6cbec8c02e0ba4937704685f0ca813a948ef9c7"
 
-URI_x86_64_v2_openconnect-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openconnect-devel-9.12-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openconnect-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_openconnect-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/openconnect-devel-9.12-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_openconnect-devel;unpack=0"
 SRC_URI[x86_64_v2_openconnect-devel.sha256sum] = "7045a438d8fc59e76aca1a13c32b320fce7f76dcc7990a908795a891a4bc5984"
 
-URI_aarch64_openconnect = "${EPEL_MIRROR}/aarch64/Packages/o/openconnect-9.12-6.el10_0.aarch64.rpm;name=aarch64_openconnect;unpack=0"
-SRC_URI:append = " ${URI_aarch64_openconnect}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/openconnect-9.12-6.el10_0.aarch64.rpm;name=aarch64_openconnect;unpack=0"
 SRC_URI[aarch64_openconnect.sha256sum] = "f871748a026ba9ca5f54eb173e6a999dc0ecbb74a4620f8dc79a7c5d42066623"
 
-URI_aarch64_openconnect-devel = "${EPEL_MIRROR}/aarch64/Packages/o/openconnect-devel-9.12-6.el10_0.aarch64.rpm;name=aarch64_openconnect-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_openconnect-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/openconnect-devel-9.12-6.el10_0.aarch64.rpm;name=aarch64_openconnect-devel;unpack=0"
 SRC_URI[aarch64_openconnect-devel.sha256sum] = "b17e953aaa121e47217b04303a853de98552c3d7fbb490fb48d0dbccbbb6522f"
 
 RDEPENDS:openconnect = " \

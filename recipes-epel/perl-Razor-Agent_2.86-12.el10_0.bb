@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Razor-Agent \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Razor-Agent-2.86-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Razor-Agent-2.86-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0beea7ecaa12bede02a76a4df71e852d5857711e458588a72c257beaca5797e9"
 
-URI_x86_64_v2_perl-Razor-Agent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Razor-Agent-2.86-12.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Razor-Agent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Razor-Agent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Razor-Agent-2.86-12.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Razor-Agent;unpack=0"
 SRC_URI[x86_64_v2_perl-Razor-Agent.sha256sum] = "8fcb02bdc06efa9bb2c975af15fb7bd62b7cdf421468cc480e69b7cc998420da"
 
-URI_aarch64_perl-Razor-Agent = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Razor-Agent-2.86-12.el10_0.aarch64.rpm;name=aarch64_perl-Razor-Agent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Razor-Agent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Razor-Agent-2.86-12.el10_0.aarch64.rpm;name=aarch64_perl-Razor-Agent;unpack=0"
 SRC_URI[aarch64_perl-Razor-Agent.sha256sum] = "b2c32fcc1018afcdeaa08481292dad17350b1e8a295632975e1d6f8c27dba68d"
 
 RDEPENDS:perl-Razor-Agent = " \

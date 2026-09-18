@@ -9,16 +9,13 @@ PACKAGES = " \
  mock-core-configs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/mock-core-configs-44.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/mock-core-configs-44.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "762a0e5acf41a96322444c218181247cf52b84b7dc6665601a69cce74eed900c"
 
-URI_x86_64_v2_mock-core-configs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mock-core-configs-44.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mock-core-configs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mock-core-configs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mock-core-configs-44.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mock-core-configs;unpack=0"
 SRC_URI[x86_64_v2_mock-core-configs.sha256sum] = "474c79c977a89e46e853e6d0717935fe4518ecf2135f2c403e93a93859a9633b"
 
-URI_aarch64_mock-core-configs = "${EPEL_MIRROR}/aarch64/Packages/m/mock-core-configs-44.2-1.el10_1.noarch.rpm;name=aarch64_mock-core-configs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mock-core-configs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mock-core-configs-44.2-1.el10_1.noarch.rpm;name=aarch64_mock-core-configs;unpack=0"
 SRC_URI[aarch64_mock-core-configs.sha256sum] = "879220220848cc633e3b1eeeecd40f865c4a81197b2cd336ed6a15efcd502011"
 
 RDEPENDS:mock-core-configs = " \

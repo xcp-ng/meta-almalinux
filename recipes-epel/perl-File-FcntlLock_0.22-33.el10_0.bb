@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-FcntlLock \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-File-FcntlLock-0.22-33.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-File-FcntlLock-0.22-33.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "adc84afcccf66b08a5281bf17ee30a2ed7ec60e46397f0deff4900c7d6be36c3"
 
-URI_x86_64_v2_perl-File-FcntlLock = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-File-FcntlLock-0.22-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-File-FcntlLock;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-FcntlLock}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-File-FcntlLock-0.22-33.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-File-FcntlLock;unpack=0"
 SRC_URI[x86_64_v2_perl-File-FcntlLock.sha256sum] = "c384b3e3bdc44007c58b54511ba1b55358a7ed1b7532e75ca3a83e6b00bb0c96"
 
-URI_aarch64_perl-File-FcntlLock = "${EPEL_MIRROR}/aarch64/Packages/p/perl-File-FcntlLock-0.22-33.el10_0.aarch64.rpm;name=aarch64_perl-File-FcntlLock;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-FcntlLock}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-File-FcntlLock-0.22-33.el10_0.aarch64.rpm;name=aarch64_perl-File-FcntlLock;unpack=0"
 SRC_URI[aarch64_perl-File-FcntlLock.sha256sum] = "9ba518407c4314b7045f409f17115f7782437c8de4c329109f3ab8e0613dad3e"
 
 RDEPENDS:perl-File-FcntlLock = " \

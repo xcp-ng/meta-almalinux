@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-libnacl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-libnacl-2.1.0-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-libnacl-2.1.0-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "981ce1f8b2c71158d36998efd7e386c3c35b35d6440490d1e84c7d32de1ea244"
 
-URI_x86_64_v2_python3-libnacl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libnacl-2.1.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-libnacl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-libnacl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libnacl-2.1.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-libnacl;unpack=0"
 SRC_URI[x86_64_v2_python3-libnacl.sha256sum] = "b2ea6af74892ec89512f9b62212b75c7da80fae6ac56987350276f963f667f5d"
 
-URI_aarch64_python3-libnacl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-libnacl-2.1.0-7.el10_0.noarch.rpm;name=aarch64_python3-libnacl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-libnacl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-libnacl-2.1.0-7.el10_0.noarch.rpm;name=aarch64_python3-libnacl;unpack=0"
 SRC_URI[aarch64_python3-libnacl.sha256sum] = "b92989ee6ef8696b6baaf98aca25d09576a892b70dd86a4742635308adb29dc3"
 
 RDEPENDS:python3-libnacl = " \

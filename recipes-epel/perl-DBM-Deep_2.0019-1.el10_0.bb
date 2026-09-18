@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-DBM-Deep \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DBM-Deep-2.0019-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DBM-Deep-2.0019-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8bc5cd7e96500939efba12162ee8e37b54fda9a26393e200abf2386be86c9840"
 
-URI_x86_64_v2_perl-DBM-Deep = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DBM-Deep-2.0019-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DBM-Deep;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DBM-Deep}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DBM-Deep-2.0019-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DBM-Deep;unpack=0"
 SRC_URI[x86_64_v2_perl-DBM-Deep.sha256sum] = "2b17671d948071a024b521d39b07be2356f5137f693eb172830f5bfc44e6e5c9"
 
-URI_aarch64_perl-DBM-Deep = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DBM-Deep-2.0019-1.el10_0.noarch.rpm;name=aarch64_perl-DBM-Deep;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DBM-Deep}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DBM-Deep-2.0019-1.el10_0.noarch.rpm;name=aarch64_perl-DBM-Deep;unpack=0"
 SRC_URI[aarch64_perl-DBM-Deep.sha256sum] = "819b1b09e48a5a36e1d01edfbf2b01db08095c1ef60c269773c6ae33c31fd9b4"
 
 RDEPENDS:perl-DBM-Deep = " \

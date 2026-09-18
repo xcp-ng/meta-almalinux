@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-CleanNamespaces \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CleanNamespaces-0.24-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CleanNamespaces-0.24-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "edafafbd991d692cf7187cca354396db9c5128616e122c3562414a6d3a5411b7"
 
-URI_x86_64_v2_perl-Test-CleanNamespaces = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CleanNamespaces-0.24-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CleanNamespaces;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-CleanNamespaces}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CleanNamespaces-0.24-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CleanNamespaces;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-CleanNamespaces.sha256sum] = "357393a8697703797591d150b40142a470e3ce86e3e4c87b9e756199453ec1d9"
 
-URI_aarch64_perl-Test-CleanNamespaces = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CleanNamespaces-0.24-19.el10_0.noarch.rpm;name=aarch64_perl-Test-CleanNamespaces;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-CleanNamespaces}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CleanNamespaces-0.24-19.el10_0.noarch.rpm;name=aarch64_perl-Test-CleanNamespaces;unpack=0"
 SRC_URI[aarch64_perl-Test-CleanNamespaces.sha256sum] = "5d415dad4c893f4ae05b8a5f4ad7c35a58ee694479a5c7d66e4b3be8476e3293"
 
 RDEPENDS:perl-Test-CleanNamespaces = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-unic-ucd-category-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-unic-ucd-category-0.9.0-14.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-unic-ucd-category-0.9.0-14.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "66ae9c3ef8d4e1218a058913d9a610a167bc82b68a74f7edf77cdfdd05495314"
 
-URI_x86_64_v2_rust-unic-ucd-category+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unic-ucd-category+default-devel-0.9.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unic-ucd-category+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-unic-ucd-category+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unic-ucd-category+default-devel-0.9.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unic-ucd-category+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unic-ucd-category+default-devel.sha256sum] = "2184fff607f95b7399c2824dc910e5c620b2b799956835fd37844a16b73ab46a"
 
-URI_x86_64_v2_rust-unic-ucd-category-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unic-ucd-category-devel-0.9.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unic-ucd-category-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-unic-ucd-category-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unic-ucd-category-devel-0.9.0-14.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unic-ucd-category-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unic-ucd-category-devel.sha256sum] = "c3cf5b24bbe661ac58309694683c4e7de72381b8c53635db19b00a60b3262f5d"
 
-URI_aarch64_rust-unic-ucd-category+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unic-ucd-category+default-devel-0.9.0-14.el10_1.noarch.rpm;name=aarch64_rust-unic-ucd-category+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-unic-ucd-category+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unic-ucd-category+default-devel-0.9.0-14.el10_1.noarch.rpm;name=aarch64_rust-unic-ucd-category+default-devel;unpack=0"
 SRC_URI[aarch64_rust-unic-ucd-category+default-devel.sha256sum] = "36a26c7439ffdf47409b5fca6c163e9fcb7a860f0dda38ce6fe0fdbe2973e4a8"
 
-URI_aarch64_rust-unic-ucd-category-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unic-ucd-category-devel-0.9.0-14.el10_1.noarch.rpm;name=aarch64_rust-unic-ucd-category-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-unic-ucd-category-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unic-ucd-category-devel-0.9.0-14.el10_1.noarch.rpm;name=aarch64_rust-unic-ucd-category-devel;unpack=0"
 SRC_URI[aarch64_rust-unic-ucd-category-devel.sha256sum] = "13ebc1a235a7677d0cbb73208ae122ada6183265787301b326550f14688e8c02"
 
 RDEPENDS:rust-unic-ucd-category+default-devel = " \

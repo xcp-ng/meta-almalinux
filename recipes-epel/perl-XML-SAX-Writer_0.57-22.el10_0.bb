@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-SAX-Writer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-SAX-Writer-0.57-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-SAX-Writer-0.57-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ff845b04926eab62c043a0e222019b79eae00cf7f995099f7b524e1fdbde99f8"
 
-URI_x86_64_v2_perl-XML-SAX-Writer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-SAX-Writer-0.57-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-SAX-Writer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-SAX-Writer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-SAX-Writer-0.57-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-SAX-Writer;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-SAX-Writer.sha256sum] = "a97b811d119261c90bea171f8c9ffebcb3d0216d59c99e8971e5118cf0a3e709"
 
-URI_aarch64_perl-XML-SAX-Writer = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-SAX-Writer-0.57-22.el10_0.noarch.rpm;name=aarch64_perl-XML-SAX-Writer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-SAX-Writer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-SAX-Writer-0.57-22.el10_0.noarch.rpm;name=aarch64_perl-XML-SAX-Writer;unpack=0"
 SRC_URI[aarch64_perl-XML-SAX-Writer.sha256sum] = "1079715c0adc78d47c951e73ec2b00dad5feb60f4b67b4528e8bb5479aa4d0c0"
 
 RDEPENDS:perl-XML-SAX-Writer = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Assertions \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Assertions-1.054-45.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Assertions-1.054-45.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "acfe2de101ff7defdd8aedad233eac320001bd75ea78c5e4e97acb497807b8a2"
 
-URI_x86_64_v2_perl-Test-Assertions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Assertions-1.054-45.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Assertions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Assertions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Assertions-1.054-45.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Assertions;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Assertions.sha256sum] = "e2f602640d9ed8db2c5af1d1052099b334e71c3217d8c1e6d6b21b9fb05fc45e"
 
-URI_aarch64_perl-Test-Assertions = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Assertions-1.054-45.el10_0.noarch.rpm;name=aarch64_perl-Test-Assertions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Assertions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Assertions-1.054-45.el10_0.noarch.rpm;name=aarch64_perl-Test-Assertions;unpack=0"
 SRC_URI[aarch64_perl-Test-Assertions.sha256sum] = "146a22a771cd6ed9ab0ded2c4add3fea6d1690f4ad750ded1e404b15a0268956"
 
 RDEPENDS:perl-Test-Assertions = " \

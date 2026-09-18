@@ -9,16 +9,13 @@ PACKAGES = " \
  varnish-modules \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/varnish-modules-0.25.0-3.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/varnish-modules-0.25.0-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c38f503f421284b3bbb3839f44427a4e236534213890f54145f509dd32c20b70"
 
-URI_x86_64_v2_varnish-modules = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/varnish-modules-0.25.0-3.el10.x86_64_v2.rpm;name=x86_64_v2_varnish-modules;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_varnish-modules}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/varnish-modules-0.25.0-3.el10.x86_64_v2.rpm;name=x86_64_v2_varnish-modules;unpack=0"
 SRC_URI[x86_64_v2_varnish-modules.sha256sum] = "427ac239e01292a703c782da3ae20e817e6ba3df664f02db85c1f9646ce85714"
 
-URI_aarch64_varnish-modules = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/varnish-modules-0.25.0-3.el10.aarch64.rpm;name=aarch64_varnish-modules;unpack=0"
-SRC_URI:append = " ${URI_aarch64_varnish-modules}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/varnish-modules-0.25.0-3.el10.aarch64.rpm;name=aarch64_varnish-modules;unpack=0"
 SRC_URI[aarch64_varnish-modules.sha256sum] = "777210a4cb09d9446487f7a026f4bae1aaf8fa621fbfedd7dfe5aed040a1b4a2"
 
 RDEPENDS:varnish-modules = " \

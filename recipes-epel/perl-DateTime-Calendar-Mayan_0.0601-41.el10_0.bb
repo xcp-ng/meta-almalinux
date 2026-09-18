@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-DateTime-Calendar-Mayan \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1fba706188a0ae357caeeac4119f70c81d891dbd7a986db7f6962c876899696e"
 
-URI_x86_64_v2_perl-DateTime-Calendar-Mayan = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Calendar-Mayan;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime-Calendar-Mayan}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Calendar-Mayan;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime-Calendar-Mayan.sha256sum] = "3023bcde6a096521c97f41c7451f93238f0d8c1bd417cb8ed86625a8c4f903b9"
 
-URI_aarch64_perl-DateTime-Calendar-Mayan = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Calendar-Mayan;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime-Calendar-Mayan}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Calendar-Mayan-0.0601-41.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Calendar-Mayan;unpack=0"
 SRC_URI[aarch64_perl-DateTime-Calendar-Mayan.sha256sum] = "7c67495b4eef1d41a4686e88b7a57d5adf08b28f25bc3d3e99e54423a4b586be"
 
 RDEPENDS:perl-DateTime-Calendar-Mayan = " \

@@ -43,140 +43,106 @@ PACKAGES:aarch64 = " \
  python3-kiwi \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kiwi-10.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kiwi-10.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d86c867b2c718f9ffc26982e634129bc2bc8fe529ca1fb1127706a51d9c8743"
 
-URI_x86_64_v2_dracut-kiwi-lib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-lib-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-lib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-lib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-lib-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-lib;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-lib.sha256sum] = "c6a8077f6c5dc6caa0248d46f87866a5e0186ffc4d4d0617920892e41b480541"
 
-URI_x86_64_v2_dracut-kiwi-live = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-live-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-live;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-live}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-live-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-live;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-live.sha256sum] = "912743c6d4b162b3ceeff240e43427236a194d60fc48a0a9365b3022e701d8f6"
 
-URI_x86_64_v2_dracut-kiwi-oem-dump = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-oem-dump-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-oem-dump;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-oem-dump}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-oem-dump-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-oem-dump;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-oem-dump.sha256sum] = "f5663ec962ef393f668af8de49bf615b3770a1a25e3f20cb85468f57bb4cdb97"
 
-URI_x86_64_v2_dracut-kiwi-oem-repart = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-oem-repart-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-oem-repart;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-oem-repart}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-oem-repart-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-oem-repart;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-oem-repart.sha256sum] = "f45a06e4653f393b7f247d1b9775931de6be1365b4d83f1f3464dd66e404eecf"
 
-URI_x86_64_v2_dracut-kiwi-overlay = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-overlay-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-overlay;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-overlay}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-overlay-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_dracut-kiwi-overlay;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-overlay.sha256sum] = "4d1fb73e66430f8b121577e4f97cdca8c80e023ea7a894818f4615cf48e58eba"
 
-URI_x86_64_v2_dracut-kiwi-verity = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-verity-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dracut-kiwi-verity;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_dracut-kiwi-verity}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dracut-kiwi-verity-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dracut-kiwi-verity;unpack=0"
 SRC_URI[x86_64_v2_dracut-kiwi-verity.sha256sum] = "974ebd2cf067bd37003096ead778443176465373e9843ac0a180f7ed3641fe6f"
 
-URI_x86_64_v2_kiwi-cli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-cli-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kiwi-cli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-cli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-cli-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kiwi-cli;unpack=0"
 SRC_URI[x86_64_v2_kiwi-cli.sha256sum] = "36a7e83e80b7eb8b5dbb87c536535f5401310a894453d8095743792bc2c089fb"
 
-URI_x86_64_v2_kiwi-pxeboot = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-pxeboot-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-pxeboot;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-pxeboot}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-pxeboot-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-pxeboot;unpack=0"
 SRC_URI[x86_64_v2_kiwi-pxeboot.sha256sum] = "33bf321598daf29681e24efc67bbc78f0c6b311eeabda94eb1ad6a83a36d61f8"
 
-URI_x86_64_v2_kiwi-systemdeps = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps.sha256sum] = "012c53dea306336ef7ab8300ce8d48e46f00ded5cf101a621702339454fc4aab"
 
-URI_x86_64_v2_kiwi-systemdeps-bootloaders = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-bootloaders-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-bootloaders;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-bootloaders}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-bootloaders-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-bootloaders;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-bootloaders.sha256sum] = "9e0ea145cabd49f33ba6995e7eadac8bf478f4be068616ea95bf5b794bcc1548"
 
-URI_x86_64_v2_kiwi-systemdeps-containers = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-containers-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-containers;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-containers}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-containers-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-containers;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-containers.sha256sum] = "9f31ac0ff28b4608e1446c4df287737ee764f69c8de486f871dab6411bbd57c9"
 
-URI_x86_64_v2_kiwi-systemdeps-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-core-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-core}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-core-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-core;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-core.sha256sum] = "025e11fa51a73b574b0727d51fe2e24a08c48a33c71200f7df1ceddd7e6a4f94"
 
-URI_x86_64_v2_kiwi-systemdeps-disk-images = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-disk-images-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-disk-images;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-disk-images}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-disk-images-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-disk-images;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-disk-images.sha256sum] = "e448397ffc08d32f538256153cf821f26632c4e71437d6fef4b7570b87d39f52"
 
-URI_x86_64_v2_kiwi-systemdeps-filesystems = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-filesystems-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-filesystems;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-filesystems}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-filesystems-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-filesystems;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-filesystems.sha256sum] = "3700c71e08e6ddc46e72fd32fcee20ef756cc9d69ba799017e21f0e5d6456953"
 
-URI_x86_64_v2_kiwi-systemdeps-image-validation = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-image-validation-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-image-validation;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-image-validation}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-image-validation-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-image-validation;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-image-validation.sha256sum] = "62e06349624e7039c7fb5b8f5e61f8a2331198b20c88956fdf51d5f5db283037"
 
-URI_x86_64_v2_kiwi-systemdeps-iso-media = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-iso-media-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-iso-media;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kiwi-systemdeps-iso-media}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kiwi-systemdeps-iso-media-10.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kiwi-systemdeps-iso-media;unpack=0"
 SRC_URI[x86_64_v2_kiwi-systemdeps-iso-media.sha256sum] = "749961a057ab81224921485f384b7c45ba4078661f82cde523d16248563c79e3"
 
-URI_x86_64_v2_python3-kiwi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kiwi-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kiwi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kiwi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kiwi-10.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kiwi;unpack=0"
 SRC_URI[x86_64_v2_python3-kiwi.sha256sum] = "afdf6b96a664cc18327d51207cd76ef993373535f58b07da7ab62d5664c16d75"
 
-URI_aarch64_dracut-kiwi-lib = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-lib-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-lib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-lib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-lib-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-lib;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-lib.sha256sum] = "720acb2faa2026a7ff35238a808cb3b5c4af5a04da6101696782efaedb956f77"
 
-URI_aarch64_dracut-kiwi-live = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-live-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-live;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-live}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-live-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-live;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-live.sha256sum] = "9ffbbe1256e678773ba34542502cbdd5dd796e0c922cf675ab65157e3605ec87"
 
-URI_aarch64_dracut-kiwi-oem-dump = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-oem-dump-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-oem-dump;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-oem-dump}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-oem-dump-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-oem-dump;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-oem-dump.sha256sum] = "431d7b4818904ffef5d70ebf0b6e934cb11e7fd85d26784df40d86ec623bcf80"
 
-URI_aarch64_dracut-kiwi-oem-repart = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-oem-repart-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-oem-repart;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-oem-repart}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-oem-repart-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-oem-repart;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-oem-repart.sha256sum] = "233cd75b6111c11a42f02847521ed8ed32da37b2edd54aaa83c4fa9ad1a952d5"
 
-URI_aarch64_dracut-kiwi-overlay = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-overlay-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-overlay;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-overlay}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-overlay-10.3.0-1.el10_1.noarch.rpm;name=aarch64_dracut-kiwi-overlay;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-overlay.sha256sum] = "3ccf5d6382c66005b20edeb4a66b774cfe53afbc719ac2c176078ea47860daf9"
 
-URI_aarch64_dracut-kiwi-verity = "${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-verity-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_dracut-kiwi-verity;unpack=0"
-SRC_URI:append = " ${URI_aarch64_dracut-kiwi-verity}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/dracut-kiwi-verity-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_dracut-kiwi-verity;unpack=0"
 SRC_URI[aarch64_dracut-kiwi-verity.sha256sum] = "249170c959836d479823edaefc30c4316d3ef43972c9bdbfde35c34f33a4e340"
 
-URI_aarch64_kiwi-cli = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-cli-10.3.0-1.el10_1.noarch.rpm;name=aarch64_kiwi-cli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-cli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-cli-10.3.0-1.el10_1.noarch.rpm;name=aarch64_kiwi-cli;unpack=0"
 SRC_URI[aarch64_kiwi-cli.sha256sum] = "dd9cc41a7d84442c30432a9e6f791204304147b7fc209456c54cb96089783d20"
 
-URI_aarch64_kiwi-systemdeps = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps.sha256sum] = "53a86259bd63c3719be08ce79d9a749392967bf2073faf8148b1ed9beded8f5e"
 
-URI_aarch64_kiwi-systemdeps-bootloaders = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-bootloaders-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-bootloaders;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-bootloaders}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-bootloaders-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-bootloaders;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-bootloaders.sha256sum] = "427193dc38d50b32e21f7eb05a9f8d5f0f5a9a19aca0bf0dc159d2c3c7373309"
 
-URI_aarch64_kiwi-systemdeps-containers = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-containers-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-containers;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-containers}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-containers-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-containers;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-containers.sha256sum] = "6248a9d42f76aecbe6827281a9f82be09f694bf08b392d947cbced5f98b5342a"
 
-URI_aarch64_kiwi-systemdeps-core = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-core-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-core}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-core-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-core;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-core.sha256sum] = "c8d4d10a8a4ada3c788ba93840fdbc1a298f72a2899026dcb0f0d175e896853a"
 
-URI_aarch64_kiwi-systemdeps-disk-images = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-disk-images-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-disk-images;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-disk-images}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-disk-images-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-disk-images;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-disk-images.sha256sum] = "c58a2c5b81931465265e20692d8012034c32935988e74fbdbc3fc6b81b7ef5b4"
 
-URI_aarch64_kiwi-systemdeps-filesystems = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-filesystems-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-filesystems;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-filesystems}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-filesystems-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-filesystems;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-filesystems.sha256sum] = "dee4f884ff4ff38ec2c4d55706c6a45bd5721511184d14832652aa975f0dc652"
 
-URI_aarch64_kiwi-systemdeps-image-validation = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-image-validation-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-image-validation;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-image-validation}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-image-validation-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-image-validation;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-image-validation.sha256sum] = "85d6ab4650a001bf8d2d25d0c7a35ef3798cfd3c5660bbe49a0532eca4b78ed0"
 
-URI_aarch64_kiwi-systemdeps-iso-media = "${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-iso-media-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-iso-media;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kiwi-systemdeps-iso-media}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kiwi-systemdeps-iso-media-10.3.0-1.el10_1.aarch64.rpm;name=aarch64_kiwi-systemdeps-iso-media;unpack=0"
 SRC_URI[aarch64_kiwi-systemdeps-iso-media.sha256sum] = "caad4030ba31eab9308e69f44cc597cce3e613c00f9b30e3fb989877a105577b"
 
-URI_aarch64_python3-kiwi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kiwi-10.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-kiwi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kiwi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-kiwi-10.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-kiwi;unpack=0"
 SRC_URI[aarch64_python3-kiwi.sha256sum] = "01e6af7d27aae9f5ec7aedf0aa33503b76df07b5865fbc792865e60e8d4ed90f"
 
 RDEPENDS:dracut-kiwi-lib = " \

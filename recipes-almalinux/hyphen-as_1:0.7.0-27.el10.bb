@@ -10,16 +10,13 @@ PACKAGES = " \
  hyphen-as \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-as-0.7.0-27.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hyphen-as-0.7.0-27.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "252b471451f6816318869e738cccc07d7baaefc5536674eb5b80e0d3d38f1ff9"
 
-URI_x86_64_v2_hyphen-as = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-as-0.7.0-27.el10.noarch.rpm;name=x86_64_v2_hyphen-as;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hyphen-as}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hyphen-as-0.7.0-27.el10.noarch.rpm;name=x86_64_v2_hyphen-as;unpack=0"
 SRC_URI[x86_64_v2_hyphen-as.sha256sum] = "43194887ca5386b62052fd2eb497c92af457ab4a28f389da1f355d12fe1ac3d3"
 
-URI_aarch64_hyphen-as = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-as-0.7.0-27.el10.noarch.rpm;name=aarch64_hyphen-as;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hyphen-as}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hyphen-as-0.7.0-27.el10.noarch.rpm;name=aarch64_hyphen-as;unpack=0"
 SRC_URI[aarch64_hyphen-as.sha256sum] = "43194887ca5386b62052fd2eb497c92af457ab4a28f389da1f355d12fe1ac3d3"
 
 RDEPENDS:hyphen-as = " \

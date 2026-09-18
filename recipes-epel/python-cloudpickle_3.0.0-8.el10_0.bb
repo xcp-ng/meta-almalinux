@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cloudpickle \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cloudpickle-3.0.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cloudpickle-3.0.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "05ff256bc04b9a97f0a31025f9800111901d92d7cdbe48b933ba0c864cbe7af5"
 
-URI_x86_64_v2_python3-cloudpickle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cloudpickle-3.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cloudpickle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cloudpickle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cloudpickle-3.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cloudpickle;unpack=0"
 SRC_URI[x86_64_v2_python3-cloudpickle.sha256sum] = "aa76742af5d2a50a49e0177e0d5b3f57dbb279c3abc7e38b24e9f6d6c114dc12"
 
-URI_aarch64_python3-cloudpickle = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cloudpickle-3.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-cloudpickle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cloudpickle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cloudpickle-3.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-cloudpickle;unpack=0"
 SRC_URI[aarch64_python3-cloudpickle.sha256sum] = "02a9a22b9110452829b36f23f85d5bd1bab39458922ec11332c4adba3fb35b6e"
 
 RDEPENDS:python3-cloudpickle = " \

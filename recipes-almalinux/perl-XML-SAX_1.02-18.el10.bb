@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-SAX \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-SAX-1.02-18.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-SAX-1.02-18.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec52229548729bc7fc6a4717cdda21989b11ebd3a8c1928f4ae61a5dfd344bcc"
 
-URI_x86_64_v2_perl-XML-SAX = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-SAX-1.02-18.el10.noarch.rpm;name=x86_64_v2_perl-XML-SAX;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-SAX}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-SAX-1.02-18.el10.noarch.rpm;name=x86_64_v2_perl-XML-SAX;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-SAX.sha256sum] = "5ad1b163ca10ad63128e9de263bd4358d7b9572cd27b8acdc922d373f1542398"
 
-URI_aarch64_perl-XML-SAX = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-SAX-1.02-18.el10.noarch.rpm;name=aarch64_perl-XML-SAX;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-SAX}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-SAX-1.02-18.el10.noarch.rpm;name=aarch64_perl-XML-SAX;unpack=0"
 SRC_URI[aarch64_perl-XML-SAX.sha256sum] = "5ad1b163ca10ad63128e9de263bd4358d7b9572cd27b8acdc922d373f1542398"
 
 RDEPENDS:perl-XML-SAX = " \

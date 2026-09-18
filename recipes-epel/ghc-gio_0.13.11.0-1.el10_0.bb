@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gio-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gio-0.13.11.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gio-0.13.11.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "744e3912ebd33f300844c3c25965a7c761938c33dd79d78151e7bcfbc043168b"
 
-URI_x86_64_v2_ghc-gio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio;unpack=0"
 SRC_URI[x86_64_v2_ghc-gio.sha256sum] = "8a2e3e352d9f55345653956ac766a9a4aab1ece5f5f7115691fb4f0c0739e6af"
 
-URI_x86_64_v2_ghc-gio-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-devel-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gio-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-devel-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gio-devel.sha256sum] = "e5b17d0f94480e06799dc1c85db49581b3e59be3755f858764ab48a784699ac3"
 
-URI_x86_64_v2_ghc-gio-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-doc-0.13.11.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gio-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gio-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-doc-0.13.11.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gio-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gio-doc.sha256sum] = "800dc97822d5d28ab857c5dbf886e72e3630c22b5937910c39066e56757c874a"
 
-URI_x86_64_v2_ghc-gio-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-prof-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gio-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gio-prof-0.13.11.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gio-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gio-prof.sha256sum] = "57b642826be208e78a8ed0710afb34cb9b1a648439ed59ba5eb9487fb07c9b5c"
 
-URI_aarch64_ghc-gio = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio;unpack=0"
 SRC_URI[aarch64_ghc-gio.sha256sum] = "baa2ffc3d0cdca66d9edfa0cc1b5b06556f401982eafa092a92d54af136be501"
 
-URI_aarch64_ghc-gio-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-devel-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gio-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-devel-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio-devel;unpack=0"
 SRC_URI[aarch64_ghc-gio-devel.sha256sum] = "c199010e927dbcc9f36d43ffff5673f50968d39bb9783202ca69766a1c146a60"
 
-URI_aarch64_ghc-gio-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-doc-0.13.11.0-1.el10_0.noarch.rpm;name=aarch64_ghc-gio-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gio-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-doc-0.13.11.0-1.el10_0.noarch.rpm;name=aarch64_ghc-gio-doc;unpack=0"
 SRC_URI[aarch64_ghc-gio-doc.sha256sum] = "5af105c317f9432c7ceff69779b132e69297893327e110374996206ba22c1661"
 
-URI_aarch64_ghc-gio-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-prof-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gio-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gio-prof-0.13.11.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-gio-prof;unpack=0"
 SRC_URI[aarch64_ghc-gio-prof.sha256sum] = "060bf9a8576a28e02d79a8c4a44c24cdff8ef6aac10cf720e6ca23088a263c83"
 
 RDEPENDS:ghc-gio = " \

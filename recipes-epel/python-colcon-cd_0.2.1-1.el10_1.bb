@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colcon-cd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colcon-cd-0.2.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-cd-0.2.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4814e0d39385986fe0fcee768c0a0b0ad5fb6260b6f2539ce6805719abd5a50"
 
-URI_x86_64_v2_python3-colcon-cd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-cd-0.2.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-cd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-cd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-cd-0.2.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-cd;unpack=0"
 SRC_URI[x86_64_v2_python3-colcon-cd.sha256sum] = "f6d066fb723ff7bea90ba666ea42e80eafc2d0b48e14b697ce59beef2d2b8b53"
 
-URI_aarch64_python3-colcon-cd = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-cd-0.2.1-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-cd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colcon-cd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-cd-0.2.1-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-cd;unpack=0"
 SRC_URI[aarch64_python3-colcon-cd.sha256sum] = "8f0bcb6afeca120542cb5ed545e2bf4086616c8c9a411eb1b8afca8e9b202613"
 
 RDEPENDS:python3-colcon-cd = " \

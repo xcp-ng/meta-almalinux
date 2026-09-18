@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-IO-Multiplex \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Multiplex-1.16-30.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Multiplex-1.16-30.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "62e8518615f4d6080131f76c9428888165e87495974b84936c595cf6d7a1e953"
 
-URI_x86_64_v2_perl-IO-Multiplex = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Multiplex-1.16-30.el10.noarch.rpm;name=x86_64_v2_perl-IO-Multiplex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-IO-Multiplex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Multiplex-1.16-30.el10.noarch.rpm;name=x86_64_v2_perl-IO-Multiplex;unpack=0"
 SRC_URI[x86_64_v2_perl-IO-Multiplex.sha256sum] = "4479bfc81696c991a7772100acf4faeea18aa17bff8d15dbe4a1e763a1b9d6e8"
 
-URI_aarch64_perl-IO-Multiplex = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Multiplex-1.16-30.el10.noarch.rpm;name=aarch64_perl-IO-Multiplex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-IO-Multiplex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Multiplex-1.16-30.el10.noarch.rpm;name=aarch64_perl-IO-Multiplex;unpack=0"
 SRC_URI[aarch64_perl-IO-Multiplex.sha256sum] = "4479bfc81696c991a7772100acf4faeea18aa17bff8d15dbe4a1e763a1b9d6e8"
 
 RDEPENDS:perl-IO-Multiplex = " \

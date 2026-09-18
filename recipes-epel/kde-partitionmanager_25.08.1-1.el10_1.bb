@@ -9,16 +9,13 @@ PACKAGES = " \
  kde-partitionmanager \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kde-partitionmanager-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kde-partitionmanager-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4d947664c9d6081bc819217c45cc0c64ea10d02b893a52ef07897f27e8812a72"
 
-URI_x86_64_v2_kde-partitionmanager = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-partitionmanager-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-partitionmanager;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-partitionmanager}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-partitionmanager-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kde-partitionmanager;unpack=0"
 SRC_URI[x86_64_v2_kde-partitionmanager.sha256sum] = "6f1f1bb597771fed4c4adc69b172faafa7bca359566fe0654390bc74d07302ba"
 
-URI_aarch64_kde-partitionmanager = "${EPEL_MIRROR}/aarch64/Packages/k/kde-partitionmanager-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-partitionmanager;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-partitionmanager}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-partitionmanager-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kde-partitionmanager;unpack=0"
 SRC_URI[aarch64_kde-partitionmanager.sha256sum] = "7ea784cc1c4598f754e5a328662670f3f7fb41e364fd01e90271b20adee3777b"
 
 RDEPENDS:kde-partitionmanager = " \

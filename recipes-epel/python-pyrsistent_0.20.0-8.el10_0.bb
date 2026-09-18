@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pyrsistent \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyrsistent-0.20.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyrsistent-0.20.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7181c7c2ba62165ee5e81fdacea09e3ae35558a09ba5222bde8aa653af70d315"
 
-URI_x86_64_v2_python-pyrsistent-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyrsistent-doc-0.20.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyrsistent-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-pyrsistent-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pyrsistent-doc-0.20.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pyrsistent-doc;unpack=0"
 SRC_URI[x86_64_v2_python-pyrsistent-doc.sha256sum] = "9e6bf05ea84bf41e1b4d108b99c8ededda2d3d44697ba2f03625b4b4fadca599"
 
-URI_x86_64_v2_python3-pyrsistent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyrsistent-0.20.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pyrsistent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyrsistent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyrsistent-0.20.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pyrsistent;unpack=0"
 SRC_URI[x86_64_v2_python3-pyrsistent.sha256sum] = "48d3fe6c1831b289d37726f9e2377cd10cd588638ec9077b92501ecf36742206"
 
-URI_aarch64_python-pyrsistent-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pyrsistent-doc-0.20.0-8.el10_0.noarch.rpm;name=aarch64_python-pyrsistent-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-pyrsistent-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pyrsistent-doc-0.20.0-8.el10_0.noarch.rpm;name=aarch64_python-pyrsistent-doc;unpack=0"
 SRC_URI[aarch64_python-pyrsistent-doc.sha256sum] = "676d01419571a59adb99b3b3852f6e7e994466e276eea015a6cc189f3fea72fb"
 
-URI_aarch64_python3-pyrsistent = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyrsistent-0.20.0-8.el10_0.aarch64.rpm;name=aarch64_python3-pyrsistent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyrsistent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyrsistent-0.20.0-8.el10_0.aarch64.rpm;name=aarch64_python3-pyrsistent;unpack=0"
 SRC_URI[aarch64_python3-pyrsistent.sha256sum] = "4712d75b5171621d6fbdfd6d2924a976104f466e153b0b1e4955fd029a30242b"
 
 RDEPENDS:python-pyrsistent-doc = " \

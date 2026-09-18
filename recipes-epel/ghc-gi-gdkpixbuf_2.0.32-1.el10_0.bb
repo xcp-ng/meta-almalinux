@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-gdkpixbuf-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3b7f1210ef520d0615ccfad91f3924f36ba0291d104b59253816375423e0c471"
 
-URI_x86_64_v2_ghc-gi-gdkpixbuf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdkpixbuf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdkpixbuf.sha256sum] = "4c4dd7b8e736aa5faa5e6972e656be9958cd8bdceb1619262bb770e528f23eb8"
 
-URI_x86_64_v2_ghc-gi-gdkpixbuf-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-devel-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdkpixbuf-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-devel-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdkpixbuf-devel.sha256sum] = "bcc65e24c4f83fa093f958990023e1b3be05abaa7129bcac112f6cff90579b6c"
 
-URI_x86_64_v2_ghc-gi-gdkpixbuf-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-doc-2.0.32-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdkpixbuf-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-doc-2.0.32-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdkpixbuf-doc.sha256sum] = "dbe58cf1420ca7578777694480654bee010be3f417ef5af3c956f540f0efa6b6"
 
-URI_x86_64_v2_ghc-gi-gdkpixbuf-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-prof-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gdkpixbuf-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gdkpixbuf-prof-2.0.32-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gdkpixbuf-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gdkpixbuf-prof.sha256sum] = "b3f34a57f41600ed1987a4d97530b13a6f90bab4bf5f8cf100d8a3968566afd0"
 
-URI_aarch64_ghc-gi-gdkpixbuf = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdkpixbuf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdkpixbuf.sha256sum] = "653af0007235e323906a0d17fb31736f35d95d11eadbf4d2fddf1a683eaa10c3"
 
-URI_aarch64_ghc-gi-gdkpixbuf-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-devel-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdkpixbuf-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-devel-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdkpixbuf-devel.sha256sum] = "1f3c5634baff837c017751594e46d786da6bd7c05e3da6f883d3c6cb81bb04b2"
 
-URI_aarch64_ghc-gi-gdkpixbuf-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-doc-2.0.32-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gdkpixbuf-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdkpixbuf-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-doc-2.0.32-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gdkpixbuf-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdkpixbuf-doc.sha256sum] = "a012e29f8760b0db5352484be3f874bf6fd6224b6d080828cb4d536a7005b058"
 
-URI_aarch64_ghc-gi-gdkpixbuf-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-prof-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gdkpixbuf-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gdkpixbuf-prof-2.0.32-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gdkpixbuf-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-gdkpixbuf-prof.sha256sum] = "a800b95de7f980fe97da0d32cbf882c2b4a9e45943913ce878f757c0a7bb0f60"
 
 RDEPENDS:ghc-gi-gdkpixbuf = " \

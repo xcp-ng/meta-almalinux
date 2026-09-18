@@ -9,16 +9,13 @@ PACKAGES = " \
  ack \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/ack-3.7.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/ack-3.7.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1b4ae1100b9544a154940ecad7feafb30ec927389558f929790fc05f36403662"
 
-URI_x86_64_v2_ack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ack-3.7.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ack;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ack}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ack-3.7.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ack;unpack=0"
 SRC_URI[x86_64_v2_ack.sha256sum] = "135f68540bab4b4cebb44b69e7f54af16d45defaca7af364d465b5488887e4fb"
 
-URI_aarch64_ack = "${EPEL_MIRROR}/aarch64/Packages/a/ack-3.7.0-6.el10_0.noarch.rpm;name=aarch64_ack;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ack}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/ack-3.7.0-6.el10_0.noarch.rpm;name=aarch64_ack;unpack=0"
 SRC_URI[aarch64_ack.sha256sum] = "1fdc8d177f4633effbe95e7dd25e01c773bdf0a6c1bde47fe3ebb09cb0b6470f"
 
 RDEPENDS:ack = " \

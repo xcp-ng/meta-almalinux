@@ -9,16 +9,13 @@ PACKAGES = " \
  parley \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/parley-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/parley-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "550d9ca3f56b6aa56192da993422bcf4898dee5550e4f5b0d06e0849694a188f"
 
-URI_x86_64_v2_parley = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/parley-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_parley;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_parley}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/parley-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_parley;unpack=0"
 SRC_URI[x86_64_v2_parley.sha256sum] = "72024bf0503dd72c03891a069b16da800411ee6c72037ea5715a1f4ee6e2ba2f"
 
-URI_aarch64_parley = "${EPEL_MIRROR}/aarch64/Packages/p/parley-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_parley;unpack=0"
-SRC_URI:append = " ${URI_aarch64_parley}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/parley-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_parley;unpack=0"
 SRC_URI[aarch64_parley.sha256sum] = "4673b9ab3b11b5cdfe835065d02eb06b99e72596ed630839a4ac2795a69d991a"
 
 RDEPENDS:parley = " \

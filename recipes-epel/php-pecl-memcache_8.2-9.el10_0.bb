@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-memcache \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-memcache-8.2-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-memcache-8.2-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bf9021f5ab43cdb8aafc1ebb960e1a71a9c1a01916113c664743884f2fc52765"
 
-URI_x86_64_v2_php-pecl-memcache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-memcache-8.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-memcache;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-memcache}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-memcache-8.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-memcache;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-memcache.sha256sum] = "dc495812d501f2e1fa3ee699651c1b8e2ff3efbcd347ebe6541f82b1b13e6c9a"
 
-URI_aarch64_php-pecl-memcache = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-memcache-8.2-9.el10_0.aarch64.rpm;name=aarch64_php-pecl-memcache;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-memcache}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-memcache-8.2-9.el10_0.aarch64.rpm;name=aarch64_php-pecl-memcache;unpack=0"
 SRC_URI[aarch64_php-pecl-memcache.sha256sum] = "4d818231e9eec46d64dd02ce52480c66a6624ebac17311215245d2a7c32a88dd"
 
 RDEPENDS:php-pecl-memcache = " \

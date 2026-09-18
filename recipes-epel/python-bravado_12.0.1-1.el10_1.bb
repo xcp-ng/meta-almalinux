@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-bravado \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-bravado-12.0.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-bravado-12.0.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3361228e7f503e5970d31de4ed61fa7f9393f1440c81e7720bc7a3dedc8cdc69"
 
-URI_x86_64_v2_python3-bravado = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bravado-12.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-bravado;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-bravado}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bravado-12.0.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-bravado;unpack=0"
 SRC_URI[x86_64_v2_python3-bravado.sha256sum] = "d42cecd67f085b9534cfcc218656144a1f7bb40cf8c3ed041c2dbb16549de2f8"
 
-URI_aarch64_python3-bravado = "${EPEL_MIRROR}/aarch64/Packages/p/python3-bravado-12.0.1-1.el10_1.noarch.rpm;name=aarch64_python3-bravado;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-bravado}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-bravado-12.0.1-1.el10_1.noarch.rpm;name=aarch64_python3-bravado;unpack=0"
 SRC_URI[aarch64_python3-bravado.sha256sum] = "01c7de71c526a3cdc48558d19088d445e72df0b076569f2356994c6083493fe3"
 
 RDEPENDS:python3-bravado = " \

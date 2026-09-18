@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-natsort \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-natsort-8.4.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-natsort-8.4.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f5c4d29093f4727425eca3f879a65ed999241713f2c15b60763005d3c4846deb"
 
-URI_x86_64_v2_python3-natsort = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-natsort-8.4.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-natsort;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-natsort}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-natsort-8.4.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-natsort;unpack=0"
 SRC_URI[x86_64_v2_python3-natsort.sha256sum] = "6697c941d8a6f44392d26ddfcc7841840ef4ac9bde8c2c10c3582b2c6eb52ed3"
 
-URI_aarch64_python3-natsort = "${EPEL_MIRROR}/aarch64/Packages/p/python3-natsort-8.4.0-2.el10_0.noarch.rpm;name=aarch64_python3-natsort;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-natsort}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-natsort-8.4.0-2.el10_0.noarch.rpm;name=aarch64_python3-natsort;unpack=0"
 SRC_URI[aarch64_python3-natsort.sha256sum] = "c24061c346e8862db579c437052b05df50d4b97cd5385671d93ad96d57ca0b6b"
 
 RDEPENDS:python3-natsort = " \

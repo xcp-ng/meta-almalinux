@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pycares \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pycares-4.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pycares-4.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "574161822e05d40f5fda654d58884376698f281358e8ea2f88cc4bd37bfba970"
 
-URI_x86_64_v2_python-pycares-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pycares-doc-4.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pycares-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-pycares-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pycares-doc-4.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pycares-doc;unpack=0"
 SRC_URI[x86_64_v2_python-pycares-doc.sha256sum] = "21f268f65a2bfc9134a46d96893900fe5eb4ea13dcd21c13dcb7c84390452df9"
 
-URI_x86_64_v2_python3-pycares = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pycares-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pycares;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pycares}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pycares-4.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pycares;unpack=0"
 SRC_URI[x86_64_v2_python3-pycares.sha256sum] = "d763fb53bfbc689b82f0675abf2796480fe0454d60e165601081591043cf849d"
 
-URI_aarch64_python-pycares-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pycares-doc-4.3.0-1.el10_0.noarch.rpm;name=aarch64_python-pycares-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-pycares-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pycares-doc-4.3.0-1.el10_0.noarch.rpm;name=aarch64_python-pycares-doc;unpack=0"
 SRC_URI[aarch64_python-pycares-doc.sha256sum] = "e68359abfad002b3b3396f03228bdab94c42b87c8638706f433228ff390a9968"
 
-URI_aarch64_python3-pycares = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pycares-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pycares;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pycares}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pycares-4.3.0-1.el10_0.aarch64.rpm;name=aarch64_python3-pycares;unpack=0"
 SRC_URI[aarch64_python3-pycares.sha256sum] = "37324433152f5c71cede7f3ca1005dab372bbe0fa42d5e233d85ae9e5689cd1c"
 
 RDEPENDS:python-pycares-doc = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-lifted-base-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-lifted-base-0.2.3.12-26.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-lifted-base-0.2.3.12-26.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "16b2a7f3b9cda0985f506218a14641e61cdb74c91c0aafdb704c29eae51ab70f"
 
-URI_x86_64_v2_ghc-lifted-base = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lifted-base}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base;unpack=0"
 SRC_URI[x86_64_v2_ghc-lifted-base.sha256sum] = "5a5bfcf84bc2aa36212b36f3d0c82005e3648813c9d0db33a154283d8c40d7aa"
 
-URI_x86_64_v2_ghc-lifted-base-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-devel-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lifted-base-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-devel-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-lifted-base-devel.sha256sum] = "395cfaf892f957d8032885a8f0e945356dcb60e2f1aed6f0beeb8e19e801f31b"
 
-URI_x86_64_v2_ghc-lifted-base-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-doc-0.2.3.12-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-lifted-base-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lifted-base-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-doc-0.2.3.12-26.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-lifted-base-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-lifted-base-doc.sha256sum] = "080babfa6488fa594976eb8a17b388d6a457ce46cf926700c5c963a043d08f22"
 
-URI_x86_64_v2_ghc-lifted-base-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-prof-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-lifted-base-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-lifted-base-prof-0.2.3.12-26.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-lifted-base-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-lifted-base-prof.sha256sum] = "79388d96744f08f0e7c7d2cd71ab4ef8fb23966e0a2a0c313345be5606a013d7"
 
-URI_aarch64_ghc-lifted-base = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lifted-base}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base;unpack=0"
 SRC_URI[aarch64_ghc-lifted-base.sha256sum] = "85faa7811a7f53137d6ffd9a5c8627347bf09bd05e0fe2655d5f69013ecab889"
 
-URI_aarch64_ghc-lifted-base-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-devel-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lifted-base-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-devel-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base-devel;unpack=0"
 SRC_URI[aarch64_ghc-lifted-base-devel.sha256sum] = "67a3ce609444901d96d1bcfd1aadb9c0ca005aae6efaafa00360c04973a67ae1"
 
-URI_aarch64_ghc-lifted-base-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-doc-0.2.3.12-26.el10_0.noarch.rpm;name=aarch64_ghc-lifted-base-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lifted-base-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-doc-0.2.3.12-26.el10_0.noarch.rpm;name=aarch64_ghc-lifted-base-doc;unpack=0"
 SRC_URI[aarch64_ghc-lifted-base-doc.sha256sum] = "9a61e66d8e3874e6990354c863ccb4c192a53bcc9a3738bde0e8a9e7f26ce237"
 
-URI_aarch64_ghc-lifted-base-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-prof-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-lifted-base-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-lifted-base-prof-0.2.3.12-26.el10_0.aarch64.rpm;name=aarch64_ghc-lifted-base-prof;unpack=0"
 SRC_URI[aarch64_ghc-lifted-base-prof.sha256sum] = "dda8ef25d1674e2b6255249d0f81c966b4646a0160d72f782894b18dfaf543cc"
 
 RDEPENDS:ghc-lifted-base = " \

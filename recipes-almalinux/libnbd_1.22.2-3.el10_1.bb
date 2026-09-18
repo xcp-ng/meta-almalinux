@@ -15,8 +15,7 @@ PACKAGES = " \
  python3-libnbd \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libnbd-1.22.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libnbd-1.22.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "741ac4f95a470d7714bcdc12a4bb05819a36a832e81162767273c9e245d7ebc8"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -89,60 +88,46 @@ SRC_URI[src.sha256sum] = "741ac4f95a470d7714bcdc12a4bb05819a36a832e81162767273c9
 # - ocaml-libnbd: ocaml(Stdlib__Uchar) = 7eb8f0d1a7c18933885eaef3b23d79f4
 # - ocaml-libnbd: ocaml(Unix) = 59e61ff7441dfacaa24d4eed6d45eeda
 
-URI_x86_64_v2_libnbd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_libnbd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_libnbd;unpack=0"
 SRC_URI[x86_64_v2_libnbd.sha256sum] = "e6ca22b502b6dd4b2a39cd65b1098235c3bde23a4e5524e12e86940811c17312"
 
-URI_x86_64_v2_libnbd-bash-completion = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libnbd-bash-completion-1.22.2-3.el10_1.noarch.rpm;name=x86_64_v2_libnbd-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libnbd-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libnbd-bash-completion-1.22.2-3.el10_1.noarch.rpm;name=x86_64_v2_libnbd-bash-completion;unpack=0"
 SRC_URI[x86_64_v2_libnbd-bash-completion.sha256sum] = "efdea219538c55dea6cba502d06cbd1b51e3334233119320387abe3cdc9490a3"
 
-URI_x86_64_v2_libnbd-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libnbd-devel-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_libnbd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libnbd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libnbd-devel-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_libnbd-devel;unpack=0"
 SRC_URI[x86_64_v2_libnbd-devel.sha256sum] = "e4248dcbe05853ca0223689a9eb217314ad4f325537b8f454854fd0e2794c0e8"
 
-URI_x86_64_v2_nbdfuse = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/nbdfuse-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_nbdfuse;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_nbdfuse}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/nbdfuse-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_nbdfuse;unpack=0"
 SRC_URI[x86_64_v2_nbdfuse.sha256sum] = "82be2465bd2a0fdc053dea2c073b8cb425d3882e6b285b40eaf917dff169c7e9"
 
-URI_x86_64_v2_ocaml-libnbd = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libnbd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ocaml-libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libnbd;unpack=0"
 SRC_URI[x86_64_v2_ocaml-libnbd.sha256sum] = "1aacc7e069d9ca810a8cba2805bee266022e84483123e1d9d050b1c9bdb7d576"
 
-URI_x86_64_v2_ocaml-libnbd-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libnbd-devel-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libnbd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ocaml-libnbd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/ocaml-libnbd-devel-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_ocaml-libnbd-devel;unpack=0"
 SRC_URI[x86_64_v2_ocaml-libnbd-devel.sha256sum] = "a2c58f3bfdff582525a62290b1168d268e56a1b6380c0267397c9def796c330b"
 
-URI_x86_64_v2_python3-libnbd = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_python3-libnbd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-libnbd-1.22.2-3.el10_1.x86_64_v2.rpm;name=x86_64_v2_python3-libnbd;unpack=0"
 SRC_URI[x86_64_v2_python3-libnbd.sha256sum] = "a438009d2525da6c3190346092dbbe5e10124b7b965e1e24f51f2e0c5956b669"
 
-URI_aarch64_libnbd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_libnbd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_libnbd;unpack=0"
 SRC_URI[aarch64_libnbd.sha256sum] = "1898f0ba28b8f726bde0ad3a25ab09b55fc02cc7ea0d2b42144de6eccb6a9117"
 
-URI_aarch64_libnbd-bash-completion = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libnbd-bash-completion-1.22.2-3.el10_1.noarch.rpm;name=aarch64_libnbd-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libnbd-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libnbd-bash-completion-1.22.2-3.el10_1.noarch.rpm;name=aarch64_libnbd-bash-completion;unpack=0"
 SRC_URI[aarch64_libnbd-bash-completion.sha256sum] = "efdea219538c55dea6cba502d06cbd1b51e3334233119320387abe3cdc9490a3"
 
-URI_aarch64_libnbd-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libnbd-devel-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_libnbd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libnbd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libnbd-devel-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_libnbd-devel;unpack=0"
 SRC_URI[aarch64_libnbd-devel.sha256sum] = "068a8f1b32fcb39dd87006e42c77c4cc5e8f5cfe945d22a869707a57a5817b76"
 
-URI_aarch64_nbdfuse = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/nbdfuse-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_nbdfuse;unpack=0"
-SRC_URI:append = " ${URI_aarch64_nbdfuse}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/nbdfuse-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_nbdfuse;unpack=0"
 SRC_URI[aarch64_nbdfuse.sha256sum] = "122636a0a912a477ff9a283f22867033b3647b6f2b31268be824a0dfaae2b734"
 
-URI_aarch64_ocaml-libnbd = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_ocaml-libnbd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ocaml-libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_ocaml-libnbd;unpack=0"
 SRC_URI[aarch64_ocaml-libnbd.sha256sum] = "4875fe5c372b090c3ad16ba4f5537d236b97a24fc716aba1a39a1701bda7202a"
 
-URI_aarch64_ocaml-libnbd-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libnbd-devel-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_ocaml-libnbd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ocaml-libnbd-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/ocaml-libnbd-devel-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_ocaml-libnbd-devel;unpack=0"
 SRC_URI[aarch64_ocaml-libnbd-devel.sha256sum] = "03f99e20bf50479c64dad14cab9fd5af5747a663ecc39f154a2138f5517939cd"
 
-URI_aarch64_python3-libnbd = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_python3-libnbd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-libnbd}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-libnbd-1.22.2-3.el10_1.aarch64.rpm;name=aarch64_python3-libnbd;unpack=0"
 SRC_URI[aarch64_python3-libnbd.sha256sum] = "62179f844348760711e99a5ddbb49fb4d778a688cc901a67a6a9723d816d9f6d"
 
 RDEPENDS:libnbd = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-rustls-native-certs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-rustls-native-certs-0.8.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-rustls-native-certs-0.8.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6f029a8c43049fb24f4784db626395f940b94a58b535705129c53c3776d356e8"
 
-URI_x86_64_v2_rust-rustls-native-certs+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rustls-native-certs+default-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rustls-native-certs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rustls-native-certs+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rustls-native-certs+default-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rustls-native-certs+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rustls-native-certs+default-devel.sha256sum] = "da844f98dad90b96a302b0dd3d3d7bfdfa11dc88a956e8e3acb61d68a85d4d31"
 
-URI_x86_64_v2_rust-rustls-native-certs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rustls-native-certs-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rustls-native-certs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-rustls-native-certs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rustls-native-certs-devel-0.8.2-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rustls-native-certs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rustls-native-certs-devel.sha256sum] = "50dfc672be5c5b54a87b005a44585a8eb2e7ee3daf987065812666d7e0cb48ce"
 
-URI_aarch64_rust-rustls-native-certs+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rustls-native-certs+default-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-rustls-native-certs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rustls-native-certs+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rustls-native-certs+default-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-rustls-native-certs+default-devel;unpack=0"
 SRC_URI[aarch64_rust-rustls-native-certs+default-devel.sha256sum] = "73936d86f3d6c18a82aa94fddd3e4eee2621208a75390fb9e559a669fa243354"
 
-URI_aarch64_rust-rustls-native-certs-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-rustls-native-certs-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-rustls-native-certs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-rustls-native-certs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rustls-native-certs-devel-0.8.2-1.el10_1.noarch.rpm;name=aarch64_rust-rustls-native-certs-devel;unpack=0"
 SRC_URI[aarch64_rust-rustls-native-certs-devel.sha256sum] = "8d59991782390546e412bc57fa24febe58943ab1924a9c0af3896fab98421cf0"
 
 RDEPENDS:rust-rustls-native-certs+default-devel = " \

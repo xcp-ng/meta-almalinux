@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-RegExp \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-RegExp-0.04-34.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-RegExp-0.04-34.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a5eb48d711dae9b5f803627eae0c0c0bfadba26031fb45e0b8130d47ff6cee98"
 
-URI_x86_64_v2_perl-XML-RegExp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-RegExp-0.04-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-RegExp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-RegExp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-RegExp-0.04-34.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-RegExp;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-RegExp.sha256sum] = "76aad3844ef079bd491497968a138bc3b4c7058ec82b0ace6351d7041361a6f2"
 
-URI_aarch64_perl-XML-RegExp = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-RegExp-0.04-34.el10_0.noarch.rpm;name=aarch64_perl-XML-RegExp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-RegExp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-RegExp-0.04-34.el10_0.noarch.rpm;name=aarch64_perl-XML-RegExp;unpack=0"
 SRC_URI[aarch64_perl-XML-RegExp.sha256sum] = "63edfa48dcc0644cbf43f8a07421e2ffb61f328fc9a20f227dc5a9a36c6a7638"
 
 RDEPENDS:perl-XML-RegExp = " \

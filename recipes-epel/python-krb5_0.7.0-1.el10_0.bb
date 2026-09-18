@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-krb5 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-krb5-0.7.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-krb5-0.7.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d3ea68ecdbd9a10f5103a3b0f61258ddd95e147c3eb83e5ae7caefaaf7651acf"
 
-URI_x86_64_v2_python3-krb5 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-krb5-0.7.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-krb5;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-krb5}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-krb5-0.7.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-krb5;unpack=0"
 SRC_URI[x86_64_v2_python3-krb5.sha256sum] = "9f56cd4a88e425077ff08c7eb2278692426e4d5741885c037f91d52ef9c6d132"
 
-URI_aarch64_python3-krb5 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-krb5-0.7.0-1.el10_0.aarch64.rpm;name=aarch64_python3-krb5;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-krb5}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-krb5-0.7.0-1.el10_0.aarch64.rpm;name=aarch64_python3-krb5;unpack=0"
 SRC_URI[aarch64_python3-krb5.sha256sum] = "b2454fb47ac4b6e87da48f81210aebdd6e8835460723586ba6a8d90517214ce3"
 
 RDEPENDS:python3-krb5 = " \

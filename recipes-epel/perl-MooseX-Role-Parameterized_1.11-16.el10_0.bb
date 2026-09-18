@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MooseX-Role-Parameterized \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MooseX-Role-Parameterized-1.11-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MooseX-Role-Parameterized-1.11-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2aebc3f392bd4ae4568536bf344166ff07dd527f8d88e3ed2053e46611b498e"
 
-URI_x86_64_v2_perl-MooseX-Role-Parameterized = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooseX-Role-Parameterized-1.11-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooseX-Role-Parameterized;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MooseX-Role-Parameterized}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooseX-Role-Parameterized-1.11-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooseX-Role-Parameterized;unpack=0"
 SRC_URI[x86_64_v2_perl-MooseX-Role-Parameterized.sha256sum] = "8280878917c7f5702538335df3688f2cdca7e622ceec1b60780d14dbc52024a7"
 
-URI_aarch64_perl-MooseX-Role-Parameterized = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MooseX-Role-Parameterized-1.11-16.el10_0.noarch.rpm;name=aarch64_perl-MooseX-Role-Parameterized;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MooseX-Role-Parameterized}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MooseX-Role-Parameterized-1.11-16.el10_0.noarch.rpm;name=aarch64_perl-MooseX-Role-Parameterized;unpack=0"
 SRC_URI[aarch64_perl-MooseX-Role-Parameterized.sha256sum] = "56108a1ce29dc3b92312fc7298f67560bf239431c8be87908f68c5dbc498307c"
 
 RDEPENDS:perl-MooseX-Role-Parameterized = " \

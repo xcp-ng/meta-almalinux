@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ipywidgets \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ipywidgets-8.1.6-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ipywidgets-8.1.6-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "88eea07eea344b07fed32e001504ccce5b8b9e95461266f72b93dbf8c7d4306c"
 
-URI_x86_64_v2_python3-ipywidgets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ipywidgets-8.1.6-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ipywidgets;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ipywidgets}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ipywidgets-8.1.6-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ipywidgets;unpack=0"
 SRC_URI[x86_64_v2_python3-ipywidgets.sha256sum] = "9fe6b6c765ceacd76f8ed00ae28b16abf0016e6d109855fefd2d0d282f652794"
 
-URI_aarch64_python3-ipywidgets = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ipywidgets-8.1.6-1.el10_1.noarch.rpm;name=aarch64_python3-ipywidgets;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ipywidgets}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ipywidgets-8.1.6-1.el10_1.noarch.rpm;name=aarch64_python3-ipywidgets;unpack=0"
 SRC_URI[aarch64_python3-ipywidgets.sha256sum] = "01f065af51627c1905eb29ba06e591d6295236af2c52948111462158f10ed797"
 
 RDEPENDS:python3-ipywidgets = " \

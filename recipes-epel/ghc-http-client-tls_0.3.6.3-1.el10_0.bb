@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-client-tls-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-tls-0.3.6.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-tls-0.3.6.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec4e3f9d76799a95c917d1fd22f07bcb2026e3342e79f422de529ea4b4f248b4"
 
-URI_x86_64_v2_ghc-http-client-tls = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-tls}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-tls.sha256sum] = "c3ad4023391695378f4ccee24dc82a2598c2e76ed426fc0f8bd042fe38198f33"
 
-URI_x86_64_v2_ghc-http-client-tls-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-devel-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-tls-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-devel-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-tls-devel.sha256sum] = "d084f32bda01826b73476a9f66aaa5fcf85bf688533aaf59342ec2193bbffe33"
 
-URI_x86_64_v2_ghc-http-client-tls-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-doc-0.3.6.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-tls-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-tls-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-doc-0.3.6.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-tls-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-tls-doc.sha256sum] = "c1c154ff514cc58ebd9537706e83f20d9d8195357c5603fbad145f77ea644ca5"
 
-URI_x86_64_v2_ghc-http-client-tls-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-prof-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-tls-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-tls-prof-0.3.6.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-tls-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-tls-prof.sha256sum] = "b8a9527748192e56f478045f0de71fe1e639e8a48b6178135d80eba9689c5505"
 
-URI_aarch64_ghc-http-client-tls = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-tls}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls;unpack=0"
 SRC_URI[aarch64_ghc-http-client-tls.sha256sum] = "11ffa25237f605b83881dc403ab8221ceb322d16c5edb4ecee1fb9d01d2fb3b3"
 
-URI_aarch64_ghc-http-client-tls-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-devel-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-tls-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-devel-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-client-tls-devel.sha256sum] = "e03121aa8c45b8944db5d961a2951cfea944f90c18635432153851f9674ada38"
 
-URI_aarch64_ghc-http-client-tls-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-doc-0.3.6.3-1.el10_0.noarch.rpm;name=aarch64_ghc-http-client-tls-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-tls-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-doc-0.3.6.3-1.el10_0.noarch.rpm;name=aarch64_ghc-http-client-tls-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-client-tls-doc.sha256sum] = "fb7558d8343f95bad360c4d896da05a74d12c9bc17b8045268b6d0798ad21e90"
 
-URI_aarch64_ghc-http-client-tls-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-prof-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-tls-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-tls-prof-0.3.6.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-tls-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-client-tls-prof.sha256sum] = "fce035a70752a698fccbc44dd51ae3827023f686fdba6c1acbc2247d0609f66d"
 
 RDEPENDS:ghc-http-client-tls = " \

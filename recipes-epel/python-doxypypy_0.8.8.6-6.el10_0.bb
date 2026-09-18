@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-doxypypy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-doxypypy-0.8.8.6-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-doxypypy-0.8.8.6-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "364710878cdb8e113fcb3662bed9cdd72a41452694560e8272e4d598f682f88d"
 
-URI_x86_64_v2_python3-doxypypy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-doxypypy-0.8.8.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-doxypypy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-doxypypy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-doxypypy-0.8.8.6-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-doxypypy;unpack=0"
 SRC_URI[x86_64_v2_python3-doxypypy.sha256sum] = "ebc481bf8c433615c109eaf57dc3e5bf0faa0562807abb1c37087ab77c61ade6"
 
-URI_aarch64_python3-doxypypy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-doxypypy-0.8.8.6-6.el10_0.noarch.rpm;name=aarch64_python3-doxypypy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-doxypypy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-doxypypy-0.8.8.6-6.el10_0.noarch.rpm;name=aarch64_python3-doxypypy;unpack=0"
 SRC_URI[aarch64_python3-doxypypy.sha256sum] = "acda587ef458f3faa47df00461c8bced50b33642149eee647e6f67e2ef47ccee"
 
 RDEPENDS:python3-doxypypy = " \

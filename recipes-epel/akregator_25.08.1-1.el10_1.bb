@@ -10,24 +10,19 @@ PACKAGES = " \
  akregator-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/akregator-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/akregator-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6710a8e01bc112f96a0d6d96b4881019f086919bfb7b1fed664795cd6e10c66c"
 
-URI_x86_64_v2_akregator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akregator-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akregator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akregator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akregator-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akregator;unpack=0"
 SRC_URI[x86_64_v2_akregator.sha256sum] = "1f09f510c08214fe19a68e03fbdef10f327e873768febcc7024984900ac2dc66"
 
-URI_x86_64_v2_akregator-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akregator-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akregator-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_akregator-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/akregator-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_akregator-libs;unpack=0"
 SRC_URI[x86_64_v2_akregator-libs.sha256sum] = "be3fb4d1d0fd5ae553de692bb4aca9ba673aa9cabc9aabfe77b87b467efe57d9"
 
-URI_aarch64_akregator = "${EPEL_MIRROR}/aarch64/Packages/a/akregator-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akregator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akregator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akregator-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akregator;unpack=0"
 SRC_URI[aarch64_akregator.sha256sum] = "b6362e3fd10ec437a6d3f9467e4936b92d5d9a8226d3abaf5f505eba176e661a"
 
-URI_aarch64_akregator-libs = "${EPEL_MIRROR}/aarch64/Packages/a/akregator-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akregator-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_akregator-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/akregator-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_akregator-libs;unpack=0"
 SRC_URI[aarch64_akregator-libs.sha256sum] = "bfaada97ff1c20de43ef9e97a0e10053cd684546b5b3700dd394b7ddccb0ab2d"
 
 RDEPENDS:akregator = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cerberus \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cerberus-1.3.4-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cerberus-1.3.4-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b4071a4bf5373dea30b0a2d94d2a04460a81b733939b003d22e35b197b48dadd"
 
-URI_x86_64_v2_python3-cerberus = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cerberus-1.3.4-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cerberus;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cerberus}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cerberus-1.3.4-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cerberus;unpack=0"
 SRC_URI[x86_64_v2_python3-cerberus.sha256sum] = "b8064bfd531621a2358bd322036cd0d2611a8c8e8a7306c50805181f267e1aa7"
 
-URI_aarch64_python3-cerberus = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cerberus-1.3.4-10.el10_0.noarch.rpm;name=aarch64_python3-cerberus;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cerberus}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cerberus-1.3.4-10.el10_0.noarch.rpm;name=aarch64_python3-cerberus;unpack=0"
 SRC_URI[aarch64_python3-cerberus.sha256sum] = "febfc6a3595f6a312222afff30ecccf2c7db665dcb01e2d5584d0d594e62cfb4"
 
 RDEPENDS:python3-cerberus = " \

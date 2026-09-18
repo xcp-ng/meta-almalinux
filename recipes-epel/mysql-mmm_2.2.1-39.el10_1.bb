@@ -12,40 +12,31 @@ PACKAGES = " \
  mysql-mmm-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/mysql-mmm-2.2.1-39.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/mysql-mmm-2.2.1-39.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ef286006295d3296522aede1bdde285b3fbe8051bc3f01790e9e0db57a08652f"
 
-URI_x86_64_v2_mysql-mmm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql-mmm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm;unpack=0"
 SRC_URI[x86_64_v2_mysql-mmm.sha256sum] = "5fe688ce60be0be968e305a3948809d267c47b74c3be27caa2b25e15a3987d9f"
 
-URI_x86_64_v2_mysql-mmm-agent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-agent-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-agent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql-mmm-agent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-agent-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-agent;unpack=0"
 SRC_URI[x86_64_v2_mysql-mmm-agent.sha256sum] = "212813be5e02a2b280fb821d5027a24dfc5ecc330e4f501742f0e082122b1081"
 
-URI_x86_64_v2_mysql-mmm-monitor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-monitor-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-monitor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql-mmm-monitor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-monitor-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-monitor;unpack=0"
 SRC_URI[x86_64_v2_mysql-mmm-monitor.sha256sum] = "abae38653ab0c7f548345c46cb546ca48e34e5dae391a4b5b0af40728c7055bb"
 
-URI_x86_64_v2_mysql-mmm-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-tools-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mysql-mmm-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mysql-mmm-tools-2.2.1-39.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_mysql-mmm-tools;unpack=0"
 SRC_URI[x86_64_v2_mysql-mmm-tools.sha256sum] = "1621de2762961008f91c027d9b298738ac6b7f09aa7ba386a7884092e6e0275e"
 
-URI_aarch64_mysql-mmm = "${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql-mmm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm;unpack=0"
 SRC_URI[aarch64_mysql-mmm.sha256sum] = "41218051fe6d99d1e52bbbf3bf3cfd62c302177a6da4f3141ad7972235baf86b"
 
-URI_aarch64_mysql-mmm-agent = "${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-agent-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-agent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql-mmm-agent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-agent-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-agent;unpack=0"
 SRC_URI[aarch64_mysql-mmm-agent.sha256sum] = "d81f91e0959281e2d3babff7de1f2bd619e2becddfbaf861a0a3102d57a13427"
 
-URI_aarch64_mysql-mmm-monitor = "${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-monitor-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-monitor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql-mmm-monitor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-monitor-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-monitor;unpack=0"
 SRC_URI[aarch64_mysql-mmm-monitor.sha256sum] = "76af98ca321203a807cbbc227b4d5aeb9cce18f03c57d8d2460c4cbdcfec3abf"
 
-URI_aarch64_mysql-mmm-tools = "${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-tools-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mysql-mmm-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mysql-mmm-tools-2.2.1-39.el10_1.noarch.rpm;name=aarch64_mysql-mmm-tools;unpack=0"
 SRC_URI[aarch64_mysql-mmm-tools.sha256sum] = "89dc77c9fb8252d722887aed4d1958fd2dec6d2b943168826d2ea45a682c5983"
 
 RDEPENDS:mysql-mmm = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-time-machine \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-time-machine-2.16.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-time-machine-2.16.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ca5e87bf0f02c63fee907e7675d2f2d829ab32068fffc0feae39a1ca0286e971"
 
-URI_x86_64_v2_python3-time-machine = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-time-machine-2.16.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-time-machine;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-time-machine}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-time-machine-2.16.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-time-machine;unpack=0"
 SRC_URI[x86_64_v2_python3-time-machine.sha256sum] = "211c509d5d3027f862a27277e2a77b034f89f0ea2601136503c2457f24cfd1eb"
 
-URI_aarch64_python3-time-machine = "${EPEL_MIRROR}/aarch64/Packages/p/python3-time-machine-2.16.0-1.el10_0.aarch64.rpm;name=aarch64_python3-time-machine;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-time-machine}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-time-machine-2.16.0-1.el10_0.aarch64.rpm;name=aarch64_python3-time-machine;unpack=0"
 SRC_URI[aarch64_python3-time-machine.sha256sum] = "dbf5f16bab16c548c563a56f658a4fe5276608809798b888cc145143bd2398e7"
 
 RDEPENDS:python3-time-machine = " \

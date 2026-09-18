@@ -9,16 +9,13 @@ PACKAGES = " \
  debhelper \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/d/debhelper-13.30-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/d/debhelper-13.30-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "71e1c1aabd8bd6cda563014bb7d2bf0c9bc0dc6507a75375530f68d78084978d"
 
-URI_x86_64_v2_debhelper = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/debhelper-13.30-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_debhelper;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_debhelper}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/debhelper-13.30-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_debhelper;unpack=0"
 SRC_URI[x86_64_v2_debhelper.sha256sum] = "f9b0b5e8592a0274c775b1e51cc40187d4827f3522be19b6851b58353fdf824f"
 
-URI_aarch64_debhelper = "${EPEL_MIRROR}/aarch64/Packages/d/debhelper-13.30-2.el10_1.noarch.rpm;name=aarch64_debhelper;unpack=0"
-SRC_URI:append = " ${URI_aarch64_debhelper}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/d/debhelper-13.30-2.el10_1.noarch.rpm;name=aarch64_debhelper;unpack=0"
 SRC_URI[aarch64_debhelper.sha256sum] = "b5e969e7a5176f805ea4622529b05050232bca33a7f23980800beee6108539e9"
 
 RDEPENDS:debhelper = " \

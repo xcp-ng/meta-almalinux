@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-query-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-query-0.1.3-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-query-0.1.3-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ff0addb831520864f91b8ea0adb0fee8a7b82e02de0575f748781b4371818428"
 
-URI_x86_64_v2_ghc-http-query = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-query}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-query.sha256sum] = "41e55e0d3051b1040b7a5b2a5dac0b12dd53786b59a0283c395c76636d030b56"
 
-URI_x86_64_v2_ghc-http-query-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-devel-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-query-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-devel-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-query-devel.sha256sum] = "10a25e23d32120eb0c3edb40cfaa598a55ff6b1bf2d4fc5fdcaae46b8e739534"
 
-URI_x86_64_v2_ghc-http-query-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-doc-0.1.3-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-query-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-query-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-doc-0.1.3-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-query-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-query-doc.sha256sum] = "6b0ef800a4b5a5a1db735e778de39c1f836c949cc108eeb1626b0efb25a20943"
 
-URI_x86_64_v2_ghc-http-query-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-prof-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-query-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-query-prof-0.1.3-11.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-query-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-query-prof.sha256sum] = "20bc06128fbe7d3a3bcad52b0ae279faa6a0c153c73f81219d36ba3151c890eb"
 
-URI_aarch64_ghc-http-query = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-query}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query;unpack=0"
 SRC_URI[aarch64_ghc-http-query.sha256sum] = "a2850f1a7d72d120ac3f97305bf9a7a6f95ff9930d7e6b29844f2bcc2d441831"
 
-URI_aarch64_ghc-http-query-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-devel-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-query-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-devel-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-query-devel.sha256sum] = "cac1f31325441a85920bcdcae451a19f545911e3cb385a27abc5407ce3ccc83f"
 
-URI_aarch64_ghc-http-query-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-doc-0.1.3-11.el10_0.noarch.rpm;name=aarch64_ghc-http-query-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-query-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-doc-0.1.3-11.el10_0.noarch.rpm;name=aarch64_ghc-http-query-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-query-doc.sha256sum] = "3c347a238bb3316215d09b6b2bc437ddca4a42a169d7cedfd41c85b910a710d9"
 
-URI_aarch64_ghc-http-query-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-prof-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-query-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-query-prof-0.1.3-11.el10_0.aarch64.rpm;name=aarch64_ghc-http-query-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-query-prof.sha256sum] = "6efc9e2e4c9e615ca69ff9d97e61b0df93a66e3d05985337bb13edca106d0a12"
 
 RDEPENDS:ghc-http-query = " \

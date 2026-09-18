@@ -9,16 +9,13 @@ PACKAGES = " \
  kmenuedit \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmenuedit-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmenuedit-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5d74d1ef9bf02909841aaa1898bd5a05680fbb45596c18eb7870c2364f0b82ae"
 
-URI_x86_64_v2_kmenuedit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmenuedit-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmenuedit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmenuedit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmenuedit-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmenuedit;unpack=0"
 SRC_URI[x86_64_v2_kmenuedit.sha256sum] = "aee9a1eaef96263c03bed7236daf3b4fca411fd7704a6b00fcc3d24ed86cfb03"
 
-URI_aarch64_kmenuedit = "${EPEL_MIRROR}/aarch64/Packages/k/kmenuedit-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kmenuedit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmenuedit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmenuedit-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kmenuedit;unpack=0"
 SRC_URI[aarch64_kmenuedit.sha256sum] = "1cd2524b437ed4ac66cb30b518d30a8a15ac6646e88131964a0e6cff12e8dea0"
 
 RDEPENDS:kmenuedit = " \

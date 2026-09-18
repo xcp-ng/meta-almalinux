@@ -10,24 +10,19 @@ PACKAGES = " \
  php-pecl-igbinary-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-igbinary-3.2.16-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-igbinary-3.2.16-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5244ce060d93b64488c1985299adc13746539ae8a3040e7a3f545c9eb6dc32a9"
 
-URI_x86_64_v2_php-pecl-igbinary = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-igbinary}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-igbinary.sha256sum] = "4077292b13975f63dc7429f2a62724b93bd9c5c3d9fd02b8a2f699ec906d2966"
 
-URI_x86_64_v2_php-pecl-igbinary-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-devel-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-igbinary-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-igbinary-devel-3.2.16-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-igbinary-devel;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-igbinary-devel.sha256sum] = "43e357ef94c75135bcb057cb1acf3693f569959d05abaec348e0e78f590178f1"
 
-URI_aarch64_php-pecl-igbinary = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-igbinary-3.2.16-3.el10_0.aarch64.rpm;name=aarch64_php-pecl-igbinary;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-igbinary}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-igbinary-3.2.16-3.el10_0.aarch64.rpm;name=aarch64_php-pecl-igbinary;unpack=0"
 SRC_URI[aarch64_php-pecl-igbinary.sha256sum] = "519544f51e70bebf5c9c3ea1a274bbabc107f23a4b7f1e16bef4fa63d94f2782"
 
-URI_aarch64_php-pecl-igbinary-devel = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-igbinary-devel-3.2.16-3.el10_0.aarch64.rpm;name=aarch64_php-pecl-igbinary-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-igbinary-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-igbinary-devel-3.2.16-3.el10_0.aarch64.rpm;name=aarch64_php-pecl-igbinary-devel;unpack=0"
 SRC_URI[aarch64_php-pecl-igbinary-devel.sha256sum] = "ba549298dd1f9010a65cef104e95386a43c6f628efa11978ae7ae8b78dadcd85"
 
 RDEPENDS:php-pecl-igbinary = " \

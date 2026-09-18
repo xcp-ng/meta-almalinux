@@ -9,16 +9,13 @@ PACKAGES = " \
  cockpit-podman \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-podman-111-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-podman-111-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6afe662ef5c1ea66b0f8a26e3530df30be489c1a6ab6fc50d5f820197d861f36"
 
-URI_x86_64_v2_cockpit-podman = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-podman-111-1.el10.noarch.rpm;name=x86_64_v2_cockpit-podman;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cockpit-podman}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-podman-111-1.el10.noarch.rpm;name=x86_64_v2_cockpit-podman;unpack=0"
 SRC_URI[x86_64_v2_cockpit-podman.sha256sum] = "a0cd9418c74510b6f878a202aae591c25bb073f24d5afae697b59b4db07408c8"
 
-URI_aarch64_cockpit-podman = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-podman-111-1.el10.noarch.rpm;name=aarch64_cockpit-podman;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cockpit-podman}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-podman-111-1.el10.noarch.rpm;name=aarch64_cockpit-podman;unpack=0"
 SRC_URI[aarch64_cockpit-podman.sha256sum] = "a0cd9418c74510b6f878a202aae591c25bb073f24d5afae697b59b4db07408c8"
 
 RDEPENDS:cockpit-podman = " \

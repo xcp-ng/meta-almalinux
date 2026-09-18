@@ -10,27 +10,22 @@ PACKAGES = " \
  pipx+uv \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pipx-1.12.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pipx-1.12.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea9316214f565cc7d8d25c63ff182f6563d58e7efaeb0c279a31540543aabc32"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
 # - pipx+uv: python3.12dist(uv) >= 0.4
 
-URI_x86_64_v2_pipx = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pipx-1.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_pipx;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pipx}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pipx-1.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_pipx;unpack=0"
 SRC_URI[x86_64_v2_pipx.sha256sum] = "15a2106e42d9d630643324cbbece0bb89cf511be5b914b543e9bc26f77b22744"
 
-URI_x86_64_v2_pipx+uv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pipx+uv-1.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_pipx+uv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pipx+uv}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pipx+uv-1.12.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_pipx+uv;unpack=0"
 SRC_URI[x86_64_v2_pipx+uv.sha256sum] = "33aec6c278fb85ef6605cfd7447573e20b9865d378be86456e45945dcfdbf4b5"
 
-URI_aarch64_pipx = "${EPEL_MIRROR}/aarch64/Packages/p/pipx-1.12.0-1.el10_1.noarch.rpm;name=aarch64_pipx;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pipx}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pipx-1.12.0-1.el10_1.noarch.rpm;name=aarch64_pipx;unpack=0"
 SRC_URI[aarch64_pipx.sha256sum] = "8abcf2f96a1ec02020ec9d4ac914401d73213152e3c018ad6c65a8f5fc8860db"
 
-URI_aarch64_pipx+uv = "${EPEL_MIRROR}/aarch64/Packages/p/pipx+uv-1.12.0-1.el10_1.noarch.rpm;name=aarch64_pipx+uv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pipx+uv}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pipx+uv-1.12.0-1.el10_1.noarch.rpm;name=aarch64_pipx+uv;unpack=0"
 SRC_URI[aarch64_pipx+uv.sha256sum] = "eaeb761821602579167127c0fde06411b9cf9e914dc29d67581f30c5c6e877b8"
 
 RDEPENDS:pipx = " \

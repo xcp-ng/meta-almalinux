@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pymdown-extensions+extra \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pymdown-extensions-10.12-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pymdown-extensions-10.12-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d8cee0ded467b62a1d0e6ec08940ead41042fad2ae2d519bd2236565f60bf003"
 
-URI_x86_64_v2_python3-pymdown-extensions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pymdown-extensions-10.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pymdown-extensions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pymdown-extensions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pymdown-extensions-10.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pymdown-extensions;unpack=0"
 SRC_URI[x86_64_v2_python3-pymdown-extensions.sha256sum] = "51484245fb4679bb47a7314c24db39b1e4bd3102d56115c84e6999a36de5adcd"
 
-URI_x86_64_v2_python3-pymdown-extensions+extra = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pymdown-extensions+extra-10.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pymdown-extensions+extra;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pymdown-extensions+extra}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pymdown-extensions+extra-10.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pymdown-extensions+extra;unpack=0"
 SRC_URI[x86_64_v2_python3-pymdown-extensions+extra.sha256sum] = "8aa05d96a94faf583ef86682f332fbb7aab87fb5cb84fc6f4b725ff347cc9e13"
 
-URI_aarch64_python3-pymdown-extensions = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pymdown-extensions-10.12-3.el10_0.noarch.rpm;name=aarch64_python3-pymdown-extensions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pymdown-extensions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pymdown-extensions-10.12-3.el10_0.noarch.rpm;name=aarch64_python3-pymdown-extensions;unpack=0"
 SRC_URI[aarch64_python3-pymdown-extensions.sha256sum] = "f37fd0ca036ef74dda315fd609b5ffee9565f993ff06862741f75613af38a456"
 
-URI_aarch64_python3-pymdown-extensions+extra = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pymdown-extensions+extra-10.12-3.el10_0.noarch.rpm;name=aarch64_python3-pymdown-extensions+extra;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pymdown-extensions+extra}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pymdown-extensions+extra-10.12-3.el10_0.noarch.rpm;name=aarch64_python3-pymdown-extensions+extra;unpack=0"
 SRC_URI[aarch64_python3-pymdown-extensions+extra.sha256sum] = "d37d255d61daf1dc7ef176b730939fa5dc6e500b5302c65839c4d77b3c091c57"
 
 RDEPENDS:python3-pymdown-extensions = " \

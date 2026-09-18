@@ -9,16 +9,13 @@ PACKAGES = " \
  prwd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/prwd-1.9.1-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/prwd-1.9.1-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f8b2983ee05bf6b860f5149a482492942ea81c832febc5e4cfd7240750d873a8"
 
-URI_x86_64_v2_prwd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/prwd-1.9.1-13.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_prwd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_prwd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/prwd-1.9.1-13.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_prwd;unpack=0"
 SRC_URI[x86_64_v2_prwd.sha256sum] = "c843e2714ec4a50a2e8dc4b24a4791c44dd20cf84ec7597515a3aa1747febc25"
 
-URI_aarch64_prwd = "${EPEL_MIRROR}/aarch64/Packages/p/prwd-1.9.1-13.el10_0.aarch64.rpm;name=aarch64_prwd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_prwd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/prwd-1.9.1-13.el10_0.aarch64.rpm;name=aarch64_prwd;unpack=0"
 SRC_URI[aarch64_prwd.sha256sum] = "49aa5f09080728174872bfb747d27bf346cab9ed3d682387fd81182a4bbc6e7c"
 
 RDEPENDS:prwd = " \

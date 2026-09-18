@@ -9,16 +9,13 @@ PACKAGES = " \
  kalm \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kalm-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kalm-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b42c5c10959b25c73ddc5ac556d23b47127aff6588b75dac928497adb33dfd09"
 
-URI_x86_64_v2_kalm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kalm-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kalm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kalm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kalm-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kalm;unpack=0"
 SRC_URI[x86_64_v2_kalm.sha256sum] = "ee26523f4d503b63a82561b2f5eca574b5166ba42afcda13c783279b0a69b030"
 
-URI_aarch64_kalm = "${EPEL_MIRROR}/aarch64/Packages/k/kalm-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kalm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kalm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kalm-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kalm;unpack=0"
 SRC_URI[aarch64_kalm.sha256sum] = "468fc24fd625b603316c827ab00a2969fcc8f3f662ed3e632031feb49ad74926"
 
 RDEPENDS:kalm = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ghp-import \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ghp-import-2.1.0-10.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ghp-import-2.1.0-10.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e0ca4ee3f18de76f6afcb19c1303caca20e4000662a149772cdaa614191a0d2a"
 
-URI_x86_64_v2_python3-ghp-import = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ghp-import-2.1.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ghp-import;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ghp-import}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ghp-import-2.1.0-10.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ghp-import;unpack=0"
 SRC_URI[x86_64_v2_python3-ghp-import.sha256sum] = "0368777f9568e809e28b24fe453419cde8bd7b1d3e91e0e66f59ebae05bdf85b"
 
-URI_aarch64_python3-ghp-import = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ghp-import-2.1.0-10.el10_0.noarch.rpm;name=aarch64_python3-ghp-import;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ghp-import}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ghp-import-2.1.0-10.el10_0.noarch.rpm;name=aarch64_python3-ghp-import;unpack=0"
 SRC_URI[aarch64_python3-ghp-import.sha256sum] = "47aef66478e5decf447b5db8a76ec74f795e0b7a639a6be8cc7301d5535de21d"
 
 RDEPENDS:python3-ghp-import = " \

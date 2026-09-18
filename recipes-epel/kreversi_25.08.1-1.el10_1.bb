@@ -9,16 +9,13 @@ PACKAGES = " \
  kreversi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kreversi-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kreversi-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "534a2b1c502c454fe31f1bf441c4bc4114bdc68031d86d52c28a11ce152ccbb9"
 
-URI_x86_64_v2_kreversi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kreversi-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kreversi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kreversi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kreversi-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kreversi;unpack=0"
 SRC_URI[x86_64_v2_kreversi.sha256sum] = "ff0cd7661bee123ce020607456e71707d0e2661a9e58b646a5fa4b3cf76de96b"
 
-URI_aarch64_kreversi = "${EPEL_MIRROR}/aarch64/Packages/k/kreversi-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kreversi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kreversi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kreversi-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kreversi;unpack=0"
 SRC_URI[aarch64_kreversi.sha256sum] = "b5eddcfbaae65ed860bab2db9e5884079350c8cdc7aaf7ba4a0cddff3a00e48b"
 
 RDEPENDS:kreversi = " \

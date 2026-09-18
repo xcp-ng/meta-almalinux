@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-what4-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-what4-1.5.1-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-what4-1.5.1-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cb9374bfb0c9fc0bbaee2d54143676dfa7ef0e9b18a0de9645fb045578e2d6e6"
 
-URI_x86_64_v2_ghc-what4 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-what4}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4;unpack=0"
 SRC_URI[x86_64_v2_ghc-what4.sha256sum] = "48d481c0f2f91ab7a2f19b18780f334d2cadc9216661e016ef7882133484ae86"
 
-URI_x86_64_v2_ghc-what4-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-devel-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-what4-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-devel-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-what4-devel.sha256sum] = "d65ff695c384d9dd3fdafaf4a3b36f84ba462fab552816704ba85354e321cbdd"
 
-URI_x86_64_v2_ghc-what4-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-doc-1.5.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-what4-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-what4-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-doc-1.5.1-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-what4-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-what4-doc.sha256sum] = "6f8566e5d36b7d9e1b06cfd5c2b1785e9a789bac7d47fc18d60af53d9b8b3517"
 
-URI_x86_64_v2_ghc-what4-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-prof-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-what4-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-what4-prof-1.5.1-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-what4-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-what4-prof.sha256sum] = "b548dbd3ed3649e0af8c8c9d064542cf3b04f6ffb241f453a5e565081077d3bd"
 
-URI_aarch64_ghc-what4 = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-what4}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4;unpack=0"
 SRC_URI[aarch64_ghc-what4.sha256sum] = "eab741d3d65c643b52083bb549b544e09c1b4f7facf47c97cd3b966b81d95c39"
 
-URI_aarch64_ghc-what4-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-devel-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-what4-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-devel-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4-devel;unpack=0"
 SRC_URI[aarch64_ghc-what4-devel.sha256sum] = "83e2a37538e6c26d2ca4e8c54a2e690413278d30cd081519a8335e3040a2edf6"
 
-URI_aarch64_ghc-what4-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-doc-1.5.1-3.el10_0.noarch.rpm;name=aarch64_ghc-what4-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-what4-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-doc-1.5.1-3.el10_0.noarch.rpm;name=aarch64_ghc-what4-doc;unpack=0"
 SRC_URI[aarch64_ghc-what4-doc.sha256sum] = "bf75c975f82d891f4e2dd861388803ddffbd23926e4d7550503576730f893a13"
 
-URI_aarch64_ghc-what4-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-prof-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-what4-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-what4-prof-1.5.1-3.el10_0.aarch64.rpm;name=aarch64_ghc-what4-prof;unpack=0"
 SRC_URI[aarch64_ghc-what4-prof.sha256sum] = "c970ed143ad8fc7a5673d5709a3d377c0ff4dd8e729de21d5cb74bfceaa03277"
 
 RDEPENDS:ghc-what4 = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kalarm \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kalarm-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kalarm-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "72ceea5f26ee2792a632b02447f40072df61ef4ae6e7cfd13e0eca6dfa6ced37"
 
-URI_x86_64_v2_kalarm = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kalarm-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kalarm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kalarm}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kalarm-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kalarm;unpack=0"
 SRC_URI[x86_64_v2_kalarm.sha256sum] = "b998ea2e11e5b0a3dd8d516c1408ac4a1ffbb8e57363ec40867a1139caa56cb4"
 
-URI_aarch64_kalarm = "${EPEL_MIRROR}/aarch64/Packages/k/kalarm-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kalarm;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kalarm}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kalarm-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kalarm;unpack=0"
 SRC_URI[aarch64_kalarm.sha256sum] = "bbc322e38b56ee6d24e6190111c7fcc412e2b0b97c194309de4f1dc9c1a8ec47"
 
 RDEPENDS:kalarm = " \

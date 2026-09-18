@@ -16,72 +16,55 @@ PACKAGES = " \
  python3-idm-pki \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/dogtag-pki-11.7.0-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/dogtag-pki-11.7.0-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "20fcc9da3b400f3c75e46ef2aaf483d2c22054d5e1201b61f5e7835069c4163e"
 
-URI_x86_64_v2_idm-pki-acme = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-acme-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-acme;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-acme}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-acme-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-acme;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-acme.sha256sum] = "6f0dd541d6cf27f8e6302cb46baa0ad160558765a45086d3adc6cea698eac1c6"
 
-URI_x86_64_v2_idm-pki-base = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-base-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-base;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-base-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-base;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-base.sha256sum] = "053d9c774ad8aedbfee8e92d818e9e2c8f85fb913879e68ab1abeba6c2985d58"
 
-URI_x86_64_v2_idm-pki-ca = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-ca-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-ca;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-ca}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-ca-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-ca;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-ca.sha256sum] = "f9d38485730862cba9f462a97ca5b61edc88ff38f69881ca4e4477b81474ff01"
 
-URI_x86_64_v2_idm-pki-java = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-java-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-java;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-java}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-java-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-java;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-java.sha256sum] = "b8d5d4bd8c09b1e7ef69ad2e58f8e953ac1688d14e8ff73c3e9a04daddb6ee1d"
 
-URI_x86_64_v2_idm-pki-kra = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-kra-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-kra;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-kra}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-kra-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-kra;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-kra.sha256sum] = "56b69ec0528caffc7bda965c01e6e8d6279d844420850f46585e52b9496d6f53"
 
-URI_x86_64_v2_idm-pki-server = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-server-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-server-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_idm-pki-server;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-server.sha256sum] = "5ed40a620f687dc7a605bbb102c2346c09fba7017f5ec00443eba15305fbf5aa"
 
-URI_x86_64_v2_idm-pki-tools = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-tools-11.7.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_idm-pki-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_idm-pki-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/idm-pki-tools-11.7.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_idm-pki-tools;unpack=0"
 SRC_URI[x86_64_v2_idm-pki-tools.sha256sum] = "b208dbdfe8a327343e2dc3c098850c562da71451ceb6558c84c5ba48b9994533"
 
-URI_x86_64_v2_python3-idm-pki = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-idm-pki-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_python3-idm-pki;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-idm-pki}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-idm-pki-11.7.0-2.el10.noarch.rpm;name=x86_64_v2_python3-idm-pki;unpack=0"
 SRC_URI[x86_64_v2_python3-idm-pki.sha256sum] = "e358dcdd1d010927d0740fa58477bce104a3d8e91f3e9a5e72ae9eb7a9f1dca5"
 
-URI_aarch64_idm-pki-acme = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-acme-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-acme;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-acme}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-acme-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-acme;unpack=0"
 SRC_URI[aarch64_idm-pki-acme.sha256sum] = "6f0dd541d6cf27f8e6302cb46baa0ad160558765a45086d3adc6cea698eac1c6"
 
-URI_aarch64_idm-pki-base = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-base-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-base;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-base}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-base-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-base;unpack=0"
 SRC_URI[aarch64_idm-pki-base.sha256sum] = "053d9c774ad8aedbfee8e92d818e9e2c8f85fb913879e68ab1abeba6c2985d58"
 
-URI_aarch64_idm-pki-ca = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-ca-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-ca;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-ca}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-ca-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-ca;unpack=0"
 SRC_URI[aarch64_idm-pki-ca.sha256sum] = "f9d38485730862cba9f462a97ca5b61edc88ff38f69881ca4e4477b81474ff01"
 
-URI_aarch64_idm-pki-java = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-java-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-java;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-java}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-java-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-java;unpack=0"
 SRC_URI[aarch64_idm-pki-java.sha256sum] = "b8d5d4bd8c09b1e7ef69ad2e58f8e953ac1688d14e8ff73c3e9a04daddb6ee1d"
 
-URI_aarch64_idm-pki-kra = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-kra-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-kra;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-kra}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-kra-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-kra;unpack=0"
 SRC_URI[aarch64_idm-pki-kra.sha256sum] = "56b69ec0528caffc7bda965c01e6e8d6279d844420850f46585e52b9496d6f53"
 
-URI_aarch64_idm-pki-server = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-server-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-server-11.7.0-2.el10.noarch.rpm;name=aarch64_idm-pki-server;unpack=0"
 SRC_URI[aarch64_idm-pki-server.sha256sum] = "5ed40a620f687dc7a605bbb102c2346c09fba7017f5ec00443eba15305fbf5aa"
 
-URI_aarch64_idm-pki-tools = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-tools-11.7.0-2.el10.aarch64.rpm;name=aarch64_idm-pki-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_idm-pki-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/idm-pki-tools-11.7.0-2.el10.aarch64.rpm;name=aarch64_idm-pki-tools;unpack=0"
 SRC_URI[aarch64_idm-pki-tools.sha256sum] = "5840ce7e4812eb0b8baa04d95910304b2ceb8854b79d6a8436e4f7faccc7163a"
 
-URI_aarch64_python3-idm-pki = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-idm-pki-11.7.0-2.el10.noarch.rpm;name=aarch64_python3-idm-pki;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-idm-pki}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-idm-pki-11.7.0-2.el10.noarch.rpm;name=aarch64_python3-idm-pki;unpack=0"
 SRC_URI[aarch64_python3-idm-pki.sha256sum] = "e358dcdd1d010927d0740fa58477bce104a3d8e91f3e9a5e72ae9eb7a9f1dca5"
 
 RDEPENDS:idm-pki-acme = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  libsass-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libsass-3.6.6-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libsass-3.6.6-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fa4ad8f89f8f200f55542797df2de556332765ce38d200fe3c64705724a758d1"
 
-URI_x86_64_v2_libsass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libsass-3.6.6-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libsass;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libsass}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libsass-3.6.6-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libsass;unpack=0"
 SRC_URI[x86_64_v2_libsass.sha256sum] = "5672fdf54aefc44f34dbcea5b105d598f3e0930928223d0c486a2fb68585c702"
 
-URI_x86_64_v2_libsass-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libsass-devel-3.6.6-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libsass-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libsass-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libsass-devel-3.6.6-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libsass-devel;unpack=0"
 SRC_URI[x86_64_v2_libsass-devel.sha256sum] = "e9cb1635456aae3e2f3a3b516eb8aa6d9964baff1a361e11f41c22474e50cadb"
 
-URI_aarch64_libsass = "${EPEL_MIRROR}/aarch64/Packages/l/libsass-3.6.6-2.el10_0.aarch64.rpm;name=aarch64_libsass;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libsass}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libsass-3.6.6-2.el10_0.aarch64.rpm;name=aarch64_libsass;unpack=0"
 SRC_URI[aarch64_libsass.sha256sum] = "4b9a5ccc2f5cfb24ba311f65947426891c66f03388917e97a3bdc17e0bfeb98e"
 
-URI_aarch64_libsass-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libsass-devel-3.6.6-2.el10_0.aarch64.rpm;name=aarch64_libsass-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libsass-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libsass-devel-3.6.6-2.el10_0.aarch64.rpm;name=aarch64_libsass-devel;unpack=0"
 SRC_URI[aarch64_libsass-devel.sha256sum] = "dfbec748541bb1685b1ef655fa7a2e810c38a29b5cc8123fb0610ad54e8dc886"
 
 RDEPENDS:libsass = " \

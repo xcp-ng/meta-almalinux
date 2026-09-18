@@ -10,24 +10,19 @@ PACKAGES = " \
  replacer-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/replacer-1.6-32.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/replacer-1.6-32.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "281cc07c038dc4ee0e58ef433b2125b8169cb92213a0bdfdbbdca598dd6a6938"
 
-URI_x86_64_v2_replacer = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/replacer-1.6-32.el10.noarch.rpm;name=x86_64_v2_replacer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_replacer}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/replacer-1.6-32.el10.noarch.rpm;name=x86_64_v2_replacer;unpack=0"
 SRC_URI[x86_64_v2_replacer.sha256sum] = "1c34cdd33b72abe0ad107eee8d187ae6c57f8f6e6045c48675943b10125c509c"
 
-URI_x86_64_v2_replacer-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/replacer-javadoc-1.6-32.el10.noarch.rpm;name=x86_64_v2_replacer-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_replacer-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/replacer-javadoc-1.6-32.el10.noarch.rpm;name=x86_64_v2_replacer-javadoc;unpack=0"
 SRC_URI[x86_64_v2_replacer-javadoc.sha256sum] = "7b8360e07174dc0fbfe3b404dcf5c84a0664355d5695e3d80ee5240a43db3c0f"
 
-URI_aarch64_replacer = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/replacer-1.6-32.el10.noarch.rpm;name=aarch64_replacer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_replacer}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/replacer-1.6-32.el10.noarch.rpm;name=aarch64_replacer;unpack=0"
 SRC_URI[aarch64_replacer.sha256sum] = "1c34cdd33b72abe0ad107eee8d187ae6c57f8f6e6045c48675943b10125c509c"
 
-URI_aarch64_replacer-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/replacer-javadoc-1.6-32.el10.noarch.rpm;name=aarch64_replacer-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_replacer-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/replacer-javadoc-1.6-32.el10.noarch.rpm;name=aarch64_replacer-javadoc;unpack=0"
 SRC_URI[aarch64_replacer-javadoc.sha256sum] = "7b8360e07174dc0fbfe3b404dcf5c84a0664355d5695e3d80ee5240a43db3c0f"
 
 RDEPENDS:replacer = " \

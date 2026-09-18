@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-YAML-PP-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-YAML-PP-0.38.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-YAML-PP-0.38.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1caf458b9cfb214b081355dfbe3a4ab873c14af5869b8b15a37ff760060c8261"
 
-URI_x86_64_v2_perl-YAML-PP = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-PP}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP;unpack=0"
 SRC_URI[x86_64_v2_perl-YAML-PP.sha256sum] = "541e2092d490c3978c7dbcfe8df80163fa3b50ecd57b82a1d3733a7f53117820"
 
-URI_x86_64_v2_perl-YAML-PP-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-tests-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-YAML-PP-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-YAML-PP-tests-0.38.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-YAML-PP-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-YAML-PP-tests.sha256sum] = "e70842d009913053abf6eaa01151c395c76461e261f6d0fa51ee431646097aa8"
 
-URI_aarch64_perl-YAML-PP = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-PP-0.38.0-2.el10_0.noarch.rpm;name=aarch64_perl-YAML-PP;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-YAML-PP}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-PP-0.38.0-2.el10_0.noarch.rpm;name=aarch64_perl-YAML-PP;unpack=0"
 SRC_URI[aarch64_perl-YAML-PP.sha256sum] = "6db986e35d2ddd240b8157bb93561268c06c647e24148c3ec41a5a3f8c5e6604"
 
-URI_aarch64_perl-YAML-PP-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-PP-tests-0.38.0-2.el10_0.noarch.rpm;name=aarch64_perl-YAML-PP-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-YAML-PP-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-YAML-PP-tests-0.38.0-2.el10_0.noarch.rpm;name=aarch64_perl-YAML-PP-tests;unpack=0"
 SRC_URI[aarch64_perl-YAML-PP-tests.sha256sum] = "3f423dac539d7be252ddb89da2de5b1fcb61287b063d07ff1b78e4883d02273e"
 
 RDEPENDS:perl-YAML-PP = " \

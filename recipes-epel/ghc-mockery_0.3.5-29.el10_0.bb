@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-mockery-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-mockery-0.3.5-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-mockery-0.3.5-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fbeb29e5a77c6a47d4ec9cbf632dc29658bf3b7a2bd80932c18409ccf33a5fe3"
 
-URI_x86_64_v2_ghc-mockery = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mockery}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery;unpack=0"
 SRC_URI[x86_64_v2_ghc-mockery.sha256sum] = "413b563918b5e549922646d68fae41cbb6b15a6bb626c99c0412ca1ad66dd4c3"
 
-URI_x86_64_v2_ghc-mockery-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-devel-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mockery-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-devel-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-mockery-devel.sha256sum] = "cdd5d054d852c02b666435439bfd03f84fcebaa957ecce2f0c9200579b7514ff"
 
-URI_x86_64_v2_ghc-mockery-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-doc-0.3.5-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-mockery-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mockery-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-doc-0.3.5-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-mockery-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-mockery-doc.sha256sum] = "f477168f8201a7965c0a61e735a724266a7044ce039e0efa6c1905a0aa0c3311"
 
-URI_x86_64_v2_ghc-mockery-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-prof-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mockery-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mockery-prof-0.3.5-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mockery-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-mockery-prof.sha256sum] = "821fc3416b517bda23755b5c804c1e5af3153524b0623045669a7375e6b69774"
 
-URI_aarch64_ghc-mockery = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mockery}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery;unpack=0"
 SRC_URI[aarch64_ghc-mockery.sha256sum] = "80be76e79520be2f3d568dae65a13553a191c6394056be7b0ddcaa0e02dd3df6"
 
-URI_aarch64_ghc-mockery-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-devel-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mockery-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-devel-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery-devel;unpack=0"
 SRC_URI[aarch64_ghc-mockery-devel.sha256sum] = "4a5c6fc2f131a9e4b036b5b6d52e1a0feab3cc5b2a297e162659c6df0ca3c322"
 
-URI_aarch64_ghc-mockery-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-doc-0.3.5-29.el10_0.noarch.rpm;name=aarch64_ghc-mockery-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mockery-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-doc-0.3.5-29.el10_0.noarch.rpm;name=aarch64_ghc-mockery-doc;unpack=0"
 SRC_URI[aarch64_ghc-mockery-doc.sha256sum] = "6822d1d94a26409e50bdcaaff7b0c1b07d0b29c8cd431cf2a9a0416ed09feb02"
 
-URI_aarch64_ghc-mockery-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-prof-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mockery-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mockery-prof-0.3.5-29.el10_0.aarch64.rpm;name=aarch64_ghc-mockery-prof;unpack=0"
 SRC_URI[aarch64_ghc-mockery-prof.sha256sum] = "8315a8dd2a7539fdf8d5e0053326d7e858a3892ac0069dafb9c6bdc42ef08832"
 
 RDEPENDS:ghc-mockery = " \

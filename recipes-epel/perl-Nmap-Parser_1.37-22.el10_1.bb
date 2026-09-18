@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Nmap-Parser \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Nmap-Parser-1.37-22.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Nmap-Parser-1.37-22.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c03d5f99e2ecfbd3a1dffe41e16b21ce1ee9cca79016a127cb6d8dffde4c713c"
 
-URI_x86_64_v2_perl-Nmap-Parser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Nmap-Parser-1.37-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Nmap-Parser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Nmap-Parser}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Nmap-Parser-1.37-22.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Nmap-Parser;unpack=0"
 SRC_URI[x86_64_v2_perl-Nmap-Parser.sha256sum] = "225704c6f8e2db2cb17a5d7ee4dbb8c4ef98faf633942ece6cd236b0153a7cac"
 
-URI_aarch64_perl-Nmap-Parser = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Nmap-Parser-1.37-22.el10_1.noarch.rpm;name=aarch64_perl-Nmap-Parser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Nmap-Parser}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Nmap-Parser-1.37-22.el10_1.noarch.rpm;name=aarch64_perl-Nmap-Parser;unpack=0"
 SRC_URI[aarch64_perl-Nmap-Parser.sha256sum] = "fc724b5a3fd49c2fde8ace39c3e4e281824ef3d0b0ab2429e591b1ac33913c93"
 
 RDEPENDS:perl-Nmap-Parser = " \

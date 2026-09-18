@@ -9,16 +9,13 @@ PACKAGES = " \
  fluent-bit \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/f/fluent-bit-4.2.2-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/f/fluent-bit-4.2.2-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2ac14797b268414da39afbf6032eadd554c02b623d5225fc8b132be43fe2618a"
 
-URI_x86_64_v2_fluent-bit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluent-bit-4.2.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluent-bit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fluent-bit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/fluent-bit-4.2.2-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_fluent-bit;unpack=0"
 SRC_URI[x86_64_v2_fluent-bit.sha256sum] = "c268105b04acdf8e4e47f26c93a3ac022ab1e91ee7f8daa3cc15c119db0f60ad"
 
-URI_aarch64_fluent-bit = "${EPEL_MIRROR}/aarch64/Packages/f/fluent-bit-4.2.2-1.el10_1.aarch64.rpm;name=aarch64_fluent-bit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fluent-bit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/f/fluent-bit-4.2.2-1.el10_1.aarch64.rpm;name=aarch64_fluent-bit;unpack=0"
 SRC_URI[aarch64_fluent-bit.sha256sum] = "e3615071ae55472169df98f3f731596394a8ce07102330e7172f497679465700"
 
 RDEPENDS:fluent-bit = " \

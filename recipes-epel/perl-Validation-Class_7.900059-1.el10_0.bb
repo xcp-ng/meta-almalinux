@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Validation-Class \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Validation-Class-7.900059-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Validation-Class-7.900059-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4161a5487f17a83d54ba34fed2ee109bead5b3ed4fa2849c333e44d580354d48"
 
-URI_x86_64_v2_perl-Validation-Class = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Validation-Class-7.900059-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Validation-Class;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Validation-Class}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Validation-Class-7.900059-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Validation-Class;unpack=0"
 SRC_URI[x86_64_v2_perl-Validation-Class.sha256sum] = "e66acf064ff3877d9b50390ff3d68f08b40e9f49e7a0ccc577cec77c0efb3de8"
 
-URI_aarch64_perl-Validation-Class = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Validation-Class-7.900059-1.el10_0.noarch.rpm;name=aarch64_perl-Validation-Class;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Validation-Class}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Validation-Class-7.900059-1.el10_0.noarch.rpm;name=aarch64_perl-Validation-Class;unpack=0"
 SRC_URI[aarch64_perl-Validation-Class.sha256sum] = "db028f8574663a2290f5fe1f0e8b48e849bc5329f6cb1c50c842abd5157b0be3"
 
 RDEPENDS:perl-Validation-Class = " \

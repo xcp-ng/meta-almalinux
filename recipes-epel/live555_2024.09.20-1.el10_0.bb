@@ -11,32 +11,25 @@ PACKAGES = " \
  live555-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/live555-2024.09.20-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/live555-2024.09.20-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e1c236a1bd663cf79ad3d00d86e2ebdf59e35348db2acfb15663b776fa878741"
 
-URI_x86_64_v2_live555 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_live555}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555;unpack=0"
 SRC_URI[x86_64_v2_live555.sha256sum] = "0961f4550ec47cf42eafb6545d57310c006839d389bf0acaf6d8676fef085943"
 
-URI_x86_64_v2_live555-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-devel-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_live555-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-devel-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555-devel;unpack=0"
 SRC_URI[x86_64_v2_live555-devel.sha256sum] = "76aad8cd7bc2e6cec64dcdc721b63b6f974d9dabeed946b5b236dbae182ce1a0"
 
-URI_x86_64_v2_live555-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-tools-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_live555-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/live555-tools-2024.09.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_live555-tools;unpack=0"
 SRC_URI[x86_64_v2_live555-tools.sha256sum] = "3ce3e08cbae04877beb5b3423a01102c9110e7ab53fc8b871d9473a9a963f8bc"
 
-URI_aarch64_live555 = "${EPEL_MIRROR}/aarch64/Packages/l/live555-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555;unpack=0"
-SRC_URI:append = " ${URI_aarch64_live555}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/live555-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555;unpack=0"
 SRC_URI[aarch64_live555.sha256sum] = "1e389606822742d11c65db34b1ca13d31ab0219d367d4d6c95f9bcb5db3cee81"
 
-URI_aarch64_live555-devel = "${EPEL_MIRROR}/aarch64/Packages/l/live555-devel-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_live555-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/live555-devel-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555-devel;unpack=0"
 SRC_URI[aarch64_live555-devel.sha256sum] = "9a22e6d3159cbe8121b02ace488b5baf8cb55b56eed39257cbed72a256f288d6"
 
-URI_aarch64_live555-tools = "${EPEL_MIRROR}/aarch64/Packages/l/live555-tools-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_live555-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/live555-tools-2024.09.20-1.el10_0.aarch64.rpm;name=aarch64_live555-tools;unpack=0"
 SRC_URI[aarch64_live555-tools.sha256sum] = "86b33a5926133220e18ec57b898e967e2f8c68d27c9cce53b00ac80233663b7a"
 
 RDEPENDS:live555 = " \

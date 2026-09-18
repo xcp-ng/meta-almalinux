@@ -10,24 +10,19 @@ PACKAGES = " \
  maven-remote-resources-plugin-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-remote-resources-plugin-3.1.0-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-remote-resources-plugin-3.1.0-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7858286077371d9be01c42fc2001c300ee099f1ed92dfed5a9f27a8a0152ec20"
 
-URI_x86_64_v2_maven-remote-resources-plugin = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-3.1.0-7.el10.noarch.rpm;name=x86_64_v2_maven-remote-resources-plugin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-remote-resources-plugin}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-3.1.0-7.el10.noarch.rpm;name=x86_64_v2_maven-remote-resources-plugin;unpack=0"
 SRC_URI[x86_64_v2_maven-remote-resources-plugin.sha256sum] = "44b46ae15c8c35ff77a1c91a1c11e7427036eb49153721cc9de1079ba8f24899"
 
-URI_x86_64_v2_maven-remote-resources-plugin-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-javadoc-3.1.0-7.el10.noarch.rpm;name=x86_64_v2_maven-remote-resources-plugin-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-remote-resources-plugin-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-javadoc-3.1.0-7.el10.noarch.rpm;name=x86_64_v2_maven-remote-resources-plugin-javadoc;unpack=0"
 SRC_URI[x86_64_v2_maven-remote-resources-plugin-javadoc.sha256sum] = "03e3bd76cb708b253c3f348ce044922ff10fc94885fda52e310e4fc61fceadfc"
 
-URI_aarch64_maven-remote-resources-plugin = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-remote-resources-plugin-3.1.0-7.el10.noarch.rpm;name=aarch64_maven-remote-resources-plugin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-remote-resources-plugin}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-remote-resources-plugin-3.1.0-7.el10.noarch.rpm;name=aarch64_maven-remote-resources-plugin;unpack=0"
 SRC_URI[aarch64_maven-remote-resources-plugin.sha256sum] = "44b46ae15c8c35ff77a1c91a1c11e7427036eb49153721cc9de1079ba8f24899"
 
-URI_aarch64_maven-remote-resources-plugin-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-remote-resources-plugin-javadoc-3.1.0-7.el10.noarch.rpm;name=aarch64_maven-remote-resources-plugin-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-remote-resources-plugin-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-remote-resources-plugin-javadoc-3.1.0-7.el10.noarch.rpm;name=aarch64_maven-remote-resources-plugin-javadoc;unpack=0"
 SRC_URI[aarch64_maven-remote-resources-plugin-javadoc.sha256sum] = "03e3bd76cb708b253c3f348ce044922ff10fc94885fda52e310e4fc61fceadfc"
 
 RDEPENDS:maven-remote-resources-plugin = " \

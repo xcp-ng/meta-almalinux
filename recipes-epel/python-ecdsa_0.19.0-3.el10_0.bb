@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ecdsa \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ecdsa-0.19.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ecdsa-0.19.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cb61d7cbd90e6a864744e2a473b90e950c113cc763244aab51450ed5370739b8"
 
-URI_x86_64_v2_python3-ecdsa = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ecdsa-0.19.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ecdsa;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ecdsa}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ecdsa-0.19.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ecdsa;unpack=0"
 SRC_URI[x86_64_v2_python3-ecdsa.sha256sum] = "f2b73a784308a967ee47c2874e4a8e38b6b79efe79620416fa2481eefab75ab3"
 
-URI_aarch64_python3-ecdsa = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ecdsa-0.19.0-3.el10_0.noarch.rpm;name=aarch64_python3-ecdsa;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ecdsa}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ecdsa-0.19.0-3.el10_0.noarch.rpm;name=aarch64_python3-ecdsa;unpack=0"
 SRC_URI[aarch64_python3-ecdsa.sha256sum] = "60f0dddd4928cd3dfe4da9d6cda46dfb4680a1e540e1fbd956639b93df3c3b49"
 
 RDEPENDS:python3-ecdsa = " \

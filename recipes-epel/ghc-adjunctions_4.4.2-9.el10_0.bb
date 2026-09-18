@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-adjunctions-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-adjunctions-4.4.2-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-adjunctions-4.4.2-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "30bf814f78f6997a2055c0d579e8697d92745073d2376596b0bab3fe626a97ab"
 
-URI_x86_64_v2_ghc-adjunctions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-adjunctions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions;unpack=0"
 SRC_URI[x86_64_v2_ghc-adjunctions.sha256sum] = "1df5914700b2c0b25ddf1d9af047448230d8c23737358562035047a56d557d16"
 
-URI_x86_64_v2_ghc-adjunctions-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-devel-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-adjunctions-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-devel-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-adjunctions-devel.sha256sum] = "dbfcc3ef41f5f507a1aade13e4d96d4bf2cfb31c8c10ee741a00bc6f33245279"
 
-URI_x86_64_v2_ghc-adjunctions-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-doc-4.4.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-adjunctions-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-adjunctions-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-doc-4.4.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-adjunctions-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-adjunctions-doc.sha256sum] = "dfceb08edfc771b3ec8d8f2a60c40ac97dd1382aa39761fa1eea985b08ba790c"
 
-URI_x86_64_v2_ghc-adjunctions-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-prof-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-adjunctions-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-adjunctions-prof-4.4.2-9.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-adjunctions-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-adjunctions-prof.sha256sum] = "ec0a9b24b2e429d1e9b54c15cfee41aac3c051ec9e77064cb30de529b4d9e926"
 
-URI_aarch64_ghc-adjunctions = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-adjunctions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions;unpack=0"
 SRC_URI[aarch64_ghc-adjunctions.sha256sum] = "5c9c17e59112817bc2172b52c4a8cff0d938c234111e6b4be5234032acefe444"
 
-URI_aarch64_ghc-adjunctions-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-devel-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-adjunctions-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-devel-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions-devel;unpack=0"
 SRC_URI[aarch64_ghc-adjunctions-devel.sha256sum] = "a062fd80251287c640d64c1c4c03ba4d4587df5b32a0b4e9e012011fb5a032a5"
 
-URI_aarch64_ghc-adjunctions-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-doc-4.4.2-9.el10_0.noarch.rpm;name=aarch64_ghc-adjunctions-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-adjunctions-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-doc-4.4.2-9.el10_0.noarch.rpm;name=aarch64_ghc-adjunctions-doc;unpack=0"
 SRC_URI[aarch64_ghc-adjunctions-doc.sha256sum] = "352063b8a9bae6611bc6b9d7bd6f6923701d3b0eec9ed24b846490ee6c01ab41"
 
-URI_aarch64_ghc-adjunctions-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-prof-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-adjunctions-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-adjunctions-prof-4.4.2-9.el10_0.aarch64.rpm;name=aarch64_ghc-adjunctions-prof;unpack=0"
 SRC_URI[aarch64_ghc-adjunctions-prof.sha256sum] = "7b461beb01bdad182bdd4e69bb1d613a04a4ab8e5c1e9efdcceb1b0cccc11672"
 
 RDEPENDS:ghc-adjunctions = " \

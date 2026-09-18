@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-atk-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-atk-2.0.28-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-atk-2.0.28-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "836386bf54c4b2a55f638ece3559b7cca36fdde17348196c517a59e87014912f"
 
-URI_x86_64_v2_ghc-gi-atk = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-atk}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-atk.sha256sum] = "fa5f816300fdc8bba388f05bd7ab5a5f994c23a051d44277a78fa476c79e26ed"
 
-URI_x86_64_v2_ghc-gi-atk-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-devel-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-atk-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-devel-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-atk-devel.sha256sum] = "25f5494b529d93fe253a8ab0614d9ee865ea8475ec94267f92536ce7231882cf"
 
-URI_x86_64_v2_ghc-gi-atk-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-doc-2.0.28-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-atk-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-atk-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-doc-2.0.28-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-atk-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-atk-doc.sha256sum] = "12efca6e0e16af755d9f82ab8614065646ab22ceb4534a9ee41b34d87cb2321e"
 
-URI_x86_64_v2_ghc-gi-atk-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-prof-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-atk-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-atk-prof-2.0.28-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-atk-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-atk-prof.sha256sum] = "aaeabd31049dc570475e74d650702ba126685f0dd7a42e71a590b40e2b9644b7"
 
-URI_aarch64_ghc-gi-atk = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-atk}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk;unpack=0"
 SRC_URI[aarch64_ghc-gi-atk.sha256sum] = "7caf1f7a8261d7e316286d7b1537e033d565d8586337366a8d6a525c8dc566ed"
 
-URI_aarch64_ghc-gi-atk-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-devel-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-atk-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-devel-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-atk-devel.sha256sum] = "14ed0cdcea398e48f02819ead42db529370dc1f5eca8b7a71714962f2a3eceb8"
 
-URI_aarch64_ghc-gi-atk-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-doc-2.0.28-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-atk-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-atk-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-doc-2.0.28-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-atk-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-atk-doc.sha256sum] = "f434b04321762748f9117261e5f59bb3788b60970adb9b12727f7fe1f970a6fe"
 
-URI_aarch64_ghc-gi-atk-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-prof-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-atk-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-atk-prof-2.0.28-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-atk-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-atk-prof.sha256sum] = "326abba0c84622fd1b0ae845845513087f08277e6132811990154b8db41869e4"
 
 RDEPENDS:ghc-gi-atk = " \

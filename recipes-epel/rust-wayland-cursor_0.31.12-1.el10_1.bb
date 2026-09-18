@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-wayland-cursor-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-wayland-cursor-0.31.12-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-wayland-cursor-0.31.12-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "04be8c4ccadb56af83731c3b16017828e66a1c4c2dc943fb0c4951c57543256a"
 
-URI_x86_64_v2_rust-wayland-cursor+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-wayland-cursor+default-devel-0.31.12-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-wayland-cursor+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-wayland-cursor+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-wayland-cursor+default-devel-0.31.12-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-wayland-cursor+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-wayland-cursor+default-devel.sha256sum] = "48aaabd3bff1c37e313067562a2e658f58b83c3ce01babaacf93c42ef89d1eac"
 
-URI_x86_64_v2_rust-wayland-cursor-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-wayland-cursor-devel-0.31.12-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-wayland-cursor-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-wayland-cursor-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-wayland-cursor-devel-0.31.12-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-wayland-cursor-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-wayland-cursor-devel.sha256sum] = "e3e54ab9840558c195e9cc260470e59f4d8d8eeef5c22b121a2fbbbc784920a8"
 
-URI_aarch64_rust-wayland-cursor+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-wayland-cursor+default-devel-0.31.12-1.el10_1.noarch.rpm;name=aarch64_rust-wayland-cursor+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-wayland-cursor+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-wayland-cursor+default-devel-0.31.12-1.el10_1.noarch.rpm;name=aarch64_rust-wayland-cursor+default-devel;unpack=0"
 SRC_URI[aarch64_rust-wayland-cursor+default-devel.sha256sum] = "e8e3edf8e529e54b2b067ebe21c23668096ee0095de0640d795ed5f2ee941f8b"
 
-URI_aarch64_rust-wayland-cursor-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-wayland-cursor-devel-0.31.12-1.el10_1.noarch.rpm;name=aarch64_rust-wayland-cursor-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-wayland-cursor-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-wayland-cursor-devel-0.31.12-1.el10_1.noarch.rpm;name=aarch64_rust-wayland-cursor-devel;unpack=0"
 SRC_URI[aarch64_rust-wayland-cursor-devel.sha256sum] = "4341c5eca93d590f144a1ecc3d2357ad88d62d23e577c090536db4c46fde373c"
 
 RDEPENDS:rust-wayland-cursor+default-devel = " \

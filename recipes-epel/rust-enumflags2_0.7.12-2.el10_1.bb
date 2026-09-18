@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-enumflags2-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-enumflags2-0.7.12-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-enumflags2-0.7.12-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "163327435886bf61b3f04ab69f027b63df933b160c12725a046cb26ce2340e40"
 
-URI_x86_64_v2_rust-enumflags2+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+default-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-enumflags2+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+default-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-enumflags2+default-devel.sha256sum] = "57d40f4dfbaba8a65db4b52301e87116abf620c597d1029440390d794034e039"
 
-URI_x86_64_v2_rust-enumflags2+serde-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+serde-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-enumflags2+serde-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+serde-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+serde-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-enumflags2+serde-devel.sha256sum] = "f79569114b2f51cc7f3759c23d06f1c6b2b3b6f2a44079c5e77eb4292a046631"
 
-URI_x86_64_v2_rust-enumflags2+std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+std-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+std-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-enumflags2+std-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2+std-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2+std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-enumflags2+std-devel.sha256sum] = "83875b22873d5c410c628aca998dcf7f55af8c8acb9d2e0c679df415b943992d"
 
-URI_x86_64_v2_rust-enumflags2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-enumflags2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-enumflags2-devel-0.7.12-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-enumflags2-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-enumflags2-devel.sha256sum] = "1d49316af5df3171fe1559674edba9e70527f80dada02538035332aa1026f15c"
 
-URI_aarch64_rust-enumflags2+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+default-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-enumflags2+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+default-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+default-devel;unpack=0"
 SRC_URI[aarch64_rust-enumflags2+default-devel.sha256sum] = "5f4e5390842c774bc7e38650bb6fe477ffc43826cd31ef6871dd24c238fcdfd5"
 
-URI_aarch64_rust-enumflags2+serde-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+serde-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-enumflags2+serde-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+serde-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+serde-devel;unpack=0"
 SRC_URI[aarch64_rust-enumflags2+serde-devel.sha256sum] = "c68d0f6a432bb26a90649e32d43711670362c88d6f6fe9679b9254822582de08"
 
-URI_aarch64_rust-enumflags2+std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+std-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+std-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-enumflags2+std-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2+std-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2+std-devel;unpack=0"
 SRC_URI[aarch64_rust-enumflags2+std-devel.sha256sum] = "0246eff7a9be99271121de497aea289ebe782dd720d023b8415ad98d902462f0"
 
-URI_aarch64_rust-enumflags2-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-enumflags2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-enumflags2-devel-0.7.12-2.el10_1.noarch.rpm;name=aarch64_rust-enumflags2-devel;unpack=0"
 SRC_URI[aarch64_rust-enumflags2-devel.sha256sum] = "676da3d446c2e8a9e7450a2bea80fa9459d0c5639906eead123fba91479a5c28"
 
 RDEPENDS:rust-enumflags2+default-devel = " \

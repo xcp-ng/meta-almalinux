@@ -9,16 +9,13 @@ PACKAGES = " \
  tcptrack \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/t/tcptrack-1.4.3-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/t/tcptrack-1.4.3-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c779b37c199d7b30f0cf68ef9ca9f57fd9ba128a622339c76f2e4339458f7b97"
 
-URI_x86_64_v2_tcptrack = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/tcptrack-1.4.3-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_tcptrack;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_tcptrack}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/tcptrack-1.4.3-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_tcptrack;unpack=0"
 SRC_URI[x86_64_v2_tcptrack.sha256sum] = "8d7681efce15015160fc0c10a49f988ee161eb97700cb3154dfd3b13272b676c"
 
-URI_aarch64_tcptrack = "${EPEL_MIRROR}/aarch64/Packages/t/tcptrack-1.4.3-15.el10_0.aarch64.rpm;name=aarch64_tcptrack;unpack=0"
-SRC_URI:append = " ${URI_aarch64_tcptrack}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/t/tcptrack-1.4.3-15.el10_0.aarch64.rpm;name=aarch64_tcptrack;unpack=0"
 SRC_URI[aarch64_tcptrack.sha256sum] = "3b79aa6448cc0e1c4ecd5eff482a76f6b016ef8942f2c05de7f45dd66f2d043b"
 
 RDEPENDS:tcptrack = " \

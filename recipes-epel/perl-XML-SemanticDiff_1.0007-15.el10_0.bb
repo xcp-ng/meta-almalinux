@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-SemanticDiff \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-SemanticDiff-1.0007-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-SemanticDiff-1.0007-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "899a0eca195d4d8e12cadbe27e85eb218065c2aba94b6c71f0379adc7214c99a"
 
-URI_x86_64_v2_perl-XML-SemanticDiff = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-SemanticDiff-1.0007-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-SemanticDiff;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-SemanticDiff}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-SemanticDiff-1.0007-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-SemanticDiff;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-SemanticDiff.sha256sum] = "d9590f44ead8d7088976c6a07324f8e72bb5e49aa837986b84c999abec3d579b"
 
-URI_aarch64_perl-XML-SemanticDiff = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-SemanticDiff-1.0007-15.el10_0.noarch.rpm;name=aarch64_perl-XML-SemanticDiff;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-SemanticDiff}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-SemanticDiff-1.0007-15.el10_0.noarch.rpm;name=aarch64_perl-XML-SemanticDiff;unpack=0"
 SRC_URI[aarch64_perl-XML-SemanticDiff.sha256sum] = "732ce8c2f47e7771c58d7c31bb1713ccfaa80fe4a3c7153118aab183680b52d0"
 
 RDEPENDS:perl-XML-SemanticDiff = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-runner \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-runner-4.0-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-runner-4.0-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "80890a247a92795c6ee1d81e471d3f97dfb9e34ab3b71bc816ebfc525662c951"
 
-URI_x86_64_v2_python3-pytest-runner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-runner-4.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-runner;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-runner}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-runner-4.0-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-runner;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-runner.sha256sum] = "337e3636bacf78b4704e99c43188aa4f5531ec5b0971cf9dbd06bf7f5c41bbd5"
 
-URI_aarch64_python3-pytest-runner = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-runner-4.0-20.el10_0.noarch.rpm;name=aarch64_python3-pytest-runner;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-runner}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-runner-4.0-20.el10_0.noarch.rpm;name=aarch64_python3-pytest-runner;unpack=0"
 SRC_URI[aarch64_python3-pytest-runner.sha256sum] = "ecdbedc5ffdc5a3eecf0ff874c3e35b2da6a975ee0ad0eae422c04cf4ac22b35"
 
 RDEPENDS:python3-pytest-runner = " \

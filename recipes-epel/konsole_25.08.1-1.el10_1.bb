@@ -10,24 +10,19 @@ PACKAGES = " \
  konsole-part \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/konsole-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/konsole-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6fe4cb5095543e637f5a03f4712bad359896cefe70a9efacdadc03f6aece51b7"
 
-URI_x86_64_v2_konsole = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konsole-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konsole;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_konsole}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konsole-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konsole;unpack=0"
 SRC_URI[x86_64_v2_konsole.sha256sum] = "db6143e416d7646fcb367a959bfca50d37373df458633e954900541d7247e180"
 
-URI_x86_64_v2_konsole-part = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konsole-part-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konsole-part;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_konsole-part}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/konsole-part-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_konsole-part;unpack=0"
 SRC_URI[x86_64_v2_konsole-part.sha256sum] = "3d251f16b8f4b76ec0a56bc75ad1aa8ceb37ec12bdeeccc761fa9edec136de16"
 
-URI_aarch64_konsole = "${EPEL_MIRROR}/aarch64/Packages/k/konsole-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konsole;unpack=0"
-SRC_URI:append = " ${URI_aarch64_konsole}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/konsole-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konsole;unpack=0"
 SRC_URI[aarch64_konsole.sha256sum] = "172f1eb8e14f28c6c03a7e34475377b2a6b195cd7fe899a6e0d85076d9270dfa"
 
-URI_aarch64_konsole-part = "${EPEL_MIRROR}/aarch64/Packages/k/konsole-part-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konsole-part;unpack=0"
-SRC_URI:append = " ${URI_aarch64_konsole-part}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/konsole-part-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_konsole-part;unpack=0"
 SRC_URI[aarch64_konsole-part.sha256sum] = "c8c5095cdde0b04295ac0274a6c9c9afdf8c49aa308979a04804b769c267ba3d"
 
 RDEPENDS:konsole = " \

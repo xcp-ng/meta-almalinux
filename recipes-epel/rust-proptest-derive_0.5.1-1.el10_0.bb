@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-proptest-derive-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-proptest-derive-0.5.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-proptest-derive-0.5.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "49436f44ea4f596a2781c183dfee1f15003ae449ebe44247efc185c49f0b14fe"
 
-URI_x86_64_v2_rust-proptest-derive+boxed_union-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive+boxed_union-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive+boxed_union-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-proptest-derive+boxed_union-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive+boxed_union-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive+boxed_union-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-proptest-derive+boxed_union-devel.sha256sum] = "96dcafd7e0021eee91df59c80a15b5e2705ef8871759441319941dc840c3c03b"
 
-URI_x86_64_v2_rust-proptest-derive+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive+default-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-proptest-derive+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive+default-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-proptest-derive+default-devel.sha256sum] = "3b5d1a70cfa3a64d7af52cf7be81be7da1293d50407a89febf2efa842e7c4976"
 
-URI_x86_64_v2_rust-proptest-derive-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-proptest-derive-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-proptest-derive-devel-0.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-proptest-derive-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-proptest-derive-devel.sha256sum] = "97f33d59fea2ed8776785f9279a3a800554c137cd32fb32104051b5405d2ac82"
 
-URI_aarch64_rust-proptest-derive+boxed_union-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive+boxed_union-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive+boxed_union-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-proptest-derive+boxed_union-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive+boxed_union-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive+boxed_union-devel;unpack=0"
 SRC_URI[aarch64_rust-proptest-derive+boxed_union-devel.sha256sum] = "725f5e4367ece8876a2445056433ac3b421a7403f75aa5c214c96efd8b5d2ee1"
 
-URI_aarch64_rust-proptest-derive+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive+default-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-proptest-derive+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive+default-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive+default-devel;unpack=0"
 SRC_URI[aarch64_rust-proptest-derive+default-devel.sha256sum] = "b9e2ff7ec5b640c685464da075fc278a5022eba71ddcb5629e4f0cd9d00fb284"
 
-URI_aarch64_rust-proptest-derive-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-proptest-derive-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-proptest-derive-devel-0.5.1-1.el10_0.noarch.rpm;name=aarch64_rust-proptest-derive-devel;unpack=0"
 SRC_URI[aarch64_rust-proptest-derive-devel.sha256sum] = "8424ec41a99fb98cccf40efbd7ae24763bb58b632163dccc759dbe107655b9bd"
 
 RDEPENDS:rust-proptest-derive+boxed_union-devel = " \

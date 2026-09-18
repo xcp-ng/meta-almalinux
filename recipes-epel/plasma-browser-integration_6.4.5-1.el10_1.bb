@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-browser-integration \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-browser-integration-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-browser-integration-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ba845605eaf6b413529901bc96c925b7d119f66325c89748062f6dc5b38cb79f"
 
-URI_x86_64_v2_plasma-browser-integration = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-browser-integration-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-browser-integration;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-browser-integration}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-browser-integration-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-browser-integration;unpack=0"
 SRC_URI[x86_64_v2_plasma-browser-integration.sha256sum] = "6bc8d1c7c038c65b3747afa91b16871807ffa08c00acb0d89926728e0d1f0d48"
 
-URI_aarch64_plasma-browser-integration = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-browser-integration-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-browser-integration;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-browser-integration}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-browser-integration-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-browser-integration;unpack=0"
 SRC_URI[aarch64_plasma-browser-integration.sha256sum] = "6a89d16acbaf7cf084220ba862de66cb4b09fd7809e38042b6570a626b5a293c"
 
 RDEPENDS:plasma-browser-integration = " \

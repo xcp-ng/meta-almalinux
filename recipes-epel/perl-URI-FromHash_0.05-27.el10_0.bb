@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-URI-FromHash \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-URI-FromHash-0.05-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-URI-FromHash-0.05-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea4a8b76dd47c3c392a2df0b6494794b24c9d6aab69c22e2cf11b5ec6b877519"
 
-URI_x86_64_v2_perl-URI-FromHash = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-URI-FromHash-0.05-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-URI-FromHash;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-URI-FromHash}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-URI-FromHash-0.05-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-URI-FromHash;unpack=0"
 SRC_URI[x86_64_v2_perl-URI-FromHash.sha256sum] = "60a05284767addc9fedea5fc3500c4572a0650f5f5d49ab7444c70eaa527fdf7"
 
-URI_aarch64_perl-URI-FromHash = "${EPEL_MIRROR}/aarch64/Packages/p/perl-URI-FromHash-0.05-27.el10_0.noarch.rpm;name=aarch64_perl-URI-FromHash;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-URI-FromHash}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-URI-FromHash-0.05-27.el10_0.noarch.rpm;name=aarch64_perl-URI-FromHash;unpack=0"
 SRC_URI[aarch64_perl-URI-FromHash.sha256sum] = "db7efa98195ccdb4cbbd09539999fc8a08545aeede01bfe8fe53481e5fc2dec1"
 
 RDEPENDS:perl-URI-FromHash = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-comonad-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-comonad-5.0.8-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-comonad-5.0.8-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8975b01cf5ec68112d96ee2c17060ceb0905ed339d81fbfa8eb6e422a48f8bb9"
 
-URI_x86_64_v2_ghc-comonad = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-comonad}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad;unpack=0"
 SRC_URI[x86_64_v2_ghc-comonad.sha256sum] = "a4e2b1192531ab7870442dad29fe0df82c7d3643122306240025dd719e850659"
 
-URI_x86_64_v2_ghc-comonad-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-devel-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-comonad-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-devel-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-comonad-devel.sha256sum] = "ee7e2ca5991fef079e2b908dce6a27bf5313509e332e9d62b0d0d33429623088"
 
-URI_x86_64_v2_ghc-comonad-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-doc-5.0.8-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-comonad-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-comonad-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-doc-5.0.8-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-comonad-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-comonad-doc.sha256sum] = "1daaf54c68a83d5ab76b54975cd874020332cbe983fbd5934f09d25bd53b921d"
 
-URI_x86_64_v2_ghc-comonad-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-prof-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-comonad-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-comonad-prof-5.0.8-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-comonad-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-comonad-prof.sha256sum] = "5a2356ec91529354e78b56008eaa2ba4f8e577e642acfe3d0da593c1fe353f18"
 
-URI_aarch64_ghc-comonad = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-comonad}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad;unpack=0"
 SRC_URI[aarch64_ghc-comonad.sha256sum] = "27bcf2880b0dae1c66cff07556f3113f701849109e968b327ff7d2f6e6be0c84"
 
-URI_aarch64_ghc-comonad-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-devel-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-comonad-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-devel-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad-devel;unpack=0"
 SRC_URI[aarch64_ghc-comonad-devel.sha256sum] = "bdf5b75be31153c91d2dbd2670c2445bf62309e9e1dc9582523e9577a3ce8a97"
 
-URI_aarch64_ghc-comonad-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-doc-5.0.8-15.el10_0.noarch.rpm;name=aarch64_ghc-comonad-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-comonad-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-doc-5.0.8-15.el10_0.noarch.rpm;name=aarch64_ghc-comonad-doc;unpack=0"
 SRC_URI[aarch64_ghc-comonad-doc.sha256sum] = "7824bd70ac4e0529a71d229c78c2ffd94691f6d8ecf474b2cbfcfee5339cf9d6"
 
-URI_aarch64_ghc-comonad-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-prof-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-comonad-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-comonad-prof-5.0.8-15.el10_0.aarch64.rpm;name=aarch64_ghc-comonad-prof;unpack=0"
 SRC_URI[aarch64_ghc-comonad-prof.sha256sum] = "a0cd29689f07a2b47841611eb0375f9da481f0264c5824f58d0dd517c3772f6c"
 
 RDEPENDS:ghc-comonad = " \

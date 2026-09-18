@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-spnego+kerberos \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-spnego-0.11.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-spnego-0.11.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "61776e4ea1b5f67ce00bbb606e0b15711e7f88a669651ca8b59fd401f35ced38"
 
-URI_x86_64_v2_python3-spnego = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-spnego}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego;unpack=0"
 SRC_URI[x86_64_v2_python3-spnego.sha256sum] = "585f37dd96143689536230cdc36c6d013c33a467f67f9a9994a003469eecc81b"
 
-URI_x86_64_v2_python3-spnego+kerberos = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego+kerberos-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego+kerberos;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-spnego+kerberos}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-spnego+kerberos-0.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-spnego+kerberos;unpack=0"
 SRC_URI[x86_64_v2_python3-spnego+kerberos.sha256sum] = "78021d0592652746055d26190e634221ee629ee81397969b26fd5369daec7637"
 
-URI_aarch64_python3-spnego = "${EPEL_MIRROR}/aarch64/Packages/p/python3-spnego-0.11.1-1.el10_0.noarch.rpm;name=aarch64_python3-spnego;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-spnego}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-spnego-0.11.1-1.el10_0.noarch.rpm;name=aarch64_python3-spnego;unpack=0"
 SRC_URI[aarch64_python3-spnego.sha256sum] = "e7f82a73448053329d46591dadac3644aeeb23c5aabf9d837e79fe92bdda98a2"
 
-URI_aarch64_python3-spnego+kerberos = "${EPEL_MIRROR}/aarch64/Packages/p/python3-spnego+kerberos-0.11.1-1.el10_0.noarch.rpm;name=aarch64_python3-spnego+kerberos;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-spnego+kerberos}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-spnego+kerberos-0.11.1-1.el10_0.noarch.rpm;name=aarch64_python3-spnego+kerberos;unpack=0"
 SRC_URI[aarch64_python3-spnego+kerberos.sha256sum] = "d1314d2297c8817e8b9180b3e223ee759a5c484e40aaee52bff95965ee6096ea"
 
 RDEPENDS:python3-spnego = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  a2jmidid \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/a2jmidid-9-17.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/a2jmidid-9-17.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9faff9948f3776733604c6ce460b9ec9d4fb4f4833c5fd10fcf2b8acaaf27a6d"
 
-URI_x86_64_v2_a2jmidid = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/a2jmidid-9-17.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_a2jmidid;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_a2jmidid}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/a2jmidid-9-17.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_a2jmidid;unpack=0"
 SRC_URI[x86_64_v2_a2jmidid.sha256sum] = "c6f193ca5f31b7b408d8763ce9aea1f5281bb0877fd5235cbfe06e15a0b6ecc9"
 
-URI_aarch64_a2jmidid = "${EPEL_MIRROR}/aarch64/Packages/a/a2jmidid-9-17.el10_1.aarch64.rpm;name=aarch64_a2jmidid;unpack=0"
-SRC_URI:append = " ${URI_aarch64_a2jmidid}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/a2jmidid-9-17.el10_1.aarch64.rpm;name=aarch64_a2jmidid;unpack=0"
 SRC_URI[aarch64_a2jmidid.sha256sum] = "190815eb077dcef3329c6c3455eec358319f50f63f13ac0cf41a2b1c4086ccdd"
 
 RDEPENDS:a2jmidid = " \

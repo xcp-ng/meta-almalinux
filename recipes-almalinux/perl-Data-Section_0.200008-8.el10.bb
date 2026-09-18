@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Section \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Data-Section-0.200008-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Data-Section-0.200008-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "31bb21514c0c23c883c2bc42f5e07d205f84f816476ee85a1ba0f0500669f67d"
 
-URI_x86_64_v2_perl-Data-Section = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Data-Section-0.200008-8.el10.noarch.rpm;name=x86_64_v2_perl-Data-Section;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Section}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Data-Section-0.200008-8.el10.noarch.rpm;name=x86_64_v2_perl-Data-Section;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Section.sha256sum] = "f03962d409f41c18e84f178b7155440dd5ac6ecab1a6feafa4a2ca6e6732f6e0"
 
-URI_aarch64_perl-Data-Section = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Data-Section-0.200008-8.el10.noarch.rpm;name=aarch64_perl-Data-Section;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Section}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Data-Section-0.200008-8.el10.noarch.rpm;name=aarch64_perl-Data-Section;unpack=0"
 SRC_URI[aarch64_perl-Data-Section.sha256sum] = "f03962d409f41c18e84f178b7155440dd5ac6ecab1a6feafa4a2ca6e6732f6e0"
 
 RDEPENDS:perl-Data-Section = " \

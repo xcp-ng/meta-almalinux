@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-aws-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-aws-0.24.1-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-aws-0.24.1-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "26075a091097871cfd6acb693174ea83d60a9c3d2402a11d3c456a7c199df8ae"
 
-URI_x86_64_v2_ghc-aws = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aws}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws;unpack=0"
 SRC_URI[x86_64_v2_ghc-aws.sha256sum] = "42aa1c7e0d99bd3cb42ff41406834e5a15810943161b42ee36cc9bdbbcbeb4ca"
 
-URI_x86_64_v2_ghc-aws-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-devel-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aws-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-devel-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-aws-devel.sha256sum] = "e42c48d2504f3d56a6b8046cfa2c5821a0a3c46544de88d150692981bfc85d79"
 
-URI_x86_64_v2_ghc-aws-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-doc-0.24.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-aws-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aws-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-doc-0.24.1-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-aws-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-aws-doc.sha256sum] = "96c30f75091ab32fdf10b19522565aaeb59b2c8a87ae4511369e49dd12c82182"
 
-URI_x86_64_v2_ghc-aws-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-prof-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-aws-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-aws-prof-0.24.1-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-aws-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-aws-prof.sha256sum] = "8c6b96a9c7459a01dab30257fb4c52b0059c657361368bdd238b9c9a6e61eb74"
 
-URI_aarch64_ghc-aws = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aws}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws;unpack=0"
 SRC_URI[aarch64_ghc-aws.sha256sum] = "f27186e5a79b393b88d32033a610dfbe0839b06e6d73dd49b5fd1af46c48f3de"
 
-URI_aarch64_ghc-aws-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-devel-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aws-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-devel-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws-devel;unpack=0"
 SRC_URI[aarch64_ghc-aws-devel.sha256sum] = "95d0dc91c49cdcfa018f3426eca134a4c555f098f2c250ded7b906863d3683c9"
 
-URI_aarch64_ghc-aws-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-doc-0.24.1-4.el10_0.noarch.rpm;name=aarch64_ghc-aws-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aws-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-doc-0.24.1-4.el10_0.noarch.rpm;name=aarch64_ghc-aws-doc;unpack=0"
 SRC_URI[aarch64_ghc-aws-doc.sha256sum] = "e66699a9ed7a71cf3ca336e0a5c8dd7ab28751837e2ef4d255145dd72b7fe309"
 
-URI_aarch64_ghc-aws-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-prof-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-aws-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-aws-prof-0.24.1-4.el10_0.aarch64.rpm;name=aarch64_ghc-aws-prof;unpack=0"
 SRC_URI[aarch64_ghc-aws-prof.sha256sum] = "5d4d11d96a071e1c8a77eb08c15c5c7c93f4a971dadbf67c7530473e9654b7ba"
 
 RDEPENDS:ghc-aws = " \

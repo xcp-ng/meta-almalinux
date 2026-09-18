@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Pod-Coverage-Moose \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Coverage-Moose-0.08-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Coverage-Moose-0.08-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f8a62867cb9651ac04bab72b938cb786436253109a1486b5f050ca1abb4dae79"
 
-URI_x86_64_v2_perl-Pod-Coverage-Moose = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-Moose-0.08-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-Moose;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Coverage-Moose}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-Moose-0.08-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-Moose;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Coverage-Moose.sha256sum] = "bee4387e68b75b625aa18f08425f44f7af790bbfbce04ade0875c172e5cfaf4a"
 
-URI_aarch64_perl-Pod-Coverage-Moose = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-Moose-0.08-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-Moose;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Coverage-Moose}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-Moose-0.08-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-Moose;unpack=0"
 SRC_URI[aarch64_perl-Pod-Coverage-Moose.sha256sum] = "36870c7585835b015a883342fbf33bfd6e6160143174bcd89f61a0bea8a3b684"
 
 RDEPENDS:perl-Pod-Coverage-Moose = " \

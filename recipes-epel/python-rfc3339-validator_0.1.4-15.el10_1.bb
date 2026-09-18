@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-rfc3339-validator \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-rfc3339-validator-0.1.4-15.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rfc3339-validator-0.1.4-15.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2565ae7155cfbb95968612f6a78682153db962082dc96771f481a6c58c5432bf"
 
-URI_x86_64_v2_python3-rfc3339-validator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rfc3339-validator-0.1.4-15.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rfc3339-validator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rfc3339-validator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rfc3339-validator-0.1.4-15.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rfc3339-validator;unpack=0"
 SRC_URI[x86_64_v2_python3-rfc3339-validator.sha256sum] = "7975bff2026dbd21df624cf81da849b53234cedaca3fbfdb75cd7fc488c6523e"
 
-URI_aarch64_python3-rfc3339-validator = "${EPEL_MIRROR}/aarch64/Packages/p/python3-rfc3339-validator-0.1.4-15.el10_1.noarch.rpm;name=aarch64_python3-rfc3339-validator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rfc3339-validator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rfc3339-validator-0.1.4-15.el10_1.noarch.rpm;name=aarch64_python3-rfc3339-validator;unpack=0"
 SRC_URI[aarch64_python3-rfc3339-validator.sha256sum] = "4337919015cdf0ec5694df0106367723328f2eac034e50d26618257985aba0c7"
 
 RDEPENDS:python3-rfc3339-validator = " \

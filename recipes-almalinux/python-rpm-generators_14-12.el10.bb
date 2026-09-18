@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-rpm-generators \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-rpm-generators-14-12.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-rpm-generators-14-12.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dd26054b654b014b1baacb94805b44fb1789ffce0a64035dd39c7c7ad98978bf"
 
-URI_x86_64_v2_python3-rpm-generators = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-rpm-generators-14-12.el10.noarch.rpm;name=x86_64_v2_python3-rpm-generators;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rpm-generators}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-rpm-generators-14-12.el10.noarch.rpm;name=x86_64_v2_python3-rpm-generators;unpack=0"
 SRC_URI[x86_64_v2_python3-rpm-generators.sha256sum] = "7da63389710cf49d11225ffec042726cbe2221e1e963607416ef95d7a32c9572"
 
-URI_aarch64_python3-rpm-generators = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-rpm-generators-14-12.el10.noarch.rpm;name=aarch64_python3-rpm-generators;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rpm-generators}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-rpm-generators-14-12.el10.noarch.rpm;name=aarch64_python3-rpm-generators;unpack=0"
 SRC_URI[aarch64_python3-rpm-generators.sha256sum] = "7da63389710cf49d11225ffec042726cbe2221e1e963607416ef95d7a32c9572"
 
 RDEPENDS:python3-rpm-generators = " \

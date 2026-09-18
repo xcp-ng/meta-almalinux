@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MooX-Types-MooseLike \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MooX-Types-MooseLike-0.29-28.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MooX-Types-MooseLike-0.29-28.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "721af54c59928b8e22567931cc66dacfa37405244f68147cd12b9a79710c8598"
 
-URI_x86_64_v2_perl-MooX-Types-MooseLike = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooX-Types-MooseLike-0.29-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooX-Types-MooseLike;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MooX-Types-MooseLike}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooX-Types-MooseLike-0.29-28.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooX-Types-MooseLike;unpack=0"
 SRC_URI[x86_64_v2_perl-MooX-Types-MooseLike.sha256sum] = "e097858320d4a6480befcfa9f015d03a09ddedae7461c75ff4840853ac56bd7e"
 
-URI_aarch64_perl-MooX-Types-MooseLike = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MooX-Types-MooseLike-0.29-28.el10_0.noarch.rpm;name=aarch64_perl-MooX-Types-MooseLike;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MooX-Types-MooseLike}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MooX-Types-MooseLike-0.29-28.el10_0.noarch.rpm;name=aarch64_perl-MooX-Types-MooseLike;unpack=0"
 SRC_URI[aarch64_perl-MooX-Types-MooseLike.sha256sum] = "ad9e939942f553a786b59722731c04985911007e0083b46ade3fcbdba69bd528"
 
 RDEPENDS:perl-MooX-Types-MooseLike = " \

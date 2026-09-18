@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-construct \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-construct-2.10.70-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-construct-2.10.70-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "36166c20f475d8743c8ac898c6cf57ebdb980e268672c8dd165cb69aa9920065"
 
-URI_x86_64_v2_python3-construct = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-construct-2.10.70-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-construct;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-construct}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-construct-2.10.70-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-construct;unpack=0"
 SRC_URI[x86_64_v2_python3-construct.sha256sum] = "d7bcfe6dad6826b9bd3627a73a8ef818af06d3499caba72f25f8b109ba408295"
 
-URI_aarch64_python3-construct = "${EPEL_MIRROR}/aarch64/Packages/p/python3-construct-2.10.70-1.el10_0.noarch.rpm;name=aarch64_python3-construct;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-construct}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-construct-2.10.70-1.el10_0.noarch.rpm;name=aarch64_python3-construct;unpack=0"
 SRC_URI[aarch64_python3-construct.sha256sum] = "53da4edb444ad3b1ff509f63711f7b646c286189ff7b4c06fd57274311a71733"
 
 RDEPENDS:python3-construct = " \

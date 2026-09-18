@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MooX-HandlesVia \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MooX-HandlesVia-0.001009-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MooX-HandlesVia-0.001009-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2505a5137ff2f8567fe44e4359191806ecbd60d8105043306915001fcef28ac4"
 
-URI_x86_64_v2_perl-MooX-HandlesVia = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooX-HandlesVia-0.001009-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooX-HandlesVia;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MooX-HandlesVia}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MooX-HandlesVia-0.001009-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MooX-HandlesVia;unpack=0"
 SRC_URI[x86_64_v2_perl-MooX-HandlesVia.sha256sum] = "a15dd678531e95fc9d9ba179833119c8a70f6b96f3eb310e991a4a513077eb6d"
 
-URI_aarch64_perl-MooX-HandlesVia = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MooX-HandlesVia-0.001009-13.el10_0.noarch.rpm;name=aarch64_perl-MooX-HandlesVia;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MooX-HandlesVia}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MooX-HandlesVia-0.001009-13.el10_0.noarch.rpm;name=aarch64_perl-MooX-HandlesVia;unpack=0"
 SRC_URI[aarch64_perl-MooX-HandlesVia.sha256sum] = "ef8800797f30e2fadc6c1a335d82c237b9b0f251e4a27204311dd0a3c87aba88"
 
 RDEPENDS:perl-MooX-HandlesVia = " \

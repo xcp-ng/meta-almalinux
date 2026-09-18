@@ -8,7 +8,6 @@ PR = "2.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/secvarctl-1.1.0-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/secvarctl-1.1.0-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5ae14cd69adf44c3c9dc1d503cf12b1a38dad5ef0e2ff2e9ca858e97cd474b53"
 

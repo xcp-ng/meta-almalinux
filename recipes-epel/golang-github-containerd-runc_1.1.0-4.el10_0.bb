@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-containerd-runc-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-containerd-runc-1.1.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-containerd-runc-1.1.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7a7e2c179f1a810f9b412037deb29004c42af121ce95dd67b72fd382704359f3"
 
-URI_x86_64_v2_golang-github-containerd-runc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-containerd-runc-devel-1.1.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-containerd-runc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-containerd-runc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-containerd-runc-devel-1.1.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-containerd-runc-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-containerd-runc-devel.sha256sum] = "56fe0a2837eb9f9df67752e48ba5f565478b7424ccce1571eb85080e07fa683c"
 
-URI_aarch64_golang-github-containerd-runc-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-containerd-runc-devel-1.1.0-4.el10_0.noarch.rpm;name=aarch64_golang-github-containerd-runc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-containerd-runc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-containerd-runc-devel-1.1.0-4.el10_0.noarch.rpm;name=aarch64_golang-github-containerd-runc-devel;unpack=0"
 SRC_URI[aarch64_golang-github-containerd-runc-devel.sha256sum] = "47636738f30f771b62bd92af6f2e233e57340eea5f7d921a88cd518dc7fc1a91"
 
 RDEPENDS:golang-github-containerd-runc-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  knights \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/knights-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/knights-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5d73cd999b237f2dd64b64142be01fd9ece952788a4e86e3fe10fba5bd1c5e5e"
 
-URI_x86_64_v2_knights = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/knights-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_knights;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_knights}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/knights-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_knights;unpack=0"
 SRC_URI[x86_64_v2_knights.sha256sum] = "49a358339b844cfd19550b3b78a68bdbe6d28e2ba6e221defd0b308af4fccc91"
 
-URI_aarch64_knights = "${EPEL_MIRROR}/aarch64/Packages/k/knights-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_knights;unpack=0"
-SRC_URI:append = " ${URI_aarch64_knights}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/knights-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_knights;unpack=0"
 SRC_URI[aarch64_knights.sha256sum] = "a14b62473f4c9a042f427d3e442900ed90439714816f7047ad755c7077aa3930"
 
 RDEPENDS:knights = " \

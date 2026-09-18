@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-yesod-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-1.6.2.1-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-1.6.2.1-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a9a9bfd6a3653a146ea1368cef0ee72cb19d73b0c7b9d79c32036ce16403a3db"
 
-URI_x86_64_v2_ghc-yesod = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod.sha256sum] = "d3965d16ce0ede01d40bf185dc9b9028345730860cc73c4e854117940e9634d1"
 
-URI_x86_64_v2_ghc-yesod-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-devel-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-devel-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-devel.sha256sum] = "0a27c843521a81f155121983571f8600f98c32389382f5ff17c84f3d1a0ca93a"
 
-URI_x86_64_v2_ghc-yesod-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-doc-1.6.2.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-doc-1.6.2.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-doc.sha256sum] = "b11a9b110407b6a7f5d813c2c053ca43a3e9bc91b39b79b73c88e96744999dd2"
 
-URI_x86_64_v2_ghc-yesod-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-prof-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-prof-1.6.2.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-prof.sha256sum] = "3a858d8fc0779e56efa19f1eed53a19947a1cbc209c2f39f04244d88294a4f62"
 
-URI_aarch64_ghc-yesod = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod;unpack=0"
 SRC_URI[aarch64_ghc-yesod.sha256sum] = "ba945f56d9e0c6bf281155a7a406e8fb9daf0b1ad2d4742a77e88a02a732c5be"
 
-URI_aarch64_ghc-yesod-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-devel-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-devel-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-devel;unpack=0"
 SRC_URI[aarch64_ghc-yesod-devel.sha256sum] = "b8ef2fa9a390ce72f8e1de5474b2894b1642ee6e2a87f7a71cc293398aee4224"
 
-URI_aarch64_ghc-yesod-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-doc-1.6.2.1-7.el10_0.noarch.rpm;name=aarch64_ghc-yesod-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-doc-1.6.2.1-7.el10_0.noarch.rpm;name=aarch64_ghc-yesod-doc;unpack=0"
 SRC_URI[aarch64_ghc-yesod-doc.sha256sum] = "a723a49e3d2c68a55cb2a22efdef341c023162d3a97ddb75abd2898f4f98809b"
 
-URI_aarch64_ghc-yesod-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-prof-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-prof-1.6.2.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-prof;unpack=0"
 SRC_URI[aarch64_ghc-yesod-prof.sha256sum] = "2ec6ecd91a2e17bbe3f8c60a91dc298ba6b26bbeaf9feeef1d9980117dc7d52b"
 
 RDEPENDS:ghc-yesod = " \

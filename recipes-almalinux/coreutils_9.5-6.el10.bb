@@ -11,35 +11,28 @@ PACKAGES = " \
  coreutils-single \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/coreutils-9.5-6.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/coreutils-9.5-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e75d8b0917806f17e46a454e0a150188f7dcddf4f8a99a2949836ac9d18859e"
 
-URI_x86_64_v2_coreutils = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_coreutils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils;unpack=0"
 SRC_URI[x86_64_v2_coreutils.sha256sum] = "7fda6a0eaf8837cc26f5c52892a97d57b8e28fc2829f180bdcb06f18bda56b90"
 RPROVIDES:coreutils:append:x86_64_v2 = " virtual//usr/bin/basename virtual//usr/bin/chmod virtual//usr/bin/date virtual//usr/bin/env virtual//usr/bin/head virtual//usr/bin/readlink virtual//usr/bin/realpath virtual//usr/bin/sha512sum virtual//usr/bin/tr virtual/coreutils"
 
-URI_x86_64_v2_coreutils-common = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-common-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_coreutils-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-common-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils-common;unpack=0"
 SRC_URI[x86_64_v2_coreutils-common.sha256sum] = "8bbf741a9df35da2147170ea623988bd8fde307f36da28b912c2049e88db3fbd"
 
-URI_x86_64_v2_coreutils-single = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-single-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils-single;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_coreutils-single}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/coreutils-single-9.5-6.el10.x86_64_v2.rpm;name=x86_64_v2_coreutils-single;unpack=0"
 SRC_URI[x86_64_v2_coreutils-single.sha256sum] = "1580f14bbeb180c309ece5d82e40dffec2b60088cfb021dc7c0b3a8915bb9e23"
 RPROVIDES:coreutils-single:append:x86_64_v2 = " virtual//usr/bin/basename virtual//usr/bin/chmod virtual//usr/bin/date virtual//usr/bin/env virtual//usr/bin/head virtual//usr/bin/readlink virtual//usr/bin/realpath virtual//usr/bin/sha512sum virtual//usr/bin/tr virtual/coreutils"
 
-URI_aarch64_coreutils = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_coreutils}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils;unpack=0"
 SRC_URI[aarch64_coreutils.sha256sum] = "214ea668d539b586dec47a7a629cff1961bad7a6ac0cba7f4deaa19287766db2"
 RPROVIDES:coreutils:append:aarch64 = " virtual//usr/bin/basename virtual//usr/bin/chmod virtual//usr/bin/date virtual//usr/bin/env virtual//usr/bin/head virtual//usr/bin/readlink virtual//usr/bin/realpath virtual//usr/bin/sha512sum virtual//usr/bin/tr virtual/coreutils"
 
-URI_aarch64_coreutils-common = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-common-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_coreutils-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-common-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils-common;unpack=0"
 SRC_URI[aarch64_coreutils-common.sha256sum] = "52b5d4a0d5a13f3cb4379a30c056f4cb0037ad51d0ea22434a475ec8779f2d88"
 
-URI_aarch64_coreutils-single = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-single-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils-single;unpack=0"
-SRC_URI:append = " ${URI_aarch64_coreutils-single}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/coreutils-single-9.5-6.el10.aarch64.rpm;name=aarch64_coreutils-single;unpack=0"
 SRC_URI[aarch64_coreutils-single.sha256sum] = "4cbf587fe42ab2959569df8605b815758cf18409ab54f5932564b53c02e78976"
 RPROVIDES:coreutils-single:append:aarch64 = " virtual//usr/bin/basename virtual//usr/bin/chmod virtual//usr/bin/date virtual//usr/bin/env virtual//usr/bin/head virtual//usr/bin/readlink virtual//usr/bin/realpath virtual//usr/bin/sha512sum virtual//usr/bin/tr virtual/coreutils"
 

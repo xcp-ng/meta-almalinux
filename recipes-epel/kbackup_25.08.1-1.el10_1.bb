@@ -9,16 +9,13 @@ PACKAGES = " \
  kbackup \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kbackup-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kbackup-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e26549bb9ee556e7b2fd7d43ebda936c816f02e6ecedbf6b1cbd5342bd3b814f"
 
-URI_x86_64_v2_kbackup = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kbackup-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kbackup;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kbackup}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kbackup-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kbackup;unpack=0"
 SRC_URI[x86_64_v2_kbackup.sha256sum] = "a849c6f9f10d63ffc2b568cd1a9e52e21d19c9aaaee19b3fe29ce10b5b5c4599"
 
-URI_aarch64_kbackup = "${EPEL_MIRROR}/aarch64/Packages/k/kbackup-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kbackup;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kbackup}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kbackup-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kbackup;unpack=0"
 SRC_URI[aarch64_kbackup.sha256sum] = "7316164c7d8808709a9a4dcc70ec9d13ff50fa6b4c1f7244de782c51a72b054d"
 
 RDEPENDS:kbackup = " \

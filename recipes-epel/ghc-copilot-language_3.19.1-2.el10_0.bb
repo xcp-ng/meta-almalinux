@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-copilot-language-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-language-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-copilot-language-3.19.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5e099f614232a9116198f5ee8704c03108cab0dac039dca07e47630a695cfaab"
 
-URI_x86_64_v2_ghc-copilot-language = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-language}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-language.sha256sum] = "4557912ec3c5423689e1c648e37a5d0c66d6e14a4dec99ca30b908827d7fcdf1"
 
-URI_x86_64_v2_ghc-copilot-language-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-language-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-devel-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-language-devel.sha256sum] = "50de1c3fbd402a659bac5c1e417df7b4f673ff3380d6c69d794ec73a5c4f349f"
 
-URI_x86_64_v2_ghc-copilot-language-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-language-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-language-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-doc-3.19.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-copilot-language-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-language-doc.sha256sum] = "c6b9fd6a44d55dd7f90934b20d597907aee522d7fc4ea1b4383acb6794c1f4d6"
 
-URI_x86_64_v2_ghc-copilot-language-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-copilot-language-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-copilot-language-prof-3.19.1-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-copilot-language-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-copilot-language-prof.sha256sum] = "2754d2e6204fb5448c5484440a7bd337e54e3ae6c30c87ed08ab36a023e203d9"
 
-URI_aarch64_ghc-copilot-language = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-language}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language;unpack=0"
 SRC_URI[aarch64_ghc-copilot-language.sha256sum] = "587caa8e6c4855b5efc9e12871b1311a5fad5ac4191ffbf0ef963468fea93efa"
 
-URI_aarch64_ghc-copilot-language-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-language-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-devel-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language-devel;unpack=0"
 SRC_URI[aarch64_ghc-copilot-language-devel.sha256sum] = "45b7057c094b69d553a7fa09235b7ae97b3c370ee120458b5e64257d03c7d983"
 
-URI_aarch64_ghc-copilot-language-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-language-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-language-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-doc-3.19.1-2.el10_0.noarch.rpm;name=aarch64_ghc-copilot-language-doc;unpack=0"
 SRC_URI[aarch64_ghc-copilot-language-doc.sha256sum] = "98701ea514c6752eec1a90243e7291c77be5b5e7797ba87b6e5ecea2fed0f90c"
 
-URI_aarch64_ghc-copilot-language-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-copilot-language-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-copilot-language-prof-3.19.1-2.el10_0.aarch64.rpm;name=aarch64_ghc-copilot-language-prof;unpack=0"
 SRC_URI[aarch64_ghc-copilot-language-prof.sha256sum] = "d2aa743bd333fdaede8a676ac807ee0dcbad8ec13d9613c5a0e8a709072669c1"
 
 RDEPENDS:ghc-copilot-language = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Date-Range \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Date-Range-1.41-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Date-Range-1.41-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f2cd1527fbc329c3adc4502478f5ba748075ba221e712dcabd48401e2967d25"
 
-URI_x86_64_v2_perl-Date-Range = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Date-Range-1.41-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Date-Range;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Date-Range}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Date-Range-1.41-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Date-Range;unpack=0"
 SRC_URI[x86_64_v2_perl-Date-Range.sha256sum] = "fee5570a9f368c49734be74f9b200eec42ad11caedc4249cc11645af6b4c459e"
 
-URI_aarch64_perl-Date-Range = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Date-Range-1.41-6.el10_0.noarch.rpm;name=aarch64_perl-Date-Range;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Date-Range}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Date-Range-1.41-6.el10_0.noarch.rpm;name=aarch64_perl-Date-Range;unpack=0"
 SRC_URI[aarch64_perl-Date-Range.sha256sum] = "ce9cb62f98582e6f5b292279b77e94216b3dfd6e2608cfc21ca1c4e481e08ef2"
 
 RDEPENDS:perl-Date-Range = " \

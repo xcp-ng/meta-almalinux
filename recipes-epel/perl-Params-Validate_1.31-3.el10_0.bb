@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Params-Validate \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Params-Validate-1.31-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Params-Validate-1.31-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a9faa8f9fb8c3e8452c71215b4ea3f33954b3b176e8a708186a5addd3866fbab"
 
-URI_x86_64_v2_perl-Params-Validate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Params-Validate-1.31-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Params-Validate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Params-Validate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Params-Validate-1.31-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Params-Validate;unpack=0"
 SRC_URI[x86_64_v2_perl-Params-Validate.sha256sum] = "65f218e0cbf644adf20c6512c28eab1f3477d6b5145a76e0e44308823748c858"
 
-URI_aarch64_perl-Params-Validate = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Params-Validate-1.31-3.el10_0.aarch64.rpm;name=aarch64_perl-Params-Validate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Params-Validate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Params-Validate-1.31-3.el10_0.aarch64.rpm;name=aarch64_perl-Params-Validate;unpack=0"
 SRC_URI[aarch64_perl-Params-Validate.sha256sum] = "97e8c61737455cf5cdd25937c5638becab172670ad94e33675e509beaeb739bd"
 
 RDEPENDS:perl-Params-Validate = " \

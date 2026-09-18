@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-mobile \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-mobile-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-mobile-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a146709e86726667e95931d0222d12c3e28feb28d11e5d75814010f88377ff5f"
 
-URI_x86_64_v2_plasma-mobile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-mobile-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-mobile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-mobile}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-mobile-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-mobile;unpack=0"
 SRC_URI[x86_64_v2_plasma-mobile.sha256sum] = "7fbcdb198b7ed137d919b4f17f9bd9f695d4384e7046d55b080c8c62abe431df"
 
-URI_aarch64_plasma-mobile = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-mobile-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-mobile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-mobile}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-mobile-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-mobile;unpack=0"
 SRC_URI[aarch64_plasma-mobile.sha256sum] = "0fd9bcf0ee6daa286a13cc7519de0a21d3d2e614ad0e5823a4714b48917a10f7"
 
 RDEPENDS:plasma-mobile = " \

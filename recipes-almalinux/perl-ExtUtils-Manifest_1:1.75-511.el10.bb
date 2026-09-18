@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-ExtUtils-Manifest \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-Manifest-1.75-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-ExtUtils-Manifest-1.75-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "25b6d922bfd893191064976bf0ece0b5aa1ceba3bb03b4c1b5dd4fb184e076cc"
 
-URI_x86_64_v2_perl-ExtUtils-Manifest = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Manifest-1.75-511.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-Manifest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-ExtUtils-Manifest}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Manifest-1.75-511.el10.noarch.rpm;name=x86_64_v2_perl-ExtUtils-Manifest;unpack=0"
 SRC_URI[x86_64_v2_perl-ExtUtils-Manifest.sha256sum] = "27053445326eab81de33b4c5a8a5c2d26a3a7e4009ba6706c417aa2f87034421"
 
-URI_aarch64_perl-ExtUtils-Manifest = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-Manifest-1.75-511.el10.noarch.rpm;name=aarch64_perl-ExtUtils-Manifest;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-ExtUtils-Manifest}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-ExtUtils-Manifest-1.75-511.el10.noarch.rpm;name=aarch64_perl-ExtUtils-Manifest;unpack=0"
 SRC_URI[aarch64_perl-ExtUtils-Manifest.sha256sum] = "27053445326eab81de33b4c5a8a5c2d26a3a7e4009ba6706c417aa2f87034421"
 
 RDEPENDS:perl-ExtUtils-Manifest = " \

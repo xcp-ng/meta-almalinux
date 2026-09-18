@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-asn1 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-asn1-2.7.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-asn1-2.7.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5b3ae2e30be486bb8b1878d3d0582189f5f91aff722a889379840ec8c570e4bc"
 
-URI_x86_64_v2_python-asn1-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-asn1-doc-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-asn1-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-asn1-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-asn1-doc-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-asn1-doc;unpack=0"
 SRC_URI[x86_64_v2_python-asn1-doc.sha256sum] = "ca6ad631dc94ebed752f33ef90a05e5354b125db30eafa12078ae7d121aac303"
 
-URI_x86_64_v2_python3-asn1 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asn1-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-asn1;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-asn1}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-asn1-2.7.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-asn1;unpack=0"
 SRC_URI[x86_64_v2_python3-asn1.sha256sum] = "b7e1b136a10fd9cc9217e2a63f2ed34ee9ab351a8f244cca04e297d17a57cf83"
 
-URI_aarch64_python-asn1-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-asn1-doc-2.7.0-3.el10_0.noarch.rpm;name=aarch64_python-asn1-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-asn1-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-asn1-doc-2.7.0-3.el10_0.noarch.rpm;name=aarch64_python-asn1-doc;unpack=0"
 SRC_URI[aarch64_python-asn1-doc.sha256sum] = "81ad5837cc36a162f66ffda3b90e527bd7a060cf9079d6145dea22a8a3134961"
 
-URI_aarch64_python3-asn1 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-asn1-2.7.0-3.el10_0.noarch.rpm;name=aarch64_python3-asn1;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-asn1}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-asn1-2.7.0-3.el10_0.noarch.rpm;name=aarch64_python3-asn1;unpack=0"
 SRC_URI[aarch64_python3-asn1.sha256sum] = "c74919dfefc01004701dd87c07f44531f77e074f4db24a374526eba2a0af0cf5"
 
 RDEPENDS:python-asn1-doc = " \

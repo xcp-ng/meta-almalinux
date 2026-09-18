@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-fatih-color-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-fatih-color-1.18.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-fatih-color-1.18.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "22ea5b85da090283d520247d62f3f6a9e7a7aa0d004abdc397b485a9bb040cea"
 
-URI_x86_64_v2_golang-github-fatih-color-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-fatih-color-devel-1.18.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-fatih-color-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-fatih-color-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-fatih-color-devel-1.18.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-fatih-color-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-fatih-color-devel.sha256sum] = "b84716573f63e5c41305c79c3187e8a086bfed6ee3355827f08da9bf436898ca"
 
-URI_aarch64_golang-github-fatih-color-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-fatih-color-devel-1.18.0-1.el10_0.noarch.rpm;name=aarch64_golang-github-fatih-color-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-fatih-color-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-fatih-color-devel-1.18.0-1.el10_0.noarch.rpm;name=aarch64_golang-github-fatih-color-devel;unpack=0"
 SRC_URI[aarch64_golang-github-fatih-color-devel.sha256sum] = "fd53cfd3077944762ac23304edbe770b4608a866e761d804b295d4a7a3687c62"
 
 RDEPENDS:golang-github-fatih-color-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  granatier \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/granatier-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/granatier-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2f907b330c370a4ed97a2d4becc4d925e893c7d203d84ff696d4017aa94de6b4"
 
-URI_x86_64_v2_granatier = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/granatier-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_granatier;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_granatier}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/granatier-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_granatier;unpack=0"
 SRC_URI[x86_64_v2_granatier.sha256sum] = "f8856d52d71c2a695455ee34833c54edb256057f6260e55f248e875cb24a7f74"
 
-URI_aarch64_granatier = "${EPEL_MIRROR}/aarch64/Packages/g/granatier-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_granatier;unpack=0"
-SRC_URI:append = " ${URI_aarch64_granatier}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/granatier-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_granatier;unpack=0"
 SRC_URI[aarch64_granatier.sha256sum] = "b974564dab6d74f9a2be5423b9ea45136fd93b31c288e3dbae9e8ce2f98e6d7e"
 
 RDEPENDS:granatier = " \

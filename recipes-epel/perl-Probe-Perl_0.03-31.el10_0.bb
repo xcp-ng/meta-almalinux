@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Probe-Perl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Probe-Perl-0.03-31.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Probe-Perl-0.03-31.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d96c6790dd49754b67443b8cbbc4d49381ebc71bbe37edf8ac43a9555fdff4b"
 
-URI_x86_64_v2_perl-Probe-Perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Probe-Perl-0.03-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Probe-Perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Probe-Perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Probe-Perl-0.03-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Probe-Perl;unpack=0"
 SRC_URI[x86_64_v2_perl-Probe-Perl.sha256sum] = "502b7432341ddadc05f6091bdb258debba82106578542b34f421675c5bd1bbbb"
 
-URI_aarch64_perl-Probe-Perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Probe-Perl-0.03-31.el10_0.noarch.rpm;name=aarch64_perl-Probe-Perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Probe-Perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Probe-Perl-0.03-31.el10_0.noarch.rpm;name=aarch64_perl-Probe-Perl;unpack=0"
 SRC_URI[aarch64_perl-Probe-Perl.sha256sum] = "83edb6d0cf0c90a9243abf5f959d78978686fa0b44e9a893cae2f0a4fa56a0fc"
 
 RDEPENDS:perl-Probe-Perl = " \

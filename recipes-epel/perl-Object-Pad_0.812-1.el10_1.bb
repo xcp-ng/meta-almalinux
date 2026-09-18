@@ -11,32 +11,25 @@ PACKAGES = " \
  perl-Object-Pad-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Object-Pad-0.812-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Object-Pad-0.812-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd1bb842c15ccd5aacfade0ed6b13170b57e188455cae99627ef87b434a91784"
 
-URI_x86_64_v2_perl-Object-Pad = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-0.812-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Object-Pad;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Object-Pad}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-0.812-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Object-Pad;unpack=0"
 SRC_URI[x86_64_v2_perl-Object-Pad.sha256sum] = "40b365e610d8606a68ba228d4f1288ef7598234a2a6bb5f2c51d2fb557a9fd48"
 
-URI_x86_64_v2_perl-Object-Pad-ExtensionBuilder = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-ExtensionBuilder-0.812-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Object-Pad-ExtensionBuilder;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Object-Pad-ExtensionBuilder}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-ExtensionBuilder-0.812-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Object-Pad-ExtensionBuilder;unpack=0"
 SRC_URI[x86_64_v2_perl-Object-Pad-ExtensionBuilder.sha256sum] = "100e3c464ed8bc90a764d44b83eb4e2d53ee5e1d3110539e5bb5305c2e43c51f"
 
-URI_x86_64_v2_perl-Object-Pad-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-tests-0.812-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Object-Pad-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Object-Pad-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Object-Pad-tests-0.812-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Object-Pad-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Object-Pad-tests.sha256sum] = "1011adc0880d73bfe30ab37a73b15a12330463962e6756946454e0e566ff6a87"
 
-URI_aarch64_perl-Object-Pad = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-0.812-1.el10_1.aarch64.rpm;name=aarch64_perl-Object-Pad;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Object-Pad}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-0.812-1.el10_1.aarch64.rpm;name=aarch64_perl-Object-Pad;unpack=0"
 SRC_URI[aarch64_perl-Object-Pad.sha256sum] = "3aa61e7c3cab9cbf04a589a289b9cf7354741dbb8c715ab8b0b78c5153eef5f4"
 
-URI_aarch64_perl-Object-Pad-ExtensionBuilder = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-ExtensionBuilder-0.812-1.el10_1.aarch64.rpm;name=aarch64_perl-Object-Pad-ExtensionBuilder;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Object-Pad-ExtensionBuilder}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-ExtensionBuilder-0.812-1.el10_1.aarch64.rpm;name=aarch64_perl-Object-Pad-ExtensionBuilder;unpack=0"
 SRC_URI[aarch64_perl-Object-Pad-ExtensionBuilder.sha256sum] = "e24c0e25c8be0ad6fb4f3fa29ff17dd0fc91484a6c7b59bb417bc16792087dd7"
 
-URI_aarch64_perl-Object-Pad-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-tests-0.812-1.el10_1.noarch.rpm;name=aarch64_perl-Object-Pad-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Object-Pad-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Object-Pad-tests-0.812-1.el10_1.noarch.rpm;name=aarch64_perl-Object-Pad-tests;unpack=0"
 SRC_URI[aarch64_perl-Object-Pad-tests.sha256sum] = "045e4ecdf9b28aaccb588fe0de69803304b90a4adfa20be48698673c1326b1f3"
 
 RDEPENDS:perl-Object-Pad = " \

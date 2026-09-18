@@ -13,16 +13,13 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/h/hipsparselt-6.4.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/h/hipsparselt-6.4.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f5946375671f13ca2af547333240ba63c92158ac37cb3230e327d77af103f988"
 
-URI_x86_64_v2_hipsparselt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipsparselt-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipsparselt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hipsparselt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipsparselt-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipsparselt;unpack=0"
 SRC_URI[x86_64_v2_hipsparselt.sha256sum] = "60544b937d7d4cf2a9ecef9cbdee02f43d31db79f7383b820715f361565eb31a"
 
-URI_x86_64_v2_hipsparselt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipsparselt-devel-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipsparselt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hipsparselt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/hipsparselt-devel-6.4.2-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_hipsparselt-devel;unpack=0"
 SRC_URI[x86_64_v2_hipsparselt-devel.sha256sum] = "a9daaa3d891224f41323386b07710ea5d9bfbc99f3c08e7fad9c10a9f104b45f"
 
 RDEPENDS:hipsparselt = " \

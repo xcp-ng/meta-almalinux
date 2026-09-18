@@ -9,16 +9,13 @@ PACKAGES = " \
  man-pages \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/man-pages-6.06-12.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/man-pages-6.06-12.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cb8f576d88eab0386ec247e31a45b5dbca4c36d998ccb6fc488a3a30431e1f34"
 
-URI_x86_64_v2_man-pages = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/man-pages-6.06-12.el10_1.noarch.rpm;name=x86_64_v2_man-pages;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_man-pages}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/man-pages-6.06-12.el10_1.noarch.rpm;name=x86_64_v2_man-pages;unpack=0"
 SRC_URI[x86_64_v2_man-pages.sha256sum] = "bb20b8dbdba305d5ed89b85fce891d53a2fc5b9876d1e1f246449023eade6343"
 
-URI_aarch64_man-pages = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/man-pages-6.06-12.el10_1.noarch.rpm;name=aarch64_man-pages;unpack=0"
-SRC_URI:append = " ${URI_aarch64_man-pages}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/man-pages-6.06-12.el10_1.noarch.rpm;name=aarch64_man-pages;unpack=0"
 SRC_URI[aarch64_man-pages.sha256sum] = "bb20b8dbdba305d5ed89b85fce891d53a2fc5b9876d1e1f246449023eade6343"
 
 RDEPENDS:man-pages = " \

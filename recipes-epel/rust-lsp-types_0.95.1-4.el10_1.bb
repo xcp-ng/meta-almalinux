@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-lsp-types-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-lsp-types-0.95.1-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-lsp-types-0.95.1-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "063406b8e1598f1eb90416965e4fdfc586a6978ece8a7bff31bb1d61478499cb"
 
-URI_x86_64_v2_rust-lsp-types+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types+default-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lsp-types+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types+default-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lsp-types+default-devel.sha256sum] = "69cf60c1bade3385f4e8ec3977143cd393c9ed8ba08b7edd8b0092c16683bdb3"
 
-URI_x86_64_v2_rust-lsp-types+proposed-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types+proposed-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types+proposed-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lsp-types+proposed-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types+proposed-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types+proposed-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lsp-types+proposed-devel.sha256sum] = "6954b278aaea7e42dcd3c465b3c3d509b4f1120a9856422769f48791f37a4a9f"
 
-URI_x86_64_v2_rust-lsp-types-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-lsp-types-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-lsp-types-devel-0.95.1-4.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-lsp-types-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-lsp-types-devel.sha256sum] = "84b2d1a97c9c42d963340c0a15920a42788e7b7705c4fa5dea6f9fcdf7590f9e"
 
-URI_aarch64_rust-lsp-types+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types+default-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lsp-types+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types+default-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types+default-devel;unpack=0"
 SRC_URI[aarch64_rust-lsp-types+default-devel.sha256sum] = "20973000fc0e631f9a5165eb95cd6106d063fb62465e1c471ed736ee566500ab"
 
-URI_aarch64_rust-lsp-types+proposed-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types+proposed-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types+proposed-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lsp-types+proposed-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types+proposed-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types+proposed-devel;unpack=0"
 SRC_URI[aarch64_rust-lsp-types+proposed-devel.sha256sum] = "3c8cc166fe1aa4a049f7d767605f06940d6073b9236b37d625ecb3b9b53dccfc"
 
-URI_aarch64_rust-lsp-types-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-lsp-types-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-lsp-types-devel-0.95.1-4.el10_1.noarch.rpm;name=aarch64_rust-lsp-types-devel;unpack=0"
 SRC_URI[aarch64_rust-lsp-types-devel.sha256sum] = "df40e03348614cee4abb112de16326bc84d2da2d13edb8e416fa71d67be6f0e4"
 
 RDEPENDS:rust-lsp-types+default-devel = " \

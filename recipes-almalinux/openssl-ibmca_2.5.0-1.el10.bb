@@ -8,7 +8,6 @@ PR = "1.el10"
 PACKAGES = " \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/openssl-ibmca-2.5.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/openssl-ibmca-2.5.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5bf89aa82ad6407dc81ef1b89d70f3c45c4263761754a2f24cbc3812b14de3ee"
 

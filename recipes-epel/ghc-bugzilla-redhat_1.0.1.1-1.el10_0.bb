@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-bugzilla-redhat-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2058ec19b16fec4b8792fb5ea51c4f98de03bc6b64b82269bd9e6f69672f806a"
 
-URI_x86_64_v2_ghc-bugzilla-redhat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bugzilla-redhat}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat;unpack=0"
 SRC_URI[x86_64_v2_ghc-bugzilla-redhat.sha256sum] = "5aaea3b18e5bc76934fbc68df3d6a6419ef1b2a367eb9305948dd4d1b86af073"
 
-URI_x86_64_v2_ghc-bugzilla-redhat-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-devel-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bugzilla-redhat-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-devel-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-bugzilla-redhat-devel.sha256sum] = "b2e5fc36b0a556ade6063efc75bef5dda692718a54ae4ff4a83dbfe7ea565a5d"
 
-URI_x86_64_v2_ghc-bugzilla-redhat-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-doc-1.0.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bugzilla-redhat-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bugzilla-redhat-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-doc-1.0.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-bugzilla-redhat-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-bugzilla-redhat-doc.sha256sum] = "ed50592edf2881a6f5510a44507678587f883adb370820ac768b5e9c737fa417"
 
-URI_x86_64_v2_ghc-bugzilla-redhat-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-prof-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-bugzilla-redhat-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-bugzilla-redhat-prof-1.0.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-bugzilla-redhat-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-bugzilla-redhat-prof.sha256sum] = "dbafa57c12c2878d0035d20c5ca391bee5527d5dd6644b8d81c59483e63369b9"
 
-URI_aarch64_ghc-bugzilla-redhat = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bugzilla-redhat}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat;unpack=0"
 SRC_URI[aarch64_ghc-bugzilla-redhat.sha256sum] = "78d70f1865daffd388a64636897e34d512bfcf5f91c1be61dfe3388bec0436e9"
 
-URI_aarch64_ghc-bugzilla-redhat-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-devel-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bugzilla-redhat-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-devel-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat-devel;unpack=0"
 SRC_URI[aarch64_ghc-bugzilla-redhat-devel.sha256sum] = "332a6633abe1bcb9a19ba116b9aa9bedb23fc38b52c64cc9841ab338100bf851"
 
-URI_aarch64_ghc-bugzilla-redhat-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-doc-1.0.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-bugzilla-redhat-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bugzilla-redhat-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-doc-1.0.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-bugzilla-redhat-doc;unpack=0"
 SRC_URI[aarch64_ghc-bugzilla-redhat-doc.sha256sum] = "8c9610b70d992e0c92e61aed5c95d7cb2284c59e97b32d9c8ea490dad8fc94af"
 
-URI_aarch64_ghc-bugzilla-redhat-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-prof-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-bugzilla-redhat-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-bugzilla-redhat-prof-1.0.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-bugzilla-redhat-prof;unpack=0"
 SRC_URI[aarch64_ghc-bugzilla-redhat-prof.sha256sum] = "9ec88f3b4e448b3e50cc73104d2b77819a84bbd4dc33f9bb063b771914522753"
 
 RDEPENDS:ghc-bugzilla-redhat = " \

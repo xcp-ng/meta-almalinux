@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinxcontrib-autoprogram \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinxcontrib-autoprogram-0.1.9-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinxcontrib-autoprogram-0.1.9-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8b24e1fcaada3d149aa95a3fc6e8a4ad8670aef4ebda421ecf3e3ced8e6fae5a"
 
-URI_x86_64_v2_python3-sphinxcontrib-autoprogram = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxcontrib-autoprogram-0.1.9-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxcontrib-autoprogram;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinxcontrib-autoprogram}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxcontrib-autoprogram-0.1.9-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxcontrib-autoprogram;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinxcontrib-autoprogram.sha256sum] = "b6cb1c54938e05ff4ae5294d9134543549ba31c848d44683b3a60f37cb831600"
 
-URI_aarch64_python3-sphinxcontrib-autoprogram = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxcontrib-autoprogram-0.1.9-6.el10_0.noarch.rpm;name=aarch64_python3-sphinxcontrib-autoprogram;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinxcontrib-autoprogram}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxcontrib-autoprogram-0.1.9-6.el10_0.noarch.rpm;name=aarch64_python3-sphinxcontrib-autoprogram;unpack=0"
 SRC_URI[aarch64_python3-sphinxcontrib-autoprogram.sha256sum] = "7e6b0252dd89c5bf75d67793619e54e79f635ead707d17d6fc0fdb0234abf730"
 
 RDEPENDS:python3-sphinxcontrib-autoprogram = " \

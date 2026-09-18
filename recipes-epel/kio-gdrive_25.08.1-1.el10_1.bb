@@ -9,16 +9,13 @@ PACKAGES = " \
  kio-gdrive \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kio-gdrive-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kio-gdrive-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "52fca7ac84a4a6c0f2c56bcbc5ec419a132997476ec6921907cb261d69e18648"
 
-URI_x86_64_v2_kio-gdrive = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-gdrive-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-gdrive;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kio-gdrive}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-gdrive-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-gdrive;unpack=0"
 SRC_URI[x86_64_v2_kio-gdrive.sha256sum] = "3c6ebbb381fb0c44bd16a728e449998f653d8d47cb1aa32d37354261508fbf3e"
 
-URI_aarch64_kio-gdrive = "${EPEL_MIRROR}/aarch64/Packages/k/kio-gdrive-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-gdrive;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kio-gdrive}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kio-gdrive-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-gdrive;unpack=0"
 SRC_URI[aarch64_kio-gdrive.sha256sum] = "848ca289041c11b0fe28593c4e37773f190a40fb3c30b2c55e9cc72ad2f9c1e0"
 
 RDEPENDS:kio-gdrive = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  neochat \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/n/neochat-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/n/neochat-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd7f78b13d49f257afd4045860e37c0a44be8da0eb0ea0bef1d0b3faf188fe9f"
 
-URI_x86_64_v2_neochat = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neochat-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neochat;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_neochat}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neochat-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neochat;unpack=0"
 SRC_URI[x86_64_v2_neochat.sha256sum] = "2701b8971f9ce856d0c8452cecdb6fbc7a39d6831184716e10d6ff2ba4483317"
 
-URI_aarch64_neochat = "${EPEL_MIRROR}/aarch64/Packages/n/neochat-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_neochat;unpack=0"
-SRC_URI:append = " ${URI_aarch64_neochat}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/neochat-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_neochat;unpack=0"
 SRC_URI[aarch64_neochat.sha256sum] = "740cd68d883461e52f339377ba75d41f03cfbbe17aaaf6c323609544834565d5"
 
 RDEPENDS:neochat = " \

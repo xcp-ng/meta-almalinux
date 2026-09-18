@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-domdf-python-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-domdf-python-tools-3.9.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-domdf-python-tools-3.9.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "59a47b105326c301bb7763a5fc5e6bc91d850b678fae47eb45862730353c7c77"
 
-URI_x86_64_v2_python3-domdf-python-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-domdf-python-tools-3.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-domdf-python-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-domdf-python-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-domdf-python-tools-3.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-domdf-python-tools;unpack=0"
 SRC_URI[x86_64_v2_python3-domdf-python-tools.sha256sum] = "2aa3fd6308b6299401ed822df673e761688ade43c44fcdae9f8aa0ad8bceddd0"
 
-URI_aarch64_python3-domdf-python-tools = "${EPEL_MIRROR}/aarch64/Packages/p/python3-domdf-python-tools-3.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-domdf-python-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-domdf-python-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-domdf-python-tools-3.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-domdf-python-tools;unpack=0"
 SRC_URI[aarch64_python3-domdf-python-tools.sha256sum] = "50f823883441ae1cceeb87bc0428b2168e0e477c4d3cca8758c3eb9bf41be218"
 
 RDEPENDS:python3-domdf-python-tools = " \

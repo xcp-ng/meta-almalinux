@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-aiosqlite \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-aiosqlite-0.20.0-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-aiosqlite-0.20.0-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "48ab1fd3657ab9d90a6950bf3d72f844b438e254968bb6dde14a96e7d5f09a9e"
 
-URI_x86_64_v2_python3-aiosqlite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiosqlite-0.20.0-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-aiosqlite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-aiosqlite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiosqlite-0.20.0-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-aiosqlite;unpack=0"
 SRC_URI[x86_64_v2_python3-aiosqlite.sha256sum] = "77b622a3b48aa8daa94d193aa926edbcd4b00475031158035c20f837f7f65298"
 
-URI_aarch64_python3-aiosqlite = "${EPEL_MIRROR}/aarch64/Packages/p/python3-aiosqlite-0.20.0-7.el10_1.noarch.rpm;name=aarch64_python3-aiosqlite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-aiosqlite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-aiosqlite-0.20.0-7.el10_1.noarch.rpm;name=aarch64_python3-aiosqlite;unpack=0"
 SRC_URI[aarch64_python3-aiosqlite.sha256sum] = "2b69512d26510ae92da6cf150242f58416ce0f3142f2664cb76d8dae863a34b7"
 
 RDEPENDS:python3-aiosqlite = " \

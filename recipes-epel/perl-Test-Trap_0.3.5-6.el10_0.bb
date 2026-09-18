@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-Trap-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Trap-0.3.5-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Trap-0.3.5-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e9fe14e6f35e85c6355244c9a315a7da625361884d14870b682d7f624ee566cc"
 
-URI_x86_64_v2_perl-Test-Trap = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Trap}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Trap.sha256sum] = "dfdbac0f022315a477d15fff16d47db4d53741a87f126d4eedd094abdf7598d6"
 
-URI_x86_64_v2_perl-Test-Trap-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-tests-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Trap-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Trap-tests-0.3.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Trap-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Trap-tests.sha256sum] = "50f5cc24b629998cce39f07201008cb62dbca1ea25784c0a5a541000824d78cf"
 
-URI_aarch64_perl-Test-Trap = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Trap-0.3.5-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Trap;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Trap}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Trap-0.3.5-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Trap;unpack=0"
 SRC_URI[aarch64_perl-Test-Trap.sha256sum] = "57de120438c4c7d2e44d3aa94ae4c2048aebb0301ca9c07f1e6e53e48f8b76aa"
 
-URI_aarch64_perl-Test-Trap-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Trap-tests-0.3.5-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Trap-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Trap-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Trap-tests-0.3.5-6.el10_0.noarch.rpm;name=aarch64_perl-Test-Trap-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-Trap-tests.sha256sum] = "99515e60a1aed9e5b27d46bb2a4dc39bba1401e3afc530de9cec492935f707d9"
 
 RDEPENDS:perl-Test-Trap = " \

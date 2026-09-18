@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Regexp \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Regexp-2017040101-21.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Regexp-2017040101-21.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "64f1f7ad4e3c25fff02decaac14f02d938de7cbc0cac15a6906469dd1eb602c3"
 
-URI_x86_64_v2_perl-Test-Regexp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Regexp-2017040101-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Regexp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Regexp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Regexp-2017040101-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Regexp;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Regexp.sha256sum] = "8446e0e949881a69562c4648663ab3637e3b72767344d0c7ae0d137bebafb06d"
 
-URI_aarch64_perl-Test-Regexp = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Regexp-2017040101-21.el10_0.noarch.rpm;name=aarch64_perl-Test-Regexp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Regexp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Regexp-2017040101-21.el10_0.noarch.rpm;name=aarch64_perl-Test-Regexp;unpack=0"
 SRC_URI[aarch64_perl-Test-Regexp.sha256sum] = "482851a5122847f9c04e5f61b9ec58c21baadfb2771a93c5e2cc28e97a77c357"
 
 RDEPENDS:perl-Test-Regexp = " \

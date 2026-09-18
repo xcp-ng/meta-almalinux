@@ -9,16 +9,13 @@ PACKAGES = " \
  parallel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/parallel-20260422-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/parallel-20260422-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "572873409143939214f3d137303178cfb12e702d14dbc73293033176953fbdbc"
 
-URI_x86_64_v2_parallel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/parallel-20260422-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_parallel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_parallel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/parallel-20260422-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_parallel;unpack=0"
 SRC_URI[x86_64_v2_parallel.sha256sum] = "36a25e875621edbb8dfbb286e1656813cc0b5aac27f538448ed076c0d70840cd"
 
-URI_aarch64_parallel = "${EPEL_MIRROR}/aarch64/Packages/p/parallel-20260422-1.el10_1.noarch.rpm;name=aarch64_parallel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_parallel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/parallel-20260422-1.el10_1.noarch.rpm;name=aarch64_parallel;unpack=0"
 SRC_URI[aarch64_parallel.sha256sum] = "f00c28fdb1ec131dc5b18939ad5c7d3366da2744b7ba1fcc08cef266e766c901"
 
 RDEPENDS:parallel = " \

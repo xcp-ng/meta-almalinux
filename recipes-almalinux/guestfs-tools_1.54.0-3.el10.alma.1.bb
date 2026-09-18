@@ -10,24 +10,19 @@ PACKAGES = " \
  virt-win-reg \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/guestfs-tools-1.54.0-3.el10.alma.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/guestfs-tools-1.54.0-3.el10.alma.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9aeb1897301eabf07d0a0f05504e070ec9b002d1fa550136de1db55afbffcadb"
 
-URI_x86_64_v2_guestfs-tools = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/guestfs-tools-1.54.0-3.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_guestfs-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_guestfs-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/guestfs-tools-1.54.0-3.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_guestfs-tools;unpack=0"
 SRC_URI[x86_64_v2_guestfs-tools.sha256sum] = "00bdbd7d57c6f0a62d2f643a4b6ab17a9fcbd9944c40bb976bbc6aa55ca90a6e"
 
-URI_x86_64_v2_virt-win-reg = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-win-reg-1.54.0-3.el10.alma.1.noarch.rpm;name=x86_64_v2_virt-win-reg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virt-win-reg}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-win-reg-1.54.0-3.el10.alma.1.noarch.rpm;name=x86_64_v2_virt-win-reg;unpack=0"
 SRC_URI[x86_64_v2_virt-win-reg.sha256sum] = "75e52a11a6e9932389b90864ba961021db5bcd862814b3e271b6ba7fd9cd25d7"
 
-URI_aarch64_guestfs-tools = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/guestfs-tools-1.54.0-3.el10.alma.1.aarch64.rpm;name=aarch64_guestfs-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_guestfs-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/guestfs-tools-1.54.0-3.el10.alma.1.aarch64.rpm;name=aarch64_guestfs-tools;unpack=0"
 SRC_URI[aarch64_guestfs-tools.sha256sum] = "64e5c14449ae90afd6f70f6e38bc6a4bf4024fd925d9f94ae97e4415041438f9"
 
-URI_aarch64_virt-win-reg = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/virt-win-reg-1.54.0-3.el10.alma.1.noarch.rpm;name=aarch64_virt-win-reg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_virt-win-reg}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/virt-win-reg-1.54.0-3.el10.alma.1.noarch.rpm;name=aarch64_virt-win-reg;unpack=0"
 SRC_URI[aarch64_virt-win-reg.sha256sum] = "75e52a11a6e9932389b90864ba961021db5bcd862814b3e271b6ba7fd9cd25d7"
 
 RDEPENDS:guestfs-tools = " \

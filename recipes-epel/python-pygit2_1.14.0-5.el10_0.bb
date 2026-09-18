@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pygit2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pygit2-1.14.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pygit2-1.14.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6282e5c11ed96ce81fc11ba684bd3a433fedb714eb111b8150f85824ea0efd1f"
 
-URI_x86_64_v2_python-pygit2-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pygit2-doc-1.14.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pygit2-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-pygit2-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pygit2-doc-1.14.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pygit2-doc;unpack=0"
 SRC_URI[x86_64_v2_python-pygit2-doc.sha256sum] = "1e56a01bd14e616c39193823930c3819d3297329f04570fc8a2aeedbabdde30b"
 
-URI_x86_64_v2_python3-pygit2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygit2-1.14.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pygit2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pygit2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygit2-1.14.0-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pygit2;unpack=0"
 SRC_URI[x86_64_v2_python3-pygit2.sha256sum] = "af61cb472489cb75917a031bfe44e8c444285221608fc45026bf6859c150f9c8"
 
-URI_aarch64_python-pygit2-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pygit2-doc-1.14.0-5.el10_0.noarch.rpm;name=aarch64_python-pygit2-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-pygit2-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pygit2-doc-1.14.0-5.el10_0.noarch.rpm;name=aarch64_python-pygit2-doc;unpack=0"
 SRC_URI[aarch64_python-pygit2-doc.sha256sum] = "794d73fb843c49fc1a6f9d97b35159224d7d195ffbaf193011e8cbbb5d7ebbe5"
 
-URI_aarch64_python3-pygit2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pygit2-1.14.0-5.el10_0.aarch64.rpm;name=aarch64_python3-pygit2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pygit2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pygit2-1.14.0-5.el10_0.aarch64.rpm;name=aarch64_python3-pygit2;unpack=0"
 SRC_URI[aarch64_python3-pygit2.sha256sum] = "a52856931eeb977a83564466b12965b5c6646ac5b2f595206a7858ead2dd5a03"
 
 RDEPENDS:python-pygit2-doc = " \

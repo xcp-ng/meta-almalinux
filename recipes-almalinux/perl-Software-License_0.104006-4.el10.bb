@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Software-License \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Software-License-0.104006-4.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Software-License-0.104006-4.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1abf56c5769933567907664a7ae9ffcaf3c232c976a9442f0a84c0fb5d9656ef"
 
-URI_x86_64_v2_perl-Software-License = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Software-License-0.104006-4.el10.noarch.rpm;name=x86_64_v2_perl-Software-License;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Software-License}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Software-License-0.104006-4.el10.noarch.rpm;name=x86_64_v2_perl-Software-License;unpack=0"
 SRC_URI[x86_64_v2_perl-Software-License.sha256sum] = "49ecab75d298e1915645c6424db88bef49de93edb84f530ffd8b1f00988fc171"
 
-URI_aarch64_perl-Software-License = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Software-License-0.104006-4.el10.noarch.rpm;name=aarch64_perl-Software-License;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Software-License}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Software-License-0.104006-4.el10.noarch.rpm;name=aarch64_perl-Software-License;unpack=0"
 SRC_URI[aarch64_perl-Software-License.sha256sum] = "49ecab75d298e1915645c6424db88bef49de93edb84f530ffd8b1f00988fc171"
 
 RDEPENDS:perl-Software-License = " \

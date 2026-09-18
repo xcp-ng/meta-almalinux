@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mako \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-mako-1.2.3-9.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-mako-1.2.3-9.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "08e9dcd95b2dc230d7092dce925933ba01a999826beecfe0c3dadf3002584543"
 
-URI_x86_64_v2_python3-mako = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-mako-1.2.3-9.el10.noarch.rpm;name=x86_64_v2_python3-mako;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mako}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-mako-1.2.3-9.el10.noarch.rpm;name=x86_64_v2_python3-mako;unpack=0"
 SRC_URI[x86_64_v2_python3-mako.sha256sum] = "e5f25b78e1174e1d8426e33282b5ec26a4be221793a86615ed53075d9b9cb8e4"
 
-URI_aarch64_python3-mako = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-mako-1.2.3-9.el10.noarch.rpm;name=aarch64_python3-mako;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mako}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-mako-1.2.3-9.el10.noarch.rpm;name=aarch64_python3-mako;unpack=0"
 SRC_URI[aarch64_python3-mako.sha256sum] = "e5f25b78e1174e1d8426e33282b5ec26a4be221793a86615ed53075d9b9cb8e4"
 
 RDEPENDS:python3-mako = " \

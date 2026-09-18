@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-tzfile-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-tzfile-0.1.3-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-tzfile-0.1.3-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "88aee6b57073069271eb023320953f6cc00f2115e80b51b9639fc915dad17f0b"
 
-URI_x86_64_v2_rust-tzfile+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tzfile+default-devel-0.1.3-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tzfile+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-tzfile+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tzfile+default-devel-0.1.3-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tzfile+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-tzfile+default-devel.sha256sum] = "a92cbfd7464ba9fb8f913b1154b5b6e14242d127e31e35fa257cf5b31bd18d99"
 
-URI_x86_64_v2_rust-tzfile-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tzfile-devel-0.1.3-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tzfile-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-tzfile-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-tzfile-devel-0.1.3-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-tzfile-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-tzfile-devel.sha256sum] = "c5c2485fbd9c9b5827765a867b0a3ea88c74dbfa6e916092bed65ca35394bb78"
 
-URI_aarch64_rust-tzfile+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-tzfile+default-devel-0.1.3-13.el10_0.noarch.rpm;name=aarch64_rust-tzfile+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-tzfile+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-tzfile+default-devel-0.1.3-13.el10_0.noarch.rpm;name=aarch64_rust-tzfile+default-devel;unpack=0"
 SRC_URI[aarch64_rust-tzfile+default-devel.sha256sum] = "bcb5cc1cc011d369a4d74f7b7728cceb5d5652700df82456f3174691183b4437"
 
-URI_aarch64_rust-tzfile-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-tzfile-devel-0.1.3-13.el10_0.noarch.rpm;name=aarch64_rust-tzfile-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-tzfile-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-tzfile-devel-0.1.3-13.el10_0.noarch.rpm;name=aarch64_rust-tzfile-devel;unpack=0"
 SRC_URI[aarch64_rust-tzfile-devel.sha256sum] = "1d5ad9110c3eb984fbf7acdcd3ae2d33266a0443f91400f718b0adaf00cb26e8"
 
 RDEPENDS:rust-tzfile+default-devel = " \

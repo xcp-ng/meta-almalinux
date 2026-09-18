@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pyxdf-examples \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyxdf-1.16.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyxdf-1.16.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "612ef69d672fad7887f9d96cda1db795d4d95214b6403a4a600cd567f8f417e6"
 
-URI_x86_64_v2_python3-pyxdf = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyxdf-1.16.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyxdf;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyxdf}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyxdf-1.16.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyxdf;unpack=0"
 SRC_URI[x86_64_v2_python3-pyxdf.sha256sum] = "cc7fea8b49060a1d318e67a78a4f7496f24d857a4b4c8600fab0ec9e0573bb02"
 
-URI_x86_64_v2_python3-pyxdf-examples = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyxdf-examples-1.16.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyxdf-examples;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyxdf-examples}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyxdf-examples-1.16.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyxdf-examples;unpack=0"
 SRC_URI[x86_64_v2_python3-pyxdf-examples.sha256sum] = "8b443fa14e5165e985f552349b2eb0408990ad64b5a7b62f005dcc5c0ffb8ea3"
 
-URI_aarch64_python3-pyxdf = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyxdf-1.16.8-1.el10_0.noarch.rpm;name=aarch64_python3-pyxdf;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyxdf}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyxdf-1.16.8-1.el10_0.noarch.rpm;name=aarch64_python3-pyxdf;unpack=0"
 SRC_URI[aarch64_python3-pyxdf.sha256sum] = "528bdee63986cc16012bb7fe10735c1314ee44ed47d28dd3665ede80101d73b2"
 
-URI_aarch64_python3-pyxdf-examples = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyxdf-examples-1.16.8-1.el10_0.noarch.rpm;name=aarch64_python3-pyxdf-examples;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyxdf-examples}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyxdf-examples-1.16.8-1.el10_0.noarch.rpm;name=aarch64_python3-pyxdf-examples;unpack=0"
 SRC_URI[aarch64_python3-pyxdf-examples.sha256sum] = "b45cfe893e3f038cb65b9a02ccd869251b9e03c9a3edc5c0d2f992ee05514261"
 
 RDEPENDS:python3-pyxdf = " \

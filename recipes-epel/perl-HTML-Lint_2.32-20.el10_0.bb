@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-HTML-Lint \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-HTML-Lint-2.32-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-HTML-Lint-2.32-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "62af166c15e58bc724c6f9be5b24ca01b4d9796cb35afd746d2454bcecdf2864"
 
-URI_x86_64_v2_perl-HTML-Lint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTML-Lint-2.32-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTML-Lint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTML-Lint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTML-Lint-2.32-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTML-Lint;unpack=0"
 SRC_URI[x86_64_v2_perl-HTML-Lint.sha256sum] = "3c01932ee3c0079b88d507add371172b132ac928489edc04805b5e3b7ccb76dd"
 
-URI_aarch64_perl-HTML-Lint = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTML-Lint-2.32-20.el10_0.noarch.rpm;name=aarch64_perl-HTML-Lint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTML-Lint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTML-Lint-2.32-20.el10_0.noarch.rpm;name=aarch64_perl-HTML-Lint;unpack=0"
 SRC_URI[aarch64_perl-HTML-Lint.sha256sum] = "dca4b2e67244205d41cfdfb91397d3ae99a76778615ea0f4e4646682b8314a78"
 
 RDEPENDS:perl-HTML-Lint = " \

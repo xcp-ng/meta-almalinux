@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-XML-NamespaceFactory-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-NamespaceFactory-1.02-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-NamespaceFactory-1.02-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d31f82f1c8c8c994165b454fd71bfa31df3ce409aeb2dbad7a201ebbed6e43a"
 
-URI_x86_64_v2_perl-XML-NamespaceFactory = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-NamespaceFactory-1.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceFactory;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-NamespaceFactory}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-NamespaceFactory-1.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceFactory;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-NamespaceFactory.sha256sum] = "ae218f7d28029145bb5f400964ba971af1560b3cf1c00175f760e986cde1918f"
 
-URI_x86_64_v2_perl-XML-NamespaceFactory-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-NamespaceFactory-tests-1.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceFactory-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-NamespaceFactory-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-NamespaceFactory-tests-1.02-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-NamespaceFactory-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-NamespaceFactory-tests.sha256sum] = "8c6d9b97e93f26e4544e91efc647301db3e32b4926615d3f500309659b7b09e0"
 
-URI_aarch64_perl-XML-NamespaceFactory = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-NamespaceFactory-1.02-29.el10_0.noarch.rpm;name=aarch64_perl-XML-NamespaceFactory;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-NamespaceFactory}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-NamespaceFactory-1.02-29.el10_0.noarch.rpm;name=aarch64_perl-XML-NamespaceFactory;unpack=0"
 SRC_URI[aarch64_perl-XML-NamespaceFactory.sha256sum] = "3fd905bf3f1a9d86195f54d57cb1eb7633b6ced7e93ec69f7341126173eecdcc"
 
-URI_aarch64_perl-XML-NamespaceFactory-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-NamespaceFactory-tests-1.02-29.el10_0.noarch.rpm;name=aarch64_perl-XML-NamespaceFactory-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-NamespaceFactory-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-NamespaceFactory-tests-1.02-29.el10_0.noarch.rpm;name=aarch64_perl-XML-NamespaceFactory-tests;unpack=0"
 SRC_URI[aarch64_perl-XML-NamespaceFactory-tests.sha256sum] = "720292c7cb65f3be2fc7e308113c313ec1d3e18788a1fc952bff84033945cd5d"
 
 RDEPENDS:perl-XML-NamespaceFactory = " \

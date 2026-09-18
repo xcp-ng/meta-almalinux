@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-freetype \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-freetype-2.5.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-freetype-2.5.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c96bd4c59610ffd6c7235ebf486bdb37b9bf34ad89af8cf7efdff25394644c8"
 
-URI_x86_64_v2_python3-freetype = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-freetype-2.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-freetype;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-freetype}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-freetype-2.5.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-freetype;unpack=0"
 SRC_URI[x86_64_v2_python3-freetype.sha256sum] = "5afcaec0ea1d9d4b9b214b49da4a135b4caf6d29f1909c2f8f39c4895c219459"
 
-URI_aarch64_python3-freetype = "${EPEL_MIRROR}/aarch64/Packages/p/python3-freetype-2.5.1-1.el10_0.noarch.rpm;name=aarch64_python3-freetype;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-freetype}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-freetype-2.5.1-1.el10_0.noarch.rpm;name=aarch64_python3-freetype;unpack=0"
 SRC_URI[aarch64_python3-freetype.sha256sum] = "f8f0052f81f6d5f1916ed58167fae0203e7faa191b81b76de29fb0cdd83240c9"
 
 RDEPENDS:python3-freetype = " \

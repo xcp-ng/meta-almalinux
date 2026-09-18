@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-llfuse \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-llfuse-1.5.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-llfuse-1.5.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8249fb7fdc49d540d97c5baaf5e9769b11e1d7fc6b28f130e4cc422ea548b20c"
 
-URI_x86_64_v2_python3-llfuse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-llfuse-1.5.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-llfuse;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-llfuse}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-llfuse-1.5.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-llfuse;unpack=0"
 SRC_URI[x86_64_v2_python3-llfuse.sha256sum] = "7a92d58ac2b2b9cb769df7f3e9f207109d49f191ae8bab000e1dcd45da33df3d"
 
-URI_aarch64_python3-llfuse = "${EPEL_MIRROR}/aarch64/Packages/p/python3-llfuse-1.5.1-1.el10_0.aarch64.rpm;name=aarch64_python3-llfuse;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-llfuse}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-llfuse-1.5.1-1.el10_0.aarch64.rpm;name=aarch64_python3-llfuse;unpack=0"
 SRC_URI[aarch64_python3-llfuse.sha256sum] = "476ed577126cf96bd0d0005cf7a4e90e0af1bccfaf8c5d6b8544fcc4193fcc18"
 
 RDEPENDS:python3-llfuse = " \

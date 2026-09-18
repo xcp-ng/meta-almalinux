@@ -11,32 +11,25 @@ PACKAGES = " \
  perl-SOAP-WSDL-examples \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-SOAP-WSDL-3.004-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-SOAP-WSDL-3.004-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "987893308ebb434b895106b7ee943e9e7b78f71631adac65c7c93665ec3f4aa8"
 
-URI_x86_64_v2_perl-SOAP-WSDL = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL;unpack=0"
 SRC_URI[x86_64_v2_perl-SOAP-WSDL.sha256sum] = "0f009e0d6a0f57b744a5ec05c3dbae6e0f1881f7b2791c9493e8a2773d9afdb6"
 
-URI_x86_64_v2_perl-SOAP-WSDL-Apache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-Apache-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-Apache;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL-Apache}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-Apache-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-Apache;unpack=0"
 SRC_URI[x86_64_v2_perl-SOAP-WSDL-Apache.sha256sum] = "9ee12dedfe392e83344c802e47bdb849780ab2cef1fa04bb9bfa0215c1248276"
 
-URI_x86_64_v2_perl-SOAP-WSDL-examples = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-examples-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-examples;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-SOAP-WSDL-examples}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-SOAP-WSDL-examples-3.004-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-SOAP-WSDL-examples;unpack=0"
 SRC_URI[x86_64_v2_perl-SOAP-WSDL-examples.sha256sum] = "7f5a44a768cf671f951f57bb2169f2594972ef8c3b613514afc88a5250f0b020"
 
-URI_aarch64_perl-SOAP-WSDL = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SOAP-WSDL}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL;unpack=0"
 SRC_URI[aarch64_perl-SOAP-WSDL.sha256sum] = "81a315609c5e26d0e835d88761c864a1206b56d29b56f9b16f13956a12a541c9"
 
-URI_aarch64_perl-SOAP-WSDL-Apache = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-Apache-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL-Apache;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SOAP-WSDL-Apache}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-Apache-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL-Apache;unpack=0"
 SRC_URI[aarch64_perl-SOAP-WSDL-Apache.sha256sum] = "0fa7b70241428a6ade1274e17a0aa23e898e36003b3507fd9c3eace2dbdf4447"
 
-URI_aarch64_perl-SOAP-WSDL-examples = "${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-examples-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL-examples;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-SOAP-WSDL-examples}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-SOAP-WSDL-examples-3.004-18.el10_0.noarch.rpm;name=aarch64_perl-SOAP-WSDL-examples;unpack=0"
 SRC_URI[aarch64_perl-SOAP-WSDL-examples.sha256sum] = "345d5a7698b221f2315904e5dbdb9807ebe973cfcaacb7da89588b06c7fc1f8e"
 
 RDEPENDS:perl-SOAP-WSDL = " \

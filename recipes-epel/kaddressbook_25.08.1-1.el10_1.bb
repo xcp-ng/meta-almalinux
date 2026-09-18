@@ -11,32 +11,25 @@ PACKAGES = " \
  kaddressbook-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kaddressbook-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kaddressbook-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d236867c6e70f06964f7e16be0687b033d6dbab91f78caa0fcd8ff5355cc5b2c"
 
-URI_x86_64_v2_kaddressbook = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kaddressbook}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook;unpack=0"
 SRC_URI[x86_64_v2_kaddressbook.sha256sum] = "06d3f02924066b46c8f7e634492907d53c6ddab0ec1b09275c293fa6cd2ef72e"
 
-URI_x86_64_v2_kaddressbook-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kaddressbook-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook-devel;unpack=0"
 SRC_URI[x86_64_v2_kaddressbook-devel.sha256sum] = "aee902be7ec2650852abc354870162591a7e2ce2901659d7102466d2060f2edb"
 
-URI_x86_64_v2_kaddressbook-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kaddressbook-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kaddressbook-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kaddressbook-libs;unpack=0"
 SRC_URI[x86_64_v2_kaddressbook-libs.sha256sum] = "ba4610593a938b8451fa300741488664ed0bb31c5f4a3b60f7b9a05e2b89af9e"
 
-URI_aarch64_kaddressbook = "${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kaddressbook}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook;unpack=0"
 SRC_URI[aarch64_kaddressbook.sha256sum] = "8dad9b6115682a11e89996e08e0dd6a5feb9de71da2a2cb4786eec974a421793"
 
-URI_aarch64_kaddressbook-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kaddressbook-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook-devel;unpack=0"
 SRC_URI[aarch64_kaddressbook-devel.sha256sum] = "86a478edf935a62290237a7d04a7a5e4665bbb8c7a4f95e763147b514381ef09"
 
-URI_aarch64_kaddressbook-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kaddressbook-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kaddressbook-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kaddressbook-libs;unpack=0"
 SRC_URI[aarch64_kaddressbook-libs.sha256sum] = "f51a08038d55a58e2aa714e05923aade3f5aacaee40d4bc0438df1e3dded4419"
 
 RDEPENDS:kaddressbook = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-MCE-Shared \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MCE-Shared-1.893-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MCE-Shared-1.893-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "92cdf9cbeef1e21c7d92650333fe90411d14b564a967edad98871dba63e5634d"
 
-URI_x86_64_v2_perl-MCE-Shared = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-Shared-1.893-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE-Shared;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MCE-Shared}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-Shared-1.893-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE-Shared;unpack=0"
 SRC_URI[x86_64_v2_perl-MCE-Shared.sha256sum] = "be1c1d18e8a8d8bd758df3721a0e8ac95a20ec6faed323003e8e1da0506f3865"
 
-URI_aarch64_perl-MCE-Shared = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-Shared-1.893-1.el10_0.noarch.rpm;name=aarch64_perl-MCE-Shared;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MCE-Shared}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-Shared-1.893-1.el10_0.noarch.rpm;name=aarch64_perl-MCE-Shared;unpack=0"
 SRC_URI[aarch64_perl-MCE-Shared.sha256sum] = "13d2a6e96c440cca14ce6f818a840c3c9776276da7f5d99d960353b27ed1302d"
 
 RDEPENDS:perl-MCE-Shared = " \

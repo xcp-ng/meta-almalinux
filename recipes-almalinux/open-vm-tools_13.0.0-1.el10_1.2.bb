@@ -18,40 +18,31 @@ PACKAGES:aarch64 = " \
  open-vm-tools-test \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/open-vm-tools-13.0.0-1.el10_1.2.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/open-vm-tools-13.0.0-1.el10_1.2.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3f98571ffc91ef50982f76cdf30f35c6b8be7659b94f91fe25cd81678439fc48"
 
-URI_x86_64_v2_open-vm-tools = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_open-vm-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools;unpack=0"
 SRC_URI[x86_64_v2_open-vm-tools.sha256sum] = "105e74aa079453f1e067cea44078ffd53dba6677049934179d646e9a97550051"
 
-URI_x86_64_v2_open-vm-tools-desktop = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-desktop-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-desktop;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_open-vm-tools-desktop}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-desktop-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-desktop;unpack=0"
 SRC_URI[x86_64_v2_open-vm-tools-desktop.sha256sum] = "cd55ab46042eba2766df174e3f1dbe1608fa0233b185ec300e0b909ba19bee1b"
 
-URI_x86_64_v2_open-vm-tools-salt-minion = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-salt-minion-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-salt-minion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_open-vm-tools-salt-minion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-salt-minion-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-salt-minion;unpack=0"
 SRC_URI[x86_64_v2_open-vm-tools-salt-minion.sha256sum] = "d389e65140266070fb9092ca18e79e5b3964b22a9a83a05fc254edd0a4211fc1"
 
-URI_x86_64_v2_open-vm-tools-sdmp = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-sdmp-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-sdmp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_open-vm-tools-sdmp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-sdmp-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-sdmp;unpack=0"
 SRC_URI[x86_64_v2_open-vm-tools-sdmp.sha256sum] = "37b0c04b5e2980de239c23b3889224680172c21c03128f0b6edac886e3aece81"
 
-URI_x86_64_v2_open-vm-tools-test = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-test-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-test;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_open-vm-tools-test}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/open-vm-tools-test-13.0.0-1.el10_1.2.x86_64_v2.rpm;name=x86_64_v2_open-vm-tools-test;unpack=0"
 SRC_URI[x86_64_v2_open-vm-tools-test.sha256sum] = "a2f7259f2b8ce8425b876ff7288739e645ad3b9daa29fc39978f6c312f6499ae"
 
-URI_aarch64_open-vm-tools = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_open-vm-tools}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools;unpack=0"
 SRC_URI[aarch64_open-vm-tools.sha256sum] = "41ffe8118e030232ccd73ecc3e912b76daaff262ebd4acd369d277758fba09f5"
 
-URI_aarch64_open-vm-tools-desktop = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-desktop-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools-desktop;unpack=0"
-SRC_URI:append = " ${URI_aarch64_open-vm-tools-desktop}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-desktop-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools-desktop;unpack=0"
 SRC_URI[aarch64_open-vm-tools-desktop.sha256sum] = "49c0b19a63cf5e72c8af758504d593033ca55eb0431c8551cd2d1ef08f11c1a7"
 
-URI_aarch64_open-vm-tools-test = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-test-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools-test;unpack=0"
-SRC_URI:append = " ${URI_aarch64_open-vm-tools-test}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/open-vm-tools-test-13.0.0-1.el10_1.2.aarch64.rpm;name=aarch64_open-vm-tools-test;unpack=0"
 SRC_URI[aarch64_open-vm-tools-test.sha256sum] = "f92be02d7f677ddb7b3262f95b29cdd9644c7114f353ae7e30d75822aacd534e"
 
 RDEPENDS:open-vm-tools:x86_64_v2 = " \

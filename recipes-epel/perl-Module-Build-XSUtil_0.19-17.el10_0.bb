@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-Build-XSUtil \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Module-Build-XSUtil-0.19-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Module-Build-XSUtil-0.19-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "32083e4bf8796efbb8229d4f8271e27cb6ac47f16914b4fd32815c997079210b"
 
-URI_x86_64_v2_perl-Module-Build-XSUtil = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Module-Build-XSUtil-0.19-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Module-Build-XSUtil;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Build-XSUtil}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Module-Build-XSUtil-0.19-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Module-Build-XSUtil;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Build-XSUtil.sha256sum] = "8c5bd7549df2e0c92a1ac465ad5e59b1b2680ae1f5bd3197c0b8600f9ab2576e"
 
-URI_aarch64_perl-Module-Build-XSUtil = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Module-Build-XSUtil-0.19-17.el10_0.noarch.rpm;name=aarch64_perl-Module-Build-XSUtil;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Build-XSUtil}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Module-Build-XSUtil-0.19-17.el10_0.noarch.rpm;name=aarch64_perl-Module-Build-XSUtil;unpack=0"
 SRC_URI[aarch64_perl-Module-Build-XSUtil.sha256sum] = "596a98b18ae3b176de37df36ae19caab181ee6168b330e1320fe9bafe3dd7778"
 
 RDEPENDS:perl-Module-Build-XSUtil = " \

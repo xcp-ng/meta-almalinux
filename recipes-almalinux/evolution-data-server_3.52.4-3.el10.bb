@@ -14,56 +14,43 @@ PACKAGES = " \
  evolution-data-server-tests \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/evolution-data-server-3.52.4-3.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/evolution-data-server-3.52.4-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "04eb34c14db2438adfb2711edff537692f37b960527caa01bf2f13cb2df7833d"
 
-URI_x86_64_v2_evolution-data-server = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server.sha256sum] = "81c443444f5b7ae1d749252de311eff6d4cc5d316e2ce36abc32009c7a066491"
 
-URI_x86_64_v2_evolution-data-server-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-devel-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-devel-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-devel;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server-devel.sha256sum] = "54f0f397d694e1103744d72a7518fbe8c7452cd866c9b70bbb793c80f962e76a"
 
-URI_x86_64_v2_evolution-data-server-doc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-doc-3.52.4-3.el10.noarch.rpm;name=x86_64_v2_evolution-data-server-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server-doc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-doc-3.52.4-3.el10.noarch.rpm;name=x86_64_v2_evolution-data-server-doc;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server-doc.sha256sum] = "04d7f95df67b26b48c4f2fdc5ad4697b3505a81bbb7a644e82ead29f6cd13d85"
 
-URI_x86_64_v2_evolution-data-server-langpacks = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-langpacks-3.52.4-3.el10.noarch.rpm;name=x86_64_v2_evolution-data-server-langpacks;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server-langpacks}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-langpacks-3.52.4-3.el10.noarch.rpm;name=x86_64_v2_evolution-data-server-langpacks;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server-langpacks.sha256sum] = "2561b6b0c2218e48f6c5b6015131fc585341492bcef7bfb9c1bf50ad3251e89a"
 
-URI_x86_64_v2_evolution-data-server-perl = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-perl-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server-perl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/evolution-data-server-perl-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-perl;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server-perl.sha256sum] = "ab686dba6c68515a5cd7d221f4c3e0bb0b0524837ab98462c6ba87ea0e9c1dec"
 
-URI_x86_64_v2_evolution-data-server-tests = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-tests-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_evolution-data-server-tests}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/evolution-data-server-tests-3.52.4-3.el10.x86_64_v2.rpm;name=x86_64_v2_evolution-data-server-tests;unpack=0"
 SRC_URI[x86_64_v2_evolution-data-server-tests.sha256sum] = "9904d880d67a79f45e863bd3fb99aa22bb0069358ed51c0b3b1c78c4179f4acb"
 
-URI_aarch64_evolution-data-server = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server;unpack=0"
 SRC_URI[aarch64_evolution-data-server.sha256sum] = "f7e133055c1d58a115951aec3ebc08e05b8c1669419ab8795ac9ae385374ed47"
 
-URI_aarch64_evolution-data-server-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-devel-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-devel-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-devel;unpack=0"
 SRC_URI[aarch64_evolution-data-server-devel.sha256sum] = "4e0eadaa3c38e5d4f12771a42d43329015dcbe42633b4b4a2b11e96c84105b21"
 
-URI_aarch64_evolution-data-server-doc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-doc-3.52.4-3.el10.noarch.rpm;name=aarch64_evolution-data-server-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server-doc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-doc-3.52.4-3.el10.noarch.rpm;name=aarch64_evolution-data-server-doc;unpack=0"
 SRC_URI[aarch64_evolution-data-server-doc.sha256sum] = "04d7f95df67b26b48c4f2fdc5ad4697b3505a81bbb7a644e82ead29f6cd13d85"
 
-URI_aarch64_evolution-data-server-langpacks = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-langpacks-3.52.4-3.el10.noarch.rpm;name=aarch64_evolution-data-server-langpacks;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server-langpacks}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-langpacks-3.52.4-3.el10.noarch.rpm;name=aarch64_evolution-data-server-langpacks;unpack=0"
 SRC_URI[aarch64_evolution-data-server-langpacks.sha256sum] = "2561b6b0c2218e48f6c5b6015131fc585341492bcef7bfb9c1bf50ad3251e89a"
 
-URI_aarch64_evolution-data-server-perl = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-perl-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server-perl}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/evolution-data-server-perl-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-perl;unpack=0"
 SRC_URI[aarch64_evolution-data-server-perl.sha256sum] = "ec77bca3af77f40afb6ff4c686b6d1dbaaad65a8383e6b661a3f02b6881848a2"
 
-URI_aarch64_evolution-data-server-tests = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-tests-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_evolution-data-server-tests}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/evolution-data-server-tests-3.52.4-3.el10.aarch64.rpm;name=aarch64_evolution-data-server-tests;unpack=0"
 SRC_URI[aarch64_evolution-data-server-tests.sha256sum] = "7eeee046782980d0f3fe5f1890780824023bf2cc9e2200e2863f41f762d8c3cf"
 
 RDEPENDS:evolution-data-server = " \

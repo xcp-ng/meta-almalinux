@@ -9,16 +9,13 @@ PACKAGES = " \
  switcheroo-control \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/switcheroo-control-2.6-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/switcheroo-control-2.6-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c1df3b314c75c5fb9d57672ed162d4d766bc6ff0954ef89830cf18973d925f35"
 
-URI_x86_64_v2_switcheroo-control = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/switcheroo-control-2.6-7.el10.x86_64_v2.rpm;name=x86_64_v2_switcheroo-control;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_switcheroo-control}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/switcheroo-control-2.6-7.el10.x86_64_v2.rpm;name=x86_64_v2_switcheroo-control;unpack=0"
 SRC_URI[x86_64_v2_switcheroo-control.sha256sum] = "840861b96ba080f09da369b79d61114676ce16b0b76ae9e8bf29d10841b13818"
 
-URI_aarch64_switcheroo-control = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/switcheroo-control-2.6-7.el10.aarch64.rpm;name=aarch64_switcheroo-control;unpack=0"
-SRC_URI:append = " ${URI_aarch64_switcheroo-control}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/switcheroo-control-2.6-7.el10.aarch64.rpm;name=aarch64_switcheroo-control;unpack=0"
 SRC_URI[aarch64_switcheroo-control.sha256sum] = "d27769f000b264a974e3b8eaf189f8af2e6d3ed273284c7ef8af6a5458e9b020"
 
 RDEPENDS:switcheroo-control = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Data-Perl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Perl-0.002011-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Data-Perl-0.002011-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "849516ef26b05b465040a0403ae6168e5889ed6926200c0951f71de2320bf867"
 
-URI_x86_64_v2_perl-Data-Perl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Perl-0.002011-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Perl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Data-Perl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Data-Perl-0.002011-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Data-Perl;unpack=0"
 SRC_URI[x86_64_v2_perl-Data-Perl.sha256sum] = "f2e1954e542a8383837f78e1ebecdc0583855d99bd83557073c28dfb24af4ed2"
 
-URI_aarch64_perl-Data-Perl = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Perl-0.002011-2.el10_0.noarch.rpm;name=aarch64_perl-Data-Perl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Data-Perl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Data-Perl-0.002011-2.el10_0.noarch.rpm;name=aarch64_perl-Data-Perl;unpack=0"
 SRC_URI[aarch64_perl-Data-Perl.sha256sum] = "bf9cf36eba2d32db9d1084df15e144441dd557e747b32163f0aa050a99f56463"
 
 RDEPENDS:perl-Data-Perl = " \

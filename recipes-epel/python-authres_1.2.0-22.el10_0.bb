@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-authres \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-authres-1.2.0-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-authres-1.2.0-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "37894dcd8fb614cb83228cf164f1c7292a538cba28422ac497a49d55d7ca3aed"
 
-URI_x86_64_v2_python3-authres = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-authres-1.2.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-authres;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-authres}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-authres-1.2.0-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-authres;unpack=0"
 SRC_URI[x86_64_v2_python3-authres.sha256sum] = "a3acef3e19cf06141564f339f7338d1c4ac8431eadab900cfd4913ef247bd9b8"
 
-URI_aarch64_python3-authres = "${EPEL_MIRROR}/aarch64/Packages/p/python3-authres-1.2.0-22.el10_0.noarch.rpm;name=aarch64_python3-authres;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-authres}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-authres-1.2.0-22.el10_0.noarch.rpm;name=aarch64_python3-authres;unpack=0"
 SRC_URI[aarch64_python3-authres.sha256sum] = "687ac38e5e883652afa6cb2e89efe44449a64fbc2ecdf83a1f501d72397af31a"
 
 RDEPENDS:python3-authres = " \

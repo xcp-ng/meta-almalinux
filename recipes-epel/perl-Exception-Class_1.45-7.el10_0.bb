@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Exception-Class \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Exception-Class-1.45-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Exception-Class-1.45-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dfa4c211b4e26e0b2ccd262107e53d069676f9bfdfd6ea48878afcc637f9c60d"
 
-URI_x86_64_v2_perl-Exception-Class = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Exception-Class-1.45-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Exception-Class;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Exception-Class}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Exception-Class-1.45-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Exception-Class;unpack=0"
 SRC_URI[x86_64_v2_perl-Exception-Class.sha256sum] = "9a2cc1396169390a481540983ba3a60dbb8ecf2e14c64eed7b2a3b61649548af"
 
-URI_aarch64_perl-Exception-Class = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Exception-Class-1.45-7.el10_0.noarch.rpm;name=aarch64_perl-Exception-Class;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Exception-Class}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Exception-Class-1.45-7.el10_0.noarch.rpm;name=aarch64_perl-Exception-Class;unpack=0"
 SRC_URI[aarch64_perl-Exception-Class.sha256sum] = "d797d6a1e3a6f43f208bbfe6a5c02658cfbe58e90be7a21ea302c0f21e46817c"
 
 RDEPENDS:perl-Exception-Class = " \

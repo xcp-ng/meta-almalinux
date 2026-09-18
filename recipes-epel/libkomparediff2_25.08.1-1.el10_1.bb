@@ -10,24 +10,19 @@ PACKAGES = " \
  libkomparediff2-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libkomparediff2-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libkomparediff2-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "98683eff8e09082c1c1feb5ee43173b7743465bf1de93516918a4f297355dbfe"
 
-URI_x86_64_v2_libkomparediff2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkomparediff2-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkomparediff2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libkomparediff2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkomparediff2-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkomparediff2;unpack=0"
 SRC_URI[x86_64_v2_libkomparediff2.sha256sum] = "023e0be5964d2ca6b4dffab55b8548d5b67f956b0ca8ebbb2164a3ff2c9d5a20"
 
-URI_x86_64_v2_libkomparediff2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkomparediff2-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkomparediff2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libkomparediff2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkomparediff2-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkomparediff2-devel;unpack=0"
 SRC_URI[x86_64_v2_libkomparediff2-devel.sha256sum] = "75edea0eff06fde72fd424b159b903f2f511442cc924bc9dfd5133d610f73e67"
 
-URI_aarch64_libkomparediff2 = "${EPEL_MIRROR}/aarch64/Packages/l/libkomparediff2-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkomparediff2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libkomparediff2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libkomparediff2-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkomparediff2;unpack=0"
 SRC_URI[aarch64_libkomparediff2.sha256sum] = "ee382e44a00bfb2efdebb4a146ffa17ebca069dd549b2267af6a7f9f293da6dc"
 
-URI_aarch64_libkomparediff2-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libkomparediff2-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkomparediff2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libkomparediff2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libkomparediff2-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkomparediff2-devel;unpack=0"
 SRC_URI[aarch64_libkomparediff2-devel.sha256sum] = "5e86de467cd6e63fdc1a9fe6046dfb41e7520c01c7bb728b39c3221bff861b5f"
 
 RDEPENDS:libkomparediff2 = " \

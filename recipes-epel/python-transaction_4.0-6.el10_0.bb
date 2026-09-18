@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-transaction \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-transaction-4.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-transaction-4.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2f1e2ec95e55060fb5cb819c96caaae3c499e9062fc7663f150f45bbcb90f1d"
 
-URI_x86_64_v2_python3-transaction = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-transaction-4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-transaction;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-transaction}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-transaction-4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-transaction;unpack=0"
 SRC_URI[x86_64_v2_python3-transaction.sha256sum] = "a7be96a6747cdbf981f6480bbdf24f29127e790b5449a8899ac2f8e4edcc22aa"
 
-URI_aarch64_python3-transaction = "${EPEL_MIRROR}/aarch64/Packages/p/python3-transaction-4.0-6.el10_0.noarch.rpm;name=aarch64_python3-transaction;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-transaction}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-transaction-4.0-6.el10_0.noarch.rpm;name=aarch64_python3-transaction;unpack=0"
 SRC_URI[aarch64_python3-transaction.sha256sum] = "9b00b0f735b836c5e0a11af05144fa4e4c48c4681e0f66edfecaffd55abf415e"
 
 RDEPENDS:python3-transaction = " \

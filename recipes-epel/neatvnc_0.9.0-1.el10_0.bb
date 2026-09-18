@@ -10,8 +10,7 @@ PACKAGES = " \
  neatvnc-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/n/neatvnc-0.9.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/n/neatvnc-0.9.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "734b6f3ef0455cd7ca19f2a2f332bee0473c153ceb633e84f755282d7850bd21"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -25,20 +24,16 @@ SRC_URI[src.sha256sum] = "734b6f3ef0455cd7ca19f2a2f332bee0473c153ceb633e84f75528
 # - neatvnc: libavutil.so.59()(64bit)
 # - neatvnc: libavutil.so.59(LIBAVUTIL_59)(64bit)
 
-URI_x86_64_v2_neatvnc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neatvnc-0.9.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neatvnc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_neatvnc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neatvnc-0.9.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neatvnc;unpack=0"
 SRC_URI[x86_64_v2_neatvnc.sha256sum] = "f7f5eceaf83b0fc66c0d44679a25a7c3f6168f97959fc816ae9553b6bab5ed53"
 
-URI_x86_64_v2_neatvnc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neatvnc-devel-0.9.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neatvnc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_neatvnc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/neatvnc-devel-0.9.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_neatvnc-devel;unpack=0"
 SRC_URI[x86_64_v2_neatvnc-devel.sha256sum] = "824780c1b86cf3cd8fc870e98aa24f5290bef39043787237439f6e8fbfd716bd"
 
-URI_aarch64_neatvnc = "${EPEL_MIRROR}/aarch64/Packages/n/neatvnc-0.9.0-1.el10_0.aarch64.rpm;name=aarch64_neatvnc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_neatvnc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/neatvnc-0.9.0-1.el10_0.aarch64.rpm;name=aarch64_neatvnc;unpack=0"
 SRC_URI[aarch64_neatvnc.sha256sum] = "cad052d6471faafe200de886485b5f1d865dd1043e216c7b4c45d6f8dced06f2"
 
-URI_aarch64_neatvnc-devel = "${EPEL_MIRROR}/aarch64/Packages/n/neatvnc-devel-0.9.0-1.el10_0.aarch64.rpm;name=aarch64_neatvnc-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_neatvnc-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/neatvnc-devel-0.9.0-1.el10_0.aarch64.rpm;name=aarch64_neatvnc-devel;unpack=0"
 SRC_URI[aarch64_neatvnc-devel.sha256sum] = "51724947a81e26cb195f93ecfe8f459f1606c2061da5930ceb778c541a2449b9"
 
 RDEPENDS:neatvnc:x86_64_v2 = " \

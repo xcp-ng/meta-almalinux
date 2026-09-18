@@ -11,32 +11,25 @@ PACKAGES = " \
  sddm-breeze \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-desktop-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-desktop-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8afa9144370a919894405cbb035b683234e7c3a6febb7a74a8fce15d115093a9"
 
-URI_x86_64_v2_plasma-desktop = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-desktop-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-desktop;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-desktop}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-desktop-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-desktop;unpack=0"
 SRC_URI[x86_64_v2_plasma-desktop.sha256sum] = "d0d17d1f9635b019ba7b200ff8a7d5ee132a3f2e4d5ee1584948ee7c01786df3"
 
-URI_x86_64_v2_plasma-desktop-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-desktop-doc-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-desktop-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-desktop-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-desktop-doc-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-desktop-doc;unpack=0"
 SRC_URI[x86_64_v2_plasma-desktop-doc.sha256sum] = "7fdf9bc49b322c2f3dbd08aa31f29eafba7d85c395ae8fd4eb02b6a6fdbe54b0"
 
-URI_x86_64_v2_sddm-breeze = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sddm-breeze-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_sddm-breeze;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sddm-breeze}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sddm-breeze-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_sddm-breeze;unpack=0"
 SRC_URI[x86_64_v2_sddm-breeze.sha256sum] = "1bd68f18120d7b697a0ae96e2603dd09990c1f0be02d7ad9389c83d348df4f9a"
 
-URI_aarch64_plasma-desktop = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-desktop-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-desktop;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-desktop}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-desktop-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-desktop;unpack=0"
 SRC_URI[aarch64_plasma-desktop.sha256sum] = "34a19f5aa78f448adf7934653ec091305105211b9073cd029256e27af2bd7695"
 
-URI_aarch64_plasma-desktop-doc = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-desktop-doc-6.4.5-1.el10_1.noarch.rpm;name=aarch64_plasma-desktop-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-desktop-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-desktop-doc-6.4.5-1.el10_1.noarch.rpm;name=aarch64_plasma-desktop-doc;unpack=0"
 SRC_URI[aarch64_plasma-desktop-doc.sha256sum] = "ab28b3750505d98d154af1b796c846f470806136a94af9402028fc3d90dee7fa"
 
-URI_aarch64_sddm-breeze = "${EPEL_MIRROR}/aarch64/Packages/s/sddm-breeze-6.4.5-1.el10_1.noarch.rpm;name=aarch64_sddm-breeze;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sddm-breeze}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/sddm-breeze-6.4.5-1.el10_1.noarch.rpm;name=aarch64_sddm-breeze;unpack=0"
 SRC_URI[aarch64_sddm-breeze.sha256sum] = "2901ae4ebd7c51443b263a4e447ec3aef8dc30b9799fc9bdfe9e2da88d64c1c0"
 
 RDEPENDS:plasma-desktop = " \

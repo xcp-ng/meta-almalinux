@@ -9,16 +9,13 @@ PACKAGES = " \
  clusterssh \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/clusterssh-4.19-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/clusterssh-4.19-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "93f0b3ad7b80e723525c1ec4b532fc2fc579770828dd6437cbd9839193483ee2"
 
-URI_x86_64_v2_clusterssh = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/clusterssh-4.19-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_clusterssh;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_clusterssh}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/clusterssh-4.19-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_clusterssh;unpack=0"
 SRC_URI[x86_64_v2_clusterssh.sha256sum] = "70fe16789d1ba896185c98df62f4a0504cc27bdb261848535235bee2eca44673"
 
-URI_aarch64_clusterssh = "${EPEL_MIRROR}/aarch64/Packages/c/clusterssh-4.19-1.el10_1.noarch.rpm;name=aarch64_clusterssh;unpack=0"
-SRC_URI:append = " ${URI_aarch64_clusterssh}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/clusterssh-4.19-1.el10_1.noarch.rpm;name=aarch64_clusterssh;unpack=0"
 SRC_URI[aarch64_clusterssh.sha256sum] = "761e9ab7281af72894586a9000022f1dab9303c36148196183a46784f0d4d8fb"
 
 RDEPENDS:clusterssh = " \

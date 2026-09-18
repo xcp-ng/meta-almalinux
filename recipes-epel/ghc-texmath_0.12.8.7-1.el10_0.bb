@@ -16,72 +16,55 @@ PACKAGES = " \
  ghc-typst-symbols-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-texmath-0.12.8.7-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-texmath-0.12.8.7-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e79e2c2d3ef307d1a385e479a8026f90e82f8fef85c4b7b9fb6e2c6ad1413a75"
 
-URI_x86_64_v2_ghc-texmath = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-texmath}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath;unpack=0"
 SRC_URI[x86_64_v2_ghc-texmath.sha256sum] = "8aa4902a598a2710d54033a0295541d02d89f2df0abee19b82438373ae1b6397"
 
-URI_x86_64_v2_ghc-texmath-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-devel-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-texmath-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-devel-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-texmath-devel.sha256sum] = "5a1aaee9a872f64f7cdda7f3647d7e4c9e7db2ae2881870515f4fcd245f88694"
 
-URI_x86_64_v2_ghc-texmath-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-doc-0.12.8.7-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-texmath-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-texmath-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-doc-0.12.8.7-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-texmath-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-texmath-doc.sha256sum] = "d51f6a7930648024813ac5461e6ef8cb6728f33e08a1abbf5cc08a15445d1892"
 
-URI_x86_64_v2_ghc-texmath-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-prof-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-texmath-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-texmath-prof-0.12.8.7-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-texmath-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-texmath-prof.sha256sum] = "c4c32057d7ffe3d0004d4f04271687feaed2456e7fddaeed7e5b1f474a4d5c3b"
 
-URI_x86_64_v2_ghc-typst-symbols = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typst-symbols}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols;unpack=0"
 SRC_URI[x86_64_v2_ghc-typst-symbols.sha256sum] = "22e1afe40fc8e5429d2b8f8a43bc446665b6ca61b1a5c4b34f64b8a4aebaaf57"
 
-URI_x86_64_v2_ghc-typst-symbols-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-devel-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typst-symbols-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-devel-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-typst-symbols-devel.sha256sum] = "35d7ac0edf7ee565b085c7c1ff56df079d74d2ae78ca61225e69aa91689b89cf"
 
-URI_x86_64_v2_ghc-typst-symbols-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-doc-0.1.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-typst-symbols-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typst-symbols-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-doc-0.1.5-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-typst-symbols-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-typst-symbols-doc.sha256sum] = "0a8a3e7ba24cf96cb1fcd70371b6738a15736f8495ac8053f8f41695a6d877fe"
 
-URI_x86_64_v2_ghc-typst-symbols-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-prof-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typst-symbols-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typst-symbols-prof-0.1.5-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typst-symbols-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-typst-symbols-prof.sha256sum] = "936821dd5e5ae692701d92c45e998228d472248fa6e6b9b598abd73f21a39fd0"
 
-URI_aarch64_ghc-texmath = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-texmath}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath;unpack=0"
 SRC_URI[aarch64_ghc-texmath.sha256sum] = "031d8639f6be6dc635a642e37715e1751dd015a474b43a69ae3a7443a947e10f"
 
-URI_aarch64_ghc-texmath-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-devel-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-texmath-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-devel-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath-devel;unpack=0"
 SRC_URI[aarch64_ghc-texmath-devel.sha256sum] = "92086045e6d32e5440f721f2d669b946f0d3b2c5456a14d67c3fd90cc4aab7c0"
 
-URI_aarch64_ghc-texmath-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-doc-0.12.8.7-1.el10_0.noarch.rpm;name=aarch64_ghc-texmath-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-texmath-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-doc-0.12.8.7-1.el10_0.noarch.rpm;name=aarch64_ghc-texmath-doc;unpack=0"
 SRC_URI[aarch64_ghc-texmath-doc.sha256sum] = "b9b293f20a3aafa3c7b649cf34e0aa04b6b0fc2ce2cb653a42c2665d778c3ee7"
 
-URI_aarch64_ghc-texmath-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-prof-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-texmath-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-texmath-prof-0.12.8.7-1.el10_0.aarch64.rpm;name=aarch64_ghc-texmath-prof;unpack=0"
 SRC_URI[aarch64_ghc-texmath-prof.sha256sum] = "cd0aa61512e0c550e1497c4f30ed36589c529245993e2febd930b21b5772714b"
 
-URI_aarch64_ghc-typst-symbols = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typst-symbols}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols;unpack=0"
 SRC_URI[aarch64_ghc-typst-symbols.sha256sum] = "ded8afc7a9047df818199d9609b0729ae7cfbb5d8048790567909ce8747e60f9"
 
-URI_aarch64_ghc-typst-symbols-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-devel-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typst-symbols-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-devel-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols-devel;unpack=0"
 SRC_URI[aarch64_ghc-typst-symbols-devel.sha256sum] = "c6a312c7f1704ba1ad8038b1c7ffdb4b80a00f46576b69eb7e79ef4a369fa4f5"
 
-URI_aarch64_ghc-typst-symbols-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-doc-0.1.5-1.el10_0.noarch.rpm;name=aarch64_ghc-typst-symbols-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typst-symbols-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-doc-0.1.5-1.el10_0.noarch.rpm;name=aarch64_ghc-typst-symbols-doc;unpack=0"
 SRC_URI[aarch64_ghc-typst-symbols-doc.sha256sum] = "979ae157945126273865e82a501bf542cd1c36bfd404165e233af7e49d58010b"
 
-URI_aarch64_ghc-typst-symbols-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-prof-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typst-symbols-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typst-symbols-prof-0.1.5-1.el10_0.aarch64.rpm;name=aarch64_ghc-typst-symbols-prof;unpack=0"
 SRC_URI[aarch64_ghc-typst-symbols-prof.sha256sum] = "1db12f17aed5b17393279ff387223a2506aaefffe8fdee10db3e583a112528d3"
 
 RDEPENDS:ghc-texmath = " \

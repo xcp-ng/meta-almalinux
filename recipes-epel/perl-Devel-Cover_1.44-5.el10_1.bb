@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Devel-Cover \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-Cover-1.44-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-Cover-1.44-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "923747b9ba81de5c2bfae1946c437e8d3399db71cee81219baca26cee0287915"
 
-URI_x86_64_v2_perl-Devel-Cover = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-Cover-1.44-5.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Devel-Cover;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Devel-Cover}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-Cover-1.44-5.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Devel-Cover;unpack=0"
 SRC_URI[x86_64_v2_perl-Devel-Cover.sha256sum] = "4c7293aea9727a9f4ae168ad0ff9558501ff65e294ded5f0280fd186ae1c5c23"
 
-URI_aarch64_perl-Devel-Cover = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-Cover-1.44-5.el10_1.aarch64.rpm;name=aarch64_perl-Devel-Cover;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Devel-Cover}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-Cover-1.44-5.el10_1.aarch64.rpm;name=aarch64_perl-Devel-Cover;unpack=0"
 SRC_URI[aarch64_perl-Devel-Cover.sha256sum] = "fdb61ac4576931a5fa15ba4510cde03fabe8f1e9d0517a3d7a0590188fcbe2c6"
 
 RDEPENDS:perl-Devel-Cover = " \

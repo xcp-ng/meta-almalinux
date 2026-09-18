@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-yesod-form-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-form-1.7.6-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-form-1.7.6-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd83710befa507526647bb9fee04fa4a294070a63b40234a6537eee93b37045a"
 
-URI_x86_64_v2_ghc-yesod-form = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-form}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-form.sha256sum] = "058d9aea49e6fb87e329c3968075976506db21efc1dc8e59f3dcc0396818f796"
 
-URI_x86_64_v2_ghc-yesod-form-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-devel-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-form-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-devel-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-form-devel.sha256sum] = "d5ddf8c613b993c3fce4da2040c39142997afcae5b0e8cd4b6d52bd4a84cb1d5"
 
-URI_x86_64_v2_ghc-yesod-form-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-doc-1.7.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-form-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-form-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-doc-1.7.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-form-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-form-doc.sha256sum] = "c230f2616406930d71200f35e1457b87456d1dcf7a7e853fcfc9b6366536ed65"
 
-URI_x86_64_v2_ghc-yesod-form-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-prof-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-form-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-form-prof-1.7.6-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-form-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-form-prof.sha256sum] = "8e904ee513561a91b1b8c85dd118483138f8a3cb32a3d40211ad00702c235dae"
 
-URI_aarch64_ghc-yesod-form = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-form}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form;unpack=0"
 SRC_URI[aarch64_ghc-yesod-form.sha256sum] = "bd0140fc90e124e975f3fb571637ac47ee7ab5d3e1d5883e9edf32d0ad02f4b5"
 
-URI_aarch64_ghc-yesod-form-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-devel-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-form-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-devel-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form-devel;unpack=0"
 SRC_URI[aarch64_ghc-yesod-form-devel.sha256sum] = "9c205af90b643a6b06fb39e65e3e0cf909c9c0be6aeca6964879d8250528b2b4"
 
-URI_aarch64_ghc-yesod-form-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-doc-1.7.6-1.el10_0.noarch.rpm;name=aarch64_ghc-yesod-form-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-form-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-doc-1.7.6-1.el10_0.noarch.rpm;name=aarch64_ghc-yesod-form-doc;unpack=0"
 SRC_URI[aarch64_ghc-yesod-form-doc.sha256sum] = "e2270a41a3db9178447d1f769185f449478e5e7961d034dc45be0719ba20e287"
 
-URI_aarch64_ghc-yesod-form-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-prof-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-form-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-form-prof-1.7.6-1.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-form-prof;unpack=0"
 SRC_URI[aarch64_ghc-yesod-form-prof.sha256sum] = "427a737da1bbd879e27be86332cc2f1b0201abead2c5ca4324fb323945c67c56"
 
 RDEPENDS:ghc-yesod-form = " \

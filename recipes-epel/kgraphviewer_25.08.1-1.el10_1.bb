@@ -11,32 +11,25 @@ PACKAGES = " \
  kgraphviewer-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kgraphviewer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kgraphviewer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9f56a476c352748bd86e749fd676852559177178946e63536b56b2b6599e3478"
 
-URI_x86_64_v2_kgraphviewer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kgraphviewer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer;unpack=0"
 SRC_URI[x86_64_v2_kgraphviewer.sha256sum] = "383e229355bd588a73d964bd1f3e83d7e2e3169f74bdea7e4bf27f917fa2e637"
 
-URI_x86_64_v2_kgraphviewer-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kgraphviewer-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer-devel;unpack=0"
 SRC_URI[x86_64_v2_kgraphviewer-devel.sha256sum] = "81ba7dc14777d6cf0a4cc4454e3e3e4f5195f005a893236a86dd0c9eb3d86a7a"
 
-URI_x86_64_v2_kgraphviewer-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kgraphviewer-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgraphviewer-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgraphviewer-libs;unpack=0"
 SRC_URI[x86_64_v2_kgraphviewer-libs.sha256sum] = "caa5fd9ca93d8c24f4af0dd8ed15aeaf1ba1fb1de29976122ce6652605489881"
 
-URI_aarch64_kgraphviewer = "${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kgraphviewer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer;unpack=0"
 SRC_URI[aarch64_kgraphviewer.sha256sum] = "daec1cf01d378fd83cd77685a5023c8f34b75cc93cc8fca08bb45d55a88f12c9"
 
-URI_aarch64_kgraphviewer-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kgraphviewer-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer-devel;unpack=0"
 SRC_URI[aarch64_kgraphviewer-devel.sha256sum] = "217d236396a278562fc7256e5cf036f17f54dbe9583b5c9d0a91f2fccbed89f6"
 
-URI_aarch64_kgraphviewer-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kgraphviewer-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kgraphviewer-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kgraphviewer-libs;unpack=0"
 SRC_URI[aarch64_kgraphviewer-libs.sha256sum] = "eef2dc1e77d8ab9cd05df3e4807a785db28fe4a15a21c3b0767b04b68cf6e1d8"
 
 RDEPENDS:kgraphviewer = " \

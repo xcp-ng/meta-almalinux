@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-gix-credentials-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-gix-credentials-0.30.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-gix-credentials-0.30.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af94b2eded1c1caa133944d840133d6397fcc95d2c1b5f049f146f194dac368e"
 
-URI_x86_64_v2_rust-gix-credentials+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+default-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-credentials+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+default-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-credentials+default-devel.sha256sum] = "40efb9ea03c3705f22c2853581fd7dcf33243699c1dcce03297d6cca4586124f"
 
-URI_x86_64_v2_rust-gix-credentials+document-features-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+document-features-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+document-features-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-credentials+document-features-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+document-features-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+document-features-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-credentials+document-features-devel.sha256sum] = "0266cd9412771a1d024e3ee0d6f633c16a8ac88e940589e25d0c17744a7022f9"
 
-URI_x86_64_v2_rust-gix-credentials+serde-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+serde-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-credentials+serde-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials+serde-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials+serde-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-credentials+serde-devel.sha256sum] = "d980ddbc0a559651e0cff8d60ecae623fdd9410ce11ced6b8416e88eda2382aa"
 
-URI_x86_64_v2_rust-gix-credentials-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-credentials-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-credentials-devel-0.30.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-credentials-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-credentials-devel.sha256sum] = "ba23a3097566d5bcd50a01bc8edcb821bb281836cc526947f295259775d3d86f"
 
-URI_aarch64_rust-gix-credentials+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+default-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-credentials+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+default-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+default-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-credentials+default-devel.sha256sum] = "7d7999ca3dfe95ff3cee4e24095af7de506d78e3ccf2a3bddaef420dfb68693a"
 
-URI_aarch64_rust-gix-credentials+document-features-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+document-features-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+document-features-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-credentials+document-features-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+document-features-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+document-features-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-credentials+document-features-devel.sha256sum] = "abbd25a2c0c611930f9b3a882c3a357183917a1b6349623f0bbe7d86b93f9149"
 
-URI_aarch64_rust-gix-credentials+serde-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+serde-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-credentials+serde-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials+serde-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials+serde-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-credentials+serde-devel.sha256sum] = "ea9fb7327d59a047f1062b7a639c5a4dcd8f4a88f9e2951c373b8c1c3e9474b0"
 
-URI_aarch64_rust-gix-credentials-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-credentials-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-credentials-devel-0.30.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-credentials-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-credentials-devel.sha256sum] = "c9d45a6382c04eb2c1a51332de5178a03fc1bfffbcd7bed4f698bebbdbc2b83f"
 
 RDEPENDS:rust-gix-credentials+default-devel = " \

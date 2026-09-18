@@ -17,36 +17,28 @@ PACKAGES:aarch64 = " \
  ghc-select-rpms-prof \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-select-rpms-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-select-rpms-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f2f0c1f9f8a1b8f6049635199807577da8580c935771fac7bd769d8fcba2bb57"
 
-URI_x86_64_v2_ghc-select-rpms = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-select-rpms;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-select-rpms}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-select-rpms;unpack=0"
 SRC_URI[x86_64_v2_ghc-select-rpms.sha256sum] = "b46f5b6db44221899ef91544376916b2df2f728510a9b1f4cf2cf31d1675d9f8"
 
-URI_x86_64_v2_ghc-select-rpms-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-devel-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-select-rpms-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-select-rpms-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-devel-0.3.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-select-rpms-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-select-rpms-devel.sha256sum] = "5ee66d6a2fe8460f208450d25d1ba47c728c0f56c1afc8596b835456093610bd"
 
-URI_x86_64_v2_ghc-select-rpms-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-doc-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-select-rpms-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-select-rpms-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-select-rpms-doc-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-select-rpms-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-select-rpms-doc.sha256sum] = "8bab15b58fc7e1440bc406517d649ce8996c14c1f38482c1dea865b25c1a990e"
 
-URI_aarch64_ghc-select-rpms = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-select-rpms}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms;unpack=0"
 SRC_URI[aarch64_ghc-select-rpms.sha256sum] = "78d38d2f38fcb664149ea38a6bedde5c070e68495073488db17c764c674e1c7c"
 
-URI_aarch64_ghc-select-rpms-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-devel-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-select-rpms-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-devel-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms-devel;unpack=0"
 SRC_URI[aarch64_ghc-select-rpms-devel.sha256sum] = "4ff53d28b07e106c57f0dfd5d7f3a4a313fcec5ad7073373285b1760e1933493"
 
-URI_aarch64_ghc-select-rpms-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-doc-0.3.0-1.el10_1.noarch.rpm;name=aarch64_ghc-select-rpms-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-select-rpms-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-doc-0.3.0-1.el10_1.noarch.rpm;name=aarch64_ghc-select-rpms-doc;unpack=0"
 SRC_URI[aarch64_ghc-select-rpms-doc.sha256sum] = "1561556e8e935a53ef4d0fc8820cc153f86f24ef327d54ff100bd5cfcb0f5b76"
 
-URI_aarch64_ghc-select-rpms-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-prof-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-select-rpms-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-select-rpms-prof-0.3.0-1.el10_1.aarch64.rpm;name=aarch64_ghc-select-rpms-prof;unpack=0"
 SRC_URI[aarch64_ghc-select-rpms-prof.sha256sum] = "164e37a7c1c078bb6d0f377bba62410dc9d9f1b86080464dcf9d9513466afdc7"
 
 RDEPENDS:ghc-select-rpms = " \

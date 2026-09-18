@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-fsnotify-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-fsnotify-0.4.1.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-fsnotify-0.4.1.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8f10b4911a9ac20e040377c81d8924a24bf372a52ad2df1e36ff5374508b36d1"
 
-URI_x86_64_v2_ghc-fsnotify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fsnotify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify;unpack=0"
 SRC_URI[x86_64_v2_ghc-fsnotify.sha256sum] = "6cbc053625440e551d496889c9f6bd153e9101e4c9c3f226f41b8d4e52d7f381"
 
-URI_x86_64_v2_ghc-fsnotify-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-devel-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fsnotify-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-devel-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-fsnotify-devel.sha256sum] = "6cac866f7aa49666080fcf565d27c37b1bdcfb8fcfdff1c89ea2b8850ac85733"
 
-URI_x86_64_v2_ghc-fsnotify-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-doc-0.4.1.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fsnotify-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fsnotify-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-doc-0.4.1.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-fsnotify-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-fsnotify-doc.sha256sum] = "e5e4673cda7c63c823e07a7b6634662cc1dc71c09a3cef862ea39ffa1efbb4f0"
 
-URI_x86_64_v2_ghc-fsnotify-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-prof-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-fsnotify-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-fsnotify-prof-0.4.1.0-4.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-fsnotify-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-fsnotify-prof.sha256sum] = "9bf5e4b1267d1b2faaffdf26463ac56df973c31af43fa3fdda44d94a9c74bd56"
 
-URI_aarch64_ghc-fsnotify = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fsnotify}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify;unpack=0"
 SRC_URI[aarch64_ghc-fsnotify.sha256sum] = "941091615a0c3b3ef9b26708588a3c55cf68d5f96b1e79fb2fbad142f4513698"
 
-URI_aarch64_ghc-fsnotify-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-devel-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fsnotify-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-devel-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify-devel;unpack=0"
 SRC_URI[aarch64_ghc-fsnotify-devel.sha256sum] = "48e3470faa8d397875151b1a0c99bed6e5c5e38e8da9ee49a402a82023f46624"
 
-URI_aarch64_ghc-fsnotify-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-doc-0.4.1.0-4.el10_0.noarch.rpm;name=aarch64_ghc-fsnotify-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fsnotify-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-doc-0.4.1.0-4.el10_0.noarch.rpm;name=aarch64_ghc-fsnotify-doc;unpack=0"
 SRC_URI[aarch64_ghc-fsnotify-doc.sha256sum] = "64ffd49d71c1311384c4e18050543ad9a4280a5eb6349a59902214bdd374cc73"
 
-URI_aarch64_ghc-fsnotify-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-prof-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-fsnotify-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-fsnotify-prof-0.4.1.0-4.el10_0.aarch64.rpm;name=aarch64_ghc-fsnotify-prof;unpack=0"
 SRC_URI[aarch64_ghc-fsnotify-prof.sha256sum] = "199a913258d9fcb8e2351073ee07bd3a4fc8e1e74b0449088af36e18f7c32d99"
 
 RDEPENDS:ghc-fsnotify = " \

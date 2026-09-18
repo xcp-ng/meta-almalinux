@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-LWP-UserAgent-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-LWP-UserAgent-0.036-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-LWP-UserAgent-0.036-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1910d126c61cfab99e1b57da704dc8dccac0deefa1ae6e641186725e4a76a297"
 
-URI_x86_64_v2_perl-Test-LWP-UserAgent = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LWP-UserAgent-0.036-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LWP-UserAgent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-LWP-UserAgent}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LWP-UserAgent-0.036-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LWP-UserAgent;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-LWP-UserAgent.sha256sum] = "c024602b37fb6e6e40f9fbe06eb766e90c8f7fc90517e5ef8b7edb69b8ae9133"
 
-URI_x86_64_v2_perl-Test-LWP-UserAgent-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LWP-UserAgent-tests-0.036-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LWP-UserAgent-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-LWP-UserAgent-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-LWP-UserAgent-tests-0.036-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-LWP-UserAgent-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-LWP-UserAgent-tests.sha256sum] = "66f1aa6a9e79931d5a663a9fd9f6c03101a0a3405472d4f72c83bcb448d1239d"
 
-URI_aarch64_perl-Test-LWP-UserAgent = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LWP-UserAgent-0.036-9.el10_0.noarch.rpm;name=aarch64_perl-Test-LWP-UserAgent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-LWP-UserAgent}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LWP-UserAgent-0.036-9.el10_0.noarch.rpm;name=aarch64_perl-Test-LWP-UserAgent;unpack=0"
 SRC_URI[aarch64_perl-Test-LWP-UserAgent.sha256sum] = "c9c415a0310af296e7484b2fb63e8f312eb4faa6bd00028691d31eba0bbc5419"
 
-URI_aarch64_perl-Test-LWP-UserAgent-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LWP-UserAgent-tests-0.036-9.el10_0.noarch.rpm;name=aarch64_perl-Test-LWP-UserAgent-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-LWP-UserAgent-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-LWP-UserAgent-tests-0.036-9.el10_0.noarch.rpm;name=aarch64_perl-Test-LWP-UserAgent-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-LWP-UserAgent-tests.sha256sum] = "3ed4b2dff05b3cf417797e34b1a68cabe27c4fbd6bbd916c7198a4fefcb4bcf1"
 
 RDEPENDS:perl-Test-LWP-UserAgent = " \

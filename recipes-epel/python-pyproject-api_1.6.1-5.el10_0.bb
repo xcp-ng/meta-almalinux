@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyproject-api \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyproject-api-1.6.1-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyproject-api-1.6.1-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6afd736cceb4cfd3277a1781ea046899d18e3d68f10537d934af5d23f42e4c52"
 
-URI_x86_64_v2_python3-pyproject-api = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyproject-api-1.6.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyproject-api;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyproject-api}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyproject-api-1.6.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyproject-api;unpack=0"
 SRC_URI[x86_64_v2_python3-pyproject-api.sha256sum] = "64e5fe36b2dd1c58da9387255b2326dd00b5e9c5e14544596d90838dd4dbc90f"
 
-URI_aarch64_python3-pyproject-api = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyproject-api-1.6.1-5.el10_0.noarch.rpm;name=aarch64_python3-pyproject-api;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyproject-api}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyproject-api-1.6.1-5.el10_0.noarch.rpm;name=aarch64_python3-pyproject-api;unpack=0"
 SRC_URI[aarch64_python3-pyproject-api.sha256sum] = "b0c5e38df0c8f8b8e078f14c06e9011b82d3f57c2dfdbe56ed55a9882e2c6011"
 
 RDEPENDS:python3-pyproject-api = " \

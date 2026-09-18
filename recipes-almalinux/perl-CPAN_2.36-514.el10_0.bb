@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-CPAN \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-CPAN-2.36-514.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-CPAN-2.36-514.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1f3ee16d74daf717a14f7a74547f80eea3ed5f2a0c50c99001d5f11b2c11ff27"
 
-URI_x86_64_v2_perl-CPAN = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-CPAN-2.36-514.el10_0.noarch.rpm;name=x86_64_v2_perl-CPAN;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CPAN}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-CPAN-2.36-514.el10_0.noarch.rpm;name=x86_64_v2_perl-CPAN;unpack=0"
 SRC_URI[x86_64_v2_perl-CPAN.sha256sum] = "e4d75af4f7a7842ffcd64d919c7b569ab36d79b10910fc26c80083897258df7a"
 
-URI_aarch64_perl-CPAN = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-CPAN-2.36-514.el10_0.noarch.rpm;name=aarch64_perl-CPAN;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CPAN}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-CPAN-2.36-514.el10_0.noarch.rpm;name=aarch64_perl-CPAN;unpack=0"
 SRC_URI[aarch64_perl-CPAN.sha256sum] = "e4d75af4f7a7842ffcd64d919c7b569ab36d79b10910fc26c80083897258df7a"
 
 RDEPENDS:perl-CPAN = " \

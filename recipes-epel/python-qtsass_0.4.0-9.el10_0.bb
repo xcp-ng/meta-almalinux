@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-qtsass \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-qtsass-0.4.0-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-qtsass-0.4.0-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7a53461b9fe3cfc5ec594c8c993a54b0b219e7820ecdedb5ead76489763d8d15"
 
-URI_x86_64_v2_python3-qtsass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qtsass-0.4.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-qtsass;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-qtsass}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-qtsass-0.4.0-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-qtsass;unpack=0"
 SRC_URI[x86_64_v2_python3-qtsass.sha256sum] = "d2620130d8ea8b293dc22ad9106287460294af98bd50b8b8f22c488e91a4342e"
 
-URI_aarch64_python3-qtsass = "${EPEL_MIRROR}/aarch64/Packages/p/python3-qtsass-0.4.0-9.el10_0.noarch.rpm;name=aarch64_python3-qtsass;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-qtsass}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-qtsass-0.4.0-9.el10_0.noarch.rpm;name=aarch64_python3-qtsass;unpack=0"
 SRC_URI[aarch64_python3-qtsass.sha256sum] = "2eb98eee76f5ad19a77888d792de298f9565e0b29154bf2dd86064cd0661fa45"
 
 RDEPENDS:python3-qtsass = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-xmp-toolkit \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-xmp-toolkit-2.0.2-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-xmp-toolkit-2.0.2-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3daaf7a0ac059f6484845f0685eb98cc6f051bba8f3012990239bdfc7bc9974c"
 
-URI_x86_64_v2_python-xmp-toolkit-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-xmp-toolkit-doc-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-xmp-toolkit-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-xmp-toolkit-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-xmp-toolkit-doc-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-xmp-toolkit-doc;unpack=0"
 SRC_URI[x86_64_v2_python-xmp-toolkit-doc.sha256sum] = "231ef56af1a9427d2f1fb38d7b2cb3d7af7960163406352a7d0391b196f702ef"
 
-URI_x86_64_v2_python3-xmp-toolkit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xmp-toolkit-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xmp-toolkit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-xmp-toolkit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xmp-toolkit-2.0.2-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xmp-toolkit;unpack=0"
 SRC_URI[x86_64_v2_python3-xmp-toolkit.sha256sum] = "34b98b24c67b2aeb3024b3011d7cb07bebe1361c456c01811725f554db5e655a"
 
-URI_aarch64_python-xmp-toolkit-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-xmp-toolkit-doc-2.0.2-4.el10_0.noarch.rpm;name=aarch64_python-xmp-toolkit-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-xmp-toolkit-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-xmp-toolkit-doc-2.0.2-4.el10_0.noarch.rpm;name=aarch64_python-xmp-toolkit-doc;unpack=0"
 SRC_URI[aarch64_python-xmp-toolkit-doc.sha256sum] = "cdbede6d5998e71b8ea1ea7e015359783369fe4851afa6ea46fb286b1ead0456"
 
-URI_aarch64_python3-xmp-toolkit = "${EPEL_MIRROR}/aarch64/Packages/p/python3-xmp-toolkit-2.0.2-4.el10_0.noarch.rpm;name=aarch64_python3-xmp-toolkit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-xmp-toolkit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-xmp-toolkit-2.0.2-4.el10_0.noarch.rpm;name=aarch64_python3-xmp-toolkit;unpack=0"
 SRC_URI[aarch64_python3-xmp-toolkit.sha256sum] = "012f68e17acefceb38a1de12c7d6949bdd64e5d038b5e1c23857c2b7562e5797"
 
 RDEPENDS:python-xmp-toolkit-doc = " \

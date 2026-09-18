@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-respx \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-respx-0.22.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-respx-0.22.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ee329bb73c96b75874085d6091948c7d25915f1c61d482e1c6fdaf2fcdef6970"
 
-URI_x86_64_v2_python3-respx = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-respx-0.22.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-respx;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-respx}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-respx-0.22.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-respx;unpack=0"
 SRC_URI[x86_64_v2_python3-respx.sha256sum] = "c66de5337c6c96c11cc0c9777c9562fedfd23349827c6f4dc7e97b6d0b4f7b95"
 
-URI_aarch64_python3-respx = "${EPEL_MIRROR}/aarch64/Packages/p/python3-respx-0.22.0-2.el10_1.noarch.rpm;name=aarch64_python3-respx;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-respx}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-respx-0.22.0-2.el10_1.noarch.rpm;name=aarch64_python3-respx;unpack=0"
 SRC_URI[aarch64_python3-respx.sha256sum] = "ea010dfe96a9e4e38ea6adad15634e6b06cafbe942c7bc8be836299df3c61326"
 
 RDEPENDS:python3-respx = " \

@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
  widevine-installer \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/w/widevine-installer-0^20240812giteab8c66-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/w/widevine-installer-0^20240812giteab8c66-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a52c0ea9136b289ac9752e8bbba44519dec21038170280ffa6ec1a705078bf5b"
 
-URI_aarch64_widevine-installer = "${EPEL_MIRROR}/aarch64/Packages/w/widevine-installer-0^20240812giteab8c66-2.el10_1.aarch64.rpm;name=aarch64_widevine-installer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_widevine-installer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/w/widevine-installer-0^20240812giteab8c66-2.el10_1.aarch64.rpm;name=aarch64_widevine-installer;unpack=0"
 SRC_URI[aarch64_widevine-installer.sha256sum] = "49749a86b33189b9dcc5f8cdb1accd4bd0e6e678745ae8e07e44523dd0c46b06"
 
 RDEPENDS:widevine-installer = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-sandi-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-sandi-0.5-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-sandi-0.5-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e2f2ac4643ad398cfebd12d9f51e874a17f67ece3805dacbe9f005848c5d7e94"
 
-URI_x86_64_v2_ghc-sandi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-sandi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi;unpack=0"
 SRC_URI[x86_64_v2_ghc-sandi.sha256sum] = "b2535d54e1653e919c942146dacd39447159f04b566aa14a7a9102dd1e0be522"
 
-URI_x86_64_v2_ghc-sandi-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-devel-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-sandi-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-devel-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-sandi-devel.sha256sum] = "8582907a436970893dbcbde1e2bbd37d399f7398e5650e4c2ce08e095efc9a72"
 
-URI_x86_64_v2_ghc-sandi-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-doc-0.5-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-sandi-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-sandi-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-doc-0.5-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-sandi-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-sandi-doc.sha256sum] = "d91df607330b7164def78d4b080255bf6e597a5d68619a8d4c045aa0562bc59d"
 
-URI_x86_64_v2_ghc-sandi-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-prof-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-sandi-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-sandi-prof-0.5-25.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-sandi-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-sandi-prof.sha256sum] = "917b829b0d2f6fe3c3224527ee544c5567a86bf931e2dc1c4ca5074f5481b181"
 
-URI_aarch64_ghc-sandi = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-sandi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi;unpack=0"
 SRC_URI[aarch64_ghc-sandi.sha256sum] = "90fab5fb292cb23be4c0b7bbc307a710c93912b9bd50f427d503138ee6a21908"
 
-URI_aarch64_ghc-sandi-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-devel-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-sandi-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-devel-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi-devel;unpack=0"
 SRC_URI[aarch64_ghc-sandi-devel.sha256sum] = "bd3b4217ef4b321ba8d5645f51717c66bc63d6458211b62d6bf6584fd9ddfd7c"
 
-URI_aarch64_ghc-sandi-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-doc-0.5-25.el10_0.noarch.rpm;name=aarch64_ghc-sandi-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-sandi-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-doc-0.5-25.el10_0.noarch.rpm;name=aarch64_ghc-sandi-doc;unpack=0"
 SRC_URI[aarch64_ghc-sandi-doc.sha256sum] = "2f068a58573da64280c6bd14b2dc17cb1f30f7a3358d8e52dd2cc02f3eb15329"
 
-URI_aarch64_ghc-sandi-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-prof-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-sandi-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-sandi-prof-0.5-25.el10_0.aarch64.rpm;name=aarch64_ghc-sandi-prof;unpack=0"
 SRC_URI[aarch64_ghc-sandi-prof.sha256sum] = "db00787400950f3de0bac2d2299c7b989dce88f3b2c508be83588b3f6c831c7e"
 
 RDEPENDS:ghc-sandi = " \

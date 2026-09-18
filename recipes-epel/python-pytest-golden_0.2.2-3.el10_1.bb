@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-golden \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-golden-0.2.2-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-golden-0.2.2-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1d0e266b4b7d10bfc6b721f71426de699f5f1a8a008742a922e293bc930a169a"
 
-URI_x86_64_v2_python3-pytest-golden = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-golden-0.2.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-golden;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-golden}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-golden-0.2.2-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-golden;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-golden.sha256sum] = "eda0f18737ba87789f716574fffa6d64eacadc4af5fcdeb74162160e986d2615"
 
-URI_aarch64_python3-pytest-golden = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-golden-0.2.2-3.el10_1.noarch.rpm;name=aarch64_python3-pytest-golden;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-golden}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-golden-0.2.2-3.el10_1.noarch.rpm;name=aarch64_python3-pytest-golden;unpack=0"
 SRC_URI[aarch64_python3-pytest-golden.sha256sum] = "1efb29ee1584d3bb5ed6f50b39db4bed06f335930578c57f83bdcccb946aaa7e"
 
 RDEPENDS:python3-pytest-golden = " \

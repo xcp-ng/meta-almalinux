@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-CPANTS-Analyse \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Module-CPANTS-Analyse-1.02-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Module-CPANTS-Analyse-1.02-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "24fdb94a28eb8cb7f892d99e696540ba7f9bc3ad54555014b299712ab5a48094"
 
-URI_x86_64_v2_perl-Module-CPANTS-Analyse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Module-CPANTS-Analyse-1.02-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Module-CPANTS-Analyse;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-CPANTS-Analyse}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Module-CPANTS-Analyse-1.02-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Module-CPANTS-Analyse;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-CPANTS-Analyse.sha256sum] = "0b0f74625d66db16b98a8666bed9613b2c5a43d97dcb3e191501461d47bf42d8"
 
-URI_aarch64_perl-Module-CPANTS-Analyse = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Module-CPANTS-Analyse-1.02-1.el10_0.noarch.rpm;name=aarch64_perl-Module-CPANTS-Analyse;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-CPANTS-Analyse}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Module-CPANTS-Analyse-1.02-1.el10_0.noarch.rpm;name=aarch64_perl-Module-CPANTS-Analyse;unpack=0"
 SRC_URI[aarch64_perl-Module-CPANTS-Analyse.sha256sum] = "accf8d0b5949b4448ab9f04a93470664c49aac0f8b4468a2b4bb3529471bdbee"
 
 RDEPENDS:perl-Module-CPANTS-Analyse = " \

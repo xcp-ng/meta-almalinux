@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Term-ProgressBar-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Term-ProgressBar-2.23-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Term-ProgressBar-2.23-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8106bb6bae924da14dd56c3b7b6da8781d333909505be31f927950e02f769a1d"
 
-URI_x86_64_v2_perl-Term-ProgressBar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ProgressBar}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar;unpack=0"
 SRC_URI[x86_64_v2_perl-Term-ProgressBar.sha256sum] = "b294cd668a8684e73704155da3eee1c51f102598bf1ae553a0803f653c2eccdf"
 
-URI_x86_64_v2_perl-Term-ProgressBar-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-tests-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Term-ProgressBar-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Term-ProgressBar-tests-2.23-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Term-ProgressBar-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Term-ProgressBar-tests.sha256sum] = "168044a098a28fcc2ec6910743441f132ad9cf40dbff5d7ba6e0a42fbbaaec0c"
 
-URI_aarch64_perl-Term-ProgressBar = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ProgressBar-2.23-6.el10_0.noarch.rpm;name=aarch64_perl-Term-ProgressBar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Term-ProgressBar}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ProgressBar-2.23-6.el10_0.noarch.rpm;name=aarch64_perl-Term-ProgressBar;unpack=0"
 SRC_URI[aarch64_perl-Term-ProgressBar.sha256sum] = "0c8f19442e4b69918cf0a303b8e182ab18990fa0731b66068fa46db02f00d261"
 
-URI_aarch64_perl-Term-ProgressBar-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ProgressBar-tests-2.23-6.el10_0.noarch.rpm;name=aarch64_perl-Term-ProgressBar-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Term-ProgressBar-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Term-ProgressBar-tests-2.23-6.el10_0.noarch.rpm;name=aarch64_perl-Term-ProgressBar-tests;unpack=0"
 SRC_URI[aarch64_perl-Term-ProgressBar-tests.sha256sum] = "e08546fcc455eb322abb8cbcbf2a40e062cbef711f8663428182e6a95b1406eb"
 
 RDEPENDS:perl-Term-ProgressBar = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-numpydoc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-numpydoc-1.8.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-numpydoc-1.8.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e0b267b1bc5e17509d7a591df73b10acb31064d13d324f7904658b6fdd9b8cd0"
 
-URI_x86_64_v2_python3-numpydoc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-numpydoc-1.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-numpydoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-numpydoc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-numpydoc-1.8.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-numpydoc;unpack=0"
 SRC_URI[x86_64_v2_python3-numpydoc.sha256sum] = "ddfb6b505993301362e7e142dc6e167b3a14f6e89682036d546367373323bd09"
 
-URI_aarch64_python3-numpydoc = "${EPEL_MIRROR}/aarch64/Packages/p/python3-numpydoc-1.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-numpydoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-numpydoc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-numpydoc-1.8.0-1.el10_0.noarch.rpm;name=aarch64_python3-numpydoc;unpack=0"
 SRC_URI[aarch64_python3-numpydoc.sha256sum] = "4b1bf6c92be6db54db571836b7c23ed841b1764bb61df09825bda70e89133e7b"
 
 RDEPENDS:python3-numpydoc = " \

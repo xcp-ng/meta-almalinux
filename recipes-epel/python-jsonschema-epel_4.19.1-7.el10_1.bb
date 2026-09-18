@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-jsonschema+format-nongpl \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jsonschema-epel-4.19.1-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jsonschema-epel-4.19.1-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4d815d87a1e456e688d8313a063c6de12ef7f69c3ba419de79b363d91191495a"
 
-URI_x86_64_v2_python3-jsonschema+format = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jsonschema+format-4.19.1-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jsonschema+format;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jsonschema+format}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jsonschema+format-4.19.1-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jsonschema+format;unpack=0"
 SRC_URI[x86_64_v2_python3-jsonschema+format.sha256sum] = "3b1e65491f2dd70fbca30847561961e100c0238b926202635eb8eeaa9b10c64f"
 
-URI_x86_64_v2_python3-jsonschema+format-nongpl = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jsonschema+format-nongpl-4.19.1-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jsonschema+format-nongpl;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jsonschema+format-nongpl}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jsonschema+format-nongpl-4.19.1-7.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jsonschema+format-nongpl;unpack=0"
 SRC_URI[x86_64_v2_python3-jsonschema+format-nongpl.sha256sum] = "1d04f79359ef14aa62c1051baa2ba865f651e120a50ea7eb74516a1608db9a30"
 
-URI_aarch64_python3-jsonschema+format = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jsonschema+format-4.19.1-7.el10_1.noarch.rpm;name=aarch64_python3-jsonschema+format;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jsonschema+format}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jsonschema+format-4.19.1-7.el10_1.noarch.rpm;name=aarch64_python3-jsonschema+format;unpack=0"
 SRC_URI[aarch64_python3-jsonschema+format.sha256sum] = "e0993ac34dc2854dceedc5e6738b5e218cd6324a6735807fd8426201451f23ab"
 
-URI_aarch64_python3-jsonschema+format-nongpl = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jsonschema+format-nongpl-4.19.1-7.el10_1.noarch.rpm;name=aarch64_python3-jsonschema+format-nongpl;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jsonschema+format-nongpl}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jsonschema+format-nongpl-4.19.1-7.el10_1.noarch.rpm;name=aarch64_python3-jsonschema+format-nongpl;unpack=0"
 SRC_URI[aarch64_python3-jsonschema+format-nongpl.sha256sum] = "34e7580128f9a2f5e16202bf84d942421c0b3237dc546ab7a438b6a6de91b41f"
 
 RDEPENDS:python3-jsonschema+format = " \

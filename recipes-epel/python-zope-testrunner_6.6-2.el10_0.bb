@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-zope-testrunner+subunit \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-zope-testrunner-6.6-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zope-testrunner-6.6-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e90ca74a6170fdbbd34f3ad3d16e5d599c53ae4e9efe62ac6c53373b59dd16d0"
 
-URI_x86_64_v2_python-zope-testrunner-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-zope-testrunner-doc-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-zope-testrunner-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-zope-testrunner-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-zope-testrunner-doc-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-zope-testrunner-doc;unpack=0"
 SRC_URI[x86_64_v2_python-zope-testrunner-doc.sha256sum] = "d609fc50877c1661fdb888ba424af717a2b9d2cd0e07b07f16fcb3276250ad1e"
 
-URI_x86_64_v2_python3-zope-testrunner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-zope-testrunner}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner;unpack=0"
 SRC_URI[x86_64_v2_python3-zope-testrunner.sha256sum] = "b6ae5590d818ab36d3d56ecf34d0188fda818790b7fb3e3664cbe73f5630e128"
 
-URI_x86_64_v2_python3-zope-testrunner+subunit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner+subunit-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner+subunit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-zope-testrunner+subunit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zope-testrunner+subunit-6.6-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zope-testrunner+subunit;unpack=0"
 SRC_URI[x86_64_v2_python3-zope-testrunner+subunit.sha256sum] = "faab491efc0fc844f00e2e02b5731c9b0b51e98742c71a38d598fbb9248b91ab"
 
-URI_aarch64_python-zope-testrunner-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-zope-testrunner-doc-6.6-2.el10_0.noarch.rpm;name=aarch64_python-zope-testrunner-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-zope-testrunner-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-zope-testrunner-doc-6.6-2.el10_0.noarch.rpm;name=aarch64_python-zope-testrunner-doc;unpack=0"
 SRC_URI[aarch64_python-zope-testrunner-doc.sha256sum] = "7ea54eab472898b16ee3235c4861dd8cca5904af94ac56c121e43e9bd9d36c19"
 
-URI_aarch64_python3-zope-testrunner = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-testrunner-6.6-2.el10_0.noarch.rpm;name=aarch64_python3-zope-testrunner;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-zope-testrunner}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-testrunner-6.6-2.el10_0.noarch.rpm;name=aarch64_python3-zope-testrunner;unpack=0"
 SRC_URI[aarch64_python3-zope-testrunner.sha256sum] = "4d2695ae354033934b0da7b84d1a6561b48015a99a701fb84c6fc79c0182ef11"
 
-URI_aarch64_python3-zope-testrunner+subunit = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-testrunner+subunit-6.6-2.el10_0.noarch.rpm;name=aarch64_python3-zope-testrunner+subunit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-zope-testrunner+subunit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zope-testrunner+subunit-6.6-2.el10_0.noarch.rpm;name=aarch64_python3-zope-testrunner+subunit;unpack=0"
 SRC_URI[aarch64_python3-zope-testrunner+subunit.sha256sum] = "75cc46b8fdea57ca784bf8058ef6cb8915b71c719dd922d967db4d928969ffd1"
 
 RDEPENDS:python-zope-testrunner-doc = " \

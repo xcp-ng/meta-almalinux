@@ -9,16 +9,13 @@ PACKAGES = " \
  sysbench \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/sysbench-1.0.20-19.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/sysbench-1.0.20-19.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "aa28c5564f7387b3be9656ad531a04646cfe99a11f2a38ce860fab89b5211f1f"
 
-URI_x86_64_v2_sysbench = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sysbench-1.0.20-19.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sysbench;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sysbench}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sysbench-1.0.20-19.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sysbench;unpack=0"
 SRC_URI[x86_64_v2_sysbench.sha256sum] = "b31e162325b1a6b0447b79d8f8d6f59b3eebb5f61036053ff5a2d52dc573ccd8"
 
-URI_aarch64_sysbench = "${EPEL_MIRROR}/aarch64/Packages/s/sysbench-1.0.20-19.el10_1.aarch64.rpm;name=aarch64_sysbench;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sysbench}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/sysbench-1.0.20-19.el10_1.aarch64.rpm;name=aarch64_sysbench;unpack=0"
 SRC_URI[aarch64_sysbench.sha256sum] = "3acc6921b53d5eea709b9d9ec2affc64a1bbd3b56758502d3351a962ac3bd47a"
 
 RDEPENDS:sysbench = " \

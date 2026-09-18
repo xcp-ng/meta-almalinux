@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-traitlets \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-traitlets-5.14.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-traitlets-5.14.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8fc54babfc3af28382c71b5f7a4a4f68f98f81c8589e69e3aeae7c32cd644fb0"
 
-URI_x86_64_v2_python3-traitlets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-traitlets-5.14.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-traitlets;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-traitlets}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-traitlets-5.14.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-traitlets;unpack=0"
 SRC_URI[x86_64_v2_python3-traitlets.sha256sum] = "c9027b496b593218bf080a90e3e42a9e67b24014364cd8ed70e76ca8a721b978"
 
-URI_aarch64_python3-traitlets = "${EPEL_MIRROR}/aarch64/Packages/p/python3-traitlets-5.14.3-1.el10_0.noarch.rpm;name=aarch64_python3-traitlets;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-traitlets}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-traitlets-5.14.3-1.el10_0.noarch.rpm;name=aarch64_python3-traitlets;unpack=0"
 SRC_URI[aarch64_python3-traitlets.sha256sum] = "63305a911b0ceca4d7db6c5a89b77acfea6e556ae536e327bc3742aa79b8ccdd"
 
 RDEPENDS:python3-traitlets = " \

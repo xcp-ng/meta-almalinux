@@ -10,24 +10,19 @@ PACKAGES = " \
  pslib-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pslib-0.4.6-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pslib-0.4.6-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "507d101ebd068329a8365efc75ab5894a6aff11f53148358f6d24cbf44d723ea"
 
-URI_x86_64_v2_pslib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pslib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib;unpack=0"
 SRC_URI[x86_64_v2_pslib.sha256sum] = "1cae303f2ee056e5320f7b4743b0345e153d667723210bb84dd083c3cbcfb226"
 
-URI_x86_64_v2_pslib-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-devel-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pslib-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pslib-devel-0.4.6-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pslib-devel;unpack=0"
 SRC_URI[x86_64_v2_pslib-devel.sha256sum] = "30e381fbb427e1f21add3774e96c04df6037abcc647f8b660ca3bd112a2600f7"
 
-URI_aarch64_pslib = "${EPEL_MIRROR}/aarch64/Packages/p/pslib-0.4.6-7.el10_0.aarch64.rpm;name=aarch64_pslib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pslib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pslib-0.4.6-7.el10_0.aarch64.rpm;name=aarch64_pslib;unpack=0"
 SRC_URI[aarch64_pslib.sha256sum] = "4097ba2e81767ab573f45ab9ad029ba99ff8d8cec7d5641364945c82549acc0b"
 
-URI_aarch64_pslib-devel = "${EPEL_MIRROR}/aarch64/Packages/p/pslib-devel-0.4.6-7.el10_0.aarch64.rpm;name=aarch64_pslib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pslib-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pslib-devel-0.4.6-7.el10_0.aarch64.rpm;name=aarch64_pslib-devel;unpack=0"
 SRC_URI[aarch64_pslib-devel.sha256sum] = "92916ebab0f610b1f99a572645c140466259cefda555db07ddab239a4d671c47"
 
 RDEPENDS:pslib = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kde-dev-scripts \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kde-dev-scripts-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kde-dev-scripts-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "330738a68ed18c4c7d2d32ea4522ec4462bb348f5ccf72973e01dfbf8d692c3e"
 
-URI_x86_64_v2_kde-dev-scripts = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-dev-scripts-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kde-dev-scripts;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kde-dev-scripts}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kde-dev-scripts-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kde-dev-scripts;unpack=0"
 SRC_URI[x86_64_v2_kde-dev-scripts.sha256sum] = "46444e177f6c24d3ae7dafe032d8176c345927a4fd1ce4f4f05fbc4dfa6e3cdd"
 
-URI_aarch64_kde-dev-scripts = "${EPEL_MIRROR}/aarch64/Packages/k/kde-dev-scripts-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kde-dev-scripts;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kde-dev-scripts}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kde-dev-scripts-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kde-dev-scripts;unpack=0"
 SRC_URI[aarch64_kde-dev-scripts.sha256sum] = "cd27db59a4954884b3f8c308fddca2c52c89a09a6464c892701832a960276a92"
 
 RDEPENDS:kde-dev-scripts = " \

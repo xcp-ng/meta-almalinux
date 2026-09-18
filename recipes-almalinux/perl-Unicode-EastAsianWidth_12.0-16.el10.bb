@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Unicode-EastAsianWidth \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4fce3f9a999496777d0134aeb74dad2fe3a697b3a0e63f139ec6bed1eeee86b1"
 
-URI_x86_64_v2_perl-Unicode-EastAsianWidth = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.noarch.rpm;name=x86_64_v2_perl-Unicode-EastAsianWidth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Unicode-EastAsianWidth}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.noarch.rpm;name=x86_64_v2_perl-Unicode-EastAsianWidth;unpack=0"
 SRC_URI[x86_64_v2_perl-Unicode-EastAsianWidth.sha256sum] = "c60aa2d67915135bfdfadbc706f0c7b46910334614fadd8f2ed12cf45b83040d"
 
-URI_aarch64_perl-Unicode-EastAsianWidth = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.noarch.rpm;name=aarch64_perl-Unicode-EastAsianWidth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Unicode-EastAsianWidth}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.noarch.rpm;name=aarch64_perl-Unicode-EastAsianWidth;unpack=0"
 SRC_URI[aarch64_perl-Unicode-EastAsianWidth.sha256sum] = "c60aa2d67915135bfdfadbc706f0c7b46910334614fadd8f2ed12cf45b83040d"
 
 RDEPENDS:perl-Unicode-EastAsianWidth = " \

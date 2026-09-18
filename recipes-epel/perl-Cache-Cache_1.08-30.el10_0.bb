@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Cache-Cache \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Cache-Cache-1.08-30.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Cache-Cache-1.08-30.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "70dc8148f590bf06dbc8d5ae5a27736d879433e456ebc4b3d9d3c21d75cab44a"
 
-URI_x86_64_v2_perl-Cache-Cache = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cache-Cache-1.08-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Cache-Cache;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Cache-Cache}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Cache-Cache-1.08-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Cache-Cache;unpack=0"
 SRC_URI[x86_64_v2_perl-Cache-Cache.sha256sum] = "01ee41f4b9ba9b8a075061858885268388b61c52020b78d7a0eb75352690c64d"
 
-URI_aarch64_perl-Cache-Cache = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Cache-Cache-1.08-30.el10_0.noarch.rpm;name=aarch64_perl-Cache-Cache;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Cache-Cache}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Cache-Cache-1.08-30.el10_0.noarch.rpm;name=aarch64_perl-Cache-Cache;unpack=0"
 SRC_URI[aarch64_perl-Cache-Cache.sha256sum] = "57d0ac87555c1d39631a12c9ca4476543dd7f051bfdcd6dd0058175f3aafd0a4"
 
 RDEPENDS:perl-Cache-Cache = " \

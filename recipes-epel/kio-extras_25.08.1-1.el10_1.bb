@@ -11,32 +11,25 @@ PACKAGES = " \
  kio-extras-info \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kio-extras-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kio-extras-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eb687d1252d9c97c5fb96624e4cfc0f3d6101e9225b139c227997508e6d7fd60"
 
-URI_x86_64_v2_kio-extras = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kio-extras}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras;unpack=0"
 SRC_URI[x86_64_v2_kio-extras.sha256sum] = "34382a036f8103c36b70fd0990f69a3ee029aa0f4aa6c6a520e7e8dcb9eb6ea7"
 
-URI_x86_64_v2_kio-extras-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kio-extras-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras-devel;unpack=0"
 SRC_URI[x86_64_v2_kio-extras-devel.sha256sum] = "91109c85079ea1e91e42091a3bc68f5e7c82cf0b74c6831e8630df9314f3b399"
 
-URI_x86_64_v2_kio-extras-info = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-info-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras-info;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kio-extras-info}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kio-extras-info-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kio-extras-info;unpack=0"
 SRC_URI[x86_64_v2_kio-extras-info.sha256sum] = "d678521c59f2d808adea98ed261ff8f9be2b77195e456c33557fe56cb6758291"
 
-URI_aarch64_kio-extras = "${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kio-extras}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras;unpack=0"
 SRC_URI[aarch64_kio-extras.sha256sum] = "c1f45baf3931315461b428143c15894c01e4ac68d3ce17e3798e83bbe18dc0b1"
 
-URI_aarch64_kio-extras-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kio-extras-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras-devel;unpack=0"
 SRC_URI[aarch64_kio-extras-devel.sha256sum] = "edc1d6a57d5744fca16c6e95b8ab7132803c3e565737b3b96fcad335430fd451"
 
-URI_aarch64_kio-extras-info = "${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-info-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras-info;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kio-extras-info}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kio-extras-info-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kio-extras-info;unpack=0"
 SRC_URI[aarch64_kio-extras-info.sha256sum] = "b5a8473653e255a5afa615869e0a083cf4f2035b76519aa2314828ae6e9a63ae"
 
 RDEPENDS:kio-extras = " \

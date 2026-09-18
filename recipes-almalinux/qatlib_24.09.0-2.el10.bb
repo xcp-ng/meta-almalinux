@@ -15,24 +15,19 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qatlib-24.09.0-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qatlib-24.09.0-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cbf0a4a237d4791dfd43a69ba29e59d9bc188a4b29ef8ed47bc9ce1108459f98"
 
-URI_x86_64_v2_qatlib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qatlib-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qatlib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qatlib-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib;unpack=0"
 SRC_URI[x86_64_v2_qatlib.sha256sum] = "2140789384d762eddbdf25f18d5440fda732048d29022137ec98a2b534a8f2bf"
 
-URI_x86_64_v2_qatlib-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qatlib-devel-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qatlib-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qatlib-devel-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-devel;unpack=0"
 SRC_URI[x86_64_v2_qatlib-devel.sha256sum] = "64834307ffd57f37e0c4ef5ffe046e66b04e4b12d8f7ba671bb9ac1a26ee4865"
 
-URI_x86_64_v2_qatlib-service = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qatlib-service-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-service;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qatlib-service}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qatlib-service-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-service;unpack=0"
 SRC_URI[x86_64_v2_qatlib-service.sha256sum] = "8e319d7b6888d437c87efc09bd1ddf1c7554d55385cca017764e7061bde32675"
 
-URI_x86_64_v2_qatlib-tests = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qatlib-tests-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qatlib-tests}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qatlib-tests-24.09.0-2.el10.x86_64_v2.rpm;name=x86_64_v2_qatlib-tests;unpack=0"
 SRC_URI[x86_64_v2_qatlib-tests.sha256sum] = "b5e1cfa2e1d1ae0769373c31b6f214bb93cb7ce5b9572ab6d9e207e11cc81c80"
 
 RDEPENDS:qatlib = " \

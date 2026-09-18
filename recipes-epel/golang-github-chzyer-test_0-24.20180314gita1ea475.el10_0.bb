@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-chzyer-test-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-chzyer-test-0-24.20180314gita1ea475.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-chzyer-test-0-24.20180314gita1ea475.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d5eb0857e4ab04f2f8a9040657e0368239f58bfab5973b3d2005fe29f0d5bf31"
 
-URI_aarch64_golang-github-chzyer-test-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-chzyer-test-devel-0-24.20180314gita1ea475.el10_0.noarch.rpm;name=aarch64_golang-github-chzyer-test-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-chzyer-test-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-chzyer-test-devel-0-24.20180314gita1ea475.el10_0.noarch.rpm;name=aarch64_golang-github-chzyer-test-devel;unpack=0"
 SRC_URI[aarch64_golang-github-chzyer-test-devel.sha256sum] = "f42c8beb299057f840851c05cbe9ddd4fbf63d284f9f7db138dbbae4eee59819"
 
 RDEPENDS:golang-github-chzyer-test-devel = " \

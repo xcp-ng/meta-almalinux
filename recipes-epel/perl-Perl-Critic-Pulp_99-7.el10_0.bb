@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Perl-Critic-Pulp-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-Critic-Pulp-99-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Perl-Critic-Pulp-99-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b0a5a47c59ecabd594b46f2742ac93b1ed78a3e78838babfc46f1ec1e3889708"
 
-URI_x86_64_v2_perl-Perl-Critic-Pulp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Pulp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp;unpack=0"
 SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp.sha256sum] = "aa36561d37016f031552643127fe8510a27f5372d90892f5d17b12baf459dc8d"
 
-URI_x86_64_v2_perl-Perl-Critic-Pulp-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-tests-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Perl-Critic-Pulp-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Perl-Critic-Pulp-tests-99-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Perl-Critic-Pulp-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Perl-Critic-Pulp-tests.sha256sum] = "6c0fc566d8e760b22ffb766b5877590a21df64ef0b375eb1658cd4490a8c9100"
 
-URI_aarch64_perl-Perl-Critic-Pulp = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Pulp-99-7.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Pulp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Perl-Critic-Pulp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Pulp-99-7.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Pulp;unpack=0"
 SRC_URI[aarch64_perl-Perl-Critic-Pulp.sha256sum] = "ef835a1a3ed3bb7260a157e67359c0ea18aabbb32353c96ae7bbb7dbf11a451c"
 
-URI_aarch64_perl-Perl-Critic-Pulp-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Pulp-tests-99-7.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Pulp-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Perl-Critic-Pulp-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Perl-Critic-Pulp-tests-99-7.el10_0.noarch.rpm;name=aarch64_perl-Perl-Critic-Pulp-tests;unpack=0"
 SRC_URI[aarch64_perl-Perl-Critic-Pulp-tests.sha256sum] = "c7ab2c339b42c0affa519cc714ac826ad222bb4c597c33d1e41a76cd6e871796"
 
 RDEPENDS:perl-Perl-Critic-Pulp = " \

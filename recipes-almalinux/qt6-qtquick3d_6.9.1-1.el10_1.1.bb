@@ -11,32 +11,25 @@ PACKAGES = " \
  qt6-qtquick3d-examples \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e65d04336664f12249963e9a559a649931bdfaf41d6c957bb5e08843f5b6555e"
 
-URI_x86_64_v2_qt6-qtquick3d = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtquick3d}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtquick3d.sha256sum] = "5f97195864fa7f3cf0b7ac30520ca31c878c9bd3058ab780882e7eca519286df"
 
-URI_x86_64_v2_qt6-qtquick3d-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtquick3d-devel-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtquick3d-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/qt6-qtquick3d-devel-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d-devel;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtquick3d-devel.sha256sum] = "e799819680e921d1f77d3912cedac295341f9317f88a7803a05d3db2e2f26eb8"
 
-URI_x86_64_v2_qt6-qtquick3d-examples = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qt6-qtquick3d-examples-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d-examples;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt6-qtquick3d-examples}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qt6-qtquick3d-examples-6.9.1-1.el10_1.1.x86_64_v2.rpm;name=x86_64_v2_qt6-qtquick3d-examples;unpack=0"
 SRC_URI[x86_64_v2_qt6-qtquick3d-examples.sha256sum] = "3599d6bfd04df77e685abd838413d6a5467c8e04efcaf11b7105ae904f71e624"
 
-URI_aarch64_qt6-qtquick3d = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtquick3d}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtquick3d-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d;unpack=0"
 SRC_URI[aarch64_qt6-qtquick3d.sha256sum] = "354dba59f5a7525a9b2bb932018496eb930df9863412764a693c2b72508450ec"
 
-URI_aarch64_qt6-qtquick3d-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtquick3d-devel-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtquick3d-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/qt6-qtquick3d-devel-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d-devel;unpack=0"
 SRC_URI[aarch64_qt6-qtquick3d-devel.sha256sum] = "3c2a8608c0e699e56c9b2baa8e1b42e04fae147b3d122ce023761e5c414a7669"
 
-URI_aarch64_qt6-qtquick3d-examples = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/qt6-qtquick3d-examples-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d-examples;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt6-qtquick3d-examples}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/qt6-qtquick3d-examples-6.9.1-1.el10_1.1.aarch64.rpm;name=aarch64_qt6-qtquick3d-examples;unpack=0"
 SRC_URI[aarch64_qt6-qtquick3d-examples.sha256sum] = "bde49786e7ea8a52dd5ce7a27b414092e56e1dbeb37327220a7992b34547f2d8"
 
 RDEPENDS:qt6-qtquick3d = " \

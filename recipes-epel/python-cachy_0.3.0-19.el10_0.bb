@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-cachy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-cachy-0.3.0-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-cachy-0.3.0-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8773c5e8ab7e7b2b866cee165cf889c38211f5cb5be9ba118590948357f401b1"
 
-URI_x86_64_v2_python3-cachy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachy-0.3.0-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-cachy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-cachy-0.3.0-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-cachy;unpack=0"
 SRC_URI[x86_64_v2_python3-cachy.sha256sum] = "b1ec21104280bd2ba340330139d2f633cbc7466c2c1c266a2332ef44ca0e9775"
 
-URI_aarch64_python3-cachy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-cachy-0.3.0-19.el10_0.noarch.rpm;name=aarch64_python3-cachy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-cachy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-cachy-0.3.0-19.el10_0.noarch.rpm;name=aarch64_python3-cachy;unpack=0"
 SRC_URI[aarch64_python3-cachy.sha256sum] = "6ad27b870890fcba6411d7150e5ea2c407f41e52bcbe2a64b816ff300a3c9e23"
 
 RDEPENDS:python3-cachy = " \

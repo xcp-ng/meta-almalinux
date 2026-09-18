@@ -9,16 +9,13 @@ PACKAGES = " \
  katomic \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/katomic-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/katomic-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "61b9227d9b50bc8ecea42fbf59b8521983b450141fd84ff1fd713720b806ff2c"
 
-URI_x86_64_v2_katomic = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/katomic-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_katomic;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_katomic}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/katomic-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_katomic;unpack=0"
 SRC_URI[x86_64_v2_katomic.sha256sum] = "ffe5c289d54ca4a0a7e4295a01c755ef1357d9465281d5b96f13234f1f351107"
 
-URI_aarch64_katomic = "${EPEL_MIRROR}/aarch64/Packages/k/katomic-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_katomic;unpack=0"
-SRC_URI:append = " ${URI_aarch64_katomic}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/katomic-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_katomic;unpack=0"
 SRC_URI[aarch64_katomic.sha256sum] = "e90f8183100a0aca6830641e5c2b4f731b2a5509c984236e5671fe3c8b54e284"
 
 RDEPENDS:katomic = " \

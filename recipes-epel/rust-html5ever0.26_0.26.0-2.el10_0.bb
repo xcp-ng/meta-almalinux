@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-html5ever0.26-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-html5ever0.26-0.26.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-html5ever0.26-0.26.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "72b82eab9da16472f17b6ce2431a7a4a0e9f90ea953288fa4cb376b1103b6186"
 
-URI_x86_64_v2_rust-html5ever0.26+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-html5ever0.26+default-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-html5ever0.26+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-html5ever0.26+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-html5ever0.26+default-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-html5ever0.26+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-html5ever0.26+default-devel.sha256sum] = "b88be9a0845ecd64025aa9c647e15afde2c701d7e247d5e46fc2760c93b3921b"
 
-URI_x86_64_v2_rust-html5ever0.26-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-html5ever0.26-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-html5ever0.26-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-html5ever0.26-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-html5ever0.26-devel-0.26.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-html5ever0.26-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-html5ever0.26-devel.sha256sum] = "21b0d2adf0840a97a8a0826018f62de634f280ee2ae53514702c35eed14857a5"
 
-URI_aarch64_rust-html5ever0.26+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-html5ever0.26+default-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-html5ever0.26+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-html5ever0.26+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-html5ever0.26+default-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-html5ever0.26+default-devel;unpack=0"
 SRC_URI[aarch64_rust-html5ever0.26+default-devel.sha256sum] = "fa4f66a8c37442d2d432df14c9dd9f903ec77a725d007f6696742839845dd65f"
 
-URI_aarch64_rust-html5ever0.26-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-html5ever0.26-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-html5ever0.26-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-html5ever0.26-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-html5ever0.26-devel-0.26.0-2.el10_0.noarch.rpm;name=aarch64_rust-html5ever0.26-devel;unpack=0"
 SRC_URI[aarch64_rust-html5ever0.26-devel.sha256sum] = "dd1138ce9a883bb36dc9abfddd1db2fde730b3ed50d0486e3f1cff6c9ee152cf"
 
 RDEPENDS:rust-html5ever0.26+default-devel = " \

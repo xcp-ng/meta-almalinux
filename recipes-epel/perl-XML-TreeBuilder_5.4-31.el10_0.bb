@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-TreeBuilder \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-TreeBuilder-5.4-31.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-TreeBuilder-5.4-31.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d9b197468359f8f36b2d8253356b30a2c15af51744470f4902c90972761bcd62"
 
-URI_x86_64_v2_perl-XML-TreeBuilder = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-TreeBuilder-5.4-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-TreeBuilder;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-TreeBuilder}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-TreeBuilder-5.4-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-TreeBuilder;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-TreeBuilder.sha256sum] = "0cd8476cf62c1c0034b37c538c8fab13353b8aa5d5628772c09ce3823e42603e"
 
-URI_aarch64_perl-XML-TreeBuilder = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-TreeBuilder-5.4-31.el10_0.noarch.rpm;name=aarch64_perl-XML-TreeBuilder;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-TreeBuilder}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-TreeBuilder-5.4-31.el10_0.noarch.rpm;name=aarch64_perl-XML-TreeBuilder;unpack=0"
 SRC_URI[aarch64_perl-XML-TreeBuilder.sha256sum] = "479f9120e842a770604a2712e7547d01f73581696e13c3d06cd052632086c6b2"
 
 RDEPENDS:perl-XML-TreeBuilder = " \

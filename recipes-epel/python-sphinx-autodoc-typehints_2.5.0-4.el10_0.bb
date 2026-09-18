@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinx-autodoc-typehints \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-autodoc-typehints-2.5.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-autodoc-typehints-2.5.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b07a189cf47bb27f0c8766123a9eeaa5dd9c00fe33b8d93ca68ae0afd88bed5f"
 
-URI_x86_64_v2_python3-sphinx-autodoc-typehints = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-autodoc-typehints;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-autodoc-typehints}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-autodoc-typehints;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-autodoc-typehints.sha256sum] = "b24427991cc12cf39331ab728c020c5057f865a322dd5cb71e2c70f6d07fe508"
 
-URI_aarch64_python3-sphinx-autodoc-typehints = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.noarch.rpm;name=aarch64_python3-sphinx-autodoc-typehints;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-autodoc-typehints}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-autodoc-typehints-2.5.0-4.el10_0.noarch.rpm;name=aarch64_python3-sphinx-autodoc-typehints;unpack=0"
 SRC_URI[aarch64_python3-sphinx-autodoc-typehints.sha256sum] = "f3e2bef1a13877fda5ffa304fc4a31bcaeaf8b277a5cc6ca0b6e415bf23acdc9"
 
 RDEPENDS:python3-sphinx-autodoc-typehints = " \

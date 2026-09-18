@@ -10,16 +10,13 @@ PACKAGES = " \
  kgamma \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kgamma-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kgamma-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "09804a4bf0e59feaafb2396522f46026caf898874523dccfd0ce96f8c19486c3"
 
-URI_x86_64_v2_kgamma = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgamma-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgamma;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kgamma}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kgamma-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kgamma;unpack=0"
 SRC_URI[x86_64_v2_kgamma.sha256sum] = "cf97119245dd3c43de5d6d90e4656aabe946794d3ea5ffe20201872987eb2d7e"
 
-URI_aarch64_kgamma = "${EPEL_MIRROR}/aarch64/Packages/k/kgamma-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kgamma;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kgamma}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kgamma-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kgamma;unpack=0"
 SRC_URI[aarch64_kgamma.sha256sum] = "fa3b00a1a75dd2118e0943d1c60c2eeeb9cce4f0c1d4d9b814eb74cbaac36174"
 
 RDEPENDS:kgamma = " \

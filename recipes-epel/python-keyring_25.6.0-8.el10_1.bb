@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-keyring+completion \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-keyring-25.6.0-8.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-keyring-25.6.0-8.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5d0362f9e9a96c1edf99a8569b3432eb74e580e6afbec8bfd617a476d4aad048"
 
-URI_x86_64_v2_python3-keyring = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-keyring-25.6.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-keyring;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-keyring}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-keyring-25.6.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-keyring;unpack=0"
 SRC_URI[x86_64_v2_python3-keyring.sha256sum] = "1d68a7bbd8b745c1b7d66186bf57ecc3df4ed0b5044b1f6668168a481b8a1626"
 
-URI_x86_64_v2_python3-keyring+completion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-keyring+completion-25.6.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-keyring+completion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-keyring+completion}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-keyring+completion-25.6.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-keyring+completion;unpack=0"
 SRC_URI[x86_64_v2_python3-keyring+completion.sha256sum] = "081bb3243cb77332493ede4f61dac3872a902960f970c68e2a78e1b40b60c23c"
 
-URI_aarch64_python3-keyring = "${EPEL_MIRROR}/aarch64/Packages/p/python3-keyring-25.6.0-8.el10_1.noarch.rpm;name=aarch64_python3-keyring;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-keyring}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-keyring-25.6.0-8.el10_1.noarch.rpm;name=aarch64_python3-keyring;unpack=0"
 SRC_URI[aarch64_python3-keyring.sha256sum] = "ed52ac66130e1e1c8c51fe7556754aa46a3a80c75ba7ccd20e4def9232713370"
 
-URI_aarch64_python3-keyring+completion = "${EPEL_MIRROR}/aarch64/Packages/p/python3-keyring+completion-25.6.0-8.el10_1.noarch.rpm;name=aarch64_python3-keyring+completion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-keyring+completion}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-keyring+completion-25.6.0-8.el10_1.noarch.rpm;name=aarch64_python3-keyring+completion;unpack=0"
 SRC_URI[aarch64_python3-keyring+completion.sha256sum] = "15408ca9e3edca6bf1358cad93ffd121c7b0afdbab1c27c49e30cbb5183c8d39"
 
 RDEPENDS:python3-keyring = " \

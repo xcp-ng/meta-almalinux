@@ -28,168 +28,127 @@ PACKAGES = " \
  ghc-text-conversions-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-doctemplates-0.11-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-doctemplates-0.11-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c468d0fca81449fa85c68274d513160e46c2d673ef5a945f81fa1fcf30e10212"
 
-URI_x86_64_v2_ghc-doclayout = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doclayout}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout;unpack=0"
 SRC_URI[x86_64_v2_ghc-doclayout.sha256sum] = "c8fe78fe65d16fe79bb5d6da9680a05e1d153add3b76cc3850c8ec45c74d3bf1"
 
-URI_x86_64_v2_ghc-doclayout-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-devel-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doclayout-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-devel-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-doclayout-devel.sha256sum] = "301771e67cad8ccd28efc111e8add1db368a983d8be06f8f0716e1e8f83aff48"
 
-URI_x86_64_v2_ghc-doclayout-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-doc-0.4.0.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-doclayout-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doclayout-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-doc-0.4.0.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-doclayout-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-doclayout-doc.sha256sum] = "629f68c9eab87f108b547ebdd0e4594225b38751fd1f5064c16ba8f2d254e02a"
 
-URI_x86_64_v2_ghc-doclayout-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-prof-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doclayout-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doclayout-prof-0.4.0.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doclayout-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-doclayout-prof.sha256sum] = "5710bcb92739c78227ea4e04cbc91a85842b8f6270387b78d3de3d92d35cb65b"
 
-URI_x86_64_v2_ghc-doctemplates = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doctemplates}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates;unpack=0"
 SRC_URI[x86_64_v2_ghc-doctemplates.sha256sum] = "96f41a6b734330840e1fc1a584d1d4266943716f56fdd64f1fad2f03edfab39a"
 
-URI_x86_64_v2_ghc-doctemplates-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-devel-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doctemplates-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-devel-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-doctemplates-devel.sha256sum] = "16dd310784eff8fb7a216afea98c9ebcbcfd7d399c548568d8fa8c3035d8a014"
 
-URI_x86_64_v2_ghc-doctemplates-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-doc-0.11-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-doctemplates-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doctemplates-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-doc-0.11-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-doctemplates-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-doctemplates-doc.sha256sum] = "98bed68f28c4e3a55cb927c2cfa9c60b76ac2fb9d2530cac06f02bfcbe0344b6"
 
-URI_x86_64_v2_ghc-doctemplates-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-prof-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-doctemplates-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-doctemplates-prof-0.11-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-doctemplates-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-doctemplates-prof.sha256sum] = "5ff170ae08b76b428afe2545fb50a238f9abef576d73be9742cb0835fcf25da7"
 
-URI_x86_64_v2_ghc-emojis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-emojis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis;unpack=0"
 SRC_URI[x86_64_v2_ghc-emojis.sha256sum] = "fdd4c937656836b12af5b2a4afd0296032f8a65dd79c7a527b395f13899390ff"
 
-URI_x86_64_v2_ghc-emojis-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-devel-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-emojis-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-devel-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-emojis-devel.sha256sum] = "aaf49c14cac9dd058a8d80906e9bdaa349b0cf072e19de4cc088a1e6ad7980a7"
 
-URI_x86_64_v2_ghc-emojis-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-doc-0.1.4.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-emojis-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-emojis-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-doc-0.1.4.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-emojis-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-emojis-doc.sha256sum] = "79f56780a321dd5df9f76963fb4bcbb6b78046ffc5da3493675883c89512cc31"
 
-URI_x86_64_v2_ghc-emojis-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-prof-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-emojis-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-emojis-prof-0.1.4.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-emojis-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-emojis-prof.sha256sum] = "56cfd356f793d8622ec7801531b60aec66fc04e5e9190d7891e5822d6fcfe499"
 
-URI_x86_64_v2_ghc-errors = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-errors}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors;unpack=0"
 SRC_URI[x86_64_v2_ghc-errors.sha256sum] = "47e8851ce043259e4a5dcb5ad4a05c34eda5ec41f1634742a22656abe9ae8b70"
 
-URI_x86_64_v2_ghc-errors-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-devel-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-errors-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-devel-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-errors-devel.sha256sum] = "ff3bba85cef5cf0f7f4fec870e3b00a79b3c3bc9fd420c44ccce9fc2efe592ea"
 
-URI_x86_64_v2_ghc-errors-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-doc-2.3.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-errors-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-errors-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-doc-2.3.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-errors-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-errors-doc.sha256sum] = "821a5d6f1b9d2b7e31a3eae6f6cdc54cebad47d5f7884d8ed4ebb3d6b19d511c"
 
-URI_x86_64_v2_ghc-errors-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-prof-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-errors-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-errors-prof-2.3.0-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-errors-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-errors-prof.sha256sum] = "e004057d1cf297472d9da0439390acb04d00244b0c0cd88e26aea6dd54d5000f"
 
-URI_x86_64_v2_ghc-text-conversions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-text-conversions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions;unpack=0"
 SRC_URI[x86_64_v2_ghc-text-conversions.sha256sum] = "1f20fa586331f8576c2cf953fc53143b2c2eb90ef9d45d2628c513460fd1194c"
 
-URI_x86_64_v2_ghc-text-conversions-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-devel-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-text-conversions-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-devel-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-text-conversions-devel.sha256sum] = "91cf76dae886ddfa1de62b0866d9a68c19f487f1bba5857c1b5b267d1d9d4679"
 
-URI_x86_64_v2_ghc-text-conversions-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-doc-0.3.1.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-text-conversions-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-text-conversions-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-doc-0.3.1.1-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-text-conversions-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-text-conversions-doc.sha256sum] = "537c3dd1cff8f25ea54c94f05243d98463c6b71f90a77370590c2f8ed1b76ef1"
 
-URI_x86_64_v2_ghc-text-conversions-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-prof-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-text-conversions-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-text-conversions-prof-0.3.1.1-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-text-conversions-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-text-conversions-prof.sha256sum] = "adc20e35426a4649cfca50abd90af664be925808d51dcc7a4d542718cfd0a6da"
 
-URI_aarch64_ghc-doclayout = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doclayout}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout;unpack=0"
 SRC_URI[aarch64_ghc-doclayout.sha256sum] = "233d955cd6bec362deacc5c4046df22e92f40fe21ad7ed2c660c8bde20ba8c09"
 
-URI_aarch64_ghc-doclayout-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-devel-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doclayout-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-devel-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout-devel;unpack=0"
 SRC_URI[aarch64_ghc-doclayout-devel.sha256sum] = "bb46bb2722188811ca9f84b44319857168708dc9799bf09fce7816af2adebaf8"
 
-URI_aarch64_ghc-doclayout-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-doc-0.4.0.1-16.el10_0.noarch.rpm;name=aarch64_ghc-doclayout-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doclayout-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-doc-0.4.0.1-16.el10_0.noarch.rpm;name=aarch64_ghc-doclayout-doc;unpack=0"
 SRC_URI[aarch64_ghc-doclayout-doc.sha256sum] = "5969016b58e9c7e9cfbad0286d991429e7f53aa953b80bc54cb2bca52f998a3f"
 
-URI_aarch64_ghc-doclayout-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-prof-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doclayout-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doclayout-prof-0.4.0.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-doclayout-prof;unpack=0"
 SRC_URI[aarch64_ghc-doclayout-prof.sha256sum] = "d971d0a7eec5966a0bb0df7d2bc385ad8d5b0d1e64f55f04e22ff134a2168149"
 
-URI_aarch64_ghc-doctemplates = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doctemplates}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates;unpack=0"
 SRC_URI[aarch64_ghc-doctemplates.sha256sum] = "d96ce505e90f93f3bae24ff50b3460f471604c1ca0576d1af8a7a8fe8fb8865d"
 
-URI_aarch64_ghc-doctemplates-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-devel-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doctemplates-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-devel-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates-devel;unpack=0"
 SRC_URI[aarch64_ghc-doctemplates-devel.sha256sum] = "86a520c5a70ba55a20b2acd158e57045131597c207b36c680d997c9b819b3b59"
 
-URI_aarch64_ghc-doctemplates-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-doc-0.11-16.el10_0.noarch.rpm;name=aarch64_ghc-doctemplates-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doctemplates-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-doc-0.11-16.el10_0.noarch.rpm;name=aarch64_ghc-doctemplates-doc;unpack=0"
 SRC_URI[aarch64_ghc-doctemplates-doc.sha256sum] = "c09ae897ad9a041963534def2498b367440ea6eb3b6d277e031cf3a912ce4b2c"
 
-URI_aarch64_ghc-doctemplates-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-prof-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-doctemplates-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-doctemplates-prof-0.11-16.el10_0.aarch64.rpm;name=aarch64_ghc-doctemplates-prof;unpack=0"
 SRC_URI[aarch64_ghc-doctemplates-prof.sha256sum] = "9a4836958f49ca28209f37723b7f12d951dc7714ce007cc700462c53db8af00c"
 
-URI_aarch64_ghc-emojis = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-emojis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis;unpack=0"
 SRC_URI[aarch64_ghc-emojis.sha256sum] = "828d62f94a33e99435f0a55fcadc8098f8330711428514e1a3699e150b028cf2"
 
-URI_aarch64_ghc-emojis-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-devel-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-emojis-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-devel-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis-devel;unpack=0"
 SRC_URI[aarch64_ghc-emojis-devel.sha256sum] = "62ab25fad99d67b36e141b751f52f534b0c4c4803b91ccf2ad11b012ff33be76"
 
-URI_aarch64_ghc-emojis-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-doc-0.1.4.1-16.el10_0.noarch.rpm;name=aarch64_ghc-emojis-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-emojis-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-doc-0.1.4.1-16.el10_0.noarch.rpm;name=aarch64_ghc-emojis-doc;unpack=0"
 SRC_URI[aarch64_ghc-emojis-doc.sha256sum] = "d828e06df33d4fda7990a369d5d7e1e3d280db15d8fc9e7e7e0dedafb12b9183"
 
-URI_aarch64_ghc-emojis-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-prof-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-emojis-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-emojis-prof-0.1.4.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-emojis-prof;unpack=0"
 SRC_URI[aarch64_ghc-emojis-prof.sha256sum] = "af60ce1eead3cbf73a9cb8fd74bbd885f386f1d0f3fd9f9fb0883f95da51ee5d"
 
-URI_aarch64_ghc-errors = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-errors}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors;unpack=0"
 SRC_URI[aarch64_ghc-errors.sha256sum] = "b51febc6349f3dc45cc6c38cef0187ec6170337e15614d8cf982a5f9a01a0da8"
 
-URI_aarch64_ghc-errors-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-devel-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-errors-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-devel-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors-devel;unpack=0"
 SRC_URI[aarch64_ghc-errors-devel.sha256sum] = "36a088cdb613f45fd71ac96a48c64544a64289593a08469fe9e096f8a520cc9c"
 
-URI_aarch64_ghc-errors-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-doc-2.3.0-16.el10_0.noarch.rpm;name=aarch64_ghc-errors-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-errors-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-doc-2.3.0-16.el10_0.noarch.rpm;name=aarch64_ghc-errors-doc;unpack=0"
 SRC_URI[aarch64_ghc-errors-doc.sha256sum] = "9c2e7b01ee48e9ab2bb01ccf5d1c7908a70eed6a503b7504fb5aa9e02991db39"
 
-URI_aarch64_ghc-errors-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-prof-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-errors-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-errors-prof-2.3.0-16.el10_0.aarch64.rpm;name=aarch64_ghc-errors-prof;unpack=0"
 SRC_URI[aarch64_ghc-errors-prof.sha256sum] = "76381437987f797ae89ff6a619e6db4b8e937ee4dd85eaab964bcdc92ef30a8f"
 
-URI_aarch64_ghc-text-conversions = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-text-conversions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions;unpack=0"
 SRC_URI[aarch64_ghc-text-conversions.sha256sum] = "025379feb95f932870a00e20c4baa8fa2b96d34dd8c4e1de4f17b3a19a93294b"
 
-URI_aarch64_ghc-text-conversions-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-devel-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-text-conversions-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-devel-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions-devel;unpack=0"
 SRC_URI[aarch64_ghc-text-conversions-devel.sha256sum] = "7a5d18cfcfb606ec28bdcedae48b3a8c3b183c6f1f5dfdcc889d2e96419e1862"
 
-URI_aarch64_ghc-text-conversions-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-doc-0.3.1.1-16.el10_0.noarch.rpm;name=aarch64_ghc-text-conversions-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-text-conversions-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-doc-0.3.1.1-16.el10_0.noarch.rpm;name=aarch64_ghc-text-conversions-doc;unpack=0"
 SRC_URI[aarch64_ghc-text-conversions-doc.sha256sum] = "c0594502f6529d104553786e663c9e67f0a27fb69ef6a2f4f8aa3a30b6cbe4d2"
 
-URI_aarch64_ghc-text-conversions-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-prof-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-text-conversions-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-text-conversions-prof-0.3.1.1-16.el10_0.aarch64.rpm;name=aarch64_ghc-text-conversions-prof;unpack=0"
 SRC_URI[aarch64_ghc-text-conversions-prof.sha256sum] = "3eb56bb667605ae1ac239d7c83342b75da11d02613b6211cc14dbd40ee7b1800"
 
 RDEPENDS:ghc-doclayout = " \

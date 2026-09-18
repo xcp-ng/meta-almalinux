@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-gopkg-tomb-1-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-tomb-1-1-15.20190623gitdd63297.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-tomb-1-1-15.20190623gitdd63297.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6ec9b4c618cc2f45aee2da55acea7e1be1ab23316afb62fe04478851d56b23ef"
 
-URI_aarch64_golang-gopkg-tomb-1-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-tomb-1-devel-1-15.20190623gitdd63297.el10_0.noarch.rpm;name=aarch64_golang-gopkg-tomb-1-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-gopkg-tomb-1-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-tomb-1-devel-1-15.20190623gitdd63297.el10_0.noarch.rpm;name=aarch64_golang-gopkg-tomb-1-devel;unpack=0"
 SRC_URI[aarch64_golang-gopkg-tomb-1-devel.sha256sum] = "0dec4a9a3e9f18df90e81ba64b9be35c68792bde71f0dabe2c235cdbffea2fe0"
 
 RDEPENDS:golang-gopkg-tomb-1-devel = " \

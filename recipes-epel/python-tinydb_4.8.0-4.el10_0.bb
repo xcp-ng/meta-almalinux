@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tinydb \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tinydb-4.8.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tinydb-4.8.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a4f2a3a749a424479aa8a1a65cc40e38931c7a1538cefd4e3cd733007680e5c2"
 
-URI_x86_64_v2_python3-tinydb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tinydb-4.8.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tinydb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tinydb}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tinydb-4.8.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tinydb;unpack=0"
 SRC_URI[x86_64_v2_python3-tinydb.sha256sum] = "6065a43e0d3ab469eea8c6300908636f46b5d3a6f27ae3bce8cfb1ba7d521016"
 
-URI_aarch64_python3-tinydb = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tinydb-4.8.0-4.el10_0.noarch.rpm;name=aarch64_python3-tinydb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tinydb}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tinydb-4.8.0-4.el10_0.noarch.rpm;name=aarch64_python3-tinydb;unpack=0"
 SRC_URI[aarch64_python3-tinydb.sha256sum] = "d81c407b7b6bf77402c983600395f496e5a7fa47155980568b6b799b5017b81d"
 
 RDEPENDS:python3-tinydb = " \

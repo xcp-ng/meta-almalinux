@@ -9,16 +9,13 @@ PACKAGES = " \
  convmv \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/convmv-2.05-18.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/convmv-2.05-18.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "185814066bb5c4df4e677463f1260ef67ee17ccce4a72c7d25f871a2c3d63697"
 
-URI_x86_64_v2_convmv = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/convmv-2.05-18.el10.noarch.rpm;name=x86_64_v2_convmv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_convmv}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/convmv-2.05-18.el10.noarch.rpm;name=x86_64_v2_convmv;unpack=0"
 SRC_URI[x86_64_v2_convmv.sha256sum] = "bdc62682b62ec2d1905feb6e5493fa923113f81cef9df6935b398a00b4e6a6ee"
 
-URI_aarch64_convmv = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/convmv-2.05-18.el10.noarch.rpm;name=aarch64_convmv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_convmv}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/convmv-2.05-18.el10.noarch.rpm;name=aarch64_convmv;unpack=0"
 SRC_URI[aarch64_convmv.sha256sum] = "bdc62682b62ec2d1905feb6e5493fa923113f81cef9df6935b398a00b4e6a6ee"
 
 RDEPENDS:convmv = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  portaudio-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/portaudio-19-45.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/portaudio-19-45.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a4a34b2f634aaa1ae6bf9757b0497f5e72e8c3bac971aac04a64451e60435b79"
 
-URI_x86_64_v2_portaudio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_portaudio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio;unpack=0"
 SRC_URI[x86_64_v2_portaudio.sha256sum] = "1f373655abf98810a04e73f8f7ed495590c464f2f67f05a297bffb1bd08d67e2"
 
-URI_x86_64_v2_portaudio-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-devel-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_portaudio-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/portaudio-devel-19-45.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_portaudio-devel;unpack=0"
 SRC_URI[x86_64_v2_portaudio-devel.sha256sum] = "45d83260507bd160956292d6fcdaa34d8195e000f41fef13786eee88bd684fed"
 
-URI_aarch64_portaudio = "${EPEL_MIRROR}/aarch64/Packages/p/portaudio-19-45.el10_0.aarch64.rpm;name=aarch64_portaudio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_portaudio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portaudio-19-45.el10_0.aarch64.rpm;name=aarch64_portaudio;unpack=0"
 SRC_URI[aarch64_portaudio.sha256sum] = "2e52cc92ac8f3ec7883f071abb7b412ebc7a2ab1fc67706fe09e1c0098607a83"
 
-URI_aarch64_portaudio-devel = "${EPEL_MIRROR}/aarch64/Packages/p/portaudio-devel-19-45.el10_0.aarch64.rpm;name=aarch64_portaudio-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_portaudio-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/portaudio-devel-19-45.el10_0.aarch64.rpm;name=aarch64_portaudio-devel;unpack=0"
 SRC_URI[aarch64_portaudio-devel.sha256sum] = "0ac35bc238b3914f3c86aadcd4d1e78b7c8f82de344e0c665f3538b4e16eb8bf"
 
 RDEPENDS:portaudio = " \

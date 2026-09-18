@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-email-validate-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-email-validate-2.3.2.20-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-email-validate-2.3.2.20-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "15152d12ffec78a5f76e51e23bae451262173fb7be8ac2aed470ae0239760a23"
 
-URI_x86_64_v2_ghc-email-validate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-email-validate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate;unpack=0"
 SRC_URI[x86_64_v2_ghc-email-validate.sha256sum] = "5d8e72f780d82eef011272c1da5d6b49eea81569ea990c8e0995874f27757302"
 
-URI_x86_64_v2_ghc-email-validate-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-devel-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-email-validate-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-devel-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-email-validate-devel.sha256sum] = "e27c2f1b02005066e19130085237ba2159eb13d2540db0461773b2d06d76be0c"
 
-URI_x86_64_v2_ghc-email-validate-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-doc-2.3.2.20-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-email-validate-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-email-validate-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-doc-2.3.2.20-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-email-validate-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-email-validate-doc.sha256sum] = "324c6c3022c5b497b2abe3c46d2560187d4d0aa252ed8a00cde6aca1f71a9f17"
 
-URI_x86_64_v2_ghc-email-validate-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-prof-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-email-validate-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-email-validate-prof-2.3.2.20-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-email-validate-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-email-validate-prof.sha256sum] = "44d59ee6c5c8f339d4321fb34f65e2b3aa9fade4e9ce38e59ee8b2093100fdd6"
 
-URI_aarch64_ghc-email-validate = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-email-validate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate;unpack=0"
 SRC_URI[aarch64_ghc-email-validate.sha256sum] = "ac23c2ec8fd1ab389f14740985c3891bb8bf9cb6925fe5e5f0cd412e2f4472fa"
 
-URI_aarch64_ghc-email-validate-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-devel-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-email-validate-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-devel-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate-devel;unpack=0"
 SRC_URI[aarch64_ghc-email-validate-devel.sha256sum] = "bd190e103992417cc30f5b58d49cda94f6281d0112a8f0aad375a03e2e507e2e"
 
-URI_aarch64_ghc-email-validate-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-doc-2.3.2.20-1.el10_0.noarch.rpm;name=aarch64_ghc-email-validate-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-email-validate-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-doc-2.3.2.20-1.el10_0.noarch.rpm;name=aarch64_ghc-email-validate-doc;unpack=0"
 SRC_URI[aarch64_ghc-email-validate-doc.sha256sum] = "2e58270354f90aa6309f935be48b2e50c81fccea4027f09a087c446046daa007"
 
-URI_aarch64_ghc-email-validate-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-prof-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-email-validate-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-email-validate-prof-2.3.2.20-1.el10_0.aarch64.rpm;name=aarch64_ghc-email-validate-prof;unpack=0"
 SRC_URI[aarch64_ghc-email-validate-prof.sha256sum] = "df8b289a1387e81a31563e7c0c4f910714cd80417a5bb36a92a07ad83a77b58d"
 
 RDEPENDS:ghc-email-validate = " \

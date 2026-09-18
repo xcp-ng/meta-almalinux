@@ -9,16 +9,13 @@ PACKAGES = " \
  plexus-components-pom \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plexus-components-pom-14.2-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plexus-components-pom-14.2-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a3382b4390fe8cac66ffa25c29c48f4509a209620ebac0d187765b080bfe5cb7"
 
-URI_x86_64_v2_plexus-components-pom = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plexus-components-pom-14.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plexus-components-pom;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plexus-components-pom}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plexus-components-pom-14.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plexus-components-pom;unpack=0"
 SRC_URI[x86_64_v2_plexus-components-pom.sha256sum] = "0c2b35cdce28c75a753623f8a01e63ccf662f5d7af429ab390c30331bcad3586"
 
-URI_aarch64_plexus-components-pom = "${EPEL_MIRROR}/aarch64/Packages/p/plexus-components-pom-14.2-6.el10_0.noarch.rpm;name=aarch64_plexus-components-pom;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plexus-components-pom}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plexus-components-pom-14.2-6.el10_0.noarch.rpm;name=aarch64_plexus-components-pom;unpack=0"
 SRC_URI[aarch64_plexus-components-pom.sha256sum] = "0209ba360301239b8d1d3d62990a3eafc2e2962fbad21c991936ef93cde97c79"
 
 RDEPENDS:plexus-components-pom = " \

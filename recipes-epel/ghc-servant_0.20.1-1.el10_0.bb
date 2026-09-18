@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-servant-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-servant-0.20.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-servant-0.20.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c9e5b04aee586981a51021de4f6eab57d52e08f8635955dbc2258a4426a75cd1"
 
-URI_x86_64_v2_ghc-servant = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-servant}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant;unpack=0"
 SRC_URI[x86_64_v2_ghc-servant.sha256sum] = "22d42888409179fe9b297dce9397638c433588ed036bd8c0e3d7ed6a42bbc55f"
 
-URI_x86_64_v2_ghc-servant-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-devel-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-servant-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-devel-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-servant-devel.sha256sum] = "a860bea3c9045cac1ad31d68431e1633ec3a09965b6b111ded9232654fa5efb8"
 
-URI_x86_64_v2_ghc-servant-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-doc-0.20.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-servant-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-servant-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-doc-0.20.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-servant-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-servant-doc.sha256sum] = "fc42fe5fa519ef8e1950ac2f7e06365e3d9cea3f52c7d98174761cdfd00c4cdc"
 
-URI_x86_64_v2_ghc-servant-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-prof-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-servant-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-servant-prof-0.20.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-servant-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-servant-prof.sha256sum] = "488161ea834f8cdbd0ba6311cf9cf4b8f6c9b0e66c480f22d14f35046ac4b721"
 
-URI_aarch64_ghc-servant = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-servant}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant;unpack=0"
 SRC_URI[aarch64_ghc-servant.sha256sum] = "5a8a2d2f2093efacc783ac23e4d85bc387d3beafb71bccc0189e7261f3d9382c"
 
-URI_aarch64_ghc-servant-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-devel-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-servant-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-devel-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant-devel;unpack=0"
 SRC_URI[aarch64_ghc-servant-devel.sha256sum] = "61eb18d61a301ac3574ea1997ea99b5a3595992e7156bbf694b2b769a2a58d01"
 
-URI_aarch64_ghc-servant-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-doc-0.20.1-1.el10_0.noarch.rpm;name=aarch64_ghc-servant-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-servant-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-doc-0.20.1-1.el10_0.noarch.rpm;name=aarch64_ghc-servant-doc;unpack=0"
 SRC_URI[aarch64_ghc-servant-doc.sha256sum] = "dc4e341bc5aa4797cb09cf77665a2575b4d89f2326aba092dd3aa46404d5dc9d"
 
-URI_aarch64_ghc-servant-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-prof-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-servant-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-servant-prof-0.20.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-servant-prof;unpack=0"
 SRC_URI[aarch64_ghc-servant-prof.sha256sum] = "5ddca7ffb7d4bf5995203ca9a49016943adfe48f44221000a2213a2b8e38dee4"
 
 RDEPENDS:ghc-servant = " \

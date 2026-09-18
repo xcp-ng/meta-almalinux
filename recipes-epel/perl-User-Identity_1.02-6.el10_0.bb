@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-User-Identity \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-User-Identity-1.02-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-User-Identity-1.02-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c2395362546ee20f62cd1c2a508578fdba8a8c26612b900202a6174511ff3c9d"
 
-URI_x86_64_v2_perl-User-Identity = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-User-Identity-1.02-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-User-Identity;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-User-Identity}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-User-Identity-1.02-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-User-Identity;unpack=0"
 SRC_URI[x86_64_v2_perl-User-Identity.sha256sum] = "5716455ab14010e2e9d45c460026276d1c8c62474f4b34053a91ce3b8f26912b"
 
-URI_aarch64_perl-User-Identity = "${EPEL_MIRROR}/aarch64/Packages/p/perl-User-Identity-1.02-6.el10_0.noarch.rpm;name=aarch64_perl-User-Identity;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-User-Identity}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-User-Identity-1.02-6.el10_0.noarch.rpm;name=aarch64_perl-User-Identity;unpack=0"
 SRC_URI[aarch64_perl-User-Identity.sha256sum] = "2aa2ed8727324ba2c2e59a9ca22729181b56d73b6a12b7dcbda620e86b2fe844"
 
 RDEPENDS:perl-User-Identity = " \

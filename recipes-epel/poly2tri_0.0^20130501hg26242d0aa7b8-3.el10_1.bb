@@ -10,24 +10,19 @@ PACKAGES = " \
  poly2tri-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dd3df0998a55ed2eec6ed0b6605bee959d275d3b1c2f28bec46883f288e0e7f7"
 
-URI_x86_64_v2_poly2tri = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_poly2tri;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_poly2tri}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_poly2tri;unpack=0"
 SRC_URI[x86_64_v2_poly2tri.sha256sum] = "43ce5a39d5b332dfffe0dcde722891c3767d8826fb09ea54ebfa946b38fa9244"
 
-URI_x86_64_v2_poly2tri-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poly2tri-devel-0.0^20130501hg26242d0aa7b8-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_poly2tri-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_poly2tri-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/poly2tri-devel-0.0^20130501hg26242d0aa7b8-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_poly2tri-devel;unpack=0"
 SRC_URI[x86_64_v2_poly2tri-devel.sha256sum] = "e36ab322a57e0f11a831e0143bcfc9cb9eb8d58f8151f80b2f21c6c811439bd7"
 
-URI_aarch64_poly2tri = "${EPEL_MIRROR}/aarch64/Packages/p/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.aarch64.rpm;name=aarch64_poly2tri;unpack=0"
-SRC_URI:append = " ${URI_aarch64_poly2tri}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/poly2tri-0.0^20130501hg26242d0aa7b8-3.el10_1.aarch64.rpm;name=aarch64_poly2tri;unpack=0"
 SRC_URI[aarch64_poly2tri.sha256sum] = "0478059b89ca6e460473b4d62a10c9601acb7d93c1024504750f8e954a063b79"
 
-URI_aarch64_poly2tri-devel = "${EPEL_MIRROR}/aarch64/Packages/p/poly2tri-devel-0.0^20130501hg26242d0aa7b8-3.el10_1.aarch64.rpm;name=aarch64_poly2tri-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_poly2tri-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/poly2tri-devel-0.0^20130501hg26242d0aa7b8-3.el10_1.aarch64.rpm;name=aarch64_poly2tri-devel;unpack=0"
 SRC_URI[aarch64_poly2tri-devel.sha256sum] = "fa32e1de58076534cbdd2dfb4e852f369a26b7d64dbe9136994e5382c3a23b54"
 
 RDEPENDS:poly2tri = " \

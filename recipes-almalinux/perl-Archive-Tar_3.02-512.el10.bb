@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Archive-Tar \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Archive-Tar-3.02-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Archive-Tar-3.02-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f5a1963c7c59cabcfdd46dab94b19126a2c2195bf371d17012b0db58c5857a28"
 
-URI_x86_64_v2_perl-Archive-Tar = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Archive-Tar-3.02-512.el10.noarch.rpm;name=x86_64_v2_perl-Archive-Tar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Archive-Tar}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Archive-Tar-3.02-512.el10.noarch.rpm;name=x86_64_v2_perl-Archive-Tar;unpack=0"
 SRC_URI[x86_64_v2_perl-Archive-Tar.sha256sum] = "2c202ddea65486e9c0153c77154a550f57cd172ab21bc75e863ce7e5e89f7420"
 
-URI_aarch64_perl-Archive-Tar = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Archive-Tar-3.02-512.el10.noarch.rpm;name=aarch64_perl-Archive-Tar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Archive-Tar}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Archive-Tar-3.02-512.el10.noarch.rpm;name=aarch64_perl-Archive-Tar;unpack=0"
 SRC_URI[aarch64_perl-Archive-Tar.sha256sum] = "2c202ddea65486e9c0153c77154a550f57cd172ab21bc75e863ce7e5e89f7420"
 
 RDEPENDS:perl-Archive-Tar = " \

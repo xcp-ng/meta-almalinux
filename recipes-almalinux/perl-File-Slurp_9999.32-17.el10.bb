@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-Slurp \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Slurp-9999.32-17.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Slurp-9999.32-17.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "73985aa0a30785d2b39e409d94c89a73ede2e7f26b369fcdffa2b79f84226c09"
 
-URI_x86_64_v2_perl-File-Slurp = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Slurp-9999.32-17.el10.noarch.rpm;name=x86_64_v2_perl-File-Slurp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-Slurp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Slurp-9999.32-17.el10.noarch.rpm;name=x86_64_v2_perl-File-Slurp;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Slurp.sha256sum] = "7f33ac354ce0ecd2ddea02e5c39b0bc60ae28c833df894a523109b9e7f955490"
 
-URI_aarch64_perl-File-Slurp = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Slurp-9999.32-17.el10.noarch.rpm;name=aarch64_perl-File-Slurp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-Slurp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Slurp-9999.32-17.el10.noarch.rpm;name=aarch64_perl-File-Slurp;unpack=0"
 SRC_URI[aarch64_perl-File-Slurp.sha256sum] = "7f33ac354ce0ecd2ddea02e5c39b0bc60ae28c833df894a523109b9e7f955490"
 
 RDEPENDS:perl-File-Slurp = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kmousetool \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmousetool-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmousetool-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ae10b45f21e47e241803c7d04d1ccb43ec122617ece503c352eb5108b3b9749c"
 
-URI_x86_64_v2_kmousetool = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmousetool-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmousetool;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmousetool}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmousetool-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmousetool;unpack=0"
 SRC_URI[x86_64_v2_kmousetool.sha256sum] = "f2a6d31bb25d8d5c3be1e05da3f061178ae9893ba72aba8cdcb69c419bff3003"
 
-URI_aarch64_kmousetool = "${EPEL_MIRROR}/aarch64/Packages/k/kmousetool-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmousetool;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmousetool}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmousetool-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmousetool;unpack=0"
 SRC_URI[aarch64_kmousetool.sha256sum] = "86295e86b2376891e6b755d072adcdad6d245e9606bf3ab39af7db9999426bb6"
 
 RDEPENDS:kmousetool = " \

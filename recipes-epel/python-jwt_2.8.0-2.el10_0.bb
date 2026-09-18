@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-jwt+crypto \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jwt-2.8.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jwt-2.8.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "83a37a74b7bec67f84fcebd69b3b5b5b503978f4e995a01f742e6a50a3af1e4b"
 
-URI_x86_64_v2_python3-jwt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jwt-2.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jwt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jwt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jwt-2.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jwt;unpack=0"
 SRC_URI[x86_64_v2_python3-jwt.sha256sum] = "fadc70176ec27a07e5a636628553b8be4bb5afe1dc3f708f8ebd8c10bb58d582"
 
-URI_x86_64_v2_python3-jwt+crypto = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jwt+crypto-2.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jwt+crypto;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jwt+crypto}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jwt+crypto-2.8.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jwt+crypto;unpack=0"
 SRC_URI[x86_64_v2_python3-jwt+crypto.sha256sum] = "c0511c9cfdd6f99008ff3863c53dbec8b615ad3931ca2d5afc57c6e42973a13f"
 
-URI_aarch64_python3-jwt = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jwt-2.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-jwt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jwt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jwt-2.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-jwt;unpack=0"
 SRC_URI[aarch64_python3-jwt.sha256sum] = "616ad316bfb633b62735528daed83e51b0e778a597aacab028d59f2cfe7a8a33"
 
-URI_aarch64_python3-jwt+crypto = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jwt+crypto-2.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-jwt+crypto;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jwt+crypto}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jwt+crypto-2.8.0-2.el10_0.noarch.rpm;name=aarch64_python3-jwt+crypto;unpack=0"
 SRC_URI[aarch64_python3-jwt+crypto.sha256sum] = "1a671a36b2708f794539ccf5add089f7220543e90788be4efd68b020c70f2582"
 
 RDEPENDS:python3-jwt = " \

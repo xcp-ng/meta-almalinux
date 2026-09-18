@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-trio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-trio-0.8.0-12.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-trio-0.8.0-12.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4eb80bf26cf587a641b85cd17c387306bf20bb0899ebc16060b5fd7a211f5c21"
 
-URI_x86_64_v2_python3-pytest-trio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-trio-0.8.0-12.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-trio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-trio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-trio-0.8.0-12.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-trio;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-trio.sha256sum] = "bdf41c5af5361847c7b1bafce822b5b12e51a910933d420517a11dd4482bddac"
 
-URI_aarch64_python3-pytest-trio = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-trio-0.8.0-12.el10_1.noarch.rpm;name=aarch64_python3-pytest-trio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-trio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-trio-0.8.0-12.el10_1.noarch.rpm;name=aarch64_python3-pytest-trio;unpack=0"
 SRC_URI[aarch64_python3-pytest-trio.sha256sum] = "6b5cb518ee61ca3b71f71be2d8620f9acd22e756b95d214d57eb823b820d2b1a"
 
 RDEPENDS:python3-pytest-trio = " \

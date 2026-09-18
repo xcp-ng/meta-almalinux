@@ -9,16 +9,13 @@ PACKAGES = " \
  gnome-shell-extension-just-perfection \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gnome-shell-extension-just-perfection-34.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gnome-shell-extension-just-perfection-34.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8aa8d5830d7b534e86b91ea1500800d55c976c4a8122b85b6952ebef64476a1e"
 
-URI_x86_64_v2_gnome-shell-extension-just-perfection = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gnome-shell-extension-just-perfection-34.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gnome-shell-extension-just-perfection;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gnome-shell-extension-just-perfection}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gnome-shell-extension-just-perfection-34.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gnome-shell-extension-just-perfection;unpack=0"
 SRC_URI[x86_64_v2_gnome-shell-extension-just-perfection.sha256sum] = "a26e0954ed38235f209aebfed3f31a2b32df275c658f06fd1f9d7cb292bc1d1a"
 
-URI_aarch64_gnome-shell-extension-just-perfection = "${EPEL_MIRROR}/aarch64/Packages/g/gnome-shell-extension-just-perfection-34.0-1.el10_1.noarch.rpm;name=aarch64_gnome-shell-extension-just-perfection;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gnome-shell-extension-just-perfection}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gnome-shell-extension-just-perfection-34.0-1.el10_1.noarch.rpm;name=aarch64_gnome-shell-extension-just-perfection;unpack=0"
 SRC_URI[aarch64_gnome-shell-extension-just-perfection.sha256sum] = "cd5a58a141b97cf9226b7fe6ae8a6a5bd047130f22b9b89bbe5bf25cd95f39ee"
 
 RDEPENDS:gnome-shell-extension-just-perfection = " \

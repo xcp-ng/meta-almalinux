@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-Specio \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Specio-0.48-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Specio-0.48-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eb716fa7418df832e13342c49c5a8de7208150763b316e4789001ff4c2581f4c"
 
-URI_x86_64_v2_perl-Specio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Specio-0.48-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Specio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Specio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Specio-0.48-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Specio;unpack=0"
 SRC_URI[x86_64_v2_perl-Specio.sha256sum] = "a6100a22331d8c3c5955b887167115621b78fdd1917878fb98597547bfee3225"
 
-URI_x86_64_v2_perl-Test-Specio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Specio-0.48-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Specio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Specio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Specio-0.48-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Specio;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Specio.sha256sum] = "07bc461244abc1b3305bb1e6a53308cfc899afc17073f6755424cb414b3d8326"
 
-URI_aarch64_perl-Specio = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Specio-0.48-5.el10_0.noarch.rpm;name=aarch64_perl-Specio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Specio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Specio-0.48-5.el10_0.noarch.rpm;name=aarch64_perl-Specio;unpack=0"
 SRC_URI[aarch64_perl-Specio.sha256sum] = "65e3045dab5f9329bda08776ffb513c05d2abf4685f656564794cc2c5579d43f"
 
-URI_aarch64_perl-Test-Specio = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Specio-0.48-5.el10_0.noarch.rpm;name=aarch64_perl-Test-Specio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Specio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Specio-0.48-5.el10_0.noarch.rpm;name=aarch64_perl-Test-Specio;unpack=0"
 SRC_URI[aarch64_perl-Test-Specio.sha256sum] = "7db474c55855e1a83df4b9fdad3d0f09df654804006b34ac31784fbd3b9467fe"
 
 RDEPENDS:perl-Specio = " \

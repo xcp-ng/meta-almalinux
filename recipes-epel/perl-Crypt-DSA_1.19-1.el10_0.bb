@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Crypt-DSA \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-DSA-1.19-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-DSA-1.19-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fee7bbe6072b195c5150cc0ecc81d07954ba1fe85acd5142792ac866ccba6963"
 
-URI_x86_64_v2_perl-Crypt-DSA = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-DSA-1.19-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-DSA;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-DSA}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-DSA-1.19-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-DSA;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-DSA.sha256sum] = "340e11840157ce7bcc61d2d4e0d59f0959547f786af17ce0483926fbc7b69e0f"
 
-URI_aarch64_perl-Crypt-DSA = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-DSA-1.19-1.el10_0.noarch.rpm;name=aarch64_perl-Crypt-DSA;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-DSA}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-DSA-1.19-1.el10_0.noarch.rpm;name=aarch64_perl-Crypt-DSA;unpack=0"
 SRC_URI[aarch64_perl-Crypt-DSA.sha256sum] = "99d6e15b2a520e6e7722f2543aae45f31bfa84f16dd51e7e524fdc59a5e9c984"
 
 RDEPENDS:perl-Crypt-DSA = " \

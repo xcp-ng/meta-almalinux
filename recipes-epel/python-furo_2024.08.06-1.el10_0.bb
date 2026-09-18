@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-furo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-furo-2024.08.06-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-furo-2024.08.06-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "74223397dce802238abc1e7009dd444a4e3a85d8de9aad3d350f3c00459252b8"
 
-URI_x86_64_v2_python-furo-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-furo-doc-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-furo-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-furo-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-furo-doc-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-furo-doc;unpack=0"
 SRC_URI[x86_64_v2_python-furo-doc.sha256sum] = "755b8d1aeeb21e65946b1664f7bb30c754ddc125e2b6da704eb1d60c262d97ee"
 
-URI_x86_64_v2_python3-furo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-furo-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-furo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-furo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-furo-2024.08.06-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-furo;unpack=0"
 SRC_URI[x86_64_v2_python3-furo.sha256sum] = "31b26233ca7ba6c5cfc27e465ad8029860f3a30214b1e45c2c60707cb8257859"
 
-URI_aarch64_python-furo-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-furo-doc-2024.08.06-1.el10_0.noarch.rpm;name=aarch64_python-furo-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-furo-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-furo-doc-2024.08.06-1.el10_0.noarch.rpm;name=aarch64_python-furo-doc;unpack=0"
 SRC_URI[aarch64_python-furo-doc.sha256sum] = "5c0f9687f1e58646b051575e5af35dbab5f4f0c7cb45ca3c0dbb68af09d4632e"
 
-URI_aarch64_python3-furo = "${EPEL_MIRROR}/aarch64/Packages/p/python3-furo-2024.08.06-1.el10_0.noarch.rpm;name=aarch64_python3-furo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-furo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-furo-2024.08.06-1.el10_0.noarch.rpm;name=aarch64_python3-furo;unpack=0"
 SRC_URI[aarch64_python3-furo.sha256sum] = "6ebd47498a1cde486febc78d3fcbd5557b1f80c07557f3d044f702ea3a6448aa"
 
 RDEPENDS:python-furo-doc = " \

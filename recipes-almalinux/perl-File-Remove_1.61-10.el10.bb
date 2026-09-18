@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-Remove \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-File-Remove-1.61-10.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-File-Remove-1.61-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c6284ae4a92e2d910497f478c215034b0bb3703a640af68e7978b8a128608bf7"
 
-URI_x86_64_v2_perl-File-Remove = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-File-Remove-1.61-10.el10.noarch.rpm;name=x86_64_v2_perl-File-Remove;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-Remove}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-File-Remove-1.61-10.el10.noarch.rpm;name=x86_64_v2_perl-File-Remove;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Remove.sha256sum] = "d921ee7f0735297a526e661eef60630bdd1fdaf3e2d45d5a5f1ed90afef90ef7"
 
-URI_aarch64_perl-File-Remove = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-File-Remove-1.61-10.el10.noarch.rpm;name=aarch64_perl-File-Remove;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-Remove}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-File-Remove-1.61-10.el10.noarch.rpm;name=aarch64_perl-File-Remove;unpack=0"
 SRC_URI[aarch64_perl-File-Remove.sha256sum] = "d921ee7f0735297a526e661eef60630bdd1fdaf3e2d45d5a5f1ed90afef90ef7"
 
 RDEPENDS:perl-File-Remove = " \

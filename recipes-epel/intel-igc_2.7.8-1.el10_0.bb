@@ -14,20 +14,16 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/i/intel-igc-2.7.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/i/intel-igc-2.7.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b20bbfe6d6b59eb00072ddfc44d245fdc84d3702b706e405dd03fd8d74432d3f"
 
-URI_x86_64_v2_intel-igc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_intel-igc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc;unpack=0"
 SRC_URI[x86_64_v2_intel-igc.sha256sum] = "acdd9fe04cf133a7c169fca39be5d5dcece141412eaba3f08ef3ca5e1b40fcd9"
 
-URI_x86_64_v2_intel-igc-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-devel-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_intel-igc-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-devel-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc-devel;unpack=0"
 SRC_URI[x86_64_v2_intel-igc-devel.sha256sum] = "c5854876f18e2fe59bf9d314ea812bf1597c4b0cc58fd8e01a0c419ee6b362b8"
 
-URI_x86_64_v2_intel-igc-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-libs-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_intel-igc-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/intel-igc-libs-2.7.8-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_intel-igc-libs;unpack=0"
 SRC_URI[x86_64_v2_intel-igc-libs.sha256sum] = "ef75ed843b8a9640c9c4db1a228a194870761fa8fbbab88b512519f0a6699da3"
 
 RDEPENDS:intel-igc = " \

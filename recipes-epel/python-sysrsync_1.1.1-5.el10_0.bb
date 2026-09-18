@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sysrsync \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sysrsync-1.1.1-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sysrsync-1.1.1-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e574ddc1b5ef075aede9db75bf17d807e80e9216b6a8feda67f73f30f121fca6"
 
-URI_x86_64_v2_python3-sysrsync = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sysrsync-1.1.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sysrsync;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sysrsync}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sysrsync-1.1.1-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sysrsync;unpack=0"
 SRC_URI[x86_64_v2_python3-sysrsync.sha256sum] = "936799aa9ae3437a9a54fe1d3cbfccc771fa3ac9422236a17f56a1e4a6db6a7f"
 
-URI_aarch64_python3-sysrsync = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sysrsync-1.1.1-5.el10_0.noarch.rpm;name=aarch64_python3-sysrsync;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sysrsync}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sysrsync-1.1.1-5.el10_0.noarch.rpm;name=aarch64_python3-sysrsync;unpack=0"
 SRC_URI[aarch64_python3-sysrsync.sha256sum] = "6d51ff5d119e022c8f98df2053a574edc4cd9c32508b007c2a2eb1a0f2d586d6"
 
 RDEPENDS:python3-sysrsync = " \

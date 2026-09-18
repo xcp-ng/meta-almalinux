@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-faker \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-faker-30.6.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-faker-30.6.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "db36536276ddcbaf3c2628b26fb112e70eaccfc51953c028c24efa4729178ece"
 
-URI_x86_64_v2_python-faker-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-faker-doc-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-faker-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-faker-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-faker-doc-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-faker-doc;unpack=0"
 SRC_URI[x86_64_v2_python-faker-doc.sha256sum] = "6068ac7885ea11ecabc5317cade39ace288bf3de3a3b2944b0adf74af1dd2f45"
 
-URI_x86_64_v2_python3-faker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-faker-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-faker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-faker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-faker-30.6.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-faker;unpack=0"
 SRC_URI[x86_64_v2_python3-faker.sha256sum] = "d0e946fb3aa01045b83fd99d6acdc23c9bb085d7e2cac679d611f105548883d9"
 
-URI_aarch64_python-faker-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-faker-doc-30.6.0-1.el10_0.noarch.rpm;name=aarch64_python-faker-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-faker-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-faker-doc-30.6.0-1.el10_0.noarch.rpm;name=aarch64_python-faker-doc;unpack=0"
 SRC_URI[aarch64_python-faker-doc.sha256sum] = "ae9f3e9e47b410ab950df7864b186d50d751576543e04c3dc2c680ee07eca9b4"
 
-URI_aarch64_python3-faker = "${EPEL_MIRROR}/aarch64/Packages/p/python3-faker-30.6.0-1.el10_0.noarch.rpm;name=aarch64_python3-faker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-faker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-faker-30.6.0-1.el10_0.noarch.rpm;name=aarch64_python3-faker;unpack=0"
 SRC_URI[aarch64_python3-faker.sha256sum] = "de69472220f6adf82cefecacbf00659ac6a755ba5ac19988d9f5fcc874a904b5"
 
 RDEPENDS:python-faker-doc = " \

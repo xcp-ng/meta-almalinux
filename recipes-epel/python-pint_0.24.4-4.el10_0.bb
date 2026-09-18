@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-pint+numpy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pint-0.24.4-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pint-0.24.4-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9b04343c654e38ef24663c71e8ae0942a78534498d69eaa6c406a0d51dc40fab"
 
-URI_x86_64_v2_python3-pint = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pint}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint;unpack=0"
 SRC_URI[x86_64_v2_python3-pint.sha256sum] = "67f87cd79a9307607115f44a5d1864d3d371bc03d559f1346d3eff09224a9a2a"
 
-URI_x86_64_v2_python3-pint+numpy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint+numpy-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint+numpy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pint+numpy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pint+numpy-0.24.4-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pint+numpy;unpack=0"
 SRC_URI[x86_64_v2_python3-pint+numpy.sha256sum] = "ea664627fd6eb3637e7115b08c8d32f612afe39089241ae415da1f65d50ea897"
 
-URI_aarch64_python3-pint = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pint-0.24.4-4.el10_0.noarch.rpm;name=aarch64_python3-pint;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pint}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pint-0.24.4-4.el10_0.noarch.rpm;name=aarch64_python3-pint;unpack=0"
 SRC_URI[aarch64_python3-pint.sha256sum] = "ea839124f76a2619a2da597eb600469144882456c6ef369f9e7c7ae39205047b"
 
-URI_aarch64_python3-pint+numpy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pint+numpy-0.24.4-4.el10_0.noarch.rpm;name=aarch64_python3-pint+numpy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pint+numpy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pint+numpy-0.24.4-4.el10_0.noarch.rpm;name=aarch64_python3-pint+numpy;unpack=0"
 SRC_URI[aarch64_python3-pint+numpy.sha256sum] = "e40bab466300eab2a0bd3b1f5ef92e7bd823e99b8b5e82c31a6a5948a4355caa"
 
 RDEPENDS:python3-pint = " \

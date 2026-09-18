@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-cairo-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-cairo-1.0.30-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-cairo-1.0.30-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1c64a12324bddf31107158b5d4dd464bf083a33d36f629b98cd6949d4727960e"
 
-URI_x86_64_v2_ghc-gi-cairo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-cairo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-cairo.sha256sum] = "f8706bfefcd9513f84eb9539711b5513495fcd82e3a93c704c47149f43017dce"
 
-URI_x86_64_v2_ghc-gi-cairo-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-devel-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-cairo-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-devel-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-cairo-devel.sha256sum] = "e8c784604ec92768ee1d991c6c49fb4d85158bcdaa4a66481642a92074d8464b"
 
-URI_x86_64_v2_ghc-gi-cairo-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-doc-1.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-cairo-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-cairo-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-doc-1.0.30-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-cairo-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-cairo-doc.sha256sum] = "59ccb00a2ad27adae0ac733a08dfbe975d6835d208052d98b02b38c10a550a74"
 
-URI_x86_64_v2_ghc-gi-cairo-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-prof-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-cairo-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-cairo-prof-1.0.30-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-cairo-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-cairo-prof.sha256sum] = "f0244613687201e50b08e5aa2d70b33b6f3b9007b848c8ac6b6a7f35b450d1af"
 
-URI_aarch64_ghc-gi-cairo = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-cairo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo;unpack=0"
 SRC_URI[aarch64_ghc-gi-cairo.sha256sum] = "f6f2edcd4b1c383d57740c0d4a5d91dae59c89edf45cccf091171a33341a951f"
 
-URI_aarch64_ghc-gi-cairo-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-devel-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-cairo-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-devel-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-cairo-devel.sha256sum] = "b58b61cd1f485472882eaa1ab89744379ae2529c91fd933d1daeae99cc4ff740"
 
-URI_aarch64_ghc-gi-cairo-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-doc-1.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-cairo-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-cairo-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-doc-1.0.30-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-cairo-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-cairo-doc.sha256sum] = "261941a270d02d15a6503eb9650b154aed76d3c5484b44b7f6a856717755b796"
 
-URI_aarch64_ghc-gi-cairo-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-prof-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-cairo-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-cairo-prof-1.0.30-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-cairo-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-cairo-prof.sha256sum] = "ffcf7951d7bb071c614519a300f98e1815ad2a6bb729c15fc4abf0235a853044"
 
 RDEPENDS:ghc-gi-cairo = " \

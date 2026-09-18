@@ -10,16 +10,13 @@ PACKAGES = " \
  golang-github-rcrowley-metrics-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-rcrowley-metrics-0-0.37.20210110gitcf1acfc.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-rcrowley-metrics-0-0.37.20210110gitcf1acfc.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c0d24243e9898ad3219d0b6effe15ac2b448c10696b7708b9ce4f0a04095093"
 
-URI_aarch64_golang-github-rcrowley-metrics = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rcrowley-metrics-0-0.37.20210110gitcf1acfc.el10_0.aarch64.rpm;name=aarch64_golang-github-rcrowley-metrics;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-rcrowley-metrics}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rcrowley-metrics-0-0.37.20210110gitcf1acfc.el10_0.aarch64.rpm;name=aarch64_golang-github-rcrowley-metrics;unpack=0"
 SRC_URI[aarch64_golang-github-rcrowley-metrics.sha256sum] = "1399f0b985debfbb2c2b8d63bc82f8559f52ca49eb7c68eb05cee7eba7df46a1"
 
-URI_aarch64_golang-github-rcrowley-metrics-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rcrowley-metrics-devel-0-0.37.20210110gitcf1acfc.el10_0.noarch.rpm;name=aarch64_golang-github-rcrowley-metrics-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-rcrowley-metrics-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-rcrowley-metrics-devel-0-0.37.20210110gitcf1acfc.el10_0.noarch.rpm;name=aarch64_golang-github-rcrowley-metrics-devel;unpack=0"
 SRC_URI[aarch64_golang-github-rcrowley-metrics-devel.sha256sum] = "e78c4a4760af73d358719e3952f210c7c72817232bd1b5f095d64bad8042916c"
 
 RDEPENDS:golang-github-rcrowley-metrics = " \

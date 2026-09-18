@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-argparse-dataclass \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-argparse-dataclass-2.0.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-argparse-dataclass-2.0.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5c2efc0947137c5dd6178ae00afa016d1ee0ba8b90ddb9001bf1cd232392bfdb"
 
-URI_x86_64_v2_python3-argparse-dataclass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-argparse-dataclass-2.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-argparse-dataclass;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-argparse-dataclass}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-argparse-dataclass-2.0.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-argparse-dataclass;unpack=0"
 SRC_URI[x86_64_v2_python3-argparse-dataclass.sha256sum] = "d84dcb1a8b9949160328e5fce3178549a905bfc072c4cce8e0cdfe707e8b9d2d"
 
-URI_aarch64_python3-argparse-dataclass = "${EPEL_MIRROR}/aarch64/Packages/p/python3-argparse-dataclass-2.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-argparse-dataclass;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-argparse-dataclass}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-argparse-dataclass-2.0.0-8.el10_0.noarch.rpm;name=aarch64_python3-argparse-dataclass;unpack=0"
 SRC_URI[aarch64_python3-argparse-dataclass.sha256sum] = "a3e8a6d3c811d3fc73d34f5c7ac4d61ef28690ce0cde55bfd603541f44f3d8f3"
 
 RDEPENDS:python3-argparse-dataclass = " \

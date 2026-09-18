@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-logutils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-logutils-0.3.5-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-logutils-0.3.5-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5878b44b69e77a7534dc4c8c8b2eb656a2e946a1dd9eef3ec1d7fcdff42a40f6"
 
-URI_x86_64_v2_python3-logutils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-logutils-0.3.5-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-logutils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-logutils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-logutils-0.3.5-29.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-logutils;unpack=0"
 SRC_URI[x86_64_v2_python3-logutils.sha256sum] = "68d3be4cdaaa8d0e55fff39923880293e506413a548b126e0d966aadad6c7af0"
 
-URI_aarch64_python3-logutils = "${EPEL_MIRROR}/aarch64/Packages/p/python3-logutils-0.3.5-29.el10_0.noarch.rpm;name=aarch64_python3-logutils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-logutils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-logutils-0.3.5-29.el10_0.noarch.rpm;name=aarch64_python3-logutils;unpack=0"
 SRC_URI[aarch64_python3-logutils.sha256sum] = "7b33aac959a0542df69af3118b196dae4df24d09cb3398b901e9de44bee07d78"
 
 RDEPENDS:python3-logutils = " \

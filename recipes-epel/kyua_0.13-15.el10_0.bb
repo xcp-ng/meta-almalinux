@@ -10,24 +10,19 @@ PACKAGES = " \
  kyua-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kyua-0.13-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kyua-0.13-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a78e9c92572ea90766321e9cdfbc042c8c68fe7a8c55b5ffc4abca9474241e76"
 
-URI_x86_64_v2_kyua = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kyua-0.13-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kyua;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kyua}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kyua-0.13-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kyua;unpack=0"
 SRC_URI[x86_64_v2_kyua.sha256sum] = "b3b57806d714f5bab94e40598376948644e98b0ffbf7f8358ce5a43841c13e43"
 
-URI_x86_64_v2_kyua-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kyua-tests-0.13-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kyua-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kyua-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kyua-tests-0.13-15.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kyua-tests;unpack=0"
 SRC_URI[x86_64_v2_kyua-tests.sha256sum] = "bbf01361890adc22788fddea1376259e1810f83fa9e78b9f7cdb123cf83c1205"
 
-URI_aarch64_kyua = "${EPEL_MIRROR}/aarch64/Packages/k/kyua-0.13-15.el10_0.aarch64.rpm;name=aarch64_kyua;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kyua}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kyua-0.13-15.el10_0.aarch64.rpm;name=aarch64_kyua;unpack=0"
 SRC_URI[aarch64_kyua.sha256sum] = "4e44cfff54cfa868dba38f6722290fc64a361b0f022c58be1102442e5a78205f"
 
-URI_aarch64_kyua-tests = "${EPEL_MIRROR}/aarch64/Packages/k/kyua-tests-0.13-15.el10_0.aarch64.rpm;name=aarch64_kyua-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kyua-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kyua-tests-0.13-15.el10_0.aarch64.rpm;name=aarch64_kyua-tests;unpack=0"
 SRC_URI[aarch64_kyua-tests.sha256sum] = "33757fc6c733de98b245d00b80abef8e8668139acda3c50e21ee065ec7b223a9"
 
 RDEPENDS:kyua = " \

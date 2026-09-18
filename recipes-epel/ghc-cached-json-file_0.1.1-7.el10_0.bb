@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-cached-json-file-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-cached-json-file-0.1.1-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-cached-json-file-0.1.1-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "010376ddfd5abd4c259afedcb97501bb5d487cf2c60fb25587b774d4b7f77e70"
 
-URI_x86_64_v2_ghc-cached-json-file = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cached-json-file}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file;unpack=0"
 SRC_URI[x86_64_v2_ghc-cached-json-file.sha256sum] = "780b27e0bb31f2c80e1f1a08b09e4ee0ed15852b426d7b742a9a85b65ed1d688"
 
-URI_x86_64_v2_ghc-cached-json-file-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-devel-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cached-json-file-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-devel-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-cached-json-file-devel.sha256sum] = "d7525e15612791ca5035a7cb9e1d0d35d5883513b3826c8c81c2115d29d4b3a7"
 
-URI_x86_64_v2_ghc-cached-json-file-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-doc-0.1.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cached-json-file-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cached-json-file-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-doc-0.1.1-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cached-json-file-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-cached-json-file-doc.sha256sum] = "9f887d015820f9fa733ff903a03ae8724809853e9a06ebbc06f06040450d9e71"
 
-URI_x86_64_v2_ghc-cached-json-file-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-prof-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cached-json-file-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cached-json-file-prof-0.1.1-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cached-json-file-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-cached-json-file-prof.sha256sum] = "483fe4ac8b5b8a300bf59b255b91aefe8ec68445d3dae078e4254ebb8a3b31c4"
 
-URI_aarch64_ghc-cached-json-file = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cached-json-file}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file;unpack=0"
 SRC_URI[aarch64_ghc-cached-json-file.sha256sum] = "2d4c2845b1aa6223e615000b567ae4e06fe281b162fc237a82e7f1dc95c2573a"
 
-URI_aarch64_ghc-cached-json-file-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-devel-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cached-json-file-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-devel-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file-devel;unpack=0"
 SRC_URI[aarch64_ghc-cached-json-file-devel.sha256sum] = "934e92039ee79004babc06fd11ff681960a12ec8cfa6fff12df794e089877e70"
 
-URI_aarch64_ghc-cached-json-file-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-doc-0.1.1-7.el10_0.noarch.rpm;name=aarch64_ghc-cached-json-file-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cached-json-file-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-doc-0.1.1-7.el10_0.noarch.rpm;name=aarch64_ghc-cached-json-file-doc;unpack=0"
 SRC_URI[aarch64_ghc-cached-json-file-doc.sha256sum] = "0f61de169d9763d185dd164b4aa8612f6b262789d1d9be1cafd9b6479c10dac9"
 
-URI_aarch64_ghc-cached-json-file-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-prof-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cached-json-file-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cached-json-file-prof-0.1.1-7.el10_0.aarch64.rpm;name=aarch64_ghc-cached-json-file-prof;unpack=0"
 SRC_URI[aarch64_ghc-cached-json-file-prof.sha256sum] = "5ccf65af0d94ac42910e91be13b96a814d428f119d1f43838ad294c4ecbcb20a"
 
 RDEPENDS:ghc-cached-json-file = " \

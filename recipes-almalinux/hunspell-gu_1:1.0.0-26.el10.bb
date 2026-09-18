@@ -10,16 +10,13 @@ PACKAGES = " \
  hunspell-gu \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hunspell-gu-1.0.0-26.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/hunspell-gu-1.0.0-26.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c8138f431ec68680391275ccb10292dccd85ceb64a51b5c95ad5e77016004d3c"
 
-URI_x86_64_v2_hunspell-gu = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hunspell-gu-1.0.0-26.el10.noarch.rpm;name=x86_64_v2_hunspell-gu;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_hunspell-gu}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/hunspell-gu-1.0.0-26.el10.noarch.rpm;name=x86_64_v2_hunspell-gu;unpack=0"
 SRC_URI[x86_64_v2_hunspell-gu.sha256sum] = "b8260ec7d5d01cb9cbc5a88fa0fa86d34a39a9f6de6a1695d4202a37875806e8"
 
-URI_aarch64_hunspell-gu = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hunspell-gu-1.0.0-26.el10.noarch.rpm;name=aarch64_hunspell-gu;unpack=0"
-SRC_URI:append = " ${URI_aarch64_hunspell-gu}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/hunspell-gu-1.0.0-26.el10.noarch.rpm;name=aarch64_hunspell-gu;unpack=0"
 SRC_URI[aarch64_hunspell-gu.sha256sum] = "b8260ec7d5d01cb9cbc5a88fa0fa86d34a39a9f6de6a1695d4202a37875806e8"
 
 RDEPENDS:hunspell-gu = " \

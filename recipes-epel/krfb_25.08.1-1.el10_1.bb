@@ -10,24 +10,19 @@ PACKAGES = " \
  krfb-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/krfb-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/krfb-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6a38d838c412be02cfe6dd745406012cb7fd5fd779b0967719ab0e4297090eaa"
 
-URI_x86_64_v2_krfb = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krfb-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krfb;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_krfb}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krfb-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krfb;unpack=0"
 SRC_URI[x86_64_v2_krfb.sha256sum] = "62a6a3771eb574dfc5ef00f59bc1c64587dd7ee1d3cfe636649dc8b0e32e27b4"
 
-URI_x86_64_v2_krfb-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krfb-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krfb-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_krfb-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/krfb-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_krfb-libs;unpack=0"
 SRC_URI[x86_64_v2_krfb-libs.sha256sum] = "5e65535853151ba31505003602c188dbd1f0244c9967bcc9824340fcc3e1f3e4"
 
-URI_aarch64_krfb = "${EPEL_MIRROR}/aarch64/Packages/k/krfb-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_krfb;unpack=0"
-SRC_URI:append = " ${URI_aarch64_krfb}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/krfb-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_krfb;unpack=0"
 SRC_URI[aarch64_krfb.sha256sum] = "e07ce9da1b59c11d16f8fd4ef26985ed380b2a76040e7051a9a6c277c062bd40"
 
-URI_aarch64_krfb-libs = "${EPEL_MIRROR}/aarch64/Packages/k/krfb-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_krfb-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_krfb-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/krfb-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_krfb-libs;unpack=0"
 SRC_URI[aarch64_krfb-libs.sha256sum] = "a9c42cf71f77b8f38cd4f64af627b7509ade539130b4b822fdd311cdfe417fc4"
 
 RDEPENDS:krfb = " \

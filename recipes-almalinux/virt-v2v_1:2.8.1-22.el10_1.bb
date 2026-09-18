@@ -18,8 +18,7 @@ PACKAGES:aarch64 = " \
  virt-v2v-man-pages-uk \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/virt-v2v-2.8.1-22.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/virt-v2v-2.8.1-22.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e4b4b1d0b73cb5449c4e1b52b63ccc2dc6990e982c629f696a6a5ab25ca9e8c9"
 
 ## Requires (aarch64) that were seen as not satisfiable in original repo:
@@ -27,32 +26,25 @@ SRC_URI[src.sha256sum] = "e4b4b1d0b73cb5449c4e1b52b63ccc2dc6990e982c629f696a6a5a
 # - virt-v2v-man-pages-ja: virt-v2v = 1:2.8.1-22.el10_1
 # - virt-v2v-man-pages-uk: virt-v2v = 1:2.8.1-22.el10_1
 
-URI_x86_64_v2_virt-v2v = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-v2v-2.8.1-22.el10_1.x86_64_v2.rpm;name=x86_64_v2_virt-v2v;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virt-v2v}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-v2v-2.8.1-22.el10_1.x86_64_v2.rpm;name=x86_64_v2_virt-v2v;unpack=0"
 SRC_URI[x86_64_v2_virt-v2v.sha256sum] = "76ce911bd67fa6b68858eea16c498eb19177c85dc94c42119cb1304453f6c70b"
 
-URI_x86_64_v2_virt-v2v-bash-completion = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-v2v-bash-completion-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virt-v2v-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/virt-v2v-bash-completion-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-bash-completion;unpack=0"
 SRC_URI[x86_64_v2_virt-v2v-bash-completion.sha256sum] = "03eea05f4d0205dea00ed02b79db0f19c2186ced8d366f5a2e92aa9893c29037"
 
-URI_x86_64_v2_virt-v2v-man-pages-ja = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-ja-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-man-pages-ja;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virt-v2v-man-pages-ja}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-ja-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-man-pages-ja;unpack=0"
 SRC_URI[x86_64_v2_virt-v2v-man-pages-ja.sha256sum] = "012fe2e214484f8854bef1bebd2e61f49c7ddd415a4a35604f0e1f895bd38a5e"
 
-URI_x86_64_v2_virt-v2v-man-pages-uk = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-uk-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-man-pages-uk;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_virt-v2v-man-pages-uk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-uk-2.8.1-22.el10_1.noarch.rpm;name=x86_64_v2_virt-v2v-man-pages-uk;unpack=0"
 SRC_URI[x86_64_v2_virt-v2v-man-pages-uk.sha256sum] = "5fb3cc56675ed70ea56fb9e59eea434957da16e263e032805ba138710a21fdd1"
 
-URI_aarch64_virt-v2v-bash-completion = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/virt-v2v-bash-completion-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-bash-completion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_virt-v2v-bash-completion}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/virt-v2v-bash-completion-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-bash-completion;unpack=0"
 SRC_URI[aarch64_virt-v2v-bash-completion.sha256sum] = "03eea05f4d0205dea00ed02b79db0f19c2186ced8d366f5a2e92aa9893c29037"
 
-URI_aarch64_virt-v2v-man-pages-ja = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/virt-v2v-man-pages-ja-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-man-pages-ja;unpack=0"
-SRC_URI:append = " ${URI_aarch64_virt-v2v-man-pages-ja}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/virt-v2v-man-pages-ja-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-man-pages-ja;unpack=0"
 SRC_URI[aarch64_virt-v2v-man-pages-ja.sha256sum] = "012fe2e214484f8854bef1bebd2e61f49c7ddd415a4a35604f0e1f895bd38a5e"
 
-URI_aarch64_virt-v2v-man-pages-uk = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/virt-v2v-man-pages-uk-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-man-pages-uk;unpack=0"
-SRC_URI:append = " ${URI_aarch64_virt-v2v-man-pages-uk}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/virt-v2v-man-pages-uk-2.8.1-22.el10_1.noarch.rpm;name=aarch64_virt-v2v-man-pages-uk;unpack=0"
 SRC_URI[aarch64_virt-v2v-man-pages-uk.sha256sum] = "5fb3cc56675ed70ea56fb9e59eea434957da16e263e032805ba138710a21fdd1"
 
 RDEPENDS:virt-v2v = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-virtualenv \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-virtualenv-20.31.2-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-virtualenv-20.31.2-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9113744de09f8d3101fef333eaddf2987265fff9bd79bbe7cdd4fa013497e5bd"
 
-URI_x86_64_v2_python3-virtualenv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-virtualenv-20.31.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-virtualenv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-virtualenv}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-virtualenv-20.31.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-virtualenv;unpack=0"
 SRC_URI[x86_64_v2_python3-virtualenv.sha256sum] = "a6cb0802a60598c4e07b59f2b20107095580d8c30259e2daecc887f2feaa6e4c"
 
-URI_aarch64_python3-virtualenv = "${EPEL_MIRROR}/aarch64/Packages/p/python3-virtualenv-20.31.2-2.el10_1.noarch.rpm;name=aarch64_python3-virtualenv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-virtualenv}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-virtualenv-20.31.2-2.el10_1.noarch.rpm;name=aarch64_python3-virtualenv;unpack=0"
 SRC_URI[aarch64_python3-virtualenv.sha256sum] = "1d23f0e6f9a6820d4ee626800101355b234378236db97dd5bf4058f9446f90ec"
 
 RDEPENDS:python3-virtualenv = " \

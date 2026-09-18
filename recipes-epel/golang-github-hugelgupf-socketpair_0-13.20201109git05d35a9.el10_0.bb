@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-hugelgupf-socketpair-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-hugelgupf-socketpair-0-13.20201109git05d35a9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-hugelgupf-socketpair-0-13.20201109git05d35a9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "52dced664848ce648955da7a8957deae7f9302f6f3b7bdb358095fc762f03fab"
 
-URI_aarch64_golang-github-hugelgupf-socketpair-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-hugelgupf-socketpair-devel-0-13.20201109git05d35a9.el10_0.noarch.rpm;name=aarch64_golang-github-hugelgupf-socketpair-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-hugelgupf-socketpair-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-hugelgupf-socketpair-devel-0-13.20201109git05d35a9.el10_0.noarch.rpm;name=aarch64_golang-github-hugelgupf-socketpair-devel;unpack=0"
 SRC_URI[aarch64_golang-github-hugelgupf-socketpair-devel.sha256sum] = "ec01f854f6417bd7c4882fb9522b5b799269a4cef28d8cbe4eda18c2b24698df"
 
 RDEPENDS:golang-github-hugelgupf-socketpair-devel = " \

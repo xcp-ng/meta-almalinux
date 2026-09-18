@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-py-tes \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-py-tes-0.4.2-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-py-tes-0.4.2-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "60534aea1decceef868bb59686dd3ca9684abc31320dcfe5c6536d256075ebd2"
 
-URI_x86_64_v2_python3-py-tes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-py-tes-0.4.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-py-tes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-py-tes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-py-tes-0.4.2-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-py-tes;unpack=0"
 SRC_URI[x86_64_v2_python3-py-tes.sha256sum] = "229a825ba6e592adaa35675d25cc48789c7f3893d2c02bcf0dfad626b4f8dab6"
 
-URI_aarch64_python3-py-tes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-py-tes-0.4.2-6.el10_0.noarch.rpm;name=aarch64_python3-py-tes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-py-tes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-py-tes-0.4.2-6.el10_0.noarch.rpm;name=aarch64_python3-py-tes;unpack=0"
 SRC_URI[aarch64_python3-py-tes.sha256sum] = "a3318926960d79cd0c0ecad2f0271006398ef830e443df48ee57ec276e1b4052"
 
 RDEPENDS:python3-py-tes = " \

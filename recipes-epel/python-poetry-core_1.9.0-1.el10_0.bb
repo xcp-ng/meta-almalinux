@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-poetry-core \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-poetry-core-1.9.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-poetry-core-1.9.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1314d960487426bec08c88077bcd0550ecba3ca20a1de3dff66628fd63da97e3"
 
-URI_x86_64_v2_python3-poetry-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-poetry-core-1.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-poetry-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-poetry-core}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-poetry-core-1.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-poetry-core;unpack=0"
 SRC_URI[x86_64_v2_python3-poetry-core.sha256sum] = "245fc01d8480deaefea216b78ffc72fefb8631c4afd57c272d0fe55711d14fbf"
 
-URI_aarch64_python3-poetry-core = "${EPEL_MIRROR}/aarch64/Packages/p/python3-poetry-core-1.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-poetry-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-poetry-core}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-poetry-core-1.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-poetry-core;unpack=0"
 SRC_URI[aarch64_python3-poetry-core.sha256sum] = "67877e93a3e4a6e0d0fac95481047b98b18ee16227902f37ba4acbb5443eab0c"
 
 RDEPENDS:python3-poetry-core = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  libprometheus-cpp-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libprometheus-cpp-1.2.4-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libprometheus-cpp-1.2.4-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "362955c67ad88a5baa00a202d42028b4e5d211e205a1a892ce6ac87abb6cc349"
 
-URI_x86_64_v2_libprometheus-cpp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libprometheus-cpp-1.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libprometheus-cpp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libprometheus-cpp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libprometheus-cpp-1.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libprometheus-cpp;unpack=0"
 SRC_URI[x86_64_v2_libprometheus-cpp.sha256sum] = "9f4b56720c42ce18bb0315df19ec4d8f78b3d3830e04cd3f4717c5fe7cd427d6"
 
-URI_x86_64_v2_libprometheus-cpp-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libprometheus-cpp-devel-1.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libprometheus-cpp-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libprometheus-cpp-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libprometheus-cpp-devel-1.2.4-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libprometheus-cpp-devel;unpack=0"
 SRC_URI[x86_64_v2_libprometheus-cpp-devel.sha256sum] = "310cacd03aaf38eac795ebfbc56ad9308a421faf9e155e9417504ecab6af347e"
 
-URI_aarch64_libprometheus-cpp = "${EPEL_MIRROR}/aarch64/Packages/l/libprometheus-cpp-1.2.4-2.el10_0.aarch64.rpm;name=aarch64_libprometheus-cpp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libprometheus-cpp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libprometheus-cpp-1.2.4-2.el10_0.aarch64.rpm;name=aarch64_libprometheus-cpp;unpack=0"
 SRC_URI[aarch64_libprometheus-cpp.sha256sum] = "c027cb3c285ced795eee496643b5957418807dc88fb959d92954c32896b2f48c"
 
-URI_aarch64_libprometheus-cpp-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libprometheus-cpp-devel-1.2.4-2.el10_0.aarch64.rpm;name=aarch64_libprometheus-cpp-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libprometheus-cpp-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libprometheus-cpp-devel-1.2.4-2.el10_0.aarch64.rpm;name=aarch64_libprometheus-cpp-devel;unpack=0"
 SRC_URI[aarch64_libprometheus-cpp-devel.sha256sum] = "60de7a677279475c66e065e21037658aeea3e89097a3cbbe3c38eb5739d14712"
 
 RDEPENDS:libprometheus-cpp = " \

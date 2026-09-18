@@ -9,16 +9,13 @@ PACKAGES = " \
  ktuberling \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ktuberling-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ktuberling-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8adbcbbf29ba05ccdd9a1310a5dd7e801bef356656bef86d757d8fe50f21e165"
 
-URI_x86_64_v2_ktuberling = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ktuberling-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ktuberling;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ktuberling}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ktuberling-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ktuberling;unpack=0"
 SRC_URI[x86_64_v2_ktuberling.sha256sum] = "9c95fae60022918019e47ffb9770d3c64098d433c99ae984e6302768ad669dd9"
 
-URI_aarch64_ktuberling = "${EPEL_MIRROR}/aarch64/Packages/k/ktuberling-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ktuberling;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ktuberling}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ktuberling-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ktuberling;unpack=0"
 SRC_URI[aarch64_ktuberling.sha256sum] = "e610730976509b5775477cee2cd843653e2f6594cef259e0c9118ab927e99f63"
 
 RDEPENDS:ktuberling = " \

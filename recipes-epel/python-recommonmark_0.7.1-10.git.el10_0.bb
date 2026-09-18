@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-recommonmark \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-recommonmark-0.7.1-10.git.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-recommonmark-0.7.1-10.git.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3dda7067cc35028ad9207666b10f3eb2a68185d5a49c99e855f48e5be6df718b"
 
-URI_x86_64_v2_python3-recommonmark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-recommonmark-0.7.1-10.git.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-recommonmark;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-recommonmark}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-recommonmark-0.7.1-10.git.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-recommonmark;unpack=0"
 SRC_URI[x86_64_v2_python3-recommonmark.sha256sum] = "d655b630e2e338ff0cac5266e065897a6d4c84251554d32087f29313e9cd7ef5"
 
-URI_aarch64_python3-recommonmark = "${EPEL_MIRROR}/aarch64/Packages/p/python3-recommonmark-0.7.1-10.git.el10_0.noarch.rpm;name=aarch64_python3-recommonmark;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-recommonmark}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-recommonmark-0.7.1-10.git.el10_0.noarch.rpm;name=aarch64_python3-recommonmark;unpack=0"
 SRC_URI[aarch64_python3-recommonmark.sha256sum] = "462fde0d10281ca3a92d0f7814740d920bc6bfc559ff749bbe4d92c8950202c0"
 
 RDEPENDS:python3-recommonmark = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-dictdiffer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-dictdiffer-0.9.0-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-dictdiffer-0.9.0-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7eff9553ca6edca08860a095cff44fbc37260babb5dfa407cf619961233e422c"
 
-URI_x86_64_v2_python3-dictdiffer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dictdiffer-0.9.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dictdiffer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dictdiffer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dictdiffer-0.9.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dictdiffer;unpack=0"
 SRC_URI[x86_64_v2_python3-dictdiffer.sha256sum] = "70e55deb333a0e4ef9cc972bcfab5e864702e7bdf4a8c3f408e527efeb1ef82d"
 
-URI_aarch64_python3-dictdiffer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dictdiffer-0.9.0-12.el10_0.noarch.rpm;name=aarch64_python3-dictdiffer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dictdiffer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dictdiffer-0.9.0-12.el10_0.noarch.rpm;name=aarch64_python3-dictdiffer;unpack=0"
 SRC_URI[aarch64_python3-dictdiffer.sha256sum] = "53ff966159cdd98dfff35c4a1a84933e0380047a1c4fd50b07d750d5e8f46ad7"
 
 RDEPENDS:python3-dictdiffer = " \

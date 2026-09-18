@@ -16,72 +16,55 @@ PACKAGES = " \
  ghc-yaml-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-yaml-0.11.11.2-21.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-yaml-0.11.11.2-21.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4cfa532c2575968448a93b14cb722a18aeba132160939627f713f9047e34cff8"
 
-URI_x86_64_v2_ghc-libyaml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libyaml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml;unpack=0"
 SRC_URI[x86_64_v2_ghc-libyaml.sha256sum] = "b2df471b23c62c62854db55b888b4c269afc2909e2505a33d0d5383fe32ddfdd"
 
-URI_x86_64_v2_ghc-libyaml-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-devel-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libyaml-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-devel-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-libyaml-devel.sha256sum] = "1162a1c66107069543d6c98fdd5718deb33f3100e354276ab1a138c9ea72b175"
 
-URI_x86_64_v2_ghc-libyaml-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-doc-0.1.4-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-libyaml-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libyaml-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-doc-0.1.4-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-libyaml-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-libyaml-doc.sha256sum] = "a257e7ffb9b996517ff053667475befee690027a1f2a498475cc5b4e6ce4d59c"
 
-URI_x86_64_v2_ghc-libyaml-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-prof-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libyaml-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libyaml-prof-0.1.4-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libyaml-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-libyaml-prof.sha256sum] = "8ad77fc21e29209383ff6daa97e8702e23c8e1e78e6d4f0306ca5a3feda72b62"
 
-URI_x86_64_v2_ghc-yaml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yaml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml;unpack=0"
 SRC_URI[x86_64_v2_ghc-yaml.sha256sum] = "800c66c1ee9089ef0adeed5b535975232a0a602733d735429ca461909e871c60"
 
-URI_x86_64_v2_ghc-yaml-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-devel-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yaml-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-devel-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-yaml-devel.sha256sum] = "5719fa203865d01357f7f6f84a3cb6b6c1e32f0bcc95438fc04eb9d9268c50b2"
 
-URI_x86_64_v2_ghc-yaml-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-doc-0.11.11.2-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yaml-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yaml-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-doc-0.11.11.2-21.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yaml-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-yaml-doc.sha256sum] = "95f6166e4d4403c325f9da528686385a8a4c8c45fcbacb5ae535cfe06edb7bb3"
 
-URI_x86_64_v2_ghc-yaml-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-prof-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yaml-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yaml-prof-0.11.11.2-21.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yaml-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-yaml-prof.sha256sum] = "85b62e89d6352ad8b4b4bc583f283191921dc5a2e58815552894bf4963f55a5e"
 
-URI_aarch64_ghc-libyaml = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libyaml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml;unpack=0"
 SRC_URI[aarch64_ghc-libyaml.sha256sum] = "f39c2697fa25dbf54b93fa4b7779765153c5080369300d1db67480d399bddd20"
 
-URI_aarch64_ghc-libyaml-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-devel-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libyaml-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-devel-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml-devel;unpack=0"
 SRC_URI[aarch64_ghc-libyaml-devel.sha256sum] = "2cd1ec1be6080b995b5b8f4f4809e28d4b2b2c6774c78307b3876d9edc622dee"
 
-URI_aarch64_ghc-libyaml-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-doc-0.1.4-21.el10_0.noarch.rpm;name=aarch64_ghc-libyaml-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libyaml-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-doc-0.1.4-21.el10_0.noarch.rpm;name=aarch64_ghc-libyaml-doc;unpack=0"
 SRC_URI[aarch64_ghc-libyaml-doc.sha256sum] = "78fe11808f2b0473c28414821744fa9ad7d500ca615dbdd27747a6c86c550516"
 
-URI_aarch64_ghc-libyaml-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-prof-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libyaml-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libyaml-prof-0.1.4-21.el10_0.aarch64.rpm;name=aarch64_ghc-libyaml-prof;unpack=0"
 SRC_URI[aarch64_ghc-libyaml-prof.sha256sum] = "fc4ccb2aea7030aaf27d9438e63ccadcb7576650f2ffd2e17f800b8f6a0d6747"
 
-URI_aarch64_ghc-yaml = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yaml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml;unpack=0"
 SRC_URI[aarch64_ghc-yaml.sha256sum] = "4755364f24a925959c786f1e611e153f853aeb3dc091df8a2d86c73ef06eaa71"
 
-URI_aarch64_ghc-yaml-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-devel-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yaml-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-devel-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml-devel;unpack=0"
 SRC_URI[aarch64_ghc-yaml-devel.sha256sum] = "452ad5dd48adaf88824d2605809f26425c38fb76a1d9b9d2b6a9e3eb1c01b61c"
 
-URI_aarch64_ghc-yaml-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-doc-0.11.11.2-21.el10_0.noarch.rpm;name=aarch64_ghc-yaml-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yaml-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-doc-0.11.11.2-21.el10_0.noarch.rpm;name=aarch64_ghc-yaml-doc;unpack=0"
 SRC_URI[aarch64_ghc-yaml-doc.sha256sum] = "5d8271dfc9522027cce66747207bfaf1bf64a65bc8ef31ed05b90e9a3fc9f89f"
 
-URI_aarch64_ghc-yaml-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-prof-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yaml-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yaml-prof-0.11.11.2-21.el10_0.aarch64.rpm;name=aarch64_ghc-yaml-prof;unpack=0"
 SRC_URI[aarch64_ghc-yaml-prof.sha256sum] = "686a0324519f7f272cd781bf738a50e1531b1d693d7bf67aa45f5053536d17ff"
 
 RDEPENDS:ghc-libyaml = " \

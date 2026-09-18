@@ -9,16 +9,13 @@ PACKAGES = " \
  pim-sieve-editor \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pim-sieve-editor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pim-sieve-editor-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f046ebc1bfc60e07fe7261f58d505307162ed5aecfd9b5bd5d251c4d3dd8a804"
 
-URI_x86_64_v2_pim-sieve-editor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pim-sieve-editor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pim-sieve-editor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pim-sieve-editor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pim-sieve-editor-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pim-sieve-editor;unpack=0"
 SRC_URI[x86_64_v2_pim-sieve-editor.sha256sum] = "f94d8c0867d0a54ff0cfee4b704fc8eb4bfae6e48ec81923772ba830fed3911c"
 
-URI_aarch64_pim-sieve-editor = "${EPEL_MIRROR}/aarch64/Packages/p/pim-sieve-editor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_pim-sieve-editor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pim-sieve-editor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pim-sieve-editor-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_pim-sieve-editor;unpack=0"
 SRC_URI[aarch64_pim-sieve-editor.sha256sum] = "44ea56e6e52638d5f772074e4b7b4c9dbbff330ee41ece0e0f413f9073cc411e"
 
 RDEPENDS:pim-sieve-editor = " \

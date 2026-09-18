@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-EOL \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-EOL-2.02-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-EOL-2.02-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0763b9c882a5210605f5ec2761ef2224eae63a19e2ab5b414149c9ad556ff043"
 
-URI_x86_64_v2_perl-Test-EOL = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-EOL-2.02-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-EOL;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-EOL}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-EOL-2.02-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-EOL;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-EOL.sha256sum] = "2227541e7ed31bad5186e214a364a65b22b88ffc4dfb39aa13690639101a866a"
 
-URI_aarch64_perl-Test-EOL = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-EOL-2.02-8.el10_0.noarch.rpm;name=aarch64_perl-Test-EOL;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-EOL}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-EOL-2.02-8.el10_0.noarch.rpm;name=aarch64_perl-Test-EOL;unpack=0"
 SRC_URI[aarch64_perl-Test-EOL.sha256sum] = "d3ac2994dc6ead23946116c9930a95ddff5ae50c40c6f096a3ac483d933bce81"
 
 RDEPENDS:perl-Test-EOL = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-mono-traversable-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-mono-traversable-1.0.17.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-mono-traversable-1.0.17.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f62487ecd7e7eec4a6ba60c2dcac5348ddf4c4a154328adf8410f066575da917"
 
-URI_x86_64_v2_ghc-mono-traversable = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mono-traversable}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable;unpack=0"
 SRC_URI[x86_64_v2_ghc-mono-traversable.sha256sum] = "7eb797c8b0db5359a82d174b2206ea15964547f5bedea4cdce337259c235cdbb"
 
-URI_x86_64_v2_ghc-mono-traversable-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-devel-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mono-traversable-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-devel-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-mono-traversable-devel.sha256sum] = "5f02c1ad558032114029b0d50007621dd98b7dd996e0b99c6a9d5ef8f7adca0d"
 
-URI_x86_64_v2_ghc-mono-traversable-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-doc-1.0.17.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-mono-traversable-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mono-traversable-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-doc-1.0.17.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-mono-traversable-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-mono-traversable-doc.sha256sum] = "94fae7a950ed90f5637e007db1eb770d83f20beb78d7165129120f6b5f69b784"
 
-URI_x86_64_v2_ghc-mono-traversable-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-prof-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-mono-traversable-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-mono-traversable-prof-1.0.17.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-mono-traversable-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-mono-traversable-prof.sha256sum] = "fa321fae8d18d2a553985ad84cae85c2a8d273187bcf82294a84487ab17a333f"
 
-URI_aarch64_ghc-mono-traversable = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mono-traversable}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable;unpack=0"
 SRC_URI[aarch64_ghc-mono-traversable.sha256sum] = "333c80d82b6bb4a3f5d072d72f15e52b9e1c94930c65cabfb333e6dc9182290e"
 
-URI_aarch64_ghc-mono-traversable-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-devel-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mono-traversable-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-devel-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable-devel;unpack=0"
 SRC_URI[aarch64_ghc-mono-traversable-devel.sha256sum] = "779c08f4117146e348ddc94208839e799b335d2dab685128e605eec250a26b37"
 
-URI_aarch64_ghc-mono-traversable-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-doc-1.0.17.0-1.el10_0.noarch.rpm;name=aarch64_ghc-mono-traversable-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mono-traversable-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-doc-1.0.17.0-1.el10_0.noarch.rpm;name=aarch64_ghc-mono-traversable-doc;unpack=0"
 SRC_URI[aarch64_ghc-mono-traversable-doc.sha256sum] = "343d63429de1dd13cf66f5ba881891843dfce59cd8305a798753254fab12a5c5"
 
-URI_aarch64_ghc-mono-traversable-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-prof-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-mono-traversable-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-mono-traversable-prof-1.0.17.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-mono-traversable-prof;unpack=0"
 SRC_URI[aarch64_ghc-mono-traversable-prof.sha256sum] = "4b90c97615fb4b0364ebe9cdcaab9acf74bc9f474a4b06c9d72a1a42a3742ea9"
 
 RDEPENDS:ghc-mono-traversable = " \

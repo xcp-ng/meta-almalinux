@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-botocore \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-botocore-1.35.81-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-botocore-1.35.81-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "985f1d2ca1cae8eece814982f1ef729ed7aa17ce72d1563d2bf9c346b0c97bfe"
 
-URI_x86_64_v2_python3-botocore = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-botocore-1.35.81-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-botocore;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-botocore}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-botocore-1.35.81-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-botocore;unpack=0"
 SRC_URI[x86_64_v2_python3-botocore.sha256sum] = "a68f39a5b3e125a1504adae0a6219cb88c672add6b4cd2c53c07370b643a9315"
 
-URI_aarch64_python3-botocore = "${EPEL_MIRROR}/aarch64/Packages/p/python3-botocore-1.35.81-1.el10_0.noarch.rpm;name=aarch64_python3-botocore;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-botocore}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-botocore-1.35.81-1.el10_0.noarch.rpm;name=aarch64_python3-botocore;unpack=0"
 SRC_URI[aarch64_python3-botocore.sha256sum] = "859a4bbfa66a3507976e3a7b2dda43ff2dc9d8848b65c57f09654e9081db39c2"
 
 RDEPENDS:python3-botocore = " \

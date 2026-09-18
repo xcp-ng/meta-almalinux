@@ -12,32 +12,25 @@ PACKAGES = " \
  python3-sphinx-latex \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-sphinx-7.2.6-10.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-sphinx-7.2.6-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "301fd3beff7af8aeb600e56f933593dd2f3ec58550c2bd7d495f1e92aeb50525"
 
-URI_x86_64_v2_python-sphinx-doc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python-sphinx-doc-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python-sphinx-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-sphinx-doc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python-sphinx-doc-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python-sphinx-doc;unpack=0"
 SRC_URI[x86_64_v2_python-sphinx-doc.sha256sum] = "a960f3bc189fdba315ce22e71eb7337a20491c939f3febc6affc4347803928b4"
 
-URI_x86_64_v2_python3-sphinx = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-sphinx-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python3-sphinx;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-sphinx-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python3-sphinx;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx.sha256sum] = "6726ffaef1c6a87ba03228b546f1215c34de2405b86e1e1ffc24efbbea041d7c"
 
-URI_x86_64_v2_python3-sphinx-latex = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-sphinx-latex-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python3-sphinx-latex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-latex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-sphinx-latex-7.2.6-10.el10.noarch.rpm;name=x86_64_v2_python3-sphinx-latex;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-latex.sha256sum] = "e8421eca135281a1096a9e6ac12d41265939f43f328d02e017410320ff1546d1"
 
-URI_aarch64_python-sphinx-doc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python-sphinx-doc-7.2.6-10.el10.noarch.rpm;name=aarch64_python-sphinx-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-sphinx-doc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python-sphinx-doc-7.2.6-10.el10.noarch.rpm;name=aarch64_python-sphinx-doc;unpack=0"
 SRC_URI[aarch64_python-sphinx-doc.sha256sum] = "a960f3bc189fdba315ce22e71eb7337a20491c939f3febc6affc4347803928b4"
 
-URI_aarch64_python3-sphinx = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-sphinx-7.2.6-10.el10.noarch.rpm;name=aarch64_python3-sphinx;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-sphinx-7.2.6-10.el10.noarch.rpm;name=aarch64_python3-sphinx;unpack=0"
 SRC_URI[aarch64_python3-sphinx.sha256sum] = "6726ffaef1c6a87ba03228b546f1215c34de2405b86e1e1ffc24efbbea041d7c"
 
-URI_aarch64_python3-sphinx-latex = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-sphinx-latex-7.2.6-10.el10.noarch.rpm;name=aarch64_python3-sphinx-latex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-latex}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-sphinx-latex-7.2.6-10.el10.noarch.rpm;name=aarch64_python3-sphinx-latex;unpack=0"
 SRC_URI[aarch64_python3-sphinx-latex.sha256sum] = "e8421eca135281a1096a9e6ac12d41265939f43f328d02e017410320ff1546d1"
 
 RDEPENDS:python-sphinx-doc = " \

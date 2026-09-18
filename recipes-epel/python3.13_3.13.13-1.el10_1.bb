@@ -17,8 +17,7 @@ PACKAGES = " \
  python3.13-tkinter \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python3.13-3.13.13-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python3.13-3.13.13-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "735c4c6f257bbd78722af42578f220d0808e092138ef727bd391111f918e3bcf"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -29,76 +28,58 @@ SRC_URI[src.sha256sum] = "735c4c6f257bbd78722af42578f220d0808e092138ef727bd39111
 # - python3.13-freethreading: (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 # - python3.13-test: (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 
-URI_x86_64_v2_python3.13 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13;unpack=0"
 SRC_URI[x86_64_v2_python3.13.sha256sum] = "4c87a40ef28e9fa668f16b6c8fdd49780969600c84b462b4c926ee19159d310d"
 
-URI_x86_64_v2_python3.13-debug = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-debug-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-debug;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-debug}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-debug-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-debug;unpack=0"
 SRC_URI[x86_64_v2_python3.13-debug.sha256sum] = "2a3658cfbd3ee6b6c716cb1ac539fabdd1911750649a48786f14b40156e7c86e"
 
-URI_x86_64_v2_python3.13-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-devel-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-devel-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-devel;unpack=0"
 SRC_URI[x86_64_v2_python3.13-devel.sha256sum] = "de0b67ff699da1ce08bccdd8ec584b0e2dc8280e0c77385dcc4c7d097675f166"
 
-URI_x86_64_v2_python3.13-freethreading = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-freethreading-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-freethreading;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-freethreading}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-freethreading-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-freethreading;unpack=0"
 SRC_URI[x86_64_v2_python3.13-freethreading.sha256sum] = "d37b9f2f330b7bc2b68742badd9203fdca6c90648d982fa297c79de289b46855"
 
-URI_x86_64_v2_python3.13-freethreading-debug = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-freethreading-debug-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-freethreading-debug;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-freethreading-debug}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-freethreading-debug-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-freethreading-debug;unpack=0"
 SRC_URI[x86_64_v2_python3.13-freethreading-debug.sha256sum] = "e233baf8b3e5589ed51c5f3ea6f73c7954ea0e5c6aff99bab213d7824939999a"
 
-URI_x86_64_v2_python3.13-idle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-idle-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-idle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-idle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-idle-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-idle;unpack=0"
 SRC_URI[x86_64_v2_python3.13-idle.sha256sum] = "b2ea16a11eabf667ab9fde6afb324fb5962685e840a5dbc916269e9cbb330ad4"
 
-URI_x86_64_v2_python3.13-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-libs-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-libs-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-libs;unpack=0"
 SRC_URI[x86_64_v2_python3.13-libs.sha256sum] = "ae754495e78040fd1b1018e9d782fa3149370766f0347388e46bc207dba89697"
 
-URI_x86_64_v2_python3.13-test = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-test-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-test;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-test}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-test-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-test;unpack=0"
 SRC_URI[x86_64_v2_python3.13-test.sha256sum] = "090573c61beff7f295b923288fb0002257a6065c88977c87db7c84a3873bef66"
 
-URI_x86_64_v2_python3.13-tkinter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-tkinter-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-tkinter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3.13-tkinter}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3.13-tkinter-3.13.13-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3.13-tkinter;unpack=0"
 SRC_URI[x86_64_v2_python3.13-tkinter.sha256sum] = "4b03bfbc457ebbe65714eef99436067316d5b75a9e3c2979da090398d0b6832b"
 
-URI_aarch64_python3.13 = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13;unpack=0"
 SRC_URI[aarch64_python3.13.sha256sum] = "315aae1a0f42cfdb8bdca630c6122c691047a2001ab8902a52955cd201975282"
 
-URI_aarch64_python3.13-debug = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-debug-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-debug;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-debug}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-debug-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-debug;unpack=0"
 SRC_URI[aarch64_python3.13-debug.sha256sum] = "45360c945c5a5923e1fb6164f00c8715fcb7aa96402bb851687bcf732939fe60"
 
-URI_aarch64_python3.13-devel = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-devel-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-devel-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-devel;unpack=0"
 SRC_URI[aarch64_python3.13-devel.sha256sum] = "6c79e3679f6182747eefd9059e5193f037360fc286e392fb18da14b37ae6b347"
 
-URI_aarch64_python3.13-freethreading = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-freethreading-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-freethreading;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-freethreading}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-freethreading-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-freethreading;unpack=0"
 SRC_URI[aarch64_python3.13-freethreading.sha256sum] = "e1026d5dc10cc6e2269b404d53fac70fb518a1b5ab859afa51935339b6fcbe34"
 
-URI_aarch64_python3.13-freethreading-debug = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-freethreading-debug-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-freethreading-debug;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-freethreading-debug}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-freethreading-debug-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-freethreading-debug;unpack=0"
 SRC_URI[aarch64_python3.13-freethreading-debug.sha256sum] = "1e03d2be3c52dc2fb623e380f8d460202ebdeb14ef4cae4baa8a2e5ac752ae3b"
 
-URI_aarch64_python3.13-idle = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-idle-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-idle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-idle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-idle-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-idle;unpack=0"
 SRC_URI[aarch64_python3.13-idle.sha256sum] = "facd126df9ef91997c28b98fab9bbd1e52bfc37220d99750c6918a37082013f9"
 
-URI_aarch64_python3.13-libs = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-libs-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-libs-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-libs;unpack=0"
 SRC_URI[aarch64_python3.13-libs.sha256sum] = "9c5401feb79aaa02063e02ab86e5d2098c52e901a150c36038ca57db39252f2c"
 
-URI_aarch64_python3.13-test = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-test-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-test;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-test}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-test-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-test;unpack=0"
 SRC_URI[aarch64_python3.13-test.sha256sum] = "ba3225a774cb1c1dd566476b365849411e4834736b722578f54af30235d1cb52"
 
-URI_aarch64_python3.13-tkinter = "${EPEL_MIRROR}/aarch64/Packages/p/python3.13-tkinter-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-tkinter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3.13-tkinter}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3.13-tkinter-3.13.13-1.el10_1.aarch64.rpm;name=aarch64_python3.13-tkinter;unpack=0"
 SRC_URI[aarch64_python3.13-tkinter.sha256sum] = "ad2f7a034c91ee96ea725cd494310a9f8def2e7dab7969de4b95777cb27ed850"
 
 RDEPENDS:python3.13 = " \

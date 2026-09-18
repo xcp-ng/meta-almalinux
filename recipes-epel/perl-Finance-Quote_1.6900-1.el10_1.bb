@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Finance-Quote \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Finance-Quote-1.6900-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Finance-Quote-1.6900-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0f6a7cf7671a2552883ab3c18db21ea825f9c44fd2e4703d5f55735eb9077fa0"
 
-URI_x86_64_v2_perl-Finance-Quote = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Finance-Quote-1.6900-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Finance-Quote;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Finance-Quote}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Finance-Quote-1.6900-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Finance-Quote;unpack=0"
 SRC_URI[x86_64_v2_perl-Finance-Quote.sha256sum] = "59f90c515fb77c2cb25dab4a77e12c57f1f3723be66dbc6b5d3f0bfd22c95228"
 
-URI_aarch64_perl-Finance-Quote = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Finance-Quote-1.6900-1.el10_1.noarch.rpm;name=aarch64_perl-Finance-Quote;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Finance-Quote}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Finance-Quote-1.6900-1.el10_1.noarch.rpm;name=aarch64_perl-Finance-Quote;unpack=0"
 SRC_URI[aarch64_perl-Finance-Quote.sha256sum] = "e97c52f19d8faeca2c6259f68bcc7f600a2b3eebb37cd3c4f88fba272d59c1b1"
 
 RDEPENDS:perl-Finance-Quote = " \

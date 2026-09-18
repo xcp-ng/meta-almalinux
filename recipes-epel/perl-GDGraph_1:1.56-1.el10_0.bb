@@ -10,16 +10,13 @@ PACKAGES = " \
  perl-GDGraph \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-GDGraph-1.56-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-GDGraph-1.56-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "097cf7b60276c99c3d863266ef3350228974ebd0611029d3a00a8e8a2176e4cd"
 
-URI_x86_64_v2_perl-GDGraph = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GDGraph-1.56-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GDGraph;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-GDGraph}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-GDGraph-1.56-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-GDGraph;unpack=0"
 SRC_URI[x86_64_v2_perl-GDGraph.sha256sum] = "4bc0265e6ed56468267fcc7be850a70fc71d7e310b013a26d3d5147075203698"
 
-URI_aarch64_perl-GDGraph = "${EPEL_MIRROR}/aarch64/Packages/p/perl-GDGraph-1.56-1.el10_0.noarch.rpm;name=aarch64_perl-GDGraph;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-GDGraph}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-GDGraph-1.56-1.el10_0.noarch.rpm;name=aarch64_perl-GDGraph;unpack=0"
 SRC_URI[aarch64_perl-GDGraph.sha256sum] = "f95030bbaed8e4a04ec04a4f794463807ac513cd73912013fa79b247c62252f3"
 
 RDEPENDS:perl-GDGraph = " \

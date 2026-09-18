@@ -14,20 +14,16 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/brasero-3.12.3-11.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/brasero-3.12.3-11.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "abb5d1b60abc99e1f7f33e5092e117c9eba73beae0ac7e1489ca361bc197fe96"
 
-URI_x86_64_v2_brasero = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/brasero-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_brasero}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/brasero-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero;unpack=0"
 SRC_URI[x86_64_v2_brasero.sha256sum] = "7a41448f32b97a26ea3502a570971868a45c4fd1ce09e7abe9a59e0ef8012811"
 
-URI_x86_64_v2_brasero-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/brasero-devel-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_brasero-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/brasero-devel-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero-devel;unpack=0"
 SRC_URI[x86_64_v2_brasero-devel.sha256sum] = "04af4b4f32fd064fd62e2a53df2f83224ae8c29b301e8b0ccf5df145cfef2779"
 
-URI_x86_64_v2_brasero-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/brasero-libs-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_brasero-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/brasero-libs-3.12.3-11.el10.x86_64_v2.rpm;name=x86_64_v2_brasero-libs;unpack=0"
 SRC_URI[x86_64_v2_brasero-libs.sha256sum] = "48c926214cc9d5b6779f47921b116775f00891034d92a0ba76d7382bed6a4b2d"
 
 RDEPENDS:brasero = " \

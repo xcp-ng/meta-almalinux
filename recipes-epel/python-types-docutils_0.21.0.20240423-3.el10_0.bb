@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-types-docutils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-types-docutils-0.21.0.20240423-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-types-docutils-0.21.0.20240423-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "602661718647d60414d7ec3870ef819649465732433cc4c8f44afd58a6995e19"
 
-URI_x86_64_v2_python3-types-docutils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-types-docutils-0.21.0.20240423-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-types-docutils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-types-docutils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-types-docutils-0.21.0.20240423-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-types-docutils;unpack=0"
 SRC_URI[x86_64_v2_python3-types-docutils.sha256sum] = "bed4a723847dafa82e796bcf3e610cd68bcce038ea31e36a4ca1a571f7591cdc"
 
-URI_aarch64_python3-types-docutils = "${EPEL_MIRROR}/aarch64/Packages/p/python3-types-docutils-0.21.0.20240423-3.el10_0.noarch.rpm;name=aarch64_python3-types-docutils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-types-docutils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-types-docutils-0.21.0.20240423-3.el10_0.noarch.rpm;name=aarch64_python3-types-docutils;unpack=0"
 SRC_URI[aarch64_python3-types-docutils.sha256sum] = "c942040a069640af757dcdf2b568ae876b106e7dfc81ba784fc03d3619231ede"
 
 RDEPENDS:python3-types-docutils = " \

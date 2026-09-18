@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-client-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-0.7.17-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-0.7.17-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c6e59f723c60128c031f41364c5625941964d782858888b001cbd230dc6ca995"
 
-URI_x86_64_v2_ghc-http-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client.sha256sum] = "e93aad41a5c449bb41a2a037704f91c293461b4a4972ac26a5b0e898d565fbd4"
 
-URI_x86_64_v2_ghc-http-client-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-devel-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-devel-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-devel.sha256sum] = "369592f580e2814be5e32f803e3c7515aedc03e6995bfd2bd70c1de4b5b5cb2e"
 
-URI_x86_64_v2_ghc-http-client-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-doc-0.7.17-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-doc-0.7.17-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-doc.sha256sum] = "d02a13656e21dc9a2e775d5c11a0a2336e10a87ffc5a40ad03658bd436ac1ac5"
 
-URI_x86_64_v2_ghc-http-client-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-prof-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-prof-0.7.17-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-prof.sha256sum] = "7688d65e1ab9026531dc09461d4c7009f623f1f64699f644b4b88d48e740c8f1"
 
-URI_aarch64_ghc-http-client = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client;unpack=0"
 SRC_URI[aarch64_ghc-http-client.sha256sum] = "85fb95b4111cb392298f63d80b9ba51be8a52620c7b9e647acf40f7dbb9e20db"
 
-URI_aarch64_ghc-http-client-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-devel-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-devel-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-client-devel.sha256sum] = "c67e85277ee30a51c8f98831962081e6246ea6b4cf976f06f86469d136feca41"
 
-URI_aarch64_ghc-http-client-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-doc-0.7.17-2.el10_0.noarch.rpm;name=aarch64_ghc-http-client-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-doc-0.7.17-2.el10_0.noarch.rpm;name=aarch64_ghc-http-client-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-client-doc.sha256sum] = "0cbd65c7a60dceb7f771ee3d452fdd2736357afa9816e8eec17c82dde9fb5f04"
 
-URI_aarch64_ghc-http-client-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-prof-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-prof-0.7.17-2.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-client-prof.sha256sum] = "ccc30dd365904e8490b2760478ac3d93dee5a6caa8de18226de68c8371967843"
 
 RDEPENDS:ghc-http-client = " \

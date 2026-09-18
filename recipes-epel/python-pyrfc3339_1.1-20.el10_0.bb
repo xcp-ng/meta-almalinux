@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyrfc3339 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyrfc3339-1.1-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyrfc3339-1.1-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eca0be0b036e2ae1bd88d707d3998d67a906023f6f821503079d75f942ab32cd"
 
-URI_x86_64_v2_python3-pyrfc3339 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyrfc3339-1.1-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyrfc3339;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyrfc3339}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyrfc3339-1.1-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyrfc3339;unpack=0"
 SRC_URI[x86_64_v2_python3-pyrfc3339.sha256sum] = "b114af585bb48d4eac07a0aa693d6a9638b3ab4c873dd5a2ae318d8e8fe3d534"
 
-URI_aarch64_python3-pyrfc3339 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyrfc3339-1.1-20.el10_0.noarch.rpm;name=aarch64_python3-pyrfc3339;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyrfc3339}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyrfc3339-1.1-20.el10_0.noarch.rpm;name=aarch64_python3-pyrfc3339;unpack=0"
 SRC_URI[aarch64_python3-pyrfc3339.sha256sum] = "daf13290fe0b7f61d556133cd2dde5183225d7c6c72125e2df43e9b6917f6092"
 
 RDEPENDS:python3-pyrfc3339 = " \

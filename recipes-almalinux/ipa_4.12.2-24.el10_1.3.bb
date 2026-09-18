@@ -26,152 +26,115 @@ PACKAGES = " \
  python3-ipatests \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ipa-4.12.2-24.el10_1.3.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/ipa-4.12.2-24.el10_1.3.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4ca17bd0165fc66b16bfc3da9196b0c4518a7f49af7f5c3432b5ff4d27fd277a"
 
-URI_x86_64_v2_ipa-client = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-client}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client;unpack=0"
 SRC_URI[x86_64_v2_ipa-client.sha256sum] = "f0faf94b9bfa6e715dac376e37511fc504936f7819e7697d41c1a3bf0530dbc1"
 
-URI_x86_64_v2_ipa-client-common = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-client-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-client-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-client-common;unpack=0"
 SRC_URI[x86_64_v2_ipa-client-common.sha256sum] = "6f22f3ec978f9840b7c3602e5c16d86cc5014fb1e9c50880a8c1638ae12ba7eb"
 
-URI_x86_64_v2_ipa-client-encrypted-dns = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-encrypted-dns-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-encrypted-dns;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-client-encrypted-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-encrypted-dns-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-encrypted-dns;unpack=0"
 SRC_URI[x86_64_v2_ipa-client-encrypted-dns.sha256sum] = "dd92438085c562736e2a2b51fc856c3a7bc7acce929b53eff62c45f8778021c7"
 
-URI_x86_64_v2_ipa-client-epn = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-epn-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-epn;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-client-epn}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-epn-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-epn;unpack=0"
 SRC_URI[x86_64_v2_ipa-client-epn.sha256sum] = "d856392cf1e77c8cfe68c0dfaf66f96cfb9d2d60a4f0b563a61314568e44a21e"
 
-URI_x86_64_v2_ipa-client-samba = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-samba-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-samba;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-client-samba}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-client-samba-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-client-samba;unpack=0"
 SRC_URI[x86_64_v2_ipa-client-samba.sha256sum] = "ff6ebfa0b802a3a4c2589175c806c74b39df33fd57b3887bf7d8eabb3513b822"
 
-URI_x86_64_v2_ipa-common = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-common;unpack=0"
 SRC_URI[x86_64_v2_ipa-common.sha256sum] = "88a542790f9e632ec243dfc5cedf19353a647e13bafcef8b99d543406b4616cb"
 
-URI_x86_64_v2_ipa-selinux = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux;unpack=0"
 SRC_URI[x86_64_v2_ipa-selinux.sha256sum] = "1f34ac3b8199070acff3d9c7f51b40105a256529c2861c4dd0da813cb6247150"
 
-URI_x86_64_v2_ipa-selinux-luna = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-luna-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux-luna;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-selinux-luna}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-luna-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux-luna;unpack=0"
 SRC_URI[x86_64_v2_ipa-selinux-luna.sha256sum] = "358753e2921c9d935985d61e7e6eb9a428ded7f624944f17493d2752dc9005c2"
 
-URI_x86_64_v2_ipa-selinux-nfast = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-nfast-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux-nfast;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-selinux-nfast}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-selinux-nfast-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-selinux-nfast;unpack=0"
 SRC_URI[x86_64_v2_ipa-selinux-nfast.sha256sum] = "c73dfda5b5ebe7f6852b76a29546e1a89a63265d49b12f762a56791d05d8659b"
 
-URI_x86_64_v2_ipa-server = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server;unpack=0"
 SRC_URI[x86_64_v2_ipa-server.sha256sum] = "e8885492e294b3283611964582ea24a72b6bc7b09be7fb9125518dcc4500d96a"
 
-URI_x86_64_v2_ipa-server-common = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-server-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-server-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-common-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-server-common;unpack=0"
 SRC_URI[x86_64_v2_ipa-server-common.sha256sum] = "ef5bb7ae3e1ad7e67bb0d34470628e012421935a8c33f707ff0f94279e189f30"
 
-URI_x86_64_v2_ipa-server-dns = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-dns-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-server-dns;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-server-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-dns-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_ipa-server-dns;unpack=0"
 SRC_URI[x86_64_v2_ipa-server-dns.sha256sum] = "2df96ee6641bfc5c401baf4049d9a1b940158127d55edfe2d2fe67ec128ac672"
 
-URI_x86_64_v2_ipa-server-encrypted-dns = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-encrypted-dns-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server-encrypted-dns;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-server-encrypted-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-encrypted-dns-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server-encrypted-dns;unpack=0"
 SRC_URI[x86_64_v2_ipa-server-encrypted-dns.sha256sum] = "3d20eddb77bd6baa89175b7e92a7a8014867a5801b07f40f6d35b691b32798bc"
 
-URI_x86_64_v2_ipa-server-trust-ad = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-trust-ad-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server-trust-ad;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ipa-server-trust-ad}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/ipa-server-trust-ad-4.12.2-24.el10_1.3.x86_64_v2.rpm;name=x86_64_v2_ipa-server-trust-ad;unpack=0"
 SRC_URI[x86_64_v2_ipa-server-trust-ad.sha256sum] = "f6503786d4ce8fbb9151cabb6ac6a50c5ca5aea5e1593ec5dd1872749bba26e8"
 
-URI_x86_64_v2_python3-ipaclient = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipaclient-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipaclient;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ipaclient}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipaclient-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipaclient;unpack=0"
 SRC_URI[x86_64_v2_python3-ipaclient.sha256sum] = "b85eb468756b3f6c282f57d804168008c1a8db3df849f678d810b2e16f08f390"
 
-URI_x86_64_v2_python3-ipalib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipalib-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipalib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ipalib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipalib-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipalib;unpack=0"
 SRC_URI[x86_64_v2_python3-ipalib.sha256sum] = "a234fe311a0b529000ae4fc072df3795fea355454b6835248176604a4f9a5fd6"
 
-URI_x86_64_v2_python3-ipaserver = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipaserver-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipaserver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ipaserver}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-ipaserver-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipaserver;unpack=0"
 SRC_URI[x86_64_v2_python3-ipaserver.sha256sum] = "5d0876e7d65fac861b412d09c26ca6a34fef3f2b0efe92b6f920c2bfc73470ea"
 
-URI_x86_64_v2_python3-ipatests = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-ipatests-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipatests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ipatests}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-ipatests-4.12.2-24.el10_1.3.noarch.rpm;name=x86_64_v2_python3-ipatests;unpack=0"
 SRC_URI[x86_64_v2_python3-ipatests.sha256sum] = "cf2313f8fabfa6a7242657d22aa3953e609c711d3bcbb33dfb3a77616f036297"
 
-URI_aarch64_ipa-client = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-client}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client;unpack=0"
 SRC_URI[aarch64_ipa-client.sha256sum] = "569a169080be60c371168d0681264183476cc36b0cfe6715f314ff241b7746c2"
 
-URI_aarch64_ipa-client-common = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-client-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-client-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-client-common;unpack=0"
 SRC_URI[aarch64_ipa-client-common.sha256sum] = "6f22f3ec978f9840b7c3602e5c16d86cc5014fb1e9c50880a8c1638ae12ba7eb"
 
-URI_aarch64_ipa-client-encrypted-dns = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-encrypted-dns-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-encrypted-dns;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-client-encrypted-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-encrypted-dns-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-encrypted-dns;unpack=0"
 SRC_URI[aarch64_ipa-client-encrypted-dns.sha256sum] = "fe51aed74e81a530f4603503aff94d65027cbf8900ba853c7fc1732d1c10d9f4"
 
-URI_aarch64_ipa-client-epn = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-epn-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-epn;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-client-epn}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-epn-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-epn;unpack=0"
 SRC_URI[aarch64_ipa-client-epn.sha256sum] = "7c5dc2c2fed047a7d85bedb8bd0d68664557521457ab29ed35518cab72106b84"
 
-URI_aarch64_ipa-client-samba = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-samba-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-samba;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-client-samba}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-client-samba-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-client-samba;unpack=0"
 SRC_URI[aarch64_ipa-client-samba.sha256sum] = "96bd01089d85677536993ae161dd927e23ef49744628d86977b2ca23777d6fd7"
 
-URI_aarch64_ipa-common = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-common;unpack=0"
 SRC_URI[aarch64_ipa-common.sha256sum] = "88a542790f9e632ec243dfc5cedf19353a647e13bafcef8b99d543406b4616cb"
 
-URI_aarch64_ipa-selinux = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux;unpack=0"
 SRC_URI[aarch64_ipa-selinux.sha256sum] = "1f34ac3b8199070acff3d9c7f51b40105a256529c2861c4dd0da813cb6247150"
 
-URI_aarch64_ipa-selinux-luna = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-luna-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux-luna;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-selinux-luna}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-luna-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux-luna;unpack=0"
 SRC_URI[aarch64_ipa-selinux-luna.sha256sum] = "358753e2921c9d935985d61e7e6eb9a428ded7f624944f17493d2752dc9005c2"
 
-URI_aarch64_ipa-selinux-nfast = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-nfast-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux-nfast;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-selinux-nfast}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-selinux-nfast-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-selinux-nfast;unpack=0"
 SRC_URI[aarch64_ipa-selinux-nfast.sha256sum] = "c73dfda5b5ebe7f6852b76a29546e1a89a63265d49b12f762a56791d05d8659b"
 
-URI_aarch64_ipa-server = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-server}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server;unpack=0"
 SRC_URI[aarch64_ipa-server.sha256sum] = "171b46ec47effaceb2bdbf75b69772667f845b4a1b1393a87feab22feb39137d"
 
-URI_aarch64_ipa-server-common = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-server-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-server-common}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-common-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-server-common;unpack=0"
 SRC_URI[aarch64_ipa-server-common.sha256sum] = "ef5bb7ae3e1ad7e67bb0d34470628e012421935a8c33f707ff0f94279e189f30"
 
-URI_aarch64_ipa-server-dns = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-dns-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-server-dns;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-server-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-dns-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_ipa-server-dns;unpack=0"
 SRC_URI[aarch64_ipa-server-dns.sha256sum] = "2df96ee6641bfc5c401baf4049d9a1b940158127d55edfe2d2fe67ec128ac672"
 
-URI_aarch64_ipa-server-encrypted-dns = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-encrypted-dns-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server-encrypted-dns;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-server-encrypted-dns}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-encrypted-dns-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server-encrypted-dns;unpack=0"
 SRC_URI[aarch64_ipa-server-encrypted-dns.sha256sum] = "8167585a8a8eb3fe2186ac53cfc12e330ecaad83aee5fd0bd5b8dadeace853de"
 
-URI_aarch64_ipa-server-trust-ad = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-trust-ad-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server-trust-ad;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ipa-server-trust-ad}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/ipa-server-trust-ad-4.12.2-24.el10_1.3.aarch64.rpm;name=aarch64_ipa-server-trust-ad;unpack=0"
 SRC_URI[aarch64_ipa-server-trust-ad.sha256sum] = "428fef3ac7515358d1681fd9baf7092e2711c909265f2d5eae69c6192eb458e5"
 
-URI_aarch64_python3-ipaclient = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipaclient-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipaclient;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ipaclient}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipaclient-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipaclient;unpack=0"
 SRC_URI[aarch64_python3-ipaclient.sha256sum] = "b85eb468756b3f6c282f57d804168008c1a8db3df849f678d810b2e16f08f390"
 
-URI_aarch64_python3-ipalib = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipalib-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipalib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ipalib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipalib-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipalib;unpack=0"
 SRC_URI[aarch64_python3-ipalib.sha256sum] = "a234fe311a0b529000ae4fc072df3795fea355454b6835248176604a4f9a5fd6"
 
-URI_aarch64_python3-ipaserver = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipaserver-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipaserver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ipaserver}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-ipaserver-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipaserver;unpack=0"
 SRC_URI[aarch64_python3-ipaserver.sha256sum] = "5d0876e7d65fac861b412d09c26ca6a34fef3f2b0efe92b6f920c2bfc73470ea"
 
-URI_aarch64_python3-ipatests = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-ipatests-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipatests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ipatests}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-ipatests-4.12.2-24.el10_1.3.noarch.rpm;name=aarch64_python3-ipatests;unpack=0"
 SRC_URI[aarch64_python3-ipatests.sha256sum] = "cf2313f8fabfa6a7242657d22aa3953e609c711d3bcbb33dfb3a77616f036297"
 
 RDEPENDS:ipa-client = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  ksystemlog \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ksystemlog-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ksystemlog-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c639521e4ad6d765f401f4ff850d926d809f72584da8289918bfba00d8321a83"
 
-URI_x86_64_v2_ksystemlog = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksystemlog-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksystemlog;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ksystemlog}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksystemlog-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksystemlog;unpack=0"
 SRC_URI[x86_64_v2_ksystemlog.sha256sum] = "35ad1aa00c9d28e264fcfd01611a108c9f3baff060e80054d2583227bb8cebd7"
 
-URI_aarch64_ksystemlog = "${EPEL_MIRROR}/aarch64/Packages/k/ksystemlog-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksystemlog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ksystemlog}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ksystemlog-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksystemlog;unpack=0"
 SRC_URI[aarch64_ksystemlog.sha256sum] = "4762d7afa2bc68252a807f2fe83af9793aeac7fe406bbfaab0cf4b6b738a696d"
 
 RDEPENDS:ksystemlog = " \

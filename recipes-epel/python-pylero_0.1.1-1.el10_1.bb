@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pylero \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pylero-0.1.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pylero-0.1.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f474b21e38af48de979413e886ff545dd6cb3b2ad81cd4bf148f1588a379838d"
 
-URI_x86_64_v2_python3-pylero = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylero-0.1.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylero;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pylero}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylero-0.1.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylero;unpack=0"
 SRC_URI[x86_64_v2_python3-pylero.sha256sum] = "dde40862a5fdc6b5ee1b14479b093a2172d9e15639f743aac2078b7288752eec"
 
-URI_aarch64_python3-pylero = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pylero-0.1.1-1.el10_1.noarch.rpm;name=aarch64_python3-pylero;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pylero}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pylero-0.1.1-1.el10_1.noarch.rpm;name=aarch64_python3-pylero;unpack=0"
 SRC_URI[aarch64_python3-pylero.sha256sum] = "65134f43a360e9f8ab76aee40ee6d55d52c3069e1bd56b25f74c1784124c47a9"
 
 RDEPENDS:python3-pylero = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-CryptX-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-CryptX-0.088-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-CryptX-0.088-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "412e50172aac069e914562574b3adbe729f847239a1f8d1f9f8957fd8b204533"
 
-URI_x86_64_v2_perl-CryptX = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CryptX-0.088-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-CryptX;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CryptX}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CryptX-0.088-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-CryptX;unpack=0"
 SRC_URI[x86_64_v2_perl-CryptX.sha256sum] = "1c090976c42a85fa23df6f9194b7e20dd44026bab2a60310919516a5b90b58ec"
 
-URI_x86_64_v2_perl-CryptX-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CryptX-tests-0.088-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CryptX-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-CryptX-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-CryptX-tests-0.088-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-CryptX-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-CryptX-tests.sha256sum] = "02de34f9fffc3961c1203041b8845b018830cd18d031ca47efd41c2c104d2918"
 
-URI_aarch64_perl-CryptX = "${EPEL_MIRROR}/aarch64/Packages/p/perl-CryptX-0.088-2.el10_1.aarch64.rpm;name=aarch64_perl-CryptX;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CryptX}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-CryptX-0.088-2.el10_1.aarch64.rpm;name=aarch64_perl-CryptX;unpack=0"
 SRC_URI[aarch64_perl-CryptX.sha256sum] = "014e8329cd2e0c59e4a6e068e936be548f5055bc88c49b549c835f2cead94f6d"
 
-URI_aarch64_perl-CryptX-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-CryptX-tests-0.088-2.el10_1.noarch.rpm;name=aarch64_perl-CryptX-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-CryptX-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-CryptX-tests-0.088-2.el10_1.noarch.rpm;name=aarch64_perl-CryptX-tests;unpack=0"
 SRC_URI[aarch64_perl-CryptX-tests.sha256sum] = "9b05a990716c77142fc8023172f6535d2b124f782a028da55508a543542a5a78"
 
 RDEPENDS:perl-CryptX = " \

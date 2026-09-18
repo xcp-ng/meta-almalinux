@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-performancecopilot-speed-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-performancecopilot-speed-3.0.1-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-performancecopilot-speed-3.0.1-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "826b5b1e46bf8578ec1cef42948ddb960ee24e6dcdc4916a707381e9c92faa8e"
 
-URI_x86_64_v2_golang-github-performancecopilot-speed-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-performancecopilot-speed-devel-3.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-performancecopilot-speed-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-performancecopilot-speed-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-performancecopilot-speed-devel-3.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-performancecopilot-speed-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-performancecopilot-speed-devel.sha256sum] = "1fc4a1cd8fd72f6b8aab3038e882da8dfa352b8bc75e7e7304caa149bcd55304"
 
-URI_aarch64_golang-github-performancecopilot-speed-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-performancecopilot-speed-devel-3.0.1-17.el10_0.noarch.rpm;name=aarch64_golang-github-performancecopilot-speed-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-performancecopilot-speed-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-performancecopilot-speed-devel-3.0.1-17.el10_0.noarch.rpm;name=aarch64_golang-github-performancecopilot-speed-devel;unpack=0"
 SRC_URI[aarch64_golang-github-performancecopilot-speed-devel.sha256sum] = "9ad54dfcc367ce35cd41466a7196fc373afa12ffea55f5ad45505afbfa382869"
 
 RDEPENDS:golang-github-performancecopilot-speed-devel = " \

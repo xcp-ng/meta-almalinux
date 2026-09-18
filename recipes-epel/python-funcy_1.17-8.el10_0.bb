@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-funcy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-funcy-1.17-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-funcy-1.17-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ea6b6dc4228908d0739ef8fb9ec4934838ffe592a83af3b28ab98baf2154e9a9"
 
-URI_x86_64_v2_python3-funcy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-funcy-1.17-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-funcy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-funcy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-funcy-1.17-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-funcy;unpack=0"
 SRC_URI[x86_64_v2_python3-funcy.sha256sum] = "3d0c12120359c9e8d8bea68d503ae5f54ce7df78b81d812cccf3a57b76d98e86"
 
-URI_aarch64_python3-funcy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-funcy-1.17-8.el10_0.noarch.rpm;name=aarch64_python3-funcy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-funcy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-funcy-1.17-8.el10_0.noarch.rpm;name=aarch64_python3-funcy;unpack=0"
 SRC_URI[aarch64_python3-funcy.sha256sum] = "c0f341908dc03de501bde5ac4f6c8a4addf9e2a8f2e15ebf6e168a91ed6708de"
 
 RDEPENDS:python3-funcy = " \

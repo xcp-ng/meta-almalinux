@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Object-HashBase \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Object-HashBase-0.010-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Object-HashBase-0.010-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1816aa74793b6cf51feb779bad8aa219bc0d859c194a8b8e976bb9e6a123e3ea"
 
-URI_x86_64_v2_perl-Object-HashBase = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Object-HashBase-0.010-5.el10.noarch.rpm;name=x86_64_v2_perl-Object-HashBase;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Object-HashBase}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Object-HashBase-0.010-5.el10.noarch.rpm;name=x86_64_v2_perl-Object-HashBase;unpack=0"
 SRC_URI[x86_64_v2_perl-Object-HashBase.sha256sum] = "09db075de1e50ce7843fd268cfdf59a679fdcdefe399f27f2e58cf945dfe2101"
 
-URI_aarch64_perl-Object-HashBase = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Object-HashBase-0.010-5.el10.noarch.rpm;name=aarch64_perl-Object-HashBase;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Object-HashBase}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Object-HashBase-0.010-5.el10.noarch.rpm;name=aarch64_perl-Object-HashBase;unpack=0"
 SRC_URI[aarch64_perl-Object-HashBase.sha256sum] = "09db075de1e50ce7843fd268cfdf59a679fdcdefe399f27f2e58cf945dfe2101"
 
 RDEPENDS:perl-Object-HashBase = " \

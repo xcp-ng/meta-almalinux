@@ -9,16 +9,13 @@ PACKAGES = " \
  nagios-plugins-systemd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/n/nagios-plugins-systemd-5.0.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/n/nagios-plugins-systemd-5.0.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d1be154dafc7a1059a4cb4218543c78fbc156c15277f76e63e4e96351ca86287"
 
-URI_x86_64_v2_nagios-plugins-systemd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nagios-plugins-systemd-5.0.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_nagios-plugins-systemd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_nagios-plugins-systemd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/nagios-plugins-systemd-5.0.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_nagios-plugins-systemd;unpack=0"
 SRC_URI[x86_64_v2_nagios-plugins-systemd.sha256sum] = "538dcae411d6930c08715abc60467912a1e7c3bec692b059d355aeb96a4d6651"
 
-URI_aarch64_nagios-plugins-systemd = "${EPEL_MIRROR}/aarch64/Packages/n/nagios-plugins-systemd-5.0.0-1.el10_1.aarch64.rpm;name=aarch64_nagios-plugins-systemd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_nagios-plugins-systemd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/n/nagios-plugins-systemd-5.0.0-1.el10_1.aarch64.rpm;name=aarch64_nagios-plugins-systemd;unpack=0"
 SRC_URI[aarch64_nagios-plugins-systemd.sha256sum] = "bbf07f02ce1fd418c21052e88553b1da5c999b8640671df7a149e1354a58694f"
 
 RDEPENDS:nagios-plugins-systemd = " \

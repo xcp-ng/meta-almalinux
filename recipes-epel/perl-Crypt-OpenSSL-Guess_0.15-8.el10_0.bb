@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Crypt-OpenSSL-Guess-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3eec5d5f9a8afd11d9cc942f03a2a394bf802a8b7fd0c9be54e78be261deec9d"
 
-URI_x86_64_v2_perl-Crypt-OpenSSL-Guess = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-OpenSSL-Guess;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-OpenSSL-Guess}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-OpenSSL-Guess;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-OpenSSL-Guess.sha256sum] = "2255e9044d705c7f8d2a289dc16dc5a5a904963b28f97bf7f64810db5e904474"
 
-URI_x86_64_v2_perl-Crypt-OpenSSL-Guess-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-OpenSSL-Guess-tests-0.15-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-OpenSSL-Guess-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Crypt-OpenSSL-Guess-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Crypt-OpenSSL-Guess-tests-0.15-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Crypt-OpenSSL-Guess-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Crypt-OpenSSL-Guess-tests.sha256sum] = "0617ba881c3194eefc87d25a21dea30087a0d491af377d7e6e95242dbb5ac0bb"
 
-URI_aarch64_perl-Crypt-OpenSSL-Guess = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.noarch.rpm;name=aarch64_perl-Crypt-OpenSSL-Guess;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-OpenSSL-Guess}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-OpenSSL-Guess-0.15-8.el10_0.noarch.rpm;name=aarch64_perl-Crypt-OpenSSL-Guess;unpack=0"
 SRC_URI[aarch64_perl-Crypt-OpenSSL-Guess.sha256sum] = "e7fbffced0d96055d7f4b6ad43f4507dd613afd2a1a5bbda533c3a5bf2f08655"
 
-URI_aarch64_perl-Crypt-OpenSSL-Guess-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-OpenSSL-Guess-tests-0.15-8.el10_0.noarch.rpm;name=aarch64_perl-Crypt-OpenSSL-Guess-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Crypt-OpenSSL-Guess-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Crypt-OpenSSL-Guess-tests-0.15-8.el10_0.noarch.rpm;name=aarch64_perl-Crypt-OpenSSL-Guess-tests;unpack=0"
 SRC_URI[aarch64_perl-Crypt-OpenSSL-Guess-tests.sha256sum] = "825f83200f17211655490a33654144e414be9b8e1a012f6ab09399320c14e6b3"
 
 RDEPENDS:perl-Crypt-OpenSSL-Guess = " \

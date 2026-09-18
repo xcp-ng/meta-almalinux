@@ -9,16 +9,13 @@ PACKAGES = " \
  vlc-plugin-pipewire \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/v/vlc-plugin-pipewire-3-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/v/vlc-plugin-pipewire-3-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c5d2c286f4e3b980a2812dd6fd27db9d29670587893c161520e481e1f3ef87e"
 
-URI_x86_64_v2_vlc-plugin-pipewire = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/vlc-plugin-pipewire-3-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_vlc-plugin-pipewire;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_vlc-plugin-pipewire}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/vlc-plugin-pipewire-3-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_vlc-plugin-pipewire;unpack=0"
 SRC_URI[x86_64_v2_vlc-plugin-pipewire.sha256sum] = "c9b581ebdcf0d3550d396324a3c082231f4a256d6adc1c996c59c8dedf33b8bd"
 
-URI_aarch64_vlc-plugin-pipewire = "${EPEL_MIRROR}/aarch64/Packages/v/vlc-plugin-pipewire-3-3.el10_1.aarch64.rpm;name=aarch64_vlc-plugin-pipewire;unpack=0"
-SRC_URI:append = " ${URI_aarch64_vlc-plugin-pipewire}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/v/vlc-plugin-pipewire-3-3.el10_1.aarch64.rpm;name=aarch64_vlc-plugin-pipewire;unpack=0"
 SRC_URI[aarch64_vlc-plugin-pipewire.sha256sum] = "62a43c698a95fdfcc85992e3e5369aa4754c251322130226c1e436117dbfeea1"
 
 RDEPENDS:vlc-plugin-pipewire = " \

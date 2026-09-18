@@ -11,32 +11,25 @@ PACKAGES = " \
  kidentitymanagement-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kidentitymanagement-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kidentitymanagement-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "db0c8b432944d421802c353d8aaf515267993143c5c88b63c679dd24a3662743"
 
-URI_x86_64_v2_kidentitymanagement = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kidentitymanagement;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kidentitymanagement}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kidentitymanagement;unpack=0"
 SRC_URI[x86_64_v2_kidentitymanagement.sha256sum] = "67c0e41496633f5a0c634bcb3fb91bdd4ea92ebe24493bf8b6cd6f228399fcba"
 
-URI_x86_64_v2_kidentitymanagement-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kidentitymanagement-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kidentitymanagement-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kidentitymanagement-devel;unpack=0"
 SRC_URI[x86_64_v2_kidentitymanagement-devel.sha256sum] = "48c1e0479fb7bf7ec15143bced5aa2915942779807fa16e6cd673f2f9dded59a"
 
-URI_x86_64_v2_kidentitymanagement-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kidentitymanagement-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kidentitymanagement-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kidentitymanagement-doc-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kidentitymanagement-doc;unpack=0"
 SRC_URI[x86_64_v2_kidentitymanagement-doc.sha256sum] = "b91934a18eba296a871d187bd115ee6e3b5f87a7c21d0eaf1aa576bd23377ed8"
 
-URI_aarch64_kidentitymanagement = "${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kidentitymanagement;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kidentitymanagement}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kidentitymanagement;unpack=0"
 SRC_URI[aarch64_kidentitymanagement.sha256sum] = "bb03da7aa604530bd3f6f54dbad426200a92fb7cbf9dad43c9c049aa0b644a31"
 
-URI_aarch64_kidentitymanagement-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kidentitymanagement-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kidentitymanagement-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kidentitymanagement-devel;unpack=0"
 SRC_URI[aarch64_kidentitymanagement-devel.sha256sum] = "0ffb5b2d96c76eea3c96aeda53077c74e670f5c3d17451e639717eb6b40badc4"
 
-URI_aarch64_kidentitymanagement-doc = "${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kidentitymanagement-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kidentitymanagement-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kidentitymanagement-doc-25.08.1-1.el10_1.noarch.rpm;name=aarch64_kidentitymanagement-doc;unpack=0"
 SRC_URI[aarch64_kidentitymanagement-doc.sha256sum] = "a4400d7b89f5a81cf708f9b4cee9a0c4b99ce50477a8290795447188d28d5a01"
 
 RDEPENDS:kidentitymanagement = " \

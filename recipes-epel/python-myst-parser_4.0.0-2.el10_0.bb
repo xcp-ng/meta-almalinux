@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-myst-parser \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-myst-parser-4.0.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-myst-parser-4.0.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9a03a5a479ac97bffcaf3a99ce5a86e6b51e9c5ff869a74e8b057f9054a199fc"
 
-URI_x86_64_v2_python3-myst-parser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-myst-parser-4.0.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-myst-parser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-myst-parser}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-myst-parser-4.0.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-myst-parser;unpack=0"
 SRC_URI[x86_64_v2_python3-myst-parser.sha256sum] = "89113f7186d818b354f93236866c9633e856f7cde3e8cb9d7befada362b7a502"
 
-URI_aarch64_python3-myst-parser = "${EPEL_MIRROR}/aarch64/Packages/p/python3-myst-parser-4.0.0-2.el10_0.noarch.rpm;name=aarch64_python3-myst-parser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-myst-parser}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-myst-parser-4.0.0-2.el10_0.noarch.rpm;name=aarch64_python3-myst-parser;unpack=0"
 SRC_URI[aarch64_python3-myst-parser.sha256sum] = "a08da566dd410174198cd89979246192460c87ada886a9b5b16df42b208d70e3"
 
 RDEPENDS:python3-myst-parser = " \

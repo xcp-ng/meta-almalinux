@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-API \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-API-0.010-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-API-0.010-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "372501427db6b250ca4c3fecbbb5976a9a09a02d7bd1adfd6f2415a0bf121a39"
 
-URI_x86_64_v2_perl-Test-API = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-API-0.010-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-API;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-API}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-API-0.010-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-API;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-API.sha256sum] = "48fc533d8ed1466bde5d5ec8315d591cd9f027602f8d4329470094e4a0168c04"
 
-URI_aarch64_perl-Test-API = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-API-0.010-17.el10_0.noarch.rpm;name=aarch64_perl-Test-API;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-API}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-API-0.010-17.el10_0.noarch.rpm;name=aarch64_perl-Test-API;unpack=0"
 SRC_URI[aarch64_perl-Test-API.sha256sum] = "1239860a14af574de944cf0ece7bc006078e8e59a62dbaeca8cd9bbcc21dc3ac"
 
 RDEPENDS:perl-Test-API = " \

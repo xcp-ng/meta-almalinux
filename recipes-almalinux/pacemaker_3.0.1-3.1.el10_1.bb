@@ -11,32 +11,25 @@ PACKAGES = " \
  pacemaker-schemas \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/pacemaker-3.0.1-3.1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/pacemaker-3.0.1-3.1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7758b13a64b6a075232cf161e78d85e8a6ed8a0fbe87f1a69000031c8f245616"
 
-URI_x86_64_v2_pacemaker-cluster-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-cluster-libs-3.0.1-3.1.el10_1.x86_64_v2.rpm;name=x86_64_v2_pacemaker-cluster-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pacemaker-cluster-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-cluster-libs-3.0.1-3.1.el10_1.x86_64_v2.rpm;name=x86_64_v2_pacemaker-cluster-libs;unpack=0"
 SRC_URI[x86_64_v2_pacemaker-cluster-libs.sha256sum] = "175dc1d7d1f5f65c1867e11b5a8c19395865e3dcc598ae387b4084eb373eb6f4"
 
-URI_x86_64_v2_pacemaker-libs = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-libs-3.0.1-3.1.el10_1.x86_64_v2.rpm;name=x86_64_v2_pacemaker-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pacemaker-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-libs-3.0.1-3.1.el10_1.x86_64_v2.rpm;name=x86_64_v2_pacemaker-libs;unpack=0"
 SRC_URI[x86_64_v2_pacemaker-libs.sha256sum] = "cc4350a1515b501343c8736d80891a9c50a0922898eb1be49c6b5cb5b90e65f9"
 
-URI_x86_64_v2_pacemaker-schemas = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-schemas-3.0.1-3.1.el10_1.noarch.rpm;name=x86_64_v2_pacemaker-schemas;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pacemaker-schemas}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pacemaker-schemas-3.0.1-3.1.el10_1.noarch.rpm;name=x86_64_v2_pacemaker-schemas;unpack=0"
 SRC_URI[x86_64_v2_pacemaker-schemas.sha256sum] = "10221b7dfe58801491b0190ddf1096282fc72caf033bb34c12550e0a81ffc8d6"
 
-URI_aarch64_pacemaker-cluster-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-cluster-libs-3.0.1-3.1.el10_1.aarch64.rpm;name=aarch64_pacemaker-cluster-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pacemaker-cluster-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-cluster-libs-3.0.1-3.1.el10_1.aarch64.rpm;name=aarch64_pacemaker-cluster-libs;unpack=0"
 SRC_URI[aarch64_pacemaker-cluster-libs.sha256sum] = "bc65bdd364cc72fc97365129394b2ddb4d062327042b45f58ce0949648faad90"
 
-URI_aarch64_pacemaker-libs = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-libs-3.0.1-3.1.el10_1.aarch64.rpm;name=aarch64_pacemaker-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pacemaker-libs}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-libs-3.0.1-3.1.el10_1.aarch64.rpm;name=aarch64_pacemaker-libs;unpack=0"
 SRC_URI[aarch64_pacemaker-libs.sha256sum] = "4c82caf246e0dc448d27741138adfb3dad730a8d7d0a60f9d3c780d57f6b5827"
 
-URI_aarch64_pacemaker-schemas = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-schemas-3.0.1-3.1.el10_1.noarch.rpm;name=aarch64_pacemaker-schemas;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pacemaker-schemas}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/pacemaker-schemas-3.0.1-3.1.el10_1.noarch.rpm;name=aarch64_pacemaker-schemas;unpack=0"
 SRC_URI[aarch64_pacemaker-schemas.sha256sum] = "10221b7dfe58801491b0190ddf1096282fc72caf033bb34c12550e0a81ffc8d6"
 
 RDEPENDS:pacemaker-cluster-libs = " \

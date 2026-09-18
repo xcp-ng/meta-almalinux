@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-autodie \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-autodie-2.37-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-autodie-2.37-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ec3cbb5b9bce8b1392e1c0240134da2a36cafd0fe5c6d60cf7ef16ef651e899f"
 
-URI_x86_64_v2_perl-autodie = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;name=x86_64_v2_perl-autodie;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-autodie}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;name=x86_64_v2_perl-autodie;unpack=0"
 SRC_URI[x86_64_v2_perl-autodie.sha256sum] = "eaef9a8864dab0bb3e507f4dad0bc90c3bd75037ce8262fd32a8642b578210e1"
 
-URI_aarch64_perl-autodie = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;name=aarch64_perl-autodie;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-autodie}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;name=aarch64_perl-autodie;unpack=0"
 SRC_URI[aarch64_perl-autodie.sha256sum] = "eaef9a8864dab0bb3e507f4dad0bc90c3bd75037ce8262fd32a8642b578210e1"
 
 RDEPENDS:perl-autodie = " \

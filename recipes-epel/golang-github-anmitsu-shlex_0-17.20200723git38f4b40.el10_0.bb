@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-anmitsu-shlex-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-anmitsu-shlex-0-17.20200723git38f4b40.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-anmitsu-shlex-0-17.20200723git38f4b40.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b1d94fbee19f111e41177daaa2deff89cfb57d818ef0f98d941514f526618f0f"
 
-URI_aarch64_golang-github-anmitsu-shlex-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-anmitsu-shlex-devel-0-17.20200723git38f4b40.el10_0.noarch.rpm;name=aarch64_golang-github-anmitsu-shlex-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-anmitsu-shlex-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-anmitsu-shlex-devel-0-17.20200723git38f4b40.el10_0.noarch.rpm;name=aarch64_golang-github-anmitsu-shlex-devel;unpack=0"
 SRC_URI[aarch64_golang-github-anmitsu-shlex-devel.sha256sum] = "58e0e65300881bf479ed6ec64e6e6dc8aafcbe0498d3ec435640c137dd073e4a"
 
 RDEPENDS:golang-github-anmitsu-shlex-devel = " \

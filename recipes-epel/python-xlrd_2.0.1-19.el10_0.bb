@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-xlrd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-xlrd-2.0.1-19.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-xlrd-2.0.1-19.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2e6b8e78c22eaedb7099f0f89e75ef625b0731a40534530ab4559b4e154d0c34"
 
-URI_x86_64_v2_python3-xlrd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xlrd-2.0.1-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xlrd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-xlrd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xlrd-2.0.1-19.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xlrd;unpack=0"
 SRC_URI[x86_64_v2_python3-xlrd.sha256sum] = "7725ab6e2dfecad00e8fbf31c36c4a5331a10b2b6d312171b18ee246bf8f764d"
 
-URI_aarch64_python3-xlrd = "${EPEL_MIRROR}/aarch64/Packages/p/python3-xlrd-2.0.1-19.el10_0.noarch.rpm;name=aarch64_python3-xlrd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-xlrd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-xlrd-2.0.1-19.el10_0.noarch.rpm;name=aarch64_python3-xlrd;unpack=0"
 SRC_URI[aarch64_python3-xlrd.sha256sum] = "7a3e4d6fda1c876d5fc34b41081bd132e285acc05d86b191e24f0260fb50daca"
 
 RDEPENDS:python3-xlrd = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-zip-archive-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-zip-archive-0.4.3.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-zip-archive-0.4.3.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "609f5ec827d0e5f0e1a4079ff71ff5d9d2085456a02f63820d177ba1b15be94c"
 
-URI_x86_64_v2_ghc-zip-archive = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-zip-archive}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive;unpack=0"
 SRC_URI[x86_64_v2_ghc-zip-archive.sha256sum] = "5d0f10d4836ebe36a0f274a9bd2e7d8acf008485e79379ed3b3d8749dbd65d00"
 
-URI_x86_64_v2_ghc-zip-archive-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-devel-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-zip-archive-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-devel-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-zip-archive-devel.sha256sum] = "a50261998ff740077f54708e46b85efe6cca5ce2a5151d40a56e6000452ba9b3"
 
-URI_x86_64_v2_ghc-zip-archive-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-doc-0.4.3.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-zip-archive-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-zip-archive-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-doc-0.4.3.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-zip-archive-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-zip-archive-doc.sha256sum] = "4816e8175f23b38ce1fbf11a44381bea1c022ffa7cf2616e92623eb05d0c2d3d"
 
-URI_x86_64_v2_ghc-zip-archive-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-prof-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-zip-archive-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-zip-archive-prof-0.4.3.2-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-zip-archive-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-zip-archive-prof.sha256sum] = "21c133462d5619f597a507992fa7104f0d5eaa02c0f1d3309aba8a758d068d9a"
 
-URI_aarch64_ghc-zip-archive = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-zip-archive}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive;unpack=0"
 SRC_URI[aarch64_ghc-zip-archive.sha256sum] = "d96cef8d7ddf9129cb5b15c7f00ae41151f94738ce8c86e0a9f8e808af16896b"
 
-URI_aarch64_ghc-zip-archive-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-devel-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-zip-archive-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-devel-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive-devel;unpack=0"
 SRC_URI[aarch64_ghc-zip-archive-devel.sha256sum] = "81e555525f73d3cf146d4b11dc79e8a6dea929b5f22bf1bcf9df8c698ac84bb8"
 
-URI_aarch64_ghc-zip-archive-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-doc-0.4.3.2-1.el10_0.noarch.rpm;name=aarch64_ghc-zip-archive-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-zip-archive-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-doc-0.4.3.2-1.el10_0.noarch.rpm;name=aarch64_ghc-zip-archive-doc;unpack=0"
 SRC_URI[aarch64_ghc-zip-archive-doc.sha256sum] = "6403c6da144a8f7b2b54f9313673c4d44b01be8c43db3e165101df31990d9ff9"
 
-URI_aarch64_ghc-zip-archive-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-prof-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-zip-archive-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-zip-archive-prof-0.4.3.2-1.el10_0.aarch64.rpm;name=aarch64_ghc-zip-archive-prof;unpack=0"
 SRC_URI[aarch64_ghc-zip-archive-prof.sha256sum] = "d4f32c4ddc8075e03a1528019ede41591a8f522739333f8918ebdbd095a28575"
 
 RDEPENDS:ghc-zip-archive = " \

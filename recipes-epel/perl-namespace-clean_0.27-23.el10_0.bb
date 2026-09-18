@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-namespace-clean \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-namespace-clean-0.27-23.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-namespace-clean-0.27-23.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1fb724565f829c82368801e897525e45b253f2e3e9ab7853ea7803e0a740bd89"
 
-URI_x86_64_v2_perl-namespace-clean = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-namespace-clean-0.27-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-namespace-clean;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-namespace-clean}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-namespace-clean-0.27-23.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-namespace-clean;unpack=0"
 SRC_URI[x86_64_v2_perl-namespace-clean.sha256sum] = "28335e1341ae134cbc8545283eb711098b9fa6f5439697b6ea5ece30b47a50b2"
 
-URI_aarch64_perl-namespace-clean = "${EPEL_MIRROR}/aarch64/Packages/p/perl-namespace-clean-0.27-23.el10_0.noarch.rpm;name=aarch64_perl-namespace-clean;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-namespace-clean}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-namespace-clean-0.27-23.el10_0.noarch.rpm;name=aarch64_perl-namespace-clean;unpack=0"
 SRC_URI[aarch64_perl-namespace-clean.sha256sum] = "59bad1293980d7625127f81c5420d8c9da00996db26e6cf3a4db187aba7454ef"
 
 RDEPENDS:perl-namespace-clean = " \

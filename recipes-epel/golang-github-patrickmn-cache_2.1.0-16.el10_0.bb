@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-patrickmn-cache-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-patrickmn-cache-2.1.0-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-patrickmn-cache-2.1.0-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8a90ddc23b8ea040ee3fea5322beff3fa5e1258f2f565bcc49f93caa18ee3597"
 
-URI_x86_64_v2_golang-github-patrickmn-cache-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-patrickmn-cache-devel-2.1.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-patrickmn-cache-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-patrickmn-cache-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-patrickmn-cache-devel-2.1.0-16.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-patrickmn-cache-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-patrickmn-cache-devel.sha256sum] = "3a35849bee32dbbcf191510e874781da5474b914cf05e5194ee4a02af40718be"
 
-URI_aarch64_golang-github-patrickmn-cache-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-patrickmn-cache-devel-2.1.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-patrickmn-cache-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-patrickmn-cache-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-patrickmn-cache-devel-2.1.0-16.el10_0.noarch.rpm;name=aarch64_golang-github-patrickmn-cache-devel;unpack=0"
 SRC_URI[aarch64_golang-github-patrickmn-cache-devel.sha256sum] = "97d2d7d475dbb8be018c6e2f7def91bf3db04e9f969dbdd35219ab5924d0f81b"
 
 RDEPENDS:golang-github-patrickmn-cache-devel = " \

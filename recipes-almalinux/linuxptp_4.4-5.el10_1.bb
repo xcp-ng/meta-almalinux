@@ -10,24 +10,19 @@ PACKAGES = " \
  linuxptp-selinux \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/linuxptp-4.4-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/linuxptp-4.4-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4a24fc84963504ed8b0ff1bcd4900a7380144330198d90cf75b75c1886b439a1"
 
-URI_x86_64_v2_linuxptp = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/linuxptp-4.4-5.el10_1.x86_64_v2.rpm;name=x86_64_v2_linuxptp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_linuxptp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/linuxptp-4.4-5.el10_1.x86_64_v2.rpm;name=x86_64_v2_linuxptp;unpack=0"
 SRC_URI[x86_64_v2_linuxptp.sha256sum] = "9ea5b445afc394e3e695ce8fae89130e462196943943afd7468ed8b9b19601d7"
 
-URI_x86_64_v2_linuxptp-selinux = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/linuxptp-selinux-4.4-5.el10_1.noarch.rpm;name=x86_64_v2_linuxptp-selinux;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_linuxptp-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/linuxptp-selinux-4.4-5.el10_1.noarch.rpm;name=x86_64_v2_linuxptp-selinux;unpack=0"
 SRC_URI[x86_64_v2_linuxptp-selinux.sha256sum] = "81844b52191c51fa6746f5e243ac124d98c178b069c3ee1fc6786f2579d9ea0a"
 
-URI_aarch64_linuxptp = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/linuxptp-4.4-5.el10_1.aarch64.rpm;name=aarch64_linuxptp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_linuxptp}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/linuxptp-4.4-5.el10_1.aarch64.rpm;name=aarch64_linuxptp;unpack=0"
 SRC_URI[aarch64_linuxptp.sha256sum] = "70d5aaa681685a210341e88ef62b546cdd1644c57f7efd8ea43b0d22e72a6790"
 
-URI_aarch64_linuxptp-selinux = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/linuxptp-selinux-4.4-5.el10_1.noarch.rpm;name=aarch64_linuxptp-selinux;unpack=0"
-SRC_URI:append = " ${URI_aarch64_linuxptp-selinux}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/linuxptp-selinux-4.4-5.el10_1.noarch.rpm;name=aarch64_linuxptp-selinux;unpack=0"
 SRC_URI[aarch64_linuxptp-selinux.sha256sum] = "81844b52191c51fa6746f5e243ac124d98c178b069c3ee1fc6786f2579d9ea0a"
 
 RDEPENDS:linuxptp = " \

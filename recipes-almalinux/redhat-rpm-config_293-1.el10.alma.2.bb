@@ -9,8 +9,7 @@ PACKAGES = " \
  redhat-rpm-config \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/redhat-rpm-config-293-1.el10.alma.2.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/redhat-rpm-config-293-1.el10.alma.2.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "42d103871654ec8a376183d9de770b3b88b1645393c349d0d816f1448ac319c4"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -19,12 +18,10 @@ SRC_URI[src.sha256sum] = "42d103871654ec8a376183d9de770b3b88b1645393c349d0d816f1
 ## Requires (aarch64) that were seen as not satisfiable in original repo:
 # - redhat-rpm-config: ocaml-srpm-macros
 
-URI_x86_64_v2_redhat-rpm-config = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/redhat-rpm-config-293-1.el10.alma.2.noarch.rpm;name=x86_64_v2_redhat-rpm-config;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_redhat-rpm-config}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/redhat-rpm-config-293-1.el10.alma.2.noarch.rpm;name=x86_64_v2_redhat-rpm-config;unpack=0"
 SRC_URI[x86_64_v2_redhat-rpm-config.sha256sum] = "f4fa8b295cf9488f06d7974ba87c4df44365c422b1f02fefd676f6e5b21166dc"
 
-URI_aarch64_redhat-rpm-config = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/redhat-rpm-config-293-1.el10.alma.2.noarch.rpm;name=aarch64_redhat-rpm-config;unpack=0"
-SRC_URI:append = " ${URI_aarch64_redhat-rpm-config}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/redhat-rpm-config-293-1.el10.alma.2.noarch.rpm;name=aarch64_redhat-rpm-config;unpack=0"
 SRC_URI[aarch64_redhat-rpm-config.sha256sum] = "f4fa8b295cf9488f06d7974ba87c4df44365c422b1f02fefd676f6e5b21166dc"
 
 RDEPENDS:redhat-rpm-config = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-testing.common.database \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-testing.common.database-2.0.3-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-testing.common.database-2.0.3-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "95819067e0da33b8dc447a0a04120f125dc0f87b70e2dfe6df73e027117c6762"
 
-URI_x86_64_v2_python3-testing.common.database = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testing.common.database-2.0.3-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testing.common.database;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-testing.common.database}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testing.common.database-2.0.3-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testing.common.database;unpack=0"
 SRC_URI[x86_64_v2_python3-testing.common.database.sha256sum] = "5d5d445871de25fa028477ec3b56896db73bb72da228a8d3ed4b6203690d09ae"
 
-URI_aarch64_python3-testing.common.database = "${EPEL_MIRROR}/aarch64/Packages/p/python3-testing.common.database-2.0.3-17.el10_0.noarch.rpm;name=aarch64_python3-testing.common.database;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-testing.common.database}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-testing.common.database-2.0.3-17.el10_0.noarch.rpm;name=aarch64_python3-testing.common.database;unpack=0"
 SRC_URI[aarch64_python3-testing.common.database.sha256sum] = "7f0027e79bb87d3540832261c71f085d54ba7ae489de1a7c8e54653951fe6b8b"
 
 RDEPENDS:python3-testing.common.database = " \

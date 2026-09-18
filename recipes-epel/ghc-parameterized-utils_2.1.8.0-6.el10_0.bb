@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-parameterized-utils-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-parameterized-utils-2.1.8.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-parameterized-utils-2.1.8.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5f21eb797cd9cfd093eef4d1cc3f64cbf188ec97fc187f945ea8360d9d9003de"
 
-URI_x86_64_v2_ghc-parameterized-utils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parameterized-utils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils;unpack=0"
 SRC_URI[x86_64_v2_ghc-parameterized-utils.sha256sum] = "e7ae6306e8b3b61c422c73fc931a03e45a855898350245336eb24d17e5c7f780"
 
-URI_x86_64_v2_ghc-parameterized-utils-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-devel-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parameterized-utils-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-devel-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-parameterized-utils-devel.sha256sum] = "91365443d4606b19a9f769178770c8b16c4a0581620e58b4537f8a0a34cc0109"
 
-URI_x86_64_v2_ghc-parameterized-utils-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-doc-2.1.8.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-parameterized-utils-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parameterized-utils-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-doc-2.1.8.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-parameterized-utils-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-parameterized-utils-doc.sha256sum] = "27489ba4c747213295288b2fea6051198b57f4e8aedfc4de0c2dbb762aa155d0"
 
-URI_x86_64_v2_ghc-parameterized-utils-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-prof-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-parameterized-utils-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-parameterized-utils-prof-2.1.8.0-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-parameterized-utils-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-parameterized-utils-prof.sha256sum] = "e4186f74dbabc95e21fa1c3f0183e0256baead57d7917ba9e86be783de2bc3c5"
 
-URI_aarch64_ghc-parameterized-utils = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parameterized-utils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils;unpack=0"
 SRC_URI[aarch64_ghc-parameterized-utils.sha256sum] = "8bac5a8abb4f74d553f5d1342d42c613ac73bfba4b72b8a61638ee7000bfa2ad"
 
-URI_aarch64_ghc-parameterized-utils-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-devel-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parameterized-utils-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-devel-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils-devel;unpack=0"
 SRC_URI[aarch64_ghc-parameterized-utils-devel.sha256sum] = "e19cc8a624d645a0a0f764375851deeedb71d809c63a505ffc28a5d7d7fa2ac0"
 
-URI_aarch64_ghc-parameterized-utils-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-doc-2.1.8.0-6.el10_0.noarch.rpm;name=aarch64_ghc-parameterized-utils-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parameterized-utils-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-doc-2.1.8.0-6.el10_0.noarch.rpm;name=aarch64_ghc-parameterized-utils-doc;unpack=0"
 SRC_URI[aarch64_ghc-parameterized-utils-doc.sha256sum] = "24ac9e2a141d2c4e688cc58bf5dd14c366f5997361f58cd6ec5e20b9fdf7ae93"
 
-URI_aarch64_ghc-parameterized-utils-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-prof-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-parameterized-utils-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-parameterized-utils-prof-2.1.8.0-6.el10_0.aarch64.rpm;name=aarch64_ghc-parameterized-utils-prof;unpack=0"
 SRC_URI[aarch64_ghc-parameterized-utils-prof.sha256sum] = "79b68f79cb22417862b2fb1cb558c55a3ce2dcf62bf8a6084e4e51f1ce36439f"
 
 RDEPENDS:ghc-parameterized-utils = " \

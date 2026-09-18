@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-installer \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-installer-0.7.0-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/python-installer-0.7.0-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e36e4c3498012d62dc2771ebbec1dbdc4abdd15c880670ede7af858283d8ad95"
 
-URI_x86_64_v2_python3-installer = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-installer-0.7.0-7.el10.noarch.rpm;name=x86_64_v2_python3-installer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-installer}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/python3-installer-0.7.0-7.el10.noarch.rpm;name=x86_64_v2_python3-installer;unpack=0"
 SRC_URI[x86_64_v2_python3-installer.sha256sum] = "66012163b2fc6276aa39742dbd418a5e8a904f43482eee978e9f084b5fc668cb"
 
-URI_aarch64_python3-installer = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-installer-0.7.0-7.el10.noarch.rpm;name=aarch64_python3-installer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-installer}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/python3-installer-0.7.0-7.el10.noarch.rpm;name=aarch64_python3-installer;unpack=0"
 SRC_URI[aarch64_python3-installer.sha256sum] = "66012163b2fc6276aa39742dbd418a5e8a904f43482eee978e9f084b5fc668cb"
 
 RDEPENDS:python3-installer = " \

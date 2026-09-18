@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colorlog \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colorlog-6.9.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colorlog-6.9.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "abae8f2d719a0480104f6954495327bd166c3f05176e3b2cbe4907e48f899d93"
 
-URI_x86_64_v2_python3-colorlog = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colorlog-6.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colorlog;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colorlog}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colorlog-6.9.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colorlog;unpack=0"
 SRC_URI[x86_64_v2_python3-colorlog.sha256sum] = "d61041f60317d85e36492c04ba5a7db0e692576eb531a4dbde95e2e0058ff235"
 
-URI_aarch64_python3-colorlog = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colorlog-6.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-colorlog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colorlog}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colorlog-6.9.0-1.el10_0.noarch.rpm;name=aarch64_python3-colorlog;unpack=0"
 SRC_URI[aarch64_python3-colorlog.sha256sum] = "4ad94bceb7b33f04fca8311762854a5e8964b76950ad27cf6cfe7d92318910c2"
 
 RDEPENDS:python3-colorlog = " \

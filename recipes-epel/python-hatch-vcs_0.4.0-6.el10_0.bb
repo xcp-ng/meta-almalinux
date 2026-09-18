@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-hatch-vcs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-hatch-vcs-0.4.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hatch-vcs-0.4.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7ab083bc702ed1de115400b2ca9049ed87ca72216ee74153e385d2ef48f18820"
 
-URI_x86_64_v2_python3-hatch-vcs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hatch-vcs-0.4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hatch-vcs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hatch-vcs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hatch-vcs-0.4.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hatch-vcs;unpack=0"
 SRC_URI[x86_64_v2_python3-hatch-vcs.sha256sum] = "db91070ba7e878ee06bba29917c66feda1056c2e9bdf5eba657f195912654b9a"
 
-URI_aarch64_python3-hatch-vcs = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hatch-vcs-0.4.0-6.el10_0.noarch.rpm;name=aarch64_python3-hatch-vcs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hatch-vcs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hatch-vcs-0.4.0-6.el10_0.noarch.rpm;name=aarch64_python3-hatch-vcs;unpack=0"
 SRC_URI[aarch64_python3-hatch-vcs.sha256sum] = "3894f63c22a864d4914a0340f082247d0177693d2272226312ddfcd1e4edf6e8"
 
 RDEPENDS:python3-hatch-vcs = " \

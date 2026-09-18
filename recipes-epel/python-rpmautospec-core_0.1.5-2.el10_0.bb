@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-rpmautospec-core \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-rpmautospec-core-0.1.5-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rpmautospec-core-0.1.5-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4c1aeccdcb136e87eb47c382fb7c91dea3e8f8b30f787f976cc905528136bdad"
 
-URI_x86_64_v2_python3-rpmautospec-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rpmautospec-core-0.1.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rpmautospec-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rpmautospec-core}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rpmautospec-core-0.1.5-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rpmautospec-core;unpack=0"
 SRC_URI[x86_64_v2_python3-rpmautospec-core.sha256sum] = "fc9062cd00ee8c28556d0b5d4ae33e9bdc79666dd39f400b20e521a17943ffee"
 
-URI_aarch64_python3-rpmautospec-core = "${EPEL_MIRROR}/aarch64/Packages/p/python3-rpmautospec-core-0.1.5-2.el10_0.noarch.rpm;name=aarch64_python3-rpmautospec-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rpmautospec-core}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rpmautospec-core-0.1.5-2.el10_0.noarch.rpm;name=aarch64_python3-rpmautospec-core;unpack=0"
 SRC_URI[aarch64_python3-rpmautospec-core.sha256sum] = "c414252091d7a41274c07aa3556ec25a03cf18ec6227eba3a9e01dcdfcde5ea1"
 
 RDEPENDS:python3-rpmautospec-core = " \

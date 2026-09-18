@@ -9,16 +9,13 @@ PACKAGES = " \
  globus-gass-cache-program \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/globus-gass-cache-program-7.0-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/globus-gass-cache-program-7.0-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "668d7e7b0f5fab83dbf84e601374e21fa62ddb4a74584f7e18e5ee0464c36982"
 
-URI_x86_64_v2_globus-gass-cache-program = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gass-cache-program-7.0-13.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gass-cache-program;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gass-cache-program}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gass-cache-program-7.0-13.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gass-cache-program;unpack=0"
 SRC_URI[x86_64_v2_globus-gass-cache-program.sha256sum] = "82f87fcf6a0f4ef640f3a9b5ec00d388ef756182b094782eee5e08eee8d2502c"
 
-URI_aarch64_globus-gass-cache-program = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gass-cache-program-7.0-13.el10_0.aarch64.rpm;name=aarch64_globus-gass-cache-program;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gass-cache-program}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gass-cache-program-7.0-13.el10_0.aarch64.rpm;name=aarch64_globus-gass-cache-program;unpack=0"
 SRC_URI[aarch64_globus-gass-cache-program.sha256sum] = "8abe475496418febcbb58ac58565c6354036456bd8779e1f3d8067b40bf9afca"
 
 RDEPENDS:globus-gass-cache-program = " \

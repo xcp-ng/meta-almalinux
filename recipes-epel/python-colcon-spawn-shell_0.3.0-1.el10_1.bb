@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colcon-spawn-shell \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colcon-spawn-shell-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colcon-spawn-shell-0.3.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6fbd38c7a2ec0cbaa751dc7b579b651c2ef8ad720a3eb70f132551a13d5b3d80"
 
-URI_x86_64_v2_python3-colcon-spawn-shell = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-spawn-shell-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-spawn-shell;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colcon-spawn-shell}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colcon-spawn-shell-0.3.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colcon-spawn-shell;unpack=0"
 SRC_URI[x86_64_v2_python3-colcon-spawn-shell.sha256sum] = "4230023a8bbb2ca62aa38b2aca2764be029ebc4bcdfa9fce397c36551b22f708"
 
-URI_aarch64_python3-colcon-spawn-shell = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-spawn-shell-0.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-spawn-shell;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colcon-spawn-shell}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colcon-spawn-shell-0.3.0-1.el10_1.noarch.rpm;name=aarch64_python3-colcon-spawn-shell;unpack=0"
 SRC_URI[aarch64_python3-colcon-spawn-shell.sha256sum] = "f9ae98e8503f2bfc995d689e0e4070bd922aeb4fda06ebd972705f576416b16b"
 
 RDEPENDS:python3-colcon-spawn-shell = " \

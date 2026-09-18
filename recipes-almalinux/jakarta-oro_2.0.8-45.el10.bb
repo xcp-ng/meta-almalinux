@@ -10,24 +10,19 @@ PACKAGES = " \
  jakarta-oro-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/jakarta-oro-2.0.8-45.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/jakarta-oro-2.0.8-45.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "297ae9ea1b49734ef7387d7e26f38bb3b64d2ea17e1d79fcd3acb142814059ae"
 
-URI_x86_64_v2_jakarta-oro = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/jakarta-oro-2.0.8-45.el10.noarch.rpm;name=x86_64_v2_jakarta-oro;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_jakarta-oro}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/jakarta-oro-2.0.8-45.el10.noarch.rpm;name=x86_64_v2_jakarta-oro;unpack=0"
 SRC_URI[x86_64_v2_jakarta-oro.sha256sum] = "92f7081e73147f24523fa2ee81f73e7493fbb1bf005dc8d4dbb991c6f70b329c"
 
-URI_x86_64_v2_jakarta-oro-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/jakarta-oro-javadoc-2.0.8-45.el10.noarch.rpm;name=x86_64_v2_jakarta-oro-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_jakarta-oro-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/jakarta-oro-javadoc-2.0.8-45.el10.noarch.rpm;name=x86_64_v2_jakarta-oro-javadoc;unpack=0"
 SRC_URI[x86_64_v2_jakarta-oro-javadoc.sha256sum] = "75e831d6a7e7174d91807340191454422adccf351af38ab23ae63ec946c438a9"
 
-URI_aarch64_jakarta-oro = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/jakarta-oro-2.0.8-45.el10.noarch.rpm;name=aarch64_jakarta-oro;unpack=0"
-SRC_URI:append = " ${URI_aarch64_jakarta-oro}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/jakarta-oro-2.0.8-45.el10.noarch.rpm;name=aarch64_jakarta-oro;unpack=0"
 SRC_URI[aarch64_jakarta-oro.sha256sum] = "92f7081e73147f24523fa2ee81f73e7493fbb1bf005dc8d4dbb991c6f70b329c"
 
-URI_aarch64_jakarta-oro-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/jakarta-oro-javadoc-2.0.8-45.el10.noarch.rpm;name=aarch64_jakarta-oro-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_jakarta-oro-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/jakarta-oro-javadoc-2.0.8-45.el10.noarch.rpm;name=aarch64_jakarta-oro-javadoc;unpack=0"
 SRC_URI[aarch64_jakarta-oro-javadoc.sha256sum] = "75e831d6a7e7174d91807340191454422adccf351af38ab23ae63ec946c438a9"
 
 RDEPENDS:jakarta-oro = " \

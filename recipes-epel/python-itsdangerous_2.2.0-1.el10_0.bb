@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-itsdangerous \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-itsdangerous-2.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-itsdangerous-2.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "40a08c8fd9055ddbcf432d0e47e62937da1279664e008f93a3760b1d89a35271"
 
-URI_x86_64_v2_python3-itsdangerous = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-itsdangerous-2.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-itsdangerous;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-itsdangerous}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-itsdangerous-2.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-itsdangerous;unpack=0"
 SRC_URI[x86_64_v2_python3-itsdangerous.sha256sum] = "799424b0b749b5bca1f650c131828b33c80d2a0d02c7d403ee0c13c64f6a2c3b"
 
-URI_aarch64_python3-itsdangerous = "${EPEL_MIRROR}/aarch64/Packages/p/python3-itsdangerous-2.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-itsdangerous;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-itsdangerous}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-itsdangerous-2.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-itsdangerous;unpack=0"
 SRC_URI[aarch64_python3-itsdangerous.sha256sum] = "a08c78a0bd6b36710f5f4bc6d9db666d13312f2908a7d8b8a8c1e59f3bb0c08f"
 
 RDEPENDS:python3-itsdangerous = " \

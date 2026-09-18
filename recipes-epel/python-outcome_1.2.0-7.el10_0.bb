@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-outcome \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-outcome-1.2.0-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-outcome-1.2.0-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ef72488f40024772908cc8ef3add865f048f04edb93dd3718c219f32189fa381"
 
-URI_x86_64_v2_python3-outcome = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-outcome-1.2.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-outcome;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-outcome}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-outcome-1.2.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-outcome;unpack=0"
 SRC_URI[x86_64_v2_python3-outcome.sha256sum] = "24787299bfa1942266c363e5922c84a0304fc672f004e1b93378282c88ebfe39"
 
-URI_aarch64_python3-outcome = "${EPEL_MIRROR}/aarch64/Packages/p/python3-outcome-1.2.0-7.el10_0.noarch.rpm;name=aarch64_python3-outcome;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-outcome}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-outcome-1.2.0-7.el10_0.noarch.rpm;name=aarch64_python3-outcome;unpack=0"
 SRC_URI[aarch64_python3-outcome.sha256sum] = "5c39dcf290224db5595be9180650134ec83237c1aa22ef1516227105e536cf22"
 
 RDEPENDS:python3-outcome = " \

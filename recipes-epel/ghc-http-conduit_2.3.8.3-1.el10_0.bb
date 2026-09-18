@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-conduit-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-conduit-2.3.8.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-conduit-2.3.8.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b819bb010b2510b284d3bfbbad32ea026f10d0581fba09f205770d0d0de2e354"
 
-URI_x86_64_v2_ghc-http-conduit = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-conduit}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-conduit.sha256sum] = "a36e8a6c58202cd0f3c5deab985e8127624804ef50e26ef079f1e7fcd7e73651"
 
-URI_x86_64_v2_ghc-http-conduit-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-devel-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-conduit-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-devel-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-conduit-devel.sha256sum] = "78044334c52f5269dee79e5c8cd82cd16fd6b1e72dd15eac1450e9cafb042d9b"
 
-URI_x86_64_v2_ghc-http-conduit-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-doc-2.3.8.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-conduit-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-conduit-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-doc-2.3.8.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-conduit-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-conduit-doc.sha256sum] = "dc3e16556296d55cfe24d412ac912df69249907cc88a6bf158c284d42ce1509a"
 
-URI_x86_64_v2_ghc-http-conduit-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-prof-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-conduit-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-conduit-prof-2.3.8.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-conduit-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-conduit-prof.sha256sum] = "d2b8dfd0b744276652a67bf148bc7ba121f6fe8c34be8d54502f7bbb55ffd755"
 
-URI_aarch64_ghc-http-conduit = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-conduit}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit;unpack=0"
 SRC_URI[aarch64_ghc-http-conduit.sha256sum] = "89e5e3d01beedfc3ac741e479b26475bf53f7c8a53d317f3a4bec4edeb7264a4"
 
-URI_aarch64_ghc-http-conduit-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-devel-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-conduit-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-devel-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-conduit-devel.sha256sum] = "3097fa9a0251c026e4e544c873415c363757b13449e129278750838cab8f1309"
 
-URI_aarch64_ghc-http-conduit-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-doc-2.3.8.3-1.el10_0.noarch.rpm;name=aarch64_ghc-http-conduit-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-conduit-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-doc-2.3.8.3-1.el10_0.noarch.rpm;name=aarch64_ghc-http-conduit-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-conduit-doc.sha256sum] = "ad8d18b176c711cc970ad76107ed554a1aa5f7b53bc594f047a64fcd5290e890"
 
-URI_aarch64_ghc-http-conduit-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-prof-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-conduit-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-conduit-prof-2.3.8.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-conduit-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-conduit-prof.sha256sum] = "c888184e35796d5f440d35a4f81aefa29e7bf32ffd71177e16c6f8b0855e7489"
 
 RDEPENDS:ghc-http-conduit = " \

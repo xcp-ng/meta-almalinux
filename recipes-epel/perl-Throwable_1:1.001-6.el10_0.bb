@@ -11,24 +11,19 @@ PACKAGES = " \
  perl-Throwable-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Throwable-1.001-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Throwable-1.001-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4147b9270a94adbc9062dc56313d8959371d24de8e96fd13b12bca618b4d45b"
 
-URI_x86_64_v2_perl-Throwable = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Throwable}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable;unpack=0"
 SRC_URI[x86_64_v2_perl-Throwable.sha256sum] = "b1ba5eaa5524b6a8f238a7b92970f7032725eb287beede4b72179921d93ab02d"
 
-URI_x86_64_v2_perl-Throwable-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-tests-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Throwable-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Throwable-tests-1.001-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Throwable-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Throwable-tests.sha256sum] = "f386fbf86ca8d20a5d4a5555671b33fe352abde565481fe9b79933713778b148"
 
-URI_aarch64_perl-Throwable = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Throwable-1.001-6.el10_0.noarch.rpm;name=aarch64_perl-Throwable;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Throwable}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Throwable-1.001-6.el10_0.noarch.rpm;name=aarch64_perl-Throwable;unpack=0"
 SRC_URI[aarch64_perl-Throwable.sha256sum] = "7766e2df6573798d057f3ee4db9ec23ed28daf8ac8300029d6b898d898853bb2"
 
-URI_aarch64_perl-Throwable-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Throwable-tests-1.001-6.el10_0.noarch.rpm;name=aarch64_perl-Throwable-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Throwable-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Throwable-tests-1.001-6.el10_0.noarch.rpm;name=aarch64_perl-Throwable-tests;unpack=0"
 SRC_URI[aarch64_perl-Throwable-tests.sha256sum] = "63c1543dd28e95cc958ad86f8a5ca775896b44abfa5046e38c9120b251590930"
 
 RDEPENDS:perl-Throwable = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kirigami-gallery \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kirigami-gallery-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kirigami-gallery-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "76f59e7331a8667c1fae8e27620d7bb15a0f45b8c5d97ac1248fc3d6b5b0a381"
 
-URI_x86_64_v2_kirigami-gallery = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kirigami-gallery-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kirigami-gallery;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kirigami-gallery}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kirigami-gallery-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kirigami-gallery;unpack=0"
 SRC_URI[x86_64_v2_kirigami-gallery.sha256sum] = "dcf45dba2c1e3f45103abd213020ac09b3ce8a9e6cd465a8e88c3368f82b09a4"
 
-URI_aarch64_kirigami-gallery = "${EPEL_MIRROR}/aarch64/Packages/k/kirigami-gallery-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kirigami-gallery;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kirigami-gallery}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kirigami-gallery-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kirigami-gallery;unpack=0"
 SRC_URI[aarch64_kirigami-gallery.sha256sum] = "b41ca0a5410cc9e7a4374573477f8d8cf0d5c31720cca5d79e0bc3e78fd1a142"
 
 RDEPENDS:kirigami-gallery = " \

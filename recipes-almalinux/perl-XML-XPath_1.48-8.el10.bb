@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-XPath \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-XPath-1.48-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-XML-XPath-1.48-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8ccca41862e9d56dcb9305caf2ba9e77adde543a131976cd8d01a5e5fa9eacec"
 
-URI_x86_64_v2_perl-XML-XPath = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;name=x86_64_v2_perl-XML-XPath;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-XPath}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;name=x86_64_v2_perl-XML-XPath;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-XPath.sha256sum] = "a9114b7b00d18589b90d40cd20f7e4d9dbce2a39fc40339be90a3cde29358f3a"
 
-URI_aarch64_perl-XML-XPath = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;name=aarch64_perl-XML-XPath;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-XPath}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;name=aarch64_perl-XML-XPath;unpack=0"
 SRC_URI[aarch64_perl-XML-XPath.sha256sum] = "a9114b7b00d18589b90d40cd20f7e4d9dbce2a39fc40339be90a3cde29358f3a"
 
 RDEPENDS:perl-XML-XPath = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  plasma-print-manager-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-print-manager-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-print-manager-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3c65fc158c2cef042ab7ff57ba7325a4165cce11bf897a9f09cd1052144bbb19"
 
-URI_x86_64_v2_plasma-print-manager = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-print-manager-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-print-manager;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-print-manager}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-print-manager-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-print-manager;unpack=0"
 SRC_URI[x86_64_v2_plasma-print-manager.sha256sum] = "608f10167f3f308da4972a8f8d50deecab15ba8ceaa5d850a335e9c80bcbfdc3"
 
-URI_x86_64_v2_plasma-print-manager-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-print-manager-libs-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-print-manager-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-print-manager-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-print-manager-libs-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-print-manager-libs;unpack=0"
 SRC_URI[x86_64_v2_plasma-print-manager-libs.sha256sum] = "5b79e227f2537bc7f8ca6490ef2fc6b2bb2550c32377b1e19cb0af2b0958b39c"
 
-URI_aarch64_plasma-print-manager = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-print-manager-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-print-manager;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-print-manager}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-print-manager-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-print-manager;unpack=0"
 SRC_URI[aarch64_plasma-print-manager.sha256sum] = "58412764af7790d6d7db4cee91334527aa8ff6f7203c906b2daf16be8f681408"
 
-URI_aarch64_plasma-print-manager-libs = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-print-manager-libs-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-print-manager-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-print-manager-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-print-manager-libs-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-print-manager-libs;unpack=0"
 SRC_URI[aarch64_plasma-print-manager-libs.sha256sum] = "cf969ef5e8a3f33a43d0b279c1c61e6e09f05d353c6900bc5dcb60bd75e154cb"
 
 RDEPENDS:plasma-print-manager = " \

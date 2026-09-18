@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-docs-theme \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-docs-theme-2024.6-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-docs-theme-2024.6-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3609394d878893047b27368d4c5738fd5ff94c1f254bda23fc44efb97845248d"
 
-URI_x86_64_v2_python3-docs-theme = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-docs-theme-2024.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-docs-theme;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-docs-theme}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-docs-theme-2024.6-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-docs-theme;unpack=0"
 SRC_URI[x86_64_v2_python3-docs-theme.sha256sum] = "ff08545cc381a263154438ad94304d3a2a26f7784e62f00471ddb24bb94b9d23"
 
-URI_aarch64_python3-docs-theme = "${EPEL_MIRROR}/aarch64/Packages/p/python3-docs-theme-2024.6-1.el10_0.noarch.rpm;name=aarch64_python3-docs-theme;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-docs-theme}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-docs-theme-2024.6-1.el10_0.noarch.rpm;name=aarch64_python3-docs-theme;unpack=0"
 SRC_URI[aarch64_python3-docs-theme.sha256sum] = "286fe38106f1cfec33eccfc6d5427c0599626fe422e1e7d62407f9eb9552af3a"
 
 RDEPENDS:python3-docs-theme = " \

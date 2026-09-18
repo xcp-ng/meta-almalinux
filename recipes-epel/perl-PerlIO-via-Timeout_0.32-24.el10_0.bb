@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-PerlIO-via-Timeout \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-PerlIO-via-Timeout-0.32-24.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-PerlIO-via-Timeout-0.32-24.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6247dbf01cca54eb3809c50a64a210ff02cf55c899093b1b9d80fde18fc15c30"
 
-URI_x86_64_v2_perl-PerlIO-via-Timeout = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PerlIO-via-Timeout-0.32-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PerlIO-via-Timeout;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PerlIO-via-Timeout}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PerlIO-via-Timeout-0.32-24.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PerlIO-via-Timeout;unpack=0"
 SRC_URI[x86_64_v2_perl-PerlIO-via-Timeout.sha256sum] = "978bd0d3928eec88364d6f20d635bd66222736fd1ebaeeadfca744cb1bde5620"
 
-URI_aarch64_perl-PerlIO-via-Timeout = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PerlIO-via-Timeout-0.32-24.el10_0.noarch.rpm;name=aarch64_perl-PerlIO-via-Timeout;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PerlIO-via-Timeout}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PerlIO-via-Timeout-0.32-24.el10_0.noarch.rpm;name=aarch64_perl-PerlIO-via-Timeout;unpack=0"
 SRC_URI[aarch64_perl-PerlIO-via-Timeout.sha256sum] = "5fe98dad34b9a55e3c2e5ef55feac5900e18a770276ae068a690c694d55fd1bd"
 
 RDEPENDS:perl-PerlIO-via-Timeout = " \

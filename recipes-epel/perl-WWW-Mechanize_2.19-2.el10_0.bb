@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-WWW-Mechanize \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-WWW-Mechanize-2.19-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-WWW-Mechanize-2.19-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "be10eec990c3189978ea155cd32084b0331efa513debc3ba2b7a0a0f4bd387ff"
 
-URI_x86_64_v2_perl-WWW-Mechanize = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Mechanize-2.19-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Mechanize;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-WWW-Mechanize}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-WWW-Mechanize-2.19-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-WWW-Mechanize;unpack=0"
 SRC_URI[x86_64_v2_perl-WWW-Mechanize.sha256sum] = "1296ab2c2306478bc12e4ee0aac170bd3291ad7881b06de02cab4a8f0d958aec"
 
-URI_aarch64_perl-WWW-Mechanize = "${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Mechanize-2.19-2.el10_0.noarch.rpm;name=aarch64_perl-WWW-Mechanize;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-WWW-Mechanize}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-WWW-Mechanize-2.19-2.el10_0.noarch.rpm;name=aarch64_perl-WWW-Mechanize;unpack=0"
 SRC_URI[aarch64_perl-WWW-Mechanize.sha256sum] = "6927d34f8dbbc22d3c6288d9ed91e26ee33d2a3ce0b9565c9f315bfb81f32bfc"
 
 RDEPENDS:perl-WWW-Mechanize = " \

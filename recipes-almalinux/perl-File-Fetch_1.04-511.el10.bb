@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-File-Fetch \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Fetch-1.04-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Fetch-1.04-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0fccfcc9b57ef825bdba5158b067ccc189e8024c77172dec7e72e36f09004bcb"
 
-URI_x86_64_v2_perl-File-Fetch = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Fetch-1.04-511.el10.noarch.rpm;name=x86_64_v2_perl-File-Fetch;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-File-Fetch}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Fetch-1.04-511.el10.noarch.rpm;name=x86_64_v2_perl-File-Fetch;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Fetch.sha256sum] = "8c3b277c9c859cff9c7df36c6e58f76b2007a60df736e966bcb674d07a0736dd"
 
-URI_aarch64_perl-File-Fetch = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Fetch-1.04-511.el10.noarch.rpm;name=aarch64_perl-File-Fetch;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-File-Fetch}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Fetch-1.04-511.el10.noarch.rpm;name=aarch64_perl-File-Fetch;unpack=0"
 SRC_URI[aarch64_perl-File-Fetch.sha256sum] = "8c3b277c9c859cff9c7df36c6e58f76b2007a60df736e966bcb674d07a0736dd"
 
 RDEPENDS:perl-File-Fetch = " \

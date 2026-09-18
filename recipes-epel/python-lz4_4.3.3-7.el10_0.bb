@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-lz4 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-lz4-4.3.3-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-lz4-4.3.3-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "838280d66c527fc7e0f9591dd9da286eceedaeede9e7709880e891a7c2e2d61b"
 
-URI_x86_64_v2_python3-lz4 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lz4-4.3.3-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-lz4;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-lz4}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lz4-4.3.3-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-lz4;unpack=0"
 SRC_URI[x86_64_v2_python3-lz4.sha256sum] = "7ecdd4d3de76d8f0557657a95830984d3322828a52fb24cb3763e5ba7b56d1cd"
 
-URI_aarch64_python3-lz4 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-lz4-4.3.3-7.el10_0.aarch64.rpm;name=aarch64_python3-lz4;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-lz4}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-lz4-4.3.3-7.el10_0.aarch64.rpm;name=aarch64_python3-lz4;unpack=0"
 SRC_URI[aarch64_python3-lz4.sha256sum] = "8051b97ed57d496bc1b1aa7f3cee6f983b810ee7fdc71f4d8b2215d63ef6d360"
 
 RDEPENDS:python3-lz4 = " \

@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-typed-process-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-typed-process-0.2.11.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-typed-process-0.2.11.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "36052b9a230f5fd985c03a04875cc213de3e5ded9b681b87528b670b04c2ad5b"
 
-URI_x86_64_v2_ghc-typed-process = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typed-process}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process;unpack=0"
 SRC_URI[x86_64_v2_ghc-typed-process.sha256sum] = "4352a1e22a31fbb44307ac67016f299da568f38da73534c41a3cf26cbfe17542"
 
-URI_x86_64_v2_ghc-typed-process-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-devel-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typed-process-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-devel-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-typed-process-devel.sha256sum] = "e3e7bb6294b09ae5a9d26b2e22eeb90238c9105edf60b4b37bf7387098588bff"
 
-URI_x86_64_v2_ghc-typed-process-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-doc-0.2.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-typed-process-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typed-process-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-doc-0.2.11.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-typed-process-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-typed-process-doc.sha256sum] = "3b48eb69c15ee99a8df1f8353945d5a52b174f7c92df04cbcc24556db656cf15"
 
-URI_x86_64_v2_ghc-typed-process-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-prof-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-typed-process-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-typed-process-prof-0.2.11.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-typed-process-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-typed-process-prof.sha256sum] = "c1a16badd698320281e8972892d9f36df33e91e2cf5f75eb2261c94ff8d8ad1b"
 
-URI_aarch64_ghc-typed-process = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typed-process}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process;unpack=0"
 SRC_URI[aarch64_ghc-typed-process.sha256sum] = "6b8a29828b3ee637d67c79e083ae1781e432877f96bd7fbcb3204c9b6177c976"
 
-URI_aarch64_ghc-typed-process-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-devel-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typed-process-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-devel-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process-devel;unpack=0"
 SRC_URI[aarch64_ghc-typed-process-devel.sha256sum] = "fe46ac6643cefbcd9969079812c36b8fcc7a9348dfd8d0da1b1ac9d6e3764213"
 
-URI_aarch64_ghc-typed-process-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-doc-0.2.11.1-1.el10_0.noarch.rpm;name=aarch64_ghc-typed-process-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typed-process-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-doc-0.2.11.1-1.el10_0.noarch.rpm;name=aarch64_ghc-typed-process-doc;unpack=0"
 SRC_URI[aarch64_ghc-typed-process-doc.sha256sum] = "c5daa169d1f50fdaa8cd1809f7f6e1d92d5a5392db27dafbba0ce19daed3f192"
 
-URI_aarch64_ghc-typed-process-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-prof-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-typed-process-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-typed-process-prof-0.2.11.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-typed-process-prof;unpack=0"
 SRC_URI[aarch64_ghc-typed-process-prof.sha256sum] = "96af84dbfdbdf0911da6c20357b567cc3719463a73c91e470175954fde01a550"
 
 RDEPENDS:ghc-typed-process = " \

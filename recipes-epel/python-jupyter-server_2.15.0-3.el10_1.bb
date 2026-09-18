@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-jupyter-server+test \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-server-2.15.0-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-server-2.15.0-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bd56e696bd6ee5ae7b4eb0fe519ba6eda235761a5218034957f4670e71a7ce89"
 
-URI_x86_64_v2_python3-jupyter-server = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-server-2.15.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jupyter-server}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-server-2.15.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-server;unpack=0"
 SRC_URI[x86_64_v2_python3-jupyter-server.sha256sum] = "26484203d42879f6aaa42d174a99f5f7c736d91260c4eeec3eeb46aca238e344"
 
-URI_x86_64_v2_python3-jupyter-server+test = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-server+test-2.15.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-server+test;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jupyter-server+test}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-server+test-2.15.0-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-server+test;unpack=0"
 SRC_URI[x86_64_v2_python3-jupyter-server+test.sha256sum] = "b216c3e61d0f7ccb57b4f31de3490553b903a6644ae0886fb072e15cbba1bec5"
 
-URI_aarch64_python3-jupyter-server = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-server-2.15.0-3.el10_1.noarch.rpm;name=aarch64_python3-jupyter-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jupyter-server}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-server-2.15.0-3.el10_1.noarch.rpm;name=aarch64_python3-jupyter-server;unpack=0"
 SRC_URI[aarch64_python3-jupyter-server.sha256sum] = "5d309f3bf2568fb1bc79532aef46c75ad1fdae98f207bf7e2976ffbd7f19c73e"
 
-URI_aarch64_python3-jupyter-server+test = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-server+test-2.15.0-3.el10_1.noarch.rpm;name=aarch64_python3-jupyter-server+test;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jupyter-server+test}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-server+test-2.15.0-3.el10_1.noarch.rpm;name=aarch64_python3-jupyter-server+test;unpack=0"
 SRC_URI[aarch64_python3-jupyter-server+test.sha256sum] = "cd1e3bd9c283c83855c68f541c623c5258596862d4c7c559a56e227d6c352d35"
 
 RDEPENDS:python3-jupyter-server = " \

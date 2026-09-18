@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-kajiki \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-kajiki-0.9.2-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-kajiki-0.9.2-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "226987dc06d50cec34c4f41b073ff51de42cd84e5441cd672c140ebb41745147"
 
-URI_x86_64_v2_python3-kajiki = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kajiki-0.9.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kajiki;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kajiki}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kajiki-0.9.2-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kajiki;unpack=0"
 SRC_URI[x86_64_v2_python3-kajiki.sha256sum] = "e59a0c5bea8911726b19f5fa9b2d2fd8f219f90dc3303dc88a82a5ab51da6411"
 
-URI_aarch64_python3-kajiki = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kajiki-0.9.2-8.el10_0.noarch.rpm;name=aarch64_python3-kajiki;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kajiki}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-kajiki-0.9.2-8.el10_0.noarch.rpm;name=aarch64_python3-kajiki;unpack=0"
 SRC_URI[aarch64_python3-kajiki.sha256sum] = "691f0794e8b2f4b867b3d3aa5b483c327af0ba0b3abee060b3778736f4907600"
 
 RDEPENDS:python3-kajiki = " \

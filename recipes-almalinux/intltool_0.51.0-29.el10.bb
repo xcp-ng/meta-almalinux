@@ -9,16 +9,13 @@ PACKAGES = " \
  intltool \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/intltool-0.51.0-29.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/intltool-0.51.0-29.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "c6e928032ad8343d2f7441a71dc319ecfcf0597072187e3d7ce505dccb11fc49"
 
-URI_x86_64_v2_intltool = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/intltool-0.51.0-29.el10.noarch.rpm;name=x86_64_v2_intltool;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_intltool}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/intltool-0.51.0-29.el10.noarch.rpm;name=x86_64_v2_intltool;unpack=0"
 SRC_URI[x86_64_v2_intltool.sha256sum] = "7b75a69d18f6bf82d34a2f4ccba4b982e86a8d42262d95a73d9cf9679652886c"
 
-URI_aarch64_intltool = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/intltool-0.51.0-29.el10.noarch.rpm;name=aarch64_intltool;unpack=0"
-SRC_URI:append = " ${URI_aarch64_intltool}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/intltool-0.51.0-29.el10.noarch.rpm;name=aarch64_intltool;unpack=0"
 SRC_URI[aarch64_intltool.sha256sum] = "7b75a69d18f6bf82d34a2f4ccba4b982e86a8d42262d95a73d9cf9679652886c"
 
 RDEPENDS:intltool = " \

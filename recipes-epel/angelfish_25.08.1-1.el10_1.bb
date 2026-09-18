@@ -9,16 +9,13 @@ PACKAGES = " \
  angelfish \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/angelfish-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/angelfish-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6eae5f5675d9c353ccd0515d680fc940bb0e5cd4a434b36b741a0de1eca51596"
 
-URI_x86_64_v2_angelfish = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/angelfish-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_angelfish;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_angelfish}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/angelfish-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_angelfish;unpack=0"
 SRC_URI[x86_64_v2_angelfish.sha256sum] = "5af2286938dab3be29a41f4827b1c2f300a610c4810f3540d5d2fd84d1554f04"
 
-URI_aarch64_angelfish = "${EPEL_MIRROR}/aarch64/Packages/a/angelfish-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_angelfish;unpack=0"
-SRC_URI:append = " ${URI_aarch64_angelfish}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/angelfish-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_angelfish;unpack=0"
 SRC_URI[aarch64_angelfish.sha256sum] = "8c40cbf47f975529f4f3c9274dbafe80abce464069f805d16ad0d1e2bcb698eb"
 
 RDEPENDS:angelfish = " \

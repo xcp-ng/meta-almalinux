@@ -9,8 +9,7 @@ PACKAGES = " \
  haruna \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/h/haruna-1.5.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/h/haruna-1.5.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "be847e9d883b2f86a87f30d82ee2a00909f153bb608edec74d8a3e1361af9ea0"
 
 ## Requires (x86_64_v2) that were seen as not satisfiable in original repo:
@@ -25,12 +24,10 @@ SRC_URI[src.sha256sum] = "be847e9d883b2f86a87f30d82ee2a00909f153bb608edec74d8a3e
 # - haruna: libswscale.so.8()(64bit)
 # - haruna: libswscale.so.8(LIBSWSCALE_8)(64bit)
 
-URI_x86_64_v2_haruna = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/haruna-1.5.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_haruna;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_haruna}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/haruna-1.5.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_haruna;unpack=0"
 SRC_URI[x86_64_v2_haruna.sha256sum] = "cca7877287680500b33f25b1661aa0486e4d9b77cafbde49a89fc7e3ccb20aba"
 
-URI_aarch64_haruna = "${EPEL_MIRROR}/aarch64/Packages/h/haruna-1.5.0-2.el10_1.aarch64.rpm;name=aarch64_haruna;unpack=0"
-SRC_URI:append = " ${URI_aarch64_haruna}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/h/haruna-1.5.0-2.el10_1.aarch64.rpm;name=aarch64_haruna;unpack=0"
 SRC_URI[aarch64_haruna.sha256sum] = "a34f07c2ce6d8191fa2ea1b15282442e4f9d3d01f841251fe1fa379761dac2da"
 
 RDEPENDS:haruna:x86_64_v2 = " \

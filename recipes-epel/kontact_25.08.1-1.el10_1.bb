@@ -10,24 +10,19 @@ PACKAGES = " \
  kontact-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kontact-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kontact-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "080325544735a806bac6d0df4b1f410194cfd5844d406ee4c5a420557d2f80e6"
 
-URI_x86_64_v2_kontact = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kontact-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kontact;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kontact}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kontact-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kontact;unpack=0"
 SRC_URI[x86_64_v2_kontact.sha256sum] = "111d4ebcfc21bb74ee7b0d0c1fdaf8fc67ec2e4499f8e37421e573a4a7d580c8"
 
-URI_x86_64_v2_kontact-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kontact-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kontact-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kontact-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kontact-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kontact-libs;unpack=0"
 SRC_URI[x86_64_v2_kontact-libs.sha256sum] = "3317e644696a6d80e970b4ccbe060c5aa179892a4c383b5fce1c68c6164ee483"
 
-URI_aarch64_kontact = "${EPEL_MIRROR}/aarch64/Packages/k/kontact-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kontact;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kontact}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kontact-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kontact;unpack=0"
 SRC_URI[aarch64_kontact.sha256sum] = "f147dbf59aa339526c17b1975c0e7c66248c64ae0dba48d072ab2957ab6d6680"
 
-URI_aarch64_kontact-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kontact-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kontact-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kontact-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kontact-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kontact-libs;unpack=0"
 SRC_URI[aarch64_kontact-libs.sha256sum] = "623f85416e0dce775c2f5c1b8247ddfb270830891cd270eadcdbd47f34b4a9b4"
 
 RDEPENDS:kontact = " \

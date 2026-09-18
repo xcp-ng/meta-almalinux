@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-settings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-settings-25.02.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-settings-25.02.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9cd4c80f7e247fbd711ba9bf6d581146396491e9c5aa9dee7342817b3a668215"
 
-URI_x86_64_v2_plasma-settings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-settings-25.02.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-settings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-settings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-settings-25.02.0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-settings;unpack=0"
 SRC_URI[x86_64_v2_plasma-settings.sha256sum] = "0d8ed6a57ef1d0305660c5c908ac9f028154c7cb78858c5d1ccc329b334fe50e"
 
-URI_aarch64_plasma-settings = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-settings-25.02.0-1.el10_1.aarch64.rpm;name=aarch64_plasma-settings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-settings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-settings-25.02.0-1.el10_1.aarch64.rpm;name=aarch64_plasma-settings;unpack=0"
 SRC_URI[aarch64_plasma-settings.sha256sum] = "5168b6264b417dd169003dd848a02e748504c4dc8d9342e36379806cacba83ea"
 
 RDEPENDS:plasma-settings = " \

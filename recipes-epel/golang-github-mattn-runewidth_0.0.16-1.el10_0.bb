@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-mattn-runewidth-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-mattn-runewidth-0.0.16-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-mattn-runewidth-0.0.16-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dababeccdd92d7f31f4780dc5e7ee2ce40ca94d472db7d2b1c2f32b1198ef53f"
 
-URI_x86_64_v2_golang-github-mattn-runewidth-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-mattn-runewidth-devel-0.0.16-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-mattn-runewidth-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-mattn-runewidth-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-mattn-runewidth-devel-0.0.16-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-mattn-runewidth-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-mattn-runewidth-devel.sha256sum] = "10be6935b560aecd0ce3f2f687fbfe03abbd8f7a40c4298dd23063598b32583f"
 
-URI_aarch64_golang-github-mattn-runewidth-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mattn-runewidth-devel-0.0.16-1.el10_0.noarch.rpm;name=aarch64_golang-github-mattn-runewidth-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-mattn-runewidth-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-mattn-runewidth-devel-0.0.16-1.el10_0.noarch.rpm;name=aarch64_golang-github-mattn-runewidth-devel;unpack=0"
 SRC_URI[aarch64_golang-github-mattn-runewidth-devel.sha256sum] = "ca516e1810f800e6562160afc8206a07499834fccab9b190510d16a0d8efd406"
 
 RDEPENDS:golang-github-mattn-runewidth-devel = " \

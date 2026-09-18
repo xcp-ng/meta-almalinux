@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-http-client-restricted-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-restricted-0.1.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-http-client-restricted-0.1.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "59bafb1c6141e7b3d5c42aa44ddae7df46c0dc369997ed53b0c0811a9ba3e469"
 
-URI_x86_64_v2_ghc-http-client-restricted = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-restricted}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-restricted.sha256sum] = "235bdae8853cd52675e8f314bc19ea6d5fcd12eec4dde5744275aaf64e547432"
 
-URI_x86_64_v2_ghc-http-client-restricted-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-devel-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-restricted-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-devel-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-restricted-devel.sha256sum] = "6b5666461ffb7c97aa18c975278e0202216e26176b717686cf9fc3c66f199ccd"
 
-URI_x86_64_v2_ghc-http-client-restricted-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-doc-0.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-restricted-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-restricted-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-doc-0.1.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-http-client-restricted-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-restricted-doc.sha256sum] = "6d385dd35dc913e40029c5f0f0bdce46589dc63e2bacec639dcf92f643c0071e"
 
-URI_x86_64_v2_ghc-http-client-restricted-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-prof-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-http-client-restricted-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-http-client-restricted-prof-0.1.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-http-client-restricted-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-http-client-restricted-prof.sha256sum] = "1a4ac0051202dd6e5b62b8fea704784950e29ec5eb5a36d1b489efcff8e0f9aa"
 
-URI_aarch64_ghc-http-client-restricted = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-restricted}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted;unpack=0"
 SRC_URI[aarch64_ghc-http-client-restricted.sha256sum] = "5f46eb264aa70514d43434cca0a1f3909e5b23a39139f77edf99a02c316dc349"
 
-URI_aarch64_ghc-http-client-restricted-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-devel-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-restricted-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-devel-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted-devel;unpack=0"
 SRC_URI[aarch64_ghc-http-client-restricted-devel.sha256sum] = "0d1667d6ee7c3317b7c115f485df1362e6000547d276feeca4a6d54c6f0d5292"
 
-URI_aarch64_ghc-http-client-restricted-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-doc-0.1.0-1.el10_0.noarch.rpm;name=aarch64_ghc-http-client-restricted-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-restricted-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-doc-0.1.0-1.el10_0.noarch.rpm;name=aarch64_ghc-http-client-restricted-doc;unpack=0"
 SRC_URI[aarch64_ghc-http-client-restricted-doc.sha256sum] = "730953121d0a6b130b88fe1fb9a0feabe9d9d13cb08e5b97fd2487aee676bc01"
 
-URI_aarch64_ghc-http-client-restricted-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-prof-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-http-client-restricted-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-http-client-restricted-prof-0.1.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-http-client-restricted-prof;unpack=0"
 SRC_URI[aarch64_ghc-http-client-restricted-prof.sha256sum] = "23155d0a2eda6ec380dba818e5ec2824e69f25e4e884762997c1e910dd203b65"
 
 RDEPENDS:ghc-http-client-restricted = " \

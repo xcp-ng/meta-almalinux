@@ -10,24 +10,19 @@ PACKAGES = " \
  taglib-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/taglib-1.13.1-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/taglib-1.13.1-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "92848d54488f514be9e58fe0f644cb968614348ade134949f9e03201b7109e92"
 
-URI_x86_64_v2_taglib = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/taglib-1.13.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_taglib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_taglib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/taglib-1.13.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_taglib;unpack=0"
 SRC_URI[x86_64_v2_taglib.sha256sum] = "6f5b577d17ed0b5bcdc8d78664b4851fc8f8014536214439e6160648499665c3"
 
-URI_x86_64_v2_taglib-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/taglib-devel-1.13.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_taglib-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_taglib-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/taglib-devel-1.13.1-1.el10.x86_64_v2.rpm;name=x86_64_v2_taglib-devel;unpack=0"
 SRC_URI[x86_64_v2_taglib-devel.sha256sum] = "12b22431c66acb46785f10fa91609b56f4621d63180f222229be6882a4796502"
 
-URI_aarch64_taglib = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/taglib-1.13.1-1.el10.aarch64.rpm;name=aarch64_taglib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_taglib}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/taglib-1.13.1-1.el10.aarch64.rpm;name=aarch64_taglib;unpack=0"
 SRC_URI[aarch64_taglib.sha256sum] = "a5028b5e1fe43eb90e73d10fb23fc36af865cc3de10b056bdc218a077046c92f"
 
-URI_aarch64_taglib-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/taglib-devel-1.13.1-1.el10.aarch64.rpm;name=aarch64_taglib-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_taglib-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/taglib-devel-1.13.1-1.el10.aarch64.rpm;name=aarch64_taglib-devel;unpack=0"
 SRC_URI[aarch64_taglib-devel.sha256sum] = "93a5ccf2a0748a0ff3eaedf88290c095ea874890815521e9fc5ec47be1f4d9bf"
 
 RDEPENDS:taglib = " \

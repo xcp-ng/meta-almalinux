@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-safchain-ethtool-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-safchain-ethtool-0-18.20210112git874930c.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-safchain-ethtool-0-18.20210112git874930c.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "04fa856121ec5245ed3830a4ab61c56f2c1c967848eca315b5342574873d7e20"
 
-URI_aarch64_golang-github-safchain-ethtool-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-safchain-ethtool-devel-0-18.20210112git874930c.el10_0.noarch.rpm;name=aarch64_golang-github-safchain-ethtool-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-safchain-ethtool-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-safchain-ethtool-devel-0-18.20210112git874930c.el10_0.noarch.rpm;name=aarch64_golang-github-safchain-ethtool-devel;unpack=0"
 SRC_URI[aarch64_golang-github-safchain-ethtool-devel.sha256sum] = "60b54d2666fb5112de52be2e59d1a5febb61886dd65e614458d75e86e0ae4657"
 
 RDEPENDS:golang-github-safchain-ethtool-devel = " \

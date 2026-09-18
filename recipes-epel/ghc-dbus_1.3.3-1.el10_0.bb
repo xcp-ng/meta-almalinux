@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-dbus-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-dbus-1.3.3-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-dbus-1.3.3-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2521ca0941a9697f74bc376dc3f690b17aa1a714a2b443ec5ae96341839ac92a"
 
-URI_x86_64_v2_ghc-dbus = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dbus}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus;unpack=0"
 SRC_URI[x86_64_v2_ghc-dbus.sha256sum] = "351a98f4935e9640be08d2617997bc886a7de39cfeaf4785a870138fedce7530"
 
-URI_x86_64_v2_ghc-dbus-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-devel-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dbus-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-devel-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-dbus-devel.sha256sum] = "a2e6ba3e90f2006cf92bc418ad7cdd5543cf53e822402484926d3e2883a20355"
 
-URI_x86_64_v2_ghc-dbus-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-doc-1.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dbus-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dbus-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-doc-1.3.3-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-dbus-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-dbus-doc.sha256sum] = "3240fe0498d7c02f79cc4b288a208f5d1eef745e9cd245c396827ff4e9c1dd9f"
 
-URI_x86_64_v2_ghc-dbus-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-prof-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-dbus-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-dbus-prof-1.3.3-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-dbus-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-dbus-prof.sha256sum] = "ea59574403f7f4846f636938973a98182c6abf8fb13807193ab274b11c359aba"
 
-URI_aarch64_ghc-dbus = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dbus}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus;unpack=0"
 SRC_URI[aarch64_ghc-dbus.sha256sum] = "36bcd20a64a3a2c9d0925bb4d9d2bf33a185ed77ae418f7e527e8a576f8dd6db"
 
-URI_aarch64_ghc-dbus-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-devel-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dbus-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-devel-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus-devel;unpack=0"
 SRC_URI[aarch64_ghc-dbus-devel.sha256sum] = "51de09df0a91ab7e9f1bd71e283c3a9509b38150f0db914e95f625f5eb737054"
 
-URI_aarch64_ghc-dbus-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-doc-1.3.3-1.el10_0.noarch.rpm;name=aarch64_ghc-dbus-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dbus-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-doc-1.3.3-1.el10_0.noarch.rpm;name=aarch64_ghc-dbus-doc;unpack=0"
 SRC_URI[aarch64_ghc-dbus-doc.sha256sum] = "46feee52d68417e9a5fa0dd53eda4f392a7ccae0e8b0b116b1d80e2708800ecb"
 
-URI_aarch64_ghc-dbus-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-prof-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-dbus-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-dbus-prof-1.3.3-1.el10_0.aarch64.rpm;name=aarch64_ghc-dbus-prof;unpack=0"
 SRC_URI[aarch64_ghc-dbus-prof.sha256sum] = "3e9635a2f23cc04106b3da638d068b9f3373c9b1b3743b6359e957aee1f5b241"
 
 RDEPENDS:ghc-dbus = " \

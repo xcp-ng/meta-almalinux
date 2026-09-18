@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-param-files \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-param-files-0.6.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-param-files-0.6.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe0d1c94751b422fbe84514634c8c6e050037137129598fe47ad9d8e3a3b26f3"
 
-URI_x86_64_v2_python3-pytest-param-files = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-param-files-0.6.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-param-files;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-param-files}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-param-files-0.6.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-param-files;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-param-files.sha256sum] = "cb1fe25fff7e6274cc3f5140bdb99f79c8674742694a16a6f17ec1969ed95252"
 
-URI_aarch64_python3-pytest-param-files = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-param-files-0.6.0-2.el10_0.noarch.rpm;name=aarch64_python3-pytest-param-files;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-param-files}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-param-files-0.6.0-2.el10_0.noarch.rpm;name=aarch64_python3-pytest-param-files;unpack=0"
 SRC_URI[aarch64_python3-pytest-param-files.sha256sum] = "4cb46d592df65e0399dcadbb0bdcfeb6af053b0533345f3b7317d63ff8e90b89"
 
 RDEPENDS:python3-pytest-param-files = " \

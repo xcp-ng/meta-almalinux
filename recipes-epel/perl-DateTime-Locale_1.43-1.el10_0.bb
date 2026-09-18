@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-DateTime-Locale-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-Locale-1.43-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DateTime-Locale-1.43-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b4b53c27497f5dd414114592bda46686db735c5f113c02522c2fe93d033aad4f"
 
-URI_x86_64_v2_perl-DateTime-Locale = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Locale-1.43-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Locale;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime-Locale}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Locale-1.43-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Locale;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime-Locale.sha256sum] = "cd112d538468a0a10f4b3494278f2e8f6d17e535dd96eeb29b120c04c8d5e619"
 
-URI_x86_64_v2_perl-DateTime-Locale-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Locale-tests-1.43-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Locale-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DateTime-Locale-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DateTime-Locale-tests-1.43-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DateTime-Locale-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-DateTime-Locale-tests.sha256sum] = "b9d5a308031e04266c460c01285afb7d86bd8a35377d11192c4c1c6dcfc61bc6"
 
-URI_aarch64_perl-DateTime-Locale = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Locale-1.43-1.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Locale;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime-Locale}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Locale-1.43-1.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Locale;unpack=0"
 SRC_URI[aarch64_perl-DateTime-Locale.sha256sum] = "878b730e9bd80102d2ecb1b050c4030ad8d50111eda3c94b739a8f113d8ebe6d"
 
-URI_aarch64_perl-DateTime-Locale-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Locale-tests-1.43-1.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Locale-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DateTime-Locale-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DateTime-Locale-tests-1.43-1.el10_0.noarch.rpm;name=aarch64_perl-DateTime-Locale-tests;unpack=0"
 SRC_URI[aarch64_perl-DateTime-Locale-tests.sha256sum] = "5da12742f8ab9cfc791d89160352c954963f7a938eac415aa51862fa43db6d23"
 
 RDEPENDS:perl-DateTime-Locale = " \

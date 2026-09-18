@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-unicode-truncate1-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-unicode-truncate1-1.0.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-unicode-truncate1-1.0.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af5815ee7710289fb1e68ed3da4779de36a95c66d303d2988cc0541c3c38146c"
 
-URI_x86_64_v2_rust-unicode-truncate1+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1+default-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-unicode-truncate1+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1+default-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unicode-truncate1+default-devel.sha256sum] = "443bf623e5a6e5252b2316735835268898a2241bd7b174d2d751df3e005e1d7e"
 
-URI_x86_64_v2_rust-unicode-truncate1+std-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1+std-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1+std-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-unicode-truncate1+std-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1+std-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1+std-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unicode-truncate1+std-devel.sha256sum] = "dea057b601136477b1b475af7214068938822bc6b272a8ebb9597e2ef787f52f"
 
-URI_x86_64_v2_rust-unicode-truncate1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-unicode-truncate1-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-unicode-truncate1-devel-1.0.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-unicode-truncate1-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-unicode-truncate1-devel.sha256sum] = "b69208267297001bdeb848e99c4d4e2c9cdb01897c1a8224b340b562bfac8e4f"
 
-URI_aarch64_rust-unicode-truncate1+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1+default-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-unicode-truncate1+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1+default-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1+default-devel;unpack=0"
 SRC_URI[aarch64_rust-unicode-truncate1+default-devel.sha256sum] = "a34338cf4bf42cae9eb2ea23b0b876238a479ce6bb6d9fbc137a9e0d5b6241cd"
 
-URI_aarch64_rust-unicode-truncate1+std-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1+std-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1+std-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-unicode-truncate1+std-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1+std-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1+std-devel;unpack=0"
 SRC_URI[aarch64_rust-unicode-truncate1+std-devel.sha256sum] = "5fb27b238c38552e61434b5a3156ebead1dcefe16a9eb8323b4ab9ae9f3c557a"
 
-URI_aarch64_rust-unicode-truncate1-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-unicode-truncate1-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-unicode-truncate1-devel-1.0.0-2.el10_1.noarch.rpm;name=aarch64_rust-unicode-truncate1-devel;unpack=0"
 SRC_URI[aarch64_rust-unicode-truncate1-devel.sha256sum] = "fad3964d1060f881b693bd5167b17dead8b029b155175bb22bef7f8ec4b9466e"
 
 RDEPENDS:rust-unicode-truncate1+default-devel = " \

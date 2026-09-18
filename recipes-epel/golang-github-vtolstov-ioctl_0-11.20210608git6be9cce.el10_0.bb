@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-vtolstov-ioctl-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-vtolstov-ioctl-0-11.20210608git6be9cce.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-vtolstov-ioctl-0-11.20210608git6be9cce.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "96b067ee16a78a74bcdcad85416b6ae5865ada786703ee6014e4c3aa87ed1dbf"
 
-URI_aarch64_golang-github-vtolstov-ioctl-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-vtolstov-ioctl-devel-0-11.20210608git6be9cce.el10_0.noarch.rpm;name=aarch64_golang-github-vtolstov-ioctl-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-vtolstov-ioctl-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-vtolstov-ioctl-devel-0-11.20210608git6be9cce.el10_0.noarch.rpm;name=aarch64_golang-github-vtolstov-ioctl-devel;unpack=0"
 SRC_URI[aarch64_golang-github-vtolstov-ioctl-devel.sha256sum] = "ecd172639952741db14c3eeec8f0376e5e1503889cf3ffd51405604c8f9d3c9b"
 
 RDEPENDS:golang-github-vtolstov-ioctl-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  kigo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kigo-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kigo-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ff7d138b781c370fe64b76cc33b5fb78a9b11523636dc9f359914d2d45a3a671"
 
-URI_x86_64_v2_kigo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kigo-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kigo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kigo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kigo-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kigo;unpack=0"
 SRC_URI[x86_64_v2_kigo.sha256sum] = "1c1cd9b7697f388bc7592a17e61faa09ce7f0ee4ec0a00ad9fa403a4fa6282ea"
 
-URI_aarch64_kigo = "${EPEL_MIRROR}/aarch64/Packages/k/kigo-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kigo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kigo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kigo-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kigo;unpack=0"
 SRC_URI[aarch64_kigo.sha256sum] = "0143bd9cc273cfd28ef6a43f3e5bf514ce9a188ea43aff6b7fbe6975fdb64d52"
 
 RDEPENDS:kigo = " \

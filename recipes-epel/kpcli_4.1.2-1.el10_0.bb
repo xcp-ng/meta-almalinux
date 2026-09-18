@@ -9,16 +9,13 @@ PACKAGES = " \
  kpcli \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kpcli-4.1.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kpcli-4.1.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7749d0624ff9e435c3630c041e5b244650c18a082f96da6e62109d91524727c2"
 
-URI_x86_64_v2_kpcli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpcli-4.1.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_kpcli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kpcli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kpcli-4.1.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_kpcli;unpack=0"
 SRC_URI[x86_64_v2_kpcli.sha256sum] = "8d98ae4e47f0ee8a06316bf59df7d773c03aeb91fad1ddd858d754057a4f1179"
 
-URI_aarch64_kpcli = "${EPEL_MIRROR}/aarch64/Packages/k/kpcli-4.1.2-1.el10_0.noarch.rpm;name=aarch64_kpcli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kpcli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kpcli-4.1.2-1.el10_0.noarch.rpm;name=aarch64_kpcli;unpack=0"
 SRC_URI[aarch64_kpcli.sha256sum] = "775d9c9a850f1e2e8ae9da446a7de894e6fcd434601195294be3f24c405c2aad"
 
 RDEPENDS:kpcli = " \

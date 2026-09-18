@@ -10,24 +10,19 @@ PACKAGES = " \
  aws-c-auth-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/aws-c-auth-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/aws-c-auth-0.9.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e9a930b8ffaf90b84e11cb7d46bf74d543e3b7bf0d8ea70bd3c5096c2efae68d"
 
-URI_x86_64_v2_aws-c-auth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-auth-0.9.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-auth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-auth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-auth-0.9.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-auth;unpack=0"
 SRC_URI[x86_64_v2_aws-c-auth.sha256sum] = "e9db72fdd356f19c1b90eb6ff95d0c8bbf954b0b153be095e1995e3ba0080c69"
 
-URI_x86_64_v2_aws-c-auth-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-auth-devel-0.9.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-auth-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-auth-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-auth-devel-0.9.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-auth-devel;unpack=0"
 SRC_URI[x86_64_v2_aws-c-auth-devel.sha256sum] = "8d02baa52d451534f0a9f4bce57cc90a9bd5f7e1a5cea6a6bb50449866f132e0"
 
-URI_aarch64_aws-c-auth = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-auth-0.9.0-2.el10_1.aarch64.rpm;name=aarch64_aws-c-auth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-auth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-auth-0.9.0-2.el10_1.aarch64.rpm;name=aarch64_aws-c-auth;unpack=0"
 SRC_URI[aarch64_aws-c-auth.sha256sum] = "6ea9b84d2429ef8816977c360a00e9e4c94c2bd42bf07a032a9577b3fea44e8c"
 
-URI_aarch64_aws-c-auth-devel = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-auth-devel-0.9.0-2.el10_1.aarch64.rpm;name=aarch64_aws-c-auth-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-auth-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-auth-devel-0.9.0-2.el10_1.aarch64.rpm;name=aarch64_aws-c-auth-devel;unpack=0"
 SRC_URI[aarch64_aws-c-auth-devel.sha256sum] = "6c297538407ced26f6bdef340919cc48354af0fdad13a124193865b861c80f3a"
 
 RDEPENDS:aws-c-auth = " \

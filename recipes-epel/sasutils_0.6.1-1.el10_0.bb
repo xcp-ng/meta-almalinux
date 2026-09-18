@@ -9,16 +9,13 @@ PACKAGES = " \
  sasutils \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/sasutils-0.6.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/sasutils-0.6.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "63577f20512d63988bc41eca787e48abeadaa2bdbe060485da963c7e4be41231"
 
-URI_x86_64_v2_sasutils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sasutils-0.6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_sasutils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sasutils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sasutils-0.6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_sasutils;unpack=0"
 SRC_URI[x86_64_v2_sasutils.sha256sum] = "d992501bea90ef44be5a9e2d6e64f878a050553405f21d729a05ecb10b1ca6f4"
 
-URI_aarch64_sasutils = "${EPEL_MIRROR}/aarch64/Packages/s/sasutils-0.6.1-1.el10_0.noarch.rpm;name=aarch64_sasutils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sasutils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/sasutils-0.6.1-1.el10_0.noarch.rpm;name=aarch64_sasutils;unpack=0"
 SRC_URI[aarch64_sasutils.sha256sum] = "d6fed567550d8d58dbb83f5c599ea2d88b0d5c43b760823ff08185626a0900bd"
 
 RDEPENDS:sasutils = " \

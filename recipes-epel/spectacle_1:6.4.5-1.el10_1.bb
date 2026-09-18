@@ -10,16 +10,13 @@ PACKAGES = " \
  spectacle \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/spectacle-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/spectacle-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d99b3ebe535a2f55826fd75e22248a6310b07453275e59907dc6bfbb18cc093a"
 
-URI_x86_64_v2_spectacle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/spectacle-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_spectacle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_spectacle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/spectacle-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_spectacle;unpack=0"
 SRC_URI[x86_64_v2_spectacle.sha256sum] = "e8f1039406771728b4e50a4f2365c2c40ede6e6a2049f3c91910e92e519a5a72"
 
-URI_aarch64_spectacle = "${EPEL_MIRROR}/aarch64/Packages/s/spectacle-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_spectacle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_spectacle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/spectacle-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_spectacle;unpack=0"
 SRC_URI[aarch64_spectacle.sha256sum] = "ecd1e9b89d633e32badcc8100cc89136a4011472915c111dd25daf15cd492f3f"
 
 RDEPENDS:spectacle = " \

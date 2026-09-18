@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-PDF-Builder-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-PDF-Builder-3.027-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-PDF-Builder-3.027-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7a85d62de13fb0871580a6f9c964ed6e154cb7acc1fd281225aafd1030b71b8a"
 
-URI_x86_64_v2_perl-PDF-Builder = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-Builder-3.027-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-Builder;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PDF-Builder}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-Builder-3.027-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-Builder;unpack=0"
 SRC_URI[x86_64_v2_perl-PDF-Builder.sha256sum] = "e0d4844b0572f54c68dee6b372e31eb7ea9c6ee242c760431aa83befa1eecdfd"
 
-URI_x86_64_v2_perl-PDF-Builder-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-Builder-tests-3.027-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-Builder-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PDF-Builder-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PDF-Builder-tests-3.027-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PDF-Builder-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-PDF-Builder-tests.sha256sum] = "e0aff721ecb38d2a731b504eefc9c28e8187621252fdfa49fd70dd924d842bde"
 
-URI_aarch64_perl-PDF-Builder = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-Builder-3.027-1.el10_1.noarch.rpm;name=aarch64_perl-PDF-Builder;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PDF-Builder}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-Builder-3.027-1.el10_1.noarch.rpm;name=aarch64_perl-PDF-Builder;unpack=0"
 SRC_URI[aarch64_perl-PDF-Builder.sha256sum] = "9d1e7384ea56af45111c7c35a932d7af0364ff606ea4641f884603b93c4172c6"
 
-URI_aarch64_perl-PDF-Builder-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-Builder-tests-3.027-1.el10_1.noarch.rpm;name=aarch64_perl-PDF-Builder-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PDF-Builder-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PDF-Builder-tests-3.027-1.el10_1.noarch.rpm;name=aarch64_perl-PDF-Builder-tests;unpack=0"
 SRC_URI[aarch64_perl-PDF-Builder-tests.sha256sum] = "f8056ccf7f094b72378ef8121668ab74e35d2cd87751071d17867c1667835456"
 
 RDEPENDS:perl-PDF-Builder = " \

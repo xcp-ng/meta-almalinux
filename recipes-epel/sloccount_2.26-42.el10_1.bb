@@ -9,16 +9,13 @@ PACKAGES = " \
  sloccount \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/sloccount-2.26-42.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/sloccount-2.26-42.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "991722bd6a52f14a3e03a8727dfeb6e593ce3d4b610e106a4a494dd303802b7d"
 
-URI_x86_64_v2_sloccount = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sloccount-2.26-42.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sloccount;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_sloccount}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/sloccount-2.26-42.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_sloccount;unpack=0"
 SRC_URI[x86_64_v2_sloccount.sha256sum] = "27cac0f01c3a5fa6335306e16520507465776b2472a55799a224bdd3bbace413"
 
-URI_aarch64_sloccount = "${EPEL_MIRROR}/aarch64/Packages/s/sloccount-2.26-42.el10_1.aarch64.rpm;name=aarch64_sloccount;unpack=0"
-SRC_URI:append = " ${URI_aarch64_sloccount}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/sloccount-2.26-42.el10_1.aarch64.rpm;name=aarch64_sloccount;unpack=0"
 SRC_URI[aarch64_sloccount.sha256sum] = "5f81c874bc23abf457cfbe24f0e5e02817d93dc2519eff8f4399915a9038e117"
 
 RDEPENDS:sloccount = " \

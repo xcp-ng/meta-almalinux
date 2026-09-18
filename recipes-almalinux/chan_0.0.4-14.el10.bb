@@ -9,16 +9,13 @@ PACKAGES = " \
  chan \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/chan-0.0.4-14.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/chan-0.0.4-14.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2010fb43c06eaf6ede0d135c22db22eeef5476479e0248d22fd8704d535a78bc"
 
-URI_x86_64_v2_chan = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/chan-0.0.4-14.el10.x86_64_v2.rpm;name=x86_64_v2_chan;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_chan}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/chan-0.0.4-14.el10.x86_64_v2.rpm;name=x86_64_v2_chan;unpack=0"
 SRC_URI[x86_64_v2_chan.sha256sum] = "d5930415d78868123137f923902fef217126b2370535896419b7c2ce5e23934c"
 
-URI_aarch64_chan = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/chan-0.0.4-14.el10.aarch64.rpm;name=aarch64_chan;unpack=0"
-SRC_URI:append = " ${URI_aarch64_chan}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/chan-0.0.4-14.el10.aarch64.rpm;name=aarch64_chan;unpack=0"
 SRC_URI[aarch64_chan.sha256sum] = "0c3840ffe735ab8ee86560591970ccd3a52b104ad152a52dc8fc684dad76d599"
 
 RDEPENDS:chan = " \

@@ -9,17 +9,14 @@ PACKAGES = " \
  opensmtpd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/o/opensmtpd-7.8.0p0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/o/opensmtpd-7.8.0p0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2551d337afc84df14e2af93ab97e8805a63d985f78e124e9ceca415c9153d8b6"
 
-URI_x86_64_v2_opensmtpd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opensmtpd-7.8.0p0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opensmtpd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_opensmtpd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/opensmtpd-7.8.0p0-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_opensmtpd;unpack=0"
 SRC_URI[x86_64_v2_opensmtpd.sha256sum] = "cb614c84acc67f0b78e11e01afff08f704d2bb40309d5ba1d8dab8cc4ea528fd"
 RPROVIDES:opensmtpd:append:x86_64_v2 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 
-URI_aarch64_opensmtpd = "${EPEL_MIRROR}/aarch64/Packages/o/opensmtpd-7.8.0p0-1.el10_1.aarch64.rpm;name=aarch64_opensmtpd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_opensmtpd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/o/opensmtpd-7.8.0p0-1.el10_1.aarch64.rpm;name=aarch64_opensmtpd;unpack=0"
 SRC_URI[aarch64_opensmtpd.sha256sum] = "a172021d9c9cc650f915cbcba61f67c8b566487abc76b3430eab116f7acd714b"
 RPROVIDES:opensmtpd:append:aarch64 = " virtual//usr/bin/mailq virtual//usr/sbin/sendmail virtual/smtpdaemon"
 

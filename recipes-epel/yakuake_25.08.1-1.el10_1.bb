@@ -9,16 +9,13 @@ PACKAGES = " \
  yakuake \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/y/yakuake-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/y/yakuake-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0caee699c70af25c2b6e6b123edfdc88aecbb43b0773a9f791a1fc2cc6bca004"
 
-URI_x86_64_v2_yakuake = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/yakuake-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_yakuake;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_yakuake}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/yakuake-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_yakuake;unpack=0"
 SRC_URI[x86_64_v2_yakuake.sha256sum] = "b9749c79fa107097b77a3d3c9b6d98df70cc0da3b65a68bd85e25fd1aa15c59a"
 
-URI_aarch64_yakuake = "${EPEL_MIRROR}/aarch64/Packages/y/yakuake-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_yakuake;unpack=0"
-SRC_URI:append = " ${URI_aarch64_yakuake}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/y/yakuake-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_yakuake;unpack=0"
 SRC_URI[aarch64_yakuake.sha256sum] = "e5118c52bc672d22519e1579e3662869f5c6d2c776264278935c148ef9211de6"
 
 RDEPENDS:yakuake = " \

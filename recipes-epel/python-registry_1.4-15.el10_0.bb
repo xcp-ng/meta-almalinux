@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-registry \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-registry-1.4-15.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-registry-1.4-15.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4fa8151c19a3846eff3f4ac195dc53f486005ffd346a76b2a3df363071b3ee77"
 
-URI_x86_64_v2_python3-registry = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-registry-1.4-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-registry;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-registry}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-registry-1.4-15.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-registry;unpack=0"
 SRC_URI[x86_64_v2_python3-registry.sha256sum] = "44a1e65e1e381f439847c4fb019c37c5df4d018fa7f6d0782c236e495998fb38"
 
-URI_aarch64_python3-registry = "${EPEL_MIRROR}/aarch64/Packages/p/python3-registry-1.4-15.el10_0.noarch.rpm;name=aarch64_python3-registry;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-registry}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-registry-1.4-15.el10_0.noarch.rpm;name=aarch64_python3-registry;unpack=0"
 SRC_URI[aarch64_python3-registry.sha256sum] = "6791f0aa96111b22328d4b0a006870351fe307636b7ed8e7c7590b477c1ece74"
 
 RDEPENDS:python3-registry = " \

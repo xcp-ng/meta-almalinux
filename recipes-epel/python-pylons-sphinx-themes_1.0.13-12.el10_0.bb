@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pylons-sphinx-themes \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pylons-sphinx-themes-1.0.13-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pylons-sphinx-themes-1.0.13-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "08cc747c6bba66558405dedd15720209b7e64f5d069b30c9d5cf2b76d8c6b556"
 
-URI_x86_64_v2_python3-pylons-sphinx-themes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylons-sphinx-themes-1.0.13-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylons-sphinx-themes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pylons-sphinx-themes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pylons-sphinx-themes-1.0.13-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pylons-sphinx-themes;unpack=0"
 SRC_URI[x86_64_v2_python3-pylons-sphinx-themes.sha256sum] = "ef15b3716f0b4004730d7540a0b83d909814d7cc56e02409a591996285bc24c8"
 
-URI_aarch64_python3-pylons-sphinx-themes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pylons-sphinx-themes-1.0.13-12.el10_0.noarch.rpm;name=aarch64_python3-pylons-sphinx-themes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pylons-sphinx-themes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pylons-sphinx-themes-1.0.13-12.el10_0.noarch.rpm;name=aarch64_python3-pylons-sphinx-themes;unpack=0"
 SRC_URI[aarch64_python3-pylons-sphinx-themes.sha256sum] = "a971a210dfeb881cedd4c690ed570d3d7049ec7fe2aeb4f43e96a51f9ee7e5d8"
 
 RDEPENDS:python3-pylons-sphinx-themes = " \

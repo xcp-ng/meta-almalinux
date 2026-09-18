@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-libarchive-c \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-libarchive-c-5.1-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-libarchive-c-5.1-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0a5a87bc320c27690c922abaa8d35f52eb3a7e9ce8d66f03c724e14c8d89cf8b"
 
-URI_x86_64_v2_python3-libarchive-c = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libarchive-c-5.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-libarchive-c;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-libarchive-c}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-libarchive-c-5.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-libarchive-c;unpack=0"
 SRC_URI[x86_64_v2_python3-libarchive-c.sha256sum] = "d9d0df1d6b72866c2cc705565df74cb5dc579b17012c17a9cbb02870d9134600"
 
-URI_aarch64_python3-libarchive-c = "${EPEL_MIRROR}/aarch64/Packages/p/python3-libarchive-c-5.1-6.el10_0.noarch.rpm;name=aarch64_python3-libarchive-c;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-libarchive-c}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-libarchive-c-5.1-6.el10_0.noarch.rpm;name=aarch64_python3-libarchive-c;unpack=0"
 SRC_URI[aarch64_python3-libarchive-c.sha256sum] = "77d61ce900facc4c2efda4cad6a96799d98ea4a128e07692f15ec0466aa5ff28"
 
 RDEPENDS:python3-libarchive-c = " \

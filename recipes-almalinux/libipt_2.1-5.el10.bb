@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libipt-2.1-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libipt-2.1-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7f3b039c60ac39a08a2ae816f73ea03ff1d1440e27ffafe1ee881a5800fee1df"
 
-URI_x86_64_v2_libipt = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libipt-2.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_libipt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libipt}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libipt-2.1-5.el10.x86_64_v2.rpm;name=x86_64_v2_libipt;unpack=0"
 SRC_URI[x86_64_v2_libipt.sha256sum] = "3d31466d4e54474d3b164a6ed8cf0c71e044f4c621ec285ca7fe3fe21c9ae32a"
 
 RDEPENDS:libipt = " \

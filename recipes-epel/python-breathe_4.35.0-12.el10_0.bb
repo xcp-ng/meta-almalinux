@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-breathe \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-breathe-4.35.0-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-breathe-4.35.0-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "06803fc10ef26299b4c8b5848363fb89d3bf0a712e6dced263afba368fdbfc21"
 
-URI_x86_64_v2_python3-breathe = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-breathe-4.35.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-breathe;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-breathe}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-breathe-4.35.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-breathe;unpack=0"
 SRC_URI[x86_64_v2_python3-breathe.sha256sum] = "b59c3445daad2a88492ab62052bd4df8b1e06fa3c36affef70b8ca370f774c2e"
 
-URI_aarch64_python3-breathe = "${EPEL_MIRROR}/aarch64/Packages/p/python3-breathe-4.35.0-12.el10_0.noarch.rpm;name=aarch64_python3-breathe;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-breathe}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-breathe-4.35.0-12.el10_0.noarch.rpm;name=aarch64_python3-breathe;unpack=0"
 SRC_URI[aarch64_python3-breathe.sha256sum] = "b05d17d2499eb808dc205e5eb2d61c101539f44a3b4cadf3602fef4507fb985c"
 
 RDEPENDS:python3-breathe = " \

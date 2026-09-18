@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-TrailingSpace \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-TrailingSpace-0.0601-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-TrailingSpace-0.0601-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "33b3ddaf9ad390096086690c5e7e169397c9d7fd50c10aa3442be5c68895e21c"
 
-URI_x86_64_v2_perl-Test-TrailingSpace = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-TrailingSpace-0.0601-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-TrailingSpace;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-TrailingSpace}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-TrailingSpace-0.0601-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-TrailingSpace;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-TrailingSpace.sha256sum] = "a2e5d9fe85c5d364f1caae07bd1f158b4fbb15e43dfe405aa49c6d68ac2eec16"
 
-URI_aarch64_perl-Test-TrailingSpace = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-TrailingSpace-0.0601-6.el10_0.noarch.rpm;name=aarch64_perl-Test-TrailingSpace;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-TrailingSpace}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-TrailingSpace-0.0601-6.el10_0.noarch.rpm;name=aarch64_perl-Test-TrailingSpace;unpack=0"
 SRC_URI[aarch64_perl-Test-TrailingSpace.sha256sum] = "dcf09aeb41ed33d21b21fbaab207c24ea0289f7cf345c5e0d44eb5d4ba13095b"
 
 RDEPENDS:perl-Test-TrailingSpace = " \

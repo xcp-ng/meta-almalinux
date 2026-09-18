@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tw2-forms \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tw2-forms-2.2.6-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tw2-forms-2.2.6-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "73bd6a33b2b9442194620ff8a9c037938487e76f14220779682bdb16f0eba04d"
 
-URI_x86_64_v2_python3-tw2-forms = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tw2-forms-2.2.6-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tw2-forms;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tw2-forms}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tw2-forms-2.2.6-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tw2-forms;unpack=0"
 SRC_URI[x86_64_v2_python3-tw2-forms.sha256sum] = "308e5b6d7f907cc4cceb27372e55842948939ac4df457aa42e4987387ad4ac9c"
 
-URI_aarch64_python3-tw2-forms = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tw2-forms-2.2.6-22.el10_0.noarch.rpm;name=aarch64_python3-tw2-forms;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tw2-forms}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tw2-forms-2.2.6-22.el10_0.noarch.rpm;name=aarch64_python3-tw2-forms;unpack=0"
 SRC_URI[aarch64_python3-tw2-forms.sha256sum] = "f3813b8692740221ac78fadb0b10cb2efb169a1fcfee7fb1f2f7cf557253d6d3"
 
 RDEPENDS:python3-tw2-forms = " \

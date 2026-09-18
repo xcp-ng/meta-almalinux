@@ -9,16 +9,13 @@ PACKAGES = " \
  elisa-player \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/e/elisa-player-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/e/elisa-player-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f3146ec3d29c218ec5a3193ae3dcb58c326979c60dcd68bf34504a7178a2f304"
 
-URI_x86_64_v2_elisa-player = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/elisa-player-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_elisa-player;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_elisa-player}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/elisa-player-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_elisa-player;unpack=0"
 SRC_URI[x86_64_v2_elisa-player.sha256sum] = "4e53599c46ef94e386a88b4c4c3549cff5765e76754f2fb0bcb02f345d68b69d"
 
-URI_aarch64_elisa-player = "${EPEL_MIRROR}/aarch64/Packages/e/elisa-player-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_elisa-player;unpack=0"
-SRC_URI:append = " ${URI_aarch64_elisa-player}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/e/elisa-player-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_elisa-player;unpack=0"
 SRC_URI[aarch64_elisa-player.sha256sum] = "f5e805a7f4fcf84561f171d26a54badb4a73b6b790cfba967c1200654261045b"
 
 RDEPENDS:elisa-player = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-testscenarios \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-testscenarios-0.5.0-44.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-testscenarios-0.5.0-44.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3f1952979160223a5b0650158e13f6f990f686dbf373f0eb31d1b80cb0c524d0"
 
-URI_x86_64_v2_python3-testscenarios = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testscenarios-0.5.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testscenarios;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-testscenarios}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-testscenarios-0.5.0-44.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-testscenarios;unpack=0"
 SRC_URI[x86_64_v2_python3-testscenarios.sha256sum] = "a0820a0ed72295ad9e73242b15a60d620f9c3d32eeb5b9bebe146f1b65f5191d"
 
-URI_aarch64_python3-testscenarios = "${EPEL_MIRROR}/aarch64/Packages/p/python3-testscenarios-0.5.0-44.el10_0.noarch.rpm;name=aarch64_python3-testscenarios;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-testscenarios}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-testscenarios-0.5.0-44.el10_0.noarch.rpm;name=aarch64_python3-testscenarios;unpack=0"
 SRC_URI[aarch64_python3-testscenarios.sha256sum] = "36d044f382e11df51374964783b17e8067bb3a406723ca8a20ce96996c1c8fa6"
 
 RDEPENDS:python3-testscenarios = " \

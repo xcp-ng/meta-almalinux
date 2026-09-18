@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-XML-DOM \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-DOM-1.46-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-DOM-1.46-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3deaca79863926ea2be4c127a3b5dc3cab38ec4f5efd4386780411091d05cb2e"
 
-URI_x86_64_v2_perl-XML-DOM = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-DOM-1.46-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-DOM;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-DOM}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-DOM-1.46-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-XML-DOM;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-DOM.sha256sum] = "92909c2500daa1ab973c206e9cd5c5f76e483261ef8dcb93e56a532a85caeaee"
 
-URI_aarch64_perl-XML-DOM = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-DOM-1.46-25.el10_0.noarch.rpm;name=aarch64_perl-XML-DOM;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-DOM}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-DOM-1.46-25.el10_0.noarch.rpm;name=aarch64_perl-XML-DOM;unpack=0"
 SRC_URI[aarch64_perl-XML-DOM.sha256sum] = "f862258753dd0a72d5b10e5e64f2f2b0e97a3142099fb051590f63a0a6356094"
 
 RDEPENDS:perl-XML-DOM = " \

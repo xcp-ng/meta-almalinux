@@ -12,32 +12,25 @@ PACKAGES = " \
  fonts-srpm-macros \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/fonts-rpm-macros-2.0.5-18.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/fonts-rpm-macros-2.0.5-18.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9959b7a3dd3b9a7a57f3a69d5208bb44c42b29f60a7937395a3155111de17d58"
 
-URI_x86_64_v2_fonts-filesystem = "${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fonts-filesystem-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-filesystem;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fonts-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/fonts-filesystem-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-filesystem;unpack=0"
 SRC_URI[x86_64_v2_fonts-filesystem.sha256sum] = "da1d69f35d4fcc937ac3c1ac56ed083c5f067a6344fc6316fff580771ab42b83"
 
-URI_x86_64_v2_fonts-rpm-macros = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/fonts-rpm-macros-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fonts-rpm-macros}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/fonts-rpm-macros-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-rpm-macros;unpack=0"
 SRC_URI[x86_64_v2_fonts-rpm-macros.sha256sum] = "3017c2138718ed3453e14d5ab41e137d9458c1502aa12549176592cf9b93697d"
 
-URI_x86_64_v2_fonts-srpm-macros = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/fonts-srpm-macros-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-srpm-macros;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_fonts-srpm-macros}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/fonts-srpm-macros-2.0.5-18.el10.noarch.rpm;name=x86_64_v2_fonts-srpm-macros;unpack=0"
 SRC_URI[x86_64_v2_fonts-srpm-macros.sha256sum] = "1c4eda423634a984d4976c2e9b4ef071aee2a3e60a16f148f1b83fcd64e05e96"
 
-URI_aarch64_fonts-filesystem = "${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fonts-filesystem-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-filesystem;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fonts-filesystem}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/fonts-filesystem-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-filesystem;unpack=0"
 SRC_URI[aarch64_fonts-filesystem.sha256sum] = "da1d69f35d4fcc937ac3c1ac56ed083c5f067a6344fc6316fff580771ab42b83"
 
-URI_aarch64_fonts-rpm-macros = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/fonts-rpm-macros-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-rpm-macros;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fonts-rpm-macros}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/fonts-rpm-macros-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-rpm-macros;unpack=0"
 SRC_URI[aarch64_fonts-rpm-macros.sha256sum] = "3017c2138718ed3453e14d5ab41e137d9458c1502aa12549176592cf9b93697d"
 
-URI_aarch64_fonts-srpm-macros = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/fonts-srpm-macros-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-srpm-macros;unpack=0"
-SRC_URI:append = " ${URI_aarch64_fonts-srpm-macros}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/fonts-srpm-macros-2.0.5-18.el10.noarch.rpm;name=aarch64_fonts-srpm-macros;unpack=0"
 SRC_URI[aarch64_fonts-srpm-macros.sha256sum] = "1c4eda423634a984d4976c2e9b4ef071aee2a3e60a16f148f1b83fcd64e05e96"
 
 RDEPENDS:fonts-filesystem = " \

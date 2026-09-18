@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-modern-reflect2-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-modern-reflect2-1.0.2-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-modern-reflect2-1.0.2-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "70c0fc7485d46f820b418c5f63786f0bb23b8205571fb07014c67a5d2d99ff33"
 
-URI_x86_64_v2_golang-github-modern-reflect2-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-modern-reflect2-devel-1.0.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-modern-reflect2-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-modern-reflect2-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-modern-reflect2-devel-1.0.2-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-modern-reflect2-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-modern-reflect2-devel.sha256sum] = "5956f4fb7b45aca542f6bc38af9aa9a02e449440ab476b44231baa5fa2b2b78d"
 
-URI_aarch64_golang-github-modern-reflect2-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-modern-reflect2-devel-1.0.2-9.el10_0.noarch.rpm;name=aarch64_golang-github-modern-reflect2-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-modern-reflect2-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-modern-reflect2-devel-1.0.2-9.el10_0.noarch.rpm;name=aarch64_golang-github-modern-reflect2-devel;unpack=0"
 SRC_URI[aarch64_golang-github-modern-reflect2-devel.sha256sum] = "63bc69fa295d0a04141f7fb7b6fe8edcc45dd2ff1c182ebe929543cbb9f04ece"
 
 RDEPENDS:golang-github-modern-reflect2-devel = " \

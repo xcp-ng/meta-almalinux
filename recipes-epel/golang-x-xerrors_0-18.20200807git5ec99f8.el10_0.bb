@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-x-xerrors-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-x-xerrors-0-18.20200807git5ec99f8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-x-xerrors-0-18.20200807git5ec99f8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "347dc991f71f753401119bd119950fcb96a0d9870fd7d3a557fc6e9debc051a5"
 
-URI_aarch64_golang-x-xerrors-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-x-xerrors-devel-0-18.20200807git5ec99f8.el10_0.noarch.rpm;name=aarch64_golang-x-xerrors-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-x-xerrors-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-x-xerrors-devel-0-18.20200807git5ec99f8.el10_0.noarch.rpm;name=aarch64_golang-x-xerrors-devel;unpack=0"
 SRC_URI[aarch64_golang-x-xerrors-devel.sha256sum] = "b0ef31e650a3c43699352c9564f00273f2fead064744260d183594a252ed046b"
 
 RDEPENDS:golang-x-xerrors-devel = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Compress-LZF \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Compress-LZF-3.8-28.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Compress-LZF-3.8-28.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "23e84a0984c800f5d59fa43bd2e278c51be00dcfc3932a627b1f190c93af0c19"
 
-URI_x86_64_v2_perl-Compress-LZF = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Compress-LZF-3.8-28.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Compress-LZF;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Compress-LZF}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Compress-LZF-3.8-28.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-Compress-LZF;unpack=0"
 SRC_URI[x86_64_v2_perl-Compress-LZF.sha256sum] = "4720638c00881c8d1ac651583306df45954c81f6611587e71c80a9a3685fd3fb"
 
-URI_aarch64_perl-Compress-LZF = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Compress-LZF-3.8-28.el10_0.aarch64.rpm;name=aarch64_perl-Compress-LZF;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Compress-LZF}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Compress-LZF-3.8-28.el10_0.aarch64.rpm;name=aarch64_perl-Compress-LZF;unpack=0"
 SRC_URI[aarch64_perl-Compress-LZF.sha256sum] = "7b264f394e9e07ad93b67c7e29ef76a64b9e09c96e71734616479de1b652a03b"
 
 RDEPENDS:perl-Compress-LZF = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-aiohttp+speedups \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-aiohttp-3.11.18-4.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-aiohttp-3.11.18-4.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f99c7fcef31b06e9e0094483863b4af71a47f8df30cef2740e8ce4829272d308"
 
-URI_x86_64_v2_python3-aiohttp = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiohttp-3.11.18-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-aiohttp;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-aiohttp}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiohttp-3.11.18-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-aiohttp;unpack=0"
 SRC_URI[x86_64_v2_python3-aiohttp.sha256sum] = "f93708e4db3c49cfd0984e5e21769705f6b24fbac49109c591868dbff1aad68f"
 
-URI_x86_64_v2_python3-aiohttp+speedups = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiohttp+speedups-3.11.18-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-aiohttp+speedups;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-aiohttp+speedups}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiohttp+speedups-3.11.18-4.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-aiohttp+speedups;unpack=0"
 SRC_URI[x86_64_v2_python3-aiohttp+speedups.sha256sum] = "d96fb7f6a9013919f63f53569456b1d3a1b314995c995df8885928daf97b4ceb"
 
-URI_aarch64_python3-aiohttp = "${EPEL_MIRROR}/aarch64/Packages/p/python3-aiohttp-3.11.18-4.el10_1.aarch64.rpm;name=aarch64_python3-aiohttp;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-aiohttp}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-aiohttp-3.11.18-4.el10_1.aarch64.rpm;name=aarch64_python3-aiohttp;unpack=0"
 SRC_URI[aarch64_python3-aiohttp.sha256sum] = "90a8022047d38321d0e60df6437202daa5aa1ab75b69bb0a289a7ecdadb0b4bc"
 
-URI_aarch64_python3-aiohttp+speedups = "${EPEL_MIRROR}/aarch64/Packages/p/python3-aiohttp+speedups-3.11.18-4.el10_1.aarch64.rpm;name=aarch64_python3-aiohttp+speedups;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-aiohttp+speedups}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-aiohttp+speedups-3.11.18-4.el10_1.aarch64.rpm;name=aarch64_python3-aiohttp+speedups;unpack=0"
 SRC_URI[aarch64_python3-aiohttp+speedups.sha256sum] = "f9def1e75d6322228bcf7222fe46844876b128c2189ccde4592652990ffe353f"
 
 RDEPENDS:python3-aiohttp = " \

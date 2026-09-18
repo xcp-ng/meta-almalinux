@@ -9,16 +9,13 @@ PACKAGES = " \
  mkdocs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/mkdocs-1.6.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/mkdocs-1.6.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1460bf64c19cb758771e21449f716e8d14f49bc6f0f150ba03e93ebcad2c9fb0"
 
-URI_x86_64_v2_mkdocs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mkdocs-1.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_mkdocs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_mkdocs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/mkdocs-1.6.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_mkdocs;unpack=0"
 SRC_URI[x86_64_v2_mkdocs.sha256sum] = "ec672f9ce5b00f25f0189b50c4bb212e39c3bf14226fa6e84e2fdda6c6d0ecb6"
 
-URI_aarch64_mkdocs = "${EPEL_MIRROR}/aarch64/Packages/m/mkdocs-1.6.1-2.el10_0.noarch.rpm;name=aarch64_mkdocs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_mkdocs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/mkdocs-1.6.1-2.el10_0.noarch.rpm;name=aarch64_mkdocs;unpack=0"
 SRC_URI[aarch64_mkdocs.sha256sum] = "b5ac5c7bb396722bfee03176422fa6265ad8179f9d0c0e4afdb5453c6b29ce78"
 
 RDEPENDS:mkdocs = " \

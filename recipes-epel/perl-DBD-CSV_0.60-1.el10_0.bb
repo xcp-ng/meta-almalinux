@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-DBD-CSV \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-DBD-CSV-0.60-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-DBD-CSV-0.60-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "665a29559f48a7e356385d37e9d322b2bae4f5d420f3f0df75bda0572b246e40"
 
-URI_x86_64_v2_perl-DBD-CSV = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DBD-CSV-0.60-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DBD-CSV;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-DBD-CSV}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-DBD-CSV-0.60-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-DBD-CSV;unpack=0"
 SRC_URI[x86_64_v2_perl-DBD-CSV.sha256sum] = "3aa445bc3c9fdf8de78a4d466c08b4787606dce742e9f83fd0924bf8b0f08021"
 
-URI_aarch64_perl-DBD-CSV = "${EPEL_MIRROR}/aarch64/Packages/p/perl-DBD-CSV-0.60-1.el10_0.noarch.rpm;name=aarch64_perl-DBD-CSV;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-DBD-CSV}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-DBD-CSV-0.60-1.el10_0.noarch.rpm;name=aarch64_perl-DBD-CSV;unpack=0"
 SRC_URI[aarch64_perl-DBD-CSV.sha256sum] = "d6b605ba0fc28da944a33e5690a91245f94f4537d09f2192af5680d95255b1ad"
 
 RDEPENDS:perl-DBD-CSV = " \

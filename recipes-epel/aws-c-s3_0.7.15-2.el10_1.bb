@@ -12,40 +12,31 @@ PACKAGES = " \
  aws-c-s3-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/a/aws-c-s3-0.7.15-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/a/aws-c-s3-0.7.15-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "353c45cb8dd2567a369d94c6be6471d03b2b87b207a92a1d2ef71491f9cb9840"
 
-URI_x86_64_v2_aws-c-s3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-s3}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3;unpack=0"
 SRC_URI[x86_64_v2_aws-c-s3.sha256sum] = "89a7ec53c5f55f40d5ba82737d5ddd5fe0354e2086e6ef79f50b2668e45a868b"
 
-URI_x86_64_v2_aws-c-s3-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-devel-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-s3-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-devel-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3-devel;unpack=0"
 SRC_URI[x86_64_v2_aws-c-s3-devel.sha256sum] = "7abea46431d1621cab1ee59f841b8c11692a04b303aa500d3bce17d9d2889452"
 
-URI_x86_64_v2_aws-c-s3-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-doc-0.7.15-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_aws-c-s3-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-s3-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-doc-0.7.15-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_aws-c-s3-doc;unpack=0"
 SRC_URI[x86_64_v2_aws-c-s3-doc.sha256sum] = "d0a25265103fa4caffcd00b641cb22664b94bdfd14de4eeb9c25e7ff037a15c4"
 
-URI_x86_64_v2_aws-c-s3-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-libs-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_aws-c-s3-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/aws-c-s3-libs-0.7.15-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_aws-c-s3-libs;unpack=0"
 SRC_URI[x86_64_v2_aws-c-s3-libs.sha256sum] = "f014a8232e4b83b864b5a48752dcbafaf2e037c078fe6327e08da508ad6edb6d"
 
-URI_aarch64_aws-c-s3 = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-s3}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3;unpack=0"
 SRC_URI[aarch64_aws-c-s3.sha256sum] = "3b583f398e881c649a66ab4c6610baf5402ee7474567949f0be8e9bfa3312c6a"
 
-URI_aarch64_aws-c-s3-devel = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-devel-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-s3-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-devel-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3-devel;unpack=0"
 SRC_URI[aarch64_aws-c-s3-devel.sha256sum] = "37020aa4abbeb6933d9a72b0b8af2b3192e1591d19172b8395b92191add739a9"
 
-URI_aarch64_aws-c-s3-doc = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-doc-0.7.15-2.el10_1.noarch.rpm;name=aarch64_aws-c-s3-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-s3-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-doc-0.7.15-2.el10_1.noarch.rpm;name=aarch64_aws-c-s3-doc;unpack=0"
 SRC_URI[aarch64_aws-c-s3-doc.sha256sum] = "e275b679790daf8a1e2e54dc3d31eaa3f72327fe7cdaf0e881d0a49cb36748f6"
 
-URI_aarch64_aws-c-s3-libs = "${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-libs-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_aws-c-s3-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/a/aws-c-s3-libs-0.7.15-2.el10_1.aarch64.rpm;name=aarch64_aws-c-s3-libs;unpack=0"
 SRC_URI[aarch64_aws-c-s3-libs.sha256sum] = "c7328e9f380677e350181923687a15d9b4525aa48e764a664ad29ea7f3e0ed24"
 
 RDEPENDS:aws-c-s3 = " \

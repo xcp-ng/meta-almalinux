@@ -12,40 +12,31 @@ PACKAGES = " \
  rust-gix-index-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-gix-index-0.41.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-gix-index-0.41.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d538ad53ec16d73fec8547c686d32bd4538785d89cce7076c1c229340b5f129c"
 
-URI_x86_64_v2_rust-gix-index+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+default-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-index+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+default-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-index+default-devel.sha256sum] = "aa646203befa2f2aca595bf810506e6c506cbdc60f6dda6b16b014725b69277a"
 
-URI_x86_64_v2_rust-gix-index+document-features-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+document-features-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+document-features-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-index+document-features-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+document-features-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+document-features-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-index+document-features-devel.sha256sum] = "bf2e821fc49007dbc336b244a76925379c6e4126fbed585acde8ba7ab455f232"
 
-URI_x86_64_v2_rust-gix-index+serde-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+serde-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-index+serde-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index+serde-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index+serde-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-index+serde-devel.sha256sum] = "db9f05ae5969cdb29067b5b24e09e36ece28c1629c1c8e5dce3a77c7d578049f"
 
-URI_x86_64_v2_rust-gix-index-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-gix-index-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-gix-index-devel-0.41.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-gix-index-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-gix-index-devel.sha256sum] = "c85182626251cee1c96862da2215ba218e18c066afeea16da0e2d7e99b34a243"
 
-URI_aarch64_rust-gix-index+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+default-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-index+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+default-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+default-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-index+default-devel.sha256sum] = "7dacf9ff18cf88a43575c15d1837479f2ed91db42b80d3f672d2f95b63436d3f"
 
-URI_aarch64_rust-gix-index+document-features-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+document-features-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+document-features-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-index+document-features-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+document-features-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+document-features-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-index+document-features-devel.sha256sum] = "dc120df28a3947e1aa1b45d6d5c990b31ebb179fe6a2e61294d6bf74f46ee0ac"
 
-URI_aarch64_rust-gix-index+serde-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+serde-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+serde-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-index+serde-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index+serde-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index+serde-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-index+serde-devel.sha256sum] = "0b1222d8f80e86aeb5b6466463042571cb8b06c97900bab9cfbef76457522b83"
 
-URI_aarch64_rust-gix-index-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-gix-index-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-gix-index-devel-0.41.0-1.el10_1.noarch.rpm;name=aarch64_rust-gix-index-devel;unpack=0"
 SRC_URI[aarch64_rust-gix-index-devel.sha256sum] = "7cae746e3aaa7754d04de8c9c769812336ea431c78e9be8dadabdc869011d8c6"
 
 RDEPENDS:rust-gix-index+default-devel = " \

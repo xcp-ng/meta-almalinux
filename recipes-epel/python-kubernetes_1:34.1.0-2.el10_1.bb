@@ -11,24 +11,19 @@ PACKAGES = " \
  python3-kubernetes-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-kubernetes-34.1.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-kubernetes-34.1.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d4d4db8a566dd433abf37eaa105ea17d1d7d57458a1caa002dff4d3056a5a4b5"
 
-URI_x86_64_v2_python3-kubernetes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kubernetes-34.1.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kubernetes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kubernetes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kubernetes-34.1.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kubernetes;unpack=0"
 SRC_URI[x86_64_v2_python3-kubernetes.sha256sum] = "340198a69f2f94aa0f0871798a9dd64cd40eeebe68c119ade81cc66dc0b8d199"
 
-URI_x86_64_v2_python3-kubernetes-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kubernetes-tests-34.1.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kubernetes-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kubernetes-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-kubernetes-tests-34.1.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-kubernetes-tests;unpack=0"
 SRC_URI[x86_64_v2_python3-kubernetes-tests.sha256sum] = "494c851bca2364e3b6885fddf1b175a643e8115151d8637561fdfc90a0f94bf6"
 
-URI_aarch64_python3-kubernetes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kubernetes-34.1.0-2.el10_1.noarch.rpm;name=aarch64_python3-kubernetes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kubernetes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-kubernetes-34.1.0-2.el10_1.noarch.rpm;name=aarch64_python3-kubernetes;unpack=0"
 SRC_URI[aarch64_python3-kubernetes.sha256sum] = "8d61f2dce5fd3cd6d34b423709083d40f113cc18b923990403511d4ea2f4f11b"
 
-URI_aarch64_python3-kubernetes-tests = "${EPEL_MIRROR}/aarch64/Packages/p/python3-kubernetes-tests-34.1.0-2.el10_1.noarch.rpm;name=aarch64_python3-kubernetes-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kubernetes-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-kubernetes-tests-34.1.0-2.el10_1.noarch.rpm;name=aarch64_python3-kubernetes-tests;unpack=0"
 SRC_URI[aarch64_python3-kubernetes-tests.sha256sum] = "8058386d6084f642346c715b0627907cfe36513366f9257debf3d312beec12a8"
 
 RDEPENDS:python3-kubernetes = " \

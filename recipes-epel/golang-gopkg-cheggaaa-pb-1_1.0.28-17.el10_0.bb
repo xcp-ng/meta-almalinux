@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-gopkg-cheggaaa-pb-1-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-cheggaaa-pb-1-1.0.28-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-gopkg-cheggaaa-pb-1-1.0.28-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fcebc89c42e1282a2d4a63371499b5b1214e8377759771e838569ac7e3a30b2e"
 
-URI_x86_64_v2_golang-gopkg-cheggaaa-pb-1-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-gopkg-cheggaaa-pb-1-devel-1.0.28-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-gopkg-cheggaaa-pb-1-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-gopkg-cheggaaa-pb-1-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-gopkg-cheggaaa-pb-1-devel-1.0.28-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-gopkg-cheggaaa-pb-1-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-gopkg-cheggaaa-pb-1-devel.sha256sum] = "9817c415117b976a67b46f44be3247a53949981b2ee42c8fa5fdf7a9756d5639"
 
-URI_aarch64_golang-gopkg-cheggaaa-pb-1-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-cheggaaa-pb-1-devel-1.0.28-17.el10_0.noarch.rpm;name=aarch64_golang-gopkg-cheggaaa-pb-1-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-gopkg-cheggaaa-pb-1-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-gopkg-cheggaaa-pb-1-devel-1.0.28-17.el10_0.noarch.rpm;name=aarch64_golang-gopkg-cheggaaa-pb-1-devel;unpack=0"
 SRC_URI[aarch64_golang-gopkg-cheggaaa-pb-1-devel.sha256sum] = "248ecd57b7f5c8d706fcca2950775b36cd7c4c36572806eecfa45877eaf386ba"
 
 RDEPENDS:golang-gopkg-cheggaaa-pb-1-devel = " \

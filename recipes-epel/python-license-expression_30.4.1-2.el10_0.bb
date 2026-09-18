@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-license-expression \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-license-expression-30.4.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-license-expression-30.4.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d2afc310c98e848b369a2132e61c8c156237e704e7666835319bcd615833d0ce"
 
-URI_x86_64_v2_python-license-expression-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-license-expression-doc-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-license-expression-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-license-expression-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-license-expression-doc-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-license-expression-doc;unpack=0"
 SRC_URI[x86_64_v2_python-license-expression-doc.sha256sum] = "306f0b389dd5c137c3155996d19f3320d6148b1a4187e09fe16fbaa69c74803c"
 
-URI_x86_64_v2_python3-license-expression = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-license-expression-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-license-expression;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-license-expression}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-license-expression-30.4.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-license-expression;unpack=0"
 SRC_URI[x86_64_v2_python3-license-expression.sha256sum] = "6185b68996824a7b7782733557939677f525649e86b271f16022baa6c96489d0"
 
-URI_aarch64_python-license-expression-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-license-expression-doc-30.4.1-2.el10_0.noarch.rpm;name=aarch64_python-license-expression-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-license-expression-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-license-expression-doc-30.4.1-2.el10_0.noarch.rpm;name=aarch64_python-license-expression-doc;unpack=0"
 SRC_URI[aarch64_python-license-expression-doc.sha256sum] = "9682c40a33ba0144c44f989f0081b440ebd2e7035f71fa862164ac5f1a69bdcf"
 
-URI_aarch64_python3-license-expression = "${EPEL_MIRROR}/aarch64/Packages/p/python3-license-expression-30.4.1-2.el10_0.noarch.rpm;name=aarch64_python3-license-expression;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-license-expression}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-license-expression-30.4.1-2.el10_0.noarch.rpm;name=aarch64_python3-license-expression;unpack=0"
 SRC_URI[aarch64_python3-license-expression.sha256sum] = "57b140d97fda5907877ff05fa21264d342c73e59697ca8ddc672b0ee985ee4d5"
 
 RDEPENDS:python-license-expression-doc = " \

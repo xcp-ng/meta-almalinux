@@ -11,32 +11,25 @@ PACKAGES = " \
  palapeli-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/palapeli-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/palapeli-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f226edf554d91ca09f9df932b058a28ebc7d6acba820bb246a42df3b6199da4e"
 
-URI_x86_64_v2_palapeli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_palapeli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli;unpack=0"
 SRC_URI[x86_64_v2_palapeli.sha256sum] = "d0f43f51cd3da0c4b4a251986fe121f757998c4632b80e506a12641cd0868bc7"
 
-URI_x86_64_v2_palapeli-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_palapeli-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli-devel;unpack=0"
 SRC_URI[x86_64_v2_palapeli-devel.sha256sum] = "72995496ab5c96f70c2b3d8c8cd20b08b07438a1a857bf26a9d6424dac3e9903"
 
-URI_x86_64_v2_palapeli-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_palapeli-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/palapeli-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_palapeli-libs;unpack=0"
 SRC_URI[x86_64_v2_palapeli-libs.sha256sum] = "1bc193decc283c027601177385198c3c9f59516fe37e8cb490c3411176cc027e"
 
-URI_aarch64_palapeli = "${EPEL_MIRROR}/aarch64/Packages/p/palapeli-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_palapeli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/palapeli-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli;unpack=0"
 SRC_URI[aarch64_palapeli.sha256sum] = "5946ec68ade7456d4e4106ccc714043f1c9afcb86d97b6da8577f165512cab50"
 
-URI_aarch64_palapeli-devel = "${EPEL_MIRROR}/aarch64/Packages/p/palapeli-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_palapeli-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/palapeli-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli-devel;unpack=0"
 SRC_URI[aarch64_palapeli-devel.sha256sum] = "3d78b123c48279dc97b9f54b50c212b2938d5ce4cc60747d16bd62e072dcb885"
 
-URI_aarch64_palapeli-libs = "${EPEL_MIRROR}/aarch64/Packages/p/palapeli-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_palapeli-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/palapeli-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_palapeli-libs;unpack=0"
 SRC_URI[aarch64_palapeli-libs.sha256sum] = "538b2b29d554dddf4aae4b7773d04ad749b8b9b1911053a779ba791ff8295aa0"
 
 RDEPENDS:palapeli = " \

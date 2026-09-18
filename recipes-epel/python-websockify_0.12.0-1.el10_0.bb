@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-websockify \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-websockify-0.12.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-websockify-0.12.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3e7ab44d5eb771c5665be594189e8082869910e10eed15192229a04fe553273c"
 
-URI_x86_64_v2_python-websockify-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-websockify-doc-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-websockify-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-websockify-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-websockify-doc-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-websockify-doc;unpack=0"
 SRC_URI[x86_64_v2_python-websockify-doc.sha256sum] = "35c8d180a1026b99930b625a952b449c2fb753b81bc569f2e08d9632702cd6e9"
 
-URI_x86_64_v2_python3-websockify = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websockify-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websockify;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-websockify}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-websockify-0.12.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-websockify;unpack=0"
 SRC_URI[x86_64_v2_python3-websockify.sha256sum] = "232df5b5b3cb2648b732168ac189a18d42567100d860575ecfbef1ecf597189c"
 
-URI_aarch64_python-websockify-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-websockify-doc-0.12.0-1.el10_0.noarch.rpm;name=aarch64_python-websockify-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-websockify-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-websockify-doc-0.12.0-1.el10_0.noarch.rpm;name=aarch64_python-websockify-doc;unpack=0"
 SRC_URI[aarch64_python-websockify-doc.sha256sum] = "768e2d116f8a763b96da352b0820860d08a2911e1200577539ed9489b093c679"
 
-URI_aarch64_python3-websockify = "${EPEL_MIRROR}/aarch64/Packages/p/python3-websockify-0.12.0-1.el10_0.noarch.rpm;name=aarch64_python3-websockify;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-websockify}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-websockify-0.12.0-1.el10_0.noarch.rpm;name=aarch64_python3-websockify;unpack=0"
 SRC_URI[aarch64_python3-websockify.sha256sum] = "24fc7855a46edec9cb6e1e9c017f10fb46c653bd72c4132ef2099a7a0b7192dd"
 
 RDEPENDS:python-websockify-doc = " \

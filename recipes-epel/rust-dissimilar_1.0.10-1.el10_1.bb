@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-dissimilar-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-dissimilar-1.0.10-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-dissimilar-1.0.10-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1d12c6d693f32c41c055264cecd79b49d66497156c1c623166b0e60fd2d6490a"
 
-URI_x86_64_v2_rust-dissimilar+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-dissimilar+default-devel-1.0.10-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-dissimilar+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-dissimilar+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-dissimilar+default-devel-1.0.10-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-dissimilar+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-dissimilar+default-devel.sha256sum] = "d8bd81f34ac66058255c02fc663c007f805452b371493e6cd7aeb95a1c146c91"
 
-URI_x86_64_v2_rust-dissimilar-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-dissimilar-devel-1.0.10-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-dissimilar-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-dissimilar-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-dissimilar-devel-1.0.10-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-dissimilar-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-dissimilar-devel.sha256sum] = "c33b43e9ed26ef51be68035882f44703501b6e573bbdbecd83a57d62f5c3a5eb"
 
-URI_aarch64_rust-dissimilar+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-dissimilar+default-devel-1.0.10-1.el10_1.noarch.rpm;name=aarch64_rust-dissimilar+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-dissimilar+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-dissimilar+default-devel-1.0.10-1.el10_1.noarch.rpm;name=aarch64_rust-dissimilar+default-devel;unpack=0"
 SRC_URI[aarch64_rust-dissimilar+default-devel.sha256sum] = "9e3b72789a3f279900d31577c9c654efed8eed5917af3993028582aa8fb59ad7"
 
-URI_aarch64_rust-dissimilar-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-dissimilar-devel-1.0.10-1.el10_1.noarch.rpm;name=aarch64_rust-dissimilar-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-dissimilar-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-dissimilar-devel-1.0.10-1.el10_1.noarch.rpm;name=aarch64_rust-dissimilar-devel;unpack=0"
 SRC_URI[aarch64_rust-dissimilar-devel.sha256sum] = "d8d3a40a1dd2064ddee18020c127ecf95ae6d64166aaeb2505f279a3f437b4cf"
 
 RDEPENDS:rust-dissimilar+default-devel = " \

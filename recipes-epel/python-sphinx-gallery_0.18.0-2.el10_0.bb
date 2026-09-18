@@ -11,32 +11,25 @@ PACKAGES = " \
  python3-sphinx-gallery+show_api_usage \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-gallery-0.18.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-gallery-0.18.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0d2c34066177e547ff116d005e1d0affe0e1d3abbb473bd56975b1a7bae84064"
 
-URI_x86_64_v2_python3-sphinx-gallery = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-gallery.sha256sum] = "18cb8b7343b2ba4f32f41ee537a09ef9b25fdf3565c22dbfa2223be449f262fd"
 
-URI_x86_64_v2_python3-sphinx-gallery+recommender = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+recommender-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+recommender;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery+recommender}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+recommender-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+recommender;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-gallery+recommender.sha256sum] = "003fe5f32e24143e52beb2b14ebf97e84296b797f4940c01a1e14af8c3a8b1b1"
 
-URI_x86_64_v2_python3-sphinx-gallery+show_api_usage = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+show_api_usage-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+show_api_usage;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-gallery+show_api_usage}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-gallery+show_api_usage-0.18.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-gallery+show_api_usage;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-gallery+show_api_usage.sha256sum] = "51c7deda76a28f672a176ee44bc1af5ad2b1f60e5b81cc5fdae1e111f250d81f"
 
-URI_aarch64_python3-sphinx-gallery = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-gallery}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery;unpack=0"
 SRC_URI[aarch64_python3-sphinx-gallery.sha256sum] = "37cc1b3e03ccb86781e4c468a9445e5c4a9074093cd67ee1a31e58e13bb8b505"
 
-URI_aarch64_python3-sphinx-gallery+recommender = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery+recommender-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery+recommender;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-gallery+recommender}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery+recommender-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery+recommender;unpack=0"
 SRC_URI[aarch64_python3-sphinx-gallery+recommender.sha256sum] = "9c698634164c9775805262514c3def5edeec2e653dd13632ee927b5d64f0730e"
 
-URI_aarch64_python3-sphinx-gallery+show_api_usage = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery+show_api_usage-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery+show_api_usage;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-gallery+show_api_usage}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-gallery+show_api_usage-0.18.0-2.el10_0.noarch.rpm;name=aarch64_python3-sphinx-gallery+show_api_usage;unpack=0"
 SRC_URI[aarch64_python3-sphinx-gallery+show_api_usage.sha256sum] = "09351bf2f6748faee9e3c17622e5f213387334d9b1cd8f432389e9a480d60286"
 
 RDEPENDS:python3-sphinx-gallery = " \

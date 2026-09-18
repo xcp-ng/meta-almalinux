@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-webtest \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-webtest-3.0.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-webtest-3.0.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "701082d46539409c5a93b3ddf03e04eac795e0f2ca75c7729967c4fbd978bffb"
 
-URI_x86_64_v2_python3-webtest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-webtest-3.0.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-webtest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-webtest}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-webtest-3.0.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-webtest;unpack=0"
 SRC_URI[x86_64_v2_python3-webtest.sha256sum] = "90d336a51dd4de7af2022cc7d52c36a5ac3889cc6e6139a1427c0a6143f34409"
 
-URI_aarch64_python3-webtest = "${EPEL_MIRROR}/aarch64/Packages/p/python3-webtest-3.0.1-2.el10_0.noarch.rpm;name=aarch64_python3-webtest;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-webtest}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-webtest-3.0.1-2.el10_0.noarch.rpm;name=aarch64_python3-webtest;unpack=0"
 SRC_URI[aarch64_python3-webtest.sha256sum] = "1d476eb2c557c22fb8ab3fe8af293b6198023b142609be07b92baa48e9839562"
 
 RDEPENDS:python3-webtest = " \

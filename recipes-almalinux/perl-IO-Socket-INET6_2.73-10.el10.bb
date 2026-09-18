@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-IO-Socket-INET6 \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Socket-INET6-2.73-10.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-IO-Socket-INET6-2.73-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "eb69eb2f124305cb7dcc97ecd91401397dde597dd0017165027a66dcda5b15bf"
 
-URI_x86_64_v2_perl-IO-Socket-INET6 = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Socket-INET6-2.73-10.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-INET6;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-IO-Socket-INET6}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-IO-Socket-INET6-2.73-10.el10.noarch.rpm;name=x86_64_v2_perl-IO-Socket-INET6;unpack=0"
 SRC_URI[x86_64_v2_perl-IO-Socket-INET6.sha256sum] = "420a4122960474424f85a7c5413cc7d3cc7e6fb4622d1cf3e8889abcaae7536e"
 
-URI_aarch64_perl-IO-Socket-INET6 = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Socket-INET6-2.73-10.el10.noarch.rpm;name=aarch64_perl-IO-Socket-INET6;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-IO-Socket-INET6}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-IO-Socket-INET6-2.73-10.el10.noarch.rpm;name=aarch64_perl-IO-Socket-INET6;unpack=0"
 SRC_URI[aarch64_perl-IO-Socket-INET6.sha256sum] = "420a4122960474424f85a7c5413cc7d3cc7e6fb4622d1cf3e8889abcaae7536e"
 
 RDEPENDS:perl-IO-Socket-INET6 = " \

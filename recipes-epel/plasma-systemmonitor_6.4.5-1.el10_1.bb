@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-systemmonitor \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-systemmonitor-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-systemmonitor-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e2ec598ee339bcdfdbd883fe82f07a1e273290f0c902b876b74ec3bf5343cd6"
 
-URI_x86_64_v2_plasma-systemmonitor = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-systemmonitor-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-systemmonitor;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-systemmonitor}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-systemmonitor-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_plasma-systemmonitor;unpack=0"
 SRC_URI[x86_64_v2_plasma-systemmonitor.sha256sum] = "d5e4cb74f5d9230f6ae26a4d27dbc27ff9d237291b6febc4843af0d01a1533f1"
 
-URI_aarch64_plasma-systemmonitor = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-systemmonitor-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-systemmonitor;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-systemmonitor}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-systemmonitor-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_plasma-systemmonitor;unpack=0"
 SRC_URI[aarch64_plasma-systemmonitor.sha256sum] = "9a4b47f6e93fea559c54373177603a2510d376189e3dfccf9753cb8b62a60812"
 
 RDEPENDS:plasma-systemmonitor = " \

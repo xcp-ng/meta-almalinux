@@ -10,24 +10,19 @@ PACKAGES = " \
  libtomcrypt-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libtomcrypt-1.18.2-21.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libtomcrypt-1.18.2-21.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2c7ddc9d50d6046ff017550a8f489027aed7bdaa8ea7f3b6abf4fc4deea78bab"
 
-URI_x86_64_v2_libtomcrypt = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libtomcrypt-1.18.2-21.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libtomcrypt;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libtomcrypt}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libtomcrypt-1.18.2-21.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libtomcrypt;unpack=0"
 SRC_URI[x86_64_v2_libtomcrypt.sha256sum] = "519b9d33885c23322839d78ba7522921e6d261cd2bf73a8815b616db016fe72a"
 
-URI_x86_64_v2_libtomcrypt-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libtomcrypt-devel-1.18.2-21.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libtomcrypt-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libtomcrypt-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libtomcrypt-devel-1.18.2-21.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libtomcrypt-devel;unpack=0"
 SRC_URI[x86_64_v2_libtomcrypt-devel.sha256sum] = "d24a3f908e1219aa585642602c2d316c79c2ff889c05101f3b6d5d2240162c25"
 
-URI_aarch64_libtomcrypt = "${EPEL_MIRROR}/aarch64/Packages/l/libtomcrypt-1.18.2-21.el10_1.aarch64.rpm;name=aarch64_libtomcrypt;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libtomcrypt}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libtomcrypt-1.18.2-21.el10_1.aarch64.rpm;name=aarch64_libtomcrypt;unpack=0"
 SRC_URI[aarch64_libtomcrypt.sha256sum] = "e60d4c8519d99f903043d2264cbf5a74efc03a2f493c261e1480660bbc6a8a3a"
 
-URI_aarch64_libtomcrypt-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libtomcrypt-devel-1.18.2-21.el10_1.aarch64.rpm;name=aarch64_libtomcrypt-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libtomcrypt-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libtomcrypt-devel-1.18.2-21.el10_1.aarch64.rpm;name=aarch64_libtomcrypt-devel;unpack=0"
 SRC_URI[aarch64_libtomcrypt-devel.sha256sum] = "0ee728b93001fa7c69d3cfa97a99b4aed240b95f8e6f043098eed14da9eda3fe"
 
 RDEPENDS:libtomcrypt = " \

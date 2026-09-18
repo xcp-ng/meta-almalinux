@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-et_xmlfile \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-et_xmlfile-1.1.0-12.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-et_xmlfile-1.1.0-12.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd20677d28f8b814c40c175490f970963ff9bee2769a65191106342cc4dbf717"
 
-URI_x86_64_v2_python3-et_xmlfile = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-et_xmlfile-1.1.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-et_xmlfile;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-et_xmlfile}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-et_xmlfile-1.1.0-12.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-et_xmlfile;unpack=0"
 SRC_URI[x86_64_v2_python3-et_xmlfile.sha256sum] = "e9c25482f1e0b84984c6b348df4dea90647851b956211023237c6926212290a3"
 
-URI_aarch64_python3-et_xmlfile = "${EPEL_MIRROR}/aarch64/Packages/p/python3-et_xmlfile-1.1.0-12.el10_0.noarch.rpm;name=aarch64_python3-et_xmlfile;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-et_xmlfile}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-et_xmlfile-1.1.0-12.el10_0.noarch.rpm;name=aarch64_python3-et_xmlfile;unpack=0"
 SRC_URI[aarch64_python3-et_xmlfile.sha256sum] = "b6c22d4c74dbfaa4c99815cfb32a6843234572291ac7da3147451c08d34c9a6f"
 
 RDEPENDS:python3-et_xmlfile = " \

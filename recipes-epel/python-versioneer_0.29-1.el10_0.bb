@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-versioneer+toml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-versioneer-0.29-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-versioneer-0.29-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "63b98e08e968cf3b8fee58038880063584cc6eb66a2847c9ccc54231ed484240"
 
-URI_x86_64_v2_python3-versioneer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-versioneer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer;unpack=0"
 SRC_URI[x86_64_v2_python3-versioneer.sha256sum] = "12151f106f252df46224f3a40277e63739b2ddbff6c3eb5e6a0e5da1384f3763"
 
-URI_x86_64_v2_python3-versioneer+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer+toml-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer+toml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-versioneer+toml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-versioneer+toml-0.29-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-versioneer+toml;unpack=0"
 SRC_URI[x86_64_v2_python3-versioneer+toml.sha256sum] = "c26a649c5a1ce20b45bab416742b71d77acf751bc89fbff497bd0c610ff5568e"
 
-URI_aarch64_python3-versioneer = "${EPEL_MIRROR}/aarch64/Packages/p/python3-versioneer-0.29-1.el10_0.noarch.rpm;name=aarch64_python3-versioneer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-versioneer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-versioneer-0.29-1.el10_0.noarch.rpm;name=aarch64_python3-versioneer;unpack=0"
 SRC_URI[aarch64_python3-versioneer.sha256sum] = "f2311b36e47e665418016a89cd5fa4623f887f5217d7e5c836e2c570db18e312"
 
-URI_aarch64_python3-versioneer+toml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-versioneer+toml-0.29-1.el10_0.noarch.rpm;name=aarch64_python3-versioneer+toml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-versioneer+toml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-versioneer+toml-0.29-1.el10_0.noarch.rpm;name=aarch64_python3-versioneer+toml;unpack=0"
 SRC_URI[aarch64_python3-versioneer+toml.sha256sum] = "fa878326cd3bc293a012978014099704b62d5b511897861e5e19ee3af79f56b2"
 
 RDEPENDS:python3-versioneer = " \

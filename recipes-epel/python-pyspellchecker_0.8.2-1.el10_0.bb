@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pyspellchecker \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pyspellchecker-0.8.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pyspellchecker-0.8.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3e19ae2d8e93e2a27603ab7561c0ef83bc9dd8a0e26d09e6b4761ccb956737d6"
 
-URI_x86_64_v2_python3-pyspellchecker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyspellchecker-0.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyspellchecker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pyspellchecker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pyspellchecker-0.8.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pyspellchecker;unpack=0"
 SRC_URI[x86_64_v2_python3-pyspellchecker.sha256sum] = "490b00e4fb985beb478e71ad5788937b31a7bf82e800261b92c4bc57dbdbf810"
 
-URI_aarch64_python3-pyspellchecker = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pyspellchecker-0.8.2-1.el10_0.noarch.rpm;name=aarch64_python3-pyspellchecker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pyspellchecker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pyspellchecker-0.8.2-1.el10_0.noarch.rpm;name=aarch64_python3-pyspellchecker;unpack=0"
 SRC_URI[aarch64_python3-pyspellchecker.sha256sum] = "c734adbc8e0376e6b53848140e98857217c1851f950359b7da5474afcae39b14"
 
 RDEPENDS:python3-pyspellchecker = " \

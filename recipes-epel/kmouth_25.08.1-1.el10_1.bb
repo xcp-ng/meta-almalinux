@@ -9,16 +9,13 @@ PACKAGES = " \
  kmouth \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kmouth-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kmouth-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "58d71ee0e51cb750088757a05beb35b6b0965cdfea4a6c987d9d1216066186c5"
 
-URI_x86_64_v2_kmouth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmouth-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmouth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kmouth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kmouth-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kmouth;unpack=0"
 SRC_URI[x86_64_v2_kmouth.sha256sum] = "ba0d49ecb9dee5e2d17ada68d86eee9f1cdd024564af1699f8c394fda3779a89"
 
-URI_aarch64_kmouth = "${EPEL_MIRROR}/aarch64/Packages/k/kmouth-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmouth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kmouth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kmouth-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kmouth;unpack=0"
 SRC_URI[aarch64_kmouth.sha256sum] = "c8655cdfc084ad0e450b381c616876e4419c27f1f8580a3e05148419e38dda2e"
 
 RDEPENDS:kmouth = " \

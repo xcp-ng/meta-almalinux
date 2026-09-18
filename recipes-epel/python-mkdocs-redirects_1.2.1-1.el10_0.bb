@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-mkdocs-redirects \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-redirects-1.2.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-mkdocs-redirects-1.2.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "949c7a5c2947646fc2f1edab6689db9a4652af09936aca29fb9b82023d396e5b"
 
-URI_x86_64_v2_python3-mkdocs-redirects = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-redirects-1.2.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-redirects;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-mkdocs-redirects}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-mkdocs-redirects-1.2.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-mkdocs-redirects;unpack=0"
 SRC_URI[x86_64_v2_python3-mkdocs-redirects.sha256sum] = "385f090d089e95dab1466e4f296658d7448c88651beb94208131c3e595df50ed"
 
-URI_aarch64_python3-mkdocs-redirects = "${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-redirects-1.2.1-1.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-redirects;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-mkdocs-redirects}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-mkdocs-redirects-1.2.1-1.el10_0.noarch.rpm;name=aarch64_python3-mkdocs-redirects;unpack=0"
 SRC_URI[aarch64_python3-mkdocs-redirects.sha256sum] = "6a2958d0caf132dd9235a472d08f6453e94753778029914d3c08399a5657e017"
 
 RDEPENDS:python3-mkdocs-redirects = " \

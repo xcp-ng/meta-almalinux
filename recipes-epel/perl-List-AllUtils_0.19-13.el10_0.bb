@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-List-AllUtils-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-List-AllUtils-0.19-13.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-List-AllUtils-0.19-13.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "806cdc48e759f561fe9baa9eb571eee9b7b2b71ff070b1f16b278713e9490475"
 
-URI_x86_64_v2_perl-List-AllUtils = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-List-AllUtils-0.19-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-List-AllUtils;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-List-AllUtils}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-List-AllUtils-0.19-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-List-AllUtils;unpack=0"
 SRC_URI[x86_64_v2_perl-List-AllUtils.sha256sum] = "6b66c3faadb8546c4d4902a9df7e634b808388224e6044c6d94077c1c7114ec9"
 
-URI_x86_64_v2_perl-List-AllUtils-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-List-AllUtils-tests-0.19-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-List-AllUtils-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-List-AllUtils-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-List-AllUtils-tests-0.19-13.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-List-AllUtils-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-List-AllUtils-tests.sha256sum] = "58ba11a8b2a1feb094d65d5c0376fbc9d621016f631bdf4ba9f48622bc1542b9"
 
-URI_aarch64_perl-List-AllUtils = "${EPEL_MIRROR}/aarch64/Packages/p/perl-List-AllUtils-0.19-13.el10_0.noarch.rpm;name=aarch64_perl-List-AllUtils;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-List-AllUtils}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-List-AllUtils-0.19-13.el10_0.noarch.rpm;name=aarch64_perl-List-AllUtils;unpack=0"
 SRC_URI[aarch64_perl-List-AllUtils.sha256sum] = "320a9a17f356fd4c14eebabea11a0380c5d485a4686e739859c3194e37266daa"
 
-URI_aarch64_perl-List-AllUtils-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-List-AllUtils-tests-0.19-13.el10_0.noarch.rpm;name=aarch64_perl-List-AllUtils-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-List-AllUtils-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-List-AllUtils-tests-0.19-13.el10_0.noarch.rpm;name=aarch64_perl-List-AllUtils-tests;unpack=0"
 SRC_URI[aarch64_perl-List-AllUtils-tests.sha256sum] = "7a081fab87293807a41a7e1f776eb3fa5bcfe900103f5ff2f390cc6e6a0ccdab"
 
 RDEPENDS:perl-List-AllUtils = " \

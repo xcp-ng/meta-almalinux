@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tensile-6.4.0-6.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tensile-6.4.0-6.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9f5576b822256a74da793724ad277df2e3ec25b41ae69a22ef0cec302caacb13"
 
-URI_x86_64_v2_python3-tensile-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tensile-devel-6.4.0-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tensile-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tensile-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tensile-devel-6.4.0-6.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tensile-devel;unpack=0"
 SRC_URI[x86_64_v2_python3-tensile-devel.sha256sum] = "0115149e468e7178b92dfabe0245ca7652248966734b106d71cb2982c8feb15a"
 
 RDEPENDS:python3-tensile-devel = " \

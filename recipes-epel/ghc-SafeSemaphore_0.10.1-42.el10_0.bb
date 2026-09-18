@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-SafeSemaphore-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-SafeSemaphore-0.10.1-42.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-SafeSemaphore-0.10.1-42.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8635e77ac2593bb40755918fd561be530710c308a1ae5eabe56fbfa1593e3c3a"
 
-URI_x86_64_v2_ghc-SafeSemaphore = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-SafeSemaphore}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore;unpack=0"
 SRC_URI[x86_64_v2_ghc-SafeSemaphore.sha256sum] = "8e395513c00fb49abbe76dd9945cdfc371bb010a9c277e66420296ad3238c53a"
 
-URI_x86_64_v2_ghc-SafeSemaphore-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-devel-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-SafeSemaphore-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-devel-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-SafeSemaphore-devel.sha256sum] = "9b28301d90225ded67d2c5151df163ce88be53ecce392861c1782cba39959055"
 
-URI_x86_64_v2_ghc-SafeSemaphore-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-doc-0.10.1-42.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-SafeSemaphore-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-SafeSemaphore-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-doc-0.10.1-42.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-SafeSemaphore-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-SafeSemaphore-doc.sha256sum] = "1b3ac6c16165096837ee72897e18d585aacf61a66fce9e9fcbc8a78b8bc1ee51"
 
-URI_x86_64_v2_ghc-SafeSemaphore-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-prof-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-SafeSemaphore-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-SafeSemaphore-prof-0.10.1-42.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-SafeSemaphore-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-SafeSemaphore-prof.sha256sum] = "ab6d462f77f2694b3497d6cdbcba2dc3618d08318f6ae2a07aa9207ebc4dd230"
 
-URI_aarch64_ghc-SafeSemaphore = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-SafeSemaphore}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore;unpack=0"
 SRC_URI[aarch64_ghc-SafeSemaphore.sha256sum] = "273eeb5c2b3159a284a888826c36179982e635f9d1ee93cb4da66861d0fce1e7"
 
-URI_aarch64_ghc-SafeSemaphore-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-devel-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-SafeSemaphore-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-devel-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore-devel;unpack=0"
 SRC_URI[aarch64_ghc-SafeSemaphore-devel.sha256sum] = "33e06b7bf5642d4e5bbdc673edf24e06cc2acfb99841c9c77e219fd0463c0174"
 
-URI_aarch64_ghc-SafeSemaphore-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-doc-0.10.1-42.el10_0.noarch.rpm;name=aarch64_ghc-SafeSemaphore-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-SafeSemaphore-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-doc-0.10.1-42.el10_0.noarch.rpm;name=aarch64_ghc-SafeSemaphore-doc;unpack=0"
 SRC_URI[aarch64_ghc-SafeSemaphore-doc.sha256sum] = "d840a4bce3ec980fec9a91e3fe7da3f94a2716b251632c92f1ca43fa78a3b128"
 
-URI_aarch64_ghc-SafeSemaphore-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-prof-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-SafeSemaphore-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-SafeSemaphore-prof-0.10.1-42.el10_0.aarch64.rpm;name=aarch64_ghc-SafeSemaphore-prof;unpack=0"
 SRC_URI[aarch64_ghc-SafeSemaphore-prof.sha256sum] = "d2fe202d4269be4ed23cfa71bcbb7dfc9c840802d959163c9c1aab0ecea216a0"
 
 RDEPENDS:ghc-SafeSemaphore = " \

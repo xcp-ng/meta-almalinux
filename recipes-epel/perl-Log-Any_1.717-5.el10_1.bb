@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Log-Any \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Log-Any-1.717-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Log-Any-1.717-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f5eaf04043c547d92a125a72e9a9bef3c7d36644ad6a8cdd02a71c170819e361"
 
-URI_x86_64_v2_perl-Log-Any = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Log-Any-1.717-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Log-Any;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Log-Any}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Log-Any-1.717-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Log-Any;unpack=0"
 SRC_URI[x86_64_v2_perl-Log-Any.sha256sum] = "1c424433f23ba48de2f026ad16c7ffd3d61c077d9ef7e0fb96f5b503f0137885"
 
-URI_aarch64_perl-Log-Any = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Log-Any-1.717-5.el10_1.noarch.rpm;name=aarch64_perl-Log-Any;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Log-Any}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Log-Any-1.717-5.el10_1.noarch.rpm;name=aarch64_perl-Log-Any;unpack=0"
 SRC_URI[aarch64_perl-Log-Any.sha256sum] = "2bbfeb71270007644ce6a4a7639f0e7d6270d0699437d796024b2af57806caf2"
 
 RDEPENDS:perl-Log-Any = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-hyperframe \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-hyperframe-6.0.1-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-hyperframe-6.0.1-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "672818b4b4a11c2bee4cf2916d2cdf77f59a8c5e05112de3a4523864c1989f03"
 
-URI_x86_64_v2_python-hyperframe-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperframe-doc-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperframe-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-hyperframe-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-hyperframe-doc-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-hyperframe-doc;unpack=0"
 SRC_URI[x86_64_v2_python-hyperframe-doc.sha256sum] = "a66212c5002d8b57ed6d26e33e086ed21be322da3fe666bd20904bfc59dff2cc"
 
-URI_x86_64_v2_python3-hyperframe = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperframe-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperframe;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-hyperframe}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-hyperframe-6.0.1-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-hyperframe;unpack=0"
 SRC_URI[x86_64_v2_python3-hyperframe.sha256sum] = "19449c961bea63ef9715e63f24cc5d406f0455df4cff85368bda7cd32b09905c"
 
-URI_aarch64_python-hyperframe-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-hyperframe-doc-6.0.1-17.el10_0.noarch.rpm;name=aarch64_python-hyperframe-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-hyperframe-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-hyperframe-doc-6.0.1-17.el10_0.noarch.rpm;name=aarch64_python-hyperframe-doc;unpack=0"
 SRC_URI[aarch64_python-hyperframe-doc.sha256sum] = "a32a49ed778dcdd18c43096bbfdba17613ae0b556a11db63e0b8ef32af2f2ca2"
 
-URI_aarch64_python3-hyperframe = "${EPEL_MIRROR}/aarch64/Packages/p/python3-hyperframe-6.0.1-17.el10_0.noarch.rpm;name=aarch64_python3-hyperframe;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-hyperframe}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-hyperframe-6.0.1-17.el10_0.noarch.rpm;name=aarch64_python3-hyperframe;unpack=0"
 SRC_URI[aarch64_python3-hyperframe.sha256sum] = "7127c254c3182971f116261ba881d7a642f00e261900cc72907a956cbfd57150"
 
 RDEPENDS:python-hyperframe-doc = " \

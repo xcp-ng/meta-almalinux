@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Pod-Snippets \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Snippets-0.14-31.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Snippets-0.14-31.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "00f9b080279964eaa1b7063bba4af09b2132539dd64a3b3630e7f0df2c8042b4"
 
-URI_x86_64_v2_perl-Pod-Snippets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Snippets-0.14-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Snippets;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Snippets}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Snippets-0.14-31.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Snippets;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Snippets.sha256sum] = "c6501c94ccbb96636c824e16f06f46b8106458aeab42af799f15793649a3e2a8"
 
-URI_aarch64_perl-Pod-Snippets = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Snippets-0.14-31.el10_0.noarch.rpm;name=aarch64_perl-Pod-Snippets;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Snippets}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Snippets-0.14-31.el10_0.noarch.rpm;name=aarch64_perl-Pod-Snippets;unpack=0"
 SRC_URI[aarch64_perl-Pod-Snippets.sha256sum] = "9cd5c737d01a32f2096cd3249c8666a450814ee4d8b5b9220e44be54d540f858"
 
 RDEPENDS:perl-Pod-Snippets = " \

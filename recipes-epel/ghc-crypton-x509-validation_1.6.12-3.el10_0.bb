@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-crypton-x509-validation-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-crypton-x509-validation-1.6.12-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-crypton-x509-validation-1.6.12-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "119273147d6fae535c07431c62ec15812127463ca36b9d1f0b7d3b3bb141d982"
 
-URI_x86_64_v2_ghc-crypton-x509-validation = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-x509-validation}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-x509-validation.sha256sum] = "aefb0a9a4f588259a59e1605a53f8fc61b11c604de6bb8cfcfab13d42ec603c5"
 
-URI_x86_64_v2_ghc-crypton-x509-validation-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-devel-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-x509-validation-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-devel-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-x509-validation-devel.sha256sum] = "b35036bd498edeb2c1997dbf2604f4d6f95861d221391496c6d9ceabdf19275b"
 
-URI_x86_64_v2_ghc-crypton-x509-validation-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-doc-1.6.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-crypton-x509-validation-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-x509-validation-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-doc-1.6.12-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-crypton-x509-validation-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-x509-validation-doc.sha256sum] = "f1fd8b6f77bf06806df0ee12b8f9b3d511d77aa612f7882644915913923031a6"
 
-URI_x86_64_v2_ghc-crypton-x509-validation-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-prof-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-crypton-x509-validation-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-crypton-x509-validation-prof-1.6.12-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-crypton-x509-validation-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-crypton-x509-validation-prof.sha256sum] = "b337111dedbce188376acc4695b9646fb772aed6eec506a7b9909cde256f5309"
 
-URI_aarch64_ghc-crypton-x509-validation = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-x509-validation}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation;unpack=0"
 SRC_URI[aarch64_ghc-crypton-x509-validation.sha256sum] = "f21f47170de516d1d3df84c093799fd8f58fe2961c66ca29bd0cdf0ba280a246"
 
-URI_aarch64_ghc-crypton-x509-validation-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-devel-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-x509-validation-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-devel-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation-devel;unpack=0"
 SRC_URI[aarch64_ghc-crypton-x509-validation-devel.sha256sum] = "68316c2107c7776a0beca09e887de5ac5eebcb95cfa2c5018f5b465c41078d2a"
 
-URI_aarch64_ghc-crypton-x509-validation-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-doc-1.6.12-3.el10_0.noarch.rpm;name=aarch64_ghc-crypton-x509-validation-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-x509-validation-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-doc-1.6.12-3.el10_0.noarch.rpm;name=aarch64_ghc-crypton-x509-validation-doc;unpack=0"
 SRC_URI[aarch64_ghc-crypton-x509-validation-doc.sha256sum] = "7c09e218b4af62ba264cb7693ec0255c15188edc43ac59a1951ce51c92525bd8"
 
-URI_aarch64_ghc-crypton-x509-validation-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-prof-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-crypton-x509-validation-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-crypton-x509-validation-prof-1.6.12-3.el10_0.aarch64.rpm;name=aarch64_ghc-crypton-x509-validation-prof;unpack=0"
 SRC_URI[aarch64_ghc-crypton-x509-validation-prof.sha256sum] = "7b6ba979f2a8542351ed0d3e69d6e02909faeec934e513a2b4e72c98170e3410"
 
 RDEPENDS:ghc-crypton-x509-validation = " \

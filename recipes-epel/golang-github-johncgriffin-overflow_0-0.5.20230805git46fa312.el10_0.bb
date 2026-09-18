@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-johncgriffin-overflow-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-johncgriffin-overflow-0-0.5.20230805git46fa312.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-johncgriffin-overflow-0-0.5.20230805git46fa312.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6a21e4c61427ef77be7a0f238cb0ca29bac8e17647028d6f1820e373fd5c9fbc"
 
-URI_aarch64_golang-github-johncgriffin-overflow-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-johncgriffin-overflow-devel-0-0.5.20230805git46fa312.el10_0.noarch.rpm;name=aarch64_golang-github-johncgriffin-overflow-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-johncgriffin-overflow-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-johncgriffin-overflow-devel-0-0.5.20230805git46fa312.el10_0.noarch.rpm;name=aarch64_golang-github-johncgriffin-overflow-devel;unpack=0"
 SRC_URI[aarch64_golang-github-johncgriffin-overflow-devel.sha256sum] = "92a12484fbcffbdf3b5d109f71fcaba6a9b383c9eb26f2780d202c9782785417"
 
 RDEPENDS:golang-github-johncgriffin-overflow-devel = " \

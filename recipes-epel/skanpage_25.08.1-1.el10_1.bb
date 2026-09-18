@@ -9,16 +9,13 @@ PACKAGES = " \
  skanpage \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/s/skanpage-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/s/skanpage-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "64455c408cb77bfd26e367036cf15177ce0fab17402182a34057d62b2ee83011"
 
-URI_x86_64_v2_skanpage = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/skanpage-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_skanpage;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_skanpage}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/skanpage-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_skanpage;unpack=0"
 SRC_URI[x86_64_v2_skanpage.sha256sum] = "c5c0b1966cf42735c83f996dc7a7bc80f7317c7a737f16671da946dd916e5b9c"
 
-URI_aarch64_skanpage = "${EPEL_MIRROR}/aarch64/Packages/s/skanpage-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_skanpage;unpack=0"
-SRC_URI:append = " ${URI_aarch64_skanpage}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/skanpage-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_skanpage;unpack=0"
 SRC_URI[aarch64_skanpage.sha256sum] = "a75efa6d296ccfcb3203d11494e93f0019d4e5a0a990c6893320db53bd3c1a6d"
 
 RDEPENDS:skanpage = " \

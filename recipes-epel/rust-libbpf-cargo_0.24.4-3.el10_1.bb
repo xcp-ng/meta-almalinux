@@ -11,32 +11,25 @@ PACKAGES = " \
  rust-libbpf-cargo-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-libbpf-cargo-0.24.4-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-libbpf-cargo-0.24.4-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bf78f2df85985828cbc225b88d4bc7dfc02b6af16534a55fe073ef556ff5b608"
 
-URI_x86_64_v2_libbpf-cargo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libbpf-cargo-0.24.4-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libbpf-cargo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libbpf-cargo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libbpf-cargo-0.24.4-3.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libbpf-cargo;unpack=0"
 SRC_URI[x86_64_v2_libbpf-cargo.sha256sum] = "61de22a7c851c8ae0c8bd95cdd52a8494924533913e60abe68cd28b146c45d24"
 
-URI_x86_64_v2_rust-libbpf-cargo+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libbpf-cargo+default-devel-0.24.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libbpf-cargo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-libbpf-cargo+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libbpf-cargo+default-devel-0.24.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libbpf-cargo+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-libbpf-cargo+default-devel.sha256sum] = "5a266611850151f74701f3d294e22d1ecc757b716456154ba77d03c0074bf981"
 
-URI_x86_64_v2_rust-libbpf-cargo-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libbpf-cargo-devel-0.24.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libbpf-cargo-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-libbpf-cargo-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-libbpf-cargo-devel-0.24.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-libbpf-cargo-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-libbpf-cargo-devel.sha256sum] = "9d7769d94876b6f10955a8a0c0529dfb1d94c0886c30c8c5123b9f9d6e4a46cb"
 
-URI_aarch64_libbpf-cargo = "${EPEL_MIRROR}/aarch64/Packages/l/libbpf-cargo-0.24.4-3.el10_1.aarch64.rpm;name=aarch64_libbpf-cargo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libbpf-cargo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libbpf-cargo-0.24.4-3.el10_1.aarch64.rpm;name=aarch64_libbpf-cargo;unpack=0"
 SRC_URI[aarch64_libbpf-cargo.sha256sum] = "20a5049e89c7db099c3962d08901c6de2b9e9883f1d0bb841f1f4f1e7654a778"
 
-URI_aarch64_rust-libbpf-cargo+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-libbpf-cargo+default-devel-0.24.4-3.el10_1.noarch.rpm;name=aarch64_rust-libbpf-cargo+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-libbpf-cargo+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-libbpf-cargo+default-devel-0.24.4-3.el10_1.noarch.rpm;name=aarch64_rust-libbpf-cargo+default-devel;unpack=0"
 SRC_URI[aarch64_rust-libbpf-cargo+default-devel.sha256sum] = "ffba6bb6043d4f83e88e567d9b506c2ced6de3a3397023b5c4ab6f40414a34c0"
 
-URI_aarch64_rust-libbpf-cargo-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-libbpf-cargo-devel-0.24.4-3.el10_1.noarch.rpm;name=aarch64_rust-libbpf-cargo-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-libbpf-cargo-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-libbpf-cargo-devel-0.24.4-3.el10_1.noarch.rpm;name=aarch64_rust-libbpf-cargo-devel;unpack=0"
 SRC_URI[aarch64_rust-libbpf-cargo-devel.sha256sum] = "553951356dd11d98379ace4f54ea03374720a87a36f650c53a08c4734175fab0"
 
 RDEPENDS:libbpf-cargo = " \

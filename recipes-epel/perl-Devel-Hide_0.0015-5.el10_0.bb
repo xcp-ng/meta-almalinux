@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Devel-Hide \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-Hide-0.0015-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Devel-Hide-0.0015-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3b9772d8cf4c20665a5398cf13c08d8223a95a16783a6547324e5e8180e1c2be"
 
-URI_x86_64_v2_perl-Devel-Hide = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-Hide-0.0015-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Devel-Hide;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Devel-Hide}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Devel-Hide-0.0015-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Devel-Hide;unpack=0"
 SRC_URI[x86_64_v2_perl-Devel-Hide.sha256sum] = "3bd126efff2a2fffc2ef38ddc8290afbf0e1afb7f2e0ea4538131b7bac4c41f9"
 
-URI_aarch64_perl-Devel-Hide = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-Hide-0.0015-5.el10_0.noarch.rpm;name=aarch64_perl-Devel-Hide;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Devel-Hide}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Devel-Hide-0.0015-5.el10_0.noarch.rpm;name=aarch64_perl-Devel-Hide;unpack=0"
 SRC_URI[aarch64_perl-Devel-Hide.sha256sum] = "b822923aa3bf7677ddac1b1ff3cbd39b0dc5ba5b38b8d4620befae73cea4386e"
 
 RDEPENDS:perl-Devel-Hide = " \

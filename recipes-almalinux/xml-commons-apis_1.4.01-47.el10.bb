@@ -11,32 +11,25 @@ PACKAGES = " \
  xml-commons-apis-manual \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xml-commons-apis-1.4.01-47.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xml-commons-apis-1.4.01-47.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "24169ef74994d73d83d10e0d420daf344371d9dc1d8971de0033cbb1165e52fa"
 
-URI_x86_64_v2_xml-commons-apis = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xml-commons-apis-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xml-commons-apis}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xml-commons-apis-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis;unpack=0"
 SRC_URI[x86_64_v2_xml-commons-apis.sha256sum] = "189f2f1e2c06bbc4243f68b9b117a858b92a16c0dcb1991bab13e69cda7b11f6"
 
-URI_x86_64_v2_xml-commons-apis-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xml-commons-apis-javadoc-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xml-commons-apis-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xml-commons-apis-javadoc-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis-javadoc;unpack=0"
 SRC_URI[x86_64_v2_xml-commons-apis-javadoc.sha256sum] = "7c4d41a9410014eebe6721f43bfeccdeef233e64f7786381307d188146a77bee"
 
-URI_x86_64_v2_xml-commons-apis-manual = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xml-commons-apis-manual-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis-manual;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xml-commons-apis-manual}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/xml-commons-apis-manual-1.4.01-47.el10.noarch.rpm;name=x86_64_v2_xml-commons-apis-manual;unpack=0"
 SRC_URI[x86_64_v2_xml-commons-apis-manual.sha256sum] = "7723ffae0d4248628e46e371808341785a61b13f139c8a8d9f03dc2a87b71341"
 
-URI_aarch64_xml-commons-apis = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xml-commons-apis-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xml-commons-apis}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xml-commons-apis-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis;unpack=0"
 SRC_URI[aarch64_xml-commons-apis.sha256sum] = "189f2f1e2c06bbc4243f68b9b117a858b92a16c0dcb1991bab13e69cda7b11f6"
 
-URI_aarch64_xml-commons-apis-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xml-commons-apis-javadoc-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xml-commons-apis-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xml-commons-apis-javadoc-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis-javadoc;unpack=0"
 SRC_URI[aarch64_xml-commons-apis-javadoc.sha256sum] = "7c4d41a9410014eebe6721f43bfeccdeef233e64f7786381307d188146a77bee"
 
-URI_aarch64_xml-commons-apis-manual = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xml-commons-apis-manual-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis-manual;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xml-commons-apis-manual}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/xml-commons-apis-manual-1.4.01-47.el10.noarch.rpm;name=aarch64_xml-commons-apis-manual;unpack=0"
 SRC_URI[aarch64_xml-commons-apis-manual.sha256sum] = "7723ffae0d4248628e46e371808341785a61b13f139c8a8d9f03dc2a87b71341"
 
 RDEPENDS:xml-commons-apis = " \

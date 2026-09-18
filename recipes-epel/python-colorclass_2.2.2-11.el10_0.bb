@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-colorclass \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-colorclass-2.2.2-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-colorclass-2.2.2-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "22c5da615be89b9f827150c696ba9f96a3f4976a7132001324528256a6d99af8"
 
-URI_x86_64_v2_python3-colorclass = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colorclass-2.2.2-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colorclass;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-colorclass}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-colorclass-2.2.2-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-colorclass;unpack=0"
 SRC_URI[x86_64_v2_python3-colorclass.sha256sum] = "bb2d4bd9cd141c5ee132f79a41a5410c884c95ae95d26d82dd56d13777d5f0e7"
 
-URI_aarch64_python3-colorclass = "${EPEL_MIRROR}/aarch64/Packages/p/python3-colorclass-2.2.2-11.el10_0.noarch.rpm;name=aarch64_python3-colorclass;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-colorclass}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-colorclass-2.2.2-11.el10_0.noarch.rpm;name=aarch64_python3-colorclass;unpack=0"
 SRC_URI[aarch64_python3-colorclass.sha256sum] = "5bcec65856d068b2729f00c13fb0340b883b4a0c8e892e5b46de187e1db56d22"
 
 RDEPENDS:python3-colorclass = " \

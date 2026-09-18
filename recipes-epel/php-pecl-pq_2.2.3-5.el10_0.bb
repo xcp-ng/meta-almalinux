@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-pq \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-pq-2.2.3-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-pq-2.2.3-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7691d0c2ac8470db893dd126d85f8c276c77d30482bc454741442dfd5ef5d9c7"
 
-URI_x86_64_v2_php-pecl-pq = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-pq-2.2.3-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-pq;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-pq}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-pq-2.2.3-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-pq;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-pq.sha256sum] = "8589adea941d07390a7c35993fc5ecdbbc4fbc9e19f506d841fb5ef44f73c1aa"
 
-URI_aarch64_php-pecl-pq = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-pq-2.2.3-5.el10_0.aarch64.rpm;name=aarch64_php-pecl-pq;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-pq}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-pq-2.2.3-5.el10_0.aarch64.rpm;name=aarch64_php-pecl-pq;unpack=0"
 SRC_URI[aarch64_php-pecl-pq.sha256sum] = "cc15a71944717e067488f88aab280bea414d7124747eaa2bd1e74f0191d85743"
 
 RDEPENDS:php-pecl-pq = " \

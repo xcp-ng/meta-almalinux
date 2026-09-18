@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-old-locale-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-old-locale-1.0.0.7-41.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-old-locale-1.0.0.7-41.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2df692cbef6cc5530b4e88aeedfdc73422b6547f78593402e63181b047bcfb49"
 
-URI_x86_64_v2_ghc-old-locale = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-old-locale}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale;unpack=0"
 SRC_URI[x86_64_v2_ghc-old-locale.sha256sum] = "e233e0877b8879bf39a2fbd814d3bbb53932461f36b5ee119bbf8e037714193b"
 
-URI_x86_64_v2_ghc-old-locale-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-devel-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-old-locale-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-devel-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-old-locale-devel.sha256sum] = "0bf3a6b35b284bf8f611ca9214b348200e5e284ad9fdd206da7b8a5a939779cb"
 
-URI_x86_64_v2_ghc-old-locale-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-doc-1.0.0.7-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-old-locale-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-old-locale-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-doc-1.0.0.7-41.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-old-locale-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-old-locale-doc.sha256sum] = "d444a0a7a1e1e754c318b99a0838b609e0943d890e10c61289113868ec60848d"
 
-URI_x86_64_v2_ghc-old-locale-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-prof-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-old-locale-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-old-locale-prof-1.0.0.7-41.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-old-locale-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-old-locale-prof.sha256sum] = "f23532e64ac4f9604f12d082180c998fd26de63896f9fcc580a46b42ae4e2ef5"
 
-URI_aarch64_ghc-old-locale = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-old-locale}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale;unpack=0"
 SRC_URI[aarch64_ghc-old-locale.sha256sum] = "28da039326debbee0da4f2d7e714b97a7dcd35b2a03d4c2da50d0cea2af86ddf"
 
-URI_aarch64_ghc-old-locale-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-devel-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-old-locale-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-devel-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale-devel;unpack=0"
 SRC_URI[aarch64_ghc-old-locale-devel.sha256sum] = "30a3b4d96a7635b40c0daa63f0af9b4509a0cc1662bc04683876bacff17b5da5"
 
-URI_aarch64_ghc-old-locale-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-doc-1.0.0.7-41.el10_0.noarch.rpm;name=aarch64_ghc-old-locale-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-old-locale-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-doc-1.0.0.7-41.el10_0.noarch.rpm;name=aarch64_ghc-old-locale-doc;unpack=0"
 SRC_URI[aarch64_ghc-old-locale-doc.sha256sum] = "867381366af1367f65308aae5e82db4b6fcac64c2d070e43a06df9fc86ce17c8"
 
-URI_aarch64_ghc-old-locale-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-prof-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-old-locale-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-old-locale-prof-1.0.0.7-41.el10_0.aarch64.rpm;name=aarch64_ghc-old-locale-prof;unpack=0"
 SRC_URI[aarch64_ghc-old-locale-prof.sha256sum] = "bd52a41dafaa7e0999b1e3eaa16cfb6118fdc4c66cb6a0a9e84c9d04c450b08d"
 
 RDEPENDS:ghc-old-locale = " \

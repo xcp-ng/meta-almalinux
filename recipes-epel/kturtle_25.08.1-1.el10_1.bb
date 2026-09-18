@@ -9,16 +9,13 @@ PACKAGES = " \
  kturtle \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kturtle-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kturtle-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "df36d32ae9d69b32f62d922a48fd78700e39bbac8a3a87b17a6823546bf71fa4"
 
-URI_x86_64_v2_kturtle = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kturtle-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kturtle;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kturtle}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kturtle-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kturtle;unpack=0"
 SRC_URI[x86_64_v2_kturtle.sha256sum] = "a742f00b2e4190f78c439db25edb09ab78e6966d3f237da13bdf71099433a66d"
 
-URI_aarch64_kturtle = "${EPEL_MIRROR}/aarch64/Packages/k/kturtle-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kturtle;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kturtle}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kturtle-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kturtle;unpack=0"
 SRC_URI[aarch64_kturtle.sha256sum] = "f443f325bdf72336878fdb1104200fcb6aecf4059d57c0b1bce4cf3bcb77d659"
 
 RDEPENDS:kturtle = " \

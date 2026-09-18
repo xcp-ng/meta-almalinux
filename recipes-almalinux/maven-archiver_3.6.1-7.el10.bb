@@ -10,24 +10,19 @@ PACKAGES = " \
  maven-archiver-javadoc \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-archiver-3.6.1-7.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/maven-archiver-3.6.1-7.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6f968401fa0a396a775deb8450ab56c2803f5b14d4e46f938743e1b88d29c86b"
 
-URI_x86_64_v2_maven-archiver = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-archiver-3.6.1-7.el10.noarch.rpm;name=x86_64_v2_maven-archiver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-archiver}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-archiver-3.6.1-7.el10.noarch.rpm;name=x86_64_v2_maven-archiver;unpack=0"
 SRC_URI[x86_64_v2_maven-archiver.sha256sum] = "062d317f82028d44e53d647c027d1bdad6d33b8b0aa51122ce1d2c3efb4677be"
 
-URI_x86_64_v2_maven-archiver-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-archiver-javadoc-3.6.1-7.el10.noarch.rpm;name=x86_64_v2_maven-archiver-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_maven-archiver-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/maven-archiver-javadoc-3.6.1-7.el10.noarch.rpm;name=x86_64_v2_maven-archiver-javadoc;unpack=0"
 SRC_URI[x86_64_v2_maven-archiver-javadoc.sha256sum] = "1cb43f22b5ed68ddb3a7b84cb5c8829c4f1fdfc7c6045ebb82660ae520b56771"
 
-URI_aarch64_maven-archiver = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-archiver-3.6.1-7.el10.noarch.rpm;name=aarch64_maven-archiver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-archiver}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-archiver-3.6.1-7.el10.noarch.rpm;name=aarch64_maven-archiver;unpack=0"
 SRC_URI[aarch64_maven-archiver.sha256sum] = "062d317f82028d44e53d647c027d1bdad6d33b8b0aa51122ce1d2c3efb4677be"
 
-URI_aarch64_maven-archiver-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-archiver-javadoc-3.6.1-7.el10.noarch.rpm;name=aarch64_maven-archiver-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_maven-archiver-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/maven-archiver-javadoc-3.6.1-7.el10.noarch.rpm;name=aarch64_maven-archiver-javadoc;unpack=0"
 SRC_URI[aarch64_maven-archiver-javadoc.sha256sum] = "1cb43f22b5ed68ddb3a7b84cb5c8829c4f1fdfc7c6045ebb82660ae520b56771"
 
 RDEPENDS:maven-archiver = " \

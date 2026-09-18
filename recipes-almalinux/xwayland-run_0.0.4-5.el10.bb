@@ -9,16 +9,13 @@ PACKAGES = " \
  xwayland-run \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xwayland-run-0.0.4-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/xwayland-run-0.0.4-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a6985c94259e5acdce947462eb6b63c799964e5ff3357316b8da4f24587810d5"
 
-URI_x86_64_v2_xwayland-run = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xwayland-run-0.0.4-5.el10.noarch.rpm;name=x86_64_v2_xwayland-run;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xwayland-run}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/xwayland-run-0.0.4-5.el10.noarch.rpm;name=x86_64_v2_xwayland-run;unpack=0"
 SRC_URI[x86_64_v2_xwayland-run.sha256sum] = "45bed949ae9bbf0857f7ba98a12c1b31b0df4a321892853feeef31a11c8780f0"
 
-URI_aarch64_xwayland-run = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xwayland-run-0.0.4-5.el10.noarch.rpm;name=aarch64_xwayland-run;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xwayland-run}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/xwayland-run-0.0.4-5.el10.noarch.rpm;name=aarch64_xwayland-run;unpack=0"
 SRC_URI[aarch64_xwayland-run.sha256sum] = "45bed949ae9bbf0857f7ba98a12c1b31b0df4a321892853feeef31a11c8780f0"
 
 RDEPENDS:xwayland-run = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-url-normalize \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-url-normalize-1.4.3-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-url-normalize-1.4.3-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2d93f98356204d13cfd220b1c4b8827fded5ddcddfee67f248edbb8152c41122"
 
-URI_x86_64_v2_python3-url-normalize = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-url-normalize-1.4.3-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-url-normalize;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-url-normalize}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-url-normalize-1.4.3-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-url-normalize;unpack=0"
 SRC_URI[x86_64_v2_python3-url-normalize.sha256sum] = "2cf5e1d4966c3ee4c4c039b0613e1cd2596192e14ee548dbbec6357616969876"
 
-URI_aarch64_python3-url-normalize = "${EPEL_MIRROR}/aarch64/Packages/p/python3-url-normalize-1.4.3-5.el10_0.noarch.rpm;name=aarch64_python3-url-normalize;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-url-normalize}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-url-normalize-1.4.3-5.el10_0.noarch.rpm;name=aarch64_python3-url-normalize;unpack=0"
 SRC_URI[aarch64_python3-url-normalize.sha256sum] = "f93d33f728f6447ec5f4f8a6b73801fc30d8f933386bb54a01a507b4484b7d7f"
 
 RDEPENDS:python3-url-normalize = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-k5test \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-k5test-0.10.4-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-k5test-0.10.4-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9cdddd3f0c71c02130d41255748fa9149753a81f27e6a0d45d20057b34f2f4c0"
 
-URI_x86_64_v2_python3-k5test = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-k5test-0.10.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-k5test;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-k5test}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-k5test-0.10.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-k5test;unpack=0"
 SRC_URI[x86_64_v2_python3-k5test.sha256sum] = "ac2807d9db3296d3d2251b611c47c9ae5fe73330a62a263bba3057a73993d8f7"
 
-URI_aarch64_python3-k5test = "${EPEL_MIRROR}/aarch64/Packages/p/python3-k5test-0.10.4-1.el10_0.noarch.rpm;name=aarch64_python3-k5test;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-k5test}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-k5test-0.10.4-1.el10_0.noarch.rpm;name=aarch64_python3-k5test;unpack=0"
 SRC_URI[aarch64_python3-k5test.sha256sum] = "220fd1d03c7895cf406951c825d3c23ffaf2d1c6d00281ae1e57d96b42593469"
 
 RDEPENDS:python3-k5test = " \

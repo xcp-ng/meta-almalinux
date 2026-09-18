@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Number-Delta \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Number-Delta-1.06-30.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Number-Delta-1.06-30.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "59d7293f0d0b09cfaa454f6a123e8bd02da14847f5cdc339b01f3506924707d5"
 
-URI_x86_64_v2_perl-Test-Number-Delta = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Number-Delta-1.06-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Number-Delta;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Number-Delta}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Number-Delta-1.06-30.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Number-Delta;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Number-Delta.sha256sum] = "d31a1689d976711dd204d2438a361f852ffc728cc0156bbdf97fd19c344916b4"
 
-URI_aarch64_perl-Test-Number-Delta = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Number-Delta-1.06-30.el10_0.noarch.rpm;name=aarch64_perl-Test-Number-Delta;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Number-Delta}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Number-Delta-1.06-30.el10_0.noarch.rpm;name=aarch64_perl-Test-Number-Delta;unpack=0"
 SRC_URI[aarch64_perl-Test-Number-Delta.sha256sum] = "33dc03280ec08e2d587175cbf0c73974cf49a616958ba4db375eea1944899409"
 
 RDEPENDS:perl-Test-Number-Delta = " \

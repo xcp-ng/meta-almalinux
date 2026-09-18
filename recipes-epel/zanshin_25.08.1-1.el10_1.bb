@@ -10,24 +10,19 @@ PACKAGES = " \
  zanshin-common \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/z/zanshin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/z/zanshin-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4a66b0a4bde3a1746eaead33b00502f87ddd47cca442d3841baf0daf1b090f92"
 
-URI_x86_64_v2_zanshin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/zanshin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_zanshin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_zanshin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/zanshin-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_zanshin;unpack=0"
 SRC_URI[x86_64_v2_zanshin.sha256sum] = "fbcb394941f4d666b491890bb6bed0144d203ae9f10fde07743c9d16bbed4043"
 
-URI_x86_64_v2_zanshin-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/zanshin-common-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_zanshin-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_zanshin-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/zanshin-common-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_zanshin-common;unpack=0"
 SRC_URI[x86_64_v2_zanshin-common.sha256sum] = "2a02525952ce6c8f6fcdef3e13c6b6558e8e2ea47375cff4b1e50012ac348cde"
 
-URI_aarch64_zanshin = "${EPEL_MIRROR}/aarch64/Packages/z/zanshin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_zanshin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_zanshin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/z/zanshin-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_zanshin;unpack=0"
 SRC_URI[aarch64_zanshin.sha256sum] = "028b48551052d758fe470fc47b4e1da551c06e16ce96eea80741af88e5a9c45b"
 
-URI_aarch64_zanshin-common = "${EPEL_MIRROR}/aarch64/Packages/z/zanshin-common-25.08.1-1.el10_1.noarch.rpm;name=aarch64_zanshin-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_zanshin-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/z/zanshin-common-25.08.1-1.el10_1.noarch.rpm;name=aarch64_zanshin-common;unpack=0"
 SRC_URI[aarch64_zanshin-common.sha256sum] = "760edb3fbafe2e317e8ae0c83fd339727e23113ba386cf899f9f5ffe1ca2347e"
 
 RDEPENDS:zanshin = " \

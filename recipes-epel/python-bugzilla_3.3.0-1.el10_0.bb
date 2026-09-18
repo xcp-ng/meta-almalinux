@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-bugzilla \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-bugzilla-3.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-bugzilla-3.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4ac135c60abb3beb2894da43499680d6ea1044e3792cb3d870d0f8a3a72f0d36"
 
-URI_x86_64_v2_python-bugzilla-cli = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-bugzilla-cli-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-bugzilla-cli;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-bugzilla-cli}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-bugzilla-cli-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-bugzilla-cli;unpack=0"
 SRC_URI[x86_64_v2_python-bugzilla-cli.sha256sum] = "5f9fc3abee433b56b74d963de44262473344a0559a8cad8a117260137c3835a3"
 
-URI_x86_64_v2_python3-bugzilla = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bugzilla-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-bugzilla;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-bugzilla}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-bugzilla-3.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-bugzilla;unpack=0"
 SRC_URI[x86_64_v2_python3-bugzilla.sha256sum] = "990fda483a22489fccd2c1b0af7fcca8196270925a8d396f23a7ce211fba6948"
 
-URI_aarch64_python-bugzilla-cli = "${EPEL_MIRROR}/aarch64/Packages/p/python-bugzilla-cli-3.3.0-1.el10_0.noarch.rpm;name=aarch64_python-bugzilla-cli;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-bugzilla-cli}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-bugzilla-cli-3.3.0-1.el10_0.noarch.rpm;name=aarch64_python-bugzilla-cli;unpack=0"
 SRC_URI[aarch64_python-bugzilla-cli.sha256sum] = "060a24ceea379c68570f6c999cdb66b9f330b014044e53013bfcb652061a624e"
 
-URI_aarch64_python3-bugzilla = "${EPEL_MIRROR}/aarch64/Packages/p/python3-bugzilla-3.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-bugzilla;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-bugzilla}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-bugzilla-3.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-bugzilla;unpack=0"
 SRC_URI[aarch64_python3-bugzilla.sha256sum] = "4fced13223d4cf9b4cda07553e181e4d460e1e9c350678d24e9f11598a89961c"
 
 RDEPENDS:python-bugzilla-cli = " \

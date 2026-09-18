@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-meson-python \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-meson-python-0.17.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-meson-python-0.17.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bada118159fe1ebaf10600e60a3aec81ca3a4a1094d00a8915d92a67a668db46"
 
-URI_x86_64_v2_python3-meson-python = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-meson-python-0.17.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-meson-python;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-meson-python}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-meson-python-0.17.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-meson-python;unpack=0"
 SRC_URI[x86_64_v2_python3-meson-python.sha256sum] = "47a1ec86619b105adcc235013231c4385884211aeb5960b31d004f40e1150794"
 
-URI_aarch64_python3-meson-python = "${EPEL_MIRROR}/aarch64/Packages/p/python3-meson-python-0.17.1-1.el10_0.noarch.rpm;name=aarch64_python3-meson-python;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-meson-python}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-meson-python-0.17.1-1.el10_0.noarch.rpm;name=aarch64_python3-meson-python;unpack=0"
 SRC_URI[aarch64_python3-meson-python.sha256sum] = "58c2acf6d96a69ab697222c34caf63df2dd776cc4e7bc16fcf6e515956c5dbe3"
 
 RDEPENDS:python3-meson-python:x86_64_v2 = " \

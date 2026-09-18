@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-console-scripts \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-console-scripts-1.4.1-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-console-scripts-1.4.1-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "39afff41dab2341c6d693fed4a00d66d8c9c0be625dbe1e938054aabaf115091"
 
-URI_x86_64_v2_python3-pytest-console-scripts = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-console-scripts-1.4.1-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-console-scripts;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-console-scripts}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-console-scripts-1.4.1-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-console-scripts;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-console-scripts.sha256sum] = "e818406deb35209b7d251d885c0eef6220b749904f9a7b864d8b4acb15a15d52"
 
-URI_aarch64_python3-pytest-console-scripts = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-console-scripts-1.4.1-8.el10_0.noarch.rpm;name=aarch64_python3-pytest-console-scripts;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-console-scripts}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-console-scripts-1.4.1-8.el10_0.noarch.rpm;name=aarch64_python3-pytest-console-scripts;unpack=0"
 SRC_URI[aarch64_python3-pytest-console-scripts.sha256sum] = "e05c9f37b6eaf9c630f454d9eda0aac2c0cf41cdd2d49305fbafdd7405e37e59"
 
 RDEPENDS:python3-pytest-console-scripts = " \

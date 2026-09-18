@@ -9,16 +9,13 @@ PACKAGES = " \
  pmount \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/pmount-0.9.23-32.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pmount-0.9.23-32.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f04e160ee1ce7f7d9895b17268d2137168b24f2b179ea0302195359f238b0e99"
 
-URI_x86_64_v2_pmount = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pmount-0.9.23-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pmount;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pmount}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pmount-0.9.23-32.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pmount;unpack=0"
 SRC_URI[x86_64_v2_pmount.sha256sum] = "5ce607b111ae2627046fe044975f393b228ad288b291d6db6e98ded5717511bb"
 
-URI_aarch64_pmount = "${EPEL_MIRROR}/aarch64/Packages/p/pmount-0.9.23-32.el10_0.aarch64.rpm;name=aarch64_pmount;unpack=0"
-SRC_URI:append = " ${URI_aarch64_pmount}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pmount-0.9.23-32.el10_0.aarch64.rpm;name=aarch64_pmount;unpack=0"
 SRC_URI[aarch64_pmount.sha256sum] = "8ec66082c6a3b3d9575067aa105469ac94436d952d85d49f3c3cdb9206aa6af2"
 
 RDEPENDS:pmount = " \

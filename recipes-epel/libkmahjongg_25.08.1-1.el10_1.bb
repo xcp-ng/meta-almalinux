@@ -11,32 +11,25 @@ PACKAGES = " \
  libkmahjongg-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libkmahjongg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libkmahjongg-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c6454b9e274eb92223cebc3be015baa8a3bf621d2d03a115c661387d6c1ea63"
 
-URI_x86_64_v2_libkmahjongg = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkmahjongg;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libkmahjongg}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkmahjongg;unpack=0"
 SRC_URI[x86_64_v2_libkmahjongg.sha256sum] = "8dea17a5f63baf613ce1acb37cacb00838434a9710e24efdbd4cae879aa6043a"
 
-URI_x86_64_v2_libkmahjongg-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-data-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_libkmahjongg-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libkmahjongg-data}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-data-25.08.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_libkmahjongg-data;unpack=0"
 SRC_URI[x86_64_v2_libkmahjongg-data.sha256sum] = "1e1662b31581865eba8fc741b9a5055f73032e86312d317875a7438ee388edf6"
 
-URI_x86_64_v2_libkmahjongg-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkmahjongg-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libkmahjongg-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libkmahjongg-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libkmahjongg-devel;unpack=0"
 SRC_URI[x86_64_v2_libkmahjongg-devel.sha256sum] = "3a10366635ab5936479d166d0069d561ffe870bd05c5c51586933d7d6a81da65"
 
-URI_aarch64_libkmahjongg = "${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkmahjongg;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libkmahjongg}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkmahjongg;unpack=0"
 SRC_URI[aarch64_libkmahjongg.sha256sum] = "eb457976e23a8c4071b47dbf56989911d9bd969c487c600ee70e47b4cc3372d6"
 
-URI_aarch64_libkmahjongg-data = "${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-data-25.08.1-1.el10_1.noarch.rpm;name=aarch64_libkmahjongg-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libkmahjongg-data}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-data-25.08.1-1.el10_1.noarch.rpm;name=aarch64_libkmahjongg-data;unpack=0"
 SRC_URI[aarch64_libkmahjongg-data.sha256sum] = "ecf7beee50f305547af526caa49f77c28588341eaeb613f17a10e1370566e2e1"
 
-URI_aarch64_libkmahjongg-devel = "${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkmahjongg-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libkmahjongg-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libkmahjongg-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_libkmahjongg-devel;unpack=0"
 SRC_URI[aarch64_libkmahjongg-devel.sha256sum] = "f7ab378e6d2cbc7ff5e62f3e82ce84deb1dcf7cccd3c52b79e80be6aa265cc0a"
 
 RDEPENDS:libkmahjongg = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Text-Aligner \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Text-Aligner-0.16-14.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Text-Aligner-0.16-14.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "88e28d957ffbdb244afb931b8bc7628212a294cbad45de02a0c7c8dd561a7acc"
 
-URI_x86_64_v2_perl-Text-Aligner = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Aligner-0.16-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Aligner;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Text-Aligner}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Text-Aligner-0.16-14.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Text-Aligner;unpack=0"
 SRC_URI[x86_64_v2_perl-Text-Aligner.sha256sum] = "384213c1c80171735f4b68dbd8935b35c87d005d1466240ca35bb3b9728223b8"
 
-URI_aarch64_perl-Text-Aligner = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Aligner-0.16-14.el10_0.noarch.rpm;name=aarch64_perl-Text-Aligner;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Text-Aligner}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Text-Aligner-0.16-14.el10_0.noarch.rpm;name=aarch64_perl-Text-Aligner;unpack=0"
 SRC_URI[aarch64_perl-Text-Aligner.sha256sum] = "17141732e0629f5ebb0b6353dff8f5c09d7ad4694e884a950d01c31515c6926f"
 
 RDEPENDS:perl-Text-Aligner = " \

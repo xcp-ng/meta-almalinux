@@ -9,16 +9,13 @@ PACKAGES = " \
  cloc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/cloc-2.08-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cloc-2.08-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "da5b85b0c9c1474516f8bb67846b965ae154e36fd82d71e4466e21bd67cfcf25"
 
-URI_x86_64_v2_cloc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cloc-2.08-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_cloc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cloc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cloc-2.08-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_cloc;unpack=0"
 SRC_URI[x86_64_v2_cloc.sha256sum] = "81b02aaf03bedbaf1ecec5698a985d4b5281d678255a2907a5f85cad5d0d0c12"
 
-URI_aarch64_cloc = "${EPEL_MIRROR}/aarch64/Packages/c/cloc-2.08-1.el10_1.noarch.rpm;name=aarch64_cloc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cloc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cloc-2.08-1.el10_1.noarch.rpm;name=aarch64_cloc;unpack=0"
 SRC_URI[aarch64_cloc.sha256sum] = "60f8055954c02c00bccbd381eb612574dace5bb031d05de3e510c334c3ba74b4"
 
 RDEPENDS:cloc = " \

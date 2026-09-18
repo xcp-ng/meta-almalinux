@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-regex-test-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-regex-test-0.1.1-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-regex-test-0.1.1-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e53a26e9bab23d8162731a138536aca5ca2409f222c5c32916dcc0b7de3c7500"
 
-URI_x86_64_v2_rust-regex-test+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-regex-test+default-devel-0.1.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-regex-test+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-regex-test+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-regex-test+default-devel-0.1.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-regex-test+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-regex-test+default-devel.sha256sum] = "1b571631f2dcbed7850be5ee96bf96df0098f24970bec539a04f31cace5e99b9"
 
-URI_x86_64_v2_rust-regex-test-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-regex-test-devel-0.1.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-regex-test-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-regex-test-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-regex-test-devel-0.1.1-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_rust-regex-test-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-regex-test-devel.sha256sum] = "56b6aa31673c41b0c315c47bfce051585ae6e71523b3bf9e637a66a42375e950"
 
-URI_aarch64_rust-regex-test+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-regex-test+default-devel-0.1.1-2.el10_0.noarch.rpm;name=aarch64_rust-regex-test+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-regex-test+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-regex-test+default-devel-0.1.1-2.el10_0.noarch.rpm;name=aarch64_rust-regex-test+default-devel;unpack=0"
 SRC_URI[aarch64_rust-regex-test+default-devel.sha256sum] = "3b3b8d6c65b5c4c0c1f2c19b6f64cf3879a734c323133999881f15221c80b35f"
 
-URI_aarch64_rust-regex-test-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-regex-test-devel-0.1.1-2.el10_0.noarch.rpm;name=aarch64_rust-regex-test-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-regex-test-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-regex-test-devel-0.1.1-2.el10_0.noarch.rpm;name=aarch64_rust-regex-test-devel;unpack=0"
 SRC_URI[aarch64_rust-regex-test-devel.sha256sum] = "0bbd57e33c300c86bc83297a50ee50711377061c4b473d46b0c692901c7a296f"
 
 RDEPENDS:rust-regex-test+default-devel = " \

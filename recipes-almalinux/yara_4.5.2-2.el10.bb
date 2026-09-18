@@ -10,24 +10,19 @@ PACKAGES = " \
  yara-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/yara-4.5.2-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/yara-4.5.2-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "85768e0f243ceb078acddde33ff21ce763b936c3c257b92549673186e94548a8"
 
-URI_x86_64_v2_yara = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/yara-4.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_yara;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_yara}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/yara-4.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_yara;unpack=0"
 SRC_URI[x86_64_v2_yara.sha256sum] = "cd0546e52b8f09db556fc1ce2ddcb6f7eb14a155aaa43badb87d498134580b11"
 
-URI_x86_64_v2_yara-devel = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/yara-devel-4.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_yara-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_yara-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/yara-devel-4.5.2-2.el10.x86_64_v2.rpm;name=x86_64_v2_yara-devel;unpack=0"
 SRC_URI[x86_64_v2_yara-devel.sha256sum] = "283e7ca086569dc4ff02828b34904190cbcc1a026cac9d6c5cd02e2b7ba902ae"
 
-URI_aarch64_yara = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/yara-4.5.2-2.el10.aarch64.rpm;name=aarch64_yara;unpack=0"
-SRC_URI:append = " ${URI_aarch64_yara}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/yara-4.5.2-2.el10.aarch64.rpm;name=aarch64_yara;unpack=0"
 SRC_URI[aarch64_yara.sha256sum] = "93d2a08999a8885f11dcb27d42f249b5af11cab9b7a1f074a4300a5c2ab78fcb"
 
-URI_aarch64_yara-devel = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/yara-devel-4.5.2-2.el10.aarch64.rpm;name=aarch64_yara-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_yara-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/yara-devel-4.5.2-2.el10.aarch64.rpm;name=aarch64_yara-devel;unpack=0"
 SRC_URI[aarch64_yara-devel.sha256sum] = "c8f5de03d1a87b04ea1c055a0c079f2df879851199c79476a64b1d2c13f21bde"
 
 RDEPENDS:yara = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-dpath \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-dpath-2.2.0-8.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-dpath-2.2.0-8.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cd7d2a17ff9d6242786c47fda764038622c1ba4586693f2b5600c3ed56df407f"
 
-URI_x86_64_v2_python3-dpath = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dpath-2.2.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dpath;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-dpath}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-dpath-2.2.0-8.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-dpath;unpack=0"
 SRC_URI[x86_64_v2_python3-dpath.sha256sum] = "7795b8f28bb206e09f80c46fa05230fd0432b2062d6e833a9824bb2102118797"
 
-URI_aarch64_python3-dpath = "${EPEL_MIRROR}/aarch64/Packages/p/python3-dpath-2.2.0-8.el10_1.noarch.rpm;name=aarch64_python3-dpath;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-dpath}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-dpath-2.2.0-8.el10_1.noarch.rpm;name=aarch64_python3-dpath;unpack=0"
 SRC_URI[aarch64_python3-dpath.sha256sum] = "42104eee20f7c42047cbc7b751d43e5955c208f697f4f7f863d525c02f5e945d"
 
 RDEPENDS:python3-dpath = " \

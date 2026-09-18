@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ogr \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ogr-0.61.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ogr-0.61.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "69703fa049041898d8e50f6ac9fae0146c3ab2c7649ee6570a1eb6366dd473bf"
 
-URI_x86_64_v2_python3-ogr = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ogr-0.61.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ogr;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ogr}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ogr-0.61.1-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ogr;unpack=0"
 SRC_URI[x86_64_v2_python3-ogr.sha256sum] = "477967859f5ddf3181899e98ed8c2de0c75ffffc8a2282ccda10ce5b3e1ca35c"
 
-URI_aarch64_python3-ogr = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ogr-0.61.1-1.el10_1.noarch.rpm;name=aarch64_python3-ogr;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ogr}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ogr-0.61.1-1.el10_1.noarch.rpm;name=aarch64_python3-ogr;unpack=0"
 SRC_URI[aarch64_python3-ogr.sha256sum] = "323edf9faa5bb585b253b2681a1ae9b40504a62789ccc70a4c76562d7872a11f"
 
 RDEPENDS:python3-ogr = " \

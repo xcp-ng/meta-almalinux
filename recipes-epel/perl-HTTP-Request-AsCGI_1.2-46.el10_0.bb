@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-HTTP-Request-AsCGI-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Request-AsCGI-1.2-46.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-HTTP-Request-AsCGI-1.2-46.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "35836b9bb2395582dbe2737bb33d6054b6a19b57a46123f04c2fc69d5de522db"
 
-URI_x86_64_v2_perl-HTTP-Request-AsCGI = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Request-AsCGI-1.2-46.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Request-AsCGI;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Request-AsCGI}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Request-AsCGI-1.2-46.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Request-AsCGI;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-Request-AsCGI.sha256sum] = "c3597e27af4b7a445d6874a452ba982d7a2d36e62e5fd13c4a535265c3af9fd5"
 
-URI_x86_64_v2_perl-HTTP-Request-AsCGI-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Request-AsCGI-tests-1.2-46.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Request-AsCGI-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-HTTP-Request-AsCGI-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-HTTP-Request-AsCGI-tests-1.2-46.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-HTTP-Request-AsCGI-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-HTTP-Request-AsCGI-tests.sha256sum] = "d6738faba224b477414d511b728d530eba0f714011132aad7555ba10e5ffc575"
 
-URI_aarch64_perl-HTTP-Request-AsCGI = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Request-AsCGI-1.2-46.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Request-AsCGI;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-Request-AsCGI}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Request-AsCGI-1.2-46.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Request-AsCGI;unpack=0"
 SRC_URI[aarch64_perl-HTTP-Request-AsCGI.sha256sum] = "f5fdddfc511db5228717c0467448cf4aeb6cdc2388ce13822e7801d2c33a5909"
 
-URI_aarch64_perl-HTTP-Request-AsCGI-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Request-AsCGI-tests-1.2-46.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Request-AsCGI-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-HTTP-Request-AsCGI-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-HTTP-Request-AsCGI-tests-1.2-46.el10_0.noarch.rpm;name=aarch64_perl-HTTP-Request-AsCGI-tests;unpack=0"
 SRC_URI[aarch64_perl-HTTP-Request-AsCGI-tests.sha256sum] = "c9acc54aec17e5fc57a7972a34a2f0e99c866b3e6b4dfb71ec3b4c1d5c684b06"
 
 RDEPENDS:perl-HTTP-Request-AsCGI = " \

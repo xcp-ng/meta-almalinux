@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-kdcproxy \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-kdcproxy-1.0.0-19.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/python-kdcproxy-1.0.0-19.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "19fa56f30ac2675cf4925584ad60f861da7ea7aee8c132e48789ad649df91449"
 
-URI_x86_64_v2_python3-kdcproxy = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-kdcproxy-1.0.0-19.el10_1.noarch.rpm;name=x86_64_v2_python3-kdcproxy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-kdcproxy}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/python3-kdcproxy-1.0.0-19.el10_1.noarch.rpm;name=x86_64_v2_python3-kdcproxy;unpack=0"
 SRC_URI[x86_64_v2_python3-kdcproxy.sha256sum] = "9ae283aca89a2337da3e6466829b16903bc15f65c883153894e3194f0ab695b8"
 
-URI_aarch64_python3-kdcproxy = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-kdcproxy-1.0.0-19.el10_1.noarch.rpm;name=aarch64_python3-kdcproxy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-kdcproxy}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/python3-kdcproxy-1.0.0-19.el10_1.noarch.rpm;name=aarch64_python3-kdcproxy;unpack=0"
 SRC_URI[aarch64_python3-kdcproxy.sha256sum] = "9ae283aca89a2337da3e6466829b16903bc15f65c883153894e3194f0ab695b8"
 
 RDEPENDS:python3-kdcproxy = " \

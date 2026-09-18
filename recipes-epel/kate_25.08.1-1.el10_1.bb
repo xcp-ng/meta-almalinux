@@ -12,40 +12,31 @@ PACKAGES = " \
  kwrite \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kate-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kate-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d9651cce6ea9d97c7dd9e824f774431431434fd67a272d021cf691ed2aeea96d"
 
-URI_x86_64_v2_kate = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kate}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate;unpack=0"
 SRC_URI[x86_64_v2_kate.sha256sum] = "a3c38653707d646907acc79c80b31d49f6e3152b96c3793417c9a8afa96b5d68"
 
-URI_x86_64_v2_kate-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kate-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-libs-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate-libs;unpack=0"
 SRC_URI[x86_64_v2_kate-libs.sha256sum] = "974478cb7d4d1fca0416ee0e0eb50fdb7cd9f271611c0c0a84b801d4c03a0346"
 
-URI_x86_64_v2_kate-plugins = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-plugins-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate-plugins;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kate-plugins}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kate-plugins-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kate-plugins;unpack=0"
 SRC_URI[x86_64_v2_kate-plugins.sha256sum] = "7a0450d8adf9879648444c1641cd68d40649bcd4f97a825ad8393bb988002d2f"
 
-URI_x86_64_v2_kwrite = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwrite-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwrite;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwrite}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwrite-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwrite;unpack=0"
 SRC_URI[x86_64_v2_kwrite.sha256sum] = "d5ab6809b3dcf69bc111b6c59c398943bc70d05bb4bd9315807755c6b1901bb6"
 
-URI_aarch64_kate = "${EPEL_MIRROR}/aarch64/Packages/k/kate-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kate}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kate-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate;unpack=0"
 SRC_URI[aarch64_kate.sha256sum] = "7008d5b66f0dfcda6b2be754ab9e74e258a3044c4a4011c35226a09aa5e691d7"
 
-URI_aarch64_kate-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kate-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kate-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kate-libs-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate-libs;unpack=0"
 SRC_URI[aarch64_kate-libs.sha256sum] = "eca521909ba7401278c57a1aa094e1ca2259f7f4da74a8895ecf6f6fc1df1fe9"
 
-URI_aarch64_kate-plugins = "${EPEL_MIRROR}/aarch64/Packages/k/kate-plugins-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate-plugins;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kate-plugins}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kate-plugins-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kate-plugins;unpack=0"
 SRC_URI[aarch64_kate-plugins.sha256sum] = "2a2995eb8082ff0237ce10487b812243cff03114d8f06b44d9654c3c52143eb2"
 
-URI_aarch64_kwrite = "${EPEL_MIRROR}/aarch64/Packages/k/kwrite-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwrite;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwrite}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwrite-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kwrite;unpack=0"
 SRC_URI[aarch64_kwrite.sha256sum] = "b5edeb170358535fbf995d24bdc365d434c8958262cdffe5e62d056ba7662eab"
 
 RDEPENDS:kate = " \

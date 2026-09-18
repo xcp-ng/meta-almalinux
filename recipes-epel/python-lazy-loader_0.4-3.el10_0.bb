@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-lazy-loader \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-lazy-loader-0.4-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-lazy-loader-0.4-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "188ef88dd25ec2042d04a156e644f8f69917797d4c51daba07208c5996ae6de3"
 
-URI_x86_64_v2_python3-lazy-loader = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lazy-loader-0.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-lazy-loader;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-lazy-loader}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-lazy-loader-0.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-lazy-loader;unpack=0"
 SRC_URI[x86_64_v2_python3-lazy-loader.sha256sum] = "01d12af240bb9d4328134188307fc54e9eb743dc66295a54cd9d96845a44bbb3"
 
-URI_aarch64_python3-lazy-loader = "${EPEL_MIRROR}/aarch64/Packages/p/python3-lazy-loader-0.4-3.el10_0.noarch.rpm;name=aarch64_python3-lazy-loader;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-lazy-loader}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-lazy-loader-0.4-3.el10_0.noarch.rpm;name=aarch64_python3-lazy-loader;unpack=0"
 SRC_URI[aarch64_python3-lazy-loader.sha256sum] = "ab7d13b14c96d9575459c84cbca8513d4e836d5832a0d476d7ee9c625f9335b0"
 
 RDEPENDS:python3-lazy-loader = " \

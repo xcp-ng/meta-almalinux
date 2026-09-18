@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-MCE-tools \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-MCE-1.900-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-MCE-1.900-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "37c72eee947190d502a047a2200242703c2f8a6051223ddb423816ffb6305a06"
 
-URI_x86_64_v2_perl-MCE = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-1.900-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MCE}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-1.900-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE;unpack=0"
 SRC_URI[x86_64_v2_perl-MCE.sha256sum] = "14d99ba7c6a8880ab8e7bf1c9f9d779b6ab33aa5ca477cbba2d73c75ffe9382c"
 
-URI_x86_64_v2_perl-MCE-tools = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-tools-1.900-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE-tools;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-MCE-tools}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-MCE-tools-1.900-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-MCE-tools;unpack=0"
 SRC_URI[x86_64_v2_perl-MCE-tools.sha256sum] = "8665104341d53b1d3da00e807f871dae527e0fc8f03e19e7f78a0dd995c43366"
 
-URI_aarch64_perl-MCE = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-1.900-1.el10_0.noarch.rpm;name=aarch64_perl-MCE;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MCE}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-1.900-1.el10_0.noarch.rpm;name=aarch64_perl-MCE;unpack=0"
 SRC_URI[aarch64_perl-MCE.sha256sum] = "5115baf765a77f26fd39ad3b0705f81cfbeb5faf6225a942715725b07654b15d"
 
-URI_aarch64_perl-MCE-tools = "${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-tools-1.900-1.el10_0.noarch.rpm;name=aarch64_perl-MCE-tools;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-MCE-tools}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-MCE-tools-1.900-1.el10_0.noarch.rpm;name=aarch64_perl-MCE-tools;unpack=0"
 SRC_URI[aarch64_perl-MCE-tools.sha256sum] = "57651735e3438f2d1dc80947ead46a742558586840b90e03240f04fbc9506a63"
 
 RDEPENDS:perl-MCE = " \

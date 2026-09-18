@@ -9,16 +9,13 @@ PACKAGES = " \
  prunerepo \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/prunerepo-1.26-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/prunerepo-1.26-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fe1fcc975466eda4114faf0915054d633e1df68e05a8c7688932d764a873b4ce"
 
-URI_x86_64_v2_prunerepo = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/prunerepo-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_prunerepo;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_prunerepo}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/prunerepo-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_prunerepo;unpack=0"
 SRC_URI[x86_64_v2_prunerepo.sha256sum] = "c0edd21d3eb91ae5fe4347461ca444310040831cd73f9deec4a6740f493a6baa"
 
-URI_aarch64_prunerepo = "${EPEL_MIRROR}/aarch64/Packages/p/prunerepo-1.26-1.el10_0.noarch.rpm;name=aarch64_prunerepo;unpack=0"
-SRC_URI:append = " ${URI_aarch64_prunerepo}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/prunerepo-1.26-1.el10_0.noarch.rpm;name=aarch64_prunerepo;unpack=0"
 SRC_URI[aarch64_prunerepo.sha256sum] = "35ec53ac1a87e3a884dda9a1ec6ba8ee2f4ce727322b53eb8bab9eabc711de5f"
 
 RDEPENDS:prunerepo = " \

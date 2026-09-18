@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Role-Tiny \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Role-Tiny-2.002004-14.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/perl-Role-Tiny-2.002004-14.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a57ef9a627679473d671897ebadd4a3cbd8f2fe0a36482c08ff4bae1c04ef01f"
 
-URI_x86_64_v2_perl-Role-Tiny = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Role-Tiny-2.002004-14.el10.noarch.rpm;name=x86_64_v2_perl-Role-Tiny;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Role-Tiny}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/perl-Role-Tiny-2.002004-14.el10.noarch.rpm;name=x86_64_v2_perl-Role-Tiny;unpack=0"
 SRC_URI[x86_64_v2_perl-Role-Tiny.sha256sum] = "afcfcba8a92363855d47d0746a69623015f33283f572855381d4c79a6b3d74a1"
 
-URI_aarch64_perl-Role-Tiny = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Role-Tiny-2.002004-14.el10.noarch.rpm;name=aarch64_perl-Role-Tiny;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Role-Tiny}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/perl-Role-Tiny-2.002004-14.el10.noarch.rpm;name=aarch64_perl-Role-Tiny;unpack=0"
 SRC_URI[aarch64_perl-Role-Tiny.sha256sum] = "afcfcba8a92363855d47d0746a69623015f33283f572855381d4c79a6b3d74a1"
 
 RDEPENDS:perl-Role-Tiny = " \

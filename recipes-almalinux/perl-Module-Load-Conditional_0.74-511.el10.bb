@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-Load-Conditional \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Load-Conditional-0.74-511.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Load-Conditional-0.74-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "66bd371b83ce85020d19c768d607657c23c99ac84e6ea53ae608934964ac7e39"
 
-URI_x86_64_v2_perl-Module-Load-Conditional = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;name=x86_64_v2_perl-Module-Load-Conditional;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Load-Conditional}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;name=x86_64_v2_perl-Module-Load-Conditional;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Load-Conditional.sha256sum] = "ae72e90cfed7b2e8245b59bc59615e1eaadb238415ac3222403dd50f4633b2c2"
 
-URI_aarch64_perl-Module-Load-Conditional = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;name=aarch64_perl-Module-Load-Conditional;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Load-Conditional}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;name=aarch64_perl-Module-Load-Conditional;unpack=0"
 SRC_URI[aarch64_perl-Module-Load-Conditional.sha256sum] = "ae72e90cfed7b2e8245b59bc59615e1eaadb238415ac3222403dd50f4633b2c2"
 
 RDEPENDS:perl-Module-Load-Conditional = " \

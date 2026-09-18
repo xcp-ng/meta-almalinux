@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/trustee-guest-components-0.13.0-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/trustee-guest-components-0.13.0-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0c3fa0eeb625d1ac761fc40e02f156dd1afdc6f493c0ff0bb98dba07f617eccf"
 
-URI_x86_64_v2_trustee-guest-components = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/trustee-guest-components-0.13.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_trustee-guest-components;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_trustee-guest-components}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/trustee-guest-components-0.13.0-1.el10.x86_64_v2.rpm;name=x86_64_v2_trustee-guest-components;unpack=0"
 SRC_URI[x86_64_v2_trustee-guest-components.sha256sum] = "ee375188922e3be5e4943469244cb8b65051302048f79274545535b1c7020efc"
 
 RDEPENDS:trustee-guest-components = " \

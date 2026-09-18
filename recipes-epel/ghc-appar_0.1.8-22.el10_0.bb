@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-appar-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-appar-0.1.8-22.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-appar-0.1.8-22.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "45fae99a52bd27a39e9e669eef9ccc239ff615c1f515041e0234820d208cfc44"
 
-URI_x86_64_v2_ghc-appar = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-appar}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar;unpack=0"
 SRC_URI[x86_64_v2_ghc-appar.sha256sum] = "3fbcaeafbf390e0604410c151eee1c086de69ca71461ed9a2a5681597fced1b9"
 
-URI_x86_64_v2_ghc-appar-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-devel-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-appar-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-devel-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-appar-devel.sha256sum] = "aa97856fbc845f83063cea8c31288016f7a58af2b99f7312b886e4efdd9484a1"
 
-URI_x86_64_v2_ghc-appar-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-doc-0.1.8-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-appar-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-appar-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-doc-0.1.8-22.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-appar-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-appar-doc.sha256sum] = "10781265010f1d7ec1b72dc5c280f01345687e9abe4da1a0fea104eae33e0415"
 
-URI_x86_64_v2_ghc-appar-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-prof-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-appar-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-appar-prof-0.1.8-22.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-appar-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-appar-prof.sha256sum] = "408721b3f1ff4a88879af497953ccb5942c1c81e2ffe8439c863c55f4bd6037b"
 
-URI_aarch64_ghc-appar = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-appar}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar;unpack=0"
 SRC_URI[aarch64_ghc-appar.sha256sum] = "3c8fae2b12c48338503808fd48e6019d75f7e52598abd7b6b14a2fd0d8f4d346"
 
-URI_aarch64_ghc-appar-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-devel-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-appar-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-devel-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar-devel;unpack=0"
 SRC_URI[aarch64_ghc-appar-devel.sha256sum] = "25d358a3c4f2ca17493aa3673256f335fb2a4f7786951fd8d66767744333fa25"
 
-URI_aarch64_ghc-appar-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-doc-0.1.8-22.el10_0.noarch.rpm;name=aarch64_ghc-appar-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-appar-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-doc-0.1.8-22.el10_0.noarch.rpm;name=aarch64_ghc-appar-doc;unpack=0"
 SRC_URI[aarch64_ghc-appar-doc.sha256sum] = "cd2811421610c3d936263d099fd25e30cc5588afdaa91a14a6759bfd14704781"
 
-URI_aarch64_ghc-appar-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-prof-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-appar-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-appar-prof-0.1.8-22.el10_0.aarch64.rpm;name=aarch64_ghc-appar-prof;unpack=0"
 SRC_URI[aarch64_ghc-appar-prof.sha256sum] = "d42a34cd6f066565d72a3a1ce2a32ba61ab50664d3359531d1641c0d564b151a"
 
 RDEPENDS:ghc-appar = " \

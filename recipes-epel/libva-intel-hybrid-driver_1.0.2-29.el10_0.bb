@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/libva-intel-hybrid-driver-1.0.2-29.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libva-intel-hybrid-driver-1.0.2-29.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "444505a516c9734a29ef11b8eebb5d2976308b472ad4e5b02cde724913408cbe"
 
-URI_x86_64_v2_libva-intel-hybrid-driver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libva-intel-hybrid-driver-1.0.2-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libva-intel-hybrid-driver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libva-intel-hybrid-driver}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libva-intel-hybrid-driver-1.0.2-29.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libva-intel-hybrid-driver;unpack=0"
 SRC_URI[x86_64_v2_libva-intel-hybrid-driver.sha256sum] = "ef2ad5880f7f1162a5a182d1e6f8732eb1a589d5ae82cf65b9d257b252e1f915"
 
 RDEPENDS:libva-intel-hybrid-driver = " \

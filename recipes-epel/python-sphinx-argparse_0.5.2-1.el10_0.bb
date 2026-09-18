@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinx-argparse \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-argparse-0.5.2-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-argparse-0.5.2-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "78fe22114cef4b16e53089049ddad9f22e1032b5d40cd430b65740584495eb0c"
 
-URI_x86_64_v2_python3-sphinx-argparse = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-argparse-0.5.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-argparse;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-argparse}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-argparse-0.5.2-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-argparse;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-argparse.sha256sum] = "113ce84e99cf88fbb32eb43ca8d2df3edaba1cf30d27d16ccfccef08a4ae7411"
 
-URI_aarch64_python3-sphinx-argparse = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-argparse-0.5.2-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-argparse;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-argparse}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-argparse-0.5.2-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-argparse;unpack=0"
 SRC_URI[aarch64_python3-sphinx-argparse.sha256sum] = "0137c20df8bee18b8eb1d332e9e794b8db123965f4dad38319bda87efe5d9611"
 
 RDEPENDS:python3-sphinx-argparse = " \

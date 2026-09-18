@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-yuin-goldmark-meta-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-yuin-goldmark-meta-1.1.0-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-yuin-goldmark-meta-1.1.0-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bf14c6166e9686284a08ade4a0c15effc7c2f305842ec49bdb676cc5b2e429ee"
 
-URI_x86_64_v2_golang-github-yuin-goldmark-meta-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-yuin-goldmark-meta-devel-1.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-yuin-goldmark-meta-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-yuin-goldmark-meta-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-yuin-goldmark-meta-devel-1.1.0-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-yuin-goldmark-meta-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-yuin-goldmark-meta-devel.sha256sum] = "5ff5666797eeafcc35f8c8a7558d188b7fb43145eb5043619a7c40910839d777"
 
-URI_aarch64_golang-github-yuin-goldmark-meta-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-yuin-goldmark-meta-devel-1.1.0-2.el10_0.noarch.rpm;name=aarch64_golang-github-yuin-goldmark-meta-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-yuin-goldmark-meta-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-yuin-goldmark-meta-devel-1.1.0-2.el10_0.noarch.rpm;name=aarch64_golang-github-yuin-goldmark-meta-devel;unpack=0"
 SRC_URI[aarch64_golang-github-yuin-goldmark-meta-devel.sha256sum] = "3f57d0e994693580a60f5bd360f61a85b59651abcf592f5fe11db775507c69db"
 
 RDEPENDS:golang-github-yuin-goldmark-meta-devel = " \

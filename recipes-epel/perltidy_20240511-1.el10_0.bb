@@ -9,16 +9,13 @@ PACKAGES = " \
  perltidy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perltidy-20240511-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perltidy-20240511-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "69fc827eb8682000ba1becbbaadeba36ebde32d41eecde59443bffc472f3cbdc"
 
-URI_x86_64_v2_perltidy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perltidy-20240511-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perltidy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perltidy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perltidy-20240511-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perltidy;unpack=0"
 SRC_URI[x86_64_v2_perltidy.sha256sum] = "7ab9e482156d591767aab1ea5ae33786ee548d234e0e9b557fcbb1613f71b669"
 
-URI_aarch64_perltidy = "${EPEL_MIRROR}/aarch64/Packages/p/perltidy-20240511-1.el10_0.noarch.rpm;name=aarch64_perltidy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perltidy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perltidy-20240511-1.el10_0.noarch.rpm;name=aarch64_perltidy;unpack=0"
 SRC_URI[aarch64_perltidy.sha256sum] = "d6ed1d9d27fbf9afb613c0fa38b7d096396b8854b82e34cf56882aeac80dcf5c"
 
 RDEPENDS:perltidy = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Sub-Quote-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Quote-2.006008-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Quote-2.006008-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7772fa99a57cfa8c78be0c98da0a24cb67f41ed5f74fd0329a8b16b875815300"
 
-URI_x86_64_v2_perl-Sub-Quote = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Quote}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Quote.sha256sum] = "6d98632b1d8a4356ff516d44f5fa4bb27a65ccd188eef3ae3cae3c34488c8867"
 
-URI_x86_64_v2_perl-Sub-Quote-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-tests-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Quote-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Quote-tests-2.006008-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Quote-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Quote-tests.sha256sum] = "72f0b91e9049044cd15a7721ca139e1deb318ba9d198c32d22c84bef343fa4db"
 
-URI_aarch64_perl-Sub-Quote = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Quote-2.006008-6.el10_0.noarch.rpm;name=aarch64_perl-Sub-Quote;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Quote}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Quote-2.006008-6.el10_0.noarch.rpm;name=aarch64_perl-Sub-Quote;unpack=0"
 SRC_URI[aarch64_perl-Sub-Quote.sha256sum] = "8100f5476b185f3a7d3721051293a38ed1bf538a6b8a15c20e483e6df96b2110"
 
-URI_aarch64_perl-Sub-Quote-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Quote-tests-2.006008-6.el10_0.noarch.rpm;name=aarch64_perl-Sub-Quote-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Quote-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Quote-tests-2.006008-6.el10_0.noarch.rpm;name=aarch64_perl-Sub-Quote-tests;unpack=0"
 SRC_URI[aarch64_perl-Sub-Quote-tests.sha256sum] = "a56374d8f9a38b95754f314f295d7b151ca9cd8f3de178e85251a1988e6347d4"
 
 RDEPENDS:perl-Sub-Quote = " \

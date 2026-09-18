@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Pod-Coverage-TrustPod \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "11e1a332131d7044991875cec14297f4631a4c02cc9fc418e9d51ae5953a1228"
 
-URI_x86_64_v2_perl-Pod-Coverage-TrustPod = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-TrustPod;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Coverage-TrustPod}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Coverage-TrustPod;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Coverage-TrustPod.sha256sum] = "75e97636533aa92c2e7b4a033cd379526f1528e939a5ada005d8ba35bcb53ebe"
 
-URI_aarch64_perl-Pod-Coverage-TrustPod = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-TrustPod;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Coverage-TrustPod}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Coverage-TrustPod-0.100006-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Coverage-TrustPod;unpack=0"
 SRC_URI[aarch64_perl-Pod-Coverage-TrustPod.sha256sum] = "90c17885d17691380fc38cd2b3b4a99b205b3c48b78aeb0a5aea2e8868d38666"
 
 RDEPENDS:perl-Pod-Coverage-TrustPod = " \

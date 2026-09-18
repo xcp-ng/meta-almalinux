@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-RequiresInternet \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "436a6049c91fce53526796e82b380bdae01ade4c25a1763ce201e2dc52f1138d"
 
-URI_x86_64_v2_perl-Test-RequiresInternet = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-RequiresInternet-0.05-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-RequiresInternet;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-RequiresInternet}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-RequiresInternet-0.05-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-RequiresInternet;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-RequiresInternet.sha256sum] = "cfa30723710bb94a6da2439283b7fa23dd1974b8a1648b393880e6592e1f04b5"
 
-URI_aarch64_perl-Test-RequiresInternet = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_0.noarch.rpm;name=aarch64_perl-Test-RequiresInternet;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-RequiresInternet}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-RequiresInternet-0.05-25.el10_0.noarch.rpm;name=aarch64_perl-Test-RequiresInternet;unpack=0"
 SRC_URI[aarch64_perl-Test-RequiresInternet.sha256sum] = "7177581caf14ae032615dc3ef8d82ae371b9313053af9d3421e71a9ad4b60c0b"
 
 RDEPENDS:perl-Test-RequiresInternet = " \

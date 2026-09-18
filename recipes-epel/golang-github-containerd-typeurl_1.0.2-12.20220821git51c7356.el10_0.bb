@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-containerd-typeurl-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-containerd-typeurl-1.0.2-12.20220821git51c7356.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-containerd-typeurl-1.0.2-12.20220821git51c7356.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "102d0456d13b8ee426ad2112a1043312c349785e3d969b3306d0e2be072c0d3c"
 
-URI_aarch64_golang-github-containerd-typeurl-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-containerd-typeurl-devel-1.0.2-12.20220821git51c7356.el10_0.noarch.rpm;name=aarch64_golang-github-containerd-typeurl-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-containerd-typeurl-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-containerd-typeurl-devel-1.0.2-12.20220821git51c7356.el10_0.noarch.rpm;name=aarch64_golang-github-containerd-typeurl-devel;unpack=0"
 SRC_URI[aarch64_golang-github-containerd-typeurl-devel.sha256sum] = "8bd85648f09871c5a1bdf68c253af951d92c372b868ebc78c6538babf0bad140"
 
 RDEPENDS:golang-github-containerd-typeurl-devel = " \

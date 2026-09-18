@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Sub-Override-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Override-0.12-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Sub-Override-0.12-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2a682e60e39da5858cbfc645d31e0bbfaf8d3e46fc1a8091a3aa1f6d4384b4db"
 
-URI_x86_64_v2_perl-Sub-Override = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Override}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Override.sha256sum] = "08fb220da9fd158a11aec5aba9ed5e9d34a142a8f6b2fe2cdba70696b1cd6edd"
 
-URI_x86_64_v2_perl-Sub-Override-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-tests-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Sub-Override-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Sub-Override-tests-0.12-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Sub-Override-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Sub-Override-tests.sha256sum] = "17b3456214168e403225501f398dc289e60ade2314fa2272bea54ffa279fc04d"
 
-URI_aarch64_perl-Sub-Override = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Override-0.12-2.el10_0.noarch.rpm;name=aarch64_perl-Sub-Override;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Override}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Override-0.12-2.el10_0.noarch.rpm;name=aarch64_perl-Sub-Override;unpack=0"
 SRC_URI[aarch64_perl-Sub-Override.sha256sum] = "b5cc43ee5536758ebac4b4fd97cd54ddbc58f4e9bb4072def67133d6572c001e"
 
-URI_aarch64_perl-Sub-Override-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Override-tests-0.12-2.el10_0.noarch.rpm;name=aarch64_perl-Sub-Override-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Sub-Override-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Sub-Override-tests-0.12-2.el10_0.noarch.rpm;name=aarch64_perl-Sub-Override-tests;unpack=0"
 SRC_URI[aarch64_perl-Sub-Override-tests.sha256sum] = "af5aeb024778201ebd21dc7ff65d7187611e83e90e2bb7ee903941f192008f66"
 
 RDEPENDS:perl-Sub-Override = " \

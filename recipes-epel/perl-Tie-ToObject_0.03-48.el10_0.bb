@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Tie-ToObject \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Tie-ToObject-0.03-48.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Tie-ToObject-0.03-48.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "808c31eee7cf5a52c84932ab82d6790d9da8c446e00e5072c870786c484361b7"
 
-URI_x86_64_v2_perl-Tie-ToObject = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tie-ToObject-0.03-48.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tie-ToObject;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Tie-ToObject}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Tie-ToObject-0.03-48.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Tie-ToObject;unpack=0"
 SRC_URI[x86_64_v2_perl-Tie-ToObject.sha256sum] = "59c3ebf6249eacd6dbb76c58dfac5baa6dc8010ecca3cf99b7d08f0a267bcbbf"
 
-URI_aarch64_perl-Tie-ToObject = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Tie-ToObject-0.03-48.el10_0.noarch.rpm;name=aarch64_perl-Tie-ToObject;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Tie-ToObject}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Tie-ToObject-0.03-48.el10_0.noarch.rpm;name=aarch64_perl-Tie-ToObject;unpack=0"
 SRC_URI[aarch64_perl-Tie-ToObject.sha256sum] = "d7d0dcbda10c53688e2a9c3535aa19c90f591e11e9d3b917016231e56768feec"
 
 RDEPENDS:perl-Tie-ToObject = " \

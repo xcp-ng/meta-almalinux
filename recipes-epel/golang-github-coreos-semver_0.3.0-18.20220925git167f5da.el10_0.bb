@@ -10,16 +10,13 @@ PACKAGES = " \
  golang-github-coreos-semver-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-coreos-semver-0.3.0-18.20220925git167f5da.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-coreos-semver-0.3.0-18.20220925git167f5da.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "dd412a4b8294aec3ec7fa329d08f8279224611108742604ce2bc490a7130db78"
 
-URI_aarch64_golang-github-coreos-semver = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-coreos-semver-0.3.0-18.20220925git167f5da.el10_0.aarch64.rpm;name=aarch64_golang-github-coreos-semver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-coreos-semver}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-coreos-semver-0.3.0-18.20220925git167f5da.el10_0.aarch64.rpm;name=aarch64_golang-github-coreos-semver;unpack=0"
 SRC_URI[aarch64_golang-github-coreos-semver.sha256sum] = "d65841b441f1ff69b3a057bec9595413dc6213fb5eca8cfd9d4e6bccdbd3c57f"
 
-URI_aarch64_golang-github-coreos-semver-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-coreos-semver-devel-0.3.0-18.20220925git167f5da.el10_0.noarch.rpm;name=aarch64_golang-github-coreos-semver-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-coreos-semver-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-coreos-semver-devel-0.3.0-18.20220925git167f5da.el10_0.noarch.rpm;name=aarch64_golang-github-coreos-semver-devel;unpack=0"
 SRC_URI[aarch64_golang-github-coreos-semver-devel.sha256sum] = "17e6f10687478b8546a5af3f6921ca629d1deb8b0bc95e690b16cfb0760295ed"
 
 RDEPENDS:golang-github-coreos-semver = " \

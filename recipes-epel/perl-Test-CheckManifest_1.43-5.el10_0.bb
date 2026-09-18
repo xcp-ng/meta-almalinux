@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-CheckManifest \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CheckManifest-1.43-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-CheckManifest-1.43-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5bd2840b4d53c65d2952de7064a521db708446113cd9fdbd9f252145041d0979"
 
-URI_x86_64_v2_perl-Test-CheckManifest = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CheckManifest-1.43-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CheckManifest;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-CheckManifest}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-CheckManifest-1.43-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-CheckManifest;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-CheckManifest.sha256sum] = "a23e5fd1bfd6f37ade7a7325cc13fa6a2b6711aa5df3f86fe7141d8699f6bcd3"
 
-URI_aarch64_perl-Test-CheckManifest = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CheckManifest-1.43-5.el10_0.noarch.rpm;name=aarch64_perl-Test-CheckManifest;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-CheckManifest}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-CheckManifest-1.43-5.el10_0.noarch.rpm;name=aarch64_perl-Test-CheckManifest;unpack=0"
 SRC_URI[aarch64_perl-Test-CheckManifest.sha256sum] = "c6a07fbddd5fa8a96f021ab5cb0de60f536896e7acc5bad75fc003883ffe932b"
 
 RDEPENDS:perl-Test-CheckManifest = " \

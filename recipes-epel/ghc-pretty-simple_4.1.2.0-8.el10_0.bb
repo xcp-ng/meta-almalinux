@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-pretty-simple-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-pretty-simple-4.1.2.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-pretty-simple-4.1.2.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fd28a2ddc85efedb88eb531663a1c95d351f019229ec1261e20760bba06053e1"
 
-URI_x86_64_v2_ghc-pretty-simple = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pretty-simple}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple;unpack=0"
 SRC_URI[x86_64_v2_ghc-pretty-simple.sha256sum] = "88849e40e8167c4ba81c27b35119861a9bec68646e30872721f9745e7990ddb8"
 
-URI_x86_64_v2_ghc-pretty-simple-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-devel-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pretty-simple-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-devel-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-pretty-simple-devel.sha256sum] = "a043e16ac1334b8c29d90bbad6df9b1d1757389c7517fa939f6527601ddb62cf"
 
-URI_x86_64_v2_ghc-pretty-simple-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-doc-4.1.2.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-pretty-simple-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pretty-simple-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-doc-4.1.2.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-pretty-simple-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-pretty-simple-doc.sha256sum] = "1ca703f1b3c496116cac4eb0e42aa43dbf05b8acc22bb3759ddcc5109c5e6b72"
 
-URI_x86_64_v2_ghc-pretty-simple-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-prof-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-pretty-simple-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-pretty-simple-prof-4.1.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-pretty-simple-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-pretty-simple-prof.sha256sum] = "2efce1fcc2403ce6dcbe98d7bd71cc3ea1548553cfafce9570bb583fe394c373"
 
-URI_aarch64_ghc-pretty-simple = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pretty-simple}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple;unpack=0"
 SRC_URI[aarch64_ghc-pretty-simple.sha256sum] = "c7bf848a2bcc6c42d32ee6173912e0fa98596129c601d4d5b15503076fd99a45"
 
-URI_aarch64_ghc-pretty-simple-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-devel-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pretty-simple-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-devel-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple-devel;unpack=0"
 SRC_URI[aarch64_ghc-pretty-simple-devel.sha256sum] = "1682428c0bf1ae77251632d1b47f7d71b6838d0a5a29fde2b0048c7139b5e338"
 
-URI_aarch64_ghc-pretty-simple-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-doc-4.1.2.0-8.el10_0.noarch.rpm;name=aarch64_ghc-pretty-simple-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pretty-simple-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-doc-4.1.2.0-8.el10_0.noarch.rpm;name=aarch64_ghc-pretty-simple-doc;unpack=0"
 SRC_URI[aarch64_ghc-pretty-simple-doc.sha256sum] = "3fe49e58243277f90038589e6e3806d8e4ae13f010e9fdb7e344d881e0d0c13d"
 
-URI_aarch64_ghc-pretty-simple-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-prof-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-pretty-simple-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-pretty-simple-prof-4.1.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-pretty-simple-prof;unpack=0"
 SRC_URI[aarch64_ghc-pretty-simple-prof.sha256sum] = "dfc54c0ceb2a82efdc2cb0fb88f03db1e5ff3e0887826f8ff88e064b42c14609"
 
 RDEPENDS:ghc-pretty-simple = " \

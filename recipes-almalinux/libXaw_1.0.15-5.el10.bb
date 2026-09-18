@@ -10,24 +10,19 @@ PACKAGES = " \
  libXaw-devel \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libXaw-1.0.15-5.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libXaw-1.0.15-5.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3cc1aeca75d8254f0f9a89e124b43615741c1d6368e366b865d1d1dee74aa0c1"
 
-URI_x86_64_v2_libXaw = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libXaw-1.0.15-5.el10.x86_64_v2.rpm;name=x86_64_v2_libXaw;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libXaw}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libXaw-1.0.15-5.el10.x86_64_v2.rpm;name=x86_64_v2_libXaw;unpack=0"
 SRC_URI[x86_64_v2_libXaw.sha256sum] = "6d0935e7de0328c553dedd96443c7c766a326cd8fc3d642637499a050d6316ff"
 
-URI_x86_64_v2_libXaw-devel = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libXaw-devel-1.0.15-5.el10.x86_64_v2.rpm;name=x86_64_v2_libXaw-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_libXaw-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libXaw-devel-1.0.15-5.el10.x86_64_v2.rpm;name=x86_64_v2_libXaw-devel;unpack=0"
 SRC_URI[x86_64_v2_libXaw-devel.sha256sum] = "e525352f34c8a8689984bcf44bb415a294da678cee758e14fecf14d95c2589c6"
 
-URI_aarch64_libXaw = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libXaw-1.0.15-5.el10.aarch64.rpm;name=aarch64_libXaw;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libXaw}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libXaw-1.0.15-5.el10.aarch64.rpm;name=aarch64_libXaw;unpack=0"
 SRC_URI[aarch64_libXaw.sha256sum] = "18925f20b64c7f66ee78b9e857729d227b2598444bf53833b61e07ac60c9de6a"
 
-URI_aarch64_libXaw-devel = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libXaw-devel-1.0.15-5.el10.aarch64.rpm;name=aarch64_libXaw-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_libXaw-devel}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libXaw-devel-1.0.15-5.el10.aarch64.rpm;name=aarch64_libXaw-devel;unpack=0"
 SRC_URI[aarch64_libXaw-devel.sha256sum] = "4f3de4ed17880b5cbc832f4c2551bbb2e5637a505037ce8d032a7094c7ccf53f"
 
 RDEPENDS:libXaw = " \

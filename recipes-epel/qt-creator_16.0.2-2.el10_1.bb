@@ -12,40 +12,31 @@ PACKAGES = " \
  qt-creator-translations \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/q/qt-creator-16.0.2-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/q/qt-creator-16.0.2-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b8d8e3cb859ad0f2b0a11c02e96803b6758c06579dcecbdd97cbe5e02bc48a65"
 
-URI_x86_64_v2_qt-creator = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-16.0.2-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt-creator;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt-creator}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-16.0.2-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_qt-creator;unpack=0"
 SRC_URI[x86_64_v2_qt-creator.sha256sum] = "f3ad91f4de8aa9a6dc64d90e79217c7e81b0c606cddc1b503dda70943bd37b64"
 
-URI_x86_64_v2_qt-creator-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-data-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt-creator-data}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-data-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-data;unpack=0"
 SRC_URI[x86_64_v2_qt-creator-data.sha256sum] = "6e3edc298d22996968c838696edad07e50f5511b10b3b75810720a1ec6da2e1e"
 
-URI_x86_64_v2_qt-creator-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-doc-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt-creator-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-doc-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-doc;unpack=0"
 SRC_URI[x86_64_v2_qt-creator-doc.sha256sum] = "62137a56e87e7c4dd8558a5f0d0eee7b13d99013fdd398479493661bfe96946c"
 
-URI_x86_64_v2_qt-creator-translations = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-translations-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-translations;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_qt-creator-translations}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/qt-creator-translations-16.0.2-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_qt-creator-translations;unpack=0"
 SRC_URI[x86_64_v2_qt-creator-translations.sha256sum] = "86365f15624b93f2661e31c31d7e7d1f3f09efa2ac9f6c67f5edc9876f65c174"
 
-URI_aarch64_qt-creator = "${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-16.0.2-2.el10_1.aarch64.rpm;name=aarch64_qt-creator;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt-creator}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-16.0.2-2.el10_1.aarch64.rpm;name=aarch64_qt-creator;unpack=0"
 SRC_URI[aarch64_qt-creator.sha256sum] = "70a901d076dc74c384e891c80c1dc1c640115591a60018183fa274d59e0159b6"
 
-URI_aarch64_qt-creator-data = "${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-data-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt-creator-data}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-data-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-data;unpack=0"
 SRC_URI[aarch64_qt-creator-data.sha256sum] = "741662696a781fe088e8603594f07c8d6cf2516c9bfbda06558ad09c02c17449"
 
-URI_aarch64_qt-creator-doc = "${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-doc-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt-creator-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-doc-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-doc;unpack=0"
 SRC_URI[aarch64_qt-creator-doc.sha256sum] = "f4398909726d3f9e338d90c2e363b9ebc6857db97872ad69bd07271ff3c98d88"
 
-URI_aarch64_qt-creator-translations = "${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-translations-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-translations;unpack=0"
-SRC_URI:append = " ${URI_aarch64_qt-creator-translations}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/q/qt-creator-translations-16.0.2-2.el10_1.noarch.rpm;name=aarch64_qt-creator-translations;unpack=0"
 SRC_URI[aarch64_qt-creator-translations.sha256sum] = "0efff506f15e9d884f1af3b9f2cc0d265ecfdc2ae308bc6b447cb33009700e8a"
 
 RDEPENDS:qt-creator = " \

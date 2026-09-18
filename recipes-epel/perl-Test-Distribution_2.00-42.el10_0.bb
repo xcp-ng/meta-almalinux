@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Distribution \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Distribution-2.00-42.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Distribution-2.00-42.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "65906786194579476017e1f25cfd5d2d553d3fab3067f6e3c65b603f7f9e46f3"
 
-URI_x86_64_v2_perl-Test-Distribution = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Distribution-2.00-42.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Distribution;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Distribution}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Distribution-2.00-42.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Distribution;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Distribution.sha256sum] = "8954bf7b8916799198a2bf3ae2099ee4cd61aa48082e21102821cbe45fa61fa8"
 
-URI_aarch64_perl-Test-Distribution = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Distribution-2.00-42.el10_0.noarch.rpm;name=aarch64_perl-Test-Distribution;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Distribution}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Distribution-2.00-42.el10_0.noarch.rpm;name=aarch64_perl-Test-Distribution;unpack=0"
 SRC_URI[aarch64_perl-Test-Distribution.sha256sum] = "50a4acb723c333d7e073b06ea5210e682f2ee8dd25d1b389e4398a8704bf4e2b"
 
 RDEPENDS:perl-Test-Distribution = " \

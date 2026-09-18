@@ -9,16 +9,13 @@ PACKAGES = " \
  kruler \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kruler-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kruler-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1f78b6d4446ef17027d2e6b57c5fb806414c0ed861ae97924747a889fbb8a11d"
 
-URI_x86_64_v2_kruler = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kruler-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kruler;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kruler}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kruler-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kruler;unpack=0"
 SRC_URI[x86_64_v2_kruler.sha256sum] = "a749a5b8802a0e6a3ad190b2034fd7985a6adfdd5f46c46855c7d6ea14a346d4"
 
-URI_aarch64_kruler = "${EPEL_MIRROR}/aarch64/Packages/k/kruler-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kruler;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kruler}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kruler-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_kruler;unpack=0"
 SRC_URI[aarch64_kruler.sha256sum] = "35bf21a2e87b86499ed0a2f96acc04b91ff0fee42d2255d9b594b4c8997759dc"
 
 RDEPENDS:kruler = " \

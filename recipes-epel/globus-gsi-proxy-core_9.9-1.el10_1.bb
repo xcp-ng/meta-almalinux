@@ -11,32 +11,25 @@ PACKAGES = " \
  globus-gsi-proxy-core-doc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/globus-gsi-proxy-core-9.9-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/globus-gsi-proxy-core-9.9-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "13e6eaa6a0f795428581420a7e50966c76fb83f61cfd365822461d7e93d37b66"
 
-URI_x86_64_v2_globus-gsi-proxy-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-9.9-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gsi-proxy-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gsi-proxy-core}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-9.9-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gsi-proxy-core;unpack=0"
 SRC_URI[x86_64_v2_globus-gsi-proxy-core.sha256sum] = "1557e4d9bad905ab1ba9053dddba246887411b7e44c569cf4bfb3ec0c3d62566"
 
-URI_x86_64_v2_globus-gsi-proxy-core-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-devel-9.9-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gsi-proxy-core-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gsi-proxy-core-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-devel-9.9-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gsi-proxy-core-devel;unpack=0"
 SRC_URI[x86_64_v2_globus-gsi-proxy-core-devel.sha256sum] = "aaba2323f410b78242ec5dcea3035229ba5ebe29f287e9bea8aeedd85daef903"
 
-URI_x86_64_v2_globus-gsi-proxy-core-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-doc-9.9-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_globus-gsi-proxy-core-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gsi-proxy-core-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gsi-proxy-core-doc-9.9-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_globus-gsi-proxy-core-doc;unpack=0"
 SRC_URI[x86_64_v2_globus-gsi-proxy-core-doc.sha256sum] = "953a5a9803e2c80398397c9712e5b9d374f27a573302f0e4560421285ad4676d"
 
-URI_aarch64_globus-gsi-proxy-core = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-9.9-1.el10_1.aarch64.rpm;name=aarch64_globus-gsi-proxy-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gsi-proxy-core}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-9.9-1.el10_1.aarch64.rpm;name=aarch64_globus-gsi-proxy-core;unpack=0"
 SRC_URI[aarch64_globus-gsi-proxy-core.sha256sum] = "5586347e3d3b6a61f505a677549731c15d3653dece1713bde6d71e55db00724a"
 
-URI_aarch64_globus-gsi-proxy-core-devel = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-devel-9.9-1.el10_1.aarch64.rpm;name=aarch64_globus-gsi-proxy-core-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gsi-proxy-core-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-devel-9.9-1.el10_1.aarch64.rpm;name=aarch64_globus-gsi-proxy-core-devel;unpack=0"
 SRC_URI[aarch64_globus-gsi-proxy-core-devel.sha256sum] = "39fde6d18ce1e61017995803537f87806eab9af88979c35ef662b932675ad72e"
 
-URI_aarch64_globus-gsi-proxy-core-doc = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-doc-9.9-1.el10_1.noarch.rpm;name=aarch64_globus-gsi-proxy-core-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gsi-proxy-core-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gsi-proxy-core-doc-9.9-1.el10_1.noarch.rpm;name=aarch64_globus-gsi-proxy-core-doc;unpack=0"
 SRC_URI[aarch64_globus-gsi-proxy-core-doc.sha256sum] = "8eb723afd0156134c4ef55747d4da7a3c5f0ca95a7c857e68c9e9bfab3b233f4"
 
 RDEPENDS:globus-gsi-proxy-core = " \

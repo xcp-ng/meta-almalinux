@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-build+virtualenv \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-build-1.2.1-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-build-1.2.1-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "638fb7c57a26e96f36e14a37037dc2847c9cfd49a281c860e34baeb215ce7ec6"
 
-URI_x86_64_v2_python3-build = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-build}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build;unpack=0"
 SRC_URI[x86_64_v2_python3-build.sha256sum] = "14549ff5e08e4bf97cceb4ac27fb70148724ffc8263d074fdd474e7f8b55b70a"
 
-URI_x86_64_v2_python3-build+virtualenv = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build+virtualenv-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build+virtualenv;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-build+virtualenv}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-build+virtualenv-1.2.1-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-build+virtualenv;unpack=0"
 SRC_URI[x86_64_v2_python3-build+virtualenv.sha256sum] = "69ed3999d5eda165ad9abd7aaf0b6a80f998a9f210de8245bd34c322b29a92aa"
 
-URI_aarch64_python3-build = "${EPEL_MIRROR}/aarch64/Packages/p/python3-build-1.2.1-6.el10_0.noarch.rpm;name=aarch64_python3-build;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-build}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-build-1.2.1-6.el10_0.noarch.rpm;name=aarch64_python3-build;unpack=0"
 SRC_URI[aarch64_python3-build.sha256sum] = "d813a71f5a9c507de21f68355805cc519651075645291cab2e3055e238e78572"
 
-URI_aarch64_python3-build+virtualenv = "${EPEL_MIRROR}/aarch64/Packages/p/python3-build+virtualenv-1.2.1-6.el10_0.noarch.rpm;name=aarch64_python3-build+virtualenv;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-build+virtualenv}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-build+virtualenv-1.2.1-6.el10_0.noarch.rpm;name=aarch64_python3-build+virtualenv;unpack=0"
 SRC_URI[aarch64_python3-build+virtualenv.sha256sum] = "1b14c28de88046c06432bc27bb511a4e9cd28b54d7c244cfff59cbf404fc4173"
 
 RDEPENDS:python3-build = " \

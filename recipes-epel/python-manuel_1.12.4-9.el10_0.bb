@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-manuel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-manuel-1.12.4-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-manuel-1.12.4-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9747867a88a877ef8be9a73643865bed32265ad2a6b8ec7eca11330e1a447f8a"
 
-URI_x86_64_v2_python3-manuel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-manuel-1.12.4-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-manuel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-manuel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-manuel-1.12.4-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-manuel;unpack=0"
 SRC_URI[x86_64_v2_python3-manuel.sha256sum] = "e9ef9c9c3f10fc718fe8cb09ec00c7d3f04ffe0e57526a33e323ef0a7a44f4f3"
 
-URI_aarch64_python3-manuel = "${EPEL_MIRROR}/aarch64/Packages/p/python3-manuel-1.12.4-9.el10_0.noarch.rpm;name=aarch64_python3-manuel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-manuel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-manuel-1.12.4-9.el10_0.noarch.rpm;name=aarch64_python3-manuel;unpack=0"
 SRC_URI[aarch64_python3-manuel.sha256sum] = "a3ba9310b5ccc20041ed7ac8b6b044cf1d41d64e4dd5b9f43e68b0f9afea4852"
 
 RDEPENDS:python3-manuel = " \

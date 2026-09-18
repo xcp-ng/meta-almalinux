@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Synopsis \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Synopsis-0.17-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Synopsis-0.17-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "697ed9dca5a5bef6a801e8f0a024d1c6fc7c77088ac111690f4e4f9bcc9a3e5e"
 
-URI_x86_64_v2_perl-Test-Synopsis = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Synopsis-0.17-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Synopsis;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Synopsis}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Synopsis-0.17-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Synopsis;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Synopsis.sha256sum] = "e426fd33a57a5bd4a5d9421751a197958322506604bec47b2e4f5c94c0282db7"
 
-URI_aarch64_perl-Test-Synopsis = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Synopsis-0.17-7.el10_0.noarch.rpm;name=aarch64_perl-Test-Synopsis;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Synopsis}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Synopsis-0.17-7.el10_0.noarch.rpm;name=aarch64_perl-Test-Synopsis;unpack=0"
 SRC_URI[aarch64_perl-Test-Synopsis.sha256sum] = "2cc7a025a75f2c0f3ff5cb7e7714332d04768de340cfd3898a4bdca2c9196549"
 
 RDEPENDS:perl-Test-Synopsis = " \

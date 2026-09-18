@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-hslogger-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-hslogger-1.3.1.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-hslogger-1.3.1.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6505e866ea4fe8e4170d953bf9b6464a7ed7eb41d7e642e132e1a132b507daa5"
 
-URI_x86_64_v2_ghc-hslogger = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hslogger}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger;unpack=0"
 SRC_URI[x86_64_v2_ghc-hslogger.sha256sum] = "6a8ec283cc11b877e84aa38d21835bbf9bd0e7dd1ede10e9c0dbf253915b261f"
 
-URI_x86_64_v2_ghc-hslogger-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-devel-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hslogger-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-devel-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-hslogger-devel.sha256sum] = "ff2226cdc1db53b87f0584c41f37ffd2d739967cda31b44c92ecad8c6fbc5acc"
 
-URI_x86_64_v2_ghc-hslogger-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-doc-1.3.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hslogger-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hslogger-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-doc-1.3.1.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hslogger-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-hslogger-doc.sha256sum] = "3d581c15c0acd480b48ae69577b7a78f59061ea4f017f5671d189ab7a7e6ef95"
 
-URI_x86_64_v2_ghc-hslogger-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-prof-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hslogger-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hslogger-prof-1.3.1.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hslogger-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-hslogger-prof.sha256sum] = "fadb5789c593ef7dfb0fd9f3d4049dea468c85fa8b08c508503e7735812a62e0"
 
-URI_aarch64_ghc-hslogger = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hslogger}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger;unpack=0"
 SRC_URI[aarch64_ghc-hslogger.sha256sum] = "b88696bd8b05f54ac3b28d5788afe13a4e74a805eb25dd7532823f016b28560f"
 
-URI_aarch64_ghc-hslogger-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-devel-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hslogger-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-devel-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger-devel;unpack=0"
 SRC_URI[aarch64_ghc-hslogger-devel.sha256sum] = "519bc8e7268a1edbb4ba1a444f9da61e019e82f5f49cc2d5d127c0b4eb06cec0"
 
-URI_aarch64_ghc-hslogger-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-doc-1.3.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-hslogger-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hslogger-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-doc-1.3.1.1-1.el10_0.noarch.rpm;name=aarch64_ghc-hslogger-doc;unpack=0"
 SRC_URI[aarch64_ghc-hslogger-doc.sha256sum] = "a4ac36b0a3505a9e5a7a64f9897aeca6b4cb36d80cd7a4d14503eb1808397f61"
 
-URI_aarch64_ghc-hslogger-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-prof-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hslogger-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hslogger-prof-1.3.1.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-hslogger-prof;unpack=0"
 SRC_URI[aarch64_ghc-hslogger-prof.sha256sum] = "fd10bedd9c683b4f65fc2d4d8f7ad545fc5f584f80a93ca2870ac43db716cebf"
 
 RDEPENDS:ghc-hslogger = " \

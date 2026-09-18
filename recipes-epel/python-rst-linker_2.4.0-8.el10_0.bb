@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-rst-linker \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-rst-linker-2.4.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-rst-linker-2.4.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "60f97af10b6e1436adf361fa8ac2c76760052b72598dc1feafa16fdf09b1ad80"
 
-URI_x86_64_v2_python3-rst-linker = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rst-linker-2.4.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rst-linker;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-rst-linker}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-rst-linker-2.4.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-rst-linker;unpack=0"
 SRC_URI[x86_64_v2_python3-rst-linker.sha256sum] = "669ccfaa271bf72675665d5f0923b0f6f5c9f5817fa9c74860b332acff5deab4"
 
-URI_aarch64_python3-rst-linker = "${EPEL_MIRROR}/aarch64/Packages/p/python3-rst-linker-2.4.0-8.el10_0.noarch.rpm;name=aarch64_python3-rst-linker;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-rst-linker}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-rst-linker-2.4.0-8.el10_0.noarch.rpm;name=aarch64_python3-rst-linker;unpack=0"
 SRC_URI[aarch64_python3-rst-linker.sha256sum] = "50a9fdcfeee89394080cdde2eb556ee08d9c00cb50b8b8654d15a08e04830009"
 
 RDEPENDS:python3-rst-linker = " \

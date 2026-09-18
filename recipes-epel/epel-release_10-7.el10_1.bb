@@ -9,12 +9,10 @@ PACKAGES = " \
  epel-release \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/e/epel-release-10-7.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/e/epel-release-10-7.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f4d159b2206620f7407c9ab1ed0a1f75305a3ed43894e9258d8441b17dbd46e4"
 
-URI_aarch64_epel-release = "${EPEL_MIRROR}/aarch64/Packages/e/epel-release-10-7.el10_1.noarch.rpm;name=aarch64_epel-release;unpack=0"
-SRC_URI:append = " ${URI_aarch64_epel-release}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/e/epel-release-10-7.el10_1.noarch.rpm;name=aarch64_epel-release;unpack=0"
 SRC_URI[aarch64_epel-release.sha256sum] = "78866611d3400844e36af82cc4d68658eb54966c9a320e5e1a871a8bd28443ac"
 
 RDEPENDS:epel-release = " \

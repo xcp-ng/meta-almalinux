@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-irc \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-irc-20.5.0-9.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-irc-20.5.0-9.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7c24bd74852558a4a2f8547afc27cd3d04f29e8f2032c27c9fa9a9c37f319408"
 
-URI_x86_64_v2_python3-irc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-irc-20.5.0-9.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-irc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-irc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-irc-20.5.0-9.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-irc;unpack=0"
 SRC_URI[x86_64_v2_python3-irc.sha256sum] = "c44ee7253af70a127d6b21939cc979d611753e5a8fc0d594ffad3616a548b411"
 
-URI_aarch64_python3-irc = "${EPEL_MIRROR}/aarch64/Packages/p/python3-irc-20.5.0-9.el10_1.noarch.rpm;name=aarch64_python3-irc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-irc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-irc-20.5.0-9.el10_1.noarch.rpm;name=aarch64_python3-irc;unpack=0"
 SRC_URI[aarch64_python3-irc.sha256sum] = "6b1aae18fbba9e011b637441f11285e650a9da3530053f18d99a393941c29bce"
 
 RDEPENDS:python3-irc = " \

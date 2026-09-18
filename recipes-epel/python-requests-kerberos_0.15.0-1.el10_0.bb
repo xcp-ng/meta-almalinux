@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-requests-kerberos \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-requests-kerberos-0.15.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-requests-kerberos-0.15.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a816259ee122591f1c8fe899b00584e5195ca79201d502b5fdafce1af56b6c08"
 
-URI_x86_64_v2_python3-requests-kerberos = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-kerberos-0.15.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-kerberos;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-requests-kerberos}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-requests-kerberos-0.15.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-requests-kerberos;unpack=0"
 SRC_URI[x86_64_v2_python3-requests-kerberos.sha256sum] = "727d711672f997d98c8507f2411cf007118017f284003ec1b4cd70f7b9649b2d"
 
-URI_aarch64_python3-requests-kerberos = "${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-kerberos-0.15.0-1.el10_0.noarch.rpm;name=aarch64_python3-requests-kerberos;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-requests-kerberos}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-requests-kerberos-0.15.0-1.el10_0.noarch.rpm;name=aarch64_python3-requests-kerberos;unpack=0"
 SRC_URI[aarch64_python3-requests-kerberos.sha256sum] = "2dbabd8b7d1e54699e9fe3d8cce6d92cd9091bd58965b6eccc4b22729d929ae9"
 
 RDEPENDS:python3-requests-kerberos = " \

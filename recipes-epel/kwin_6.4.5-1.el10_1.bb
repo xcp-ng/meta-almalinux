@@ -13,50 +13,39 @@ PACKAGES = " \
  kwin-libs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/kwin-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/kwin-6.4.5-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "be432847b2fef6056aee72bf2c4c53f5ffdd07ea9641f0ec9f6e7ff1b0c66ab2"
 
-URI_x86_64_v2_kwin = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwin}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin;unpack=0"
 SRC_URI[x86_64_v2_kwin.sha256sum] = "06315be8b2318654eada234bf24dd95e3ffbdb38b9bd0426ac370416a15bf2c0"
 RPROVIDES:kwin:append:x86_64_v2 = " virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
 
-URI_x86_64_v2_kwin-common = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-common-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-common;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwin-common}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-common-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-common;unpack=0"
 SRC_URI[x86_64_v2_kwin-common.sha256sum] = "b1852f73e626c11b91b8fa6852c0b27dd3ffea82fd9102ba396025d9615889c9"
 
-URI_x86_64_v2_kwin-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwin-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-devel-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-devel;unpack=0"
 SRC_URI[x86_64_v2_kwin-devel.sha256sum] = "731b178ea7c7fd72e72234c0304e98256f14f8adb4e786705cbdc6c84cff8144"
 
-URI_x86_64_v2_kwin-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-doc-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kwin-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwin-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-doc-6.4.5-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_kwin-doc;unpack=0"
 SRC_URI[x86_64_v2_kwin-doc.sha256sum] = "3d40dd4c0b87a8a82f334750e588a8392346765e5abb670c4e345bdbb9233af0"
 
-URI_x86_64_v2_kwin-libs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-libs-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-libs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_kwin-libs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/kwin-libs-6.4.5-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_kwin-libs;unpack=0"
 SRC_URI[x86_64_v2_kwin-libs.sha256sum] = "6278301890d8700d6ce141558da23f9ac6a0d9af47bcc0663e2ed2a280333350"
 
-URI_aarch64_kwin = "${EPEL_MIRROR}/aarch64/Packages/k/kwin-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwin}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwin-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin;unpack=0"
 SRC_URI[aarch64_kwin.sha256sum] = "607127a63b51fba94d623dfed5b7a3d36cbb20d7494e457c1c826d6684418dbf"
 RPROVIDES:kwin:append:aarch64 = " virtual/weston_or_cage_or_kwin-wayland_or_mutter_or_gnome-kiosk"
 
-URI_aarch64_kwin-common = "${EPEL_MIRROR}/aarch64/Packages/k/kwin-common-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-common;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwin-common}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwin-common-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-common;unpack=0"
 SRC_URI[aarch64_kwin-common.sha256sum] = "4034de2f313d7068d3c5f0e5465413d241c93d13771d21275c8b14c90584ae55"
 
-URI_aarch64_kwin-devel = "${EPEL_MIRROR}/aarch64/Packages/k/kwin-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwin-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwin-devel-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-devel;unpack=0"
 SRC_URI[aarch64_kwin-devel.sha256sum] = "1a7c3f929a2b076095a03c16ee589fdd3e237a8dc6294f4aa27b192fdec62518"
 
-URI_aarch64_kwin-doc = "${EPEL_MIRROR}/aarch64/Packages/k/kwin-doc-6.4.5-1.el10_1.noarch.rpm;name=aarch64_kwin-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwin-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwin-doc-6.4.5-1.el10_1.noarch.rpm;name=aarch64_kwin-doc;unpack=0"
 SRC_URI[aarch64_kwin-doc.sha256sum] = "fb6210ae3116566abccd223def036c14edd8bf4964530e5b7da1dcd176b91787"
 
-URI_aarch64_kwin-libs = "${EPEL_MIRROR}/aarch64/Packages/k/kwin-libs-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-libs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_kwin-libs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/kwin-libs-6.4.5-1.el10_1.aarch64.rpm;name=aarch64_kwin-libs;unpack=0"
 SRC_URI[aarch64_kwin-libs.sha256sum] = "2927d8a694727bce7bf78997b8da025bc5acce139eadf35460f08c0859b1720a"
 
 RDEPENDS:kwin = " \

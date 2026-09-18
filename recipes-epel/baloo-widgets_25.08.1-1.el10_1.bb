@@ -10,24 +10,19 @@ PACKAGES = " \
  baloo-widgets-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/b/baloo-widgets-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/b/baloo-widgets-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "88fb96e6dd05b159a36dd164ed375b82f590507b067addf0b3a2e12856c7a1c6"
 
-URI_x86_64_v2_baloo-widgets = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/baloo-widgets-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_baloo-widgets;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_baloo-widgets}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/baloo-widgets-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_baloo-widgets;unpack=0"
 SRC_URI[x86_64_v2_baloo-widgets.sha256sum] = "3d0dd749fa71dd00942fe936ab9d674a98f4d7635e6bec0eaca894befa6e887e"
 
-URI_x86_64_v2_baloo-widgets-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/baloo-widgets-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_baloo-widgets-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_baloo-widgets-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/baloo-widgets-devel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_baloo-widgets-devel;unpack=0"
 SRC_URI[x86_64_v2_baloo-widgets-devel.sha256sum] = "b55675fefc8f4d0967257c048619ef3f11611701f3c9f1a1564a4751040a2ed3"
 
-URI_aarch64_baloo-widgets = "${EPEL_MIRROR}/aarch64/Packages/b/baloo-widgets-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_baloo-widgets;unpack=0"
-SRC_URI:append = " ${URI_aarch64_baloo-widgets}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/baloo-widgets-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_baloo-widgets;unpack=0"
 SRC_URI[aarch64_baloo-widgets.sha256sum] = "15f33d1ced201c0f9d5b0f0b3b9da5a55d774d06f560b60fa807822e308930cc"
 
-URI_aarch64_baloo-widgets-devel = "${EPEL_MIRROR}/aarch64/Packages/b/baloo-widgets-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_baloo-widgets-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_baloo-widgets-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/baloo-widgets-devel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_baloo-widgets-devel;unpack=0"
 SRC_URI[aarch64_baloo-widgets-devel.sha256sum] = "319a2518e0a6638e48c4bd3b36385653dbecfa06cd0af712f7a8202c6b2c6d8d"
 
 RDEPENDS:baloo-widgets = " \

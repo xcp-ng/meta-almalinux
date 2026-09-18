@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-legacy-cgi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-legacy-cgi-2.6.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-legacy-cgi-2.6.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a9d1f6c0f65da07a48ef13b5d37502566978d2a9964f4a2af675c044b33d6aaa"
 
-URI_x86_64_v2_python3-legacy-cgi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-legacy-cgi-2.6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-legacy-cgi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-legacy-cgi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-legacy-cgi-2.6.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-legacy-cgi;unpack=0"
 SRC_URI[x86_64_v2_python3-legacy-cgi.sha256sum] = "2cecbaeb2514baaeaaaa1559660ad3ea1e3392a04f65abd042e3673fbbaf242a"
 
-URI_aarch64_python3-legacy-cgi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-legacy-cgi-2.6.1-1.el10_0.noarch.rpm;name=aarch64_python3-legacy-cgi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-legacy-cgi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-legacy-cgi-2.6.1-1.el10_0.noarch.rpm;name=aarch64_python3-legacy-cgi;unpack=0"
 SRC_URI[aarch64_python3-legacy-cgi.sha256sum] = "3a2d60d2632c70b685ef3aa7e677d8706b57c7089b9d3e1ab0ffa69e9aaec37f"
 
 RDEPENDS:python3-legacy-cgi = " \

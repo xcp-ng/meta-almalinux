@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-String-Util \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-String-Util-1.35-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-String-Util-1.35-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7dff650d5972176f7b3b16fb6d23d180d6b81c0a23d3355db22548897091c048"
 
-URI_x86_64_v2_perl-String-Util = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Util-1.35-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Util;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-String-Util}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-Util-1.35-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-String-Util;unpack=0"
 SRC_URI[x86_64_v2_perl-String-Util.sha256sum] = "be7ce751b8bd3a01bcc55cf08bd0d6df2245c76789f8d7b2bcb2eb3616ee10a8"
 
-URI_aarch64_perl-String-Util = "${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Util-1.35-1.el10_0.noarch.rpm;name=aarch64_perl-String-Util;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-String-Util}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-String-Util-1.35-1.el10_0.noarch.rpm;name=aarch64_perl-String-Util;unpack=0"
 SRC_URI[aarch64_perl-String-Util.sha256sum] = "ae319b762eeecb40094466917882750f653068104325afd1c6c87d62996d2055"
 
 RDEPENDS:perl-String-Util = " \

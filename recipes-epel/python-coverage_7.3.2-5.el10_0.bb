@@ -10,24 +10,19 @@ PACKAGES = " \
  python3-coverage+toml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-coverage-7.3.2-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-coverage-7.3.2-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bdb25543d1ff2578e13df3e6aab10f2b50833421ed9be40e8ed539999c887d27"
 
-URI_x86_64_v2_python3-coverage = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-coverage}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage;unpack=0"
 SRC_URI[x86_64_v2_python3-coverage.sha256sum] = "141b0dbd12f9ea1f570566922859cd1c3cdbbbecb005b0ba46ecfa518ec75870"
 
-URI_x86_64_v2_python3-coverage+toml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage+toml-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage+toml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-coverage+toml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-coverage+toml-7.3.2-5.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-coverage+toml;unpack=0"
 SRC_URI[x86_64_v2_python3-coverage+toml.sha256sum] = "15d3e875e630ddfd17d91c70a011800f277b3f98e38117f0bfce9b3741833ecd"
 
-URI_aarch64_python3-coverage = "${EPEL_MIRROR}/aarch64/Packages/p/python3-coverage-7.3.2-5.el10_0.aarch64.rpm;name=aarch64_python3-coverage;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-coverage}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-coverage-7.3.2-5.el10_0.aarch64.rpm;name=aarch64_python3-coverage;unpack=0"
 SRC_URI[aarch64_python3-coverage.sha256sum] = "570da3eb7b4c8574da45a12362c7eac62eba257db67f326e42c8a75dc41a1cdf"
 
-URI_aarch64_python3-coverage+toml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-coverage+toml-7.3.2-5.el10_0.aarch64.rpm;name=aarch64_python3-coverage+toml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-coverage+toml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-coverage+toml-7.3.2-5.el10_0.aarch64.rpm;name=aarch64_python3-coverage+toml;unpack=0"
 SRC_URI[aarch64_python3-coverage+toml.sha256sum] = "2fdb147fc457b5b7270df3679aeb65a2c5814e7cbd42cd6b3c38e88daf95c7e2"
 
 RDEPENDS:python3-coverage = " \

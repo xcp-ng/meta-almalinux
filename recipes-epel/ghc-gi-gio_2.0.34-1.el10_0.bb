@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-gi-gio-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gio-2.0.34-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-gi-gio-2.0.34-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a2b2a427bade5ac745e0ba5be4e5e8a1e6550a7ba18040fbc10589e0824f8883"
 
-URI_x86_64_v2_ghc-gi-gio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gio.sha256sum] = "06b71b36284e479bce885adada692e72cb7f9c9ba59463f0cf9d8ae0fc3c5422"
 
-URI_x86_64_v2_ghc-gi-gio-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-devel-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gio-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-devel-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gio-devel.sha256sum] = "50b6d092cfd1b34ace815c68f27517b098026d4e3d9bdded31ef14fe8c0e89ef"
 
-URI_x86_64_v2_ghc-gi-gio-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-doc-2.0.34-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gio-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gio-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-doc-2.0.34-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-gi-gio-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gio-doc.sha256sum] = "97dc7677a381cf0ba26f73c6099f7a15ff43f8d8470a4609e72a4ee7c0451880"
 
-URI_x86_64_v2_ghc-gi-gio-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-prof-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-gi-gio-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-gi-gio-prof-2.0.34-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-gi-gio-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-gi-gio-prof.sha256sum] = "601b6f4a12239255acc7d5fc976540317527651e704549524e6334ea01559b1f"
 
-URI_aarch64_ghc-gi-gio = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio;unpack=0"
 SRC_URI[aarch64_ghc-gi-gio.sha256sum] = "0aaa79120b9be3bb59d5c99468fe4096910bbce0b276ae2419236051d8bc0b52"
 
-URI_aarch64_ghc-gi-gio-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-devel-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gio-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-devel-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio-devel;unpack=0"
 SRC_URI[aarch64_ghc-gi-gio-devel.sha256sum] = "e21ef52e4f6f6d969507748fcd721f5b172154d6b5f21d58cc41e15a6dcd6c5b"
 
-URI_aarch64_ghc-gi-gio-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-doc-2.0.34-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gio-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gio-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-doc-2.0.34-1.el10_0.noarch.rpm;name=aarch64_ghc-gi-gio-doc;unpack=0"
 SRC_URI[aarch64_ghc-gi-gio-doc.sha256sum] = "6317a1a13b63bcae8862d9c9407b7bae4d5782c446b99604383e8d3aebad77e9"
 
-URI_aarch64_ghc-gi-gio-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-prof-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-gi-gio-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-gi-gio-prof-2.0.34-1.el10_0.aarch64.rpm;name=aarch64_ghc-gi-gio-prof;unpack=0"
 SRC_URI[aarch64_ghc-gi-gio-prof.sha256sum] = "6b8d393c67eba11ad920eb7bfd1d8a252477310a731ecb0bfe8ee259c8eea37f"
 
 RDEPENDS:ghc-gi-gio = " \

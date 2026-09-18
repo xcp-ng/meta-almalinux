@@ -10,16 +10,13 @@ PACKAGES = " \
  cockpit-ostree \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-ostree-213-1.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/cockpit-ostree-213-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0380138b82542faec8b4ae432d2f946866fe3e1f62cff065382f887256dca2fa"
 
-URI_x86_64_v2_cockpit-ostree = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-ostree-213-1.el10.noarch.rpm;name=x86_64_v2_cockpit-ostree;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cockpit-ostree}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/cockpit-ostree-213-1.el10.noarch.rpm;name=x86_64_v2_cockpit-ostree;unpack=0"
 SRC_URI[x86_64_v2_cockpit-ostree.sha256sum] = "1233aeadca433a053e57ba046adababa6d626d3f07e4ce229e7d8d134cbf6e3d"
 
-URI_aarch64_cockpit-ostree = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-ostree-213-1.el10.noarch.rpm;name=aarch64_cockpit-ostree;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cockpit-ostree}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/cockpit-ostree-213-1.el10.noarch.rpm;name=aarch64_cockpit-ostree;unpack=0"
 SRC_URI[aarch64_cockpit-ostree.sha256sum] = "1233aeadca433a053e57ba046adababa6d626d3f07e4ce229e7d8d134cbf6e3d"
 
 RDEPENDS:cockpit-ostree = " \

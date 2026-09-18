@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-munch \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-munch-4.0.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-munch-4.0.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "023a88beed7b90bd375ff28d5b66d76f79526b958529267bb3fa9e3b1802073f"
 
-URI_x86_64_v2_python3-munch = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-munch-4.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-munch;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-munch}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-munch-4.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-munch;unpack=0"
 SRC_URI[x86_64_v2_python3-munch.sha256sum] = "55a4023dc1e61537b3e81204ec19a755dbbb17011d14ad8282070c66a229ce38"
 
-URI_aarch64_python3-munch = "${EPEL_MIRROR}/aarch64/Packages/p/python3-munch-4.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-munch;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-munch}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-munch-4.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-munch;unpack=0"
 SRC_URI[aarch64_python3-munch.sha256sum] = "fb3c6e69eed2225af5f6b3c6245ce7e125f95538846c61b72c3acba3563db62c"
 
 RDEPENDS:python3-munch = " \

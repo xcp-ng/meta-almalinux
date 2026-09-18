@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-boto3 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-boto3-1.35.81-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-boto3-1.35.81-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0405ab65f50003d2b19fa488ef84854331755672a1eac02516855f2b8c53476d"
 
-URI_x86_64_v2_python3-boto3 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-boto3-1.35.81-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-boto3;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-boto3}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-boto3-1.35.81-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-boto3;unpack=0"
 SRC_URI[x86_64_v2_python3-boto3.sha256sum] = "b722d675b59c4311758146795ffb6b07b73f37a49b2611c2af8fa07b6d07d5d3"
 
-URI_aarch64_python3-boto3 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-boto3-1.35.81-1.el10_0.noarch.rpm;name=aarch64_python3-boto3;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-boto3}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-boto3-1.35.81-1.el10_0.noarch.rpm;name=aarch64_python3-boto3;unpack=0"
 SRC_URI[aarch64_python3-boto3.sha256sum] = "707e1dacd3a7e36d301de0339e29f67aa3823db6e95f4db3ab90ab40df244449"
 
 RDEPENDS:python3-boto3 = " \

@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Pod-Spell-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Spell-1.26-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Pod-Spell-1.26-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4c7e70b128b21ee51d1aff4601d945c70520d5cb4144caec01beea0fdfd18c11"
 
-URI_x86_64_v2_perl-Pod-Spell = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Spell}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Spell.sha256sum] = "edb089302658ae164388074f3301748d0622b6f0ebb1bf61eea092863ef40e3f"
 
-URI_x86_64_v2_perl-Pod-Spell-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-tests-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Pod-Spell-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Pod-Spell-tests-1.26-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Pod-Spell-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Pod-Spell-tests.sha256sum] = "393ab68a75ed745d5ca7d96293f401f18350245c4a7e1b81095c30aed6f9af46"
 
-URI_aarch64_perl-Pod-Spell = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Spell-1.26-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Spell;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Spell}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Spell-1.26-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Spell;unpack=0"
 SRC_URI[aarch64_perl-Pod-Spell.sha256sum] = "9d464eb4d4bf3aae30cf9b88d5490032757092c120be5c7b105f2ad3f22c30a1"
 
-URI_aarch64_perl-Pod-Spell-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Spell-tests-1.26-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Spell-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Pod-Spell-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Pod-Spell-tests-1.26-1.el10_0.noarch.rpm;name=aarch64_perl-Pod-Spell-tests;unpack=0"
 SRC_URI[aarch64_perl-Pod-Spell-tests.sha256sum] = "f0831939ceddec43af482256848e4254a48bb4d7cd4aaf31550e58aa95fa8463"
 
 RDEPENDS:perl-Pod-Spell = " \

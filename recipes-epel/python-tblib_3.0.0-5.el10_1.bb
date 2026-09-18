@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-tblib \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-tblib-3.0.0-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-tblib-3.0.0-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a7e2e908f6edcea283457bc9bc2f1919c1e11772b88850b99c7ebe0697708f84"
 
-URI_x86_64_v2_python3-tblib = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tblib-3.0.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tblib;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-tblib}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-tblib-3.0.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-tblib;unpack=0"
 SRC_URI[x86_64_v2_python3-tblib.sha256sum] = "a50780bb37fd17cc1cde094e1d46e9096892e22a27f2af38f60ccba87808ca74"
 
-URI_aarch64_python3-tblib = "${EPEL_MIRROR}/aarch64/Packages/p/python3-tblib-3.0.0-5.el10_1.noarch.rpm;name=aarch64_python3-tblib;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-tblib}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-tblib-3.0.0-5.el10_1.noarch.rpm;name=aarch64_python3-tblib;unpack=0"
 SRC_URI[aarch64_python3-tblib.sha256sum] = "9a6df2bb49649def5640f022584317afa88f8406e38381ebfd8833dbc3ba6e92"
 
 RDEPENDS:python3-tblib = " \

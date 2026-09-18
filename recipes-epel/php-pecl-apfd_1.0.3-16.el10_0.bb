@@ -9,16 +9,13 @@ PACKAGES = " \
  php-pecl-apfd \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/php-pecl-apfd-1.0.3-16.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/php-pecl-apfd-1.0.3-16.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "5de4f3fe3a0e480678878a6c7b16abd41967312641b547713ce06e054a05244c"
 
-URI_x86_64_v2_php-pecl-apfd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-apfd-1.0.3-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-apfd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_php-pecl-apfd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/php-pecl-apfd-1.0.3-16.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_php-pecl-apfd;unpack=0"
 SRC_URI[x86_64_v2_php-pecl-apfd.sha256sum] = "83d563a2874157b7f1ff0c2bd8d6fa921c9ef1e6e27871a1638a7c1cefad8481"
 
-URI_aarch64_php-pecl-apfd = "${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-apfd-1.0.3-16.el10_0.aarch64.rpm;name=aarch64_php-pecl-apfd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_php-pecl-apfd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/php-pecl-apfd-1.0.3-16.el10_0.aarch64.rpm;name=aarch64_php-pecl-apfd;unpack=0"
 SRC_URI[aarch64_php-pecl-apfd.sha256sum] = "26bef41631327147584ee8da90037b5bb5b9acaa4c7e2718b450c6bfb519bd06"
 
 RDEPENDS:php-pecl-apfd = " \

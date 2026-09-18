@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-benchmark \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-benchmark-4.0.0-4.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-benchmark-4.0.0-4.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "af1d76875dde0e9eb3c755ba38f539c46062a7783db9cc39f67fcb5f091df031"
 
-URI_x86_64_v2_python3-pytest-benchmark = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-benchmark-4.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-benchmark;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-benchmark}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-benchmark-4.0.0-4.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-benchmark;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-benchmark.sha256sum] = "d3a209ddd7f2922932395cb648373634b45d8fcec802c195341f02b03ea433c9"
 
-URI_aarch64_python3-pytest-benchmark = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-benchmark-4.0.0-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-benchmark;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-benchmark}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-benchmark-4.0.0-4.el10_0.noarch.rpm;name=aarch64_python3-pytest-benchmark;unpack=0"
 SRC_URI[aarch64_python3-pytest-benchmark.sha256sum] = "dcc5ea14c6756f8cc9ff0717b5ee71db5f9818cd55e163f186f55505a3cc5c9f"
 
 RDEPENDS:python3-pytest-benchmark = " \

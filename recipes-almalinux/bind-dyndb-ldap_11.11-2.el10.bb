@@ -9,16 +9,13 @@ PACKAGES = " \
  bind-dyndb-ldap \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/bind-dyndb-ldap-11.11-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/bind-dyndb-ldap-11.11-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bdab1462202d7716ddf0a5e736414c6d9edd52c43b973e5d2a1311d2bad734f7"
 
-URI_x86_64_v2_bind-dyndb-ldap = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/bind-dyndb-ldap-11.11-2.el10.x86_64_v2.rpm;name=x86_64_v2_bind-dyndb-ldap;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_bind-dyndb-ldap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/bind-dyndb-ldap-11.11-2.el10.x86_64_v2.rpm;name=x86_64_v2_bind-dyndb-ldap;unpack=0"
 SRC_URI[x86_64_v2_bind-dyndb-ldap.sha256sum] = "ccf9d58ddb191a0316c2c7ea54946c1535954b62c96055b5357e5c7bd0eaeacb"
 
-URI_aarch64_bind-dyndb-ldap = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/bind-dyndb-ldap-11.11-2.el10.aarch64.rpm;name=aarch64_bind-dyndb-ldap;unpack=0"
-SRC_URI:append = " ${URI_aarch64_bind-dyndb-ldap}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/bind-dyndb-ldap-11.11-2.el10.aarch64.rpm;name=aarch64_bind-dyndb-ldap;unpack=0"
 SRC_URI[aarch64_bind-dyndb-ldap.sha256sum] = "2b05d521d04517de9d821a8f5889470352e52e16f60e16ad575b51642fa49ac1"
 
 RDEPENDS:bind-dyndb-ldap = " \

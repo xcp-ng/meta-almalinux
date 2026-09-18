@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-paste-deploy \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-paste-deploy-3.1.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-paste-deploy-3.1.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9e834ec5f8c5c7eed0969d53ea512cfe38520d9bcdde6a96c9dc2b73068a8649"
 
-URI_x86_64_v2_python3-paste-deploy = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paste-deploy-3.1.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paste-deploy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-paste-deploy}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-paste-deploy-3.1.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-paste-deploy;unpack=0"
 SRC_URI[x86_64_v2_python3-paste-deploy.sha256sum] = "88da8eb60002d57f5cee847690fc285f8aa16e2d7f59925b24180effc5dad8db"
 
-URI_aarch64_python3-paste-deploy = "${EPEL_MIRROR}/aarch64/Packages/p/python3-paste-deploy-3.1.0-6.el10_0.noarch.rpm;name=aarch64_python3-paste-deploy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-paste-deploy}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-paste-deploy-3.1.0-6.el10_0.noarch.rpm;name=aarch64_python3-paste-deploy;unpack=0"
 SRC_URI[aarch64_python3-paste-deploy.sha256sum] = "4898e76f295d44f699d6309d3aa67814c8aa65dfe96112f8243214d8f14c027e"
 
 RDEPENDS:python3-paste-deploy = " \

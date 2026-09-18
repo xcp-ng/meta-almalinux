@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinx-notfound-page \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-notfound-page-1.0.4-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinx-notfound-page-1.0.4-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8ec79301f3fc796f4dc464f6460b97ed93e54a272ae63177b127c39c33a75841"
 
-URI_x86_64_v2_python3-sphinx-notfound-page = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-notfound-page-1.0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-notfound-page;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinx-notfound-page}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinx-notfound-page-1.0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinx-notfound-page;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinx-notfound-page.sha256sum] = "813f9ddd9b5a3592dfc0205e0fac69318bf2be92896d50e32781490f4a0b1684"
 
-URI_aarch64_python3-sphinx-notfound-page = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-notfound-page-1.0.4-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-notfound-page;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinx-notfound-page}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinx-notfound-page-1.0.4-1.el10_0.noarch.rpm;name=aarch64_python3-sphinx-notfound-page;unpack=0"
 SRC_URI[aarch64_python3-sphinx-notfound-page.sha256sum] = "029af44ca751262ca495e04a2d6bd442259cacd3fc47febbadcc921311937171"
 
 RDEPENDS:python3-sphinx-notfound-page = " \

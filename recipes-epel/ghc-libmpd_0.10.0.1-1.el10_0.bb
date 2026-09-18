@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-libmpd-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-libmpd-0.10.0.1-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-libmpd-0.10.0.1-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "042b76be22e542ea67d83d15e7dfe755907f6392dc3581d54388e6507aa75eca"
 
-URI_x86_64_v2_ghc-libmpd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libmpd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd;unpack=0"
 SRC_URI[x86_64_v2_ghc-libmpd.sha256sum] = "1998fd0d2a1b8244814f976598ea6bce80b7604f8102915d5be30c3ef0b9e286"
 
-URI_x86_64_v2_ghc-libmpd-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-devel-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libmpd-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-devel-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-libmpd-devel.sha256sum] = "cc24e8917de6b04898741e675994e8d0fd94f0e9edb50580bfbaa2d2cc3423b4"
 
-URI_x86_64_v2_ghc-libmpd-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-doc-0.10.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-libmpd-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libmpd-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-doc-0.10.0.1-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-libmpd-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-libmpd-doc.sha256sum] = "2be3a1389f73e5635f50ae3c4e9671317c0072bdc809d55f19c54f667f5d056f"
 
-URI_x86_64_v2_ghc-libmpd-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-prof-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-libmpd-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-libmpd-prof-0.10.0.1-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-libmpd-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-libmpd-prof.sha256sum] = "0b73cf1c6a2d24404d2a1c33633fc62b041bee54cb6e9653c055f00ce11e9c82"
 
-URI_aarch64_ghc-libmpd = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libmpd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd;unpack=0"
 SRC_URI[aarch64_ghc-libmpd.sha256sum] = "55c2f5ddc10658b6952e2fa5aa167abc9fb0bb3cf2eee07ca9f1e1ac7d798939"
 
-URI_aarch64_ghc-libmpd-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-devel-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libmpd-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-devel-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd-devel;unpack=0"
 SRC_URI[aarch64_ghc-libmpd-devel.sha256sum] = "e19b165a254889165d9634b7414f2fa27bea3747a01c5b2e49875c6702d6548f"
 
-URI_aarch64_ghc-libmpd-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-doc-0.10.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-libmpd-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libmpd-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-doc-0.10.0.1-1.el10_0.noarch.rpm;name=aarch64_ghc-libmpd-doc;unpack=0"
 SRC_URI[aarch64_ghc-libmpd-doc.sha256sum] = "a2462f754e424d7552c50b33fe062e4ecc26a09a0687f0a25e7b3602cd9f19f7"
 
-URI_aarch64_ghc-libmpd-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-prof-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-libmpd-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-libmpd-prof-0.10.0.1-1.el10_0.aarch64.rpm;name=aarch64_ghc-libmpd-prof;unpack=0"
 SRC_URI[aarch64_ghc-libmpd-prof.sha256sum] = "92eca6412500067502068f9dac0399080fa7879be43c8a302c96690f8921ff94"
 
 RDEPENDS:ghc-libmpd = " \

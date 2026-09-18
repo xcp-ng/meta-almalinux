@@ -9,16 +9,13 @@ PACKAGES = " \
  golang-github-gobuffalo-packd-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-gobuffalo-packd-1.0.2-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-gobuffalo-packd-1.0.2-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1c9e825f5082e580504005573431ab39f2dea63626920492f97d2d4f263c6016"
 
-URI_x86_64_v2_golang-github-gobuffalo-packd-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gobuffalo-packd-devel-1.0.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gobuffalo-packd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_golang-github-gobuffalo-packd-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/golang-github-gobuffalo-packd-devel-1.0.2-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_golang-github-gobuffalo-packd-devel;unpack=0"
 SRC_URI[x86_64_v2_golang-github-gobuffalo-packd-devel.sha256sum] = "a15dfaf62d6f77d40188da8d9e05359985e55095d18d834f5f4a8c4e6053fcba"
 
-URI_aarch64_golang-github-gobuffalo-packd-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gobuffalo-packd-devel-1.0.2-2.el10_0.noarch.rpm;name=aarch64_golang-github-gobuffalo-packd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-gobuffalo-packd-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-gobuffalo-packd-devel-1.0.2-2.el10_0.noarch.rpm;name=aarch64_golang-github-gobuffalo-packd-devel;unpack=0"
 SRC_URI[aarch64_golang-github-gobuffalo-packd-devel.sha256sum] = "ae217be41fa769d92e9649eeec9c1cf754d1560502767971660d0e43f56ceafd"
 
 RDEPENDS:golang-github-gobuffalo-packd-devel = " \

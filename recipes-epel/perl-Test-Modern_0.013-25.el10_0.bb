@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-Modern \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Modern-0.013-25.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-Modern-0.013-25.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "612fdd623985fa60624e0d325718b739ed8b50c2b9c39a36013ec7bd22f2ab01"
 
-URI_x86_64_v2_perl-Test-Modern = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Modern-0.013-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Modern;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-Modern}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-Modern-0.013-25.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-Modern;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-Modern.sha256sum] = "38dac7dd9514c7d24f0f44eb28d2111885994054cf13d759a14b3c59788ca567"
 
-URI_aarch64_perl-Test-Modern = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Modern-0.013-25.el10_0.noarch.rpm;name=aarch64_perl-Test-Modern;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-Modern}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-Modern-0.013-25.el10_0.noarch.rpm;name=aarch64_perl-Test-Modern;unpack=0"
 SRC_URI[aarch64_perl-Test-Modern.sha256sum] = "1e8c72449a1426ab5ad2d08701ec30023c55e61781b985e2218d38bd03f56c3f"
 
 RDEPENDS:perl-Test-Modern = " \

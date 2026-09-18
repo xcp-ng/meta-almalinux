@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-zarr \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-zarr-2.18.4-3.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-zarr-2.18.4-3.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f9e649154322463200e0c7917b5f959f8b87aa09b097a0649605258f88e97f0e"
 
-URI_x86_64_v2_python3-zarr = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zarr-2.18.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zarr;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-zarr}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-zarr-2.18.4-3.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-zarr;unpack=0"
 SRC_URI[x86_64_v2_python3-zarr.sha256sum] = "07aab8f42b3c3f64bc86c81def7cf25fea076ca3ba22c54a3eddc85c2608de2c"
 
-URI_aarch64_python3-zarr = "${EPEL_MIRROR}/aarch64/Packages/p/python3-zarr-2.18.4-3.el10_1.noarch.rpm;name=aarch64_python3-zarr;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-zarr}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-zarr-2.18.4-3.el10_1.noarch.rpm;name=aarch64_python3-zarr;unpack=0"
 SRC_URI[aarch64_python3-zarr.sha256sum] = "6b11ef55bb920700caec023e557bc6e5de0f60fbdcff9b2e6091ac05d4015621"
 
 RDEPENDS:python3-zarr = " \

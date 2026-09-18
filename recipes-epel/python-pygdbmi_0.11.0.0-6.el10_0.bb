@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pygdbmi \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pygdbmi-0.11.0.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pygdbmi-0.11.0.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d7f0e4f96f7e006029eb5d0edf1af8f9b06031b2f1ce64ac5bbd8dafdc2924f8"
 
-URI_x86_64_v2_python3-pygdbmi = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygdbmi-0.11.0.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pygdbmi;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pygdbmi}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pygdbmi-0.11.0.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pygdbmi;unpack=0"
 SRC_URI[x86_64_v2_python3-pygdbmi.sha256sum] = "8837ba30a1fb053b833d8039e9ee1fd28361b66d79380a0357e736b3b186a5f8"
 
-URI_aarch64_python3-pygdbmi = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pygdbmi-0.11.0.0-6.el10_0.noarch.rpm;name=aarch64_python3-pygdbmi;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pygdbmi}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pygdbmi-0.11.0.0-6.el10_0.noarch.rpm;name=aarch64_python3-pygdbmi;unpack=0"
 SRC_URI[aarch64_python3-pygdbmi.sha256sum] = "d4faa5fa22fcfd56e62548221669247b19b7a88b3413a0633cd15401d924bf65"
 
 RDEPENDS:python3-pygdbmi = " \

@@ -11,32 +11,25 @@ PACKAGES = " \
  globus-gridftp-server-progs \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/globus-gridftp-server-13.28-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/globus-gridftp-server-13.28-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a2adf57537cad49381670d0fcd6e3719d4d706b5614e8794972ebc4412596caa"
 
-URI_x86_64_v2_globus-gridftp-server = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gridftp-server}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server;unpack=0"
 SRC_URI[x86_64_v2_globus-gridftp-server.sha256sum] = "c68c68442efc55b1963cb43bc4b1a40494770ff5b321949df0e04d061bfe2fa2"
 
-URI_x86_64_v2_globus-gridftp-server-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-devel-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gridftp-server-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-devel-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server-devel;unpack=0"
 SRC_URI[x86_64_v2_globus-gridftp-server-devel.sha256sum] = "2e7dc1e484d008d53ba6875030d3999f7e8e4167f64c4db899e1f9bcdb033862"
 
-URI_x86_64_v2_globus-gridftp-server-progs = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-progs-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server-progs;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_globus-gridftp-server-progs}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/globus-gridftp-server-progs-13.28-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_globus-gridftp-server-progs;unpack=0"
 SRC_URI[x86_64_v2_globus-gridftp-server-progs.sha256sum] = "cb04b05f831316b59392a26552382ddcae7345262e764f716554fe05e1e36f5a"
 
-URI_aarch64_globus-gridftp-server = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gridftp-server}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server;unpack=0"
 SRC_URI[aarch64_globus-gridftp-server.sha256sum] = "fa28a8045594d1785c4b821cf5bab06652aed7a022a53ce232a52c7a3cb4a67d"
 
-URI_aarch64_globus-gridftp-server-devel = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-devel-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gridftp-server-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-devel-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server-devel;unpack=0"
 SRC_URI[aarch64_globus-gridftp-server-devel.sha256sum] = "41a309cb25f6526f43c4d0a8854e7df36dcc32ffc337e8aed1e7da44a3edea21"
 
-URI_aarch64_globus-gridftp-server-progs = "${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-progs-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server-progs;unpack=0"
-SRC_URI:append = " ${URI_aarch64_globus-gridftp-server-progs}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/globus-gridftp-server-progs-13.28-1.el10_1.aarch64.rpm;name=aarch64_globus-gridftp-server-progs;unpack=0"
 SRC_URI[aarch64_globus-gridftp-server-progs.sha256sum] = "54c67521aa92e750d104b9c24e984d6ae3f78531de69008ca4dc0c4aff63a015"
 
 RDEPENDS:globus-gridftp-server = " \

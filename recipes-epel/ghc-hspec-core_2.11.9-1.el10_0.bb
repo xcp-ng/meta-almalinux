@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-hspec-core-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-hspec-core-2.11.9-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-hspec-core-2.11.9-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "22a71875ef679b617b479878db33a2b7d954d5cb07d37b3607a37ccda5ed2ffc"
 
-URI_x86_64_v2_ghc-hspec-core = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hspec-core}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core;unpack=0"
 SRC_URI[x86_64_v2_ghc-hspec-core.sha256sum] = "030ea0e9f2b7a2c11a7d2a1ccac60f9b43f7984df9d17cc36187cbe0095e390e"
 
-URI_x86_64_v2_ghc-hspec-core-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-devel-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hspec-core-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-devel-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-hspec-core-devel.sha256sum] = "b1db35ef89fb1815d36d3f0fc981bc0ed2cf263c4f0cc9e1d1d9da6a0c91a910"
 
-URI_x86_64_v2_ghc-hspec-core-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-doc-2.11.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hspec-core-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hspec-core-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-doc-2.11.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-hspec-core-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-hspec-core-doc.sha256sum] = "401e2f78c0d9d16512f41a7359774a3e1806af2e01822c2bcee84bff986edc58"
 
-URI_x86_64_v2_ghc-hspec-core-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-prof-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-hspec-core-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-hspec-core-prof-2.11.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-hspec-core-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-hspec-core-prof.sha256sum] = "86ffe12be82544881e676a5eca39a471b6b95f99ee2bed9a8d26d51839262e1b"
 
-URI_aarch64_ghc-hspec-core = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hspec-core}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core;unpack=0"
 SRC_URI[aarch64_ghc-hspec-core.sha256sum] = "3a685c02d8b085fc667c8c984e6144fabc765d8cf589f90cd4689c7e82962c3a"
 
-URI_aarch64_ghc-hspec-core-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-devel-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hspec-core-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-devel-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core-devel;unpack=0"
 SRC_URI[aarch64_ghc-hspec-core-devel.sha256sum] = "d43913dcfe106c0194b8b2fbb0a3b58cfadb666b0ffe1ae384658c091e2de646"
 
-URI_aarch64_ghc-hspec-core-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-doc-2.11.9-1.el10_0.noarch.rpm;name=aarch64_ghc-hspec-core-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hspec-core-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-doc-2.11.9-1.el10_0.noarch.rpm;name=aarch64_ghc-hspec-core-doc;unpack=0"
 SRC_URI[aarch64_ghc-hspec-core-doc.sha256sum] = "d77d673a29da0e499884218bc33eadb5000b8104196339d423403fa3c3a6866d"
 
-URI_aarch64_ghc-hspec-core-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-prof-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-hspec-core-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-hspec-core-prof-2.11.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-hspec-core-prof;unpack=0"
 SRC_URI[aarch64_ghc-hspec-core-prof.sha256sum] = "f87784e75d99a4a03489a12eeeb0793b9e28c3df2278ade71eabb6f1e730c31e"
 
 RDEPENDS:ghc-hspec-core = " \

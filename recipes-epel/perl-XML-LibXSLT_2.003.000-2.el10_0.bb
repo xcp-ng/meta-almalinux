@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-XML-LibXSLT-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-XML-LibXSLT-2.003.000-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-XML-LibXSLT-2.003.000-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "979e90a237241efa4f3882667da34ecdc1b0bc9f7c45c0d4c1794a56a8a88445"
 
-URI_x86_64_v2_perl-XML-LibXSLT = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-LibXSLT}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-LibXSLT.sha256sum] = "44fc7c14b937d3ac5491bd614ab283268e4b1d17f1570ce579953662f7bce01f"
 
-URI_x86_64_v2_perl-XML-LibXSLT-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-tests-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-XML-LibXSLT-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-XML-LibXSLT-tests-2.003.000-2.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-XML-LibXSLT-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-XML-LibXSLT-tests.sha256sum] = "a872c9e126d3de56194cb8d7096ab31b4316de666934dee582529e6af89fb9ab"
 
-URI_aarch64_perl-XML-LibXSLT = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-LibXSLT-2.003.000-2.el10_0.aarch64.rpm;name=aarch64_perl-XML-LibXSLT;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-LibXSLT}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-LibXSLT-2.003.000-2.el10_0.aarch64.rpm;name=aarch64_perl-XML-LibXSLT;unpack=0"
 SRC_URI[aarch64_perl-XML-LibXSLT.sha256sum] = "1d7aab430bee7d68461d26110c308db4d3bac6e4e5633223d07e4a8b28bac976"
 
-URI_aarch64_perl-XML-LibXSLT-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-LibXSLT-tests-2.003.000-2.el10_0.aarch64.rpm;name=aarch64_perl-XML-LibXSLT-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-XML-LibXSLT-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-XML-LibXSLT-tests-2.003.000-2.el10_0.aarch64.rpm;name=aarch64_perl-XML-LibXSLT-tests;unpack=0"
 SRC_URI[aarch64_perl-XML-LibXSLT-tests.sha256sum] = "eff061f295211a451e324380593128107211a3d50a6baadfa8fbc357bcdb78f2"
 
 RDEPENDS:perl-XML-LibXSLT = " \

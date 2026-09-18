@@ -9,16 +9,13 @@ PACKAGES = " \
  lcov \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/l/lcov-2.0-5.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/l/lcov-2.0-5.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "91481c29966b61373a0902c181eb473d1c4f03ab801c7f681c2cffd3b5d250a5"
 
-URI_x86_64_v2_lcov = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/lcov-2.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_lcov;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_lcov}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/lcov-2.0-5.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_lcov;unpack=0"
 SRC_URI[x86_64_v2_lcov.sha256sum] = "32fa4de6c0849b8c30486ed645e025de215ea55f29140b92dc9baea8794d7889"
 
-URI_aarch64_lcov = "${EPEL_MIRROR}/aarch64/Packages/l/lcov-2.0-5.el10_1.noarch.rpm;name=aarch64_lcov;unpack=0"
-SRC_URI:append = " ${URI_aarch64_lcov}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/lcov-2.0-5.el10_1.noarch.rpm;name=aarch64_lcov;unpack=0"
 SRC_URI[aarch64_lcov.sha256sum] = "80a35d87226c45767be7365a9f0bf76a1debf1c14c872831111aa265d66f2066"
 
 RDEPENDS:lcov = " \

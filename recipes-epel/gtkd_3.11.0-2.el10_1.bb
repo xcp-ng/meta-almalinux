@@ -11,32 +11,25 @@ PACKAGES = " \
  gtkd-geany-tags \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/gtkd-3.11.0-2.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/gtkd-3.11.0-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1ca1f819d8dbfe47cdedf2ec7353d83e2a1e7f22a1363c024e661e1f99deb5bd"
 
-URI_x86_64_v2_gtkd = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-3.11.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gtkd;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtkd}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-3.11.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gtkd;unpack=0"
 SRC_URI[x86_64_v2_gtkd.sha256sum] = "d00398ce0c0cf81dccbe06b3d8b0945093a21f47f97ee7085500c8b5f4a07d5b"
 
-URI_x86_64_v2_gtkd-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-devel-3.11.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gtkd-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtkd-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-devel-3.11.0-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_gtkd-devel;unpack=0"
 SRC_URI[x86_64_v2_gtkd-devel.sha256sum] = "df02d60c2e221f6b74738f18d29a7fcfabe855e013bc0b6a151c62310b504249"
 
-URI_x86_64_v2_gtkd-geany-tags = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-geany-tags-3.11.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gtkd-geany-tags;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_gtkd-geany-tags}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/gtkd-geany-tags-3.11.0-2.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_gtkd-geany-tags;unpack=0"
 SRC_URI[x86_64_v2_gtkd-geany-tags.sha256sum] = "bce85515d0cdeffed775cebcaee662735ce41931c7af4b0d08cdb89e39aaba26"
 
-URI_aarch64_gtkd = "${EPEL_MIRROR}/aarch64/Packages/g/gtkd-3.11.0-2.el10_1.aarch64.rpm;name=aarch64_gtkd;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtkd}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gtkd-3.11.0-2.el10_1.aarch64.rpm;name=aarch64_gtkd;unpack=0"
 SRC_URI[aarch64_gtkd.sha256sum] = "1e613fc81133ef45aca40c75bdf8a89f95197c044157d5b8a1c5c43f87305da4"
 
-URI_aarch64_gtkd-devel = "${EPEL_MIRROR}/aarch64/Packages/g/gtkd-devel-3.11.0-2.el10_1.aarch64.rpm;name=aarch64_gtkd-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtkd-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gtkd-devel-3.11.0-2.el10_1.aarch64.rpm;name=aarch64_gtkd-devel;unpack=0"
 SRC_URI[aarch64_gtkd-devel.sha256sum] = "09e0a4ffb664b7e798d2dad99e5afc1956bef52b786a406304d88856b037ee1b"
 
-URI_aarch64_gtkd-geany-tags = "${EPEL_MIRROR}/aarch64/Packages/g/gtkd-geany-tags-3.11.0-2.el10_1.noarch.rpm;name=aarch64_gtkd-geany-tags;unpack=0"
-SRC_URI:append = " ${URI_aarch64_gtkd-geany-tags}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/gtkd-geany-tags-3.11.0-2.el10_1.noarch.rpm;name=aarch64_gtkd-geany-tags;unpack=0"
 SRC_URI[aarch64_gtkd-geany-tags.sha256sum] = "f9bd32b3198da06133caaaf81387f173c4ae1f424db4bf6613b1457bd858c4c4"
 
 RDEPENDS:gtkd:x86_64_v2 = " \

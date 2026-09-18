@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-xlsxwriter \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-xlsxwriter-3.2.0-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-xlsxwriter-3.2.0-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "115af26309eabc45124df697f060de81dea58848266021e8db58c264161b070e"
 
-URI_x86_64_v2_python3-xlsxwriter = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xlsxwriter-3.2.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xlsxwriter;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-xlsxwriter}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-xlsxwriter-3.2.0-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-xlsxwriter;unpack=0"
 SRC_URI[x86_64_v2_python3-xlsxwriter.sha256sum] = "3569e503f1511603625ad04f7791292ffe0c8c2ff675fa05984a843ca60c7b74"
 
-URI_aarch64_python3-xlsxwriter = "${EPEL_MIRROR}/aarch64/Packages/p/python3-xlsxwriter-3.2.0-6.el10_0.noarch.rpm;name=aarch64_python3-xlsxwriter;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-xlsxwriter}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-xlsxwriter-3.2.0-6.el10_0.noarch.rpm;name=aarch64_python3-xlsxwriter;unpack=0"
 SRC_URI[aarch64_python3-xlsxwriter.sha256sum] = "f6bd598b3d132428ca9392f883da7dfd091776ea41faf4bedb6c426ed0bdc333"
 
 RDEPENDS:python3-xlsxwriter = " \

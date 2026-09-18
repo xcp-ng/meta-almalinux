@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-httpretty \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-httpretty-1.1.4-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-httpretty-1.1.4-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e55370e2bdf456cf7412f2f80c64845d9a0d4e9e6fbcfe2d34fa440574261885"
 
-URI_x86_64_v2_python3-httpretty = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-httpretty-1.1.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-httpretty;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-httpretty}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-httpretty-1.1.4-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-httpretty;unpack=0"
 SRC_URI[x86_64_v2_python3-httpretty.sha256sum] = "074dd224053035daa8e4e45392dc5f5e8e08e57ae323fbcd2abb970b8b2bb4cb"
 
-URI_aarch64_python3-httpretty = "${EPEL_MIRROR}/aarch64/Packages/p/python3-httpretty-1.1.4-2.el10_0.noarch.rpm;name=aarch64_python3-httpretty;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-httpretty}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-httpretty-1.1.4-2.el10_0.noarch.rpm;name=aarch64_python3-httpretty;unpack=0"
 SRC_URI[aarch64_python3-httpretty.sha256sum] = "84f20432340cef314700337ab5641a5be86b55b8ef301d7539dffb6a347cbadb"
 
 RDEPENDS:python3-httpretty = " \

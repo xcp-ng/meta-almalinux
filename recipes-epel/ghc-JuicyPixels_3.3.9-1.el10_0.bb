@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-JuicyPixels-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-JuicyPixels-3.3.9-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-JuicyPixels-3.3.9-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a9fb714a6865c62466d992cd6f8125147f4f911b64d9a5a97ccb112cf09e5340"
 
-URI_x86_64_v2_ghc-JuicyPixels = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-JuicyPixels}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels;unpack=0"
 SRC_URI[x86_64_v2_ghc-JuicyPixels.sha256sum] = "dcb7e93e9d9173372015673833b1e949b75e6477d7ebb66965a16e5adadee834"
 
-URI_x86_64_v2_ghc-JuicyPixels-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-devel-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-JuicyPixels-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-devel-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-JuicyPixels-devel.sha256sum] = "fc6c29db0ec0c3effe6bb40032a689e9659c392c240d3dd54cff010a7cb0508f"
 
-URI_x86_64_v2_ghc-JuicyPixels-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-doc-3.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-JuicyPixels-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-JuicyPixels-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-doc-3.3.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-JuicyPixels-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-JuicyPixels-doc.sha256sum] = "a5024b4a02030f8baa5fe4cb76caf24a8abceefd37f34150da878a57b3abc64b"
 
-URI_x86_64_v2_ghc-JuicyPixels-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-prof-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-JuicyPixels-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-JuicyPixels-prof-3.3.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-JuicyPixels-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-JuicyPixels-prof.sha256sum] = "42b2305dddad273af7a8f9c185ae0bbe6b4c47fa5094d834a92043c618e5d1cc"
 
-URI_aarch64_ghc-JuicyPixels = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-JuicyPixels}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels;unpack=0"
 SRC_URI[aarch64_ghc-JuicyPixels.sha256sum] = "35bc15faf360999337f202dd594268702acaca1fef81d6608e4733e2c9a777a3"
 
-URI_aarch64_ghc-JuicyPixels-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-devel-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-JuicyPixels-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-devel-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels-devel;unpack=0"
 SRC_URI[aarch64_ghc-JuicyPixels-devel.sha256sum] = "cd315170cda058cbe9ba9ec94d9b80cc9dea5a85b48a872e68a99d0828345efa"
 
-URI_aarch64_ghc-JuicyPixels-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-doc-3.3.9-1.el10_0.noarch.rpm;name=aarch64_ghc-JuicyPixels-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-JuicyPixels-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-doc-3.3.9-1.el10_0.noarch.rpm;name=aarch64_ghc-JuicyPixels-doc;unpack=0"
 SRC_URI[aarch64_ghc-JuicyPixels-doc.sha256sum] = "4b484b41a2f1c62640e008bd93700c04a8ac6b85f4b2fc299574c67a0c4b96e9"
 
-URI_aarch64_ghc-JuicyPixels-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-prof-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-JuicyPixels-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-JuicyPixels-prof-3.3.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-JuicyPixels-prof;unpack=0"
 SRC_URI[aarch64_ghc-JuicyPixels-prof.sha256sum] = "1b9778b020ae9c05de691583584be415c61c62671b090f92a0dd9c6fdc7cb7ad"
 
 RDEPENDS:ghc-JuicyPixels = " \

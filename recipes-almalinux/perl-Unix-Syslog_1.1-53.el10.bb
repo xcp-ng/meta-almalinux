@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Unix-Syslog \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Unix-Syslog-1.1-53.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Unix-Syslog-1.1-53.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "067851405b993fd21ba6567783911d7bb4c935e259f45857036f0c2cb3d10e8a"
 
-URI_x86_64_v2_perl-Unix-Syslog = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Unix-Syslog-1.1-53.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Unix-Syslog;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Unix-Syslog}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Unix-Syslog-1.1-53.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Unix-Syslog;unpack=0"
 SRC_URI[x86_64_v2_perl-Unix-Syslog.sha256sum] = "211175d5826302556f6dee04b5bf34f339fbb5dab444b7ef4b3107043bceecdf"
 
-URI_aarch64_perl-Unix-Syslog = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Unix-Syslog-1.1-53.el10.aarch64.rpm;name=aarch64_perl-Unix-Syslog;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Unix-Syslog}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Unix-Syslog-1.1-53.el10.aarch64.rpm;name=aarch64_perl-Unix-Syslog;unpack=0"
 SRC_URI[aarch64_perl-Unix-Syslog.sha256sum] = "91d5042980cceeac794aa79706fe9fd1cf35591e28d03624bcc89e519bc913f6"
 
 RDEPENDS:perl-Unix-Syslog = " \

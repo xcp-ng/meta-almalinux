@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-formatting-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-formatting-7.2.0-8.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-formatting-7.2.0-8.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8bb8fe4eccaa3c7fe9f5813c085b66eee74d4fec0da52b73dec9a800c9b46fd0"
 
-URI_x86_64_v2_ghc-formatting = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-formatting}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting;unpack=0"
 SRC_URI[x86_64_v2_ghc-formatting.sha256sum] = "faa32e263b80dfeb7065d170e504dec79182146aa36b621f84ef158efece25b2"
 
-URI_x86_64_v2_ghc-formatting-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-devel-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-formatting-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-devel-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-formatting-devel.sha256sum] = "657531a15fee6362b14400a44b3c62977499c75f42c213a2c917397dab01ca64"
 
-URI_x86_64_v2_ghc-formatting-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-doc-7.2.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-formatting-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-formatting-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-doc-7.2.0-8.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-formatting-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-formatting-doc.sha256sum] = "c18437b674862c3c541a5efa49d5524edb503c40e664354deab230a9b47e2b71"
 
-URI_x86_64_v2_ghc-formatting-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-prof-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-formatting-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-formatting-prof-7.2.0-8.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-formatting-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-formatting-prof.sha256sum] = "8039640888dc6fb42e893768baf7986b36b33461d029fce9d9b1d8e89d219560"
 
-URI_aarch64_ghc-formatting = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-formatting}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting;unpack=0"
 SRC_URI[aarch64_ghc-formatting.sha256sum] = "278371f2b8852ebdfeb335b6fd3f0244160cd55adeae870dab62735b49172967"
 
-URI_aarch64_ghc-formatting-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-devel-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-formatting-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-devel-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting-devel;unpack=0"
 SRC_URI[aarch64_ghc-formatting-devel.sha256sum] = "ecd3483e216cfcc73e6ac2b37582d6ef5e693690988535bec074143824539703"
 
-URI_aarch64_ghc-formatting-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-doc-7.2.0-8.el10_0.noarch.rpm;name=aarch64_ghc-formatting-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-formatting-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-doc-7.2.0-8.el10_0.noarch.rpm;name=aarch64_ghc-formatting-doc;unpack=0"
 SRC_URI[aarch64_ghc-formatting-doc.sha256sum] = "54941e054038e5bcca288b87d2f1dcff906e33d4a3056c704aa52f03dad805be"
 
-URI_aarch64_ghc-formatting-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-prof-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-formatting-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-formatting-prof-7.2.0-8.el10_0.aarch64.rpm;name=aarch64_ghc-formatting-prof;unpack=0"
 SRC_URI[aarch64_ghc-formatting-prof.sha256sum] = "5e7b4ca261531ed10f0793bc44bec31f6310905fd35a361d64df1bffac3be66c"
 
 RDEPENDS:ghc-formatting = " \

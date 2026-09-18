@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-junitxml \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-junitxml-0.7-38.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-junitxml-0.7-38.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "b97843a830791dfe2d2fe7e22a3d2ae17b0795c50b50258c2d0a1102a2794dd6"
 
-URI_x86_64_v2_python3-junitxml = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-junitxml-0.7-38.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-junitxml;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-junitxml}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-junitxml-0.7-38.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-junitxml;unpack=0"
 SRC_URI[x86_64_v2_python3-junitxml.sha256sum] = "bee7574068a6d7705651d19de098e3310e0dc1dbb1c4c49fc18a16dbb860a5b5"
 
-URI_aarch64_python3-junitxml = "${EPEL_MIRROR}/aarch64/Packages/p/python3-junitxml-0.7-38.el10_0.noarch.rpm;name=aarch64_python3-junitxml;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-junitxml}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-junitxml-0.7-38.el10_0.noarch.rpm;name=aarch64_python3-junitxml;unpack=0"
 SRC_URI[aarch64_python3-junitxml.sha256sum] = "955db39b429523601350501233eb965ef045036b71f5e330e09d99dc780d9578"
 
 RDEPENDS:python3-junitxml = " \

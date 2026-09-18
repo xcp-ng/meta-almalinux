@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Class-Std \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Class-Std-0.013-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Class-Std-0.013-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9d868651e24751f8856416c8a6ddc132dd6a588eb921bf7ede398d7660af65a4"
 
-URI_x86_64_v2_perl-Class-Std = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Class-Std-0.013-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Class-Std;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Class-Std}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Class-Std-0.013-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Class-Std;unpack=0"
 SRC_URI[x86_64_v2_perl-Class-Std.sha256sum] = "7f606e89cd3610361490562315b9259a8809ce1acd4865716c75775024b1c4af"
 
-URI_aarch64_perl-Class-Std = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Class-Std-0.013-27.el10_0.noarch.rpm;name=aarch64_perl-Class-Std;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Class-Std}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Class-Std-0.013-27.el10_0.noarch.rpm;name=aarch64_perl-Class-Std;unpack=0"
 SRC_URI[aarch64_perl-Class-Std.sha256sum] = "1ca27349dbd930c8e7e268626b6e7189f55208ff53ccf1fcafcc7cce32bd8e54"
 
 RDEPENDS:perl-Class-Std = " \

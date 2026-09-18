@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-chameleon \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-chameleon-4.5.4-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-chameleon-4.5.4-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8414ee443dd31bc5d36daa92c2186a935c781f03c3746f4ce74507fc4911d895"
 
-URI_x86_64_v2_python3-chameleon = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-chameleon-4.5.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-chameleon;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-chameleon}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-chameleon-4.5.4-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-chameleon;unpack=0"
 SRC_URI[x86_64_v2_python3-chameleon.sha256sum] = "985a1ea14b07e5808cbaae0859d53fd3c950e08588559917bfa595741e3f2f77"
 
-URI_aarch64_python3-chameleon = "${EPEL_MIRROR}/aarch64/Packages/p/python3-chameleon-4.5.4-3.el10_0.noarch.rpm;name=aarch64_python3-chameleon;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-chameleon}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-chameleon-4.5.4-3.el10_0.noarch.rpm;name=aarch64_python3-chameleon;unpack=0"
 SRC_URI[aarch64_python3-chameleon.sha256sum] = "f8409e4deeb29032e2681e0917d2f6e01b7b293cda2773edc090808156e231bb"
 
 RDEPENDS:python3-chameleon = " \

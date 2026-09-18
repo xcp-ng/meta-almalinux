@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-martini-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-martini-1.0-16.20190622git22fa469.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-martini-1.0-16.20190622git22fa469.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "31a64d86d6c3f0724addf662cdc7a75c5bfbe786fd0b287015b8ee29b6fdf766"
 
-URI_aarch64_golang-github-martini-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-martini-devel-1.0-16.20190622git22fa469.el10_0.noarch.rpm;name=aarch64_golang-github-martini-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-martini-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-martini-devel-1.0-16.20190622git22fa469.el10_0.noarch.rpm;name=aarch64_golang-github-martini-devel;unpack=0"
 SRC_URI[aarch64_golang-github-martini-devel.sha256sum] = "adf1e7602c291a6e2ada68d31d508a11af4e29ca7c62460b2fa48103eaa8dc21"
 
 RDEPENDS:golang-github-martini-devel = " \

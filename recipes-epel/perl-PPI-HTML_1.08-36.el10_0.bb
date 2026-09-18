@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-PPI-HTML \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-PPI-HTML-1.08-36.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-PPI-HTML-1.08-36.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "21087365d891590faa6d5fc05763fe9089a248f1f75199d920c06e62a93e7378"
 
-URI_x86_64_v2_perl-PPI-HTML = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PPI-HTML-1.08-36.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PPI-HTML;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-PPI-HTML}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-PPI-HTML-1.08-36.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-PPI-HTML;unpack=0"
 SRC_URI[x86_64_v2_perl-PPI-HTML.sha256sum] = "7cb1e608105ded4355d015d74f3c12b2fe2564c42afbc047bb06ad9b18c54290"
 
-URI_aarch64_perl-PPI-HTML = "${EPEL_MIRROR}/aarch64/Packages/p/perl-PPI-HTML-1.08-36.el10_0.noarch.rpm;name=aarch64_perl-PPI-HTML;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-PPI-HTML}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-PPI-HTML-1.08-36.el10_0.noarch.rpm;name=aarch64_perl-PPI-HTML;unpack=0"
 SRC_URI[aarch64_perl-PPI-HTML.sha256sum] = "50c2d5432830585724ac5260c516c0373a2e733c50989f168ec84081bec47ae4"
 
 RDEPENDS:perl-PPI-HTML = " \

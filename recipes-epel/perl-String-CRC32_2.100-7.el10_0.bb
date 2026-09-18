@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-String-CRC32 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-String-CRC32-2.100-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-String-CRC32-2.100-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7875baa5744e24d035a1af4b3069e40cdef15860d269458e2e6bcde90668bb20"
 
-URI_x86_64_v2_perl-String-CRC32 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-CRC32-2.100-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-String-CRC32;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-String-CRC32}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-String-CRC32-2.100-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_perl-String-CRC32;unpack=0"
 SRC_URI[x86_64_v2_perl-String-CRC32.sha256sum] = "c060990014ad55cc69fd583f30bf9c623bf6307a2cf7d4c26b1cd7e0a5cc58dd"
 
-URI_aarch64_perl-String-CRC32 = "${EPEL_MIRROR}/aarch64/Packages/p/perl-String-CRC32-2.100-7.el10_0.aarch64.rpm;name=aarch64_perl-String-CRC32;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-String-CRC32}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-String-CRC32-2.100-7.el10_0.aarch64.rpm;name=aarch64_perl-String-CRC32;unpack=0"
 SRC_URI[aarch64_perl-String-CRC32.sha256sum] = "359288c3fdec105010bd20e5800f09aceda1427eb911f1dc1a6500a44f32bd33"
 
 RDEPENDS:perl-String-CRC32 = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-jupyter-client \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-client-8.6.1-12.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-jupyter-client-8.6.1-12.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2fd1eb9087963a53af5d24297d25f4c7f31ad46bb02b93badf98b746773109b1"
 
-URI_x86_64_v2_python3-jupyter-client = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-client-8.6.1-12.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-client;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-jupyter-client}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-jupyter-client-8.6.1-12.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-jupyter-client;unpack=0"
 SRC_URI[x86_64_v2_python3-jupyter-client.sha256sum] = "9f35b501b607c1de0c86aa31222a76744b7d0a5971152392099bc917f6c69c28"
 
-URI_aarch64_python3-jupyter-client = "${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-client-8.6.1-12.el10_1.noarch.rpm;name=aarch64_python3-jupyter-client;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-jupyter-client}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-jupyter-client-8.6.1-12.el10_1.noarch.rpm;name=aarch64_python3-jupyter-client;unpack=0"
 SRC_URI[aarch64_python3-jupyter-client.sha256sum] = "27ed4bda4baaed84ff15f2f3465efaa431afde5c1c42cb349db09be1a6ffaeac"
 
 RDEPENDS:python3-jupyter-client = " \

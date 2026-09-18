@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-bitbucket-ww-goautoneg-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-bitbucket-ww-goautoneg-0-39.20180302hg75cd24f.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-bitbucket-ww-goautoneg-0-39.20180302hg75cd24f.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "6295a319ef0b89f07a6bd1b408cef9bdfab9a57154bc62dc0b47e269dbe72adc"
 
-URI_aarch64_golang-bitbucket-ww-goautoneg-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-bitbucket-ww-goautoneg-devel-0-39.20180302hg75cd24f.el10_0.noarch.rpm;name=aarch64_golang-bitbucket-ww-goautoneg-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-bitbucket-ww-goautoneg-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-bitbucket-ww-goautoneg-devel-0-39.20180302hg75cd24f.el10_0.noarch.rpm;name=aarch64_golang-bitbucket-ww-goautoneg-devel;unpack=0"
 SRC_URI[aarch64_golang-bitbucket-ww-goautoneg-devel.sha256sum] = "4ee190f641eee050060c1134833c7a3143627381c5081fe8fbf09b3c2b699989"
 
 RDEPENDS:golang-bitbucket-ww-goautoneg-devel = " \

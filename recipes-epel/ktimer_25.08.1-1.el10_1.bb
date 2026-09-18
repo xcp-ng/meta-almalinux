@@ -9,16 +9,13 @@ PACKAGES = " \
  ktimer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ktimer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ktimer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0a696355ea53fb07e0232026ba2d7a23cf2a5e7e45c85c5eb28936da413a1ebd"
 
-URI_x86_64_v2_ktimer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ktimer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ktimer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ktimer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ktimer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ktimer;unpack=0"
 SRC_URI[x86_64_v2_ktimer.sha256sum] = "09f62562a08b387ea5d892018173db8b8ccae3e0f83bb46112396b2842efb770"
 
-URI_aarch64_ktimer = "${EPEL_MIRROR}/aarch64/Packages/k/ktimer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ktimer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ktimer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ktimer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ktimer;unpack=0"
 SRC_URI[aarch64_ktimer.sha256sum] = "2f1cd5538a15d49554c185606572f4ebac73d631d82d4a390b7a302e37766ed9"
 
 RDEPENDS:ktimer = " \

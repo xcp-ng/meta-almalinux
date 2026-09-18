@@ -9,16 +9,13 @@ PACKAGES = " \
  plasma-mobile-sounds \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/plasma-mobile-sounds-0.1-9.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/plasma-mobile-sounds-0.1-9.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e0d7c37934445902228ae8cd023fe717b774231bb37dc1a3a1476e55fc79a4ca"
 
-URI_x86_64_v2_plasma-mobile-sounds = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-mobile-sounds-0.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-mobile-sounds;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_plasma-mobile-sounds}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/plasma-mobile-sounds-0.1-9.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_plasma-mobile-sounds;unpack=0"
 SRC_URI[x86_64_v2_plasma-mobile-sounds.sha256sum] = "faae7720b3ca9dab2aa1b5afaeb59aa0cb336e33b9b91ea82a3522ef5986ae25"
 
-URI_aarch64_plasma-mobile-sounds = "${EPEL_MIRROR}/aarch64/Packages/p/plasma-mobile-sounds-0.1-9.el10_0.noarch.rpm;name=aarch64_plasma-mobile-sounds;unpack=0"
-SRC_URI:append = " ${URI_aarch64_plasma-mobile-sounds}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/plasma-mobile-sounds-0.1-9.el10_0.noarch.rpm;name=aarch64_plasma-mobile-sounds;unpack=0"
 SRC_URI[aarch64_plasma-mobile-sounds.sha256sum] = "7495425a4dbd77e31764c892c5508379ef7ff67f9aaa1f8bb6871c3018fbf07e"
 
 RDEPENDS:plasma-mobile-sounds = " \

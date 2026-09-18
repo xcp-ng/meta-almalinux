@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Test-File-Contents-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-File-Contents-0.242-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-File-Contents-0.242-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "65dca3e2f54d9bc66a85d8690cd782f4aef2a4ff5d45ef48d1fd208bf38aeb1c"
 
-URI_x86_64_v2_perl-Test-File-Contents = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-File-Contents-0.242-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-File-Contents;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-File-Contents}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-File-Contents-0.242-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-File-Contents;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-File-Contents.sha256sum] = "f7ed059b90ee9400cd1b413a34084ed4873fb172693cb5ca7092f29906341a82"
 
-URI_x86_64_v2_perl-Test-File-Contents-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-File-Contents-tests-0.242-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-File-Contents-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-File-Contents-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-File-Contents-tests-0.242-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-File-Contents-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-File-Contents-tests.sha256sum] = "56355b7d25b36bfa25e61199c2701c25b19d228af9efab1105e43b037ca21423"
 
-URI_aarch64_perl-Test-File-Contents = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-File-Contents-0.242-6.el10_0.noarch.rpm;name=aarch64_perl-Test-File-Contents;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-File-Contents}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-File-Contents-0.242-6.el10_0.noarch.rpm;name=aarch64_perl-Test-File-Contents;unpack=0"
 SRC_URI[aarch64_perl-Test-File-Contents.sha256sum] = "7c591e45cbef74c663ce8de534ef98c94105c52aae9ec9ea8f9f1bf9c6659a7b"
 
-URI_aarch64_perl-Test-File-Contents-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-File-Contents-tests-0.242-6.el10_0.noarch.rpm;name=aarch64_perl-Test-File-Contents-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-File-Contents-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-File-Contents-tests-0.242-6.el10_0.noarch.rpm;name=aarch64_perl-Test-File-Contents-tests;unpack=0"
 SRC_URI[aarch64_perl-Test-File-Contents-tests.sha256sum] = "d3a26afc15512af4cb8c736c2b9c4fcb7f6272b57f711feb05c906ef9320f330"
 
 RDEPENDS:perl-Test-File-Contents = " \

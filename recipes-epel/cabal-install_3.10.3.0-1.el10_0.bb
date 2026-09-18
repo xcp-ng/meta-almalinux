@@ -17,80 +17,61 @@ PACKAGES = " \
  ghc-cabal-install-solver-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/cabal-install-3.10.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cabal-install-3.10.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9b809760d0b9005e98595c1bf3935a567e83845648533cd19b51136257c551ac"
 
-URI_x86_64_v2_cabal-install = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cabal-install-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cabal-install;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_cabal-install}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/cabal-install-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_cabal-install;unpack=0"
 SRC_URI[x86_64_v2_cabal-install.sha256sum] = "91eb36e2641e81c1718b62222b7f10d68010d64ab7c682faae9b6ef2a8f49637"
 
-URI_x86_64_v2_ghc-cabal-install = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install.sha256sum] = "7a9ee8adf5147c71c89b3b15f0bef4e6eccf28aac86afa4024dc37fd31516da1"
 
-URI_x86_64_v2_ghc-cabal-install-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-devel-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-devel-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-devel.sha256sum] = "2ae1e3032cd9d4c5dddc9e1547003b082705ce8b2ec68e02be91eee3791f4bc0"
 
-URI_x86_64_v2_ghc-cabal-install-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-doc-3.10.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cabal-install-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-doc-3.10.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cabal-install-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-doc.sha256sum] = "283e34b45e338ec5e49c015aade0ce3cb10f5031f3d2bbb22a4f9b3e6ad77f2d"
 
-URI_x86_64_v2_ghc-cabal-install-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-prof-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-prof-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-prof.sha256sum] = "c951e531f69e713bc1a23194d5b5ad6f1fca218ac2339a86d64010d603625b98"
 
-URI_x86_64_v2_ghc-cabal-install-solver = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-solver}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-solver.sha256sum] = "23820e941c12a67242c698c8df497c20cccaefc73fcaa488e0c395cd7aa8089c"
 
-URI_x86_64_v2_ghc-cabal-install-solver-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-devel-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-solver-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-devel-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-solver-devel.sha256sum] = "42438e1bfb7374b4b4824e297efabeab55b685801fa9de672f08d6cf65f19861"
 
-URI_x86_64_v2_ghc-cabal-install-solver-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-doc-3.10.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cabal-install-solver-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-solver-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-doc-3.10.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-cabal-install-solver-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-solver-doc.sha256sum] = "b9de3019436e7eeff2b1aeb49df04bd5822f866a7b16e6e16361f1d36ca09ebc"
 
-URI_x86_64_v2_ghc-cabal-install-solver-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-prof-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-cabal-install-solver-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-cabal-install-solver-prof-3.10.3.0-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-cabal-install-solver-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-cabal-install-solver-prof.sha256sum] = "d235c4a455031a2bc37b7c50643e9de3de7952cc5cc5e85f9e3f5257ce060e0b"
 
-URI_aarch64_cabal-install = "${EPEL_MIRROR}/aarch64/Packages/c/cabal-install-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_cabal-install;unpack=0"
-SRC_URI:append = " ${URI_aarch64_cabal-install}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/cabal-install-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_cabal-install;unpack=0"
 SRC_URI[aarch64_cabal-install.sha256sum] = "4ea4f920eca161c9155477a9309aa407d458364fd6cc5eff81084ded2197857c"
 
-URI_aarch64_ghc-cabal-install = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install.sha256sum] = "d2e52d9260670051e8e3230d44d59a1f64d6ec9bb0cdfc8fca28163211949489"
 
-URI_aarch64_ghc-cabal-install-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-devel-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-devel-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-devel;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-devel.sha256sum] = "aa121f9ebab649ae6ec40fbd1596061b9305afa7c8f81a7aed183a5bacdadf1b"
 
-URI_aarch64_ghc-cabal-install-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-doc-3.10.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cabal-install-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-doc-3.10.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cabal-install-doc;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-doc.sha256sum] = "e0e023997b26315f3faf6f2604e9c28fc3129a68d8e3a494acc78f90e4b74153"
 
-URI_aarch64_ghc-cabal-install-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-prof-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-prof-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-prof;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-prof.sha256sum] = "08fa1d3e1075d184c863afc1b5aca66851dd78fbe49b8fb852aa4b0a8760c3a4"
 
-URI_aarch64_ghc-cabal-install-solver = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-solver}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-solver.sha256sum] = "965a4fe0f6e9f14ec6ecd8239107a7983ebf01b2693ecbde5648a9e132c0f7bd"
 
-URI_aarch64_ghc-cabal-install-solver-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-devel-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-solver-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-devel-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver-devel;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-solver-devel.sha256sum] = "cf0e5ba763f7e9cf71cc7f0b088e8d7d6cf7b67407a213bdc8612c3dd5c7af49"
 
-URI_aarch64_ghc-cabal-install-solver-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-doc-3.10.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cabal-install-solver-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-solver-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-doc-3.10.3.0-1.el10_0.noarch.rpm;name=aarch64_ghc-cabal-install-solver-doc;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-solver-doc.sha256sum] = "a9eb375582f63b58ccde4c07dc854b083bdf69345233024b1e4580445955d991"
 
-URI_aarch64_ghc-cabal-install-solver-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-prof-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-cabal-install-solver-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-cabal-install-solver-prof-3.10.3.0-1.el10_0.aarch64.rpm;name=aarch64_ghc-cabal-install-solver-prof;unpack=0"
 SRC_URI[aarch64_ghc-cabal-install-solver-prof.sha256sum] = "28f9c10806eb19148c37b2bab6c7c5e8f8376799098be9b6e9ace645497a8c87"
 
 RDEPENDS:cabal-install = " \

@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Module-Metadata \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Metadata-1.000038-512.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Module-Metadata-1.000038-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0ed6bb95701f2a961fa33ef5f912365eab3a44bc705013cbc03c505f54b8643a"
 
-URI_x86_64_v2_perl-Module-Metadata = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;name=x86_64_v2_perl-Module-Metadata;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Module-Metadata}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;name=x86_64_v2_perl-Module-Metadata;unpack=0"
 SRC_URI[x86_64_v2_perl-Module-Metadata.sha256sum] = "a71f44b490196cc1ce6e2064923e7669722cfe8215234d2d44b5e88476bb48bb"
 
-URI_aarch64_perl-Module-Metadata = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;name=aarch64_perl-Module-Metadata;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Module-Metadata}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;name=aarch64_perl-Module-Metadata;unpack=0"
 SRC_URI[aarch64_perl-Module-Metadata.sha256sum] = "a71f44b490196cc1ce6e2064923e7669722cfe8215234d2d44b5e88476bb48bb"
 
 RDEPENDS:perl-Module-Metadata = " \

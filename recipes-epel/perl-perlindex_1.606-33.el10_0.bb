@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-perlindex-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-perlindex-1.606-33.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-perlindex-1.606-33.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "812cdb03db62274e71d1467dc951c3baab3694e120b6289adb603f86a58174ed"
 
-URI_x86_64_v2_perl-perlindex = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-perlindex-1.606-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-perlindex;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-perlindex}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-perlindex-1.606-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-perlindex;unpack=0"
 SRC_URI[x86_64_v2_perl-perlindex.sha256sum] = "d5140c034788c0241e81fbcdfb9b82407937f23e21be44e2f009cb1325a7abf0"
 
-URI_x86_64_v2_perl-perlindex-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-perlindex-tests-1.606-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-perlindex-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-perlindex-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-perlindex-tests-1.606-33.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-perlindex-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-perlindex-tests.sha256sum] = "4dde9847d3a1a13d52f1a5c41f6bfa06b37a927a2d3c7bd8adea91237358502d"
 
-URI_aarch64_perl-perlindex = "${EPEL_MIRROR}/aarch64/Packages/p/perl-perlindex-1.606-33.el10_0.noarch.rpm;name=aarch64_perl-perlindex;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-perlindex}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-perlindex-1.606-33.el10_0.noarch.rpm;name=aarch64_perl-perlindex;unpack=0"
 SRC_URI[aarch64_perl-perlindex.sha256sum] = "1a97db7eea04ebaa6a4451eb5995e7bbac855043758769e84ac645280621c191"
 
-URI_aarch64_perl-perlindex-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-perlindex-tests-1.606-33.el10_0.noarch.rpm;name=aarch64_perl-perlindex-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-perlindex-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-perlindex-tests-1.606-33.el10_0.noarch.rpm;name=aarch64_perl-perlindex-tests;unpack=0"
 SRC_URI[aarch64_perl-perlindex-tests.sha256sum] = "249a6ba75259a79b218731aaac1fccbdefede18b3b5b6866ea2dac37f508b17c"
 
 RDEPENDS:perl-perlindex = " \

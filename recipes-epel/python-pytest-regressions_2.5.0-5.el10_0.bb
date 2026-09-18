@@ -13,48 +13,37 @@ PACKAGES = " \
  python3-pytest-regressions+num \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-regressions-2.5.0-5.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-regressions-2.5.0-5.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "45088ea35e353f000dc37eaece702d54b805c1f1a420511f2086aa9d2d09c115"
 
-URI_x86_64_v2_python-pytest-regressions-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pytest-regressions-doc-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pytest-regressions-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python-pytest-regressions-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python-pytest-regressions-doc-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python-pytest-regressions-doc;unpack=0"
 SRC_URI[x86_64_v2_python-pytest-regressions-doc.sha256sum] = "872e35c636f3dc658eaab1e02061a917ee418b823951cfc13ea96f01cf3898f5"
 
-URI_x86_64_v2_python3-pytest-regressions = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-regressions}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-regressions.sha256sum] = "ca83d332411c4e7482e25813d8a96e3dfee3eb09c4e7f8fbc25852afe87a3a8d"
 
-URI_x86_64_v2_python3-pytest-regressions+dataframe = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+dataframe-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+dataframe;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-regressions+dataframe}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+dataframe-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+dataframe;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-regressions+dataframe.sha256sum] = "bf5859f23307a05fd85136e5b171ccfd47bc99a9ef36b3fa0da7c654941f38ad"
 
-URI_x86_64_v2_python3-pytest-regressions+image = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+image-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+image;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-regressions+image}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+image-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+image;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-regressions+image.sha256sum] = "e84c5b422542bcc07661d213e745e369feef7fa341075e803273bbf992a63b67"
 
-URI_x86_64_v2_python3-pytest-regressions+num = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+num-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+num;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-regressions+num}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-regressions+num-2.5.0-5.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-regressions+num;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-regressions+num.sha256sum] = "87c0eee0b68728e4b5a7c6a00e164a02878f896e125f192074a2b8c50492d3e2"
 
-URI_aarch64_python-pytest-regressions-doc = "${EPEL_MIRROR}/aarch64/Packages/p/python-pytest-regressions-doc-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python-pytest-regressions-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python-pytest-regressions-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python-pytest-regressions-doc-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python-pytest-regressions-doc;unpack=0"
 SRC_URI[aarch64_python-pytest-regressions-doc.sha256sum] = "272c3893522ea9d3742e79a3085c3030bfe73ec6f58df1ef0d64214abd7b6324"
 
-URI_aarch64_python3-pytest-regressions = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-regressions}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions;unpack=0"
 SRC_URI[aarch64_python3-pytest-regressions.sha256sum] = "248afd58d9fbaa7a995cba7023e534e310b286cd49bd606373dda3b2d05b7f61"
 
-URI_aarch64_python3-pytest-regressions+dataframe = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+dataframe-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+dataframe;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-regressions+dataframe}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+dataframe-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+dataframe;unpack=0"
 SRC_URI[aarch64_python3-pytest-regressions+dataframe.sha256sum] = "a826334adfc2da6aa5cd6b82b2ff01efe892bc88dde063f09d0bb7e836626fdb"
 
-URI_aarch64_python3-pytest-regressions+image = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+image-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+image;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-regressions+image}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+image-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+image;unpack=0"
 SRC_URI[aarch64_python3-pytest-regressions+image.sha256sum] = "9d660e6c8b9d5f6dbfca69144bd5b38b6b22bdae260dfa4d32c937f93e1d2741"
 
-URI_aarch64_python3-pytest-regressions+num = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+num-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+num;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-regressions+num}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-regressions+num-2.5.0-5.el10_0.noarch.rpm;name=aarch64_python3-pytest-regressions+num;unpack=0"
 SRC_URI[aarch64_python3-pytest-regressions+num.sha256sum] = "d111c7016d37374351106047e1d4458706bbfe6781cbe409a27c0692362b25b6"
 
 RDEPENDS:python-pytest-regressions-doc = " \

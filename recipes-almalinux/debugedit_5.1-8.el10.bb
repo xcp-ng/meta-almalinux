@@ -9,16 +9,13 @@ PACKAGES = " \
  debugedit \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/debugedit-5.1-8.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/debugedit-5.1-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d88fb9c819aa7a537f8296d6b41bc90892b36d2750eeca9a121db98185a30661"
 
-URI_x86_64_v2_debugedit = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/debugedit-5.1-8.el10.x86_64_v2.rpm;name=x86_64_v2_debugedit;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_debugedit}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/debugedit-5.1-8.el10.x86_64_v2.rpm;name=x86_64_v2_debugedit;unpack=0"
 SRC_URI[x86_64_v2_debugedit.sha256sum] = "65299a0f53a24726ecb5ca28dd2927b2b78923f97e51d1403bac330bdec8221d"
 
-URI_aarch64_debugedit = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/debugedit-5.1-8.el10.aarch64.rpm;name=aarch64_debugedit;unpack=0"
-SRC_URI:append = " ${URI_aarch64_debugedit}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/debugedit-5.1-8.el10.aarch64.rpm;name=aarch64_debugedit;unpack=0"
 SRC_URI[aarch64_debugedit.sha256sum] = "2681ef39ee0336807d24bfdf1eaa446538768b890a6d0a47b4e5709da6840a90"
 
 RDEPENDS:debugedit = " \

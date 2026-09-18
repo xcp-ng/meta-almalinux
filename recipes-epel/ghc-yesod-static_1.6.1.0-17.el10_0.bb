@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-yesod-static-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-static-1.6.1.0-17.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-yesod-static-1.6.1.0-17.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "804bf2d0a57d6be39bb4f2170d0c61a695192b2fbc7f1526a77437720e0f0d6d"
 
-URI_x86_64_v2_ghc-yesod-static = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-static}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-static.sha256sum] = "e1baa9a16c28ae3b9644c2bf2a2961bc2d5b1526641647a7a2e2abec70a2d683"
 
-URI_x86_64_v2_ghc-yesod-static-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-devel-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-static-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-devel-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-static-devel.sha256sum] = "d78a407d94abed46bd72c6934809e56a9d114af5f6a02f8b5839808ed59f4fd2"
 
-URI_x86_64_v2_ghc-yesod-static-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-doc-1.6.1.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-static-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-static-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-doc-1.6.1.0-17.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-yesod-static-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-static-doc.sha256sum] = "d52eb75865380ac68740c68669210f527175147478c2de4041ad1052a4f88404"
 
-URI_x86_64_v2_ghc-yesod-static-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-prof-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-yesod-static-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-yesod-static-prof-1.6.1.0-17.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-yesod-static-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-yesod-static-prof.sha256sum] = "e9439b3317daf4fb30216662e5068e352d08d5f4c6afdf8480e16406547add26"
 
-URI_aarch64_ghc-yesod-static = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-static}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static;unpack=0"
 SRC_URI[aarch64_ghc-yesod-static.sha256sum] = "369b11d9b2d5903ae61d9cc99be78d2d72d1e9af27f106fd2363672b6163e808"
 
-URI_aarch64_ghc-yesod-static-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-devel-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-static-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-devel-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static-devel;unpack=0"
 SRC_URI[aarch64_ghc-yesod-static-devel.sha256sum] = "effa3bba3ab13c60cd8cb7815f4b94497fa0e271fc55f292cfc9e218356d0173"
 
-URI_aarch64_ghc-yesod-static-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-doc-1.6.1.0-17.el10_0.noarch.rpm;name=aarch64_ghc-yesod-static-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-static-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-doc-1.6.1.0-17.el10_0.noarch.rpm;name=aarch64_ghc-yesod-static-doc;unpack=0"
 SRC_URI[aarch64_ghc-yesod-static-doc.sha256sum] = "80b36072490f9c81b26863a693cd9907da66189275ca9ba9dd1ed7cd13a31d2d"
 
-URI_aarch64_ghc-yesod-static-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-prof-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-yesod-static-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-yesod-static-prof-1.6.1.0-17.el10_0.aarch64.rpm;name=aarch64_ghc-yesod-static-prof;unpack=0"
 SRC_URI[aarch64_ghc-yesod-static-prof.sha256sum] = "fcdaba2a532ce0b89d7623cf96fef44f417d8058f661d64dcba325f004548e2a"
 
 RDEPENDS:ghc-yesod-static = " \

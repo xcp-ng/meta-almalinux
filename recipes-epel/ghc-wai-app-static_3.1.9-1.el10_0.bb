@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-wai-app-static-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-wai-app-static-3.1.9-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-wai-app-static-3.1.9-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f85a6c9a513199ec9507a4a898e9704b70fd1f780e25f98bbbf6e3cbc64a1893"
 
-URI_x86_64_v2_ghc-wai-app-static = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-app-static}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-app-static.sha256sum] = "16967830d5655857b28c5a464e907c6f2e3c47ca681491224105e558c5b03bf5"
 
-URI_x86_64_v2_ghc-wai-app-static-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-devel-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-app-static-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-devel-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-app-static-devel.sha256sum] = "b648ac4024c338f9271aee75f5eafb43201aeb3e78e955fd8d3dff354570abe0"
 
-URI_x86_64_v2_ghc-wai-app-static-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-doc-3.1.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wai-app-static-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-app-static-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-doc-3.1.9-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-wai-app-static-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-app-static-doc.sha256sum] = "4288a04da8453de94bb6d688f54a263b8f5c7f4ad022509595d649780afaa50f"
 
-URI_x86_64_v2_ghc-wai-app-static-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-prof-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-wai-app-static-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-wai-app-static-prof-3.1.9-1.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-wai-app-static-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-wai-app-static-prof.sha256sum] = "01b5145f99fd468b54ed0ba48517e9ccf35bfa7841ca762873eaccafcd75dd70"
 
-URI_aarch64_ghc-wai-app-static = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-app-static}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static;unpack=0"
 SRC_URI[aarch64_ghc-wai-app-static.sha256sum] = "2ba34dab2aa7a96d5519c756133a9fb34871e9c6df93970f423fabb1d63921b0"
 
-URI_aarch64_ghc-wai-app-static-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-devel-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-app-static-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-devel-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static-devel;unpack=0"
 SRC_URI[aarch64_ghc-wai-app-static-devel.sha256sum] = "527d45c0bb5ccd48856e0caec8078824596b575c86b8862ba5fe5efa7f220b45"
 
-URI_aarch64_ghc-wai-app-static-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-doc-3.1.9-1.el10_0.noarch.rpm;name=aarch64_ghc-wai-app-static-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-app-static-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-doc-3.1.9-1.el10_0.noarch.rpm;name=aarch64_ghc-wai-app-static-doc;unpack=0"
 SRC_URI[aarch64_ghc-wai-app-static-doc.sha256sum] = "052a9b30829869f1965f1e33050002ec084c033472787000c12ae290f1cd0a6e"
 
-URI_aarch64_ghc-wai-app-static-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-prof-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-wai-app-static-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-wai-app-static-prof-3.1.9-1.el10_0.aarch64.rpm;name=aarch64_ghc-wai-app-static-prof;unpack=0"
 SRC_URI[aarch64_ghc-wai-app-static-prof.sha256sum] = "35f2bc89a0d31988be79dbbc618f671ca696d47142265f8f8a63f22658509e69"
 
 RDEPENDS:ghc-wai-app-static = " \

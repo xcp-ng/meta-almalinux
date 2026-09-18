@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-datadir \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-datadir-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-datadir-1.5.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "03b10a241c2ec6e08ef902dcbdf6303a9ca41820673f0252d333ef5958e3af64"
 
-URI_x86_64_v2_python3-pytest-datadir = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-datadir-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-datadir;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-datadir}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-datadir-1.5.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-datadir;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-datadir.sha256sum] = "69159764e4053cf99c50c6ad2f31a496e4c479ec0e6fcb5445f8481147100d5b"
 
-URI_aarch64_python3-pytest-datadir = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-datadir-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-datadir;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-datadir}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-datadir-1.5.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-datadir;unpack=0"
 SRC_URI[aarch64_python3-pytest-datadir.sha256sum] = "11be2afe2f7732bb94f79b2128c10ea59187d20aae2c1da7c1bd2b9118a967f3"
 
 RDEPENDS:python3-pytest-datadir = " \

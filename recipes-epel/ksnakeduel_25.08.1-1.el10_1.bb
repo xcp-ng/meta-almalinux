@@ -9,16 +9,13 @@ PACKAGES = " \
  ksnakeduel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/k/ksnakeduel-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/k/ksnakeduel-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "36e42ea5ab7f2b1de36625e0c15cdd4ac82c383e4309865d5fd91f1a8e7d473f"
 
-URI_x86_64_v2_ksnakeduel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksnakeduel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksnakeduel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ksnakeduel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ksnakeduel-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ksnakeduel;unpack=0"
 SRC_URI[x86_64_v2_ksnakeduel.sha256sum] = "2430fe37499a7db1eaa0cf3481a9e99a42cd3f4f33dc1b41f5182392f7810633"
 
-URI_aarch64_ksnakeduel = "${EPEL_MIRROR}/aarch64/Packages/k/ksnakeduel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksnakeduel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ksnakeduel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/k/ksnakeduel-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_ksnakeduel;unpack=0"
 SRC_URI[aarch64_ksnakeduel.sha256sum] = "dd6719c67847af95c36705fde6a734101fb9b6fa04c96a1067d1dc75e0eeb690"
 
 RDEPENDS:ksnakeduel = " \

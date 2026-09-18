@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pydicom-data \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9ee169ee6d42e77b97af0919faf750c92f058661ce841a83dd22b1a0c75cdfe1"
 
-URI_x86_64_v2_python3-pydicom-data = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pydicom-data;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pydicom-data}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pydicom-data;unpack=0"
 SRC_URI[x86_64_v2_python3-pydicom-data.sha256sum] = "5eb3280d50adc46f8be03dfe439f21d48054ea94b619dbcd02781ba0abe6acd5"
 
-URI_aarch64_python3-pydicom-data = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.noarch.rpm;name=aarch64_python3-pydicom-data;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pydicom-data}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pydicom-data-1.0.0^20240919git8da482f-1.el10_0.noarch.rpm;name=aarch64_python3-pydicom-data;unpack=0"
 SRC_URI[aarch64_python3-pydicom-data.sha256sum] = "ed2b14301b804b13494d4379b2eee10c73a40d2bfcc07b7b4d363df0ec406902"
 
 RDEPENDS:python3-pydicom-data = " \

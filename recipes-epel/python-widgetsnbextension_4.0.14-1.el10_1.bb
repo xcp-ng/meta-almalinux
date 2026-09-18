@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-widgetsnbextension \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-widgetsnbextension-4.0.14-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-widgetsnbextension-4.0.14-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "207f2122a345188cc07386c7eff5bc090cbd8ed7d8861373db25177f2f451218"
 
-URI_x86_64_v2_python3-widgetsnbextension = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-widgetsnbextension-4.0.14-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-widgetsnbextension;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-widgetsnbextension}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-widgetsnbextension-4.0.14-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-widgetsnbextension;unpack=0"
 SRC_URI[x86_64_v2_python3-widgetsnbextension.sha256sum] = "fe35785c299c2549aca6d4d1d1fa944ea2535e79071967c409402959ec7bf809"
 
-URI_aarch64_python3-widgetsnbextension = "${EPEL_MIRROR}/aarch64/Packages/p/python3-widgetsnbextension-4.0.14-1.el10_1.noarch.rpm;name=aarch64_python3-widgetsnbextension;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-widgetsnbextension}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-widgetsnbextension-4.0.14-1.el10_1.noarch.rpm;name=aarch64_python3-widgetsnbextension;unpack=0"
 SRC_URI[aarch64_python3-widgetsnbextension.sha256sum] = "57ecaeb5df23883e5905097ae25384c0f622a0678cd827e1272aa064094d4eb3"
 
 RDEPENDS:python3-widgetsnbextension = " \

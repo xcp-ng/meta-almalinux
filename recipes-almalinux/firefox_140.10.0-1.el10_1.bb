@@ -9,16 +9,13 @@ PACKAGES = " \
  firefox \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/firefox-140.10.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/firefox-140.10.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e4e90dacab833afb785628044ee6114f77a32efed5fa77f442e53e3e4a024c97"
 
-URI_x86_64_v2_firefox = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/firefox-140.10.0-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_firefox;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_firefox}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/firefox-140.10.0-1.el10_1.x86_64_v2.rpm;name=x86_64_v2_firefox;unpack=0"
 SRC_URI[x86_64_v2_firefox.sha256sum] = "302fc303876fd64395c5991d26e5bdbae159d36283e980038e18183674f541c0"
 
-URI_aarch64_firefox = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/firefox-140.10.0-1.el10_1.aarch64.rpm;name=aarch64_firefox;unpack=0"
-SRC_URI:append = " ${URI_aarch64_firefox}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/firefox-140.10.0-1.el10_1.aarch64.rpm;name=aarch64_firefox;unpack=0"
 SRC_URI[aarch64_firefox.sha256sum] = "60e887ca9945db4610c66d2ceed328670969e7efe5a809579bfaa030c86a7185"
 
 RDEPENDS:firefox = " \

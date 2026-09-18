@@ -10,24 +10,19 @@ PACKAGES = " \
  rust-resctrlfs-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/r/rust-resctrlfs-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-resctrlfs-0.9.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e11b39452eb46be23f765ba860b71dd06843ecdbf62c5c8bb18874ad036a0927"
 
-URI_x86_64_v2_rust-resctrlfs+default-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-resctrlfs+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-resctrlfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-resctrlfs+default-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-resctrlfs+default-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-resctrlfs+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-resctrlfs+default-devel.sha256sum] = "0d3d66d78fe337f0a1e4616eef225165153f9bc67d055c594854cd822155a603"
 
-URI_x86_64_v2_rust-resctrlfs-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-resctrlfs-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-resctrlfs-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_rust-resctrlfs-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-resctrlfs-devel-0.9.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_rust-resctrlfs-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-resctrlfs-devel.sha256sum] = "e34558a0bd8babb8397db65d7308672e083826802b893ce5b9b5e586fd49b33e"
 
-URI_aarch64_rust-resctrlfs+default-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-resctrlfs+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-resctrlfs+default-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-resctrlfs+default-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-resctrlfs+default-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-resctrlfs+default-devel;unpack=0"
 SRC_URI[aarch64_rust-resctrlfs+default-devel.sha256sum] = "1f6e416b5c4f7eb707169e735e940067ac39b6e40ce3c8c091665ab24ed5aa08"
 
-URI_aarch64_rust-resctrlfs-devel = "${EPEL_MIRROR}/aarch64/Packages/r/rust-resctrlfs-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-resctrlfs-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_rust-resctrlfs-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-resctrlfs-devel-0.9.0-1.el10_1.noarch.rpm;name=aarch64_rust-resctrlfs-devel;unpack=0"
 SRC_URI[aarch64_rust-resctrlfs-devel.sha256sum] = "0f6ece0fbfa82588fc2c6d02c820e11b0c1514b1393e3dacde05c9d0acb7b690"
 
 RDEPENDS:rust-resctrlfs+default-devel = " \

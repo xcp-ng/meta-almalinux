@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-vcstool \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-vcstool-0.3.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-vcstool-0.3.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "87e7d423730028831a9c43923959f6fe1bd15eb8264e29f4d60fa32a56e5daac"
 
-URI_x86_64_v2_python3-vcstool = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-vcstool-0.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-vcstool;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-vcstool}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-vcstool-0.3.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-vcstool;unpack=0"
 SRC_URI[x86_64_v2_python3-vcstool.sha256sum] = "22da5fdf035142d75a778e9bf849764d20743b98fa5af22547abc655d19692b1"
 
-URI_aarch64_python3-vcstool = "${EPEL_MIRROR}/aarch64/Packages/p/python3-vcstool-0.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-vcstool;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-vcstool}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-vcstool-0.3.0-1.el10_0.noarch.rpm;name=aarch64_python3-vcstool;unpack=0"
 SRC_URI[aarch64_python3-vcstool.sha256sum] = "a43a8fb075791c88b31a09ffb966c9e6cc7452a98d6c858a9ab4b5bb2481482b"
 
 RDEPENDS:python3-vcstool = " \

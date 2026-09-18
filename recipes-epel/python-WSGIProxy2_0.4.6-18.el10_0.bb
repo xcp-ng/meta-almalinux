@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-WSGIProxy2 \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-WSGIProxy2-0.4.6-18.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-WSGIProxy2-0.4.6-18.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e568932b760c7ee0fdfd7c8dff9d73800a71d2061f54004385d61f18af5682a6"
 
-URI_x86_64_v2_python3-WSGIProxy2 = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-WSGIProxy2-0.4.6-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-WSGIProxy2;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-WSGIProxy2}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-WSGIProxy2-0.4.6-18.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-WSGIProxy2;unpack=0"
 SRC_URI[x86_64_v2_python3-WSGIProxy2.sha256sum] = "dfd3657a47fc661ec71df08440d7e2098a58e71fa84a83f9d02ad1a6a80b0b84"
 
-URI_aarch64_python3-WSGIProxy2 = "${EPEL_MIRROR}/aarch64/Packages/p/python3-WSGIProxy2-0.4.6-18.el10_0.noarch.rpm;name=aarch64_python3-WSGIProxy2;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-WSGIProxy2}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-WSGIProxy2-0.4.6-18.el10_0.noarch.rpm;name=aarch64_python3-WSGIProxy2;unpack=0"
 SRC_URI[aarch64_python3-WSGIProxy2.sha256sum] = "676be03951354614bf11a3758ad9283c91248581e8b1e32a56502c888e9962d2"
 
 RDEPENDS:python3-WSGIProxy2 = " \

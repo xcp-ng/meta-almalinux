@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-rio-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-rio-0.1.22.0-7.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-rio-0.1.22.0-7.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "74915a35f5f3a12497dae042f7b175fcb55f3eeeab05ad728601452b0effa4a5"
 
-URI_x86_64_v2_ghc-rio = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio.sha256sum] = "8494a32a2a09d2c9fbb19a8a56ade2d12f942383d1f28b3875eb6ed5d6b6b396"
 
-URI_x86_64_v2_ghc-rio-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-devel-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-devel-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-devel.sha256sum] = "c1ebca7b8e0fae4e2ae86dc0a0224a1196521aa9586ff57fb2a851346d0a401c"
 
-URI_x86_64_v2_ghc-rio-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-doc-0.1.22.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-rio-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-doc-0.1.22.0-7.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-rio-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-doc.sha256sum] = "42321db275f60bc364ae74200ec49edf6ee40471b24cdcb023c4ac147f893393"
 
-URI_x86_64_v2_ghc-rio-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prof-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-rio-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-rio-prof-0.1.22.0-7.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-rio-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-rio-prof.sha256sum] = "d89562a581070876ea76fd9707bb6ec79b20a708becf55ce7a2e9194f65df3a9"
 
-URI_aarch64_ghc-rio = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio;unpack=0"
 SRC_URI[aarch64_ghc-rio.sha256sum] = "93f7e3dc1e5b3875bc88ef778117331e641e1c654107cd50efa1526ffc577510"
 
-URI_aarch64_ghc-rio-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-devel-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-devel-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio-devel;unpack=0"
 SRC_URI[aarch64_ghc-rio-devel.sha256sum] = "09a829a647d1d07d4c2cd49115bf0d48c7905e1366ceb3686b8865545b0251c0"
 
-URI_aarch64_ghc-rio-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-doc-0.1.22.0-7.el10_0.noarch.rpm;name=aarch64_ghc-rio-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-doc-0.1.22.0-7.el10_0.noarch.rpm;name=aarch64_ghc-rio-doc;unpack=0"
 SRC_URI[aarch64_ghc-rio-doc.sha256sum] = "3baab1021f79263eb7f2e63eb5ea2efdf1af85bab57da161fd0476eae2309726"
 
-URI_aarch64_ghc-rio-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prof-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-rio-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-rio-prof-0.1.22.0-7.el10_0.aarch64.rpm;name=aarch64_ghc-rio-prof;unpack=0"
 SRC_URI[aarch64_ghc-rio-prof.sha256sum] = "2f08131be558c39a8d0984bc800b1f07ef6d7bd0b65cc4b712231f6fea09ccde"
 
 RDEPENDS:ghc-rio = " \

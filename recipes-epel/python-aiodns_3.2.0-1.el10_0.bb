@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-aiodns \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-aiodns-3.2.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-aiodns-3.2.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "bb6c662cf5570eb89596d4710d476166668b70a510b6acbd73b7481e2787b4d5"
 
-URI_x86_64_v2_python3-aiodns = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiodns-3.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-aiodns;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-aiodns}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-aiodns-3.2.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-aiodns;unpack=0"
 SRC_URI[x86_64_v2_python3-aiodns.sha256sum] = "0b2c370b8da11f7c86f79c31c9d1a49cd01ee89f1dcc10816065a0e1eedd47b2"
 
-URI_aarch64_python3-aiodns = "${EPEL_MIRROR}/aarch64/Packages/p/python3-aiodns-3.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-aiodns;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-aiodns}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-aiodns-3.2.0-1.el10_0.noarch.rpm;name=aarch64_python3-aiodns;unpack=0"
 SRC_URI[aarch64_python3-aiodns.sha256sum] = "a7f84f38fa68b838784e3f43618ccf2603a33d40cf6a59ebbb3112279b78bce6"
 
 RDEPENDS:python3-aiodns = " \

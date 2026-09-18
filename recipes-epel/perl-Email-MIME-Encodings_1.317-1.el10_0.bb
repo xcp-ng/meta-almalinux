@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Email-MIME-Encodings \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Email-MIME-Encodings-1.317-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Email-MIME-Encodings-1.317-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cad6a631fc5364d28265d8c82c3e3f0406d1bfb27f50a97e4bb461bfbc70d224"
 
-URI_x86_64_v2_perl-Email-MIME-Encodings = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Email-MIME-Encodings-1.317-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Email-MIME-Encodings;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Email-MIME-Encodings}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Email-MIME-Encodings-1.317-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Email-MIME-Encodings;unpack=0"
 SRC_URI[x86_64_v2_perl-Email-MIME-Encodings.sha256sum] = "765bc6a5807f5973a18b8d9ed8a37c4b5f86cc2c30039e5b0f2ea504d57cc116"
 
-URI_aarch64_perl-Email-MIME-Encodings = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Email-MIME-Encodings-1.317-1.el10_0.noarch.rpm;name=aarch64_perl-Email-MIME-Encodings;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Email-MIME-Encodings}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Email-MIME-Encodings-1.317-1.el10_0.noarch.rpm;name=aarch64_perl-Email-MIME-Encodings;unpack=0"
 SRC_URI[aarch64_perl-Email-MIME-Encodings.sha256sum] = "e3ec4598ec955d9a9984d4c70ae3298b1262f1e90bb9ce32ad45417daaa2356f"
 
 RDEPENDS:perl-Email-MIME-Encodings = " \

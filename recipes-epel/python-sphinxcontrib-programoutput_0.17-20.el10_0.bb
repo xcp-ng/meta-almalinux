@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-sphinxcontrib-programoutput \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-sphinxcontrib-programoutput-0.17-20.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-sphinxcontrib-programoutput-0.17-20.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "160a950a3974dc46c3e8456bdf6fd4928d2afd831e3cde71a1e0e538571b6dcc"
 
-URI_x86_64_v2_python3-sphinxcontrib-programoutput = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxcontrib-programoutput-0.17-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxcontrib-programoutput;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-sphinxcontrib-programoutput}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-sphinxcontrib-programoutput-0.17-20.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-sphinxcontrib-programoutput;unpack=0"
 SRC_URI[x86_64_v2_python3-sphinxcontrib-programoutput.sha256sum] = "b28906d3cb9f51288258a5f6f3a038518479062a4a90e682588cec5b56552cd7"
 
-URI_aarch64_python3-sphinxcontrib-programoutput = "${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxcontrib-programoutput-0.17-20.el10_0.noarch.rpm;name=aarch64_python3-sphinxcontrib-programoutput;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-sphinxcontrib-programoutput}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-sphinxcontrib-programoutput-0.17-20.el10_0.noarch.rpm;name=aarch64_python3-sphinxcontrib-programoutput;unpack=0"
 SRC_URI[aarch64_python3-sphinxcontrib-programoutput.sha256sum] = "47969bc72b72611b0c492be7175bd7f36a58be5617b764a6fcfccbb2dd0adff7"
 
 RDEPENDS:python3-sphinxcontrib-programoutput = " \

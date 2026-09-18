@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-haxr-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-haxr-3000.11.5-6.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-haxr-3000.11.5-6.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fa1dbf228cfe28156f0328b68dd699c72a2744a2e10e21361ed9b118a35592f1"
 
-URI_x86_64_v2_ghc-haxr = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haxr}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr;unpack=0"
 SRC_URI[x86_64_v2_ghc-haxr.sha256sum] = "a881c48320b760930c98f65cc1549b96096db500ae080d44af8205d5bfa2b9d0"
 
-URI_x86_64_v2_ghc-haxr-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-devel-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haxr-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-devel-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-haxr-devel.sha256sum] = "46cdeb461659d7160c19ee1a36b647fed56f1df89a3bf1430393f84f247fb916"
 
-URI_x86_64_v2_ghc-haxr-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-doc-3000.11.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-haxr-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haxr-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-doc-3000.11.5-6.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-haxr-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-haxr-doc.sha256sum] = "cd170dd4331e6e71ed5bbfdd73e2732d249299fddfb4a9c0acc634f9280e7593"
 
-URI_x86_64_v2_ghc-haxr-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-prof-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-haxr-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-haxr-prof-3000.11.5-6.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-haxr-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-haxr-prof.sha256sum] = "1ed237528fcd693ce84577d927b40c44ca18e9beb30869a802737bd1552b7924"
 
-URI_aarch64_ghc-haxr = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haxr}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr;unpack=0"
 SRC_URI[aarch64_ghc-haxr.sha256sum] = "30c866b30ed4dc4dfa12527fd1a4e3a91f1d02abb56fa8b05bcb9b2b76d6eeb8"
 
-URI_aarch64_ghc-haxr-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-devel-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haxr-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-devel-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr-devel;unpack=0"
 SRC_URI[aarch64_ghc-haxr-devel.sha256sum] = "4f0bc45c55a00f28017d38c107cc305c430e0fe8e694830daf31db7d7fb006ff"
 
-URI_aarch64_ghc-haxr-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-doc-3000.11.5-6.el10_0.noarch.rpm;name=aarch64_ghc-haxr-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haxr-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-doc-3000.11.5-6.el10_0.noarch.rpm;name=aarch64_ghc-haxr-doc;unpack=0"
 SRC_URI[aarch64_ghc-haxr-doc.sha256sum] = "6fef949b99e6d5af316edcfd1eb9683b5354717eab0afd70b14448d189597a49"
 
-URI_aarch64_ghc-haxr-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-prof-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-haxr-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-haxr-prof-3000.11.5-6.el10_0.aarch64.rpm;name=aarch64_ghc-haxr-prof;unpack=0"
 SRC_URI[aarch64_ghc-haxr-prof.sha256sum] = "80c19967bd08fddabdea2ba2f9423acc4dd9c0cf2d899e3edc5547467af77717"
 
 RDEPENDS:ghc-haxr = " \

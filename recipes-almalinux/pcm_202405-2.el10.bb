@@ -12,12 +12,10 @@ PACKAGES:aarch64 = " \
   \
 "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/pcm-202405-2.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/pcm-202405-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "083dac2fff606ec574131508303514d60d8df69d0b5ccd64df3febbabe5e3f6e"
 
-URI_x86_64_v2_pcm = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pcm-202405-2.el10.x86_64_v2.rpm;name=x86_64_v2_pcm;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_pcm}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/pcm-202405-2.el10.x86_64_v2.rpm;name=x86_64_v2_pcm;unpack=0"
 SRC_URI[x86_64_v2_pcm.sha256sum] = "c64aee5b85d187972591fc99e7d4ca935ada0c3d7d59287ed730e54c7e820a93"
 
 RDEPENDS:pcm = " \

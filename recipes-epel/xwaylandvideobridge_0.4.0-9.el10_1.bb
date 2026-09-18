@@ -9,16 +9,13 @@ PACKAGES = " \
  xwaylandvideobridge \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/x/xwaylandvideobridge-0.4.0-9.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/x/xwaylandvideobridge-0.4.0-9.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1d1275f280d9fd57f7fd2228bd962d620ac730686af346e1e616edf37b617784"
 
-URI_x86_64_v2_xwaylandvideobridge = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xwaylandvideobridge-0.4.0-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xwaylandvideobridge;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_xwaylandvideobridge}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/xwaylandvideobridge-0.4.0-9.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_xwaylandvideobridge;unpack=0"
 SRC_URI[x86_64_v2_xwaylandvideobridge.sha256sum] = "e78cadfcf63b6369d1b2eb10d0a42ad77545e5ac6d6672504e8a6077f2ccd16f"
 
-URI_aarch64_xwaylandvideobridge = "${EPEL_MIRROR}/aarch64/Packages/x/xwaylandvideobridge-0.4.0-9.el10_1.aarch64.rpm;name=aarch64_xwaylandvideobridge;unpack=0"
-SRC_URI:append = " ${URI_aarch64_xwaylandvideobridge}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/x/xwaylandvideobridge-0.4.0-9.el10_1.aarch64.rpm;name=aarch64_xwaylandvideobridge;unpack=0"
 SRC_URI[aarch64_xwaylandvideobridge.sha256sum] = "0ef3e693f523eb1c193e36f970c8ec24d11d79e1a9b391bdf778df9ec7dd7507"
 
 RDEPENDS:xwaylandvideobridge = " \

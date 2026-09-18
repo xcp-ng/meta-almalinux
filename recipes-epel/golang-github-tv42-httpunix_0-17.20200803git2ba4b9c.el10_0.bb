@@ -9,12 +9,10 @@ PACKAGES = " \
  golang-github-tv42-httpunix-devel \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/golang-github-tv42-httpunix-0-17.20200803git2ba4b9c.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/golang-github-tv42-httpunix-0-17.20200803git2ba4b9c.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "e1b0331fc1111fa4a0a4706b333929d0d4f98fd283f67ecf40692fbe5e9eb8cb"
 
-URI_aarch64_golang-github-tv42-httpunix-devel = "${EPEL_MIRROR}/aarch64/Packages/g/golang-github-tv42-httpunix-devel-0-17.20200803git2ba4b9c.el10_0.noarch.rpm;name=aarch64_golang-github-tv42-httpunix-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_golang-github-tv42-httpunix-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/golang-github-tv42-httpunix-devel-0-17.20200803git2ba4b9c.el10_0.noarch.rpm;name=aarch64_golang-github-tv42-httpunix-devel;unpack=0"
 SRC_URI[aarch64_golang-github-tv42-httpunix-devel.sha256sum] = "cc5bce2c44a61e82e861e20ffa6fe6e3e86099d050cd77874f778cf7c1ce03ba"
 
 RDEPENDS:golang-github-tv42-httpunix-devel = " \

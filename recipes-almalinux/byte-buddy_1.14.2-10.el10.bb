@@ -12,40 +12,31 @@ PACKAGES = " \
  byte-buddy-maven-plugin \
  "
 
-URI_src = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/byte-buddy-1.14.2-10.el10.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/byte-buddy-1.14.2-10.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "94a7b17ae653fd8690d78bf3cf30eb3f973da3b98db3d0c2875e33ed087e4f20"
 
-URI_x86_64_v2_byte-buddy = "${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/byte-buddy-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_byte-buddy}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/byte-buddy-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy;unpack=0"
 SRC_URI[x86_64_v2_byte-buddy.sha256sum] = "181e43f434eb62a3775b177988641f68ff95d0bd6c479e0d64a774b77b2cb488"
 
-URI_x86_64_v2_byte-buddy-agent = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-agent-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-agent;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_byte-buddy-agent}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-agent-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-agent;unpack=0"
 SRC_URI[x86_64_v2_byte-buddy-agent.sha256sum] = "3c618fa9502901e63d2a3827be0b71218975542638322f729229ad0ec80dffb6"
 
-URI_x86_64_v2_byte-buddy-javadoc = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-javadoc-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-javadoc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_byte-buddy-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-javadoc-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-javadoc;unpack=0"
 SRC_URI[x86_64_v2_byte-buddy-javadoc.sha256sum] = "8d4bd79bbfd03c90340ae81adbad0c4f9ad0d4329f1bca480bae0e1cac1abb43"
 
-URI_x86_64_v2_byte-buddy-maven-plugin = "${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-maven-plugin-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-maven-plugin;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_byte-buddy-maven-plugin}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/byte-buddy-maven-plugin-1.14.2-10.el10.noarch.rpm;name=x86_64_v2_byte-buddy-maven-plugin;unpack=0"
 SRC_URI[x86_64_v2_byte-buddy-maven-plugin.sha256sum] = "804fddcd337f0e4269ecac29921b04055b5b79c5aff177ec34341a885c18afa1"
 
-URI_aarch64_byte-buddy = "${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/byte-buddy-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy;unpack=0"
-SRC_URI:append = " ${URI_aarch64_byte-buddy}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/byte-buddy-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy;unpack=0"
 SRC_URI[aarch64_byte-buddy.sha256sum] = "181e43f434eb62a3775b177988641f68ff95d0bd6c479e0d64a774b77b2cb488"
 
-URI_aarch64_byte-buddy-agent = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-agent-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-agent;unpack=0"
-SRC_URI:append = " ${URI_aarch64_byte-buddy-agent}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-agent-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-agent;unpack=0"
 SRC_URI[aarch64_byte-buddy-agent.sha256sum] = "3c618fa9502901e63d2a3827be0b71218975542638322f729229ad0ec80dffb6"
 
-URI_aarch64_byte-buddy-javadoc = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-javadoc-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-javadoc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_byte-buddy-javadoc}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-javadoc-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-javadoc;unpack=0"
 SRC_URI[aarch64_byte-buddy-javadoc.sha256sum] = "8d4bd79bbfd03c90340ae81adbad0c4f9ad0d4329f1bca480bae0e1cac1abb43"
 
-URI_aarch64_byte-buddy-maven-plugin = "${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-maven-plugin-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-maven-plugin;unpack=0"
-SRC_URI:append = " ${URI_aarch64_byte-buddy-maven-plugin}"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/byte-buddy-maven-plugin-1.14.2-10.el10.noarch.rpm;name=aarch64_byte-buddy-maven-plugin;unpack=0"
 SRC_URI[aarch64_byte-buddy-maven-plugin.sha256sum] = "804fddcd337f0e4269ecac29921b04055b5b79c5aff177ec34341a885c18afa1"
 
 RDEPENDS:byte-buddy = " \

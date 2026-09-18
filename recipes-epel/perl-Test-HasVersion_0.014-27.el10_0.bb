@@ -9,16 +9,13 @@ PACKAGES = " \
  perl-Test-HasVersion \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Test-HasVersion-0.014-27.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Test-HasVersion-0.014-27.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f626b32143d18883c2b1ee56fe5c495631f837c6ecdb7f9b31f190f2b7869bcc"
 
-URI_x86_64_v2_perl-Test-HasVersion = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-HasVersion-0.014-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-HasVersion;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Test-HasVersion}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Test-HasVersion-0.014-27.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Test-HasVersion;unpack=0"
 SRC_URI[x86_64_v2_perl-Test-HasVersion.sha256sum] = "791f7111bce992d4d4d744d68b2fba0cec12a15ae0a56a42dcba870a6201ed6b"
 
-URI_aarch64_perl-Test-HasVersion = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-HasVersion-0.014-27.el10_0.noarch.rpm;name=aarch64_perl-Test-HasVersion;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Test-HasVersion}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Test-HasVersion-0.014-27.el10_0.noarch.rpm;name=aarch64_perl-Test-HasVersion;unpack=0"
 SRC_URI[aarch64_perl-Test-HasVersion.sha256sum] = "a60ed76b796cfda4a025f771fe4f8a41509e3eb2d2a0d65f3ed007e03fafc15a"
 
 RDEPENDS:perl-Test-HasVersion = " \

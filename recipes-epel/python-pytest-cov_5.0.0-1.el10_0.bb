@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-pytest-cov \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-pytest-cov-5.0.0-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pytest-cov-5.0.0-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "52bacc75ed3aebfce7598d4320d928177aba20c227c691df890bed2ca11e53c3"
 
-URI_x86_64_v2_python3-pytest-cov = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-cov-5.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-cov;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-pytest-cov}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pytest-cov-5.0.0-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-pytest-cov;unpack=0"
 SRC_URI[x86_64_v2_python3-pytest-cov.sha256sum] = "c296968305b387c646b2a68b835becfc96077870a29291cfcf5f076ba56ba220"
 
-URI_aarch64_python3-pytest-cov = "${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-cov-5.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-cov;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-pytest-cov}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pytest-cov-5.0.0-1.el10_0.noarch.rpm;name=aarch64_python3-pytest-cov;unpack=0"
 SRC_URI[aarch64_python3-pytest-cov.sha256sum] = "3711f028e06f978bdcca8e66eea94e74a5262ae65f9bb0c0955443be6a7ff2c0"
 
 RDEPENDS:python3-pytest-cov = " \

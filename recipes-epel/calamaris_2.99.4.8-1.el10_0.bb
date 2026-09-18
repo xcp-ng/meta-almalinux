@@ -9,16 +9,13 @@ PACKAGES = " \
  calamaris \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/c/calamaris-2.99.4.8-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/c/calamaris-2.99.4.8-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "91919c99b833d1a6f6ecaa52d38cd4b86e954a9a5e1942a50356987d89b00561"
 
-URI_x86_64_v2_calamaris = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/calamaris-2.99.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_calamaris;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_calamaris}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/calamaris-2.99.4.8-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_calamaris;unpack=0"
 SRC_URI[x86_64_v2_calamaris.sha256sum] = "f5a954f0508ee50ebe5a82e2f912fd4a91cabed772369bb7b46a9d1d2fc2ce91"
 
-URI_aarch64_calamaris = "${EPEL_MIRROR}/aarch64/Packages/c/calamaris-2.99.4.8-1.el10_0.noarch.rpm;name=aarch64_calamaris;unpack=0"
-SRC_URI:append = " ${URI_aarch64_calamaris}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/c/calamaris-2.99.4.8-1.el10_0.noarch.rpm;name=aarch64_calamaris;unpack=0"
 SRC_URI[aarch64_calamaris.sha256sum] = "4639a414a413727e599540be32d7cba505ce74e8a16ea915e39013f0e14d20e7"
 
 RDEPENDS:calamaris = " \

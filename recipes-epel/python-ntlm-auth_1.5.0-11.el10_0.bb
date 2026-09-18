@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-ntlm-auth \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-ntlm-auth-1.5.0-11.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-ntlm-auth-1.5.0-11.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "52b99a29198101dfb86a39d7c0714e13c6469054fcff19a7ac4d7e6a6bb3e245"
 
-URI_x86_64_v2_python3-ntlm-auth = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ntlm-auth-1.5.0-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ntlm-auth;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-ntlm-auth}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-ntlm-auth-1.5.0-11.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-ntlm-auth;unpack=0"
 SRC_URI[x86_64_v2_python3-ntlm-auth.sha256sum] = "0f360853030a622b15be8f3bdd482fa833503df0a9e2f8895333bcccdf790be1"
 
-URI_aarch64_python3-ntlm-auth = "${EPEL_MIRROR}/aarch64/Packages/p/python3-ntlm-auth-1.5.0-11.el10_0.noarch.rpm;name=aarch64_python3-ntlm-auth;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-ntlm-auth}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-ntlm-auth-1.5.0-11.el10_0.noarch.rpm;name=aarch64_python3-ntlm-auth;unpack=0"
 SRC_URI[aarch64_python3-ntlm-auth.sha256sum] = "887cbbb533b707e142760cc73418848c86e4990203b646bde28312f9d166d07a"
 
 RDEPENDS:python3-ntlm-auth = " \

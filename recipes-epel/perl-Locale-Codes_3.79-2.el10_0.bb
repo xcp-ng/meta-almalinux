@@ -10,24 +10,19 @@ PACKAGES = " \
  perl-Locale-Codes-tests \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/perl-Locale-Codes-3.79-2.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/perl-Locale-Codes-3.79-2.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "fcc0b82c13b4452952f238c79172785860b4099924d9ce44cee3c76352081493"
 
-URI_x86_64_v2_perl-Locale-Codes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Locale-Codes-3.79-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Locale-Codes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Locale-Codes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Locale-Codes-3.79-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Locale-Codes;unpack=0"
 SRC_URI[x86_64_v2_perl-Locale-Codes.sha256sum] = "6c12e43a32f82de747e2daa4c2f3976c6647d0850b71b94cfd61c7dfdfda936b"
 
-URI_x86_64_v2_perl-Locale-Codes-tests = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Locale-Codes-tests-3.79-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Locale-Codes-tests;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_perl-Locale-Codes-tests}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/perl-Locale-Codes-tests-3.79-2.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_perl-Locale-Codes-tests;unpack=0"
 SRC_URI[x86_64_v2_perl-Locale-Codes-tests.sha256sum] = "1e61a9d1895df30b08e36c7059783b0a9a1d4d3ee2a13ef68112cf94a51624d5"
 
-URI_aarch64_perl-Locale-Codes = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Locale-Codes-3.79-2.el10_0.noarch.rpm;name=aarch64_perl-Locale-Codes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Locale-Codes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Locale-Codes-3.79-2.el10_0.noarch.rpm;name=aarch64_perl-Locale-Codes;unpack=0"
 SRC_URI[aarch64_perl-Locale-Codes.sha256sum] = "4cf74d6109f155292013b2fe23feb66275b11ac198b24f99c70df9c499a3e4ce"
 
-URI_aarch64_perl-Locale-Codes-tests = "${EPEL_MIRROR}/aarch64/Packages/p/perl-Locale-Codes-tests-3.79-2.el10_0.noarch.rpm;name=aarch64_perl-Locale-Codes-tests;unpack=0"
-SRC_URI:append = " ${URI_aarch64_perl-Locale-Codes-tests}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/perl-Locale-Codes-tests-3.79-2.el10_0.noarch.rpm;name=aarch64_perl-Locale-Codes-tests;unpack=0"
 SRC_URI[aarch64_perl-Locale-Codes-tests.sha256sum] = "299c822c71dba72d75ac25b36dda4768f3314be323d835fc50b2d4f1a0589535"
 
 RDEPENDS:perl-Locale-Codes = " \

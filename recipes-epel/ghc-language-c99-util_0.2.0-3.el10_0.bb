@@ -12,40 +12,31 @@ PACKAGES = " \
  ghc-language-c99-util-prof \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/g/ghc-language-c99-util-0.2.0-3.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/g/ghc-language-c99-util-0.2.0-3.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f935554d6efc5e25d75a1cec2884fefaf88dc05d4ff2c8b4fbe7e1951a6af9b9"
 
-URI_x86_64_v2_ghc-language-c99-util = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-c99-util}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-c99-util.sha256sum] = "27a0c29349b7c1888220d6609b4b15210aed71ca6aa430556de1cdaf99730808"
 
-URI_x86_64_v2_ghc-language-c99-util-devel = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-devel-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util-devel;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-c99-util-devel}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-devel-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util-devel;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-c99-util-devel.sha256sum] = "8c0033caf6bc60674005f5498b633c05ee6c11b5e4b663b3de701220d11405f0"
 
-URI_x86_64_v2_ghc-language-c99-util-doc = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-doc-0.2.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-language-c99-util-doc;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-c99-util-doc}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-doc-0.2.0-3.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_ghc-language-c99-util-doc;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-c99-util-doc.sha256sum] = "d080049e25c9fd119a0e4850f5986730f862cf0351f1981689741efcf5b7988d"
 
-URI_x86_64_v2_ghc-language-c99-util-prof = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-prof-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util-prof;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_ghc-language-c99-util-prof}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/ghc-language-c99-util-prof-0.2.0-3.el10_0.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_ghc-language-c99-util-prof;unpack=0"
 SRC_URI[x86_64_v2_ghc-language-c99-util-prof.sha256sum] = "63dfac8c5cb12dea896092e65dc6318683cd1a972a715fceb448ee75a1a24cb3"
 
-URI_aarch64_ghc-language-c99-util = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-c99-util}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util;unpack=0"
 SRC_URI[aarch64_ghc-language-c99-util.sha256sum] = "a4ea90e3b87e5a00bccde89cf9c2afc11be9a287dbd9fe80670b0e934640feb0"
 
-URI_aarch64_ghc-language-c99-util-devel = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-devel-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util-devel;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-c99-util-devel}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-devel-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util-devel;unpack=0"
 SRC_URI[aarch64_ghc-language-c99-util-devel.sha256sum] = "f36ed035231d52904f9a5545e37d2b601886757af0567e3076482f600324c599"
 
-URI_aarch64_ghc-language-c99-util-doc = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-doc-0.2.0-3.el10_0.noarch.rpm;name=aarch64_ghc-language-c99-util-doc;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-c99-util-doc}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-doc-0.2.0-3.el10_0.noarch.rpm;name=aarch64_ghc-language-c99-util-doc;unpack=0"
 SRC_URI[aarch64_ghc-language-c99-util-doc.sha256sum] = "1679fe18a67446c2e5d89c14c50f403e99caf31ae3e55340728858bd926e9a60"
 
-URI_aarch64_ghc-language-c99-util-prof = "${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-prof-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util-prof;unpack=0"
-SRC_URI:append = " ${URI_aarch64_ghc-language-c99-util-prof}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/g/ghc-language-c99-util-prof-0.2.0-3.el10_0.aarch64.rpm;name=aarch64_ghc-language-c99-util-prof;unpack=0"
 SRC_URI[aarch64_ghc-language-c99-util-prof.sha256sum] = "1ff60e546320fc153e3d1847384e15287e6a52b4cd3507b8feeb633bae373fe4"
 
 RDEPENDS:ghc-language-c99-util = " \

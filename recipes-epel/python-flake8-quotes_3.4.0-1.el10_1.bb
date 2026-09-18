@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-flake8-quotes \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-flake8-quotes-3.4.0-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-flake8-quotes-3.4.0-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "1526027860840e2f173be571a3d17b6557b26a5166102c17532b5f72aa8f2852"
 
-URI_x86_64_v2_python3-flake8-quotes = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flake8-quotes-3.4.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flake8-quotes;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flake8-quotes}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flake8-quotes-3.4.0-1.el10_1.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flake8-quotes;unpack=0"
 SRC_URI[x86_64_v2_python3-flake8-quotes.sha256sum] = "950e688f94aaae100e7f13a237850595be5d233c0f1a9c2223649333267ba9fc"
 
-URI_aarch64_python3-flake8-quotes = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flake8-quotes-3.4.0-1.el10_1.noarch.rpm;name=aarch64_python3-flake8-quotes;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flake8-quotes}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flake8-quotes-3.4.0-1.el10_1.noarch.rpm;name=aarch64_python3-flake8-quotes;unpack=0"
 SRC_URI[aarch64_python3-flake8-quotes.sha256sum] = "363916c0f33fb669c85701679720bb5266eacbf3466b37de5469b9e1f4817db8"
 
 RDEPENDS:python3-flake8-quotes = " \

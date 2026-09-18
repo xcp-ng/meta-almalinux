@@ -9,16 +9,13 @@ PACKAGES = " \
  python3-flexparser \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/p/python-flexparser-0.4-1.el10_0.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-flexparser-0.4-1.el10_0.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "14ce5563c064a2c37417272d0f5cf51e0888042e9ac96757afdcbc4716f36638"
 
-URI_x86_64_v2_python3-flexparser = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flexparser-0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flexparser;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_python3-flexparser}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-flexparser-0.4-1.el10_0.alma_altarch.noarch.rpm;name=x86_64_v2_python3-flexparser;unpack=0"
 SRC_URI[x86_64_v2_python3-flexparser.sha256sum] = "18150ea542199cc7b93608b74e7a30d0bfc74674ee3ae103885a7540c83ceb2d"
 
-URI_aarch64_python3-flexparser = "${EPEL_MIRROR}/aarch64/Packages/p/python3-flexparser-0.4-1.el10_0.noarch.rpm;name=aarch64_python3-flexparser;unpack=0"
-SRC_URI:append = " ${URI_aarch64_python3-flexparser}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-flexparser-0.4-1.el10_0.noarch.rpm;name=aarch64_python3-flexparser;unpack=0"
 SRC_URI[aarch64_python3-flexparser.sha256sum] = "cb5411ddccc6ce90ce8bd3bbe37dcb4a1d521223ff3161294d0fb64cb948bda1"
 
 RDEPENDS:python3-flexparser = " \

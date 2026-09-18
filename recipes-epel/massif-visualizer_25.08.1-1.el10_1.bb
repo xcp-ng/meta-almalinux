@@ -9,16 +9,13 @@ PACKAGES = " \
  massif-visualizer \
  "
 
-URI_src = "${EPELSRC_MIRROR}/Packages/m/massif-visualizer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
-SRC_URI = "${URI_src}"
+SRC_URI = "${EPELSRC_MIRROR}/Packages/m/massif-visualizer-25.08.1-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3cd53d152c654edbcd156fc0245de17201c9ac2ed36100cfcd58bac05d7e6fc5"
 
-URI_x86_64_v2_massif-visualizer = "${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/massif-visualizer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_massif-visualizer;unpack=0"
-SRC_URI:append = " ${URI_x86_64_v2_massif-visualizer}"
+SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/massif-visualizer-25.08.1-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_massif-visualizer;unpack=0"
 SRC_URI[x86_64_v2_massif-visualizer.sha256sum] = "2a30b25d0f50d0daa03b3e453268e8fe44fd36f681b95ca7be7ec04e4709b743"
 
-URI_aarch64_massif-visualizer = "${EPEL_MIRROR}/aarch64/Packages/m/massif-visualizer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_massif-visualizer;unpack=0"
-SRC_URI:append = " ${URI_aarch64_massif-visualizer}"
+SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/m/massif-visualizer-25.08.1-1.el10_1.aarch64.rpm;name=aarch64_massif-visualizer;unpack=0"
 SRC_URI[aarch64_massif-visualizer.sha256sum] = "905b9ba135fb6e4c1a5f938425e1f64290f093b9b7bd17f7275476f51776acd4"
 
 RDEPENDS:massif-visualizer = " \
