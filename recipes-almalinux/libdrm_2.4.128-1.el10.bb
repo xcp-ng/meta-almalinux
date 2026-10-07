@@ -10,16 +10,16 @@ PACKAGES = " \
  libdrm-devel \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/libdrm-2.4.128-1.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/libdrm-2.4.128-1.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "2b3ed763714642ccdea234eda335e956d43ad61b521d77d11fa2c6c7a1d052c7"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/libdrm-2.4.128-1.el10.x86_64_v2.rpm;name=x86_64_v2_libdrm;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libdrm-2.4.128-1.el10.x86_64_v2.rpm;name=x86_64_v2_libdrm;unpack=0"
 SRC_URI[x86_64_v2_libdrm.sha256sum] = "0c2abb11ef72fbd7f134ed6c18ae109d1b2ee783e266cc5492e7f34bc7fd74ba"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libdrm-devel-2.4.128-1.el10.x86_64_v2.rpm;name=x86_64_v2_libdrm-devel;unpack=0"
 SRC_URI[x86_64_v2_libdrm-devel.sha256sum] = "cfa51f3254d74cdeceb7d622bdee5bd296ed7bcd6f13b9ef422a6325cbcee7bb"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/libdrm-2.4.128-1.el10.aarch64.rpm;name=aarch64_libdrm;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libdrm-2.4.128-1.el10.aarch64.rpm;name=aarch64_libdrm;unpack=0"
 SRC_URI[aarch64_libdrm.sha256sum] = "acdf64c9d2182969e807f1e196ad96b382c3354016bf4e4ef58cc624d55b106b"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libdrm-devel-2.4.128-1.el10.aarch64.rpm;name=aarch64_libdrm-devel;unpack=0"

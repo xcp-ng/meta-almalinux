@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-is-terminal-0.4.17-3.el10_2.src.rpm
 SRC_URI[src.sha256sum] = "72f9465c11be5852b190e038f888041e15355d23497242db944402fff8b67073"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-is-terminal+default-devel-0.4.17-3.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-is-terminal+default-devel;unpack=0"
-SRC_URI[x86_64_v2_rust-is-terminal+default-devel.sha256sum] = "44f9537e24cbebf1c22b94543b90719f128d875e95b8a67a70efc47d802fb9fe"
+SRC_URI[x86_64_v2_rust-is-terminal+default-devel.sha256sum] = "17262e220da835de2a68c3cc4cb4e6b9116969718e93dd7df3305cec8cb86e48"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-is-terminal-devel-0.4.17-3.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-is-terminal-devel;unpack=0"
-SRC_URI[x86_64_v2_rust-is-terminal-devel.sha256sum] = "e8ee25713658e9fb233c4bc3326da3555369c762cf21ec6afae2435f097b24dd"
+SRC_URI[x86_64_v2_rust-is-terminal-devel.sha256sum] = "e4d48eb45cac3c498f37a3fbc548746172a2e12fb15b7c6cd443a2828dc59e6c"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-is-terminal+default-devel-0.4.17-3.el10_2.noarch.rpm;name=aarch64_rust-is-terminal+default-devel;unpack=0"
 SRC_URI[aarch64_rust-is-terminal+default-devel.sha256sum] = "875ef7c815cf3238649c252107232fe336f27f06dc1baa2e0e1c0a953c066f5e"

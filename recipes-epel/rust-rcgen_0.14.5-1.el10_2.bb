@@ -73,7 +73,7 @@ RDEPENDS:rust-rcgen+default-devel = " \
  "
 RDEPENDS:rust-rcgen+pem-devel = " \
  cargo \
- rust-pem+default-devel \
+ rust-pem3+default-devel \
  rust-rcgen-devel \
  "
 RDEPENDS:rust-rcgen+ring-devel = " \

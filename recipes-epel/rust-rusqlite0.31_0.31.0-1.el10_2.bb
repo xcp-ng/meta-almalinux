@@ -50,6 +50,7 @@ SRC_URI[x86_64_v2_rust-rusqlite0.31+backup-devel.sha256sum] = "d1b7ad0099c5fc818
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+blob-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+blob-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+blob-devel.sha256sum] = "7700d1a45a56fd84efb22523eb41d50995603fe35297f98850b65ef2949908d8"
+RPROVIDES:rust-rusqlite0.31+blob-devel:append:x86_64_v2 = " virtual/crate_rusqlite/blob__ge_0.29.0_with_crate_rusqlite/blob__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+buildtime_bindgen-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+buildtime_bindgen-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+buildtime_bindgen-devel.sha256sum] = "2ce53535d3c5c321b3d901c5f5879641a8ae27c2b697d419d2fc547dbb7079c2"
@@ -59,6 +60,7 @@ SRC_URI[x86_64_v2_rust-rusqlite0.31+chrono-devel.sha256sum] = "dd71a8b053a7d2522
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+collation-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+collation-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+collation-devel.sha256sum] = "184b776a45c58f3e3e0200204969284e46148b1e92b673f2fc0c43ad0470c81e"
+RPROVIDES:rust-rusqlite0.31+collation-devel:append:x86_64_v2 = " virtual/crate_rusqlite/collation__ge_0.29.0_with_crate_rusqlite/collation__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+column_decltype-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+column_decltype-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+column_decltype-devel.sha256sum] = "fc71ae86e92b25d56810359e13c540bcf719a036e3956e10b432c85aede436a4"
@@ -71,6 +73,7 @@ SRC_URI[x86_64_v2_rust-rusqlite0.31+csvtab-devel.sha256sum] = "b595e22deada02add
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+default-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+default-devel.sha256sum] = "6aa4a127c5bc0bc8b8f19ca50ad02ebf044b56caca42964eb70e2fe39e2724c4"
+RPROVIDES:rust-rusqlite0.31+default-devel:append:x86_64_v2 = " virtual/crate_rusqlite/default__ge_0.29.0_with_crate_rusqlite/default__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+extra_check-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+extra_check-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+extra_check-devel.sha256sum] = "387ceb38351b400430be40dc2da2deb07460a7984c9268d9cd0cb86191e0f607"
@@ -116,6 +119,7 @@ SRC_URI[x86_64_v2_rust-rusqlite0.31+time-devel.sha256sum] = "762d7d12a9812c0c192
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+trace-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+trace-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+trace-devel.sha256sum] = "267931261573e92043031c5c815a331c06b38d15e5f192c1215a340263a7f213"
+RPROVIDES:rust-rusqlite0.31+trace-devel:append:x86_64_v2 = " virtual/crate_rusqlite/trace__ge_0.29.0_with_crate_rusqlite/trace__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-rusqlite0.31+unlock_notify-devel-0.31.0-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-rusqlite0.31+unlock_notify-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-rusqlite0.31+unlock_notify-devel.sha256sum] = "a99d6108bd94bc1827dbfd02e9b332ca89a1a00482a76afda2e11881307fefba"
@@ -143,6 +147,7 @@ SRC_URI[aarch64_rust-rusqlite0.31+backup-devel.sha256sum] = "dc6fe656df6231360f4
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+blob-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+blob-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+blob-devel.sha256sum] = "fd59e27d94d3a0a444f8f2373cff8b5776769f1a32a6632194062b0309ac3091"
+RPROVIDES:rust-rusqlite0.31+blob-devel:append:aarch64 = " virtual/crate_rusqlite/blob__ge_0.29.0_with_crate_rusqlite/blob__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+buildtime_bindgen-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+buildtime_bindgen-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+buildtime_bindgen-devel.sha256sum] = "1fa6712c4e97d9e0e8bfba11257641b41f32d8790f38fcee9ac513d1ab81f2c6"
@@ -152,6 +157,7 @@ SRC_URI[aarch64_rust-rusqlite0.31+chrono-devel.sha256sum] = "a0667f1ca24f5d08452
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+collation-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+collation-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+collation-devel.sha256sum] = "dcd95789e902d4a16fc6ee7bc235934a4cdbd119a951602599c455863b93e7ed"
+RPROVIDES:rust-rusqlite0.31+collation-devel:append:aarch64 = " virtual/crate_rusqlite/collation__ge_0.29.0_with_crate_rusqlite/collation__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+column_decltype-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+column_decltype-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+column_decltype-devel.sha256sum] = "9350344c7763c69da10f8f4ec159cbc88ca5c5e7b5a09c673fffe6be00e9468e"
@@ -164,6 +170,7 @@ SRC_URI[aarch64_rust-rusqlite0.31+csvtab-devel.sha256sum] = "5b64b30d91ab1628760
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+default-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+default-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+default-devel.sha256sum] = "ae01d0373f608d9b4d4242db6cfab0a15521b5f67addea275cde67755c87e470"
+RPROVIDES:rust-rusqlite0.31+default-devel:append:aarch64 = " virtual/crate_rusqlite/default__ge_0.29.0_with_crate_rusqlite/default__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+extra_check-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+extra_check-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+extra_check-devel.sha256sum] = "119bc91508b7a0f3a7967fb73e8358891ef766d17b6437922212018a7ade2dc8"
@@ -209,6 +216,7 @@ SRC_URI[aarch64_rust-rusqlite0.31+time-devel.sha256sum] = "cdc84655fb2900c91b668
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+trace-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+trace-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+trace-devel.sha256sum] = "6df91576ba572c746a42958138a730577fe14050d4f7d7ab20072b1cc15ccd39"
+RPROVIDES:rust-rusqlite0.31+trace-devel:append:aarch64 = " virtual/crate_rusqlite/trace__ge_0.29.0_with_crate_rusqlite/trace__lt_0.41.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-rusqlite0.31+unlock_notify-devel-0.31.0-1.el10_2.noarch.rpm;name=aarch64_rust-rusqlite0.31+unlock_notify-devel;unpack=0"
 SRC_URI[aarch64_rust-rusqlite0.31+unlock_notify-devel.sha256sum] = "e593365cad0d5f341ee71f5f01a780cb251ab4d84337aacbcfe55a87173bbaf3"

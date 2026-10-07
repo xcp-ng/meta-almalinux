@@ -9,13 +9,13 @@ PACKAGES = " \
  perl-URI \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-URI-5.27-3.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-URI-5.27-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "679995741d83dfec30c48cfd9914ec9b8ea332de6fe3bceeb8fedca877fd4229"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-URI-5.27-3.el10.noarch.rpm;name=x86_64_v2_perl-URI;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-URI-5.27-3.el10.noarch.rpm;name=x86_64_v2_perl-URI;unpack=0"
 SRC_URI[x86_64_v2_perl-URI.sha256sum] = "51ed5bd277ee0aa043344af04a50d7eee219e764ace8df42a552fc0593f82817"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-URI-5.27-3.el10.noarch.rpm;name=aarch64_perl-URI;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-URI-5.27-3.el10.noarch.rpm;name=aarch64_perl-URI;unpack=0"
 SRC_URI[aarch64_perl-URI.sha256sum] = "51ed5bd277ee0aa043344af04a50d7eee219e764ace8df42a552fc0593f82817"
 
 RDEPENDS:perl-URI = " \

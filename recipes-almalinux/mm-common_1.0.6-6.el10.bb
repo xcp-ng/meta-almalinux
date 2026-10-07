@@ -13,6 +13,9 @@ PACKAGES = " \
 SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mm-common-1.0.6-6.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9dc3b21e64dcf0275099f759a895930cd163a686a479677136178d626f2d9e44"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - mm-common: graphviz
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mm-common-1.0.6-6.el10.noarch.rpm;name=x86_64_v2_mm-common;unpack=0"
 SRC_URI[x86_64_v2_mm-common.sha256sum] = "18004b1b898ea389a4834c51f51f56f9300cc8d9d6c392ebf9914135ecb699af"
 
@@ -25,14 +28,21 @@ SRC_URI[aarch64_mm-common.sha256sum] = "18004b1b898ea389a4834c51f51f56f9300cc8d9
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mm-common-docs-1.0.6-6.el10.noarch.rpm;name=aarch64_mm-common-docs;unpack=0"
 SRC_URI[aarch64_mm-common-docs.sha256sum] = "7e1e691d179c7cf7c8666c7b598077e3c87409ac9a276d4e6b91a14e31da52b6"
 
-RDEPENDS:mm-common = " \
+RDEPENDS:mm-common:x86_64_v2 = " \
  bash \
  doxygen \
  graphviz \
  libxslt \
  pkgconf-pkg-config \
  python3 \
- "
+"
+RDEPENDS:mm-common:aarch64 = " \
+ bash \
+ doxygen \
+ libxslt \
+ pkgconf-pkg-config \
+ python3 \
+"
 RDEPENDS:mm-common-docs = " \
  mm-common \
  "

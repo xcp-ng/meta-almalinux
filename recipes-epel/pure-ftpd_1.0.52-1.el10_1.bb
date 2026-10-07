@@ -13,6 +13,9 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/p/pure-ftpd-1.0.52-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0584ea9858085f1b951b57bded2bfe1b25e2066889c3f1c64686432692599552"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - pure-ftpd: libcap.so.2()(64bit)
+
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pure-ftpd-1.0.52-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pure-ftpd;unpack=0"
 SRC_URI[x86_64_v2_pure-ftpd.sha256sum] = "bd975fd9303f94b9064d484803f6d62bf8580514bef80231e3d40a95c7942a8a"
 
@@ -25,7 +28,7 @@ SRC_URI[aarch64_pure-ftpd.sha256sum] = "a0e221e7d879399434923489d00c3278267adc6b
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pure-ftpd-selinux-1.0.52-1.el10_1.aarch64.rpm;name=aarch64_pure-ftpd-selinux;unpack=0"
 SRC_URI[aarch64_pure-ftpd-selinux.sha256sum] = "4389bdebf33ee0c5902d9e9d26c09d2520a2ee9faaf7f669bba1fdbfba6be024"
 
-RDEPENDS:pure-ftpd = " \
+RDEPENDS:pure-ftpd:x86_64_v2 = " \
  bash \
  glibc \
  libcap \
@@ -38,7 +41,20 @@ RDEPENDS:pure-ftpd = " \
  pam-libs \
  sscg \
  systemd \
- "
+"
+RDEPENDS:pure-ftpd:aarch64 = " \
+ bash \
+ glibc \
+ libpq \
+ libxcrypt \
+ logrotate \
+ mariadb-connector-c \
+ openldap \
+ openssl-libs \
+ pam-libs \
+ sscg \
+ systemd \
+"
 RDEPENDS:pure-ftpd-selinux = " \
  bash \
  policycoreutils \

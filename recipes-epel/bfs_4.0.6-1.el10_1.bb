@@ -12,17 +12,27 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/b/bfs-4.0.6-1.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "82bfd2f3dd1870644e168cf2b951726b27ca0ef11dd92229a7d685009f955c94"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - bfs: libcap.so.2()(64bit)
+
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bfs-4.0.6-1.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_bfs;unpack=0"
 SRC_URI[x86_64_v2_bfs.sha256sum] = "124fd9c6eef9664206031efda969305293094602d712b40ce96b0876b6e4faca"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/b/bfs-4.0.6-1.el10_1.aarch64.rpm;name=aarch64_bfs;unpack=0"
 SRC_URI[aarch64_bfs.sha256sum] = "ecb1e961185ec0d22eec478c8bf39174fa3727b7676bedeb52f869a8fe601111"
 
-RDEPENDS:bfs = " \
+RDEPENDS:bfs:x86_64_v2 = " \
  glibc \
  libacl \
  libcap \
  libselinux \
  liburing \
  oniguruma \
- "
+"
+RDEPENDS:bfs:aarch64 = " \
+ glibc \
+ libacl \
+ libselinux \
+ liburing \
+ oniguruma \
+"

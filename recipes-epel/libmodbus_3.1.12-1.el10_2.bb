@@ -14,10 +14,10 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/l/libmodbus-3.1.12-1.el10_2.src.rpm;name=s
 SRC_URI[src.sha256sum] = "0d844a9f0ec4bff052d6b62f5f78d63381b8e5f0cf5f140925a82bec186e6901"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libmodbus-3.1.12-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libmodbus;unpack=0"
-SRC_URI[x86_64_v2_libmodbus.sha256sum] = "2987511b70187195a65f21804306a92c40335be911a894ebbaf22c19f86efff1"
+SRC_URI[x86_64_v2_libmodbus.sha256sum] = "c672a5a7f3b09523073187b086989d125229b7c21bf2f656a2c4fc919e5d65ae"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/libmodbus-devel-3.1.12-1.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_libmodbus-devel;unpack=0"
-SRC_URI[x86_64_v2_libmodbus-devel.sha256sum] = "6bfb37454b2c126bceed91c620caf30b5608a7098906b03b5af1e067f0c03901"
+SRC_URI[x86_64_v2_libmodbus-devel.sha256sum] = "7a1edebdc4fda5574d29b0bd2dfce070e23dc558ccfac828e71193b1eaa018d6"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/l/libmodbus-3.1.12-1.el10_2.aarch64.rpm;name=aarch64_libmodbus;unpack=0"
 SRC_URI[aarch64_libmodbus.sha256sum] = "e287be3bf41c5a45e6c1d79ea027d30de7efac0effb780ad9dedcfa90e25f50c"

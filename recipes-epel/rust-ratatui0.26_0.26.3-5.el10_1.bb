@@ -130,7 +130,7 @@ RDEPENDS:rust-ratatui0.26+macros-devel = " \
 RDEPENDS:rust-ratatui0.26+serde-devel = " \
  cargo \
  rust-bitflags+serde-devel \
- rust-compact_str+serde-devel \
+ rust-compact_str0.9+serde-devel \
  rust-ratatui0.26-devel \
  rust-serde+default-devel \
  rust-serde+derive-devel \
@@ -170,7 +170,7 @@ RDEPENDS:rust-ratatui0.26-devel = " \
  rust \
  rust-bitflags+default-devel \
  rust-cassowary+default-devel \
- rust-compact_str+default-devel \
+ rust-compact_str0.9+default-devel \
  rust-itertools0.12+default-devel \
  rust-lru0.12+default-devel \
  rust-paste+default-devel \

@@ -13,6 +13,9 @@ PACKAGES = " \
 SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/asciidoc-10.2.0-12.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "ca24731128209e04cfc4e6b124b2b59160e7d605df5084bdb868bb97cc21f768"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - asciidoc: graphviz
+
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/asciidoc-10.2.0-12.el10.noarch.rpm;name=x86_64_v2_asciidoc;unpack=0"
 SRC_URI[x86_64_v2_asciidoc.sha256sum] = "bb34a342421805e3df245b074ee2787ca5d2f0134e2fecbefafad3285a14a74c"
 
@@ -25,13 +28,19 @@ SRC_URI[aarch64_asciidoc.sha256sum] = "bb34a342421805e3df245b074ee2787ca5d2f0134
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/asciidoc-doc-10.2.0-12.el10.noarch.rpm;name=aarch64_asciidoc-doc;unpack=0"
 SRC_URI[aarch64_asciidoc-doc.sha256sum] = "abb36792a2c65932c7ed09eaba144a2bbc52eb5f346449876cff1d7f531ce69e"
 
-RDEPENDS:asciidoc = " \
+RDEPENDS:asciidoc:x86_64_v2 = " \
  docbook-style-xsl \
  graphviz \
  libxslt \
  python3 \
  source-highlight \
- "
+"
+RDEPENDS:asciidoc:aarch64 = " \
+ docbook-style-xsl \
+ libxslt \
+ python3 \
+ source-highlight \
+"
 RDEPENDS:asciidoc-doc = " \
  asciidoc \
  "

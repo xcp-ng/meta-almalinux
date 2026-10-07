@@ -13,7 +13,7 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/p/python-pystemd-0.15.3-3.el10_2.src.rpm;n
 SRC_URI[src.sha256sum] = "742829342f667c24509721ef9e716d39d9b94dad64559f1901e9b5c29c724ee4"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/python3-pystemd-0.15.3-3.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_python3-pystemd;unpack=0"
-SRC_URI[x86_64_v2_python3-pystemd.sha256sum] = "3ad3f4d794ca9d42a70232e789be0ea61a07f861470f9bd51522776fab581e4d"
+SRC_URI[x86_64_v2_python3-pystemd.sha256sum] = "6ebf88c8c9e7367ca1e4ee8f1e04b68027642828fc757d3843c6b782d5c720d5"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/python3-pystemd-0.15.3-3.el10_2.aarch64.rpm;name=aarch64_python3-pystemd;unpack=0"
 SRC_URI[aarch64_python3-pystemd.sha256sum] = "5994b1ace920c4b8bb0a1a15dde74ec07c992d46e7d54a0fc65885585d68122b"

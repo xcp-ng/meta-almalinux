@@ -104,7 +104,7 @@ SRC_URI[aarch64_rust-http-auth-devel.sha256sum] = "9001ed72b7604be58f7eeeb45ed0e
 
 RDEPENDS:rust-http-auth+base64-devel = " \
  cargo \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-http-auth-devel \
  "
 RDEPENDS:rust-http-auth+basic-scheme-devel = " \
@@ -120,7 +120,7 @@ RDEPENDS:rust-http-auth+default-devel = " \
  "
 RDEPENDS:rust-http-auth+digest-devel = " \
  cargo \
- rust-digest+default-devel \
+ rust-digest0.10+default-devel \
  rust-http-auth-devel \
  "
 RDEPENDS:rust-http-auth+digest-scheme-devel = " \
@@ -150,7 +150,7 @@ RDEPENDS:rust-http-auth+log-devel = " \
 RDEPENDS:rust-http-auth+md-5-devel = " \
  cargo \
  rust-http-auth-devel \
- rust-md-5+default-devel \
+ rust-md-5_0.10+default-devel \
  "
 RDEPENDS:rust-http-auth+rand-devel = " \
  cargo \
@@ -160,7 +160,7 @@ RDEPENDS:rust-http-auth+rand-devel = " \
 RDEPENDS:rust-http-auth+sha2-devel = " \
  cargo \
  rust-http-auth-devel \
- rust-sha2+default-devel \
+ rust-sha2_0.10+default-devel \
  "
 RDEPENDS:rust-http-auth+trace-devel = " \
  cargo \

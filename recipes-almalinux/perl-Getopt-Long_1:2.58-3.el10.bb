@@ -10,13 +10,13 @@ PACKAGES = " \
  perl-Getopt-Long \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Getopt-Long-2.58-3.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Getopt-Long-2.58-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "4308b7686fe43363aa3949ba879c7a4a95f0f5ff7b4c24295ad5b8e09b899fee"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Getopt-Long-2.58-3.el10.noarch.rpm;name=x86_64_v2_perl-Getopt-Long;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Getopt-Long-2.58-3.el10.noarch.rpm;name=x86_64_v2_perl-Getopt-Long;unpack=0"
 SRC_URI[x86_64_v2_perl-Getopt-Long.sha256sum] = "0818ae10c8f3644563f58b19e11a50113fbb030a63134a3751cec0c4bd87e28b"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Getopt-Long-2.58-3.el10.noarch.rpm;name=aarch64_perl-Getopt-Long;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Getopt-Long-2.58-3.el10.noarch.rpm;name=aarch64_perl-Getopt-Long;unpack=0"
 SRC_URI[aarch64_perl-Getopt-Long.sha256sum] = "0818ae10c8f3644563f58b19e11a50113fbb030a63134a3751cec0c4bd87e28b"
 
 RDEPENDS:perl-Getopt-Long = " \

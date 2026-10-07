@@ -24,12 +24,14 @@ SRC_URI[x86_64_v2_gpgme.sha256sum] = "d76f49b03971411cffd4c42baa5af3ea7e1d55da67
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gpgme-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gpgme-devel;unpack=0"
 SRC_URI[x86_64_v2_gpgme-devel.sha256sum] = "d2befd24f0b77d134e7dee8941c8b58286adec7370ea049561ac6164e9537fb1"
+RPROVIDES:gpgme-devel:append:x86_64_v2 = " virtual/pkgconfig_gpgme_ virtual/pkgconfig_gpgme__ge_1.12.0 virtual/pkgconfig_gpgme__ge_1.8.0"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/gpgmepp-1.23.2-6.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gpgmepp;unpack=0"
 SRC_URI[x86_64_v2_gpgmepp.sha256sum] = "3545284869b3f2cac47785c1b589067256fb5515238676378eb87ab4bfe0f26b"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/gpgmepp-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_gpgmepp-devel;unpack=0"
 SRC_URI[x86_64_v2_gpgmepp-devel.sha256sum] = "8fedcc09c9f2b414637969372ba1f05247bfe2da3e7605433009861ae197599a"
+RPROVIDES:gpgmepp-devel:append:x86_64_v2 = " virtual/cmake_Gpgmepp_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/python3-gpg-1.23.2-6.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_python3-gpg;unpack=0"
 SRC_URI[x86_64_v2_python3-gpg.sha256sum] = "2e5c4afa35ea573972349ebfd306275ad7d08103c9995e95ffaa730daabe6ad9"
@@ -42,18 +44,21 @@ SRC_URI[x86_64_v2_qgpgme-qt6.sha256sum] = "2db8b3772055e3d5e15151b6b31f8074cefa5
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/qgpgme-qt6-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;name=x86_64_v2_qgpgme-qt6-devel;unpack=0"
 SRC_URI[x86_64_v2_qgpgme-qt6-devel.sha256sum] = "710cce68af3aebb088af502b9af8223b4669c129fd6f5cb9cc744530c4b716f4"
+RPROVIDES:qgpgme-qt6-devel:append:x86_64_v2 = " virtual/cmake_QGpgmeQt6_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/gpgme-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_gpgme;unpack=0"
 SRC_URI[aarch64_gpgme.sha256sum] = "74c55c153c0ab2aac64de3facbe213733c554fff183c107824c554b946213e98"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gpgme-devel-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_gpgme-devel;unpack=0"
 SRC_URI[aarch64_gpgme-devel.sha256sum] = "32f325d37a866a1b8c96a4c57c6ff7921b34c01a87aa8a80f7588e3383743fd3"
+RPROVIDES:gpgme-devel:append:aarch64 = " virtual/pkgconfig_gpgme_ virtual/pkgconfig_gpgme__ge_1.12.0 virtual/pkgconfig_gpgme__ge_1.8.0"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/gpgmepp-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_gpgmepp;unpack=0"
 SRC_URI[aarch64_gpgmepp.sha256sum] = "baea46848b049273cf7e84c120ed7640f05469f44e7eda66bd2b19e76d054b55"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/gpgmepp-devel-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_gpgmepp-devel;unpack=0"
 SRC_URI[aarch64_gpgmepp-devel.sha256sum] = "cc35e4714f12c7b1ddcd8ae9b3eb45009ca22fa6321c45d4e2789796137b1942"
+RPROVIDES:gpgmepp-devel:append:aarch64 = " virtual/cmake_Gpgmepp_"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/python3-gpg-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_python3-gpg;unpack=0"
 SRC_URI[aarch64_python3-gpg.sha256sum] = "97e17d5f32f8a8944cef0fd2c16967272a78a23c63304e7459adaa414e8571b1"
@@ -66,6 +71,7 @@ SRC_URI[aarch64_qgpgme-qt6.sha256sum] = "403c77843a02cecdcb5e940d381482b6bcaf494
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/qgpgme-qt6-devel-1.23.2-6.el10.alma.1.aarch64.rpm;name=aarch64_qgpgme-qt6-devel;unpack=0"
 SRC_URI[aarch64_qgpgme-qt6-devel.sha256sum] = "173b9c6ee8cccf45a6ab66011bea7e089b530e6a2b36db03f9c84f90d9f215dd"
+RPROVIDES:qgpgme-qt6-devel:append:aarch64 = " virtual/cmake_QGpgmeQt6_"
 
 RDEPENDS:gpgme = " \
  glibc \

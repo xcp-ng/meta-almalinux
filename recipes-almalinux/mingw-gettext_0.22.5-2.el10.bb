@@ -5,18 +5,19 @@ inherit dnf-bridge
 PN = "mingw-gettext"
 PV = "0.22.5"
 PR = "2.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  mingw32-gettext \
  mingw32-gettext-static \
  mingw64-gettext \
  mingw64-gettext-static \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/mingw-gettext-0.22.5-2.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "0ce35be21b7411f2e466a5b3927200a6e67b2ecf6c7a7bd8502ad4ce27fe9197"
+
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - mingw32-gettext: mingw32(libstdc++-6.dll)
+# - mingw64-gettext: mingw64(libstdc++-6.dll)
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw32-gettext-0.22.5-2.el10.noarch.rpm;name=x86_64_v2_mingw32-gettext;unpack=0"
 SRC_URI[x86_64_v2_mingw32-gettext.sha256sum] = "e9f5ee7c4d5aeca440b4f5c22ed3483cb32ded79446ef9115a972d52e7c5683b"
@@ -30,7 +31,19 @@ SRC_URI[x86_64_v2_mingw64-gettext.sha256sum] = "8c5702b0564d39add67758de6038693e
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/mingw64-gettext-static-0.22.5-2.el10.noarch.rpm;name=x86_64_v2_mingw64-gettext-static;unpack=0"
 SRC_URI[x86_64_v2_mingw64-gettext-static.sha256sum] = "2828eadba7ed7d6fc8edb2b4853371beb951ebe1172d95ec5480bfb5880b8313"
 
-RDEPENDS:mingw32-gettext = " \
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-gettext-0.22.5-2.el10.noarch.rpm;name=aarch64_mingw32-gettext;unpack=0"
+SRC_URI[aarch64_mingw32-gettext.sha256sum] = "e9f5ee7c4d5aeca440b4f5c22ed3483cb32ded79446ef9115a972d52e7c5683b"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw32-gettext-static-0.22.5-2.el10.noarch.rpm;name=aarch64_mingw32-gettext-static;unpack=0"
+SRC_URI[aarch64_mingw32-gettext-static.sha256sum] = "0d5b6173f9f9494c0162c2282740f1fef0f4ebbc65aa9edf1b587d51291a38a3"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-gettext-0.22.5-2.el10.noarch.rpm;name=aarch64_mingw64-gettext;unpack=0"
+SRC_URI[aarch64_mingw64-gettext.sha256sum] = "8c5702b0564d39add67758de6038693e9846cae844e183cc3f68b31b7b2ab1f6"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/mingw64-gettext-static-0.22.5-2.el10.noarch.rpm;name=aarch64_mingw64-gettext-static;unpack=0"
+SRC_URI[aarch64_mingw64-gettext-static.sha256sum] = "2828eadba7ed7d6fc8edb2b4853371beb951ebe1172d95ec5480bfb5880b8313"
+
+RDEPENDS:mingw32-gettext:x86_64_v2 = " \
  bash \
  mingw32-crt \
  mingw32-filesystem \
@@ -38,18 +51,33 @@ RDEPENDS:mingw32-gettext = " \
  mingw32-libstdc++ \
  mingw32-termcap \
  mingw32-win-iconv \
- "
+"
+RDEPENDS:mingw32-gettext:aarch64 = " \
+ bash \
+ mingw32-crt \
+ mingw32-filesystem \
+ mingw32-libgcc \
+ mingw32-termcap \
+ mingw32-win-iconv \
+"
 RDEPENDS:mingw32-gettext-static = " \
  mingw32-gettext \
  "
-RDEPENDS:mingw64-gettext = " \
+RDEPENDS:mingw64-gettext:x86_64_v2 = " \
  bash \
  mingw64-crt \
  mingw64-filesystem \
  mingw64-libstdc++ \
  mingw64-termcap \
  mingw64-win-iconv \
- "
+"
+RDEPENDS:mingw64-gettext:aarch64 = " \
+ bash \
+ mingw64-crt \
+ mingw64-filesystem \
+ mingw64-termcap \
+ mingw64-win-iconv \
+"
 RDEPENDS:mingw64-gettext-static = " \
  mingw64-gettext \
  "

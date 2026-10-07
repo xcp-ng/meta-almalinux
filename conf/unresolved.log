@@ -5,16 +5,17 @@ For arch x86_64_v2:
 (kernel-64k-devel-matched if kernel-64k-core)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
 (kernel-rt-devel if kernel-rt-core)
+(python3-libdnf5 >= 5.2.0 if python3-libdnf5)
 (python3.12dist(semantic-version) < 3~~ with python3.12dist(semantic-version) >= 2.8.2)
 (python3.12dist(semantic-version) >= 2.10 with python3.12dist(semantic-version) < 2.11)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 (python3.14-wheel-wheel if python3.14-setuptools-wheel < 71)
 (sway >= 1.6 if sway)
-SDL2-devel(x86-64)
 augeas
 augeas-libs
 augeas-libs >= 1.12.1-0
 augeas-libs(x86-64) >= 1.7.0
+clang = 18.1.8-1.el10.alma.1
 geos
 golang(github.com/alecthomas/units)
 golang(github.com/d2g/dhcp4)
@@ -30,21 +31,21 @@ golang(gopkg.in/stack.v0)
 golang(gopkg.in/tomb.v1)
 golang(gopkg.in/tomb.v2)
 golang(rsc.io/qr)
-libLLVM.so.20.0git()(64bit)
-libLLVM.so.20.0git(LLVM_20.0)(64bit)
-libSciTokens.so.0()(64bit)
-libclang-cpp.so.20.0git()(64bit)
-libclang-cpp.so.20.0git(LLVM_20.0)(64bit)
+insights-core >= 3.6.7
+libXrdCl.so.3()(64bit)
+libXrdPosix.so.3()(64bit)
+libclang.so.21.1()(64bit)
+libclang.so.21.1(LLVM_13)(64bit)
 libff.so.0.0.0()(64bit)
 libgeos.so.3.13.1()(64bit)
 libgeos_c.so.1()(64bit)
-libgps.so.31()(64bit)
 libnutclient.so.2()(64bit)
 libnutclientstub.so.1()(64bit)
 libnutscan.so.1()(64bit)
 libpystring.so.1()(64bit)
 libubloxcfg.so.0.0.0()(64bit)
 libupsclient.so.6()(64bit)
+maven-jdk-binding
 nut-client = 2.8.2.1-0.el10_1.1.git20240703pr2505.alma_altarch.1.git20240703pr2505
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
 ocaml(CamlinternalOO) = bf3206c1e533a97ee4e00a76bfe1dae6
@@ -69,10 +70,10 @@ ocamlx(Stdlib__Array) = b3215f99afe054938b4b66df456093cb
 ocamlx(Stdlib__Bigarray) = 2fb6f37865dd77a707635669254911e1
 ocamlx(Stdlib__Callback) = bafc96ea60f2aa399fe753ac0e40f764
 ocamlx(Stdlib__Gc) = 197914694cd716338b4da966236687f4
-pkgconfig(sdl2)
-pkgconfig(sdl2) >= 2.0.10
-pkgconfig(sdl2) >= 2.0.9
+pipewire-libs(x86-64) = 1.4.11-1.el10
+python3.12dist(nh3) >= 0.2.14
 sshpass
+tmux
 ubloxcfg >= 1.16-1.20260223git499048b
 
 
@@ -80,15 +81,27 @@ For arch aarch64:
 (fedora-release-common >= 38-0.23 if fedora-release-common)
 (kernel-rt-debug-devel if kernel-rt-debug-core)
 (kernel-rt-devel if kernel-rt-core)
+(python3-libdnf5 >= 5.2.0 if python3-libdnf5)
 (python3.13-wheel-wheel if python3.13-setuptools-wheel < 71)
 (python3.14-wheel-wheel if python3.14-setuptools-wheel < 71)
 (sway >= 1.6 if sway)
 (syslinux if (filesystem.x86_64 or filesystem.i686))
-SDL2-devel(aarch-64)
 augeas
 augeas-libs
 augeas-libs >= 1.12.1-0
 augeas-libs(aarch-64) >= 1.7.0
+clang = 18.1.8-1.el10.alma.1
+graphviz
+insights-core >= 3.6.7
+libcap
+libcap(aarch-64)
+libcap-devel
+libcap-devel(aarch-64)
+libcap.so.2()(64bit)
+libcdt.so.5()(64bit)
+libcgraph.so.6()(64bit)
+libgvc.so.6()(64bit)
+maven-jdk-binding
 mingw32(libstdc++-6.dll)
 mingw64(libstdc++-6.dll)
 ocaml(CamlinternalFormatBasics) = 2ef2d91ced81f6c72f852bab8ab406e0
@@ -114,9 +127,11 @@ ocamlx(Stdlib__Array) = b3215f99afe054938b4b66df456093cb
 ocamlx(Stdlib__Bigarray) = 2fb6f37865dd77a707635669254911e1
 ocamlx(Stdlib__Callback) = bafc96ea60f2aa399fe753ac0e40f764
 ocamlx(Stdlib__Gc) = 197914694cd716338b4da966236687f4
-pkgconfig(sdl2)
-pkgconfig(sdl2) >= 2.0.10
-pkgconfig(sdl2) >= 2.0.9
+pipewire-libs(aarch-64) = 1.4.11-1.el10
+pkgconfig(libcap)
+pkgconfig(libgvc)
 python3.12dist(archspec) >= 0.2.3
-virt-v2v = 1:2.10.0-23.el10_2
+syslinux
+tmux
+virt-v2v = 1:2.13.6-1.el10
 

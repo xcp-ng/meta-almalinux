@@ -10,13 +10,13 @@ PACKAGES = " \
  perl-File-Temp \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-File-Temp-0.231.100-512.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-File-Temp-0.231.100-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "549d48bda88a3b10e59bd28099a5c54edd04165db53f8e0805cc01a061bea5ea"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm;name=x86_64_v2_perl-File-Temp;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm;name=x86_64_v2_perl-File-Temp;unpack=0"
 SRC_URI[x86_64_v2_perl-File-Temp.sha256sum] = "f75fdad502e0d6efe61c5831dcf11f1fea523e167ccba431eb05d0600365722f"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm;name=aarch64_perl-File-Temp;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm;name=aarch64_perl-File-Temp;unpack=0"
 SRC_URI[aarch64_perl-File-Temp.sha256sum] = "f75fdad502e0d6efe61c5831dcf11f1fea523e167ccba431eb05d0600365722f"
 
 RDEPENDS:perl-File-Temp = " \

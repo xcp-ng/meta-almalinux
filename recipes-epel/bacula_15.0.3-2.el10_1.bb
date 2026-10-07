@@ -23,6 +23,10 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/b/bacula-15.0.3-2.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "49a7ec62c2be7c7bfede5ba3871cb89ea74b83a95d194c3584b8c2672d544388"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - bacula-libs: libcap.so.2()(64bit)
+# - bacula-storage: libcap.so.2()(64bit)
+
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/bacula-client-15.0.3-2.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_bacula-client;unpack=0"
 SRC_URI[x86_64_v2_bacula-client.sha256sum] = "39e939b507682ae334c0f37ceb4b5a1b0e4234277ce56de560b5c9c23d994271"
 
@@ -150,14 +154,21 @@ RDEPENDS:bacula-director = " \
  python3 \
  systemd \
  "
-RDEPENDS:bacula-libs = " \
+RDEPENDS:bacula-libs:x86_64_v2 = " \
  glibc \
  libcap \
  libgcc \
  libstdc++ \
  openssl-libs \
  zlib-ng-compat \
- "
+"
+RDEPENDS:bacula-libs:aarch64 = " \
+ glibc \
+ libgcc \
+ libstdc++ \
+ openssl-libs \
+ zlib-ng-compat \
+"
 RDEPENDS:bacula-libs-sql = " \
  bash \
  glibc \
@@ -175,7 +186,7 @@ RDEPENDS:bacula-logwatch = " \
  perl-interpreter \
  perl-libs \
  "
-RDEPENDS:bacula-storage = " \
+RDEPENDS:bacula-storage:x86_64_v2 = " \
  bacula-common \
  bacula-libs \
  bacula-libs-sql \
@@ -191,7 +202,23 @@ RDEPENDS:bacula-storage = " \
  sdparm \
  systemd \
  zlib-ng-compat \
- "
+"
+RDEPENDS:bacula-storage:aarch64 = " \
+ bacula-common \
+ bacula-libs \
+ bacula-libs-sql \
+ bash \
+ glibc \
+ libgcc \
+ libstdc++ \
+ libzstd \
+ lzo \
+ mt-st \
+ mtx \
+ sdparm \
+ systemd \
+ zlib-ng-compat \
+"
 RDEPENDS:bacula-traymonitor = " \
  bacula-libs \
  dejavu-lgc-sans-fonts \

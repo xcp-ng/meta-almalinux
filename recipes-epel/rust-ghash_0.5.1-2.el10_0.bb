@@ -46,7 +46,7 @@ RDEPENDS:rust-ghash+default-devel = " \
 RDEPENDS:rust-ghash+std-devel = " \
  cargo \
  rust-ghash-devel \
- rust-polyval+std-devel \
+ rust-polyval0.6+std-devel \
  "
 RDEPENDS:rust-ghash+zeroize-devel = " \
  cargo \
@@ -57,5 +57,5 @@ RDEPENDS:rust-ghash-devel = " \
  cargo \
  rust \
  rust-opaque-debug+default-devel \
- rust-polyval+default-devel \
+ rust-polyval0.6+default-devel \
  "

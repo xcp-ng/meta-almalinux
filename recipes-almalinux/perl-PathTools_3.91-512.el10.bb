@@ -9,13 +9,13 @@ PACKAGES = " \
  perl-PathTools \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-PathTools-3.91-512.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-PathTools-3.91-512.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a88e6c4296928f41deacae4678e7b7c481e3a11392c3196e027273775e1633ca"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-PathTools-3.91-512.el10.x86_64_v2.rpm;name=x86_64_v2_perl-PathTools;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-PathTools-3.91-512.el10.x86_64_v2.rpm;name=x86_64_v2_perl-PathTools;unpack=0"
 SRC_URI[x86_64_v2_perl-PathTools.sha256sum] = "7b5d53498f02c865a0860814c45f7fb9806bebd6aba1f0922315d7e233a72924"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-PathTools-3.91-512.el10.aarch64.rpm;name=aarch64_perl-PathTools;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-PathTools-3.91-512.el10.aarch64.rpm;name=aarch64_perl-PathTools;unpack=0"
 SRC_URI[aarch64_perl-PathTools.sha256sum] = "4f96faa1b89613df3f31a70c23d6db5abd738767ebaa80cfa879b8b2b196f8c2"
 
 RDEPENDS:perl-PathTools = " \

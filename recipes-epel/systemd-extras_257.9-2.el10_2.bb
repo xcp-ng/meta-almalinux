@@ -14,6 +14,10 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/s/systemd-extras-257.9-2.el10_2.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "a2a1bd15379c844e6eeb086e8712ea3acc8cefdf4e32130f8021803d2548d3ac"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - systemd-networkd: libcap.so.2()(64bit)
+# - systemd-timesyncd: libcap.so.2()(64bit)
+
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/systemd-networkd-257.9-2.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_systemd-networkd;unpack=0"
 SRC_URI[x86_64_v2_systemd-networkd.sha256sum] = "1101831c3764b2f433435a5eee3925a33676bf884d97ec844e9a41151d99e15f"
 
@@ -32,7 +36,7 @@ SRC_URI[aarch64_systemd-networkd-defaults.sha256sum] = "32183895fa2b6fa28467defb
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/s/systemd-timesyncd-257.9-2.el10_2.aarch64.rpm;name=aarch64_systemd-timesyncd;unpack=0"
 SRC_URI[aarch64_systemd-timesyncd.sha256sum] = "98739cdb18d713b069ce8ce3807f2b76e2eb752517cef09c4ae929ebaa8a24ab"
 
-RDEPENDS:systemd-networkd = " \
+RDEPENDS:systemd-networkd:x86_64_v2 = " \
  bash \
  dbus \
  glibc \
@@ -43,11 +47,22 @@ RDEPENDS:systemd-networkd = " \
  shadow-utils \
  systemd \
  virtual/util-linux-core_or_util-linux \
- "
+"
+RDEPENDS:systemd-networkd:aarch64 = " \
+ bash \
+ dbus \
+ glibc \
+ libgcc \
+ libmount \
+ libselinux \
+ shadow-utils \
+ systemd \
+ virtual/util-linux-core_or_util-linux \
+"
 RDEPENDS:systemd-networkd-defaults = " \
  systemd-networkd \
  "
-RDEPENDS:systemd-timesyncd = " \
+RDEPENDS:systemd-timesyncd:x86_64_v2 = " \
  bash \
  dbus \
  glibc \
@@ -57,4 +72,14 @@ RDEPENDS:systemd-timesyncd = " \
  shadow-utils \
  systemd \
  virtual/util-linux-core_or_util-linux \
- "
+"
+RDEPENDS:systemd-timesyncd:aarch64 = " \
+ bash \
+ dbus \
+ glibc \
+ libgcc \
+ libselinux \
+ shadow-utils \
+ systemd \
+ virtual/util-linux-core_or_util-linux \
+"

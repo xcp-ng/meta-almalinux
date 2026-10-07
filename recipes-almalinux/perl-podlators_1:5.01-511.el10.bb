@@ -10,13 +10,13 @@ PACKAGES = " \
  perl-podlators \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-podlators-5.01-511.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-podlators-5.01-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "65f6bb339c84b44dbd492e3d2639c703b71dbb1df23b5f44c6e795f755f47f87"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm;name=x86_64_v2_perl-podlators;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm;name=x86_64_v2_perl-podlators;unpack=0"
 SRC_URI[x86_64_v2_perl-podlators.sha256sum] = "0a91f03c8a56457bb7d9a11eebc0a6cbe714d2ba3db9a5c7b38e8895d59934a0"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm;name=aarch64_perl-podlators;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm;name=aarch64_perl-podlators;unpack=0"
 SRC_URI[aarch64_perl-podlators.sha256sum] = "0a91f03c8a56457bb7d9a11eebc0a6cbe714d2ba3db9a5c7b38e8895d59934a0"
 
 RDEPENDS:perl-podlators = " \

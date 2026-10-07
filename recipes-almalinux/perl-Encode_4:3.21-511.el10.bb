@@ -12,10 +12,10 @@ PACKAGES = " \
  perl-encoding \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Encode-3.21-511.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Encode-3.21-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "8593d7054789a886da268d6319ac0b394ef5b326315b15e82a3cf05132f72d7a"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Encode-3.21-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Encode;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Encode-3.21-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Encode;unpack=0"
 SRC_URI[x86_64_v2_perl-Encode.sha256sum] = "26b5b664c8f2e479f9061afeebbb0b17e5551c59db35ce94145abcf918c03f2d"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Encode-devel-3.21-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-Encode-devel;unpack=0"
@@ -24,7 +24,7 @@ SRC_URI[x86_64_v2_perl-Encode-devel.sha256sum] = "94936f2e97865102660c4bb2b7ec1d
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-encoding-3.00-511.el10.x86_64_v2.rpm;name=x86_64_v2_perl-encoding;unpack=0"
 SRC_URI[x86_64_v2_perl-encoding.sha256sum] = "7ba5f0dd54ed6788920d9c445fb0c338aa91b5d652d6a82405d98a20728e88d2"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Encode-3.21-511.el10.aarch64.rpm;name=aarch64_perl-Encode;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Encode-3.21-511.el10.aarch64.rpm;name=aarch64_perl-Encode;unpack=0"
 SRC_URI[aarch64_perl-Encode.sha256sum] = "17787f520927add0d2c90dc14022ff1b2ad18199377e7ac2e7d13149cc9abeae"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Encode-devel-3.21-511.el10.aarch64.rpm;name=aarch64_perl-Encode-devel;unpack=0"

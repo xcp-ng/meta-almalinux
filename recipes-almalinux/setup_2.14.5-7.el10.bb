@@ -21,5 +21,5 @@ SRC_URI[aarch64_setup.sha256sum] = "4065c6f500ac20468530177b1a6012145c490c018a5d
 RPROVIDES:setup:append:aarch64 = " virtual/group_dialout_ virtual/group_tty_"
 
 RDEPENDS:setup = " \
- almalinux-release \
+ almalinux-kitten-release \
  "

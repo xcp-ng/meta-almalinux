@@ -15,13 +15,13 @@ SRC_URI = "${EPELSRC_MIRROR}/Packages/r/rust-pretty-bytes-0.2.2-5.el10_2.src.rpm
 SRC_URI[src.sha256sum] = "3dee0cb4a3e582fc669674e651616c1c42eb0b767ed9b72ad22535ca91e0a88a"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/pretty-bytes-0.2.2-5.el10_2.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_pretty-bytes;unpack=0"
-SRC_URI[x86_64_v2_pretty-bytes.sha256sum] = "b6f61dca9d432dfff2a56070c4095eb09d88c8e7c6300cec574949ba268b967a"
+SRC_URI[x86_64_v2_pretty-bytes.sha256sum] = "eef6567bfa5d279ff7b0c6a13198fea91934d2637a6c018c7dcd9f48420cb9ea"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pretty-bytes+default-devel-0.2.2-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pretty-bytes+default-devel;unpack=0"
-SRC_URI[x86_64_v2_rust-pretty-bytes+default-devel.sha256sum] = "1b2df50b836c85bb0434bfb19185139cb98988279e9354e8c62a91bf92b4893c"
+SRC_URI[x86_64_v2_rust-pretty-bytes+default-devel.sha256sum] = "05c3cb5bfd092bcc4f3be3e3c7c6cb57138f8bbf0c0bc096a11c34a0888d1261"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-pretty-bytes-devel-0.2.2-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-pretty-bytes-devel;unpack=0"
-SRC_URI[x86_64_v2_rust-pretty-bytes-devel.sha256sum] = "9c4fbf9f3d09302c20c5038d135b7c55ac361d2cc0ad486eaa6fcb39cc0d98fd"
+SRC_URI[x86_64_v2_rust-pretty-bytes-devel.sha256sum] = "9b68631d35e35519826e06bfce778e43f2840995a65371241375adda4b38ba51"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/p/pretty-bytes-0.2.2-5.el10_2.aarch64.rpm;name=aarch64_pretty-bytes;unpack=0"
 SRC_URI[aarch64_pretty-bytes.sha256sum] = "fe1926484fb5b0d893399f9ccb9a907d8531ff7c2d001029b388d349e666ae32"

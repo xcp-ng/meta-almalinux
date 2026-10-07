@@ -9,13 +9,13 @@ PACKAGES = " \
  perl-Carp \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Carp-1.54-511.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Carp-1.54-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "3ef61e0d1fbf76f2d07758a52d6bfe2222e47dbf6f9beec4879b7041468b331a"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Carp-1.54-511.el10.noarch.rpm;name=x86_64_v2_perl-Carp;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Carp-1.54-511.el10.noarch.rpm;name=x86_64_v2_perl-Carp;unpack=0"
 SRC_URI[x86_64_v2_perl-Carp.sha256sum] = "f8ba8f4202ecfc9efb5bd7040d44690e5ad7f3bfe284325a4b8b65bdb26d5e77"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Carp-1.54-511.el10.noarch.rpm;name=aarch64_perl-Carp;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Carp-1.54-511.el10.noarch.rpm;name=aarch64_perl-Carp;unpack=0"
 SRC_URI[aarch64_perl-Carp.sha256sum] = "f8ba8f4202ecfc9efb5bd7040d44690e5ad7f3bfe284325a4b8b65bdb26d5e77"
 
 RDEPENDS:perl-Carp = " \

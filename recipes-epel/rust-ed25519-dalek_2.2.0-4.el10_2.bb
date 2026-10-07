@@ -129,7 +129,7 @@ RDEPENDS:rust-ed25519-dalek+alloc-devel = " \
 RDEPENDS:rust-ed25519-dalek+asm-devel = " \
  cargo \
  rust-ed25519-dalek-devel \
- rust-sha2+asm-devel \
+ rust-sha2_0.10+asm-devel \
  "
 RDEPENDS:rust-ed25519-dalek+default-devel = " \
  cargo \
@@ -193,7 +193,7 @@ RDEPENDS:rust-ed25519-dalek+std-devel = " \
  rust-ed25519-dalek-devel \
  rust-serde+std-devel \
  rust-serde-devel \
- rust-sha2+std-devel \
+ rust-sha2_0.10+std-devel \
  "
 RDEPENDS:rust-ed25519-dalek+zeroize-devel = " \
  cargo \
@@ -207,6 +207,6 @@ RDEPENDS:rust-ed25519-dalek-devel = " \
  rust-curve25519-dalek+digest-devel \
  rust-curve25519-dalek-devel \
  rust-ed25519-devel \
- rust-sha2-devel \
+ rust-sha2_0.10-devel \
  rust-subtle-devel \
  "

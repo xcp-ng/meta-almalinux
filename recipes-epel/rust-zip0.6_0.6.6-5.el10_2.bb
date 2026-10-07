@@ -35,7 +35,7 @@ SRC_URI[x86_64_v2_rust-zip0.6+aes-devel.sha256sum] = "af0fde5f8270f5fa6612de960c
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-zip0.6+bzip2-devel-0.6.6-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-zip0.6+bzip2-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-zip0.6+bzip2-devel.sha256sum] = "1e18861385c08f4b54f7d6a377465c0da330443397e01575ebbe4a29a5e681fa"
-RPROVIDES:rust-zip0.6+bzip2-devel:append:x86_64_v2 = " virtual/crate_zip/bzip2__ge_0.6.0_with_crate_zip/bzip2__lt_8.0.0~"
+RPROVIDES:rust-zip0.6+bzip2-devel:append:x86_64_v2 = " virtual/crate_zip/bzip2__ge_0.6.0_with_crate_zip/bzip2__lt_9.0.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-zip0.6+constant_time_eq-devel-0.6.6-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-zip0.6+constant_time_eq-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-zip0.6+constant_time_eq-devel.sha256sum] = "212cb560a21d8964ad345c631c165a309cdddcd7f1435f20f476503b5282cc1a"
@@ -45,7 +45,7 @@ SRC_URI[x86_64_v2_rust-zip0.6+default-devel.sha256sum] = "5c24426e3b9965a2143879
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-zip0.6+deflate-devel-0.6.6-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-zip0.6+deflate-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-zip0.6+deflate-devel.sha256sum] = "b29ba6890a1fee5ddc92e4d01a3410ecab092cb2dff81e125ee9aed42a9284d6"
-RPROVIDES:rust-zip0.6+deflate-devel:append:x86_64_v2 = " virtual/crate_zip/deflate__ge_0.6.0_with_crate_zip/deflate__lt_8.0.0~"
+RPROVIDES:rust-zip0.6+deflate-devel:append:x86_64_v2 = " virtual/crate_zip/deflate__ge_0.6.0_with_crate_zip/deflate__lt_9.0.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-zip0.6+deflate-miniz-devel-0.6.6-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-zip0.6+deflate-miniz-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-zip0.6+deflate-miniz-devel.sha256sum] = "a8379ef00e50e3573e5e393c1d9c694ec8726455e1291a9fc2670dcb2d322cf0"
@@ -76,7 +76,7 @@ SRC_URI[x86_64_v2_rust-zip0.6+zstd-devel.sha256sum] = "e847ff737d5ea9deddd37d808
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-zip0.6-devel-0.6.6-5.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-zip0.6-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-zip0.6-devel.sha256sum] = "289935cd066c50da0177a03f2dcc5383726d6aa7c4b432a61be18827ec244912"
-RPROVIDES:rust-zip0.6-devel:append:x86_64_v2 = " virtual/crate_zip__ge_0.6.0_with_crate_zip__lt_8.0.0~"
+RPROVIDES:rust-zip0.6-devel:append:x86_64_v2 = " virtual/crate_zip__ge_0.6.0_with_crate_zip__lt_9.0.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6+aes-crypto-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6+aes-crypto-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6+aes-crypto-devel.sha256sum] = "b65fd1acc61644c3282846cdbf5a2b0ad6c1210b86f02dbe03b41f4ab6b26e5b"
@@ -86,7 +86,7 @@ SRC_URI[aarch64_rust-zip0.6+aes-devel.sha256sum] = "a4334903d64f58b5ce34f46c3c07
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6+bzip2-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6+bzip2-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6+bzip2-devel.sha256sum] = "7b0b053690d9dae8c58c3383cbc02970c181b7c20bf7d8260b4f4e96b3eabe51"
-RPROVIDES:rust-zip0.6+bzip2-devel:append:aarch64 = " virtual/crate_zip/bzip2__ge_0.6.0_with_crate_zip/bzip2__lt_8.0.0~"
+RPROVIDES:rust-zip0.6+bzip2-devel:append:aarch64 = " virtual/crate_zip/bzip2__ge_0.6.0_with_crate_zip/bzip2__lt_9.0.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6+constant_time_eq-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6+constant_time_eq-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6+constant_time_eq-devel.sha256sum] = "0afc5c1a290021878778e120f2536c01837108233942b0754fe1f275b5e59fe3"
@@ -96,7 +96,7 @@ SRC_URI[aarch64_rust-zip0.6+default-devel.sha256sum] = "d03fc92375f0bc4312f99f3b
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6+deflate-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6+deflate-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6+deflate-devel.sha256sum] = "7632b29b9ed047fab17f61536ce8780993dc25d2be8ea877ec6f12811dc469f3"
-RPROVIDES:rust-zip0.6+deflate-devel:append:aarch64 = " virtual/crate_zip/deflate__ge_0.6.0_with_crate_zip/deflate__lt_8.0.0~"
+RPROVIDES:rust-zip0.6+deflate-devel:append:aarch64 = " virtual/crate_zip/deflate__ge_0.6.0_with_crate_zip/deflate__lt_9.0.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6+deflate-miniz-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6+deflate-miniz-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6+deflate-miniz-devel.sha256sum] = "550b5253e28ba4d9f8683ef11d5fa85b24b5b1c7f89af0efe4c9e0448fbe00d1"
@@ -127,7 +127,7 @@ SRC_URI[aarch64_rust-zip0.6+zstd-devel.sha256sum] = "5bf563c420ca4af004761e94cca
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-zip0.6-devel-0.6.6-5.el10_2.noarch.rpm;name=aarch64_rust-zip0.6-devel;unpack=0"
 SRC_URI[aarch64_rust-zip0.6-devel.sha256sum] = "ced5ce6e1597988bc0f7e74aa7dc0e2dab52e002e48d1aaf3ae860b2a83cca18"
-RPROVIDES:rust-zip0.6-devel:append:aarch64 = " virtual/crate_zip__ge_0.6.0_with_crate_zip__lt_8.0.0~"
+RPROVIDES:rust-zip0.6-devel:append:aarch64 = " virtual/crate_zip__ge_0.6.0_with_crate_zip__lt_9.0.0~"
 
 RDEPENDS:rust-zip0.6+aes-crypto-devel = " \
  cargo \
@@ -140,7 +140,7 @@ RDEPENDS:rust-zip0.6+aes-crypto-devel = " \
  "
 RDEPENDS:rust-zip0.6+aes-devel = " \
  cargo \
- rust-aes+default-devel \
+ rust-aes0.8+default-devel \
  rust-zip0.6-devel \
  "
 RDEPENDS:rust-zip0.6+bzip2-devel = " \
@@ -187,18 +187,18 @@ RDEPENDS:rust-zip0.6+flate2-devel = " \
  "
 RDEPENDS:rust-zip0.6+hmac-devel = " \
  cargo \
- rust-hmac+default-devel \
- rust-hmac+reset-devel \
+ rust-hmac0.12+default-devel \
+ rust-hmac0.12+reset-devel \
  rust-zip0.6-devel \
  "
 RDEPENDS:rust-zip0.6+pbkdf2-devel = " \
  cargo \
- rust-pbkdf2+default-devel \
+ rust-pbkdf2_0.12+default-devel \
  rust-zip0.6-devel \
  "
 RDEPENDS:rust-zip0.6+sha1-devel = " \
  cargo \
- rust-sha1+default-devel \
+ rust-sha1_0.10+default-devel \
  rust-zip0.6-devel \
  "
 RDEPENDS:rust-zip0.6+time-devel = " \

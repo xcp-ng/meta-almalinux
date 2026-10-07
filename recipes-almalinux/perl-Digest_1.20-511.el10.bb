@@ -9,13 +9,13 @@ PACKAGES = " \
  perl-Digest \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Digest-1.20-511.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Digest-1.20-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "7b598fe5fd0c63ef275d7b2f265ee735e699d7ffa9174364c332f88ca3dd8962"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm;name=x86_64_v2_perl-Digest;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm;name=x86_64_v2_perl-Digest;unpack=0"
 SRC_URI[x86_64_v2_perl-Digest.sha256sum] = "9f3f1c35ecaac233cd58aa91c4ab0426738d01ed848b2d324c8c313bf39b114b"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm;name=aarch64_perl-Digest;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm;name=aarch64_perl-Digest;unpack=0"
 SRC_URI[aarch64_perl-Digest.sha256sum] = "9f3f1c35ecaac233cd58aa91c4ab0426738d01ed848b2d324c8c313bf39b114b"
 
 RDEPENDS:perl-Digest = " \

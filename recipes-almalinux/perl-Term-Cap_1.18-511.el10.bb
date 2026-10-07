@@ -9,13 +9,13 @@ PACKAGES = " \
  perl-Term-Cap \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/perl-Term-Cap-1.18-511.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/perl-Term-Cap-1.18-511.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "d4a81029eb26e5c07dbbdd0308b984f26cb0e3f1ae96676c569009045e1399a0"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/perl-Term-Cap-1.18-511.el10.noarch.rpm;name=x86_64_v2_perl-Term-Cap;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/perl-Term-Cap-1.18-511.el10.noarch.rpm;name=x86_64_v2_perl-Term-Cap;unpack=0"
 SRC_URI[x86_64_v2_perl-Term-Cap.sha256sum] = "e6c0e01f8d0170d762de6f3d481c064186b35aafb2afefa8218708b637e4ecb6"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/perl-Term-Cap-1.18-511.el10.noarch.rpm;name=aarch64_perl-Term-Cap;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/aarch64/os/Packages/perl-Term-Cap-1.18-511.el10.noarch.rpm;name=aarch64_perl-Term-Cap;unpack=0"
 SRC_URI[aarch64_perl-Term-Cap.sha256sum] = "e6c0e01f8d0170d762de6f3d481c064186b35aafb2afefa8218708b637e4ecb6"
 
 RDEPENDS:perl-Term-Cap = " \

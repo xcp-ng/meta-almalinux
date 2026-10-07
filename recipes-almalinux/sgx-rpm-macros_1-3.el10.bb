@@ -5,18 +5,18 @@ inherit dnf-bridge
 PN = "sgx-rpm-macros"
 PV = "1"
 PR = "3.el10"
-PACKAGES:x86_64_v2 = " \
+PACKAGES = " \
  sgx-rpm-macros \
-"
-PACKAGES:aarch64 = " \
-  \
-"
+ "
 
 SRC_URI = "${ALMALINUXSRC_MIRROR}/CRB/Source/Packages/sgx-rpm-macros-1-3.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "9b8da1773a7f7ccac6d83b1e4b7494202297bcb9adbadb51128e9022a969114d"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/sgx-rpm-macros-1-3.el10.noarch.rpm;name=x86_64_v2_sgx-rpm-macros;unpack=0"
 SRC_URI[x86_64_v2_sgx-rpm-macros.sha256sum] = "baf1ce3eee85406679d94e9c9da16fdd033e87164c98903adaf0dca543fd21ac"
+
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/sgx-rpm-macros-1-3.el10.noarch.rpm;name=aarch64_sgx-rpm-macros;unpack=0"
+SRC_URI[aarch64_sgx-rpm-macros.sha256sum] = "baf1ce3eee85406679d94e9c9da16fdd033e87164c98903adaf0dca543fd21ac"
 
 RDEPENDS:sgx-rpm-macros = " \
  "

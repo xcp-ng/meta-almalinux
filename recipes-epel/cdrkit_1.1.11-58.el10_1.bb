@@ -17,6 +17,9 @@ PACKAGES = " \
 SRC_URI = "${EPELSRC_MIRROR}/Packages/c/cdrkit-1.1.11-58.el10_1.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "cdb3274a9204e2b36b6d34dd242fd7aec6a10c368d710588b6e208bd9ccc4540"
 
+## Requires (aarch64) that were seen as not satisfiable in original repo:
+# - wodim: libcap.so.2()(64bit)
+
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/dirsplit-1.1.11-58.el10_1.alma_altarch.x86_64_v2.rpm;name=x86_64_v2_dirsplit;unpack=0"
 SRC_URI[x86_64_v2_dirsplit.sha256sum] = "8a7b81c5cf5aeffe588a91ba168385bf7658833e83a44f9b0f395d04c0023522"
 
@@ -91,11 +94,18 @@ RDEPENDS:libusal = " \
 RDEPENDS:libusal-devel = " \
  libusal \
  "
-RDEPENDS:wodim = " \
+RDEPENDS:wodim:x86_64_v2 = " \
  alternatives \
  bash \
  glibc \
  libcap \
  libusal \
  virtual/coreutils \
- "
+"
+RDEPENDS:wodim:aarch64 = " \
+ alternatives \
+ bash \
+ glibc \
+ libusal \
+ virtual/coreutils \
+"

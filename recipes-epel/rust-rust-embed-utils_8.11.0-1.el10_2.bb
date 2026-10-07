@@ -66,6 +66,6 @@ RDEPENDS:rust-rust-embed-utils+include-exclude-devel = " \
  "
 RDEPENDS:rust-rust-embed-utils-devel = " \
  cargo \
- rust-sha2+default-devel \
+ rust-sha2_0.10+default-devel \
  rust-walkdir+default-devel \
  "

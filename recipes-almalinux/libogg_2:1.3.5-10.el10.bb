@@ -18,7 +18,7 @@ SRC_URI[src.sha256sum] = "4fbff4f3e764271be03d3bb5b8042858057b308485d9ba6a8001df
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libogg-1.3.5-10.el10.x86_64_v2.rpm;name=x86_64_v2_libogg;unpack=0"
 SRC_URI[x86_64_v2_libogg.sha256sum] = "f81cd4f1b93ff9163e6ffd541797c02e62defc8595b82cec96e714d9d9c7fddb"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/libogg-devel-1.3.5-10.el10.x86_64_v2.rpm;name=x86_64_v2_libogg-devel;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libogg-devel-1.3.5-10.el10.x86_64_v2.rpm;name=x86_64_v2_libogg-devel;unpack=0"
 SRC_URI[x86_64_v2_libogg-devel.sha256sum] = "20af54bbb0b7e2fdc384be8837c2cc090bfd807aa5648907b8034aa65a89490d"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/libogg-devel-docs-1.3.5-10.el10.noarch.rpm;name=x86_64_v2_libogg-devel-docs;unpack=0"
@@ -27,7 +27,7 @@ SRC_URI[x86_64_v2_libogg-devel-docs.sha256sum] = "2ec1e31c27e004ec51c94382b81029
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libogg-1.3.5-10.el10.aarch64.rpm;name=aarch64_libogg;unpack=0"
 SRC_URI[aarch64_libogg.sha256sum] = "0362597ed0dc67872dc538295cb7fcd890ce707d5c3d0893ff2f56b3ced92032"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/libogg-devel-1.3.5-10.el10.aarch64.rpm;name=aarch64_libogg-devel;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libogg-devel-1.3.5-10.el10.aarch64.rpm;name=aarch64_libogg-devel;unpack=0"
 SRC_URI[aarch64_libogg-devel.sha256sum] = "988c46eeaa35fa834c98ac951b198838cf665aa0f12946fdcc968e19ae4df9f5"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/libogg-devel-docs-1.3.5-10.el10.noarch.rpm;name=aarch64_libogg-devel-docs;unpack=0"

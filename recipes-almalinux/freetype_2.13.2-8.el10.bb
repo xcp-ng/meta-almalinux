@@ -11,7 +11,7 @@ PACKAGES = " \
  freetype-devel \
  "
 
-SRC_URI = "${ALMALINUXSRC_MIRROR}/AppStream/Source/Packages/freetype-2.13.2-8.el10.src.rpm;name=src;unpack=0"
+SRC_URI = "${ALMALINUXSRC_MIRROR}/BaseOS/Source/Packages/freetype-2.13.2-8.el10.src.rpm;name=src;unpack=0"
 SRC_URI[src.sha256sum] = "f46ec2dfa3d3a54142825d294e24a4d4dab79b7ae5447dfb248ce912e625699b"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/BaseOS/x86_64_v2/os/Packages/freetype-2.13.2-8.el10.x86_64_v2.rpm;name=x86_64_v2_freetype;unpack=0"

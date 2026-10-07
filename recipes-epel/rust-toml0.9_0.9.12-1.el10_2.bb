@@ -26,6 +26,7 @@ SRC_URI[x86_64_v2_rust-toml0.9+debug-devel.sha256sum] = "6bbfaf21878bf338afc9fb2
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.9+default-devel-0.9.12-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.9+default-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-toml0.9+default-devel.sha256sum] = "cc167607cc01568144ef6a5f550a31c9e517a704698cb55cfe52efab39fa1abb"
+RPROVIDES:rust-toml0.9+default-devel:append:x86_64_v2 = " virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 SRC_URI:append = " ${EPEL_ALTARCH_MIRROR}/x86_64_v2/Packages/rust-toml0.9+display-devel-0.9.12-1.el10_2.alma_altarch.noarch.rpm;name=x86_64_v2_rust-toml0.9+display-devel;unpack=0"
 SRC_URI[x86_64_v2_rust-toml0.9+display-devel.sha256sum] = "fe89ed878320eaf45d12fefa56c1880da9ceee1a906a4b563d2e5455b44c4b71"
@@ -56,6 +57,7 @@ SRC_URI[aarch64_rust-toml0.9+debug-devel.sha256sum] = "059b6a19390f798124d427fe0
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.9+default-devel-0.9.12-1.el10_2.noarch.rpm;name=aarch64_rust-toml0.9+default-devel;unpack=0"
 SRC_URI[aarch64_rust-toml0.9+default-devel.sha256sum] = "37805f74663cdecdc10b02fa17c779fbfbed8b422e46d317892746748766a27d"
+RPROVIDES:rust-toml0.9+default-devel:append:aarch64 = " virtual/crate_toml/default__ge_0.6.0_with_crate_toml/default__lt_2.0.0~"
 
 SRC_URI:append = " ${EPEL_MIRROR}/aarch64/Packages/r/rust-toml0.9+display-devel-0.9.12-1.el10_2.noarch.rpm;name=aarch64_rust-toml0.9+display-devel;unpack=0"
 SRC_URI[aarch64_rust-toml0.9+display-devel.sha256sum] = "31b2103922d9c650738e45b875916b3edcd93fce094890226a65fc1070bd8d55"
@@ -116,7 +118,7 @@ RDEPENDS:rust-toml0.9+parse-devel = " \
  rust-toml0.9-devel \
  rust-toml_parser+alloc-devel \
  rust-toml_parser-devel \
- rust-winnow-devel \
+ rust-winnow0.7-devel \
  "
 RDEPENDS:rust-toml0.9+preserve_order-devel = " \
  cargo \

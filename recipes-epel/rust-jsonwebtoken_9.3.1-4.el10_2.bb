@@ -54,7 +54,7 @@ RDEPENDS:rust-jsonwebtoken+default-devel = " \
 RDEPENDS:rust-jsonwebtoken+pem-devel = " \
  cargo \
  rust-jsonwebtoken-devel \
- rust-pem+default-devel \
+ rust-pem3+default-devel \
  "
 RDEPENDS:rust-jsonwebtoken+simple_asn1-devel = " \
  cargo \
@@ -70,7 +70,7 @@ RDEPENDS:rust-jsonwebtoken+use_pem-devel = " \
 RDEPENDS:rust-jsonwebtoken-devel = " \
  cargo \
  rust \
- rust-base64+default-devel \
+ rust-base64_0.22+default-devel \
  rust-ring+default-devel \
  rust-ring+std-devel \
  rust-serde+default-devel \

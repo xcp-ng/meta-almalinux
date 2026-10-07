@@ -142,8 +142,8 @@ RDEPENDS:rust-ecdsa+alloc-devel = " \
  rust-ecdsa-devel \
  rust-elliptic-curve+alloc-devel \
  rust-signature+alloc-devel \
- rust-spki+alloc-devel \
- rust-spki-devel \
+ rust-spki0.7+alloc-devel \
+ rust-spki0.7-devel \
  "
 RDEPENDS:rust-ecdsa+arithmetic-devel = " \
  cargo \
@@ -157,7 +157,7 @@ RDEPENDS:rust-ecdsa+default-devel = " \
  "
 RDEPENDS:rust-ecdsa+der-devel = " \
  cargo \
- rust-der+default-devel \
+ rust-der0.7+default-devel \
  rust-ecdsa-devel \
  "
 RDEPENDS:rust-ecdsa+dev-devel = " \
@@ -170,8 +170,8 @@ RDEPENDS:rust-ecdsa+dev-devel = " \
  "
 RDEPENDS:rust-ecdsa+digest-devel = " \
  cargo \
- rust-digest+oid-devel \
- rust-digest-devel \
+ rust-digest0.10+oid-devel \
+ rust-digest0.10-devel \
  rust-ecdsa-devel \
  rust-signature+digest-devel \
  "
@@ -206,14 +206,14 @@ RDEPENDS:rust-ecdsa+serde-devel = " \
 RDEPENDS:rust-ecdsa+serdect-devel = " \
  cargo \
  rust-ecdsa-devel \
- rust-serdect+alloc-devel \
- rust-serdect-devel \
+ rust-serdect0.2+alloc-devel \
+ rust-serdect0.2-devel \
  "
 RDEPENDS:rust-ecdsa+sha2-devel = " \
  cargo \
  rust-ecdsa-devel \
- rust-sha2+oid-devel \
- rust-sha2-devel \
+ rust-sha2_0.10+oid-devel \
+ rust-sha2_0.10-devel \
  "
 RDEPENDS:rust-ecdsa+signing-devel = " \
  cargo \
@@ -226,7 +226,7 @@ RDEPENDS:rust-ecdsa+signing-devel = " \
 RDEPENDS:rust-ecdsa+spki-devel = " \
  cargo \
  rust-ecdsa-devel \
- rust-spki-devel \
+ rust-spki0.7-devel \
  "
 RDEPENDS:rust-ecdsa+std-devel = " \
  cargo \

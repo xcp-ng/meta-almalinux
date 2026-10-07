@@ -17,7 +17,7 @@ SRC_URI[src.sha256sum] = "2b3cd63a3540fd8f305cc8ddb2bd6f91d72f2fab56f34380e7bc76
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/usbredir-0.13.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_usbredir;unpack=0"
 SRC_URI[x86_64_v2_usbredir.sha256sum] = "a27c978a7bc82e2d16aedf4d938d7e5fec253600e3d0f87831fabb718fdcfa72"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/usbredir-devel-0.13.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_usbredir-devel;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/x86_64_v2/os/Packages/usbredir-devel-0.13.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_usbredir-devel;unpack=0"
 SRC_URI[x86_64_v2_usbredir-devel.sha256sum] = "ad7bd0b2420a878deb3452ac231bc16e7a6f6db0173b32a5374e8d4257e01526"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/x86_64_v2/os/Packages/usbredir-tools-0.13.0-6.el10.x86_64_v2.rpm;name=x86_64_v2_usbredir-tools;unpack=0"
@@ -26,7 +26,7 @@ SRC_URI[x86_64_v2_usbredir-tools.sha256sum] = "7e22c484b0a20c56ca290d8160292c70c
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/usbredir-0.13.0-6.el10.aarch64.rpm;name=aarch64_usbredir;unpack=0"
 SRC_URI[aarch64_usbredir.sha256sum] = "5f8701a52cd9f6b9e9ff483e024e60c39168b821dfbf04abb0046cd4735c84b5"
 
-SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/usbredir-devel-0.13.0-6.el10.aarch64.rpm;name=aarch64_usbredir-devel;unpack=0"
+SRC_URI:append = " ${ALMALINUX_MIRROR}/CRB/aarch64/os/Packages/usbredir-devel-0.13.0-6.el10.aarch64.rpm;name=aarch64_usbredir-devel;unpack=0"
 SRC_URI[aarch64_usbredir-devel.sha256sum] = "69b1324dd1b0e9bb64f8dc9e2376c82471add7d34dc9d342f3b16ea3e00c6832"
 
 SRC_URI:append = " ${ALMALINUX_MIRROR}/AppStream/aarch64/os/Packages/usbredir-tools-0.13.0-6.el10.aarch64.rpm;name=aarch64_usbredir-tools;unpack=0"
